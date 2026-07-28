@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://ecoudea.github.io',
+  site: 'https://ecoudea2025.github.io',
   base: '/Ecoudea',
   trailingSlash: 'ignore',
   markdown: {
