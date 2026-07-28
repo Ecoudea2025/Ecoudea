@@ -10,6 +10,7 @@ export interface Props {
 }
 
 const { title = 'Ecoudea', description = 'Cursos y herramientas de estadística', image, showTools = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -17,7 +18,7 @@ const { title = 'Ecoudea', description = 'Cursos y herramientas de estadística'
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <meta name="description" content={description} />
     <meta name="keywords" content="estadística, R, Python, cursos, programación, probabilidad" />
     <meta property="og:title" content={title} />
@@ -26,7 +27,7 @@ const { title = 'Ecoudea', description = 'Cursos y herramientas de estadística'
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#0a0f1a" />
     <title>{title}</title>
-    <link rel="stylesheet" href="/assets/css/katex.min.css" />
+    <link rel="stylesheet" href={`${base}assets/css/katex.min.css`} />
   </head>
   <body class="flex flex-col min-h-screen">
     <slot name="header" />
@@ -36,8 +37,8 @@ const { title = 'Ecoudea', description = 'Cursos y herramientas de estadística'
     <slot name="footer" />
     {showTools && <FloatingButtons />}
 
-    <script defer src="/assets/js/katex.min.js"></script>
-    <script defer src="/assets/js/auto-render.min.js"></script>
-    <script defer src="/assets/js/enhance.js"></script>
+    <script defer src={`${base}assets/js/katex.min.js`}></script>
+    <script defer src={`${base}assets/js/auto-render.min.js`}></script>
+    <script defer src={`${base}assets/js/enhance.js`}></script>
   </body>
 </html>

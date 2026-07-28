@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://ecoudea.github.io',
-  base: '/',
+  base: '/Ecoudea',
   trailingSlash: 'ignore',
   markdown: {
     syntaxHighlight: 'shiki',
