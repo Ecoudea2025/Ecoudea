@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
+const base = import.meta.env.BASE_URL;
+
 export async function getStaticPaths() {
   const courses = await getCollection('courses');
   return courses.map((c) => ({
@@ -57,7 +59,7 @@ const presentacionCount = sortedClasses.filter(c => c.data.classType === 'presen
       <div class="flex flex-col sm:flex-row items-start gap-6 relative z-10">
         {course.data.image && (
           <div class="w-full sm:w-56 shrink-0 rounded-xl overflow-hidden border border-accent/20 shadow-lg">
-            <img src={course.data.image} alt={course.data.title} class="w-full h-40 sm:h-36 object-cover" loading="lazy" />
+            <img src={`${base}${course.data.image}`} alt={course.data.title} class="w-full h-40 sm:h-36 object-cover" loading="lazy" />
           </div>
         )}
         <div class="flex-1 min-w-0">
