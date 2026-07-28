@@ -4,6 +4,8 @@ import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
+const base = import.meta.env.BASE_URL;
+
 export async function getStaticPaths() {
   const classes = await getCollection('classes');
   const tagSet = new Set<string>();
@@ -30,7 +32,7 @@ const courseMap = new Map(courses.map((c) => [c.id, c.data.title]));
 
 <BaseLayout title={`#${tag} - Ecoudea`} description={`Clases etiquetadas con ${tag}`}>
   <Fragment slot="header">
-    <Navbar currentPath={`/tags/${tag}`} />
+    <Navbar currentPath={`${base}tags/${tag}`} />
   </Fragment>
 
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -42,7 +44,7 @@ const courseMap = new Map(courses.map((c) => [c.id, c.data.title]));
     <div class="space-y-2">
       {filtered.map((entry, i) => (
         <a
-          href={`/cursos/${entry.data.course}/${entry.id}`}
+          href={`${base}cursos/${entry.data.course}/${entry.id}`}
           class="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-border-subtle no-underline card-hover fade-in-up"
           style={`animation-delay: ${i * 0.03}s`}
         >
