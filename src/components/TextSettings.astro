@@ -1,0 +1,160 @@
+---
+---
+
+<div id="text-settings-root">
+  <!-- Botón flotante -->
+  <button id="text-settings-toggle" class="fixed bottom-20 right-6 z-50 w-10 h-10 rounded-xl bg-secondary text-white shadow-lg flex items-center justify-center hover:bg-secondary-hover transition-all duration-200 border-0 cursor-pointer hover:scale-110" aria-label="Ajustes de texto">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  </button>
+
+  <!-- Panel de ajustes -->
+  <div id="text-settings-panel" class="fixed bottom-32 right-6 z-50 w-72 rounded-2xl border border-border-subtle shadow-2xl transition-all duration-300 ease-in-out" style="background: oklch(from #0f172a l c h / 0.95); backdrop-filter: blur(16px); transform: translateY(20px); opacity: 0; pointer-events: none;">
+    <div class="px-4 py-3 border-b border-border-subtle flex items-center justify-between">
+      <span class="text-sm font-semibold text-text">Ajustes de lectura</span>
+      <button id="text-settings-close" class="text-text-muted hover:text-text transition-colors bg-transparent border-0 cursor-pointer">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+    </div>
+
+    <div class="p-4 space-y-4">
+      <!-- Tamaño de fuente -->
+      <div>
+        <label class="text-xs font-medium text-text-muted mb-2 block">Tamaño de fuente</label>
+        <div class="flex items-center gap-2">
+          <button data-setting="font-size" data-value="14" class="setting-btn px-3 py-1.5 rounded-lg text-xs font-medium border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">A</button>
+          <button data-setting="font-size" data-value="16" class="setting-btn px-3 py-1.5 rounded-lg text-sm font-medium border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">A</button>
+          <button data-setting="font-size" data-value="18" class="setting-btn px-3 py-1.5 rounded-lg text-base font-medium border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">A</button>
+          <button data-setting="font-size" data-value="20" class="setting-btn px-3 py-1.5 rounded-lg text-lg font-medium border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">A</button>
+        </div>
+      </div>
+
+      <!-- Tipografía -->
+      <div>
+        <label class="text-xs font-medium text-text-muted mb-2 block">Tipografía</label>
+        <div class="flex flex-col gap-1.5">
+          <button data-setting="font-family" data-value="system-ui, -apple-system, sans-serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: system-ui">Sistema</button>
+          <button data-setting="font-family" data-value="'Georgia', serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: Georgia, serif">Georgia (serif)</button>
+          <button data-setting="font-family" data-value="'Courier New', monospace" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: 'Courier New', monospace">Courier (mono)</button>
+          <button data-setting="font-family" data-value="'Verdana', sans-serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: Verdana, sans-serif">Verdana</button>
+        </div>
+      </div>
+
+      <!-- Interlineado -->
+      <div>
+        <label class="text-xs font-medium text-text-muted mb-2 block">Interlineado</label>
+        <div class="flex items-center gap-2">
+          <button data-setting="line-height" data-value="1.5" class="setting-btn px-3 py-1.5 rounded-lg text-xs border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">Estrecho</button>
+          <button data-setting="line-height" data-value="1.75" class="setting-btn px-3 py-1.5 rounded-lg text-xs border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">Normal</button>
+          <button data-setting="line-height" data-value="2.0" class="setting-btn px-3 py-1.5 rounded-lg text-xs border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">Amplio</button>
+        </div>
+      </div>
+
+      <!-- Ancho del contenido -->
+      <div>
+        <label class="text-xs font-medium text-text-muted mb-2 block">Ancho del contenido</label>
+        <div class="flex items-center gap-2">
+          <button data-setting="content-width" data-value="640px" class="setting-btn px-3 py-1.5 rounded-lg text-xs border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">Angosto</button>
+          <button data-setting="content-width" data-value="800px" class="setting-btn px-3 py-1.5 rounded-lg text-xs border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">Normal</button>
+          <button data-setting="content-width" data-value="100%" class="setting-btn px-3 py-1.5 rounded-lg text-xs border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer">Amplio</button>
+        </div>
+      </div>
+
+      <!-- Restablecer -->
+      <button id="text-settings-reset" class="w-full px-3 py-2 rounded-lg text-xs font-medium border border-border-subtle text-text-muted hover:border-rose-500/50 hover:text-rose-400 transition-all bg-transparent cursor-pointer">
+        Restablecer valores predeterminados
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var panel = document.getElementById('text-settings-panel');
+  var toggle = document.getElementById('text-settings-toggle');
+  var closeBtn = document.getElementById('text-settings-close');
+  var resetBtn = document.getElementById('text-settings-reset');
+  var panelVisible = false;
+
+  // Defaults
+  var defaults = { 'font-size': '16', 'font-family': 'system-ui, -apple-system, sans-serif', 'line-height': '1.75', 'content-width': '800px' };
+
+  // Load saved settings
+  function loadSettings() {
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem('ecoudea-text-settings') || '{}'); } catch(e) {}
+    var settings = Object.assign({}, defaults, saved);
+    applySettings(settings);
+    updateActiveButtons(settings);
+  }
+
+  function applySettings(s) {
+    var prose = document.querySelector('.prose-class');
+    if (prose) {
+      prose.style.fontSize = s['font-size'] + 'px';
+      prose.style.fontFamily = s['font-family'];
+      prose.style.lineHeight = s['line-height'];
+      prose.style.maxWidth = s['content-width'];
+    }
+  }
+
+  function updateActiveButtons(s) {
+    document.querySelectorAll('.setting-btn').forEach(function(btn) {
+      var key = btn.dataset.setting;
+      var val = btn.dataset.value;
+      if (s[key] === val) {
+        btn.className = btn.className.replace(/border-border-subtle text-text-muted/g, 'border-accent text-accent bg-accent-soft');
+      } else {
+        btn.className = btn.className.replace(/border-accent text-accent bg-accent-soft/g, 'border-border-subtle text-text-muted');
+      }
+    });
+  }
+
+  // Toggle panel
+  toggle.addEventListener('click', function() {
+    panelVisible = !panelVisible;
+    if (panelVisible) {
+      panel.style.transform = 'translateY(0)';
+      panel.style.opacity = '1';
+      panel.style.pointerEvents = 'auto';
+    } else {
+      panel.style.transform = 'translateY(20px)';
+      panel.style.opacity = '0';
+      panel.style.pointerEvents = 'none';
+    }
+  });
+
+  closeBtn.addEventListener('click', function() {
+    panelVisible = false;
+    panel.style.transform = 'translateY(20px)';
+    panel.style.opacity = '0';
+    panel.style.pointerEvents = 'none';
+  });
+
+  // Setting buttons
+  document.querySelectorAll('.setting-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var key = btn.dataset.setting;
+      var val = btn.dataset.value;
+      var saved = {};
+      try { saved = JSON.parse(localStorage.getItem('ecoudea-text-settings') || '{}'); } catch(e) {}
+      saved[key] = val;
+      localStorage.setItem('ecoudea-text-settings', JSON.stringify(saved));
+      applySettings(saved);
+      updateActiveButtons(saved);
+    });
+  });
+
+  // Reset
+  resetBtn.addEventListener('click', function() {
+    localStorage.removeItem('ecoudea-text-settings');
+    applySettings(defaults);
+    updateActiveButtons(defaults);
+  });
+
+  // Init
+  loadSettings();
+})();
+</script>

@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const classes = await getCollection('classes');
+  const tagSet = new Set<string>();
+  for (const cls of classes) {
+    for (const tag of cls.data.tags || []) {
+      tagSet.add(tag);
+    }
+  }
+  return Array.from(tagSet).map((tag) => ({
+    params: { tag },
+    props: { tag },
+  }));
+}
+
+const { tag } = Astro.props;
+const allClasses = await getCollection('classes');
+const courses = await getCollection('courses');
+
+const filtered = allClasses.filter((c) => c.data.tags?.includes(tag));
+filtered.sort((a, b) => a.data.order - b.data.order);
+
+const courseMap = new Map(courses.map((c) => [c.id, c.data.title]));
+---
+
+<BaseLayout title={`#${tag} - Ecoudea`} description={`Clases etiquetadas con ${tag}`}>
+  <Fragment slot="header">
+    <Navbar currentPath={`/tags/${tag}`} />
+  </Fragment>
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <h1 class="text-2xl sm:text-3xl font-bold text-text mb-2">
+      <span class="text-accent">#</span>{tag}
+    </h1>
+    <p class="text-text-muted mb-8">{filtered.length} {filtered.length === 1 ? 'clase encontrada' : 'clases encontradas'}</p>
+
+    <div class="space-y-2">
+      {filtered.map((entry, i) => (
+        <a
+          href={`/cursos/${entry.data.course}/${entry.id}`}
+          class="flex items-center gap-3 p-3 sm:p-4 rounded-xl border border-border-subtle no-underline card-hover fade-in-up"
+          style={`animation-delay: ${i * 0.03}s`}
+        >
+          <div class="flex-1 min-w-0">
+            <h3 class="text-sm sm:text-base font-semibold text-text">{entry.data.title}</h3>
+            <p class="text-xs text-text-muted mt-0.5">
+              {courseMap.get(entry.data.course) || entry.data.course}
+            </p>
+          </div>
+          <svg class="w-4 h-4 text-text-muted shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <Fragment slot="footer">
+    <Footer />
+  </Fragment>
+</BaseLayout>

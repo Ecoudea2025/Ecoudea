@@ -1,0 +1,73 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+export interface Props {
+  course: CollectionEntry<'courses'>;
+  classCount: number;
+}
+
+const { course, classCount } = Astro.props;
+const slug = course.id;
+const categoryColors = {
+  'Cursos': 'from-accent/20 via-secondary/10 to-transparent',
+  'Guías y Semilleros': 'from-amber-500/20 via-accent/10 to-transparent',
+  'Sesiones Especiales': 'from-rose-500/20 via-secondary/10 to-transparent',
+};
+const bgGradient = categoryColors[course.data.category] || 'from-accent/20 via-secondary/10 to-transparent';
+const catBadgeColors = {
+  'Cursos': 'bg-accent-soft text-accent border-accent/30',
+  'Guías y Semilleros': 'bg-amber-500/10 text-amber-400 border-amber-500/30',
+  'Sesiones Especiales': 'bg-rose-500/10 text-rose-400 border-rose-500/30',
+};
+const badgeColor = catBadgeColors[course.data.category] || catBadgeColors['Cursos'];
+---
+
+<a
+  href={`/cursos/${slug}`}
+  class="group block rounded-xl border border-border-subtle overflow-hidden no-underline card-hover glow-pulse"
+>
+  {course.data.image ? (
+    <div class="relative h-40 sm:h-44 overflow-hidden">
+      <div class={`absolute inset-0 bg-gradient-to-t from-surface via-${bgGradient} to-transparent z-10`} />
+      <img src={course.data.image} alt={course.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+      <div class="absolute top-3 left-3 z-20">
+        <span class={`inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold border ${badgeColor} backdrop-blur-sm`}>
+          {course.data.category}
+        </span>
+      </div>
+    </div>
+  ) : (
+    <div class={`h-32 sm:h-40 bg-gradient-to-br ${bgGradient} flex items-center justify-center relative overflow-hidden`}>
+      <div class="absolute inset-0 bg-surface/20" />
+      <span class="text-5xl font-bold gradient-text relative z-10">{course.data.title.charAt(0)}</span>
+      <div class="absolute top-3 left-3 z-20">
+        <span class={`inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold border ${badgeColor}`}>
+          {course.data.category}
+        </span>
+      </div>
+    </div>
+  )}
+  <div class="p-4 sm:p-5 space-y-2">
+    <h3 class="text-base sm:text-lg font-bold text-text group-hover:text-accent transition-colors leading-snug">
+      {course.data.title}
+    </h3>
+    <p class="text-xs sm:text-sm text-text-muted line-clamp-2 leading-relaxed">
+      {course.data.description}
+    </p>
+    <div class="flex items-center gap-3 pt-1 text-xs text-text-muted">
+      <span class="flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+        {classCount} {classCount === 1 ? 'clase' : 'clases'}
+      </span>
+      <span class="text-accent/50">|</span>
+      <span class="flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        Explorar
+      </span>
+    </div>
+  </div>
+</a>

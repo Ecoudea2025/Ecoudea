@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const courses = await getCollection('courses');
+  return courses.map((c) => ({
+    params: { course: c.id },
+    props: { courseId: c.id },
+  }));
+}
+
+const { courseId } = Astro.props;
+const allClasses = await getCollection('classes');
+const courses = await getCollection('courses');
+const course = courses.find((c) => c.id === courseId);
+
+if (!course) { return Astro.redirect('/404'); }
+
+const sortedClasses = allClasses.filter((c) => c.data.course === courseId).sort((a, b) => a.data.order - b.data.order);
+const typeColors = {
+  clase: 'border-accent text-accent bg-accent-soft',
+  practica: 'border-rose-500 text-rose-400 bg-rose-500/10',
+  presentacion: 'border-gray-500 text-gray-400 bg-gray-500/10',
+  guia: 'border-amber-500 text-amber-400 bg-amber-500/10',
+};
+const typeLabels = { clase: 'Clase', practica: 'Práctica', presentacion: 'Presentación', guia: 'Guía' };
+const typeBg = {
+  clase: 'from-accent/10 to-transparent',
+  practica: 'from-rose-500/10 to-transparent',
+  presentacion: 'from-gray-500/10 to-transparent',
+  guia: 'from-amber-500/10 to-transparent',
+};
+
+const classCount = sortedClasses.length;
+const practicaCount = sortedClasses.filter(c => c.data.classType === 'practica').length;
+const presentacionCount = sortedClasses.filter(c => c.data.classType === 'presentacion').length;
+---
+
+<BaseLayout title={`${course.data.title} - Ecoudea`} description={course.data.description}>
+  <Fragment slot="header"><Navbar currentPath={`/cursos/${courseId}`} /></Fragment>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <!-- Header del curso -->
+    <div class="relative overflow-hidden rounded-2xl gradient-bg border border-border-subtle p-6 sm:p-8 mb-8">
+      <div class="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/5 blur-3xl pointer-events-none" />
+      <div class="absolute bottom-0 left-20 w-48 h-48 rounded-full bg-secondary/5 blur-3xl pointer-events-none" />
+
+      <nav class="flex items-center gap-2 text-sm text-text-muted mb-6 relative z-10">
+        <a href="/" class="hover:text-accent transition-colors no-underline">Inicio</a>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+        <span class="text-text truncate max-w-[200px]">{course.data.title}</span>
+      </nav>
+
+      <div class="flex flex-col sm:flex-row items-start gap-6 relative z-10">
+        {course.data.image && (
+          <div class="w-full sm:w-56 shrink-0 rounded-xl overflow-hidden border border-accent/20 shadow-lg">
+            <img src={course.data.image} alt={course.data.title} class="w-full h-40 sm:h-36 object-cover" loading="lazy" />
+          </div>
+        )}
+        <div class="flex-1 min-w-0">
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-accent-soft text-accent border border-accent/30 mb-3">
+            {course.data.category}
+          </span>
+          <h1 class="text-2xl sm:text-3xl font-bold text-text mb-2 gradient-text">{course.data.title}</h1>
+          <p class="text-text-muted text-sm sm:text-base leading-relaxed">{course.data.description}</p>
+          <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-text-muted">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              <span class="font-semibold text-text">{classCount}</span> clases
+            </span>
+            {practicaCount > 0 && (
+              <span class="flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span class="font-semibold text-text">{practicaCount}</span> prácticas
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toggle vista + título -->
+    <div class="flex items-center justify-between mb-6">
+      <div class="flex items-center gap-3">
+        <h2 class="text-lg sm:text-xl font-bold text-text">Contenido</h2>
+        <div class="flex-1 section-divider hidden sm:block" />
+      </div>
+      <div class="flex items-center gap-1 p-1 rounded-lg bg-elevated border border-border-subtle">
+        <button id="view-list" class="view-btn flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all bg-accent-soft text-accent border-0 cursor-pointer" data-view="list">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+          Lista
+        </button>
+        <button id="view-grid" class="view-btn flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all text-text-muted hover:text-text border-0 cursor-pointer" data-view="grid">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm10 0a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zm10 0a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" /></svg>
+          Cuadrícula
+        </button>
+      </div>
+    </div>
+
+    <!-- Vista Lista -->
+    <div id="view-list-container" class="space-y-2">
+      {sortedClasses.map((entry, i) => {
+        const ts = typeColors[entry.data.classType] || typeColors.clase;
+        const tl = typeLabels[entry.data.classType] || 'Clase';
+        return (
+          <a
+            href={`/cursos/${courseId}/${entry.id}`}
+            class="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border border-border-subtle no-underline card-hover fade-in-up"
+            style={`animation-delay: ${i * 0.03}s`}
+          >
+            <span class={`shrink-0 w-9 h-9 sm:w-11 sm:h-11 rounded-xl border ${ts} flex items-center justify-center text-xs sm:text-sm font-bold`}>
+              {i + 1}
+            </span>
+            <div class="flex-1 min-w-0">
+              <h3 class="text-sm sm:text-base font-semibold text-text truncate">{entry.data.title}</h3>
+              {entry.data.description && (
+                <p class="text-xs sm:text-sm text-text-muted mt-0.5 line-clamp-1">{entry.data.description}</p>
+              )}
+            </div>
+            <span class="hidden sm:inline shrink-0 text-[10px] sm:text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 text-text-muted border border-border-subtle">
+              {tl}
+            </span>
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-accent/60 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        );
+      })}
+    </div>
+
+    <!-- Vista Cuadrícula -->
+    <div id="view-grid-container" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {sortedClasses.map((entry, i) => {
+        const tc = typeColors[entry.data.classType] || typeColors.clase;
+        const tl = typeLabels[entry.data.classType] || 'Clase';
+        const tb = typeBg[entry.data.classType] || typeBg.clase;
+        return (
+          <a
+            href={`/cursos/${courseId}/${entry.id}`}
+            class="group block rounded-xl border border-border-subtle overflow-hidden no-underline card-hover hover-glow fade-in-up"
+            style={`animation-delay: ${i * 0.05}s`}
+          >
+            <div class={`relative h-24 bg-gradient-to-br ${tb} flex items-center justify-center`}>
+              <span class={`text-3xl font-extrabold ${tc.split(' ')[1]} opacity-30 group-hover:opacity-50 transition-opacity`}>
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <span class={`absolute top-3 left-3 text-[10px] font-semibold px-2 py-0.5 rounded-md border ${tc}`}>
+                {tl}
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-sm font-bold text-text group-hover:text-accent transition-colors leading-snug mb-1">
+                {entry.data.title}
+              </h3>
+              {entry.data.description && (
+                <p class="text-xs text-text-muted line-clamp-2 leading-relaxed">
+                  {entry.data.description}
+                </p>
+              )}
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</BaseLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var listBtn = document.getElementById('view-list');
+    var gridBtn = document.getElementById('view-grid');
+    var listContainer = document.getElementById('view-list-container');
+    var gridContainer = document.getElementById('view-grid-container');
+
+    function setView(view) {
+      if (view === 'list') {
+        listContainer.classList.remove('hidden');
+        gridContainer.classList.add('hidden');
+        listBtn.className = 'view-btn flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all bg-accent-soft text-accent border-0 cursor-pointer';
+        gridBtn.className = 'view-btn flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all text-text-muted hover:text-text border-0 cursor-pointer';
+      } else {
+        listContainer.classList.add('hidden');
+        gridContainer.classList.remove('hidden');
+        gridBtn.className = 'view-btn flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all bg-accent-soft text-accent border-0 cursor-pointer';
+        listBtn.className = 'view-btn flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-all text-text-muted hover:text-text border-0 cursor-pointer';
+      }
+      localStorage.setItem('ecoudea-course-view', view);
+    }
+
+    // Restore saved view
+    var savedView = localStorage.getItem('ecoudea-course-view');
+    if (savedView === 'grid') setView('grid');
+
+    listBtn.addEventListener('click', function() { setView('list'); });
+    gridBtn.addEventListener('click', function() { setView('grid'); });
+  });
+</script>

@@ -1,5 +1,21 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: 'https://ecoudea.github.io',
+  base: '/',
+  trailingSlash: 'ignore',
+  markdown: {
+    syntaxHighlight: 'shiki',
+    shikiConfig: {
+      theme: 'one-dark-pro',
+      wrap: false,
+    },
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  build: {
+    inlineStylesheets: 'auto',
+  },
+});

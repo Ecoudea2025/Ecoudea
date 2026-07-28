@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Acerca de - Ecoudea" description="Acerca de Ecoudea">
+  <Fragment slot="header">
+    <Navbar currentPath="/acercade" />
+  </Fragment>
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <h1 class="text-2xl sm:text-3xl font-bold text-text mb-6">Acerca de</h1>
+    <div class="prose-class">
+      <p>
+        Ecoudea es una plataforma de cursos y recursos académicos enfocados en estadística,
+        probabilidad y programación. Nuestro objetivo es proporcionar materiales de alta calidad
+        para estudiantes y profesionales.
+      </p>
+      <p>
+        Los cursos cubren desde fundamentos de probabilidad hasta técnicas avanzadas de
+        estadística inferencial, series de tiempo y muestreo, con aplicaciones prácticas en
+        <strong> R </strong> y <strong> Python </strong>.
+      </p>
+      <h2>Tecnología</h2>
+      <p>
+        Este sitio está construido con <strong>Astro</strong> y <strong>Tailwind CSS</strong>,
+        generado como sitio estático para máxima velocidad y eficiencia.
+      </p>
+    </div>
+  </div>
+
+  <Fragment slot="footer">
+    <Footer />
+  </Fragment>
+</BaseLayout>
