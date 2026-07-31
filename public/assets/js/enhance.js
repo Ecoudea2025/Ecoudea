@@ -1,24 +1,70 @@
 (function () {
   'use strict';
 
-  // --- KaTeX: render immediately (enhance.js loads AFTER katex + auto-render) ---
-  if (typeof renderMathInElement !== 'undefined') {
-    var el = document.querySelector('.prose-class');
-    if (el) {
-      renderMathInElement(el, {
-        delimiters: [
-          { left: '$$', right: '$$', display: true },
-          { left: '$', right: '$', display: false },
-          { left: '\\[', right: '\\]', display: true },
-          { left: '\\(', right: '\\)', display: false }
-        ],
-        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        trust: true
-      });
+  // ── REPARAR MATEMÁTICAS MANGLED ──────────────────────────────────
+  // Markdown convierte `_{P_1}` (subíndice LaTeX) en `<em>{P_1}`
+  // porque `_` es énfasis. Esto corrompe el LaTeX antes de que KaTeX lo vea.
+  // Solución: dentro de bloques $...$ / $$...$$, restaurar los guiones bajos.
+  function repairMathMangling(article) {
+    var html = article.innerHTML;
+
+    // Bloques display: $$ ... $$
+    html = html.replace(/\$\$([\s\S]*?)\$\$/g, function (match, inner) {
+      if (inner.indexOf('<em>') === -1 && inner.indexOf('</em>') === -1) return match;
+      var fixed = inner
+        .replace(/<em>([\s\S]*?)<\/em>/g, '_$1_')
+        .replace(/<\/?em>/g, '');
+      return '$$' + fixed + '$$';
+    });
+
+    // Inline: $ ... $ (solo si contiene <em>, para no tocar signos de dólar comunes)
+    html = html.replace(/\$([^$\n]+)\$/g, function (match, inner) {
+      if (inner.indexOf('<em>') === -1 && inner.indexOf('</em>') === -1) return match;
+      var fixed = inner
+        .replace(/<em>([\s\S]*?)<\/em>/g, '_$1_')
+        .replace(/<\/?em>/g, '');
+      return '$' + fixed + '$';
+    });
+
+    if (html !== article.innerHTML) {
+      article.innerHTML = html;
     }
   }
 
-  // --- Modernize old Show/Hide buttons ---
+  // ── KATEX: renderizar ─────────────────────────────────────────────
+  function renderKatex(target) {
+    if (typeof renderMathInElement === 'undefined') return;
+    renderMathInElement(target, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      trust: true
+    });
+  }
+
+  // Inicial: reparar + renderizar
+  document.addEventListener('DOMContentLoaded', function () {
+    var article = document.querySelector('.prose-class');
+    if (article) {
+      repairMathMangling(article);
+      renderKatex(article);
+    }
+  });
+
+  // Fallback por si DOMContentLoaded ya pasó
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    var articleEl = document.querySelector('.prose-class');
+    if (articleEl) {
+      repairMathMangling(articleEl);
+      renderKatex(articleEl);
+    }
+  }
+
+  // ── Modernizar botones Show/Hide ─────────────────────────────────
   document.addEventListener('DOMContentLoaded', function () {
     var buttons = document.querySelectorAll('button[id^="Show"]');
     buttons.forEach(function (btn) {
@@ -50,19 +96,9 @@
         wrapper.style.opacity = '1';
         btn.style.display = 'none';
         if (hideBtn) hideBtn.style.display = 'inline-flex';
-        // Re-render KaTeX inside newly visible content
-        if (typeof renderMathInElement !== 'undefined') {
-          renderMathInElement(wrapper, {
-            delimiters: [
-              { left: '$$', right: '$$', display: true },
-              { left: '$', right: '$', display: false },
-              { left: '\\[', right: '\\]', display: true },
-              { left: '\\(', right: '\\)', display: false }
-            ],
-            ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            trust: true
-          });
-        }
+        // Reparar + renderizar KaTeX dentro del contenido recién visible
+        repairMathMangling(wrapper);
+        renderKatex(wrapper);
       });
 
       if (hideBtn) {
@@ -75,7 +111,7 @@
       }
     });
 
-    // --- Table of Contents (TOC) ---
+    // ── Table of Contents (TOC) ──────────────────────────────────────
     var tocNav = document.querySelector('#class-toc nav');
     var article = document.querySelector('.prose-class');
     if (article && tocNav) {
