@@ -1,43 +1,53 @@
-# Astro Starter Kit: Minimal
+# Ecoudea
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Plataforma de cursos de estadística, probabilidad y programación.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> ⚠️ **Aviso de atribución**: Este proyecto es un **remake moderno** de la página web del profesor **Jorge Iván Pérez** (Estadístico y Economista, Universidad de Antioquia). El contenido académico (cursos, clases, prácticas, guías y materiales) **no es de nuestra autoría** y pertenece al profesor Jorge. Este sitio fue reconstruido con una nueva tecnología (Astro + Tailwind CSS) como proyecto de aprendizaje y referencia. Para el contenido original, visita la página del profesor.
 
-## 🚀 Project Structure
+## 🚀 Tecnología
 
-Inside of your Astro project, you'll see the following folders and files:
+- [Astro](https://astro.build) — Framework estático
+- [Tailwind CSS v4](https://tailwindcss.com) — Estilos
+- [KaTeX](https://katex.org) — Renderizado de fórmulas matemáticas (LaTeX)
+- [GitHub Actions](https://github.com/features/actions) — Deploy automático a GitHub Pages
+
+## 📁 Estructura
 
 ```text
 /
 ├── public/
+│   └── assets/          # Imágenes, CSS, JS (KaTeX, fonts, etc.)
+├── scripts/             # Scripts de migración y utilidades
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── content/
+│   │   ├── courses/     # Metadatos de cada curso
+│   │   └── classes/     # Contenido de las clases (Markdown)
+│   ├── components/      # Componentes Astro
+│   ├── layouts/         # Layouts (Base, páginas de curso/clase)
+│   ├── pages/           # Páginas generadas
+│   └── styles/          # CSS global
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## ✨ Funcionalidades
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- 🎓 **9 cursos** con 147 clases migradas del contenido original
+- 📐 **LaTeX renderizado** con KaTeX (fórmulas inline y display)
+- 📑 **Tabla de contenidos** lateral en cada clase
+- 🔍 **Vista lista/cuadrícula** para navegar las clases de un curso
+- ⚙️ **Ajustes de lectura** (tamaño de fuente, tipografía, interlineado)
+- 📱 **Diseño responsive** (mobile-first)
+- ✅ **Progreso de estudio** guardado en el navegador (localStorage)
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🧞 Comandos
 
-## 🧞 Commands
+| Comando           | Acción                                      |
+| :---------------- | :------------------------------------------ |
+| `npm install`     | Instala dependencias                        |
+| `npm run dev`     | Servidor local en `localhost:4321`          |
+| `npm run build`   | Build de producción a `./dist/`             |
+| `npm run preview` | Previsualiza el build localmente            |
 
-All commands are run from the root of the project, from a terminal:
+## 📝 Licencia
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+El código de este proyecto es de uso libre para fines educativos. El contenido académico pertenece a su autor original (Prof. Jorge Iván Pérez).
