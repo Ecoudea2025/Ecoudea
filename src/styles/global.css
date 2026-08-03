@@ -101,6 +101,72 @@
   .glow-pulse {
     animation: glow-pulse 3s ease-in-out infinite;
   }
+  /* ── Logo stage (inspirado en GSAPify: Orbital System + glow) ────── */
+  .logo-stage {
+    animation: logo-enter 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
+  }
+  .logo-ring {
+    position: absolute;
+    inset: -16px;
+    border-radius: 9999px;
+    pointer-events: none;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg, transparent 45deg,
+      oklch(from #6c9a06 l c h / 0.85) 80deg,
+      transparent 115deg, transparent 190deg,
+      oklch(from #0e7774 l c h / 0.75) 225deg,
+      transparent 260deg, transparent 360deg
+    );
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
+    animation: logo-spin 5s linear infinite;
+  }
+  .logo-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    animation: logo-spin var(--orbit-duration, 6s) linear infinite;
+  }
+  .logo-orbit-dot {
+    position: absolute;
+    top: calc(var(--orbit-radius, 52px) * -1);
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: var(--dot-color, #8bc34a);
+    box-shadow: 0 0 10px 2px oklch(from #8bc34a l c h / 0.55);
+  }
+  .logo-core-glow {
+    animation: logo-glow 3s ease-in-out infinite;
+  }
+  .logo-stage:hover .logo-ring { animation-duration: 2.2s; }
+  .logo-stage:hover .logo-orbit { animation-duration: 2.5s; }
+  .logo-stage:hover .logo-core-glow { animation-duration: 1.8s; }
+  @keyframes logo-spin {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes logo-enter {
+    from { opacity: 0; transform: scale(0.7) rotate(-8deg); }
+    to { opacity: 1; transform: scale(1) rotate(0); }
+  }
+  @keyframes logo-glow {
+    0%, 100% {
+      box-shadow: 0 0 12px oklch(from #6c9a06 l c h / 0.25), 0 0 40px oklch(from #6c9a06 l c h / 0.1);
+    }
+    50% {
+      box-shadow: 0 0 22px oklch(from #6c9a06 l c h / 0.5), 0 0 64px oklch(from #0e7774 l c h / 0.28);
+    }
+  }
+  @media (min-width: 640px) {
+    .logo-orbit-dot {
+      top: calc(var(--orbit-radius, 58px) * -1);
+    }
+  }
   .stagger-1 { animation-delay: 0.05s; }
   .stagger-2 { animation-delay: 0.1s; }
   .stagger-3 { animation-delay: 0.15s; }

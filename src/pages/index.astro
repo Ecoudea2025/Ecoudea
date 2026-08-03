@@ -48,9 +48,14 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center relative">
       <div class="flex justify-center mb-6 reveal is-visible">
-        <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-accent/30 shadow-xl shadow-accent/20 glow-pulse">
-          <img src={`${base}/assets/images/logo-ecoudea.png`} alt="Ecoudea" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent"></div>
+        <div class="logo-stage relative w-20 h-20 sm:w-24 sm:h-24" data-logo-stage>
+          <div class="logo-ring" aria-hidden="true"></div>
+          <div class="logo-orbit" style="--orbit-duration: 5s; --orbit-radius: 52px" aria-hidden="true"><span class="logo-orbit-dot"></span></div>
+          <div class="logo-orbit" style="--orbit-duration: 8s; --orbit-radius: 66px; --dot-color: #069a7e; animation-direction: reverse" aria-hidden="true"><span class="logo-orbit-dot"></span></div>
+          <div class="relative w-full h-full rounded-2xl overflow-hidden border-2 border-accent/30 shadow-xl shadow-accent/20 logo-core-glow">
+            <img src={`${base}/assets/images/logo-ecoudea.png`} alt="Ecoudea" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent"></div>
+          </div>
         </div>
       </div>
 
@@ -106,11 +111,6 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
   </section>
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28" id="directorio">
-    <div class="flex items-center gap-3 mb-2 reveal">
-      <span class="font-mono text-xs tracking-widest text-accent uppercase">// DIRECTORIO_01</span>
-      <div class="flex-1 section-divider" />
-    </div>
-
     <div class="flex items-end justify-between gap-4 flex-wrap mb-6 reveal" data-reveal-group>
       <div>
         <h2 class="text-2xl sm:text-3xl font-bold text-text">Encuentra tu próximo curso</h2>
@@ -167,9 +167,6 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
 
   <section class="border-y border-border-subtle bg-elevated/30">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
-      <div class="flex items-center gap-3 justify-center mb-2 reveal">
-        <span class="font-mono text-xs tracking-widest text-accent uppercase">// ACERCA_02</span>
-      </div>
       <h2 class="text-2xl sm:text-3xl font-bold text-text mb-4 reveal" data-reveal-group>El conocimiento debería ser claro</h2>
       <p class="text-text-muted max-w-2xl mx-auto leading-relaxed reveal" data-reveal-group>
         Ecoudea reúne cursos de estadística, probabilidad y programación con R y Python en un
@@ -188,10 +185,6 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
   </section>
 
   <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-    <div class="flex items-center gap-3 mb-2 reveal">
-      <span class="font-mono text-xs tracking-widest text-accent uppercase">// FAQ_03</span>
-      <div class="flex-1 section-divider" />
-    </div>
     <h2 class="text-2xl sm:text-3xl font-bold text-text mb-8 reveal" data-reveal-group>Preguntas, resueltas.</h2>
 
     <div class="space-y-3 reveal" data-reveal-group>
