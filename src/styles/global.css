@@ -111,6 +111,76 @@
     height: 1px;
     background: linear-gradient(90deg, transparent, oklch(from #6c9a06 l c h / 0.3), transparent);
   }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background: linear-gradient(135deg, #33691e, #0e7774);
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    box-shadow: 0 4px 16px oklch(from #6c9a06 l c h / 0.25);
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px oklch(from #6c9a06 l c h / 0.35);
+    filter: brightness(1.1);
+  }
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    border: 1px solid oklch(from #2a3a2a l c h / 0.6);
+    background: transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+  }
+  .btn-ghost:hover {
+    border-color: oklch(from #6c9a06 l c h / 0.5);
+    background: oklch(from #6c9a06 l c h / 0.08);
+    transform: translateY(-1px);
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    border: 1px solid oklch(from #2a3a2a l c h / 0.5);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .pill:hover {
+    color: var(--color-text);
+    border-color: oklch(from #6c9a06 l c h / 0.4);
+  }
+  .pill-active {
+    color: var(--color-accent);
+    border-color: oklch(from #6c9a06 l c h / 0.5);
+    background: var(--color-accent-soft);
+  }
+  .pill .pill-count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.05rem 0.5rem;
+    border-radius: 9999px;
+    background: oklch(from #2a3a2a l c h / 0.4);
+  }
+  .pill-active .pill-count {
+    background: oklch(from #6c9a06 l c h / 0.25);
+    color: var(--color-accent-hover);
+  }
   /* ── Font pairing: headings con display font (Fraunces serif) ── */
   h1, h2, h3, h4, h5, .font-display {
     font-family: var(--font-display);

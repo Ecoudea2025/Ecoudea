@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import CourseCard from '../components/CourseCard.astro';
+import Accordion from '../components/Accordion.astro';
 import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
@@ -12,17 +13,27 @@ const allClasses = await getCollection('classes');
 
 const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
 const classCounts = {};
+const practiceCounts = {};
 for (const cls of allClasses) {
   classCounts[cls.data.course] = (classCounts[cls.data.course] || 0) + 1;
+  if (cls.data.classType === 'practica') {
+    practiceCounts[cls.data.course] = (practiceCounts[cls.data.course] || 0) + 1;
+  }
 }
 
 const categories = ['Cursos', 'Guías y Semilleros', 'Sesiones Especiales'];
+const categoryCounts = categories.map((cat) => ({
+  category: cat,
+  count: sortedCourses.filter((c) => c.data.category === cat).length,
+}));
 const grouped = categories.map((cat) => ({
   category: cat,
   courses: sortedCourses.filter((c) => c.data.category === cat),
 })).filter((g) => g.courses.length > 0);
 
 const totalClasses = allClasses.length;
+const totalPractices = allClasses.filter((c) => c.data.classType === 'practica').length;
+const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length;
 ---
 
 <BaseLayout title="Ecoudea - Cursos de Estadística" description="Cursos de estadística, probabilidad y programación con R y Python">
@@ -49,13 +60,28 @@ const totalClasses = allClasses.length;
       </div>
 
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 reveal is-visible" style="font-weight: 650;">
-        <span class="gradient-text">Ecoudea</span>
+        Construye tu dominio de la <span class="gradient-text">estadística</span>
       </h1>
       <p data-typewriter class="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
-        Cursos y recursos de estadística, probabilidad y programación
+        Cursos y recursos de estadística, probabilidad y programación con R y Python, explicados con claridad.
       </p>
 
-      <div class="flex items-center justify-center gap-8 mt-8 text-sm text-text-muted reveal is-visible">
+      <div class="flex items-center justify-center gap-4 mt-8 flex-wrap reveal is-visible">
+        <a href="#directorio" class="btn no-underline">
+          Explorar catálogo
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+        <a href={`${base}/acercade`} class="btn-ghost no-underline">
+          Conocer el proyecto
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center gap-6 sm:gap-8 mt-10 text-sm text-text-muted reveal is-visible">
         <div class="text-center">
           <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>0</span>
           <span class="text-xs">cursos</span>
@@ -67,39 +93,178 @@ const totalClasses = allClasses.length;
         </div>
         <div class="w-px h-10 bg-border-subtle" />
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={allClasses.filter(c => c.data.classType === 'practica').length}>0</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalPractices}>0</span>
           <span class="text-xs">prácticas</span>
+        </div>
+        <div class="w-px h-10 bg-border-subtle" />
+        <div class="text-center">
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalGuides}>0</span>
+          <span class="text-xs">guías</span>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28">
-    {
-      grouped.map(({ category, courses: catCourses }, groupIdx) => (
-        <section class={groupIdx > 0 ? 'mt-16 sm:mt-20' : ''}>
-          <div class="flex items-center gap-4 mb-8 reveal" data-reveal-group>
-            <div class="flex items-center gap-3">
-              <span class="w-1 h-8 rounded-full bg-accent" />
-              <h2 class="text-xl sm:text-2xl font-bold text-text">{category}</h2>
-            </div>
-            <div class="flex-1 section-divider" />
-            <span class="text-sm text-text-muted shrink-0">{catCourses.length} {catCourses.length === 1 ? 'curso' : 'cursos'}</span>
-          </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28" id="directorio">
+    <div class="flex items-center gap-3 mb-2 reveal">
+      <span class="font-mono text-xs tracking-widest text-accent uppercase">// DIRECTORIO_01</span>
+      <div class="flex-1 section-divider" />
+    </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {catCourses.map((course, i) => (
-              <div class={`reveal d-${Math.min(i + 1, 10)}`}>
-                <CourseCard course={course} classCount={classCounts[course.id] || 0} />
-              </div>
-            ))}
-          </div>
-        </section>
-      ))
-    }
+    <div class="flex items-end justify-between gap-4 flex-wrap mb-6 reveal" data-reveal-group>
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-text">Encuentra tu próximo curso</h2>
+        <p class="text-sm text-text-muted mt-1">Busca por título, descripción o tema.</p>
+      </div>
+      <span class="text-sm text-text-muted shrink-0" id="results-count"></span>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3 mb-8 reveal" data-reveal-group>
+      <div class="relative flex-1 max-w-md">
+        <svg class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input
+          id="course-search"
+          type="search"
+          placeholder="Buscar un curso…"
+          class="w-full bg-elevated/60 border border-border-subtle rounded-lg pl-11 pr-4 py-2.5 text-sm text-text placeholder:text-text-muted/50 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all"
+        />
+      </div>
+      <div class="flex flex-wrap items-center gap-2" id="category-pills">
+        <button class="pill pill-active" data-filter="todos">
+          Todos <span class="pill-count">{courses.length}</span>
+        </button>
+        {categoryCounts.map(({ category, count }) => (
+          <button class="pill" data-filter={category}>
+            {category} <span class="pill-count">{count}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <div id="course-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+      {sortedCourses.map((course, i) => (
+        <div
+          class={`reveal d-${Math.min(i + 1, 10)}`}
+          data-course-card
+          data-title={course.data.title.toLowerCase()}
+          data-desc={(course.data.description || '').toLowerCase()}
+          data-category={course.data.category}
+        >
+          <CourseCard course={course} classCount={classCounts[course.id] || 0} practiceCount={practiceCounts[course.id] || 0} />
+        </div>
+      ))}
+    </div>
+
+    <div id="empty-state" class="hidden text-center py-16">
+      <div class="text-4xl mb-3">🛰</div>
+      <p class="text-text-muted font-medium">No hay nada por este rincón.</p>
+      <p class="text-sm text-text-muted/60 mt-1">Prueba otra búsqueda o explora todas las categorías.</p>
+      <button id="clear-filters" class="btn-ghost mt-6 text-sm no-underline cursor-pointer">Limpiar filtros</button>
+    </div>
   </div>
+
+  <section class="border-y border-border-subtle bg-elevated/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+      <div class="flex items-center gap-3 justify-center mb-2 reveal">
+        <span class="font-mono text-xs tracking-widest text-accent uppercase">// ACERCA_02</span>
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-bold text-text mb-4 reveal" data-reveal-group>El conocimiento debería ser claro</h2>
+      <p class="text-text-muted max-w-2xl mx-auto leading-relaxed reveal" data-reveal-group>
+        Ecoudea reúne cursos de estadística, probabilidad y programación con R y Python en un
+        solo lugar: materiales organizados, prácticas guiadas y teoría explicada paso a paso,
+        para que aprender sea directo y sin fricción.
+      </p>
+      <div class="mt-8 reveal" data-reveal-group>
+        <a href={`${base}/acercade`} class="btn no-underline">
+          Conocer el proyecto
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <div class="flex items-center gap-3 mb-2 reveal">
+      <span class="font-mono text-xs tracking-widest text-accent uppercase">// FAQ_03</span>
+      <div class="flex-1 section-divider" />
+    </div>
+    <h2 class="text-2xl sm:text-3xl font-bold text-text mb-8 reveal" data-reveal-group>Preguntas, resueltas.</h2>
+
+    <div class="space-y-3 reveal" data-reveal-group>
+      <Accordion id="faq-1" title="¿Necesito conocimientos previos?">
+        <p class="text-sm text-text-muted leading-relaxed">
+          No. Cada curso arranca desde los fundamentos y avanza con explicaciones paso a paso.
+          Si un tema requiere base de otra clase, se indica dónde verla primero.
+        </p>
+      </Accordion>
+      <Accordion id="faq-2" title="¿Qué herramientas necesito?">
+        <p class="text-sm text-text-muted leading-relaxed">
+          Solo un navegador para el material. Los cursos de programación usan R y Python;
+          las guías incluyen instrucciones de instalación y configuración al inicio.
+        </p>
+      </Accordion>
+      <Accordion id="faq-3" title="¿Hay prácticas y ejercicios?">
+        <p class="text-sm text-text-muted leading-relaxed">
+          Sí. {totalPractices} prácticas guiadas intercaladas en los cursos te permiten aplicar
+          cada concepto con datos reales, con soluciones comentadas al final.
+        </p>
+      </Accordion>
+      <Accordion id="faq-4" title="¿Puedo reutilizar este material?">
+        <p class="text-sm text-text-muted leading-relaxed">
+          Sí. El material es de acceso abierto para fines educativos: se puede citar, adaptar y
+          usar en tus propias clases con la atribución correspondiente.
+        </p>
+      </Accordion>
+    </div>
+  </section>
 
   <Fragment slot="footer">
     <Footer />
   </Fragment>
 </BaseLayout>
+
+<script>
+  const searchInput = document.getElementById('course-search');
+  const pills = document.querySelectorAll('#category-pills .pill');
+  const cards = document.querySelectorAll('[data-course-card]');
+  const resultsCount = document.getElementById('results-count');
+  const emptyState = document.getElementById('empty-state');
+  let activeFilter = 'todos';
+
+  function applyFilters() {
+    const q = (searchInput?.value || '').trim().toLowerCase();
+    let shown = 0;
+    cards.forEach((card) => {
+      const catOk = activeFilter === 'todos' || card.dataset.category === activeFilter;
+      const qOk = !q || card.dataset.title.includes(q) || card.dataset.desc.includes(q);
+      const show = catOk && qOk;
+      card.classList.toggle('hidden', !show);
+      if (show) shown++;
+    });
+    resultsCount.textContent = `${shown} ${shown === 1 ? 'curso' : 'cursos'} encontrados`;
+    emptyState.classList.toggle('hidden', shown > 0);
+  }
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      activeFilter = pill.dataset.filter;
+      pills.forEach((p) => p.classList.toggle('pill-active', p === pill));
+      applyFilters();
+    });
+  });
+
+  searchInput?.addEventListener('input', applyFilters);
+
+  document.getElementById('clear-filters')?.addEventListener('click', () => {
+    activeFilter = 'todos';
+    pills.forEach((p) => p.classList.toggle('pill-active', p.dataset.filter === 'todos'));
+    if (searchInput) searchInput.value = '';
+    applyFilters();
+  });
+
+  applyFilters();
+</script>
