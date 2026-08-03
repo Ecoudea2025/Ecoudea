@@ -47,10 +47,11 @@
     <div>
       <label class="text-xs font-medium text-text-muted mb-2 block">Tipografía</label>
       <div class="flex flex-col gap-1.5">
-        <button data-setting="font-family" data-value="system-ui, -apple-system, sans-serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: system-ui">Sistema</button>
+        <button data-setting="font-family" data-value="'Inter Variable', system-ui, sans-serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: 'Inter Variable', system-ui, sans-serif">Inter (Recomendada)</button>
+        <button data-setting="font-family" data-value="'Sora Variable', system-ui, sans-serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: 'Sora Variable', system-ui, sans-serif">Sora (Geométrica)</button>
+        <button data-setting="font-family" data-value="'Fraunces Variable', Georgia, serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: 'Fraunces Variable', Georgia, serif">Fraunces (Serif)</button>
         <button data-setting="font-family" data-value="'Georgia', serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: Georgia, serif">Georgia (serif)</button>
         <button data-setting="font-family" data-value="'Courier New', monospace" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: 'Courier New', monospace">Courier (mono)</button>
-        <button data-setting="font-family" data-value="'Verdana', sans-serif" class="setting-btn text-left px-3 py-2 rounded-lg text-sm border border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent transition-all bg-transparent cursor-pointer" style="font-family: Verdana, sans-serif">Verdana</button>
       </div>
     </div>
     <div>
@@ -84,7 +85,7 @@
   var resetBtn = document.getElementById('text-settings-reset');
   var panelVisible = false;
 
-  var defaults = { 'font-size': '16', 'font-family': 'system-ui, -apple-system, sans-serif', 'line-height': '1.75', 'content-width': '800px' };
+  var defaults = { 'font-size': '16', 'font-family': "'Inter Variable', system-ui, sans-serif", 'line-height': '1.75', 'content-width': '800px' };
 
   // Scroll: tuerca sube, flecha aparece debajo
   window.addEventListener('scroll', function() {

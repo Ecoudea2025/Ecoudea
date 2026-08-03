@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/fraunces";
 @import "@fontsource-variable/inter";
+@import "@fontsource-variable/sora";
 
 @theme inline {
   --color-surface: #0a0f1a;
@@ -19,7 +20,7 @@
   --color-text: #e8f0e8;
   --color-text-muted: #94a3a8;
   --font-sans: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
+  --font-display: "Fraunces Variable", Georgia, serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
@@ -110,10 +111,11 @@
     height: 1px;
     background: linear-gradient(90deg, transparent, oklch(from #6c9a06 l c h / 0.3), transparent);
   }
-  /* ── Font pairing: headings con display font ── */
+  /* ── Font pairing: headings con display font (Fraunces serif) ── */
   h1, h2, h3, h4, h5, .font-display {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
+    font-variation-settings: "opsz" 60, "SOFT" 50, "WONK" 0;
   }
   /* ── Scroll reveal (estilo GSAP ScrollTrigger, sin librería) ── */
   /* Solo se ocultan si JS está activo (clase .js en <html>) */
@@ -192,11 +194,12 @@
   color: #e8f0e8;
   font-family: var(--font-display);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 60, "SOFT" 50, "WONK" 0;
   margin-top: 2em;
   margin-bottom: 0.75em;
 }
-.prose-class h1 { font-size: 2rem; background: linear-gradient(135deg, #6c9a06, #069a7e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.prose-class h1 { font-size: 2.1rem; background: linear-gradient(135deg, #6c9a06, #069a7e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 650; }
 .prose-class h2 { font-size: 1.5rem; border-bottom: 1px solid oklch(from #2a3a2a l c h / 0.5); padding-bottom: 0.5rem; }
 .prose-class h3 { font-size: 1.25rem; color: #8bc34a; }
 .prose-class h4 { font-size: 1.1rem; color: #94a3a8; }
