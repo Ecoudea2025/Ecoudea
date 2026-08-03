@@ -46,11 +46,14 @@ const canonical = Astro.url;
     <title>{title}</title>
     <script>document.documentElement.classList.add('js')</script>
     {math && <link rel="stylesheet" href={`${base}/assets/css/katex.min.css`} />}
-    {jsonLd && <Fragment set:html={jsonLd} />}
+    {jsonLd && <script type="application/ld+json" set:html={jsonLd}></script>}
   </head>
   <body class="flex flex-col min-h-screen">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-accent focus:text-white focus:text-sm no-underline">
+      Saltar al contenido
+    </a>
     <slot name="header" />
-    <main class="flex-1">
+    <main id="main" class="flex-1">
       <slot />
     </main>
     <slot name="footer" />
