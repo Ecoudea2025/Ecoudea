@@ -2,22 +2,47 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
+const courses = await getCollection('courses');
+const allClasses = await getCollection('classes');
+const totalClasses = allClasses.length;
+const totalPractices = allClasses.filter((c) => c.data.classType === 'practica').length;
+const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length;
+const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<BaseLayout title="Acerca de - Ecoudea" description="Acerca de Ecoudea">
+<BaseLayout title="Acerca de - Ecoudea" description="Acerca de Ecoudea: cursos abiertos de estadística, probabilidad y programación con R y Python">
   <Fragment slot="header">
     <Navbar currentPath={`${base}/acercade`} />
   </Fragment>
 
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-    <h1 class="text-2xl sm:text-3xl font-bold text-text mb-6">Acerca de</h1>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <h1 class="text-3xl sm:text-4xl font-bold text-text mb-3 reveal">Acerca de Ecoudea</h1>
+    <p class="text-text-muted mb-10 reveal" data-reveal-group>
+      Plataforma abierta de cursos de estadística, probabilidad y programación con R y Python.
+    </p>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
+      {[
+        { value: courses.length, label: 'cursos' },
+        { value: totalClasses, label: 'clases' },
+        { value: totalPractices, label: 'prácticas' },
+        { value: totalGuides, label: 'guías' },
+      ].map((s) => (
+        <div class="rounded-xl border border-border-subtle bg-elevated/50 p-4 text-center reveal">
+          <span class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={s.value}>0</span>
+          <span class="text-xs text-text-muted">{s.label}</span>
+        </div>
+      ))}
+    </div>
+
     <div class="prose-class">
       <p>
         Ecoudea es una plataforma de cursos y recursos académicos enfocados en estadística,
-        probabilidad y programación. Nuestro objetivo es proporcionar materiales de alta calidad
-        para estudiantes y profesionales.
+        probabilidad y programación. El objetivo es proporcionar materiales de alta calidad,
+        organizados y de acceso abierto para estudiantes y profesionales.
       </p>
       <p>
         Los cursos cubren desde fundamentos de probabilidad hasta técnicas avanzadas de
@@ -27,8 +52,26 @@ const base = import.meta.env.BASE_URL;
       <h2>Tecnología</h2>
       <p>
         Este sitio está construido con <strong>Astro</strong> y <strong>Tailwind CSS</strong>,
-        generado como sitio estático para máxima velocidad y eficiencia.
+        generado como sitio estático para máxima velocidad y eficiencia, con matemáticas
+        renderizadas con KaTeX y desplegado en GitHub Pages.
       </p>
+    </div>
+
+    <div class="mt-10">
+      <h2 class="text-xl font-bold text-text mb-4">Cursos disponibles</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {sortedCourses.map((course) => (
+          <a
+            href={`${base}/cursos/${course.id}`}
+            class="flex items-center justify-between gap-3 p-4 rounded-xl border border-border-subtle no-underline card-hover"
+          >
+            <span class="text-sm font-semibold text-text">{course.data.title}</span>
+            <svg class="w-4 h-4 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        ))}
+      </div>
     </div>
   </div>
 

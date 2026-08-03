@@ -46,12 +46,23 @@
     });
   }
 
+  // ── OPTIMIZAR IMÁGENES DEL CONTENIDO ──────────────────────────────
+  // Lazy-load + decoding async para no bloquear el renderizado.
+  function optimizeImages(scope) {
+    var imgs = (scope || document).querySelectorAll('.prose-class img:not([loading])');
+    imgs.forEach(function (img) {
+      img.loading = 'lazy';
+      img.decoding = 'async';
+    });
+  }
+
   // Inicial: reparar + renderizar
   document.addEventListener('DOMContentLoaded', function () {
     var article = document.querySelector('.prose-class');
     if (article) {
       repairMathMangling(article);
       renderKatex(article);
+      optimizeImages(article);
     }
   });
 
@@ -61,6 +72,7 @@
     if (articleEl) {
       repairMathMangling(articleEl);
       renderKatex(articleEl);
+      optimizeImages(articleEl);
     }
   }
 
@@ -99,6 +111,7 @@
         // Reparar + renderizar KaTeX dentro del contenido recién visible
         repairMathMangling(wrapper);
         renderKatex(wrapper);
+        optimizeImages(wrapper);
       });
 
       if (hideBtn) {
