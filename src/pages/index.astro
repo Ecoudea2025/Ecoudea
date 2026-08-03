@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import CourseCard from '../components/CourseCard.astro';
-import Accordion from '../components/Accordion.astro';
 import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
@@ -184,37 +183,6 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
     </div>
   </section>
 
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-    <h2 class="text-2xl sm:text-3xl font-bold text-text mb-8 reveal" data-reveal-group>Preguntas, resueltas.</h2>
-
-    <div class="space-y-3 reveal" data-reveal-group>
-      <Accordion id="faq-1" title="¿Necesito conocimientos previos?">
-        <p class="text-sm text-text-muted leading-relaxed">
-          No. Cada curso arranca desde los fundamentos y avanza con explicaciones paso a paso.
-          Si un tema requiere base de otra clase, se indica dónde verla primero.
-        </p>
-      </Accordion>
-      <Accordion id="faq-2" title="¿Qué herramientas necesito?">
-        <p class="text-sm text-text-muted leading-relaxed">
-          Solo un navegador para el material. Los cursos de programación usan R y Python;
-          las guías incluyen instrucciones de instalación y configuración al inicio.
-        </p>
-      </Accordion>
-      <Accordion id="faq-3" title="¿Hay prácticas y ejercicios?">
-        <p class="text-sm text-text-muted leading-relaxed">
-          Sí. {totalPractices} prácticas guiadas intercaladas en los cursos te permiten aplicar
-          cada concepto con datos reales, con soluciones comentadas al final.
-        </p>
-      </Accordion>
-      <Accordion id="faq-4" title="¿Puedo reutilizar este material?">
-        <p class="text-sm text-text-muted leading-relaxed">
-          Sí. El material es de acceso abierto para fines educativos: se puede citar, adaptar y
-          usar en tus propias clases con la atribución correspondiente.
-        </p>
-      </Accordion>
-    </div>
-  </section>
-
   <Fragment slot="footer">
     <Footer />
   </Fragment>
@@ -226,7 +194,12 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
   const cards = document.querySelectorAll('[data-course-card]');
   const resultsCount = document.getElementById('results-count');
   const emptyState = document.getElementById('empty-state');
-  let activeFilter = 'todos';
+  let activeFilter = new URLSearchParams(window.location.search).get('cat') || 'todos';
+
+  const urlPill = [...pills].find((p) => p.dataset.filter === activeFilter);
+  if (urlPill) {
+    pills.forEach((p) => p.classList.toggle('pill-active', p === urlPill));
+  }
 
   function applyFilters() {
     const q = (searchInput?.value || '').trim().toLowerCase();

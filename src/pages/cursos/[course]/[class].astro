@@ -42,7 +42,7 @@ const tc = typeColors[classEntry.data.classType] || typeColors.clase;
 const tl = typeLabels[classEntry.data.classType] || 'Clase';
 ---
 
-<BaseLayout title={`${classEntry.data.title} - ${course.data.title} - Ecoudea`} description={classEntry.data.description} showTools={true}>
+<BaseLayout title={`${classEntry.data.title} - ${course.data.title} - Ecoudea`} description={classEntry.data.description} showTools={true} math={true}>
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}/${classId}`} /></Fragment>
 
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">

@@ -39,9 +39,19 @@ const typeBg = {
 const classCount = sortedClasses.length;
 const practicaCount = sortedClasses.filter(c => c.data.classType === 'practica').length;
 const presentacionCount = sortedClasses.filter(c => c.data.classType === 'presentacion').length;
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: course.data.title,
+  description: course.data.description,
+  provider: { '@type': 'Organization', name: 'Ecoudea' },
+  numberOfCredits: classCount,
+  inLanguage: 'es-CO',
+});
 ---
 
-<BaseLayout title={`${course.data.title} - Ecoudea`} description={course.data.description}>
+<BaseLayout title={`${course.data.title} - Ecoudea`} description={course.data.description} jsonLd={jsonLd}>
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}`} /></Fragment>
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">

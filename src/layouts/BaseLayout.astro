@@ -7,10 +7,22 @@ export interface Props {
   description?: string;
   image?: string;
   showTools?: boolean;
+  /** Carga KaTeX (CSS+JS+enhance) — solo necesario en páginas con fórmulas */
+  math?: boolean;
+  /** Schema JSON-LD adicional (p. ej. Course) */
+  jsonLd?: string;
 }
 
-const { title = 'Ecoudea', description = 'Cursos y herramientas de estadística', image, showTools = false } = Astro.props;
+const {
+  title = 'Ecoudea',
+  description = 'Cursos y herramientas de estadística',
+  image,
+  showTools = false,
+  math = false,
+  jsonLd,
+} = Astro.props;
 const base = import.meta.env.BASE_URL;
+const canonical = Astro.url;
 ---
 
 <!doctype html>
@@ -21,14 +33,20 @@ const base = import.meta.env.BASE_URL;
     <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <meta name="description" content={description} />
     <meta name="keywords" content="estadística, R, Python, cursos, programación, probabilidad" />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    {image && <meta property="og:image" content={image} />}
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Ecoudea" />
+    <meta property="og:locale" content="es_CO" />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#0a0f1a" />
     <title>{title}</title>
     <script>document.documentElement.classList.add('js')</script>
-    <link rel="stylesheet" href={`${base}/assets/css/katex.min.css`} />
+    {math && <link rel="stylesheet" href={`${base}/assets/css/katex.min.css`} />}
+    {jsonLd && <Fragment set:html={jsonLd} />}
   </head>
   <body class="flex flex-col min-h-screen">
     <slot name="header" />
@@ -38,9 +56,9 @@ const base = import.meta.env.BASE_URL;
     <slot name="footer" />
     {showTools && <FloatingButtons />}
 
-    <script defer src={`${base}/assets/js/katex.min.js`}></script>
-    <script defer src={`${base}/assets/js/auto-render.min.js`}></script>
     <script defer src={`${base}/assets/js/animations.js`}></script>
-    <script defer src={`${base}/assets/js/enhance.js`}></script>
+    {math && <script defer src={`${base}/assets/js/katex.min.js`}></script>}
+    {math && <script defer src={`${base}/assets/js/auto-render.min.js`}></script>}
+    {math && <script defer src={`${base}/assets/js/enhance.js`}></script>}
   </body>
 </html>

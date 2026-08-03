@@ -5,6 +5,7 @@ export default defineConfig({
   site: 'https://ecoudea2025.github.io',
   base: '/Ecoudea',
   trailingSlash: 'ignore',
+  prefetch: true,
   markdown: {
     syntaxHighlight: 'shiki',
     shikiConfig: {
