@@ -32,42 +32,42 @@ const totalClasses = allClasses.length;
 
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-accent/10 via-secondary/5 to-transparent pointer-events-none" />
-    <div class="absolute top-20 left-10 w-72 h-72 rounded-full bg-accent/5 blur-3xl pointer-events-none" />
-    <div class="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none" />
+    <div class="absolute top-20 left-10 w-72 h-72 rounded-full bg-accent/5 blur-3xl pointer-events-none" data-parallax="0.15" />
+    <div class="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none" data-parallax="0.08" />
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center relative">
-      <div class="flex justify-center mb-6">
+      <div class="flex justify-center mb-6 reveal is-visible">
         <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-accent/30 shadow-xl shadow-accent/20 glow-pulse">
           <img src={`${base}/assets/images/logo-ecoudea.png`} alt="Ecoudea" class="w-full h-full object-cover" />
           <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent"></div>
         </div>
       </div>
 
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-soft border border-accent/20 text-accent text-xs sm:text-sm font-medium mb-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-soft border border-accent/20 text-accent text-xs sm:text-sm font-medium mb-6 reveal is-visible">
         <span class="w-2 h-2 rounded-full bg-accent animate-pulse" />
         {totalClasses} clases disponibles
       </div>
 
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 reveal is-visible">
         <span class="gradient-text">Ecoudea</span>
       </h1>
-      <p class="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
+      <p data-typewriter class="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
         Cursos y recursos de estadística, probabilidad y programación
       </p>
 
-      <div class="flex items-center justify-center gap-8 mt-8 text-sm text-text-muted">
+      <div class="flex items-center justify-center gap-8 mt-8 text-sm text-text-muted reveal is-visible">
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt">{courses.length}</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>0</span>
           <span class="text-xs">cursos</span>
         </div>
         <div class="w-px h-10 bg-border-subtle" />
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt">{totalClasses}</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalClasses}>0</span>
           <span class="text-xs">clases</span>
         </div>
         <div class="w-px h-10 bg-border-subtle" />
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt">{allClasses.filter(c => c.data.classType === 'practica').length}</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={allClasses.filter(c => c.data.classType === 'practica').length}>0</span>
           <span class="text-xs">prácticas</span>
         </div>
       </div>
@@ -78,7 +78,7 @@ const totalClasses = allClasses.length;
     {
       grouped.map(({ category, courses: catCourses }, groupIdx) => (
         <section class={groupIdx > 0 ? 'mt-16 sm:mt-20' : ''}>
-          <div class="flex items-center gap-4 mb-8">
+          <div class="flex items-center gap-4 mb-8 reveal" data-reveal-group>
             <div class="flex items-center gap-3">
               <span class="w-1 h-8 rounded-full bg-accent" />
               <h2 class="text-xl sm:text-2xl font-bold text-text">{category}</h2>
@@ -89,7 +89,7 @@ const totalClasses = allClasses.length;
 
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {catCourses.map((course, i) => (
-              <div class="fade-in-up" style={`animation-delay: ${i * 0.08}s`}>
+              <div class={`reveal d-${Math.min(i + 1, 10)}`}>
                 <CourseCard course={course} classCount={classCounts[course.id] || 0} />
               </div>
             ))}

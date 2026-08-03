@@ -26,8 +26,9 @@ const badgeColor = catBadgeColors[course.data.category] || catBadgeColors['Curso
 
 <a
   href={`${base}/cursos/${slug}`}
-  class="group block rounded-xl border border-border-subtle overflow-hidden no-underline card-hover glow-pulse"
+  class="group block rounded-xl border border-border-subtle overflow-hidden no-underline card-hover glow-pulse tilt-card"
 >
+  <div class="tilt-inner">
   {course.data.image ? (
     <div class="relative h-40 sm:h-44 overflow-hidden">
       <div class={`absolute inset-0 bg-gradient-to-t from-surface via-${bgGradient} to-transparent z-10`} />
@@ -71,5 +72,6 @@ const badgeColor = catBadgeColors[course.data.category] || catBadgeColors['Curso
         Explorar
       </span>
     </div>
+  </div>
   </div>
 </a>

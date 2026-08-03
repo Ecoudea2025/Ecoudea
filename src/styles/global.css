@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/inter";
 
 @theme inline {
   --color-surface: #0a0f1a;
@@ -16,7 +18,8 @@
   --color-success: #069a7e;
   --color-text: #e8f0e8;
   --color-text-muted: #94a3a8;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Space Grotesk Variable", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
@@ -107,6 +110,77 @@
     height: 1px;
     background: linear-gradient(90deg, transparent, oklch(from #6c9a06 l c h / 0.3), transparent);
   }
+  /* ── Font pairing: headings con display font ── */
+  h1, h2, h3, h4, h5, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  /* ── Scroll reveal (estilo GSAP ScrollTrigger, sin librería) ── */
+  /* Solo se ocultan si JS está activo (clase .js en <html>) */
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Stagger delays para grids (estilo stagger de GSAP) */
+  .reveal.d-1 { transition-delay: 0.05s; }
+  .reveal.d-2 { transition-delay: 0.1s; }
+  .reveal.d-3 { transition-delay: 0.15s; }
+  .reveal.d-4 { transition-delay: 0.2s; }
+  .reveal.d-5 { transition-delay: 0.25s; }
+  .reveal.d-6 { transition-delay: 0.3s; }
+  .reveal.d-7 { transition-delay: 0.35s; }
+  .reveal.d-8 { transition-delay: 0.4s; }
+  .reveal.d-9 { transition-delay: 0.45s; }
+  .reveal.d-10 { transition-delay: 0.5s; }
+
+  /* ── 3D tilt en tarjetas (hover, estilo GSAP) ── */
+  .tilt-card {
+    transform-style: preserve-3d;
+    perspective: 800px;
+  }
+  .tilt-card .tilt-inner {
+    transition: transform 0.15s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  /* ── Typewriter cursor ── */
+  .typewriter::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    margin-left: 2px;
+    background: currentColor;
+    animation: cursor-blink 0.9s step-end infinite;
+    vertical-align: text-bottom;
+  }
+  @keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* ── Barra de progreso de scroll (estilo GSAP ScrollTrigger) ── */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #6c9a06, #0e7774);
+    z-index: 100;
+    box-shadow: 0 0 8px oklch(from #6c9a06 l c h / 0.4);
+  }
+
+  /* ── Parallax flotante para blobs del hero ── */
+  .parallax-slow { transition: transform 0.2s ease-out; }
+  .parallax-slower { transition: transform 0.3s ease-out; }
 }
 
 .prose-class {
@@ -116,7 +190,9 @@
 }
 .prose-class h1, .prose-class h2, .prose-class h3, .prose-class h4 {
   color: #e8f0e8;
+  font-family: var(--font-display);
   font-weight: 700;
+  letter-spacing: -0.02em;
   margin-top: 2em;
   margin-bottom: 0.75em;
 }
