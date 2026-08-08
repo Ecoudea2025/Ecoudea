@@ -1,0 +1,87 @@
+---
+export interface Props {
+  src?: string;
+  poster?: string;
+  fallback?: string;
+  captions?: string;
+  title?: string;
+}
+
+const { src, poster, fallback, captions, title = 'Video' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const isYouTube = fallback ? /youtu\.?be/.test(fallback) : false;
+const isVimeo = fallback ? /vimeo\.com/.test(fallback) : false;
+const embedUrl = fallback && (isYouTube || isVimeo) ? getEmbed(fallback) : null;
+
+function getEmbed(url: string): string {
+  if (isYouTube) {
+    const id = url.match(/(?:v=|youtu\.be\/|\/embed\/)([\w-]{11})/)?.[1] || '';
+    return `https://www.youtube.com/embed/${id}?rel=0`;
+  }
+  const id = url.match(/vimeo\.com\/(\d+)/)?.[1] || '';
+  return `https://player.vimeo.com/video/${id}`;
+}
+---
+
+<div class="video-player relative w-full rounded-2xl overflow-hidden border border-border-subtle bg-black aspect-video" data-video-player>
+  <video
+    class="w-full h-full object-contain"
+    controls
+    preload="none"
+    playsinline
+    {poster ? `poster="${base}${poster}"` : ''}
+    {title ? `aria-label="${title}"` : ''}
+  >
+    {src && <source src={`${base}${src}`} type="video/mp4" />}
+    {captions && <track kind="captions" src={`${base}${captions}`} srcLang="es" label="Español" default />}
+  </video>
+
+  <div class="video-cover absolute inset-0 flex flex-col items-center justify-center gap-4 cursor-pointer group" data-video-cover>
+    {poster && <img src={`${base}${poster}`} alt="" class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" decoding="async" />}
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40"></div>
+    <button type="button" class="relative z-10 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-accent/90 hover:bg-accent flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-xl shadow-accent/30 cursor-pointer border-0" aria-label="Reproducir video">
+      <svg class="w-7 h-7 sm:w-8 sm:h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z" />
+      </svg>
+    </button>
+    <span class="relative z-10 text-sm font-medium text-white/90">Ver video</span>
+  </div>
+
+  {embedUrl && (
+    <div class="hidden" data-video-embed>
+      <iframe src={embedUrl} title={title} class="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  )}
+</div>
+
+<script>
+  (() => {
+    const wrap = document.querySelector('[data-video-player]');
+    if (!wrap) return;
+    const video = wrap.querySelector('video');
+    const cover = wrap.querySelector('[data-video-cover]');
+    const embed = wrap.querySelector('[data-video-embed]');
+
+    const playLocal = () => {
+      video.play().then(() => cover?.classList.add('hidden')).catch(() => {});
+    };
+
+    if (video && video.querySelector('source')) {
+      cover?.addEventListener('click', playLocal);
+      video.addEventListener('play', () => cover?.classList.add('hidden'));
+      video.addEventListener('pause', () => { if (video.currentTime === 0) cover?.classList.remove('hidden'); });
+      return;
+    }
+
+    if (embed) {
+      cover?.addEventListener('click', () => {
+        const iframe = embed.querySelector('iframe');
+        const src = iframe?.getAttribute('src') || '';
+        if (iframe) iframe.setAttribute('src', src + (src.includes('?') ? '&autoplay=1' : '?autoplay=1'));
+        embed.classList.remove('hidden');
+        cover.classList.add('hidden');
+      });
+    }
+  })();
+</script>

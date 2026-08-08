@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { createHash } from 'node:crypto';
+
+const base = import.meta.env.BASE_URL;
+
+export async function getStaticPaths() {
+  const courses = await getCollection('courses');
+  return courses.map((c) => ({
+    params: { course: c.id },
+    props: { courseId: c.id },
+  }));
+}
+
+const { courseId } = Astro.props;
+const allClasses = await getCollection('classes');
+const courses = await getCollection('courses');
+const course = courses.find((c) => c.id === courseId);
+if (!course) return Astro.redirect('/404');
+
+const sortedClasses = allClasses.filter((c) => c.data.course === courseId).sort((a, b) => a.data.order - b.data.order);
+const typeColors = {
+  clase: 'text-accent bg-accent-soft border-accent/30',
+  practica: 'text-rose-400 bg-rose-500/10 border-rose-500/30',
+  presentacion: 'text-gray-400 bg-gray-500/10 border-gray-500/30',
+  guia: 'text-amber-400 bg-amber-500/10 border-amber-500/30',
+};
+const typeLabels = { clase: 'Clase', practica: 'Práctica', presentacion: 'Presentación', guia: 'Guía' };
+const countByType = {};
+for (const c of sortedClasses) countByType[c.data.classType] = (countByType[c.data.classType] || 0) + 1;
+
+const adminPassword = import.meta.env.ADMIN_PASSWORD || 'ecoudea-admin';
+const adminHash = createHash('sha256').update(adminPassword).digest('hex');
+---
+
+<BaseLayout title={`Admin · ${course.data.title}`} description="Panel de administración del curso" noindex={true}>
+  <Fragment slot="header">
+    <nav class="sticky top-0 z-50 border-b border-border-subtle" style="background: oklch(from #0b1120 l c h / 0.85); backdrop-filter: blur(16px) saturate(180%);">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14 sm:h-16">
+          <a href={`${base}/admin`} class="flex items-center gap-2 font-bold text-lg sm:text-xl text-text no-underline">
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            <span class="gradient-text">Admin</span>
+          </a>
+          <span class="text-sm text-text-muted truncate max-w-[200px] sm:max-w-none">{course.data.title}</span>
+        </div>
+      </div>
+    </nav>
+  </Fragment>
+
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <h1 class="text-2xl sm:text-3xl font-bold text-text mb-8">{course.data.title}</h1>
+
+    <div id="course-config" class="grid lg:grid-cols-2 gap-6 mb-10" data-course-config>
+      <div class="rounded-2xl border border-border-subtle bg-elevated/40 p-6">
+        <h2 class="text-lg font-bold text-text mb-4">Configuración del curso</h2>
+        <div class="space-y-4">
+          <div>
+            <label class="block text-xs font-medium text-text-muted mb-1" for="cfg-title">Título</label>
+            <input id="cfg-title" value={course.data.title} class="w-full bg-surface/60 border border-border-subtle rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-accent/50" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-text-muted mb-1" for="cfg-desc">Descripción</label>
+            <textarea id="cfg-desc" rows="3" class="w-full bg-surface/60 border border-border-subtle rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-accent/50">{course.data.description}</textarea>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-text-muted mb-1" for="cfg-category">Categoría</label>
+              <select id="cfg-category" class="w-full bg-surface/60 border border-border-subtle rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-accent/50">
+                <option value="Cursos" selected={course.data.category === 'Cursos'}>Cursos</option>
+                <option value="Guías y Semilleros" selected={course.data.category === 'Guías y Semilleros'}>Guías y Semilleros</option>
+                <option value="Sesiones Especiales" selected={course.data.category === 'Sesiones Especiales'}>Sesiones Especiales</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-text-muted mb-1" for="cfg-order">Orden</label>
+              <input id="cfg-order" type="number" value={course.data.order} class="w-full bg-surface/60 border border-border-subtle rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-accent/50" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-text-muted mb-1" for="cfg-image">Imagen (ruta /assets/...)</label>
+            <input id="cfg-image" value={course.data.image || ''} placeholder="/assets/images/..." class="w-full bg-surface/60 border border-border-subtle rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-accent/50" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-text-muted mb-2">Modo de desbloqueo</label>
+            <div class="flex gap-3">
+              <label class="flex items-center gap-2 px-4 py-2 rounded-xl border border-border-subtle cursor-pointer hover:border-accent/40 text-sm">
+                <input type="radio" name="cfg-unlock" value="open" checked={course.data.unlockMode !== 'sequential'} class="accent-[#6c9a06]" />
+                Abierto
+              </label>
+              <label class="flex items-center gap-2 px-4 py-2 rounded-xl border border-border-subtle cursor-pointer hover:border-accent/40 text-sm">
+                <input type="radio" name="cfg-unlock" value="sequential" checked={course.data.unlockMode === 'sequential'} class="accent-[#6c9a06]" />
+                Secuencial
+              </label>
+            </div>
+            <p class="text-[11px] text-text-muted/60 mt-1.5">Secuencial: cada clase exige completar la anterior.</p>
+          </div>
+        </div>
+        <button id="generate-btn" class="btn mt-6 w-full justify-center no-underline cursor-pointer">
+          Generar frontmatter YAML
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4" /></svg>
+        </button>
+      </div>
+
+      <div class="rounded-2xl border border-border-subtle bg-elevated/40 p-6">
+        <h2 class="text-lg font-bold text-text mb-2">Frontmatter generado</h2>
+        <p class="text-xs text-text-muted mb-3">Copia este bloque y reemplázalo en <code class="font-mono text-[11px]">src/content/courses/{course.id}.md</code>, luego haz commit y push.</p>
+        <pre id="yaml-output" class="text-[11px] leading-relaxed bg-black/40 rounded-xl p-4 overflow-x-auto max-h-72 overflow-y-auto text-accent-hover whitespace-pre-wrap">{`---
+title: ${JSON.stringify(course.data.title)}
+description: ${JSON.stringify(course.data.description)}
+category: ${JSON.stringify(course.data.category)}
+order: ${course.data.order}
+unlockMode: ${JSON.stringify(course.data.unlockMode)}
+${course.data.image ? `image: ${JSON.stringify(course.data.image)}\n` : ''}---`}</pre>
+        <div class="flex gap-3 mt-4 flex-wrap">
+          <button id="copy-btn" class="btn-ghost text-sm px-4 py-2 no-underline cursor-pointer">
+            <svg class="w-4 h-4 inline -mt-0.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
+            Copiar
+          </button>
+          <button id="download-btn" class="btn-ghost text-sm px-4 py-2 no-underline cursor-pointer">
+            <svg class="w-4 h-4 inline -mt-0.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+            Descargar .md
+          </button>
+        </div>
+        <div class="mt-4 px-4 py-3 rounded-xl border border-border-subtle bg-surface/40">
+          <h3 class="text-xs font-semibold text-text mb-2">Cómo publicar</h3>
+          <ol class="text-[11px] text-text-muted space-y-1 list-decimal list-inside">
+            <li>Reemplaza el frontmatter en el archivo del curso</li>
+            <li><code class="font-mono">git add src/content/courses/{course.id}.md</code></li>
+            <li><code class="font-mono">git commit -m "feat: update {course.id} config"</code></li>
+            <li><code class="font-mono">git push</code> → deploy automático (~2 min)</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl border border-border-subtle bg-elevated/40 p-6">
+      <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
+        <div>
+          <h2 class="text-lg font-bold text-text">Resumen de clases</h2>
+          <p class="text-xs text-text-muted mt-0.5">
+            {sortedClasses.length} clases · {countByType.clase || 0} clases · {countByType.practica || 0} prácticas · {countByType.guia || 0} guías · {countByType.presentacion || 0} presentaciones
+          </p>
+        </div>
+        <input id="class-search" type="search" placeholder="Buscar clase…" class="w-56 bg-surface/60 border border-border-subtle rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-accent/50" />
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-border-subtle">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-border-subtle text-left text-xs text-text-muted uppercase tracking-wider">
+              <th class="px-3 py-2.5 font-semibold">#</th>
+              <th class="px-3 py-2.5 font-semibold">Tipo</th>
+              <th class="px-3 py-2.5 font-semibold">Título</th>
+              <th class="px-3 py-2.5 font-semibold hidden md:table-cell">Descripción</th>
+              <th class="px-3 py-2.5 font-semibold text-center">Math</th>
+              <th class="px-3 py-2.5 font-semibold text-center">Video</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortedClasses.map((cls, i) => (
+              <tr class="border-b border-border-subtle/50 hover:bg-white/[0.03] transition-colors class-row">
+                <td class="px-3 py-2.5 text-text-muted tabular-nums">{i + 1}</td>
+                <td class="px-3 py-2.5">
+                  <span class={`inline-block text-[10px] font-semibold px-2 py-0.5 rounded-md border ${typeColors[cls.data.classType] || typeColors.clase}`}>
+                    {typeLabels[cls.data.classType] || 'Clase'}
+                  </span>
+                </td>
+                <td class="px-3 py-2.5 font-medium text-text max-w-[220px] truncate" data-title={cls.data.title}>{cls.data.title}</td>
+                <td class="px-3 py-2.5 text-text-muted text-xs hidden md:table-cell max-w-[260px] truncate">{cls.data.description || '—'}</td>
+                <td class="px-3 py-2.5 text-center">{cls.data.math ? '✓' : '—'}</td>
+                <td class="px-3 py-2.5 text-center">{(cls.data.video || cls.data.videoFallback) ? '🎬' : '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <Fragment slot="footer">
+    <div class="border-t border-border-subtle mt-auto">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-xs text-text-muted/60">
+        Panel interno · {new Date().getFullYear()} Ecoudea
+      </div>
+    </div>
+  </Fragment>
+</BaseLayout>
+
+<script is:inline define:vars={{ adminHash, base, courseId }}>
+  (() => {
+    const ADMIN_HASH = adminHash;
+    const container = document.querySelector('[data-course-config]');
+    if (!container) return;
+
+    // Protección: si no hay sesión admin, redirigir a /admin
+    if (sessionStorage.getItem('ecoudea-admin-auth') !== '1') {
+      window.location.href = base + "/admin";
+      return;
+    }
+
+    const yamlOut = document.getElementById('yaml-output');
+    const title = document.getElementById('cfg-title');
+    const desc = document.getElementById('cfg-desc');
+    const category = document.getElementById('cfg-category');
+    const order = document.getElementById('cfg-order');
+    const image = document.getElementById('cfg-image');
+    const unlock = () => document.querySelector('input[name="cfg-unlock"]:checked')?.value || 'open';
+
+    const yamlStr = (v) => JSON.stringify(v ?? '');
+
+    function generateYaml() {
+      let yaml = `---\ntitle: ${yamlStr(title.value)}\ndescription: ${yamlStr(desc.value)}\ncategory: ${yamlStr(category.value)}\norder: ${Number(order.value) || 0}\nunlockMode: ${yamlStr(unlock())}\n`;
+      if (image.value.trim()) yaml += `image: ${yamlStr(image.value.trim())}\n`;
+      yaml += `---`;
+      yamlOut.textContent = yaml;
+      return yaml;
+    }
+
+    document.getElementById('generate-btn').addEventListener('click', generateYaml);
+
+    document.getElementById('copy-btn').addEventListener('click', async () => {
+      const yaml = generateYaml();
+      try {
+        await navigator.clipboard.writeText(yaml);
+      } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = yaml;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      const btn = document.getElementById('copy-btn');
+      const old = btn.innerHTML;
+      btn.innerHTML = '✓ Copiado';
+      setTimeout(() => (btn.innerHTML = old), 1500);
+    });
+
+    document.getElementById('download-btn').addEventListener('click', () => {
+      const yaml = generateYaml();
+      const blob = new Blob([yaml + '\n\n'], { type: 'text/markdown' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = courseId + '.md';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    // Búsqueda en el resumen
+    const search = document.getElementById('class-search');
+    search.addEventListener('input', () => {
+      const q = (search.value || '').trim().toLowerCase();
+      document.querySelectorAll('.class-row').forEach((row) => {
+        const match = (row.textContent || '').toLowerCase().includes(q);
+        row.style.display = match ? '' : 'none';
+      });
+    });
+
+    generateYaml();
+  })();
+</script>

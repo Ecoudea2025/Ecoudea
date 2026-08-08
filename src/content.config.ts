@@ -10,6 +10,7 @@ const courses = defineCollection({
     category: z.string(),
     color: z.string().optional(),
     order: z.number().default(0),
+    unlockMode: z.enum(['open', 'sequential']).default('open'),
   }),
 });
 
@@ -24,6 +25,10 @@ const classes = defineCollection({
     tags: z.array(z.string()).optional(),
     math: z.boolean().default(false),
     bibliography: z.string().optional(),
+    video: z.string().optional(),
+    videoPoster: z.string().optional(),
+    videoFallback: z.string().optional(),
+    videoCaptions: z.string().optional(),
   }),
 });
 

@@ -51,7 +51,7 @@ const jsonLd = JSON.stringify({
 });
 ---
 
-<BaseLayout title={`${course.data.title} - Ecoudea`} description={course.data.description} jsonLd={jsonLd}>
+<BaseLayout title={`${course.data.title} - Ecoudea`} description={course.data.description} jsonLd={jsonLd} unlock={true}>
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}`} /></Fragment>
 
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -117,24 +117,35 @@ const jsonLd = JSON.stringify({
       {sortedClasses.map((entry, i) => {
         const ts = typeColors[entry.data.classType] || typeColors.clase;
         const tl = typeLabels[entry.data.classType] || 'Clase';
+        const locked = course.data.unlockMode === 'sequential' && i > 0;
         return (
           <a
             href={`${base}/cursos/${courseId}/${entry.id}`}
-            class={`reveal d-${Math.min(i + 1, 10)} flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border border-border-subtle no-underline card-hover`}
+            data-course-id={courseId}
+            data-class-id={entry.id}
+            data-prev-id={i > 0 ? sortedClasses[i - 1].id : ''}
+            data-unlock={course.data.unlockMode}
+            data-locked={locked || undefined}
+            class={`reveal d-${Math.min(i + 1, 10)} flex items-center gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border border-border-subtle no-underline card-hover ${locked ? 'class-card' : ''}`}
           >
-            <span class={`shrink-0 w-9 h-9 sm:w-11 sm:h-11 rounded-xl border ${ts} flex items-center justify-center text-xs sm:text-sm font-bold`}>
-              {i + 1}
+            <span class={`shrink-0 w-9 h-9 sm:w-11 sm:h-11 rounded-xl border ${locked ? 'border-border-subtle text-text-muted bg-white/5' : ts} flex items-center justify-center text-xs sm:text-sm font-bold`}>
+              {locked ? (
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+              ) : i + 1}
             </span>
             <div class="flex-1 min-w-0">
-              <h3 class="text-sm sm:text-base font-semibold text-text truncate">{entry.data.title}</h3>
+              <h3 class={`text-sm sm:text-base font-semibold truncate ${locked ? 'text-text-muted' : 'text-text'}`}>{entry.data.title}</h3>
               {entry.data.description && (
                 <p class="text-xs sm:text-sm text-text-muted mt-0.5 line-clamp-1">{entry.data.description}</p>
               )}
             </div>
-            <span class="hidden sm:inline shrink-0 text-[10px] sm:text-xs font-medium px-2.5 py-1 rounded-md bg-white/5 text-text-muted border border-border-subtle">
-              {tl}
+            <span class={`hidden sm:inline shrink-0 text-[10px] sm:text-xs font-medium px-2.5 py-1 rounded-md border ${locked ? 'bg-white/5 text-text-muted/60 border-border-subtle' : 'bg-white/5 text-text-muted border-border-subtle'}`}>
+              {locked ? 'Bloqueada' : tl}
             </span>
-            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-accent/60 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {locked && <span class="hidden sm:inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-md bg-secondary-soft text-secondary border border-secondary/30">
+              Completa la anterior
+            </span>}
+            <svg class={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${locked ? 'text-text-muted/40' : 'text-accent/60'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </a>
@@ -148,25 +159,31 @@ const jsonLd = JSON.stringify({
         const tc = typeColors[entry.data.classType] || typeColors.clase;
         const tl = typeLabels[entry.data.classType] || 'Clase';
         const tb = typeBg[entry.data.classType] || typeBg.clase;
+        const locked = course.data.unlockMode === 'sequential' && i > 0;
         return (
           <a
             href={`${base}/cursos/${courseId}/${entry.id}`}
-            class={`reveal d-${Math.min(i + 1, 10)} group block rounded-xl border border-border-subtle overflow-hidden no-underline card-hover hover-glow`}
+            data-course-id={courseId}
+            data-class-id={entry.id}
+            data-prev-id={i > 0 ? sortedClasses[i - 1].id : ''}
+            data-unlock={course.data.unlockMode}
+            data-locked={locked || undefined}
+            class={`reveal d-${Math.min(i + 1, 10)} group block rounded-xl border border-border-subtle overflow-hidden no-underline card-hover hover-glow ${locked ? 'class-card' : ''}`}
           >
-            <div class={`relative h-24 bg-gradient-to-br ${tb} flex items-center justify-center`}>
+            <div class={`relative h-24 bg-gradient-to-br ${tb} flex items-center justify-center ${locked ? 'opacity-50' : ''}`}>
               <span class={`text-3xl font-extrabold ${tc.split(' ')[1]} opacity-30 group-hover:opacity-50 transition-opacity`}>
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <span class={`absolute top-3 left-3 text-[10px] font-semibold px-2 py-0.5 rounded-md border ${tc}`}>
-                {tl}
+              <span class={`absolute top-3 left-3 text-[10px] font-semibold px-2 py-0.5 rounded-md border ${locked ? 'border-secondary text-secondary bg-secondary-soft' : tc}`}>
+                {locked ? '🔒 Bloqueada' : tl}
               </span>
             </div>
             <div class="p-4">
-              <h3 class="text-sm font-bold text-text group-hover:text-accent transition-colors leading-snug mb-1">
+              <h3 class={`text-sm font-bold leading-snug mb-1 ${locked ? 'text-text-muted' : 'text-text group-hover:text-accent transition-colors'}`}>
                 {entry.data.title}
               </h3>
               {entry.data.description && (
-                <p class="text-xs text-text-muted line-clamp-2 leading-relaxed">
+                <p class={`text-xs line-clamp-2 leading-relaxed ${locked ? 'text-text-muted/50' : 'text-text-muted'}`}>
                   {entry.data.description}
                 </p>
               )}
@@ -208,5 +225,77 @@ const jsonLd = JSON.stringify({
 
     listBtn.addEventListener('click', function() { setView('list'); });
     gridBtn.addEventListener('click', function() { setView('grid'); });
+
+    // ── Desbloqueo progresivo ─────────────────────────────────────────
+    var cards = document.querySelectorAll('[data-course-id][data-class-id]');
+    var toast = null;
+    var toastTimer = null;
+
+    function showToast(msg) {
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.className = 'fixed bottom-6 left-1/2 -translate-x-1/2 z-[90] px-5 py-3 rounded-xl glass-card border border-accent/40 text-sm font-medium shadow-2xl transition-all duration-300 opacity-0 translate-y-4';
+        toast.setAttribute('role', 'status');
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg;
+      requestAnimationFrame(() => { toast.style.opacity = '1'; toast.style.transform = ''; });
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(1rem)';
+      }, 3500);
+    }
+
+    function refreshCardLock(card) {
+      if (!window.EcoudeaUnlock || card.dataset.unlock !== 'sequential') return;
+      var locked = EcoudeaUnlock.isClassLocked(card.dataset.courseId, card.dataset.unlock, card.dataset.classId, Array.from(document.querySelectorAll('[data-class-id]')).map(function (c) { return c.dataset.classId; }));
+      card.dataset.locked = locked ? 'true' : '';
+      var title = card.querySelector('h3');
+      if (title) title.classList.toggle('text-text-muted', locked);
+      if (card.dataset.locked) {
+        var num = card.querySelector('.w-9, .w-11, .w-4');
+        if (card.dataset.view === 'grid') {
+          var badge = card.querySelector('span[class*="absolute top-3"]');
+          if (badge && badge.textContent.includes('Bloqueada')) { /* ya marcada */ }
+        }
+      }
+    }
+
+    function refreshAllLocks() {
+      var ordered = Array.from(document.querySelectorAll('[data-class-id]')).map(function (c) { return c.dataset.classId; });
+      cards.forEach(function (card) {
+        if (card.dataset.unlock !== 'sequential') return;
+        var locked = EcoudeaUnlock.isClassLocked(card.dataset.courseId, card.dataset.unlock, card.dataset.classId, ordered);
+        card.dataset.locked = locked ? 'true' : '';
+        card.classList.toggle('class-card', locked);
+        var h3 = card.querySelector('h3');
+        if (h3) h3.classList.toggle('text-text-muted', locked);
+      });
+    }
+
+    cards.forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (card.dataset.unlock !== 'sequential' || !card.dataset.locked) return;
+        e.preventDefault();
+        showToast('Completa la clase anterior para desbloquear esta');
+      });
+    });
+
+    // Si una clase anterior se completa en otra pestaña o se marca en vivo
+    window.addEventListener('ecoudea:progress', function (e) {
+      if (e.detail && e.detail.courseId === document.querySelector('[data-course-id]')?.dataset.courseId) {
+        refreshAllLocks();
+      }
+    });
+    // Y un pequeño intervalo de seguridad por si el evento se pierde
+    var courseId = document.querySelector('[data-course-id]')?.dataset.courseId;
+    if (courseId) {
+      setInterval(function () { refreshAllLocks(); }, 3000);
+    }
+
+    // Marcar cards como vista lista/grid para el refresh
+    document.querySelectorAll('#view-list-container [data-class-id]').forEach(function (c) { c.dataset.view = 'list'; });
+    document.querySelectorAll('#view-grid-container [data-class-id]').forEach(function (c) { c.dataset.view = 'grid'; });
   });
 </script>

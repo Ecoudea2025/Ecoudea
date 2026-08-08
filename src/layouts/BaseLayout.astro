@@ -11,6 +11,10 @@ export interface Props {
   math?: boolean;
   /** Schema JSON-LD adicional (p. ej. Course) */
   jsonLd?: string;
+  /** Carga el helper de desbloqueo progresivo (páginas de curso/clase) */
+  unlock?: boolean;
+  /** Evita que buscadores indexen la página (panel admin) */
+  noindex?: boolean;
 }
 
 const {
@@ -20,6 +24,8 @@ const {
   showTools = false,
   math = false,
   jsonLd,
+  unlock = false,
+  noindex = false,
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const canonical = Astro.url;
@@ -41,7 +47,9 @@ const canonical = Astro.url;
     <meta property="og:site_name" content="Ecoudea" />
     <meta property="og:locale" content="es_CO" />
     {image && <meta property="og:image" content={image} />}
+    {!image && <meta property="og:image" content={`${base}/assets/images/logo-ecoudea.png`} />}
     <meta name="twitter:card" content="summary" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#0a0f1a" />
     <title>{title}</title>
     <script>document.documentElement.classList.add('js')</script>
@@ -60,6 +68,7 @@ const canonical = Astro.url;
     {showTools && <FloatingButtons />}
 
     <script defer src={`${base}/assets/js/animations.js`}></script>
+    {unlock && <script defer src={`${base}/assets/js/unlock.js`}></script>}
     {math && <script defer src={`${base}/assets/js/katex.min.js`}></script>}
     {math && <script defer src={`${base}/assets/js/auto-render.min.js`}></script>}
     {math && <script defer src={`${base}/assets/js/enhance.js`}></script>}

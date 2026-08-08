@@ -79,8 +79,10 @@ The indexed project name is `D-Ecoudea.github.io` (root: `D:/Ecoudea.github.io`)
 To re-index after major changes (or on a new machine), run:
 
 ```
-~/.local/bin/codebase-memory-mcp.exe cli index_repository --repo-path "D:\Ecoudea.github.io" --mode moderate
+codebase-memory-mcp cli index_repository --repo-path "D:\Ecoudea.github.io" --mode moderate
 ```
+
+(Binary is the npm global install; UI option `--ui=true` serves a 3D graph at `http://localhost:9749`.)
 
 ## Documentation
 
