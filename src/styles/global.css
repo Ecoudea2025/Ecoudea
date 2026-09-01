@@ -425,6 +425,18 @@
   color: var(--color-text) !important;
   background: transparent !important;
 }
+/* Forzar contraste en tablas con estilos inline heredados de Bootstrap */
+.prose-class table, .prose-class table * {
+  color: var(--color-text) !important;
+  -webkit-text-fill-color: var(--color-text) !important;
+  border-color: oklch(from #2a3a2a l c h / 0.5) !important;
+}
+.prose-class table th, .prose-class table th * {
+  background: oklch(from #6c9a06 l c h / 0.12) !important;
+}
+.prose-class table td, .prose-class table td * {
+  background: transparent !important;
+}
 .prose-class th {
   background: oklch(from #6c9a06 l c h / 0.15);
   font-weight: 600;
@@ -460,8 +472,19 @@
   overflow-y: hidden;
   margin: 1rem 0;
   padding: 0.25rem 0;
+  -webkit-overflow-scrolling: touch;
 }
-.katex-display > .katex { white-space: normal; }
+.katex-display > .katex {
+  display: inline-block;
+  white-space: nowrap;
+  min-width: 100%;
+}
+/* Fórmulas inline muy largas: permitir scroll horizontal del párrafo */
+.prose-class p:has(> .katex), .prose-class li:has(> .katex) {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.25rem;
+}
 @media (max-width: 640px) {
   .prose-class { font-size: 0.95rem; line-height: 1.7; }
   .prose-class h1 { font-size: 1.5rem; }

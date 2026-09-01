@@ -48,14 +48,27 @@
 
   // ── REPARAR DELIMITADORES LaTeX perdidos (\( \) → ( )) ─────────────
   // El parser markdown strippea `\(` y `\)`, dejando `( ... )` sin formato.
-  // Solo restaura si el contenido empieza con \ o tiene estructura LaTeX clara.
+  // Importante: NO tocar contenido ya dentro de $$...$$, $...$ o \[...\]
   function repairDelimiters(article) {
     var html = article.innerHTML;
-    // Solo restaurar `(` seguido de `\` (backslash) — eso indica LaTeX perdido
-    var fixed = html.replace(/\((\\[a-zA-Z][^<]{1,400}?)\)(?=[.,;) <]|$)/g, function (match, inner) {
+    var blocks = [];
+    var PH = '@@MATHBLK@@';
+    // 1) proteger bloques display $$...$$ y \[...\]
+    html = html.replace(/\$\$[\s\S]*?\$\$/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
+    html = html.replace(/\\\[[\s\S]*?\\\]/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
+    // 2) proteger inline ya correcto \(...\) y $...$
+    html = html.replace(/\\\(.*?\\\)/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
+    html = html.replace(/\$[^$\n]+?\$/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
+    // 3) solo restaurar `( ... )` con contenido LaTeX fuera de bloques protegidos
+    var fixed = html.replace(/\(([^<]{2,400})\)(?=[.,;) <]|$)/g, function (match, inner) {
+      if (inner.length < 3 || inner.length > 400) return match;
+      if (!/\\/.test(inner)) return match;
+      if (!/[{}^_]/.test(inner) && !/\\[a-zA-Z]/.test(inner)) return match;
       return '\\(' + inner + '\\)';
     });
-    if (fixed !== html) {
+    // 4) restaurar bloques
+    fixed = fixed.replace(new RegExp(PH + '(\\d+)@@', 'g'), function (m, n) { return blocks[Number(n)]; });
+    if (fixed !== article.innerHTML) {
       article.innerHTML = fixed;
     }
   }
