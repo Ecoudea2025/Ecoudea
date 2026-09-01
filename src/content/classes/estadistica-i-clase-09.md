@@ -1461,18 +1461,28 @@ Sea `$a$` y `$b$` números reales (constantes) y `$X$` y `$Y$` dos
 variables aleatorias discretas o continuas, entonces
 
 1.  `$Var(a)=0$`
+
 2.  `$Var(aX)=a^2Var(X)$`
+
 3.  `$Var(a+bX) = b^2Var(X)$`
+
 4.  `$Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$`
+
 5.  `$Var(X-Y) = Var(X) + Var(Y) - 2 Cov(X,Y)$`
+
 6.  Si `$X, Y$` son independientes entonces
     `$Var(X+Y) = Var(X) + Var(Y)$`
+
 7.  Si `$X, Y$` son independientes entonces
     `$Var(X-Y) = Var(X) + Var(Y)$`
+
 8.  `$Cov(aX,bY) = abCov(X,Y)$`
+
 9.  Si `$X, Y$` son linealmente independientes entonces
     `$Cov(aX,bY) = 0$`
+
 10. `$Cor(aX,bY) = Cor(X,Y)$`
+
 11. Si `$X, Y$` son linealmente independientes entonces
     `$Cor(aX,bY) = 0$`
 

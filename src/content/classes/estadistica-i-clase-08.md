@@ -16,11 +16,14 @@ Distribuciones de probabilidad discretas
 Un proceso Bernoulli es aquel que cumple
 
 1.  El experimento consta de ensayos repetidos.
+
 2.  Cada ensayo produce un resultado que se puede clasificar como éxito
     o fracaso.
+
 3.  La probabilidad de éxito se denota por `$p$`, mientras que la
     probabilidad de fracaso se denota por `$q=1-p$`, y estas
     probabilidades permanecen constante de un ensayo a otro.
+
 4.  Los ensayos repetidos son independientes.
 
 <button id="Show1" class="btn btn-secondary">

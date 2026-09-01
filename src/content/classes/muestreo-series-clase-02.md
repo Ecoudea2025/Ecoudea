@@ -87,16 +87,20 @@ muestreo por conglomerados.
         (dispersión geográfica, reducción de costos).
     -   La población objetivo se encuentra geográficamente muy dispersa
         o aparece en agrupaciones naturales: familias, escuelas, etc.
+
 2.  Los elementos individuales de una población sólo participan en la
     muestra si pertenecen a un conglomerado incluido en la muestra.
+
 3.  El muestreo estratificado aumenta la precisión de las estimaciones,
     mientras que el muestreo por conglomerados tiende a disminuirla. Es
     un precio que se paga al no poseer un marco de muestreo definido
     para los elementos de la población objetivo.
+
 4.  Al obtener una muestra de elementos que pertenecen a un conglomerado
     repetimos la información del conglomerado (dada la agrupación
     natural). Lo ideal es conseguir información nueva en cada individuo,
     por lo anterior se pierde precisión en las estimaciones.
+
 5.  Una posible solución para disminuir la varianza o la perdida de
     eficiencia a causa de muestreo por conglomerados, es mediante el
     aumento del tamaño de muestra, pero esto traerá consigo el aumento
@@ -131,6 +135,7 @@ siguientes dos pasos.
 1.  Construcción de `$l$` marcos de muestreo de unidades (se realizan
     conglomerados en las primeras `$l-1$` etapas del diseño muestral y
     de elementos en la última etapa).
+
 2.  Aplicación del diseño muestral y selección de la muestras (o
     submuestras) de cada marco de muestreo.
 

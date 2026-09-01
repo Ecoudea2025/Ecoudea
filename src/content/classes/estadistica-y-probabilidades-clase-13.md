@@ -110,7 +110,9 @@ de masa de probabilidad (*fmp*) de la variable aleatoria discreta `$X$`,
 si para cualquier resultado posible de `$X$` se cumple que
 
 1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
+
 2.  `$\sum_x p(x)=1$`
+
 3.  `$\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$` con `$A$` un conjunto de
     valores `$\in$` al dominio de `$X$`.
 

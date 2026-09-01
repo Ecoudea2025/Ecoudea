@@ -158,6 +158,7 @@ bibliography: "../../referencias.bib"
     Mediante el empleo de un nivel de significancia del `$8\%$` pruebe
     si es razonable suponer que las dos poblaciones poseen en promedio
     índices cefálicos similares.
+
 2.  Se encuentra que la concentración promedio de zinc que se obtiene en
     una muestra de mediciones en `$36$` sitios diferentes de un río es
     de `$2.6$` gramos por mililitro. Si la función de probabilidad no es
@@ -165,9 +166,11 @@ bibliography: "../../referencias.bib"
     gramos por mililitro. Basado en lo anterior, calcule un intervalo de
     confianza del `$95\%$` para la concentración media de zinc en el
     río?
+
 3.  ¿Qué tan grande debe ser el tamaño muestral del punto anterior si
     queremos tener `$95\%$` de confianza en que nuestra estimación de la
     media poblacional diferirá por menos de `$0.05$`?
+
 4.  Se realiza un estudio en un río para observar la concentración de
     zinc que éste posee, y para ello se realiza una muestra aleatoria de
     `$36$` sitios diferentes y se encuentra que la concentración
@@ -177,6 +180,7 @@ bibliography: "../../referencias.bib"
     es de `$0.3$` gramos por mililitro, pruebe con un nivel de
     significancia del `$5\%$` si la concentración media de zinc es de al
     menos `$3$` gramos por mililitro.
+
 5.  En una empresa se deciden comparar la resistencia de dos clases de
     hilo, y para ello se prueban `$50$` piezas de cada clase de hilo en
     condiciones similares, encontrando que, la marca `$A$` tiene una
@@ -188,6 +192,7 @@ bibliography: "../../referencias.bib"
     de las resistencias promedio de tensión de los hilos. Es posible
     pensar que la resistencia promedio a la tensión de la marca `$A$` es
     menor que la resistencia promedio a la tensión de la marca `$B$`?
+
 6.  Un botánico desea probar la hipótesis de que el diámetro promedio de
     las flores de una planta en particular es `$9.6_{cm}$`, y para
     probar ésto, decide tomar una muestra aleatoria de `$80$` flores y
@@ -223,6 +228,7 @@ bibliography: "../../referencias.bib"
     \(\mu=9.8cm\).
     </li>
     </ol>
+
 7.  Suponga que el contenido de ácido sulfúrico, en litros, de una
     muestra aleatoria de `$7$` contenedores similares es de
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -263,6 +269,7 @@ bibliography: "../../referencias.bib"
     de más de \(10\) litros.
     </li>
     </ol>
+
 8.  Para un experimento de pruebas psicológicas se seleccionan al azar
     `$25$` sujetos de prueba y se les mide sus tiempos de reacción, en
     segundos, ante un estímulo particular, obteniendo que el tiempo
@@ -274,6 +281,7 @@ bibliography: "../../referencias.bib"
     anterior, emplee un nivel de significancia del `$98\%$` para probar
     si el tiempo medio de reacción de todos los individuos es como
     máximo de `$5.5$` segundos.
+
 9.  Para un experimento de pruebas psicológicas se seleccionan al azar
     `$25$` sujetos de prueba y se les mide sus tiempos de reacción, en
     segundos, ante un estímulo particular, obteniendo que el tiempo
@@ -284,6 +292,7 @@ bibliography: "../../referencias.bib"
     aproximadamente normal. Basado en lo anterior, calcule el límite
     superior del `$95\%$` para el tiempo medio de reacción de todos los
     individuos.
+
 10. El gerente de una gran tabacalera afirma en una conferencia de
     prensa que el contenido promedio de alquitrán de los cigarrillos que
     produce es de `$14$` mg/cigarrillo. Un ingeniero realiza `$5$`
@@ -314,6 +323,7 @@ bibliography: "../../referencias.bib"
     </table>
     ¿Encuentra apoyo la afirmación del gerente de la tabacalera?, emplee
     un nivel de significancia del `$5\%$` para su conclusión.
+
 11. Un investigador de la <tt>ucla</tt> afirma que la esperanza de vida
     de los ratones se puede extender hasta en `$25\%$` cuando se reduce
     aproximadamente `$40\%$` de las calorías de su dieta desde el
@@ -326,6 +336,7 @@ bibliography: "../../referencias.bib"
     esperada de la muestra estará dentro de `$2$` meses a partir de la
     media de la población para todos los ratones sujetos a la dieta
     reducida?
+
 12. Suponga que el grupo de Economía de la Salud, realiza un estudio
     sobre la altura que poseen los estudiantes de la Universidad, y para
     ello, toma una muestra aleatoria de `$38$` estudiantes
@@ -352,6 +363,7 @@ bibliography: "../../referencias.bib"
     \(173\) centímetros.
     </li>
     </ol>
+
 13. Dos marcas de refrigeradores, denotadas por `$A$` y `$B$` poseen
     garantías de `$1$` año. Suponga que en una muestra aleatoria de
     `$50$` refrigeradores de la marca `$A$`, se observó que `$12$` de
@@ -373,6 +385,7 @@ bibliography: "../../referencias.bib"
     refrigeradores, dentro del período de garantía? ¿Por qué?
     </li>
     </ol>
+
 14. El gerente de una planta sospecha que el número promedio de piezas
     que produce un trabajador en particular por día, es menor que el
     número promedio de piezas de los demás trabajadores. Por ello, el
@@ -429,6 +442,7 @@ bibliography: "../../referencias.bib"
     unidades es mayor al \(80\%\).
     </li>
     </ol>
+
 15. ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a `$800$` adultos
     seleccionados de forma aleatoria, se encontró que `$45\%$` de los
@@ -450,6 +464,7 @@ bibliography: "../../referencias.bib"
     es superior al \(50\%\).
     </li>
     </ol>
+
 16. Los administradores de un hospital deseaban estimar el número
     promedio de días necesarios para el tratamiento de enfermos
     internados entre las edades de `$25$` y `$34$` años. Una muestra
@@ -469,6 +484,7 @@ bibliography: "../../referencias.bib"
     de la cual se extrajo la muestra.  
     </li>
     </ol>
+
 17. Un estudio del número de comidas de negocios que los ejecutivos de
     las industrias de seguros y bancos reclaman mensualmente como gastos
     deducibles, se basó en muestras aleatorias y produjo los siguientes
@@ -525,6 +541,7 @@ bibliography: "../../referencias.bib"
     Use un nivel del `$5\%$` de significancia para probar si el gasto
     promedio deducible de ambas poblaciones es igual. Encuentre el
     P-valor para esta prueba.
+
 18. A la mayoría de estadounidenses les gusta participar en eventos
     deportivos o al menos verlos. Algunos sienten que los deportes
     tienen más que sólo valor de entretenimiento, tanto así, que en una
@@ -548,6 +565,7 @@ bibliography: "../../referencias.bib"
     positivo en la sociedad.
     </li>
     </ol>
+
 19. Para una comparación de los porcentajes de piezas defectuosas
     producidas por dos líneas de montaje, de cada línea se seleccionaron
     muestras aleatorias independientes de `$100$` piezas. La línea `$A$`
@@ -569,6 +587,7 @@ bibliography: "../../referencias.bib"
     defectuosas que la otra.
     </li>
     </ol>
+
 20. Es frecuente que encuestadores por teléfono entrevisten entre
     `$1000$` y `$1500$` personas sobre sus opiniones en asuntos varios.
     En este caso tienen interés en ¿El rendimiento de los equipos de
@@ -595,6 +614,7 @@ bibliography: "../../referencias.bib"
     iguales?
     </li>
     </ol>
+
 21. Se tiene la creencia que las profesoras de la Universidad suelen
     gastar en promedio más dinero en café que los profesores en un mes.
     Para probar ésto, se realiza un estudio en el cual se toma una
@@ -654,6 +674,7 @@ bibliography: "../../referencias.bib"
     aproximadamente normal para ambas poblaciones, use un nivel del
     `$5\%$` de significancia para probar la hipótesis planteada
     previamente. Emplee el P-valor en sus conclusión.
+
 22. Suponga que nos encontramos en época de elecciones, y que el
     responsable de la campaña política del candidato `$A$` piensa en el
     ambiente de las últimas semanas previas a las elecciones. Él piensa
@@ -664,6 +685,7 @@ bibliography: "../../referencias.bib"
     una preferencia por el candidato `$A$`, ¿existe alguna razón para
     creer que el candidato `$A$` se encuentra en desventaja con relación
     al candidato `$B$`?, Use un nivel de significancia del `$5\%$`.
+
 23. Una bióloga quiere probar la hipótesis de que la envergadura media
     de cierta clase de insectos es `$12.3_{mm}$` contra la alternativa
     de que no es de `$12.3_{mm}$`. Suponga que la envergadura de los
@@ -690,6 +712,7 @@ bibliography: "../../referencias.bib"
     envergadura de los insectos es \(12.3_{mm}\)?
     </li>
     </ol>
+
 24. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
     examen, ahora han empezado a subir. Originalmente, una calificación
@@ -755,6 +778,7 @@ bibliography: "../../referencias.bib"
     estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
     </li>
     </ol>
+
 25. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
     experiencia, se sabe que la probabilidad de que el sistema existente

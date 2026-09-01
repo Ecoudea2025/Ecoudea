@@ -19,7 +19,9 @@ se cumple que
 
 1.  `$p(x,y)\geq0$` para todo `$x,y \in$` al rango de `$X,Y$`,
     respectivamente.
+
 2.  `$\sum_x\sum_y p(x,y)=1$`
+
 3.  `${\sum\sum}_{(x,y)\in A}p(x,y) = \mathbb{P}[(X,Y)\in A]$` con
     `$A\in$` al rango de `$X,Y$`.
 
@@ -743,7 +745,9 @@ probabilidad conjunta de las variables aleatorias discretas `$X, Y$`, si
 se cumple que
 
 1.  `$f(x,y)\geq0$` para todo `$x,y \in \mathbb{R}$`.
+
 2.  `$\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} f(x,y) dxdy=1$`
+
 3.  `$\iint_{(x,y)\in A}f(x,y) = \mathbb{P}[(X,Y)\in A]$` con `$A$` un
     intervalo de valores `$\in \mathbb{R}$`
 

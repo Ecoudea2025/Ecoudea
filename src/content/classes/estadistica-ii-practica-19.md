@@ -18,6 +18,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
 
     Encuentre la función de densidad de probabilidad del estadístico de
     orden más pequeño.
+
 2.  Suponga que para un estudio de movilidad en el municipio de Medellín
     se desea observar el número promedio de vehículos que transitan por
     cierto rompoy en un día con el fin de evaluar si es necesario hacer
@@ -38,6 +39,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     \(270\)?
     </li>
     </ol>
+
 3.  En una empresa se deciden comparar la resistencia de dos clases de
     hilo, y para ello se prueban `$50$` piezas de cada clase de hilo en
     condiciones similares, encontrando que, la marca `$A$` tiene una
@@ -48,6 +50,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     Calcule la probabilidad de que la diferencia absoluta entre las
     resistencias promedio de tensión de los hilos `$A$` y `$B$` se a lo
     más de `$5$` kilogramos.
+
 4.  Suponga que el contenido de ácido sulfúrico, en litros, de una
     muestra aleatoria de `$7$` contenedores similares es de
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -81,6 +84,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     aproximadamente normal, calcule la probabilidad de que el contenido
     promedio de ácido sulfúrico se encuentre entre `$9.7$` y `$9.8$`
     litros.
+
 5.  Sean `$X_1, X_2, \ldots, X_n$` variables aleatorias independientes
     distribuidas uniformemente en el intervalo `$(0, \theta)$`.
     <ol type="a">
@@ -96,6 +100,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     Encuentre la media y la varianza de \(X_{(n)}\)
     </li>
     </ol>
+
 6.  Un investigador de la <tt>ucla</tt> afirma que la esperanza de vida
     de los ratones se puede extender hasta en `$25\%$` cuando se reduce
     aproximadamente `$40\%$` de las calorías de su dieta desde el
@@ -107,6 +112,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     media muestral difiera máximo en `$2$` meses de la media de la
     población, si el investigador decide tomar una muestra de `$15$`
     ratones?
+
 7.  Suponga que el grupo de Macroeconomía Aplicada, realiza un estudio
     sobre la altura que poseen los estudiantes de la Universidad, y para
     ello, toma una muestra aleatoria de `$50$` estudiantes
@@ -125,6 +131,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     centímetros.
     </li>
     </ol>
+
 8.  Dos marcas de refrigeradores, denotadas por `$A$` y `$B$` poseen
     garantías de `$1$` año. Suponga que en una muestra aleatoria de
     `$50$` refrigeradores de la marca `$A$`, se observó que `$12$` de
@@ -135,11 +142,13 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     de refrigeradores que fallan durante el periodo de garantía para la
     marca `$A$` sea superior la proporción de refrigeradores de la marca
     `$B$` que fallan durante el periodo de garantía.
+
 9.  Suponga el tiempo que tarda en ir un estudiante desde su casa hasta
     la Universidad posee una distribución exponencial con un promedio de
     `$28$` minutos. Si en cierta semana el estudiante realiza un total
     de `$50$` viajes, cuál es la probabilidad de que el tiempo promedio
     de los viajes hayan sido de al menos `$30$` minutos?
+
 10. Los administradores de un hospital deseaban estimar el número
     promedio de días necesarios para el tratamiento de enfermos
     internados entre las edades de `$25$` y `$34$` años. Una muestra
@@ -149,6 +158,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     normalmente, calcule la probabilidad de que la varianza de la
     población de pacientes de la cual se extrajo la muestra, tenga un
     valor superior a `$8_{días^2}$`.
+
 11. Suponga que el número de vehículos que cruzan debajo de un puente
     hasta que cruce un vehículo azul sigue posee una distribución
     geométrica con parámetros `$p= 0.12$`. Si toma un total de `$60$`
@@ -156,6 +166,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     que cruce un vehículo azul, cuál es la probabilidad de que el
     promedio encontrado de vehículos que cruzan hasta que cruce un
     vehículo azul se encuentre entre `$6$` y `$8$` vehículos.
+
 12. Para una comparación de los porcentajes de piezas defectuosas
     producidas por dos líneas de montaje, de cada línea se seleccionaron
     muestras aleatorias independientes de `$100$` piezas. La línea `$A$`
@@ -163,12 +174,14 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     contenía `$12$` piezas defectuosas. Encuentre la probabilidad de que
     la proporción de piezas defectuosas de la línea `$B$` sea mayor a la
     proporción de piezas defectuosas de la línea `$A$`.
+
 13. Suponga que la vida útil de cierta referencia de televisores
     producidos por la empresa LG, posee una densidad de probabilidad
     exponencial con media de `$10$` años. Entonces, si
     `$X_1, X_2, \ldots, X_{2m+1}$` representan una muestra aleatoria de
     esta referencia de televisores, encuentre la función de densidad de
     `$\tilde{X}$`.
+
 14. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
     examen, ahora han empezado a subir. Originalmente, una calificación
@@ -228,6 +241,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     alumnos de último año sea a lo sumo de \(520\) puntos.
     </li>
     </ol>
+
 15. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
     experiencia, se sabe que la probabilidad de que el sistema existente
@@ -235,6 +249,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     de `$40$` lanzamientos experimentales con el nuevo sistema y `$34$`
     resultan exitosos. Cuál es la probabilidad de que la proporción real
     de lanzamientos exitosos sea al menos del `$80\%$`.
+
 16. Es frecuente que los químicos orgánicos purifiquen compuestos
     orgánicos por medio de un método conocido como cristalización
     fraccional. Un experimentador desea preparar y purificar `$4.85$`
@@ -284,6 +299,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     Calcule la probabilidad de que el número medio de gramos de
     acetanilida que se puede recuperar de `$4.85$` gramos de anilina sea
     al menos de `$3.69$` pero a lo más de `$3.82$` gramos de anilina.
+
 17. Dos nuevos medicamentos se dieron a pacientes con hipertensión. El
     primer medicamento redujo la presión sanguínea de `$16$` pacientes
     en un promedio de `$11$` puntos, con una desviación estándar de
@@ -303,6 +319,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     varianzas diferentes
     </li>
     </ol>
+
 18. ¿El precio pagado por el atún depende del método de empaque?
     *Consumer Reports* da el precio promedio estimado para una lata de
     `$6$` onzas o una bolsa de `$7.06$` onzas de atún, con base en
@@ -512,6 +529,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     empacado en aceite.
     </li>
     </ol>
+
 19. Un experimentador desea comprobar la variabilidad de mediciones
     obtenidas al usar equipo diseñado para medir el volumen de una
     fuente de audio. Tres mediciones independientes registradas por este
@@ -519,6 +537,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     `$10.2$`. Calcule la probabilidad de que la variabilidad del volumen
     de una fuente de audio sea cuando mucho `$12.53$`. Suponga
     normalidad.
+
 20. La Environmental Protection Agency (*EPA*) ha establecido un máximo
     nivel de ruido de `$83_{dB}$` para camiones pesados. La forma en la
     que se aplique este límite afectará considerablemente al público y a
@@ -565,6 +584,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     real y muestral sea como máximo de \(0.4_{dB}\).
     </li>
     </ol>
+
 21. Suponga que el número de entregas que realiza un camión de
     Servientrega en una hora posee una distribución de probabilidad dada
     por
@@ -616,6 +636,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     intervalos de una hora seleccionados de forma aleatoria, cuál es la
     probabilidad de que el número promedio obtenido se encuentre entre
     `$1.3$` y `$2.5$` entregas.
+
 22. Un instrumento de precisión usado para la medición de la profundidad
     de una cuenca hidroeléctrica, garantiza dar lecturas que no varían
     en más de `$2$` unidades. Una muestra de ocho lecturas del
@@ -656,6 +677,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     probabilidad de que el promedio desconocido de las mediciones
     realizadas por el instrumento de precisión se encuentre entre
     `$358$` y `$363$`.
+
 23. Para un experimento de pruebas psicológicas se seleccionan al azar
     `$25$` sujetos de prueba y se les mide sus tiempos de reacción, en
     segundos, ante un estímulo particular, obteniendo que el tiempo
@@ -674,6 +696,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     todos los individuos no supere los \(7\) segundos.
     </li>
     </ol>
+
 24. ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a `$800$` adultos
     seleccionados de forma aleatoria, se encontró que `$45\%$` de los
@@ -681,6 +704,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     `$43\%$` de los encuestados dijeron que el cine estaba empeorando.
     Basados en lo anterior, cuál es la probabilidad de que la mayoría de
     los adultos piensen que el cine esté mejorando?
+
 25. En el trabajo de laboratorio es deseable realizar cuidadosas
     verificaciones de la variabilidad de lecturas producidas en muestras
     estándar. En un estudio de la cantidad de calcio en agua potable
@@ -715,11 +739,13 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     Si asumimos normalidad, cuál es la probabilidad de que la
     variabilidad de las lectura sea a lo más de `$0.4$` partes por
     millón cuadradas.
+
 26. Sean `$X_1, X_2, \ldots, X_n$` variables aleatorias independientes
     distribuidas uniformemente en el intervalo `$(0, 1)$`. Demuestre que
     la función de densidad de `$k$`-ésimo estadístico de orden
     `$X_{(k)}$`, con `$k$` es un entero entre `$1$` y `$n$`, posee una
     función de densidad beta con `$\alpha = k$` y `$\beta = n-k+1$`.
+
 27. Un banco reporta que la población de sus saldos de depósito a la
     vista están normalmente distribuidos con una media de `$1200$` y una
     desviación estándar de `$250$`. Un auditor rechaza certificar el
@@ -727,6 +753,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     cuentas. El auditor certificará el reporte solo si la media muestral
     se encuentra a `$50$` dólares o más de la supuesta media
     poblacional. Cuál es la probabilidad de dicho hallazgo?
+
 28. Se encuentra que la concentración promedio de zinc que se obtiene en
     una muestra de mediciones en `$36$` sitios diferentes de un río es
     de `$2.6$` gramos por mililitro. Si la función de probabilidad no es
@@ -734,6 +761,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     por mililitro. Calcule la probabilidad de que la concentración media
     de zinc en el río se encuentre entre `$2.4$` y `$2.5$` gramos por
     mililitro.
+
 29. Un guardabosque, que estudia los efectos de la fertilización en
     ciertos bosques de pinos en el sureste, está interesado en estimar
     el promedio de área de la base de los pinos. Al estudiar áreas
@@ -753,11 +781,13 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     medir para asegurar este grado de precisión?
     </li>
     </ol>
+
 30. Suponga que el periodo de vida de una broca en una operación
     mecánica, en horas, tiene una distribución Weibull con parámetros
     `$\alpha=0.5$` y `$\beta=35$`. Si se toma una muestra aleatoria de
     tamaño `$n$`, encuentre la función de probabilidad y de distribución
     acumulada para el estadístico de orden más pequeño.
+
 31. Un experimento publicado en Popular Science comparó el ahorro de
     combustible para dos tipos de camiones compactos que funcionan con
     diesel y están equipados de forma similar. Suponga que se utilizaron
@@ -772,6 +802,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     recorre el caminón Toyota. Suponga que las distancias por litro para
     cada modelo de camión están distribuidas de forma aproximadamente
     normal con varianzas diferentes.
+
 32. Se considera usar dos marcas diferentes de pintura vinílica, y para
     ello, se decide seleccionar `$15$` especímenes de cada tipo de
     pintura, y se realizó la medición de los tiempos de secado en horas,
@@ -888,6 +919,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     varianzas diferentes. Calcule la probabilidad de que el promedio del
     tiempo medio de secado de la pintura `$B$` sea como máximo el tiempo
     medio de secado de la pintura `$A$`.
+
 33. A dos grupos de ratas diabéticas se les suministran dos niveles de
     dosis de insulina (alto y bajo) para verificar la capacidad de
     fijación de esta hormona. Se obtuvieron los siguientes datos.
@@ -947,6 +979,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     una Dosis baja sea mayor la capacidad promedio verdadera de fijación
     de insulina en las ratas que les suministran una Dosis alta por
     `$0.4$`.
+
 34. Un fabricante de cierta marca de barras de cereal con bajo contenido
     de grasa afirma que el contenido promedio de grasa saturada en éstas
     se encuentra entre `$0.56$` y `$0.64$` gramos. En una muestra
@@ -1005,6 +1038,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     </table>
     Estaría de acuerdo con tal afirmación? Suponga una distribución
     normal.
+
 35. Un fabricante de baterías para automóvil afirma que sus baterías
     durarán, en promedio, `$3$` años con una desviación estándar de
     `$1$` año. Suponga que se toma una muestra aleatoria de `$15$` de
@@ -1073,6 +1107,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     baterías se encuentre entre \(0.8\) y \(1.2\) años.
     </li>
     </ol>
+
 36. Las siguientes son las calificaciones obtenidas en un examen de
     personalidad por `$2$` muestras de `$9$` mujeres casadas y solteras:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1148,6 +1183,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     tan probable es que la varianza de las calificaciones de las mujeres
     solteras sea mayor a la varianza de las calificaciones de las
     mujeres casadas.
+
 37. Un factor importante en el combustible sólido para proyectiles es la
     distribución del tamaño de las partículas. Cuando las partículas son
     demasiado grandes se presentan problemas importantes. A partir de
@@ -1159,6 +1195,7 @@ $$\begin{align*}f(x) = 3x^{-4} \text{ para } x\geq1\end{align*}$$
 
     Encuentre la función de densidad de probabilidad del `$k$`-ésimo
     estadístico de orden.
+
 38. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
     llena al empezar cada semana. Su demanda semanal muestra un
     comportamiento de frecuencia relativo que aumenta de manera continua
@@ -1172,6 +1209,7 @@ $$\begin{align*}f(x)=\begin{cases}x & 0\leq x\leq 1 \\1 & 1<x\leq 1.5 \\0 & \tex
     semanal en cientos de galones del proveedor de queroseno, cuál es la
     probabilidad de que la demanda promedio obtenida en las `$60$`
     semanas sea a lo más de `$1.3$` cientos de galones.
+
 39. Se considera una medición física realizada con un instrumento de
     precisión, donde el interés se centra en la variabilidad de la
     lectura. Se sabe que la medición es una variable aleatoria con
@@ -1179,6 +1217,7 @@ $$\begin{align*}f(x)=\begin{cases}x & 0\leq x\leq 1 \\1 & 1<x\leq 1.5 \\0 & \tex
     una muestra aleatoria de tamaño `$23$`, cuál esla probabilidad de
     que el valor de la varianza muestral sea mayor de `$13.6$` unidades
     cuadradas.
+
 40. El consumo de combustible, en kilómetros por litro, de todos los
     coches de cierto modelo tiene media `$10$` kilómetros y desviación
     estándar de `$2$` kilómetros, tanto así que puede asumirse que la

@@ -35,6 +35,7 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
     trabajo.
     </li>
     </ol>
+
 2.  Una distribuidora mayorista de gasolina tiene tanques de
     almacenamiento a granel que contienen suministros fijos y se llenan
     cada lunes. De interés para la mayorista es la proporción de este
@@ -53,6 +54,7 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
     una semana determinada.
     </li>
     </ol>
+
 3.  Las mediciones en los sistemas científicos siempre están sujetas a
     variación, algunas veces más que otras. Hay muchas estructuras para
     los errores de medición y los estadísticos pasan mucho tiempo
@@ -83,6 +85,7 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     probabilidad de que esto ocurra?
     </li>
     </ol>
+
 4.  La magnitud de temblores registrados en una Japón durante los
     últimos meses puede modelarse mediante una distribución Chi-Cuadrado
     con una media de magnitud `$2$` en la escala de Richter.
@@ -98,6 +101,7 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     éste temblor sea a lo más de \(3.5\) en la escala de Richter?.
     </li>
     </ol>
+
 5.  Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
@@ -127,6 +131,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     \(80\%\), pero no más del \(90\%\).
     </li>
     </ol>
+
 6.  El operador de una estación de bombeo ha observado que la demanda de
     agua durante las primeras horas de la tarde tiene una distribución
     aproximadamente exponencial con media de `$100_{pcs}$`. Dado lo
@@ -143,6 +148,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     de que supere los \(250_{pcs}\)?.
     </li>
     </ol>
+
 7.  Sea `$X$` una variable aleatoria con distribución de probabilidades
     dada por
     
@@ -162,11 +168,13 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     \(\mathbb{P}(-3 \leq X \leq 3)\)
     </li>
     </ol>
+
 8.  El tiempo `$X$` necesario para completar una operación clave en la
     construcción de casas tiene una distribución exponencial con media
     de `$10$` horas. La fórmula `$C = 100 + 40Y + 3Y^2$` relaciona el
     costo `$C$` de completar esta operación con el cuadrado del tiempo
     para completarla. Encuentre la media y la varianza de `$C$`.
+
 9.  Sea `$X$` una variable aleatoria continua con función de
     probabilidad acumulada igual a
     
@@ -180,6 +188,7 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     Calcule \(\mathbb{P}(X<20)\).
     </li>
     </ol>
+
 10. La evidencia histórica indica que los tiempos entre accidentes
     mortales en vuelos nacionales de horario programado en aviones de
     pasajeros en Estados Unidos tienen una distribución Chi-Cuadrado con
@@ -194,6 +203,7 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     Calcule \(\mathbb{P}(X<20)\).
     </li>
     </ol>
+
 11. Considere la siguiente función de densidad de probabilidad que
     representa la proporción de personas que están a favor de una
     reforma legislativa
@@ -210,6 +220,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     \(\mathbb{P}(0.24 < X < 0.63)\).
     </li>
     </ol>
+
 12. Suponga que el tiempo de vida de un portátil MSI, en años, tiene una
     distribución de Gamma con parámetro de forma y de escala dados por
     `$3$` y `$1.5$` respectivamente.
@@ -222,6 +233,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     de vida de un portátil MSI.
     </li>
     </ol>
+
 13. El tiempo que pasa, en horas, para que un radar detecte entre
     conductores sucesivos a los que exceden los límites de velocidad es
     una variable aleatoria continua con una función de distribución
@@ -240,6 +252,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     Utilizando la función de densidad de probabilidad de \(X\).
     </li>
     </ol>
+
 14. El tiempo de ciclo para camiones que transportan concreto al lugar
     de construcción de una carretera está uniformemente distribuido en
     el intervalo de `$50$` a `$70$` minutos.
@@ -253,6 +266,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     minutos si se sabe que el tiempo de ciclo excede de \(55\) minutos?
     </li>
     </ol>
+
 15. Suponga que el tiempo medido en unidades de `$100$` horas, que se
     usa una licuadora en un hogar durante un año es una v.a continua
     `$X$` con función de densidad de probabilidad dada por:
@@ -273,6 +287,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     licuadora entre \(65\) y \(100\) horas.
     </li>
     </ol>
+
 16. El tiempo entre arribos de taxis al acopio de una estación del metro
     se distribuye exponencialmente con una media de `$60$` segundos.
     <ol type="a">
@@ -286,6 +301,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     llega ningún taxi al acopio del metro?
     </li>
     </ol>
+
 17. Suponga una empresa que fabrica pelotas locas con diámetros que
     oscilan entre `$4$` y 8 centímetros. Si `$X$` es la variable
     aleatoria que representa el diámetro de las pelotas locas, y la
@@ -302,6 +318,7 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     entre \(3\) y \(6\) centímetros.
     </li>
     </ol>
+
 18. Una empresa manufacturera emplea para la producción de bolsas de
     plástico un producto específico que compra a granel. La cantidad del
     producto específico (en toneladas) empleado por día puede ser
@@ -322,6 +339,7 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     de \(6\) toneladas del producto específico.
     </li>
     </ol>
+
 19. Sea `$X$` una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
     la función de densidad de probabilidad `$f(x)$` está dada por:
@@ -343,6 +361,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     \(F(x) = \mathbb{P}(X \leq x)\)?.
     </li>
     </ol>
+
 20. Suponga que en una universidad se realizan pruebas de aptitud
     anuales para observar las habilidades y competencias de sus
     profesores. Si se sabe que el puntaje de estas pruebas se distribuye
@@ -358,6 +377,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     menor a \(80\) puntos?
     </li>
     </ol>
+
 21. Sea `$X$` una variable aleatoria continua con distribución de
     probabilidades `$f(x)$` dada por
     
@@ -376,6 +396,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     encuentre a lo más a \(2.3\) desviaciones estándar de su media.
     </li>
     </ol>
+
 22. Una cervecería usa una máquina que llena automáticamente botellas de
     `$350_{ml}$`. Sin embargo, existe una variación en las cantidades de
     cerveza que se ponen en las botellas que se llenan, en donde, se ha
@@ -392,6 +413,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     y \(360_{ml}\).
     </li>
     </ol>
+
 23. Calcule la probabilidad de que la siguiente función de densidad de
     probabilidad se encuentre a dos desviaciones estándar de la media.
     
@@ -405,6 +427,7 @@ $$\begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}$$
     rendimiento de los ajedrecistas se distribuye normalmente. ¿Cuál es
     la probabilidad de que un ajedrecista de dicha categoría tenga un
     puntaje Elo superior a `$1603$`?.
+
 25. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
     llena al empezar cada semana. Su demanda semanal muestra un
     comportamiento de frecuencia relativo que aumenta de manera continua
@@ -422,6 +445,7 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     Calcule la varianza de la variable aleatoria \(Y\).
     </li>
     </ol>
+
 26. Suponga la variable aleatoria `$X$` que representa la humedad que
     posee el café para su cosecha. Si la humedad en el café se mide
     mediante un termohigrometro, y se sabe que la distribución de la
@@ -438,6 +462,7 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     de humedad que muestra el medidor sea a lo más de \(70%\).
     </li>
     </ol>
+
 27. La cantidad diaria de café, en litros, que sirve la maquina de las
     burbujas, es una variable aleatoria uniforme en el intervalo de
     `$6.8$` hasta `$10$` litros.
@@ -452,6 +477,7 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     \(7.8\)?
     </li>
     </ol>
+
 28. Luego de varios semestres, un profesor de estadística encuentra que
     los resultados que obtienen los estudiantes en el examen final del
     curso de Estadística y Probabilidades, tienen una distribución

@@ -56,10 +56,14 @@ estandarización `$Z=\frac{x-\mu}{\sigma} \sim N(0,1)$`, y por tanto, si
 `$z_1$` y `$z_2$` son constantes, se tendrá que
 
 1.  `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$`
+
 2.  `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$`
+
 3.  `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$`
+
 4.  Si `$z_1 = - z_2$` entonces
     `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$`
+
 5.  `$Z_\alpha$` es el valor de la variable aleatoria `$Z\sim N(0,1)$`
     tal que `$\mathbb{P}(Z\geq Z_\alpha)=\alpha$`, y
     `$\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$`

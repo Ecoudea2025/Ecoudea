@@ -36,6 +36,7 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     Encuentre \(F(1.2)\).
     </li>
     </ol>
+
 2.  Suponga que se tiene un total de tres cajas exactamente iguales,
     donde cada una de las cajas contiene un animal encerrado, a saber,
     un conejo, un hamster y una cobaya. Si se trata de adivinar qué
@@ -44,6 +45,7 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     probabilidad de la variable aleatoria `$X$`, su función de
     distribución acumulada y calcule la probabilidad de que acierte al
     menos `$2$` animales.
+
 3.  Sean `$X$` y `$Y$` dos variables aleatorias discretas las cuales
     pueden tomar como posibles valores `$-1$`, `$0$`, y `$1$`. En la
     siguiente tabla se dan las probabilidades conjuntas para todos los
@@ -128,6 +130,7 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     Calcule la \(\mathbb{P}(X=1|Y\leq 0)\).
     </li>
     </ol>
+
 4.  Sea `$X$` una variable aleatoria con distribución de probabilidades
     `$p(x)$` dada por:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -186,6 +189,7 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     Encuentre \(\mathbb{P}(X>3)\).
     </li>
     </ol>
+
 5.  Suponga una función de probabilidad que representa el número de
     automóviles blancos que vende un concesionario en un día está dada
     por
@@ -206,6 +210,7 @@ $$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\e
     vende en un día sea a lo más \(1\).
     </li>
     </ol>
+
 6.  Las mediciones en los sistemas científicos siempre están sujetas a
     variación, algunas veces más que otras. Hay muchas estructuras para
     los errores de medición y los estadísticos pasan mucho tiempo
@@ -232,6 +237,7 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     probabilidad de que esto ocurra?
     </li>
     </ol>
+
 7.  Suponga una función de densidad de probabilidad conjunta de las
     variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
     
@@ -256,6 +262,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     \(\mathbb{P}(0 < X < \frac{1}{2}| Y = \frac{1}{4} , Z = 2)\)
     </li>
     </ol>
+
 8.  Suponga la siguiente función de distribución acumulada
     
 $$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x< 3 \\ 0.48 & 3\leq x< 5\\ 0.74 & 5\leq x< 8 \\ 1 & x\geq 8\end{cases}\end{align*}$$
@@ -273,6 +280,7 @@ $$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x<
     entre \(2\) y \(5\), inclusive.
     </li>
     </ol>
+
 9.  Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
@@ -298,6 +306,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     \(80\%\), pero no más del \(90\%\).
     </li>
     </ol>
+
 10. Suponga que a partir de una gran cantidad de datos históricos, se
     sabe que `$X$` representa el número de automóviles que llegan a una
     intersección específica durante un periodo de `$20$` segundos, la
@@ -315,6 +324,7 @@ $$\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{ali
     Calcule la probabilidad de que sólo lleguen \(2\) automóviles.
     </li>
     </ol>
+
 11. Sea `$X$` la variable aleatoria que determina el número de clientes
     que llega a una centro comercial en un periodo de una hora. Si la
     distribución acumulada de `$X$` está dada por:
@@ -343,6 +353,7 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     clientes al centro comercial.
     </li>
     </ol>
+
 12. Se sabe por ley que la vida máxima de la patente para un nuevo
     medicamento es de 17 años. Si restamos el tiempo requerido por la
     FDA para someter a pruebas y aprobar el medicamento, se obtiene la
@@ -447,6 +458,7 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     \(8\) años, pero no más de \(11\).
     </li>
     </ol>
+
 13. Sea `$X$` una variable aleatoria con distribución de probabilidades
     dada por
     
@@ -465,6 +477,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     \(\mathbb{P}(-3 \leq X \leq 3)\)
     </li>
     </ol>
+
 14. Si `$X$` y `$Y$` son variables aleatorias con función de
     probabilidad conjunta dada por
     
@@ -493,6 +506,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     \(X<8\).
     </li>
     </ol>
+
 15. Considere las variables aleatorias `$X$` y `$Y$` que representan el
     número de vehículos que llegan a dos esquinas de calles separadas
     durante cierto periodo de `$2$` minutos. Estas esquinas de las
@@ -513,6 +527,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
     lleguen menos de \(4\) vehículos a las dos esquinas?.
     </li>
     </ol>
+
 16. De un saco de frutas que contiene `$3$` naranjas, `$2$` manzanas y
     `$3$` plátanos se selecciona una muestra aleatoria de `$4$` frutas.
     Si `$X$` es el número de naranjas y `$Y$` es el número de manzanas
@@ -526,9 +541,11 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
     \(\{(x, y) | x + y \leq 2\}\).
     </li>
     </ol>
+
 17. Sea `$X$` una variable aleatoria continua con
     `$F(x)=\frac{1}{1+e^{-x}}$`, para `$x>0$`, encuentre la función de
     densidad de probabilidad y calcule `$\mathbb{P}(X<20)$`.
+
 18. Considere a `$X$` la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con f.m.p dada por
     
@@ -548,6 +565,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & 
     \(7\) pero a lo más \(10\).
     </li>
     </ol>
+
 19. Considere la siguiente función de densidad de probabilidad que
     representa la proporción de personas que están a favor de una
     reforma legislativa
@@ -564,6 +582,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     \(\mathbb{P}(0.24 < X < 0.63)\).
     </li>
     </ol>
+
 20. Si `$X$` y `$Y$` son variables aleatorias discretas con función de
     probabilidad dada por: `$f(x,y)=k(\frac{x+y}{xy})$`,para
     `$x=1,2,3$`; `$y=1,2,3$`.
@@ -582,6 +601,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     las v.a \(X\) y \(Y\) son independientes?.
     </li>
     </ol>
+
 21. Si la distribución de probabilidad conjunta de `$X$` y `$Y$` está
     dada por
     
@@ -602,6 +622,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     \(\mathbb{P}(X>2|Y\leq1)\).
     </li>
     </ol>
+
 22. Sea `$X$` la variable aleatoria que da el número de caras menos el
     número de cruces en cuatro lanzamientos de una moneda. Liste los
     elementos del espacio muestral `$S$` para los cuatro lanzamientos de
@@ -623,6 +644,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     salga al menos \(3\) caras?.
     </li>
     </ol>
+
 23. El tiempo que pasa, en horas, para que un radar detecte entre
     conductores sucesivos a los que exceden los límites de velocidad es
     una variable aleatoria continua con una función de distribución
@@ -641,6 +663,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     Utilizando la función de densidad de probabilidad de \(X\).
     </li>
     </ol>
+
 24. Los tubos de magnetrón se producen en una línea de ensamble
     automatizada. Periódicamente se utiliza un plan de muestreo para
     evaluar la calidad en la longitud de los tubos; sin embargo, dicha
@@ -662,6 +685,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     de que un solo tubo cumpla con las especificaciones.
     </li>
     </ol>
+
 25. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
@@ -684,6 +708,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
     \(\mathbb{P}(X < \frac{1}{3} | Y < \frac{1}{8}, Z > \frac{2}{3})\).
     </li>
     </ol>
+
 26. Suponga que el tiempo medido en unidades de `$100$` horas, que se
     usa una licuadora en un hogar durante un año es una v.a continua
     `$X$` con función de densidad de probabilidad dada por:
@@ -704,6 +729,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     licuadora entre \(65\) y \(100\) horas.
     </li>
     </ol>
+
 27. Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
     primer lanzamiento y `$Y$` el número total de caras en los `$2$`
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
@@ -722,6 +748,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     La probabilidad de que ocurra al menos \(1\) cara.
     </li>
     </ol>
+
 28. Una empresa dulcera distribuye cajas de chocolates con un surtido de
     cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
@@ -746,6 +773,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
     constituyen \(3/4\) partes del peso.
     </li>
     </ol>
+
 29. Sean `$X$` y `$Y$` dos variables aleatorias con función de
     probabilidad dada por
     
@@ -775,6 +803,7 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
     Pruebe si \(X\) y \(Y\) son independientes.
     </li>
     </ol>
+
 30. Suponga una empresa que fabrica pelotas locas con diámetros que
     oscilan entre `$4$` y 8 centímetros. Si `$X$` es la variable
     aleatoria que representa el diámetro de las pelotas locas, y la
@@ -791,6 +820,7 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     entre \(3\) y \(6\) centímetros.
     </li>
     </ol>
+
 31. Suponga que la función de probabilidad conjunta de un sistema
     químico puede ser representado como
     
@@ -810,10 +840,12 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
     \(0.5\), dado que \(Y\) es \(0.7\)?.
     </li>
     </ol>
+
 32. Sean `$X$` y `$Y$` variables aleatorias independientes tal que sus
     distribuciones marginales son `$g(x)=3x^2$` para `$0<x<1$` y
     `$h(y)=2y$` para `$0<y<1$`. Calcule
     `$\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$`.
+
 33. Suponga una función de masa de probabilidad dada por
     
 $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4,5\end{align*}$$
@@ -830,9 +862,11 @@ $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4
     Calcule la \(\mathbb{P}(X\geq 3|X<5)\).
     </li>
     </ol>
+
 34. Sea `$f(x)=\frac{9}{2}x^2-x$`, para `$0<x<1$`, la distribución de
     probabilidad de una variable aleatoria `$X$`, encuentre la función
     de distribución acumulada y con ésta, calcule `$\mathbb{P}(X<0.3)$`.
+
 35. Sea `$X$` una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
     la función de densidad de probabilidad `$f(x)$` está dada por:
@@ -854,6 +888,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     \(F(x) = \mathbb{P}(X \leq x)\)?.
     </li>
     </ol>
+
 36. Suponga la siguiente función de probabilidad para las variables
     aleatorias `$X$` y `$Y$`
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -941,6 +976,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
     </li>
     </ol>
+
 37. Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
@@ -967,6 +1003,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     \(X<0.1\).
     </li>
     </ol>
+
 38. Sea `$X$` el número de veces que fallará cierta máquina de control
     numérico: `$1$`, `$2$` o `$3$` veces en un día dado. Y sea `$Y$` el
     número de veces que se llama a un técnico para una emergencia, su
@@ -1056,6 +1093,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
     </li>
     </ol>
+
 39. En funcion de su prioridad, un programa para computadora espera en
     la fila de entrada cierto tiempo, después del cual lo ejecuta el
     procesador central en un lapso dado. La función de densidad conjunta
@@ -1084,6 +1122,7 @@ $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-
     de tiempo son variables aleatorias independientes.
     </li>
     </ol>
+
 40. Sean `$X$` y `$Y$` variables aleatorias continuas distribuidas
     conjuntamente con `$f(x,y)=kxy$` para `$0<x<5$`, `$1<y<x$`. El valor
     de `$k$` que hace que `$f(x,y)$` sea una función de densidad de

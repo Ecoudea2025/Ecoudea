@@ -119,7 +119,9 @@ valor específico a probar.
 
 1.  Los errores tipo I y II están inversamente relacionados, es decir,
     cuando aumenta uno, disminuye el otro.
+
 2.  Un aumento en el tamaño muestral `$n$`, reducirá tanto `$\alpha$` y
     `$\beta$` de forma simultanea.
+
 3.  Si `$H_0$` es falsa, `$\beta$` es máxima cuando el verdadero valor
     del parámetro se aproxima al valor hipotético.

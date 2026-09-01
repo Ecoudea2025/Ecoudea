@@ -17,6 +17,7 @@ Lista de ejercicios
     población y entrevistados en forma sucesiva. Encuentre la
     probabilidad de que el primer solicitante con capacitación avanzada
     en programación sea el quinto o séptimo entrevistado.
+
 2.  Suponga que por Ley, la vida máxima de la patente para un nuevo
     medicamento es `$17$` años. Si restamos el tiempo requerido por la
     FDA para someter a pruebas y aprobar el medicamento, se obtiene la
@@ -114,6 +115,7 @@ Lista de ejercicios
     vida real promedio.
     </li>
     </ol>
+
 3.  Suponga que se realiza un estudio en la ciudad de Medellín para
     observar el número de fotomultas que se le han impuesto a las
     personas que conducen motocicletas de alto cilindraje. Luego de
@@ -136,11 +138,13 @@ $$\begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\
     más \(8\).
     </li>
     </ol>
+
 4.  En una tienda de barrio, el dueño exhibe `$15$` ollas arroceras de
     la misma marca, `$9$` negras y `$6$` grises. Suponga que en el día,
     `$7$` clientes compran cada uno, una olla en momentos diferentes.
     ¿Cuál es la probabilidad de que más de `$2$` clientes hayan comprado
     arroceras de color gris?
+
 5.  Sea `$X$` una variable aleatoria discreta con distribución de
     probabilidades `$p(x)$` dada por:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -218,6 +222,7 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     pedido?.
     </li>
     </ol>
+
 8.  Una empresa de exploración petrolera va a hacer una serie de
     perforaciones de sondeo en una zona determinada en busca de un pozo
     productivo. La probabilidad de que tenga éxito en un intento dado es
@@ -232,9 +237,11 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     ¿cuál es la probabilidad de que no encuentre un pozo productivo?.
     </li>
     </ol>
+
 9.  Dado que ya hemos lanzado al aire una moneda balanceada diez veces y
     no obtuvimos caras, ¿cuál es la probabilidad de que debamos lanzar
     la moneda al menos dos veces más, para obtener la primera cara?
+
 10. Suponga que el número promedio de fallas que puede presentar una
     máquina de ensamble en una empresa al mes es de `$6$` fallas.
     <ol type="a">
@@ -248,12 +255,14 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     \(3\) fallas?
     </li>
     </ol>
+
 11. Suponga que el transito de Medellín afirma que `$3$` de cada `$10$`
     accidentes de tráfico se debe a que al menos uno de los implicados
     no pasó la prueba de alcoholemia. Si ocurren `$15$` accidentes de
     tráfico un día cualquiera. ¿Cuál es la probabilidad de que al menos
     `$4$` pero menos de `$7$` accidentes, no hayan sido causados por
     personas en estado de embriagues?.
+
 12. Una venta particular comprende cuatro artículos seleccionados al
     azar de un lote voluminoso que se sabe contiene `$10\%$` de
     artículos defectuosos. Denote con `$Y$` el número de artículos
@@ -261,6 +270,7 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     son devueltos para su reparación, y el costo de reparación está dado
     por `$C = 3Y^2 + Y + 2$`. Encuentre el costo esperado de reparación
     de los artículos.
+
 13. La Facultad de Ingeniería de la UdeM realiza una encuesta a
     `$13000$` estudiantes de Ingeniería Industrial y Ingeniería
     Financiera de último año, en la cual se observa que el `$70\%$` de
@@ -268,6 +278,7 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     seleccionan al azar `$200$` de los encuestados y se les pide su
     opinión, ¿Cuál es la probabilidad de que más de `$60$` pero más de
     `$80$` no estén conformes con su carrera?.
+
 14. Suponga en un proceso de producción, el número de fallas que tiene
     una maquina en un día antes de apagarse, es una variable aleatoria
     discreta `$X$` con función de densidad de probabilidad dada por
@@ -289,6 +300,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     desviaciones estándar de su media.
     </li>
     </ol>
+
 15. De una población de consumidores, `$60\%$` tienen fama de preferir
     una marca `$A$` de pasta dental. Si se entrevista a un grupo de
     consumidores escogidos al azar,
@@ -304,6 +316,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     marca `$A$` de pasta dental?
     </li>
     </ol>
+
 16. Dos estudiantes apuestan sobre el número de ejercicios correctos
     realizados por un profesor de matemáticas hasta que cometa un error.
     Si la probabilidad de que el profesor cometa una error en un
@@ -321,6 +334,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     probabilidad de que se equivoque en el décimo ejercicio?
     </li>
     </ol>
+
 17. Suponga que se realiza un estudio estadístico en la UdeM y se
     encuentra que el número promedio de clientes que llegan a la
     cafetería de Ingeniería cada media hora, es de `$12$` clientes.
@@ -335,6 +349,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     estándar de su media.
     </li>
     </ol>
+
 18. En una noche de tragos dos estudiantes de Estadística y
     Probabilidades van a un bar que posee una diana de dardos, y deciden
     apostar sobre el número de dardos lanzados por las personas, que
@@ -344,6 +359,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     variable aleatoria del número de dardos que golpean la diana. ¿Cuál
     es la probabilidad de que golpeen al menos `$42$` pero a lo más
     `$50$` dardos?
+
 19. La cantidad diaria de tazas de café que toma un profesor
     normalmente, es una variable aleatoria discreta con un promedio de
     `$7$` tazas de café.
@@ -358,6 +374,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     desviaciones estándar de la media?
     </li>
     </ol>
+
 20. Se cree que de los `$10000$` votantes que residen en una ciudad,
     `$4000$` están a favor de la iniciativa de talar arboles para
     construir nuevas vías. Se seleccionan al azar `$60$` votantes de los
@@ -373,12 +390,14 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     iniciativa?
     </li>
     </ol>
+
 21. Dos personas, por turnos, tiran un dado imparcial hasta que una de
     ellas lanza un `$6$`. La persona `$A$` tiró primero, la `$B$` en
     segundo, `$A$` en tercero y así sucesivamente. En vista de que la
     persona `$B$` tiró el primer `$6$`, ¿cuál es la probabilidad de que
     `$B$` obtenga el primer `$6$` en su segundo tiro (es decir, en el
     cuarto tiro total)?
+
 22. En una industria automotriz, se sabe que `$10\%$` de los motores
     fabricados en una línea de ensamble son defectuosos. Si los motores
     se seleccionan al azar uno a la vez y se prueban,
@@ -392,11 +411,13 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     encuentren no más de \(2\) defectuoso?.
     </li>
     </ol>
+
 23. Luego de una revisión exhaustiva, se encuentra que en promedio una
     oblea de silicio producidas por un fabricante tienen dos defectos
     grandes. Si `$X$` representa al número de defectos que posee una
     oblea, ¿Cuál es la probabilidad de que una oblea de silicio tenga
     más de cinco defectos grandes?
+
 24. Suponga que la Alcaldía de Medellín decide encuestar familias que
     posean `$3$` hijos para observar si hay mayor predominancia en que
     haya más niños o más niñas en la familia. Si la Alcaldía encuentra
@@ -411,6 +432,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     niñas que hay en una familia que posee \(3\) hijos.
     </li>
     </ol>
+
 25. Por experiencia se sabe que el `$20\%$` de las inversiones
     realizadas por un experto en finanzas terminan en pérdida. Si se
     seleccionan aleatoriamente `$5$` inversiones realizadas por el

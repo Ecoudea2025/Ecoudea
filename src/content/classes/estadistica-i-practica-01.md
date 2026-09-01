@@ -103,6 +103,7 @@ bibliography: "../../referencias.bib"
     Calcule el segundo momento central.
     </li>
     </ol>
+
 2.  La cantidad diaria de café, en litros, que sirve la maquina de las
     burbujas, es una variable aleatoria uniforme en el intervalo de
     `$6.8$` hasta `$10$` litros.
@@ -117,6 +118,7 @@ bibliography: "../../referencias.bib"
     \(7.8\)?
     </li>
     </ol>
+
 3.  Suponga que a partir de gran cantidad de datos históricos se sabe
     que `$X$`, el número de automóviles que llegan a una intersección
     específica durante un periodo de `$20$` segundos, se determina
@@ -134,6 +136,7 @@ $$\begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\
     variable aleatoria \(X\) mediante la función generadora de momentos.
     </li>
     </ol>
+
 4.  Suponga que el número de llamadas telefónicas que entran a un
     conmutador particular siguen un proceso de Poisson con un promedio
     de `$5$` llamadas entrantes por minuto.
@@ -147,6 +150,7 @@ $$\begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\
     momento en que han entrado \(3\) llamadas al conmutador?
     </li>
     </ol>
+
 5.  Sea `$X$` una variable aleatoria con función de masa de probabilidad
     geométrica dada por
     
@@ -162,6 +166,7 @@ $$\begin{align*}p(x)=p(1-p)^{x-1} \text{  para  }  x=1,2,3,\ldots\end{align*}$$
     variable aleatoria \(X\) mediante la función generadora de momentos.
     </li>
     </ol>
+
 6.  Considere a `$X$` la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con función de masa de
     probabilidad dada por
@@ -169,6 +174,7 @@ $$\begin{align*}p(x)=p(1-p)^{x-1} \text{  para  }  x=1,2,3,\ldots\end{align*}$$
 $$\begin{align*}p(x)=\frac{6-|7-x|}{36} \text{  para  } x = 2,3,\ldots,12\end{align*}$$
 
     Calcule el segundo momento central.
+
 7.  El tiempo entre arribos de taxis al acopio de una estación del metro
     tiene una media de `$60$` segundos.
     <ol type="a">
@@ -186,6 +192,7 @@ $$\begin{align*}p(x)=\frac{6-|7-x|}{36} \text{  para  } x = 2,3,\ldots,12\end{al
     no menos de \(15\) taxis en un intervalo de \(20\) minutos.
     </li>
     </ol>
+
 8.  Demuestre que el `$r$`-ésimo momento alrededor del origen de la
     distribución gamma es
     
@@ -193,12 +200,14 @@ $$\begin{align*}\mu'_r=\mathbb{E}(X^r)=\frac{\beta^r\Gamma(\alpha + r)}{\Gamma(\
 
     y calcule la media, varianza, asimetría y exceso de curtosis de la
     distribución Gamma.
+
 9.  Luego de varios semestres, un profesor de estadística encuentra que
     los resultados que obtienen los estudiantes en el examen final de
     estadística, tienen una distribución normal con media `$3.2$` y
     varianza `$0.1225$`. Si un estudiante necesita al menos un `$4$`
     para que la nota acumulada le quede sobre `$2.96$`, cuál es la
     probabilidad de que luego de presentar el parcial gane la materia?
+
 10. Suponga una variable aleatoria `$X$` la cual posee una función de
     masa de probabilidad uniforme discreta, de la forma
     
@@ -206,6 +215,7 @@ $$\begin{align*}p(x) = \frac{1}{k} \text{  para  } x = 1,2, \ldots, k\end{align*
 
     Encuentre su función generadora de momentos de la variable aleatoria
     `$X$`.
+
 11. El sistema de puntuación Elo es un método matemático empleado para
     calcular la habilidad relativa de los jugadores en algunos deportes
     tales como el Ajedrez. Suponga que el puntaje Elo promedio de los
@@ -214,6 +224,7 @@ $$\begin{align*}p(x) = \frac{1}{k} \text{  para  } x = 1,2, \ldots, k\end{align*
     rendimiento de los ajedrecistas se distribuye normalmente. ¿Cuál es
     la probabilidad de que un ajedrecista de dicha categoría tenga un
     puntaje Elo superior a `$1603$`?.
+
 12. La función generadora de momentos de cierta variable aleatoria de
     Poisson `$X$` es dada por
     
@@ -221,6 +232,7 @@ $$\begin{align*}M_x(t) = e^{4(e^t-1)}\end{align*}$$
  Calcule de
     forma exacta y mediante aproximación a una distribución normal la
     `$\mathbb{P}(\mu - 1.3\sigma<X< \mu + 2.3\sigma)$`.
+
 13. Suponga que en una universidad se realizan pruebas de aptitud
     anuales para observar las habilidades y competencias de sus
     profesores. Si se sabe que el puntaje de estas pruebas se distribuye
@@ -236,6 +248,7 @@ $$\begin{align*}M_x(t) = e^{4(e^t-1)}\end{align*}$$
     menor a \(80\) puntos?
     </li>
     </ol>
+
 14. Sea `$X$` una variable aleatoria con función de densidad de
     probabilidad chi-cuadrado dada por
     
@@ -251,12 +264,14 @@ $$\begin{align*}f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)}x^{\frac{\nu}{2}-1}e^{-\f
     mediante la función generadora de momentos.
     </li>
     </ol>
+
 15. Por experiencia se sabe que el `$20\%$` de las inversiones
     realizadas por un experto en finanzas terminan en pérdida. Si se
     seleccionan aleatoriamente `$60$` inversiones realizadas por el
     experto, ¿Cuál es la probabilidad de que más de `$37$` pero menos de
     `$45$`, no terminen en pérdida? Compare el resultado obtenido
     mediante una aproximación Normal.
+
 16. Sea `$X$` una variable aleatoria con función de masa de probabilidad
     binomial dada por
     
@@ -272,6 +287,7 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n
     aleatoria \(X\) mediante la función generadora de momentos.
     </li>
     </ol>
+
 17. Suponga que se realiza un estudio estadístico y se encuentra que el
     número de clientes que llega donde Pastora en media hora, es una
     variable aleatoria Poisson con media de `$4$` clientes. Basados en
@@ -287,6 +303,7 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n
     \(24\) minutos y aún no llegan los \(3\) clientes?
     </li>
     </ol>
+
 18. Suponga una variable aleatoria `$X$` con función de distribución de
     probabilidad exponencial dada por
     
@@ -294,6 +311,7 @@ $$\begin{align*}f(x) = \lambda e^{-\lambda x} \text{  para  } x>0, \lambda>0\end
 
     Basado en lo anterior, calcule el segundo momento central de la
     variable aleatoria.
+
 19. Suponga que el tiempo de vida de un portátil MSI, en años, tiene una
     distribución de Gamma con parámetro de forma y de escala dados por
     `$3$` y `$1.5$` respectivamente. Calcule la probabilidad de que

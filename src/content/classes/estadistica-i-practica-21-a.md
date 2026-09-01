@@ -44,12 +44,16 @@ países con mayor producción en el mundo, apoyandose en el entorno
 1.  Identifique completamente el tipo de variables contenidas en su base
     de datos y realice una descripción inicial de las variables
     cuantitativas con las medidas que considere apropiados.
+
 2.  ¿Los grados de alcohol que poseen los vinos se comporta de forma
     diferente dependiendo del sabor del vino?
+
 3.  ¿Cuál es el país que produce la mayor cantidad de vinos? ¿Cuál es la
     proporción del tercer y cuarto país con mayor producción de vinos?  
+
 4.  Se tiene la creencia respeto a que un vino que sea de alta calidad
     (que tenga una puntuación alta) debe tener un precio alto, ¿Tal
     creencia se encuentra apoyada por la evidencia?
+
 5.  ¿Es cierto que el sabor del vino depende mucho del color? ¿Se
     evidencia que algún color posea algún sabor dominante?

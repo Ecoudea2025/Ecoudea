@@ -308,8 +308,10 @@ criterios
 1.  El número de elementos en cada estrato afecta la cantidad de
     información en la muestra. 2. Se deben fijar tamaños de muestra
     grandes a estratos grandes.
+
 2.  Tener en cuenta la variabilidad de los estratos, a mayor
     variabilidad el tamaño de muestra debe ser mayor.
+
 3.  Si el costo de obtener una observación varía de un estrato a otro,
     se tomarán muestras pequeñas en estratos con costo alto con el fin
     de minimizar el costo.
@@ -319,8 +321,10 @@ criterios
 El mejor esquema de afijación está influenciado por tres factores:
 
 1.  `$N_i$`: \# de unidades en cada estrato.
+
 2.  `$\sigma^2_i$`: variabilidad de las observaciones dentro de cada
     estrato.
+
 3.  `$c_i$`: Costo de obtener una observación en cada uno de los
     estratos.
 

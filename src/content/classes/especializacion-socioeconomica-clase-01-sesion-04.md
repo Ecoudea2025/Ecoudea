@@ -3466,6 +3466,7 @@ $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =
 
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, dado
     que `$X$` es igual a `$x_i$`.
+
 2.  Del modelo `$(II)$` suponga que las `$\varepsilon_i$` son variables
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que

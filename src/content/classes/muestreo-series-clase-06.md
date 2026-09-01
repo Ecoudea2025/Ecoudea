@@ -100,6 +100,7 @@ deben tenerse en cuenta para la realización de encuestas:
     Se deben de mantener los objetivos suficientemente simples, de tal
     manera que sean entendidos por quienes trabajan en la encuesta y
     sean logrados exitosamente cuando se complete la misma.
+
 2.  **Selección de la población objetivo:** Definir de forma cuidadosa
     el segmento de la población de interés, para la cual debe precisarse
     de acuerdo a los conceptos y variables que se quieren medir. Para
@@ -114,6 +115,7 @@ deben tenerse en cuenta para la realización de encuestas:
     se van a hacer un muestreo de adultos, defina qué se entiende por
     adulto, pues la elección de la población objetivo afectará
     profundamente las estadísticas resultantes.  
+
 3.  **Elección del marco de muestreo:** El marco de muestreo es la lista
     de las unidades de muestreo. Éstas últimas son las unidades donde
     realizamos la muestra; por ejemplo una familia es una unidad de
@@ -130,6 +132,7 @@ deben tenerse en cuenta para la realización de encuestas:
     deficiencias que presente el marco, como información incompleta,
     obsoleta, inadecuada, etcétera, pues afectará los resultados a
     obtener.
+
 4.  **Establecimiento del método de medición:** Decidir sobre el método
     de medición. Estos son usualmente: entrevistas personales,
     telefónicas, cuestionarios enviados por correo u observación
@@ -137,6 +140,7 @@ deben tenerse en cuenta para la realización de encuestas:
     si su método de aplicación es realizado mediante autoaplicación
     (Entrega directa, por correo electrónico u online) o usando
     encuestador (Vía telefónica o de forma personal)
+
 5.  **Instrumento de medición:** Junto a las etapas anteriores, es
     necesario especificar cuidadosamente qué mediciones van a ser
     obtenidas. Si se va usar un cuestionario planee las preguntas de tal
@@ -193,6 +197,7 @@ deben tenerse en cuenta para la realización de encuestas:
         que no corresponden a la información que se quería recabar. Es
         por eso que se debe ser muy cuidadoso en la redacción de las
         preguntas de una encuesta.
+
 6.  **Diseño de muestreo:** Se debe planear cuidadosamente el diseño de
     muestreo, calculando un número apropiado de elementos de la muestra,
     de tal manera ésta proporcione suficiente información para los
@@ -225,6 +230,7 @@ deben tenerse en cuenta para la realización de encuestas:
         “naturales” relativamente homogéneos.
         -   Se toman todos los elementos de cada grupo seleccionado o
             una parte.
+
 7.  **Selección y adiestramiento de los investigadores de campo:** Se
     debe de seleccionar y adiestrar cuidadosamente a los investigadores
     de campo ya que después de que el plan de muestreo está claro y
@@ -235,12 +241,14 @@ deben tenerse en cuenta para la realización de encuestas:
     usan entrevistas personales, porque la tasa de respuesta y la
     exactitud de las respuestas son afectadas por el estilo personal del
     entrevistador.
+
 8.  **Prueba piloto:** Es recomendable seleccionar una pequeña muestra
     para una prueba piloto. La prueba piloto es crucial, ya que permite,
     probar en el campo el cuestionario y otros instrumentos de medición,
     calificar a los entrevistadores, etc. Los resultados de la prueba
     piloto usualmente sugieren algunas modificaciones antes de realizar
     el muestreo completo.
+
 9.  **Redacción del cuestionario definitivo:** Con los resultados de la
     prueba piloto, se revisan los distintos aspectos del cuestionario
     que se haya comprobado que no cumplen los objetivos establecidos y
@@ -248,6 +256,7 @@ deben tenerse en cuenta para la realización de encuestas:
     cuestionario debe contemplar la futura codificación del mismo, ya
     sea reservando espacio para la misma, ya sea haciendo una
     pre-codificación del mismo, así como su presentación gráfica.
+
 10. **Organización del trabajo de campo:** Se debe planear con detalle
     el trabajo de campo. Cualquier encuesta a gran escala involucra un
     gran número de personas trabajando como entrevistadores,
@@ -255,6 +264,7 @@ deben tenerse en cuenta para la realización de encuestas:
     empezar con la encuesta se debe organizar cuidadosamente los
     trabajos, delimitando claramente las tareas, y estableciendo las
     líneas de autoridad.
+
 11. **Organización y manejo de datos:** Se debe elaborar un esquema el
     manejo apropiado de la información en todas las etapas de la
     encuesta. Las grandes encuestas generan gran cantidad de información
@@ -265,6 +275,7 @@ deben tenerse en cuenta para la realización de encuestas:
     también un esquema de control de calidad para verificar la
     correlación entre los datos procesados y los datos recolectados en
     el campo.
+
 12. **Análisis de los datos:** Definir los análisis que deberán
     realizarse. Este punto está estrechamente relacionado con el paso
     anterior, e involucra la especificación detallada de los análisis
@@ -293,34 +304,46 @@ realización de encuestas, incluye
 
 1.  Asegúrese de que las preguntas sean imparciales, no trate de guiar
     al encuestado hacia una respuesta u otra.
+
 2.  Formule las preguntas de la forma más sencilla posible. Las
     preguntas que incluyen indeas múltiples o dos interrogantes
     simultáneos confundirán a los encuestados.
+
 3.  Formule preguntas concretas y sea muy específico con los tiempos.
+
 4.  Evite utilizar lenguaje técnico y abreviaturas. Tampoco emplee
     palabras especializadas de una industria, ni acrónimos o iniciales
     que no sean de uso común.
+
 5.  No utilice palabras rebuscadas o poco comunes. Es conveniente
     emplear exclusivamente términos de lenguaje común.
+
 6.  Evite el uso de palabras ambiguas. Palabras como normalmente o
     frecuentemente no tienen significado específico.
+
 7.  Evite formular preguntas en negativo.
+
 8.  Evite las preguntas hipotéticas. Es difícil responder preguntas
     sobre situaciones imaginarias, debido a que no siempre se puede
     confiar en las respuestas.
+
 9.  No utilice palabras que puedan malintepretarse. Esto es
     especialmente importante cuando la entrevista se realiza por
     teléfono.
+
 10. Relativice las respuestas utilizando rangos de respuesta. Al usar
     cuestionarios en los que se pregunta por ejemplo por la edad, o el
     número de empleados despedidos en una empresa, es mejor ofrecer una
     serie de alternativas con diferentes rangos cuantitativos.
+
 11. Asegúrese de que las respuestas fijas no se solapen. Las categorías
     de las preguntas con respuesta fija deberían ser secuenciales y no
     sobreponerse unas con otras.
+
 12. Incluya la opción “otros” en las preguntas de respuesta fija. Cuando
     las respuestas están definidas, es recomendable dar siempre la
     opción de responder algo que no está en la lista.
+
 13. Evite realizar encuestas muy largas, debido a que estas pueden
     llegar a cansar al encuestado y hacer que abandone la encuesta o te
     responda apresuradamente y con errores.

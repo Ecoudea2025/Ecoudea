@@ -38,7 +38,9 @@ de masa de probabilidad `$(fmp)$` de la variable aleatoria discreta
 `$X$`, si para cualquier valor posible de `$X$` se cumple que
 
 1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
+
 2.  `$\sum_x p(x)=1$`
+
 3.  `$\mathbb{P}(X\in A)= \sum_{x\in A}p(x) $` con `$A$` un conjunto de
     valores `$\in$` al dominio de `$X$`.
 
@@ -304,10 +306,13 @@ Un proceso Bernoulli es aquel que cumple
 
 1.  El experimento consta de ensayos repetidos bajo las mismas
     condiciones.
+
 2.  Cada ensayo produce un resultado que se puede clasificar como éxito
     o fracaso.
+
 3.  La probabilidad de éxito se denota por `$p$` y permanece constante
     de un ensayo a otro.
+
 4.  Los ensayos repetidos son independientes entre si.
 
 <button id="Show3" class="btn btn-secondary">
@@ -892,11 +897,13 @@ Un proceso Poisson es aquel que cumple
 1.  El número de resultados que ocurren en un intervalo o región
     específica es independiente del número que ocurre en cualquier otro
     intervalo de tiempo o región del espacio disjunto.
+
 2.  La probabilidad de que ocurra un solo resultado durante un intervalo
     de tiempo corto o región pequeña es proporcional a la longitud del
     intervalo o al tamaño de la región, y no depende del número de
     resultados que ocurren por fuera de este intervalo de tiempo o
     región.
+
 3.  La probabilidad de que ocurra más de un resultado en tal intervalo o
     región pequeña es insignificante.
 
@@ -1080,7 +1087,9 @@ para la variable aleatoria continua `$X$`, definida en el conjunto de
 números reales, si
 
 1.  `$f(x)\geq0$` para todo `$x\in \mathbb R$`
+
 2.  `$\int_{-\infty}^\infty f(x)dx=1$`
+
 3.  `$P(a<x<b) = \int_a^b f(x)dx$` con `$a$` y `$b$` dos constantes
     `$\in \mathbb{R}$`
 
@@ -1720,10 +1729,14 @@ estandarización `$Z=\frac{x-\mu}{\sigma} \sim N(0,1)$`, y por tanto, si
 `$z_1$` y `$z_2$` son constantes, se tendrá que
 
 1.  `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$`
+
 2.  `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$`
+
 3.  `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$`
+
 4.  Si `$z_1 = - z_2$` entonces
     `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$`
+
 5.  `$Z_\alpha$` es el valor de la variable aleatoria `$Z\sim N(0,1)$`
     tal que `$\mathbb{P}(Z\geq Z_\alpha)=\alpha$`, y
     `$\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$`

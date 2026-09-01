@@ -95,6 +95,7 @@ Lista de ejercicios
     Calcule la \(\mathbb{P}(X=1|Y\leq 0)\).
     </li>
     </ol>
+
 2.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
     probabilidad dada por:
     
@@ -109,6 +110,7 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
     Encuentre la correlación entre \(X\) y \(Z\) donde \(Z = 6X\).
     </li>
     </ol>
+
 3.  Suponga una función de densidad de probabilidad conjunta de las
     variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
     
@@ -133,6 +135,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     \(\mathbb{P}(0 < X < \frac{1}{2}| Y = \frac{1}{4} , Z = 2)\)
     </li>
     </ol>
+
 4.  Sea `$X$` el número de veces que fallará cierta máquina de control
     numérico: 1, 2 o 3 veces en un día dado, y `$Y$` denota el número de
     veces que se llama a un técnico para una emergencia. Suponga que su
@@ -206,6 +209,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     </tbody>
     </table>
     Calcule el `$Corr(X,Y^2)$`.
+
 5.  Si `$X$` y `$Y$` son variables aleatorias con función de
     probabilidad conjunta dada por
     
@@ -234,6 +238,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     \(X<8\).
     </li>
     </ol>
+
 6.  Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
     primer lanzamiento y `$Y$` el número total de caras en los `$2$`
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
@@ -249,6 +254,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     la correlación de \(3X\) y \(2Y\)
     </li>
     </ol>
+
 7.  Considere las variables aleatorias `$X$` y `$Y$` que representan el
     número de vehículos que llegan a dos esquinas de calles separadas
     durante cierto periodo de `$2$` minutos. Estas esquinas de las
@@ -269,6 +275,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
     lleguen menos de \(4\) vehículos a las dos esquinas?.
     </li>
     </ol>
+
 8.  Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
@@ -284,6 +291,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     Determine la esperanza condicional \(\mathbb{E}(X | Y)\)
     </li>
     </ol>
+
 9.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
     probabilidad dada por: `$f(x,y)=k(\frac{x+y}{xy})$`,para
     `$x=1,2,3$`; `$y=1,2,3$`.
@@ -302,6 +310,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     las v.a \(X\) y \(Y\) son independientes?.
     </li>
     </ol>
+
 10. Calcule la covarianza de las variables aleatorias `$X$` y `$Y$` que
     tienen la siguiente función de densidad de probabilidad conjunta
     
@@ -327,6 +336,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     \(\mathbb{P}(X>2|Y\leq1)\).
     </li>
     </ol>
+
 12. La función de densidad de probabilidad conjunta de las variables
     aleatorias `$X$`, `$Y$` y `$Z$` está dada por
     
@@ -344,6 +354,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en 
     la correlación de \(Y\) y \(Z\).
     </li>
     </ol>
+
 13. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
@@ -366,6 +377,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
     \(\mathbb{P}(X < \frac{1}{3} | Y < \frac{1}{8}, Z > \frac{2}{3})\).
     </li>
     </ol>
+
 14. Sean `$X$` y `$Y$` son variables aleatorias que poseen la siguiente
     función de densidad de probabilidad conjunta
     
@@ -373,6 +385,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
 
     Entonces, a partir de ésta, calcule la covarianza de `$6X^2$` y
     `$3Y^3$`.
+
 15. Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
     primer lanzamiento y `$Y$` el número total de caras en los `$2$`
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
@@ -391,6 +404,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     La probabilidad de que ocurra al menos \(1\) cara.
     </li>
     </ol>
+
 16. Una empresa dulcera distribuye cajas de chocolates con un surtido de
     cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
@@ -409,6 +423,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
     Calcule la varianza de \(Z\)
     </li>
     </ol>
+
 17. Una empresa dulcera distribuye cajas de chocolates con un surtido de
     cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
@@ -433,6 +448,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
     constituyen \(3/4\) partes del peso.
     </li>
     </ol>
+
 18. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
@@ -447,6 +463,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
     Calcule \(\mathbb{E}(X |Y > \frac{1}{2}, 1 < Z < 2)\)
     </li>
     </ol>
+
 19. Sean `$X$` y `$Y$` dos variables aleatorias con función de
     probabilidad dada por
     
@@ -476,6 +493,7 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
     Pruebe si \(X\) y \(Y\) son independientes.
     </li>
     </ol>
+
 20. Suponga que la función de probabilidad conjunta de un sistema
     químico puede ser representado como
     
@@ -495,10 +513,12 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
     \(0.5\), dado que \(Y\) es \(0.7\)?.
     </li>
     </ol>
+
 21. Sean `$X$` y `$Y$` variables aleatorias independientes tal que sus
     distribuciones marginales son `$g(x)=3x^2$` para `$0<x<1$` y
     `$h(y)=2y$` para `$0<y<1$`. Calcule
     `$\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$`.
+
 22. Suponga la siguiente función de probabilidad para las variables
     aleatorias `$X$` y `$Y$`
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -586,6 +606,7 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
     Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
     </li>
     </ol>
+
 23. Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
@@ -612,6 +633,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     \(X<0.1\).
     </li>
     </ol>
+
 24. Sea `$X$` el número de veces que fallará cierta máquina de control
     numérico: `$1$`, `$2$` o `$3$` veces en un día dado. Y sea `$Y$` el
     número de veces que se llama a un técnico para una emergencia, su
@@ -701,6 +723,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
     </li>
     </ol>
+
 25. En funcion de su prioridad, un programa para computadora espera en
     la fila de entrada cierto tiempo, después del cual lo ejecuta el
     procesador central en un lapso dado. La función de densidad conjunta
@@ -729,6 +752,7 @@ $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-
     de tiempo son variables aleatorias independientes.
     </li>
     </ol>
+
 26. Sean `$X$` y `$Y$` variables aleatorias continuas distribuidas
     conjuntamente con
     

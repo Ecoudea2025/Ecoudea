@@ -31,6 +31,7 @@ Identificación, Teléfono, Dirección, etc.
     -   UdeA: <i class="far fa-square"></i>
     -   Carlos E. Restrepo: <i class="far fa-square"></i>
     -   Villa de Aburrá: <i class="far fa-square"></i>
+
 2.  Lugar de estudio:
     -   Instituto Tecnológico Metropolitano (ITM):
         <i class="far fa-square"></i>
@@ -41,6 +42,7 @@ Identificación, Teléfono, Dirección, etc.
     -   Universidad EAFIT: <i class="far fa-square"></i>
     -   Universidad Nacional de Colombia: <i class="far fa-square"></i>
     -   Otra: <i class="far fa-square"></i>
+
 3.  Carrera:
     -   Administración de Empresas o afines:
         <i class="far fa-square"></i>
@@ -49,12 +51,17 @@ Identificación, Teléfono, Dirección, etc.
     -   Finanzas o afines: <i class="far fa-square"></i>
     -   Ingeniería Industrial o afines: <i class="far fa-square"></i>
     -   Otra: <i class="far fa-square"></i>
+
 4.  Semestre que cursa actualmente: \_\_\_
+
 5.  Promedio acumulado de carrera: \_\_\_\_
+
 6.  Sexo:
     -   Masculino: <i class="far fa-square"></i>
     -   Femenino: <i class="far fa-square"></i>
+
 7.  Edad: \_\_\_
+
 8.  Estrato socioeconómico:
     -   1: <i class="far fa-square"></i>
     -   2: <i class="far fa-square"></i>
@@ -62,22 +69,27 @@ Identificación, Teléfono, Dirección, etc.
     -   4: <i class="far fa-square"></i>
     -   5: <i class="far fa-square"></i>
     -   6: <i class="far fa-square"></i>
+
 9.  Trabaja actualmente:
     -   Sí: <i class="far fa-square"></i>
     -   No: <i class="far fa-square"></i>
+
 10. Ingresos mensuales:
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 11. Consume bebidas alcoholicas:
     -   Sí: <i class="far fa-square"></i>
     -   No: <i class="far fa-square"></i> <br>
         <strong style="color: #ffc543">Si la respuesta de la
         pregunta 11. es “No” pase a la pregunta 15</strong>
+
 12. Con qué frecuencia consume bebida alcoholicas a la semana:
     -   1 día o ninguno: <i class="far fa-square"></i>
     -   2 días: <i class="far fa-square"></i>
     -   3 días: <i class="far fa-square"></i>
     -   4 días: <i class="far fa-square"></i>
     -   5 o más días: <i class="far fa-square"></i>  
+
 13. En el siguiente listado de bebidas alcohólicas, señale la bebida que
     prefiere consumir (solo una):
     -   Aguardiente: <i class="far fa-square"></i>
@@ -88,19 +100,23 @@ Identificación, Teléfono, Dirección, etc.
         <i class="far fa-square"></i>
     -   Vodka: <i class="far fa-square"></i>
     -   Whisky: <i class="far fa-square"></i>
+
 14. Cuanto dinero gasta en promedio al mes, consumiendo bebidas
     alcohólicas: \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 15. Consume algún tipo de droga:
     -   Sí: <i class="far fa-square"></i>
     -   No: <i class="far fa-square"></i> <br>
         <strong style="color: #ffc543">Si la respuesta de la
         pregunta 15. es “No” pase a la pregunta 19</strong>
+
 16. Con qué frecuencia a la semana consume drogas:
     -   1 día o ninguno: <i class="far fa-square"></i>
     -   2 días: <i class="far fa-square"></i>
     -   3 días: <i class="far fa-square"></i>
     -   4 días: <i class="far fa-square"></i>
     -   5 o más días: <i class="far fa-square"></i>  
+
 17. En el siguiente listado de drogas, señale la droga que prefiere
     consumir:
     -   Batman: <i class="far fa-square"></i>
@@ -112,8 +128,10 @@ Identificación, Teléfono, Dirección, etc.
     -   Perico: <i class="far fa-square"></i>
     -   Popper: <i class="far fa-square"></i>
     -   Tusi: <i class="far fa-square"></i>
+
 18. Cuanto dinero gasta en promedio al mes, consumiendo drogas:
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
 19. Cómo se siente cuando alguien a su alrededor consume bebídas
     alcohólicas:
     -   Muy Cómodo
@@ -121,6 +139,7 @@ Identificación, Teléfono, Dirección, etc.
     -   Indiferente
     -   Incómodo
     -   Muy Incómodo
+
 20. Cómo se siente cuando alguien a su alrededor consume drogas:
     -   Muy Cómodo
     -   Cómodo
@@ -145,17 +164,23 @@ y consumo de drogas
 1.  Identifique completamente el tipo de variables contenidas en la base
     de datos, indicando el tipo de datos, la escala de medición y
     justificando por qué esta selección.
+
 2.  Calcule los resumenes numéricos de las variables cuantitativas y
     realice una interpretación de los estadísticos que considere más
     destacados.
+
 3.  Muestre si hay diferencias significativas entre el promedio de
     carrera, respecto a la carrera y respecto a la universidad donde
     estudian los encuestados. Hay evidencia para creer que dependiendo
     de la carrera o la universidad es más probable tener un promedio de
     carrera más alto?
+
 4.  Existe relación entre la variable ingresos mensuales y las variables
     universidad, estrato socio económico, o si los estudiantes trabajan?
+
 5.  De las personas que consumen bebidas alcoholicas, cuál es la bebida
     alcohólica con mayor preferencia entre los estudiantes?
+
 6.  Proponga otro tipo de comparaciones que le parezcan interesantes :D
+
 7.  Continuará…. &gt;:o

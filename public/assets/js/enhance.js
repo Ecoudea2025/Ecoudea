@@ -46,6 +46,26 @@
     });
   }
 
+  // ── REPARAR DELIMITADORES LaTeX perdidos (\( \) → ( )) ─────────────
+  // El parser markdown strippea \(` y `\)`, dejando `( ... )` sin formato.
+  // Restaura `\(` y `\)` alrededor de contenido que parece LaTeX.
+  function repairDelimiters(article) {
+    var html = article.innerHTML;
+    // Patrones LaTeX que indican fórmula matemática
+    var latexRe = /([_(\\][^<]*?)/;
+    // Encontrar `(` seguido de contenido LaTeX y `)` que no fue renderizado
+    var fixed = html.replace(/\(([A-Za-z\\{}_^()\s,.\d]+?)\)(?=[.,;) <]|$)/g, function (match, inner) {
+      // Solo restaurar si el contenido parece LaTeX (tiene _, ^, \, {, })
+      if (/[\\{}^_]/.test(inner) && inner.length > 2 && inner.length < 500) {
+        return '\\(' + inner + '\\)';
+      }
+      return match;
+    });
+    if (fixed !== html) {
+      article.innerHTML = fixed;
+    }
+  }
+
   // ── REPARAR HTML GARBADO (LaTeX con <X parseado como tag HTML) ──────
   // El parser de markdown interpreta <Z, <z, etc. como tags HTML.
   // Restaura el LaTeX original antes de que KaTeX lo procese.
@@ -92,6 +112,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     var article = document.querySelector('.prose-class');
     if (article) {
+      repairDelimiters(article);
       repairGarbledHtml(article);
       repairMathMangling(article);
       fixImagePaths(article);
@@ -104,6 +125,7 @@
   if (document.readyState === 'complete' || document.readyState === 'interactive') {
     var articleEl = document.querySelector('.prose-class');
     if (articleEl) {
+      repairDelimiters(articleEl);
       repairGarbledHtml(articleEl);
       repairMathMangling(articleEl);
       fixImagePaths(articleEl);

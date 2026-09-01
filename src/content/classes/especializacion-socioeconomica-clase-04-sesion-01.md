@@ -83,12 +83,15 @@ información estadística, se debe tener en cuenta las siguientes etapas:
 
 1.  **Leer entre los datos**: que consiste en llevar a cabo una lectura
     literal de la información, sin interpretar su contenido.
+
 2.  **Leer dentro de los datos**: implica no solamente interpretar los
     datos sino integrarlos dentro del contexto.
+
 3.  **Leer más allá de los datos**: significa tomar los datos como
     referente para identificar patrones que transciendan el grupo de
     datos observado, ya sea mediante la interpolación o extrapolación de
     resultados.
+
 4.  **Leer detrás de los datos**: consiste en llevar a cabo un análisis
     crítico de la información que se estudia, esto implica analizar
     integralmente el problema, desde su origen, el tipo de dato que se

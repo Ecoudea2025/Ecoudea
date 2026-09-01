@@ -17,6 +17,7 @@ Lista de ejercicios
     población y entrevistados en forma sucesiva. Encuentre la
     probabilidad de que el primer solicitante con capacitación avanzada
     en programación sea el quinto o séptimo entrevistado.
+
 2.  Suponga que por Ley, la vida máxima de la patente para un nuevo
     medicamento es `$17$` años. Si restamos el tiempo requerido por la
     FDA para someter a pruebas y aprobar el medicamento, se obtiene la
@@ -111,6 +112,7 @@ Lista de ejercicios
     teorema de Chebyshev.
     </li>
     </ol>
+
 3.  Por experiencia se sabe que el `$20\%$` de las inversiones
     realizadas por un experto en finanzas terminan en pérdida. Si se
     seleccionan aleatoriamente `$5$` inversiones realizadas por el
@@ -124,17 +126,20 @@ Lista de ejercicios
     pérdida?.
     </li>
     </ol>
+
 4.  En una tienda de barrio, el dueño exhibe `$15$` ollas arroceras de
     la misma marca, `$9$` negras y `$6$` grises. Suponga que en el día,
     `$7$` clientes compran cada uno, una olla en momentos diferentes.
     ¿Cuál es la probabilidad de que más de `$2$` clientes hayan comprado
     arroceras de color gris?
+
 5.  Suponga que se tiene un total de tres cajas exactamente iguales,
     donde cada una contiene un animal encerrado, un conejo, un hamster y
     una cobaya. Si se trata de adivinar qué clase de animal hay en cada
     caja y `$X$` representa la variable aleatoria discreta del numero de
     aciertos. Escriba la función de masa de probabilidad de la variable
     aleatoria `$X$` y calcule la esperanza y varianza de `$Z= X-3X^2$`.
+
 6.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
     probabilidad dada por:
     
@@ -149,6 +154,7 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
     Encuentre la correlación entre \(X\) y \(Z\) donde \(Z = 6X\).
     </li>
     </ol>
+
 7.  Sea `$X$` una variable aleatoria discreta con distribución de
     probabilidades `$f(x)$` dada por:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -218,6 +224,7 @@ $$\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
     pedido?.
     </li>
     </ol>
+
 9.  Una empresa de exploración petrolera va a hacer una serie de
     perforaciones de sondeo en una zona determinada en busca de un pozo
     productivo. La probabilidad de que tenga éxito en un intento dado es
@@ -232,6 +239,7 @@ $$\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
     ¿cuál es la probabilidad de que no encuentre un pozo productivo?.
     </li>
     </ol>
+
 10. A partir de la siguiente función de masa de probabilidad
     
 $$\begin{align*}f(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}$$
@@ -243,6 +251,7 @@ $$\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
 11. Dado que ya hemos lanzado al aire una moneda balanceada diez veces y
     no obtuvimos caras, ¿cuál es la probabilidad de que debamos lanzar
     la moneda al menos dos veces más, para obtener la primera cara?
+
 12. Sea `$X$` el número de veces que fallará cierta máquina de control
     numérico: 1, 2 o 3 veces en un día dado, y `$Y$` denota el número de
     veces que se llama a un técnico para una emergencia. Suponga que su
@@ -316,6 +325,7 @@ $$\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
     </tbody>
     </table>
     Calcule el `$Corr(X,Y^2)$`.
+
 13. Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
     primer lanzamiento y `$Y$` el número total de caras en los `$2$`
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
@@ -331,6 +341,7 @@ $$\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
     la correlación de \(3X\) y \(2Y\)
     </li>
     </ol>
+
 14. Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
@@ -346,6 +357,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     Determine la esperanza condicional \(\mathbb{E}(X | Y)\)
     </li>
     </ol>
+
 15. El número de problemas que puede presentar la impresora del centro
     de documentación de la facultad al mes, es una variable aleatoria
     uniforme en el conjunto cerrado de `$1$` a `$6$` errores.
@@ -358,6 +370,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     probabilidad de que presente exactamente \(3\)?
     </li>
     </ol>
+
 16. Considere la siguiente función de densidad de probabilidad
     
 $$\begin{align*}f(x) =\begin{cases}\frac{3}{2}\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
@@ -370,12 +383,14 @@ $$\begin{align*}f(x) =\begin{cases}\frac{3}{2}\sqrt{x}, & 0< x < 1\\ 0, & \text{
     Calcule la esperanza de \(2/X^2\)
     </li>
     </ol>
+
 17. Suponga que el transito de Medellín afirma que `$3$` de cada `$10$`
     accidentes de tráfico se debe a que al menos uno de los implicados
     no pasó la prueba de alcoholemia. Si ocurren `$15$` accidentes de
     tráfico un día cualquiera. ¿Cuál es la probabilidad de que al menos
     `$4$` pero menos de `$7$` accidentes, no hayan sido causados por
     personas en estado de embriagues?.
+
 18. Calcule la covarianza de las variables aleatorias `$X$` y `$Y$` que
     tienen la siguiente función de densidad de probabilidad conjunta
     
@@ -388,6 +403,7 @@ $$\begin{align*}f(x,y)=\begin{cases}x+y & 0<x<1,\quad 0<y<1,\\0 & \text{en otro 
     son devueltos para su reparación, y el costo de reparación está dado
     por `$C = 3Y^2 + Y + 2$`. Encuentre el costo esperado de reparación
     de los artículos.
+
 20. La función de densidad de probabilidad conjunta de las variables
     aleatorias `$X$`, `$Y$` y `$Z$` está dada por
     
@@ -405,6 +421,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en 
     la correlación de \(Y\) y \(Z\).
     </li>
     </ol>
+
 21. Suponga que el tiempo medido en unidades de 100 horas, que se usa
     una licuadora en un hogar durante un año es una variable aleatoria
     continua `$X$` con función de densidad de probabilidad dada por:
@@ -422,6 +439,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     Calcule la covarianza entre \(X\) y \(Y\).
     </li>
     </ol>
+
 22. La Facultad de Ciencias Económicas de cierta universidad realiza a
     nivel nacional, una encuesta a `$13000$` estudiantes de economía y
     administración de último año, en la cual se observa que el `$70\%$`
@@ -429,6 +447,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     seleccionan al azar `$200$` de los encuestados y se les pide su
     opinión, ¿Cuál es la probabilidad de que más de `$60$` pero no más
     de `$80$` no estén conformes con su carrera?.
+
 23. Suponga en un proceso de producción, el número de fallas que tiene
     una maquina en un día antes de apagarse, es una variable aleatoria
     discreta `$X$` con función de masa de probabilidad dada por
@@ -448,6 +467,7 @@ $$\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     compare el resultado obtenido con el teorema de Chebyshev.
     </li>
     </ol>
+
 24. De una población de consumidores, `$60\%$` tienen fama de preferir
     una marca `$A$` de pasta dental. Si se entrevista a un grupo de
     consumidores escogidos al azar,
@@ -463,6 +483,7 @@ $$\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     marca \(A\) de pasta dental?
     </li>
     </ol>
+
 25. Dos estudiantes apuestan sobre el número de ejercicios correctos
     realizados por el profesor de matemáticas hasta que cometa un error.
     Si la probabilidad de que el profesor cometa una error en un
@@ -480,6 +501,7 @@ $$\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     de que se equivoque en el décimo ejercicio?
     </li>
     </ol>
+
 26. Sea `$X$` una variable aleatoria continua con distribución de
     probabilidades `$f(x)$` dada por
     
@@ -499,6 +521,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     el resultado obtenido con el teorema de Chebyshev.
     </li>
     </ol>
+
 27. Calcule la probabilidad de que la siguiente función de densidad de
     probabilidad se encuentre a dos desviaciones estándar de la media y
     compare con el resultado dado por el teorema de Chebyshev.
@@ -522,6 +545,7 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1,\\0 & \text{en ot
     Calcule la varianza de la variable aleatoria \(Z=3Y-4\).
     </li>
     </ol>
+
 29. Suponga que se realiza un estudio estadístico y se encuentra que el
     número de clientes que llega donde Pastora en media hora, es una
     variable aleatoria Poisson con media de `$4$` clientes.
@@ -537,6 +561,7 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1,\\0 & \text{en ot
     con el teorema de Chebyshev.
     </li>
     </ol>
+
 30. Sean `$X$` y `$Y$` son variables aleatorias que poseen la siguiente
     función de densidad de probabilidad conjunta
     
@@ -544,6 +569,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
 
     Entonces, a partir de ésta, calcule la covarianza de `$6X^2$` y
     `$3Y^3$`.
+
 31. En una noche de tragos dos estudiantes de Estadística I van a un bar
     que posee una diana de dardos, y deciden apostar sobre el número de
     dardos lanzados por las personas, que golpearán o no la diana.
@@ -552,6 +578,7 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     total de `$300$` dardos. Si `$X$` es la variable aleatoria del
     número de dardos que golpean la diana. ¿Cuál es la probabilidad de
     que golpeen al menos `$42$` pero a lo más `$50$` dardos?
+
 32. Una empresa dulcera distribuye cajas de chocolates con un surtido de
     cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
@@ -570,6 +597,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
     Calcule la varianza de \(Z\)
     </li>
     </ol>
+
 33. La cantidad diaria de vasos de café que toma un profesor
     normalmente, es una variable aleatoria uniforme en el conjunto
     cerrado de `$3$` hasta `$7$` vasos.
@@ -585,6 +613,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
     obtenido mediante el teorema de Chebyshev.
     </li>
     </ol>
+
 34. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
@@ -599,6 +628,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
     Calcule \(\mathbb{E}(X |Y > \frac{1}{2}, 1 < Z < 2)\)
     </li>
     </ol>
+
 35. Se cree que de los `$10000$` votantes que residen en una ciudad,
     `$4000$` están a favor de la iniciativa de talar arboles para
     construir nuevas vías. Se seleccionan al azar `$60$` votantes de los
@@ -614,22 +644,26 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
     iniciativa?
     </li>
     </ol>
+
 36. Dos personas, por turnos, tiran un dado imparcial hasta que una de
     ellas lanza un `$6$`. La persona `$A$` tiró primero, la `$B$` en
     segundo, `$A$` en tercero y así sucesivamente. En vista de que la
     persona `$B$` tiró el primer `$6$`, ¿cuál es la probabilidad de que
     `$B$` obtenga el primer `$6$` en su segundo tiro (es decir, en el
     cuarto tiro total)?
+
 37. En una industria automotriz, se sabe que diez por ciento de los
     motores fabricados en una línea de ensamble son defectuosos. Si los
     motores se seleccionan al azar uno a la vez y se prueban, ¿cuál es
     la probabilidad de que el primer motor no defectuoso sea hallado en
     el segundo intento?
+
 38. Luego de una revisión exhaustiva, se encuentra que en promedio una
     oblea de silicio producidas por un fabricante tienen dos defectos
     grandes. Si `$X$` representa al número de defectos que posee una
     oblea, ¿Cuál es la probabilidad de que una oblea de silicio tenga
     más de cinco defectos grandes?
+
 39. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
     llena al empezar cada semana. Su demanda semanal muestra un
     comportamiento de frecuencia relativo que aumenta de manera continua
@@ -653,6 +687,7 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     Calcule la curtosis de la variable aleatoria \(Y\).
     </li>
     </ol>
+
 40. Sea `$X$` la variable aleatoria del número de clientes que llega a
     una centro comercial en un periodo de una hora. Si la distribución
     acumulada de `$X$` es:

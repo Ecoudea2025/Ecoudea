@@ -251,12 +251,15 @@ para solucionar problemas de probabilidad. Por ello definimos a
     `$S$`, es denotado por `$A^c$` o `$A'$`, y se define como el
     subconjunto de todos los elementos de `$S$` que no están contenidos
     en `$A$`.
+
 2.  La **unión** de dos eventos `$A$` y `$B$`, es denotado por
     `$A\cup B$`, y se define como el evento que contiene todos los
     elementos que pertenecen a `$A$` o `$B$` o ambos.
+
 3.  La **intersección** de dos eventos `$A$` y `$B$`, es denotado por
     `$A\cap B$`, es el evento que contiene todos los elementos que son
     comunes en `$A$` y `$B$`.
+
 4.  Los eventos `$A$` y `$B$` son **mutuamente excluyentes** cuando
     `$A\cap B=\phi$`, donde `$\phi$` se denota como el evento nulo.
 
@@ -605,7 +608,11 @@ Sea `$A$` y `$B$` eventos del espacio muestral `$S$`, entonces se deben
 cumplir las siguientes cinco propiedades
 
 1.  `$0 \leq \mathbb P(A) \leq 1$`
+
 2.  `$\mathbb P(\phi) = 0$`
+
 3.  `$\mathbb P(A') = 1 - \mathbb P(A)$`
+
 4.  `$\mathbb P(A\cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A\cap B)$`
+
 5.  Si `$A\subseteq B$` entonces `$\mathbb P(A) \leq \mathbb P(B)$`

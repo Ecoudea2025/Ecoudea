@@ -338,11 +338,13 @@ Un proceso Poisson es aquel que cumple
 1.  El número de resultados que ocurren en un intervalo o región
     específica es independiente del número que ocurre en cualquier otro
     intervalo de tiempo o región del espacio disjunto.
+
 2.  La probabilidad de que ocurra un solo resultado durante un intervalo
     de tiempo corto o región pequeña es proporcional a la longitud del
     intervalo o al tamaño de la región, y no depende del número de
     resultados que ocurren por fuera de este intervalo de tiempo o
     región.
+
 3.  La probabilidad de que ocurra más de un resultado en un intervalo de
     tiempo corto o región pequeña es insignificante.
 

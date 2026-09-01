@@ -308,6 +308,7 @@ distribución `$N(\mu,\sigma^2)$` de tamaño `$n$`, y se tiene que
 `$\bar{X}$` y `$S^2$` son la media y varianza muestrales, entonces
 
 1.  Las variables aleatorias `$\bar{X}$` y `$S^2$` son independientes.
+
 2.  la esperanza y la varianza de la variable aleatoria `$S^2$` estarán
     dadas por
     

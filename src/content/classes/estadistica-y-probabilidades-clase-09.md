@@ -18,7 +18,9 @@ probabilidad (*fdp*) de la variable aleatoria continua `$X$`, definida
 en el conjunto de números reales si
 
 1.  `$f(x)\geq0$` para todo `$x \in \mathbb{R}$`
+
 2.  `$\int_{-\infty}^\infty f(x) dx=1$`
+
 3.  `$\int_{a}^b f(x) dx = \mathbb{P}(a<X<b)$`
 
 <button id="Show1" class="btn btn-secondary">

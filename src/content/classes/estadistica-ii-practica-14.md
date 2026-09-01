@@ -44,6 +44,7 @@ $$\begin{align*}f(x) = p^x(1-p)^{1-x} \text{ para } x=0,1; \quad 0\leq p \leq 1\
     parámetro \(p\).
     </li>
     </ol>
+
 2.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Binomial con parámetros desconocido `$p$` y parámetro
     `$k$` conocido o desconocido, con función de distribución dada por
@@ -86,6 +87,7 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}k\\ x\end{array}\right)p^x(1-p)^{k-
     parámetro \(p\).
     </li>
     </ol>
+
 3.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Geométrica con parámetro desconocido `$p$` y función de
     distribución dada por
@@ -120,6 +122,7 @@ $$\begin{align*}f(x) = p(1-p)^{x-1} \text{ para } x=1,2,3,\ldots; \quad 0\leq p 
     parámetro \(p\).
     </li>
     </ol>
+
 4.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Poisson con parámetro desconocido `$\lambda$` y función
     de distribución dada por
@@ -154,6 +157,7 @@ $$\begin{align*}f(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ para } x=0,1,2,\l
     parámetro \(\lambda\).
     </li>
     </ol>
+
 5.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Exponencial con parámetro desconocido `$\beta$` y
     función de distribución dada por
@@ -188,6 +192,7 @@ $$\begin{align*}f(x) = \frac{1}{\beta}e^{-\frac{x}{\beta}} \text{ para } x>0; \q
     parámetro \(\beta\).
     </li>
     </ol>
+
 6.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Normal con parámetros conocidos o desconocidos `$\mu$`
     y `$\sigma^2$`, con función de distribución dada por
@@ -232,6 +237,7 @@ $$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sig
     estimadores consistentes para el parámetro \(\mu\).
     </li>
     </ol>
+
 7.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Lognormal con parámetros conocidos o desconocidos
     `$\mu$` y `$\sigma^2$`, con función de distribución dada por
@@ -267,6 +273,7 @@ $$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2} x}e^{-\frac{(\ln(x) - \mu)^2
     efectivamente maximiza la función.
     </li>
     </ol>
+
 8.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Gamma con parámetros conocidos o desconocidos
     `$\alpha$` y `$\beta$`, con función de distribución dada por
@@ -309,6 +316,7 @@ $$\begin{align*}f(x) = \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac
     parámetro \(\beta\), si se asume \(\alpha\) conocida.
     </li>
     </ol>
+
 9.  Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Rayleigh con parámetro desconocido `$\theta$` y función
     de distribución dada por
@@ -353,6 +361,7 @@ $$\begin{align*}f(x) = \frac{x}{\theta^2}e^{-\frac{x^2}{2\theta^2}} \text{ para 
     el parámetro \(\theta^2\).
     </li>
     </ol>
+
 10. Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria `$iid$` de una
     distribución de probabilidad continua con parámetros conocido
     `$\alpha$`, parámetro desconocido `$\theta$` y función de
@@ -387,6 +396,7 @@ $$\begin{align*}f(x) = \frac{1}{\theta}\alpha x^{\alpha-1}e^{-\frac{x^\alpha}{\t
     Encuentre el estadístico suficiente para \(\theta\).
     </li>
     </ol>
+
 11. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de una
     variable aleatoria continua Exponencial tal que `$X\sim Exp(\beta)$`
     y suponga los siguientes estimadores.
@@ -404,6 +414,7 @@ $$\begin{align*}\hat{\beta}_1&=X_1 \\     \hat{\beta}_2&=\frac{X_1+X_2+X_5}{3} \
     \(\hat{\beta}_4\). Qué se puede concluir?
     </li>
     </ol>
+
 12. Suponga `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de
     una variable aleatoria continua Uniforme tal que
     `$X\sim Unif(\theta, \theta + 1)$` y suponga los siguientes
@@ -421,6 +432,7 @@ $$\begin{align*}\hat{\theta}_1&=\bar{X}-\frac{1}{2} \\     \hat{\theta}_2&=X_{(n
     \(\hat{\theta}_2\). Qué se puede concluir?
     </li>
     </ol>
+
 13. Suponga `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de
     una variable aleatoria discreta Poisson tal que
     `$X\sim Pois(\lambda)$` y suponga los siguientes estimadores
@@ -437,6 +449,7 @@ $$\begin{align*}\hat{\lambda}_1&=\bar{X} \\     \hat{\lambda}_2&=\frac{X_1+X_5+2
     consideramos que \(n=30\).
     </li>
     </ol>
+
 14. Suponga `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de
     una variable aleatoria continua Normal tal que
     `$X\sim N(\mu, \sigma^2)$`, muestre si  
@@ -454,6 +467,7 @@ $$\begin{align*}S^2_n=\frac{1}{n}\sum_{i=1}^{n}(X_i-\mu)^2\end{align*}$$
     \(\sigma^2\).
     </li>
     </ol>
+
 15. Suponga `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de
     una variable aleatoria continua Normal tal que
     `$X\sim N(0, \sigma^2)$`, muestre si
@@ -471,6 +485,7 @@ $$\begin{align*}\hat{\sigma}^2 = \sum_{i=1}^{n}\frac{X^2_i}{n}\end{align*}$$
     \(\sigma^2\).
     </li>
     </ol>
+
 16. Suponga `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de
     una variable aleatoria continua Normal tal que
     `$X\sim N(\mu, \sigma^2)$`, muestre si  
@@ -488,6 +503,7 @@ $$\begin{align*}S^2_{n-2}=\frac{1}{n-2}\sum_{i=1}^{n}(X_i-\bar{X})^2\end{align*}
     \(\sigma^2\).
     </li>
     </ol>
+
 17. Si se consideran los estimadores `$S^2_{n}$`, `$S^2_{n-1}$`, y
     `$S^2_{n-2}$` del parámetro `$\sigma^2$` de una distribución
     `$N(\mu,\sigma^2)$`.
@@ -501,6 +517,7 @@ $$\begin{align*}S^2_{n-2}=\frac{1}{n-2}\sum_{i=1}^{n}(X_i-\bar{X})^2\end{align*}
     cuenta si es o no insesgado.
     </li>
     </ol>
+
 18. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de una
     variable aleatoria discreta Binomial tal que `$X\sim Bin(n,p)$` y
     suponga los estimadores
@@ -520,6 +537,7 @@ $$\begin{align*}\hat{p}_1&=\frac{X}{n}; \\       \hat{p}_2&=\frac{X+\sqrt{n/2}}{
     consideramos que \(n = 50\).
     </li>
     </ol>
+
 19. Sea `$X_1$` y `$X_2$` una muestra aleatoria de dos observaciones de
     una población Normal con media `$\mu$` y varianza `$\sigma^2$`.
     Considere los siguientes tres estimadores puntuales de `$\mu$`:
@@ -535,6 +553,7 @@ $$\begin{align*}\bar{X}^{(1)}&=\frac{1}{3}X_1+\frac{1}{3}X_2 \\     \bar{X}^{(2)
     Muestre cuál de los tres estimadores es más eficiente.
     </li>
     </ol>
+
 20. Sea `$X_1$`, `$X_2$` y `$X_3$` una muestra aleatoria de tres
     observaciones de una población Normal con media `$\mu$` y varianza
     `$\sigma^2$`. Considere los siguientes dos estimadores puntuales de
@@ -555,6 +574,7 @@ $$\begin{align*}\vec{X}^{(1)}&=\frac{X_1+2X_2+3X_3}{6}\\     \vec{X}^{(2)}&=\fra
     a \(\bar{X}\).
     </li>
     </ol>
+
 21. Sea `$X_1, X_2, X_3$` y `$X_4$` una muestra aleatoria de cuatro
     observaciones de una población Binomial con parámetro `$p$`
     desconocido. Demuestre si los siguientes estimadores son o no
@@ -590,6 +610,7 @@ $$\begin{align*}f(x,\theta)=\frac{3\theta^3}{x^4} \quad para \quad \theta<x<\inf
     consistentes para el parámetro \(\theta\).
     </li>
     </ol>
+
 24. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de un
     distribución con función de distribución acumulada dada por
     
@@ -611,6 +632,7 @@ $$\begin{align*}F(x,\theta)=-e^{-\frac{x}{4\theta}} \quad para \quad x>0\end{ali
     consistentes para el parámetro \(\theta\).
     </li>
     </ol>
+
 25. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de un
     distribución Uniforme con función de distribución acumulada dada por
     
@@ -632,6 +654,7 @@ $$\begin{align*}F(x,\theta)=\frac{x}{\theta} \quad para \quad 0<x<\theta; \quad 
     consistentes para el parámetro \(\theta\).
     </li>
     </ol>
+
 26. Sean `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de una
     distribución Pareto tal que `$X \sim Pareto(\alpha, \beta)$`, con
     función de densidad de probabilidad dada por
@@ -641,6 +664,7 @@ $$\begin{align*}f(x)=\alpha\beta^{\alpha}x^{-(\alpha+1)} \quad para \quad x>\bet
     Demuestre que si `$\beta$` es conocida, entonces se tendrá que
     `$\prod_{i=1}^{n} X_i$` es un estadístico suficiente para
     `$\alpha$`.
+
 27. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de una función de
     densidad de probabilidad dada por
     
@@ -648,6 +672,7 @@ $$\begin{align*}f(x;\theta)= e^{-(x-\theta)}; \quad x>\theta\end{align*}$$
 
     Demuestre que `$X_{(1)} = min(X_1, X_2, \ldots, X_n)$` es un
     estadístico suficiente para `$\theta$`.
+
 28. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de una función de
     densidad de probabilidad dada por
     
@@ -655,6 +680,7 @@ $$\begin{align*}f(x;\theta)= \frac{3x^2}{\theta^3}; \quad 0\leq x\leq \theta;\qu
 
     Demuestre que `$X_{(n)} = max(X_1, X_2, \ldots, X_n)$` es un
     estadístico suficiente para `$\theta$`.
+
 29. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de una
     variable aleatoria continua Weibull tal que
     `$X\sim Wei(\alpha, \beta)$`, con función de densidad de
@@ -664,6 +690,7 @@ $$\begin{align*}f(x)= \frac{1}{\alpha}\beta x^{\beta-1}e^{-\frac{x^\beta}{\alpha
 
     Demuestre que, para un valor `$\beta$` conocido,
     `$\sum_{i=1}^{n}X_i^\beta$` es suficiente para `$\alpha$`.
+
 30. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria `$iid$` de una
     variable aleatoria de una familia de distribuciones potencias con
     parámetros `$\alpha$` y `$\theta$`, con función de densidad de

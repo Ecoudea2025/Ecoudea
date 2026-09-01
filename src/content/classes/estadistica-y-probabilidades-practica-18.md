@@ -199,6 +199,7 @@ Lista de ejercicios
     anteriores.
     </li>
     </ol>
+
 2.  Los siguientes datos representan los costos de mantenimiento (en
     miles de pesos) de una determinada máquina trabajando en `$15$`
     establecimientos productivos distintos, durante el periodo
@@ -268,6 +269,7 @@ Lista de ejercicios
     máquina analizada.
     </li>
     </ol>
+
 3.  Los grandes autoservicios disponen de estacionamiento para sus
     clientes. Los siguientes datos se refieren al número de horas que
     permanecen en el estacionamiento una serie de coches:
@@ -485,6 +487,7 @@ Lista de ejercicios
     variable bajo estudio. Obtenga conclusiones del mismo.
     </li>
     </ol>
+
 4.  Un comisionista de bolsa desea determinar la estabilidad de los
     precios de dos acciones en particular. Decide basar su juicio en la
     estabilidad de las desviaciones estándar de los precios de cierre
@@ -564,6 +567,7 @@ Lista de ejercicios
     </table>
     Basados en la información anterior ¿Cuál de los dos activos presenta
     mayor estabilidad?
+
 5.  Seleccione dos acciones que coticen en la bolsa de valores de
     Colombia, y consulte la serie de precios de cierre para estas en el
     último año. Describa el interés particular que usted tiene sobre
@@ -589,6 +593,7 @@ Lista de ejercicios
     de los precios más bajos y el 15% de los precios más altos.
     </li>
     </ol>
+
 6.  En una entidad de salud llegan diariamente casos relacionados con la
     solicitud de certificados y requerimientos de quejas. Basados en la
     información presentada a continuación, calcule e interprete la moda
@@ -636,6 +641,7 @@ Lista de ejercicios
     </tr>
     </tbody>
     </table>
+
 7.  En una entidad de salud llegan diariamente casos relacionados con la
     solicitud de certificados y requerimientos de quejas. Basados en la
     información presentada a continuación, calcular e interpretar para
@@ -791,6 +797,7 @@ Lista de ejercicios
     </tr>
     </tbody>
     </table>
+
 8.  Los préstamos bancarios para compra de bienes productivos tienen
     distintas tasas de amortización dependiendo de la ubicación, del
     tipo del bien, de la facturación promedio del comprador y otros
@@ -910,6 +917,7 @@ Lista de ejercicios
     compradores que pagan menos interés?.
     </li>
     </ol>
+
 9.  Suponga que es un agente de compras de una empresa manufacturera que
     toma pedidos de dos proveedores distintos mensualmente. Después de
     seis meses de trabajar así, encuentra que el tiempo, en días, que
@@ -992,9 +1000,13 @@ Lista de ejercicios
     \(B\).
     </li>
     </ol>
+
 10. Los datos cuantitativos continuos son aquellos que:
+
 11. La varianza es una medida que representa:
+
 12. Las medidas de localización o posición, son mediciones que permiten:
+
 13. Ante la imposibilidad de estudiar de forma directa la totalidad de
     una población, se suele tomar una porción o grupo representativo de
     la población para realizar el estudio y generalizar los resultados
@@ -1016,6 +1028,7 @@ Lista de ejercicios
     Todas las anteriores.
     </li>
     </ol>
+
 14. Cual de las siguientes medidas, no es una medida de posicionamiento
     <ol type="a">
     <li>
@@ -1031,6 +1044,7 @@ Lista de ejercicios
     Ventil.
     </li>
     </ol>
+
 15. Cuales de las siguientes variables es una variable cuantitativa
     Discreta
     <ol type="a">

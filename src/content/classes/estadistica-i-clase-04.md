@@ -582,6 +582,7 @@ Suponga que `$X$` es una variable aleatoria tal que
 entonces se puede probar que
 
 1.  `$\mathbb{P}(X\geq a+b | x \geq b) = \mathbb{P}(X\geq a)$`
+
 2.  `$\mathbb{P}(X\leq a+b | x \geq b) = \mathbb{P}(X\leq a)$`
 
 <button id="Show5" class="btn btn-secondary">

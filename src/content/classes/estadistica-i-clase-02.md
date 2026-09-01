@@ -73,4 +73,5 @@ Si `$X$` es una variable aleatoria y `$a$` una constante entonces se
 tendrá
 
 1.  `$M_{x+a}(t) = e^{at}M_x(t)$`
+
 2.  `$M_{ax}(t) = M_x(at)$`

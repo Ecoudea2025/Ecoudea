@@ -77,6 +77,7 @@ $$\begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, y
     `$x_{ij}$` es la i-ésima observación de la j-ésima variable
     explicativa.
+
 2.  Del modelo `$(II)$` suponga que los `$\varepsilon_i$` son variables
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
