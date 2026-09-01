@@ -51,6 +51,7 @@ const canonical = Astro.url;
     <meta name="twitter:card" content="summary" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#0a0f1a" />
+    <meta name="astro-base" content={base} />
     <title>{title}</title>
     <script>document.documentElement.classList.add('js')</script>
     {math && <link rel="stylesheet" href={`${base}/assets/css/katex.min.css`} />}

@@ -46,6 +46,19 @@
     });
   }
 
+  // ── REPARAR RUTAS DE IMÁGENES (falta base URL en paths de markdown) ──
+  // Markdown genera /assets/images/... pero con base=/Ecoudea debería ser /Ecoudea/assets/images/...
+  function fixImagePaths(scope) {
+    var base = document.querySelector('meta[name="astro-base"]')?.content
+      || window.location.pathname.match(/^(\/[^/]+)\/?/)?.[1]
+      || '';
+    if (!base || base === '/assets') return; // sin base o en root
+    var imgs = (scope || document).querySelectorAll('img[src^="/assets/"]');
+    imgs.forEach(function (img) {
+      img.src = base + img.src.replace(/^\/+/, '/');
+    });
+  }
+
   // ── OPTIMIZAR IMÁGENES DEL CONTENIDO ──────────────────────────────
   // Lazy-load + decoding async para no bloquear el renderizado.
   function optimizeImages(scope) {
@@ -61,6 +74,7 @@
     var article = document.querySelector('.prose-class');
     if (article) {
       repairMathMangling(article);
+      fixImagePaths(article);
       renderKatex(article);
       optimizeImages(article);
     }
@@ -71,6 +85,7 @@
     var articleEl = document.querySelector('.prose-class');
     if (articleEl) {
       repairMathMangling(articleEl);
+      fixImagePaths(articleEl);
       renderKatex(articleEl);
       optimizeImages(articleEl);
     }
