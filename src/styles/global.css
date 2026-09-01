@@ -422,6 +422,8 @@
   border: 1px solid oklch(from #2a3a2a l c h / 0.5);
   padding: 0.5rem 0.75rem;
   text-align: left;
+  color: var(--color-text) !important;
+  background: transparent !important;
 }
 .prose-class th {
   background: oklch(from #6c9a06 l c h / 0.15);

@@ -47,19 +47,13 @@
   }
 
   // ── REPARAR DELIMITADORES LaTeX perdidos (\( \) → ( )) ─────────────
-  // El parser markdown strippea \(` y `\)`, dejando `( ... )` sin formato.
-  // Restaura `\(` y `\)` alrededor de contenido que parece LaTeX.
+  // El parser markdown strippea `\(` y `\)`, dejando `( ... )` sin formato.
+  // Solo restaura si el contenido empieza con \ o tiene estructura LaTeX clara.
   function repairDelimiters(article) {
     var html = article.innerHTML;
-    // Patrones LaTeX que indican fórmula matemática
-    var latexRe = /([_(\\][^<]*?)/;
-    // Encontrar `(` seguido de contenido LaTeX y `)` que no fue renderizado
-    var fixed = html.replace(/\(([A-Za-z\\{}_^()\s,.\d]+?)\)(?=[.,;) <]|$)/g, function (match, inner) {
-      // Solo restaurar si el contenido parece LaTeX (tiene _, ^, \, {, })
-      if (/[\\{}^_]/.test(inner) && inner.length > 2 && inner.length < 500) {
-        return '\\(' + inner + '\\)';
-      }
-      return match;
+    // Solo restaurar `(` seguido de `\` (backslash) — eso indica LaTeX perdido
+    var fixed = html.replace(/\((\\[a-zA-Z][^<]{1,400}?)\)(?=[.,;) <]|$)/g, function (match, inner) {
+      return '\\(' + inner + '\\)';
     });
     if (fixed !== html) {
       article.innerHTML = fixed;
@@ -167,6 +161,7 @@
         btn.style.display = 'none';
         if (hideBtn) hideBtn.style.display = 'inline-flex';
         // Reparar + renderizar KaTeX dentro del contenido recién visible
+        repairDelimiters(wrapper);
         repairGarbledHtml(wrapper);
         repairMathMangling(wrapper);
         fixImagePaths(wrapper);
