@@ -95,13 +95,13 @@ de la Distribución Normal Estándar</a>, calcule
 \(\mathbb{P}(Z\leq 1.96)\)
 </li>
 <li>
-\(\mathbb{P}(Z> 2.13)\)
+\(\mathbb{P}(Z\gt  2.13)\)
 </li>
 <li>
-\(\mathbb{P}(-2.42 <Z \leq 0.24)\)
+\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\)
 </li>
 <li>
-\(\mathbb{P}(Z>z) = 0.0129\)
+\(\mathbb{P}(Z\gt z) = 0.0129\)
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -125,7 +125,7 @@ representa las probabilidades</strong> \(\alpha\) que se desean calcular
 a partir de los valores críticos. Finalmente, <strong>el cuadro azul
 claro representa el funcionamiento de la tabla </strong>, la cual
 muestra las probabilidades que poseen la forma
-\(\mathbb{P}(Z<z)=\alpha\).
+\(\mathbb{P}(Z\lt z)=\alpha\).
 </p>
 <ol>
 <li>
@@ -150,7 +150,7 @@ $$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
 <li>
 
 A diferencia del punto anterior, observamos que la probabilidad
-propuesta \(\mathbb{P}(Z> 2.13)\) tiene una estructura diferente a la
+propuesta \(\mathbb{P}(Z\gt  2.13)\) tiene una estructura diferente a la
 establecida por la tabla \(\mathbb{P}(Z\leq z)\), y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
@@ -158,7 +158,7 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
-\(\mathbb{P}(Z> 2.13)\), mediante el empleo de la
+\(\mathbb{P}(Z\gt  2.13)\), mediante el empleo de la
 \(\mathbb{P}(Z\leq 2.13)\), la cual podemos buscar en la tabla
 directamente. Para localizar \(\mathbb{P}(Z\leq 2.13)\), se busca el
 valor \(2.1\) en la parte izquierda de la tabla, y el valor \(0.03\) en
@@ -184,7 +184,7 @@ $$\begin{align*}
 </li>
 <li>
 
-En este caso, se desea calcular la \(\mathbb{P}(-2.42 <Z \leq 0.24)\), y
+En este caso, se desea calcular la \(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), y
 se observa que la estructura de dicha probabilidad es diferente a la
 establecida por la tabla \(\mathbb{P}(Z\leq z)\), pero también podemos
 apreciar que si aplicamos las propiedades de la función de distribución
@@ -195,7 +195,7 @@ acumulada para el caso continuo, ya presentadas en la
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(-2.42 <Z \leq 0.24)\), puede calcularse mediante el empleo
+\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), puede calcularse mediante el empleo
 de las probabilidades acumuladas \(\mathbb{P}(Z \leq 0.24)\) y
 \(\mathbb{P}(Z \leq -2.42)\), las cuales pueden calcularse en la tabla
 de forma similar a los dos puntos anteriores.
@@ -299,7 +299,7 @@ maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
 \end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
-\(\mathbb{P}(Z < -0.83)\) en la tabla de la distribución normal
+\(\mathbb{P}(Z \lt  -0.83)\) en la tabla de la distribución normal
 estándar, de la siguiente manera
 
 <img src="/assets/images/TablaNormalEst6.jpg" alt="" style="max-width: 80%;">
@@ -418,7 +418,7 @@ continuidad a la probabilidad se tendrá que $$\begin{align*}
 \text{Binomial} & & & & \text{Normal} \quad \quad \quad \quad \quad \\
 \mathbb{P}(X< 220) & & & & \mathbb{P}(X\leq 220 - 0.5) \quad \quad \quad \quad \; \\
 \end{align*}$$ es decir que, si \(X\sim b(n=1500, p=0.15)\) estamos
-interesados en calcular \(\mathbb{P}(X< 220)\), mientras que si
+interesados en calcular \(\mathbb{P}(X\lt  220)\), mientras que si
 \(X\stackrel{a}{\sim}N(\mu=225,\sigma^2=191.25)\) estaríamos interesados
 en calcular \(\mathbb{P}(X\leq 219.5)\). Por tanto, al aplicar el
 teorema de estandarización para transformar dicha probabilidad una

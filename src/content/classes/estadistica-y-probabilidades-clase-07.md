@@ -50,16 +50,16 @@ de la Distribución Chi-Cuadrado</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(\chi^2_5 > 3)\)
+\(\mathbb{P}(\chi^2_5 \gt  3)\)
 </li>
 <li>
 \(\mathbb{P}(\chi^2_{20} \leq 37.566)\)
 </li>
 <li>
-\(\mathbb{P}(9.034 < \chi^2_{12} \leq 15.812)\)
+\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\)
 </li>
 <li>
-\(\mathbb{P}(\chi^2_{8} < x) = 0.10\)
+\(\mathbb{P}(\chi^2_{8} \lt  x) = 0.10\)
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -88,7 +88,7 @@ que poseen la forma \(\mathbb{P}(\chi_\nu^2\geq x)=\alpha\).
 <li>
 
 Con la explicación de la tabla en mente, la primera probabilidad a
-calcular es \(\mathbb{P}(\chi^2_5 > 3)\). Entonces como esta
+calcular es \(\mathbb{P}(\chi^2_5 \gt  3)\). Entonces como esta
 probabilidad tiene la estructura establecida por la tabla
 \(\mathbb{P}(\chi_\nu^2\geq x)\), será cuestión de buscar para \(5\)
 grados de libertad, el valor crítico \(3\) para localizar la
@@ -120,8 +120,8 @@ $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
 \(\mathbb{P}(\chi^2_{20} \leq 37.566)\), mediante el empleo de la
-\(\mathbb{P}(\chi^2_{20} > 37.566)\), la cual podemos buscar en la tabla
-directamente. Para localizar \(\mathbb{P}(\chi^2_{20} > 37.566)\), se
+\(\mathbb{P}(\chi^2_{20} \gt  37.566)\), la cual podemos buscar en la tabla
+directamente. Para localizar \(\mathbb{P}(\chi^2_{20} \gt  37.566)\), se
 buscan los grados de libertad \(20\) en la parte izquierda de la tabla,
 y el valor crítico en la parte central de la tabla (siguiendo la misma
 fila en la cual se encontraron los grados de libertad). Una vez ubicado
@@ -148,7 +148,7 @@ $$\begin{align*}
 <li>
 
 En este caso, se desea calcular la
-\(\mathbb{P}(9.034 < \chi^2_{12} \leq 15.812)\), y se observa que la
+\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\), y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
 tabla \(\mathbb{P}(\chi_\nu^2\geq x)\), pero también podemos apreciar
 que si aplicamos las propiedades de la función de distribución acumulada
@@ -162,10 +162,10 @@ $$\begin{align*}
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(9.034 < \chi^2_{12} \leq 15.812)\), puede calcularse
+\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\), puede calcularse
 mediante el empleo de las probabilidades
-\(\mathbb{P}(\chi^2_{12} > 9.034)\) y
-\(\mathbb{P}(\chi^2_{12} > 15.812)\), las cuales pueden calcularse en la
+\(\mathbb{P}(\chi^2_{12} \gt  9.034)\) y
+\(\mathbb{P}(\chi^2_{12} \gt  15.812)\), las cuales pueden calcularse en la
 tabla de forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaChiSquare4.jpg" alt="" style="max-width: 100%;">
@@ -293,7 +293,7 @@ probabilidad acumulada, tal que $$\begin{align*}
 \end{align*}$$
 
 y finalmente buscando cada una de las probabilidades individuales en el
-software, en donde la probabilidad exacta de \(\mathbb{P}(X < 15)\) es
+software, en donde la probabilidad exacta de \(\mathbb{P}(X \lt  15)\) es
 igual a $$\begin{align*}
   \mathbb{P}(X < 15) = 0.2235924
 \end{align*}$$ mientras que la probabilidad exacta de
@@ -320,7 +320,7 @@ chi-cuadrado, tal que $$\begin{align*}
 \end{align*}$$
 
 Entonces si buscamos en la tabla un valor aproximado para
-\(\mathbb{P}(X > 10)\) encontramos que
+\(\mathbb{P}(X \gt  10)\) encontramos que
 
 <img src="/assets/images/TablaChiSquare5.jpg" alt="" style="max-width: 100%;">
 
@@ -553,13 +553,13 @@ de la Distribución Normal Estándar</a>, calcule
 \(\mathbb{P}(Z\leq 1.96)\)
 </li>
 <li>
-\(\mathbb{P}(Z> 2.13)\)
+\(\mathbb{P}(Z\gt  2.13)\)
 </li>
 <li>
-\(\mathbb{P}(-2.42 <Z \leq 0.24)\)
+\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\)
 </li>
 <li>
-\(\mathbb{P}(Z>z) = 0.0129\)
+\(\mathbb{P}(Z\gt z) = 0.0129\)
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -583,7 +583,7 @@ representa las probabilidades</strong> \(\alpha\) que se desean calcular
 a partir de los valores críticos. Finalmente, <strong>el cuadro azul
 claro representa el funcionamiento de la tabla </strong>, la cual
 muestra las probabilidades que poseen la forma
-\(\mathbb{P}(Z<z)=\alpha\).
+\(\mathbb{P}(Z\lt z)=\alpha\).
 </p>
 <ol>
 <li>
@@ -608,7 +608,7 @@ $$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
 <li>
 
 A diferencia del punto anterior, observamos que la probabilidad
-propuesta \(\mathbb{P}(Z> 2.13)\) tiene una estructura diferente a la
+propuesta \(\mathbb{P}(Z\gt  2.13)\) tiene una estructura diferente a la
 establecida por la tabla \(\mathbb{P}(Z\leq z)\), y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
@@ -616,7 +616,7 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
-\(\mathbb{P}(Z> 2.13)\), mediante el empleo de la
+\(\mathbb{P}(Z\gt  2.13)\), mediante el empleo de la
 \(\mathbb{P}(Z\leq 2.13)\), la cual podemos buscar en la tabla
 directamente. Para localizar \(\mathbb{P}(Z\leq 2.13)\), se busca el
 valor \(2.1\) en la parte izquierda de la tabla, y el valor \(0.03\) en
@@ -642,7 +642,7 @@ $$\begin{align*}
 </li>
 <li>
 
-En este caso, se desea calcular la \(\mathbb{P}(-2.42 <Z \leq 0.24)\), y
+En este caso, se desea calcular la \(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), y
 se observa que la estructura de dicha probabilidad es diferente a la
 establecida por la tabla \(\mathbb{P}(Z\leq z)\), pero también podemos
 apreciar que si aplicamos las propiedades de la función de distribución
@@ -653,7 +653,7 @@ acumulada para el caso continuo, ya presentadas en la
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(-2.42 <Z \leq 0.24)\), puede calcularse mediante el empleo
+\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), puede calcularse mediante el empleo
 de las probabilidades acumuladas \(\mathbb{P}(Z \leq 0.24)\) y
 \(\mathbb{P}(Z \leq -2.42)\), las cuales pueden calcularse en la tabla
 de forma similar a los dos puntos anteriores.
@@ -757,7 +757,7 @@ maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
 \end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
-\(\mathbb{P}(Z < -0.83)\) en la tabla de la distribución normal
+\(\mathbb{P}(Z \lt  -0.83)\) en la tabla de la distribución normal
 estándar, de la siguiente manera
 
 <img src="/assets/images/TablaNormalEst6.jpg" alt="" style="max-width: 80%;">
@@ -860,7 +860,7 @@ $$\begin{align*}
 \end{align*}$$
 
 y en consecuencia podemos ahora buscar la probabilidad
-\(\mathbb{P}\left(Z < -0.8982476\right) \approx \mathbb{P}(Z < -0.90)\)
+\(\mathbb{P}\left(Z \lt  -0.8982476\right) \approx \mathbb{P}(Z \lt  -0.90)\)
 en la tabla de la distribución normal estándar, de la siguiente manera
 
 <img src="/assets/images/TablaNormalEst7.jpg" alt="" style="max-width: 80%;">

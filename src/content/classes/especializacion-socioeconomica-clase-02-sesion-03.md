@@ -1137,7 +1137,7 @@ cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1) &= \frac{1}{12}e^{\frac{-0.1}{12}}=0.08264177 \\
 f(10) &= \frac{1}{12}e^{\frac{-10}{12}}=0.03621652 \\
 f(300) &= \frac{1}{12}e^{\frac{-300}{12}}=0.000000000001157329
-\end{align*}$$ Evidenciando que para todo \(x>0\), \(f(x)\geq0\).<br>
+\end{align*}$$ Evidenciando que para todo \(x\gt 0\), \(f(x)\geq0\).<br>
 
 En segundo lugar, para observar si la función de densidad de
 probabilidad está bien definida, es necesario observar si al integrar
@@ -1787,7 +1787,7 @@ maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
 \end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
-\(\mathbb{P}(Z < -0.83)\) usando la función `DISTR.NORM.ESTAND.N()` de
+\(\mathbb{P}(Z \lt  -0.83)\) usando la función `DISTR.NORM.ESTAND.N()` de
 <tt>Excel</tt>, donde se aprecia que
 
 $$\begin{align*}

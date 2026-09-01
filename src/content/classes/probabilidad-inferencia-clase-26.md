@@ -297,8 +297,8 @@ Como el evento \(A_1\) está dado por \(A_1 = \{2, 3, 5\}\), entonces su
 </li>
 <li>
 Como el evento \(B_1\) está dado por
-\(B_1 =\{\mathbb{t \in R^+ | 0 \leq t < 60}\}\), y el evento \(B_2\)
-está dado por \(B_2 =\{\mathbb{t \in R^+ | 20 < t < 70}\}\), entonces la
+\(B_1 =\{\mathbb{t \in R^+ | 0 \leq t \lt  60}\}\), y el evento \(B_2\)
+está dado por \(B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}\), entonces la
 <strong>unión</strong> \(B_1\cup B_2\) estará dado por $$\begin{align*}
       B_1\cup B_2 = \{\mathbb{t \in R^+ | 0 \leq t < 70}\}
   \end{align*}$$
@@ -313,7 +313,7 @@ $$\begin{align*}
 </li>
 <li>
 Como el evento \(B_2\) está dado por
-\(B_2 =\{\mathbb{t \in R^+ | 20 < t < 70}\}\) entonces un evento
+\(B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}\) entonces un evento
 <strong>mutuamente excluyente</strong> podría ser de la forma
 $$\begin{align*}
       B_3 = \{\mathbb{t \in R^+ | 80 < t < 120}\}

@@ -186,7 +186,7 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     Calcule la función de distribución acumulada \(F(X)\).
     </li>
     <li>
-    Encuentre \(\mathbb{P}(X>3)\).
+    Encuentre \(\mathbb{P}(X\gt 3)\).
     </li>
     </ol>
 
@@ -256,10 +256,10 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     La densidad marginal de \(Y\).
     </li>
     <li>
-    \(\mathbb{P}(\frac{1}{4}< X < \frac{1}{2}, Y > \frac{1}{3}, 1 < Z < 2)\)
+    \(\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)\)
     </li>
     <li>
-    \(\mathbb{P}(0 < X < \frac{1}{2}| Y = \frac{1}{4} , Z = 2)\)
+    \(\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)\)
     </li>
     </ol>
 
@@ -496,14 +496,14 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     Determine la distribución marginal de \(Y\).
     </li>
     <li>
-    ¿Cuál es la probabilidad de \(4<X<6\) y \(Y>2\)?.
+    ¿Cuál es la probabilidad de \(4\lt X\lt 6\) y \(Y\gt 2\)?.
     </li>
     <li>
-    Determine la distribución condicional \(f(X | 1<Y<4)\).
+    Determine la distribución condicional \(f(X | 1\lt Y\lt 4)\).
     </li>
     <li>
-    Si se sabe que \(Y>5\), entonces, cuál es la probabilidad de que
-    \(X<8\).
+    Si se sabe que \(Y\gt 5\), entonces, cuál es la probabilidad de que
+    \(X\lt 8\).
     </li>
     </ol>
 
@@ -579,7 +579,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     </li>
     <li>
     Calcule \(F(x)\) y utilice el resultado para calcular la
-    \(\mathbb{P}(0.24 < X < 0.63)\).
+    \(\mathbb{P}(0.24 \lt  X \lt  0.63)\).
     </li>
     </ol>
 
@@ -613,13 +613,13 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     \(\mathbb{P}(X \leq 2, Y = 1)\)
     </li>
     <li>
-    \(\mathbb{P}(X>Y)\).
+    \(\mathbb{P}(X\gt Y)\).
     </li>
     <li>
     \(\mathbb{P}(X+Y = 4)\).
     </li>
     <li>
-    \(\mathbb{P}(X>2|Y\leq1)\).
+    \(\mathbb{P}(X\gt 2|Y\leq1)\).
     </li>
     </ol>
 
@@ -701,11 +701,11 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
     \(j(x,y)\), \(k(x,z)\) y \(l(y,z)\).
     </li>
     <li>
-    Calcule \(\mathbb{P}(X < \frac{1}{4}, Y > \frac{1}{2}, 1 < Z < 2)\).
+    Calcule \(\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)\).
     </li>
     <li>
     Calcule
-    \(\mathbb{P}(X < \frac{1}{3} | Y < \frac{1}{8}, Z > \frac{2}{3})\).
+    \(\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})\).
     </li>
     </ol>
 
@@ -785,7 +785,7 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
     encuentre la función de distribución acumulada conjunta.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que \(X<3/2\) y \(Y<2\)?.
+    ¿Cuál es la probabilidad de que \(X\lt 3/2\) y \(Y\lt 2\)?.
     </li>
     <li>
     Obtenga las funciones marginales para \(X\) y \(Y\).
@@ -794,10 +794,10 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
     Obtenga las función de distribución acumulada de \(X\) y de \(Y\).
     </li>
     <li>
-    Calcule \(\mathbb{P}(0.8<X<1.6)\) y \(\mathbb{P}(Y>2.3)\).
+    Calcule \(\mathbb{P}(0.8\lt X\lt 1.6)\) y \(\mathbb{P}(Y\gt 2.3)\).
     </li>
     <li>
-    Calcule \(\mathbb{P}(0.8<X<1.6|Y>2.3)\).
+    Calcule \(\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)\).
     </li>
     <li>
     Pruebe si \(X\) y \(Y\) son independientes.
@@ -859,7 +859,7 @@ $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4
     Calcule la \(\mathbb{P}(X\geq 3)\).
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X\geq 3|X<5)\).
+    Calcule la \(\mathbb{P}(X\geq 3|X\lt 5)\).
     </li>
     </ol>
 
@@ -970,7 +970,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     Calcule \(\mathbb{P}(Y = 2 | X = 1)\).
     </li>
     <li>
-    Calcule \(\mathbb{P}(X<2|Y\leq1)\).
+    Calcule \(\mathbb{P}(X\lt 2|Y\leq1)\).
     </li>
     <li>
     Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
@@ -993,14 +993,14 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </li>
     <li>
     ¿Cuál es la probabilidad de que las proporciones del componente
-    generen los resultados \(X < 0.2\) y \(Y > 0.5\)?.
+    generen los resultados \(X \lt  0.2\) y \(Y \gt  0.5\)?.
     </li>
     <li>
     Determine la distribución condicional \(f(X | Y)\).
     </li>
     <li>
-    Si se sabe que \(Y>0.2\), entonces, cuál es la probabilidad de que
-    \(X<0.1\).
+    Si se sabe que \(Y\gt 0.2\), entonces, cuál es la probabilidad de que
+    \(X\lt 0.1\).
     </li>
     </ol>
 

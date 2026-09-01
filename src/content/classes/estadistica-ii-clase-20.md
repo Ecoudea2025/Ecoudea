@@ -282,7 +282,7 @@ Solución
 Como tenemos que \(\bar{X}\) posee una media de
 \(\mathbb{E}(\bar{X}) =\mu\) y una varianza de
 \(Var(\bar{X}) = \frac{\sigma^2}{n}\), entonces se tendrá que para todo
-\(\varepsilon > 0\) $$\begin{align*}
+\(\varepsilon \gt  0\) $$\begin{align*}
   \mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) &= \mathbb{P}((\bar{X} - \mu)^2 \geq \varepsilon^2) \\
   &\leq \frac{\mathbb{E}[(\bar{X} - \mu)^2]}{\varepsilon^2} \quad \text{ (Por teorema de Chebyshev)} \\
   &\leq \frac{Var(\bar{X})}{\varepsilon^2} \\

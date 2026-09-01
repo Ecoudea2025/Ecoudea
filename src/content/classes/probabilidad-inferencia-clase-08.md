@@ -355,13 +355,13 @@ de la Distribución Normal Estándar</a>, calcule
 \(\mathbb{P}(Z\leq 1.96)\)
 </li>
 <li>
-\(\mathbb{P}(Z> 2.13)\)
+\(\mathbb{P}(Z\gt  2.13)\)
 </li>
 <li>
-\(\mathbb{P}(-2.42 <Z \leq 0.24)\)
+\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\)
 </li>
 <li>
-\(\mathbb{P}(Z>z) = 0.0129\)
+\(\mathbb{P}(Z\gt z) = 0.0129\)
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -385,7 +385,7 @@ representa las probabilidades</strong> \(\alpha\) que se desean calcular
 a partir de los valores críticos. Finalmente, <strong>el cuadro azul
 claro representa el funcionamiento de la tabla </strong>, la cual
 muestra las probabilidades que poseen la forma
-\(\mathbb{P}(Z<z)=\alpha\).
+\(\mathbb{P}(Z\lt z)=\alpha\).
 </p>
 <ol>
 <li>
@@ -410,7 +410,7 @@ $$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
 <li>
 
 A diferencia del punto anterior, observamos que la probabilidad
-propuesta \(\mathbb{P}(Z> 2.13)\) tiene una estructura diferente a la
+propuesta \(\mathbb{P}(Z\gt  2.13)\) tiene una estructura diferente a la
 establecida por la tabla \(\mathbb{P}(Z\leq z)\), y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
@@ -418,7 +418,7 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
-\(\mathbb{P}(Z> 2.13)\), mediante el empleo de la
+\(\mathbb{P}(Z\gt  2.13)\), mediante el empleo de la
 \(\mathbb{P}(Z\leq 2.13)\), la cual podemos buscar en la tabla
 directamente. Para localizar \(\mathbb{P}(Z\leq 2.13)\), se busca el
 valor \(2.1\) en la parte izquierda de la tabla, y el valor \(0.03\) en
@@ -444,7 +444,7 @@ $$\begin{align*}
 </li>
 <li>
 
-En este caso, se desea calcular la \(\mathbb{P}(-2.42 <Z \leq 0.24)\), y
+En este caso, se desea calcular la \(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), y
 se observa que la estructura de dicha probabilidad es diferente a la
 establecida por la tabla \(\mathbb{P}(Z\leq z)\), pero también podemos
 apreciar que si aplicamos las propiedades de la función de distribución
@@ -455,7 +455,7 @@ acumulada para el caso continuo, ya presentadas en la
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(-2.42 <Z \leq 0.24)\), puede calcularse mediante el empleo
+\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), puede calcularse mediante el empleo
 de las probabilidades acumuladas \(\mathbb{P}(Z \leq 0.24)\) y
 \(\mathbb{P}(Z \leq -2.42)\), las cuales pueden calcularse en la tabla
 de forma similar a los dos puntos anteriores.
@@ -753,16 +753,16 @@ de la Distribución Chi-Cuadrado</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(\chi^2_5 > 3)\)
+\(\mathbb{P}(\chi^2_5 \gt  3)\)
 </li>
 <li>
 \(\mathbb{P}(\chi^2_{20} \leq 37.566)\)
 </li>
 <li>
-\(\mathbb{P}(9.034 < \chi^2_{12} \leq 15.812)\)
+\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\)
 </li>
 <li>
-\(\mathbb{P}(\chi^2_{8} < x) = 0.10\)
+\(\mathbb{P}(\chi^2_{8} \lt  x) = 0.10\)
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -791,7 +791,7 @@ que poseen la forma \(\mathbb{P}(\chi_\nu^2\geq x)=\alpha\).
 <li>
 
 Con la explicación de la tabla en mente, la primera probabilidad a
-calcular es \(\mathbb{P}(\chi^2_5 > 3)\). Entonces como esta
+calcular es \(\mathbb{P}(\chi^2_5 \gt  3)\). Entonces como esta
 probabilidad tiene la estructura establecida por la tabla
 \(\mathbb{P}(\chi_\nu^2\geq x)\), será cuestión de buscar para \(5\)
 grados de libertad, el valor crítico \(3\) para localizar la
@@ -823,8 +823,8 @@ $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
 \(\mathbb{P}(\chi^2_{20} \leq 37.566)\), mediante el empleo de la
-\(\mathbb{P}(\chi^2_{20} > 37.566)\), la cual podemos buscar en la tabla
-directamente. Para localizar \(\mathbb{P}(\chi^2_{20} > 37.566)\), se
+\(\mathbb{P}(\chi^2_{20} \gt  37.566)\), la cual podemos buscar en la tabla
+directamente. Para localizar \(\mathbb{P}(\chi^2_{20} \gt  37.566)\), se
 buscan los grados de libertad \(20\) en la parte izquierda de la tabla,
 y el valor crítico en la parte central de la tabla (siguiendo la misma
 fila en la cual se encontraron los grados de libertad). Una vez ubicado
@@ -851,7 +851,7 @@ $$\begin{align*}
 <li>
 
 En este caso, se desea calcular la
-\(\mathbb{P}(9.034 < \chi^2_{12} \leq 15.812)\), y se observa que la
+\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\), y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
 tabla \(\mathbb{P}(\chi_\nu^2\geq x)\), pero también podemos apreciar
 que si aplicamos las propiedades de la función de distribución acumulada
@@ -865,10 +865,10 @@ $$\begin{align*}
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(9.034 < \chi^2_{12} \leq 15.812)\), puede calcularse
+\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\), puede calcularse
 mediante el empleo de las probabilidades
-\(\mathbb{P}(\chi^2_{12} > 9.034)\) y
-\(\mathbb{P}(\chi^2_{12} > 15.812)\), las cuales pueden calcularse en la
+\(\mathbb{P}(\chi^2_{12} \gt  9.034)\) y
+\(\mathbb{P}(\chi^2_{12} \gt  15.812)\), las cuales pueden calcularse en la
 tabla de forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaChiSquare4.jpg" alt="" style="max-width: 100%;">
@@ -979,13 +979,13 @@ de la Distribución t de Student</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(t_{14} > 1.076)\)
+\(\mathbb{P}(t_{14} \gt  1.076)\)
 </li>
 <li>
 \(\mathbb{P}(t_{7} \leq 3.53)\)
 </li>
 <li>
-\(\mathbb{P}(0.862 < t_{18} \leq 2.214)\)
+\(\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)\)
 </li>
 <li>
 \(\mathbb{P}(t_{10} \geq t) = 0.01\)
@@ -1017,7 +1017,7 @@ que poseen la forma \(\mathbb{P}(t_\nu\geq t)=\alpha\).
 <li>
 
 Conocida el funcionamiento de la tabla, la primera probabilidad a
-calcular es \(\mathbb{P}(t_{14} > 1.076)\), la cual tiene la estructura
+calcular es \(\mathbb{P}(t_{14} \gt  1.076)\), la cual tiene la estructura
 establecida por la tabla \(\mathbb{P}(t_\nu\geq t)\), así que será
 cuestión de buscar para \(14\) grados de libertad, el valor crítico
 \(1.076\) para localizar la probabilidad asociada. <br> <br> Para ello,
@@ -1049,7 +1049,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Una vez empleado el complemento, podemos emplear la probabilidad
-\(\mathbb{P}(t_{7} > 3.5)\) para calcular la probabilidad de interés,
+\(\mathbb{P}(t_{7} \gt  3.5)\) para calcular la probabilidad de interés,
 mediante la búsqueda de la probabilidad, tal como se hizo en el
 ejercicio anterior. En donde, se localizan los \(7\) grados de libertad
 en la parte izquierda de la tabla, y siguiendo la misma fila de los
@@ -1078,7 +1078,7 @@ $$\begin{align*}
 <li>
 
 En este ejercicio, nos piden calcular la
-\(\mathbb{P}(0.862 < t_{18} \leq 2.214)\), y se observa que la
+\(\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)\), y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
 tabla \(\mathbb{P}(t_\nu\geq t)\), Pero se aprecia que si aplicamos las
 propiedades de la función de distribución acumulada para el caso
@@ -1092,9 +1092,9 @@ $$\begin{align*}
                                       &= [1 - \mathbb{P}(t_{18} > 2.214)] - [1- \mathbb{P}(t_{18} > 0.862)] \\
                                       &= \mathbb{P}(t_{18} > 0.862) - \mathbb{P}(t_{18} > 2.214)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(0.862 < t_{18} \leq 2.214)\), puede ser calculada mediante
-el empleo de las probabilidades \(\mathbb{P}(t_{18} > 0.862)\) y
-\(\mathbb{P}(t_{18} > 2.214)\), las cuales se calculan en la tabla de
+\(\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)\), puede ser calculada mediante
+el empleo de las probabilidades \(\mathbb{P}(t_{18} \gt  0.862)\) y
+\(\mathbb{P}(t_{18} \gt  2.214)\), las cuales se calculan en la tabla de
 forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaTStudent4.jpg" alt="" style="max-width: 100%;">
@@ -1208,7 +1208,7 @@ de la Distribución F de Fisher-Snedecor</a>, calcule
 \(\mathbb{P}(F_{10, 6} \leq 0.18)\)
 </li>
 <li>
-\(\mathbb{P}(0.31 < F_{15, 5} \leq 9.6)\)
+\(\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)\)
 </li>
 <li>
 \(\mathbb{P}(F_{12, 12} \geq f) = 0.05\)
@@ -1297,7 +1297,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Una vez empleado el complemento, podemos usar la probabilidad
-\(\mathbb{P}(F_{10, 6} > 0.18)\) para calcular la probabilidad de
+\(\mathbb{P}(F_{10, 6} \gt  0.18)\) para calcular la probabilidad de
 interés, mediante la búsqueda de la probabilidad, tal como se hizo en el
 ejercicio anterior. Para ello, se debe localizar para las tablas
 \(F_{0.05}\) y \(F_{0.01}\), los \(10\) grados de libertad del numerador
@@ -1368,7 +1368,7 @@ F_{0.95, 10, 6} &= 0.3105590 \\
 F_{0.99, 10, 6} &= 0.1855288
 \end{align*}$$
 
-tendremos que la probabilidad \(\mathbb{P}(F_{10, 6} > 0.18)\) es
+tendremos que la probabilidad \(\mathbb{P}(F_{10, 6} \gt  0.18)\) es
 aproximadamente de \(0.99\), es decir que
 
 $$\begin{align*}
@@ -1384,7 +1384,7 @@ y por tanto, se tendrá que $$\begin{align*}
 <li>
 
 En este punto, nos piden calcular la
-\(\mathbb{P}(0.31 < F_{15, 5} \leq 9.6)\), y se observa que la
+\(\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)\), y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
 tabla \(\mathbb{P}(F_{\nu_1, \nu_2}\geq f)\), Pero se aprecia que si
 aplicamos las propiedades de la función de distribución acumulada para
@@ -1398,9 +1398,9 @@ $$\begin{align*}
                                        &= [1 - \mathbb{P}(F_{15, 5} > 9.6)] - [1- \mathbb{P}(F_{15, 5} > 0.31)] \\
                                        &= \mathbb{P}(F_{15, 5} > 0.31) - \mathbb{P}(F_{15, 5} > 9.6)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(0.31 < F_{15, 5} \leq 9.6)\), puede ser calculada mediante
-el empleo de las probabilidades \(\mathbb{P}(F_{15, 5} > 0.31)\) y
-\(\mathbb{P}(F_{15, 5} > 9.6)\). Para calcular esta probabilidad debemos
+\(\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)\), puede ser calculada mediante
+el empleo de las probabilidades \(\mathbb{P}(F_{15, 5} \gt  0.31)\) y
+\(\mathbb{P}(F_{15, 5} \gt  9.6)\). Para calcular esta probabilidad debemos
 calcular los valores críticos \(F_{0.01, 15, 5}\), \(F_{0.05, 15, 5}\),
 y los valores críticos, \(F_{0.05, 5, 15}\) y \(F_{0.01, 5, 15}\), los
 cuales se usan para calcular \(F_{0.95, 15, 5}\) y \(F_{0.99, 15, 5}\).

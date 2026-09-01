@@ -625,7 +625,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
     probabilidad conjunta esté bien definida.
     </li>
     <li>
-    Calcule \(\mathbb{E}(X |Y > \frac{1}{2}, 1 < Z < 2)\)
+    Calcule \(\mathbb{E}(X |Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)\)
     </li>
     </ol>
 

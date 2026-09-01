@@ -67,7 +67,7 @@ cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1)=(0.1)^2(1-0.1)^2=0.0081 \\
 f(0.4)=(0.4)^2(1-0.4)^2=0.0576 \\
 f(0.7)=(0.7)^2(1-0.7)^2=0.0441
-\end{align*}$$ La idea entonces, es apreciar que para todo \(0<x<1\),
+\end{align*}$$ La idea entonces, es apreciar que para todo \(0\lt x\lt 1\),
 \(f(x)\geq0\).<br>
 
 En segundo lugar, para observar si la función de densidad de

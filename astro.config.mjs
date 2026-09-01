@@ -17,6 +17,21 @@ function remarkBaseImages() {
   };
 }
 
+function remarkEscapeMath() {
+  return function (tree) {
+    const visit = (node) => {
+      if ((node.type === 'inlineMath' || node.type === 'math') && typeof node.value === 'string') {
+        node.value = node.value.replaceAll('<', '\\lt ').replaceAll('>', '\\gt ');
+      }
+      if (node.type === 'text' && typeof node.value === 'string' && node.value.includes('\\(')) {
+        node.value = node.value.replace(/\\\(.*?\\\)/g, (m) => m.replaceAll('<', '\\lt ').replaceAll('>', '\\gt '));
+      }
+      if (node.children) node.children.forEach(visit);
+    };
+    visit(tree);
+  };
+}
+
 function rehypeBaseImages() {
   return function (tree) {
     const visit = (node) => {
@@ -48,7 +63,7 @@ export default defineConfig({
       theme: 'one-dark-pro',
       wrap: false,
     },
-    remarkPlugins: [remarkBaseImages],
+    remarkPlugins: [remarkEscapeMath, remarkBaseImages],
     rehypePlugins: [rehypeRaw, rehypeBaseImages],
   },
   vite: {

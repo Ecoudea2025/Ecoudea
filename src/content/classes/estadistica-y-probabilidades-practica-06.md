@@ -185,7 +185,7 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     Encuentre la función de densidad de probabilidad.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X<20)\).
+    Calcule \(\mathbb{P}(X\lt 20)\).
     </li>
     </ol>
 
@@ -200,7 +200,7 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     aéreos?.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X<20)\).
+    Calcule \(\mathbb{P}(X\lt 20)\).
     </li>
     </ol>
 
@@ -217,7 +217,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     </li>
     <li>
     Calcule \(F(x)\) y utilice el resultado para calcular la
-    \(\mathbb{P}(0.24 < X < 0.63)\).
+    \(\mathbb{P}(0.24 \lt  X \lt  0.63)\).
     </li>
     </ol>
 

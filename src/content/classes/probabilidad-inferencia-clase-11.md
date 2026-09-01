@@ -388,7 +388,7 @@ $$\begin{align*}h(t) = \frac{\alpha}{\beta}\left(\frac{t}{\beta}\right)^{\alpha-
 
 <ol type="a">
 <li>
-Si \(\alpha<1\), \(h(t)\) será una función decreciente del tiempo \(t\),
+Si \(\alpha\lt 1\), \(h(t)\) será una función decreciente del tiempo \(t\),
 que indica que el componente se fortalece o endurece con el paso del
 tiempo. Por ejemplo, los equipos electrónicos y mecánicos pueden iniciar
 con un alto grado de fallas, debido a errores en el diseño, problemas de
@@ -403,7 +403,7 @@ generar fallas incluso en los componentes mejor construidos. Por
 ejemplo, sobre cargas, mal uso, casos especiales de falta de memoria.
 </li>
 <li>
-Si \(\alpha>1\), \(h(t)\) será una función creciente del tiempo \(t\),
+Si \(\alpha\gt 1\), \(h(t)\) será una función creciente del tiempo \(t\),
 que indica que el componente se desgasta con el paso del tiempo. Por
 ejemplo, obsolescencia, fin de vida útil, edad.
 </li>

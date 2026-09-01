@@ -191,7 +191,7 @@ $$\begin{align*}\Gamma(\alpha) = \int^\infty_0 t^{\alpha-1}e^{-t} dt\end{align*}
 
 <ol type="a">
 <li>
-\(\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha -1)\), para todo \(\alpha>0\)
+\(\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha -1)\), para todo \(\alpha\gt 0\)
 </li>
 <li>
 \(\Gamma(n) = (n-1)!\), siendo \(n\) un entero positivo.

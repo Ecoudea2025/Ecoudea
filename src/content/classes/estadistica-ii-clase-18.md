@@ -244,7 +244,7 @@ $$\begin{align*}
       &= 0.08
 \end{align*}$$
 
-En donde se observa al ser \(0.08 < 1\) se tendrá que \(EFR < 1\) y por
+En donde se observa al ser \(0.08 \lt  1\) se tendrá que \(EFR \lt  1\) y por
 tanto se concluirá que el estimador \(\bar{X}_1\) será más eficiente que
 el estimador \(\bar{X}_2\).
 </p>

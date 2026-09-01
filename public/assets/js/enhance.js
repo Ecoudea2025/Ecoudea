@@ -63,48 +63,47 @@
   }
 
   // ── REPARAR DELIMITADORES LaTeX perdidos (\( \) → ( )) ─────────────
-  // El parser markdown strippea `\(` y `\)`, dejando `( ... )` sin formato.
-  // Importante: NO tocar contenido ya dentro de $$...$$, $...$ o \[...\]
+  // Usa nodos de texto para no destruir la estructura DOM (evita <ol><li> rotos)
   function repairDelimiters(article) {
-    var html = article.innerHTML;
-    var blocks = [];
-    var PH = '@@MATHBLK@@';
-    // 1) proteger bloques display $$...$$ y \[...\]
-    html = html.replace(/\$\$[\s\S]*?\$\$/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
-    html = html.replace(/\\\[[\s\S]*?\\\]/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
-    // 2) proteger inline ya correcto \(...\) y $...$
-    html = html.replace(/\\\(.*?\\\)/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
-    html = html.replace(/\$[^$\n]+?\$/g, function (m) { blocks.push(m); return PH + (blocks.length - 1) + '@@'; });
-    // 3) solo restaurar `( ... )` con contenido LaTeX fuera de bloques protegidos
-    var fixed = html.replace(/\(([^<]{2,400})\)(?=[.,;) <]|$)/g, function (match, inner) {
-      if (inner.length < 3 || inner.length > 400) return match;
-      if (!/\\/.test(inner)) return match;
-      if (!/[{}^_]/.test(inner) && !/\\[a-zA-Z]/.test(inner)) return match;
-      return '\\(' + inner + '\\)';
-    });
-    // 4) restaurar bloques
-    fixed = fixed.replace(new RegExp(PH + '(\\d+)@@', 'g'), function (m, n) { return blocks[Number(n)]; });
-    if (fixed !== article.innerHTML) {
-      article.innerHTML = fixed;
+    var walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT, null, false);
+    var toFix = [];
+    var node;
+    while ((node = walker.nextNode())) {
+      var t = node.nodeValue;
+      if (t.indexOf('(') === -1 || t.indexOf('\\') === -1) continue;
+      // Ignorar nodos dentro de math ya correcto \(...\) o $...$
+      var parentHtml = node.parentElement ? node.parentElement.innerHTML : '';
+      if (parentHtml.indexOf('$$') !== -1) continue;
+      var fixed = t.replace(/\(([^<]{2,400})\)(?=[.,;) <]|$)/g, function (match, inner) {
+        if (inner.length < 3 || inner.length > 400) return match;
+        if (!/\\/.test(inner)) return match;
+        if (!/[{}^_]/.test(inner) && !/\\[a-zA-Z]/.test(inner)) return match;
+        return '\\(' + inner + '\\)';
+      });
+      if (fixed !== t) toFix.push([node, fixed]);
     }
+    toFix.forEach(function (pair) { pair[0].nodeValue = pair[1]; });
   }
 
-  // ── REPARAR HTML GARBADO (LaTeX con <X parseado como tag HTML) ──────
-  // El parser de markdown interpreta <Z, <z, etc. como tags HTML.
-  // Restaura el LaTeX original antes de que KaTeX lo procese.
+  // ── REPARAR HTML GARBADO (fallback por si remarkEscapeMath no cubrió algo) ──
   function repairGarbledHtml(article) {
-    var html = article.innerHTML;
-    // Patrón: <x \leq="" ...)\)="" &#x3C;="" ...=""> seguido de </x>
-    var fixed = html.replace(
-      /<([a-zA-Z])\s[^>]*?=&quot;[^>]*?&#x3C;[^>]*?>[\s\S]*?<\/\1>/g,
-      function (match) {
-        // Extraer el contenido del tag garbado
-        var inner = match.replace(/<[^>]+>/g, '').replace(/=&quot;/g, '').replace(/&#x3C;/g, '<').replace(/\s+/g, ' ').trim();
-        return inner;
+    // Buscar elementos <z> / <Z> creados por el parser a partir de <Z en LaTeX
+    var tags = article.querySelectorAll('z, Z');
+    tags.forEach(function (el) {
+      var text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+      var parent = el.parentNode;
+      if (parent) {
+        var tn = document.createTextNode('<' + el.tagName.toLowerCase() + (text ? ' ' + text : ''));
+        parent.replaceChild(tn, el);
       }
-    );
-    if (fixed !== html) {
-      article.innerHTML = fixed;
+    });
+    // Decodificar entidades sueltas sin destruir DOM
+    var walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT, null, false);
+    var n;
+    while ((n = walker.nextNode())) {
+      if (n.nodeValue.indexOf('&#x3C;') !== -1 || n.nodeValue.indexOf('&#x3E;') !== -1) {
+        n.nodeValue = n.nodeValue.replace(/&#x3C;/g, '<').replace(/&#x3E;/g, '>').replace(/&#x26;/g, '&');
+      }
     }
   }
 

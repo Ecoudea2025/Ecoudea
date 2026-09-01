@@ -795,7 +795,7 @@ definida, es necesario observar si para todo \(X\) y \(Y\) en los
 dominio definido, la función de probabilidad de densidad de probabilidad
 es mayor o igual a \(0\). en donde se aprecia que al ser una
 multiplicación, y que los dominios se encuentran definidos para números
-positivos, se tendrá que \(f(x,y)\geq0\) siempre y cuando \(k>0\). <br>
+positivos, se tendrá que \(f(x,y)\geq0\) siempre y cuando \(k\gt 0\). <br>
 
 Ahora, para encontrar el valor de \(k\) que hace que la función de
 densidad de probabilidad conjunta se encuentre bién definida, se tendrá

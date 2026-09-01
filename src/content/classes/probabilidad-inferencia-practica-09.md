@@ -117,7 +117,7 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     aleatoria \(X\).
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X > 4.3)\).
+    Calcule la \(\mathbb{P}(X \gt  4.3)\).
     </li>
     <li>
     Calcule la \(\mathbb{P}(3\leq X\leq 7)\).
@@ -141,7 +141,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro ca
     </li>
     <li>
     Calcule la función de distribución acumulada \(F(x)\) y utilice el
-    resultado para calcular \(\mathbb{P}(0.24 < X < 0.63)\).
+    resultado para calcular \(\mathbb{P}(0.24 \lt  X \lt  0.63)\).
     </li>
     <li>
     Calcule el valor promedio y desviación estándar de la variable
@@ -214,7 +214,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     </li>
     <li>
     De una expresión para la función de confiabilidad
-    \(R(x) = \mathbb{P}(X > x)\)?.
+    \(R(x) = \mathbb{P}(X \gt  x)\)?.
     </li>
     </ol>
 7.  Considere a `$X$` la variable aleatoria que representa la suma de

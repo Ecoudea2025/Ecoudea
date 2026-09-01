@@ -497,12 +497,7 @@
   white-space: nowrap;
   min-width: 100%;
 }
-/* Fórmulas inline muy largas: permitir scroll horizontal del párrafo */
-.prose-class p:has(> .katex), .prose-class li:has(> .katex) {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding-bottom: 0.25rem;
-}
+/* Fórmulas largas: el contenedor display ya scrollea; inline se ajusta al ancho */
 @media (max-width: 640px) {
   .prose-class { font-size: 0.95rem; line-height: 1.7; }
   .prose-class h1 { font-size: 1.5rem; }
