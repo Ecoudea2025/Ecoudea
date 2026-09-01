@@ -381,7 +381,15 @@
 .prose-class strong { color: #8bc34a; }
 .prose-class a { color: #6c9a06; text-decoration: none; transition: color 0.2s; }
 .prose-class a:hover { color: #8bc34a; text-decoration: underline; }
-.prose-class ul, .prose-class ol { padding-left: 1.5rem; margin-bottom: 1.25rem; }
+.prose-class ul, .prose-class ol { padding-left: 1.5rem; margin-bottom: 1.25rem; list-style-position: outside; }
+.prose-class ol { list-style-type: decimal; }
+.prose-class ol[type="a"] { list-style-type: lower-alpha; }
+.prose-class ol[type="A"] { list-style-type: upper-alpha; }
+.prose-class ol[type="i"] { list-style-type: lower-roman; }
+.prose-class ul { list-style-type: disc; }
+.prose-class li { margin-bottom: 0.5rem; }
+.prose-class li::marker { color: var(--color-accent); font-weight: 600; }
+.prose-class ol ol, .prose-class ul ul, .prose-class ol ul, .prose-class ul ol { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 .prose-class li { margin-bottom: 0.25rem; }
 .prose-class blockquote {
   border-left: 3px solid #6c9a06;
@@ -436,6 +444,15 @@
 }
 .prose-class table td, .prose-class table td * {
   background: transparent !important;
+}
+/* Celdas vacías: mostrar guion para que no parezca tabla rota */
+.prose-class table td:empty::before {
+  content: "—";
+  color: var(--color-text-muted);
+  opacity: 0.4;
+}
+.prose-class table td:empty {
+  background: oklch(from #1a2332 l c h / 0.2) !important;
 }
 .prose-class th {
   background: oklch(from #6c9a06 l c h / 0.15);
