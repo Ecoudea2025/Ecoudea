@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import rehypeRaw from 'rehype-raw';
 
 const base = '/Ecoudea';
 
@@ -48,7 +49,7 @@ export default defineConfig({
       wrap: false,
     },
     remarkPlugins: [remarkBaseImages],
-    rehypePlugins: [rehypeBaseImages],
+    rehypePlugins: [rehypeRaw, rehypeBaseImages],
   },
   vite: {
     plugins: [tailwindcss()],

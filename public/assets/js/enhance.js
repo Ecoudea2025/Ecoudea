@@ -31,6 +31,22 @@
     }
   }
 
+  // ── CONVERTIR <script type="math/tex"> → delimitadores KaTeX ──────
+  // Tablas antiguas usan <script type="math/tex">\frac{1}{16}</script>
+  // Rehype-raw los deja como <script> pero auto-render los ignora.
+  function convertScriptMath(scope) {
+    var scripts = scope.querySelectorAll('script[type="math/tex"], script[type="math/tex; mode=display"]');
+    scripts.forEach(function (s) {
+      var display = (s.getAttribute('type') || '').indexOf('mode=display') !== -1;
+      var tex = (s.textContent || s.innerHTML || '').trim();
+      if (!tex) return;
+      var span = document.createElement('span');
+      span.textContent = display ? '$$' + tex + '$$' : '\\(' + tex + '\\)';
+      // Marcar para que no sea procesado como script ignorado
+      s.parentNode.replaceChild(span, s);
+    });
+  }
+
   // ── KATEX: renderizar ─────────────────────────────────────────────
   function renderKatex(target) {
     if (typeof renderMathInElement === 'undefined') return;
@@ -122,6 +138,7 @@
       repairDelimiters(article);
       repairGarbledHtml(article);
       repairMathMangling(article);
+      convertScriptMath(article);
       fixImagePaths(article);
       renderKatex(article);
       optimizeImages(article);
@@ -135,6 +152,7 @@
       repairDelimiters(articleEl);
       repairGarbledHtml(articleEl);
       repairMathMangling(articleEl);
+      convertScriptMath(articleEl);
       fixImagePaths(articleEl);
       renderKatex(articleEl);
       optimizeImages(articleEl);
@@ -177,6 +195,7 @@
         repairDelimiters(wrapper);
         repairGarbledHtml(wrapper);
         repairMathMangling(wrapper);
+        convertScriptMath(wrapper);
         fixImagePaths(wrapper);
         renderKatex(wrapper);
         optimizeImages(wrapper);

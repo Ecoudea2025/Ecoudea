@@ -460,7 +460,8 @@
   background: linear-gradient(90deg, transparent, oklch(from #6c9a06 l c h / 0.3), transparent);
   margin: 2rem 0;
 }
-.prose-class .katex { font-size: 1.05em; }
+.prose-class .katex { font-size: 1.05em; color: var(--color-text) !important; }
+.prose-class .katex * { color: inherit !important; }
 .math-display {
   overflow-x: auto;
   overflow-y: hidden;
