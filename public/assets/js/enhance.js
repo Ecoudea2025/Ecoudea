@@ -46,6 +46,25 @@
     });
   }
 
+  // ── REPARAR HTML GARBADO (LaTeX con <X parseado como tag HTML) ──────
+  // El parser de markdown interpreta <Z, <z, etc. como tags HTML.
+  // Restaura el LaTeX original antes de que KaTeX lo procese.
+  function repairGarbledHtml(article) {
+    var html = article.innerHTML;
+    // Patrón: <x \leq="" ...)\)="" &#x3C;="" ...=""> seguido de </x>
+    var fixed = html.replace(
+      /<([a-zA-Z])\s[^>]*?=&quot;[^>]*?&#x3C;[^>]*?>[\s\S]*?<\/\1>/g,
+      function (match) {
+        // Extraer el contenido del tag garbado
+        var inner = match.replace(/<[^>]+>/g, '').replace(/=&quot;/g, '').replace(/&#x3C;/g, '<').replace(/\s+/g, ' ').trim();
+        return inner;
+      }
+    );
+    if (fixed !== html) {
+      article.innerHTML = fixed;
+    }
+  }
+
   // ── REPARAR RUTAS DE IMÁGENES (falta base URL en paths de markdown) ──
   // Markdown genera /assets/images/... pero con base=/Ecoudea debería ser /Ecoudea/assets/images/...
   function fixImagePaths(scope) {
@@ -73,6 +92,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     var article = document.querySelector('.prose-class');
     if (article) {
+      repairGarbledHtml(article);
       repairMathMangling(article);
       fixImagePaths(article);
       renderKatex(article);
@@ -84,6 +104,7 @@
   if (document.readyState === 'complete' || document.readyState === 'interactive') {
     var articleEl = document.querySelector('.prose-class');
     if (articleEl) {
+      repairGarbledHtml(articleEl);
       repairMathMangling(articleEl);
       fixImagePaths(articleEl);
       renderKatex(articleEl);
@@ -124,7 +145,9 @@
         btn.style.display = 'none';
         if (hideBtn) hideBtn.style.display = 'inline-flex';
         // Reparar + renderizar KaTeX dentro del contenido recién visible
+        repairGarbledHtml(wrapper);
         repairMathMangling(wrapper);
+        fixImagePaths(wrapper);
         renderKatex(wrapper);
         optimizeImages(wrapper);
       });

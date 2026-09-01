@@ -453,6 +453,13 @@
   padding: 0.5rem 0;
   text-align: center;
 }
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1rem 0;
+  padding: 0.25rem 0;
+}
+.katex-display > .katex { white-space: normal; }
 @media (max-width: 640px) {
   .prose-class { font-size: 0.95rem; line-height: 1.7; }
   .prose-class h1 { font-size: 1.5rem; }
