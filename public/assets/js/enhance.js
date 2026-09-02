@@ -63,7 +63,6 @@
   }
 
   // ── REPARAR DELIMITADORES LaTeX perdidos (\( \) → ( )) ─────────────
-  // Usa nodos de texto para no destruir la estructura DOM (evita <ol><li> rotos)
   function repairDelimiters(article) {
     var walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT, null, false);
     var toFix = [];
@@ -71,10 +70,8 @@
     while ((node = walker.nextNode())) {
       var t = node.nodeValue;
       if (t.indexOf('(') === -1 || t.indexOf('\\') === -1) continue;
-      // Ignorar nodos dentro de math ya correcto \(...\) o $...$
-      var parentHtml = node.parentElement ? node.parentElement.innerHTML : '';
-      if (parentHtml.indexOf('$$') !== -1) continue;
-      var fixed = t.replace(/\(([^<]{2,400})\)(?=[.,;) <]|$)/g, function (match, inner) {
+      var fixed = t.replace(/&#x3C;/g, '<').replace(/&#x3E;/g, '>');
+      fixed = fixed.replace(/\(([\s\S]{2,400})\)(?=[.,;) <]|$)/g, function (match, inner) {
         if (inner.length < 3 || inner.length > 400) return match;
         if (!/\\/.test(inner)) return match;
         if (!/[{}^_]/.test(inner) && !/\\[a-zA-Z]/.test(inner)) return match;
