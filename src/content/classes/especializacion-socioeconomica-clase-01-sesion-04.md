@@ -266,7 +266,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -340,8 +340,8 @@ ciudad, en millones de pesos, fueron de
 <p>
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, pruebe si el costo promedio máximo
-que tiene la construcción de un nuevo parque es de \(2000\) millones de
-pesos. Emplee un nivel de significancia del \(2\%\).
+que tiene la construcción de un nuevo parque es de $2000$ millones de
+pesos. Emplee un nivel de significancia del $2\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -349,7 +349,7 @@ Solución
 <p>
 
 En este caso estamos interesados en probar si el costo promedio de
-construir un nuevo parque sea máximo de \(2000\) millones de pesos, y
+construir un nuevo parque sea máximo de $2000$ millones de pesos, y
 por tanto se tendrá que el juego de hipótesis estará dado por
 $$\begin{align*}
   H_0: \mu \leq 2000 \\
@@ -360,7 +360,7 @@ para decidir el estadístico de prueba que debemos emplear, se debe
 revisar la información que poseemos, en donde tenemos que la varianza
 poblacional no es conocida, ya que no la mencionan en el enunciado,
 además nos mencionan que los costos se distribuyen aproximadamente
-normal. Entonces, al ser el tamaño muestral pequeño e igual a \(20\)
+normal. Entonces, al ser el tamaño muestral pequeño e igual a $20$
 datos, las características del ejercicio están dados por
 
 <img src="/assets/images/Hipotesis3a.jpg" alt="" style="max-width: 100%;">
@@ -371,9 +371,9 @@ de la forma $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que requerimos del valor de la media muestral
-\(\bar{X}=1613.8\), el valor asociado a la hipótesis nula
-\(\mu_0=2000\), la desviación estándar muestral \(S=480.1471\) y el
-tamaño de muestra \(n=20\). Al reemplazar en el estadístico de prueba se
+$\bar{X}=1613.8$, el valor asociado a la hipótesis nula
+$\mu_0=2000$, la desviación estándar muestral $S=480.1471$ y el
+tamaño de muestra $n=20$. Al reemplazar en el estadístico de prueba se
 tendrá que $$\begin{align*}
   t_c &= \frac{1613.8 - 2000}{480.1471/\sqrt{20}}\\
       &= -3.597104
@@ -384,17 +384,17 @@ cálculo de la región crítica, obteniendo que $$\begin{align*}
   RC:\{t|t>t_{\alpha, n-1}\}
 \end{align*}$$
 
-en donde, al usar el valor \(\alpha=0.02\) y \(n=20\), se tendrá que la
+en donde, al usar el valor $\alpha=0.02$ y $n=20$, se tendrá que la
 región crítica al emplear la función de <tt>Excel</tt>
-<code>INV.T(1-\(\alpha\), n-1)</code> será igual a $$\begin{align*}
+<code>INV.T(1-$\alpha$, n-1)</code> será igual a $$\begin{align*}
   RC&:\{t|t>t_{\alpha=0.02, n-1=19}\}\\
   RC&:\{t|t>2.204701\}
 \end{align*}$$
 
 Entonces como el valor crítico no cae dentro de la región crítica, no se
 rechaza la hipótesis nula, y por tanto se concluye con un nivel de
-significancia del \(2\%\) que el costo promedio máximo que costará
-construir un nuevo parque no será mayor a \(2000\) millones de pesos.
+significancia del $2\%$ que el costo promedio máximo que costará
+construir un nuevo parque no será mayor a $2000$ millones de pesos.
 </p>
 </main>
 <button id="Show14" class="btn btn-secondary">
@@ -411,14 +411,14 @@ Ejercicio
 Suponga que Postobon desarrolla una nueva máquina de bebidas para servir
 de forma automática gaseosas en los cines, de tal forma que la cantidad
 servida, en mililitros, se distribuye Weibull con varianza de
-\(5703.473_{ml^2}\). Si la máquina sirve en promedio menos de
-\(330_{ml}\) por vaso, Postobon decidirá no sacar al mercado la máquina
+$5703.473_{ml^2}$. Si la máquina sirve en promedio menos de
+$330_{ml}$ por vaso, Postobon decidirá no sacar al mercado la máquina
 debido a que no cumple con los estándares establecidos. <br> <br> Para
 probar si las máquinas funcionan bien, se decide tomar una muestra
-aleatoria de \(5000\) vasos de gaseosa servidos por las nuevas máquinas
-de bebidas, obteniendo una promedio de \(327_{ml}\), con una varianza de
-\(5240.35_{ml^2}\). Basados en lo anterior, prueba con un nivel de
-significancia del \(5\%\) si la nueva máquina cumple con los estándares
+aleatoria de $5000$ vasos de gaseosa servidos por las nuevas máquinas
+de bebidas, obteniendo una promedio de $327_{ml}$, con una varianza de
+$5240.35_{ml^2}$. Basados en lo anterior, prueba con un nivel de
+significancia del $5\%$ si la nueva máquina cumple con los estándares
 establecidos.
 </p>
 <h3 data-toc-skip>
@@ -427,8 +427,8 @@ Solución
 <p>
 
 En este caso estamos interesados en probar la hipótesis de que la
-cantidad servida por la nueva máquina no es menor a \(330_{ml}\) por
-vaso, empleando un nivel de significancia del \(5\%\), y por tanto,
+cantidad servida por la nueva máquina no es menor a $330_{ml}$ por
+vaso, empleando un nivel de significancia del $5\%$, y por tanto,
 tendremos que el juego de hipótesis estará dado por $$\begin{align*}
   H_0:\mu \leq 330\\
   H_1:\mu < 330
@@ -436,7 +436,7 @@ tendremos que el juego de hipótesis estará dado por $$\begin{align*}
 
 Entonces dado que estamos en una situación en la cual sabemos que la
 población no es normal, debido a que se menciona que es Weibull, con
-varianza conocida e igual a \(5703.473_{ml^2}\), estaremos bajo la
+varianza conocida e igual a $5703.473_{ml^2}$, estaremos bajo la
 siguiente situación
 
 <img src="/assets/images/Hipotesis3b.jpg" alt="" style="max-width: 100%;">
@@ -446,11 +446,11 @@ la forma $$\begin{align*}
   Z_c = \frac{\bar{X}-\mu_0}{\sigma/\sqrt{n}} \sim N(0,1)
 \end{align*}$$
 
-En donde observamos que requerimos la media muestral \(\bar{X}=327\), la
-desviación estándar poblacional \(\sigma=75.52134\), el tamaño de
-muestra \(n=5000\), el nivel de significancia \(\alpha=0.05\) y el valor
-crítico \(-Z_{\alpha=0.05}=-1.644854\) calculado mediante la función
-<code>INV.NORM.ESTAND(1-\(\alpha\))</code>. Al reemplazar en el
+En donde observamos que requerimos la media muestral $\bar{X}=327$, la
+desviación estándar poblacional $\sigma=75.52134$, el tamaño de
+muestra $n=5000$, el nivel de significancia $\alpha=0.05$ y el valor
+crítico $-Z_{\alpha=0.05}=-1.644854$ calculado mediante la función
+<code>INV.NORM.ESTAND(1-$\alpha$)</code>. Al reemplazar en el
 estadístico de prueba tenemos que $$\begin{align*}
   Z_c &= \frac{327-330}{75.52134/\sqrt{5000}} \\
       &= -2.808902
@@ -465,10 +465,10 @@ VERDADERO)</code> se tendrá que $$\begin{align*}
 \end{align*}$$
 
 Entonces, como el P-valor es menor al nivel de significancia
-\(\alpha=0.05\), se tendrá evidencia suficiente para rechazar la
+$\alpha=0.05$, se tendrá evidencia suficiente para rechazar la
 hipótesis nula, y por tanto se concluirá con un nivel de significancia
-del \(5\%\) que la cantidad promedio de llenado de las gaseosas por vaso
-es menor a \(330_{ml}\), lo cual significa que Postobon debería sacar la
+del $5\%$ que la cantidad promedio de llenado de las gaseosas por vaso
+es menor a $330_{ml}$, lo cual significa que Postobon debería sacar la
 máquina del mercado para recalibrarla.
 </p>
 </main>
@@ -486,14 +486,14 @@ Ejercicio
 Suponga que la marca de cigarrillo Malboro es auditada debido a que se
 afirma que sus registros están adulterados. Ante ésto, el presidente de
 la empresa asegura que sus registros son correctos y que el flujo de
-caja promedio mensual que registran es de \(25\) mil millones de pesos.
+caja promedio mensual que registran es de $25$ mil millones de pesos.
 Para probar si dicha afirmación es posible, el auditor decide revisar el
-flujo de caja de la empresa de los últimos \(48\) meses, encontrando que
-el flujo de caja promedio que registra la empresa es de \(21.389\) mil
-millones de pesos con una desviación estándar de \(3.213\) mil millones
+flujo de caja de la empresa de los últimos $48$ meses, encontrando que
+el flujo de caja promedio que registra la empresa es de $21.389$ mil
+millones de pesos con una desviación estándar de $3.213$ mil millones
 de pesos. <br> <br> Si puede suponerse que el flujo de caja de la
 empresa Malboro se distribuye normalmente, emplee un nivel de confianza
-del \(10\%\) para probar si la afirmación del presidente se encuentra
+del $10\%$ para probar si la afirmación del presidente se encuentra
 respaldada por la información muestral.
 </p>
 <h3 data-toc-skip>
@@ -502,7 +502,7 @@ Solución
 <p>
 
 En este ejercicio se está interesado en probar la hipótesis sobre que el
-flujo de caja promedio mensual es igual a \(25\) mil millones de pesos,
+flujo de caja promedio mensual es igual a $25$ mil millones de pesos,
 lo cual significa que al posee la igualdad la afirmación, tendremos el
 siguiente juego de hipótesis $$\begin{align*}
   H_0:\mu = 25\\
@@ -523,8 +523,8 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que necesitamos la media muestral
-\(\bar{X}=21.389\), la desviación estándar muestral \(S=3.213\), el
-tamaño de muestra \(n=48\) y el nivel de significancia \(\alpha=0.10\).
+$\bar{X}=21.389$, la desviación estándar muestral $S=3.213$, el
+tamaño de muestra $n=48$ y el nivel de significancia $\alpha=0.10$.
 Al reemplazar estos valores tendremos que $$\begin{align*}
   Z_c &= \frac{21.389-25}{3.213/\sqrt{48}}\\
       &= -7.786412
@@ -536,8 +536,8 @@ tendremos que $$\begin{align*}
 \end{align*}$$
 
 en donde al emplear la función de <tt>Excel</tt>
-<code>INV.NORM.ESTAND(1-\(\alpha\))</code> encontraríamos que el valor
-crítico \(Z_{\frac{\alpha}{2}=0.05}=1.644854\) y por tanto la región
+<code>INV.NORM.ESTAND(1-$\alpha$)</code> encontraríamos que el valor
+crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$ y por tanto la región
 crítica será $$\begin{align*}
   RC:\{Z|Z<-1.644854 \text{ ó } Z>1.644854\}
 \end{align*}$$
@@ -545,9 +545,9 @@ crítica será $$\begin{align*}
 En donde al comparar el estadístico de prueba con la región crítica,
 encontramos que el estadístico de prueba cae dentro de la región
 crítica, y por tanto hay evidencia suficiente para rechazar la hipótesis
-nula, lo cual quiere decir con un nivel de significancia del \(10\%\)
+nula, lo cual quiere decir con un nivel de significancia del $10\%$
 que el flujo de caja promedio mensual que registra la marca de
-cigarrillos Malboro es diferente a \(25\) mil millones de pesos.
+cigarrillos Malboro es diferente a $25$ mil millones de pesos.
 </p>
 </main>
 
@@ -577,19 +577,19 @@ Ejercicio
 <p>
 Una empresa de electrodomésticos desea saber si los cursos de
 capacitación sirven para mejorar el nivel de ventas de sus trabajadoras
-y para ello decide enviar a \(12\) de sus agentes de ventas a dicho
+y para ello decide enviar a $12$ de sus agentes de ventas a dicho
 curso. Una vez finalizado el curso, la empresa encuentra que estos
-agentes generan unas ventas promedio de de \(43.5\) millones de pesos
-con una desviación estándar de \(3.1\) millones de pesos.<br> <br> Con
+agentes generan unas ventas promedio de de $43.5$ millones de pesos
+con una desviación estándar de $3.1$ millones de pesos.<br> <br> Con
 el fin de observar si el curso es o no efectivo, la empresa extrae una
-muestra aleatoria independiente de \(15\) agentes que no asistieron a la
+muestra aleatoria independiente de $15$ agentes que no asistieron a la
 capacitación y encontró que las ventas promedio generadas y su
-desviación estándar para estos agentes fue de \(40.8\) y \(2.3\)
+desviación estándar para estos agentes fue de $40.8$ y $2.3$
 millones de pesos respectivamente. <br> <br> Si es posible suponer que
 las poblaciones se distribuyen normalmente con varianzas iguales a
-\(5.6\) millones de pesos\(^2\) para quienes se capacitaron y a \(4.3\)
-millones de pesos\(^2\) para quienes no se capacitaron, emplee un nivel
-de significancia del \(5\%\) para observar si es posible pensar que los
+$5.6$ millones de pesos$^2$ para quienes se capacitaron y a $4.3$
+millones de pesos$^2$ para quienes no se capacitaron, emplee un nivel
+de significancia del $5\%$ para observar si es posible pensar que los
 cursos de capacitación mejoran el promedio de ventas sobre quienes no
 recibieron estos cursos?.
 </p>
@@ -599,7 +599,7 @@ Solución
 <p>
 
 En este ejercicio estamos interesados en emplear un nivel de
-significancia del \(5\%\) para probar la hipótesis de que las ventas de
+significancia del $5\%$ para probar la hipótesis de que las ventas de
 las personas que tomaron los cursos de capacitación son superiores a las
 ventas de quienes no tomaron los cursos de capacitación, la cual es de
 la forma $$\begin{align*}
@@ -607,12 +607,12 @@ la forma $$\begin{align*}
   H_1:\mu_C > \mu_S => \mu_C - \mu_S > 0\\
 \end{align*}$$
 
-donde el subíndice \(C\) representa “con capacitación” y el subíndice
-\(S\) representa “sin capacitación.” Ahora, para decidir si cual es el
+donde el subíndice $C$ representa “con capacitación” y el subíndice
+$S$ representa “sin capacitación.” Ahora, para decidir si cual es el
 estadístico de prueba adecuado, se verifica la información que poseemos,
 en donde nos mencionan que las poblaciones se distribuyen normalmente
-con varianzas conocidas e iguales a \(\sigma^2_C=5.6\) y
-\(\sigma^2_S=4.3\) millones de pesos\(^2\). Lo cual nos llevará a la
+con varianzas conocidas e iguales a $\sigma^2_C=5.6$ y
+$\sigma^2_S=4.3$ millones de pesos$^2$. Lo cual nos llevará a la
 siguiente situación
 
 <img src="/assets/images/Hipotesis4a.jpg" alt="" style="max-width: 80%;">
@@ -623,9 +623,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde, para realizar el cálculo requerimos de las media muestrales
-fueron \(\bar{X}_C=43.5\) y \(\bar{X}_S=40.8\), las varianzas
-poblacionales \(\sigma^2_C=5.6\) y \(\sigma^2_S=4.3\), los tamaños de
-muestrales \(n_C=12\) y \(n_S=15\). Al reemplazar en la ecuación del
+fueron $\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas
+poblacionales $\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de
+muestrales $n_C=12$ y $n_S=15$. Al reemplazar en la ecuación del
 estadístico de prueba tendremos que $$\begin{align*}
   Z_c &= \frac{(43.5-40.8) - 0}{\sqrt{\frac{5.6}{12}+\frac{4.3}{15}}}\\
       &= 3.110786
@@ -646,7 +646,7 @@ es igual a $$\begin{align*}
           &= 0.000932951 \\
 \end{align*}$$
 
-Entonces como el P-valor es menor al nivel de significancia del \(5\%\)
+Entonces como el P-valor es menor al nivel de significancia del $5\%$
 se rechazará la hipótesis nula, y por tanto se tendrá evidencia
 suficiente para concluir que el promedio de ventas de las personas que
 recibieron capacitación es superior al promedio de ventas de las
@@ -670,15 +670,15 @@ posibles ubicaciones en los cuales puede llevar a cabo dicho proyecto.
 Para decidir en cual de las dos ubicaciones llevar a cabo el proyecto
 decide tomar muestras aleatorias de cada ubicación y mirar en cual de
 los dos hay mayor aflucencia de vehículos.<br> <br> De la ubicación
-\(A\) se decide tomar una muestra aleatoria de \(22\) días y de la
-ubicación \(B\) de \(28\) días encontrando respectivamente que el número
-promedio de vehículos para cada ubicación fue de \(2359\) y \(2147\)
-vehículos, con una desviación estándar de \(143\) y \(301\) vehículos.
+$A$ se decide tomar una muestra aleatoria de $22$ días y de la
+ubicación $B$ de $28$ días encontrando respectivamente que el número
+promedio de vehículos para cada ubicación fue de $2359$ y $2147$
+vehículos, con una desviación estándar de $143$ y $301$ vehículos.
 <br> <br> Si puede asumirse que el número de vehículos en las dos zonas
 se distribuye aproximadamente normal con varianzas iguales, pruebe con
-un nivel de significancia del \(10\%\) si la afluencia de vehículos que
-transitan por la ubicación \(A\) es menor que la afluencia de vehículos
-que transitan por la ubicación \(B\).
+un nivel de significancia del $10\%$ si la afluencia de vehículos que
+transitan por la ubicación $A$ es menor que la afluencia de vehículos
+que transitan por la ubicación $B$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -687,7 +687,7 @@ Solución
 
 En este punto estamos interesados en una hipótesis unilateral, debido a
 que queremos probar si el número de vehículos que transitan por día por
-la ubicación \(A\) es menor que la ubicación \(B\), lo cual puede
+la ubicación $A$ es menor que la ubicación $B$, lo cual puede
 traducirse bajo el juego de hipótesis $$\begin{align*}
   H_0:\mu_A \geq \mu_B => \mu_A - \mu_B \geq 0\\
   H_1:\mu_A < \mu_B => \mu_A - \mu_B < 0\\
@@ -706,9 +706,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo requerimos de los
-tamaños muestrales \(n_A=22\) y \(n_B=28\), las medias muestrales
-\(\bar{X}_A=2359\) y \(\bar{X}_B=2147\), y una desviación estándar
-conjunta \(S_p\), la cual no poseemos, y que debemos calcular, pero que
+tamaños muestrales $n_A=22$ y $n_B=28$, las medias muestrales
+$\bar{X}_A=2359$ y $\bar{X}_B=2147$, y una desviación estándar
+conjunta $S_p$, la cual no poseemos, y que debemos calcular, pero que
 podemos obtener mediante la ecuación $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
@@ -740,9 +740,9 @@ $$\begin{align*}
 \end{align*}$$
 
 y por tanto, como el P-valor es superior al nivel de significancia del
-\(10\%\), no se rechaza al hipótesis nula y se tendrá que hay evidencia
+$10\%$, no se rechaza al hipótesis nula y se tendrá que hay evidencia
 suficiente para concluir que el número de vehículos que transitan por la
-ubicación \(A\) no es menor a la ubicación \(B\).
+ubicación $A$ no es menor a la ubicación $B$.
 </p>
 </main>
 <button id="Show18" class="btn btn-secondary">
@@ -760,15 +760,15 @@ Suponga que la Universidad de Antioquia adelanta un estudio sobre el
 salario de sus egresados y desea comparar si es cierta la creencia que
 las mujeres ganan en promedio menos dinero que los hombres. <br> <br>
 Para comprobar si las creencias son ciertas, un grupo de investigación
-de la Universidad toma una muestra representativa de \(250\) mujeres y
-\(270\) hombres egresados de la Universidad y se les pregunta sobre cuál
+de la Universidad toma una muestra representativa de $250$ mujeres y
+$270$ hombres egresados de la Universidad y se les pregunta sobre cuál
 es el salario que ganan actualmente, obteniendo en su investigación que
-las mujeres ganan en promedio \(2.3\) millones de pesos con una
-desviación estándar de \(0.7\) millones de pesos, mientras que los
-hombres ganan en promedio \(2.6\) millones de pesos con una desviación
-estándar de \(1.2\) millones de pesos.<br> <br> Si el grupo de
+las mujeres ganan en promedio $2.3$ millones de pesos con una
+desviación estándar de $0.7$ millones de pesos, mientras que los
+hombres ganan en promedio $2.6$ millones de pesos con una desviación
+estándar de $1.2$ millones de pesos.<br> <br> Si el grupo de
 investigación encuentra que los salarios no se distribuyen normalmente,
-emplee un nivel de significancia del \(15\%\) para probar si el salario
+emplee un nivel de significancia del $15\%$ para probar si el salario
 de los egresados hombres es mayor al salario de los egresados mujeres.
 </p>
 <h3 data-toc-skip>
@@ -777,7 +777,7 @@ Solución
 <p>
 
 En este enunciado estamos interesados en probar con un nivel de
-significancia del \(15\%\) si el salario de los hombres es mayor al de
+significancia del $15\%$ si el salario de los hombres es mayor al de
 las mujeres, lo cual se traduce en el siguiente juego de hipótesis
 $$\begin{align*}
   H_0:\mu_H \leq \mu_M => \mu_H - \mu_M \leq 0\\
@@ -799,9 +799,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que para realizar el cálculo se requiere de los
-tamaños muestrales \(n_M = 250\) y \(n_H = 270\), las medias muestrales
-\(\bar{X}_M=2.3\) y \(\bar{X}_H=2.6\), con desviaciones estándar
-muestrales iguales a \(S_M=0.7\) y \(S_H=1.2\). Por tanto al reemplazar
+tamaños muestrales $n_M = 250$ y $n_H = 270$, las medias muestrales
+$\bar{X}_M=2.3$ y $\bar{X}_H=2.6$, con desviaciones estándar
+muestrales iguales a $S_M=0.7$ y $S_H=1.2$. Por tanto al reemplazar
 los valores en el estadístico de prueba se tendrá que $$\begin{align*}
   Z_c &= \frac{(2.6-2.3) - 0}{\sqrt{\frac{1.2}{270}+\frac{0.7}{250}}} \\ 
       &= 3.524672
@@ -809,7 +809,7 @@ los valores en el estadístico de prueba se tendrá que $$\begin{align*}
 
 Ahora, si empleamos la región crítica para observar si se rechaza o no
 la hipótesis, tendremos que al emplear la función de <tt>Excel</tt>
-<code>INV.NORM.ESTAND(1-\(\alpha\))</code>, se tendrá que
+<code>INV.NORM.ESTAND(1-$\alpha$)</code>, se tendrá que
 $$\begin{align*}
   RC&:\{Z|Z>Z_\alpha\}\\
   RC&:\{Z|Z>1.03643\}
@@ -817,7 +817,7 @@ $$\begin{align*}
 
 Entonces como el estadístico de prueba cae dentro de la región crítica,
 se tendrá evidencia suficiente para rechazar la hipótesis nula, lo cual
-significa con un nivel de significancia del \(15\%\) que el salario
+significa con un nivel de significancia del $15\%$ que el salario
 promedio de los hombres es mayor al salario promedio de las mujeres.
 </p>
 </main>
@@ -833,18 +833,18 @@ Ejercicio
 </h3>
 <p>
 Se realiza un estudio con el fin de comparar el rendimiento de
-combustible en kilómetros por galón para dos tipos de motores \(A\) y
-\(B\). Suponga que se decide realizar un total de \(47\) experimentos
-con el motor \(A\) y \(56\) experimentos con el motor \(B\), encontrando
-para cada caso, un rendimiento promedio de gasolina de \(44\) y \(48\)
-kilómetros, respectivamente, con desviaciones estándar de \(8.3\) y
-\(6.6\), respectivamente. <br> <br> Basados en la información anterior,
-pruebe con un nivel de significancia del \(12\%\) si la diferencia
+combustible en kilómetros por galón para dos tipos de motores $A$ y
+$B$. Suponga que se decide realizar un total de $47$ experimentos
+con el motor $A$ y $56$ experimentos con el motor $B$, encontrando
+para cada caso, un rendimiento promedio de gasolina de $44$ y $48$
+kilómetros, respectivamente, con desviaciones estándar de $8.3$ y
+$6.6$, respectivamente. <br> <br> Basados en la información anterior,
+pruebe con un nivel de significancia del $12\%$ si la diferencia
 promedio entre los rendimientos de combustible en kilómetros por galón
-de gasolina para los motores \(A\) y \(B\) son o no iguales, si es
+de gasolina para los motores $A$ y $B$ son o no iguales, si es
 posible suponer que los rendimientos de los combustibles no poseen una
-distribución normal y poseen varianzas conocidas e iguales a \(38.44\) y
-\(57.76\) para los motores \(A\) y \(B\) respectivamente.
+distribución normal y poseen varianzas conocidas e iguales a $38.44$ y
+$57.76$ para los motores $A$ y $B$ respectivamente.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -852,7 +852,7 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular con un nivel de
-significancia del \(12\%\) si la diferencia entre los rendimientos
+significancia del $12\%$ si la diferencia entre los rendimientos
 promedios de combustible son o no iguales, es decir, se quiere probar el
 juego de hipótesis $$\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
@@ -871,9 +871,9 @@ $$\begin{align*}
 \end{align*}$$
 
 observando que se requiere de los rendimientos promedio muestrales de
-los dos motores \(\bar{X}_A=44\) y \(\bar{X}_B=48\), las varianzas
-poblacionales \(\sigma^2_A=38.44\) y \(\sigma^2_B=57.76\) y los tamaños
-muestrales \(n_A=47\) y \(n_B=56\). Al reemplazar estos valores en el
+los dos motores $\bar{X}_A=44$ y $\bar{X}_B=48$, las varianzas
+poblacionales $\sigma^2_A=38.44$ y $\sigma^2_B=57.76$ y los tamaños
+muestrales $n_A=47$ y $n_B=56$. Al reemplazar estos valores en el
 estadístico de prueba se tendrá que $$\begin{align*}
   Z_c &= \frac{(44-48) - 0}{\sqrt{\frac{38.44}{47}+\frac{57.76}{56}}} \\
       &= -2.941414
@@ -882,14 +882,14 @@ estadístico de prueba se tendrá que $$\begin{align*}
 Ahora, si realizamos el cálculo de la región crítica para observar si se
 rechaza o no la hipótesis establecida, tendremos que al emplear la
 función de <tt>Excel</tt>
-<code>INV.NORM.ESTAND(1-(\(\alpha\)/2))</code>, se tendrá que
+<code>INV.NORM.ESTAND(1-($\alpha$/2))</code>, se tendrá que
 $$\begin{align*}
   RC&:\{Z|z < -Z_{\alpha/2} \text{ ó } Z>Z_{\alpha/2}\}\\
   RC&:\{Z|Z<-1.5548 \text{ ó } Z>1.55478\}
 \end{align*}$$
 
 apreciando que el estadístico de prueba cae dentro de la región crítica
-lo cual significa que con un nivel de significancia del \(12\%\) se
+lo cual significa que con un nivel de significancia del $12\%$ se
 rechaza la hipótesis nula, de que el rendimiento promedios de
 combustible de los dos tipos de motores son iguales, y por tanto se
 tendrá que hay diferencias significativas entre el rendimiento promedio
@@ -911,16 +911,16 @@ Suponga que se contrata a un grupo de investigación de la Universidad de
 Antioquia para que realice un análisis de tensión sobre la unión pegada
 con una resina experimental a dos clases diferentes de madera. Para
 realizar el estudio, el grupo de investigación toma una muestra
-aleatoria de \(18\) uniones pegadas con la resina especial a la madera
-\(A\) y encontró que la tensión promedio de corte y desviación estándar
-fueron de \(1130_{psi}\) y \(420_{psi}\), respectivamente. Por su parte,
-toman una muestra aleatoria de \(12\) uniones pegadas con la resina
-especial a la madera \(B\), encontrando que la tensión promedio de corte
-y desviación estándar fueron de \(1010_{psi}\) y \(380_{psi}\).<br> <br>
+aleatoria de $18$ uniones pegadas con la resina especial a la madera
+$A$ y encontró que la tensión promedio de corte y desviación estándar
+fueron de $1130_{psi}$ y $420_{psi}$, respectivamente. Por su parte,
+toman una muestra aleatoria de $12$ uniones pegadas con la resina
+especial a la madera $B$, encontrando que la tensión promedio de corte
+y desviación estándar fueron de $1010_{psi}$ y $380_{psi}$.<br> <br>
 Si se asume que la tensión sobre la unión pegada con la resina
 experimental en cada clase de madera se distribuye aproximadamente
 normal con varianzas diferentes. Emplee un nivel de significancia del
-\(8\%\) para observar si existen o no diferencias significativas de la
+$8\%$ para observar si existen o no diferencias significativas de la
 tensión promedio de corte de las dos marcas de madera.
 </p>
 <h3 data-toc-skip>
@@ -944,11 +944,11 @@ situación que posee el siguiente estadístico de prueba $$\begin{align*}
   t_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{\sqrt{\frac{S^2_A}{n_A}+\frac{S^2_B}{n_B}}} \sim t_v
 \end{align*}$$
 
-En donde se observa que requerimos de los tamaños muestrales \(n_A=18\)
-y \(n_B=12\), de las medias muestrales de \(\bar{X}_A=1130_{psi}\) y
-\(\bar{X}_B=1010_{psi}\) junto a unas desviaciones estándar de
-\(S_A=420_{psi}\) y \(S_B=380_{psi}\). Adicionalmente se requiere el
-valor de los grados de libertad \(\nu\), los cuales están dados por
+En donde se observa que requerimos de los tamaños muestrales $n_A=18$
+y $n_B=12$, de las medias muestrales de $\bar{X}_A=1130_{psi}$ y
+$\bar{X}_B=1010_{psi}$ junto a unas desviaciones estándar de
+$S_A=420_{psi}$ y $S_B=380_{psi}$. Adicionalmente se requiere el
+valor de los grados de libertad $\nu$, los cuales están dados por
 
 $$\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
@@ -957,7 +957,7 @@ $$\begin{align*}
     &= 25.33837
 \end{align*}$$
 
-Al calcular el valor techo de \(\nu\) tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
@@ -983,7 +983,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Encontrando que el P-valor es superior al nivel de significancia del
-\(8\%\), lo cual significa que no hay evidencia suficiente para rechazar
+$8\%$, lo cual significa que no hay evidencia suficiente para rechazar
 la hipótesis nula y por tanto se concluirá que no existen diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera.
@@ -1014,7 +1014,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han llevado a cabo en
+que los costos asociados a $20$ proyectos que se han llevado a cabo en
 la ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1087,8 +1087,8 @@ la ciudad, en millones de pesos, fueron de
 </table>
 <p>
 Si se cree que la verdadera proporción de proyectos que poseen costos
-superiores a \(1900\) millones de pesos es de más del \(40\%\), emplee
-un nivel de significancia del \(5\%\) para probar si dicha creencia se
+superiores a $1900$ millones de pesos es de más del $40\%$, emplee
+un nivel de significancia del $5\%$ para probar si dicha creencia se
 encuentra apoyada por la información empírica.
 </p>
 <h3 data-toc-skip>
@@ -1097,8 +1097,8 @@ Solución
 <p>
 
 En este caso estamos interesados en probar si la verdadera proporción de
-proyectos que poseen costos superiores a \(1900\) millones de pesos es
-de más del \(40\%\), y por tanto se tendrá que el juego de hipótesis
+proyectos que poseen costos superiores a $1900$ millones de pesos es
+de más del $40\%$, y por tanto se tendrá que el juego de hipótesis
 está dado por $$\begin{align*}
   H_0:p \leq 0.40\\
   H_1:p > 0.40
@@ -1116,22 +1116,22 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde se evidencia que necesitamos para el cálculo de la proporción
-muestral de proyectos que poseen costos superiores a \(1900\) millones
-de pesos, del tamaño de muestra \(n=20\) y de la proporción establecida
+muestral de proyectos que poseen costos superiores a $1900$ millones
+de pesos, del tamaño de muestra $n=20$ y de la proporción establecida
 en la hipótesis nula. <br> <br> Para realizar el cálculo de la
 proporción muestral se trata de localizar aquellos costos que posean un
-valor superior a \(1900\) millones de pesos, denotando como \(1\)
-aquellas observaciones que sean superiores a \(1900\) millones de pesos,
-y \(0\) aquellas observaciones que no cumplan la condición, tal que
+valor superior a $1900$ millones de pesos, denotando como $1$
+aquellas observaciones que sean superiores a $1900$ millones de pesos,
+y $0$ aquellas observaciones que no cumplan la condición, tal que
 $$\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
 \end{align*}$$
 
 Al contar el número de éxitos, observamos que tenemos un total de
-\(x=5\) éxitos en un total de \(n=20\) muestras, y por tanto, podemos
+$x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
-muestral de egresados que poseen salarios superiores a \(1900\)
+muestral de egresados que poseen salarios superiores a $1900$
 millones, tal que $$\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
@@ -1156,11 +1156,11 @@ VERDADERO)</code> obteniendo que $$\begin{align*}
 \end{align*}$$
 
 En donde se evidencia que el P-valor asociado al estadístico de prueba
-posee un valor del \(91.45\%\) el cual es mayor al nivel de
-significancia preestablecido de \(5\%\), permitiendo concluir que no se
+posee un valor del $91.45\%$ el cual es mayor al nivel de
+significancia preestablecido de $5\%$, permitiendo concluir que no se
 rechaza la hipótesis nula, y por tanto, se tendrá que la verdadera
-proporción de proyectos que poseen costos superiores a \(1900\) millones
-de pesos no es mayor a \(40\%\).
+proporción de proyectos que poseen costos superiores a $1900$ millones
+de pesos no es mayor a $40\%$.
 </p>
 </main>
 
@@ -1196,12 +1196,12 @@ determinar si el cambio en el proceso de fabricación mejora el
 rendimiento que sus equipos ofrecen, deciden tomar una muestra de
 equipos antes y después de la implementación del nuevo proceso de
 fabricación y se evalúa la velocidad de procesamiento para la ejecución
-de un programa determinado. Suponga que se encuentra que \(120\) de
-\(500\) computadores fabricados con el método actual ofrece un
-rendimiento superior al promedio, mientras que, \(220\) de \(700\)
+de un programa determinado. Suponga que se encuentra que $120$ de
+$500$ computadores fabricados con el método actual ofrece un
+rendimiento superior al promedio, mientras que, $220$ de $700$
 computadores fabricados con el nuevo método ofrece un rendimiento
 superior al promedio.<br> <br> Basados en la información obtenida,
-emplee un nivel de confianza del \(2\%\) para probar si la proporción de
+emplee un nivel de confianza del $2\%$ para probar si la proporción de
 nuevos equipos que ofrecen un rendimiento superior al promedio, es igual
 o superior a la proporción de equipos actuales que ofrecen un
 rendimiento superior al promedio.
@@ -1231,8 +1231,8 @@ $$\begin{align*}
 \end{align*}$$
 
 De lo anterior se observa que para el cálculo se requiere de las
-proporciones muestrales \(\hat{p}_{N}\) y \(\hat{p}_{A}\), y
-proporciones conjuntas \(p^*\), las cuales se pueden obtener a partir
+proporciones muestrales $\hat{p}_{N}$ y $\hat{p}_{A}$, y
+proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
 que $$\begin{align*}
@@ -1271,8 +1271,8 @@ cual estará dada por $$\begin{align*}
 \end{align*}$$
 
 en donde al emplear la función de <tt>Excel</tt>
-<code>INV.NORM.ESTAND(1-\(\alpha\))</code> encontraríamos que el valor
-crítico \(Z_{\alpha=0.02}=2.053749\) y por tanto la región crítica será
+<code>INV.NORM.ESTAND(1-$\alpha$)</code> encontraríamos que el valor
+crítico $Z_{\alpha=0.02}=2.053749$ y por tanto la región crítica será
 $$\begin{align*}
   RC:\{Z|Z<-2.053749\}
 \end{align*}$$
@@ -1309,7 +1309,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1383,8 +1383,8 @@ ciudad, en millones de pesos, fueron de
 <p>
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, emplee un nivel de significancia del
-\(5\%\) para observar si la variabilidad de los costos de cualquier
-construcción es de al menos \(300000\) millones de pesos\(^2\).
+$5\%$ para observar si la variabilidad de los costos de cualquier
+construcción es de al menos $300000$ millones de pesos$^2$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -1392,8 +1392,8 @@ Solución
 <p>
 
 Como estamos interesados en este punto de observar si la variabilidad de
-los costos de cualquier construcción es de al menos \(300000\) millones
-de pesos\(^2\) y por tanto la hipótesis de interés está dada por
+los costos de cualquier construcción es de al menos $300000$ millones
+de pesos$^2$ y por tanto la hipótesis de interés está dada por
 $$\begin{align*}
   H_0:\sigma^2 \geq 300000\\
   H_1:\sigma^2 < 300000
@@ -1409,8 +1409,8 @@ por $$\begin{align*}
 \end{align*}$$
 
 De lo anterior, se observa que para el cálculo del estadístico de
-prueba, se requiere de la varianza muestral \(S^2 = 230541.2\), el
-tamaño de muestra \(n=20\) y el valor de la hipótesis nula, en donde, al
+prueba, se requiere de la varianza muestral $S^2 = 230541.2$, el
+tamaño de muestra $n=20$ y el valor de la hipótesis nula, en donde, al
 reemplazar dichos valores en el estadístico de prueba se tendrá que
 $$\begin{align*}
    \chi^2_c &= \frac{(20-1)230541.2}{300000} \\
@@ -1426,10 +1426,10 @@ Entonces, al emplear la función de <tt>Excel</tt>
 <code>DISTR.CHICUAD(14.60094; 20-1; VERDADERO)</code> se tiene que $$$$
 
 Entonces, como el P-valor obtenido es superior al nivel de significancia
-preestablecido del \(5\%\), se concluye que no hay evidencia suficiente
+preestablecido del $5\%$, se concluye que no hay evidencia suficiente
 para rechazar la hipótesis nula, y por tanto, se tendrá que la
 variabilidad de los costos de cualquier construcción es de al menos
-\(300000\) millones de pesos\(^2\).
+$300000$ millones de pesos$^2$.
 </p>
 </main>
 
@@ -1457,7 +1457,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Se aplican pruebas a \(10\) cables conductores soldados a un dispositivo
+Se aplican pruebas a $10$ cables conductores soldados a un dispositivo
 semiconductor con el fin de determinar su resistencia a la tracción. Las
 pruebas demostraron que para romper la unión se requiere las libras de
 fuerza que se listan a continuación.
@@ -1502,7 +1502,7 @@ Sin Encapsulado
 </thead>
 </table>
 <p>
-Otra conjunto de \(8\) cables conductores que forman otro dispositivo,
+Otra conjunto de $8$ cables conductores que forman otro dispositivo,
 se encapsulan y se prueban para determinar si el encapsulado aumenta la
 resistencia a la tracción, obteniendo para este caso se requirieron las
 siguientes libras de fuerza para romper la unión
@@ -1542,7 +1542,7 @@ Con Encapsulado
 </table>
 <p>
 Si se supone que las resistencias a la tracción se distribuyen
-normalmente, construya un intervalo del \(90\%\) para la razón de
+normalmente, construya un intervalo del $90\%$ para la razón de
 varianzas entre la variabilidad de los cables sin encapsulado y la
 variabilidad de los cables con encapsulado. Es posible afirmar que la
 variabilidad de de los cables con encapsulado es superior a los cables
@@ -1568,11 +1568,11 @@ varianzas posee la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de los varianzas muestrales \(S^2_S\) y \(S^2_C\), el nivel de
-confianza \(1-\alpha\) y los valores críticos
-\(f_{\alpha/2, n_C-1, n_S-1}\) y \(f_{\alpha/2, n_S-1, n_C-1}\). <br>
+requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
+confianza $1-\alpha$ y los valores críticos
+$f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 <br> Para realizar el cálculo de las varianzas muestrales, se emplean
-los datos muestrales y los tamaños de muestra \(n_C=8\) y \(n_S=10\),
+los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
 $$\begin{align*}
@@ -1580,8 +1580,8 @@ S^2_C = 1.378146 \quad \text{ y } \quad S^2_S = 3.231254
 \end{align*}$$
 
 Por su parte, al buscar los valores críticos para un nivel de
-significancia \(1-\alpha=0.90\) y tamaños muestrales \(n_C=8\) y
-\(n_S=10\) tenemos que
+significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
+$n_S=10$ tenemos que
 
 $$\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} = 3.292746\\ 
@@ -1594,25 +1594,25 @@ confianza, se procede a su cálculo, tal que $$\begin{align*}
    0.1295287 &< \frac{\sigma^2_C}{\sigma^2_S} < 1.56812
 \end{align*}$$
 
-Por tanto, se podrá concluir con un nivel de confianza del \(90\%\) que
+Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
 de los cables sin encapsulado y la variabilidad de los cables con
-encapsulado, se encontrará entre \(0.1295287\) y \(1.56812\).<br> <br>
+encapsulado, se encontrará entre $0.1295287$ y $1.56812$.<br> <br>
 Ahora, para verificar si existen o no diferencias significativas entre
 las varianzas de resistencia a la tracción de los cables encapsulados o
 sin encapsular, debemos verificar la posición en la que se encuentra el
 intervalo de confianza para la razón de varianzas
-\(\sigma^2_C/\sigma^2_S\).
+$\sigma^2_C/\sigma^2_S$.
 
 <img src="/assets/images/Intervalos6b.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que el intervalo calculado contiene el valor de
-\(1\), el cual representa la igualdad entre la varianza de los dos tipos
+$1$, el cual representa la igualdad entre la varianza de los dos tipos
 de cable, tal que $$\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(90\%\) no será posible
+y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que la variabilidad de la resistencia a la tracción de los
 cables encapsulados o sin encapsular sean diferentes, y por tanto, debe
 asumirse que éstos son iguales.
@@ -1645,8 +1645,8 @@ confianza inferior y superior, tal que
 
 <ol type="a">
 <li>
-Usualmente se usan valores para \(\alpha\) de \(0.1, 0.05\) y $ 0.01$,
-es decir, niveles de confianza de \(0.9, 0.95\) y \(0.99\).
+Usualmente se usan valores para $\alpha$ de $0.1, 0.05$ y $ 0.01$,
+es decir, niveles de confianza de $0.9, 0.95$ y $0.99$.
 </li>
 <li>
 La longitud o amplitud del intervalo construido, medirá la
@@ -1696,7 +1696,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han llevado a cabo en
+que los costos asociados a $20$ proyectos que se han llevado a cabo en
 le ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1771,7 +1771,7 @@ le ciudad, en millones de pesos, fueron de
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, calcule el límite superior del costo
 promedio de construir cualquier parque empleando un nivel de confianza
-del \(98\%\).
+del $98\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -1786,7 +1786,7 @@ enunciado tenemos que la varianza poblacional no es conocida, ya que no
 la mencionan en el enunciado, tenemos que la población es normal, debido
 a que mencionan que puede suponerse que los salarios son aproximadamente
 normales, y los tamaños de muestra son pequeños, debido a que solo
-tenemos \(20\) datos, estas características se ilustra en la siguiente
+tenemos $20$ datos, estas características se ilustra en la siguiente
 imagen
 
 <img src="/assets/images/Intervalos1a.jpg" alt="" style="max-width: 80%;">
@@ -1796,10 +1796,10 @@ de la forma $$\begin{align*}
   \mu < \bar{X}+t_{\alpha, n-1}\frac{S}{\sqrt{n}}
 \end{align*}$$
 
-En donde observamos que requerimos de \(5\) variables, la media muestral
-\(\bar{X}=1613.8\), la desviación estándar muestral \(S=480.1471\), el
-tamaño de muestra \(n=20\), el nivel de confianza \(1-\alpha=0.98\) y el
-valor crítico \(t_{\alpha=0.02, n-1=19}=2.204701\) calculado a partir
+En donde observamos que requerimos de $5$ variables, la media muestral
+$\bar{X}=1613.8$, la desviación estándar muestral $S=480.1471$, el
+tamaño de muestra $n=20$, el nivel de confianza $1-\alpha=0.98$ y el
+valor crítico $t_{\alpha=0.02, n-1=19}=2.204701$ calculado a partir
 del nivel de confianza y el tamaño de la muestra. Al reemplazar en el
 intervalo tenemos que $$\begin{align*}
   \mu &< 1613.8+2.204701\frac{480.1471}{\sqrt{20}}\\
@@ -1807,9 +1807,9 @@ intervalo tenemos que $$\begin{align*}
   \mu &< 1850.506
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(98\%\), que el
+Entonces podremos afirmar con un nivel de confianza del $98\%$, que el
 costo máximo promedio que puede constar un construir cualquier parque es
-de \(1850.506\) millones de pesos, es decir, mil ochocientos cincuenta
+de $1850.506$ millones de pesos, es decir, mil ochocientos cincuenta
 millones y quinientos seis mil pesos.
 </p>
 </main>
@@ -1827,10 +1827,10 @@ Ejercicio
 Suponga que Postobon desarrolla una nueva máquina de bebidas para servir
 de forma automática gaseosas en los cines, de tal forma que la cantidad
 servida, en mililitros, se distribuye Weibull con varianza de
-\(5703.473_{ml}\).<br> <br> Si se decide tomar una muestra aleatoria de
-\(8000\) vasos de gaseosa servidos por una de las nuevas máquinas de
-bebidas, y se obtiene una promedio de \(345_{ml}\) con una varianza de
-\(5240.35_{ml^2}\), construya un intervalo de confianza del \(90\%\)
+$5703.473_{ml}$.<br> <br> Si se decide tomar una muestra aleatoria de
+$8000$ vasos de gaseosa servidos por una de las nuevas máquinas de
+bebidas, y se obtiene una promedio de $345_{ml}$ con una varianza de
+$5240.35_{ml^2}$, construya un intervalo de confianza del $90\%$
 para la verdadera cantidad promedio de refresco servida por la máquina.
 </p>
 <h3 data-toc-skip>
@@ -1843,10 +1843,10 @@ bilateral del $90% $ para la cantidad promedio de refresco servida por
 la nueva máquina de bebidas, pero para realizar el cálculo debemos
 evaluar previamente la información que poseemos.<br> <br> Del contexto
 del ejercicio tenemos que la población no es normal, debido a que se
-menciona que es Weibull, con varianza de \(5703.473_{ml^2}\), por lo
+menciona que es Weibull, con varianza de $5703.473_{ml^2}$, por lo
 cual tendremos que la varianza poblacional es conocida. Adicionalmente,
 tenemos que el tamaño de muestra de vasos de gaseosa servidos por la
-máquina es de \(8000\) vasos, por lo cual, basados en la información que
+máquina es de $8000$ vasos, por lo cual, basados en la información que
 poseemos tenemos las siguientes características
 
 <img src="/assets/images/Intervalos1b.jpg" alt="" style="max-width: 80%;">
@@ -1856,20 +1856,20 @@ de la forma $$\begin{align*}
   \bar{X}-Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X}+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
 \end{align*}$$
 
-En donde observamos que requerimos la media muestral \(\bar{X}=345\), la
-desviación estándar poblacional \(\sigma=75.52134\), el tamaño de
-muestra \(n=8000\), el nivel de confianza \(1-\alpha=0.90\) y el valor
-crítico \(Z_{\alpha/2=0.05}=1.644854\) calculado a partir del nivel de
+En donde observamos que requerimos la media muestral $\bar{X}=345$, la
+desviación estándar poblacional $\sigma=75.52134$, el tamaño de
+muestra $n=8000$, el nivel de confianza $1-\alpha=0.90$ y el valor
+crítico $Z_{\alpha/2=0.05}=1.644854$ calculado a partir del nivel de
 confianza. Al reemplazar en el intervalo tenemos que $$\begin{align*}
   &345\pm 1.644854 \frac{75.52134}{\sqrt{8000}} \\
   &345\pm 1.388839 \\
   &343.6112 < \mu < 346.3888
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(90\%\), que la
+Entonces podremos afirmar con un nivel de confianza del $90\%$, que la
 cantidad promedio de refresco servida de forma automática por la nueva
-máquina de bebidas se encontrará entre \(343.6112_{ml}\) y
-\(346.3888_{ml}\).
+máquina de bebidas se encontrará entre $343.6112_{ml}$ y
+$346.3888_{ml}$.
 </p>
 </main>
 <button id="Show3" class="btn btn-secondary">
@@ -1886,14 +1886,14 @@ Ejercicio
 Suponga que la marca de cigarrillo Malboro es auditada debido a que se
 afirma que sus registros están adulterados. Ante ésto, el presidente de
 la empresa asegura que sus registros son correctos y que el flujo de
-caja promedio mensual que registran es de \(25\) mil millones. Para
+caja promedio mensual que registran es de $25$ mil millones. Para
 probar si dicha afirmación es posible, el auditor decide revisar el
-flujo de caja de la empresa de los últimos \(48\) meses encontrando que
-el flujo de caja promedio que registra la empresa es de \(21.389\) mil
-millones de pesos con una desviación estándar de \(3.213\) mil millones
+flujo de caja de la empresa de los últimos $48$ meses encontrando que
+el flujo de caja promedio que registra la empresa es de $21.389$ mil
+millones de pesos con una desviación estándar de $3.213$ mil millones
 de pesos. <br> <br> Si puede suponerse que el flujo de caja de la
 empresa Malboro se distribuye normalmente, calcule con un nivel de
-confianza del \(95\%\) para el verdadero flujo de caja promedio que
+confianza del $95\%$ para el verdadero flujo de caja promedio que
 posee la empresa Malboro. Hay evidencia para pensar que la afirmación
 del presidente es acertada?.
 </p>
@@ -1903,15 +1903,15 @@ Solución
 <p>
 
 En este ejercicio se está interesado en construir un intervalo de
-confianza bilateral del \(95\%\) para el flujo de caja promedio que
+confianza bilateral del $95\%$ para el flujo de caja promedio que
 posee la empresa Malboro, y para realizar el cálculo debemos evaluar la
 información que poseemos.<br> <br> Entre la información suministrada
 tenemos que la distribución de probabilidad del flujo de caja de la
 empresa se distribuye normalmente, con varianza poblacional desconocida.
 Además, mencionan que en entre la información recolectada por el auditor
-encontró que de una muestra aleatoria de tamaño \(48\) meses, se
-encontró que el flujo de caja promedio fue de \(21.389\) mil millones de
-pesos con una desviación estándar de \(3.213\) mil millones de pesos, y
+encontró que de una muestra aleatoria de tamaño $48$ meses, se
+encontró que el flujo de caja promedio fue de $21.389$ mil millones de
+pesos con una desviación estándar de $3.213$ mil millones de pesos, y
 en consecuencia nos encontramos en la siguiente situación
 
 <img src="/assets/images/Intervalos1c.jpg" alt="" style="max-width: 80%;">
@@ -1922,9 +1922,9 @@ de la forma $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que necesitamos la media muestral
-\(\bar{X}=21.389\), la desviación estándar muestral \(S=3.213\), el
-tamaño de muestra \(n=48\), el nivel de confianza \(1-\alpha=0.95\) y el
-valor crítico \(Z_{\alpha=0.05}=1.644854\) calculado a partir del nivel
+$\bar{X}=21.389$, la desviación estándar muestral $S=3.213$, el
+tamaño de muestra $n=48$, el nivel de confianza $1-\alpha=0.95$ y el
+valor crítico $Z_{\alpha=0.05}=1.644854$ calculado a partir del nivel
 de confianza. Al reemplazar en el intervalo de interés tenemos que
 $$\begin{align*}
   21.389 &\pm 1.644854 \frac{3.213}{\sqrt{48}}\\
@@ -1932,10 +1932,10 @@ $$\begin{align*}
   20.626 &< \mu < 22.152
 \end{align*}$$
 
-Lo cual significa que, con un nivel de confianza del \(95\%\) podemos
+Lo cual significa que, con un nivel de confianza del $95\%$ podemos
 afirmar que la afirmación del presidente no es acertada, debido a que el
 verdadero flujo promedio que posee la empresa se encontrará entre
-\(20.626\) mil millones de pesos y \(22.152\) mil millones de pesos, lo
+$20.626$ mil millones de pesos y $22.152$ mil millones de pesos, lo
 cual se encuentra por debajo del valor afirmado.
 </p>
 </main>
@@ -1966,19 +1966,19 @@ Ejercicio
 <p>
 Una empresa de electrodomésticos desea saber si los cursos de
 capacitación sirven para mejorar el nivel de ventas de sus trabajadoras
-y para ello decide enviar a \(12\) de sus agentes de ventas a dicho
+y para ello decide enviar a $12$ de sus agentes de ventas a dicho
 curso. Una vez finalizado el curso, la empresa encuentra que estos
-agentes generan unas ventas promedio de de \(43.5\) millones de pesos
-con una desviación estándar de \(3.1\) millones de pesos.<br> <br> Con
+agentes generan unas ventas promedio de de $43.5$ millones de pesos
+con una desviación estándar de $3.1$ millones de pesos.<br> <br> Con
 el fin de observar si el curso es o no efectivo, la empresa extrae una
-muestra aleatoria independiente de \(15\) agentes que no asistieron a la
+muestra aleatoria independiente de $15$ agentes que no asistieron a la
 capacitación y encontró que las ventas promedio generadas y su
-desviación estándar para estos agentes fue de \(40.8\) y \(2.3\)
+desviación estándar para estos agentes fue de $40.8$ y $2.3$
 millones de pesos respectivamente. <br> <br> Si es posible suponer que
 las poblaciones se distribuyen normalmente con varianzas iguales a
-\(5.6\) millones de pesos\(^2\) para quienes se capacitaron y a \(4.3\)
-millones de pesos\(^2\) para quienes no se capacitaron, construya un
-intervalo de confianza del \(90\%\) para la diferencia entre los
+$5.6$ millones de pesos$^2$ para quienes se capacitaron y a $4.3$
+millones de pesos$^2$ para quienes no se capacitaron, construya un
+intervalo de confianza del $90\%$ para la diferencia entre los
 promedios de ventas de los dos grupos. Es posible pensar que los cursos
 de capacitación mejoran el promedio de ventas sobre quienes no
 recibieron estos cursos?
@@ -1996,8 +1996,8 @@ información presentada en el enunciado. <br> <br> En donde, se observa
 que nos dan el valor de las medias y desviaciones estándar muestrales
 para cada uno de los grupos, además nos menciona que las poblaciones se
 distribuyen normalmente con varianzas poblacionales conocidas e iguales
-a \(5.6\) millones de pesos\(^2\) para quienes se capacitaron y a
-\(4.3\) millones de pesos\(^2\) para quienes no se capacitaron, y por
+a $5.6$ millones de pesos$^2$ para quienes se capacitaron y a
+$4.3$ millones de pesos$^2$ para quienes no se capacitaron, y por
 tanto estamos en la situación
 
 <img src="/assets/images/Intervalos2a.jpg" alt="" style="max-width: 80%;">
@@ -2008,10 +2008,10 @@ tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 Para realizar el cálculo requerimos de las media muestrales
-\(\bar{X}_C=43.5\) y \(\bar{X}_S=40.8\), las varianzas poblacionales
-\(\sigma^2_C=5.6\) y \(\sigma^2_S=4.3\), los tamaños de muestrales
-\(n_C=12\) y \(n_S=15\), el nivel de confianza \(1-\alpha=0.90\) y el
-valor crítico \(Z_{\frac{\alpha}{2}=0.05}=1.644854\) calculado a partir
+$\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas poblacionales
+$\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de muestrales
+$n_C=12$ y $n_S=15$, el nivel de confianza $1-\alpha=0.90$ y el
+valor crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$ calculado a partir
 del nivel de confianza. Al reemplazar en el intervalo tenemos que
 $$\begin{align*}
   &(43.5-40.8) \pm 1.644854\sqrt{\frac{5.6}{12}+\frac{4.3}{15}} \\
@@ -2020,21 +2020,21 @@ $$\begin{align*}
   &1.272353 < \mu_C - \mu_S < 4.127647
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(90\%\), de que
+Entonces podremos afirmar con un nivel de confianza del $90\%$, de que
 la diferencia entre el promedio de ventas de las personas que asisten a
 un curso de capacitación, respecto a las personas que no asisten a dicho
-curso de capacitación, se encuentra entre \(1.272353\) y \(4.127647\)
+curso de capacitación, se encuentra entre $1.272353$ y $4.127647$
 millones de pesos. <br> <br> Ahora, para saber si la capacitación mejora
 o no las ventas hay que tener en cuenta la posición en la que se
-encuentre el intervalo para la diferencia entre \(\mu_C - \mu_S\).
+encuentre el intervalo para la diferencia entre $\mu_C - \mu_S$.
 
 <img src="/assets/images/Intervalos2b.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que la totalidad del intervalo se encuentra
-localizado en la sección que es mayor a \(0\), lo cual indica que para
-todo el intervalo de confianza del \(90\%\) el promedio de ventas del
-grupo que recibió un curso de capacitación \(\mu_C\) es mayor al
-promedio de quienes no recibieron capacitación \(mu_S\), y por tanto, se
+localizado en la sección que es mayor a $0$, lo cual indica que para
+todo el intervalo de confianza del $90\%$ el promedio de ventas del
+grupo que recibió un curso de capacitación $\mu_C$ es mayor al
+promedio de quienes no recibieron capacitación $mu_S$, y por tanto, se
 podrá concluir que la capacitación si mejora el promedio de ventas y se
 recomendará a la empresa que envíe a capacitación al resto de empleados.
 </p>
@@ -2056,13 +2056,13 @@ posibles ubicaciones en los cuales puede llevar a cabo dicho proyecto.
 Para decidir en cual de las dos ubicaciones llevar a cabo el proyecto
 decide tomar muestras aleatorias de cada ubicación y mirar en cual de
 los dos hay mayor aflucencia de vehículos.<br> <br> De la ubicación
-\(A\) se decide tomar una muestra aleatoria de \(22\) días y de la
-ubicación \(B\) de \(28\) días encontrando respectivamente que el número
-promedio de vehículos para cada ubicación fue de \(2359\) y \(2147\)
-vehículos, con una desviación estándar de \(143\) y \(301\) vehículos.
+$A$ se decide tomar una muestra aleatoria de $22$ días y de la
+ubicación $B$ de $28$ días encontrando respectivamente que el número
+promedio de vehículos para cada ubicación fue de $2359$ y $2147$
+vehículos, con una desviación estándar de $143$ y $301$ vehículos.
 <br> <br> Si puede asumirse que el número de vehículos en las dos zonas
 se distribuye aproximadamente normal con varianzas iguales, construya un
-intervalo de confianza del \(90\%\) para la diferencia promedio del
+intervalo de confianza del $90\%$ para la diferencia promedio del
 número de vehículo que transita por cada ubicación. Es posible pensar
 que hay diferencias significativas entre el número de vehículos que
 transita por cada ubicación? En cuál de las dos zonas aconsejaría a la
@@ -2074,17 +2074,17 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(90\%\) para la diferencia promedio del número de
+confianza del $90\%$ para la diferencia promedio del número de
 vehículo que transita por cada ubicación. En donde, el intervalo de
 confianza será bilateral debido a que no especifican que se debe
 calcular el límite superior o inferior solamente. Para saber cuál es el
 intervalo de interés, debemos revisar la información presentada en el
 enunciado. <br> <br> En el enunciado se aprecia que nos dan las medias y
 desviaciones estándar muestrales para cada una de las ubicaciones,
-obtenidos a partir de muestras de tamaños \(22\) y \(28\),
-respectivamente, tal que, los vehículos fueron \(\bar{X}_A=2359\) y
-\(\bar{X}_B=2147\), mientras que las desviaciones estándar fueron
-\(S_A=143\) y \(S_B=301\). Además, se menciona que el número de
+obtenidos a partir de muestras de tamaños $22$ y $28$,
+respectivamente, tal que, los vehículos fueron $\bar{X}_A=2359$ y
+$\bar{X}_B=2147$, mientras que las desviaciones estándar fueron
+$S_A=143$ y $S_B=301$. Además, se menciona que el número de
 vehículos en las dos zonas se distribuye normalmente con varianzas
 desconocidas pero iguales, y por tanto estaremos en la siguiente
 situación
@@ -2097,7 +2097,7 @@ tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que entre otros valores, requerimos calcular el
-valor de la desviación estándar conjunta \(Sp\), la cual está dada por
+valor de la desviación estándar conjunta $Sp$, la cual está dada por
 
 $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
@@ -2111,9 +2111,9 @@ Sp &= \sqrt{Sp^2} \\
 
 Ahora, los valores adicionales que se requieren para realizar el cálculo
 del intervalo de confianza serán, las medias muestrales
-\(\bar{X}_A=2359\) y \(\bar{X}_B=2147\), y los tamaños muestrales
-\(n_A=22\) y \(n_B=28\), el nivel de confianza \(1-\alpha=0.90\) y el
-valor crítico \(t_{\frac{\alpha}{2}=0.05, n_A+n_B-2 = 48}=1.677224\). Al
+$\bar{X}_A=2359$ y $\bar{X}_B=2147$, y los tamaños muestrales
+$n_A=22$ y $n_B=28$, el nivel de confianza $1-\alpha=0.90$ y el
+valor crítico $t_{\frac{\alpha}{2}=0.05, n_A+n_B-2 = 48}=1.677224$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
 $$\begin{align*}
   &(2359-2147) \pm 1.677224(244.7642)\sqrt{\frac{1}{22}+\frac{1}{28}} \\
@@ -2122,27 +2122,27 @@ $$\begin{align*}
   &95.041 < \mu_A - \mu_B < 328.959
 \end{align*}$$
 
-Por tanto, con un nivel de confianza del \(90\%\) se tendrá que la
+Por tanto, con un nivel de confianza del $90\%$ se tendrá que la
 diferencia promedio del número de vehículo que transita por cada
-ubicación se encontrará entre \(95.041\) y \(328.959\) vehículos al día.
+ubicación se encontrará entre $95.041$ y $328.959$ vehículos al día.
 <br> <br> Ahora, para saber si existe diferencias significativas entre
 el número de vehículos que transitan por cada ubicación debemos tener en
 cuenta la posición en la que se encuentre el intervalo para la
-diferencia entre \(\mu_A - \mu_B\).
+diferencia entre $\mu_A - \mu_B$.
 
 <img src="/assets/images/Intervalos2d.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que el intervalo encontrado se encuentra por encima
-de \(0\), el cual simboliza que el número promedio de vehículos que
-transitan por la ubicación \(A\) es superior que el número promedio de
-vehículos que transitan por la ubicación \(B\), tal que $$\begin{align*}
+de $0$, el cual simboliza que el número promedio de vehículos que
+transitan por la ubicación $A$ es superior que el número promedio de
+vehículos que transitan por la ubicación $B$, tal que $$\begin{align*}
   \mu_A > \mu_B \quad =>\quad \mu_A - \mu_B > 0
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(90\%\) es posible afirmar
+y por tanto, con un nivel de confianza del $90\%$ es posible afirmar
 que existen diferencias significativas entre el número de vehículos que
 transitan por las dos ubicaciones, y por tanto se debería aconsejar a la
-gobernación de Antioquia que construya el puente en la ubicación \(A\)
+gobernación de Antioquia que construya el puente en la ubicación $A$
 debido a que es por esta ubicación por donde hay mayor afluencias de
 vehículos.
 </p>
@@ -2162,17 +2162,17 @@ Suponga que la Universidad de Antioquia adelanta un estudio sobre el
 salario de sus egresados y desea comparar si es cierta la creencia que
 las mujeres ganan en promedio menos dinero que los hombres. <br> <br>
 Para comprobar si las creencias son ciertas, un grupo de investigación
-de la Universidad toma una muestra representativa de \(250\) mujeres y
-\(270\) hombres egresados de la Universidad y se les pregunta sobre cuál
+de la Universidad toma una muestra representativa de $250$ mujeres y
+$270$ hombres egresados de la Universidad y se les pregunta sobre cuál
 es el salario que ganan actualmente, obteniendo en su investigación que
-las mujeres ganan en promedio \(2.3\) millones de pesos con una
-desviación estándar de \(0.7\) millones de pesos, mientras que los
-hombres ganan en promedio \(2.6\) millones de pesos con una desviación
-estándar de \(1.2\) millones de pesos.<br> <br> Si el grupo de
+las mujeres ganan en promedio $2.3$ millones de pesos con una
+desviación estándar de $0.7$ millones de pesos, mientras que los
+hombres ganan en promedio $2.6$ millones de pesos con una desviación
+estándar de $1.2$ millones de pesos.<br> <br> Si el grupo de
 investigación encuentra que los salarios no se distribuyen normalmente,
 calcule el límite superior para la diferencia promedio del salario de
 sus egresados hombres y egresados mujeres. Emplee un nivel de confianza
-de \(80\%\).
+de $80\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -2181,17 +2181,17 @@ Solución
 
 En este enunciado estamos interesados en calcular el límite superior
 para la diferencia promedio entre el salario de hombres y mujeres que
-egresaron de la Universidad, la cual está dada por \(\mu_H - \mu_M\),
-empleando para ello un nivel de confianza del \(80\%\). Ahora, para
+egresaron de la Universidad, la cual está dada por $\mu_H - \mu_M$,
+empleando para ello un nivel de confianza del $80\%$. Ahora, para
 identificar el intervalo de interés, debemos revisar la información
 presentada por el grupo de investigación de la Universidad. <br> <br> El
-cual a partir de una muestra de \(250\) mujeres y \(270\) hombres,
-encontró unos salarios promedios iguales a \(2.3\) y \(2.6\), con
-desviaciones estándar de \(0.7\) y \(1.2\), respectivamente. Además
+cual a partir de una muestra de $250$ mujeres y $270$ hombres,
+encontró unos salarios promedios iguales a $2.3$ y $2.6$, con
+desviaciones estándar de $0.7$ y $1.2$, respectivamente. Además
 encuentra que los salarios no se distribuyen normalmente, y al no
 mencionar cuales son las varianzas poblacionales, se asume que éstas no
 son conocidas, y por tanto estaremos en la siguiente situación dado que
-los tamaños muestrales son mayores a \(30\).
+los tamaños muestrales son mayores a $30$.
 
 <img src="/assets/images/Intervalos2e.jpg" alt="" style="max-width: 80%;">
 
@@ -2203,12 +2203,12 @@ calculo que debemos hacer tendrá la forma $$\begin{align*}
 en donde se observa que al ser unilateral derecho, el intervalo solo
 cuenta con la suma de la resta de medias muestrales y el término de
 error, además de que, el valor crítico solo será para el valor
-\(\alpha\), y no \(\alpha/2\) como es el caso de los intervalos
+$\alpha$, y no $\alpha/2$ como es el caso de los intervalos
 bilaterales. <br> <br> Ahora, al reemplazar los valores encontrados por
-el grupo de investigación \(n_H=270\), \(\bar{X}_H=2.6\), \(S_H=1.2\)
-para los hombres, \(n_M=250\), \(\bar{X}_M=2.3\), \(S_M=0.7\) para las
-mujeres, el nivel de confianza \(1-\alpha = 0.80\) y el valor crítico
-\(Z_{\alpha=0.2}=0.8416212\), tendremos que $$\begin{align*}
+el grupo de investigación $n_H=270$, $\bar{X}_H=2.6$, $S_H=1.2$
+para los hombres, $n_M=250$, $\bar{X}_M=2.3$, $S_M=0.7$ para las
+mujeres, el nivel de confianza $1-\alpha = 0.80$ y el valor crítico
+$Z_{\alpha=0.2}=0.8416212$, tendremos que $$\begin{align*}
   &\mu_H - \mu_M < (2.6-2.3) + 0.8416212\sqrt{\frac{1.2^2}{270}+\frac{0.7^2}{250}} \\
   &\mu_H - \mu_M < 0.3 + 0.8416212(0.08540101)\\
   &\mu_H - \mu_M < 0.3 + 0.0718753 \\
@@ -2217,8 +2217,8 @@ mujeres, el nivel de confianza \(1-\alpha = 0.80\) y el valor crítico
 
 Por tanto, se tendrá que el valor máximo que se espera tener parar la
 diferencia entre los salarios promedio de hombres y mujeres es de
-\(0.3718753\) millones de pesos, lo anterior con un nivel de confianza
-del \(80\%\).
+$0.3718753$ millones de pesos, lo anterior con un nivel de confianza
+del $80\%$.
 </p>
 </main>
 <button id="Show7" class="btn btn-secondary">
@@ -2233,18 +2233,18 @@ Ejercicio
 </h3>
 <p>
 Se realiza un estudio con el fin de comparar el rendimiento de
-combustible en kilómetros por galón para dos tipos de motores \(A\) y
-\(B\). Suponga que se decide realizar un total de \(47\) experimentos
-con el motor \(A\) y \(56\) experimentos con el motor \(B\), encontrando
-para cada caso, un rendimiento promedio de gasolina de \(44\) y \(48\)
-kilómetros, respectivamente, con desviaciones estándar de \(8.3\) y
-\(6.6\), respectivamente. <br> <br> Basados en la información anterior,
+combustible en kilómetros por galón para dos tipos de motores $A$ y
+$B$. Suponga que se decide realizar un total de $47$ experimentos
+con el motor $A$ y $56$ experimentos con el motor $B$, encontrando
+para cada caso, un rendimiento promedio de gasolina de $44$ y $48$
+kilómetros, respectivamente, con desviaciones estándar de $8.3$ y
+$6.6$, respectivamente. <br> <br> Basados en la información anterior,
 calcule el límite inferior para la diferencia promedio entre los
 rendimiento de combustible en kilómetro por galón de gasolina para los
-motores \(B\) y \(A\), empleando un nivel de confianza del \(88\%\).
+motores $B$ y $A$, empleando un nivel de confianza del $88\%$.
 Suponga que los rendimientos de los combustibles no poseen una
 distribución normal, pero se tiene que las varianzas son conocidas e
-iguales a \(38.44\) y \(57.76\) para los motores \(A\) y \(B\)
+iguales a $38.44$ y $57.76$ para los motores $A$ y $B$
 respectivamente.
 </p>
 <h3 data-toc-skip>
@@ -2253,14 +2253,14 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular el límite inferior de un
-intervalo de confianza del \(88\%\) para la diferencia promedio entre el
+intervalo de confianza del $88\%$ para la diferencia promedio entre el
 rendimiento de combustible en kilómetros por galón de gasolina que
-ofrecen dos tipos de motores \(B\) y \(A\), tal que , \(\mu_B - \mu_A\),
+ofrecen dos tipos de motores $B$ y $A$, tal que , $\mu_B - \mu_A$,
 y para calcular este límite inferior debemos revisar la información que
 poseemos.<br> <br> Del enunciado se menciona que los rendimientos de
 combustible no poseen una distribución normal, pero se menciona que las
-varianzas poblacionales son conocidas e iguales a \(\sigma^2_A=38.44\) y
-\(\sigma^2_B=57.56\) para las maderas \(A\) y \(B\). En consecuencia,
+varianzas poblacionales son conocidas e iguales a $\sigma^2_A=38.44$ y
+$\sigma^2_B=57.56$ para las maderas $A$ y $B$. En consecuencia,
 tendremos que el intervalo de interés será el siguiente
 
 <img src="/assets/images/Intervalos2f.jpg" alt="" style="max-width: 80%;">
@@ -2271,10 +2271,10 @@ hacer tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 Para realizar el cálculo del intervalo, se aprecia que requerimos de los
-tamaños muestrales \(n_A=47\) y \(n_B=56\), las medias muestrales
-\(\bar{X}_A=44\), y \(\bar{X}_B=48\), las varianzas poblacionales
-\(\sigma^2_A=38.44\) y \(\sigma^2_B=57.56\), el nivel de confianza
-\(1-\alpha=0.88\) y el valor crítico \(Z_{\alpha=0.12}=1.174987\). Al
+tamaños muestrales $n_A=47$ y $n_B=56$, las medias muestrales
+$\bar{X}_A=44$, y $\bar{X}_B=48$, las varianzas poblacionales
+$\sigma^2_A=38.44$ y $\sigma^2_B=57.56$, el nivel de confianza
+$1-\alpha=0.88$ y el valor crítico $Z_{\alpha=0.12}=1.174987$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
 $$\begin{align*}
   & (48-44) - 1.174987\sqrt{\frac{57.56}{56}+\frac{38.44}{47}} \\
@@ -2283,10 +2283,10 @@ $$\begin{align*}
   & 2.403691 < \mu_B - \mu_A 
 \end{align*}$$
 
-y por tanto, se tendrá un con un nivel de confianza del \(88\%\), que el
+y por tanto, se tendrá un con un nivel de confianza del $88\%$, que el
 límite inferior para la diferencia promedio entre los rendimiento de
-combustible en kilómetro por galón de gasolina para los motores \(B\) y
-\(A\) será de \(2.403691\) kilómetros.
+combustible en kilómetro por galón de gasolina para los motores $B$ y
+$A$ será de $2.403691$ kilómetros.
 </p>
 </main>
 <button id="Show8" class="btn btn-secondary">
@@ -2304,16 +2304,16 @@ Suponga que se contrata a un grupo de investigación de la Universidad de
 Antioquia para que realice un análisis de tensión sobre la unión pegada
 con una resina experimental a dos clases diferentes de madera. Para
 realizar el estudio, el grupo de investigación toma una muestra
-aleatoria de \(18\) uniones pegadas con la resina especial a la madera
-\(A\) y encontró que la tensión promedio de corte y desviación estándar
-fueron de \(1130_{psi}\) y \(420_{psi}\), respectivamente. Por su parte,
-toman una muestra aleatoria de \(12\) uniones pegadas con la resina
-especial a la madera \(B\), encontrando que la tensión promedio de corte
-y desviación estándar fueron de \(1010_{psi}\) y \(380_{psi}\).<br> <br>
+aleatoria de $18$ uniones pegadas con la resina especial a la madera
+$A$ y encontró que la tensión promedio de corte y desviación estándar
+fueron de $1130_{psi}$ y $420_{psi}$, respectivamente. Por su parte,
+toman una muestra aleatoria de $12$ uniones pegadas con la resina
+especial a la madera $B$, encontrando que la tensión promedio de corte
+y desviación estándar fueron de $1010_{psi}$ y $380_{psi}$.<br> <br>
 Si se asume que la tensión sobre la unión pegada con la resina
 experimental en cada clase de madera se distribuye aproximadamente
 normal con varianzas diferentes. Construya un intervalo de confianza del
-\(92\%\) para la diferencia de tensión promedio de corte para las dos
+$92\%$ para la diferencia de tensión promedio de corte para las dos
 marcas de madera.
 </p>
 <h3 data-toc-skip>
@@ -2322,18 +2322,18 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(92\%\) para la diferencia entre los promedio a la
+confianza del $92\%$ para la diferencia entre los promedio a la
 tensión sobre la unión pegada con una resina experimental para dos
-clases de madera \(A\) y \(B\). En este caso, el intervalo de confianza
+clases de madera $A$ y $B$. En este caso, el intervalo de confianza
 que se empleará será bilateral dado que no nos mencionan que se realice
 el cálculo del límite superior o inferior para la diferencia. Para saber
 cuál es el intervalo de interés, debemos revisar la información
 calculada por el grupo de investigación. <br> <br> De los datos
 calculados por el grupo de investigación, encontramos que se realizó una
-selección de \(18\) y \(12\) uniones para las maderas \(A\) y \(B\)
+selección de $18$ y $12$ uniones para las maderas $A$ y $B$
 respectivamente, para las cuales se encontró de forma respectiva unas
-medias muestrales de \(1130_{psi}\) y \(1010_{psi}\) junto a unas
-desviaciones estándar de \(420_{psi}\) y \(380_{psi}\). Además, se
+medias muestrales de $1130_{psi}$ y $1010_{psi}$ junto a unas
+desviaciones estándar de $420_{psi}$ y $380_{psi}$. Además, se
 menciona de que las dos poblaciones se distribuyen de forma
 aproximadamente normal con varianzas diferentes y en consecuencia se
 tendrá el siguiente caso
@@ -2346,7 +2346,7 @@ tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que entre otros valores, requerimos calcular el
-valor de los grados de libertad \(\nu\), tal que
+valor de los grados de libertad $\nu$, tal que
 
 $$\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
@@ -2355,20 +2355,20 @@ $$\begin{align*}
     &= 25.33837
 \end{align*}$$
 
-Al calcular el valor techo de \(\nu\) tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
 \end{align*}$$
 
 y por tanto. se tendrá que los grados de libertad asociados a la
-distribución \(t\) serán iguales a \(\nu= 26\). Ahora, los valores
+distribución $t$ serán iguales a $\nu= 26$. Ahora, los valores
 adicionales que se requieren para realizar el cálculo del intervalo de
-interés serán los tamaños muestrales \(n_A=12\) y \(n_B=18\), las medias
-muestrales \(\bar{X}_A=1130\), y \(\bar{X}_B=1010\), las desviaciones
-estándar muestrales \(S_A=420\) y \(S_B=380\), el nivel de confianza
-\(1-\alpha=0.92\) y el valor crítico
-\(t_{\frac{\alpha}{2}=0.04, \nu = 26}=1.821863\). Al reemplazar estos
+interés serán los tamaños muestrales $n_A=12$ y $n_B=18$, las medias
+muestrales $\bar{X}_A=1130$, y $\bar{X}_B=1010$, las desviaciones
+estándar muestrales $S_A=420$ y $S_B=380$, el nivel de confianza
+$1-\alpha=0.92$ y el valor crítico
+$t_{\frac{\alpha}{2}=0.04, \nu = 26}=1.821863$. Al reemplazar estos
 valores en el intervalo de interés obtenemos que $$\begin{align*}
   & (1130-1010) \pm 1.821863\sqrt{\frac{420^2}{12}+\frac{380^2}{18}} \\
   & 120 \pm 1.821863(150.7389)\\
@@ -2376,24 +2376,24 @@ valores en el intervalo de interés obtenemos que $$\begin{align*}
   & -154.6256 < \mu_A - \mu_B < 394.6256
 \end{align*}$$
 
-De lo anterior, se concluye que con una confianza del \(92\%\), la
+De lo anterior, se concluye que con una confianza del $92\%$, la
 diferencia promedio entre la tensión promedio de corte entre las maderas
-\(A\) y \(B\) se encontrará entre \(-154.6256_{psi}\) y
-\(394.6256_{psi}\). <br> <br> Ahora, como el intervalo es bilateral,
+$A$ y $B$ se encontrará entre $-154.6256_{psi}$ y
+$394.6256_{psi}$. <br> <br> Ahora, como el intervalo es bilateral,
 podemos verificar si existen o no diferencias significativas entre la
 tensión promedio de corte de dos tipos de madera, y para ello debemos
 verificar la posición en la que se encuentra el intervalo de confianza
-para la diferencia entre \(\mu_A - \mu_B\).
+para la diferencia entre $\mu_A - \mu_B$.
 
 <img src="/assets/images/Intervalos2h.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que el intervalo calculado contiene el valor de
-\(0\), el cual representa la igualdad entre la tensión promedio de corte
+$0$, el cual representa la igualdad entre la tensión promedio de corte
 de dos tipos de madera, tal que $$\begin{align*}
   \mu_A = \mu_B \quad =>\quad \mu_A - \mu_B = 0
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(92\%\) no será posible
+y por tanto, con un nivel de confianza del $92\%$ no será posible
 afirmar que existen diferencias significativas entre la tensión promedio
 de corte de dos tipos de madera.
 </p>
@@ -2421,7 +2421,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han llevado a cabo en
+que los costos asociados a $20$ proyectos que se han llevado a cabo en
 la ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -2494,8 +2494,8 @@ la ciudad, en millones de pesos, fueron de
 </table>
 <p>
 Basados en la información anterior, construya un intervalo de confianza
-del \(97\%\) para la verdadera proporción de proyectos que poseen costos
-superiores a \(1900\) millones de pesos.
+del $97\%$ para la verdadera proporción de proyectos que poseen costos
+superiores a $1900$ millones de pesos.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -2503,8 +2503,8 @@ Solución
 <p>
 
 En este caso estamos interesados en el cálculo de un intervalo de
-confianza del \(97\%\) para la proporción de proyectos que poseen costos
-superiores a \(1900\) millones de pesos. <br> <br> En donde, al no
+confianza del $97\%$ para la proporción de proyectos que poseen costos
+superiores a $1900$ millones de pesos. <br> <br> En donde, al no
 mencionar un límite de confianza en particular se deberá realizar el
 cálculo de un intervalo bilateral, el cual para el caso de una
 proporción tiene la estructura
@@ -2520,17 +2520,17 @@ En donde se observa que requerimos de la proporción muestral para
 realizar el cálculo, y por tanto se deberá proceder a realizar su
 cálculo, localizando en cuales valores muestrales se localiza un éxito,
 el cual está dado por aquellos costos que posean un valor superior a
-\(1900\) millones de pesos, y para ello, denotaremos como \(1\) aquellas
-observaciones que sean superiores a \(1900\) millones de pesos, y \(0\)
+$1900$ millones de pesos, y para ello, denotaremos como $1$ aquellas
+observaciones que sean superiores a $1900$ millones de pesos, y $0$
 aquellas observaciones que no cumplan la condición, tal que
 $$\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
 \end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
-total de \(x=5\) éxitos en un total de \(n=20\) muestras, y por tanto,
+total de $x=5$ éxitos en un total de $n=20$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a
-\(1900\) millones, tal que $$\begin{align*}
+$1900$ millones, tal que $$\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
@@ -2538,8 +2538,8 @@ proporción muestral de egresados que poseen salarios superiores a
 \end{align*}$$
 
 Ahora, al emplear este valor junto con el nivel de confianza
-\(1-\alpha=0.97\) y el valor crítico
-\(Z_{\frac{\alpha}{2}=0.015}=2.17009\), para calcular el intervalo de
+$1-\alpha=0.97$ y el valor crítico
+$Z_{\frac{\alpha}{2}=0.015}=2.17009$, para calcular el intervalo de
 confianza de interés obtendremos que $$\begin{align*}
   & 0.25 \pm 2.17009\sqrt{\frac{0.25(1-0.25)}{20}} \\
   & 0.25 \pm 2.17009(0.09682458)\\
@@ -2547,9 +2547,9 @@ confianza de interés obtendremos que $$\begin{align*}
   & 0.0398819 < p < 0.4601181
 \end{align*}$$
 
-Por tanto, con una confianza del \(97\%\) se concluye que la verdadera
-proporción de proyectos que poseen costos por encima de \(1900\)
-millones de pesos, se encontrará entre \(3.99\%\) y \(46.01\%\).
+Por tanto, con una confianza del $97\%$ se concluye que la verdadera
+proporción de proyectos que poseen costos por encima de $1900$
+millones de pesos, se encontrará entre $3.99\%$ y $46.01\%$.
 </p>
 </main>
 
@@ -2586,12 +2586,12 @@ determinar si el cambio en el proceso de fabricación mejora el
 rendimiento que sus equipos ofrecen, deciden tomar una muestra de
 equipos antes y después de la implementación del nuevo proceso de
 fabricación y se evalúa la velocidad de procesamiento para la ejecución
-de un programa determinado. Suponga que se encuentra que \(120\) de
-\(500\) computadores fabricados con el método actual ofrece un
-rendimiento superior al promedio, mientras que, \(220\) de \(700\)
+de un programa determinado. Suponga que se encuentra que $120$ de
+$500$ computadores fabricados con el método actual ofrece un
+rendimiento superior al promedio, mientras que, $220$ de $700$
 computadores fabricados con el nuevo método ofrece un rendimiento
 superior al promedio.<br> <br> Basados en la información obtenida,
-calcule un intervalo de confianza del \(99\%\) para la verdadera
+calcule un intervalo de confianza del $99\%$ para la verdadera
 diferencia entre las proporciones de equipos que ofrecen un rendimiento
 superior al promedio entre el proceso de fabricación actual y el nuevo.
 Es posible pensar que el nuevo proceso si mejora el rendimiento promedio
@@ -2603,7 +2603,7 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(99\%\) para la diferencia entre la proporción de equipos
+confianza del $99\%$ para la diferencia entre la proporción de equipos
 que son fabricados mediante un proceso de fabricación nuevo y aquellos
 que son fabricados con un proceso de fabricación actual, en donde, se
 debe construir un intervalo de confianza bilateral debido a que no nos
@@ -2611,13 +2611,13 @@ preguntan por un límite en específico. <br> <br> Para llevar a cabo el
 cálculo debemos revisar la información que poseemos. En primer lugar
 observamos que nos hablan de los tamaños de muestra para cada una de las
 poblaciones en donde el tamaño de muestra para los equipos fabricados
-mediante el proceso de fabricación nuevo fue de \(n_N= 500\), mientras
+mediante el proceso de fabricación nuevo fue de $n_N= 500$, mientras
 que, el tamaño de muestra para lo equipos fabricados mediante el proceso
-de fabricación actual es de \(n_A=700\).<br> <br> Adicionalmente, se
+de fabricación actual es de $n_A=700$.<br> <br> Adicionalmente, se
 presenta para cada valor de la muestra, el número de equipos que
 ofrecieron una velocidad de procesamiento superior al promedio, siendo
 dichos valores para los equipos fabricados con el proceso nuevo y actual
-\(x_N=120\) y \(x_A=220\), respectivamente. Con estos valores es posible
+$x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
 con el nuevo procedimiento tenemos que $$\begin{align*}
@@ -2645,7 +2645,7 @@ debemos hacer tendrá la forma $$\begin{align*}
 
 En donde se observa que entre los valores ya calculados para las
 proporciones muestrales, se requiere del nivel de confianza
-\(1-\alpha=0.99\) y el valor crítico \(Z_{\alpha=0.01}=2.326348\). Al
+$1-\alpha=0.99$ y el valor crítico $Z_{\alpha=0.01}=2.326348$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
 $$\begin{align*}
   & (0.3142857-0.24) \pm 2.326348\sqrt{\frac{0.3142857(1-0.3142857)}{700}+\frac{0.24(1-0.24)}{500}} \\
@@ -2655,25 +2655,25 @@ $$\begin{align*}
 \end{align*}$$
 
 Dado el resultado anterior, se concluye con una confianza del del
-\(99\%\) que la diferencia entre la proporción de equipos que son
+$99\%$ que la diferencia entre la proporción de equipos que son
 fabricados mediante un proceso de fabricación nuevo y aquellos que son
 fabricados con un proceso de fabricación actual se encontrará entre
-\(1.39\%\) y \(13.46\%\).<br> <br> Ahora, como el intervalo es
+$1.39\%$ y $13.46\%$.<br> <br> Ahora, como el intervalo es
 bilateral, podemos verificar si existen o no diferencias significativas
 entre la proporción de equipos que son fabricados mediante el nuevo
 proceso de fabricación y aquellos que son fabricados mediante el proceso
 actual, y para ello debemos verificar la posición en la que se encuentra
-el intervalo de confianza para la diferencia entre \(p_N - p_A\).
+el intervalo de confianza para la diferencia entre $p_N - p_A$.
 
 <img src="/assets/images/Intervalos4b.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que el intervalo calculado se encuentra sobre el
-valor de \(0\), el cual representa la igualdad entre las dos
+valor de $0$, el cual representa la igualdad entre las dos
 proporciones, tal que $$\begin{align*}
   p_N = p_A \quad =>\quad p_N - p_A = 0
 \end{align*}$$
 
-y por tanto, podremos afirmar con un nivel de confianza del \(99\%\) que
+y por tanto, podremos afirmar con un nivel de confianza del $99\%$ que
 la proporción de equipos que ofrece un rendimiento superior al promedio
 y son fabricados mediante el nuevo proceso, es superior a la proporción
 de aquellos fabricados mediante el proceso actual.
@@ -2703,7 +2703,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -2778,7 +2778,7 @@ ciudad, en millones de pesos, fueron de
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, calcule un intervalo de confianza
 para la variabilidad de los costos de construir cualquier parque,
-empleando un nivel de confianza del \(95\%\).
+empleando un nivel de confianza del $95\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -2799,11 +2799,11 @@ la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de la varianza muestral \(S^2 = 230541.2\), el nivel de
-confianza \(1-\alpha=0.95\), los valores críticos
-\(\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233\) y
-\(\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516\) y el tamaño
-muestral \(n=20\). <br> <br> Al reemplazar dichos valores en el
+requiere de la varianza muestral $S^2 = 230541.2$, el nivel de
+confianza $1-\alpha=0.95$, los valores críticos
+$\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233$ y
+$\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516$ y el tamaño
+muestral $n=20$. <br> <br> Al reemplazar dichos valores en el
 intervalo de confianza, se tendrá que $$\begin{align*}
     \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}} &< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}} \\
     \frac{(20-1)230541.2}{32.85233}&< \sigma^2 <\frac{(20-1)230541.2}{8.906516} \\
@@ -2817,10 +2817,10 @@ $$\begin{align*}
   365.1472 &< \sigma <  701.2892\\
 \end{align*}$$
 
-De lo anterior, se podrá concluir con un nivel de confianza del \(95\%\)
+De lo anterior, se podrá concluir con un nivel de confianza del $95\%$
 que el verdadero valor para la desviación estándar de los costos de
-construcción de cualquier parque estará entre \(365.1472\) y
-\(701.2892\) millones de pesos.
+construcción de cualquier parque estará entre $365.1472$ y
+$701.2892$ millones de pesos.
 </p>
 </main>
 
@@ -2847,7 +2847,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Se aplican pruebas a \(10\) cables conductores soldados a un dispositivo
+Se aplican pruebas a $10$ cables conductores soldados a un dispositivo
 semiconductor con el fin de determinar su resistencia a la tracción. Las
 pruebas demostraron que para romper la unión se requiere las libras de
 fuerza que se listan a continuación.
@@ -2892,7 +2892,7 @@ Sin Encapsulado
 </thead>
 </table>
 <p>
-Otra conjunto de \(8\) cables conductores que forman otro dispositivo,
+Otra conjunto de $8$ cables conductores que forman otro dispositivo,
 se encapsulan y se prueban para determinar si el encapsulado aumenta la
 resistencia a la tracción, obteniendo para este caso se requirieron las
 siguientes libras de fuerza para romper la unión
@@ -2932,7 +2932,7 @@ Con Encapsulado
 </table>
 <p>
 Si se supone que las resistencias a la tracción se distribuyen
-normalmente, construya un intervalo del \(90\%\) para la razón de
+normalmente, construya un intervalo del $90\%$ para la razón de
 varianzas entre la variabilidad de los cables sin encapsulado y la
 variabilidad de los cables con encapsulado. Es posible afirmar que la
 variabilidad de de los cables con encapsulado es superior a los cables
@@ -2958,11 +2958,11 @@ varianzas posee la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de los varianzas muestrales \(S^2_S\) y \(S^2_C\), el nivel de
-confianza \(1-\alpha\) y los valores críticos
-\(f_{\alpha/2, n_C-1, n_S-1}\) y \(f_{\alpha/2, n_S-1, n_C-1}\). <br>
+requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
+confianza $1-\alpha$ y los valores críticos
+$f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 <br> Para realizar el cálculo de las varianzas muestrales, se emplean
-los datos muestrales y los tamaños de muestra \(n_C=8\) y \(n_S=10\),
+los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
 $$\begin{align*}
@@ -2970,8 +2970,8 @@ S^2_C = 1.378146 \quad \text{ y } \quad S^2_S = 3.231254
 \end{align*}$$
 
 Por su parte, al buscar los valores críticos para un nivel de
-significancia \(1-\alpha=0.90\) y tamaños muestrales \(n_C=8\) y
-\(n_S=10\) tenemos que
+significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
+$n_S=10$ tenemos que
 
 $$\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} = 3.292746\\ 
@@ -2984,25 +2984,25 @@ confianza, se procede a su cálculo, tal que $$\begin{align*}
    0.1295287 &< \frac{\sigma^2_C}{\sigma^2_S} < 1.56812
 \end{align*}$$
 
-Por tanto, se podrá concluir con un nivel de confianza del \(90\%\) que
+Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
 de los cables sin encapsulado y la variabilidad de los cables con
-encapsulado, se encontrará entre \(0.1295287\) y \(1.56812\).<br> <br>
+encapsulado, se encontrará entre $0.1295287$ y $1.56812$.<br> <br>
 Ahora, para verificar si existen o no diferencias significativas entre
 las varianzas de resistencia a la tracción de los cables encapsulados o
 sin encapsular, debemos verificar la posición en la que se encuentra el
 intervalo de confianza para la razón de varianzas
-\(\sigma^2_C/\sigma^2_S\).
+$\sigma^2_C/\sigma^2_S$.
 
 <img src="/assets/images/Intervalos6b.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que el intervalo calculado contiene el valor de
-\(1\), el cual representa la igualdad entre la varianza de los dos tipos
+$1$, el cual representa la igualdad entre la varianza de los dos tipos
 de cable, tal que $$\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(90\%\) no será posible
+y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que la variabilidad de la resistencia a la tracción de los
 cables encapsulados o sin encapsular sean diferentes, y por tanto, debe
 asumirse que éstos son iguales.
@@ -3036,10 +3036,10 @@ siguientes casos de estudio.
 <strong>Caso 1 (Diseño experimental controlado)</strong>: Se realiza un
 estudio en un supermercado para observar la relación existente entre el
 espacio asignado para la exhibición de licores y las ventas semanales de
-licores que se realizan. Suponga que durante \(15\) semanas se decide
+licores que se realizan. Suponga que durante $15$ semanas se decide
 distribuir de forma aleatoria el espacio disponible para la exhibición,
-usando como referencia el número de estanterías iguales a \(3\), \(5\) y
-\(7\). Los resultados para las \(15\) semanas se registran a
+usando como referencia el número de estanterías iguales a $3$, $5$ y
+$7$. Los resultados para las $15$ semanas se registran a
 continuación.
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -3186,11 +3186,11 @@ los licores y las ventas semanales.
 </li>
 <li>
 Hacer la estimación de las ventas semanales cuando se asigna un espacio
-para exhibición de licor de \(7\) estanterías.
+para exhibición de licor de $7$ estanterías.
 </li>
 <li>
 Predecir el valor de las ventas semanales si para la semana siguiente se
-asigna un espacio de \(4\) estanterías para exhibir licor.
+asigna un espacio de $4$ estanterías para exhibir licor.
 </li>
 </ul>
 </li>
@@ -3200,7 +3200,7 @@ asigna un espacio de \(4\) estanterías para exhibir licor.
 socioeconómica de proyectos quiere observar si hay una relación entre el
 gasto en campañas publicitarias y las donaciones recibidas para la
 construcción de parques y bibliotecas para sectores de la población con
-bajos recursos. Para realizar el estudio se toma como referencia \(10\)
+bajos recursos. Para realizar el estudio se toma como referencia $10$
 meses en los cuales hicieron gastos en publicidad y obtuvieron los
 siguientes datos en millones de pesos
 
@@ -3308,7 +3308,7 @@ función del gasto en publicidad.
 </li>
 <li>
 Predecir el valor de las donaciones realizadas en caso de gastar en
-publicidad \(53\) millones de pesos.
+publicidad $53$ millones de pesos.
 </li>
 </ul>
 </li>
@@ -3316,7 +3316,7 @@ publicidad \(53\) millones de pesos.
 
 <strong>Caso 3 (Datos Históricos)</strong>: Un perito desea determinar
 si existe alguna relación entre el costo de una propiedad y el valor
-registrado en el predial. Para ello selecciona \(10\) propiedades de una
+registrado en el predial. Para ello selecciona $10$ propiedades de una
 base de datos y registra el valor de la propiedad para verificar el
 valor registrado en el predial obteniendo los siguientes resultados en
 millones de pesos
@@ -3421,11 +3421,11 @@ propiedad en función del valor del predial
 </li>
 <li>
 Predecir el valor de una propiedad cuyo valor en el predial es de
-\(180\) millones de pesos.
+$180$ millones de pesos.
 </li>
 </ul>
 <strong>Nota:</strong> Note que en este último caso, el costo de la
-propiedad \(Y\), puede estar determinada por otras variables además del
+propiedad $Y$, puede estar determinada por otras variables además del
 predial, pero inicialmente solo nos concentraremos en la relación lineal
 entre el costo y el predial.
 </li>

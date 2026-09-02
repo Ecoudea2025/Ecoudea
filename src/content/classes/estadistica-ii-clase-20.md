@@ -38,15 +38,15 @@ Ejercicio
 </h3>
 <p>
 
-Sea \(X_1, X_2, \ldots, X_8\) una muestra aleatoria iid de una
-distribución uniforme continua, definida en el intervalo \((0,4)\) tal
+Sea $X_1, X_2, \ldots, X_8$ una muestra aleatoria iid de una
+distribución uniforme continua, definida en el intervalo $(0,4)$ tal
 que $$\begin{align*}
 f(x) = \frac{1}{4} \quad \text{ para } 0\leq x \leq 4
 \end{align*}$$
 
 Encuentre la función de densidad para el séptimo estadístico de orden, y
 con éste calcule la probabilidad de que el valor de este estadístico de
-orden sea lo más de \(3.2\).
+orden sea lo más de $3.2$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -56,18 +56,18 @@ Solución
 Con el fin de encontrar la función de densidad del séptimo estadístico
 de prueba, es necesario encontrar primero la función de distribución
 acumulada de la distribución uniforme definida en el intervalo
-\((0,4)\), tal que $$\begin{align*}
+$(0,4)$, tal que $$\begin{align*}
 F(x) &= \int_{0}^x f(t) dt\\
      &= \int_{0}^x\frac{1}{4} dt\\
      &= \frac{t}{4} \Bigg|_{0}^x\\
      &= \frac{x}{4} \quad \text{ para } 0 \leq x \leq 4
 \end{align*}$$
 
-Conocido el tamaño de la muestra \(n = 8\), la función de densidad de
+Conocido el tamaño de la muestra $n = 8$, la función de densidad de
 probabilidad y la función de distribución acumulada de la distribución
-uniforme continua definida en el intervalo \((0,4)\), se procede al
+uniforme continua definida en el intervalo $(0,4)$, se procede al
 cálculo de la función de probabilidad del séptimo estadístico de orden
-\((j=7)\), tal que
+$(j=7)$, tal que
 
 $$\begin{align*}
 f_{7}(x_7) &= \frac{8!}{(7-1)!(8-7)!} f(x_7) [F(x_7)]^{7-1}[1-F(x_7)]^{8-7} \\
@@ -77,7 +77,7 @@ f_{7}(x_7) &= \frac{8!}{(7-1)!(8-7)!} f(x_7) [F(x_7)]^{7-1}[1-F(x_7)]^{8-7} \\
 
 Y ya con esta función de probabilidad se procede a realizar el cálculo
 de la la probabilidad del séptimo estadístico de orden sea a lo más de
-\(3.2\), tal que $$\begin{align*}
+$3.2$, tal que $$\begin{align*}
 \mathbb{P}(x_7 \leq 3.2) &= \int_{0}^{3.2} f_{7}(x_7) dx_7\\
                          &= \int_{0}^{3.2} \frac{7}{8192}x_7^6\left(4-x_7\right) dx_7\\
                          &= \frac{7}{8192} \left(\frac{4x_7^7}{7} - \frac{x_7^8}{8}\right) \Bigg|_{0}^{3.2} \\
@@ -86,9 +86,9 @@ de la la probabilidad del séptimo estadístico de orden sea a lo más de
                          &= 0.50331648 \\
 \end{align*}$$
 
-Y por tanto se tendrá una probabilidad del \(50.33\%\) de que el séptimo
+Y por tanto se tendrá una probabilidad del $50.33\%$ de que el séptimo
 estadístico de prueba de una variable aleatoria uniforme definida en el
-intervalo \((0,4)\) sea a lo más de \(3.2\).
+intervalo $(0,4)$ sea a lo más de $3.2$.
 </p>
 </main>
 
@@ -154,23 +154,23 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Sea \(X_2, X_3, x_4, \ldots\) una secuencia de variables aleatorias
+Sea $X_2, X_3, x_4, \ldots$ una secuencia de variables aleatorias
 distribuidas, tal que $$\begin{align*}
   F_{X_i}(x)=1-\left(1-\frac{1}{i}\right)^{ix} \text{ para } x>0
-\end{align*}$$ muestre que \(X_n\) converge a una distribución
-\(Exp(1)\).
+\end{align*}$$ muestre que $X_n$ converge a una distribución
+$Exp(1)$.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Sea \(X\sim Exp(1)\), entonces si aplicamos límite a \(F_{X_n}(x)\) se
-tendrá que para \(x\geq 0\) $$\begin{align*}
+Sea $X\sim Exp(1)$, entonces si aplicamos límite a $F_{X_n}(x)$ se
+tendrá que para $x\geq 0$ $$\begin{align*}
   \lim_{n\to\infty}F_{X_n}(x)&=\lim_{n\to\infty}\left[1-\left(1-\frac{1}{n}\right)^{nx}\right] \\
   &=1-\lim_{n\to\infty}\left(1-\frac{1}{n}\right)^{nx} \\
   &=1-e^{-x} \\
   &=F_{X}(x) \text{ para todo } x
-\end{align*}$$ concluyendo que \(X_{n}\stackrel{d}{\to}X\).
+\end{align*}$$ concluyendo que $X_{n}\stackrel{d}{\to}X$.
 </p>
 </main>
 <!-- #### Propiedades euler -->
@@ -211,22 +211,22 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Sea \(X_1, X_2, \ldots\) una secuencia de variables aleatorias
-distribuidas exponencialmente de la forma \(X_i \sim Exp(\lambda=i)\),
-entonces demuestre que \(X_n \stackrel{p}{\to} 0\), es decir, demuestre
-que la secuencia \(X_1, X_2, \ldots\) converge en probabilidad a la
-variable aleatoria \(X=0\).
+Sea $X_1, X_2, \ldots$ una secuencia de variables aleatorias
+distribuidas exponencialmente de la forma $X_i \sim Exp(\lambda=i)$,
+entonces demuestre que $X_n \stackrel{p}{\to} 0$, es decir, demuestre
+que la secuencia $X_1, X_2, \ldots$ converge en probabilidad a la
+variable aleatoria $X=0$.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Como tenemos que \(X_n \sim Exp(\lambda=n)\) y \(X_n \geq 0\) entonces
+Como tenemos que $X_n \sim Exp(\lambda=n)$ y $X_n \geq 0$ entonces
 $$\begin{align*}
   \lim_{n\to\infty}\mathbb{P}(|X_n - 0| \geq \varepsilon) &= \lim_{n\to\infty}\mathbb{P}(X_n \geq \varepsilon) \\
   &= \lim_{n\to\infty}e^{-n\varepsilon} \\
   &= 0 \quad \text{ para todo } \varepsilon >0\\
-\end{align*}$$ concluyendo que \(X_n\stackrel{p}{\to}X\).
+\end{align*}$$ concluyendo que $X_n\stackrel{p}{\to}X$.
 </p>
 </main>
 
@@ -271,27 +271,27 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Sea \(X_1, X_2, \ldots, X_n\) una secuencia de variables aleatorias iid
-con media dada por \(\mathbb{E}(X_i) = \mu\) y varianza dada por
-\(Var(X_i) = \sigma^2\), demuestre que \(\bar{X} \stackrel{p}{\to}\mu\).
+Sea $X_1, X_2, \ldots, X_n$ una secuencia de variables aleatorias iid
+con media dada por $\mathbb{E}(X_i) = \mu$ y varianza dada por
+$Var(X_i) = \sigma^2$, demuestre que $\bar{X} \stackrel{p}{\to}\mu$.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Como tenemos que \(\bar{X}\) posee una media de
-\(\mathbb{E}(\bar{X}) =\mu\) y una varianza de
-\(Var(\bar{X}) = \frac{\sigma^2}{n}\), entonces se tendrá que para todo
-\(\varepsilon \gt  0\) $$\begin{align*}
+Como tenemos que $\bar{X}$ posee una media de
+$\mathbb{E}(\bar{X}) =\mu$ y una varianza de
+$Var(\bar{X}) = \frac{\sigma^2}{n}$, entonces se tendrá que para todo
+$\varepsilon \gt  0$ $$\begin{align*}
   \mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) &= \mathbb{P}((\bar{X} - \mu)^2 \geq \varepsilon^2) \\
   &\leq \frac{\mathbb{E}[(\bar{X} - \mu)^2]}{\varepsilon^2} \quad \text{ (Por teorema de Chebyshev)} \\
   &\leq \frac{Var(\bar{X})}{\varepsilon^2} \\
   &\leq \frac{\sigma^2}{n\varepsilon^2}
-\end{align*}$$ y por tanto al aplicar límite cuando \(n\to\infty\) se
+\end{align*}$$ y por tanto al aplicar límite cuando $n\to\infty$ se
 tendrá que $$\begin{align*}
   \lim_{n\to\infty}\mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) &\leq \lim_{n\to\infty}\frac{\sigma^2}{n\varepsilon^2} \\
   \lim_{n\to\infty}\mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) &=0 \quad \text{ para todo } \varepsilon>0
-\end{align*}$$ concluyendo que \(\bar{X}\stackrel{p}{\to} \mu\)
+\end{align*}$$ concluyendo que $\bar{X}\stackrel{p}{\to} \mu$
 </p>
 </main>
 
@@ -324,19 +324,19 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Sea \(X_1, X_2, \ldots\) una secuencia de variables aleatorias
+Sea $X_1, X_2, \ldots$ una secuencia de variables aleatorias
 distribuidas exponencialmente de la forma
-\(X_i\sim Unif(0,\frac{1}{i})\), muestre que
-\(X_{n}\stackrel{L^r}{\to}0\) para cualquier \(r\geq1\), es decir,
-demuestre que la secuencia \(X_1, X_2, \ldots\) converge en la
-`$r$`-ésima media a la variable aleatoria \(X=0\)
+$X_i\sim Unif(0,\frac{1}{i})$, muestre que
+$X_{n}\stackrel{L^r}{\to}0$ para cualquier $r\geq1$, es decir,
+demuestre que la secuencia $X_1, X_2, \ldots$ converge en la
+`$r$`-ésima media a la variable aleatoria $X=0$
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Para demostrar esto, defina la función de probabilidad de \(X_{n}\) tal
+Para demostrar esto, defina la función de probabilidad de $X_{n}$ tal
 que $$\begin{align*}
   f_{X_n}(x)= n \text{ para } 0\leq x \leq \frac{1}{n}
 \end{align*}$$
@@ -346,11 +346,11 @@ entonces se tendrá que $$\begin{align*}
                           &= \int_{0}^{\frac{1}{n}} x^r f_{X_n}(x)\ dx\\
                           &= \int_{0}^{\frac{1}{n}} x^r n\ dx\\
                           &= \frac{1}{(r+1)n^r} \\
-\end{align*}$$ y por tanto al aplicar límite cuando \(n\to\infty\) se
+\end{align*}$$ y por tanto al aplicar límite cuando $n\to\infty$ se
 tendrá que $$\begin{align*}
   \lim_{n\to \infty} \mathbb{E}(|X_n - 0|^r) &= \lim_{n\to \infty} \frac{1}{(r+1)n^r} \\
   &= 0 \quad \text{ para todo }  r\geq 1 \\
-\end{align*}$$ concluyendo que \(X_n\stackrel{L^r}{\to} 0\)
+\end{align*}$$ concluyendo que $X_n\stackrel{L^r}{\to} 0$
 </p>
 </main>
 
@@ -383,42 +383,42 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Sea el espacio muestral \(S\) definido en el intervalo \([0,1]\) y sea
-\(X_1, X_2, \ldots\) una secuencia de variables aleatorias distribuidas
-de la forma \(X_i(s)=s^{i}\), muestre que \(X_{n}\stackrel{cs}{\to}0\),
-es decir, demuestre que la secuencia \(X_1, X_2, \ldots\) converge casi
-seguramente a la variable aleatoria \(X(s)=0\)
+Sea el espacio muestral $S$ definido en el intervalo $[0,1]$ y sea
+$X_1, X_2, \ldots$ una secuencia de variables aleatorias distribuidas
+de la forma $X_i(s)=s^{i}$, muestre que $X_{n}\stackrel{cs}{\to}0$,
+es decir, demuestre que la secuencia $X_1, X_2, \ldots$ converge casi
+seguramente a la variable aleatoria $X(s)=0$
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Para demostrar esto defina un punto muestral fijo \(s\in[0,1)\),
-entonces la secuencia de variables aleatoria \(X_n(s)\) tendrá límite
+Para demostrar esto defina un punto muestral fijo $s\in[0,1)$,
+entonces la secuencia de variables aleatoria $X_n(s)$ tendrá límite
 igual a $$\begin{align*}
   \lim_{n\to \infty} X_n(s)=\lim_{n\to \infty} s^{n} = 0
-\end{align*}$$ sin embargo, si \(s=1\), la secuencia de variables
-aleatorias \(X_n(s)\) tendrá límite igual a $$\begin{align*}
+\end{align*}$$ sin embargo, si $s=1$, la secuencia de variables
+aleatorias $X_n(s)$ tendrá límite igual a $$\begin{align*}
   \lim_{n\to \infty} X_n(1)=\lim_{n\to \infty} 1^{n} = 1
 \end{align*}$$
 
-Lo cual significa que la secuencia de variables aleatorias \(X_n\) no
-convergerá puntualmente a \(X\) cuando \(s=1\) porque $$\begin{align*}
+Lo cual significa que la secuencia de variables aleatorias $X_n$ no
+convergerá puntualmente a $X$ cuando $s=1$ porque $$\begin{align*}
   \lim_{n\to \infty} X_n(1)=1 \neq X(1)=0
 \end{align*}$$
 
 Ahora, como la probabilidad puntual para la igualdad de este límite
-cuando \(s=1\) es igual a \(0\), $$\begin{align*}
+cuando $s=1$ es igual a $0$, $$\begin{align*}
   \mathbb{P}\left(\{s=1:\lim_{n\to \infty}X_n(1) = X(1)\}\right) = 0
 \end{align*}$$
 
-significa que para \(s\in [0,1)\), \(X_n(s)\) convergerá casi
-seguramente a \(X(s)\) ya que
+significa que para $s\in [0,1)$, $X_n(s)$ convergerá casi
+seguramente a $X(s)$ ya que
 
 $$\begin{align*}
   \mathbb{P}\left(\{s\in[0,1):\lim_{n\to \infty}X_n(s) = X(s)\}\right) = 1
-\end{align*}$$ concluyendo que \(X_n\stackrel{cs}{\to} 0\)
+\end{align*}$$ concluyendo que $X_n\stackrel{cs}{\to} 0$
 </p>
 </main>
 

@@ -36,19 +36,19 @@ Ejercicio
 </h3>
 <p>
 
-Tres máquinas de cierta planta de ensamble \(A_1, A_2, A_3\) montan
-\(30\%, 45\%, 25\%\) del total de los productos producidos por la
-empresa, respectivamente. Se sabe por experiencia que \(4\%, 5\%, 2\%\)
+Tres máquinas de cierta planta de ensamble $A_1, A_2, A_3$ montan
+$30\%, 45\%, 25\%$ del total de los productos producidos por la
+empresa, respectivamente. Se sabe por experiencia que $4\%, 5\%, 2\%$
 de los productos ensamblados por cada maquina tienen defectos,
 respectivamente. <br><br>
 
 Si selecciona de forma aleatoria un producto terminado. Cuál es la
 probabilidad de que éste se encuentra defectuoso? <br><br>
 
-\(B\): El producto se encuentra defectuoso. <br> \(A_1\): el producto
-fue producido por la máquina \(1\). <br> \(A_2\): el producto fue
-producido por la máquina \(2\). <br> \(A_3\): el producto fue producido
-por la máquina \(3\).
+$B$: El producto se encuentra defectuoso. <br> $A_1$: el producto
+fue producido por la máquina $1$. <br> $A_2$: el producto fue
+producido por la máquina $2$. <br> $A_3$: el producto fue producido
+por la máquina $3$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -57,18 +57,18 @@ Solución
 
 Dado que el interés radica en encontrar la probabilidad de que se
 seleccione un producto y resulte defectuoso, entonces nos están pidiendo
-que se desea calcular la \(\mathbb{P}(B)\). <br><br>
+que se desea calcular la $\mathbb{P}(B)$. <br><br>
 
 Como entre la información dada en el enunciado no nos da la probabilidad
 de que un artículo se encuentre defectuoso, entonces podemos tratar de
 calcularla mediante el teorema de probabilidad total, aprovechando que
-los eventos \(A_1, A_2, A_3\) son eventos <strong>mutuamente
+los eventos $A_1, A_2, A_3$ son eventos <strong>mutuamente
 excluyentes</strong> (Un artículo que es ensamblado por una máquina, no
 puede ser ensamblado simultáneamente por otra),
 <strong>exhaustivos</strong> (El total de los productos ensamblados por
 la empresa, solo puede ser producido por alguna de estas tres máquinas)
-y que nos están dando las probabilidades de los eventos \(B|A_1\),
-\(B|A_2\) y \(B|A_3\). <br><br>
+y que nos están dando las probabilidades de los eventos $B|A_1$,
+$B|A_2$ y $B|A_3$. <br><br>
 
 Partiendo de esto tenemos las siguientes probabilidades:<br>
 $$\begin{align*}
@@ -88,7 +88,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Obteniendo por tanto, que la probabilidad de que un artículo producido
-en la empresa sea defectuoso es del \(3.95\%\)
+en la empresa sea defectuoso es del $3.95\%$
 </p>
 </main>
 
@@ -124,20 +124,20 @@ Ejercicio
 </h3>
 <p>
 
-Tres máquinas de cierta planta de ensamble \(A_1, A_2, A_3\) montan
-\(30\%, 45\%, 25\%\) del total de los productos producidos por la
-empresa, respectivamente. Se sabe por experiencia que \(4\%, 5\%, 2\%\)
+Tres máquinas de cierta planta de ensamble $A_1, A_2, A_3$ montan
+$30\%, 45\%, 25\%$ del total de los productos producidos por la
+empresa, respectivamente. Se sabe por experiencia que $4\%, 5\%, 2\%$
 de los productos ensamblados por cada maquina tienen defectos,
 respectivamente. <br><br>
 
 Si selecciona de forma aleatoria un producto terminado y se encuentra
 que es defectuoso, Cuál es la probabilidad de que éste artículo haya
-sido ensamblado por la máquina \(3\)? <br><br>
+sido ensamblado por la máquina $3$? <br><br>
 
-\(B\): El producto se encuentra defectuoso. <br> \(A_1\): el producto
-fue producido por la máquina \(1\). <br> \(A_2\): el producto fue
-producido por la máquina \(2\). <br> \(A_3\): el producto fue producido
-por la máquina \(3\).
+$B$: El producto se encuentra defectuoso. <br> $A_1$: el producto
+fue producido por la máquina $1$. <br> $A_2$: el producto fue
+producido por la máquina $2$. <br> $A_3$: el producto fue producido
+por la máquina $3$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -145,10 +145,10 @@ Solución
 <p>
 
 En este caso, se tiene interés en saber la probabilidad de que un
-artículo haya sido ensamblado por la máquina \(3\), \(A_3\),
+artículo haya sido ensamblado por la máquina $3$, $A_3$,
 <strong>dado que</strong> se sabe que el artículo seleccionado esta
-defectuoso, \(B\), se tendrá que se desea calcular la
-\(\mathbb{P}{(A_3|B)}\). <br><br>
+defectuoso, $B$, se tendrá que se desea calcular la
+$\mathbb{P}{(A_3|B)}$. <br><br>
 
 De lo anterior apreciamos que nos están preguntando una probabilidad
 condicional la cual se puede expresar de la forma $$\begin{align*}
@@ -161,11 +161,11 @@ de las dos probabilidades que necesitamos para llevar a cabo el cálculo
 de interés. <br> <br>
 
 Al detallar la ecuación más detenidamente, observamos que los eventos
-\(A_1, A_2, A_3\) son <strong>mutuamente excluyentes</strong> y
+$A_1, A_2, A_3$ son <strong>mutuamente excluyentes</strong> y
 <strong>exhaustivos</strong>, lo cual nos permite poder calcular la
-\(\mathbb{P}(B)\) mediante el teorema de
+$\mathbb{P}(B)$ mediante el teorema de
 <a href="../../ProbabilidadeInferencia/PeIEClase02.html#probabilidad-total" target="\_blank">Probabilidad
-total</a>, y la probabilidad \(\mathbb{P}(A_3 \cap B)\) mediante el
+total</a>, y la probabilidad $\mathbb{P}(A_3 \cap B)$ mediante el
 teorema de la
 <a href="../../ProbabilidadeInferencia/PeIEClase02.html#regla-multiplicativa" target="\_blank">Regla
 multiplicativa</a>. Lo cual nos lleva a la siguiente expresión.
@@ -177,7 +177,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Es decir, se tiene que la probabilidad de que un artículo que se sabe
-está defectuoso, haya sido ensamblado por la máquina \(3\), es del
-\(12.69\%.\)
+está defectuoso, haya sido ensamblado por la máquina $3$, es del
+$12.69\%.$
 </p>
 </main>

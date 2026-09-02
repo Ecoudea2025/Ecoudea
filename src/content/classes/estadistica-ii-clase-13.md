@@ -34,8 +34,8 @@ confianza inferior y superior, tal que
 
 <ol type="a">
 <li>
-Usualmente se usan valores para \(\alpha\) de \(0.1, 0.05\) y $ 0.01$,
-es decir, niveles de confianza de \(0.9, 0.95\) y \(0.99\).
+Usualmente se usan valores para $\alpha$ de $0.1, 0.05$ y $ 0.01$,
+es decir, niveles de confianza de $0.9, 0.95$ y $0.99$.
 </li>
 <li>
 La longitud o amplitud del intervalo construido, medirá la
@@ -86,7 +86,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 Ingeniería Industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -98,7 +98,7 @@ millones de pesos $$\begin{align*}
 Si es posible supone que los salarios de los egresados se distribuyen
 aproximadamente normal, calcule el límite superior del salario promedio
 que ganan los egresados del programa de ingeniería industrial empleando
-un nivel de confianza del \(98\%\).
+un nivel de confianza del $98\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -112,7 +112,7 @@ poseemos.<br> <br> De la información extraída del enunciado tenemos que
 la varianza poblacional no es conocida, ya que no la mencionan en el
 enunciado, tenemos que la población es normal, debido a que mencionan
 que puede suponerse que los salarios son aproximadamente normales, y los
-tamaños de muestra son pequeños, debido a que solo tenemos \(15\) datos,
+tamaños de muestra son pequeños, debido a que solo tenemos $15$ datos,
 estas características se ilustra en la siguiente imagen
 
 <img src="/assets/images/Intervalos1a.jpg" alt="" style="max-width: 80%;">
@@ -122,10 +122,10 @@ de la forma $$\begin{align*}
   \mu < \bar{X}+t_{\alpha, n-1}\frac{S}{\sqrt{n}}
 \end{align*}$$
 
-En donde observamos que requerimos de \(5\) variables, la media muestral
-\(\bar{X}=1.659333\), la desviación estándar muestral \(S=0.6709425\),
-el tamaño de muestra \(n=15\), el nivel de confianza \(1-\alpha=0.98\) y
-el valor crítico \(t_{\alpha=0.02, n-1=14}=2.263781\) calculado a partir
+En donde observamos que requerimos de $5$ variables, la media muestral
+$\bar{X}=1.659333$, la desviación estándar muestral $S=0.6709425$,
+el tamaño de muestra $n=15$, el nivel de confianza $1-\alpha=0.98$ y
+el valor crítico $t_{\alpha=0.02, n-1=14}=2.263781$ calculado a partir
 del nivel de confianza y el tamaño de la muestra. Al reemplazar en el
 intervalo tenemos que $$\begin{align*}
   \mu &< 1.659333+2.263781\frac{0.6709425}{\sqrt{15}}\\
@@ -133,9 +133,9 @@ intervalo tenemos que $$\begin{align*}
   \mu &< 2.051503
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(98\%\), que el
+Entonces podremos afirmar con un nivel de confianza del $98\%$, que el
 salario máximo promedio que ganan los egresados del Departamento de
-Ingeniería Industrial es de \(2.051503\) millones de pesos, es decir,
+Ingeniería Industrial es de $2.051503$ millones de pesos, es decir,
 dos millones cincuenta y un mil quinientos tres pesos.
 </p>
 </main>
@@ -153,11 +153,11 @@ Ejercicio
 Suponga que Postobon desarrolla una nueva máquina de bebidas para servir
 de forma automática gaseosas en los cines, de tal forma que la cantidad
 servida, en mililitros, se distribuya Weibull con desviación estándar de
-\(5703.473_{ml}\).<br> <br> Si se decide tomar una muestra aleatoria de
-\(8000\) vasos de gaseosa servidos por una de las nuevas máquinas de
-bebidas, y se obtiene una promedio de \(345_{ml}\) con una desviación
-estándar de \(5240.35_{ml}\), construya un intervalo de confianza del
-\(90\%\) para la verdadera cantidad promedio de refresco servida por la
+$5703.473_{ml}$.<br> <br> Si se decide tomar una muestra aleatoria de
+$8000$ vasos de gaseosa servidos por una de las nuevas máquinas de
+bebidas, y se obtiene una promedio de $345_{ml}$ con una desviación
+estándar de $5240.35_{ml}$, construya un intervalo de confianza del
+$90\%$ para la verdadera cantidad promedio de refresco servida por la
 máquina.
 </p>
 <h3 data-toc-skip>
@@ -170,10 +170,10 @@ bilateral del $90% $ para la cantidad promedio de refresco servida por
 la nueva máquina de bebidas, pero para realizar el cálculo debemos
 evaluar previamente la información que poseemos.<br> <br> Del contexto
 del ejercicio tenemos que la población no es normal, debido a que se
-menciona que es Weibull, con desviación estándar de \(5703.473_{ml}\),
+menciona que es Weibull, con desviación estándar de $5703.473_{ml}$,
 por lo cual tendremos que la varianza poblacional es conocida.
 Adicionalmente, tenemos que el tamaño de muestra de vasos de gaseosa
-servidos por la máquina es de \(8000\) vasos, por lo cual, basados en la
+servidos por la máquina es de $8000$ vasos, por lo cual, basados en la
 información que poseemos tenemos las siguientes características
 
 <img src="/assets/images/Intervalos1b.jpg" alt="" style="max-width: 80%;">
@@ -183,20 +183,20 @@ de la forma $$\begin{align*}
   \bar{X}-Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X}+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
 \end{align*}$$
 
-En donde observamos que requerimos la media muestral \(\bar{X}=345\), la
-desviación estándar poblacional \(\sigma=5703.473\), el tamaño de
-muestra \(n=8000\), el nivel de confianza \(1-\alpha=0.90\) y el valor
-crítico \(Z_{\alpha/2=0.05}=1.644854\) calculado a partir del nivel de
+En donde observamos que requerimos la media muestral $\bar{X}=345$, la
+desviación estándar poblacional $\sigma=5703.473$, el tamaño de
+muestra $n=8000$, el nivel de confianza $1-\alpha=0.90$ y el valor
+crítico $Z_{\alpha/2=0.05}=1.644854$ calculado a partir del nivel de
 confianza. Al reemplazar en el intervalo tenemos que $$\begin{align*}
   &345\pm 1.644854 \frac{5703.473}{\sqrt{8000}} \\
   &345\pm 104.8870143 \\
   &240.1129856 < \mu < 449.8870144
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(90\%\), que la
+Entonces podremos afirmar con un nivel de confianza del $90\%$, que la
 cantidad promedio de refresco servida de forma automática por la nueva
-máquina de bebidas se encontrará entre \(240.1129_{ml}\) y
-\(449.8870_{ml}\).
+máquina de bebidas se encontrará entre $240.1129_{ml}$ y
+$449.8870_{ml}$.
 </p>
 </main>
 <button id="Show3" class="btn btn-secondary">
@@ -211,14 +211,14 @@ Ejercicio
 </h3>
 <p>
 Suponga que la marca de cigarrillo Malboro, asegura que el contenido
-promedio de nicotina de sus cigarrillos es de \(1.1\) miligramos. Un
+promedio de nicotina de sus cigarrillos es de $1.1$ miligramos. Un
 estudio realizado por un grupo de investigación de la Universidad de
 Antioquia mide el contenido de nicotina de una muestra aleatoria de
-\(145\) cigarrillos y encuentra que la nicotina promedio y desviación
-estándar de la muestra fue de \(1.02\) y \(0.23\) miligramos de
+$145$ cigarrillos y encuentra que la nicotina promedio y desviación
+estándar de la muestra fue de $1.02$ y $0.23$ miligramos de
 nicotina, respectivamente. <br> <br> Si se supone que la cantidad de
 nicotina en los cigarrillos Malboro se distribuye normalmente, calcule
-con un nivel de confianza del \(85\%\) el límite inferior para la
+con un nivel de confianza del $85\%$ el límite inferior para la
 verdadera cantidad promedio de nicotina que poseen los cigarrillos
 Malboro.
 </p>
@@ -228,16 +228,16 @@ Solución
 <p>
 
 En este ejercicio se está interesado en construir un intervalo de
-confianza inferior del \(85\%\) para la cantidad promedio de nicotina
+confianza inferior del $85\%$ para la cantidad promedio de nicotina
 que poseen los cigarrillos Malboro, y para realizar el cálculo debemos
 evaluar la información que poseemos.<br> <br> En donde, basados en el
 contexto del ejercicio nos dicen que la distribución de probabilidad de
 la cantidad de nicotina de los cigarrillos se distribuye normalmente,
 con varianza poblacional desconocida. Además, mencionan que en un
 estudio realizado por un grupo de investigación se toma una muestra
-aleatoria de tamaño \(145\) cigarrillos, a partir de la cual encuentran
-un contenido promedio de nicotina de \(1.02\) miligramos con una
-desviación estándar de \(0.23\) miligramos, y en consecuencia nos
+aleatoria de tamaño $145$ cigarrillos, a partir de la cual encuentran
+un contenido promedio de nicotina de $1.02$ miligramos con una
+desviación estándar de $0.23$ miligramos, y en consecuencia nos
 encontramos en la siguiente situación
 
 <img src="/assets/images/Intervalos1c.jpg" alt="" style="max-width: 80%;">
@@ -247,18 +247,18 @@ de la forma $$\begin{align*}
   \bar{X}-Z_{\alpha}\frac{S}{\sqrt{n}} < \mu
 \end{align*}$$
 
-En donde observamos que necesitamos la media muestral \(\bar{X}=1.02\),
-la desviación estándar muestral \(S=0.23\), el tamaño de muestra
-\(n=145\), el nivel de confianza \(1-\alpha=0.85\) y el valor crítico
-\(Z_{\alpha=0.15}=1.036433\) calculado a partir del nivel de confianza.
+En donde observamos que necesitamos la media muestral $\bar{X}=1.02$,
+la desviación estándar muestral $S=0.23$, el tamaño de muestra
+$n=145$, el nivel de confianza $1-\alpha=0.85$ y el valor crítico
+$Z_{\alpha=0.15}=1.036433$ calculado a partir del nivel de confianza.
 Al reemplazar en el intervalo de interés tenemos que $$\begin{align*}
   1.02-1.036433\frac{0.23}{\sqrt{145}} &< \mu \\
   1.02-0.01979635 &< \mu \\
   1.000204 &< \mu
 \end{align*}$$
 
-Lo cual significa que, con un nivel de confianza del \(85\%\) podemos
+Lo cual significa que, con un nivel de confianza del $85\%$ podemos
 afirmar que la cantidad mínima promedio de nicotina que poseen los
-cigarrillos Malboro es de \(1.000204\) miligramos de nicotina.
+cigarrillos Malboro es de $1.000204$ miligramos de nicotina.
 </p>
 </main>

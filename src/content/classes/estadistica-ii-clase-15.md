@@ -45,20 +45,20 @@ Ejercicio
 </h3>
 <p>
 
-Sea \(X_1, X_2, \ldots, X_n\) una muestra aleatoria de una distribución
-chi-cuadrado con parámetro desconocido \(\nu\) y función de distribución
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de una distribución
+chi-cuadrado con parámetro desconocido $\nu$ y función de distribución
 dada por $$\begin{align*}
   f(x) = \frac{1}{\Gamma\left(\frac{\nu}{2}\right)2^{\frac{\nu}{2}}} x^{\frac{\nu}{2} - 1} e^{-\frac{x}{2}} \quad \text{ para } \quad x > 0; \nu > 0
 \end{align*}$$
 
-Encuentre el estimador del parámetro \(\nu\) por el método de momentos.
+Encuentre el estimador del parámetro $\nu$ por el método de momentos.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Para poder encontrar el estimador del parámetro \(\nu\) por el método de
+Para poder encontrar el estimador del parámetro $\nu$ por el método de
 los momentos, es necesario en primer lugar calcular el primer momento
 poblacional asociado a la distribución chi-cuadrado, tal que
 $$\begin{align*}
@@ -101,7 +101,7 @@ primer momento poblacional, tal que $$\begin{align*}
 \end{align*}$$
 
 Encontrando que el estimador por el método de momentos para el parámetro
-desconocido \(\nu\) es igual a $$\begin{align*}
+desconocido $\nu$ es igual a $$\begin{align*}
   \hat{\nu} &= \bar{X}
 \end{align*}$$
 </p>
@@ -145,25 +145,25 @@ Ejercicio
 </h3>
 <p>
 
-Sea \(X_1, X_2, \ldots, X_n\) una muestra aleatoria de una distribución
-Uniforme en el intervalo (\(a\), \(10\)) con parámetro desconocido \(a\)
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de una distribución
+Uniforme en el intervalo ($a$, $10$) con parámetro desconocido $a$
 y función de distribución dada por $$\begin{align*}
   f(x) = \frac{1}{10-a} \quad \text{ para } \quad a < x < 10
 \end{align*}$$
 
-Encuentre el estimador del parámetro \(a\) por el método de mínimos
+Encuentre el estimador del parámetro $a$ por el método de mínimos
 cuadrados.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Para encontrar el estimador del parámetro \(a\) de mínimos cuadrados
+Para encontrar el estimador del parámetro $a$ de mínimos cuadrados
 debemos seguir una serie de pasos los cuales se presentan a continuación
 <ol>
 <li>
 Calcular la función de verosimilitud. <br> Para ello debemos calcular el
-productorio de la función de probabilidad para \(i=1, 2, \ldots, n\),
+productorio de la función de probabilidad para $i=1, 2, \ldots, n$,
 tal que $$\begin{align*}
   L(x_i|a) &= \prod_{i=1}^{n} f(x_i) \\
            &= \prod_{i=1}^{n} \frac{1}{10-a} \\
@@ -185,7 +185,7 @@ Calcular la primera derivada de cada uno de los parámetros de interés.
 <br> Para ello será cuestión de calcular la primera derivada de la
 función de log-verosimilitud respecto a cada uno de los parámetro de
 interés, en donde en este caso será cuestión solamente de derivar
-respecto al parámetro \(a\), tal que $$\begin{align*}
+respecto al parámetro $a$, tal que $$\begin{align*}
   \frac{\partial\ell(x_i|a)}{\partial a} &= \frac{\partial -n\ln(10-a)}{\partial a} \\                
   &= -n\frac{\partial \ln(10-a)}{\partial a}\\
   &= -n \left(\frac{1}{10-a} (-1)\right) \\
@@ -199,15 +199,15 @@ $$\begin{align*}
   n &= 0 (10 - a)\\
   n &= 0
 \end{align*}$$ Encontrando que no hay forma de despejar en este caso el
-parámetro \(a\) de la derivada de la función de log-verosimilitud, y por
+parámetro $a$ de la derivada de la función de log-verosimilitud, y por
 tanto no es posible encontrar un estimador por el método de máxima
-verosimilitud para el parámetro \(a\).
+verosimilitud para el parámetro $a$.
 </li>
 <li>
 En caso de que hubiera un estimador en el paso anterior, se debería
 calcular la segunda derivada de la función de log-verosimilitud y probar
 si el estimador encontrado era un máximo, tratando de probar si la
-segunda derivada era menor a \(0\), pero dado que no existe un estimador
+segunda derivada era menor a $0$, pero dado que no existe un estimador
 para el parámetro, no se realiza este paso en el caso de esta
 distribución.
 </li>

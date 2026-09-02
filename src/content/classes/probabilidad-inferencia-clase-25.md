@@ -31,7 +31,7 @@ Ejercicio
 Suponga que se realiza un estudio en la Facultad de Ingeniería
 Industrial, en donde se le pregunta a sus estudiantes, en cuál deporte
 preferirían practicar entre Fútbol, Baloncesto, Voleibol y Tenis. Dicha
-pregunta se le realiza a un total de \(400\) estudiantes, encontrando
+pregunta se le realiza a un total de $400$ estudiantes, encontrando
 los siguientes resultados
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left:auto; margin-right: auto;">
@@ -144,8 +144,8 @@ Solución
 Dado que el interés es construir una tabla de probabilidades, es
 cuestión de dividir cada una de las entradas por el total de estudiantes
 encuestados, esto con el fin de que la suma de todos los puntos
-muestrales sea igual a \(1\), es decir, \(\mathbb{P}(S) = 1\), siendo
-\(S\) el espacio muestral. Por tanto se tendrá que
+muestrales sea igual a $1$, es decir, $\mathbb{P}(S) = 1$, siendo
+$S$ el espacio muestral. Por tanto se tendrá que
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -308,7 +308,7 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </table>
 $$\begin{align*}
 \mathbb{P}(F)=0.120+0.085+0.165=0.37
-\end{align*}$$ Por tanto, se tendrá un \(37\%\) de probabilidad de que
+\end{align*}$$ Por tanto, se tendrá un $37\%$ de probabilidad de que
 el estudiante seleccionado prefiera el Fútbol sobre los demás deportes.
 </li>
 <li>
@@ -400,7 +400,7 @@ Economía
 
 $$\begin{align*}
 \mathbb{P}(C)=0.085+0.1025+0.0625+0.0250=0.275
-\end{align*}$$ Por tanto, se tendrá un \(27.5\%\) de probabilidad de que
+\end{align*}$$ Por tanto, se tendrá un $27.5\%$ de probabilidad de que
 el estudiante seleccionado sea de Contaduría.
 
 </li>
@@ -490,7 +490,7 @@ De donde obtendremos que $$\begin{align*}
 \mathbb{P}(E \cap V)=0.10
 \end{align*}$$ lo cual indica que la probabilidad de que un estudiante
 sea de Economía y prefiera el Tenis sobre los otros deportes es del
-\(10\%\).
+$10\%$.
 
 </li>
 <li>
@@ -504,9 +504,9 @@ realizar el cálculo de $$\begin{align*}
 \mathbb{P}(V|C) = \frac{\mathbb{P}(V \cap C)}{\mathbb{P}(C)}
 \end{align*}$$
 
-Tendremos entonces que la \(\mathbb{P}(C) = 0.275\) obtenida a partir de
+Tendremos entonces que la $\mathbb{P}(C) = 0.275$ obtenida a partir de
 la suma de las probabilidades individuales en la fila de Contaduría,
-mientras que la \(\mathbb{P}(V \cap C) = 0.0625\), obtenida a partir de
+mientras que la $\mathbb{P}(V \cap C) = 0.0625$, obtenida a partir de
 la casilla en donde se intersectan la columna de Voleibol y fila de
 Contaduría. <br><br>
 
@@ -518,7 +518,7 @@ $$\begin{align*}
 
 Lo cual indica que la probabilidad de que se seleccione un estudiante
 que prefiera Voleibol, dado que se sabe que estudia Contaduría, es del
-\(22.73\%\).
+$22.73\%$.
 
 </li>
 <li>
@@ -530,9 +530,9 @@ otros deportes, es decir,
 
 $$\begin{align*}
 \mathbb{P}(E|B) = \frac{\mathbb{P}(E \cap B)}{\mathbb{P}(B)}
-\end{align*}$$ De esto tendremos que \(\mathbb{P}(B) = 0.2975\) obtenida
+\end{align*}$$ De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
 a partir de la suma de las probabilidades individuales en la columna de
-Baloncesto, mientras que la \(\mathbb{P}(E \cap B) = 0.1275\), obtenida
+Baloncesto, mientras que la $\mathbb{P}(E \cap B) = 0.1275$, obtenida
 a partir de la casilla en donde se intersectan la fila de Economía y la
 columna de Baloncesto. <br><br>
 
@@ -544,7 +544,7 @@ $$\begin{align*}
 
 Lo cual indica que la probabilidad de que se seleccione un estudiante
 que curse Economía, dado que se sabe que prefiere el Baloncesto sobre
-otros deportes, es del \(42.86\%\).
+otros deportes, es del $42.86\%$.
 </li>
 </ol>
 </main>
@@ -693,8 +693,8 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Una bolsa contiene \(100\) pelotas, de las cuales \(25\) son rojas,
-\(40\) son azules y \(35\) son negras.
+Una bolsa contiene $100$ pelotas, de las cuales $25$ son rojas,
+$40$ son azules y $35$ son negras.
 </p>
 <ol type="1">
 <li>
@@ -742,13 +742,13 @@ $$\begin{align*}
 \end{align*}$$
 
 Encontrando entonces que la probabilidad de sacar una bola Negra en el
-primer paso y una bola azul en el segundo paso es del \(14\%\). <br>
+primer paso y una bola azul en el segundo paso es del $14\%$. <br>
 
 Ahora, para saber si los eventos planteados son o no independientes,
 podemos centrarnos en la primera linea, en donde tenemos que la
 probabilidad de sacar una bola negra es de
-\(\mathbb{P}(N_1)= \frac{35}{100}\), mientras que la probabilidad de
-sacar una bola azul es de \(\mathbb{P}(A_1)=\frac{40}{100}\), y en
+$\mathbb{P}(N_1)= \frac{35}{100}$, mientras que la probabilidad de
+sacar una bola azul es de $\mathbb{P}(A_1)=\frac{40}{100}$, y en
 consecuencia, al verificar la formula asociada a independencia entre
 eventos, tendremos que $$\begin{align*}
 \mathbb{P}(N_1 \cap A_2) & = \mathbb{P}(N_1) \mathbb{P}(A_1) \\
@@ -763,7 +763,7 @@ eventos son independientes.
 <li>
 
 Similar al punto anterior, pero con la diferencia a que se realizan
-\(3\) pasos, en donde, luego de sacar la primera bola, se registra y se
+$3$ pasos, en donde, luego de sacar la primera bola, se registra y se
 reemplaza la bola con una del mismo color, pero al sacar la segunda
 bola, no se realiza reemplazo antes de sacar la tercera bola, alterando
 las probabilidades de cada una de las bolas dentro de la bolsa, tal como
@@ -786,9 +786,9 @@ $$\begin{align*}
 Ahora, para saber si los eventos planteados son o no independientes,
 podemos centrarnos en la primera linea, en donde tenemos que la
 probabilidad de sacar una bola negra es de
-\(\mathbb{P}(N_1)= \frac{35}{100}\), sacar una bola azul es de
-\(\mathbb{P}(A_1)=\frac{40}{100}\), y sacar una bola roja es de
-\(\mathbb{P}(R_1)= \frac{25}{100}\), y en consecuencia, al verificar la
+$\mathbb{P}(N_1)= \frac{35}{100}$, sacar una bola azul es de
+$\mathbb{P}(A_1)=\frac{40}{100}$, y sacar una bola roja es de
+$\mathbb{P}(R_1)= \frac{25}{100}$, y en consecuencia, al verificar la
 formula asociada a independencia entre eventos, tendremos que
 
 $$\begin{align*}

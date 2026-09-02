@@ -1620,22 +1620,22 @@ Interpretación
 <p>
 
 De la salida anterior, se aprecia que la altura promedio de las personas
-encuestadas en la base de datos es de \(1.7615\) metros, con una
-desviación estándar de \(0.1257\) metros. Adicionalmente de aprecia que
-el coeficiente de variación es del \(7.1341\%\) lo cual, dada la
+encuestadas en la base de datos es de $1.7615$ metros, con una
+desviación estándar de $0.1257$ metros. Adicionalmente de aprecia que
+el coeficiente de variación es del $7.1341\%$ lo cual, dada la
 variable evaluada, podría ser considerada como una baja variabilidad en
 la altura de todos los encuestados. <br> <br> También se aprecia que la
-Altura mediana de los encuestados es de \(1.78\) metros, lo cual indica
+Altura mediana de los encuestados es de $1.78$ metros, lo cual indica
 que la altura de los encuestados se encuentran más reunida a la
 izquierda, pues se tiene que la mediana posee un valor más alto que la
 mediana. Dicho resultado puede ser corroborado al observar el
-coeficiente de asimetría, el cual presenta un resultado de \(-0.2094\).
+coeficiente de asimetría, el cual presenta un resultado de $-0.2094$.
 <br> <br> En cuanto al coeficiente de kurtosis, se aprecia que éste
-posee un valor de \(-1.4926\), lo cual quiere decir que la distribución
+posee un valor de $-1.4926$, lo cual quiere decir que la distribución
 de la altura de los encuestados posee un comportamiento platicúrtico,
 esto es, una forma más plana y de colas más pronunciadas. <br> <br>
 Finalmente, se aprecia que la altura mínima obtenida en la encuesta es
-de \(1.57\) metros, mientras la máxima es de \(1.93\) metros. Dichos
+de $1.57$ metros, mientras la máxima es de $1.93$ metros. Dichos
 valores se encuentran dentro del rango normal de altura que puede tener
 una persona, así que no hay por qué preocuparse por qué estos sean
 valores atípicos.
@@ -1695,27 +1695,27 @@ Interpretación
 <p>
 
 Similarmente con esta librería <tt>psych</tt>, se aprecia que la altura
-promedio de las personas encuestadas en la base de datos es de \(1.76\)
-metros, con una desviación estándar de \(0.13\) metros, valores que son
+promedio de las personas encuestadas en la base de datos es de $1.76$
+metros, con una desviación estándar de $0.13$ metros, valores que son
 iguales a los obtenidos con la librería <tt>RcmdrMisc</tt> con la
 diferencia de que ésta muestra solo dos decimales. <br> <br> Es de
-anotar que al observar la media recortada al \(10\%\) se aprecia que no
+anotar que al observar la media recortada al $10\%$ se aprecia que no
 hay ningún cambio respecto a su valor promedio sin recortar, lo cual
 indica que en los extremos de la distribución no hay posibles valores
 influenciales que afecten el cálculo del promedio de las alturas. <br>
 <br> También se aprecia que la altura mediana de los encuestados es de
-\(1.78\) metros con una desviación absoluta mediana de \(0.16\) metros,
+$1.78$ metros con una desviación absoluta mediana de $0.16$ metros,
 valores similares a los obtenidos en las estadísticas de la media y
 desviación estándar, siendo estos último un poco más pequeños. <br> <br>
 En cuanto al coeficiente de asimetría y kurtosis, se aprecia que ambos
-poseen valores negativos, siendo \(-0.21\) y \(-1.49\), respectivamente,
+poseen valores negativos, siendo $-0.21$ y $-1.49$, respectivamente,
 lo cual indica que el conjunto de alturas encuestadas poseen una
 asimetría negativa junto con una forma platicúrtica. <br> <br> Se
 aprecia además, que la diferencia entre el rango de las alturas de la
-encuesta posee un valor de \(0.30\) metros, siendo la altura mínima
-obtenida en la encuesta de \(1.57\) metros, y la máxima de \(1.93\)
-metros. Mientras que el rango intercuartil de las alturas es de \(0.23\)
-metros, lo cual es tan solo \(7\) centímetros menos que el rango total
+encuesta posee un valor de $0.30$ metros, siendo la altura mínima
+obtenida en la encuesta de $1.57$ metros, y la máxima de $1.93$
+metros. Mientras que el rango intercuartil de las alturas es de $0.23$
+metros, lo cual es tan solo $7$ centímetros menos que el rango total
 de las observaciones.
 
 </p>
@@ -1772,12 +1772,12 @@ Interpretación
 <p>
 De la salida anterior, se aprecia que los cuatro deportes estudiados, se
 tiene que los futbolistas poseen un mayor peso en promedio que los otros
-deportes, con una media de \(81.1\) kg. También se observa que entre la
+deportes, con una media de $81.1$ kg. También se observa que entre la
 información disponible solo hay una persona que practica el Voleibol
-cuyo peso es de \(66\) kg. <br> <br> También se aprecia que el deporte
+cuyo peso es de $66$ kg. <br> <br> También se aprecia que el deporte
 que posee una mayor desviación estándar es el baloncesto con un total de
-\(12\) kg, presentando también el mayor coeficiente de variación con una
-variabilidad del \(17%\) respecto a la media. <br> <br> Entre los
+$12$ kg, presentando también el mayor coeficiente de variación con una
+variabilidad del $17%$ respecto a la media. <br> <br> Entre los
 deportes, se aprecia que la distribución del peso de las personas que
 juegan baloncesto y tenis poseen distribuciones con asimetría positiva,
 mientras que la distribución del peso de las personas que juegan fútbol
@@ -1842,19 +1842,19 @@ Interpretación
 <p>
 Con la librería <tt>psych</tt> se observa lo mismo que se mencionó
 previamente con la librería <tt>RcmdrMisc</tt>, en donde los promedios
-de peso para los cuatro deportes son, \(73.67\) kg para baloncesto,
-\(81.1\) kg para fútbol, \(75.33\) kg para tenis y \(66\) kg para
+de peso para los cuatro deportes son, $73.67$ kg para baloncesto,
+$81.1$ kg para fútbol, $75.33$ kg para tenis y $66$ kg para
 voleibol. También se aprecia que la media recortada no presenta cambios
 significativos respecto a la media con todas las observaciones. <br>
 <br> Respecto a las mediana, se observa que para el caso del baloncesto
-se tiene un valor menor que su media, con una mediana de \(72\) kg, los
-futbolistas un valor mayor que su media con una mediana de \(83.5\) kg y
-los tenistas una mediana de \(70\) kg, la cual es \(5\) kg menor a su
+se tiene un valor menor que su media, con una mediana de $72$ kg, los
+futbolistas un valor mayor que su media con una mediana de $83.5$ kg y
+los tenistas una mediana de $70$ kg, la cual es $5$ kg menor a su
 media. <br> <br> También se aprecia que en las medidas de variabilidad,
 el deporte que posee una mayor desviación estándar y desviación absoluta
-mediana es es el baloncesto con un total de \(12\) kg y \(16.31\) kg,
+mediana es es el baloncesto con un total de $12$ kg y $16.31$ kg,
 respectivamente. presentando también el mayor coeficiente de variación
-con una variabilidad del \(17%\) respecto a la media. <br> <br>
+con una variabilidad del $17%$ respecto a la media. <br> <br>
 Finalmente, se evidencia que la distribución del peso de las personas
 que juegan baloncesto y tenis poseen asimetrías positivas, mientras que
 la distribución del peso de las personas que juegan fútbol una asimetría
@@ -1934,11 +1934,11 @@ Interpretación
 </h3>
 <p>
 En la salida anterior se observa que de la a información disponible, se
-tiene un total de \(20\) encuestas en donde la mayoría de las personas
+tiene un total de $20$ encuestas en donde la mayoría de las personas
 viven en la Estrella, seguido por un comportamiento similar para las
 personas que viven en Bello, Caldas y Medellín, en donde se encuentran
-\(4\) personas encuestadas. Finalmente se tiene que el municipio del
-cual se tiene menos personas encuestadas es Itagüí con \(3\) personas
+$4$ personas encuestadas. Finalmente se tiene que el municipio del
+cual se tiene menos personas encuestadas es Itagüí con $3$ personas
 encuestadas.
 </p>
 </main>
@@ -1999,13 +1999,13 @@ Interpretación
 </h3>
 <p>
 Al observar el cruce entre los municipios y la preferencia por los
-deportes, observamos que de las \(4\) personas que residen de Bello, hay
-\(3\) que prefieren practicar fútbol de sobre otros deportes, similar
-para Caldas e Itagüí, en donde observamos \(4\) y \(2\) personas que
+deportes, observamos que de las $4$ personas que residen de Bello, hay
+$3$ que prefieren practicar fútbol de sobre otros deportes, similar
+para Caldas e Itagüí, en donde observamos $4$ y $2$ personas que
 prefieren fútbol sobre otros deportes. En La Estrella se aprecia que de
-los \(4\) encuestados, \(2\) prefieren baloncesto, \(2\) tenis y solo
-\(1\) voleibol. Mientras que en Medellín, \(3\) de los \(4\) encuestados
-prefieren baloncesto, y \(1\) fútbol sobre otros deportes.
+los $4$ encuestados, $2$ prefieren baloncesto, $2$ tenis y solo
+$1$ voleibol. Mientras que en Medellín, $3$ de los $4$ encuestados
+prefieren baloncesto, y $1$ fútbol sobre otros deportes.
 </p>
 </main>
 
@@ -2069,8 +2069,8 @@ Interpretación
 <p>
 En la tabla de la salida anterior se presenta la proporción de encuestas
 realizadas en cada municipio, en donde en los municipios de Bello,
-Caldas y Medellín se realizó en cada una un \(20\%\) de las encuestas,
-mientras que en la Estrella e Itagüí se realizó un \(25\%\) y \(15\%\)
+Caldas y Medellín se realizó en cada una un $20\%$ de las encuestas,
+mientras que en la Estrella e Itagüí se realizó un $25\%$ y $15\%$
 de las encuestas respectivamente.
 </p>
 </main>
@@ -2133,10 +2133,10 @@ Interpretación
 En la salida anterior, se presentan la proporción de personas
 encuestadas a partir del municipio y su deporte favorito, en donde se
 aprecia que las combinaciones Bello-Fútbol y Medellín-Baloncesto poseen
-el \(15\%\) del total de las encuestas, Caldas-Fútbol el \(20\%\),
-Itagüí-Fútbol, La Estrella-Baloncesto y La Estrella-Tenis el \(10\%\), y
-Bello-Tenis, Itagüí-Baloncesto y Medellín Fútbol \(5\%\). Es de anotar
+el $15\%$ del total de las encuestas, Caldas-Fútbol el $20\%$,
+Itagüí-Fútbol, La Estrella-Baloncesto y La Estrella-Tenis el $10\%$, y
+Bello-Tenis, Itagüí-Baloncesto y Medellín Fútbol $5\%$. Es de anotar
 que entre los municipios con mayor porcentaje se tiene a La estrella con
-\(25\%\) y el deporte preferido sobre los demás el \(50\%\).
+$25\%$ y el deporte preferido sobre los demás el $50\%$.
 </p>
 </main>

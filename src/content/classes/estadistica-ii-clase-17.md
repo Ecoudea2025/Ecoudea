@@ -66,25 +66,25 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Sea \(X_1, X_2, \ldots, X_20\) una muestra aleatoria iid de una
-distribución Poisson parámetro desconocido \(\lambda\), pruebe que el
-estimador \(\tilde{\lambda} = \bar{X}\) es el MVUE del parámetro
-\(\lambda\).
+Sea $X_1, X_2, \ldots, X_20$ una muestra aleatoria iid de una
+distribución Poisson parámetro desconocido $\lambda$, pruebe que el
+estimador $\tilde{\lambda} = \bar{X}$ es el MVUE del parámetro
+$\lambda$.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Con el estimador \(\tilde{\lambda}\) es igual a \(\bar{X}\) se tendrá
-que la esperanza matemática del estimador \(\tilde{\lambda}\) estará
+Con el estimador $\tilde{\lambda}$ es igual a $\bar{X}$ se tendrá
+que la esperanza matemática del estimador $\tilde{\lambda}$ estará
 dado por
 
 $$\begin{align*}
 \mathbb{E}(\bar{X}) = \mathbb{E}(\tilde{\lambda}) = \mu
 \end{align*}$$
 
-mientras que el valor de la varianza del estimador \(\tilde{\lambda}\)
+mientras que el valor de la varianza del estimador $\tilde{\lambda}$
 estará dada por
 
 $$\begin{align*}
@@ -92,18 +92,18 @@ Var(\bar{X}) = Var(\tilde{\lambda}) = \frac{\sigma^2}{20}
 \end{align*}$$
 
 En donde, como la muestra aleatoria proviene de una distribución Poisson
-donde \(\mathbb{E}(X_i) = \mu = \lambda\) y
-\(Var(X_i)= \sigma^2 = \lambda\), entonces se tendrá que
+donde $\mathbb{E}(X_i) = \mu = \lambda$ y
+$Var(X_i)= \sigma^2 = \lambda$, entonces se tendrá que
 
 $$\begin{align*}
 \mathbb{E}(\tilde{\lambda}) = \lambda \quad \quad Var(\tilde{\lambda}) = \frac{\lambda}{20}
 \end{align*}$$
 
-Verificado que el estimador \(\tilde{\lambda}\) es un estimador
+Verificado que el estimador $\tilde{\lambda}$ es un estimador
 insesgado, se procede a comparar la varianza del estimador
-\(\tilde{\lambda}\) con la varianza del estimador MVUE para la
+$\tilde{\lambda}$ con la varianza del estimador MVUE para la
 distribución Poisson, tal que el valor de la matriz de información de
-Fisher \(I_n(\theta)\) es igual a
+Fisher $I_n(\theta)$ es igual a
 
 $$\begin{align*}
   I_n(\lambda)&=n\mathbb{E}\left[\left(\frac{\partial Ln\left(f(x;\theta)\right)}{\partial \lambda}\right)^2\right] \\
@@ -119,7 +119,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Entonces, al reemplazar la matriz de información de Fisher
-\(I_n(\lambda)\) en la fórmula de la Cota de Cramer Rao, se tendrá que
+$I_n(\lambda)$ en la fórmula de la Cota de Cramer Rao, se tendrá que
 el estimador de mínima varianza será aquel que tenga una varianza igual
 a
 
@@ -129,15 +129,15 @@ $$\begin{align*}
                      &= \frac{\lambda}{20}
 \end{align*}$$
 
-En donde se observa que la varianza del estimador \(\tilde{\lambda}\)
-coincide con el estimador de la varianza mínima \(\hat{\lambda}\)
+En donde se observa que la varianza del estimador $\tilde{\lambda}$
+coincide con el estimador de la varianza mínima $\hat{\lambda}$
 
 $$\begin{align*}
   CCR(\hat{\lambda}) &= Var(\tilde{\lambda}) = \frac{\lambda}{20}
 \end{align*}$$
 
-lo cual quiere decir que el estimador \(\tilde{\lambda}\) es el MVUE del
-parámetro desconocido \(\lambda\).
+lo cual quiere decir que el estimador $\tilde{\lambda}$ es el MVUE del
+parámetro desconocido $\lambda$.
 </p>
 </main>
 
@@ -167,9 +167,9 @@ Ejercicio
 </h3>
 <p>
 
-Sea una muestra aleatoria \(X_1, X_2, \ldots, X_n\) con media
-desconocida \(\mathbb{E}(X)=\mu\) y varianza \(Var(X) =\sigma^2\),
-entonces si se define el estimador \(\bar{X}_1\) como
+Sea una muestra aleatoria $X_1, X_2, \ldots, X_n$ con media
+desconocida $\mathbb{E}(X)=\mu$ y varianza $Var(X) =\sigma^2$,
+entonces si se define el estimador $\bar{X}_1$ como
 
 $$\begin{align*}
   \bar{X}_1=\frac{3X_1  + 2X_{n/2} + 3X_n}{6}
@@ -183,7 +183,7 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular el error cuadrático medio
-para el estimador \(\bar{X}_1\) y para ello debemos inicialmente
+para el estimador $\bar{X}_1$ y para ello debemos inicialmente
 calcular si es o no insesgado, tal que
 
 $$\begin{align*}
@@ -194,7 +194,7 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde, como la distribución de probabilidad tiene media
-\(\mathbb{E}(X)=\mu\), entonces
+$\mathbb{E}(X)=\mu$, entonces
 
 $$\begin{align*}
   \mathbb{E}(\bar{X}_1)&=\frac{1}{6}\left[3\mathbb{E}(X_1)  + 2\mathbb{E}(X_{n/2}) + 3\mathbb{E}(X_n)\right]\\
@@ -223,7 +223,7 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde, como la distribución de probabilidad tiene media
-\(Var(X)=\sigma^2\), entonces
+$Var(X)=\sigma^2$, entonces
 
 $$\begin{align*}
   Var(\bar{X}_1)&=\frac{1}{36}\left[3^2Var(X_1)  + 2^2Var(X_{n/2}) + 3^2Var(X_n)\right]\\
@@ -241,7 +241,7 @@ tendrá que $$\begin{align*}
 \end{align*}$$
 
 Encontrando que el Error Cuadrático Medio para el estimador
-\(\bar{X}_1\), está dado por
+$\bar{X}_1$, está dado por
 $$ECM(\bar{X}_1) = \frac{11}{16}\sigma^2 + \frac{1}{9}\mu^2$$
 </p>
 </main>

@@ -31,12 +31,12 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     verdadera la afirmación de los agentes de movilidad
     <ol type="a">
     <li>
-    Calcule la probabilidad de obtener un promedio muestral de \(280\) o
+    Calcule la probabilidad de obtener un promedio muestral de $280$ o
     más?
     </li>
     <li>
     Calcule la probabilidad de que el promedio real sea de a lo más
-    \(270\)?
+    $270$?
     </li>
     </ol>
 
@@ -90,14 +90,14 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <ol type="a">
     <li>
     Encuentre la función de densidad de
-    \(X_{(n)} = \max(X_1, X_2, \ldots, X_n)\).
+    $X_{(n)} = \max(X_1, X_2, \ldots, X_n)$.
     </li>
     <li>
     Encuentre la función de distribución acumulada de
-    \(X_{(n)} = \max(X_1, X_2, \ldots, X_n)\).
+    $X_{(n)} = \max(X_1, X_2, \ldots, X_n)$.
     </li>
     <li>
-    Encuentre la media y la varianza de \(X_{(n)}\)
+    Encuentre la media y la varianza de $X_{(n)}$
     </li>
     </ol>
 
@@ -122,12 +122,12 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <ol type="a">
     <li>
     Cual es la probabilidad de que la estatura promedio de todos los
-    estudiantes sea a lo sumo \(172\) centímetros.
+    estudiantes sea a lo sumo $172$ centímetros.
     </li>
     <li>
     Cual es la probabilidad de que la estatura promedio de todos los
-    estudiantes sea a lo sumo \(172\) centímetros, si suponemos que las
-    alturas se distribuyen <i>iid</i> con desviación estándar de \(7.3\)
+    estudiantes sea a lo sumo $172$ centímetros, si suponemos que las
+    alturas se distribuyen <i>iid</i> con desviación estándar de $7.3$
     centímetros.
     </li>
     </ol>
@@ -233,12 +233,12 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <li>
     Suponiendo normalidad, cuál es la probabilidad de que la
     calificación media de la prueba SAT verbal de todos los alumnos de
-    último año sea al menos de \(508\) puntos.
+    último año sea al menos de $508$ puntos.
     </li>
     <li>
     Suponiendo normalidad, cuál es la probabilidad de que la
     calificación media de la prueba SAT de matemáticas de todos los
-    alumnos de último año sea a lo sumo de \(520\) puntos.
+    alumnos de último año sea a lo sumo de $520$ puntos.
     </li>
     </ol>
 
@@ -516,7 +516,7 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <ol type="a">
     <li>
     Calcule la probabilidad de que el precio promedio de atún blanco
-    empacado en aceite sea a lo más \(1.4\) dolares.
+    empacado en aceite sea a lo más $1.4$ dolares.
     </li>
     <li>
     Calcule la probabilidad de que la variabilidad del precio del atún
@@ -576,12 +576,12 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <ol type="a">
     <li>
     Calcule la probabilidad de que la varianza de las lecturas de
-    emisión de ruido de camiones, sea mayor a \(2_{dB^2}\). Interprete
+    emisión de ruido de camiones, sea mayor a $2_{dB^2}$. Interprete
     sus resultados.
     </li>
     <li>
     Calcule la probabilidad de que la diferencia absoluta entre la media
-    real y muestral sea como máximo de \(0.4_{dB}\).
+    real y muestral sea como máximo de $0.4_{dB}$.
     </li>
     </ol>
 
@@ -592,42 +592,42 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(X\)
+    $X$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{0}\)
+    $\mathbf{0}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{1}\)
+    $\mathbf{1}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{2}\)
+    $\mathbf{2}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{3}\)
+    $\mathbf{3}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{4}\)
+    $\mathbf{4}$
     </td>
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
-    \(0.03\)
+    $0.03$
     </td>
     <td style="text-align:left;">
-    \(0.18\)
+    $0.18$
     </td>
     <td style="text-align:left;">
-    \(0.25\)
+    $0.25$
     </td>
     <td style="text-align:left;">
-    \(0.28\)
+    $0.28$
     </td>
     <td style="text-align:left;">
-    \(0.26\)
+    $0.26$
     </td>
     </tr>
     </tbody>
@@ -689,11 +689,11 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <ol type="a">
     <li>
     Calcule la probabilidad de que el tiempo de reacción promedio para
-    todos los individuos sea a lo más de \(6\) segundos.
+    todos los individuos sea a lo más de $6$ segundos.
     </li>
     <li>
     Calcule la probabilidad de que el tiempo de reacción promedio para
-    todos los individuos no supere los \(7\) segundos.
+    todos los individuos no supere los $7$ segundos.
     </li>
     </ol>
 
@@ -770,14 +770,14 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     con desviación estándar aproxima de `$4$` pulgadas cuadradas.
     <ol type="a">
     <li>
-    Si el guardabosque muestrea un total de \(12\) árboles, encuentre la
-    probabilidad de que la media muestral se encuentre a no más de \(2\)
+    Si el guardabosque muestrea un total de $12$ árboles, encuentre la
+    probabilidad de que la media muestral se encuentre a no más de $2$
     pulgadas cuadradas de la media poblacional.
     </li>
     <li>
     Suponga que al guardabosque le gustaría que la media muestral
-    estuviera a no más de \(0.8\) pulgadas cuadrada de la media
-    poblacional, con probabilidad del \(90\%\). ¿Cuántos árboles debe
+    estuviera a no más de $0.8$ pulgadas cuadrada de la media
+    poblacional, con probabilidad del $90\%$. ¿Cuántos árboles debe
     medir para asegurar este grado de precisión?
     </li>
     </ol>
@@ -1100,11 +1100,11 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     <ol type="a">
     <li>
     Calcule la probabilidad de que el tiempo promedio de durabilidad de
-    todas las baterías sea de \(3\) o más años.
+    todas las baterías sea de $3$ o más años.
     </li>
     <li>
     Calcule la probabilidad de que la desviación estándar de todas las
-    baterías se encuentre entre \(0.8\) y \(1.2\) años.
+    baterías se encuentre entre $0.8$ y $1.2$ años.
     </li>
     </ol>
 

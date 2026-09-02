@@ -64,54 +64,54 @@ función de distribución de probabilidad está dada por
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(X\)
+$X$
 </td>
 <td style="text-align:left;">
-\(0\)
+$0$
 </td>
 <td style="text-align:left;">
-\(1\)
+$1$
 </td>
 <td style="text-align:left;">
-\(2\)
+$2$
 </td>
 <td style="text-align:left;">
-\(3\)
+$3$
 </td>
 <td style="text-align:left;">
-\(4\)
+$4$
 </td>
 <td style="text-align:left;">
-\(5\text{ o más}\)
+$5\text{ o más}$
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-\(p(x)\)
+$p(x)$
 </td>
 <td style="text-align:left;">
-\(0.0498\)
+$0.0498$
 </td>
 <td style="text-align:left;">
-\(0.1494\)
+$0.1494$
 </td>
 <td style="text-align:left;">
-\(0.2240\)
+$0.2240$
 </td>
 <td style="text-align:left;">
-\(0.2240\)
+$0.2240$
 </td>
 <td style="text-align:left;">
-\(0.1680\)
+$0.1680$
 </td>
 <td style="text-align:left;">
-\(0.1848\)
+$0.1848$
 </td>
 </tr>
 </tbody>
 </table>
 <p>
-Si la probabilidad de que lleguen al menos \(4\) ambulancias en una hora
+Si la probabilidad de que lleguen al menos $4$ ambulancias en una hora
 es muy alta, el hospital considerará ampliar el estacionamiento, de otro
 modo, lo dejará tal y como está. Basado en ésto, aconsejaría usted al
 hospital que es necesario ampliar el estacionamiento?
@@ -121,7 +121,7 @@ Solución
 </h3>
 <p>
 
-Como \(X\) es la variable aleatoria del número de ambulancias que llegan
+Como $X$ es la variable aleatoria del número de ambulancias que llegan
 al hospital en una hora, se tendrá que nos preguntan por la probabilidad
 $$\begin{align*}
 \mathbb{P}(X>=4)
@@ -136,8 +136,8 @@ calcularla mediante sumatorias, tal que $$\begin{align*}
                     &= 0.3528 \\
 \end{align*}$$
 
-Es decir, que se tendrá una probabilidad del \(35.28\%\) de que lleguen
-al menos \(4\) ambulancia en una hora
+Es decir, que se tendrá una probabilidad del $35.28\%$ de que lleguen
+al menos $4$ ambulancia en una hora
 </p>
 </main>
 
@@ -187,48 +187,48 @@ función de distribución de probabilidad está dada por
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(X\)
+$X$
 </td>
 <td style="text-align:left;">
-\(0\)
+$0$
 </td>
 <td style="text-align:left;">
-\(1\)
+$1$
 </td>
 <td style="text-align:left;">
-\(2\)
+$2$
 </td>
 <td style="text-align:left;">
-\(3\)
+$3$
 </td>
 <td style="text-align:left;">
-\(4\)
+$4$
 </td>
 <td style="text-align:left;">
-\(5\text{ o más}\)
+$5\text{ o más}$
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-\(p(x)\)
+$p(x)$
 </td>
 <td style="text-align:left;">
-\(0.0498\)
+$0.0498$
 </td>
 <td style="text-align:left;">
-\(0.1494\)
+$0.1494$
 </td>
 <td style="text-align:left;">
-\(0.2240\)
+$0.2240$
 </td>
 <td style="text-align:left;">
-\(0.2240\)
+$0.2240$
 </td>
 <td style="text-align:left;">
-\(0.1680\)
+$0.1680$
 </td>
 <td style="text-align:left;">
-\(0.1848\)
+$0.1848$
 </td>
 </tr>
 </tbody>
@@ -236,7 +236,7 @@ función de distribución de probabilidad está dada por
 <p>
 Construya la función de distribución acumulada asociada al número de
 ambulancias que llegan a la zona de urgencias en una hora y calcule la
-probabilidad de que este vañpr sea al menos de \(4\).
+probabilidad de que este vañpr sea al menos de $4$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -245,10 +245,10 @@ Solución
 
 Como la función de distribución acumulada parte de la función de masa de
 probabilidad, partimos de esta tabla y se procede a realizar el cálculo
-de la función de distribución acumulada \(F(x)\). Para ello, debemos
-calcular las siguientes probabilidades \(F(0) = \mathbb{P}(X\leq 0)\),
-\(F(1) = \mathbb{P}(X\leq1)\), \(F(2) = \mathbb{P}(X\leq2)\),
-\(F(3) = \mathbb{P}(X\leq3)\) y \(F(4) = \mathbb{P}(X\leq4)\).
+de la función de distribución acumulada $F(x)$. Para ello, debemos
+calcular las siguientes probabilidades $F(0) = \mathbb{P}(X\leq 0)$,
+$F(1) = \mathbb{P}(X\leq1)$, $F(2) = \mathbb{P}(X\leq2)$,
+$F(3) = \mathbb{P}(X\leq3)$ y $F(4) = \mathbb{P}(X\leq4)$.
 
 $$\begin{align*}
 F(0) & = \mathbb{P}(X\leq0) = p(0) = 0.0498 \\
@@ -259,7 +259,7 @@ F(4) & = \mathbb{P}(X\leq4) = \sum_{x=0}^{4} p(x) = 0.0498 + 0.1494 + 0.2240 + 0
 \end{align*}$$
 
 Entonces, mediante el empleo de estas probabilidades, podemos construir
-la función de distribución acumulada para la variable aleatoria \(X\),
+la función de distribución acumulada para la variable aleatoria $X$,
 tal que
 
 $$\begin{align*}
@@ -271,15 +271,15 @@ F(x) = \begin{cases} 0 & x<0 \\
                      0.8712  & 4\leq x<5 \\
                      1       & x\geq5
        \end{cases}
-\end{align*}$$ En donde se aprecia, que para valores menores a \(0\), no
+\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
-\(0\) pero menores que \(1\) solo está definido \(F(0)=p(0)\), para
-valores mayores o iguales a \(1\) pero menores que \(2\) está definido
-\(F(1)=p(0)+p(1)\), para valores mayores o iguales a \(2\) pero menores
-que \(3\) está definido \(F(2)=p(0)+p(1)+p(2)\), y así
+$0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
+valores mayores o iguales a $1$ pero menores que $2$ está definido
+$F(1)=p(0)+p(1)$, para valores mayores o iguales a $2$ pero menores
+que $3$ está definido $F(2)=p(0)+p(1)+p(2)$, y así
 sucesivamente.<br> <br> Ahora dado que estamos interesados en calcular
 la probabilidad de que el número de ambulancias que llegan a la zona de
-urgencias en una hora sea de al menos \(4\) ambulancias, se tendrá que
+urgencias en una hora sea de al menos $4$ ambulancias, se tendrá que
 se debe calcular $$\begin{align*}
 \mathbb{P}(X \geq 4)
 \end{align*}$$
@@ -294,7 +294,7 @@ $$\begin{align*}
 \end{align*}$$
 
 y por tanto, se tendrá que la probabilidad de que en una hora lleguen al
-menos \(4\) ambulancias a un hospital es del \(35.28\%\).
+menos $4$ ambulancias a un hospital es del $35.28\%$.
 </p>
 </main>
 
@@ -327,7 +327,7 @@ Ejemplo
 </h3>
 <p>
 Los siguientes, son algunos ejemplos de casos que pueden considerarse
-como Procesos Bernoulli, debido a que cumplen las \(4\) condiciones
+como Procesos Bernoulli, debido a que cumplen las $4$ condiciones
 propuestas anteriormente.
 </p>
 <ul>
@@ -374,7 +374,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Por experiencia se sabe que, de \(3\) de cada \(5\) meses, una empresa
+Por experiencia se sabe que, de $3$ de cada $5$ meses, una empresa
 obtiene utilidades superiores a las esperadas. Si se selecciona un mes
 aleatoriamente,
 </p>
@@ -394,10 +394,10 @@ Solución
 <ol>
 <li>
 
-En este caso estamos interesados en la variable \(X\), que representa el
+En este caso estamos interesados en la variable $X$, que representa el
 número de veces que no se superan las utilidades esperadas, en donde
-sabemos que si, \(3\) de cada \(5\) meses se obtienen utilidades
-superiores a las esperadas, se tendrá que \(2\) de cada \(5\) no se
+sabemos que si, $3$ de cada $5$ meses se obtienen utilidades
+superiores a las esperadas, se tendrá que $2$ de cada $5$ no se
 superarán dichas utilidades. Por tanto al aplicar la definición de
 frecuencia relativa se tiene que
 
@@ -405,7 +405,7 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}}\\
   &= \frac{2}{5} \\
   &= 0.4
-\end{align*}$$ siendo \(p\) la probabilidad de que no se superen las
+\end{align*}$$ siendo $p$ la probabilidad de que no se superen las
 utilidades en un mes.
 
 Ahora, la probabilidad de que en un mes no se haya superado las
@@ -416,13 +416,13 @@ utilidades esperadas por la empresa será igual a $$\begin{align*}
                   &= 0.4
 \end{align*}$$
 
-es decir, que se tendrá una probabilidad del \(60\%\) de que no se
+es decir, que se tendrá una probabilidad del $60\%$ de que no se
 superen las utilidades esperadas en un mes seleccionado aleatoriamente.
 </li>
 <li>
 
 Ahora, como estamos interesados en el valor promedio de un proceso
-Bernoulli el cual es igual a \(p\), se tendrá que $$\begin{align*}
+Bernoulli el cual es igual a $p$, se tendrá que $$\begin{align*}
 \mathbb{E}(X) &= p \\
               &= 0.4
 \end{align*}$$
@@ -443,9 +443,9 @@ Sd(X) &= \sqrt{Var(X)} \\
 \end{align*}$$
 
 Por tanto, al seleccionar un mes aleatoriamente, se espera que en
-promedio \(0.4\) de las veces no se superen las utilidades esperadas en
+promedio $0.4$ de las veces no se superen las utilidades esperadas en
 un mes seleccionado aleatoriamente, con una desviación estándar de
-\(0.4889\).
+$0.4889$.
 </li>
 </ol>
 </main>
@@ -485,16 +485,16 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Por experiencia se sabe que, de \(3\) de cada \(5\) meses, una empresa
-obtiene utilidades superiores a las esperadas. Si se selecciona \(10\)
+Por experiencia se sabe que, de $3$ de cada $5$ meses, una empresa
+obtiene utilidades superiores a las esperadas. Si se selecciona $10$
 meses aleatoriamente,
 <ol>
 <li>
-Cuál es la probabilidad de que en no más de \(3\) meses no se obtengan
+Cuál es la probabilidad de que en no más de $3$ meses no se obtengan
 utilidades superiores a las esperadas?
 </li>
 <li>
-Cuál es la probabilidad de que en no menos de \(6\) pero menos de \(8\)
+Cuál es la probabilidad de que en no menos de $6$ pero menos de $8$
 meses no se obtengan utilidades superiores a las esperadas?
 </li>
 <li>
@@ -508,10 +508,10 @@ Solución
 </h3>
 <p>
 
-En este caso estamos interesados en la variable \(X\), que representa el
-número de veces que no se superan las utilidades esperadas en \(n=10\)
-meses, en donde sabemos que si, \(3\) de cada \(5\) meses se obtienen
-utilidades superiores a las esperadas, se tendrá que \(2\) de cada \(5\)
+En este caso estamos interesados en la variable $X$, que representa el
+número de veces que no se superan las utilidades esperadas en $n=10$
+meses, en donde sabemos que si, $3$ de cada $5$ meses se obtienen
+utilidades superiores a las esperadas, se tendrá que $2$ de cada $5$
 no se superarán dichas utilidades. Por tanto al aplicar la definición de
 frecuencia relativa se tiene que
 
@@ -519,40 +519,40 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}}\\
   &= \frac{2}{5} \\
   &= 0.4
-\end{align*}$$ siendo \(p\) la probabilidad de que no se superen las
+\end{align*}$$ siendo $p$ la probabilidad de que no se superen las
 utilidades en un mes.
 </p>
 <ol>
 <li>
 Basados en lo anterior, en este caso estamos interesados en calcular la
-probabilidad de que no más de \(3\) meses no se obtengan utilidades
+probabilidad de que no más de $3$ meses no se obtengan utilidades
 superiores a las esperadas?, lo cual puede representarse mediante la
 siguiente probabilidad $$\begin{align*}
 P(X\leq 3) &= \sum_{x=0}^3 \left(\begin{array}{c}10\\ x\end{array}\right)0.4^x(1-0.4)^{10-x} \\
            &= \left(\begin{array}{c}10\\ 0\end{array}\right)0.4^0(0.6)^{10-0} + \ldots + \left(\begin{array}{c}10\\ 3\end{array}\right)0.4^3(0.6)^{10-3} \\
            &= 0.0060466 + 0.0403108 + 0.1209324 + 0.2149908 \\
            &= 0.3822806
-\end{align*}$$ Es decir, la probabilidad de que como máximo en \(3\)
-meses de los \(10\) seleccionados aleatoriamente, no se superen las
-utilidades esperadas en un mes, es del \(38.23\%\).
+\end{align*}$$ Es decir, la probabilidad de que como máximo en $3$
+meses de los $10$ seleccionados aleatoriamente, no se superen las
+utilidades esperadas en un mes, es del $38.23\%$.
 </li>
 <li>
 Ahora, se tiene interés en conocer la probabilidad de que en no menos de
-\(6\) pero en menos de \(8\) meses no se obtengan utilidades superiores
+$6$ pero en menos de $8$ meses no se obtengan utilidades superiores
 a las esperadas, la cual está dada por $$\begin{align*}
 P(6 \leq x < 8) &= \sum_{x=6}^{7} \left(\begin{array}{c}10\\ x\end{array}\right)0.4^x(1-0.4)^{10-x} \\
            &= \left(\begin{array}{c}10\\ 6\end{array}\right)0.4^6(0.6)^{10-6} + \ldots + \left(\begin{array}{c}10\\ 7\end{array}\right)0.4^{7}(0.6)^{10-7} \\
            &= 0.1539441
-\end{align*}$$ Es decir que, la probabilidad de que en como mínimo \(6\)
-pero menos de \(8\) meses de los \(10\) seleccionados aleatoriamente, no
-se superen las utilidades esperadas en un mes, es del \(15.39\%\).
+\end{align*}$$ Es decir que, la probabilidad de que en como mínimo $6$
+pero menos de $8$ meses de los $10$ seleccionados aleatoriamente, no
+se superen las utilidades esperadas en un mes, es del $15.39\%$.
 </li>
 <li>
 
 Finalmente, se tiene interés en conocer cual será el número promedio y
 desviación estándar, de meses en los cuales no se superará las
 utilidades esperados, cuando se realiza la selección aleatoria de
-\(10\). Al aplicar la formula del promedio de la distribución binomial,
+$10$. Al aplicar la formula del promedio de la distribución binomial,
 se tiene que $$\begin{align*}
 \mathbb{E}(X) & = np \\
               & = 10(0.4)\\
@@ -570,9 +570,9 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(2.4)} \\
 Sd(X) & = 1.549193
 \end{align*}$$ De lo anterior se tiene que, al realizar la selección
-aleatoria de \(10\) meses, se espera que en promedio en \(4\) meses no
+aleatoria de $10$ meses, se espera que en promedio en $4$ meses no
 se superen las utilidades esperadas, con una desviación estándar de
-\(1.549193\) meses.
+$1.549193$ meses.
 </li>
 </ol>
 </main>
@@ -616,12 +616,12 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga una junta directiva compuesta por \(15\) personas, las cuales
+Suponga una junta directiva compuesta por $15$ personas, las cuales
 son las responsables de decidir si se lleva o no a cabo un proyecto de
 inversión. Se hace un sondeo para saber cuales inversionistas están a
-favor del proyecto de inversión y se encuentra que \(10\) de éstas están
+favor del proyecto de inversión y se encuentra que $10$ de éstas están
 a favor de realizar el proyecto.<br> <br> Si el día de votación solo
-asisten \(9\) personas a la junta,
+asisten $9$ personas a la junta,
 </p>
 <ol>
 <li>
@@ -640,18 +640,18 @@ Solución
 <li>
 
 En el primer punto estamos interesados en conocer la probabilidad de que
-entre las \(9\) personas que asistieron a la junta, la mayoría apruebe
+entre las $9$ personas que asistieron a la junta, la mayoría apruebe
 llevar a cabo el proyecto de inversión, y para ello se requeriría que al
-menos \(5\) vote a favor, es decir $$\begin{align*}
+menos $5$ vote a favor, es decir $$\begin{align*}
 \mathbb{P}(X\geq5)
 \end{align*}$$
 
-Donde \(X\): representa el número de personas que están a favor de
-realizar el proyecto de inversión, de las \(9\) que asistieron a la
+Donde $X$: representa el número de personas que están a favor de
+realizar el proyecto de inversión, de las $9$ que asistieron a la
 junta. Además, de la información suministrada tenemos que el total de
-miembros de la junta es de de \(N=15\) personas de las cuales se había
-encontrado que \(M=10\) estaba a favor de realizar el proyecto.
-Entonces, como \(n=9\) asistieron la junta de votación, se tendrá la
+miembros de la junta es de de $N=15$ personas de las cuales se había
+encontrado que $M=10$ estaba a favor de realizar el proyecto.
+Entonces, como $n=9$ asistieron la junta de votación, se tendrá la
 siguiente distribución de probabilidad
 
 $$\begin{align*}
@@ -666,7 +666,7 @@ la cual está definida para $$\begin{align*}
 4 &\leq x \leq 9 \\
 \end{align*}$$ en donde, al ser la distribución hipergeométrica una
 distribución discreta, tendremos que el número de miembros a favor del
-proyecto puede ser de \(x=4, 5, \ldots 9\). <br> <br> Ahora, al emplear
+proyecto puede ser de $x=4, 5, \ldots 9$. <br> <br> Ahora, al emplear
 esta función de distribución para calcular la probabilidad de interés
 tendremos que
 
@@ -676,7 +676,7 @@ $$\begin{align*}
                 &=0.958042
 \end{align*}$$
 
-En consecuencia, se tendrá una probaribilidad del \(95.8\%\), de que la
+En consecuencia, se tendrá una probaribilidad del $95.8\%$, de que la
 mayoría apruebe realizar el proyecto de inversión.
 </li>
 <li>
@@ -708,10 +708,10 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= 0.3086067
 \end{align*}$$
 
-lo cual quiere decir que de los \(9\) miembros que asistieron a la junta
-de votación, se espera que \(6\) de ellos hayan votado a favor de llevar
+lo cual quiere decir que de los $9$ miembros que asistieron a la junta
+de votación, se espera que $6$ de ellos hayan votado a favor de llevar
 a cabo el proyecto de inversión, con una desviación estándar de
-\(0.3086067\) miembros.
+$0.3086067$ miembros.
 </li>
 </ol>
 </main>
@@ -738,7 +738,7 @@ Ejemplo
 <p>
 Los siguientes, son algunos ejemplos de casos que pueden considerarse
 Experimentos Binomial Negativo, debido a que cumplen las propiedades de
-un experimento binomial, es decir, las \(4\) condiciones propuestas en
+un experimento binomial, es decir, las $4$ condiciones propuestas en
 el
 <a href="../../EspecializacionSocioeconomica/EspSocProySesion03.html#proceso-bernoulli">Proceso
 Bernoulli</a>.
@@ -791,13 +791,13 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que por experiencia se sabe que \(4\) de cada \(5\) edificios
+Suponga que por experiencia se sabe que $4$ de cada $5$ edificios
 construidos por una constructora famosa superan los estándares de
 calidad. Entonces basados en lo anterior,
 </p>
 <ol>
 <li>
-Cuál es la probabilidad de que más de deban revisarse más de \(3\)
+Cuál es la probabilidad de que más de deban revisarse más de $3$
 edificios construidos por dicha constructora hasta encontrar el segundo
 que no cumpla los estándares de calidad.
 </li>
@@ -813,25 +813,25 @@ Solución
 <ol>
 <li>
 
-En este caso nos preguntan, por la probabilidad de que más de \(3\)
+En este caso nos preguntan, por la probabilidad de que más de $3$
 edificios construidos por dicha constructora hasta encontrar el primero
 que no cumpla los estándares de calidad, esto es $$\begin{align*}
 \mathbb{P}(X>3)
 \end{align*}$$
 
-Donde \(X\): representa el número de edificios que no cumplen los
+Donde $X$: representa el número de edificios que no cumplen los
 estándares de calidad. Entonces, como estamos en una situación en la
 cual nos preguntan por el número de ensayos que hay que realizar, hasta
-obtener \(1\) éxito, estamos en una situación asociada a una
+obtener $1$ éxito, estamos en una situación asociada a una
 distribución Binomial Negativa, la cual tiene la estructura
 $$\begin{align*}
 p(x) = \left(\begin{array}{c}x-1\\ k-1\end{array}\right)p^k(1-p)^{x-k} \quad \quad x=k, k+1, \ldots
-\end{align*}$$ En donde se sabe por experiencia que \(4\) de cada \(5\)
+\end{align*}$$ En donde se sabe por experiencia que $4$ de cada $5$
 edificios construidos por dicha constructora cumple los estándares de
 calidad, y por tanto, como nuestro éxito está asociado a que no se
-cumplan los estándares de calidad, se tendrá que \(1\) de cada \(5\)
+cumplan los estándares de calidad, se tendrá que $1$ de cada $5$
 edificios no cumple dichos estándares, es decir que al aplicar la
-definición de frecuencia relativa, tendremos que la proporción \(p\) de
+definición de frecuencia relativa, tendremos que la proporción $p$ de
 interés, estará dada por $$\begin{align*}
 p &= \frac{\text{# éxitos}}{\text{total Ensayos}} \\
   &= \frac{1}{5} \\
@@ -839,7 +839,7 @@ p &= \frac{\text{# éxitos}}{\text{total Ensayos}} \\
 \end{align*}$$
 
 Ahora, al emplear la función de distribución Binomial Negativa con
-\(p=0.20\), y con \(k=2\) debido a que estamos interesados en el segundo
+$p=0.20$, y con $k=2$ debido a que estamos interesados en el segundo
 edificio, tendremos que la probabilidad de interés estará dada por
 
 $$\begin{align*}
@@ -850,8 +850,8 @@ $$\begin{align*}
                 &= 0.896
 \end{align*}$$
 
-En consecuencia, se tendrá un \(89.6\%\) de probabilidad, de que deban
-revisarse más de \(3\) edificios construidos por la constructora hasta
+En consecuencia, se tendrá un $89.6\%$ de probabilidad, de que deban
+revisarse más de $3$ edificios construidos por la constructora hasta
 encontrar el segundo que no cumpla los estándares de calidad.
 </li>
 <li>
@@ -882,10 +882,10 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= 6.324555
 \end{align*}$$
 
-Y por tanto se tendrá que en promedio deberán revisar \(10\) edificios
+Y por tanto se tendrá que en promedio deberán revisar $10$ edificios
 construidos por la constructora famosa, hasta encontrar el segundo que
 no cumple los estándares de calidad, con una desviación estándar de
-\(6.324555\) edificios.
+$6.324555$ edificios.
 </li>
 </ol>
 </main>
@@ -967,9 +967,9 @@ Ejercicio
 <p>
 Los huecos en las carreteras pueden ser un problema grave y requieren de
 reparación constante con un tipo específico de mezcla de concreto. La
-experiencia sugiere que hay en promedio \(1.5\) huecos por cada dos
+experiencia sugiere que hay en promedio $1.5$ huecos por cada dos
 kilómetros recorridos, después de cierta cantidad de uso. Si se supone
-que \(X\) representa el número de huecos que hay en la carretera
+que $X$ representa el número de huecos que hay en la carretera
 <ol>
 <li>
 Cuál es la probabilidad de que no aparezca más de un hueco en la
@@ -981,7 +981,7 @@ kilómetro?
 </li>
 <li>
 Cuál es el número promedio y desviación estándar del número de huecos
-que se encuentran en \(5\) kilómetros?.
+que se encuentran en $5$ kilómetros?.
 </li>
 </ol>
 </p>
@@ -989,23 +989,23 @@ que se encuentran en \(5\) kilómetros?.
 Solución
 </h3>
 <p>
-En este caso nos dicen que nuestra variable aleatorias es \(X\) el
+En este caso nos dicen que nuestra variable aleatorias es $X$ el
 número de huecos que se encuentran en la carretera, y que en promedio se
-encuentran \(1.5\) huecos cada dos kilómetros.
+encuentran $1.5$ huecos cada dos kilómetros.
 </p>
 <ol>
 <li>
 Basados en lo anterior, nos preguntan por la probabilidad de que no
 aparezca más de un hueco en la carretera en un tramo de dos kilómetros.
 Es decir, nos preguntan por la probabilidad de que aparezca como máximo
-\(1\) hueco en la carretera en un tramo de dos kilómetros. En este caso
+$1$ hueco en la carretera en un tramo de dos kilómetros. En este caso
 se tendrá la siguiente probabilidad $$\begin{align*}
 P(X\leq 1) &= \sum_{x=0}^1 \frac{e^{-1.5}1.5^x}{x!} \\
            &= \frac{e^{-1.5}1.5^0}{0!} + \frac{e^{-1.5}1.5^1}{1!} \\\\
            &= 0.2231302 + 0.3346952 \\
            &= 0.5578254
 \end{align*}$$ Es decir, la probabilidad de que no aparezca más de un
-hueco en la carretera en el tramo de dos kilómetros es del \(55.78\%\).
+hueco en la carretera en el tramo de dos kilómetros es del $55.78\%$.
 </li>
 <li>
 
@@ -1013,7 +1013,7 @@ Ahora, se tiene interés en conocer la probabilidad de que aparezca más
 de un hueco en un tramo de un kilómetro. En este caso debe notarse que
 se cambió la unidad de medida, en donde en lugar de dos kilómetros se
 habla de un kilómetro.<br> <br> Debido a ésto, será necesario actualizar
-nuestro parámetro \(\lambda\) mediante el empleo de una regla de \(3\),
+nuestro parámetro $\lambda$ mediante el empleo de una regla de $3$,
 de la siguiente manera. $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  1_{\text{km}} &- \lambda
@@ -1021,7 +1021,7 @@ de la siguiente manera. $$\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 1_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 0.75_{\text{huecos}}
 \end{align*}$$ Es decir, que en un tramo de un kilómetro ocurren
-\(0.75\) huecos en promedio. Conocido el valor del parámetro \(\lambda\)
+$0.75$ huecos en promedio. Conocido el valor del parámetro $\lambda$
 para el tramo de un kilómetro, se procede a calcular la probabilidad de
 que aparezca más de un hueco en el tramo de un kilómetro, tal que
 $$\begin{align*}
@@ -1036,17 +1036,17 @@ $$\begin{align*}
                  &= 0.1733585
 \end{align*}$$
 
-Es decir que, la probabilidad de que se encuentre más de \(1\) hueco en
-un tramo de \(1\) kilómetro cuando se viaja por carretera, es del
-\(17.33\%\).
+Es decir que, la probabilidad de que se encuentre más de $1$ hueco en
+un tramo de $1$ kilómetro cuando se viaja por carretera, es del
+$17.33\%$.
 </li>
 <li>
 
 Finalmente, se tiene interés en conocer cual será el promedio y
 desviación estándar, del número de huecos que se encontrarán en la
-carretera en el tramo de \(5\) kilómetro. En este caso, como se cambia
-la unidad de medida de \(2\) kilómetros a \(5\) kilómetros, será
-necesario recalcular el valor de \(\lambda\), ta que
+carretera en el tramo de $5$ kilómetro. En este caso, como se cambia
+la unidad de medida de $2$ kilómetros a $5$ kilómetros, será
+necesario recalcular el valor de $\lambda$, ta que
 
 $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
@@ -1057,7 +1057,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Ahora, al aplicar la formular de esperanza matemática para la
-distribución Poisson, se tiene que el número esperado de huecos en \(5\)
+distribución Poisson, se tiene que el número esperado de huecos en $5$
 kilómetros es de $$\begin{align*}
 \mathbb{E}(X) & = \lambda \\
               & = 3.75\\
@@ -1065,7 +1065,7 @@ kilómetros es de $$\begin{align*}
 
 Similarmente, se procede a realizar el cálculo de la varianza para poder
 calcular la desviación estándar, del número de huecos que hay en un
-tramo de \(5\) kilómetros $$\begin{align*}
+tramo de $5$ kilómetros $$\begin{align*}
 Var(X) &= \lambda \\
        &= 3.75\\
 \end{align*}$$ y con este valor, se procede a calcular la desviación
@@ -1073,9 +1073,9 @@ estándar $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(3.75)} \\
 Sd(X) & = 1.936492
-\end{align*}$$ De lo anterior se tiene que, en el tramo de \(5\)
-kilómetros de carretera, se espera encontrar \(3.75\) huecos, con una
-desviación estándar de \(1.93\) huecos.
+\end{align*}$$ De lo anterior se tiene que, en el tramo de $5$
+kilómetros de carretera, se espera encontrar $3.75$ huecos, con una
+desviación estándar de $1.93$ huecos.
 </li>
 </ol>
 </main>
@@ -1108,18 +1108,18 @@ Suponga que las ventas realizada por una compañía gaseosas, en millones
 de pesos por mes, es una variable aleatoria continua con función de
 probabilidad dada por $$\begin{align*}
 f(x)=\frac{1}{12}e^{\frac{-x}{12}} \quad \quad x>0
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa las
+\end{align*}$$ siendo $X$ una variable aleatoria que representa las
 ventas realizadas en un mes en millones de pesos. A partir de dicha
 función
 </p>
 <ol>
 <li>
 Verifique si la función de densidad de probabilidad está bien definida?
-De no estarlo, multiplique la función por una constante \(k\) para que
+De no estarlo, multiplique la función por una constante $k$ para que
 quede bien definida.
 </li>
 <li>
-Calcule la probabilidad de que en un mes se venda como máximo \(8.3\)
+Calcule la probabilidad de que en un mes se venda como máximo $8.3$
 millones de pesos.
 </li>
 </ol>
@@ -1130,18 +1130,18 @@ Solución
 <li>
 
 Para verificar si la función está bien definida, es necesario en primer
-lugar observar si para todo \(X\) en el dominio definido, la función de
-probabilidad de densidad de probabilidad es mayor o igual a \(0\). Para
-ello supongamos \(3\) números diferentes, \(0.1\) \(10\) y \(300\), los
+lugar observar si para todo $X$ en el dominio definido, la función de
+probabilidad de densidad de probabilidad es mayor o igual a $0$. Para
+ello supongamos $3$ números diferentes, $0.1$ $10$ y $300$, los
 cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1) &= \frac{1}{12}e^{\frac{-0.1}{12}}=0.08264177 \\
 f(10) &= \frac{1}{12}e^{\frac{-10}{12}}=0.03621652 \\
 f(300) &= \frac{1}{12}e^{\frac{-300}{12}}=0.000000000001157329
-\end{align*}$$ Evidenciando que para todo \(x\gt 0\), \(f(x)\geq0\).<br>
+\end{align*}$$ Evidenciando que para todo $x\gt 0$, $f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
 probabilidad está bien definida, es necesario observar si al integrar
-dicha función su resultado es igual a \(1\), es decir,
+dicha función su resultado es igual a $1$, es decir,
 
 $$\begin{align*}
 \int_{-\infty}^\infty f(x)dx & = \int_{-\infty}^0 0\; dx + \int_{0}^\infty \frac{1}{12}e^{\frac{-x}{12}} dx \\
@@ -1151,13 +1151,13 @@ $$\begin{align*}
  & = \left[-e^{\frac{-\infty}{12}} + e^{\frac{-0}{12}}\right] \\
  & = -0 + 1 \\
  & = 1
-\end{align*}$$ Entonces, como la integral da exactamente \(1\), se
+\end{align*}$$ Entonces, como la integral da exactamente $1$, se
 tendrá que la función de densidad está bien definida.
 </li>
 <li>
 
 Ahora, como estamos interesados en calcular la probabilidad de que en un
-mes se venda como máximo \(8.3\) millones de pesos, tendremos que
+mes se venda como máximo $8.3$ millones de pesos, tendremos que
 calcular $$\begin{align*}
 \mathbb{P}(X \leq 8.3) &= \int_{0}^{8.3} \frac{1}{12}e^{\frac{-x}{12}} dx \\
                        &= \frac{1}{12} \int_{0}^{8.3} e^{\frac{-x}{12}} dx \\
@@ -1167,8 +1167,8 @@ calcular $$\begin{align*}
                        & = 0.4992592
 \end{align*}$$
 
-En consecuencia, se tendrá una probabilidad del \(49.93\%\) de que en un
-mes esta empresa se venda como máximo \(8.3\) millones de pesos.
+En consecuencia, se tendrá una probabilidad del $49.93\%$ de que en un
+mes esta empresa se venda como máximo $8.3$ millones de pesos.
 </li>
 </ol>
 </main>
@@ -1214,16 +1214,16 @@ Suponga que las ventas realizada por una compañía gaseosas, en millones
 de pesos por mes, es una variable aleatoria continua con función de
 probabilidad dada por $$\begin{align*}
 f(x)=\frac{1}{12}e^{\frac{-x}{12}} \quad \quad x>0
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa las
+\end{align*}$$ siendo $X$ una variable aleatoria que representa las
 ventas realizadas en un mes en millones de pesos. A partir de dicha
 función
 </p>
 <ol>
 <li>
-Calcule la función de distribución acumulada \(F(x)\).
+Calcule la función de distribución acumulada $F(x)$.
 </li>
 <li>
-Calcule la probabilidad de que en un mes se venda como mínimo \(16\)
+Calcule la probabilidad de que en un mes se venda como mínimo $16$
 millones de pesos.
 </li>
 </ol>
@@ -1247,7 +1247,7 @@ F(x)& = \int_{-\infty}^x f(t)dt \\
 <li>
 
 Dado que el interés es calcular la probabilidad de que en un mes se
-venda como mínimo \(16\) millones de pesos, entonces se tendrá que la
+venda como mínimo $16$ millones de pesos, entonces se tendrá que la
 probabilidad de interés, es la siguiente $$\begin{align*}
 \mathbb{P}(X \geq 16)
 \end{align*}$$
@@ -1264,7 +1264,7 @@ $$\begin{align*}
 \end{align*}$$
 
 y por tanto, se tendrá que la probabilidad de que en un mes se venda
-como mínimo \(16\) millones de pesos es del \(26.36\%\).
+como mínimo $16$ millones de pesos es del $26.36\%$.
 </li>
 </ol>
 </main>
@@ -1311,21 +1311,21 @@ Suponga que el tiempo máximo que se puede reservar una sala de
 conferencias grande en cierta empresa son cuatro horas. Por experiencia
 se sabe que la sala es reservada con mucha frecuencia, tanto para
 conferencias extensas como para conferencias breves, de hecho, se puede
-suponer que la duración \(X\) de una conferencia tiene una distribución
-uniforme en horas en el intervalo \([0, 4]\). Basado en lo anterior
+suponer que la duración $X$ de una conferencia tiene una distribución
+uniforme en horas en el intervalo $[0, 4]$. Basado en lo anterior
 </p>
 <ol>
 <li>
-Calcule la función de densidad de probabilidad \(f(x)\) y la función de
-distribución acumulada \(F(X)\) para el tiempo que dura una conferencia.
+Calcule la función de densidad de probabilidad $f(x)$ y la función de
+distribución acumulada $F(X)$ para el tiempo que dura una conferencia.
 </li>
 <li>
-Cuál es la probabilidad de que una conferencia dure menos de \(2\)
+Cuál es la probabilidad de que una conferencia dure menos de $2$
 horas?
 </li>
 <li>
-Si una conferencia lleva más de \(2\) horas, cuál es la probabilidad de
-que dure a lo más \(3\) horas?
+Si una conferencia lleva más de $2$ horas, cuál es la probabilidad de
+que dure a lo más $3$ horas?
 </li>
 <li>
 Cuál es el tiempo medio y la desviación estándar de la duración de una
@@ -1339,8 +1339,8 @@ Solución
 <li>
 
 Del enunciado anterior, se menciona que la duración de las conferencias
-sigue una distribución uniforme con límite mínimo \(a=0\), y límite
-máximo \(b=4\), y por tanto, se tendrá que la función de densidad de
+sigue una distribución uniforme con límite mínimo $a=0$, y límite
+máximo $b=4$, y por tanto, se tendrá que la función de densidad de
 probabilidad estará dada por $$\begin{align*}
 f(x) = \frac{1}{4-0} = \frac{1}{4} \quad \text{ para } 0\leq x\leq 4
 \end{align*}$$
@@ -1354,7 +1354,7 @@ F(x) = \frac{x-0}{4-a} = \frac{x}{4} \quad \text{ para } 0\leq x\leq 4
 <li>
 
 En este punto estamos interesados en calcular la probabilidad de que una
-conferencia dure menos de \(2\) horas, es decir, estamos interesados en
+conferencia dure menos de $2$ horas, es decir, estamos interesados en
 calcular $$\begin{align*}
 \mathbb{P}(X<2)
 \end{align*}$$
@@ -1365,7 +1365,7 @@ tendrá que la probabilidad planteada es equivalente a $$\begin{align*}
 \end{align*}$$
 
 y por tanto, al emplear la función de distribución acumulada
-\(F(X)=\mathbb{P}(X\leq x)\) se tendrá que
+$F(X)=\mathbb{P}(X\leq x)$ se tendrá que
 
 $$\begin{align*}
 \mathbb{P}(X<2) &= F(2) \\
@@ -1374,15 +1374,15 @@ $$\begin{align*}
                 &= 0.5
 \end{align*}$$
 
-Y por tanto se tendrá una probabilidad del \(50\%\) de que una
-conferencia en particular tarde menos de \(2\) horas.
+Y por tanto se tendrá una probabilidad del $50\%$ de que una
+conferencia en particular tarde menos de $2$ horas.
 </li>
 <li>
 
 A diferencia del caso anterior, en éste punto estamos interesados en
 calcular una probabilidad condicional, en donde nos piden la
-probabilidad de que una conferencia dure como máximo \(3\) horas, cuando
-se sabe que ésta conferencia ya lleva más de \(2\) horas y aún no
+probabilidad de que una conferencia dure como máximo $3$ horas, cuando
+se sabe que ésta conferencia ya lleva más de $2$ horas y aún no
 termina, es decir $$\begin{align*}
 \mathbb{P}(X\leq 3 | X>2)
 \end{align*}$$
@@ -1395,7 +1395,7 @@ tendremos que $$\begin{align*}
 \end{align*}$$
 
 Ahora, al aplicar la función de distribución acumulada
-\(F(X)=\mathbb{P}(X\leq x)\) se tendrá que $$\begin{align*}
+$F(X)=\mathbb{P}(X\leq x)$ se tendrá que $$\begin{align*}
 \mathbb{P}(X\leq 3 | X>2) &= \frac{\mathbb{P}(X\leq 3) - \mathbb{P}(X\leq 2)}{1 - \mathbb{P}(X\leq 2)} \\
                           &= \frac{F(3) - F(2)}{1 - F(2)} \\
                           &=\frac{\frac{3-0}{4-0} - \frac{2-0}{4-0}}{1 - \frac{2-0}{4-0}} \\
@@ -1406,8 +1406,8 @@ Ahora, al aplicar la función de distribución acumulada
 \end{align*}$$
 
 Y en consecuencia, se tendrá que si una conferencia ha durado más de
-\(2\) horas y aún no termina, la probabilidad de que cure como máximo
-\(3\) horas es de \(50\%\).
+$2$ horas y aún no termina, la probabilidad de que cure como máximo
+$3$ horas es de $50\%$.
 </li>
 <li>
 
@@ -1434,8 +1434,8 @@ Sd(X) &= \sqrt{Var(X)}\\
 \end{align*}$$
 
 Por lo cual tendremos que, el número promedio de horas que se reserva la
-sala de conferencias es de \(2\) horas, con una desviación estándar de
-\(1.15\) horas.
+sala de conferencias es de $2$ horas, con una desviación estándar de
+$1.15$ horas.
 </li>
 </ol>
 </main>
@@ -1474,9 +1474,9 @@ Ejercicio
 Suponga que se realiza un estudio sobre el tiempo de transferencia de
 datos de un sistema de red informática, en milisegundos. Si se encuentra
 que el tiempo de transferencia se distribuye gamma con parámetro de
-forma igual a \(3_{ms}\) y parámetro de escala igual a \(\frac{37}{3}\).
+forma igual a $3_{ms}$ y parámetro de escala igual a $\frac{37}{3}$.
 Basados en lo anterior, Cual es la probabilidad de que el tiempo de
-transferencia de datos exceda \(50_{ms}\)?
+transferencia de datos exceda $50_{ms}$?
 </p>
 <h3 data-toc-skip>
 Solución
@@ -1485,17 +1485,17 @@ Solución
 
 Basados en los parámetros de forma y escala, estamos interesados en
 calcular la probabilidad de que el tiempo de transferencia de datos
-exceda los \(50_{ms}\), es decir $$\begin{align*}
+exceda los $50_{ms}$, es decir $$\begin{align*}
   \mathbb{P}(X>50) 
 \end{align*}$$ la cual, al emplear la distribución
-\(Gamma(\alpha=3, \beta=37/3)\) se tendrá que $$\begin{align*}
+$Gamma(\alpha=3, \beta=37/3)$ se tendrá que $$\begin{align*}
   \mathbb{P}(X>50) &= \int_{50}^{\infty} \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\alpha-1}e^{-{\frac{x}{\beta}}} dx \\
                   &= \int_{50}^{\infty} \frac{1}{\Gamma(3)(37/3)^3} x^{3-1}e^{-{\frac{x}{(37/3)}}} dx \\
                    &= \frac{3^3}{\Gamma(3)(37)^3}\int_{50}^{\infty}  x^{2}e^{-{\frac{3x}{37}}} dx
 \end{align*}$$
 
 En donde para calcular tan integral debemos realizar integración por
-partes dos veces, debido a que el parámetro \(\alpha=3\), tal que
+partes dos veces, debido a que el parámetro $\alpha=3$, tal que
 $$\begin{align*}
   \mathbb{P}(X>50) &= \frac{3^3}{\Gamma(3)(37)^3}\int_{50}^{\infty}  x^{2}e^{-{\frac{3x}{37}}} dx\\
                    &=> u=x^2 \quad \quad \; dv = e^{-{\frac{3x}{37}}} dx \\
@@ -1508,7 +1508,7 @@ $$\begin{align*}
                    &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)x}{3^2} e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                    &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)}{3^2} xe^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                    &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty 
-\end{align*}$$ Por tanto al evaluar la variable \(x\) en los límites de
+\end{align*}$$ Por tanto al evaluar la variable $x$ en los límites de
 interés tendremos que $$\begin{align*}
 \mathbb{P}(X>50) &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty \\
                  &= \left(0 + 0 + 0 \right) - \left(-\frac{3^2}{\Gamma(3)(37)^2}(50^2) e^{-{\frac{3(50)}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} (50)e^{-{\frac{3(50)}{37}}} - \frac{(2)}{\Gamma(3)} e^{-{\frac{3(50)}{37}}}\right) \\
@@ -1516,7 +1516,7 @@ interés tendremos que $$\begin{align*}
                  &= 0.14259 + 0.07035 + 0.01735 \\
                  &= 0.23029
 \end{align*}$$ Es decir, que la probabilidad de que el tiempo de
-transferencia de datos exceda los \(50_{ms}\), es del \(23.029\%\).
+transferencia de datos exceda los $50_{ms}$, es del $23.029\%$.
 </p>
 </main>
 
@@ -1565,23 +1565,23 @@ Suponga que Bancolombia está interesado en saber si es necesario
 aumentar el número de cajeros que hay en una zona de la ciudad, y
 encuentra que el tiempo entre llegadas sucesiva de personas a un cajero
 de la zona, posee una distribución Exponencial con un tiempo promedio de
-\(0.8\) minutos. Entonces, basados en ésto, calcule la probabilidad de
-que la próxima persona en llegar al cajero tarde más de \(4\) minutos?
+$0.8$ minutos. Entonces, basados en ésto, calcule la probabilidad de
+que la próxima persona en llegar al cajero tarde más de $4$ minutos?
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 Para calcular la probabilidad de que la próxima persona tarde más de
-\(4\) minutos en llegar al cajero, debemos primero encontrar el valor
+$4$ minutos en llegar al cajero, debemos primero encontrar el valor
 del parámetro de la distribución Exponencial, en donde, nos dicen en el
-enunciado, que el tiempo promedio entre llegadas sucesivas es de \(0.8\)
+enunciado, que el tiempo promedio entre llegadas sucesivas es de $0.8$
 minutos, tal que $$\begin{align*}
 \mathbb{E}(X) &= 0.8
 \end{align*}$$ Entonces como para la distribución Exponencial se tiene
 que el valor de la esperanza matemática está dada por $$\begin{align*}
 \mathbb{E}(X) &= \beta
-\end{align*}$$ se tendrá que el parámetro \(\beta\) de la distribución
+\end{align*}$$ se tendrá que el parámetro $\beta$ de la distribución
 Exponencial será igual a $$\begin{align*}
 \beta &= 0.8
 \end{align*}$$ Ahora, con el valor de este parámetro podemos calcular la
@@ -1594,8 +1594,8 @@ Exponencial, tal que $$\begin{align*}
                 &= e^{-{\frac{4}{3}}} \\
                 &= 0.006737947
 \end{align*}$$ Es decir que la probabilidad de que la próxima persona en
-llegar cajero de Bancolombia tarde más de \(4\) minutos es de
-\(0.67\%\).
+llegar cajero de Bancolombia tarde más de $4$ minutos es de
+$0.67\%$.
 </p>
 </main>
 
@@ -1645,9 +1645,9 @@ Ejercicio
 Un ingeniero industrial realiza un estudio sobre la vida útil, en años,
 de un nuevo aire acondicionado que fabrican en la compañía donde
 trabaja, y luego de probar muchos aires, encontró que el tiempo de vida,
-en años, se distribuye Weibull con parámetros \(\alpha=2\) y
-\(\beta = 8\). Dado lo anterior, cuál es la probabilidad de que un aire
-acondicionado falle después de \(3\) años de uso?
+en años, se distribuye Weibull con parámetros $\alpha=2$ y
+$\beta = 8$. Dado lo anterior, cuál es la probabilidad de que un aire
+acondicionado falle después de $3$ años de uso?
 </p>
 <h3 data-toc-skip>
 Solución
@@ -1655,25 +1655,25 @@ Solución
 <p>
 En el enunciado del ejercicio nos dicen tanto la distribución de la vida
 útil del aire acondicionado, y los parámetros de la distribución, tal
-que, \(X \sim Wei(\alpha=2,\beta=8)\). Adicionalmente, estamos
+que, $X \sim Wei(\alpha=2,\beta=8)$. Adicionalmente, estamos
 interesados en calcular la probabilidad de que el aire acondicionado
-falle después de \(3\), es decir, que la vida útil supere los \(3\)
+falle después de $3$, es decir, que la vida útil supere los $3$
 años. Esto es $$\begin{align*}
 \mathbb{P}(X>3) = \int_3^\infty \frac{2}{8}\left(\frac{x}{8}\right)^{2 - 1}e^{-\left(\frac{x}{8}\right)^2} dx
 \end{align*}$$ Al hacer cambio de variable tenemos que $$\begin{align*}
 u= \left(\frac{x}{8}\right)^2 \quad \quad du = \frac{2}{8}\left(\frac{x}{8}\right)^{2-1} dx
 \end{align*}$$ Entonces, al evaluar los límites de la integral debido al
-cambio de variable, se tiene que cuando \(x=3\), el valor de
-\(u=(3/8)^2\), y cuando \(x=\infty\), el valor de
-\(u=(\infty/8)^2 = \infty\). Por tanto, al hacer el cambio de variable y
+cambio de variable, se tiene que cuando $x=3$, el valor de
+$u=(3/8)^2$, y cuando $x=\infty$, el valor de
+$u=(\infty/8)^2 = \infty$. Por tanto, al hacer el cambio de variable y
 cambiar los límites de integración tenemos que $$\begin{align*}
 \mathbb{P}(X\geq3) &= \int_{\left(\frac{3}{8}\right)^2}^\infty e^{-u} du \\
                    &=  -e^{-u} \Bigg|_{\left(\frac{3}{8}\right)^2}^\infty \\
                    &=  -e^{-\infty} + e^{-\left(\frac{3}{8}\right)^2} \\
                    &=  0 + 0.8688151 \\
                    &=  0.8688151
-\end{align*}$$ Es decir, se tendrá una probabilidad del \(86.88\%\) de
-que el aire acondicionado falle después de los \(3\) años de uso.
+\end{align*}$$ Es decir, se tendrá una probabilidad del $86.88\%$ de
+que el aire acondicionado falle después de los $3$ años de uso.
 </p>
 </main>
 
@@ -1758,11 +1758,11 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que cierto tipo de batería para celular dura en promedio \(5\)
-años con una desviación estándar de \(1.2\) años. Si se sabe por
+Suponga que cierto tipo de batería para celular dura en promedio $5$
+años con una desviación estándar de $1.2$ años. Si se sabe por
 experiencia que la distribución de las baterías se distribuye
 normalmente, cuál es la probabilidad de que una batería de celular dure
-al menos \(4\) años?
+al menos $4$ años?
 </p>
 <h3 data-toc-skip>
 Solución
@@ -1770,24 +1770,24 @@ Solución
 <p>
 
 En este caso estamos interesados en que la batería de una celular dure
-al menos \(4\) años, es decir, queremos calcular la siguiente
+al menos $4$ años, es decir, queremos calcular la siguiente
 probabilidad. $$\begin{align*}
 \mathbb{P}(X \geq 4)
 \end{align*}$$ Pero en este caso tenemos que la distribución de los
-datos no se distribuye \(N(0,1)\), si no que se distribuye
-\(N(5, 1.2)\), y por ello debemos aplicar el teorema de estandarización,
-con el fin de llevar la distribución \(N(5, 1.2)\) a una normal
+datos no se distribuye $N(0,1)$, si no que se distribuye
+$N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
+con el fin de llevar la distribución $N(5, 1.2)$ a una normal
 estándar, tal que $$\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde \(Z\sim N(0,1)\). Ahora, como la estructura de
-la probabilidad de \(Z\) no posee la estructura de la probabilidad de se
+\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
 \end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
-\(\mathbb{P}(Z \lt  -0.83)\) usando la función `DISTR.NORM.ESTAND.N()` de
+$\mathbb{P}(Z \lt  -0.83)$ usando la función `DISTR.NORM.ESTAND.N()` de
 <tt>Excel</tt>, donde se aprecia que
 
 $$\begin{align*}
@@ -1810,6 +1810,6 @@ $$\begin{align*}
 \end{align*}$$
 
 En consecuencia, se tendrá que la probabilidad de que una batería de
-celular dure al menos \(4\) años, es del \(76.67\%\).
+celular dure al menos $4$ años, es del $76.67\%$.
 </p>
 </main>

@@ -452,7 +452,7 @@ AR
 3
 </th>
 <th style="text-align:center;">
-\(\vdots\)
+$\vdots$
 </th>
 </tr>
 </thead>
@@ -462,19 +462,19 @@ AR
 0
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(\vdots\)
+$\vdots$
 </td>
 </tr>
 <tr>
@@ -482,7 +482,7 @@ AR
 1
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
 0
@@ -494,7 +494,7 @@ AR
 0
 </td>
 <td style="text-align:center;">
-\(\vdots\)
+$\vdots$
 </td>
 </tr>
 <tr>
@@ -502,19 +502,19 @@ AR
 2
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(X\)
-</td>
-<td style="text-align:center;">
-0
+$X$
 </td>
 <td style="text-align:center;">
 0
 </td>
 <td style="text-align:center;">
-\(\vdots\)
+0
+</td>
+<td style="text-align:center;">
+$\vdots$
 </td>
 </tr>
 <tr>
@@ -522,39 +522,39 @@ AR
 3
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
-\(X\)
+$X$
 </td>
 <td style="text-align:center;">
 0
 </td>
 <td style="text-align:center;">
-\(\vdots\)
+$\vdots$
 </td>
 </tr>
 <tr>
 <td style="text-align:center;">
-\(\ldots\)
+$\ldots$
 </td>
 <td style="text-align:center;">
-\(\ldots\)
+$\ldots$
 </td>
 <td style="text-align:center;">
-\(\ldots\)
+$\ldots$
 </td>
 <td style="text-align:center;">
-\(\ldots\)
+$\ldots$
 </td>
 <td style="text-align:center;">
-\(\ldots\)
+$\ldots$
 </td>
 <td style="text-align:center;">
-\(\ddots\)
+$\ddots$
 </td>
 </tr>
 </tbody>

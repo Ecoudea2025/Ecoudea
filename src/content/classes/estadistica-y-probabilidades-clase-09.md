@@ -38,19 +38,19 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
 <ol>
 <li>
 Verifique si la función de densidad de probabilidad está bien definida?
-De no estarlo, multiplique la función por una constante \(k\) para que
+De no estarlo, multiplique la función por una constante $k$ para que
 quede bien definida.
 </li>
 <li>
 Calcule la probabilidad de que el tiempo que tarda la serie en cumplir
-un ciclo sea de \(30\) minutos a \(50\) minutos.
+un ciclo sea de $30$ minutos a $50$ minutos.
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -60,19 +60,19 @@ Solución
 <li>
 
 Para verificar si la función está bien definida, es necesario en primer
-lugar observar si para todo \(X\) en el dominio definido, la función de
-probabilidad de densidad de probabilidad es mayor o igual a \(0\). Para
-ello supongamos \(3\) números diferentes, \(0.1\) \(0.4\) y \(0.7\), los
+lugar observar si para todo $X$ en el dominio definido, la función de
+probabilidad de densidad de probabilidad es mayor o igual a $0$. Para
+ello supongamos $3$ números diferentes, $0.1$ $0.4$ y $0.7$, los
 cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1)=(0.1)^2(1-0.1)^2=0.0081 \\
 f(0.4)=(0.4)^2(1-0.4)^2=0.0576 \\
 f(0.7)=(0.7)^2(1-0.7)^2=0.0441
-\end{align*}$$ La idea entonces, es apreciar que para todo \(0\lt x\lt 1\),
-\(f(x)\geq0\).<br>
+\end{align*}$$ La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
+$f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
 probabilidad está bien definida, es necesario observar si al integrar
-dicha función su resultado es igual a \(1\), es decir,
+dicha función su resultado es igual a $1$, es decir,
 
 $$\begin{align*}
 \int_{-\infty}^\infty f(x)dx & = \int_{-\infty}^0 0\; dx + \int_{0}^1 x^2(1-x)^2\; dx + \int_{1}^\infty 0\; dx \\
@@ -82,11 +82,11 @@ $$\begin{align*}
  & = \left(\frac{x^3}{3} - \frac{2x^4}{4} + \frac{x^5}{5} \right)\Bigg|^1_0 \\
  & = \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) - \left(\frac{0^3}{3} - \frac{0^4}{2} + \frac{0^5}{5} \right) \\
  & = \frac{1}{30}
-\end{align*}$$ Entonces, como la integral no da exactamente \(1\), se
-tendrá que multiplicar dicha función de densidad por una constante \(k\)
-que haga que su resultado sea \(1\), es decir, si multiplicamos la
-función por \(k=30\), se tendrá como resultado que la integral será
-igual a \(1\), ya que, $$\begin{align*}
+\end{align*}$$ Entonces, como la integral no da exactamente $1$, se
+tendrá que multiplicar dicha función de densidad por una constante $k$
+que haga que su resultado sea $1$, es decir, si multiplicamos la
+función por $k=30$, se tendrá como resultado que la integral será
+igual a $1$, ya que, $$\begin{align*}
 30\int_{-\infty}^\infty f(x)dx & = 30 \int_{0}^1 x^2(1-x)^2\; dx \\
  & = 30 \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) \\
  & = \frac{30}{30} \\
@@ -119,9 +119,9 @@ $$\begin{align*}
  & = 0.4645
 \end{align*}$$
 
-En consecuencia, se tendrá una probabilidad del \(46.45\%\) de que el
+En consecuencia, se tendrá una probabilidad del $46.45\%$ de que el
 tiempo que tarda la serie financiera en cumplir un ciclo estará entre
-\(30\) minutos y \(50\) minutos.
+$30$ minutos y $50$ minutos.
 </li>
 </ol>
 </main>
@@ -167,18 +167,18 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
 <ol>
 <li>
-Calcule la función de distribución acumulada \(F(x)\).
+Calcule la función de distribución acumulada $F(x)$.
 </li>
 <li>
 Calcule la probabilidad de que el tiempo que tarda la serie financiera
-en cumplir un ciclo, se encuentre entre \(30\) minutos y \(50\) minutos,
-mediante el uso de \(F(x)\).
+en cumplir un ciclo, se encuentre entre $30$ minutos y $50$ minutos,
+mediante el uso de $F(x)$.
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -200,8 +200,8 @@ F(x)& = 30\left(\frac{x^3}{3} - \frac{x^4}{2} + \frac{x^5}{5} \right)
 <li>
 
 Dado que el interés es calcular la probabilidad de que el tiempo que
-tarda la serie financiera en cumplir un ciclo, se encuentre entre \(30\)
-minutos y \(50\) minutos, entonces se tendrá que la probabilidad de
+tarda la serie financiera en cumplir un ciclo, se encuentre entre $30$
+minutos y $50$ minutos, entonces se tendrá que la probabilidad de
 interés, en horas, es la siguiente $$\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333)
 \end{align*}$$
@@ -216,8 +216,8 @@ $$\begin{align*}
 \end{align*}$$
 
 y por tanto, se tendrá que la probabilidad de que el tiempo que tarde la
-serie financiera en cumplir un ciclo estará entre \(30\) minutos y
-\(50\) minutos, es de \(46.45\%\).
+serie financiera en cumplir un ciclo estará entre $30$ minutos y
+$50$ minutos, es de $46.45\%$.
 </li>
 </ol>
 </main>
@@ -247,7 +247,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule el valor esperado en que tarda la serie financiera en cumplir un
 ciclo.
@@ -270,7 +270,7 @@ ciclo, tal que $$\begin{align*}
              &= 30 \left(\frac{1}{4} - \frac{2}{5} + \frac{1}{6}\right) \\
              &= 0.5
 \end{align*}$$ Y por tanto, se tendrá que el tiempo esperado que tarda
-una serie financiera en cumplir un ciclo será \(0.5\) horas, la cual al
+una serie financiera en cumplir un ciclo será $0.5$ horas, la cual al
 pasarla a minutos mediante la regla de tres
 
 $$\begin{align*}
@@ -282,7 +282,7 @@ a= \frac{0.5_\text{horas}\times 60_\text{min}}{1_\text{hora}} = 30_\text{min}
 \end{align*}$$
 
 el tiempo esperado que tarda una serie financiera en cumplir un ciclo
-será de \(30\) minutos.
+será de $30$ minutos.
 </p>
 </main>
 
@@ -315,19 +315,19 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(60X)\)
+$\mathbb{E}(60X)$
 </li>
 <li>
-\(\mathbb{E}(X+40)\)
+$\mathbb{E}(X+40)$
 </li>
 <li>
-\(\mathbb{E}(X^2)\)
+$\mathbb{E}(X^2)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -342,7 +342,7 @@ f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
 <ol>
 <li>
 
-se procede a calcular \(\mathbb{E}(60X)\), tal que $$\begin{align*}
+se procede a calcular $\mathbb{E}(60X)$, tal que $$\begin{align*}
 \mathbb{E}(60X)&= \int_{0}^160x\,f(x) dx\\
              &= \int_{0}^1(60x)\,30x^2(1-x)^2 dx\\
              &= 1800\int_{0}^1x^3\,(1-x)^2 dx\\
@@ -354,8 +354,8 @@ se procede a calcular \(\mathbb{E}(60X)\), tal que $$\begin{align*}
              &= 30
 \end{align*}$$
 
-Similarmente, al usar la propiedad \(\mathbb{E}(aX)=a\mathbb{E}(X)\),
-sabiendo que \(\mathbb{E}(X)=0.5\) se tendrá que $$\begin{align*}
+Similarmente, al usar la propiedad $\mathbb{E}(aX)=a\mathbb{E}(X)$,
+sabiendo que $\mathbb{E}(X)=0.5$ se tendrá que $$\begin{align*}
 \mathbb{E}(60X)&= 60\mathbb{E}(X) \\
                &= 60(0.5) \\
                &= 30 \\
@@ -363,7 +363,7 @@ sabiendo que \(\mathbb{E}(X)=0.5\) se tendrá que $$\begin{align*}
 </li>
 <li>
 
-Para el cálculo de \(\mathbb{E}(X+40)\), se procede a la aplicación de
+Para el cálculo de $\mathbb{E}(X+40)$, se procede a la aplicación de
 la ecuación de esperanza matemática, tal que $$\begin{align*}
 \mathbb{E}(X+40)&= \int_{0}^1(x+40)\,f(x) dx\\
              &= \int_{0}^1(x+40)\,30x^2(1-x)^2 dx\\
@@ -376,7 +376,7 @@ la ecuación de esperanza matemática, tal que $$\begin{align*}
              &= 40.5
 \end{align*}$$
 
-Ahora, aplicando la propiedad \(\mathbb{E}(X+b)=\mathbb{E}(X)+b\), se
+Ahora, aplicando la propiedad $\mathbb{E}(X+b)=\mathbb{E}(X)+b$, se
 tendrá que dicha esperanza puede calcularse en dos lineas, tal que
 $$\begin{align*}
 \mathbb{E}(X+40)&= \mathbb{E}(X) + 40\\
@@ -385,9 +385,9 @@ $$\begin{align*}
 \end{align*}$$
 </li>
 <li>
-Para el cálculo de la \(\mathbb{E}(X^2)\), se tendrá que en este caso
-\(m(X) = X^2\), y por tanto, al aplicar la propiedad
-\(\mathbb{E}(m(X))=\int_{-\infty}^\infty m(x)f(x) dx\) tendremos que
+Para el cálculo de la $\mathbb{E}(X^2)$, se tendrá que en este caso
+$m(X) = X^2$, y por tanto, al aplicar la propiedad
+$\mathbb{E}(m(X))=\int_{-\infty}^\infty m(x)f(x) dx$ tendremos que
 $$\begin{align*}
 \mathbb{E}(X^2)&= \int_{0}^1x^2\,f(x) dx\\
                &= \int_{0}^1x^2\,30x^2(1-x)^2 dx\\
@@ -442,15 +442,15 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 </p>
 <ol>
 <li>
-Calcule la \(Var(X)\).
+Calcule la $Var(X)$.
 </li>
 <li>
-Calcule la \(Sd(X)\).
+Calcule la $Sd(X)$.
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -460,8 +460,8 @@ Solución
 <li>
 
 A partir de las ecuaciones anteriormente presentadas, se tiene que la
-\(Var(X)\), puede calcularse a partir de la
-\(\mathbb{E}(X^2)=0.2857142857\) y la \(\mathbb{E}(X)=0.5\). Entonces
+$Var(X)$, puede calcularse a partir de la
+$\mathbb{E}(X^2)=0.2857142857$ y la $\mathbb{E}(X)=0.5$. Entonces
 basados en estos valores se tendrá que la varianza del tiempo en horas
 que tarda la serie financiera en cumplir un ciclo está dada por
 
@@ -473,14 +473,14 @@ Var(X)&=\mathbb{E}(X^2) - \mathbb{E}(X)^2 \\
 \end{align*}$$
 
 es decir, se tendrá que la varianza del tiempo que tarda una serie
-financiera en cumplir un ciclo es de \(0.0357142857\) horas\(^2\).
+financiera en cumplir un ciclo es de $0.0357142857$ horas$^2$.
 </li>
 <li>
 
 Ahora bien, dado que la varianza no tiene una interpretación aplicable
 al conjunto de datos, entonces, se procede a calcular la desviación
 estándar, la cual es posible calcular a partir del valor de la
-\(Var(X)=0.0357142857\), tal que
+$Var(X)=0.0357142857$, tal que
 
 $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
@@ -489,9 +489,9 @@ Sd(X) &= \sqrt{Var(X)} \\
 \end{align*}$$
 
 y en consecuencia, se tendrá que el tiempo esperado que tarda una serie
-financiera en cumplir un ciclo será \(0.5\) horas, con una desviación
-estándar de \(0.1889822\) horas. Esto es, un promedio de \(30\) minutos
-con una desviación de \(11.33893\).
+financiera en cumplir un ciclo será $0.5$ horas, con una desviación
+estándar de $0.1889822$ horas. Esto es, un promedio de $30$ minutos
+con una desviación de $11.33893$.
 </li>
 </ol>
 </main>

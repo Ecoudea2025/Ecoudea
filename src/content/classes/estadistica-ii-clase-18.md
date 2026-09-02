@@ -49,16 +49,16 @@ Ejercicio
 </h3>
 <p>
 
-Sea una muestra aleatoria \(X_1, X_2, \ldots, X_n\) con media
-\(\mathbb{E}(X)=\mu\) y varianza desconocida \(Var(X) =\sigma^2\),
-entonces si se define el estimador \(\tilde{S}^2\) tal que
+Sea una muestra aleatoria $X_1, X_2, \ldots, X_n$ con media
+$\mathbb{E}(X)=\mu$ y varianza desconocida $Var(X) =\sigma^2$,
+entonces si se define el estimador $\tilde{S}^2$ tal que
 
 $$\begin{align*}
   \tilde{S}^2=\frac{1}{n} \sum_{i=1}^n (X_i - \bar{X})^2
 \end{align*}$$
 
-Muestre si el estimador \(\tilde{S}^2\) es un estimador insesgado del
-parámetro \(\sigma^2\). De no serlo, calcule el valor del sesgo.
+Muestre si el estimador $\tilde{S}^2$ es un estimador insesgado del
+parámetro $\sigma^2$. De no serlo, calcule el valor del sesgo.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -90,8 +90,8 @@ $$\begin{align*}
 &=\frac{(n-1)\sigma^2}{n}
 \end{align*}$$
 
-y como \(\frac{(n-1)\sigma^2}{n} \neq \sigma^2\) se concluye que el
-estimador \(\tilde{S}^2\) no es un estimador insesgado de \(\sigma^2\) y
+y como $\frac{(n-1)\sigma^2}{n} \neq \sigma^2$ se concluye que el
+estimador $\tilde{S}^2$ no es un estimador insesgado de $\sigma^2$ y
 su sesgo es igual a
 
 $$\begin{align*}
@@ -126,30 +126,30 @@ Ejercicio
 </h3>
 <p>
 
-Sea una muestra aleatoria \(X_1, X_2, \ldots, X_n\) con media
-\(\mathbb{E}(X)=\mu\) y varianza desconocida \(Var(X) =\sigma^2\),
-entonces si se define el estimador \(\tilde{S}^2\) tal que
+Sea una muestra aleatoria $X_1, X_2, \ldots, X_n$ con media
+$\mathbb{E}(X)=\mu$ y varianza desconocida $Var(X) =\sigma^2$,
+entonces si se define el estimador $\tilde{S}^2$ tal que
 
 $$\begin{align*}
   \tilde{S}^2=\frac{1}{n} \sum_{i=1}^n (X_i - \bar{X})^2
 \end{align*}$$
 
-Muestre si el estimador sesgado \(\tilde{S}^2\) es un estimador
-asintóticamente insesgado del parámetro \(\sigma^2\).
+Muestre si el estimador sesgado $\tilde{S}^2$ es un estimador
+asintóticamente insesgado del parámetro $\sigma^2$.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Con el fin de probar si el estimador sesgado \(\tilde{S}^2\) es un
+Con el fin de probar si el estimador sesgado $\tilde{S}^2$ es un
 estimador asintóticamente insesgado, se debe aplicar el límite cuando
-\(n\to infty\) del sesgo del estimado \(\mathbb{B}(\tilde{S}^2)\), para
-observar si este tiende o no \(0\), tal que $$\begin{align*}
+$n\to infty$ del sesgo del estimado $\mathbb{B}(\tilde{S}^2)$, para
+observar si este tiende o no $0$, tal que $$\begin{align*}
 \lim_{n\to \infty}\mathbb{B}(\tilde{S}^2) &= \lim_{n\to \infty} -\frac{\sigma^2}{n} \\
 \end{align*}$$
 
-En donde se observa que al estar el sesgo dividido por \(n\) se tiene
+En donde se observa que al estar el sesgo dividido por $n$ se tiene
 que
 
 $$\begin{align*}
@@ -157,7 +157,7 @@ $$\begin{align*}
 &= 0
 \end{align*}$$
 
-concluyendo que el estimador \(\mathbb{B}(\tilde{S}^2)\) es un estimador
+concluyendo que el estimador $\mathbb{B}(\tilde{S}^2)$ es un estimador
 asintóticamente insesgado.
 </p>
 </main>
@@ -201,19 +201,19 @@ Ejercicio
 </h3>
 <p>
 
-Sea una muestra aleatoria \(X_1, X_2, \ldots, X_50\) con media
-desconocida \(\mathbb{E}(X)=\mu\) y varianza \(Var(X) =\sigma^2\),
-entonces si se define el estimador \(\bar{X}_1\) como
+Sea una muestra aleatoria $X_1, X_2, \ldots, X_50$ con media
+desconocida $\mathbb{E}(X)=\mu$ y varianza $Var(X) =\sigma^2$,
+entonces si se define el estimador $\bar{X}_1$ como
 
 $$\begin{align*}
   \bar{X}_1=\frac{1}{50} \sum_{i=1}^{50} X_i
 \end{align*}$$
 
-y el estimador \(\bar{X}_2\) como
+y el estimador $\bar{X}_2$ como
 
 $$\begin{align*}
   \bar{X}_2=\frac{1}{4} (X_1 + X_7 + X_{10} + X_{50})
-\end{align*}$$ estimadores para la media desconocida \(\mu\), calcule la
+\end{align*}$$ estimadores para la media desconocida $\mu$, calcule la
 eficiencia relativa y concluya cuál de los dos estimadores es más
 eficiente.
 </p>
@@ -222,14 +222,14 @@ Solución
 </h3>
 <p>
 
-Con el fin de probar cuál de los dos estimadores para la media \(\mu\),
+Con el fin de probar cuál de los dos estimadores para la media $\mu$,
 se decide calcular el coeficiente de eficiencia relativa, basados en la
 varianza de los dos estimadores, en donde la varianza del estimador
-\(\bar{X}_1\) es igual a $$\begin{align*}
+$\bar{X}_1$ es igual a $$\begin{align*}
 Var(\bar{X}_1)=\frac{\sigma^2}{50}
 \end{align*}$$
 
-mientras que, el estimador \(\bar{X}_2\) es igual a $$\begin{align*}
+mientras que, el estimador $\bar{X}_2$ es igual a $$\begin{align*}
 Var(\bar{X}_2)=\frac{\sigma^2}{4}
 \end{align*}$$
 
@@ -244,8 +244,8 @@ $$\begin{align*}
       &= 0.08
 \end{align*}$$
 
-En donde se observa al ser \(0.08 \lt  1\) se tendrá que \(EFR \lt  1\) y por
-tanto se concluirá que el estimador \(\bar{X}_1\) será más eficiente que
-el estimador \(\bar{X}_2\).
+En donde se observa al ser $0.08 \lt  1$ se tendrá que $EFR \lt  1$ y por
+tanto se concluirá que el estimador $\bar{X}_1$ será más eficiente que
+el estimador $\bar{X}_2$.
 </p>
 </main>

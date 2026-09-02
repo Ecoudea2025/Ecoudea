@@ -65,7 +65,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -84,17 +84,17 @@ Solución
 En este caso estamos interesados en calcular el salario promedio
 muestral de los del programa de ingeniería industrial, y para ello no
 están dando la información individual obtenida para cada uno de los
-\(15\) egresados. <br> <br> Entonces para realizar el cálculo empleamos
+$15$ egresados. <br> <br> Entonces para realizar el cálculo empleamos
 la ecuación para el cálculo de la media muestral, tal que
 $$\begin{align*}
   \bar{X}=\sum_{i=1}^n\frac{x_i}{n}
 \end{align*}$$ En donde, si llamamos cada una de las observaciones como
-\(X_1, X_2, \ldots, X_{15}\), tendremos que $$\begin{align*}
+$X_1, X_2, \ldots, X_{15}$, tendremos que $$\begin{align*}
   \bar{X} &= \frac{1.79 + 2.93 + 1.22 + \ldots + 3.24}{15}\\
           &= 1.659333
 \end{align*}$$ Por tanto, se tendrá que el promedio muestral obtenido
 para el salario de los egresados del programa de ingeniería industrial
-es de \(1.659\) millones de pesos.
+es de $1.659$ millones de pesos.
 </p>
 </main>
 
@@ -127,7 +127,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -137,7 +137,7 @@ millones de pesos $$\begin{align*}
 \end{align*}$$
 
 Basados e la información anterior, calcule la varianza muestral del
-salario de los \(15\) egresados del programa de ingeniería industrial.
+salario de los $15$ egresados del programa de ingeniería industrial.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -145,20 +145,20 @@ Solución
 <p>
 En este ejercicio nos preguntan por la varianza muestral del salario de
 los egresados del programa de ingeniería industrial, y para realizar el
-cálculo nos dan el salario individual de cada uno de los \(15\)
+cálculo nos dan el salario individual de cada uno de los $15$
 egresados. <br> <br> Para realizar el cálculo de la varianza de los
 salarios de los egresados, empleamos la ecuación de la varianza
 muestral, tal que $$\begin{align*}
   S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}
 \end{align*}$$ En donde, si cada una de las observaciones hace
-referencia los valores \(X_1, X_2, \ldots, X_{15}\), y el valor de la
-media es igual a \(\bar{X}=1.659333\) tendremos que $$\begin{align*}
+referencia los valores $X_1, X_2, \ldots, X_{15}$, y el valor de la
+media es igual a $\bar{X}=1.659333$ tendremos que $$\begin{align*}
   S^2 &= \frac{(1.78 - 1.659333)^2 + (2.93 - 1.659333)^2+\ldots+(3.24 - 1.659333)^2}{15-1} \\
       &= \frac{0.01456052 + 1.614595 + \ldots + 2.498508}{14}\\
       &= 0.4501638
 \end{align*}$$ Por tanto, se tendrá que la varianza muestral del salario
 de los egresados del programa de ingeniería industrial es de
-\(0.4501638\).
+$0.4501638$.
 </p>
 </main>
 
@@ -189,7 +189,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -199,7 +199,7 @@ millones de pesos $$\begin{align*}
 \end{align*}$$
 
 Basados e la información anterior, calcule el salario promedio de los
-\(15\) egresados del programa de ingeniería industrial.
+$15$ egresados del programa de ingeniería industrial.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -221,8 +221,8 @@ tendremos que $$\begin{align*}
 \end{align*}$$
 
 Por tanto, se tendrá que el promedio muestral obtenido para el salario
-de los egresados del programa de ingeniería industrial es de \(1.659\)
-millones de pesos, con una desviación estándar de \(670\) mil pesos.
+de los egresados del programa de ingeniería industrial es de $1.659$
+millones de pesos, con una desviación estándar de $670$ mil pesos.
 
 </p>
 </main>
@@ -258,7 +258,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -269,7 +269,7 @@ millones de pesos $$\begin{align*}
 
 Basados e la información anterior, calcule la proporción muestral de
 egresados del programa de ingeniería industrial que presentan salarios
-que superan \(1.5\) millones de pesos
+que superan $1.5$ millones de pesos
 </p>
 <h3 data-toc-skip>
 Solución
@@ -277,10 +277,10 @@ Solución
 <p>
 
 Para calcular la proporción muestral del salario de los egresados del
-programa de ingeniería industrial que superan \(1.5\) millones de pesos,
+programa de ingeniería industrial que superan $1.5$ millones de pesos,
 por tanto lo que debemos hacer es primero verificar cuales de los
 registros cumplen la condición planteada, en donde marcaremos como un
-\(1\) los registros que cumplen la condición y como \(0\) aquellos
+$1$ los registros que cumplen la condición y como $0$ aquellos
 registros que no cumplen la condición, tal que
 
 $$\begin{align*}
@@ -289,7 +289,7 @@ $$\begin{align*}
 \underbrace{1.53}_{1} \quad \underbrace{0.98}_{0} \quad \underbrace{1.73}_{1} \quad \underbrace{1.38}_{0} \quad \underbrace{3.24}_{1}
 \end{align*}$$
 
-de aquí se observa que de las \(15\) observaciones hay un total de \(7\)
+de aquí se observa que de las $15$ observaciones hay un total de $7$
 que cumplen la condición por lo cual se tendrá que
 
 $$\begin{align*}
@@ -300,7 +300,7 @@ $$\begin{align*}
 
 Por tanto, se tendrá que la proporción muestral o porcentaje muestral de
 egresados del programa de ingeniería industrial que devengan un salario
-superior a \(1.5\) millones de pesos es del \(46.66\%\).
+superior a $1.5$ millones de pesos es del $46.66\%$.
 
 </p>
 </main>
@@ -346,22 +346,22 @@ Ejercicio
 </h3>
 <p>
 Suponga que poseemos una distribución normal estándar, tal que
-\(Z\sim N(0,1)\). Entonces, a partir de esta distribución y empleando la
+$Z\sim N(0,1)$. Entonces, a partir de esta distribución y empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(Z\leq 1.96)\)
+$\mathbb{P}(Z\leq 1.96)$
 </li>
 <li>
-\(\mathbb{P}(Z\gt  2.13)\)
+$\mathbb{P}(Z\gt  2.13)$
 </li>
 <li>
-\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\)
+$\mathbb{P}(-2.42 \lt Z \leq 0.24)$
 </li>
 <li>
-\(\mathbb{P}(Z\gt z) = 0.0129\)
+$\mathbb{P}(Z\gt z) = 0.0129$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -377,27 +377,27 @@ misma. Y para ello se presenta la siguiente imagen.
 
 <p>
 En donde, se aprecia que, <strong>los cuadros rojos representan los
-valores críticos</strong> \(z\) que se emplea para calcular
+valores críticos</strong> $z$ que se emplea para calcular
 probabilidades, en donde, el cuadro rojo de la parte izquierda muestra
 la parte entera y el primer decimal, mientras que el cuadro rojo de la
 parte superior muestra el segundo decimal. <strong>El cuadro azul
-representa las probabilidades</strong> \(\alpha\) que se desean calcular
+representa las probabilidades</strong> $\alpha$ que se desean calcular
 a partir de los valores críticos. Finalmente, <strong>el cuadro azul
 claro representa el funcionamiento de la tabla </strong>, la cual
 muestra las probabilidades que poseen la forma
-\(\mathbb{P}(Z\lt z)=\alpha\).
+$\mathbb{P}(Z\lt z)=\alpha$.
 </p>
 <ol>
 <li>
 
 Con la explicación de la tabla en mente, la primera probabilidad a
-calcular es \(\mathbb{P}(Z\leq 1.96)\). Entonces como esta probabilidad
-tiene la estructura establecida por la tabla \(\mathbb{P}(Z\leq z)\),
-será cuestión de buscar el valor crítico \(1.96\) para localizar la
+calcular es $\mathbb{P}(Z\leq 1.96)$. Entonces como esta probabilidad
+tiene la estructura establecida por la tabla $\mathbb{P}(Z\leq z)$,
+será cuestión de buscar el valor crítico $1.96$ para localizar la
 probabilidad asociada, tal que se busca en la parte izquierda, el valor
-\(1.9\) y en la parte superior el valor \(0.06\), y en donde se
+$1.9$ y en la parte superior el valor $0.06$, y en donde se
 encuentre el cruce de ambos valores, se encontrará el valor de la
-probabilidad asociada a \(1.96\). Dicho procedimiento se muestra en la
+probabilidad asociada a $1.96$. Dicho procedimiento se muestra en la
 siguiente imagen
 
 <img src="/assets/images/TablaNormalEst2.jpg" alt="" style="max-width: 80%;">
@@ -410,20 +410,20 @@ $$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
 <li>
 
 A diferencia del punto anterior, observamos que la probabilidad
-propuesta \(\mathbb{P}(Z\gt  2.13)\) tiene una estructura diferente a la
-establecida por la tabla \(\mathbb{P}(Z\leq z)\), y por tanto, será
+propuesta $\mathbb{P}(Z\gt  2.13)$ tiene una estructura diferente a la
+establecida por la tabla $\mathbb{P}(Z\leq z)$, y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
-\(\mathbb{P}(Z\gt  2.13)\), mediante el empleo de la
-\(\mathbb{P}(Z\leq 2.13)\), la cual podemos buscar en la tabla
-directamente. Para localizar \(\mathbb{P}(Z\leq 2.13)\), se busca el
-valor \(2.1\) en la parte izquierda de la tabla, y el valor \(0.03\) en
+$\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
+$\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
+directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
+valor $2.1$ en la parte izquierda de la tabla, y el valor $0.03$ en
 la parte superior de la tabla, y en donde se encuentre el cruce de ambos
-valores, se encontrará el valor de la probabilidad asociada a \(2.13\).
+valores, se encontrará el valor de la probabilidad asociada a $2.13$.
 
 <img src="/assets/images/TablaNormalEst3.jpg" alt="" style="max-width: 80%;">
 
@@ -444,9 +444,9 @@ $$\begin{align*}
 </li>
 <li>
 
-En este caso, se desea calcular la \(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), y
+En este caso, se desea calcular la $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, y
 se observa que la estructura de dicha probabilidad es diferente a la
-establecida por la tabla \(\mathbb{P}(Z\leq z)\), pero también podemos
+establecida por la tabla $\mathbb{P}(Z\leq z)$, pero también podemos
 apreciar que si aplicamos las propiedades de la función de distribución
 acumulada para el caso continuo, ya presentadas en la
 <a href="../../ProbabilidadeInferencia/PeIEClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
@@ -455,9 +455,9 @@ acumulada para el caso continuo, ya presentadas en la
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), puede calcularse mediante el empleo
-de las probabilidades acumuladas \(\mathbb{P}(Z \leq 0.24)\) y
-\(\mathbb{P}(Z \leq -2.42)\), las cuales pueden calcularse en la tabla
+$\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
+de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
+$\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
 de forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaNormalEst4.jpg" alt="" style="max-width:100%;">
@@ -479,7 +479,7 @@ $$\begin{align*}
 <li>
 
 En este punto, a diferencia de los puntos anteriores, no están dando el
-valor de la probabilidad y nos piden encontrar el valor crítico \(z\).
+valor de la probabilidad y nos piden encontrar el valor crítico $z$.
 Es decir debemos calcular el valor crítico asociado a la probabilidad
 $$\begin{align*}
 \mathbb{P}(Z>z) = 0.0129
@@ -495,16 +495,16 @@ $$\begin{align*}
 0.9871 &= \mathbb{P}(Z\leq z)
 \end{align*}$$
 
-En donde observamos que la probabilidad \(\mathbb{P}(Z\leq z)\) ya posee
+En donde observamos que la probabilidad $\mathbb{P}(Z\leq z)$ ya posee
 la estructura de la tabla, y en consecuencia, podemos proceder a
-encontrar el valor crítico \(z\), buscando el valor de la probabilidad
-\(0.9871\) en la parte interior de la tabla, y luego buscando cual es el
-valor crítico \(z\) asociado a dicha probabilidad.
+encontrar el valor crítico $z$, buscando el valor de la probabilidad
+$0.9871$ en la parte interior de la tabla, y luego buscando cual es el
+valor crítico $z$ asociado a dicha probabilidad.
 
 <img src="/assets/images/TablaNormalEst5.jpg" alt="" style="max-width: 80%;">
 
-En la tabla se aprecia, que al buscar la probabilidad \(0.9871\)
-encontramos que el valor crítico \(z\) asociado es de \(2.24\), es decir
+En la tabla se aprecia, que al buscar la probabilidad $0.9871$
+encontramos que el valor crítico $z$ asociado es de $2.24$, es decir
 
 $$\begin{align*}
 \mathbb{P}(Z\leq 2.24) &= 0.9871
@@ -565,21 +565,21 @@ Teorema 1
 </h3>
 <p>
 
-Sean \(X_1\) y \(X_2\) dos variables aleatorias normalmente distribuidas
-con media \(\mu\) y varianza \(\sigma^2\). Y si \(Y\) es una combinación
-lineal de \(X_1\) y \(X_2\), tal que $$\begin{align*}
+Sean $X_1$ y $X_2$ dos variables aleatorias normalmente distribuidas
+con media $\mu$ y varianza $\sigma^2$. Y si $Y$ es una combinación
+lineal de $X_1$ y $X_2$, tal que $$\begin{align*}
 Y = X_1 + X_2
-\end{align*}$$ entonces, la media de \(Y\) estará dada por
+\end{align*}$$ entonces, la media de $Y$ estará dada por
 $$\begin{align*}
 \mathbb{E}(Y) = \mu_1 + \mu_2
 \end{align*}$$
 
-y la varianza de \(Y\) estará dada por $$\begin{align*}
+y la varianza de $Y$ estará dada por $$\begin{align*}
 Var(Y) = \sigma_{x_1}^2 + \sigma_{x_2}^2 + 2 \sigma_{x_1x_2}
 \end{align*}$$
 
-o en caso de que \(X_1\) y \(X_2\) sean variables aleatorias
-independientes, entonces se tendrá que la varianza de \(Y\) estará dada
+o en caso de que $X_1$ y $X_2$ sean variables aleatorias
+independientes, entonces se tendrá que la varianza de $Y$ estará dada
 por $$\begin{align*}
 Var(Y) = \sigma_{x_1}^2 + \sigma_{x_2}^2
 \end{align*}$$
@@ -597,9 +597,9 @@ Teorema 2
 </h3>
 <p>
 
-Sea \(X_1, X_2, \ldots, X_n\) variables aleatorias independientes,
-distribuidas normalmente con medias \(\mu_1, \mu_2, \ldots, \mu_n\) y
-varianzas \(\sigma_1^2, \sigma_2^2, \ldots, \sigma_n^2\), entonces la
+Sea $X_1, X_2, \ldots, X_n$ variables aleatorias independientes,
+distribuidas normalmente con medias $\mu_1, \mu_2, \ldots, \mu_n$ y
+varianzas $\sigma_1^2, \sigma_2^2, \ldots, \sigma_n^2$, entonces la
 variable aleatorias $$\begin{align*}
 Y = a_1 X_1 + a_2 X_2 + \ldots + a_n X_n
 \end{align*}$$
@@ -612,7 +612,7 @@ y varianza $$\begin{align*}
 \sigma^2_Y = a_1 \sigma^2_1 + a_2 \sigma^2_2 + \ldots + a_n \sigma^2_n
 \end{align*}$$
 
-es decir, \(Y\sim N(\mu_Y, \sigma^2_Y)\).
+es decir, $Y\sim N(\mu_Y, \sigma^2_Y)$.
 </p>
 </main>
 <button id="Show11" class="btn btn-secondary">
@@ -627,23 +627,23 @@ Teorema 3
 </h3>
 <p>
 
-Sea \(X_1, X_2, \ldots, X_n\) variables aleatorias mutuamente
+Sea $X_1, X_2, \ldots, X_n$ variables aleatorias mutuamente
 independientes, que tienen una distribución chi-cuadrado con
-\(\nu_1, \nu_2, \ldots, \nu_n\) grados de libertad, entonces la variable
+$\nu_1, \nu_2, \ldots, \nu_n$ grados de libertad, entonces la variable
 aleatoria $$\begin{align*}
 Y = X_1 + X_2 + \ldots + X_n
 \end{align*}$$
 
 tiene una distribución chi-cuadrado con
-\(\nu = \nu_1 + \nu_2 + \ldots + \nu_n\) grados de libertad, es decir,
-\(Y\sim \chi^2(\nu)\)
+$\nu = \nu_1 + \nu_2 + \ldots + \nu_n$ grados de libertad, es decir,
+$Y\sim \chi^2(\nu)$
 </p>
 <h3 data-toc-skip>
 Teorema 3.1
 </h3>
 <p>
-Si \(Y\sim \chi^2_\nu\) entonces se puede probar que la media y varianza
-de la variable aleatoria \(X\) están dadas por $$\begin{align*}
+Si $Y\sim \chi^2_\nu$ entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por $$\begin{align*}
 \mathbb{E}(X)=\nu \quad \quad Var(X)=2\nu
 \end{align*}$$
 </p>
@@ -660,22 +660,22 @@ Teorema 4
 </h3>
 <p>
 
-Sea \(X_1, X_2, \ldots, X_n\) una muestra aleatoria *iid* de tamaño
-\(n\), que poseen una distribución \(N(\mu,\sigma^2)\), entonces
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, que poseen una distribución $N(\mu,\sigma^2)$, entonces
 $$\begin{align*}
 Z_i = \frac{X_i - \mu}{\sigma} \sim N(0,1)
 \end{align*}$$
 
-para \(i =1,2,\ldots,n\) serán variables aleatorias independientes con
+para $i =1,2,\ldots,n$ serán variables aleatorias independientes con
 distribuciones normales estándar. Además, se tendrá que $$\begin{align*}
 Z_i^2 = \frac{(X_i - \mu)^2}{\sigma^2} \sim \chi^2_{1}
 \end{align*}$$
 
 serán variables aleatorias independientes con distribuciones
-chi-cuadrado con \(1\) grado de libertad. Entonces, basados en el
+chi-cuadrado con $1$ grado de libertad. Entonces, basados en el
 Teorema 3 se obtiene que $$\begin{align*}
 Y = \sum_{i=1}^n Z_i^2 = \sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n
-\end{align*}$$ tendrá una distribución chi-cuadrado con \(n\) grados de
+\end{align*}$$ tendrá una distribución chi-cuadrado con $n$ grados de
 libertad.
 </p>
 </main>
@@ -746,23 +746,23 @@ Ocultar Ejercicio Manejo de Tabla `$\chi^2$`
 Ejercicio
 </h3>
 <p>
-Suponga que poseemos una distribución chi-cuadrado con \(\nu\) grados de
+Suponga que poseemos una distribución chi-cuadrado con $\nu$ grados de
 libertad. Entonces, a partir de esta distribución y empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistChiSquare.pdf">Tabla
 de la Distribución Chi-Cuadrado</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(\chi^2_5 \gt  3)\)
+$\mathbb{P}(\chi^2_5 \gt  3)$
 </li>
 <li>
-\(\mathbb{P}(\chi^2_{20} \leq 37.566)\)
+$\mathbb{P}(\chi^2_{20} \leq 37.566)$
 </li>
 <li>
-\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\)
+$\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$
 </li>
 <li>
-\(\mathbb{P}(\chi^2_{8} \lt  x) = 0.10\)
+$\mathbb{P}(\chi^2_{8} \lt  x) = 0.10$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -778,27 +778,27 @@ misma. Y para ello se presenta la siguiente imagen.
 
 <p>
 En donde, se aprecia que, <strong>el cuadro azul representan los valores
-críticos</strong> \(x\) que se emplea para calcular probabilidades.
-<strong>El cuadro rojo representa las probabilidades</strong> \(\alpha\)
+críticos</strong> $x$ que se emplea para calcular probabilidades.
+<strong>El cuadro rojo representa las probabilidades</strong> $\alpha$
 que se desean calcular a partir de los valores críticos. <strong>El
-cuadro verde representa los grados de libertad</strong> \(\nu\) que se
+cuadro verde representa los grados de libertad</strong> $\nu$ que se
 emplean para calcular probabilidades junto al empleo de los valores
 críticos. Finalmente, <strong>el cuadro azul claro representa el
 funcionamiento de la tabla </strong>, la cual muestra las probabilidades
-que poseen la forma \(\mathbb{P}(\chi_\nu^2\geq x)=\alpha\).
+que poseen la forma $\mathbb{P}(\chi_\nu^2\geq x)=\alpha$.
 </p>
 <ol>
 <li>
 
 Con la explicación de la tabla en mente, la primera probabilidad a
-calcular es \(\mathbb{P}(\chi^2_5 \gt  3)\). Entonces como esta
+calcular es $\mathbb{P}(\chi^2_5 \gt  3)$. Entonces como esta
 probabilidad tiene la estructura establecida por la tabla
-\(\mathbb{P}(\chi_\nu^2\geq x)\), será cuestión de buscar para \(5\)
-grados de libertad, el valor crítico \(3\) para localizar la
+$\mathbb{P}(\chi_\nu^2\geq x)$, será cuestión de buscar para $5$
+grados de libertad, el valor crítico $3$ para localizar la
 probabilidad asociada, tal que se busca en la parte izquierda, los
-grados de libertad \(5\), y en la parte central (siguiendo la misma fila
+grados de libertad $5$, y en la parte central (siguiendo la misma fila
 en la cual se encontraron los grados de libertad) se busca el valor
-crítico \(3\). Una vez ubicado el valor crítico, se busca cuál es la
+crítico $3$. Una vez ubicado el valor crítico, se busca cuál es la
 probabilidad de interés asociada al valor crítico y grados de libertad,
 en la parte superior. Dicho procedimiento se muestra en la siguiente
 imagen
@@ -813,19 +813,19 @@ $$\begin{align*}\mathbb{P}(\chi^2_5 > 3)=0.70\end{align*}$$
 <li>
 
 A diferencia del punto anterior, observamos que la probabilidad
-propuesta \(\mathbb{P}(\chi^2_{20} \leq 37.566)\) tiene una estructura
+propuesta $\mathbb{P}(\chi^2_{20} \leq 37.566)$ tiene una estructura
 diferente a la establecida por la tabla
-\(\mathbb{P}(\chi_\nu^2\geq x)\), y por tanto, será necesario emplear el
+$\mathbb{P}(\chi_\nu^2\geq x)$, y por tanto, será necesario emplear el
 complemento de la probabilidad propuesta para obtener una estructura
 similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
-\(\mathbb{P}(\chi^2_{20} \leq 37.566)\), mediante el empleo de la
-\(\mathbb{P}(\chi^2_{20} \gt  37.566)\), la cual podemos buscar en la tabla
-directamente. Para localizar \(\mathbb{P}(\chi^2_{20} \gt  37.566)\), se
-buscan los grados de libertad \(20\) en la parte izquierda de la tabla,
+$\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
+$\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
+directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
+buscan los grados de libertad $20$ en la parte izquierda de la tabla,
 y el valor crítico en la parte central de la tabla (siguiendo la misma
 fila en la cual se encontraron los grados de libertad). Una vez ubicado
 el valor crítico, se busca en la parte superior cuál es la probabilidad
@@ -851,9 +851,9 @@ $$\begin{align*}
 <li>
 
 En este caso, se desea calcular la
-\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\), y se observa que la
+$\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
-tabla \(\mathbb{P}(\chi_\nu^2\geq x)\), pero también podemos apreciar
+tabla $\mathbb{P}(\chi_\nu^2\geq x)$, pero también podemos apreciar
 que si aplicamos las propiedades de la función de distribución acumulada
 para el caso continuo, ya presentadas en la
 <a href="../../ProbabilidadeInferencia/PeIEClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
@@ -865,10 +865,10 @@ $$\begin{align*}
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)\), puede calcularse
+$\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
-\(\mathbb{P}(\chi^2_{12} \gt  9.034)\) y
-\(\mathbb{P}(\chi^2_{12} \gt  15.812)\), las cuales pueden calcularse en la
+$\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
+$\mathbb{P}(\chi^2_{12} \gt  15.812)$, las cuales pueden calcularse en la
 tabla de forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaChiSquare4.jpg" alt="" style="max-width: 100%;">
@@ -890,7 +890,7 @@ $$\begin{align*}
 <li>
 
 En este punto, a diferencia de los puntos anteriores, nos dan el valor
-de la probabilidad y nos piden encontrar el valor crítico \(x\), dado
+de la probabilidad y nos piden encontrar el valor crítico $x$, dado
 unos grados de libertad. Es decir debemos calcular el valor crítico
 asociado a la probabilidad $$\begin{align*}
 \mathbb{P}(\chi^2_{8} < x) = 0.10
@@ -907,18 +907,18 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que la probabilidad
-\(\mathbb{P}(\chi^2_{8} \leq x)\) ya posee la estructura de la tabla, y
-en consecuencia, podemos proceder a encontrar el valor crítico \(x\),
-buscando los \(8\) grados de libertad en la parte izquierda de la tabla,
-y la probabilidad \(0.90\) de la parte superior de la tabla, y luego
-buscar el valor crítico \(x\) asociado a dicha probabilidad y grados de
+$\mathbb{P}(\chi^2_{8} \leq x)$ ya posee la estructura de la tabla, y
+en consecuencia, podemos proceder a encontrar el valor crítico $x$,
+buscando los $8$ grados de libertad en la parte izquierda de la tabla,
+y la probabilidad $0.90$ de la parte superior de la tabla, y luego
+buscar el valor crítico $x$ asociado a dicha probabilidad y grados de
 libertad, en el cruce de los dos valores anteriormente encontrados.
 
 <img src="/assets/images/TablaChiSquare5.jpg" alt="" style="max-width: 80%;">
 
 En la tabla se aprecia, que al buscar el cruce entre la probabilidad
-\(0.90\) y los \(8\) grados de libertad, encontramos que el valor
-crítico \(x\) asociado es de \(3.490\), es decir
+$0.90$ y los $8$ grados de libertad, encontramos que el valor
+crítico $x$ asociado es de $3.490$, es decir
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{8} \leq 3.490) &= 0.90
@@ -972,30 +972,30 @@ Ocultar Ejercicio Manejo de Tabla `$t$`
 Ejercicio
 </h3>
 <p>
-Suponga en esta ocasión, que tenemos una distribución \(t\) con \(\nu\)
+Suponga en esta ocasión, que tenemos una distribución $t$ con $\nu$
 grados de libertad. Entonces, usando esta distribución y empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistTStudent.pdf">Tabla
 de la Distribución t de Student</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(t_{14} \gt  1.076)\)
+$\mathbb{P}(t_{14} \gt  1.076)$
 </li>
 <li>
-\(\mathbb{P}(t_{7} \leq 3.53)\)
+$\mathbb{P}(t_{7} \leq 3.53)$
 </li>
 <li>
-\(\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)\)
+$\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)$
 </li>
 <li>
-\(\mathbb{P}(t_{10} \geq t) = 0.01\)
+$\mathbb{P}(t_{10} \geq t) = 0.01$
 </li>
 </ol>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Para calcular probabilidades con la tabla de la distribución \(t\), es
+Para calcular probabilidades con la tabla de la distribución $t$, es
 necesario tener en cuenta el funcionamiento de la tabla misma. Y para
 ello se presenta la siguiente imagen.
 </p>
@@ -1004,26 +1004,26 @@ ello se presenta la siguiente imagen.
 
 <p>
 En donde, se aprecia que, <strong>el cuadro azul representan los valores
-críticos</strong> \(t\) que se emplea para calcular probabilidades.
-<strong>El cuadro rojo representa las probabilidades</strong> \(\alpha\)
+críticos</strong> $t$ que se emplea para calcular probabilidades.
+<strong>El cuadro rojo representa las probabilidades</strong> $\alpha$
 que se desean calcular a partir de los valores críticos. <strong>El
-cuadro verde representa los grados de libertad</strong> \(\nu\) que se
+cuadro verde representa los grados de libertad</strong> $\nu$ que se
 emplean para calcular probabilidades junto al empleo de los valores
 críticos. Finalmente, <strong>el cuadro azul claro representa el
 funcionamiento de la tabla </strong>, la cual muestra las probabilidades
-que poseen la forma \(\mathbb{P}(t_\nu\geq t)=\alpha\).
+que poseen la forma $\mathbb{P}(t_\nu\geq t)=\alpha$.
 </p>
 <ol>
 <li>
 
 Conocida el funcionamiento de la tabla, la primera probabilidad a
-calcular es \(\mathbb{P}(t_{14} \gt  1.076)\), la cual tiene la estructura
-establecida por la tabla \(\mathbb{P}(t_\nu\geq t)\), así que será
-cuestión de buscar para \(14\) grados de libertad, el valor crítico
-\(1.076\) para localizar la probabilidad asociada. <br> <br> Para ello,
-se busca en la parte izquierda, los grados de libertad \(14\), y en la
+calcular es $\mathbb{P}(t_{14} \gt  1.076)$, la cual tiene la estructura
+establecida por la tabla $\mathbb{P}(t_\nu\geq t)$, así que será
+cuestión de buscar para $14$ grados de libertad, el valor crítico
+$1.076$ para localizar la probabilidad asociada. <br> <br> Para ello,
+se busca en la parte izquierda, los grados de libertad $14$, y en la
 parte central (siguiendo la misma fila en la cual se encontraron los
-grados de libertad) se busca el valor crítico \(1.076\). Una vez ubicado
+grados de libertad) se busca el valor crítico $1.076$. Una vez ubicado
 el valor crítico, se busca cuál es la probabilidad de interés asociada
 al valor crítico y grados de libertad, en la parte superior. Dicho
 procedimiento se ilustra a continuación
@@ -1038,9 +1038,9 @@ $$\begin{align*}\mathbb{P}(t_{14} > 1.076)=0.15\end{align*}$$
 <li>
 
 A diferencia del punto anterior, se observa que la probabilidad
-propuesta en este caso es de la forma \(\mathbb{P}(t_{7} \leq 3.53)\),
+propuesta en este caso es de la forma $\mathbb{P}(t_{7} \leq 3.53)$,
 la cual posee una estructura diferente a la establecida por la tabla
-\(\mathbb{P}(t_\nu\geq t)\), por lo cual, será necesario emplear el
+$\mathbb{P}(t_\nu\geq t)$, por lo cual, será necesario emplear el
 complemento de la probabilidad propuesta, para obtener una estructura
 similar a la que maneja la tabla, tal que
 
@@ -1049,9 +1049,9 @@ $$\begin{align*}
 \end{align*}$$
 
 Una vez empleado el complemento, podemos emplear la probabilidad
-\(\mathbb{P}(t_{7} \gt  3.5)\) para calcular la probabilidad de interés,
+$\mathbb{P}(t_{7} \gt  3.5)$ para calcular la probabilidad de interés,
 mediante la búsqueda de la probabilidad, tal como se hizo en el
-ejercicio anterior. En donde, se localizan los \(7\) grados de libertad
+ejercicio anterior. En donde, se localizan los $7$ grados de libertad
 en la parte izquierda de la tabla, y siguiendo la misma fila de los
 grados de libertad, se localiza el valor crítico de interés, lo cual, al
 buscar en la parte superior nos dirá cuál es la probabilidad asociada al
@@ -1078,9 +1078,9 @@ $$\begin{align*}
 <li>
 
 En este ejercicio, nos piden calcular la
-\(\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)\), y se observa que la
+$\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)$, y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
-tabla \(\mathbb{P}(t_\nu\geq t)\), Pero se aprecia que si aplicamos las
+tabla $\mathbb{P}(t_\nu\geq t)$, Pero se aprecia que si aplicamos las
 propiedades de la función de distribución acumulada para el caso
 continuo, ya presentadas en la
 <a href="../../ProbabilidadeInferencia/PeIEClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
@@ -1092,9 +1092,9 @@ $$\begin{align*}
                                       &= [1 - \mathbb{P}(t_{18} > 2.214)] - [1- \mathbb{P}(t_{18} > 0.862)] \\
                                       &= \mathbb{P}(t_{18} > 0.862) - \mathbb{P}(t_{18} > 2.214)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)\), puede ser calculada mediante
-el empleo de las probabilidades \(\mathbb{P}(t_{18} \gt  0.862)\) y
-\(\mathbb{P}(t_{18} \gt  2.214)\), las cuales se calculan en la tabla de
+$\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)$, puede ser calculada mediante
+el empleo de las probabilidades $\mathbb{P}(t_{18} \gt  0.862)$ y
+$\mathbb{P}(t_{18} \gt  2.214)$, las cuales se calculan en la tabla de
 forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaTStudent4.jpg" alt="" style="max-width: 100%;">
@@ -1117,24 +1117,24 @@ $$\begin{align*}
 
 En este punto, a diferencia de los puntos anteriores, nos están dando el
 valor de la probabilidad, junto a los grados de libertad y nos piden
-encontrar el valor crítico \(t\) asociado a dichos valores, tal que
+encontrar el valor crítico $t$ asociado a dichos valores, tal que
 $$\begin{align*}
 \mathbb{P}(t_{10} \geq t) = 0.01
 \end{align*}$$
 
 Como observamos que la probabilidad de interés ya posee la estructura de
-la tabla \(\mathbb{P}(t_\nu\geq t)\), entonces podemos encontrar el
+la tabla $\mathbb{P}(t_\nu\geq t)$, entonces podemos encontrar el
 valor crítico de forma directa, buscando en la parte izquierda de la
-tabla los grados de libertad \(10\) y en la parte superior de la tabla
-la probabilidad \(0.01\), con el fin de localizar el valor crítico en el
+tabla los grados de libertad $10$ y en la parte superior de la tabla
+la probabilidad $0.01$, con el fin de localizar el valor crítico en el
 cual se cruza la probabilidad y los grados de libertad, tal como se
 ilustra en la siguiente imagen
 
 <img src="/assets/images/TablaTStudent5.jpg" alt="" style="max-width: 80%;">
 
-En donde se evidencia, que el valor crítico \(t\) asociado a una
-probabilidad de \(0.01\) y a \(10\) grados de libertad, es igual a
-\(2.764\), es decir
+En donde se evidencia, que el valor crítico $t$ asociado a una
+probabilidad de $0.01$ y a $10$ grados de libertad, es igual a
+$2.764$, es decir
 
 $$\begin{align*}
 \mathbb{P}(t_{10} \geq 2.764) = 0.01
@@ -1193,8 +1193,8 @@ Ocultar Ejercicio Manejo de Tabla `$F$`
 Ejercicio
 </h3>
 <p>
-Suponga que en esta ocasión, tenemos una distribución \(F\) de Snedecor
-con \(\nu_1\) grados de libertad en el numerador y \(nu_2\) grados de
+Suponga que en esta ocasión, tenemos una distribución $F$ de Snedecor
+con $\nu_1$ grados de libertad en el numerador y $nu_2$ grados de
 libertad en el denominador. Entonces, usando esta distribución y
 empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistFSnedecor.pdf">Tabla
@@ -1202,27 +1202,27 @@ de la Distribución F de Fisher-Snedecor</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(F_{8, 12} \geq 3)\)
+$\mathbb{P}(F_{8, 12} \geq 3)$
 </li>
 <li>
-\(\mathbb{P}(F_{10, 6} \leq 0.18)\)
+$\mathbb{P}(F_{10, 6} \leq 0.18)$
 </li>
 <li>
-\(\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)\)
+$\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)$
 </li>
 <li>
-\(\mathbb{P}(F_{12, 12} \geq f) = 0.05\)
+$\mathbb{P}(F_{12, 12} \geq f) = 0.05$
 </li>
 </ol>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-La tabla de la distribución \(F\) es usualmente la más complicada de
+La tabla de la distribución $F$ es usualmente la más complicada de
 manejar, debido a que para cada probabilidad se tendrá una tabla
 diferente, debido a que ésta depende de dos grados de libertad
 diferentes. Entonces para calcular probabilidad con la tabla de la
-distribución \(F\) de Snedecor, es necesario tener en cuenta el
+distribución $F$ de Snedecor, es necesario tener en cuenta el
 funcionamiento de la tabla misma. Y para ello se presenta la siguiente
 imagen.
 </p>
@@ -1231,38 +1231,38 @@ imagen.
 
 <p>
 En donde, se aprecia que, <strong>el cuadro azul representan los valores
-críticos</strong> \(f\) que se emplea para calcular probabilidades.
+críticos</strong> $f$ que se emplea para calcular probabilidades.
 <strong>El cuadro rojo pequeño representa las probabilidades</strong>
-\(\alpha\) que se desean calcular a partir de los valores críticos y el
+$\alpha$ que se desean calcular a partir de los valores críticos y el
 cruce de los grados de libertad. <strong>El cuadro morado representa los
-grados de libertad del numerador</strong> \(\nu_1\) que se emplean para
+grados de libertad del numerador</strong> $\nu_1$ que se emplean para
 calcular probabilidades junto al empleo de los valores críticos y los
 grados de libertad del denominador. <strong>El cuadro verde representa
-los grados de libertad del denominador</strong> \(\nu_2\) que se emplean
+los grados de libertad del denominador</strong> $\nu_2$ que se emplean
 para calcular probabilidades junto al empleo de los valores críticos y
 los grados de libertad del numerador. Finalmente, <strong>el cuadro azul
 claro representa el funcionamiento de la tabla</strong>, la cual muestra
 las probabilidades que poseen la forma
-\(\mathbb{P}(F_{\nu_1, \nu_2}\geq f)=\alpha\).
+$\mathbb{P}(F_{\nu_1, \nu_2}\geq f)=\alpha$.
 </p>
 <ol>
 <li>
 
 Conocida el funcionamiento de la tabla, la primera probabilidad a
-calcular es \(\mathbb{P}(F_{8, 12} \geq 3)\), la cual tiene la
+calcular es $\mathbb{P}(F_{8, 12} \geq 3)$, la cual tiene la
 estructura establecida por la tabla
-\(\mathbb{P}(F_{\nu_1, \nu_2}\geq f)\), así que será cuestión de buscar
-los valores críticos asociados al cruce entre \(\nu_1 = 8\) los grados
-de libertad en el numerador y \(\nu_2 = 12\) los grados de libertad en
+$\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, así que será cuestión de buscar
+los valores críticos asociados al cruce entre $\nu_1 = 8$ los grados
+de libertad en el numerador y $\nu_2 = 12$ los grados de libertad en
 el denominador, para para comparar dichos valores con respecto al valor
-crítico de interés \(3\). <br> <br> Para tanto, se localiza en cada una
+crítico de interés $3$. <br> <br> Para tanto, se localiza en cada una
 de las tablas en la parte superior los grados de libertad del numerador
-\(8\), en la parte izquierda los grados de libertad del denominador
-\(14\), y en la parte central se busca el cruce de los dos grados de
+$8$, en la parte izquierda los grados de libertad del denominador
+$14$, y en la parte central se busca el cruce de los dos grados de
 libertad para observar cuál es el valor crítico asociado a este. Dicho
 procedimiento se ilustra en el siguiente gráfico, en donde, en la parte
-izquierda se muestra el valor crítico de la tabla \(F_{0.05}\) y en la
-parte derecha el valor crítico de la tabla para \(F_{0.01}\).
+izquierda se muestra el valor crítico de la tabla $F_{0.05}$ y en la
+parte derecha el valor crítico de la tabla para $F_{0.01}$.
 
 <img src="/assets/images/TablaFSnedecor2.jpg" alt="" style="max-width: 100%;">
 
@@ -1278,9 +1278,9 @@ dada por $$\begin{align*}
 \end{align*}$$
 
 Entonces, como el valor crítico de interés se encuentra entre los
-valores \(F_{0.05, 8, 14} = 2.70\) y \(F_{0.01, 8, 14} = 4.14\), se
-tendrá que la probabilidad de interés estará entre el \(5\%\) y el
-\(1\%\), tal que $$\begin{align*}
+valores $F_{0.05, 8, 14} = 2.70$ y $F_{0.01, 8, 14} = 4.14$, se
+tendrá que la probabilidad de interés estará entre el $5\%$ y el
+$1\%$, tal que $$\begin{align*}
 0.01 < \mathbb{P}(F_{8, 12} \geq 3) < 0.05
 \end{align*}$$
 </li>
@@ -1288,8 +1288,8 @@ tendrá que la probabilidad de interés estará entre el \(5\%\) y el
 
 A diferencia del punto anterior, se observa que la probabilidad
 propuesta en este caso es de la forma
-\(\mathbb{P}(F_{10, 6} \leq 0.18)\), posee una estructura diferente a la
-establecida por la tabla \(\mathbb{P}(F_{\nu_1, \nu_2}\geq f)\), por lo
+$\mathbb{P}(F_{10, 6} \leq 0.18)$, posee una estructura diferente a la
+establecida por la tabla $\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, por lo
 cual, será necesario emplear el complemento de la probabilidad propuesta
 para obtener una estructura similar a la que maneja la tabla, tal que
 $$\begin{align*}
@@ -1297,11 +1297,11 @@ $$\begin{align*}
 \end{align*}$$
 
 Una vez empleado el complemento, podemos usar la probabilidad
-\(\mathbb{P}(F_{10, 6} \gt  0.18)\) para calcular la probabilidad de
+$\mathbb{P}(F_{10, 6} \gt  0.18)$ para calcular la probabilidad de
 interés, mediante la búsqueda de la probabilidad, tal como se hizo en el
 ejercicio anterior. Para ello, se debe localizar para las tablas
-\(F_{0.05}\) y \(F_{0.01}\), los \(10\) grados de libertad del numerador
-en la parte superior, mientras que, los \(6\) grados de libertad del
+$F_{0.05}$ y $F_{0.01}$, los $10$ grados de libertad del numerador
+en la parte superior, mientras que, los $6$ grados de libertad del
 denominador en la parte izquierda de la tabla, y comparar los valores
 encontrados del cruce de grados de libertad, con la probabilidad de
 interés, tal como se ilustra acontinuación
@@ -1314,33 +1314,33 @@ F_{0.01, 10, 6} = 7.87 \quad => \quad \mathbb{P}(F_{10, 6} \geq 7.87) = 0.01
 \end{align*}$$
 
 Entonces, como el valor crítico de interés se encuentra a la izquierda
-de los valores \(F_{0.05, 10, 6} = 4.06\) y \(F_{0.01, 10, 6} = 7.87\),
-se tendrá que la probabilidad de interés será mayor al \(5\%\) , tal que
+de los valores $F_{0.05, 10, 6} = 4.06$ y $F_{0.01, 10, 6} = 7.87$,
+se tendrá que la probabilidad de interés será mayor al $5\%$ , tal que
 $$\begin{align*}
 \mathbb{P}(F_{10, 6} > 0.18) > 0.05
 \end{align*}$$
 
 y en consecuencia, se hace necesario realizar un paso adicional debido a
-que el valor crítico se encuentra cercano a \(0\), el cuál consta en
-aplicar el teorema de la cola izquierda para la distribución \(F\), con
-el fin de calcular los valores críticos asociados a una \(F_{0.95}\) y
-una \(F_{0.99}\), mediante la ecuación
+que el valor crítico se encuentra cercano a $0$, el cuál consta en
+aplicar el teorema de la cola izquierda para la distribución $F$, con
+el fin de calcular los valores críticos asociados a una $F_{0.95}$ y
+una $F_{0.99}$, mediante la ecuación
 
 $$\begin{align*}
 F_{1-\alpha,v_1,v_2} = \frac{1}{F_{\alpha, v_2, v_1}}
 \end{align*}$$
 
 tal que, para calcular los valores críticos asociados a
-\(F_{0.95, 10, 6}\) y \(F_{0.99, 10, 6}\), tendremos que
+$F_{0.95, 10, 6}$ y $F_{0.99, 10, 6}$, tendremos que
 
 $$\begin{align*}
 F_{0.95, 10, 6} = \frac{1}{F_{0.05, 6, 10}} \quad \quad \text{ y } \quad \quad F_{0.99, 10, 6} = \frac{1}{F_{0.01, 6, 10}} 
 \end{align*}$$
 
 y por tanto, podremos calcular los valores críticos anteriores, mediante
-el empleo de los valores críticos asociados a \(F_{0.05, 6, 10}\) y
-\(F_{0.01, 6, 10}\), los cuales podemos calcular en las tablas de la
-distribución \(F\) tal como se muestra acontinuación
+el empleo de los valores críticos asociados a $F_{0.05, 6, 10}$ y
+$F_{0.01, 6, 10}$, los cuales podemos calcular en las tablas de la
+distribución $F$ tal como se muestra acontinuación
 
 <img src="/assets/images/TablaFSnedecor4.jpg" alt="" style="max-width: 100%;">
 
@@ -1349,16 +1349,16 @@ F_{0.05, 6, 10} = 3.22 \quad => \quad \mathbb{P}(F_{6, 10} \geq 3.22) = 0.05\\
 F_{0.01, 6, 10} = 5.39 \quad => \quad \mathbb{P}(F_{6, 10} \geq 5.39) = 0.01
 \end{align*}$$
 
-y por tanto, se tendrá que los valores para \(F_{0.95, 10, 6}\) y
-\(F_{0.99, 10, 6}\) será respectivamente
+y por tanto, se tendrá que los valores para $F_{0.95, 10, 6}$ y
+$F_{0.99, 10, 6}$ será respectivamente
 
 $$\begin{align*}
 F_{0.95, 10, 6} = \frac{1}{3.22} = 0.3105590 \quad => \quad \mathbb{P}(F_{10, 6} \geq 0.3105590) = 0.95\\
 F_{0.99, 10, 6} = \frac{1}{5.39} = 0.1855288 \quad => \quad \mathbb{P}(F_{10, 6} \geq 0.1855288) = 0.99
 \end{align*}$$
 
-Ahora, basados en los \(4\) valores \(F\) calculados para \(10\) grados
-de libertad para el numerador y \(6\) grados de libertad para el
+Ahora, basados en los $4$ valores $F$ calculados para $10$ grados
+de libertad para el numerador y $6$ grados de libertad para el
 denominador
 
 $$\begin{align*}
@@ -1368,8 +1368,8 @@ F_{0.95, 10, 6} &= 0.3105590 \\
 F_{0.99, 10, 6} &= 0.1855288
 \end{align*}$$
 
-tendremos que la probabilidad \(\mathbb{P}(F_{10, 6} \gt  0.18)\) es
-aproximadamente de \(0.99\), es decir que
+tendremos que la probabilidad $\mathbb{P}(F_{10, 6} \gt  0.18)$ es
+aproximadamente de $0.99$, es decir que
 
 $$\begin{align*}
 \mathbb{P}(F_{10, 6} > 0.18) \approx 0.99
@@ -1384,9 +1384,9 @@ y por tanto, se tendrá que $$\begin{align*}
 <li>
 
 En este punto, nos piden calcular la
-\(\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)\), y se observa que la
+$\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)$, y se observa que la
 estructura de dicha probabilidad es diferente a la establecida por la
-tabla \(\mathbb{P}(F_{\nu_1, \nu_2}\geq f)\), Pero se aprecia que si
+tabla $\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, Pero se aprecia que si
 aplicamos las propiedades de la función de distribución acumulada para
 el caso continuo, ya presentadas en la
 <a href="../../ProbabilidadeInferencia/PeIEClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
@@ -1398,13 +1398,13 @@ $$\begin{align*}
                                        &= [1 - \mathbb{P}(F_{15, 5} > 9.6)] - [1- \mathbb{P}(F_{15, 5} > 0.31)] \\
                                        &= \mathbb{P}(F_{15, 5} > 0.31) - \mathbb{P}(F_{15, 5} > 9.6)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)\), puede ser calculada mediante
-el empleo de las probabilidades \(\mathbb{P}(F_{15, 5} \gt  0.31)\) y
-\(\mathbb{P}(F_{15, 5} \gt  9.6)\). Para calcular esta probabilidad debemos
-calcular los valores críticos \(F_{0.01, 15, 5}\), \(F_{0.05, 15, 5}\),
-y los valores críticos, \(F_{0.05, 5, 15}\) y \(F_{0.01, 5, 15}\), los
-cuales se usan para calcular \(F_{0.95, 15, 5}\) y \(F_{0.99, 15, 5}\).
-A continuación se ilusta la localización de los \(4\) valores de interés
+$\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)$, puede ser calculada mediante
+el empleo de las probabilidades $\mathbb{P}(F_{15, 5} \gt  0.31)$ y
+$\mathbb{P}(F_{15, 5} \gt  9.6)$. Para calcular esta probabilidad debemos
+calcular los valores críticos $F_{0.01, 15, 5}$, $F_{0.05, 15, 5}$,
+y los valores críticos, $F_{0.05, 5, 15}$ y $F_{0.01, 5, 15}$, los
+cuales se usan para calcular $F_{0.95, 15, 5}$ y $F_{0.99, 15, 5}$.
+A continuación se ilusta la localización de los $4$ valores de interés
 
 <img src="/assets/images/TablaFSnedecor5.jpg" alt="" style="max-width: 100%;">
 <img src="/assets/images/TablaFSnedecor6.jpg" alt="" style="max-width: 100%;">
@@ -1416,22 +1416,22 @@ F_{0.95, 15, 5} &= \frac{1}{F_{0.05, 5, 15}} = \frac{1}{2.90} = 0.3448276 \\
 F_{0.99, 15, 5} &= \frac{1}{F_{0.01, 5, 15}} = \frac{1}{4.56} = 0.2192982 
 \end{align*}$$
 
-Una vez localizados los \(4\) valores críticos, se procede a comparar
+Una vez localizados los $4$ valores críticos, se procede a comparar
 dichos valores con las probabilidad de interés, las cuales están dadas
 por $$\begin{align*}
 \mathbb{P}(F_{15, 5} > 0.31) \quad \text{ y } \quad \mathbb{P}(F_{15, 5} > 9.6)
 \end{align*}$$
 
-En el caso del valor crítico \(0.31\), se observa que éste se encuentra
-entre los valores \(F_{0.99, 15, 5} = 0.2192982\) y
-\(F_{0.95, 15, 5} = 0.3448276\), siendo el valor más cercano
-\(F_{0.95, 15, 5}\), y en consecuencia diremos que $$\begin{align*}
+En el caso del valor crítico $0.31$, se observa que éste se encuentra
+entre los valores $F_{0.99, 15, 5} = 0.2192982$ y
+$F_{0.95, 15, 5} = 0.3448276$, siendo el valor más cercano
+$F_{0.95, 15, 5}$, y en consecuencia diremos que $$\begin{align*}
 \mathbb{P}(F_{15, 5} > 0.31) \approx 0.95
 \end{align*}$$
 
-mientras que, para el caso del valor crítico \(9.6\), se observa que se
-encuentra entre \(F_{0.05, 15, 5} = 4.62\) y \(F_{0.01, 15, 5} = 9.72\),
-siendo el valor más cercano \(F_{0.01, 15, 5} = 9.72\), y en
+mientras que, para el caso del valor crítico $9.6$, se observa que se
+encuentra entre $F_{0.05, 15, 5} = 4.62$ y $F_{0.01, 15, 5} = 9.72$,
+siendo el valor más cercano $F_{0.01, 15, 5} = 9.72$, y en
 consecuencia diremos $$\begin{align*}
 \mathbb{P}(F_{15, 5} > 9.6) \approx 0.01
 \end{align*}$$
@@ -1446,25 +1446,25 @@ Y por tanto se tendrá que $$\begin{align*}
 
 En este punto, a diferencia de los puntos anteriores, nos están dando el
 valor de la probabilidad, junto a los grados de libertad del numerador y
-el denominador, y nos piden encontrar el valor crítico \(f\) asociado a
+el denominador, y nos piden encontrar el valor crítico $f$ asociado a
 dichos valores, tal que $$\begin{align*}
 \mathbb{P}(F_{12, 12} \geq f) = 0.05
 \end{align*}$$
 
 Donde evidenciamos que la probabilidad de interés ya posee la estructura
-de la tabla \(\mathbb{P}(F_{\nu_1, \nu_2}\geq f)\), y por tanto, podemos
+de la tabla $\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, y por tanto, podemos
 encontrar el valor crítico de forma directa en la tabla, buscando en la
-parte superior los grados de libertad \(\nu_1=12\) y en la parte
-izquierda, los grados de libertad \(\nu_2=12\) en la tabla \(F_{0.05}\),
+parte superior los grados de libertad $\nu_1=12$ y en la parte
+izquierda, los grados de libertad $\nu_2=12$ en la tabla $F_{0.05}$,
 para encontrar el valor crítico en donde se cruzan los grados de
 libertad, tal como se ilustra a continuación
 
 <img src="/assets/images/TablaFSnedecor7.jpg" alt="" style="max-width: 80%;">
 
-En donde se evidencia, que el valor crítico \(f\) asociado a una
-probabilidad de \(0.05\) y a \(12\) grados de libertad en el numerador
-junto a \(12\) grados de libertad en el denominador, es igual a
-\(2.69\), es decir
+En donde se evidencia, que el valor crítico $f$ asociado a una
+probabilidad de $0.05$ y a $12$ grados de libertad en el numerador
+junto a $12$ grados de libertad en el denominador, es igual a
+$2.69$, es decir
 
 $$\begin{align*}
 \mathbb{P}(F_{12, 12} \geq 2.69) = 0.05

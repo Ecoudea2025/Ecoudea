@@ -18,8 +18,8 @@ un parámetro desconocido de una población**.
 **Nota**<br>
 <ol type="a">
 <li>
-Usualmente se usan valores de de \(0.1, 0.05\) y $ 0.01$, es decir,
-niveles de confianza de \(0.9, 0.95\) y \(0.99\).
+Usualmente se usan valores de de $0.1, 0.05$ y $ 0.01$, es decir,
+niveles de confianza de $0.9, 0.95$ y $0.99$.
 </li>
 <li>
 La longitud o amplitud del intervalo construido, medirá la
@@ -65,9 +65,9 @@ Ocultar Ejemplo
 Intervalo de confianza para una media
 </h3>
 <p>
-Suponga que se desea crear un intervalo de confianza del \(90\%\) para
+Suponga que se desea crear un intervalo de confianza del $90\%$ para
 el número promedio de pisos de la construcción
-(<tt>nro\(\_\)pisos</tt>). En este caso, podemos calcular un intervalo
+(<tt>nro$\_$pisos</tt>). En este caso, podemos calcular un intervalo
 de confianza para una media en <tt>R</tt> mediante la función
 <tt>t.test</tt> de la forma.
 </p>
@@ -128,9 +128,9 @@ Ocultar Ejemplo
 Intervalo de confianza para diferencia de medias
 </h3>
 <p>
-Suponga que se desea crear un intervalo de confianza del \(95\%\) para
-la diferencia promedio entre el precio de venta por \(m^2\)
-(<tt>preciovtax</tt>), en los estratos \(2\) y \(4\) (<tt>estrato</tt>).
+Suponga que se desea crear un intervalo de confianza del $95\%$ para
+la diferencia promedio entre el precio de venta por $m^2$
+(<tt>preciovtax</tt>), en los estratos $2$ y $4$ (<tt>estrato</tt>).
 En este caso, podemos calcular un intervalo de confianza para la
 diferencia de media en <tt>R</tt> mediante la función <tt>t.test</tt> de
 la forma.
@@ -190,9 +190,9 @@ Ocultar Ejemplo
 Intervalo de confianza para una proporción
 </h3>
 <p>
-Suponga que se desea crear un intervalo de confianza del \(90\%\) para
+Suponga que se desea crear un intervalo de confianza del $90\%$ para
 la proporción de empresas que poseen licencia de construcción
-(<tt>ob\(\_\)formal</tt>). En este caso, podemos calcular un intervalo
+(<tt>ob$\_$formal</tt>). En este caso, podemos calcular un intervalo
 de confianza para una proporción en <tt>R</tt> mediante la función
 <tt>prop.test</tt> de la forma.
 </p>
@@ -259,9 +259,9 @@ Ocultar Ejemplo
 Intervalo de confianza para diferencia de proporciones
 </h3>
 <p>
-Suponga que se desea crear un intervalo de confianza del \(90\%\) para
+Suponga que se desea crear un intervalo de confianza del $90\%$ para
 la diferencia entre la proporción de empresas que poseen licencia de
-construcción (<tt>ob\(\_\)formal</tt>), respecto a las regiones de
+construcción (<tt>ob$\_$formal</tt>), respecto a las regiones de
 Bogotá y Antioquia (<tt>region</tt>). En este caso, podemos calcular un
 intervalo de confianza para la diferencia entre proporción en <tt>R</tt>
 mediante la función <tt>prop.test()</tt> de la forma.
@@ -330,7 +330,7 @@ Intervalo de confianza para una varianza
 </h3>
 <p>
 Suponga que se tiene interés en encontrar un intervalo de confianza del
-\(95\%\), para la varianza del precio unitario de ventas por metro
+$95\%$, para la varianza del precio unitario de ventas por metro
 cuadrado (<tt>preciovtax</tt>). En este caso, podemos calcular el
 intervalo de confianza de interés mediante la función <tt>varTest</tt>
 de la librería <tt>EnvStats</tt>, mediante la estructura.
@@ -382,9 +382,9 @@ Ocultar Ejemplo
 Intervalo de confianza para cociente de varianzas
 </h3>
 <p>
-Suponga que se desea crear un intervalo de confianza del \(95\%\) para
-el cociente de varianzas entre el precio de venta por \(m^2\)
-(<tt>preciovtax</tt>), en los estratos \(1\) y \(5\) (<tt>estrato</tt>).
+Suponga que se desea crear un intervalo de confianza del $95\%$ para
+el cociente de varianzas entre el precio de venta por $m^2$
+(<tt>preciovtax</tt>), en los estratos $1$ y $5$ (<tt>estrato</tt>).
 En este caso, podemos calcular un intervalo de confianza para el
 cociente de varianzas en <tt>R</tt> mediante la función
 <tt>var.test()</tt> de la forma.

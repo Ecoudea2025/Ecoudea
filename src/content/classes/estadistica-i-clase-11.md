@@ -33,9 +33,9 @@ Ejercicio
 </h3>
 <p>
 Suponga un experimento aleatorio que consta en consultar una familia
-conformada por \(3\) hijos, en donde, se asume que la probabilidad de
+conformada por $3$ hijos, en donde, se asume que la probabilidad de
 ser niño o niña es la misma. Entonces, si se define la variable
-aleatoria \(X\), el número de niñas que hay en la familia, y se define
+aleatoria $X$, el número de niñas que hay en la familia, y se define
 la función de masa de probabilidad como
 </p>
 <div style="font-size:120%!important">
@@ -43,36 +43,36 @@ la función de masa de probabilidad como
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(X\)
+$X$
 </td>
 <td style="text-align:left;">
-\(0\)
+$0$
 </td>
 <td style="text-align:left;">
-\(1\)
+$1$
 </td>
 <td style="text-align:left;">
-\(2\)
+$2$
 </td>
 <td style="text-align:left;">
-\(3\)
+$3$
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-\(p(x)\)
+$p(x)$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 </tr>
 </tbody>
@@ -80,7 +80,7 @@ la función de masa de probabilidad como
 </div>
 <p>
 Calcule el valor esperado del número de niñas que hay en una familia que
-posee \(3\) hijos.
+posee $3$ hijos.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -88,7 +88,7 @@ Solución
 <p>
 
 Basados en la tabla asociada a la distribución de masa de probabilidad
-para el número de niñas que hay en una familia que tiene \(3\) hijos, se
+para el número de niñas que hay en una familia que tiene $3$ hijos, se
 realiza el cálculo de la esperanza matemática de la variable aleatoria
 mediante la ecuación
 
@@ -102,7 +102,7 @@ $$\begin{align*}
 \end{align*}$$
 
 se tendrá que el número promedio de niñas que se espera encontrar en una
-familia que posee \(3\) hijos es de \(1.5\) niñas.
+familia que posee $3$ hijos es de $1.5$ niñas.
 </p>
 </main>
 <button id="Show2" class="btn btn-secondary">
@@ -120,7 +120,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule el valor esperado del tiempo que tarda la serie financiera en
 cumplir un ciclo.
@@ -143,7 +143,7 @@ ciclo, tal que $$\begin{align*}
              &= 30 \left(\frac{1}{4} - \frac{2}{5} + \frac{1}{6}\right) \\
              &= 0.5
 \end{align*}$$ Y por tanto, se tendrá que el tiempo esperado que tarda
-una serie financiera en cumplir un ciclo será \(0.5\) horas, la cual al
+una serie financiera en cumplir un ciclo será $0.5$ horas, la cual al
 pasarla a minutos mediante la regla de tres
 
 $$\begin{align*}
@@ -155,7 +155,7 @@ a= \frac{0.5_\text{horas}\times 60_\text{min}}{1_\text{hora}} = 30_\text{min}
 \end{align*}$$
 
 el tiempo esperado que tarda una serie financiera en cumplir un ciclo
-será de \(30\) minutos.
+será de $30$ minutos.
 </p>
 </main>
 
@@ -186,9 +186,9 @@ Ejercicio
 </h3>
 <p>
 Suponga un experimento aleatorio que consta en consultar una familia
-conformada por \(3\) hijos, en donde, se asume que la probabilidad de
+conformada por $3$ hijos, en donde, se asume que la probabilidad de
 ser niño o niña es la misma. Entonces, si se define la variable
-aleatoria \(X\), como el número de niñas que hay en la familia, y se
+aleatoria $X$, como el número de niñas que hay en la familia, y se
 tiene que la función de probabilidad está dada por
 </p>
 <div style="font-size:120%!important">
@@ -196,36 +196,36 @@ tiene que la función de probabilidad está dada por
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(X\)
+$X$
 </td>
 <td style="text-align:left;">
-\(0\)
+$0$
 </td>
 <td style="text-align:left;">
-\(1\)
+$1$
 </td>
 <td style="text-align:left;">
-\(2\)
+$2$
 </td>
 <td style="text-align:left;">
-\(3\)
+$3$
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-\(p(x)\)
+$p(x)$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 </tr>
 </tbody>
@@ -236,13 +236,13 @@ Calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(X+2)\)
+$\mathbb{E}(X+2)$
 </li>
 <li>
-\(\mathbb{E}(3X)\)
+$\mathbb{E}(3X)$
 </li>
 <li>
-\(\mathbb{E}(X^2)\)
+$\mathbb{E}(X^2)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -252,7 +252,7 @@ Solución
 <li>
 
 A partir de la tabla de distribución de probabilidad, se procede a
-realizar el cálculo de \(\mathbb{E}(X+2)\), tal que
+realizar el cálculo de $\mathbb{E}(X+2)$, tal que
 
 $$\begin{align*}
 \mathbb{E}(X+2)&=\sum_{x=0}^3(x+2)\,p(x) \\
@@ -264,8 +264,8 @@ $$\begin{align*}
 \end{align*}$$
 
 Resultado similar, puede obtenerse mediante la propiedad
-\(\mathbb{E}(X+b)=\mathbb{E}(X)+b\), en donde ya sabemos que
-\(\mathbb{E}(X)=1.5\), y en consecuencia se tendrá que
+$\mathbb{E}(X+b)=\mathbb{E}(X)+b$, en donde ya sabemos que
+$\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 
 $$\begin{align*}
 \mathbb{E}(X+2)&=\mathbb{E}(X) + 2 \\
@@ -276,7 +276,7 @@ $$\begin{align*}
 <li>
 
 Similar al caso anterio, se tiene que para realizar el cálculo de
-\(\mathbb{E}(3X)\), es posible emplear la definición de esperanza
+$\mathbb{E}(3X)$, es posible emplear la definición de esperanza
 matemática, tal que
 
 $$\begin{align*}
@@ -287,8 +287,8 @@ $$\begin{align*}
              &=\frac{36}{8} \\
              &=4.5
 \end{align*}$$ Resultado similar, puede obtenerse mediante la propiedad
-\(\mathbb{E}(aX)=a\mathbb{E}(X)\), en donde ya sabemos que
-\(\mathbb{E}(X)=1.5\), y en consecuencia se tendrá que
+$\mathbb{E}(aX)=a\mathbb{E}(X)$, en donde ya sabemos que
+$\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 
 $$\begin{align*}
 \mathbb{E}(aX)&=3\mathbb{E}(X) \\
@@ -298,9 +298,9 @@ $$\begin{align*}
 </li>
 <li>
 
-Finalmente, para encontrar la \(\mathbb{E}(X^2)\) se tendrá que en este
-caso \(m(X) = X^2\), y por tanto, al aplicar la propiedad
-\(\mathbb{E}(m(X))= \sum_{x}m(x)p(x)\) tendremos que
+Finalmente, para encontrar la $\mathbb{E}(X^2)$ se tendrá que en este
+caso $m(X) = X^2$, y por tanto, al aplicar la propiedad
+$\mathbb{E}(m(X))= \sum_{x}m(x)p(x)$ tendremos que
 
 $$\begin{align*}
 \mathbb{E}(X^2)&=\sum_{x=0}^3x^2\,p(x) \\
@@ -328,19 +328,19 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(60X)\)
+$\mathbb{E}(60X)$
 </li>
 <li>
-\(\mathbb{E}(X+40)\)
+$\mathbb{E}(X+40)$
 </li>
 <li>
-\(\mathbb{E}(X^2)\)
+$\mathbb{E}(X^2)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -355,7 +355,7 @@ f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
 <ol>
 <li>
 
-se procede a calcular \(\mathbb{E}(60X)\), tal que $$\begin{align*}
+se procede a calcular $\mathbb{E}(60X)$, tal que $$\begin{align*}
 \mathbb{E}(60X)&= \int_{0}^160x\,f(x) dx\\
              &= \int_{0}^1(60x)\,30x^2(1-x)^2 dx\\
              &= 1800\int_{0}^1x^3\,(1-x)^2 dx\\
@@ -367,8 +367,8 @@ se procede a calcular \(\mathbb{E}(60X)\), tal que $$\begin{align*}
              &= 30
 \end{align*}$$
 
-Similarmente, al usar la propiedad \(\mathbb{E}(aX)=a\mathbb{E}(X)\),
-sabiendo que \(\mathbb{E}(X)=0.5\) se tendrá que $$\begin{align*}
+Similarmente, al usar la propiedad $\mathbb{E}(aX)=a\mathbb{E}(X)$,
+sabiendo que $\mathbb{E}(X)=0.5$ se tendrá que $$\begin{align*}
 \mathbb{E}(60X)&= 60\mathbb{E}(X) \\
                &= 60(0.5) \\
                &= 30 \\
@@ -376,7 +376,7 @@ sabiendo que \(\mathbb{E}(X)=0.5\) se tendrá que $$\begin{align*}
 </li>
 <li>
 
-Para el cálculo de \(\mathbb{E}(X+40)\), se procede a la aplicación de
+Para el cálculo de $\mathbb{E}(X+40)$, se procede a la aplicación de
 la ecuación de esperanza matemática, tal que $$\begin{align*}
 \mathbb{E}(X+40)&= \int_{0}^1(x+40)\,f(x) dx\\
              &= \int_{0}^1(x+40)\,30x^2(1-x)^2 dx\\
@@ -389,7 +389,7 @@ la ecuación de esperanza matemática, tal que $$\begin{align*}
              &= 40.5
 \end{align*}$$
 
-Ahora, aplicando la propiedad \(\mathbb{E}(X+b)=\mathbb{E}(X)+b\), se
+Ahora, aplicando la propiedad $\mathbb{E}(X+b)=\mathbb{E}(X)+b$, se
 tendrá que dicha esperanza puede calcularse en dos lineas, tal que
 $$\begin{align*}
 \mathbb{E}(X+40)&= \mathbb{E}(X) + 40\\
@@ -398,9 +398,9 @@ $$\begin{align*}
 \end{align*}$$
 </li>
 <li>
-Para el cálculo de la \(\mathbb{E}(X^2)\), se tendrá que en este caso
-\(m(X) = X^2\), y por tanto, al aplicar la propiedad
-\(\mathbb{E}(m(X))=\int_{-\infty}^\infty m(x)f(x) dx\) tendremos que
+Para el cálculo de la $\mathbb{E}(X^2)$, se tendrá que en este caso
+$m(X) = X^2$, y por tanto, al aplicar la propiedad
+$\mathbb{E}(m(X))=\int_{-\infty}^\infty m(x)f(x) dx$ tendremos que
 $$\begin{align*}
 \mathbb{E}(X^2)&= \int_{0}^1x^2\,f(x) dx\\
                &= \int_{0}^1x^2\,30x^2(1-x)^2 dx\\
@@ -452,9 +452,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -804,13 +804,13 @@ calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(X)\)
+$\mathbb{E}(X)$
 </li>
 <li>
-\(\mathbb{E}(Y)\)
+$\mathbb{E}(Y)$
 </li>
 <li>
-\(\mathbb{E}(XY)\)
+$\mathbb{E}(XY)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -818,9 +818,9 @@ Solución
 </h3>
 <ol>
 <li>
-Dado que estamos interesados en calcular \(\mathbb{E}(X)\), la cual solo
-depende de la variable aleatoria \(X\), entonces podemos emplear la
-distribución marginal \(g(x)\) para realizar el cálculo, tal que
+Dado que estamos interesados en calcular $\mathbb{E}(X)$, la cual solo
+depende de la variable aleatoria $X$, entonces podemos emplear la
+distribución marginal $g(x)$ para realizar el cálculo, tal que
 $$\begin{align*}
 \mathbb{E}(X)&=\sum_{x=2}^{12}x\,g(x) \\
              &=(2)\,g(2)+(3)\,g(3)+(4)\,g(4)+\ldots+(12)\,g(12) \\
@@ -829,13 +829,13 @@ $$\begin{align*}
              &=\frac{252}{36} \\
              &=7
 \end{align*}$$ Por tanto se tendrá que el valor esperado para la suma
-resultante de los dos dados es de \(7\).
+resultante de los dos dados es de $7$.
 </li>
 <li>
 Similar al procedimiento anterior, se realiza el cálculo de la
-\(\mathbb{E}(Y)\), la cual, al depender solo de la variable aleatoria
-\(Y\), permite que se realice el cálculo mediante el empleo de la
-distribución marginal \(h(y)\), tal que $$\begin{align*}
+$\mathbb{E}(Y)$, la cual, al depender solo de la variable aleatoria
+$Y$, permite que se realice el cálculo mediante el empleo de la
+distribución marginal $h(y)$, tal que $$\begin{align*}
 \mathbb{E}(Y)&=\sum_{y=0}^{5}y\,h(y) \\
              &=(0)\,h(0)+(1)\,h(1)+(2)\,h(2)+\ldots+(5)\,h(5) \\
              &=0\left(\frac{6}{36}\right)+1\left(\frac{10}{36}\right)+2\left(\frac{8}{36}\right)+\ldots + 5\left(\frac{2}{36}\right) \\
@@ -843,21 +843,21 @@ distribución marginal \(h(y)\), tal que $$\begin{align*}
              &=\frac{70}{36} \\
              &=1.9444
 \end{align*}$$ Por tanto se tendrá que el valor esperado para el valor
-absoluto de la diferencia de los dos dados es de \(1.9444\).
+absoluto de la diferencia de los dos dados es de $1.9444$.
 </li>
 <li>
-En este caso, estamos interesados en calcular la \(\mathbb{E}(XY)\), en
+En este caso, estamos interesados en calcular la $\mathbb{E}(XY)$, en
 donde, al depender la esperanza matemática de las dos variables
 aleatorias, entonces empleamos la función de distribución conjunta
-\(p(x,y)\) tal que $$\begin{align*}
+$p(x,y)$ tal que $$\begin{align*}
 \mathbb{E}(XY)&=\sum_{x=2}^{12}\sum_{y=0}^{5}xy\,p(x,y) \\
              &=(2)(0)\,p(2,0)+(2)(1)\,p(2,1)+\ldots + (3)(0)\,p(3,0)+(3)(1)\,p(3,1)+\ldots+(12)(5)\,p(12,5) \\
              &=(2)(0)\left(\frac{1}{36}\right)+(2)(1)\left(0\right)+\ldots+(3)(0)\left(0\right)+(3)(1)\left(\frac{2}{36}\right)+\ldots + (12)(5)\left(0\right) \\
              &=0+\frac{6}{36}+\ldots+0+ \frac{6}{36}+\ldots + 0 \\
              &=\frac{490}{36} \\
              &=13.61111
-\end{align*}$$ Por tanto se tendrá que el valor esperado de \(XY\) es de
-\(13.61111\) (Es anotar que solo las esperanzas simples de \(X\) y \(Y\)
+\end{align*}$$ Por tanto se tendrá que el valor esperado de $XY$ es de
+$13.61111$ (Es anotar que solo las esperanzas simples de $X$ y $Y$
 tienen interpretación en el contexto de los datos).
 </li>
 </ol>
@@ -879,25 +879,25 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(X)\)
+$\mathbb{E}(X)$
 </li>
 <li>
-\(\mathbb{E}(Y)\)
+$\mathbb{E}(Y)$
 </li>
 <li>
-\(\mathbb{E}(XY)\)
+$\mathbb{E}(XY)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -905,9 +905,9 @@ Solución
 </h3>
 <ol>
 <li>
-Dado que estamos interesados en calcular \(\mathbb{E}(X)\), la cual solo
-depende de la variable aleatoria \(X\), entonces podemos emplear la
-distribución marginal \(g(x)\) para realizar el cálculo, tal que
+Dado que estamos interesados en calcular $\mathbb{E}(X)$, la cual solo
+depende de la variable aleatoria $X$, entonces podemos emplear la
+distribución marginal $g(x)$ para realizar el cálculo, tal que
 $$\begin{align*}
 \mathbb{E}(X)&=\int_{-\infty}^{\infty}x\,g(x) dx\\
              &=\int_{0}^{2}x\left(\frac{1}{2}x\right) dx \\
@@ -920,13 +920,13 @@ $$\begin{align*}
              &=1.333333 
 \end{align*}$$ Por tanto se tendrá que el valor esperado para el número
 de horas promedio de tiempo libre que tiene el profesor de Estadística I
-en un día es de \(1.3333\) horas.
+en un día es de $1.3333$ horas.
 </li>
 <li>
-Similar al cálculo de la esperanza de \(X\), se realiza el cálculo de la
-\(\mathbb{E}(Y)\), la cual, al depender solo de la variable aleatoria
-\(Y\), permite que el cálculo se realice mediante el empleo de la
-distribución marginal \(h(y)\), tal que $$\begin{align*}
+Similar al cálculo de la esperanza de $X$, se realiza el cálculo de la
+$\mathbb{E}(Y)$, la cual, al depender solo de la variable aleatoria
+$Y$, permite que el cálculo se realice mediante el empleo de la
+distribución marginal $h(y)$, tal que $$\begin{align*}
 \mathbb{E}(Y)&=\int_{-\infty}^{\infty}y\,h(y) dy\\
              &=\int_{1}^{4}y\left(\frac{1}{21}y^2\right) dy \\
              &=\frac{1}{21}\int_{1}^{4}y^3 dy \\
@@ -937,14 +937,14 @@ distribución marginal \(h(y)\), tal que $$\begin{align*}
              &=3.035714 
 \end{align*}$$ Por tanto se tendrá que el valor esperado para el número
 promedio de horas de tiempo libre que tienen los estudiantes que cursan
-Estadística I es de \(3.035714\) horas
+Estadística I es de $3.035714$ horas
 </li>
 <li>
 En este punto, estamos interesados en calcular la esperanza conjunta de
-\(XY\), esto es, \(\mathbb{E}(XY)\), en donde, se observa que la
+$XY$, esto es, $\mathbb{E}(XY)$, en donde, se observa que la
 esperanza matemática depende de dos variables aleatorias, y por tanto
 para resolver el ejercicio empleamos la función de distribución conjunta
-\(f(x,y)\) tal que $$\begin{align*}
+$f(x,y)$ tal que $$\begin{align*}
 \mathbb{E}(XY)&=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}xy\,f(x,y) dy\\
              &=\int_{1}^{4}\int_{0}^{2}xy\left(\frac{1}{42}xy^2\right) dxdy \\
              &=\frac{1}{42}\int_{1}^{4}\int_{0}^{2} x^2y^3 dxdy \\
@@ -958,8 +958,8 @@ para resolver el ejercicio empleamos la función de distribución conjunta
              &=\frac{4}{63}\left(\frac{255}{4}\right) \\
              &=\frac{255}{63} \\
              &=4.047619
-\end{align*}$$ Por tanto se tendrá que el valor esperado de \(XY\) es de
-\(4.047619\) (Es anotar que solo las esperanzas simples de \(X\) y \(Y\)
+\end{align*}$$ Por tanto se tendrá que el valor esperado de $XY$ es de
+$4.047619$ (Es anotar que solo las esperanzas simples de $X$ y $Y$
 tienen interpretación en el contexto de los datos).
 </li>
 </ol>

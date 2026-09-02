@@ -465,16 +465,16 @@ and *W-GP* for `$X$`, we calculate **optimal retention points** and
 <thead>
 <tr>
 <th style="text-align:left;">
-\(\rho\)
+$\rho$
 </th>
 <th style="text-align:left;">
-\(\kappa_{\rho^*}\)
+$\kappa_{\rho^*}$
 </th>
 <th style="text-align:left;">
-\(M^*\)
+$M^*$
 </th>
 <th style="text-align:left;">
-\(\delta(M^*)\)
+$\delta(M^*)$
 </th>
 </tr>
 </thead>

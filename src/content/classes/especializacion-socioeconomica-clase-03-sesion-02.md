@@ -170,9 +170,9 @@ Interpretación
 <p>
 En el diagrama de caja y bigotes se aprecia que la mediana del número de
 automóviles que transitan por la avenida gauyaban en un día se encuentra
-alrededor de \(1350\) vehículos, en donde el primer y tercer cuartil
-(percentil \(25\%\) y \(75\%\) se encuentran cercanos a \(1200\) y
-\(1550\) vehículos, respectivamente. No se aprecian observaciones
+alrededor de $1350$ vehículos, en donde el primer y tercer cuartil
+(percentil $25\%$ y $75\%$ se encuentran cercanos a $1200$ y
+$1550$ vehículos, respectivamente. No se aprecian observaciones
 extremas por fuera de los bigotes del gráfico y se observa un
 comportamiento simétrico, pues se aprecia que la mediana se encuentra
 relativamente central respecto al primer y tercer cuartil y que la media
@@ -220,10 +220,10 @@ Interpretación
 <p>
 En la primera figura, se aprecia que en este caso el histograma realiza
 agrupaciones para el número de vehículos que transitan por la avenida
-Guayabal en un día, con categorías que posee distancias entre \(122\)
+Guayabal en un día, con categorías que posee distancias entre $122$
 vehículos, en donde se evidencia que el número de registros que se
-encuentra entre \(1493-1615\) vehículos, poseen la mayor frecuencia con
-un total de \(9\) registros. También se puede observar que la frecuencia
+encuentra entre $1493-1615$ vehículos, poseen la mayor frecuencia con
+un total de $9$ registros. También se puede observar que la frecuencia
 de observaciones que se encuentra en las tres primeras categorías es
 casi igual a la que se encuentra en las tres últimas categorías, con lo
 cual podría pensarse que el número de vehículos que transitan por la
@@ -272,7 +272,7 @@ Interpretación
 <p>
 En el gráfico de dispersión anterior, se aprecia una relación positiva
 entre el número de vehículos que transitan por la avenida guayaban por
-día y la cantidad de material particulado \(2.5\), pues es posible
+día y la cantidad de material particulado $2.5$, pues es posible
 observar que el conjunto de observaciones tiene una leve tendencia
 creciente a medida que aumenta una de las variables. Adicionalmente, no
 se observa gran dispersión entre el conjunto de observaciones, ni se
@@ -332,12 +332,12 @@ Gráfico de Barras
 Interpretación
 </h3>
 <p>
-En el gráfico de barras, se observa que de los \(28\) días en los cuales
+En el gráfico de barras, se observa que de los $28$ días en los cuales
 se realizaron los registros del número de vehículos, la mayoría de los
-días se realizó el registro en la zona \(3\) con un total de \(8\) días,
-seguido de las zonas \(4\) y \(5\) con un total de \(6\) días, la zona
-\(1\) con un total de \(5\) días y finalmente la zona \(2\) con un total
-de \(3\) días.
+días se realizó el registro en la zona $3$ con un total de $8$ días,
+seguido de las zonas $4$ y $5$ con un total de $6$ días, la zona
+$1$ con un total de $5$ días y finalmente la zona $2$ con un total
+de $3$ días.
 </p>
 </main>
 
@@ -398,10 +398,10 @@ en el eje derecho se observa el valor de las frecuencias relativas. Las
 barras representan las frecuencias absolutas, mientras que la línea
 representa las frecuencias relativas.<br> <br> En dicho gráfico se
 aprecia que la zona en la cual se realizó la mayor cantidad de registros
-fue en la zona \(3\) con un total de \(8\) registros, lo cual equivale
-al \(28.57\%\) del total de los registros, mientras que la menor
-cantidad de registros se realizó en la zona \(2\) con un total de \(3\)
-registros, lo cual equivale al \(10.71\%\) del total de los registros.
+fue en la zona $3$ con un total de $8$ registros, lo cual equivale
+al $28.57\%$ del total de los registros, mientras que la menor
+cantidad de registros se realizó en la zona $2$ con un total de $3$
+registros, lo cual equivale al $10.71\%$ del total de los registros.
 </p>
 </main>
 
@@ -455,12 +455,12 @@ Interpretación
 <p>
 En el gráfico anterior, se presenta la proporción de días que se realizó
 el conteo de vehículos que transitan por la avenida Guayabal sur-norte
-en un día, en donde el gráfico de pastel representa el \(100\%\) de los
+en un día, en donde el gráfico de pastel representa el $100\%$ de los
 días registrados, y cada triángulo del gráfico la proporción asociada a
 cada una de las zonas. En donde, se observa que las proporciones
 observadas para los registros realizados por zona es respectivamente
-para las zonas \(1\), \(2\), \(3\), \(4\) y \(5\) del \(18\%\),
-\(11\%\), \(29\%\), \(21\%\) y \(21\%\).
+para las zonas $1$, $2$, $3$, $4$ y $5$ del $18\%$,
+$11\%$, $29\%$, $21\%$ y $21\%$.
 </p>
 </main>
 
@@ -494,8 +494,8 @@ Ejercicio caso de estudio
 Construya un gráfico de barras para la zona en donde fue realizada la
 medición, del número de automóviles que transitan por la avenida
 Guayabal sur-norte en un día y la cantidad de días en que el número de
-vehículos que transita por la avenida Guayabal es menor a \(1300\) o
-mayor o igual a \(1300\).
+vehículos que transita por la avenida Guayabal es menor a $1300$ o
+mayor o igual a $1300$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -518,12 +518,12 @@ Interpretación
 <p>
 En el gráfico de barras para el cruce entre la zona donde se realizaron
 los registros y el número de veces que se registraron menos o al menos
-\(1300\) vehículos, se observa que solo en la zona \(3\) se evidencia
+$1300$ vehículos, se observa que solo en la zona $3$ se evidencia
 que el número de días en los cuales el número de vehículos que transitan
-por la avenida Guayabal menores a \(1300\) es superior a cuando
-transitan al menos \(1300\), lo cual puede significar que la zona \(3\)
+por la avenida Guayabal menores a $1300$ es superior a cuando
+transitan al menos $1300$, lo cual puede significar que la zona $3$
 es un cruce con menor transito con los demás, tal vez por estar luego de
-un puente o debido a que la zona \(3\) se seleccionó días de baja
+un puente o debido a que la zona $3$ se seleccionó días de baja
 afluencia como un domingo o días festivos.
 </p>
 </main>
@@ -570,11 +570,11 @@ Interpretación
 En el gráfico anterior, se hace una comparación entre el número de
 vehículos que transitan por la avenida Guayabal en un día y la zona
 donde se realizó el registro del número de vehículos. En éste se aprecia
-que de las \(5\) zonas, la zona \(3\) es la única que tiene una media y
+que de las $5$ zonas, la zona $3$ es la única que tiene una media y
 una mediana inferior a las demás zonas. <br> <br> Adicionalmente, se
-evidencia que de las \(5\) zonas, la zona \(4\) es la que presenta mayor
-variabilidad, mientras que las zonas \(3\) y \(4\) son la que posee
-datos más alejados respecto al \(50\%\) central de los datos.<br> <br>
+evidencia que de las $5$ zonas, la zona $4$ es la que presenta mayor
+variabilidad, mientras que las zonas $3$ y $4$ son la que posee
+datos más alejados respecto al $50\%$ central de los datos.<br> <br>
 Finalmente, puede notarse que no se evidencia ningún punto en la parte
 superior o inferior de los bigotes de las diferentes cajas, lo cual
 quiere decir, que no se identificaron datos extremos para ninguna de las

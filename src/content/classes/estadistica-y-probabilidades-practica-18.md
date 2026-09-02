@@ -502,10 +502,10 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:right;">
-    \(\mathbf{\text{Acción 1}}\)
+    $\mathbf{\text{Acción 1}}$
     </td>
     <td style="text-align:right;">
-    \(\mathbf{\text{Acción 2}}\)
+    $\mathbf{\text{Acción 2}}$
     </td>
     </tr>
     <tr>
@@ -589,7 +589,7 @@ Lista de ejercicios
     una.
     </li>
     <li>
-    Para cada acción, determine hasta que valor se encuentra el \(20\%\)
+    Para cada acción, determine hasta que valor se encuentra el $20\%$
     de los precios más bajos y el 15% de los precios más altos.
     </li>
     </ol>
@@ -601,10 +601,10 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:right;">
-    \(\mathbf{\text{Tipo de certificado}}\)
+    $\mathbf{\text{Tipo de certificado}}$
     </td>
     <td style="text-align:right;">
-    \(\mathbf{\text{Cantidad de}} \\ \mathbf{\text{solicitudes}} \\ \mathbf{\text{recibidas}}\)
+    $\mathbf{\text{Cantidad de}} \\ \mathbf{\text{solicitudes}} \\ \mathbf{\text{recibidas}}$
     </td>
     </tr>
     <tr>
@@ -665,13 +665,13 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:right;">
-    \(\mathbf{\text{Agente}}\)
+    $\mathbf{\text{Agente}}$
     </td>
     <td style="text-align:right;">
-    \(\mathbf{\text{Cantidad}} \\ \mathbf{\text{de quejas}} \\ \mathbf{\text{gestionadas}}\)
+    $\mathbf{\text{Cantidad}} \\ \mathbf{\text{de quejas}} \\ \mathbf{\text{gestionadas}}$
     </td>
     <td style="text-align:right;">
-    \(\mathbf{\text{Cantidad de}} \\ \mathbf{\text{certificados}} \\ \mathbf{\text{enviados}}\)
+    $\mathbf{\text{Cantidad de}} \\ \mathbf{\text{certificados}} \\ \mathbf{\text{enviados}}$
     </td>
     </tr>
     <tr>
@@ -900,7 +900,7 @@ Lista de ejercicios
     <li>
     ¿Qué porcentaje de clientes han pedido préstamos bancarios para
     compra de bienes que tienen una tasa de amortización menor o igual a
-    \(7\%\)?.
+    $7\%$?.
     </li>
     <li>
     ¿Qué tipo de asimetría presenta la distribución? Justifique.
@@ -910,10 +910,10 @@ Lista de ejercicios
     </li>
     <li>
     A partir de que tasa de amortización se encuentra el 30% de los
-    compradores que pagan mayor interés. ¿El \(10\%\)? o ¿el \(5\%\)?.
+    compradores que pagan mayor interés. ¿El $10\%$? o ¿el $5\%$?.
     </li>
     <li>
-    Una tasa de amortización de \(6.3\) está entre el \(10\%\) de los
+    Una tasa de amortización de $6.3$ está entre el $10\%$ de los
     compradores que pagan menos interés?.
     </li>
     </ol>
@@ -926,10 +926,10 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:right;">
-    \(\mathbf{\text{Proveedor 1}}\)
+    $\mathbf{\text{Proveedor 1}}$
     </td>
     <td style="text-align:right;">
-    \(\mathbf{\text{Proveedor 2}}\)
+    $\mathbf{\text{Proveedor 2}}$
     </td>
     </tr>
     <tr>
@@ -990,14 +990,14 @@ Lista de ejercicios
     ¿Qué proveedor prefiere usted?.
     </li>
     <li>
-    Para cada proveedor, determine valor de tiempo, \(A\), tal que el
-    \(5\%\) de los meses se presente un tiempo de entrega inferior a
-    \(A\).
+    Para cada proveedor, determine valor de tiempo, $A$, tal que el
+    $5\%$ de los meses se presente un tiempo de entrega inferior a
+    $A$.
     </li>
     <li>
-    Para cada proveedor, determine valor de tiempo, \(B\), tal que el
-    \(5\%\) de los meses se presente un tiempo de entrega superior a
-    \(B\).
+    Para cada proveedor, determine valor de tiempo, $B$, tal que el
+    $5\%$ de los meses se presente un tiempo de entrega superior a
+    $B$.
     </li>
     </ol>
 

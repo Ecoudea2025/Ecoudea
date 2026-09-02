@@ -30,7 +30,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -104,8 +104,8 @@ ciudad, en millones de pesos, fueron de
 <p>
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, pruebe si el costo promedio máximo
-que tiene la construcción de un nuevo parque es de \(2000\) millones de
-pesos. Emplee un nivel de significancia del \(2\%\).
+que tiene la construcción de un nuevo parque es de $2000$ millones de
+pesos. Emplee un nivel de significancia del $2\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -113,7 +113,7 @@ Solución
 <p>
 
 En este caso estamos interesados en probar si el costo promedio de
-construir un nuevo parque sea máximo de \(2000\) millones de pesos, y
+construir un nuevo parque sea máximo de $2000$ millones de pesos, y
 por tanto se tendrá que el juego de hipótesis estará dado por
 $$\begin{align*}
   H_0: \mu \leq 2000 \\
@@ -124,7 +124,7 @@ para decidir el estadístico de prueba que debemos emplear, se debe
 revisar la información que poseemos, en donde tenemos que la varianza
 poblacional no es conocida, ya que no la mencionan en el enunciado,
 además nos mencionan que los costos se distribuyen aproximadamente
-normal. Entonces, al ser el tamaño muestral pequeño e igual a \(20\)
+normal. Entonces, al ser el tamaño muestral pequeño e igual a $20$
 datos, las características del ejercicio están dados por
 
 <img src="/assets/images/Hipotesis3a.jpg" alt="" style="max-width: 100%;">
@@ -135,9 +135,9 @@ de la forma $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que requerimos del valor de la media muestral
-\(\bar{X}=1613.8\), el valor asociado a la hipótesis nula
-\(\mu_0=2000\), la desviación estándar muestral \(S=480.1471\) y el
-tamaño de muestra \(n=20\). Al reemplazar en el estadístico de prueba se
+$\bar{X}=1613.8$, el valor asociado a la hipótesis nula
+$\mu_0=2000$, la desviación estándar muestral $S=480.1471$ y el
+tamaño de muestra $n=20$. Al reemplazar en el estadístico de prueba se
 tendrá que $$\begin{align*}
   t_c &= \frac{1613.8 - 2000}{480.1471/\sqrt{20}}\\
       &= -3.597104
@@ -148,7 +148,7 @@ cálculo de la región crítica, obteniendo que $$\begin{align*}
   RC:\{t|t>t_{\alpha, n-1}\}
 \end{align*}$$
 
-en donde, al usar el valor \(\alpha=0.02\) y \(n=20\), se tendrá que la
+en donde, al usar el valor $\alpha=0.02$ y $n=20$, se tendrá que la
 región crítica, será igual a $$\begin{align*}
   RC&:\{t|t>t_{\alpha=0.02, n-1=19}\}\\
   RC&:\{t|t>2.204701\}
@@ -156,8 +156,8 @@ región crítica, será igual a $$\begin{align*}
 
 Entonces como el valor crítico no cae dentro de la región crítica, no se
 rechaza la hipótesis nula, y por tanto se concluye con un nivel de
-significancia del \(2\%\) que el costo promedio máximo que costará
-construir un nuevo parque no será mayor a \(2000\) millones de pesos.
+significancia del $2\%$ que el costo promedio máximo que costará
+construir un nuevo parque no será mayor a $2000$ millones de pesos.
 </p>
 </main>
 <button id="Show2" class="btn btn-secondary">
@@ -174,14 +174,14 @@ Ejercicio
 Suponga que Postobon desarrolla una nueva máquina de bebidas para servir
 de forma automática gaseosas en los cines, de tal forma que la cantidad
 servida, en mililitros, se distribuye Weibull con varianza de
-\(5703.473_{ml^2}\). Si la máquina sirve en promedio menos de
-\(330_{ml}\) por vaso, Postobon decidirá no sacar al mercado la máquina
+$5703.473_{ml^2}$. Si la máquina sirve en promedio menos de
+$330_{ml}$ por vaso, Postobon decidirá no sacar al mercado la máquina
 debido a que no cumple con los estándares establecidos. <br> <br> Para
 probar si las máquinas funcionan bien, se decide tomar una muestra
-aleatoria de \(5000\) vasos de gaseosa servidos por las nuevas máquinas
-de bebidas, obteniendo una promedio de \(327_{ml}\), con una varianza de
-\(5240.35_{ml^2}\). Basados en lo anterior, prueba con un nivel de
-significancia del \(5\%\) si la nueva máquina cumple con los estándares
+aleatoria de $5000$ vasos de gaseosa servidos por las nuevas máquinas
+de bebidas, obteniendo una promedio de $327_{ml}$, con una varianza de
+$5240.35_{ml^2}$. Basados en lo anterior, prueba con un nivel de
+significancia del $5\%$ si la nueva máquina cumple con los estándares
 establecidos.
 </p>
 <h3 data-toc-skip>
@@ -190,8 +190,8 @@ Solución
 <p>
 
 En este caso estamos interesados en probar la hipótesis de que la
-cantidad servida por la nueva máquina no es menor a \(330_{ml}\) por
-vaso, empleando un nivel de significancia del \(5\%\), y por tanto,
+cantidad servida por la nueva máquina no es menor a $330_{ml}$ por
+vaso, empleando un nivel de significancia del $5\%$, y por tanto,
 tendremos que el juego de hipótesis estará dado por $$\begin{align*}
   H_0:\mu \leq 330\\
   H_1:\mu < 330
@@ -199,7 +199,7 @@ tendremos que el juego de hipótesis estará dado por $$\begin{align*}
 
 Entonces dado que estamos en una situación en la cual sabemos que la
 población no es normal, debido a que se menciona que es Weibull, con
-varianza conocida e igual a \(5703.473_{ml^2}\), estaremos bajo la
+varianza conocida e igual a $5703.473_{ml^2}$, estaremos bajo la
 siguiente situación
 
 <img src="/assets/images/Hipotesis3b.jpg" alt="" style="max-width: 100%;">
@@ -209,10 +209,10 @@ la forma $$\begin{align*}
   Z_c = \frac{\bar{X}-\mu_0}{\sigma/\sqrt{n}} \sim N(0,1)
 \end{align*}$$
 
-En donde observamos que requerimos la media muestral \(\bar{X}=327\), la
-desviación estándar poblacional \(\sigma=75.52134\), el tamaño de
-muestra \(n=5000\), el nivel de significancia \(\alpha=0.05\) y el valor
-crítico \(-Z_{\alpha=0.05}=-1.644854\). Al reemplazar en el estadístico
+En donde observamos que requerimos la media muestral $\bar{X}=327$, la
+desviación estándar poblacional $\sigma=75.52134$, el tamaño de
+muestra $n=5000$, el nivel de significancia $\alpha=0.05$ y el valor
+crítico $-Z_{\alpha=0.05}=-1.644854$. Al reemplazar en el estadístico
 de prueba tenemos que $$\begin{align*}
   Z_c &= \frac{327-330}{75.52134/\sqrt{5000}} \\
       &= -2.808902
@@ -226,10 +226,10 @@ tendrá que $$\begin{align*}
 \end{align*}$$
 
 Entonces, como el P-valor es menor al nivel de significancia
-\(\alpha=0.05\), se tendrá evidencia suficiente para rechazar la
+$\alpha=0.05$, se tendrá evidencia suficiente para rechazar la
 hipótesis nula, y por tanto se concluirá con un nivel de significancia
-del \(5\%\) que la cantidad promedio de llenado de las gaseosas por vaso
-es menor a \(330_{ml}\), lo cual significa que Postobon debería sacar la
+del $5\%$ que la cantidad promedio de llenado de las gaseosas por vaso
+es menor a $330_{ml}$, lo cual significa que Postobon debería sacar la
 máquina del mercado para recalibrarla.
 </p>
 </main>
@@ -247,14 +247,14 @@ Ejercicio
 Suponga que la marca de cigarrillo Malboro es auditada debido a que se
 afirma que sus registros están adulterados. Ante ésto, el presidente de
 la empresa asegura que sus registros son correctos y que el flujo de
-caja promedio mensual que registran es de \(25\) mil millones de pesos.
+caja promedio mensual que registran es de $25$ mil millones de pesos.
 Para probar si dicha afirmación es posible, el auditor decide revisar el
-flujo de caja de la empresa de los últimos \(48\) meses, encontrando que
-el flujo de caja promedio que registra la empresa es de \(21.389\) mil
-millones de pesos con una desviación estándar de \(3.213\) mil millones
+flujo de caja de la empresa de los últimos $48$ meses, encontrando que
+el flujo de caja promedio que registra la empresa es de $21.389$ mil
+millones de pesos con una desviación estándar de $3.213$ mil millones
 de pesos. <br> <br> Si puede suponerse que el flujo de caja de la
 empresa Malboro se distribuye normalmente, emplee un nivel de confianza
-del \(10\%\) para probar si la afirmación del presidente se encuentra
+del $10\%$ para probar si la afirmación del presidente se encuentra
 respaldada por la información muestral.
 </p>
 <h3 data-toc-skip>
@@ -263,7 +263,7 @@ Solución
 <p>
 
 En este ejercicio se está interesado en probar la hipótesis sobre que el
-flujo de caja promedio mensual es igual a \(25\) mil millones de pesos,
+flujo de caja promedio mensual es igual a $25$ mil millones de pesos,
 lo cual significa que al posee la igualdad la afirmación, tendremos el
 siguiente juego de hipótesis $$\begin{align*}
   H_0:\mu = 25\\
@@ -284,8 +284,8 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que necesitamos la media muestral
-\(\bar{X}=21.389\), la desviación estándar muestral \(S=3.213\), el
-tamaño de muestra \(n=48\) y el nivel de significancia \(\alpha=0.10\).
+$\bar{X}=21.389$, la desviación estándar muestral $S=3.213$, el
+tamaño de muestra $n=48$ y el nivel de significancia $\alpha=0.10$.
 Al reemplazar estos valores tendremos que $$\begin{align*}
   Z_c &= \frac{21.389-25}{3.213/\sqrt{48}}\\
       &= -7.786412
@@ -296,7 +296,7 @@ tendremos que $$\begin{align*}
   RC:\{Z|Z<-Z_{\frac{\alpha}{2}} \text{ ó } Z>Z_{\frac{\alpha}{2}}\}
 \end{align*}$$
 
-en donde al ser el valor crítico \(Z_{\frac{\alpha}{2}=0.05}=1.644854\),
+en donde al ser el valor crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$,
 se tendrá que la región crítica está dada por $$\begin{align*}
   RC:\{Z|Z<-1.644854 \text{ ó } Z>1.644854\}
 \end{align*}$$
@@ -304,9 +304,9 @@ se tendrá que la región crítica está dada por $$\begin{align*}
 En donde al comparar el estadístico de prueba con la región crítica,
 encontramos que el estadístico de prueba cae dentro de la región
 crítica, y por tanto hay evidencia suficiente para rechazar la hipótesis
-nula, lo cual quiere decir con un nivel de significancia del \(10\%\)
+nula, lo cual quiere decir con un nivel de significancia del $10\%$
 que el flujo de caja promedio mensual que registra la marca de
-cigarrillos Malboro es diferente a \(25\) mil millones de pesos.
+cigarrillos Malboro es diferente a $25$ mil millones de pesos.
 </p>
 </main>
 
@@ -336,19 +336,19 @@ Ejercicio
 <p>
 Una empresa de electrodomésticos desea saber si los cursos de
 capacitación sirven para mejorar el nivel de ventas de sus trabajadoras
-y para ello decide enviar a \(12\) de sus agentes de ventas a dicho
+y para ello decide enviar a $12$ de sus agentes de ventas a dicho
 curso. Una vez finalizado el curso, la empresa encuentra que estos
-agentes generan unas ventas promedio de de \(43.5\) millones de pesos
-con una desviación estándar de \(3.1\) millones de pesos.<br> <br> Con
+agentes generan unas ventas promedio de de $43.5$ millones de pesos
+con una desviación estándar de $3.1$ millones de pesos.<br> <br> Con
 el fin de observar si el curso es o no efectivo, la empresa extrae una
-muestra aleatoria independiente de \(15\) agentes que no asistieron a la
+muestra aleatoria independiente de $15$ agentes que no asistieron a la
 capacitación y encontró que las ventas promedio generadas y su
-desviación estándar para estos agentes fue de \(40.8\) y \(2.3\)
+desviación estándar para estos agentes fue de $40.8$ y $2.3$
 millones de pesos respectivamente. <br> <br> Si es posible suponer que
 las poblaciones se distribuyen normalmente con varianzas iguales a
-\(5.6\) millones de pesos\(^2\) para quienes se capacitaron y a \(4.3\)
-millones de pesos\(^2\) para quienes no se capacitaron, emplee un nivel
-de significancia del \(5\%\) para observar si es posible pensar que los
+$5.6$ millones de pesos$^2$ para quienes se capacitaron y a $4.3$
+millones de pesos$^2$ para quienes no se capacitaron, emplee un nivel
+de significancia del $5\%$ para observar si es posible pensar que los
 cursos de capacitación mejoran el promedio de ventas sobre quienes no
 recibieron estos cursos?.
 </p>
@@ -358,7 +358,7 @@ Solución
 <p>
 
 En este ejercicio estamos interesados en emplear un nivel de
-significancia del \(5\%\) para probar la hipótesis de que las ventas de
+significancia del $5\%$ para probar la hipótesis de que las ventas de
 las personas que tomaron los cursos de capacitación son superiores a las
 ventas de quienes no tomaron los cursos de capacitación, la cual es de
 la forma $$\begin{align*}
@@ -366,12 +366,12 @@ la forma $$\begin{align*}
   H_1:\mu_C > \mu_S => \mu_C - \mu_S > 0\\
 \end{align*}$$
 
-donde el subíndice \(C\) representa “con capacitación” y el subíndice
-\(S\) representa “sin capacitación”. Ahora, para decidir si cual es el
+donde el subíndice $C$ representa “con capacitación” y el subíndice
+$S$ representa “sin capacitación”. Ahora, para decidir si cual es el
 estadístico de prueba adecuado, se verifica la información que poseemos,
 en donde nos mencionan que las poblaciones se distribuyen normalmente
-con varianzas conocidas e iguales a \(\sigma^2_C=5.6\) y
-\(\sigma^2_S=4.3\) millones de pesos\(^2\). Lo cual nos llevará a la
+con varianzas conocidas e iguales a $\sigma^2_C=5.6$ y
+$\sigma^2_S=4.3$ millones de pesos$^2$. Lo cual nos llevará a la
 siguiente situación
 
 <img src="/assets/images/Hipotesis4a.jpg" alt="" style="max-width: 80%;">
@@ -382,9 +382,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde, para realizar el cálculo requerimos de las media muestrales
-fueron \(\bar{X}_C=43.5\) y \(\bar{X}_S=40.8\), las varianzas
-poblacionales \(\sigma^2_C=5.6\) y \(\sigma^2_S=4.3\), los tamaños de
-muestrales \(n_C=12\) y \(n_S=15\). Al reemplazar en la ecuación del
+fueron $\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas
+poblacionales $\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de
+muestrales $n_C=12$ y $n_S=15$. Al reemplazar en la ecuación del
 estadístico de prueba tendremos que $$\begin{align*}
   Z_c &= \frac{(43.5-40.8) - 0}{\sqrt{\frac{5.6}{12}+\frac{4.3}{15}}}\\
       &= 3.110786
@@ -399,7 +399,7 @@ $$\begin{align*}
           &= 0.000932951 \\
 \end{align*}$$
 
-Entonces como el P-valor es menor al nivel de significancia del \(5\%\)
+Entonces como el P-valor es menor al nivel de significancia del $5\%$
 se rechazará la hipótesis nula, y por tanto se tendrá evidencia
 suficiente para concluir que el promedio de ventas de las personas que
 recibieron capacitación es superior al promedio de ventas de las
@@ -423,15 +423,15 @@ posibles ubicaciones en los cuales puede llevar a cabo dicho proyecto.
 Para decidir en cual de las dos ubicaciones llevar a cabo el proyecto
 decide tomar muestras aleatorias de cada ubicación y mirar en cual de
 los dos hay mayor aflucencia de vehículos.<br> <br> De la ubicación
-\(A\) se decide tomar una muestra aleatoria de \(22\) días y de la
-ubicación \(B\) de \(28\) días encontrando respectivamente que el número
-promedio de vehículos para cada ubicación fue de \(2359\) y \(2147\)
-vehículos, con una desviación estándar de \(143\) y \(301\) vehículos.
+$A$ se decide tomar una muestra aleatoria de $22$ días y de la
+ubicación $B$ de $28$ días encontrando respectivamente que el número
+promedio de vehículos para cada ubicación fue de $2359$ y $2147$
+vehículos, con una desviación estándar de $143$ y $301$ vehículos.
 <br> <br> Si puede asumirse que el número de vehículos en las dos zonas
 se distribuye aproximadamente normal con varianzas iguales, pruebe con
-un nivel de significancia del \(10\%\) si la afluencia de vehículos que
-transitan por la ubicación \(A\) es menor que la afluencia de vehículos
-que transitan por la ubicación \(B\).
+un nivel de significancia del $10\%$ si la afluencia de vehículos que
+transitan por la ubicación $A$ es menor que la afluencia de vehículos
+que transitan por la ubicación $B$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -440,7 +440,7 @@ Solución
 
 En este punto estamos interesados en una hipótesis unilateral, debido a
 que queremos probar si el número de vehículos que transitan por día por
-la ubicación \(A\) es menor que la ubicación \(B\), lo cual puede
+la ubicación $A$ es menor que la ubicación $B$, lo cual puede
 traducirse bajo el juego de hipótesis $$\begin{align*}
   H_0:\mu_A \geq \mu_B => \mu_A - \mu_B \geq 0\\
   H_1:\mu_A < \mu_B => \mu_A - \mu_B < 0\\
@@ -459,9 +459,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo requerimos de los
-tamaños muestrales \(n_A=22\) y \(n_B=28\), las medias muestrales
-\(\bar{X}_A=2359\) y \(\bar{X}_B=2147\), y una desviación estándar
-conjunta \(S_p\), la cual no poseemos, y que debemos calcular, pero que
+tamaños muestrales $n_A=22$ y $n_B=28$, las medias muestrales
+$\bar{X}_A=2359$ y $\bar{X}_B=2147$, y una desviación estándar
+conjunta $S_p$, la cual no poseemos, y que debemos calcular, pero que
 podemos obtener mediante la ecuación $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
@@ -488,9 +488,9 @@ $$\begin{align*}
 \end{align*}$$
 
 y por tanto, como el P-valor es superior al nivel de significancia del
-\(10\%\), no se rechaza al hipótesis nula y se tendrá que hay evidencia
+$10\%$, no se rechaza al hipótesis nula y se tendrá que hay evidencia
 suficiente para concluir que el número de vehículos que transitan por la
-ubicación \(A\) no es menor a la ubicación \(B\).
+ubicación $A$ no es menor a la ubicación $B$.
 </p>
 </main>
 <button id="Show6" class="btn btn-secondary">
@@ -508,15 +508,15 @@ Suponga que la Universidad de Antioquia adelanta un estudio sobre el
 salario de sus egresados y desea comparar si es cierta la creencia que
 las mujeres ganan en promedio menos dinero que los hombres. <br> <br>
 Para comprobar si las creencias son ciertas, un grupo de investigación
-de la Universidad toma una muestra representativa de \(250\) mujeres y
-\(270\) hombres egresados de la Universidad y se les pregunta sobre cuál
+de la Universidad toma una muestra representativa de $250$ mujeres y
+$270$ hombres egresados de la Universidad y se les pregunta sobre cuál
 es el salario que ganan actualmente, obteniendo en su investigación que
-las mujeres ganan en promedio \(2.3\) millones de pesos con una
-desviación estándar de \(0.7\) millones de pesos, mientras que los
-hombres ganan en promedio \(2.6\) millones de pesos con una desviación
-estándar de \(1.2\) millones de pesos.<br> <br> Si el grupo de
+las mujeres ganan en promedio $2.3$ millones de pesos con una
+desviación estándar de $0.7$ millones de pesos, mientras que los
+hombres ganan en promedio $2.6$ millones de pesos con una desviación
+estándar de $1.2$ millones de pesos.<br> <br> Si el grupo de
 investigación encuentra que los salarios no se distribuyen normalmente,
-emplee un nivel de significancia del \(15\%\) para probar si el salario
+emplee un nivel de significancia del $15\%$ para probar si el salario
 de los egresados hombres es mayor al salario de los egresados mujeres.
 </p>
 <h3 data-toc-skip>
@@ -525,7 +525,7 @@ Solución
 <p>
 
 En este enunciado estamos interesados en probar con un nivel de
-significancia del \(15\%\) si el salario de los hombres es mayor al de
+significancia del $15\%$ si el salario de los hombres es mayor al de
 las mujeres, lo cual se traduce en el siguiente juego de hipótesis
 $$\begin{align*}
   H_0:\mu_H \leq \mu_M => \mu_H - \mu_M \leq 0\\
@@ -547,9 +547,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que para realizar el cálculo se requiere de los
-tamaños muestrales \(n_M = 250\) y \(n_H = 270\), las medias muestrales
-\(\bar{X}_M=2.3\) y \(\bar{X}_H=2.6\), con desviaciones estándar
-muestrales iguales a \(S_M=0.7\) y \(S_H=1.2\). Por tanto al reemplazar
+tamaños muestrales $n_M = 250$ y $n_H = 270$, las medias muestrales
+$\bar{X}_M=2.3$ y $\bar{X}_H=2.6$, con desviaciones estándar
+muestrales iguales a $S_M=0.7$ y $S_H=1.2$. Por tanto al reemplazar
 los valores en el estadístico de prueba se tendrá que $$\begin{align*}
   Z_c &= \frac{(2.6-2.3) - 0}{\sqrt{\frac{1.2^2}{270}+\frac{0.7^2}{250}}} \\ 
       &= 3.512838818
@@ -563,7 +563,7 @@ la hipótesis, tendremos que $$\begin{align*}
 
 Entonces como el estadístico de prueba cae dentro de la región crítica,
 se tendrá evidencia suficiente para rechazar la hipótesis nula, lo cual
-significa con un nivel de significancia del \(15\%\) que el salario
+significa con un nivel de significancia del $15\%$ que el salario
 promedio de los hombres es mayor al salario promedio de las mujeres.
 </p>
 </main>
@@ -579,18 +579,18 @@ Ejercicio
 </h3>
 <p>
 Se realiza un estudio con el fin de comparar el rendimiento de
-combustible en kilómetros por galón para dos tipos de motores \(A\) y
-\(B\). Suponga que se decide realizar un total de \(47\) experimentos
-con el motor \(A\) y \(56\) experimentos con el motor \(B\), encontrando
-para cada caso, un rendimiento promedio de gasolina de \(44\) y \(48\)
-kilómetros, respectivamente, con desviaciones estándar de \(8.3\) y
-\(6.6\), respectivamente. <br> <br> Basados en la información anterior,
-pruebe con un nivel de significancia del \(12\%\) si la diferencia
+combustible en kilómetros por galón para dos tipos de motores $A$ y
+$B$. Suponga que se decide realizar un total de $47$ experimentos
+con el motor $A$ y $56$ experimentos con el motor $B$, encontrando
+para cada caso, un rendimiento promedio de gasolina de $44$ y $48$
+kilómetros, respectivamente, con desviaciones estándar de $8.3$ y
+$6.6$, respectivamente. <br> <br> Basados en la información anterior,
+pruebe con un nivel de significancia del $12\%$ si la diferencia
 promedio entre los rendimientos de combustible en kilómetros por galón
-de gasolina para los motores \(A\) y \(B\) son o no iguales, si es
+de gasolina para los motores $A$ y $B$ son o no iguales, si es
 posible suponer que los rendimientos de los combustibles no poseen una
-distribución normal y poseen varianzas conocidas e iguales a \(38.44\) y
-\(57.76\) para los motores \(A\) y \(B\) respectivamente.
+distribución normal y poseen varianzas conocidas e iguales a $38.44$ y
+$57.76$ para los motores $A$ y $B$ respectivamente.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -598,7 +598,7 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular con un nivel de
-significancia del \(12\%\) si la diferencia entre los rendimientos
+significancia del $12\%$ si la diferencia entre los rendimientos
 promedios de combustible son o no iguales, es decir, se quiere probar el
 juego de hipótesis $$\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
@@ -617,9 +617,9 @@ $$\begin{align*}
 \end{align*}$$
 
 observando que se requiere de los rendimientos promedio muestrales de
-los dos motores \(\bar{X}_A=44\) y \(\bar{X}_B=48\), las varianzas
-poblacionales \(\sigma^2_A=38.44\) y \(\sigma^2_B=57.76\) y los tamaños
-muestrales \(n_A=47\) y \(n_B=56\). Al reemplazar estos valores en el
+los dos motores $\bar{X}_A=44$ y $\bar{X}_B=48$, las varianzas
+poblacionales $\sigma^2_A=38.44$ y $\sigma^2_B=57.76$ y los tamaños
+muestrales $n_A=47$ y $n_B=56$. Al reemplazar estos valores en el
 estadístico de prueba se tendrá que $$\begin{align*}
   Z_c &= \frac{(44-48) - 0}{\sqrt{\frac{38.44}{47}+\frac{57.76}{56}}} \\
       &= -2.941414
@@ -632,7 +632,7 @@ rechaza o no la hipótesis establecida, tendremos que $$\begin{align*}
 \end{align*}$$
 
 apreciando que el estadístico de prueba cae dentro de la región crítica
-lo cual significa que con un nivel de significancia del \(12\%\) se
+lo cual significa que con un nivel de significancia del $12\%$ se
 rechaza la hipótesis nula, de que el rendimiento promedios de
 combustible de los dos tipos de motores son iguales, y por tanto se
 tendrá que hay diferencias significativas entre el rendimiento promedio
@@ -654,16 +654,16 @@ Suponga que se contrata a un grupo de investigación de la Universidad de
 Antioquia para que realice un análisis de tensión sobre la unión pegada
 con una resina experimental a dos clases diferentes de madera. Para
 realizar el estudio, el grupo de investigación toma una muestra
-aleatoria de \(18\) uniones pegadas con la resina especial a la madera
-\(A\) y encontró que la tensión promedio de corte y desviación estándar
-fueron de \(1130_{psi}\) y \(420_{psi}\), respectivamente. Por su parte,
-toman una muestra aleatoria de \(12\) uniones pegadas con la resina
-especial a la madera \(B\), encontrando que la tensión promedio de corte
-y desviación estándar fueron de \(1010_{psi}\) y \(380_{psi}\).<br> <br>
+aleatoria de $18$ uniones pegadas con la resina especial a la madera
+$A$ y encontró que la tensión promedio de corte y desviación estándar
+fueron de $1130_{psi}$ y $420_{psi}$, respectivamente. Por su parte,
+toman una muestra aleatoria de $12$ uniones pegadas con la resina
+especial a la madera $B$, encontrando que la tensión promedio de corte
+y desviación estándar fueron de $1010_{psi}$ y $380_{psi}$.<br> <br>
 Si se asume que la tensión sobre la unión pegada con la resina
 experimental en cada clase de madera se distribuye aproximadamente
 normal con varianzas diferentes. Emplee un nivel de significancia del
-\(8\%\) para observar si existen o no diferencias significativas de la
+$8\%$ para observar si existen o no diferencias significativas de la
 tensión promedio de corte de las dos marcas de madera.
 </p>
 <h3 data-toc-skip>
@@ -687,11 +687,11 @@ situación que posee el siguiente estadístico de prueba $$\begin{align*}
   t_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{\sqrt{\frac{S^2_A}{n_A}+\frac{S^2_B}{n_B}}} \sim t_v
 \end{align*}$$
 
-En donde se observa que requerimos de los tamaños muestrales \(n_A=18\)
-y \(n_B=12\), de las medias muestrales de \(\bar{X}_A=1130_{psi}\) y
-\(\bar{X}_B=1010_{psi}\) junto a unas desviaciones estándar de
-\(S_A=420_{psi}\) y \(S_B=380_{psi}\). Adicionalmente se requiere el
-valor de los grados de libertad \(\nu\), los cuales están dados por
+En donde se observa que requerimos de los tamaños muestrales $n_A=18$
+y $n_B=12$, de las medias muestrales de $\bar{X}_A=1130_{psi}$ y
+$\bar{X}_B=1010_{psi}$ junto a unas desviaciones estándar de
+$S_A=420_{psi}$ y $S_B=380_{psi}$. Adicionalmente se requiere el
+valor de los grados de libertad $\nu$, los cuales están dados por
 
 $$\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
@@ -700,7 +700,7 @@ $$\begin{align*}
     &= 25.33837
 \end{align*}$$
 
-Al calcular el valor techo de \(\nu\) tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
@@ -720,7 +720,7 @@ cual es igual a $$\begin{align*}
 \end{align*}$$
 
 Encontrando que el P-valor es superior al nivel de significancia del
-\(8\%\), lo cual significa que no hay evidencia suficiente para rechazar
+$8\%$, lo cual significa que no hay evidencia suficiente para rechazar
 la hipótesis nula y por tanto se concluirá que no existen diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera.
@@ -751,7 +751,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han llevado a cabo en
+que los costos asociados a $20$ proyectos que se han llevado a cabo en
 la ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -824,8 +824,8 @@ la ciudad, en millones de pesos, fueron de
 </table>
 <p>
 Si se cree que la verdadera proporción de proyectos que poseen costos
-superiores a \(1900\) millones de pesos es de más del \(40\%\), emplee
-un nivel de significancia del \(5\%\) para probar si dicha creencia se
+superiores a $1900$ millones de pesos es de más del $40\%$, emplee
+un nivel de significancia del $5\%$ para probar si dicha creencia se
 encuentra apoyada por la información empírica.
 </p>
 <h3 data-toc-skip>
@@ -834,8 +834,8 @@ Solución
 <p>
 
 En este caso estamos interesados en probar si la verdadera proporción de
-proyectos que poseen costos superiores a \(1900\) millones de pesos es
-de más del \(40\%\), y por tanto se tendrá que el juego de hipótesis
+proyectos que poseen costos superiores a $1900$ millones de pesos es
+de más del $40\%$, y por tanto se tendrá que el juego de hipótesis
 está dado por $$\begin{align*}
   H_0:p \leq 0.40\\
   H_1:p > 0.40
@@ -853,22 +853,22 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde se evidencia que necesitamos para el cálculo de la proporción
-muestral de proyectos que poseen costos superiores a \(1900\) millones
-de pesos, del tamaño de muestra \(n=20\) y de la proporción establecida
+muestral de proyectos que poseen costos superiores a $1900$ millones
+de pesos, del tamaño de muestra $n=20$ y de la proporción establecida
 en la hipótesis nula. <br> <br> Para realizar el cálculo de la
 proporción muestral se trata de localizar aquellos costos que posean un
-valor superior a \(1900\) millones de pesos, denotando como \(1\)
-aquellas observaciones que sean superiores a \(1900\) millones de pesos,
-y \(0\) aquellas observaciones que no cumplan la condición, tal que
+valor superior a $1900$ millones de pesos, denotando como $1$
+aquellas observaciones que sean superiores a $1900$ millones de pesos,
+y $0$ aquellas observaciones que no cumplan la condición, tal que
 $$\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
 \end{align*}$$
 
 Al contar el número de éxitos, observamos que tenemos un total de
-\(x=5\) éxitos en un total de \(n=20\) muestras, y por tanto, podemos
+$x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
-muestral de egresados que poseen salarios superiores a \(1900\)
+muestral de egresados que poseen salarios superiores a $1900$
 millones, tal que $$\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
@@ -891,10 +891,10 @@ evidencia a favor de la hipótesis nula obteniendo que $$\begin{align*}
 \end{align*}$$
 
 En donde se evidencia que el P-valor asociado al estadístico de prueba
-posee un valor del \(91.45\%\) el cual es mayor al nivel de
-significancia preestablecido de \(5\%\), permitiendo concluir que no se
+posee un valor del $91.45\%$ el cual es mayor al nivel de
+significancia preestablecido de $5\%$, permitiendo concluir que no se
 rechaza la hipótesis nula, y por tanto, se tendrá que la verdadera
-proporción de proyectos que poseen costos superiores a \(1900\) millones
-de pesos no es mayor a \(40\%\).
+proporción de proyectos que poseen costos superiores a $1900$ millones
+de pesos no es mayor a $40\%$.
 </p>
 </main>

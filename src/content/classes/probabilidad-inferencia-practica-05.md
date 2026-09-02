@@ -18,10 +18,10 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Calcule la probabilidad de que la concentración media de zinc en el
-    río se encuentre entre \(2.4\) y \(2.5\) gramos por mililitro.
+    río se encuentre entre $2.4$ y $2.5$ gramos por mililitro.
     </li>
     <li>
-    Calcule un intervalo de confianza del \(95\%\) para la concentración
+    Calcule un intervalo de confianza del $95\%$ para la concentración
     media de zinc en el río?
     </li>
     </ol>
@@ -82,10 +82,10 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Calcule la probabilidad de que el tiempo de reacción promedio para
-    todos los individuos sea a lo más de \(6\) segundos.
+    todos los individuos sea a lo más de $6$ segundos.
     </li>
     <li>
-    Calcule el límite superior del \(95\%\) para el tiempo medio de
+    Calcule el límite superior del $95\%$ para el tiempo medio de
     reacción de todos los individuos.
     </li>
     </ol>
@@ -109,18 +109,18 @@ bibliography: "../../referencias.bib"
     información anterior,
     <ol type="a">
     <li>
-    Construya un intervalo de confianza del \(98\%\) para la estatura
+    Construya un intervalo de confianza del $98\%$ para la estatura
     media de todos los estudiantes universitarios.
     </li>
     <li>
-    ¿Qué podemos afirmar con una confianza del \(98\%\) acerca del
+    ¿Qué podemos afirmar con una confianza del $98\%$ acerca del
     posible tamaño de nuestro error, si estimamos que la estatura media
-    de todos los estudiantes universitarios es de \(174.5\) centímetros?
+    de todos los estudiantes universitarios es de $174.5$ centímetros?
     </li>
     <li>
     Cual es la probabilidad de que la estatura promedio de todos los
-    estudiantes sea a lo sumo \(172\) centímetros, si suponemos que las
-    alturas se distribuyen <i>iid</i> con desviación estándar de \(7.3\)
+    estudiantes sea a lo sumo $172$ centímetros, si suponemos que las
+    alturas se distribuyen <i>iid</i> con desviación estándar de $7.3$
     centímetros.
     </li>
     </ol>
@@ -134,14 +134,14 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Calcule la probabilidad de que la proporción de refrigeradores que
-    fallan durante el periodo de garantía para la marca \(A\) sea
-    superior la proporción de refrigeradores de la marca \(B\) que
+    fallan durante el periodo de garantía para la marca $A$ sea
+    superior la proporción de refrigeradores de la marca $B$ que
     fallan durante el periodo de garantía.
     </li>
     <li>
     ¿Podría concluirse que hay evidencia suficiente para afirma que las
-    proporciones de fallas de la marca \(A\) de refrigeradores es
-    superior a la proporción de falla de la marca \(B\) de
+    proporciones de fallas de la marca $A$ de refrigeradores es
+    superior a la proporción de falla de la marca $B$ de
     refrigeradores, dentro del período de garantía? ¿Por qué?
     </li>
     </ol>
@@ -153,11 +153,11 @@ bibliography: "../../referencias.bib"
     Basados en lo anterior
     <ol type="a">
     <li>
-    Encuentre un intervalo de confianza de \(87\%\) para la proporción
+    Encuentre un intervalo de confianza de $87\%$ para la proporción
     total de adultos que piensan que el cine está mejorando.
     </li>
     <li>
-    ¿El intervalo incluye el valor \(p = 0.50\)? ¿Piensa usted que la
+    ¿El intervalo incluye el valor $p = 0.50$? ¿Piensa usted que la
     mayoría de los adultos piensa que el cine está mejorando?
     </li>
     </ol>
@@ -172,10 +172,10 @@ bibliography: "../../referencias.bib"
     Si se asume que los datos se distribuye normalmente, calcule la
     probabilidad de que la varianza de la población de pacientes de la
     cual se extrajo la muestra, tenga un valor superior a
-    \(8_{días^2}\).
+    $8_{días^2}$.
     </li>
     <li>
-    Calcule el límite superior de un intervalo de confianza del \(95\%\)
+    Calcule el límite superior de un intervalo de confianza del $95\%$
     para la duración media de permanencia de la población de pacientes
     de la cual se extrajo la muestra.  
     </li>
@@ -188,14 +188,14 @@ bibliography: "../../referencias.bib"
     gran atractivo tienen un efecto positivo en la sociedad.
     <ol type="a">
     <li>
-    Encuentre un intervalo de confianza de \(95\%\) para el porcentaje
+    Encuentre un intervalo de confianza de $95\%$ para el porcentaje
     del público que piensa que los deportes tienen un efecto positivo en
     la sociedad.
     </li>
     <li>
-    La encuesta publicó un margen de error de “más o menos \(3.1\%\)”.
+    La encuesta publicó un margen de error de “más o menos $3.1\%$”.
     ¿Esto concuerda con la respuesta encontrada en el inciso a)? ¿Qué
-    valor de \(p\) produce el margen de error dado por la encuesta?
+    valor de $p$ produce el margen de error dado por la encuesta?
     </li>
     </ol>
 12. Para una comparación de los porcentajes de piezas defectuosas
@@ -205,7 +205,7 @@ bibliography: "../../referencias.bib"
     contenía `$12$` piezas defectuosas.
     <ol type="a">
     <li>
-    Encuentre un intervalo de confianza de \(98\%\) para la verdadera
+    Encuentre un intervalo de confianza de $98\%$ para la verdadera
     diferencia en proporciones de piezas defectuosas para las dos
     líneas.
     </li>
@@ -223,8 +223,8 @@ bibliography: "../../referencias.bib"
     opiniones de hombres y mujeres sobre este asunto.
     <ol type="a">
     <li>
-    Si se han de entrevistar \(1000\) hombres y \(1000\) mujeres, y se
-    emplea un nivel de confianza del \(95\%\) ¿con cuánta precisión
+    Si se han de entrevistar $1000$ hombres y $1000$ mujeres, y se
+    emplea un nivel de confianza del $95\%$ ¿con cuánta precisión
     podría usted estimar la diferencia en las proporciones que piensan
     que el rendimiento de sus equipos de atletismo tiene un impacto
     positivo en la percepción del público acerca del prestigio de las
@@ -234,8 +234,8 @@ bibliography: "../../referencias.bib"
     <li>
     Supongamos que usted estuviera diseñando la encuesta y desea estimar
     la diferencia en un par de proporciones, entonces si desea que el
-    error de estimación no supere \(0.02\), y decide emplear un nivel de
-    confianza de \(90\%\). ¿Cuántas entrevistas deberán realizarse a
+    error de estimación no supere $0.02$, y decide emplear un nivel de
+    confianza de $90\%$. ¿Cuántas entrevistas deberán realizarse a
     cada población si suponemos que las muestras son iguales?
     </li>
     </ol>
@@ -289,19 +289,19 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Suponiendo normalidad, encuentre un intervalo de confianza de
-    \(90\%\) para la media de calificaciones del SAT verbal para alumnos
+    $90\%$ para la media de calificaciones del SAT verbal para alumnos
     de último año de preparatoria urbana.
     </li>
     <li>
     ¿El intervalo hallado por usted en el inciso a) incluye el valor
-    \(508\)?, la calificación media real del SAT verbal para \(2005\)?
+    $508$?, la calificación media real del SAT verbal para $2005$?
     ¿Qué puede concluir?
     </li>
     <li>
-    Construya un intervalo de confianza de \(90\%\) para la calificación
+    Construya un intervalo de confianza de $90\%$ para la calificación
     media del SAT de matemáticas para alumnos de último año de
-    preparatoria urbana. ¿El intervalo incluye \(520\), la calificación
-    media real de matemáticas para \(2005\)? ¿Qué puede concluir?
+    preparatoria urbana. ¿El intervalo incluye $520$, la calificación
+    media real de matemáticas para $2005$? ¿Qué puede concluir?
     </li>
     </ol>
 15. Se está considerando un nuevo sistema de lanzamiento de cohetes para
@@ -312,7 +312,7 @@ bibliography: "../../referencias.bib"
     resultan exitosos.
     <ol type="a">
     <li>
-    Construya un intervalo de confianza del \(95\%\) para \(p\).
+    Construya un intervalo de confianza del $95\%$ para $p$.
     </li>
     <li>
     ¿Con base en sus resultados, concluiría que el nuevo sistema es
@@ -367,15 +367,15 @@ bibliography: "../../referencias.bib"
     </table>
     <ol type="a">
     <li>
-    Construya un intervalo de confianza de \(95\%\) para el número medio
-    de gramos de acetanilida que se puede recuperar de \(4.85\) gramos
+    Construya un intervalo de confianza de $95\%$ para el número medio
+    de gramos de acetanilida que se puede recuperar de $4.85$ gramos
     de anilina. Suponga que los gramos de acetanilida que se pueden
     recuperar tiene un comportamiento aproximadamente normal.
     </li>
     <li>
-    Construya un intervalo de confianza de \(90\%\) para la proporción
+    Construya un intervalo de confianza de $90\%$ para la proporción
     de experimentos que recuperan una cantidad de acetanilida superior a
-    \(3.82\) gramos, al emplear \(4.85\) gramos de anilina.
+    $3.82$ gramos, al emplear $4.85$ gramos de anilina.
     </li>
     </ol>
 17. Dos nuevos medicamentos se dieron a pacientes con hipertensión. El
@@ -386,14 +386,14 @@ bibliography: "../../referencias.bib"
     Basado en la información anterior
     <ol type="a">
     <li>
-    Determine un intervalo de confianza de \(95\%\) para la diferencia
+    Determine un intervalo de confianza de $95\%$ para la diferencia
     de las reducciones medias en presión sanguínea, suponiendo que las
     mediciones están distribuidas normalmente.
     </li>
     <li>
     Calcule la probabilidad de la diferencia de las reducciones medias
-    en la presión sanguínea con el medicamento \(A\) sea menor que la
-    reducción media que ofrece el medicamento \(B\), suponiendo que las
+    en la presión sanguínea con el medicamento $A$ sea menor que la
+    reducción media que ofrece el medicamento $B$, suponiendo que las
     mediciones están distribuidas normalmente.
     </li>
     </ol>
@@ -594,7 +594,7 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Calcule la probabilidad de que el precio promedio de atún blanco
-    empacado en aceite sea a lo más \(1.4\) dolares.
+    empacado en aceite sea a lo más $1.4$ dolares.
     </li>
     <li>
     Calcule la probabilidad de que la variabilidad del precio del atún
@@ -602,12 +602,12 @@ bibliography: "../../referencias.bib"
     atún claro empacado en agua.
     </li>
     <li>
-    Calcule un intervalo de confianza del \(92\%\) para el precio
+    Calcule un intervalo de confianza del $92\%$ para el precio
     promedio de atún claro empacado en aceite. Interprete el intervalo.
-    Específicamente, ¿a qué se refiere el “\(92\%\)”?
+    Específicamente, ¿a qué se refiere el “$92\%$”?
     </li>
     <li>
-    Calcule un intervalo de confianza de \(99\%\) para la diferencia en
+    Calcule un intervalo de confianza de $99\%$ para la diferencia en
     el precio medio de atún claro empacado en agua y atún claro empacado
     en aceite.
     </li>
@@ -657,12 +657,12 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Calcule la probabilidad de que la varianza de las lecturas de
-    emisión de ruido de camiones, sea mayor a \(2_{dB}\). Interprete sus
+    emisión de ruido de camiones, sea mayor a $2_{dB}$. Interprete sus
     resultados.
     </li>
     <li>
     Calcule la probabilidad de que la diferencia entre la media real y
-    muestral sea como máximo de \(0.4_{dB}\).
+    muestral sea como máximo de $0.4_{dB}$.
     </li>
     </ol>
 21. En el trabajo de laboratorio es deseable realizar cuidadosas
@@ -740,10 +740,10 @@ bibliography: "../../referencias.bib"
     <li>
     Calcule la probabilidad de que el promedio desconocido de las
     mediciones realizadas por el instrumento de precisión se encuentre
-    entre \(358\) y \(363\).
+    entre $358$ y $363$.
     </li>
     <li>
-    Construya un intervalo de confianza del \(84\%\) para la medición
+    Construya un intervalo de confianza del $84\%$ para la medición
     promedio de todas las mediciones realizadas por el instrumento de
     precisión.
     </li>
@@ -1071,12 +1071,12 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Calcule la probabilidad de que el tiempo promedio de durabilidad de
-    todas las baterías sea de \(3\) o más años.
+    todas las baterías sea de $3$ o más años.
     </li>
     <li>
-    Construya un intervalo de confianza del \(92\%\) para el promedio de
+    Construya un intervalo de confianza del $92\%$ para el promedio de
     durabilidad de todas las baterías y después decida si la afirmación
-    del fabricante sobre que el promedio de durabilidad es de \(3\), es
+    del fabricante sobre que el promedio de durabilidad es de $3$, es
     o no válida.
     </li>
     </ol>
@@ -1090,9 +1090,9 @@ bibliography: "../../referencias.bib"
     de `$5.5$` años con una desviación estándar de `$1.7$` años.
     <ol type="a">
     <li>
-    Calcule con un nivel de confianza del \(90\%\) un intervalo para la
+    Calcule con un nivel de confianza del $90\%$ un intervalo para la
     diferencia los tiempos promedio de vida de los refrigeradores de las
-    marcas \(A\) y \(B\).
+    marcas $A$ y $B$.
     </li>
     <li>
     ¿Podría concluirse que hay evidencia suficiente para afirma que

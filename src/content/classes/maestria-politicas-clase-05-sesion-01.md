@@ -560,7 +560,7 @@ Variables base de datos
 Las variables contenidas en la base de datos anterior son:
 <ul>
 <li>
-<strong><tt>ANO\(\color{#28c74c}{\_}\)CENSO</tt>:</strong> Año al que
+<strong><tt>ANO$\color{#28c74c}{\_}$CENSO</tt>:</strong> Año al que
 corresponde la información recolectada en el Censo.
 </li>
 <li>
@@ -620,7 +620,7 @@ información.
 </li>
 </ul>
 <li>
-<strong><tt>OB\(\color{#28c74c}{\_}\)FORMAL</tt>:</strong> Define si la
+<strong><tt>OB$\color{#28c74c}{\_}$FORMAL</tt>:</strong> Define si la
 obra cuenta o no con licencia de construcción
 </li>
 <ul>
@@ -632,7 +632,7 @@ obra cuenta o no con licencia de construcción
 </li>
 </ul>
 <li>
-<strong><tt>ESTADO\(\color{#28c74c}{\_}\)ACT</tt>:</strong> El estado
+<strong><tt>ESTADO$\color{#28c74c}{\_}$ACT</tt>:</strong> El estado
 determina como se encontró la obra al momento del censo y se capta el
 código correspondiente.
 </li>
@@ -733,17 +733,17 @@ cubierto en miles de pesos.
 </li>
 </ul>
 <li>
-<strong><tt>MANO\(\color{#28c74c}{\_}\)OBRAP</tt>:</strong> Corresponde
+<strong><tt>MANO$\color{#28c74c}{\_}$OBRAP</tt>:</strong> Corresponde
 a la cantidad de mano de obra permanente generada en el período
 intercensal por tipo de mano de obra.
 </li>
 <li>
-<strong><tt>MANO\(\color{#28c74c}{\_}\)OBRAT</tt>:</strong> Corresponde
+<strong><tt>MANO$\color{#28c74c}{\_}$OBRAT</tt>:</strong> Corresponde
 a la cantidad de mano de obra temporal generada en el período
 intercensal por tipo de mano de obra.
 </li>
 <li>
-<strong><tt>AREA\(\color{#28c74c}{\_}\)LOTE</tt>:</strong> Corresponde
+<strong><tt>AREA$\color{#28c74c}{\_}$LOTE</tt>:</strong> Corresponde
 al área del terreno donde se construye la obre o proyecto.
 </li>
 <li>
@@ -751,7 +751,7 @@ al área del terreno donde se construye la obre o proyecto.
 garaje y los depósitos o cuartos útiles).
 </li>
 <li>
-<strong><tt>NRO\(\color{#28c74c}{\_}\)PISOS</tt>:</strong> Número de
+<strong><tt>NRO$\color{#28c74c}{\_}$PISOS</tt>:</strong> Número de
 pisos del destino corresponde al número de pisos que conformarán cada
 destino que este en proceso de construcción.
 </li>
@@ -1032,7 +1032,7 @@ la base de datos
 De lo anterior se observa que, a pesar de no poseer caracteres
 especiales, los encabezados se encuentran escritos con mayúsculas
 sostenidas, por lo cual se procede a realizar la limpieza de los mismos
-con la función <tt>clean\(\_\)names()</tt> de la librería
+con la función <tt>clean$\_$names()</tt> de la librería
 <tt>janitor</tt>.
 </p>
 <section class="language-r highlighter-rouge">
@@ -1220,11 +1220,11 @@ de datos. En consecuencia, debemos transformar cada variable dependiendo
 de su estructura y escala de medición.
 </p>
 <p>
-En sí, tenemos que en primer lugar, las variables <tt>ano\(\_\)censo,
+En sí, tenemos que en primer lugar, las variables <tt>ano$\_$censo,
 trimestre, estrato y ranvivi</tt> son <strong>variables cualitativas
 ordinales</strong> y por ello deben se transformadas a variables de tipo
 factor ordinal. En segundo lugar, las variables <tt>region,
-ob\(\_\)formal, estado\(\_\)act, movimiento, tipovalor, tipovivi y
+ob$\_$formal, estado$\_$act, movimiento, tipovalor, tipovivi y
 destino2</tt> son <strong>variables cualitativas nominales</strong> y
 deben ser transformadas a variables de tipo factor. Finalmente, las
 demás son <strong>variables cuantitativas discretas o continuas</strong>
@@ -1330,7 +1330,7 @@ Ejemplo remover filas o columnas vacías en <tt>R</tt>
 </h3>
 <p>
 Dado que se tiene la sospecha de que hay filas o columnas vacías en la
-base de datos, se emplea la función <tt>remove\(\_\)empty()</tt> de la
+base de datos, se emplea la función <tt>remove$\_$empty()</tt> de la
 librería <tt>janitor</tt>, tal que
 </p>
 <section class="language-r highlighter-rouge">

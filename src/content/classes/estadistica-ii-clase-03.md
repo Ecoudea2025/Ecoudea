@@ -181,7 +181,7 @@ $$\begin{align*}
   &= -\frac{n}{2}\ln(2\pi) - \frac{n}{2}\ln(\sigma^2) - \frac{1}{2\sigma^2}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})
 \end{align*}$$
 
-Ahora, para derivar respecto al vector \(\boldsymbol{\beta}\), se
+Ahora, para derivar respecto al vector $\boldsymbol{\beta}$, se
 expande inicialmente la forma cuadrática
 
 $$\begin{align*}
@@ -190,14 +190,14 @@ $$\begin{align*}
 \end{align*}$$
 
 en donde el segundo y tercer término se agrupan ya que
-\(\mathbf{Y}^\top\mathbf{X}\boldsymbol{\beta}\) es un escalar, y por
+$\mathbf{Y}^\top\mathbf{X}\boldsymbol{\beta}$ es un escalar, y por
 tanto es igual a su transpuesta
-\(\boldsymbol{\beta}^\top\mathbf{X}^\top\mathbf{Y}\). Luego, empleando
+$\boldsymbol{\beta}^\top\mathbf{X}^\top\mathbf{Y}$. Luego, empleando
 las reglas de derivación matricial
-\(\frac{\partial (\mathbf{a}^\top\mathbf{b})}{\partial \mathbf{b}} = \mathbf{a}\)
+$\frac{\partial (\mathbf{a}^\top\mathbf{b})}{\partial \mathbf{b}} = \mathbf{a}$
 y
-\(\frac{\partial (\mathbf{b}^\top\mathbf{A}\mathbf{b})}{\partial \mathbf{b}} = 2\mathbf{A}\mathbf{b}\)
-para \(\mathbf{A}\) simétrica, se tiene
+$\frac{\partial (\mathbf{b}^\top\mathbf{A}\mathbf{b})}{\partial \mathbf{b}} = 2\mathbf{A}\mathbf{b}$
+para $\mathbf{A}$ simétrica, se tiene
 
 $$\begin{align*}
   \frac{\partial \ell}{\partial \boldsymbol{\beta}} = -\frac{1}{2\sigma^2}\left(- 2\mathbf{X}^\top\mathbf{Y} + 2\mathbf{X}^\top\mathbf{X}\boldsymbol{\beta}\right) = \frac{1}{\sigma^2}\left(\mathbf{X}^\top\mathbf{Y} - \mathbf{X}^\top\mathbf{X}\boldsymbol{\beta}\right)
@@ -209,22 +209,22 @@ $$\begin{align*}
   \mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{X}^\top\mathbf{Y}
 \end{align*}$$
 
-y dado que la matriz \(\mathbf{X}^\top\mathbf{X}\) es invertible por el
+y dado que la matriz $\mathbf{X}^\top\mathbf{X}$ es invertible por el
 supuesto de ausencia de multicolinealidad perfecta, se concluye que
 
 $$\begin{align*}
   \hat{\boldsymbol{\beta}} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}
 \end{align*}$$
 
-Derivando ahora la función de log-verosimilitud respecto a \(\sigma^2\)
+Derivando ahora la función de log-verosimilitud respecto a $\sigma^2$
 se tiene
 
 $$\begin{align*}
   \frac{\partial \ell}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2\sigma^4}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta}) = 0
 \end{align*}$$
 
-y al multiplicar ambos lados de la igualdad por \(2\hat{\sigma}^4\) y
-evaluar en \(\hat{\boldsymbol{\beta}}\) se obtiene
+y al multiplicar ambos lados de la igualdad por $2\hat{\sigma}^4$ y
+evaluar en $\hat{\boldsymbol{\beta}}$ se obtiene
 
 $$\begin{align*}
   -n\hat{\sigma}^2 + (\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}}) = 0
@@ -301,18 +301,18 @@ $$\begin{align*}
 \end{align*}$$
 
 en donde el segundo y tercer término se agrupan ya que
-\(\mathbf{Y}^\top\mathbf{X}\hat{\boldsymbol{\beta}}\) es un escalar de
-dimensión \(1\times 1\), y por tanto es igual a su transpuesta
-\(\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y}\).<br> <br>
+$\mathbf{Y}^\top\mathbf{X}\hat{\boldsymbol{\beta}}$ es un escalar de
+dimensión $1\times 1$, y por tanto es igual a su transpuesta
+$\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y}$.<br> <br>
 Ahora, empleando las reglas de derivación matricial
 
 $$\begin{align*}
   \frac{\partial (\mathbf{a}^\top\mathbf{b})}{\partial \mathbf{b}} = \mathbf{a} \qquad \text{y} \qquad \frac{\partial (\mathbf{b}^\top\mathbf{A}\mathbf{b})}{\partial \mathbf{b}} = 2\mathbf{A}\mathbf{b} \quad \text{ para } \mathbf{A} \text{ simétrica}
 \end{align*}$$
 
-y notando que la matriz \(\mathbf{X}^\top\mathbf{X}\) es simétrica, ya
-que \((\mathbf{X}^\top\mathbf{X})^\top = \mathbf{X}^\top\mathbf{X}\), se
-deriva la \(SCE\) respecto al vector \(\hat{\boldsymbol{\beta}}\), tal
+y notando que la matriz $\mathbf{X}^\top\mathbf{X}$ es simétrica, ya
+que $(\mathbf{X}^\top\mathbf{X})^\top = \mathbf{X}^\top\mathbf{X}$, se
+deriva la $SCE$ respecto al vector $\hat{\boldsymbol{\beta}}$, tal
 que
 
 $$\begin{align*}
@@ -326,9 +326,9 @@ $$\begin{align*}
 \end{align*}$$
 
 Dado que por el supuesto de ausencia de multicolinealidad perfecta la
-matriz \(\mathbf{X}\) tiene rango columna completo, la matriz
-\(\mathbf{X}^\top\mathbf{X}\) es invertible, y al premultiplicar ambos
-lados del sistema por \((\mathbf{X}^\top\mathbf{X})^{-1}\) se concluye
+matriz $\mathbf{X}$ tiene rango columna completo, la matriz
+$\mathbf{X}^\top\mathbf{X}$ es invertible, y al premultiplicar ambos
+lados del sistema por $(\mathbf{X}^\top\mathbf{X})^{-1}$ se concluye
 que
 
 $$\begin{align*}
@@ -336,7 +336,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Finalmente, note que la solución encontrada corresponde en efecto a un
-mínimo de la función \(SCE\), ya que la matriz de segundas derivadas
+mínimo de la función $SCE$, ya que la matriz de segundas derivadas
 (matriz Hessiana) está dada por
 
 $$\begin{align*}
@@ -344,16 +344,16 @@ $$\begin{align*}
 \end{align*}$$
 
 la cual es definida positiva, dado que para cualquier vector
-\(\mathbf{v}\neq\mathbf{0}\) de dimensión \((k+1)\times 1\) se cumple
+$\mathbf{v}\neq\mathbf{0}$ de dimensión $(k+1)\times 1$ se cumple
 que
 
 $$\begin{align*}
   \mathbf{v}^\top(2\mathbf{X}^\top\mathbf{X})\mathbf{v} = 2(\mathbf{X}\mathbf{v})^\top(\mathbf{X}\mathbf{v}) = 2\|\mathbf{X}\mathbf{v}\|^2 > 0
 \end{align*}$$
 
-en donde la desigualdad es estricta ya que, al tener \(\mathbf{X}\)
-rango columna completo, \(\mathbf{X}\mathbf{v}=\mathbf{0}\) si y solo si
-\(\mathbf{v}=\mathbf{0}\).
+en donde la desigualdad es estricta ya que, al tener $\mathbf{X}$
+rango columna completo, $\mathbf{X}\mathbf{v}=\mathbf{0}$ si y solo si
+$\mathbf{v}=\mathbf{0}$.
 </p>
 </main>
 
@@ -401,9 +401,9 @@ Demostración
 <p>
 
 Para la demostración de las propiedades resulta conveniente reescribir
-el estimador \(\hat{\boldsymbol{\beta}}\) en función del vector de
-errores \(\boldsymbol{\varepsilon}\), tal que al reemplazar el modelo
-\(\mathbf{Y}=\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}\)
+el estimador $\hat{\boldsymbol{\beta}}$ en función del vector de
+errores $\boldsymbol{\varepsilon}$, tal que al reemplazar el modelo
+$\mathbf{Y}=\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$
 en el estimador se tiene
 
 $$\begin{align*}
@@ -414,13 +414,13 @@ $$\begin{align*}
 \end{align*}$$
 </p>
 <h4 data-toc-skip>
-Demostración Esperanza de \(\hat{\boldsymbol{\beta}}\)
+Demostración Esperanza de $\hat{\boldsymbol{\beta}}$
 </h4>
 <p>
 
-Dado que la matriz \(\mathbf{X}\) es fija (no aleatoria), al aplicar el
-operador esperanza sobre la expresión \((III)\) y emplear el supuesto
-\(\mathbb{E}(\boldsymbol{\varepsilon})=\mathbf{0}\), se tiene
+Dado que la matriz $\mathbf{X}$ es fija (no aleatoria), al aplicar el
+operador esperanza sobre la expresión $(III)$ y emplear el supuesto
+$\mathbb{E}(\boldsymbol{\varepsilon})=\mathbf{0}$, se tiene
 
 $$\begin{align*}
   \mathbb{E}(\hat{\boldsymbol{\beta}}) &= \mathbb{E}\left[\boldsymbol{\beta} + (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\boldsymbol{\varepsilon}\right]\\
@@ -430,15 +430,15 @@ $$\begin{align*}
 \end{align*}$$
 </p>
 <h4 data-toc-skip>
-Demostración Varianza de \(\hat{\boldsymbol{\beta}}\)
+Demostración Varianza de $\hat{\boldsymbol{\beta}}$
 </h4>
 <p>
 
 Empleando la propiedad de la matriz de varianzas y covarianzas de una
 transformación lineal,
-\(Var(\mathbf{A}\mathbf{Z}) = \mathbf{A}Var(\mathbf{Z})\mathbf{A}^\top\)
-para \(\mathbf{A}\) una matriz de constantes, y tomando
-\(\mathbf{A} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\), se
+$Var(\mathbf{A}\mathbf{Z}) = \mathbf{A}Var(\mathbf{Z})\mathbf{A}^\top$
+para $\mathbf{A}$ una matriz de constantes, y tomando
+$\mathbf{A} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top$, se
 tiene
 
 $$\begin{align*}
@@ -450,7 +450,7 @@ $$\begin{align*}
 \end{align*}$$
 
 en donde se emplea el hecho de que la matriz
-\((\mathbf{X}^\top\mathbf{X})^{-1}\) es simétrica, por ser la inversa de
+$(\mathbf{X}^\top\mathbf{X})^{-1}$ es simétrica, por ser la inversa de
 una matriz simétrica.
 </p>
 </main>

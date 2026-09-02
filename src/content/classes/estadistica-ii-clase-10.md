@@ -31,7 +31,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Se aplican pruebas a \(10\) cables conductores soldados a un dispositivo
+Se aplican pruebas a $10$ cables conductores soldados a un dispositivo
 semiconductor con el fin de determinar su resistencia a la tracción. Las
 pruebas demostraron que para romper la unión se requiere las libras de
 fuerza que se listan a continuación.
@@ -76,7 +76,7 @@ Sin Encapsulado
 </thead>
 </table>
 <p>
-Otra conjunto de \(8\) cables conductores que forman otro dispositivo,
+Otra conjunto de $8$ cables conductores que forman otro dispositivo,
 se encapsulan y se prueban para determinar si el encapsulado aumenta la
 resistencia a la tracción, obteniendo para este caso se requirieron las
 siguientes libras de fuerza para romper la unión
@@ -116,7 +116,7 @@ Con Encapsulado
 </table>
 <p>
 Si se supone que las resistencias a la tracción se distribuyen
-normalmente, construya un intervalo del \(90\%\) para la razón de
+normalmente, construya un intervalo del $90\%$ para la razón de
 varianzas entre la variabilidad de los cables sin encapsulado y la
 variabilidad de los cables con encapsulado. Es posible afirmar que la
 variabilidad de de los cables con encapsulado es superior a los cables
@@ -141,11 +141,11 @@ varianzas posee la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de los varianzas muestrales \(S^2_S\) y \(S^2_C\), el nivel de
-confianza \(1-\alpha\) y los valores críticos
-\(f_{\alpha/2, n_C-1, n_S-1}\) y \(f_{\alpha/2, n_S-1, n_C-1}\). <br>
+requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
+confianza $1-\alpha$ y los valores críticos
+$f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 <br> Para realizar el cálculo de las varianzas muestrales, se emplean
-los datos muestrales y los tamaños de muestra \(n_C=8\) y \(n_S=10\),
+los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
 $$\begin{align*}
@@ -154,8 +154,8 @@ S^2_S &= 10.441
 \end{align*}$$
 
 Por su parte, al buscar los valores críticos para un nivel de
-significancia \(1-\alpha=0.90\) y tamaños muestrales \(n_C=8\) y
-\(n_S=10\) tenemos que
+significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
+$n_S=10$ tenemos que
 
 $$\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} &= 3.292746\\ 
@@ -168,24 +168,24 @@ confianza, se procede a su cálculo, tal que $$\begin{align*}
    0.05524463 &< \frac{\sigma^2_C}{\sigma^2_S} < 0.6688112
 \end{align*}$$
 
-Por tanto, se podrá concluir con un nivel de confianza del \(90\%\) que
+Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
 de los cables sin encapsulado y la variabilidad de los cables con
-encapsulado, se encontrará entre \(0.05524463\) y \(0.6688112\).<br>
+encapsulado, se encontrará entre $0.05524463$ y $0.6688112$.<br>
 <br> Ahora, para verificar si existen o no diferencias significativas
 entre las varianzas de resistencia a la tracción de los cables
 encapsulados o sin encapsular, debemos verificar la posición en la que
 se encuentra el intervalo de confianza para la razón de varianzas
-\(\sigma^2_C/\sigma^2_S\). <br><br>
+$\sigma^2_C/\sigma^2_S$. <br><br>
 
 <img src="/assets/images/Intervalos6b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado no contiene el valor
-de \(1\), el cual representa la igualdad entre la varianza de los dos
+de $1$, el cual representa la igualdad entre la varianza de los dos
 tipos de cable, tal que $$\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(90\%\) será posible afirmar
+y por tanto, con un nivel de confianza del $90\%$ será posible afirmar
 que la variabilidad de la resistencia a la tracción de los cables
 encapsulados o sin encapsular son diferentes, y por tanto, debe asumirse
 que NO son iguales.

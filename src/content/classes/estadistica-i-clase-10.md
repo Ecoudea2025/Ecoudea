@@ -36,9 +36,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -384,14 +384,14 @@ dada por
 </table>
 <p>
 Entonces, basados en dicha función de masa de probabilidad conjunta,
-calcule la esperanza matemática de \(X\) dado que \(Y=3\)
+calcule la esperanza matemática de $X$ dado que $Y=3$
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Para poder encontrar la esperanza matemática de \(X\) dado que \(Y=3\),
-es necesario usar la distribución condicional de \(X\) dado \(Y=3\), la
+Para poder encontrar la esperanza matemática de $X$ dado que $Y=3$,
+es necesario usar la distribución condicional de $X$ dado $Y=3$, la
 cual está dada por
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto; font-size:120%!important">
@@ -480,8 +480,8 @@ Para ver el procedimiento de cómo llegar a la distribución condicional,
 remitase al ejemplo discreto para
 <a href="../../EstadisticaI/EstIClase10.html#distribuciones-condicionales" target="\_blank">Distribuciones
 Condicionales</a>.<br> <br> Entonces, basados en la distribución
-condicional de \(X\) dado \(Y=3\) se realiza el cálculo de la esperanza
-matemática de \(X\) dado que \(Y=3\), tal que
+condicional de $X$ dado $Y=3$ se realiza el cálculo de la esperanza
+matemática de $X$ dado que $Y=3$, tal que
 
 $$\begin{align*}
 \mathbb{E}(X|Y=3)&=\sum_{x=2}^{12}x\,f(x|y=3) \\
@@ -491,8 +491,8 @@ $$\begin{align*}
              &=\frac{42}{6} \\
              &=7
 \end{align*}$$ Por tanto se tendrá que, el resultado esperado para la
-suma de los dos dados es igual a \(7\), cuando se sabe que el valor
-absoluto de la diferencia de los dos dados fue igual a \(3\).
+suma de los dos dados es igual a $7$, cuando se sabe que el valor
+absoluto de la diferencia de los dos dados fue igual a $3$.
 </p>
 </main>
 <button id="Show2" class="btn btn-secondary">
@@ -512,31 +512,31 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$ Calcule el valor esperado de \(Y\), dado que \(X\) es a
-lo más \(1.3\)
+\end{align*}$$ Calcule el valor esperado de $Y$, dado que $X$ es a
+lo más $1.3$
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Para poder encontrar la esperanza matemática de \(Y\) dado que
-\(X\leq 1.3\), es necesario usar la distribución condicional de \(Y\)
-dado que \(X\leq 1.3\), la cual está dada por $$\begin{align*}
+Para poder encontrar la esperanza matemática de $Y$ dado que
+$X\leq 1.3$, es necesario usar la distribución condicional de $Y$
+dado que $X\leq 1.3$, la cual está dada por $$\begin{align*}
 f(y|x\leq1.3) =& 0.0476y^2 \quad \quad 1<y<4
 \end{align*}$$ Para ver el procedimiento de cómo llegar a la
 distribución condicional, remitase al ejemplo continuo para
 <a href="../../EstadisticaI/EstIClase10.html#distribuciones-condicionales" target="\_blank">Distribuciones
 Condicionales</a>. <br> <br> Entonces, basados en la distribución
-condicional de \(Y\) dado \(X\leq 1.3\) se realiza el cálculo de la
+condicional de $Y$ dado $X\leq 1.3$ se realiza el cálculo de la
 esperanza matemática de interés, tal que $$\begin{align*}
 \mathbb{E}(Y|X\leq 1.3) &= \int_{1}^4 y f(y|x\leq1.3) dy \\
                         &= \int_{1}^4 y \left(0.0476y^2\right) dy\\
@@ -549,9 +549,9 @@ esperanza matemática de interés, tal que $$\begin{align*}
 \end{align*}$$
 
 Por tanto, si se sabe que el número promedio de horas de tiempo libre
-que poseen los estudiantes es a lo más de \(1.3\), se tendrá que el
+que poseen los estudiantes es a lo más de $1.3$, se tendrá que el
 valor esperado del número de horas promedio de tiempo libre que tiene el
-profesor será de \(2.4276\).
+profesor será de $2.4276$.
 </p>
 </main>
 
@@ -593,9 +593,9 @@ Ejercicio
 </h3>
 <p>
 Suponga un experimento aleatorio que consta en consultar una familia
-conformada por \(3\) hijos, en donde, se asume que la probabilidad de
+conformada por $3$ hijos, en donde, se asume que la probabilidad de
 ser niño o niña es la misma. Entonces, si se define la variable
-aleatoria \(X\), el número de niñas que hay en la familia, y se define
+aleatoria $X$, el número de niñas que hay en la familia, y se define
 la función de masa de probabilidad como
 </p>
 <div style="font-size:120%!important">
@@ -603,36 +603,36 @@ la función de masa de probabilidad como
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(X\)
+$X$
 </td>
 <td style="text-align:left;">
-\(0\)
+$0$
 </td>
 <td style="text-align:left;">
-\(1\)
+$1$
 </td>
 <td style="text-align:left;">
-\(2\)
+$2$
 </td>
 <td style="text-align:left;">
-\(3\)
+$3$
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-\(p(x)\)
+$p(x)$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 </tr>
 </tbody>
@@ -640,7 +640,7 @@ la función de masa de probabilidad como
 </div>
 <p>
 Calcule la desviación estándar del número de niñas que hay en una
-familia que posee \(3\) hijos.
+familia que posee $3$ hijos.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -648,18 +648,18 @@ Solución
 <p>
 
 Para realizar el cálculo de la desviación estándar del número de niñas
-que hay en una familia que posee \(3\) hijos, es necesario calcular
+que hay en una familia que posee $3$ hijos, es necesario calcular
 inicialmente su varianza, la cual estaría dada por $$\begin{align*}
 Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2
 \end{align*}$$ En donde se observa que ésta depende tanto de la
-\(\mathbb{E}(X)\) como de \(\mathbb{E}(X^2)\).<br> <br> Entonces, de los
+$\mathbb{E}(X)$ como de $\mathbb{E}(X^2)$.<br> <br> Entonces, de los
 resultados obtenidos en el ejemplo discreto del caso univariado para la
 <a href="../../EstadisticaI/EstIClase11.html#caso-univariado" target="\_blank">Esperanza
 Matemática</a> y para sus
 <a href="../../EstadisticaI/EstIClase11.html#propiedades-de-la-esperanza-matemática" target="\_blank">Propiedades</a>,
-se encontró que \(\mathbb{E}(X)=1.5\) y \(\mathbb{E}(X^2)=3\), y en
+se encontró que $\mathbb{E}(X)=1.5$ y $\mathbb{E}(X^2)=3$, y en
 consecuencia, se tendrá que la varianza del número de niñas que hay en
-una familia de \(3\) hijos es de
+una familia de $3$ hijos es de
 
 $$\begin{align*}
 Var(X) &= 3 - (1.5)^2 \\
@@ -675,8 +675,8 @@ Sd(X) &= \sqrt{Var(X)} \\
 \end{align*}$$
 
 y por tanto, se tendrá que el número promedio de niñas que se espera
-encontrar en una familia que posee \(3\) hijos es de \(1.5\) niñas, con
-una desviación estándar de \(0.866\) niñas.
+encontrar en una familia que posee $3$ hijos es de $1.5$ niñas, con
+una desviación estándar de $0.866$ niñas.
 </p>
 </main>
 <button id="Show4" class="btn btn-secondary">
@@ -694,7 +694,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule la desviación estándar del tiempo que tarda la serie financiera
 en cumplir un ciclo.
@@ -710,15 +710,15 @@ financiera en cumplir un ciclo, se procede a realizar el cálculo de la
 varianza, en donde mediante la definición $$\begin{align*}
 Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2
 \end{align*}$$ Se tiene que, debemos calcular inicialmente los valores
-de la \(\mathbb{E}(X)\) y la esperanza de \(\mathbb{E}(X^2)\).<br> <br>
-En donde se observa que ésta depende tanto de la \(\mathbb{E}(X)\) como
-de \(\mathbb{E}(X^2)\). Entonces, de los resultados obtenidos en el
+de la $\mathbb{E}(X)$ y la esperanza de $\mathbb{E}(X^2)$.<br> <br>
+En donde se observa que ésta depende tanto de la $\mathbb{E}(X)$ como
+de $\mathbb{E}(X^2)$. Entonces, de los resultados obtenidos en el
 ejemplo continuo del caso univariado para la
 <a href="../../EstadisticaI/EstIClase11.html#caso-univariado" target="\_blank">Esperanza
 Matemática</a> y para sus
 <a href="../../EstadisticaI/EstIClase11.html#propiedades-de-la-esperanza-matemática" target="\_blank">Propiedades</a>,
-se encontró que \(\mathbb{E}(X)=0.5\) y
-\(\mathbb{E}(X^2)=0.2857142857\), y en consecuencia, se tendrá que la
+se encontró que $\mathbb{E}(X)=0.5$ y
+$\mathbb{E}(X^2)=0.2857142857$, y en consecuencia, se tendrá que la
 varianza el tiempo que tarda la serie financiera en cumplir un ciclo es
 de
 
@@ -736,8 +736,8 @@ Sd(X) &= \sqrt{Var(X)} \\
 \end{align*}$$
 
 Y por tanto, se tendrá que el tiempo esperado que tarda una serie
-financiera en cumplir un ciclo será \(0.5\) horas con desviación
-estándar de \(0.1889822\) horas, la cual al pasarla a minutos mediante
+financiera en cumplir un ciclo será $0.5$ horas con desviación
+estándar de $0.1889822$ horas, la cual al pasarla a minutos mediante
 la regla de tres
 
 $$\begin{align*}
@@ -749,8 +749,8 @@ a= \frac{0.1889822_\text{horas}\times 60_\text{min}}{1_\text{hora}} = 11.33893_\
 \end{align*}$$
 
 es decir, que el tiempo esperado que tarda una serie financiera en
-cumplir un ciclo será de \(30\) minutos con una desviación estándar de
-\(11.33893\) minutos.
+cumplir un ciclo será de $30$ minutos con una desviación estándar de
+$11.33893$ minutos.
 </p>
 </main>
 
@@ -795,9 +795,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -1147,10 +1147,10 @@ calcule
 </p>
 <ol>
 <li>
-\(Sd(X)\)
+$Sd(X)$
 </li>
 <li>
-\(Sd(Y)\)
+$Sd(Y)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -1166,14 +1166,14 @@ $$\begin{align*}
 Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2
 \end{align*}$$
 
-En donde, el valor de la \(\mathbb{E}(X)\) se calculó en el ejemplo
+En donde, el valor de la $\mathbb{E}(X)$ se calculó en el ejemplo
 discreto de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(X) = 7\). Por tanto nos faltaría realizar el cálculo de
-\(\mathbb{E}(X^2)\), la cual al depender solamente de la variable
-aleatoria \(X\), entonces se procede al cálculo mediante la distribución
-marginal \(g(x)\), tal que
+$\mathbb{E}(X) = 7$. Por tanto nos faltaría realizar el cálculo de
+$\mathbb{E}(X^2)$, la cual al depender solamente de la variable
+aleatoria $X$, entonces se procede al cálculo mediante la distribución
+marginal $g(x)$, tal que
 
 $$\begin{align*}
 \mathbb{E}(X^2)&=\sum_{x=2}^{12}x^2\,g(x) \\
@@ -1197,8 +1197,8 @@ Sd(X) &= \sqrt{Var(X)}\\
       &= \sqrt{5.833333}\\
       &= 2.415229
 \end{align*}$$ es decir que, el valor promedio que se espera para la
-suma resultante de los dos dados es de \(7\), con una desviación
-estándar de \(2.415229\).
+suma resultante de los dos dados es de $7$, con una desviación
+estándar de $2.415229$.
 </li>
 <li>
 
@@ -1208,15 +1208,15 @@ ecuación $$\begin{align*}
 Var(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2
 \end{align*}$$
 
-En donde, el valor de la \(\mathbb{E}(Y)\) se calculó en el ejemplo
+En donde, el valor de la $\mathbb{E}(Y)$ se calculó en el ejemplo
 discreto de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(Y) = 1.9444\). Ahora, dado que no poseemos el valor para
-\(\mathbb{E}(Y^2)\), procedemos a realizar su cálculo, en donde, al
+$\mathbb{E}(Y) = 1.9444$. Ahora, dado que no poseemos el valor para
+$\mathbb{E}(Y^2)$, procedemos a realizar su cálculo, en donde, al
 depender el valor esperado de interés solo de la variable aleatoria
-\(Y\), entonces realizamos el cálculo mediante la distribución marginal
-\(h(y)\), tal que $$\begin{align*}
+$Y$, entonces realizamos el cálculo mediante la distribución marginal
+$h(y)$, tal que $$\begin{align*}
 \mathbb{E}(Y^2)&=\sum_{y=0}^{5}y^2\,h(y) \\
              &=(0)^2\,h(0)+(1)^2\,h(1)+(2)^2\,h(2)+\ldots+(5)^2\,h(5) \\
              &=0\left(\frac{6}{36}\right)+1\left(\frac{10}{36}\right)+4\left(\frac{8}{36}\right)+\ldots + 25\left(\frac{2}{36}\right) \\
@@ -1239,8 +1239,8 @@ Sd(Y) &= \sqrt{Var(Y)}\\
 \end{align*}$$
 
 Por tanto se tendrá que el valor esperado para el valor absoluto de la
-diferencia de los dos dados es de \(1.9444\), con una desviación
-estándar de \(1.432704\).
+diferencia de los dos dados es de $1.9444$, con una desviación
+estándar de $1.432704$.
 </li>
 </ol>
 </main>
@@ -1261,22 +1261,22 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule
 </p>
 <ol>
 <li>
-\(Sd(X)\)
+$Sd(X)$
 </li>
 <li>
-\(Sd(Y)\)
+$Sd(Y)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -1290,14 +1290,14 @@ estándar del número promedio de horas de tiempo libre del profesor, y
 para ello necesitamos calcular el valor de la varianza, la cual estará
 dada por $$\begin{align*}
 Var(X) =& \mathbb{E}(X^2) - \mathbb{E}(X)^2
-\end{align*}$$ En donde, el valor de la \(\mathbb{E}(X)\) se calculó en
+\end{align*}$$ En donde, el valor de la $\mathbb{E}(X)$ se calculó en
 el ejemplo continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(X) = 1.333333\), pero no se realizó el cálculo del valor de
-\(\mathbb{E}(X^2)\). <br> <br> Así que se procede al cálculo de
-\(\mathbb{E}(X^2)\), en donde, al depender solo de la variable aleatoria
-\(X\), se emplea para su cálculo la distribución marginal \(g(x)\), tal
+$\mathbb{E}(X) = 1.333333$, pero no se realizó el cálculo del valor de
+$\mathbb{E}(X^2)$. <br> <br> Así que se procede al cálculo de
+$\mathbb{E}(X^2)$, en donde, al depender solo de la variable aleatoria
+$X$, se emplea para su cálculo la distribución marginal $g(x)$, tal
 que $$\begin{align*}
 \mathbb{E}(X^2)&=\int_{-\infty}^{\infty}x^2\,g(x) dx\\
                &=\int_{0}^{2}x^2\left(\frac{1}{2}x\right) dx \\
@@ -1327,7 +1327,7 @@ Sd(X) &= \sqrt{Var(X)}\\
 
 Por tanto se tendrá que el valor esperado para el número de horas
 promedio de tiempo libre que tiene el profesor de Estadística I en un
-día es de \(1.3333\) horas, con una desviación estándar de \(0.4714053\)
+día es de $1.3333$ horas, con una desviación estándar de $0.4714053$
 horas.
 </li>
 <li>
@@ -1338,14 +1338,14 @@ mediante la ecuación $$\begin{align*}
 Var(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2
 \end{align*}$$
 
-En donde, el valor de la \(\mathbb{E}(Y)\) se calculó en el ejemplo
+En donde, el valor de la $\mathbb{E}(Y)$ se calculó en el ejemplo
 continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(Y) = 3.035714\). Ahora, dado que no poseemos el valor para
-\(\mathbb{E}(Y^2)\), procedemos a realizar su cálculo, en donde, al
+$\mathbb{E}(Y) = 3.035714$. Ahora, dado que no poseemos el valor para
+$\mathbb{E}(Y^2)$, procedemos a realizar su cálculo, en donde, al
 depender el valor esperado de interés solo de la variable aleatoria
-\(Y\), empleamos para su cálculo la distribución marginal \(h(y)\), tal
+$Y$, empleamos para su cálculo la distribución marginal $h(y)$, tal
 que $$\begin{align*}
 \mathbb{E}(Y^2)&=\int_{-\infty}^{\infty}y^2\,h(y) dy\\
                &=\int_{1}^{4}y^2\left(\frac{1}{21}y^2\right) dy \\
@@ -1372,7 +1372,7 @@ Sd(Y) &= \sqrt{Var(Y)}\\
 
 Por tanto se tendrá que el valor esperado para el número promedio de
 horas de tiempo libre que tienen los estudiantes que cursan Estadística
-I es de \(3.035714\) horas, con una desviación estándar de \(0.7261525\)
+I es de $3.035714$ horas, con una desviación estándar de $0.7261525$
 horas.
 </li>
 </ol>

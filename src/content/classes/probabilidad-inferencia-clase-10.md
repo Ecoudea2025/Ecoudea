@@ -84,22 +84,22 @@ Ejercicio
 </h3>
 <p>
 Suponga que poseemos una distribución normal estándar, tal que
-\(Z\sim N(0,1)\). Entonces, a partir de esta distribución y empleando la
+$Z\sim N(0,1)$. Entonces, a partir de esta distribución y empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, calcule
 </p>
 <ol>
 <li>
-\(\mathbb{P}(Z\leq 1.96)\)
+$\mathbb{P}(Z\leq 1.96)$
 </li>
 <li>
-\(\mathbb{P}(Z\gt  2.13)\)
+$\mathbb{P}(Z\gt  2.13)$
 </li>
 <li>
-\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\)
+$\mathbb{P}(-2.42 \lt Z \leq 0.24)$
 </li>
 <li>
-\(\mathbb{P}(Z\gt z) = 0.0129\)
+$\mathbb{P}(Z\gt z) = 0.0129$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -115,27 +115,27 @@ misma. Y para ello se presenta la siguiente imagen.
 
 <p>
 En donde, se aprecia que, <strong>los cuadros rojos representan los
-valores críticos</strong> \(z\) que se emplea para calcular
+valores críticos</strong> $z$ que se emplea para calcular
 probabilidades, en donde, el cuadro rojo de la parte izquierda muestra
 la parte entera y el primer decimal, mientras que el cuadro rojo de la
 parte superior muestra el segundo decimal. <strong>El cuadro azul
-representa las probabilidades</strong> \(\alpha\) que se desean calcular
+representa las probabilidades</strong> $\alpha$ que se desean calcular
 a partir de los valores críticos. Finalmente, <strong>el cuadro azul
 claro representa el funcionamiento de la tabla </strong>, la cual
 muestra las probabilidades que poseen la forma
-\(\mathbb{P}(Z\lt z)=\alpha\).
+$\mathbb{P}(Z\lt z)=\alpha$.
 </p>
 <ol>
 <li>
 
 Con la explicación de la tabla en mente, la primera probabilidad a
-calcular es \(\mathbb{P}(Z\leq 1.96)\). Entonces como esta probabilidad
-tiene la estructura establecida por la tabla \(\mathbb{P}(Z\leq z)\),
-será cuestión de buscar el valor crítico \(1.96\) para localizar la
+calcular es $\mathbb{P}(Z\leq 1.96)$. Entonces como esta probabilidad
+tiene la estructura establecida por la tabla $\mathbb{P}(Z\leq z)$,
+será cuestión de buscar el valor crítico $1.96$ para localizar la
 probabilidad asociada, tal que se busca en la parte izquierda, el valor
-\(1.9\) y en la parte superior el valor \(0.06\), y en donde se
+$1.9$ y en la parte superior el valor $0.06$, y en donde se
 encuentre el cruce de ambos valores, se encontrará el valor de la
-probabilidad asociada a \(1.96\). Dicho procedimiento se muestra en la
+probabilidad asociada a $1.96$. Dicho procedimiento se muestra en la
 siguiente imagen
 
 <img src="/assets/images/TablaNormalEst2.jpg" alt="" style="max-width: 80%;">
@@ -148,20 +148,20 @@ $$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
 <li>
 
 A diferencia del punto anterior, observamos que la probabilidad
-propuesta \(\mathbb{P}(Z\gt  2.13)\) tiene una estructura diferente a la
-establecida por la tabla \(\mathbb{P}(Z\leq z)\), y por tanto, será
+propuesta $\mathbb{P}(Z\gt  2.13)$ tiene una estructura diferente a la
+establecida por la tabla $\mathbb{P}(Z\leq z)$, y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
 \end{align*}$$ En donde, se aprecia que ahora podemos calcular la
-\(\mathbb{P}(Z\gt  2.13)\), mediante el empleo de la
-\(\mathbb{P}(Z\leq 2.13)\), la cual podemos buscar en la tabla
-directamente. Para localizar \(\mathbb{P}(Z\leq 2.13)\), se busca el
-valor \(2.1\) en la parte izquierda de la tabla, y el valor \(0.03\) en
+$\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
+$\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
+directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
+valor $2.1$ en la parte izquierda de la tabla, y el valor $0.03$ en
 la parte superior de la tabla, y en donde se encuentre el cruce de ambos
-valores, se encontrará el valor de la probabilidad asociada a \(2.13\).
+valores, se encontrará el valor de la probabilidad asociada a $2.13$.
 
 <img src="/assets/images/TablaNormalEst3.jpg" alt="" style="max-width: 80%;">
 
@@ -182,9 +182,9 @@ $$\begin{align*}
 </li>
 <li>
 
-En este caso, se desea calcular la \(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), y
+En este caso, se desea calcular la $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, y
 se observa que la estructura de dicha probabilidad es diferente a la
-establecida por la tabla \(\mathbb{P}(Z\leq z)\), pero también podemos
+establecida por la tabla $\mathbb{P}(Z\leq z)$, pero también podemos
 apreciar que si aplicamos las propiedades de la función de distribución
 acumulada para el caso continuo, ya presentadas en la
 <a href="../../ProbabilidadeInferencia/PeIEClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
@@ -193,9 +193,9 @@ acumulada para el caso continuo, ya presentadas en la
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
 \end{align*}$$ obteniendo que la probabilidad
-\(\mathbb{P}(-2.42 \lt Z \leq 0.24)\), puede calcularse mediante el empleo
-de las probabilidades acumuladas \(\mathbb{P}(Z \leq 0.24)\) y
-\(\mathbb{P}(Z \leq -2.42)\), las cuales pueden calcularse en la tabla
+$\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
+de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
+$\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
 de forma similar a los dos puntos anteriores.
 
 <img src="/assets/images/TablaNormalEst4.jpg" alt="" style="max-width:100%;">
@@ -217,7 +217,7 @@ $$\begin{align*}
 <li>
 
 En este punto, a diferencia de los puntos anteriores, no están dando el
-valor de la probabilidad y nos piden encontrar el valor crítico \(z\).
+valor de la probabilidad y nos piden encontrar el valor crítico $z$.
 Es decir debemos calcular el valor crítico asociado a la probabilidad
 $$\begin{align*}
 \mathbb{P}(Z>z) = 0.0129
@@ -233,16 +233,16 @@ $$\begin{align*}
 0.9871 &= \mathbb{P}(Z\leq z)
 \end{align*}$$
 
-En donde observamos que la probabilidad \(\mathbb{P}(Z\leq z)\) ya posee
+En donde observamos que la probabilidad $\mathbb{P}(Z\leq z)$ ya posee
 la estructura de la tabla, y en consecuencia, podemos proceder a
-encontrar el valor crítico \(z\), buscando el valor de la probabilidad
-\(0.9871\) en la parte interior de la tabla, y luego buscando cual es el
-valor crítico \(z\) asociado a dicha probabilidad.
+encontrar el valor crítico $z$, buscando el valor de la probabilidad
+$0.9871$ en la parte interior de la tabla, y luego buscando cual es el
+valor crítico $z$ asociado a dicha probabilidad.
 
 <img src="/assets/images/TablaNormalEst5.jpg" alt="" style="max-width: 80%;">
 
-En la tabla se aprecia, que al buscar la probabilidad \(0.9871\)
-encontramos que el valor crítico \(z\) asociado es de \(2.24\), es decir
+En la tabla se aprecia, que al buscar la probabilidad $0.9871$
+encontramos que el valor crítico $z$ asociado es de $2.24$, es decir
 
 $$\begin{align*}
 \mathbb{P}(Z\leq 2.24) &= 0.9871
@@ -268,11 +268,11 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que cierto tipo de batería para celular dura en promedio \(5\)
-años con una desviación estándar de \(1.2\) años. Si se sabe por
+Suponga que cierto tipo de batería para celular dura en promedio $5$
+años con una desviación estándar de $1.2$ años. Si se sabe por
 experiencia que la distribución de las baterías se distribuye
 normalmente, cuál es la probabilidad de que una batería de celular dure
-al menos \(4\) años?
+al menos $4$ años?
 </p>
 <h3 data-toc-skip>
 Solución
@@ -280,24 +280,24 @@ Solución
 <p>
 
 En este caso estamos interesados en que la batería de una celular dure
-al menos \(4\) años, es decir, queremos calcular la siguiente
+al menos $4$ años, es decir, queremos calcular la siguiente
 probabilidad. $$\begin{align*}
 \mathbb{P}(X \geq 4)
 \end{align*}$$ Pero en este caso tenemos que la distribución de los
-datos no se distribuye \(N(0,1)\), si no que se distribuye
-\(N(5, 1.2)\), y por ello debemos aplicar el teorema de estandarización,
-con el fin de llevar la distribución \(N(5, 1.2)\) a una normal
+datos no se distribuye $N(0,1)$, si no que se distribuye
+$N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
+con el fin de llevar la distribución $N(5, 1.2)$ a una normal
 estándar, tal que $$\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde \(Z\sim N(0,1)\). Ahora, como la estructura de
-la probabilidad de \(Z\) no posee la estructura de la probabilidad de se
+\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
 \end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
-\(\mathbb{P}(Z \lt  -0.83)\) en la tabla de la distribución normal
+$\mathbb{P}(Z \lt  -0.83)$ en la tabla de la distribución normal
 estándar, de la siguiente manera
 
 <img src="/assets/images/TablaNormalEst6.jpg" alt="" style="max-width: 80%;">
@@ -324,7 +324,7 @@ $$\begin{align*}
 \end{align*}$$
 
 En consecuencia, se tendrá que la probabilidad de que una batería de
-celular dure al menos \(4\) años, es del \(76.67\%\).
+celular dure al menos $4$ años, es del $76.67\%$.
 </p>
 </main>
 
@@ -348,9 +348,9 @@ Ejercicio
 </h3>
 <p>
 Suponga que al realizar un estudio sobre un proceso de producción, se
-encontró que el \(3\%\) de los artículos producidos resultaba tener
-algún tipo de defecto. Si se producen \(900\) artículos en un día, cuál
-es la probabilidad de que \(30\) artículos o más resulten tener algún
+encontró que el $3\%$ de los artículos producidos resultaba tener
+algún tipo de defecto. Si se producen $900$ artículos en un día, cuál
+es la probabilidad de que $30$ artículos o más resulten tener algún
 tipo de defecto. Emplee tanto la distribución binomial como la
 aproximación a Poisson y comente sobre los resultados obtenidos.
 </p>
@@ -360,33 +360,33 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular una probabilidad binomial
-de un grupo \(n\) de \(900\) artículos, de los cuales se busca a que el
-número de artículos defectuosos \(X\), sea de al menos \(30\)
+de un grupo $n$ de $900$ artículos, de los cuales se busca a que el
+número de artículos defectuosos $X$, sea de al menos $30$
 defectuosos, sabiendo que la probabilidad de producir un artículo
-defectuoso es del \(3\%\). Esto es $$\begin{align*}
+defectuoso es del $3\%$. Esto es $$\begin{align*}
 \mathbb{P}(X \geq 30)&= \sum_{x=30}^{900} \left(\begin{array}{c}900\\ x\end{array}\right) (0.03)^x(0.97)^{900-x}
-\end{align*}$$ En donde, como se tiene una sumatoria desde \(30\) hasta
-\(900\) se decide emplear el complemento de la probabilidad, tal que
+\end{align*}$$ En donde, como se tiene una sumatoria desde $30$ hasta
+$900$ se decide emplear el complemento de la probabilidad, tal que
 $$\begin{align*}
 \mathbb{P}(X \geq 30) &= 1 - \mathbb{P}(X < 30) \\
                       &= 1 - \sum_{x=0}^{29} \left(\begin{array}{c}900\\ x\end{array}\right) (0.03)^x(0.97)^{900-x} \\
                       &= 1 - 0.695578212 \\
                       &= 0.3044218
-\end{align*}$$ Es decir, que la probabilidad de que al menos \(30\)
-artículos de los \(900\) sean defectuosos es del \(30.44\%\). <br> <br>
+\end{align*}$$ Es decir, que la probabilidad de que al menos $30$
+artículos de los $900$ sean defectuosos es del $30.44\%$. <br> <br>
 
 Ahora, si realizamos la aproximación de la distribución binomial a la
 distribución Poisson que resultado tendríamos?. <br> <br>
 
-Para ello será necesario calcular el parámetro \(\lambda\) de la
+Para ello será necesario calcular el parámetro $\lambda$ de la
 distribución Poisson, el cual está dado por $$\begin{align*}
 \lambda &= np \\
         &= 900(0.03) \\
         &= 27
-\end{align*}$$ Es decir que la distribución \(b(n=900, p=0.03)\) puede
-aproximarse a una distribución \(Pois(\lambda=27)\), que \(n\) es grande
-y \(p\) es pequeño (aunque éste no cumpla la condición de que
-\(p\leq 0.01\), pero dichas condiciones son valores para tener como
+\end{align*}$$ Es decir que la distribución $b(n=900, p=0.03)$ puede
+aproximarse a una distribución $Pois(\lambda=27)$, que $n$ es grande
+y $p$ es pequeño (aunque éste no cumpla la condición de que
+$p\leq 0.01$, pero dichas condiciones son valores para tener como
 puntos de referencia). Por tanto, al calcular la probabilidad con la
 distribución Poisson tenemos que $$\begin{align*}
 \mathbb{P}(X \geq 30) &= 1 - \mathbb{P}(X < 30) \\
@@ -394,12 +394,12 @@ distribución Poisson tenemos que $$\begin{align*}
                       &= 1 - 0.6934654545 \\
                       &= 0.3065345
 \end{align*}$$ Lo cual indica que, al realizar la aproximación, se tiene
-un \(30.65\%\) de probabilidad de que al menos \(30\) artículos de los
-\(900\) seleccionados, resulten tener algún tipo de defecto. <br> <br>
+un $30.65\%$ de probabilidad de que al menos $30$ artículos de los
+$900$ seleccionados, resulten tener algún tipo de defecto. <br> <br>
 
 Al observar las dos probabilidades anteriores, la calculada con la
-distribución binomial \(30.44\%\), y la calculada con la distribución
-Poisson \(30.65\%\), se aprecia que las dos son muy similares, y en
+distribución binomial $30.44\%$, y la calculada con la distribución
+Poisson $30.65\%$, se aprecia que las dos son muy similares, y en
 consecuencia, se dice que la distribución Poisson dadas las
 características del ejercicio ofrece una buena aproximación al que se
 obtendría con la distribución binomial.
@@ -438,11 +438,11 @@ Ejercicio
 </h3>
 <p>
 Suponga que el ministerio de salud realiza un estudio sobre la
-probabilidad de que una persona de \(40\) años muera antes de la edad de
-jubilación a los \(62\) años, y encuentra que dicha probabilidad es de
-\(15\%\). Si se toma como referencia un grupo de \(1500\) personas que
-posee \(40\) años de edad, cuál es la probabilidad de que menos de
-\(225\) muera antes de la edad de jubilación?.
+probabilidad de que una persona de $40$ años muera antes de la edad de
+jubilación a los $62$ años, y encuentra que dicha probabilidad es de
+$15\%$. Si se toma como referencia un grupo de $1500$ personas que
+posee $40$ años de edad, cuál es la probabilidad de que menos de
+$225$ muera antes de la edad de jubilación?.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -450,10 +450,10 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular cuál es la probabilidad de
-que menos de \(220\) personas mueran antes de los \(62\) años, y se toma
-como grupo de estudio un total de \(1500\) personas, sabiendo que la
-probabilidad de que mueran antes de los \(62\) es del \(15\%\), es
-decir, tenemos que \(X\sim b(n=1500, p=0.15)\), y deseamos calcular
+que menos de $220$ personas mueran antes de los $62$ años, y se toma
+como grupo de estudio un total de $1500$ personas, sabiendo que la
+probabilidad de que mueran antes de los $62$ es del $15\%$, es
+decir, tenemos que $X\sim b(n=1500, p=0.15)$, y deseamos calcular
 $$\begin{align*}
 \mathbb{P}(X<220)&= \sum_{x=0}^{219} \left(\begin{array}{c}1500\\ x\end{array}\right) (0.15)^x(0.85)^{1500-x} \\
                  &= 0.3480602
@@ -461,16 +461,16 @@ $$\begin{align*}
 no es posible calcularla en una calculadora, debido a que las
 limitaciones que posee ésta, no permiten calcular una combinatoria de
 tal magnitud, y en consecuencia, resulta el intento de calcular dicha
-sumatoria en el mensaje \(Math\) \(ERROR\). Y es por ello que la
+sumatoria en el mensaje $Math$ $ERROR$. Y es por ello que la
 probabilidad anterior se calculó en el programa <tt>R</tt> para poder
 tomar dicho valor como referencia para compararlo con el valor de la
 aproximación normal.<br> <br>
 
 Ahora, dado que no es posible calcular dicha probabilidad en la
 calculadora, se procede a la aplicación del teorema de aproximación a la
-distribución normal, si \(X\sim b(n=1500, p=0.15)\) entonces se tendrá
+distribución normal, si $X\sim b(n=1500, p=0.15)$ entonces se tendrá
 que la media será igual a
-\(X\stackrel{a}{\sim}N(\mu=np,\sigma^2=np(1-p))\), en donde
+$X\stackrel{a}{\sim}N(\mu=np,\sigma^2=np(1-p))$, en donde
 $$\begin{align*}
 \mu &= np \\
     &= 1500(0.15) \\
@@ -485,16 +485,16 @@ $$\begin{align*}
          &= 191.25
 \end{align*}$$
 
-Ahora, conocidos los parámetros \(\mu=225\) y
-\(\sigma=\sqrt{191.25}=13.82932\), se procede al cálculo de la
+Ahora, conocidos los parámetros $\mu=225$ y
+$\sigma=\sqrt{191.25}=13.82932$, se procede al cálculo de la
 probabilidad de interés, en donde, al aplicar el factor corrector de
 continuidad a la probabilidad se tendrá que $$\begin{align*}
 \text{Binomial} & & & & \text{Normal} \quad \quad \quad \quad \quad \\
 \mathbb{P}(X< 220) & & & & \mathbb{P}(X\leq 220 - 0.5) \quad \quad \quad \quad \; \\
-\end{align*}$$ es decir que, si \(X\sim b(n=1500, p=0.15)\) estamos
-interesados en calcular \(\mathbb{P}(X\lt  220)\), mientras que si
-\(X\stackrel{a}{\sim}N(\mu=225,\sigma^2=191.25)\) estaríamos interesados
-en calcular \(\mathbb{P}(X\leq 219.5)\). Por tanto, al aplicar el
+\end{align*}$$ es decir que, si $X\sim b(n=1500, p=0.15)$ estamos
+interesados en calcular $\mathbb{P}(X\lt  220)$, mientras que si
+$X\stackrel{a}{\sim}N(\mu=225,\sigma^2=191.25)$ estaríamos interesados
+en calcular $\mathbb{P}(X\leq 219.5)$. Por tanto, al aplicar el
 teorema de estandarización para transformar dicha probabilidad una
 distribución normal estándar, se tendrá que
 
@@ -503,10 +503,10 @@ $$\begin{align*}
                      &= \mathbb{P}(Z \leq -0.40)
 \end{align*}$$
 
-En donde se aprecia que la \(\mathbb{P}(Z \leq -0.40)\) tiene la misma
+En donde se aprecia que la $\mathbb{P}(Z \leq -0.40)$ tiene la misma
 estructura establecida por la tabla de distribución normal estándar
-\(\mathbb{P}(Z\leq z)\), y por tanto será cuestión de buscar el valor
-crítico \(0.40\) en la tabla, para encontrar la probabilidad asociada a
+$\mathbb{P}(Z\leq z)$, y por tanto será cuestión de buscar el valor
+crítico $0.40$ en la tabla, para encontrar la probabilidad asociada a
 dicho valor, tal que
 
 <img src="/assets/images/TablaNormalEst7.jpg" alt="" style="max-width: 80%;">
@@ -521,12 +521,12 @@ $$\begin{align*}
 \mathbb{P}(X \leq 219.5) &= \mathbb{P}(Z \leq -0.40) \\
                          &= 0.3446
 \end{align*}$$ Es decir que la probabilidad aproximada de que menos de
-\(220\) personas mueran de los \(1500\) antes de llegar a los \(62\)
-años, es del \(34.46\%\). <br> <br>
+$220$ personas mueran de los $1500$ antes de llegar a los $62$
+años, es del $34.46\%$. <br> <br>
 
-Al comparar el resultado exacto de la distribución binomial \(34.81\%\),
+Al comparar el resultado exacto de la distribución binomial $34.81\%$,
 con respecto al resultado aproximado con la distribución normal
-\(34.46\%\), se aprecia que la diferencia es muy pequeña, y en
+$34.46\%$, se aprecia que la diferencia es muy pequeña, y en
 consecuencia, se dice que la distribución normal ofrece una buena
 aproximación para la distribución binomial.
 </p>

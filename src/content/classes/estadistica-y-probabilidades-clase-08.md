@@ -51,21 +51,21 @@ Suponga que el tiempo máximo que se puede reservar una sala de
 conferencias grande en cierta empresa son cuatro horas. Por experiencia
 se sabe que la sala es reservada con mucha frecuencia, tanto para
 conferencias extensas como para conferencias breves, de hecho, se puede
-suponer que la duración \(X\) de una conferencia tiene una distribución
-uniforme en horas en el intervalo \([0, 4]\). Basado en lo anterior
+suponer que la duración $X$ de una conferencia tiene una distribución
+uniforme en horas en el intervalo $[0, 4]$. Basado en lo anterior
 </p>
 <ol>
 <li>
-Calcule la función de densidad de probabilidad \(f(x)\) y la función de
-distribución acumulada \(F(X)\) para el tiempo que dura una conferencia.
+Calcule la función de densidad de probabilidad $f(x)$ y la función de
+distribución acumulada $F(X)$ para el tiempo que dura una conferencia.
 </li>
 <li>
-Cuál es la probabilidad de que una conferencia dure menos de \(2\)
+Cuál es la probabilidad de que una conferencia dure menos de $2$
 horas?
 </li>
 <li>
-Si una conferencia lleva más de \(2\) horas, cuál es la probabilidad de
-que dure a lo más \(3\) horas?
+Si una conferencia lleva más de $2$ horas, cuál es la probabilidad de
+que dure a lo más $3$ horas?
 </li>
 <li>
 Cuál es el tiempo medio y la desviación estándar de la duración de una
@@ -79,8 +79,8 @@ Solución
 <li>
 
 Del enunciado anterior, se menciona que la duración de las conferencias
-sigue una distribución uniforme con límite mínimo \(a=0\), y límite
-máximo \(b=4\), y por tanto, se tendrá que la función de densidad de
+sigue una distribución uniforme con límite mínimo $a=0$, y límite
+máximo $b=4$, y por tanto, se tendrá que la función de densidad de
 probabilidad estará dada por $$\begin{align*}
 f(x) = \frac{1}{4-0} = \frac{1}{4} \quad \text{ para } 0\leq x\leq 4
 \end{align*}$$
@@ -94,7 +94,7 @@ F(x) = \frac{x-0}{4-a} = \frac{x}{4} \quad \text{ para } 0\leq x\leq 4
 <li>
 
 En este punto estamos interesados en calcular la probabilidad de que una
-conferencia dure menos de \(2\) horas, es decir, estamos interesados en
+conferencia dure menos de $2$ horas, es decir, estamos interesados en
 calcular $$\begin{align*}
 \mathbb{P}(X<2)
 \end{align*}$$
@@ -105,7 +105,7 @@ tendrá que la probabilidad planteada es equivalente a $$\begin{align*}
 \end{align*}$$
 
 y por tanto, al emplear la función de distribución acumulada
-\(F(X)=\mathbb{P}(X\leq x)\) se tendrá que
+$F(X)=\mathbb{P}(X\leq x)$ se tendrá que
 
 $$\begin{align*}
 \mathbb{P}(X<2) &= F(2) \\
@@ -114,15 +114,15 @@ $$\begin{align*}
                 &= 0.5
 \end{align*}$$
 
-Y por tanto se tendrá una probabilidad del \(50\%\) de que una
-conferencia en particular tarde menos de \(2\) horas.
+Y por tanto se tendrá una probabilidad del $50\%$ de que una
+conferencia en particular tarde menos de $2$ horas.
 </li>
 <li>
 
 A diferencia del caso anterior, en éste punto estamos interesados en
 calcular una probabilidad condicional, en donde nos piden la
-probabilidad de que una conferencia dure como máximo \(3\) horas, cuando
-se sabe que ésta conferencia ya lleva más de \(2\) horas y aún no
+probabilidad de que una conferencia dure como máximo $3$ horas, cuando
+se sabe que ésta conferencia ya lleva más de $2$ horas y aún no
 termina, es decir $$\begin{align*}
 \mathbb{P}(X\leq 3 | X>2)
 \end{align*}$$
@@ -135,7 +135,7 @@ tendremos que $$\begin{align*}
 \end{align*}$$
 
 Ahora, al aplicar la función de distribución acumulada
-\(F(X)=\mathbb{P}(X\leq x)\) se tendrá que $$\begin{align*}
+$F(X)=\mathbb{P}(X\leq x)$ se tendrá que $$\begin{align*}
 \mathbb{P}(X\leq 3 | X>2) &= \frac{\mathbb{P}(X\leq 3) - \mathbb{P}(X\leq 2)}{1 - \mathbb{P}(X\leq 2)} \\
                           &= \frac{F(3) - F(2)}{1 - F(2)} \\
                           &=\frac{\frac{3-0}{4-0} - \frac{2-0}{4-0}}{1 - \frac{2-0}{4-0}} \\
@@ -146,8 +146,8 @@ Ahora, al aplicar la función de distribución acumulada
 \end{align*}$$
 
 Y en consecuencia, se tendrá que si una conferencia ha durado más de
-\(2\) horas y aún no termina, la probabilidad de que cure como máximo
-\(3\) horas es de \(50\%\).
+$2$ horas y aún no termina, la probabilidad de que cure como máximo
+$3$ horas es de $50\%$.
 </li>
 <li>
 
@@ -174,8 +174,8 @@ Sd(X) &= \sqrt{Var(X)}\\
 \end{align*}$$
 
 Por lo cual tendremos que, el número promedio de horas que se reserva la
-sala de conferencias es de \(2\) horas, con una desviación estándar de
-\(1.15\) horas.
+sala de conferencias es de $2$ horas, con una desviación estándar de
+$1.15$ horas.
 </li>
 </ol>
 </main>
@@ -191,13 +191,13 @@ $$\begin{align*}\Gamma(\alpha) = \int^\infty_0 t^{\alpha-1}e^{-t} dt\end{align*}
 
 <ol type="a">
 <li>
-\(\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha -1)\), para todo \(\alpha\gt 0\)
+$\Gamma(\alpha) = (\alpha-1)\Gamma(\alpha -1)$, para todo $\alpha\gt 0$
 </li>
 <li>
-\(\Gamma(n) = (n-1)!\), siendo \(n\) un entero positivo.
+$\Gamma(n) = (n-1)!$, siendo $n$ un entero positivo.
 </li>
 <li>
-\(\Gamma(1/2) = \sqrt{\pi}\)
+$\Gamma(1/2) = \sqrt{\pi}$
 </li>
 </ol>
 <button id="Show2" class="btn btn-secondary">
@@ -216,13 +216,13 @@ función gamma
 </p>
 <ol>
 <li>
-\(\Gamma(5)\)
+$\Gamma(5)$
 </li>
 <li>
-\(\Gamma(3.5)\)
+$\Gamma(3.5)$
 </li>
 <li>
-\(\Gamma(2.9)\)
+$\Gamma(2.9)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -231,7 +231,7 @@ Solución
 <ol>
 <li>
 En este caso estamos interesados en calcular el valor de la función
-gamma, cuando \(\alpha=5\), en donde se observa que este valor es un
+gamma, cuando $\alpha=5$, en donde se observa que este valor es un
 entero y por tanto $$\begin{align*}
 \Gamma(5) &= (5-1)!\\
           &= 4! \\
@@ -241,7 +241,7 @@ entero y por tanto $$\begin{align*}
 </li>
 <li>
 A diferencia del caso anterior, en éste el valor de la función gamma que
-nos piden no es un entero, y por tanto, como \(\alpha=3.5\) entonces el
+nos piden no es un entero, y por tanto, como $\alpha=3.5$ entonces el
 valor de la función gamma será de la forma $$\begin{align*}
 \Gamma(3.5) &= (3.5-1)\Gamma(3.5 -1) \\
             &= (2.5)\Gamma(2.5) \\
@@ -249,7 +249,7 @@ valor de la función gamma será de la forma $$\begin{align*}
             &= (2.5)(1.5)\Gamma(1.5) \\
             &= (2.5)(1.5)(1.5 - 1)\Gamma(1.5 - 1) \\
             &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
-\end{align*}$$ Y como \(\Gamma(0.5)=\sqrt{\pi}\), entonces tendremos que
+\end{align*}$$ Y como $\Gamma(0.5)=\sqrt{\pi}$, entonces tendremos que
 $$\begin{align*}
 \Gamma(3.5) &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
             &=(2.5)(1.5)(0.5)(\sqrt{\pi})\\
@@ -258,7 +258,7 @@ $$\begin{align*}
 </li>
 <li>
 A diferencia del caso anterior, en éste el valor de la función gamma que
-nos piden no es un entero, y por tanto, como \(\alpha=3.5\) entonces el
+nos piden no es un entero, y por tanto, como $\alpha=3.5$ entonces el
 valor de la función gamma será de la forma $$\begin{align*}
 \Gamma(3.5) &= (3.5-1)\Gamma(3.5 -1) \\
             &= (2.5)\Gamma(2.5) \\
@@ -267,7 +267,7 @@ valor de la función gamma será de la forma $$\begin{align*}
             &= (2.5)(1.5)(1.5 - 1)\Gamma(1.5 - 1) \\
             &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
 \end{align*}$$ Y como por propiedades tenemos que
-\(\Gamma(0.5)=\sqrt{\pi}\), entonces al reemplazar tendremos que
+$\Gamma(0.5)=\sqrt{\pi}$, entonces al reemplazar tendremos que
 $$\begin{align*}
 \Gamma(3.5) &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
             &=(2.5)(1.5)(0.5)(\sqrt{\pi})\\
@@ -276,22 +276,22 @@ $$\begin{align*}
 </li>
 <li>
 En este punto estamos interesados en calcular el valor de la función
-gamma de \(2.9\), pero en este caso no podremos calcular mediante
+gamma de $2.9$, pero en este caso no podremos calcular mediante
 propiedades el valor de la función ya que $$\begin{align*}
 \Gamma(2.9) &= (2.9-1)\Gamma(2.9 -1) \\
             &= (1.9)\Gamma(1.9) \\
             &= (1.9)(1.9-1)\Gamma(1.9 -1) \\
             &= (1.9)(0.9)\Gamma(0.9)
 \end{align*}$$ No es posible calcular de forma manual mediante
-propiedades el valor de la función Gamma cuando el valor \(\alpha\) no
-es un entero o terminado en \(0.5\), y en consecuencia para calcular el
+propiedades el valor de la función Gamma cuando el valor $\alpha$ no
+es un entero o terminado en $0.5$, y en consecuencia para calcular el
 valor de interés, se requerirá hacer una aproximación numérica para la
 integral $$\begin{align*}
 \Gamma(0.9) = \int_{0}^\infty t^{0.9 -  1} e^{-t} dt
 \end{align*}$$ la cual puede realizarse con la calculadora, o un
 software tal como lo es <tt>R</tt> mediante la función <tt>gamma()</tt>,
 o Excel mediante la función <tt>GAMMA()</tt>, las cuales arrojan que el
-valor de la función gamma para \(0.9\) será $$\begin{align*}
+valor de la función gamma para $0.9$ será $$\begin{align*}
 \Gamma(0.9) = 1.068629
 \end{align*}$$ Y por tanto el valor de la función gamma de interés será
 igual a $$\begin{align*}
@@ -299,7 +299,7 @@ igual a $$\begin{align*}
             &= (1.9)(0.9)(1.068629)\\
             &= 1.827355
 \end{align*}$$ Alternativamente se puede buscar en la calculadora o en
-los software, el valor de la gamma de \(2.9\) directamente, en donde
+los software, el valor de la gamma de $2.9$ directamente, en donde
 $$\begin{align*}
 \Gamma(2.9) &= \int_{0}^\infty t^{2.9 -  1} e^{-t} dt \\
             &= 1.827355
@@ -339,7 +339,7 @@ Ejercicio
 Suponga que se realiza un estudio sobre el tiempo de transferencia de
 datos de un sistema de red informática, en milisegundos. Si se encuentra
 que el tiempo de transferencia se distribuye gamma con media
-\(37.5_{ms}\) y desviación estándar de \(21.36196_{ms}\)
+$37.5_{ms}$ y desviación estándar de $21.36196_{ms}$
 </p>
 <ol>
 <li>
@@ -347,11 +347,11 @@ Cuales son los valores de los parámetros de la distribución Gamma?
 </li>
 <li>
 Cual es la probabilidad de que el tiempo de transferencia de datos
-exceda \(50_{ms}\)?
+exceda $50_{ms}$?
 </li>
 <li>
-Si el tiempo de transferencia ya ha superado \(20_{ms}\), cuál es la
-probabilidad de que no supere los \(70_{ms}\)?
+Si el tiempo de transferencia ya ha superado $20_{ms}$, cuál es la
+probabilidad de que no supere los $70_{ms}$?
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -362,7 +362,7 @@ Solución
 
 En el enunciado nos mencionan que las transferencias de datos en un
 sistema de red informática, sigue una distribución gamma con media y
-desviación estándar dadas por \(37_{ms}\) y \(21.36196_{ms}\),
+desviación estándar dadas por $37_{ms}$ y $21.36196_{ms}$,
 respectivament, y nos piden que calculemos el valor de los parámetros de
 la misma. Y por ello debemos despejar de las fórmulas de media y
 varianza el valor de los dos parámetros, tal que $$\begin{align*}
@@ -381,35 +381,35 @@ de los parametros tal que $$\begin{align*}
 37    &= \frac{\alpha}{\beta}\\
 \beta &= \frac{\alpha}{37}
 \end{align*}$$ entonces al reemplazar el resultado anterior en la
-fórmula de la varianza tendremos que el valor del parámetro \(\alpha\)
+fórmula de la varianza tendremos que el valor del parámetro $\alpha$
 será igual a $$\begin{align*}
 21.36196^2 &= \frac{\alpha}{\left(\frac{\alpha}{37}\right)^2}\\
 21.36196^2 &= \frac{37^2}{\alpha}\\
 \alpha     &= \frac{37^2}{21.36196^2} \\
 \alpha     &= 3
-\end{align*}$$ ahora al reemplazar el valor de \(\alpha=3\) en la
+\end{align*}$$ ahora al reemplazar el valor de $\alpha=3$ en la
 fórmula de la media tendremos que $$\begin{align*}
 37    &= \frac{3}{\beta}\\
 \beta &= \frac{3}{37}
 \end{align*}$$ Y por tanto, se tendrá que las transferencias de datos en
 un sistema de red informática tendrá una distribución
-\(Gamma(\alpha= 3, \beta = 3/37)\).
+$Gamma(\alpha= 3, \beta = 3/37)$.
 </li>
 <li>
 
 Basados en los parámetros calculados en el punto anterior, estamos
 interesados en calcular la probabilidad de que el tiempo de
-transferencia de datos exceda los \(50_{ms}\), es decir $$\begin{align*}
+transferencia de datos exceda los $50_{ms}$, es decir $$\begin{align*}
 \mathbb{P}(X>50) 
 \end{align*}$$ la cual, al emplear la distribución
-\(Gamma(\alpha=3, \beta=3/37)\) se tendrá que $$\begin{align*}
+$Gamma(\alpha=3, \beta=3/37)$ se tendrá que $$\begin{align*}
 \mathbb{P}(X>50) &= \int_{50}^{\infty} \frac{\beta^\alpha}{\Gamma(\alpha)} x^{\alpha-1}e^{-{x\beta}} dx \\
                  &= \int_{50}^{\infty} \frac{(3/37)^3}{\Gamma(3)} x^{3-1}e^{-{\frac{3x}{37}}} dx \\
                  &= \frac{3^3}{\Gamma(3)(37)^3}\int_{50}^{\infty}  x^{2}e^{-{\frac{3x}{37}}} dx
 \end{align*}$$
 
 En donde para calcular tan integral debemos realizar integración por
-partes dos veces, debido a que el parámetro \(\alpha=3\), tal que
+partes dos veces, debido a que el parámetro $\alpha=3$, tal que
 $$\begin{align*}
 \mathbb{P}(X>50) &= \frac{3^3}{\Gamma(3)(37)^3}\int_{50}^{\infty}  x^{2}e^{-{\frac{3x}{37}}} dx\\
                  &=> u=x^2 \quad \quad \; dv = e^{-{\frac{3x}{37}}} dx \\
@@ -422,7 +422,7 @@ $$\begin{align*}
                  &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)x}{3^2} e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                  &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)}{3^2} xe^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                  &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty 
-\end{align*}$$ Por tanto al evaluar la variable \(x\) en los límites de
+\end{align*}$$ Por tanto al evaluar la variable $x$ en los límites de
 interés tendremos que $$\begin{align*}
 \mathbb{P}(X>50) &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty \\
                  &= \left(0 + 0 + 0 \right) - \left(-\frac{3^2}{\Gamma(3)(37)^2}(50^2) e^{-{\frac{3(50)}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} (50)e^{-{\frac{3(50)}{37}}} - \frac{(2)}{\Gamma(3)} e^{-{\frac{3(50)}{37}}}\right) \\
@@ -430,12 +430,12 @@ interés tendremos que $$\begin{align*}
                  &= 0.14259 + 0.07035 + 0.01735 \\
                  &= 0.23029
 \end{align*}$$ Es decir, que la probabilidad de que el tiempo de
-transferencia de datos exceda los \(50_{ms}\), es del \(23.029\%\).
+transferencia de datos exceda los $50_{ms}$, es del $23.029\%$.
 </li>
 <li>
 En este punto estamos interesados en calcula la probabilidad de que el
-tiempo de transferencia de datos sea como máximo \(70_{ms}\), cuando se
-sabe que ya ha superado los \(20_{ms}\), por lo cual se tendrá una
+tiempo de transferencia de datos sea como máximo $70_{ms}$, cuando se
+sabe que ya ha superado los $20_{ms}$, por lo cual se tendrá una
 probabilidad condicional de la forma $$\begin{align*}
 \mathbb{P}(X\leq 70 | X>20) &= \frac{\mathbb{P}(X\leq 70 \cap X>20)}{\mathbb{P}(X>20)} \\
                             &= \frac{\mathbb{P}(20 < X \leq 70)}{\mathbb{P}(X>20)}
@@ -461,8 +461,8 @@ probabilidad condicional tendremos que $$\begin{align*}
                             &= \frac{0.69965}{0.77776} \\
                             &= 0.8995706
 \end{align*}$$ Y por tanto, si el tiempo de transferencia de datos ha
-superado \(20_{ms}\), se tendrá una probabilidad del \(89.96\%\) de que
-el tiempo de transferencia será como máximo de \(70_{ms}\).
+superado $20_{ms}$, se tendrá una probabilidad del $89.96\%$ de que
+el tiempo de transferencia será como máximo de $70_{ms}$.
 </li>
 </ol>
 </main>
@@ -507,16 +507,16 @@ Ejercicio
 <p>
 Suponga que el tiempo entre llegadas sucesiva de personas a un cajero de
 Bancolombia, posee una distribución Exponencial con un tiempo promedio
-de \(0.8\) minutos. Entonces, basados en ésto
+de $0.8$ minutos. Entonces, basados en ésto
 </p>
 <ol>
 <li>
 Calcule la probabilidad de que la próxima persona en llegar al cajero
-tarde más de \(4\) minutos?
+tarde más de $4$ minutos?
 </li>
 <li>
-Si han pasado \(2\) minutos y aún no llega ningúna persona al cajero,
-cuál es la probabilidad de que la próxima persona tarde más de \(4\)
+Si han pasado $2$ minutos y aún no llega ningúna persona al cajero,
+cuál es la probabilidad de que la próxima persona tarde más de $4$
 minutos?
 </li>
 </ol>
@@ -526,15 +526,15 @@ Solución
 <ol>
 <li>
 Para calcular la probabilidad de que la próxima persona tarde más de
-\(4\) minutos en llegar al cajero, debemos primero encontrar el valor
+$4$ minutos en llegar al cajero, debemos primero encontrar el valor
 del parámetro de la distribución Exponencial, en donde, nos dicen en el
-enunciado, que el tiempo promedio entre llegadas sucesivas es de \(0.8\)
+enunciado, que el tiempo promedio entre llegadas sucesivas es de $0.8$
 minutos, tal que $$\begin{align*}
 \mathbb{E}(X) &= 0.8 = \frac{4}{5}
 \end{align*}$$ Entonces como para la distribución Exponencial se tiene
 que el valor de la esperanza matemática está dada por $$\begin{align*}
 \mathbb{E}(X) &= \frac{1}{\lambda}
-\end{align*}$$ se tendrá que el parámetro \(\lambda\) de la distribución
+\end{align*}$$ se tendrá que el parámetro $\lambda$ de la distribución
 Exponencial será igual a $$\begin{align*}
 \lambda &= \frac{5}{4}
 \end{align*}$$ Ahora, con el valor de este parámetro podemos calcular la
@@ -547,15 +547,15 @@ Exponencial, tal que $$\begin{align*}
                 &= e^{-5} \\
                 &= 0.006737947
 \end{align*}$$ Es decir que la probabilidad de que la próxima persona en
-llegar cajero de Bancolombia tarde más de \(4\) minutos es de
-\(0.67\%\).
+llegar cajero de Bancolombia tarde más de $4$ minutos es de
+$0.67\%$.
 </li>
 <li>
 
 En esta ocasión estamos interesados en calcular una probabilidad
 condicional, en donde nos piden la probabilidad de que una persona tarde
-más de \(4\) minutos en llegar al cajero de Bancolombia, si se sabe que
-ya han pasado \(2\) minutos y aún no llega ningúna persona al cajero, es
+más de $4$ minutos en llegar al cajero de Bancolombia, si se sabe que
+ya han pasado $2$ minutos y aún no llega ningúna persona al cajero, es
 decir $$\begin{align*}
 \mathbb{P}(X>4|X>2) &= \frac{\mathbb{P}(X>4 \cap X>2)}{\mathbb{P}(X>2)} \\
                     &= \frac{\mathbb{P}(X>4)}{\mathbb{P}(X>2)} \\
@@ -567,9 +567,9 @@ decir $$\begin{align*}
                     &= 0.082085
 \end{align*}$$
 
-Y por tanto se tendrá una probabilidad de \(8.21\%\) de que la próxima
-persona que llega al cajero de Bancolombia tarde más de \(4\) minutos,
-dado que ya han pasado \(2\) minutos y aún no ha llegado ninguna
+Y por tanto se tendrá una probabilidad de $8.21\%$ de que la próxima
+persona que llega al cajero de Bancolombia tarde más de $4$ minutos,
+dado que ya han pasado $2$ minutos y aún no ha llegado ninguna
 persona.
 </li>
 </ol>
@@ -598,17 +598,17 @@ Ejercicio
 <p>
 Suponga que el tiempo entre llegadas sucesiva de personas a un cajero de
 Bancolombia, posee una distribución Exponencial con un tiempo promedio
-de \(0.8\) minutos. Entonces, basados en ésto
+de $0.8$ minutos. Entonces, basados en ésto
 </p>
 <ol>
 <li>
-Cuál es la probabilidad de que la próxima persona tarde a lo más \(2\)
-minutos, si ya han pasado \(0.8\) minutos y aún no llega ninguna persona
+Cuál es la probabilidad de que la próxima persona tarde a lo más $2$
+minutos, si ya han pasado $0.8$ minutos y aún no llega ninguna persona
 al cajero?
 </li>
 <li>
-Si han pasado \(2\) minutos y aún no llega ningúna persona al cajero,
-cuál es la probabilidad de que la próxima persona tarde más de \(4\)
+Si han pasado $2$ minutos y aún no llega ningúna persona al cajero,
+cuál es la probabilidad de que la próxima persona tarde más de $4$
 minutos?
 </li>
 </ol>
@@ -620,9 +620,9 @@ Solución
 
 Dado que para este ejercicio tenemos que el tiempo que tarda una persona
 en llegar a un cajero de Bancolombia se distribuye Exponencialmente con
-parámetro \(\lambda=5/4\), tendremos que, la probabilidad de que la
-próxima persona tarde a lo más \(2\) minutos, dado que ya han pasado
-\(0.8\) minutos y no llega ninguna persona, estará dada por una
+parámetro $\lambda=5/4$, tendremos que, la probabilidad de que la
+próxima persona tarde a lo más $2$ minutos, dado que ya han pasado
+$0.8$ minutos y no llega ninguna persona, estará dada por una
 probabilidad condicional de la forma $$\begin{align*}
 \mathbb{P}(X\leq2|X>0.8) 
 \end{align*}$$ la cual se podrá calcular mediante mediante la definición
@@ -653,16 +653,16 @@ $$\begin{align*}
                          &= 0.7768698
 \end{align*}$$
 
-lo cual significa, que exite una probablidad de \(77.69\%\) de que una
-persona tarde como maximo \(2\) minutos en llegar a un cajero, si ya han
-pasado a lo más \(0.8\) minutos y aún no ha llegado ninguna persona.
+lo cual significa, que exite una probablidad de $77.69\%$ de que una
+persona tarde como maximo $2$ minutos en llegar a un cajero, si ya han
+pasado a lo más $0.8$ minutos y aún no ha llegado ninguna persona.
 </li>
 <li>
 
 Similar al punto anterior, estamos interesado en calcular una
 probabilidad condicional, en donde para este caso, nos piden la
-probabilidad de que una persona tarde más de \(4\) minutos en llegar al
-cajero de Bancolombia, si se sabe que ya han pasado \(2\) minutos y aún
+probabilidad de que una persona tarde más de $4$ minutos en llegar al
+cajero de Bancolombia, si se sabe que ya han pasado $2$ minutos y aún
 no llega ningúna persona al cajero, tal que $$\begin{align*}
 \mathbb{P}(X>4|X>2) 
 \end{align*}$$ Entonces, al aplicar la propiedad de carencia de memoria
@@ -680,9 +680,9 @@ $$\begin{align*}
                     &= 0.082085
 \end{align*}$$
 
-Y por tanto se tendrá una probabilidad de \(8.21\%\) de que la próxima
-persona que llega al cajero de Bancolombia tarde más de \(4\) minutos,
-dado que ya han pasado \(2\) minutos y aún no ha llegado ninguna
+Y por tanto se tendrá una probabilidad de $8.21\%$ de que la próxima
+persona que llega al cajero de Bancolombia tarde más de $4$ minutos,
+dado que ya han pasado $2$ minutos y aún no ha llegado ninguna
 persona.
 </li>
 </ol>

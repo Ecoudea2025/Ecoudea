@@ -339,7 +339,7 @@ región antioqueña, encontrado los siguientes registros (en miles)
 </tbody>
 </table>
 <p>
-Si se decide emplear un nivel de significancia del \(5\%\), pruebe si
+Si se decide emplear un nivel de significancia del $5\%$, pruebe si
 las hipótesis planteadas por el grupo de la economía de la salud se
 encuentran o no apoyadas por la información empírica.
 </p>
@@ -349,7 +349,7 @@ Solución
 <p>
 
 En este caso estamos interesados en emplear un nivel de significancia
-\(\alpha=0.05\) para probar si la información obtenida en \(61\) días
+$\alpha=0.05$ para probar si la información obtenida en $61$ días
 apoya o no la hipótesis sobre que los contagios que se han presentado
 durante las últimas semanas por el COVID-19 poseen una distribución
 Weibull, esto es
@@ -393,7 +393,7 @@ distribución Weibull que mejor ajustan los datos, mediante la función
 <p>
 Una vez conocidos el valor de los parámetros de la distribución Weibull
 que ofrecen un mejor ajuste a los datos muestrales, tal que
-\(\alpha = 33.781908\) y \(\beta = 724.649562\), se procede al ajuste de
+$\alpha = 33.781908$ y $\beta = 724.649562$, se procede al ajuste de
 la distribución mediante el empleo de la prueba Cramer-Von Mises,
 mediante la función <tt>cvm.test</tt> de la librería <tt>goftest</tt>
 </p>
@@ -421,13 +421,13 @@ omega2 = 0.067026, p-value = 0.7718
 </section>
 <p>
 Donde se observa que la prueba de bondad de ajuste arrojó un
-P-valor\(=0.7718\), por lo cual al ser mayor que al nivel de
-significancia \(\alpha=0.05\), se concluirá que no hay evidencia en
+P-valor$=0.7718$, por lo cual al ser mayor que al nivel de
+significancia $\alpha=0.05$, se concluirá que no hay evidencia en
 contra de rechazar la hipótesis nula de que los datos poseen una
-distribución Weibull con parámetro de forma \(\alpha = 33.781908\) y
-parámetro de escala \(\beta = 724.649562\). <br> <br> Adicionalmente,
+distribución Weibull con parámetro de forma $\alpha = 33.781908$ y
+parámetro de escala $\beta = 724.649562$. <br> <br> Adicionalmente,
 podemos ver el ajuste que tiene la distribución Weibull de parámetros
-\(\alpha = 33.781908\) y \(\beta = 724.649562\), mediante un QQ-plot,
+$\alpha = 33.781908$ y $\beta = 724.649562$, mediante un QQ-plot,
 tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -444,12 +444,12 @@ tal que
 </p>
 <p>
 en donde se observa que todos los puntos asociados a la distirbución
-empírica caen dentro de los límites de confianza del \(95\%\) del
+empírica caen dentro de los límites de confianza del $95\%$ del
 QQ-plot, y por tanto se tendrá con un nivel de significancia
-\(\alpha=0.05\), que el número de contagios que se han presentado
+$\alpha=0.05$, que el número de contagios que se han presentado
 durante las últimas semanas por el COVID-19, posee una distribución
-Weibull con parámetro de forma \(\alpha = 33.781908\) y parámetro de
-escala \(\beta = 724.649562\).
+Weibull con parámetro de forma $\alpha = 33.781908$ y parámetro de
+escala $\beta = 724.649562$.
 </p>
 </main>
 
@@ -796,7 +796,7 @@ región antioqueña, encontrado los siguientes registros (en miles)
 </tbody>
 </table>
 <p>
-Si se decide emplear un nivel de significancia del \(5\%\), pruebe si
+Si se decide emplear un nivel de significancia del $5\%$, pruebe si
 las hipótesis planteadas por el grupo de la economía de la salud se
 encuentran o no apoyadas por la información empírica.
 </p>
@@ -824,10 +824,10 @@ D = 0.066013, p-value = 0.7321
 </section>
 </section>
 <p>
-Observando que al obtener un P-valor\(=0.7321\) se tendrá que no hay
+Observando que al obtener un P-valor$=0.7321$ se tendrá que no hay
 evidencia en contra de la hipótesis nula, ya que el P-valor obtenido en
 la prueba de normalidad es superior al nivel de significancia
-\(\alpha=0.05\), concluyendo entonces que el número de contagios que se
+$\alpha=0.05$, concluyendo entonces que el número de contagios que se
 han presentado durante las últimas semanas por el COVID-19, posee una
 distribución Normal.<br> <br> Además, si realizamos el QQ-plot para
 observar el ajuste de las observaciones a la distribución normal se
@@ -846,9 +846,9 @@ tiene que
 </p>
 <p>
 En donde se aprecia que la totalidad de los puntos asociados a los datos
-muestrales caen dentro de las bandas de confianza del \(95\%\) de la
+muestrales caen dentro de las bandas de confianza del $95\%$ de la
 distribución normal, por lo cual se concluye con un nivel de
-significancia del \(5\%\) que el número de contagios que se han
+significancia del $5\%$ que el número de contagios que se han
 presentado durante las últimas semanas por el COVID-19, si posee una
 distribución Normal.
 </p>
@@ -1165,7 +1165,7 @@ Ejercicio
 Suponga que se desea clasificar los defectos de fabricación en una
 empresa manufacturera de acuerdo al tipo de defecto y la jornada en la
 cual fueron producidas.<br> <br> Suponga que se obtienen los siguientes
-resultados de una muestra aleatoria de \(350\) productos defectuosos
+resultados de una muestra aleatoria de $350$ productos defectuosos
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -1251,7 +1251,7 @@ resultados de una muestra aleatoria de \(350\) productos defectuosos
 </tbody>
 </table>
 <p>
-Contrastar a un nivel de significancia del \(5%\), si existe
+Contrastar a un nivel de significancia del $5%$, si existe
 independencia entre el tipo de defecto y el turno de producción en el
 cual fue manufacturado el producto.
 </p>
@@ -1485,7 +1485,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Finalmente se plantea el criterio de decisión, en donde la región
-crítica asociada para un nivel de significancia del \(5\%\) está dada
+crítica asociada para un nivel de significancia del $5\%$ está dada
 por $$\begin{align*}
   RC&:\{\chi^2|\chi^2>\chi^2_{\alpha,(r-1)(c-1)}\}\\
   RC&:\{\chi^2|\chi^2>\chi^2_{0.05,(3-1)(4-1)}\}\\
@@ -1502,12 +1502,12 @@ $$\begin{align*}
                 &=0.0008018046
 \end{align*}$$
 
-Encontrando con un nivel de significancia del \(5\%\) que se rechaza la
+Encontrando con un nivel de significancia del $5\%$ que se rechaza la
 hipótesis nula de que el tipo de defecto y el turno sean categorías
 independiente, lo cual quiere decir que el turno laboral si influye en
 el tipo de defecto que tienen los productos producidos por la empresa
 maufacturera, debido a que el estadístico de prueba cae dentro de la
 región crítica, y el P-valor es menor al nivel de significancia
-\(\alpha = 0.05\).
+$\alpha = 0.05$.
 </p>
 </main>

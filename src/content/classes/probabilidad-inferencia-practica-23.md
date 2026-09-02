@@ -58,22 +58,22 @@ bibliography: "../../referencias.bib"
     encuentre e interprete en lo posible los siguientes eventos.
     <ol type="a">
     <li>
-    \(X \cup Y\)
+    $X \cup Y$
     </li>
     <li>
-    \(X \cap Y\)
+    $X \cap Y$
     </li>
     <li>
-    \(X'\cap Z\)
+    $X'\cap Z$
     </li>
     <li>
-    \(X' \cup Z'\)
+    $X' \cup Z'$
     </li>
     <li>
-    \(X' \cap Y'\)
+    $X' \cap Y'$
     </li>
     <li>
-    \(Z' \cup Y\)
+    $Z' \cup Y$
     </li>
     </ol>
 5.  Para un examen de probabilidad e inferencia estadística a las
@@ -117,24 +117,24 @@ bibliography: "../../referencias.bib"
 7.  Encuentre los errores en cada una de las siguientes aseveraciones:
     <ol type="a">
     <li>
-    Las probabilidades de que un vendedor de automóviles venda \(0\),
-    \(1\), \(2\) o \(3\) unidades en un día dado de febrero son
-    \(0.19\), \(0.38\), \(0.29\) y \(0.15\), respectivamente.
+    Las probabilidades de que un vendedor de automóviles venda $0$,
+    $1$, $2$ o $3$ unidades en un día dado de febrero son
+    $0.19$, $0.38$, $0.29$ y $0.15$, respectivamente.
     </li>
     <li>
-    La probabilidad de que llueva mañana es \(0.40\) y la probabilidad
-    de que no llueva es \(0.52\).
+    La probabilidad de que llueva mañana es $0.40$ y la probabilidad
+    de que no llueva es $0.52$.
     </li>
     <li>
-    Las probabilidades de que una impresora cometa \(0\), \(1\), \(2\),
-    \(3\) o \(4\) o más errores al imprimir un documento son \(0.19\),
-    \(0.34\), \(-0.25\), \(0.43\) y \(0.29\), respectivamente.
+    Las probabilidades de que una impresora cometa $0$, $1$, $2$,
+    $3$ o $4$ o más errores al imprimir un documento son $0.19$,
+    $0.34$, $-0.25$, $0.43$ y $0.29$, respectivamente.
     </li>
     <li>
     Al sacar una carta de una baraja en un solo intento la probabilidad
-    de seleccionar un corazón es \(1/4\), la probabilidad de seleccionar
-    una carta negra es \(1/2\), y la probabilidad de seleccionar una
-    carta de corazones y negra es \(1/4\).
+    de seleccionar un corazón es $1/4$, la probabilidad de seleccionar
+    una carta negra es $1/2$, y la probabilidad de seleccionar una
+    carta de corazones y negra es $1/4$.
     </li>
     </ol>
 8.  Se sacan tres cartas seguidas, sin reemplazo, de una baraja
@@ -156,17 +156,17 @@ bibliography: "../../referencias.bib"
     demás. A partir de la información anterior calcule
     <ol type="a">
     <li>
-    ¿Cuál es la probabilidad de que funcione el subsistema \(M\)?
+    ¿Cuál es la probabilidad de que funcione el subsistema $M$?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que funcione el subsistema \(N\)?
+    ¿Cuál es la probabilidad de que funcione el subsistema $N$?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que no funcione el subsistema \(O\)?
+    ¿Cuál es la probabilidad de que no funcione el subsistema $O$?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que haya comunicación entra \(A\) y
-    \(B\)?
+    ¿Cuál es la probabilidad de que haya comunicación entra $A$ y
+    $B$?
     </li>
     <li>
     Escriba mediante eventos, la estructura de uniones e intersecciones
@@ -303,10 +303,10 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Construya un diagrama de árbol para mostrar los elementos del
-    espacio muestral \(S\).
+    espacio muestral $S$.
     </li>
     <li>
-    Calcule la probabilidad de obtener al menos un \(5\) en uno de los
+    Calcule la probabilidad de obtener al menos un $5$ en uno de los
     dos dados.
     </li>
     <li>
@@ -322,22 +322,22 @@ bibliography: "../../referencias.bib"
     señale en el diagrama los siguientes eventos:
     <ol type="a">
     <li>
-    \(A \cup C\)
+    $A \cup C$
     </li>
     <li>
-    \(A \cap B\)
+    $A \cap B$
     </li>
     <li>
-    \(C'\)
+    $C'$
     </li>
     <li>
-    \((C' \cap D) \cup B\)
+    $(C' \cap D) \cup B$
     </li>
     <li>
-    \((S \cap C)'\)
+    $(S \cap C)'$
     </li>
     <li>
-    \(A \cap C \cap D'\)
+    $A \cap C \cap D'$
     </li>
     </ol>
 20. Suponga que usted le pide el favor a un compañero de curso que lo
@@ -396,10 +396,10 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Cuál es la probabilidad de que el elegido sea un ingeniero
-    industrial o sea menor de \(21\) años.
+    industrial o sea menor de $21$ años.
     </li>
     <li>
-    Cuál es la probabilidad de que el elegido sea un químico de \(21\)
+    Cuál es la probabilidad de que el elegido sea un químico de $21$
     años o más?
     </li>
     </ol>
@@ -413,11 +413,11 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que haya recibido entrenamiento con el
-    método \(A\)?
+    método $A$?
     </li>
     <li>
     ¿Cuál es la probabilidad de que haya recibido entrenamiento con el
-    método \(B\)?
+    método $B$?
     </li>
     </ol>
 27. Suponga que la probabilidad de sobrevivir a una cierta operación de
@@ -471,7 +471,7 @@ bibliography: "../../referencias.bib"
     de sus caras superiores.
     <ol type="a">
     <li>
-    Cuál es la probabilidad de obtener un \(7\) en la suma del resultado
+    Cuál es la probabilidad de obtener un $7$ en la suma del resultado
     de los dos dados.
     </li>
     <li>

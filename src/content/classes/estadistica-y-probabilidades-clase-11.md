@@ -33,7 +33,7 @@ Ejemplo
 <p>
 Los siguientes, son algunos ejemplos de casos que pueden considerarse
 Experimentos Binomial Negativo, debido a que cumplen las propiedades de
-un experimento binomial, es decir, las \(4\) condiciones propuestas en
+un experimento binomial, es decir, las $4$ condiciones propuestas en
 el
 <a href="../../EstadisticayProbabilidades/EyPClase06.html#proceso-bernoulli">Proceso
 Bernoulli</a>.
@@ -44,7 +44,7 @@ Tirar una moneda al aire, hasta obtener la primera cara.
 </li>
 <li>
 Contar el número de carros que pasan por debajo de un puente, hasta que
-pasen \(5\) carros azules.
+pasen $5$ carros azules.
 </li>
 <li>
 Comprar empanada hasta encontrar la segunda refritas.
@@ -84,13 +84,13 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que por experiencia se sabe que \(1\) de cada \(5\) personas que
+Suponga que por experiencia se sabe que $1$ de cada $5$ personas que
 solicitan la Visa Americana en la embajada de Estados Unidos en la
 Ciudad de Bogotá, es rechazada. Basados en lo anterior,
 </p>
 <ol>
 <li>
-Cuál es la probabilidad de que más de \(3\) personas deban solicitar la
+Cuál es la probabilidad de que más de $3$ personas deban solicitar la
 Visa hasta que la Embajada otorgue la primera Visa?.
 </li>
 <li>
@@ -105,32 +105,32 @@ Solución
 <ol>
 <li>
 
-En este caso nos preguntan, por la probabilidad de que más de \(3\)
+En este caso nos preguntan, por la probabilidad de que más de $3$
 personas deban presentarse a la embajada de Estados Unidos, hasta que la
 Embajada de Estados Unidos otorgue la primera Visa Americana, esto es
 $$\begin{align*}
 \mathbb{P}(X>3)
 \end{align*}$$
 
-Donde \(X\): representa el número de solicitantes que se presentan para
+Donde $X$: representa el número de solicitantes que se presentan para
 solicitar la Visa. Entonces, como estamos en una situación en la cual
 nos preguntan por el número de ensayos que hay que realizar, hasta
-obtener \(1\) éxito, estamos en una situación asociada a una
+obtener $1$ éxito, estamos en una situación asociada a una
 distribución Geométrica, la cual tiene la estructura $$\begin{align*}
 p(x) = p(1-p)^{x-1} \quad \quad x = 1,2,\ldots
-\end{align*}$$ En donde se sabe por experiencia que \(1\) de cada \(5\)
+\end{align*}$$ En donde se sabe por experiencia que $1$ de cada $5$
 personas que solicitan la Visa es rechazada, y por tanto, como nuestro
-éxito está asociado a que se otorgue la Visa, se tendrá que a \(4\) de
-cada \(5\) personas que solicitan la Visa, se les otorga de forma
+éxito está asociado a que se otorgue la Visa, se tendrá que a $4$ de
+cada $5$ personas que solicitan la Visa, se les otorga de forma
 satisfactoriamente, es decir que al aplicar la definición de frecuencia
-relativa, tendremos que la proporción \(p\), estará dada por
+relativa, tendremos que la proporción $p$, estará dada por
 $$\begin{align*}
 p &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
   &= \frac{4}{5} \\
   &= 0.80
 \end{align*}$$
 
-Ahora, al emplear la función de distribución Geométrica con \(p=0.80\),
+Ahora, al emplear la función de distribución Geométrica con $p=0.80$,
 tendremos que la probabilidad de interés estará dada por
 
 $$\begin{align*}
@@ -142,8 +142,8 @@ $$\begin{align*}
                 &= 0.008
 \end{align*}$$
 
-En consecuencia, se tendrá un \(0.8\%\) de probabilidad, de que más de
-\(3\) personas deban solicitar la Visa Americana, hasta que la embajada
+En consecuencia, se tendrá un $0.8\%$ de probabilidad, de que más de
+$3$ personas deban solicitar la Visa Americana, hasta que la embajada
 de Estados Unidos decida otorgar la primera.
 </li>
 <li>
@@ -158,8 +158,8 @@ $$\begin{align*}
 \mathbb{E}(X)=\frac{1}{p}
 \end{align*}$$
 
-Entonces, como \(4\) de \(5\) personas que se presentan a la embajada,
-obtienen la Visa, entonces se tendrá que la proporción \(p=0.80\), y en
+Entonces, como $4$ de $5$ personas que se presentan a la embajada,
+obtienen la Visa, entonces se tendrá que la proporción $p=0.80$, y en
 consecuencia,
 
 $$\begin{align*}
@@ -167,7 +167,7 @@ $$\begin{align*}
               &= 1.25
 \end{align*}$$
 
-lo cual significa, que en promedio deberán presentarse \(1.25\)
+lo cual significa, que en promedio deberán presentarse $1.25$
 personas, hasta que la embajada de Estados Unidos decida otorgar la
 primera Visa Americana. <br> <br> Ahora, para completar la
 interpretación anterior, realizaremos el cálculo de la desviación
@@ -186,8 +186,8 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= 0.559017
 \end{align*}$$
 
-Y por tanto se tendrá que en promedio \(1.25\) personas con una
-desviación estándar de \(0.559017\) personas, deben presentarse a la
+Y por tanto se tendrá que en promedio $1.25$ personas con una
+desviación estándar de $0.559017$ personas, deben presentarse a la
 embajada de Estados Unidos, con el fin de que éstos decidan otorgar la
 primera Visa Americana.
 </li>
@@ -222,13 +222,13 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que por experiencia se sabe que \(1\) de cada \(5\) personas que
+Suponga que por experiencia se sabe que $1$ de cada $5$ personas que
 solicitan la Visa Americana en la embajada de Estados Unidos en la
 Ciudad de Bogotá, es rechazada. Basados en lo anterior,
 </p>
 <ol>
 <li>
-Cuál es la probabilidad de que más de \(10\) pero a lo más \(15\)
+Cuál es la probabilidad de que más de $10$ pero a lo más $15$
 personas deban solicitar la Visa Americana, para que la Embajada otorgue
 la octava Visa?.
 </li>
@@ -244,30 +244,30 @@ Solución
 <ol>
 <li>
 
-En este ejercicio, nos piden la probabilidad de que más de \(10\) pero a
-lo más \(15\) personas deban presentarse a la embajada de Estados
+En este ejercicio, nos piden la probabilidad de que más de $10$ pero a
+lo más $15$ personas deban presentarse a la embajada de Estados
 Unidos, hasta que la Embajada decida otorgar la octava Visa Americana,
 esto es $$\begin{align*}
 \mathbb{P}(10<X\leq 15)
 \end{align*}$$
 
-Donde \(X\): representa el número de personas que se presentan a la
+Donde $X$: representa el número de personas que se presentan a la
 embajada de Estados Unidos para solicitar la Visa, hasta que éstos
 decidan otorgar la octava Visa. Entonces, como estamos en una situación
 en la cual nos preguntan por el número de ensayos que hay que realizar,
-hasta obtener \(8\) éxitos, estamos en una situación asociada a una
+hasta obtener $8$ éxitos, estamos en una situación asociada a una
 distribución Binomial Negativa, la cual tiene la estructura
 $$\begin{align*}
 p(x) = \left(\begin{array}{c}x-1\\ r-1\end{array}\right)p^r(1-p)^{x-
 r} \quad \quad x=r, r+1, \ldots
 \end{align*}$$
 
-en donde, \(r=8\): representa el número de visas otorgadas por la
+en donde, $r=8$: representa el número de visas otorgadas por la
 embajada de Estados Unidos. Entonces como se sabe por experiencia que
-\(1\) de cada \(5\) personas que solicitan la Visa es rechazada, se
-tendrá que a \(4\) de cada \(5\) personas que solicitan la Visa, se les
+$1$ de cada $5$ personas que solicitan la Visa es rechazada, se
+tendrá que a $4$ de cada $5$ personas que solicitan la Visa, se les
 otorga ésta de forma satisfactoriamente, es decir que al aplicar la
-definición de frecuencia relativa, tendremos que la proporción \(p\),
+definición de frecuencia relativa, tendremos que la proporción $p$,
 estará dada por $$\begin{align*}
 p &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
   &= \frac{4}{5} \\
@@ -275,7 +275,7 @@ p &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
 \end{align*}$$
 
 Ahora, al emplear la función de distribución Binomial Negativa con
-\(p=0.80\) y \(r=8\) tendremos que la probabilidad de interés estará
+$p=0.80$ y $r=8$ tendremos que la probabilidad de interés estará
 dada por
 
 $$\begin{align*}
@@ -284,8 +284,8 @@ $$\begin{align*}
                         &= 0.3179607
 \end{align*}$$
 
-En consecuencia, se tendrá un \(31.79\%\) de probabilidad, de que más de
-\(10\) pero como máximo \(15\) personas deban solicitar la Visa
+En consecuencia, se tendrá un $31.79\%$ de probabilidad, de que más de
+$10$ pero como máximo $15$ personas deban solicitar la Visa
 Americana, hasta que la embajada de Estados Unidos decida otorgar la
 octava Visa.
 </li>
@@ -300,9 +300,9 @@ $$\begin{align*}
 \mathbb{E}(X)=\frac{r}{p}
 \end{align*}$$
 
-Entonces, como \(4\) de \(5\) personas que se presentan a la embajada
+Entonces, como $4$ de $5$ personas que se presentan a la embajada
 obtienen la Visa, estamos interesados en el octavo éxito, entonces se
-tendrá que \(p=0.80\) y \(r=8\), con lo cual obtendremos un número
+tendrá que $p=0.80$ y $r=8$, con lo cual obtendremos un número
 promedio de personas igual a
 
 $$\begin{align*}
@@ -325,9 +325,9 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= 0.559017
 \end{align*}$$
 
-De lo anterior se tiene que en promedio deberán presentarse \(10\)
+De lo anterior se tiene que en promedio deberán presentarse $10$
 personas a la embajada Americana, con una desviación estándar de
-\(0.559017\), para que estos otorguen \(8\) Visas.
+$0.559017$, para que estos otorguen $8$ Visas.
 </li>
 </ol>
 </main>
@@ -367,7 +367,7 @@ El número de carros que transitan por una glorieta en dos horas.
 El número de estudiantes que entrar a la universidad en un día.
 </li>
 <li>
-Mirar el número de carros que pasa por debajo de un puente, en \(5\)
+Mirar el número de carros que pasa por debajo de un puente, en $5$
 minutos.
 </li>
 <li>
@@ -412,9 +412,9 @@ Ejercicio
 <p>
 Los huecos en las carreteras pueden ser un problema grave y requieren de
 reparación constante con un tipo específico de mezcla de concreto. La
-experiencia sugiere que hay en promedio \(1.5\) huecos por cada dos
+experiencia sugiere que hay en promedio $1.5$ huecos por cada dos
 kilómetros recorridos, después de cierta cantidad de uso. Si se supone
-que \(X\) representa el número de huecos que hay en la carretera
+que $X$ representa el número de huecos que hay en la carretera
 <ol>
 <li>
 Cuál es la probabilidad de que no aparezca más de un hueco en la
@@ -426,7 +426,7 @@ kilómetro?
 </li>
 <li>
 Cuál es el número promedio y desviación estándar del número de huecos
-que se encuentran en \(5\) kilómetros?.
+que se encuentran en $5$ kilómetros?.
 </li>
 </ol>
 </p>
@@ -434,23 +434,23 @@ que se encuentran en \(5\) kilómetros?.
 Solución
 </h3>
 <p>
-En este caso nos dicen que nuestra variable aleatorias es \(X\) el
+En este caso nos dicen que nuestra variable aleatorias es $X$ el
 número de huecos que se encuentran en la carretera, y que en promedio se
-encuentran \(1.5\) huecos cada dos kilómetros.
+encuentran $1.5$ huecos cada dos kilómetros.
 </p>
 <ol>
 <li>
 Basados en lo anterior, nos preguntan por la probabilidad de que no
 aparezca más de un hueco en la carretera en un tramo de dos kilómetros.
 Es decir, nos preguntan por la probabilidad de que aparezca como máximo
-\(1\) hueco en la carretera en un tramo de dos kilómetros. En este caso
+$1$ hueco en la carretera en un tramo de dos kilómetros. En este caso
 se tendrá la siguiente probabilidad $$\begin{align*}
 P(X\leq 1) &= \sum_{x=0}^1 \frac{e^{-1.5}1.5^x}{x!} \\
            &= \frac{e^{-1.5}1.5^0}{0!} + \frac{e^{-1.5}1.5^1}{1!} \\\\
            &= 0.2231302 + 0.3346952 \\
            &= 0.5578254
 \end{align*}$$ Es decir, la probabilidad de que no aparezca más de un
-hueco en la carretera en el tramo de dos kilómetros es del \(55.78\%\).
+hueco en la carretera en el tramo de dos kilómetros es del $55.78\%$.
 </li>
 <li>
 
@@ -458,7 +458,7 @@ Ahora, se tiene interés en conocer la probabilidad de que aparezca más
 de un hueco en un tramo de un kilómetro. En este caso debe notarse que
 se cambió la unidad de medida, en donde en lugar de dos kilómetros se
 habla de un kilómetro.<br> <br> Debido a ésto, será necesario actualizar
-nuestro parámetro \(\lambda\) mediante el empleo de una regla de \(3\),
+nuestro parámetro $\lambda$ mediante el empleo de una regla de $3$,
 de la siguiente manera. $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  1_{\text{km}} &- \lambda
@@ -466,7 +466,7 @@ de la siguiente manera. $$\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 1_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 0.75_{\text{huecos}}
 \end{align*}$$ Es decir, que en un tramo de un kilómetro ocurren
-\(0.75\) huecos en promedio. Conocido el valor del parámetro \(\lambda\)
+$0.75$ huecos en promedio. Conocido el valor del parámetro $\lambda$
 para el tramo de un kilómetro, se procede a calcular la probabilidad de
 que aparezca más de un hueco en el tramo de un kilómetro, tal que
 $$\begin{align*}
@@ -481,17 +481,17 @@ $$\begin{align*}
                  &= 0.1733585
 \end{align*}$$
 
-Es decir que, la probabilidad de que se encuentre más de \(1\) hueco en
-un tramo de \(1\) kilómetro cuando se viaja por carretera, es del
-\(17.33\%\).
+Es decir que, la probabilidad de que se encuentre más de $1$ hueco en
+un tramo de $1$ kilómetro cuando se viaja por carretera, es del
+$17.33\%$.
 </li>
 <li>
 
 Finalmente, se tiene interés en conocer cual será el promedio y
 desviación estándar, del número de huecos que se encontrarán en la
-carretera en el tramo de \(5\) kilómetro. En este caso, como se cambia
-la unidad de medida de \(2\) kilómetros a \(5\) kilómetros, será
-necesario recalcular el valor de \(\lambda\), ta que
+carretera en el tramo de $5$ kilómetro. En este caso, como se cambia
+la unidad de medida de $2$ kilómetros a $5$ kilómetros, será
+necesario recalcular el valor de $\lambda$, ta que
 
 $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
@@ -502,7 +502,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Ahora, al aplicar la formular de esperanza matemática para la
-distribución Poisson, se tiene que el número esperado de huecos en \(5\)
+distribución Poisson, se tiene que el número esperado de huecos en $5$
 kilómetros es de $$\begin{align*}
 \mathbb{E}(X) & = \lambda \\
               & = 3.75\\
@@ -510,7 +510,7 @@ kilómetros es de $$\begin{align*}
 
 Similarmente, se procede a realizar el cálculo de la varianza para poder
 calcular la desviación estándar, del número de huecos que hay en un
-tramo de \(5\) kilómetros $$\begin{align*}
+tramo de $5$ kilómetros $$\begin{align*}
 Var(X) &= \lambda \\
        &= 3.75\\
 \end{align*}$$ y con este valor, se procede a calcular la desviación
@@ -518,9 +518,9 @@ estándar $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(3.75)} \\
 Sd(X) & = 1.936492
-\end{align*}$$ De lo anterior se tiene que, en el tramo de \(5\)
-kilómetros de carretera, se espera encontrar \(3.75\) huecos, con una
-desviación estándar de \(1.93\) huecos.
+\end{align*}$$ De lo anterior se tiene que, en el tramo de $5$
+kilómetros de carretera, se espera encontrar $3.75$ huecos, con una
+desviación estándar de $1.93$ huecos.
 </li>
 </ol>
 </main>

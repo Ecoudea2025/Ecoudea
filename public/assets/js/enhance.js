@@ -62,25 +62,8 @@
     });
   }
 
-  // ── REPARAR DELIMITADORES LaTeX perdidos (\( \) → ( )) ─────────────
-  function repairDelimiters(article) {
-    var walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT, null, false);
-    var toFix = [];
-    var node;
-    while ((node = walker.nextNode())) {
-      var t = node.nodeValue;
-      if (t.indexOf('(') === -1 || t.indexOf('\\') === -1) continue;
-      var fixed = t.replace(/&#x3C;/g, '<').replace(/&#x3E;/g, '>');
-      fixed = fixed.replace(/\(([\s\S]{2,400})\)(?=[.,;) <]|$)/g, function (match, inner) {
-        if (inner.length < 3 || inner.length > 400) return match;
-        if (!/\\/.test(inner)) return match;
-        if (!/[{}^_]/.test(inner) && !/\\[a-zA-Z]/.test(inner)) return match;
-        return '\\(' + inner + '\\)';
-      });
-      if (fixed !== t) toFix.push([node, fixed]);
-    }
-    toFix.forEach(function (pair) { pair[0].nodeValue = pair[1]; });
-  }
+  // ── REPARAR DELIMITADORES LaTeX (desactivado: fuente ahora usa $...$ directamente)
+  function repairDelimiters(article) { return; }
 
   // ── REPARAR HTML GARBADO (fallback por si remarkEscapeMath no cubrió algo) ──
   function repairGarbledHtml(article) {
@@ -222,7 +205,7 @@
           var a = document.createElement('a');
           a.href = '#' + h.id;
           a.className = 'block text-xs py-1.5 px-2 rounded-lg text-text-muted hover:text-accent hover:bg-accent-soft transition-colors no-underline';
-          a.textContent = h.textContent;
+          a.innerHTML = h.innerHTML;
           li.appendChild(a);
           list.appendChild(li);
         });

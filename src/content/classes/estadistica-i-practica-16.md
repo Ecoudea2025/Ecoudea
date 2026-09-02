@@ -19,9 +19,9 @@ Lista de ejercicios
     De cuantas formas podrían ver las películas ese día?
     </li>
     <li>
-    Si entre las \(7\) películas seleccionadas hay \(2\) de romance,
-    \(2\) de acción y \(3\) de suspenso, de cuantas formas puede ver la
-    pareja las \(7\) películas ese día?
+    Si entre las $7$ películas seleccionadas hay $2$ de romance,
+    $2$ de acción y $3$ de suspenso, de cuantas formas puede ver la
+    pareja las $7$ películas ese día?
     </li>
     </ol>
 
@@ -47,22 +47,22 @@ Lista de ejercicios
     interprete en lo posible los siguientes eventos.
     <ol type="a">
     <li>
-    \(X \cup Y\)
+    $X \cup Y$
     </li>
     <li>
-    \(X \cap Y\)
+    $X \cap Y$
     </li>
     <li>
-    \(X'\cap Z\)
+    $X'\cap Z$
     </li>
     <li>
-    \(X' \cup Z'\)
+    $X' \cup Z'$
     </li>
     <li>
-    \(X' \cap Y'\)
+    $X' \cap Y'$
     </li>
     <li>
-    \(Z' \cup Y\)
+    $Z' \cup Y$
     </li>
     </ol>
 
@@ -352,22 +352,22 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     palabras a que conjuntos que corresponden a los siguientes eventos:
     <ol type="a">
     <li>
-    \(A \cup C\)
+    $A \cup C$
     </li>
     <li>
-    \(A \cap B\)
+    $A \cap B$
     </li>
     <li>
-    \(C'\)
+    $C'$
     </li>
     <li>
-    \((C' \cap D) \cup B\)
+    $(C' \cap D) \cup B$
     </li>
     <li>
-    \((S \cap A)'\)
+    $(S \cap A)'$
     </li>
     <li>
-    \(A \cap C \cap D\)
+    $A \cap C \cap D$
     </li>
     </ol>
 
@@ -450,11 +450,11 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     alérgicos a algún tipo de hierba. ¿Cuál es la probabilidad de que…
     <ol type="a">
     <li>
-    exactamente \(3\) de sus \(4\) pacientes siguientes sean alérgicos a
+    exactamente $3$ de sus $4$ pacientes siguientes sean alérgicos a
     hierbas?
     </li>
     <li>
-    ninguno de sus \(4\) pacientes siguientes sea alérgico a hierbas?
+    ninguno de sus $4$ pacientes siguientes sea alérgico a hierbas?
     </li>
     </ol>
 
@@ -579,10 +579,10 @@ $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{a
     <ol type="a">
     <li>
     Construya un diagrama de árbol para mostrar los elementos del
-    espacio muestral \(S\).
+    espacio muestral $S$.
     </li>
     <li>
-    Calcule la probabilidad de obtener un \(5\) en el dado, seguido de
+    Calcule la probabilidad de obtener un $5$ en el dado, seguido de
     dos caras de la moneda.
     </li>
     <li>
@@ -601,15 +601,15 @@ $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{a
 41. Resuelva
     <ol type="a">
     <li>
-    ¿De cuántas maneras se pueden formar \(6\) personas para abordar un
+    ¿De cuántas maneras se pueden formar $6$ personas para abordar un
     autobús?.
     </li>
     <li>
-    ¿Cuántas maneras son posibles si, de las \(6\), \(3\) personas
+    ¿Cuántas maneras son posibles si, de las $6$, $3$ personas
     específicas insisten en formarse una después de la otra?
     </li>
     <li>
-    ¿De cuántas maneras se pueden formar si, de las \(6\), \(2\)
+    ¿De cuántas maneras se pueden formar si, de las $6$, $2$
     personas específicas se rehúsan a formarse una detrás de la otra?
     </li>
     </ol>

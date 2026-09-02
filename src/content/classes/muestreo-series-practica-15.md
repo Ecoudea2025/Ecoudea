@@ -31,7 +31,7 @@ Si la serie posee tendencia o estacionalidad, realice las estimaciones
 de los modelos planteados usando sólo el 90% de los datos iniciales y
 deje el resto de períodos para evaluar su modelo (es decir, para poder
 calcular el error del pronóstico). En caso de ser estacionaria la serie,
-realice la estimación de los \(T+1\) periodos, y posteriormente divida
+realice la estimación de los $T+1$ periodos, y posteriormente divida
 el conjunto de datos en dos grupos. El primer grupo, compuesto por el
 90% de los datos iniciales serán considerados como los datos de ajuste,
 y el 10% restante será considerado como los datos de evaluación.
@@ -42,8 +42,8 @@ pronósticados
 </li>
 <li>
 Calcular el MAPE y el MSE de los datos de ajuste y pronóstico para cada
-modelo. Busque (en lo posible) los valores de los parámetros \(k\),
-\(\alpha, \beta\) y \(\gamma\) que minimizan el MAPE y el MSE.
+modelo. Busque (en lo posible) los valores de los parámetros $k$,
+$\alpha, \beta$ y $\gamma$ que minimizan el MAPE y el MSE.
 </li>
 <li>
 Determine en cada caso, si los residuales obtenidos por el modelo

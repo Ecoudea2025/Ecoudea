@@ -177,7 +177,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los tres cuartiles para las notas obtenida por los \(10\)
+Calcule los tres cuartiles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística de forma manual.
 </p>
@@ -185,15 +185,15 @@ Inferencia Estadística de forma manual.
 Solución Manual
 </h3>
 <p>
-Se presenta el cálculo del primer cuartil obtenido en el parcial \(1\).
-El cálculo de los demás cuartiles del parcial \(1\) y para el parcial
-\(4\) se dejan al estudiante.
+Se presenta el cálculo del primer cuartil obtenido en el parcial $1$.
+El cálculo de los demás cuartiles del parcial $1$ y para el parcial
+$4$ se dejan al estudiante.
 </p>
 <p>
 Para realizar el cálculo de los cuartiles asociados a las notas
 obtenidas por los estudiantes en cada parcial, es necesario ordenar el
 total de notas obtenidas en orden ascendente, tal que para el parcial
-\(1\) se tendrá
+$1$ se tendrá
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -236,8 +236,8 @@ Parcial 1
 </table>
 <p>
 
-Ahora, dado que se tienen \(10\) observaciones, el variable de
-posicionamiento \(h_j\) para el primer cuartil \((j=1)\) estará dado por
+Ahora, dado que se tienen $10$ observaciones, el variable de
+posicionamiento $h_j$ para el primer cuartil $(j=1)$ estará dado por
 
 $$\begin{align*}
   h_1 &= \frac{1(10-1)}{4} + 1 \\
@@ -245,7 +245,7 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde, al reemplazar este valor en la formula de cuartiles, con
-\(j=1\), obtendremos
+$j=1$, obtendremos
 
 $$\begin{align*}
   C_1 &= x_{\lfloor h_1\rfloor} + \left((h_1 - \lfloor h_1\rfloor) \times  (x_{[\lfloor h_1\rfloor + 1]} - x_{\lfloor h_1\rfloor}) \right) \\ 
@@ -254,9 +254,9 @@ $$\begin{align*}
       &= x_{[3]} + \left(0.25 \times  (x_{[4]}-x_{[3]})\right)
 \end{align*}$$
 
-Al reemplazar \(x_{[3]}\) y \(x_{[4]}\) por las notas del parcial \(1\),
-que ocupan la posición \(3\) y \(4\) en el conjunto de observaciones
-ordenadas, es decir, \(x_{[3]}=2.6\) y \(x_{[4]}=2.7\), darán como
+Al reemplazar $x_{[3]}$ y $x_{[4]}$ por las notas del parcial $1$,
+que ocupan la posición $3$ y $4$ en el conjunto de observaciones
+ordenadas, es decir, $x_{[3]}=2.6$ y $x_{[4]}=2.7$, darán como
 resultado que el primer cuartil será igual a
 
 $$\begin{align*}
@@ -264,12 +264,12 @@ $$\begin{align*}
       &= 2.625
 \end{align*}$$
 
-Por tanto, se concluye que para las notas obtenidas en el parcial \(1\),
-el \(25\%\) inferior de los estudiantes obtuvo una nota menor o igual a
-\(2.625\), mientras que el \(75\%\) superior de los estudiantes obtuvo
-notas mayores o iguales a \(2.625\). <br> <br> Procedimiento e
+Por tanto, se concluye que para las notas obtenidas en el parcial $1$,
+el $25\%$ inferior de los estudiantes obtuvo una nota menor o igual a
+$2.625$, mientras que el $75\%$ superior de los estudiantes obtuvo
+notas mayores o iguales a $2.625$. <br> <br> Procedimiento e
 interpretación similar se realiza para los demás cuartiles del parcial
-\(1\), y para los tres cuartiles del parcial \(4\).
+$1$, y para los tres cuartiles del parcial $4$.
 </p>
 </main>
 <button id="Show2" class="btn btn-secondary">
@@ -283,7 +283,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los tres cuartiles para las notas obtenida por los \(10\)
+Calcule los tres cuartiles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística con <tt>R</tt>.
 </p>
@@ -292,7 +292,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo de los cuartiles en <tt>R</tt> para las notas
-obtenidas en los parciales \(1\) y \(4\), se emplea la función
+obtenidas en los parciales $1$ y $4$, se emplea la función
 <code>quantile()</code> con el argumento <code>probs = c(0.25, 0.5,
 0.75)</code>, tal que
 </p>
@@ -368,7 +368,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los cuatro quintiles para las notas obtenida por los \(10\)
+Calcule los cuatro quintiles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística de forma manual.
 </p>
@@ -376,15 +376,15 @@ Inferencia Estadística de forma manual.
 Solución Manual
 </h3>
 <p>
-Se presenta el cálculo del tercer quintil obtenido en el parcial \(4\).
-El cálculo de los demás quintiles del parcial \(4\) y para el parcial
-\(1\) se dejan al estudiante.
+Se presenta el cálculo del tercer quintil obtenido en el parcial $4$.
+El cálculo de los demás quintiles del parcial $4$ y para el parcial
+$1$ se dejan al estudiante.
 </p>
 <p>
 Para realizar el cálculo de los quintiles asociados a las notas
 obtenidas por los estudiantes en cada parcial, es necesario ordenar el
 total de notas obtenidas en orden ascendente, tal que para el parcial
-\(4\) se tendrá
+$4$ se tendrá
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -427,8 +427,8 @@ Parcial 4
 </table>
 <p>
 
-Ahora, dado que se tienen \(10\) observaciones, el variable de
-posicionamiento \(h_j\) para el cuarto quintil \((j=4)\) estará dado por
+Ahora, dado que se tienen $10$ observaciones, el variable de
+posicionamiento $h_j$ para el cuarto quintil $(j=4)$ estará dado por
 
 $$\begin{align*}
   h_4 &= \frac{4(10-1)}{5} + 1 \\
@@ -436,7 +436,7 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde, al reemplazar este valor en la formula de quintiles, con
-\(j=4\), obtendremos
+$j=4$, obtendremos
 
 $$\begin{align*}
   Q_4 &= x_{\lfloor h_4\rfloor} + \left((h_4 - \lfloor h_1\rfloor) \times  (x_{[\lfloor h_4\rfloor + 1]} - x_{\lfloor h_4\rfloor}) \right) \\ 
@@ -445,9 +445,9 @@ $$\begin{align*}
       &= x_{[8]} + \left(0.2 \times  (x_{[9]}-x_{[8]})\right)
 \end{align*}$$
 
-Al reemplazar \(x_{[8]}\) y \(x_{[9]}\) por las notas del parcial \(4\),
-que ocupan la posición \(8\) y \(9\) en el conjunto de observaciones
-ordenadas, es decir, \(x_{[8]}=4.1\) y \(x_{[9]}=4.5\), darán como
+Al reemplazar $x_{[8]}$ y $x_{[9]}$ por las notas del parcial $4$,
+que ocupan la posición $8$ y $9$ en el conjunto de observaciones
+ordenadas, es decir, $x_{[8]}=4.1$ y $x_{[9]}=4.5$, darán como
 resultado que el cuarto quintil será igual a
 
 $$\begin{align*}
@@ -455,12 +455,12 @@ $$\begin{align*}
       &= 4.18
 \end{align*}$$
 
-En consecuencia, se concluye que para el parcial \(4\), el \(80\%\)
-inferior de los estudiantes logró obtener una nota máxima de \(4.18\),
-mientras que el \(20\%\) superior obtuvo notas de al menos \(4.18\).
+En consecuencia, se concluye que para el parcial $4$, el $80\%$
+inferior de los estudiantes logró obtener una nota máxima de $4.18$,
+mientras que el $20\%$ superior obtuvo notas de al menos $4.18$.
 <br> <br> Procedimiento e interpretación similar se realiza para los
-demás quintiles del parcial \(4\), y para los cuatro quintiles del
-parcial \(1\).
+demás quintiles del parcial $4$, y para los cuatro quintiles del
+parcial $1$.
 </p>
 </main>
 <button id="Show4" class="btn btn-secondary">
@@ -474,7 +474,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los cuatro quintiles para las notas obtenida por los \(10\)
+Calcule los cuatro quintiles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística con <tt>R</tt>.
 </p>
@@ -483,7 +483,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo de los quintiles en <tt>R</tt> para las notas
-obtenidas en los parciales \(1\) y \(4\), se emplea la función
+obtenidas en los parciales $1$ y $4$, se emplea la función
 <code>quantile()</code> con el argumento <code>probs = c(0.2, 0.4, 0.6,
 0.8)</code>, tal que
 </p>
@@ -559,7 +559,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los nueve deciles para las notas obtenida por los \(10\)
+Calcule los nueve deciles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística de forma manual.
 </p>
@@ -571,9 +571,9 @@ Similar al caso de cuartil y quintil, se presenta el cálculo de un solo
 Decil, debido a que el cálculo de los demás posee un procedimiento
 similar, y en consecuencia, se deja dicho cálculo al estudiante. <br>
 <br> En este caso, se decide realizar el cálculo para el sexto Decil
-\((j=6)\), asociado a na nota obtenida por los estudiantes en el parcial
-\(1\). Para ello es necesario ordenar el total de notas obtenidas el
-parcial \(1\) de forma ascendente, tal que
+$(j=6)$, asociado a na nota obtenida por los estudiantes en el parcial
+$1$. Para ello es necesario ordenar el total de notas obtenidas el
+parcial $1$ de forma ascendente, tal que
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -616,15 +616,15 @@ Parcial 1
 </table>
 <p>
 
-Donde al tener \(10\) observaciones, se tendrá que la variable de
-posicionamiento \(h_j\) para el sexto decil \((j=6)\) estará dado por
+Donde al tener $10$ observaciones, se tendrá que la variable de
+posicionamiento $h_j$ para el sexto decil $(j=6)$ estará dado por
 $$\begin{align*}
   h_6 &= \frac{6(10-1)}{10} + 1 \\
       &= 6.4
 \end{align*}$$
 
 Por tanto, al reemplazar este valor en la formula de deciles, siendo
-\(j=6\) se tendrá
+$j=6$ se tendrá
 
 $$\begin{align*}
   D_6 &= x_{\lfloor h_6\rfloor} + \left((h_6 - \lfloor h_6\rfloor) \times  (x_{[\lfloor h_6\rfloor + 1]} - x_{\lfloor h_6\rfloor}) \right) \\ 
@@ -633,7 +633,7 @@ $$\begin{align*}
       &= x_{[6]} + \left(0.4 \times  (x_{[7]}-x_{[6]})\right)
 \end{align*}$$
 
-Reemplazando \(x_{[6]}\) por \(2.8\) y \(x_{[7]}\) por \(2.9\), es
+Reemplazando $x_{[6]}$ por $2.8$ y $x_{[7]}$ por $2.9$, es
 decir, la sexta y séptima nota más alta obtenida en el primer parcial,
 se tendrá que el sexto Decil estará dado por
 
@@ -642,12 +642,12 @@ D_6 &= 2.8 + \left(0.4 \times  (2.9-2.8)\right)\\
     &= 2.84
 \end{align*}$$
 
-De lo anterior, se puede concluir que para el parcial \(1\), se tendrá
-que el \(60\%\) inferior de los estudiantes obtuvo una nota máxima de
-\(2.84\), mientras que el \(40\%\) superior obtuvo notas mínima de
-\(2.84\). <br> <br> El procedimiento e interpretación aquí presentada,
+De lo anterior, se puede concluir que para el parcial $1$, se tendrá
+que el $60\%$ inferior de los estudiantes obtuvo una nota máxima de
+$2.84$, mientras que el $40\%$ superior obtuvo notas mínima de
+$2.84$. <br> <br> El procedimiento e interpretación aquí presentada,
 es similar al que se debe realizar para los demás deciles, tanto del
-parcial \(1\), como del parcial \(4\).
+parcial $1$, como del parcial $4$.
 </p>
 </main>
 <button id="Show6" class="btn btn-secondary">
@@ -661,7 +661,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los nueve deciles para las notas obtenida por los \(10\)
+Calcule los nueve deciles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística de forma manual con <tt>R</tt>.
 </p>
@@ -670,7 +670,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo de los deciles en <tt>R</tt> para las notas
-obtenidas en los parciales \(1\) y \(4\), se emplea la función
+obtenidas en los parciales $1$ y $4$, se emplea la función
 <code>quantile()</code> con el argumento <code>probs = seq(0.1, 0.9,
 0.1)</code>, tal que
 </p>
@@ -746,7 +746,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los cien percentiles para las notas obtenida por los \(10\)
+Calcule los cien percentiles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística de forma manual.
 </p>
@@ -755,11 +755,11 @@ Solución Manual
 </h3>
 <p>
 Para el cálculo de los percentiles, se decide presentar el cálculo del
-trigésimo y tercero percentil \((j=33)\), obtenido en el parcial \(4\).
+trigésimo y tercero percentil $(j=33)$, obtenido en el parcial $4$.
 El cálculo de los demás percentiles se realizan de forma similar, tanto
-para el parcial \(4\) como para el parcial \(1\), los cuales se dejan al
+para el parcial $4$ como para el parcial $1$, los cuales se dejan al
 estudiante. <br> <br> Para realizar el cálculo de dicho percentil, se
-ordenan las notas obtenidas en el parcial \(4\) de menor a mayor, tal
+ordenan las notas obtenidas en el parcial $4$ de menor a mayor, tal
 que
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -804,14 +804,14 @@ Parcial 4
 <p>
 
 Con las notas ordenadas, se realiza el cálculo para la variable de
-posicionamiento \(h_j\), con \(j=33\), dado que se posee un total de
-\(10\) observaciones, tal que $$\begin{align*}
+posicionamiento $h_j$, con $j=33$, dado que se posee un total de
+$10$ observaciones, tal que $$\begin{align*}
 h_{33} &= \frac{33(10-1)}{100} + 1 \\
        &= 3.97
 \end{align*}$$
 
 Al reemplazar el valor obtenido en la variable de posicionamiento, en la
-formula de percentiles, con \(j=33\), obtendremos
+formula de percentiles, con $j=33$, obtendremos
 
 $$\begin{align*}
   P_{33} &= x_{\lfloor h_{33}\rfloor} + \left((h_{33} - \lfloor h_{33}\rfloor) \times  (x_{[\lfloor h_{33}\rfloor + 1]} - x_{\lfloor h_{33}\rfloor}) \right) \\ 
@@ -820,9 +820,9 @@ $$\begin{align*}
          &= x_{[3]} + \left(0.97 \times (x_{[4]}-x_{[3]})\right)
 \end{align*}$$
 
-En donde, \(x_{[3]}=2.0\) y \(x_{[4]}=3.2\), son las notas que ocupan la
-posición \(3\) y \(4\) en el conjunto de notas ordenadas en el parcial
-\(4\). Finalmente, al reemplazar dichos valores en la ecuación de
+En donde, $x_{[3]}=2.0$ y $x_{[4]}=3.2$, son las notas que ocupan la
+posición $3$ y $4$ en el conjunto de notas ordenadas en el parcial
+$4$. Finalmente, al reemplazar dichos valores en la ecuación de
 percentiles se tendrá que
 
 $$\begin{align*}
@@ -830,10 +830,10 @@ $$\begin{align*}
          &= 3.164
 \end{align*}$$
 
-De lo anterior, se podrá concluir que el \(33\%\) inferior de los
-estudiantes logró obtener una nota menor o igual a \(3.164\) en el
-cuarto parcial, mientras que el \(67\%\) superior logró obtener una nota
-mínima de \(3.164\) en el cuarto parcial. <br> <br> El procedimiento e
+De lo anterior, se podrá concluir que el $33\%$ inferior de los
+estudiantes logró obtener una nota menor o igual a $3.164$ en el
+cuarto parcial, mientras que el $67\%$ superior logró obtener una nota
+mínima de $3.164$ en el cuarto parcial. <br> <br> El procedimiento e
 interpretación aquí presentada, se puede replicar para realizar el
 cálculo de los demás percentiles asociados a los dos parciales
 estudiados.
@@ -850,7 +850,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule los cien percentiles para las notas obtenida por los \(10\)
+Calcule los cien percentiles para las notas obtenida por los $10$
 estudiantes en el primer y cuarto parcial del curso de Probabilidad e
 Inferencia Estadística con <tt>R</tt>.
 </p>
@@ -859,7 +859,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo de los percentiles en <tt>R</tt> para las notas
-obtenidas en los parciales \(1\) y \(4\), se emplea la función
+obtenidas en los parciales $1$ y $4$, se emplea la función
 <code>quantile()</code> con el argumento <code>probs = seq(0.01, 0.99,
 0.01))</code>, tal que
 </p>
@@ -957,7 +957,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la varianza de las notas obtenidas por los \(10\) estudiantes en
+Calcule la varianza de las notas obtenidas por los $10$ estudiantes en
 el primer y cuarto parcial del curso de Estadística I, de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -965,7 +965,7 @@ Solución Manual
 </h3>
 <p>
 
-La varianza de las notas obtenidas en los parciales \(1\) y \(4\) por
+La varianza de las notas obtenidas en los parciales $1$ y $4$ por
 los estudiantes que cursaron Estadística I estará dada por
 
 $$\begin{align*}
@@ -992,7 +992,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la varianza de las notas obtenidas por los \(10\) estudiantes en
+Calcule la varianza de las notas obtenidas por los $10$ estudiantes en
 el primer y cuarto parcial del curso de Estadística I, con <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -1052,7 +1052,7 @@ Ocultar Ejercicio Manual
 </button>
 <main id="botoncito11">
 <p>
-Calcule la desviación estándar de las notas obtenidas por los \(10\)
+Calcule la desviación estándar de las notas obtenidas por los $10$
 estudiantes en el primer y cuarto parcial del curso de Estadística I de
 forma manual.
 </p>
@@ -1061,8 +1061,8 @@ Solución Manual
 </h3>
 <p>
 
-La desviación estándar de las notas obtenidas en los parciales \(1\) y
-\(4\) por los estudiantes que cursaron Estadística I, es simplemente la
+La desviación estándar de las notas obtenidas en los parciales $1$ y
+$4$ por los estudiantes que cursaron Estadística I, es simplemente la
 raíz cuadrada de la varianza que se calculó anteriormente, y por tanto
 se tendrá que
 
@@ -1072,11 +1072,11 @@ $$\begin{align*}
 \end{align*}$$
 
 De los resultados obtenidos se tiene que, la dispersión que poseen los
-datos respecto a su valor promedio es de \(0.7121953\) para las notas
-obtenidas en el parcial \(1\) y de \(1.273839\) para las notas obtenidas
-en el parcial \(4\) de Estadística I. Esto quiere decir, que las notas
-obtenidas en el parcial \(1\) se encuentran más reunidas respecto a
-valor promedio, que las notas obtenidas en el parcial \(4\).
+datos respecto a su valor promedio es de $0.7121953$ para las notas
+obtenidas en el parcial $1$ y de $1.273839$ para las notas obtenidas
+en el parcial $4$ de Estadística I. Esto quiere decir, que las notas
+obtenidas en el parcial $1$ se encuentran más reunidas respecto a
+valor promedio, que las notas obtenidas en el parcial $4$.
 </p>
 </main>
 <button id="Show12" class="btn btn-secondary">
@@ -1090,7 +1090,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la desviación estándar de las notas obtenidas por los \(10\)
+Calcule la desviación estándar de las notas obtenidas por los $10$
 estudiantes en el primer y cuarto parcial del curso de Estadística I,
 con <tt>R</tt>.
 </p>
@@ -1165,7 +1165,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule el porcentaje de variación de las notas obtenidas por los \(10\)
+Calcule el porcentaje de variación de las notas obtenidas por los $10$
 estudiantes en el primer y cuarto parcial del curso de Estadística I,
 respecto a su valor promedio de forma manual.
 </p>
@@ -1177,7 +1177,7 @@ Solución Manual
 El coeficiente de variación refleja la variación porcentual que tiene un
 conjunto de observaciones respecto a su valor promedio, por tanto, al
 aplicar la ecuación del coeficiente de variación a las notas obtenidas
-en los parciales \(1\) y \(4\) por los estudiantes que cursaron
+en los parciales $1$ y $4$ por los estudiantes que cursaron
 Estadística I, se tiene que
 
 $$\begin{align*}
@@ -1187,10 +1187,10 @@ $$\begin{align*}
 
 De lo anterior, se aprecia que tal como se esperaba, la variación
 porcentual de los datos respecto a su media para el caso del parcial
-\(1\) es menor al obtenido en el parcial \(4\), pues se evidencia que el
-coeficiente de variación del parcial \(1\) es cercano al \(25.9\%\),
-mientras que en el parcial \(4\), se obtuvo un porcentaje de variación
-de \(40.57\%\).
+$1$ es menor al obtenido en el parcial $4$, pues se evidencia que el
+coeficiente de variación del parcial $1$ es cercano al $25.9\%$,
+mientras que en el parcial $4$, se obtuvo un porcentaje de variación
+de $40.57\%$.
 </p>
 </main>
 <button id="Show14" class="btn btn-secondary">
@@ -1204,7 +1204,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule el porcentaje de variación de las notas por los \(10\)
+Calcule el porcentaje de variación de las notas por los $10$
 estudiantes en el primer y cuarto parcial del curso de Estadística I,
 respecto a su valor promedio en <tt>R</tt>.
 </p>
@@ -1284,7 +1284,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule el rango de las notas obtenidas por los \(10\) estudiantes en el
+Calcule el rango de las notas obtenidas por los $10$ estudiantes en el
 primer y cuarto parcial del curso de Estadística I, de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -1293,7 +1293,7 @@ Solución Manual
 <p>
 Para realizar el cálculo del rango o amplitud que poseen las notas
 obtenidas por los estudiantes que vieron el curso de Estadística I en
-los parciales \(1\) y \(4\), es necesario inicialmente ordenar las notas
+los parciales $1$ y $4$, es necesario inicialmente ordenar las notas
 en orden ascendente, tal que
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1393,13 +1393,13 @@ $$\begin{align*}
   R_{P1} &= 4.0 - 1.3 = 2.7 \\ 
   R_{P4} &= 4.7 - 0.7 = 4.0
 \end{align*}$$ Se evidencia entonces que la amplitud de las notas del
-parcial \(4\) es mucho mayor a la amplitud del parcial \(1\), puesto que
-se observa que el rango obtenido por las notas del parcial \(4\) es de
-\(4.0\) puntos, mientras que el rango obtenido por las notas del parcial
-\(1\) es de \(2.7\) puntos. De lo anterior, vemos que hay una
+parcial $4$ es mucho mayor a la amplitud del parcial $1$, puesto que
+se observa que el rango obtenido por las notas del parcial $4$ es de
+$4.0$ puntos, mientras que el rango obtenido por las notas del parcial
+$1$ es de $2.7$ puntos. De lo anterior, vemos que hay una
 consistencia con lo encontrado en la desviación estándar, en donde
-veíamos que la dispersión para el parcial \(4\) era mayor a la
-dispersión del parcial \(1\).
+veíamos que la dispersión para el parcial $4$ era mayor a la
+dispersión del parcial $1$.
 </p>
 </main>
 <button id="Show16" class="btn btn-secondary">
@@ -1413,7 +1413,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule el rango de las notas obtenidas por los \(10\) estudiantes en el
+Calcule el rango de las notas obtenidas por los $10$ estudiantes en el
 primer y cuarto parcial del curso de Estadística I en <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -1480,7 +1480,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule el rango intercuartílico de las notas obtenidas por los \(10\)
+Calcule el rango intercuartílico de las notas obtenidas por los $10$
 estudiantes en el primer y cuarto parcial del curso de Estadística I de
 forma manual.
 </p>
@@ -1496,25 +1496,25 @@ observaciones, se emplea en su lugar, el tercer y primer cuartil. <br>
 Entonces, basados en los cálculos de los cuartiles obtenidos en la
 <a href="https://jiperezga.github.io/ProbabilidadeInferencia/PeIEClase04.html#cuartil" target="\_blank">Clase
 04</a> (ver Solucion en R), se tendrá que el primer y tercer cuartil
-para el parcial \(1\) son \(C_{1}= 2.625\) y \(C_{3}= 3.050\),
+para el parcial $1$ son $C_{1}= 2.625$ y $C_{3}= 3.050$,
 respectivamente, obteniendo un rango intercuartílico de
 
 $$\begin{align*}
   IQR_{P1} = 3.050 - 2.625 = 0.425
 \end{align*}$$
 
-mientras que, el primer y tercer cuartil para el parcial \(4\) son
-\(C_{1}= 2.3\) y \(C_{3}= 3.975\), respectivamente, y en consecuencia,
-el rango intercuartílico asociado al parcial \(4\) será
+mientras que, el primer y tercer cuartil para el parcial $4$ son
+$C_{1}= 2.3$ y $C_{3}= 3.975$, respectivamente, y en consecuencia,
+el rango intercuartílico asociado al parcial $4$ será
 
 $$\begin{align*}
   IQR_{P4}= 3.975 - 2.3 = 1.675
 \end{align*}$$
 
-Mostrando que, al eliminar el \(50\%\) de los datos más extremos, se
-obtiene un rango de \(0.425\) para el caso del parcial \(1\), y de
-\(1.675\) para el caso del parcial \(4\), lo cual, corrobora que aún
-para el \(50\%\) de los datos centrales, se aprecia que la dispersión de
+Mostrando que, al eliminar el $50\%$ de los datos más extremos, se
+obtiene un rango de $0.425$ para el caso del parcial $1$, y de
+$1.675$ para el caso del parcial $4$, lo cual, corrobora que aún
+para el $50\%$ de los datos centrales, se aprecia que la dispersión de
 las notas del primer parcial es bastante menor que la dispersión de las
 notas del cuarto parcial.
 </p>
@@ -1530,7 +1530,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule el rango intercuartílico de las notas obtenidas por los \(10\)
+Calcule el rango intercuartílico de las notas obtenidas por los $10$
 estudiantes en el primer y cuarto parcial del curso de Estadística I en
 <tt>R</tt>.
 </p>
@@ -1604,7 +1604,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule la desviación absoluta mediana de las notas obtenidas por los
-\(10\) estudiantes, en el primer y cuarto parcial del curso de
+$10$ estudiantes, en el primer y cuarto parcial del curso de
 Estadística I de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -1612,10 +1612,10 @@ Solución Manual
 </h3>
 <p>
 Para realizar el cálculo de la desviación absoluta mediana para las
-notas obtenidas por los estudiantes en los parciales \(1\) y \(4\) del
+notas obtenidas por los estudiantes en los parciales $1$ y $4$ del
 curso de Estadística I, es necesario inicialmente realizar el cálculo de
-\(|X_i-\tilde{X}|\) para cada una de las notas obtenidas en los dos
-parciales, siendo \(\tilde{X}\) el valor de la mediana calculada en la
+$|X_i-\tilde{X}|$ para cada una de las notas obtenidas en los dos
+parciales, siendo $\tilde{X}$ el valor de la mediana calculada en la
 <a href="https://jiperezga.github.io/ProbabilidadeInferencia/PeIEClase04.html#mediana" target="\_blank">Clase
 04</a> (ver Solucion manual o en R).
 </p>
@@ -1659,7 +1659,7 @@ parciales, siendo \(\tilde{X}\) el valor de la mediana calculada en la
 <tbody>
 <tr>
 <td style="text-align:left;">
-Parcial 1 \(|X_i-\tilde{X}|\)
+Parcial 1 $|X_i-\tilde{X}|$
 </td>
 <td style="text-align:right;">
 0.05
@@ -1694,7 +1694,7 @@ Parcial 1 \(|X_i-\tilde{X}|\)
 </tr>
 <tr>
 <td style="text-align:left;">
-Parcial 4 \(|X_i-\tilde{X}|\)
+Parcial 4 $|X_i-\tilde{X}|$
 </td>
 <td style="text-align:right;">
 1.60
@@ -1732,8 +1732,8 @@ Parcial 4 \(|X_i-\tilde{X}|\)
 <p>
 
 Seguidamente, se realiza el cálculo de la mediana de los valores
-obtenidos en la tabla anterior, en donde, dado que se tienen \(10\)
-observaciones, entonces \(Me(|X_i-\tilde{X}|)\) para el parcial \(1\)
+obtenidos en la tabla anterior, en donde, dado que se tienen $10$
+observaciones, entonces $Me(|X_i-\tilde{X}|)$ para el parcial $1$
 será (recuerde que para encontrar la mediana es necesario ordenar las
 observaciones de forma ascendente)
 
@@ -1741,24 +1741,24 @@ $$\begin{align*}
   Me(|X_i-\tilde{X}|) = \frac{1}{2}(0.15 + 0.35)= 0.25
 \end{align*}$$
 
-mientras que, el valor \(Me(|X_i-\tilde{X}|)\) para el parcial \(4\)
+mientras que, el valor $Me(|X_i-\tilde{X}|)$ para el parcial $4$
 será
 
 $$\begin{align*}
   Me(|X_i-\tilde{X}|) = \frac{1}{2}(0.7 + 1.1)= 0.9
 \end{align*}$$
 
-Ahora, al emplear estos dos valores, y asumiento que \(b=1.4826\), se
-tendrá que la desviación absoluta mediana para los parciales \(1\) y
-\(4\) son de
+Ahora, al emplear estos dos valores, y asumiento que $b=1.4826$, se
+tendrá que la desviación absoluta mediana para los parciales $1$ y
+$4$ son de
 
 $$\begin{align*}
   MAD_{P1} &= 1.4826 \times 0.25 = 0.37065 \\
   MAD_{P4} &= 1.4826 \times 0.9 = 1.33434
 \end{align*}$$ Se tiene entonces que la desviación abosulta mediana o
 dispersión respecto a la mediana que poseen las notas de los estudiantes
-de Estadística I, en el primer parcial es de \(0.37\), mientras para el
-cuarto parcial es de \(1.33434\), lo cual indica que la dispersión de
+de Estadística I, en el primer parcial es de $0.37$, mientras para el
+cuarto parcial es de $1.33434$, lo cual indica que la dispersión de
 las notas para el cuarto parcial es superior a la dispersión de las
 notas asociada al primer parcial, lo cual es consistente con las otras
 medidas de dispersión vistas en esta sección.
@@ -1776,7 +1776,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule la desviación absoluta mediana de las notas obtenidas por los
-\(10\) estudiantes, en el primer y cuarto parcial del curso de
+$10$ estudiantes, en el primer y cuarto parcial del curso de
 Estadística I en <tt>R</tt>.
 </p>
 <h3 data-toc-skip>

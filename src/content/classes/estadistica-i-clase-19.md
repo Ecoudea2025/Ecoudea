@@ -63,15 +63,15 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Considere el experimento de lanzar un dado convencional de \(6\) caras.
+Considere el experimento de lanzar un dado convencional de $6$ caras.
 Escriba el espacio muestral asociado a este experimento.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Dado que el dado es un dado convencional de \(6\) caras, se tendrá que
-al lanzarlo, solo será posible obtener un \(1, 2, 3, 4, 5\) o \(6\), y
+Dado que el dado es un dado convencional de $6$ caras, se tendrá que
+al lanzarlo, solo será posible obtener un $1, 2, 3, 4, 5$ o $6$, y
 por tanto se tendrá que $$\begin{align*}
 S =\{1, 2, 3, 4, 5, 6\}
 \end{align*}$$
@@ -104,13 +104,13 @@ Solución
 <p>
 
 Dado que el tiempo que puede tardar el decano en salir de la oficina
-para comprar un tinto puede ser, \(0\) minutos, \(1.2\) minutos, \(3\)
-horas, \(20\) días, etc, etc, se tendrá que el espacio muestral será de
+para comprar un tinto puede ser, $0$ minutos, $1.2$ minutos, $3$
+horas, $20$ días, etc, etc, se tendrá que el espacio muestral será de
 la forma. $$\begin{align*}
 S =\{\mathbb{t \in R^+ | t \geq 0}\}
 \end{align*}$$
 
-siendo \(t\) el <strong>tiempo en minutos</strong> que tarda el decano
+siendo $t$ el <strong>tiempo en minutos</strong> que tarda el decano
 en salir de la oficina para comprar un tinto en la burbuja.
 </p>
 </main>
@@ -149,13 +149,13 @@ caras.</br> Escriba el evento
 </li>
 <ul>
 <li>
-\(A_1\) el cual se saca un número primo en el dado.
+$A_1$ el cual se saca un número primo en el dado.
 </li>
 <li>
-\(A_2\) el cual se saca un número 3 en el dado.
+$A_2$ el cual se saca un número 3 en el dado.
 </li>
 <li>
-\(A_3\) el cual se saca un \(8\) en el dado.
+$A_3$ el cual se saca un $8$ en el dado.
 </li>
 </ul>
 <li>
@@ -165,11 +165,11 @@ burbuja. Escriba el evento
 </li>
 <ul>
 <li>
-\(B_1\) el cual indica que el decano tarda en menos de \(1\) hora en
+$B_1$ el cual indica que el decano tarda en menos de $1$ hora en
 salir de la oficina para comprar tinto en la burbuja.
 </li>
 <li>
-\(B_2\) el cual indica que el decano tarda entre \(20\) y \(70\) minutos
+$B_2$ el cual indica que el decano tarda entre $20$ y $70$ minutos
 en salir de la oficina para comprar tinto en la burbuja.
 </li>
 </ul>
@@ -179,27 +179,27 @@ Solución
 </h3>
 <ol type = "1">
 <li>
-En puntos anteriores, se encontró que en un dado convencional de \(6\)
-caras, el espacio muestral está dado por \(S =\{1, 2, 3, 4, 5, 6\}\), y
+En puntos anteriores, se encontró que en un dado convencional de $6$
+caras, el espacio muestral está dado por $S =\{1, 2, 3, 4, 5, 6\}$, y
 por tanto…
 <ul>
 <li>
-Dado que los números primos entre el \(1\) y el \(6\) están dados por
-\(2, 3, 5\), entones se tendrá que el evento \(A_1\) es un
+Dado que los números primos entre el $1$ y el $6$ están dados por
+$2, 3, 5$, entones se tendrá que el evento $A_1$ es un
 <strong>evento compuesto</strong> y estará dado por $$\begin{align*}
             A_1 = \{2, 3, 5\}
         \end{align*}$$
 </li>
 <li>
-Dado que solo nos piden un evento que contenga el número \(3\), se
-tendrá que el evento \(A_2\) es un <strong>evento simple</strong> y
+Dado que solo nos piden un evento que contenga el número $3$, se
+tendrá que el evento $A_2$ es un <strong>evento simple</strong> y
 estará dado por $$\begin{align*}
             A_2 = \{3\}
         \end{align*}$$
 </li>
 <li>
-Dado que no es posible obtener un \(8\) en un dado convencional de \(6\)
-caras, entonces se tendrá que el evento \(A_3\) es un <strong>evento
+Dado que no es posible obtener un $8$ en un dado convencional de $6$
+caras, entonces se tendrá que el evento $A_3$ es un <strong>evento
 imposible</strong> y estará dado por $$\begin{align*}
             A_3 = \{\phi\}
         \end{align*}$$
@@ -209,25 +209,25 @@ imposible</strong> y estará dado por $$\begin{align*}
 <li>
 En puntos anteriores, se encontró que el espacio muestral del tiempo que
 puede tardar el decano en salir de la oficina para comprar un tinto,
-puede escribirse como \(S =\{\mathbb{t \in R^+ | t \geq 0}\}\), y por
+puede escribirse como $S =\{\mathbb{t \in R^+ | t \geq 0}\}$, y por
 tanto…
 <ul>
 <li>
 Dado que nos están restringiendo el tiempo en el cual puede salir el
-decano de la oficina a menos de \(1\) hora, entonces se tendrá que el
-evento \(B_1\) estará dado por $$\begin{align*}
+decano de la oficina a menos de $1$ hora, entonces se tendrá que el
+evento $B_1$ estará dado por $$\begin{align*}
               B_1 =\{\mathbb{t \in R^+ | 0 \leq t < 60}\}
-        \end{align*}$$ siendo \(t\) el <strong>tiempo en
+        \end{align*}$$ siendo $t$ el <strong>tiempo en
 minutos</strong> que tarda el decano en salir de la oficina para comprar
 un tinto en la burbuja.
 </li>
 <li>
 Similar al punto anterior, dado que nos están restringiendo el tiempo en
-el cual puede salir el decano de la oficina a un lapso entre \(20\)
-minutos y \(70\) minutos, entonces se tendrá que el evento \(B_2\)
+el cual puede salir el decano de la oficina a un lapso entre $20$
+minutos y $70$ minutos, entonces se tendrá que el evento $B_2$
 estará dado por $$\begin{align*}
               B_2 =\{\mathbb{t \in R^+ | 20 < t < 70}\}
-        \end{align*}$$ siendo \(t\) el <strong>tiempo en
+        \end{align*}$$ siendo $t$ el <strong>tiempo en
 minutos</strong> que tarda el decano en salir de la oficina para comprar
 un tinto en la burbuja.
 </li>
@@ -274,18 +274,18 @@ Dados los resultados en los puntos anteriores
 </p>
 <ol type="1">
 <li>
-Escriba el <strong>complemento</strong> del evento \(A_1\).
+Escriba el <strong>complemento</strong> del evento $A_1$.
 </li>
 <li>
-Escriba la <strong>unión</strong> de los eventos \(B_1\) y \(B_2\).
+Escriba la <strong>unión</strong> de los eventos $B_1$ y $B_2$.
 </li>
 <li>
-Escriba la <strong>intersección</strong> entre los eventos \(A_1\) y
-\(A_2\).
+Escriba la <strong>intersección</strong> entre los eventos $A_1$ y
+$A_2$.
 </li>
 <li>
-Escriba un evento \(B_3\) que sea <strong>mutuamente excluyente</strong>
-del evento \(B_2\).
+Escriba un evento $B_3$ que sea <strong>mutuamente excluyente</strong>
+del evento $B_2$.
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -294,35 +294,35 @@ Solución
 <ol type="1">
 <li>
 
-Como el evento \(A_1\) está dado por \(A_1 = \{2, 3, 5\}\), entonces su
-<strong>complemento</strong> \(A_1'\) estará dado por $$\begin{align*}
+Como el evento $A_1$ está dado por $A_1 = \{2, 3, 5\}$, entonces su
+<strong>complemento</strong> $A_1'$ estará dado por $$\begin{align*}
       A_1' = \{1, 4, 6\}
   \end{align*}$$
 
 </li>
 <li>
-Como el evento \(B_1\) está dado por
-\(B_1 =\{\mathbb{t \in R^+ | 0 \leq t \lt  60}\}\), y el evento \(B_2\)
-está dado por \(B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}\), entonces la
-<strong>unión</strong> \(B_1\cup B_2\) estará dado por $$\begin{align*}
+Como el evento $B_1$ está dado por
+$B_1 =\{\mathbb{t \in R^+ | 0 \leq t \lt  60}\}$, y el evento $B_2$
+está dado por $B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}$, entonces la
+<strong>unión</strong> $B_1\cup B_2$ estará dado por $$\begin{align*}
       B_1\cup B_2 = \{\mathbb{t \in R^+ | 0 \leq t < 70}\}
   \end{align*}$$
 </li>
 <li>
-Como el evento \(A_1\) está dado por \(A_1 = \{2, 3, 5\}\), y el evento
-\(A_2\) está dado por \(A_2 = \{3\}\), entonces se tendrá que la
-<strong>intersección</strong> \(A_1\cap A_2\) estará dado por
+Como el evento $A_1$ está dado por $A_1 = \{2, 3, 5\}$, y el evento
+$A_2$ está dado por $A_2 = \{3\}$, entonces se tendrá que la
+<strong>intersección</strong> $A_1\cap A_2$ estará dado por
 $$\begin{align*}
       A_1\cap A_2 = \{3\} = A_2
   \end{align*}$$
 </li>
 <li>
-Como el evento \(B_2\) está dado por
-\(B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}\) entonces un evento
+Como el evento $B_2$ está dado por
+$B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}$ entonces un evento
 <strong>mutuamente excluyente</strong> podría ser de la forma
 $$\begin{align*}
       B_3 = \{\mathbb{t \in R^+ | 80 < t < 120}\}
-  \end{align*}$$ tal que \(B_2\cap B_3 = \phi\).
+  \end{align*}$$ tal que $B_2\cap B_3 = \phi$.
 </li>
 </ol>
 </main>
@@ -348,10 +348,10 @@ Intersección
 Conmutativa
 </td>
 <td style="text-align:left;">
-\(A\cup B = B \cup A\)
+$A\cup B = B \cup A$
 </td>
 <td style="text-align:left;">
-\(A \cap B = B \cap A\)
+$A \cap B = B \cap A$
 </td>
 </tr>
 <tr>
@@ -359,10 +359,10 @@ Conmutativa
 Asociativa
 </td>
 <td style="text-align:left;">
-\((A \cup B) \cup C = A \cup (B \cup C)\)
+$(A \cup B) \cup C = A \cup (B \cup C)$
 </td>
 <td style="text-align:left;">
-\((A \cap B) \cap C = A \cap (B \cap C)\)
+$(A \cap B) \cap C = A \cap (B \cap C)$
 </td>
 </tr>
 <tr>
@@ -370,10 +370,10 @@ Asociativa
 Idempotente
 </td>
 <td style="text-align:left;">
-\(A \cup A = A\)
+$A \cup A = A$
 </td>
 <td style="text-align:left;">
-\(A \cap A = A\)
+$A \cap A = A$
 </td>
 </tr>
 <tr>
@@ -381,10 +381,10 @@ Idempotente
 Simplificación
 </td>
 <td style="text-align:left;">
-\(A \cup (B \cap A) = A\)
+$A \cup (B \cap A) = A$
 </td>
 <td style="text-align:left;">
-\(A \cap (B \cup A) = A\)
+$A \cap (B \cup A) = A$
 </td>
 </tr>
 <tr>
@@ -392,10 +392,10 @@ Simplificación
 Distributiva
 </td>
 <td style="text-align:left;">
-\(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)
+$A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
 </td>
 <td style="text-align:left;">
-\(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)
+$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
 </td>
 </tr>
 <tr>
@@ -403,10 +403,10 @@ Distributiva
 Elemento Neutro
 </td>
 <td style="text-align:left;">
-\(A \cup \phi = A\)
+$A \cup \phi = A$
 </td>
 <td style="text-align:left;">
-\(A \cap S = A\)
+$A \cap S = A$
 </td>
 </tr>
 <tr>
@@ -414,10 +414,10 @@ Elemento Neutro
 Absorción
 </td>
 <td style="text-align:left;">
-\(A \cup S = S\)
+$A \cup S = S$
 </td>
 <td style="text-align:left;">
-\(A \cap \phi = \phi\)
+$A \cap \phi = \phi$
 </td>
 </tr>
 </tbody>
@@ -444,8 +444,8 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga una bolsa que contiene \(10\) bolas, de las cuales \(3\) son
-negras, \(5\) son azules, y \(2\) son verdes. Si se saca una bola al
+Suponga una bolsa que contiene $10$ bolas, de las cuales $3$ son
+negras, $5$ son azules, y $2$ son verdes. Si se saca una bola al
 azar de la bolsa. Cuál es la probabilidad de que sea
 </p>
 <ol type="1">
@@ -473,8 +473,8 @@ Solución
 </h3>
 <ol type="1">
 <li>
-Dado que el número de bolas negras (éxitos) en la bolsa es \(3\) y el
-total de bolas en la bolsa es \(10\), se tendrá que la frecuencia
+Dado que el número de bolas negras (éxitos) en la bolsa es $3$ y el
+total de bolas en la bolsa es $10$, se tendrá que la frecuencia
 relativa o probabilidad de sacar una bola negra de la bolsa es
 $$\begin{align*}
 \mathbb{P}(N) & = \frac{\text{Número de bolas negras en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
@@ -483,8 +483,8 @@ $$\begin{align*}
 \end{align*}$$
 </li>
 <li>
-Dado que el número de bolas azules (éxitos) en la bolsa es \(5\) y el
-total de bolas en la bolsa es \(10\), se tendrá que la frecuencia
+Dado que el número de bolas azules (éxitos) en la bolsa es $5$ y el
+total de bolas en la bolsa es $10$, se tendrá que la frecuencia
 relativa o probabilidad de sacar una bola azul de la bolsa es
 $$\begin{align*}
 \mathbb{P}(A) & = \frac{\text{Número de bolas azules en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
@@ -495,15 +495,15 @@ $$\begin{align*}
 <li>
 Dado que no hay ninguna bola roja (éxitos) en la bolsa, entonces, la
 frecuencia relativa o probabilidad de sacar una bola roja de la bolsa en
-la que hay de \(10\) bolas es $$\begin{align*}
+la que hay de $10$ bolas es $$\begin{align*}
 \mathbb{P}(R) & = \frac{\text{Número de bolas rojas en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{0}{10} \\ 
 & = 0.0
 \end{align*}$$
 </li>
 <li>
-Dado que el número de bolas verdes (éxitos) en la bolsa es \(2\) y el
-total de bolas en la bolsa es \(10\), se tendrá que la frecuencia
+Dado que el número de bolas verdes (éxitos) en la bolsa es $2$ y el
+total de bolas en la bolsa es $10$, se tendrá que la frecuencia
 relativa o probabilidad de sacar una bola verde de la bolsa es
 $$\begin{align*}
 \mathbb{P}(V) & = \frac{\text{Número de bolas verdes en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
@@ -514,7 +514,7 @@ $$\begin{align*}
 <li>
 
 Dado que la suma del número de bolas negras y bolas azules (éxitos) en
-la bolsa es \(8\) y el total de bolas en la bolsa es \(10\), se tendrá
+la bolsa es $8$ y el total de bolas en la bolsa es $10$, se tendrá
 que la frecuencia relativa o probabilidad de sacar una bola negra o una
 bola azul de la bolsa es $$\begin{align*}
 \mathbb{P}(N \text{ ó } A) & = \frac{\text{Número de bolas negras o azules en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
@@ -524,9 +524,9 @@ bola azul de la bolsa es $$\begin{align*}
 
 Similarmente, puede llegarse al mismo resultado mediante el empleo de
 teoría de conjuntos, en donde
-\(\mathbb{P}(N \text{ ó } A) = \mathbb{P}(N \cup A)\), y como los
-eventos \(N\) y \(A\) son <strong>mutuamente excluyentes</strong>, es
-decir, \(N\cap A = \phi\), entonces la probabilidad de sacar una bola
+$\mathbb{P}(N \text{ ó } A) = \mathbb{P}(N \cup A)$, y como los
+eventos $N$ y $A$ son <strong>mutuamente excluyentes</strong>, es
+decir, $N\cap A = \phi$, entonces la probabilidad de sacar una bola
 negra o una bola azul será igual a $$\begin{align*}
 \mathbb{P}(N \cup A) & = \mathbb{P}(N) + \mathbb{P}(A) \\
 & = \frac{3}{10} + \frac{5}{10} \\
@@ -536,9 +536,9 @@ negra o una bola azul será igual a $$\begin{align*}
 </li>
 <li>
 
-Dado que la suma del número de bolas negras y bolas rojas es de \(3\),
+Dado que la suma del número de bolas negras y bolas rojas es de $3$,
 entonces el número de bolas en la bolsa que NO SON negras y NO SON rojas
-es de \(7\), y por tanto, se tendrá que la frecuencia relativa o
+es de $7$, y por tanto, se tendrá que la frecuencia relativa o
 probabilidad de NO SACAR una bola negra y NO SACAR una bola bola roja de
 la bolsa es $$\begin{align*}
 \mathbb{P}(N' \text{ y } R') & = \frac{\text{Número de bolas que NO SON negras} \\ \text{ y NO SON rojas en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
@@ -546,10 +546,10 @@ la bolsa es $$\begin{align*}
 & = 0.7
 \end{align*}$$
 
-Mediante teoría de conjuntos, \(\mathbb{P}(N' \text{ y } R') =\)
-\(\mathbb{P}(N' \cap R') =\) \(1 - \mathbb{P}(N \cup R)\), y como los
-eventos \(N\) y \(R\) son <strong>mutuamente excluyentes</strong>, es
-decir, \(N\cap R = \phi\), entonces la probabilidad de NO SACAR una bola
+Mediante teoría de conjuntos, $\mathbb{P}(N' \text{ y } R') =$
+$\mathbb{P}(N' \cap R') =$ $1 - \mathbb{P}(N \cup R)$, y como los
+eventos $N$ y $R$ son <strong>mutuamente excluyentes</strong>, es
+decir, $N\cap R = \phi$, entonces la probabilidad de NO SACAR una bola
 negra y NO SACAR una bola roja será igual a $$\begin{align*}
 \mathbb{P}(N' \cap R') & = 1 - \mathbb{P}(N \cup R) \\ 
 & = 1 - (\mathbb{P}(N) + \mathbb{P}(R)) \\ 

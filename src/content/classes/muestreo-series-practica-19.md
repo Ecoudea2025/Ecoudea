@@ -27,7 +27,7 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(k\)
+    $k$
     </td>
     <td style="text-align:left;">
     0
@@ -80,7 +80,7 @@ Lista de ejercicios
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(\hat{\rho}(k)\)
+    $\hat{\rho}(k)$
     </td>
     <td style="text-align:left;">
     1.00
@@ -136,13 +136,13 @@ Lista de ejercicios
     A partir de la información anterior, responda
     <ol type="a">
     <li>
-    A partir de un nivel de significancia del \(5\%\), plantee la prueba
+    A partir de un nivel de significancia del $5\%$, plantee la prueba
     de hipótesis dada en la ACF de manera general y determine la región
     crítica.
     </li>
     <li>
     Grafique el correlograma y las bandas de confianza asociadas al
-    nivel de significancia \(\alpha=0.05\).
+    nivel de significancia $\alpha=0.05$.
     </li>
     <li>
     Hay evidencia para creer que la serie de tiempo es estacional?.
@@ -158,7 +158,7 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(k\)
+    $k$
     </td>
     <td style="text-align:left;">
     0
@@ -211,7 +211,7 @@ Lista de ejercicios
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(\hat{\rho}(k)\)
+    $\hat{\rho}(k)$
     </td>
     <td style="text-align:left;">
     1.00
@@ -267,13 +267,13 @@ Lista de ejercicios
     A partir de la información anterior, responda
     <ol type="a">
     <li>
-    A partir de un nivel de significancia del \(8\%\), plantee la prueba
+    A partir de un nivel de significancia del $8\%$, plantee la prueba
     de hipótesis dada en la ACF de manera general y determine la región
     crítica.
     </li>
     <li>
     Grafique el correlograma y las bandas de confianza asociadas al
-    nivel de significancia \(\alpha=0.08\).
+    nivel de significancia $\alpha=0.08$.
     </li>
     <li>
     Hay evidencia para creer que la serie de tiempo es estacionaria en
@@ -288,14 +288,14 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     de este modelo calcule
     <ol type="a">
     <li>
-    Encuentre los pronósticos \(\hat{Y}_{T+H}\), para
-    \(H = 1,2,3,4,5,6\) correspondientes para los siguientes valores de
-    \(X\)
+    Encuentre los pronósticos $\hat{Y}_{T+H}$, para
+    $H = 1,2,3,4,5,6$ correspondientes para los siguientes valores de
+    $X$
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(H\)
+    $H$
     </td>
     <td style="text-align:left;">
     1
@@ -318,7 +318,7 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(X_{T+H}\)
+    $X_{T+H}$
     </td>
     <td style="text-align:left;">
     15.461
@@ -341,7 +341,7 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(\hat{Y}_{T+H}\)
+    $\hat{Y}_{T+H}$
     </td>
     <td style="text-align:left;">
     </td>
@@ -360,13 +360,13 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     </table>
     </li>
     <li>
-    Si los valores reales de \(Y_{T+H}\) para \(H=1,2,3,4,5,6\) están
+    Si los valores reales de $Y_{T+H}$ para $H=1,2,3,4,5,6$ están
     dados por
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(H\)
+    $H$
     </td>
     <td style="text-align:left;">
     1
@@ -389,7 +389,7 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(Y_{T+H}\)
+    $Y_{T+H}$
     </td>
     <td style="text-align:left;">
     52.576
@@ -412,7 +412,7 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     </tr>
     </tbody>
     </table>
-    cálcule las medidas de error \(ME, MAE, MSE\) y \(RMSE\) asociadas a
+    cálcule las medidas de error $ME, MAE, MSE$ y $RMSE$ asociadas a
     las estimaciones obtenidas en el punto a, e interprete los
     resultados obtenidos.
     </li>
@@ -426,13 +426,13 @@ $$\begin{align*}\hat{Y}_t = 1316.28 + 22.48 X\end{align*}$$
 A partir de este modelo calcule
 <ol type="a">
 <li>
-Encuentre los pronósticos \(\hat{Y}_{T+H}\), para \(H = 1,2,3,4,5\)
-correspondientes para los siguientes valores de \(X\)
+Encuentre los pronósticos $\hat{Y}_{T+H}$, para $H = 1,2,3,4,5$
+correspondientes para los siguientes valores de $X$
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(H\)
+$H$
 </td>
 <td style="text-align:left;">
 1
@@ -452,7 +452,7 @@ correspondientes para los siguientes valores de \(X\)
 </tr>
 <tr>
 <td style="text-align:left;">
-\(X_{T+H}\)
+$X_{T+H}$
 </td>
 <td style="text-align:left;">
 23.904
@@ -472,7 +472,7 @@ correspondientes para los siguientes valores de \(X\)
 </tr>
 <tr>
 <td style="text-align:left;">
-\(\hat{Y}_{T+H}\)
+$\hat{Y}_{T+H}$
 </td>
 <td style="text-align:left;">
 </td>
@@ -489,13 +489,13 @@ correspondientes para los siguientes valores de \(X\)
 </table>
 </li>
 <li>
-Si los valores reales de \(Y_{T+H}\) para \(H=1,2,3,4,5\) están dados
+Si los valores reales de $Y_{T+H}$ para $H=1,2,3,4,5$ están dados
 por
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(H\)
+$H$
 </td>
 <td style="text-align:left;">
 1
@@ -515,7 +515,7 @@ por
 </tr>
 <tr>
 <td style="text-align:left;">
-\(Y_{T+H}\)
+$Y_{T+H}$
 </td>
 <td style="text-align:left;">
 1852.657
@@ -535,7 +535,7 @@ por
 </tr>
 </tbody>
 </table>
-cálcule las medidas de error \(MPE, MAPE, MSE\) y \(RMSE\) asociadas a
+cálcule las medidas de error $MPE, MAPE, MSE$ y $RMSE$ asociadas a
 las estimaciones obtenidas en el punto a, e interprete los resultados
 obtenidos.
 </li>

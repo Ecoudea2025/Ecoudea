@@ -251,7 +251,7 @@ análisis, obteniendo los siguientes resultados
 </tbody>
 </table>
 
-Otra variable de interés registrada para estos \(28\) días, es la del
+Otra variable de interés registrada para estos $28$ días, es la del
 material particulado `$2.5$` `$PM_{2.5}$`, con el objetivo de medir de
 cierta manera la contaminación generada en estos días, obteniendo los
 siguientes resultados
@@ -504,7 +504,7 @@ automóviles que transitan por la avenida Guayabal es de $$\begin{align*}
 \end{align*}$$
 
 Lo anterior significa que, el número promedio de datos transitan por la
-avenida Guayabal en un día es igual a \(1359.5\) automóviles.
+avenida Guayabal en un día es igual a $1359.5$ automóviles.
 </p>
 </main>
 
@@ -544,7 +544,7 @@ Solución
 <p>
 
 Inicialmente, se observa que el número de días registrados fue de
-\(28\), por lo cual, se tiene que \(n\) es un número par, haciendo que
+$28$, por lo cual, se tiene que $n$ es un número par, haciendo que
 la ecuación empleada sea
 
 $$\begin{align*}
@@ -554,7 +554,7 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que debe localizarse la observación que ocupa la
-posición número \(14\) y \(15\) en los registros del número de vehículos
+posición número $14$ y $15$ en los registros del número de vehículos
 que transitan por día <strong>luego de ordenarlas de menor a
 mayor</strong>.
 
@@ -661,9 +661,9 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </tbody>
 </table>
 <p>
-donde se observa que las observaciones \(14\) y \(15\) para el número de
+donde se observa que las observaciones $14$ y $15$ para el número de
 vehículos que transitan sur-norte por la avenida Guayabal es
-\(x_{[14]}=1365\) y \(x_{[15]}=1365\), respectivamente.<br> <br> Con
+$x_{[14]}=1365$ y $x_{[15]}=1365$, respectivamente.<br> <br> Con
 dichos valores se realiza entonces, el cálculo de la mediana, tal que
 </p>
 
@@ -673,10 +673,10 @@ $$\begin{align*}
 \end{align*}$$
 
 <p>
-De lo anterior se obtiene que el \(50\%\) inferior de los días transitan
-por la avenida Guayabal sur-norte a lo más \(1365\) vehículos, mientras
-que el \(50\%\) superior de los días transitan por la avenida Guayabal
-sur-norte al menos \(1365\) vehículos.
+De lo anterior se obtiene que el $50\%$ inferior de los días transitan
+por la avenida Guayabal sur-norte a lo más $1365$ vehículos, mientras
+que el $50\%$ superior de los días transitan por la avenida Guayabal
+sur-norte al menos $1365$ vehículos.
 </p>
 </main>
 
@@ -716,7 +716,7 @@ Solución
 Para encontrar el número modal de automóviles, es necesario localizar el
 número de vehículos que más se repita por día. Con el fin de ilustrar
 cual es este valor, se presenta nuevamente la tabla ordenada con el
-número de vehículos que transitaron cada uno de los \(28\) días para
+número de vehículos que transitaron cada uno de los $28$ días para
 facilitar su visualización.
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -825,7 +825,7 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </table>
 <p>
 De la tabla anterior, se observa que estamos ante una situación trimodal
-en la cual los valores \(1142\), \(1365\) y \(1588\) son el número de
+en la cual los valores $1142$, $1365$ y $1588$ son el número de
 vehículos que más se repiten en para los días registrados, ya que estos
 se repiten dos veces en el conjunto de observaciones.
 </p>
@@ -872,14 +872,14 @@ Ocultar Ejercicio
 Ejercicio caso de estudio
 </h3>
 <p>
-Calcule el percentil \(95\) del número de automóviles que transitan por
+Calcule el percentil $95$ del número de automóviles que transitan por
 la avenida Guayabal sur-norte en un día.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Para realizar el cálculo del percentil número \(j=95\), es necesario
+Para realizar el cálculo del percentil número $j=95$, es necesario
 ordenar el número de automóviles que transitan por la avenida Guayabal
 por día, tal que
 </p>
@@ -984,16 +984,16 @@ por día, tal que
 <p>
 
 Con los datos ordenados, se realiza el cálculo para la variable de
-posicionamiento \(h_j\), con \(j=95\), dado que se posee un total de
-\(28\) observaciones, tal que
+posicionamiento $h_j$, con $j=95$, dado que se posee un total de
+$28$ observaciones, tal que
 $$h_{95} = \frac{95(28-1)}{100} + 1 = 26.65$$ Al reemplazar el valor
 obtenido en la variable de posicionamiento, en la formula de
-percentiles, con \(j=95\), obtenemos que
+percentiles, con $j=95$, obtenemos que
 
 $$\begin{align*}P_{95} &=x_{\lfloor h_{95}\rfloor} + \left((h_{95} - \lfloor h_{95}\rfloor) \times  (x_{[\lfloor h_{95}\rfloor + 1]} - x_{\lfloor h_{33}\rfloor}) \right) \\ &= x_{\lfloor 26.65\rfloor} + \left((26.65 - \lfloor 26.65\rfloor) \times  (x_{[\lfloor v\rfloor + 1]} - x_{\lfloor 26.65\rfloor}) \right) \\ & = x_{[26]} + \left((26.65 - 26) \times  (x_{[26+1]}-x_{[26]})\right) \\ &= x_{[26]} + \left(0.65 \times  (x_{[27]}-x_{[26]})\right)\end{align*}$$
 
-En donde, \(x_{[26]}=1596\) y \(x_{[27]}=1609\), son las notas que
-ocupan la posición \(26\) y \(27\) en el conjunto de datos ordenados
+En donde, $x_{[26]}=1596$ y $x_{[27]}=1609$, son las notas que
+ocupan la posición $26$ y $27$ en el conjunto de datos ordenados
 para el número de automóviles que transitan por la avenida Guayabal en
 un día. Finalmente, al reemplazar dichos valores en la ecuación de
 percentiles se tendrá que
@@ -1003,10 +1003,10 @@ $$\begin{align*}
   P_{95} &= 1604.45
 \end{align*}$$
 
-De lo anterior, se podrá concluir que el \(95\%\) inferior de los días
-transita una cantidad de automóviles menor o igual a \(1604.45\),
-mientras que el \(5\%\) superior de los días transita una cantidad mayor
-o igual a \(1604.45\).
+De lo anterior, se podrá concluir que el $95\%$ inferior de los días
+transita una cantidad de automóviles menor o igual a $1604.45$,
+mientras que el $5\%$ superior de los días transita una cantidad mayor
+o igual a $1604.45$.
 </p>
 </main>
 
@@ -1051,7 +1051,7 @@ Solución
 Para realizar el cálculo de la varianza del número de automóviles que
 transitan por la avenida Guayabal por día, se emplea la fórmula de la
 varianza en donde se observa que se requiere el número promedio de
-automóviles, en donde se emplea el valor de la media \(\bar{X}=1359.5\),
+automóviles, en donde se emplea el valor de la media $\bar{X}=1359.5$,
 tal que $$\begin{align*}
   S^2 &= \frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2} \\
       &= \frac{1}{28-1}\left[(1142 - 1359.5)^2 + \ldots + (1220 - 1359.5) ^2\right] \\
@@ -1104,11 +1104,11 @@ obteniendo que $$\begin{align*}
 \end{align*}$$
 
 En donde, de los resultados obtenidos se tiene que, la dispersión que
-poseen los datos respecto a su valor promedio es de \(198.0571373\) para
+poseen los datos respecto a su valor promedio es de $198.0571373$ para
 el número de automóviles que transitan la avenida Guayabal en un día.
 Esto quiere decir, que el número promedio de automóviles que transitan
-la avenida es de \(1359.5\) con una desviación estándar de
-\(198.0571373\).
+la avenida es de $1359.5$ con una desviación estándar de
+$198.0571373$.
 </p>
 </main>
 
@@ -1157,7 +1157,7 @@ que $$\begin{align*}
 \end{align*}$$ De lo anterior, se aprecia que la variación porcentual
 del número de automóviles en un día no es muy alto respecto a su media
 ya que el porcentaje de variación asciende solo hasta el
-\(14.5683808 \%\) y por tanto se tendrá que los datos no se encuentran
+$14.5683808 \%$ y por tanto se tendrá que los datos no se encuentran
 muy dispersos respecto a su media.
 </p>
 </main>
@@ -1198,20 +1198,20 @@ Solución
 <p>
 
 El rango intercuartílico se calcula mediante la diferencia de los
-percentiles del \(75\%\) y del \(25\%\), y por ello se hace necesario
+percentiles del $75\%$ y del $25\%$, y por ello se hace necesario
 realizar el cálculo de dichos valores. <br>
 
 Entonces, al realizar el cálculo de los dos percentiles con la formula
-anteriormente presentada se encontrará que \(P_{75}=1537.25\), mientras
-que, \(P_{25}=1187.75\), y por tanto, al reemplazar en la formula del
+anteriormente presentada se encontrará que $P_{75}=1537.25$, mientras
+que, $P_{25}=1187.75$, y por tanto, al reemplazar en la formula del
 rango intercuartílico se tendrá que $$\begin{align*}
   IQR &= P_{75} - P_{25} \\
       &= 1537.25 - 1187.75 \\
       &= 349.5 
 \end{align*}$$
 
-Mostrando que, al eliminar el \(50\%\) de los datos más extremos, se
-obtiene un rango intercuartil de \(349.5\) para el número de vehículos
+Mostrando que, al eliminar el $50\%$ de los datos más extremos, se
+obtiene un rango intercuartil de $349.5$ para el número de vehículos
 que transitan por la avenida Guayabal en un día.
 </p>
 </main>
@@ -1256,8 +1256,8 @@ Solución
 <p>
 Para realizar el cálculo de la desviación absoluta mediana para el
 número de vehículos que transitan por la avenida Guayabal en un día, es
-necesario inicialmente realizar el cálculo de \(|X_i-\tilde{X}|\) para
-cada uno de los días registrados, siendo \(\tilde{X}=1365\) el valor de
+necesario inicialmente realizar el cálculo de $|X_i-\tilde{X}|$ para
+cada uno de los días registrados, siendo $\tilde{X}=1365$ el valor de
 la mediana calculada previamente. Entonces al realizar el cálculo de la
 diferencia absoluta y ordenando de mayor a menor se obtienen los
 siguientes datos
@@ -1365,8 +1365,8 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 <p>
 
 Seguidamente, se realiza el cálculo de la mediana de los valores
-obtenidos en la tabla anterior, en donde, dado que se tienen \(28\)
-observaciones, entonces \(Me(|X_i-\tilde{X}|)\) para el número de
+obtenidos en la tabla anterior, en donde, dado que se tienen $28$
+observaciones, entonces $Me(|X_i-\tilde{X}|)$ para el número de
 vehículos que transitan por la avenida Guayabal en un día es igual a
 
 $$\begin{align*}
@@ -1375,9 +1375,9 @@ $$\begin{align*}
                       &= \frac{1}{2}\left(|X_i-\tilde{X}|_{\left[14\right]}+|X_i-\tilde{X}|_{\left[15\right]}\right)
 \end{align*}$$
 
-donde se observa que las observaciones \(14\) y \(15\) para de la
+donde se observa que las observaciones $14$ y $15$ para de la
 diferencia absoluta respecto a la mediana es
-\(|X_i-\tilde{X}|_{[14]}=172\) y \(|X_i-\tilde{X}|_{[15]}=173\),
+$|X_i-\tilde{X}|_{[14]}=172$ y $|X_i-\tilde{X}|_{[15]}=173$,
 respectivamente.<br> <br> Con dichos valores se realiza entonces, el
 cálculo de la mediana, tal que
 
@@ -1386,7 +1386,7 @@ $$\begin{align*}
             &=172.5
 \end{align*}$$
 
-Ahora, al emplear este valor, y asumiendo que \(b=1.4826\), se tendrá
+Ahora, al emplear este valor, y asumiendo que $b=1.4826$, se tendrá
 que la desviación absoluta mediana el número de vehículos que transitan
 por la avenida Guayabal en un día es igual a
 
@@ -1396,7 +1396,7 @@ MAD &= b\times Me(|X_i-\tilde{X}|)\\
     &= 255.7485 
 \end{align*}$$ De lo anterior se obtiene que la mediana del número de
 vehículo que transitan en un día por la avenida Guayabal sur-norte es de
-\(1365\) vehículos, con una desviación absoluta mediana de \(255.7485\).
+$1365$ vehículos, con una desviación absoluta mediana de $255.7485$.
 </p>
 </main>
 
@@ -1454,14 +1454,14 @@ Solución
 <p>
 El coeficiente de asimetría asociado al número de automóviles que
 transitan por la avenida Guayabal en un día depende del valor promedio
-\(\bar{X}= 1359.5\) y la desviación estándar \(S=198.0571373\). Por
+$\bar{X}= 1359.5$ y la desviación estándar $S=198.0571373$. Por
 tanto al emplear los valores ya calculados previamente, se tendrá que el
 coeficiente de asimetría estará dado por $$\begin{align*}
   \gamma_{1} &= \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3}\\
              &= \frac{28}{(27)(26)}\left[\frac{(1142 - 1359.5)^3 + \ldots + (1588 - 1359.5)^3}{198.0571373^3}\right] \\
              &= -0.0106128
 \end{align*}$$ De lo anterior se observa que el coeficiente de asimetría
-es negativa pero cercana a \(0\), lo cual significa que el número de
+es negativa pero cercana a $0$, lo cual significa que el número de
 vehículos que transita por la avenida Guayabal en un día es
 aproximadamente simétrica con un leve sesgo hacia la izquierda, es
 decir, es un poco menos probable que ocurran valores inferiores a la
@@ -1514,14 +1514,14 @@ Solución
 </h3>
 <p>
 Similar al coeficiente de asimetría, el coeficiente de exceso de
-curtosis depende del valor promedio \(\bar{X}= 1359.5\) y la desviación
-estándar \(S=198.0571373\), del número de automóviles que transitan por
+curtosis depende del valor promedio $\bar{X}= 1359.5$ y la desviación
+estándar $S=198.0571373$, del número de automóviles que transitan por
 la avenida Guayabal en un día, dando como resultado $$\begin{align*}
   \gamma_{2} &= \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)}\\
              &= \frac{28(29)}{27}(26)(25)\left[\frac{(1142 - 1359.5)^4 + \ldots + (1142 - 1359.5)^4}{198.0571373^4}\right] - \frac{3(27)^2}{(26)(25)} \\
              &= -1.1414707
 \end{align*}$$ A partir del valor calculado, se observa que el
-coeficiente de exceso de curtosis es menor que \(0\), y por tanto, se
+coeficiente de exceso de curtosis es menor que $0$, y por tanto, se
 puede concluir que el número de automóviles que transitan por la avenida
 Guayabal en un día posee un comportamiento platicúrtico, es decir que el
 número de automóviles que transitan por día, poseen un comportamiento
@@ -1571,7 +1571,7 @@ Ejercicio caso de estudio
 </h3>
 <p>
 Calcule el covarianza que hay entre el número de automóviles que
-transitan la avenida Guayabal en un día y el \(CO_2\) generado en dichos
+transitan la avenida Guayabal en un día y el $CO_2$ generado en dichos
 días, para saber si existe o no dependencia lineal entre estas
 variables.
 </p>
@@ -1583,8 +1583,8 @@ Solución
 A diferencia de las anteriores medidas, el coeficiente de covarianza
 buscar observar si existe o no una dependencia lineal entre dos grupos
 de observaciones. Y para ello, se requiere los valores promedio
-asociados a las dos variables \(\bar{X}_{Vehículos}=1359.5\) y
-\(\bar{X}_{PM_{2.5}}=25.0617857\), obteniendo que la covarianza entre
+asociados a las dos variables $\bar{X}_{Vehículos}=1359.5$ y
+$\bar{X}_{PM_{2.5}}=25.0617857$, obteniendo que la covarianza entre
 las variables es igual a
 
 $$\begin{align*}
@@ -1594,9 +1594,9 @@ $$\begin{align*}
 \end{align*}$$
 
 Dado que del coeficiente de covarianza, solo es posible interpretar el
-signo o cuando el valor está muy cercano a \(0\), se concluye entonces
+signo o cuando el valor está muy cercano a $0$, se concluye entonces
 que existe una relación lineal positiva entre el número de vehículos que
-transitan por la avenida Guayabal y el material particulado \(2.5\)
+transitan por la avenida Guayabal y el material particulado $2.5$
 registrado en un día.
 </p>
 </main>
@@ -1656,7 +1656,7 @@ Ejercicio caso de estudio
 </h3>
 <p>
 Calcule la fuerza de la correlación que hay entre el número de
-automóviles que transitan la avenida Guayabal en un día y el \(CO_2\)
+automóviles que transitan la avenida Guayabal en un día y el $CO_2$
 generado en dichos días, para saber si existe o no dependencia lineal
 entre estas variables.
 </p>
@@ -1670,11 +1670,11 @@ buscar si existe o no una dependencia lineal entre dos grupos de
 observaciones, pero a diferencia de éste, el coeficiente de correlación
 muestra la fuerza de dicha relación. Por tanto, para realizar el cálculo
 del coeficiente de correlación entre el número de vehículos que
-transitan la avenida Guayabal en un día y el \(CO_2\) registrado, es
+transitan la avenida Guayabal en un día y el $CO_2$ registrado, es
 necesario emplear el valor del coeficiente de covarianza
-\(S_{Vehículos;\; PM_{2.5}} = 391.427963\) y las desviaciones estándar
-calculadas para cada variable \(S_{Vehículos}= 198.0571373\) y
-\(S_{PM_{2.5}}=5.1145233\), tal que $$\begin{align*}
+$S_{Vehículos;\; PM_{2.5}} = 391.427963$ y las desviaciones estándar
+calculadas para cada variable $S_{Vehículos}= 198.0571373$ y
+$S_{PM_{2.5}}=5.1145233$, tal que $$\begin{align*}
   \rho_{xy} &= \frac{S_{xy}}{S_{x}S_{y}} \\
             &= \frac{391.427963}{(198.0571373)(5.1145233)} \\
             & = 0.386417
@@ -1682,7 +1682,7 @@ calculadas para cada variable \(S_{Vehículos}= 198.0571373\) y
 
 Del resultado anterior se concluye, que hay existe una correlación
 positiva moderada entre el número de vehículos que transitan por la
-avenida Guayabal y el material particulado \(2.5\) registrado en un día,
+avenida Guayabal y el material particulado $2.5$ registrado en un día,
 es decir que cuando aumenta una variable, también aumenta en menor
 proporción la otra variable.
 </p>

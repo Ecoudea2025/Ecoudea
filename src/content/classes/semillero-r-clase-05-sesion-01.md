@@ -704,7 +704,7 @@ Heterogeneos
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(1d\)
+$1d$
 </td>
 <td style="text-align:left;">
 Vector Atómico
@@ -714,7 +714,7 @@ Vector Atómico
 </tr>
 <tr>
 <td style="text-align:left;">
-\(2d\)
+$2d$
 </td>
 <td style="text-align:left;">
 Matriz
@@ -725,7 +725,7 @@ Marco de datos
 </tr>
 <tr>
 <td style="text-align:left;">
-\(nd\)
+$nd$
 </td>
 <td style="text-align:left;">
 Arreglos

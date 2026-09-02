@@ -22,7 +22,7 @@ Lista de ejercicios
     </li>
     <li>
     Para las series estacionarias en media, trate de identificar los
-    órdenes \(p\) y \(q\) de los procesos \(AR\), \(MA\) o \(ARMA\).
+    órdenes $p$ y $q$ de los procesos $AR$, $MA$ o $ARMA$.
     </li>
     <li>
     Escriba el modelo teórico para cada una de las series usadas en el
@@ -30,17 +30,17 @@ Lista de ejercicios
     </li>
     <li>
     Para las series con tendencia, aplique la primera diferencia y trate
-    de identificar los órdenes \(p\) y \(q\) de los procesos \(AR\),
-    \(MA\) o \(ARMA\).
+    de identificar los órdenes $p$ y $q$ de los procesos $AR$,
+    $MA$ o $ARMA$.
     </li>
     <li>
     Escriba el modelo teórico para cada una de las series usadas en el
     inciso d. 
     </li>
     <li>
-    Para las series estacionales, aplique la \(s\)-ésima diferencia, y
-    trate de identificar los órdenes \(p\) y \(q\), de los procesos
-    \(AR\), \(MA\) o \(ARMA\).
+    Para las series estacionales, aplique la $s$-ésima diferencia, y
+    trate de identificar los órdenes $p$ y $q$, de los procesos
+    $AR$, $MA$ o $ARMA$.
     </li>
     <li>
     Escriba el modelo teórico para cada una de las series usadas en el
@@ -53,33 +53,33 @@ Lista de ejercicios
     `$\varepsilon \sim RB(0,\sigma)$`
     <ol type="a">
     <li>
-    \(Y_t = \varepsilon_t - 0.3\varepsilon_{t-1}\)
+    $Y_t = \varepsilon_t - 0.3\varepsilon_{t-1}$
     </li>
     <li>
-    \(Y_t = -0.54Y_{t-1} + \varepsilon_t\)
+    $Y_t = -0.54Y_{t-1} + \varepsilon_t$
     </li>
     <li>
-    \(Y_t = -1.79Y_{t-1} - 0.79Y_{t-2}+ \varepsilon_t\)
+    $Y_t = -1.79Y_{t-1} - 0.79Y_{t-2}+ \varepsilon_t$
     </li>
     <li>
-    \(Y_t = 0.31Y_{t-1} + 0.84Y_{t-2}+ \varepsilon_t + 0.51\varepsilon_{t-1}\)
+    $Y_t = 0.31Y_{t-1} + 0.84Y_{t-2}+ \varepsilon_t + 0.51\varepsilon_{t-1}$
     </li>
     <li>
-    \(Y_t = 0.82Y_{t-1} + \varepsilon_t - 1.08\varepsilon_{t-1}\)
+    $Y_t = 0.82Y_{t-1} + \varepsilon_t - 1.08\varepsilon_{t-1}$
     </li>
     <li>
-    \(Y_t = 2 - 0.51Y_{t-1} - 0.24Y_{t-2} + \varepsilon_t - 0.31\varepsilon_{t-1} + 1.49\varepsilon_{t-2}\).
+    $Y_t = 2 - 0.51Y_{t-1} - 0.24Y_{t-2} + \varepsilon_t - 0.31\varepsilon_{t-1} + 1.49\varepsilon_{t-2}$.
     </li>
     <li>
-    \(Y_t = -0.64Y_{t-2} + \varepsilon_t + 0.58\varepsilon_{t-1} + 1.20\varepsilon_{t-2}\)
+    $Y_t = -0.64Y_{t-2} + \varepsilon_t + 0.58\varepsilon_{t-1} + 1.20\varepsilon_{t-2}$
     </li>
     <li>
-    \(Y_t = Y_{t-1} + \varepsilon_t\)
+    $Y_t = Y_{t-1} + \varepsilon_t$
     </li>
     <li>
-    \(Y_t = 1.3Y_{t-1} + 0.3Y_{t-2} + \varepsilon_t + 2.32\varepsilon_{t-2}\)
+    $Y_t = 1.3Y_{t-1} + 0.3Y_{t-2} + \varepsilon_t + 2.32\varepsilon_{t-2}$
     <li>
-    \(Y_t = -2Y_{t-1} -1 Y_{t-2} + \varepsilon_t - 0.46\varepsilon_{t-1}\)
+    $Y_t = -2Y_{t-1} -1 Y_{t-2} + \varepsilon_t - 0.46\varepsilon_{t-1}$
     </li>
     </li>
     </ol>
@@ -87,25 +87,25 @@ Lista de ejercicios
     proceso
     <ol type="a">
     <li>
-    \(MA(1)\)
+    $MA(1)$
     </li>
     <li>
-    \(SMA(4)[6]\)
+    $SMA(4)[6]$
     </li>
     <li>
-    \(AR(3)\)
+    $AR(3)$
     </li>
     <li>
-    \(SMA(2)[3]\)
+    $SMA(2)[3]$
     </li>
     <li>
-    \(ARMA(0,3)\)
+    $ARMA(0,3)$
     </li>
     <li>
-    \(SARMA(2,1)[3]\)
+    $SARMA(2,1)[3]$
     </li>
     <li>
-    \(ARMA(3,1)\)
+    $ARMA(3,1)$
     </li>
     </ol>
 4.  A partir de las siguientes EACF, indique qué modelos creería usted

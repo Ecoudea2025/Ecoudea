@@ -171,10 +171,10 @@ Solución
 <ol>
 <li>
 <strong> Evaluación de conocimientos: </strong> Suponga que es una
-calificación obtenida en un intervalo de \(0\) a \(5\), y en
+calificación obtenida en un intervalo de $0$ a $5$, y en
 consecuencia, se tendrá que la variable será de tipo
 <strong>Cuantitativa continua</strong>, con una escala de medición de
-tipo <strong>intervalo</strong>, debido a que tener un \(0\) en una
+tipo <strong>intervalo</strong>, debido a que tener un $0$ en una
 evaluación de conocimiento no significa necesariamente que no se tenga
 ningún conocimiento sobre el tema evaluado
 </li>
@@ -210,16 +210,16 @@ de calidad de vida.
 <li>
 <strong> Escalas de los test psicológicos:</strong> son pruebas que
 miden diferentes características, por ejemplo, la inteligencia emocional
-o altruismo. Éstas por lo general poseen calificaciones que van de \(0\)
-a \(100\), por lo cual se tendrá que la variable será de tipo
+o altruismo. Éstas por lo general poseen calificaciones que van de $0$
+a $100$, por lo cual se tendrá que la variable será de tipo
 <strong>Cuantitativa discreta</strong>, con una escala de medición de
 tipo <strong>intervalo</strong>, debido a que en este tipo de
-calificaciones el \(0\) se elige de forma arbitraria por quienes
+calificaciones el $0$ se elige de forma arbitraria por quienes
 desarrollaron dichos test.
 </li>
 <li>
 <strong> Litros de agua consumidos por persona al día:</strong> Dado que
-una persona puede consumir hasta \(7\) litros de agua por día antes de
+una persona puede consumir hasta $7$ litros de agua por día antes de
 sufrir de hiperhidratación o intoxicación por agua, diremos que es una
 variable de tipo <strong>Cuantitativa continua</strong>, con una escala
 de medición de tipo <strong>razón</strong> debido que consumir cero
@@ -237,8 +237,8 @@ menor o mayor, respectivamente.
 </li>
 <li>
 <strong> Goles marcados por un futbolista en un partido:</strong> Un
-futbolista puede no anotar goles en un partido, o anotar \(1\) gol,
-\(2\) goles, \(3\) goles, \(\ldots\), \(n\) goles. Dado lo anterior, se
+futbolista puede no anotar goles en un partido, o anotar $1$ gol,
+$2$ goles, $3$ goles, $\ldots$, $n$ goles. Dado lo anterior, se
 observa que un jugador solo puede anotar un número entero de goles, y
 por tanto, se tendrá que la variable será de tipo <strong>Cuantitativa
 discreta</strong>, con una escala de medición de tipo
@@ -404,7 +404,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la nota promedio obtenida por los \(10\) estudiantes en el
+Calcule la nota promedio obtenida por los $10$ estudiantes en el
 primer y cuarto parcial del curso de Estadística I, de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -421,10 +421,10 @@ $$\begin{align*}
 \end{align*}$$
 
 Lo anterior significa que, el valor promedio obtenido por los
-estudiantes en el parcial \(1\) del curso de estadística I fue de
-\(2.75\), mientras que el valor promedio obtenido en el parcial \(4\)
-fue de \(3.14\). Es decir, se aprecia que hubo una mejora en la nota
-promedio por los estudiantes de \(0.39\).
+estudiantes en el parcial $1$ del curso de estadística I fue de
+$2.75$, mientras que el valor promedio obtenido en el parcial $4$
+fue de $3.14$. Es decir, se aprecia que hubo una mejora en la nota
+promedio por los estudiantes de $0.39$.
 </p>
 </main>
 <button id="Show3" class="btn btn-secondary">
@@ -438,7 +438,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la nota promedio obtenida por los \(10\) estudiantes en el
+Calcule la nota promedio obtenida por los $10$ estudiantes en el
 primer y cuarto parcial del curso de Estadística I, con <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -507,7 +507,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la nota mediana obtenida por los \(10\) estudiantes en el primer
+Calcule la nota mediana obtenida por los $10$ estudiantes en el primer
 y cuarto parcial del curso de Estadística I, de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -515,8 +515,8 @@ Solución Manual
 </h3>
 <p>
 
-Inicialmente, se observa que el total de estudiantes es \(10\), por lo
-cual, se tiene que \(n\) es un número par, haciendo que la ecuación
+Inicialmente, se observa que el total de estudiantes es $10$, por lo
+cual, se tiene que $n$ es un número par, haciendo que la ecuación
 empleada sea
 
 $$\begin{align*}
@@ -526,9 +526,9 @@ $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que debe localizarse la observación que ocupa la
-posición número \(5\) y \(6\) en las notas obtenidas <strong>luego de
+posición número $5$ y $6$ en las notas obtenidas <strong>luego de
 ordenarlas de menor a mayor</strong>. Realizando el ordenamiento para el
-parcial \(1\) se tendrá
+parcial $1$ se tendrá
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -570,10 +570,10 @@ Parcial 1
 </tbody>
 </table>
 <p>
-donde se observa que las observaciones \(5\) y \(6\) para el parcial
-\(1\) están dadas por \(x_{[5]}=2.7\) y \(x_{[6]}=2.8\),
+donde se observa que las observaciones $5$ y $6$ para el parcial
+$1$ están dadas por $x_{[5]}=2.7$ y $x_{[6]}=2.8$,
 respectivamente. Mientras que, realizando el ordenamiento para el
-parcial \(4\) se tendrá
+parcial $4$ se tendrá
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -616,25 +616,25 @@ Parcial 4
 </table>
 <p>
 
-donde se evidencia que las observaciones \(5\) y \(6\) para el parcial
-\(4\) están dadas por \(x_{[5]}=3.4\) y \(x_{[6]}=3.4\),
+donde se evidencia que las observaciones $5$ y $6$ para el parcial
+$4$ están dadas por $x_{[5]}=3.4$ y $x_{[6]}=3.4$,
 respectivamente.
 
 Con dichos valores se realiza entonces, el cálculo de la mediana para
-los parciales \(1\) y \(4\),tal que
+los parciales $1$ y $4$,tal que
 
 $$\begin{align*}
   \tilde{X}_{P_1} =\frac{1}{2}(2.7+2.8)=2.75 \\
   \tilde{X}_{P_4} =\frac{1}{2}(3.4+3.4)=3.4
 \end{align*}$$
 
-De lo anterior se aprecia que para el parcial \(1\), la mitad de los
+De lo anterior se aprecia que para el parcial $1$, la mitad de los
 estudiantes del curso de Estadística I obtuvieron notas menores o
-iguales a \(2.75\), mientras la otra mitad obtuvo notas mayores o
-iguales a \(2.75\). Similarmente, se observa para el parcial \(4\), que
-el \(50\%\) inferior de los estudiantes obtuvieron una nota de a lo más
-\(3.4\), mientras el \(50\%\) superior de los estudiantes obtuvo una
-nota de al menos \(3.4\).
+iguales a $2.75$, mientras la otra mitad obtuvo notas mayores o
+iguales a $2.75$. Similarmente, se observa para el parcial $4$, que
+el $50\%$ inferior de los estudiantes obtuvieron una nota de a lo más
+$3.4$, mientras el $50\%$ superior de los estudiantes obtuvo una
+nota de al menos $3.4$.
 </p>
 </main>
 <button id="Show5" class="btn btn-secondary">
@@ -648,7 +648,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la nota mediana obtenida por los \(10\) estudiantes en el primer
+Calcule la nota mediana obtenida por los $10$ estudiantes en el primer
 y cuarto parcial del curso de Estadística I con <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -722,7 +722,7 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la moda de las nota obtenida por los \(10\) estudiantes en el
+Calcule la moda de las nota obtenida por los $10$ estudiantes en el
 primer y cuarto parcial del curso de Estadística I de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -854,13 +854,13 @@ style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; backgroun
 </table>
 <p>
 
-De la tabla anterior, se observa que para el caso del parcial \(1\), se
+De la tabla anterior, se observa que para el caso del parcial $1$, se
 observa que nota modal obtenida por los estudiantes de Estadística I es
-de \(2.7\), ya que es la única nota que se repite dos veces en el
+de $2.7$, ya que es la única nota que se repite dos veces en el
 conjunto de observaciones.
 
-Similarmente, para el parcial \(4\), se aprecia que la nota modal es de
-\(3.4\) dado que es la nota que más se repite de las \(10\) notas
+Similarmente, para el parcial $4$, se aprecia que la nota modal es de
+$3.4$ dado que es la nota que más se repite de las $10$ notas
 registradas.
 </p>
 </main>
@@ -875,7 +875,7 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la moda de las notas obtenidas por los \(10\) estudiantes en el
+Calcule la moda de las notas obtenidas por los $10$ estudiantes en el
 primer y cuarto parcial del curso de Estadística I con <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -947,8 +947,8 @@ Ocultar Ejercicio Manual
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la media recortada al \(10\%\) de las notas obtenidas por los
-\(10\) estudiantes en el primer y cuarto parcial del curso de
+Calcule la media recortada al $10\%$ de las notas obtenidas por los
+$10$ estudiantes en el primer y cuarto parcial del curso de
 Estadística I de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -957,12 +957,12 @@ Solución Manual
 <p>
 
 Para encontrar la nota promedio de los parciales, al eliminar el efecto
-del \(10\%\) de notas más altas y más bajas, es necesario ordenar de
+del $10\%$ de notas más altas y más bajas, es necesario ordenar de
 forma ascendente las notas obtenidas en los parciales. Dado que se
-tienen \(10\) observaciones, de tendrá que eliminar entonces la nota más
+tienen $10$ observaciones, de tendrá que eliminar entonces la nota más
 alta y la nota más baja.
 
-Entonces, para el caso del parcial \(1\) se tendrá que el conjunto de
+Entonces, para el caso del parcial $1$ se tendrá que el conjunto de
 observaciones ordenadas es
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1044,7 +1044,7 @@ Parcial 1
 </table>
 <p>
 Similarmente, se realiza el mismo procedimiento para el caso del parcial
-\(4\), en donde el conjunto de notas ordenados de menor a mayor será
+$4$, en donde el conjunto de notas ordenados de menor a mayor será
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -1086,9 +1086,9 @@ Parcial 4
 </tbody>
 </table>
 <p>
-donde se aprecia que la nota más baja es \(0.7\), mientras que la más
-alta es \(4.7\). Al eliminar dichas observaciones, se tendrá que
-conjunto de notas usadas para calcular la media recortada al \(10\%\)
+donde se aprecia que la nota más baja es $0.7$, mientras que la más
+alta es $4.7$. Al eliminar dichas observaciones, se tendrá que
+conjunto de notas usadas para calcular la media recortada al $10\%$
 estarán dada por
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1126,7 +1126,7 @@ Parcial 4
 </table>
 <p>
 
-Al realizar el cálculo de la media recortada al \(10\%\) para cada
+Al realizar el cálculo de la media recortada al $10\%$ para cada
 parcial se encuentran los siguientes resultados
 
 $$\begin{align*}
@@ -1135,13 +1135,13 @@ $$\begin{align*}
 \end{align*}$$
 
 De los resultados anteriores, se observa que para ambos casos, la
-eliminación del \(10\%\) de las notas más altas y más bajas, se obtiene
-como resultado un incremento en la nota promedio, pasando de \(2.75\)
-con el total de notas, a \(2.775\) con la eliminación del \(10\%\) de
-las notas extremas, para el caso del parcial \(1\), y pasando de
-\(3.14\) a \(3.25\) para el caso del parcial \(4\). <br> <br> De los
+eliminación del $10\%$ de las notas más altas y más bajas, se obtiene
+como resultado un incremento en la nota promedio, pasando de $2.75$
+con el total de notas, a $2.775$ con la eliminación del $10\%$ de
+las notas extremas, para el caso del parcial $1$, y pasando de
+$3.14$ a $3.25$ para el caso del parcial $4$. <br> <br> De los
 hallazgos encontrados al comparar los resultados de la media contra la
-media recortada al \(10\%\), se tiene que el valor el efecto que tienen
+media recortada al $10\%$, se tiene que el valor el efecto que tienen
 las notas más bajas es mayor al efecto de las notas más altas, pues se
 observa que al eliminar la nota más alta y más baja, se tienen un
 incremento en la nota promedio obtenida por el curso.
@@ -1158,8 +1158,8 @@ Ocultar Ejercicio en <tt>R</tt>
 Ejercicio Caso de Estudio
 </h3>
 <p>
-Calcule la media recortada al \(10\%\) de las notas obtenidas por los
-\(10\) estudiantes en el primer y cuarto parcial del curso de
+Calcule la media recortada al $10\%$ de las notas obtenidas por los
+$10$ estudiantes en el primer y cuarto parcial del curso de
 Estadística I con <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -1167,7 +1167,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo en <tt>R</tt> de la nota promedio recortada al
-\(10\%\) de los estudiantes en los dos parciales se emplea la función
+$10\%$ de los estudiantes en los dos parciales se emplea la función
 <code>mean()</code> con el argumento <code>trim = 0.1</code>, tal que
 </p>
 <section class="language-r highlighter-rouge">

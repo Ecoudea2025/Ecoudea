@@ -18,30 +18,30 @@ $$\begin{align*}f(x) = p^x(1-p)^{1-x} \text{ para } x=0,1; \quad 0\leq p \leq 1\
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(p\) por el método de los
+    Calcule el estimador para el parámetro $p$ por el método de los
     momentos.
     </li>
     <li>
-    Calcule el estimador de máxima verosimilitud para el parámetro \(p\)
+    Calcule el estimador de máxima verosimilitud para el parámetro $p$
     y pruebe si el estimador encontrado efectivamente maximiza la
     función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores insesgado del parámetro \(p\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores insesgado del parámetro $p$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(p\) y pruebe si los
-    estimadores encontrado en \(a)\) y \(b)\) alcanzan dicha cota (son
+    Calcule la Cota de Cramér-Rao del parámetro $p$ y pruebe si los
+    estimadores encontrado en $a)$ y $b)$ alcanzan dicha cota (son
     un MVUE).
     </li>
     <li>
-    Pruebe si los estimadores encontrados en \(a)\) y \(b)\) son
-    estimadores consistentes para el parámetro \(p\).
+    Pruebe si los estimadores encontrados en $a)$ y $b)$ son
+    estimadores consistentes para el parámetro $p$.
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i\) es un estimador suficiente para el
-    parámetro \(p\).
+    Muestre que $\sum_{i=1}^n x_i$ es un estimador suficiente para el
+    parámetro $p$.
     </li>
     </ol>
 
@@ -53,38 +53,38 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}k\\ x\end{array}\right)p^x(1-p)^{k-
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(p\) por el método de los
-    momentos, si se supone que \(k\) es conocida.
+    Calcule el estimador para el parámetro $p$ por el método de los
+    momentos, si se supone que $k$ es conocida.
     </li>
     <li>
-    Calcule el estimador para los parámetros \(k\) y \(p\) por el método
+    Calcule el estimador para los parámetros $k$ y $p$ por el método
     de los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(p\), si se supone \(k\) conocida y pruebe si el estimador
+    $p$, si se supone $k$ conocida y pruebe si el estimador
     encontrado efectivamente maximiza la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(c)\) son
-    estimadores insesgado del parámetro \(p\).
+    Pruebe si los estimadores encontrado en $a)$ y $c)$ son
+    estimadores insesgado del parámetro $p$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(p\) y pruebe si los
-    estimadores encontrado en \(a)\) y \(c)\) alcanzan dicha cota (son
+    Calcule la Cota de Cramér-Rao del parámetro $p$ y pruebe si los
+    estimadores encontrado en $a)$ y $c)$ alcanzan dicha cota (son
     un MVUE).
     </li>
     <li>
-    Pruebe cuál de los estimadores encontrados en \(a)\) y \(c)\) es más
-    eficiente para el parámetro \(p\).
+    Pruebe cuál de los estimadores encontrados en $a)$ y $c)$ es más
+    eficiente para el parámetro $p$.
     </li>
     <li>
-    Pruebe si los estimadores encontrados en \(a)\) y \(c)\) son
-    estimadores consistentes para el parámetro \(p\).
+    Pruebe si los estimadores encontrados en $a)$ y $c)$ son
+    estimadores consistentes para el parámetro $p$.
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i\) es un estimador suficiente para el
-    parámetro \(p\).
+    Muestre que $\sum_{i=1}^n x_i$ es un estimador suficiente para el
+    parámetro $p$.
     </li>
     </ol>
 
@@ -96,30 +96,30 @@ $$\begin{align*}f(x) = p(1-p)^{x-1} \text{ para } x=1,2,3,\ldots; \quad 0\leq p 
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(p\) por el método de los
+    Calcule el estimador para el parámetro $p$ por el método de los
     momentos.
     </li>
     <li>
-    Calcule el estimador de máxima verosimilitud para el parámetro \(p\)
+    Calcule el estimador de máxima verosimilitud para el parámetro $p$
     y pruebe si el estimador encontrado efectivamente maximiza la
     función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) mediante la
-    transformación \(\frac{1}{\hat{p}}\) son estimadores insesgados para
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ mediante la
+    transformación $\frac{1}{\hat{p}}$ son estimadores insesgados para
     la media de la distribución.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) mediante la
-    transformación \(\frac{1}{\hat{p}}\) son estimadores consistentes
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ mediante la
+    transformación $\frac{1}{\hat{p}}$ son estimadores consistentes
     para la media de la distribución.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(p\).
+    Calcule la Cota de Cramér-Rao del parámetro $p$.
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i\) es un estimador suficiente para el
-    parámetro \(p\).
+    Muestre que $\sum_{i=1}^n x_i$ es un estimador suficiente para el
+    parámetro $p$.
     </li>
     </ol>
 
@@ -131,30 +131,30 @@ $$\begin{align*}f(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ para } x=0,1,2,\l
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\lambda\) por el método de
+    Calcule el estimador para el parámetro $\lambda$ por el método de
     los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\lambda\) y pruebe si el estimador encontrado efectivamente
+    $\lambda$ y pruebe si el estimador encontrado efectivamente
     maximiza la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores insesgados del parámetro \(\lambda\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores insesgados del parámetro $\lambda$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\lambda\) y pruebe si
-    los estimadores encontrado en \(a)\) y \(b)\) alcanzan dicha cota
+    Calcule la Cota de Cramér-Rao del parámetro $\lambda$ y pruebe si
+    los estimadores encontrado en $a)$ y $b)$ alcanzan dicha cota
     (son un MVUE).
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores consistentes para el parámetro \(\lambda\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores consistentes para el parámetro $\lambda$.
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i\) es un estimador suficiente para el
-    parámetro \(\lambda\).
+    Muestre que $\sum_{i=1}^n x_i$ es un estimador suficiente para el
+    parámetro $\lambda$.
     </li>
     </ol>
 
@@ -166,30 +166,30 @@ $$\begin{align*}f(x) = \frac{1}{\beta}e^{-\frac{x}{\beta}} \text{ para } x>0; \q
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\beta\) por el método de
+    Calcule el estimador para el parámetro $\beta$ por el método de
     los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\beta\) y pruebe si el estimador encontrado efectivamente maximiza
+    $\beta$ y pruebe si el estimador encontrado efectivamente maximiza
     la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores insesgados del parámetro \(\beta\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores insesgados del parámetro $\beta$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\beta\) y pruebe si
-    los estimadores encontrado en \(a)\) y \(b)\) alcanzan dicha cota
+    Calcule la Cota de Cramér-Rao del parámetro $\beta$ y pruebe si
+    los estimadores encontrado en $a)$ y $b)$ alcanzan dicha cota
     (son un MVUE).
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores consistentes para el parámetro \(\beta\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores consistentes para el parámetro $\beta$.
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i\) es un estimador suficiente para el
-    parámetro \(\beta\).
+    Muestre que $\sum_{i=1}^n x_i$ es un estimador suficiente para el
+    parámetro $\beta$.
     </li>
     </ol>
 
@@ -201,40 +201,40 @@ $$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sig
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\mu\) por el método de los
-    momentos, si se supone \(\sigma^2\) conocida.
+    Calcule el estimador para el parámetro $\mu$ por el método de los
+    momentos, si se supone $\sigma^2$ conocida.
     </li>
     <li>
-    Calcule el estimador para los parámetros \(\mu\) y \(\sigma\) por el
+    Calcule el estimador para los parámetros $\mu$ y $\sigma$ por el
     método de los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\mu\), si se supone \(\sigma^2\) conocido y pruebe si el estimador
+    $\mu$, si se supone $\sigma^2$ conocido y pruebe si el estimador
     encontrado efectivamente maximiza la función.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\sigma^2\), si se supone \(\mu\) conocido y pruebe si el estimador
+    $\sigma^2$, si se supone $\mu$ conocido y pruebe si el estimador
     encontrado efectivamente maximiza la función.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\mu\) y \(\sigma^2\), y pruebe si el estimador encontrado
+    $\mu$ y $\sigma^2$, y pruebe si el estimador encontrado
     efectivamente maximiza la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(c)\) son
-    estimadores insesgados para el parámetro \(\mu\).
+    Pruebe si los estimadores encontrado en $a)$ y $c)$ son
+    estimadores insesgados para el parámetro $\mu$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\mu\) y pruebe si los
-    estimadores encontrado en \(a)\) y \(c)\) alcanzan dicha cota (son
+    Calcule la Cota de Cramér-Rao del parámetro $\mu$ y pruebe si los
+    estimadores encontrado en $a)$ y $c)$ alcanzan dicha cota (son
     un MVUE).
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores consistentes para el parámetro \(\mu\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores consistentes para el parámetro $\mu$.
     </li>
     </ol>
 
@@ -246,30 +246,30 @@ $$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2} x}e^{-\frac{(\ln(x) - \mu)^2
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\mu\) por el método de los
-    momentos, si se supone \(\sigma^2\) conocida.
+    Calcule el estimador para el parámetro $\mu$ por el método de los
+    momentos, si se supone $\sigma^2$ conocida.
     </li>
     <li>
-    Calcule el estimador para el parámetro \(\sigma\) por el método de
-    los momentos, si se supone \(\mu\) conocida.
+    Calcule el estimador para el parámetro $\sigma$ por el método de
+    los momentos, si se supone $\mu$ conocida.
     </li>
     <li>
-    Calcule el estimador para los parámetros \(\mu\) y \(\sigma\) por el
+    Calcule el estimador para los parámetros $\mu$ y $\sigma$ por el
     método de los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\mu\), si se supone \(\sigma^2\) conocido y pruebe si el estimador
+    $\mu$, si se supone $\sigma^2$ conocido y pruebe si el estimador
     encontrado efectivamente maximiza la función.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\sigma^2\), si se supone \(\mu\) conocido y pruebe si el estimador
+    $\sigma^2$, si se supone $\mu$ conocido y pruebe si el estimador
     encontrado efectivamente maximiza la función.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\mu\) y \(\sigma^2\), y pruebe si el estimador encontrado
+    $\mu$ y $\sigma^2$, y pruebe si el estimador encontrado
     efectivamente maximiza la función.
     </li>
     </ol>
@@ -282,38 +282,38 @@ $$\begin{align*}f(x) = \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\alpha\) por el método de
-    los momentos, si se supone \(\beta\) conocida.
+    Calcule el estimador para el parámetro $\alpha$ por el método de
+    los momentos, si se supone $\beta$ conocida.
     </li>
     <li>
-    Calcule el estimador para el parámetro \(\beta\) por el método de
-    los momentos, si se supone \(\alpha\) conocida.
+    Calcule el estimador para el parámetro $\beta$ por el método de
+    los momentos, si se supone $\alpha$ conocida.
     </li>
     <li>
-    Calcule el estimador para los parámetros \(\alpha\) y \(\beta\) por
+    Calcule el estimador para los parámetros $\alpha$ y $\beta$ por
     el método de los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\beta\), si se supone \(\alpha\) conocido y pruebe si el estimador
+    $\beta$, si se supone $\alpha$ conocido y pruebe si el estimador
     encontrado efectivamente maximiza la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrados de \(\beta\) en \(b)\) y
-    \(d)\) son estimadores insesgados del parámetro \(\beta\).
+    Pruebe si los estimadores encontrados de $\beta$ en $b)$ y
+    $d)$ son estimadores insesgados del parámetro $\beta$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\beta\) y pruebe si
-    los estimadores encontrado en \(b)\) y \(d)\) alcanzan dicha cota
+    Calcule la Cota de Cramér-Rao del parámetro $\beta$ y pruebe si
+    los estimadores encontrado en $b)$ y $d)$ alcanzan dicha cota
     (son un MVUE).
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(b)\) y \(d)\) son
-    estimadores consistentes para el parámetro \(\beta\).
+    Pruebe si los estimadores encontrado en $b)$ y $d)$ son
+    estimadores consistentes para el parámetro $\beta$.
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i\) es un estimador suficiente para el
-    parámetro \(\beta\), si se asume \(\alpha\) conocida.
+    Muestre que $\sum_{i=1}^n x_i$ es un estimador suficiente para el
+    parámetro $\beta$, si se asume $\alpha$ conocida.
     </li>
     </ol>
 
@@ -325,40 +325,40 @@ $$\begin{align*}f(x) = \frac{x}{\theta^2}e^{-\frac{x^2}{2\theta^2}} \text{ para 
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\theta\) por el método de
+    Calcule el estimador para el parámetro $\theta$ por el método de
     los momentos.
     </li>
     <li>
-    Calcule el estimador para el parámetro \(\theta^2\) por el método de
+    Calcule el estimador para el parámetro $\theta^2$ por el método de
     los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\theta\) y pruebe si el estimador encontrado efectivamente
+    $\theta$ y pruebe si el estimador encontrado efectivamente
     maximiza la función.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\theta^2\) y pruebe si el estimador encontrado efectivamente
+    $\theta^2$ y pruebe si el estimador encontrado efectivamente
     maximiza la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(d)\) son
-    estimadores insesgados para el parámetro \(\theta\).
+    Pruebe si los estimadores encontrado en $a)$ y $d)$ son
+    estimadores insesgados para el parámetro $\theta$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\theta\) y pruebe si
-    los estimadores encontrado en \(a)\) y \(c)\) alcanzan dicha cota
+    Calcule la Cota de Cramér-Rao del parámetro $\theta$ y pruebe si
+    los estimadores encontrado en $a)$ y $c)$ alcanzan dicha cota
     (son un MVUE).
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\theta^2\) y pruebe si
-    los estimadores encontrado en \(b)\) y \(d)\) alcanzan dicha cota
+    Calcule la Cota de Cramér-Rao del parámetro $\theta^2$ y pruebe si
+    los estimadores encontrado en $b)$ y $d)$ alcanzan dicha cota
     (son un MVUE).
     </li>
     <li>
-    Muestre que \(\sum_{i=1}^n x_i^2\) es un estimador suficiente para
-    el parámetro \(\theta^2\).
+    Muestre que $\sum_{i=1}^n x_i^2$ es un estimador suficiente para
+    el parámetro $\theta^2$.
     </li>
     </ol>
 
@@ -371,29 +371,29 @@ $$\begin{align*}f(x) = \frac{1}{\theta}\alpha x^{\alpha-1}e^{-\frac{x^\alpha}{\t
 
     <ol type="a">
     <li>
-    Calcule el estimador para el parámetro \(\theta\) por el método de
+    Calcule el estimador para el parámetro $\theta$ por el método de
     los momentos.
     </li>
     <li>
     Calcule el estimador de máxima verosimilitud para el parámetro
-    \(\theta\) y pruebe si el estimador encontrado efectivamente
+    $\theta$ y pruebe si el estimador encontrado efectivamente
     maximiza la función.
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores insesgados para el parámetro \(\theta\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores insesgados para el parámetro $\theta$.
     </li>
     <li>
-    Calcule la Cota de Cramér-Rao del parámetro \(\theta\) y pruebe si
-    los estimadores encontrado en \(a)\) y \(b)\) alcanzan dicha cota
+    Calcule la Cota de Cramér-Rao del parámetro $\theta$ y pruebe si
+    los estimadores encontrado en $a)$ y $b)$ alcanzan dicha cota
     (son un MVUE).
     </li>
     <li>
-    Pruebe si los estimadores encontrado en \(a)\) y \(b)\) son
-    estimadores consistentes para el parámetro \(\theta\).
+    Pruebe si los estimadores encontrado en $a)$ y $b)$ son
+    estimadores consistentes para el parámetro $\theta$.
     </li>
     <li>
-    Encuentre el estadístico suficiente para \(\theta\).
+    Encuentre el estadístico suficiente para $\theta$.
     </li>
     </ol>
 
@@ -410,8 +410,8 @@ $$\begin{align*}\hat{\beta}_1&=X_1 \\     \hat{\beta}_2&=\frac{X_1+X_2+X_5}{3} \
     </li>
     <li>
     Encuentre la eficiencia relativa de los estimadores
-    \(\hat{\beta}_1\), \(\hat{\beta}_2\) y \(\hat{\beta}_3\) respecto
-    \(\hat{\beta}_4\). Qué se puede concluir?
+    $\hat{\beta}_1$, $\hat{\beta}_2$ y $\hat{\beta}_3$ respecto
+    $\hat{\beta}_4$. Qué se puede concluir?
     </li>
     </ol>
 
@@ -428,8 +428,8 @@ $$\begin{align*}\hat{\theta}_1&=\bar{X}-\frac{1}{2} \\     \hat{\theta}_2&=X_{(n
     calcule su sesgo y pruebe si son asintóticamente insesgados.
     </li>
     <li>
-    Encuentre la eficiencia relativa de \(\hat{\theta}_1\) respecto
-    \(\hat{\theta}_2\). Qué se puede concluir?
+    Encuentre la eficiencia relativa de $\hat{\theta}_1$ respecto
+    $\hat{\theta}_2$. Qué se puede concluir?
     </li>
     </ol>
 
@@ -446,7 +446,7 @@ $$\begin{align*}\hat{\lambda}_1&=\bar{X} \\     \hat{\lambda}_2&=\frac{X_1+X_5+2
     </li>
     <li>
     Ordene los estimadores del más eficiente al ménos eficiente si
-    consideramos que \(n=30\).
+    consideramos que $n=30$.
     </li>
     </ol>
 
@@ -459,12 +459,12 @@ $$\begin{align*}S^2_n=\frac{1}{n}\sum_{i=1}^{n}(X_i-\mu)^2\end{align*}$$
     <ol type="a">
     <li>
     Muestre si dicho estimador es un estimador insesgado de
-    \(\sigma^2\), de no serlo, calcule su sesgo y pruebe si es un
+    $\sigma^2$, de no serlo, calcule su sesgo y pruebe si es un
     estimador asintóticamente insesgado.
     </li>
     <li>
     Muestre si dicho estimador es un estimador consistente de
-    \(\sigma^2\).
+    $\sigma^2$.
     </li>
     </ol>
 
@@ -477,12 +477,12 @@ $$\begin{align*}\hat{\sigma}^2 = \sum_{i=1}^{n}\frac{X^2_i}{n}\end{align*}$$
     <ol type="a">
     <li>
     Muestre si dicho estimador es un estimador insesgado de
-    \(\sigma^2\), de no serlo, calcule su sesgo y pruebe si es un
+    $\sigma^2$, de no serlo, calcule su sesgo y pruebe si es un
     estimador asintóticamente insesgado.
     </li>
     <li>
     Muestre si dicho estimador es un estimador consistente de
-    \(\sigma^2\).
+    $\sigma^2$.
     </li>
     </ol>
 
@@ -495,12 +495,12 @@ $$\begin{align*}S^2_{n-2}=\frac{1}{n-2}\sum_{i=1}^{n}(X_i-\bar{X})^2\end{align*}
     <ol type="a">
     <li>
     Muestre si dicho estimador es un estimador insesgado de
-    \(\sigma^2\), de no serlo, calcule su sesgo y pruebe si es un
+    $\sigma^2$, de no serlo, calcule su sesgo y pruebe si es un
     estimador asintóticamente insesgado.
     </li>
     <li>
     Muestre si dicho estimador es un estimador consistente de
-    \(\sigma^2\).
+    $\sigma^2$.
     </li>
     </ol>
 
@@ -534,7 +534,7 @@ $$\begin{align*}\hat{p}_1&=\frac{X}{n}; \\       \hat{p}_2&=\frac{X+\sqrt{n/2}}{
     </li>
     <li>
     Ordene los estimadores del más eficiente al menos eficiente si
-    consideramos que \(n = 50\).
+    consideramos que $n = 50$.
     </li>
     </ol>
 
@@ -571,7 +571,7 @@ $$\begin{align*}\vec{X}^{(1)}&=\frac{X_1+2X_2+3X_3}{6}\\     \vec{X}^{(2)}&=\fra
     <li>
     Proponga un estimador insesgado para la media poblacional que sea
     más eficiente que los dos estimadores propuestos y que sea diferente
-    a \(\bar{X}\).
+    a $\bar{X}$.
     </li>
     </ol>
 
@@ -596,18 +596,18 @@ $$\begin{align*}f(x,\theta)=\frac{3\theta^3}{x^4} \quad para \quad \theta<x<\inf
 
     <ol type="a">
     <li>
-    Determine el estimador de \(\theta\) por el método de momentos.
+    Determine el estimador de $\theta$ por el método de momentos.
     </li>
     <li>
-    Determine el estimador de máxima verosimilitud de \(\theta\).
+    Determine el estimador de máxima verosimilitud de $\theta$.
     </li>
     <li>
     Determine si los estimadores a. y b. son insesgados para el
-    parámetro \(\theta\).
+    parámetro $\theta$.
     </li>
     <li>
     Pruebe si los estimadores encontrados en a. y b. son estimadores
-    consistentes para el parámetro \(\theta\).
+    consistentes para el parámetro $\theta$.
     </li>
     </ol>
 
@@ -618,18 +618,18 @@ $$\begin{align*}F(x,\theta)=-e^{-\frac{x}{4\theta}} \quad para \quad x>0\end{ali
 
     <ol type="a">
     <li>
-    Determine el estimador de \(\theta\) por el método de momentos.
+    Determine el estimador de $\theta$ por el método de momentos.
     </li>
     <li>
-    Determine el estimador de máxima verosimilitud de \(\theta\).
+    Determine el estimador de máxima verosimilitud de $\theta$.
     </li>
     <li>
     Determine si los estimadores a. y b. son insesgados para el
-    parámetro \(\theta\).
+    parámetro $\theta$.
     </li>
     <li>
     Pruebe si los estimadores encontrados en a. y b. son estimadores
-    consistentes para el parámetro \(\theta\).
+    consistentes para el parámetro $\theta$.
     </li>
     </ol>
 
@@ -640,18 +640,18 @@ $$\begin{align*}F(x,\theta)=\frac{x}{\theta} \quad para \quad 0<x<\theta; \quad 
 
     <ol type="a">
     <li>
-    Determine el estimador de \(\theta\) por el método de momentos.
+    Determine el estimador de $\theta$ por el método de momentos.
     </li>
     <li>
-    Determine el estimador de máxima verosimilitud de \(\theta\).
+    Determine el estimador de máxima verosimilitud de $\theta$.
     </li>
     <li>
     Determine si los estimadores a. y b. son insesgados para el
-    parámetro \(\theta\).
+    parámetro $\theta$.
     </li>
     <li>
     Pruebe si los estimadores encontrados en a. y b. son estimadores
-    consistentes para el parámetro \(\theta\).
+    consistentes para el parámetro $\theta$.
     </li>
     </ol>
 

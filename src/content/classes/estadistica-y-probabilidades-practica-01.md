@@ -85,14 +85,14 @@ Lista de ejercicios
     </table>
     <ol type="a">
     <li>
-    Obtenga las funciones de probabilidad marginales de \(X\) y de
-    \(Y\).
+    Obtenga las funciones de probabilidad marginales de $X$ y de
+    $Y$.
     </li>
     <li>
-    Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X=1|Y\leq 0)\).
+    Calcule la $\mathbb{P}(X=1|Y\leq 0)$.
     </li>
     </ol>
 
@@ -103,11 +103,11 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) que hace a la función de masa de
+    Calcule el valor $k$ que hace a la función de masa de
     probabilidad, una función de probabilidad bien definida.
     </li>
     <li>
-    Encuentre la correlación entre \(X\) y \(Z\) donde \(Z = 6X\).
+    Encuentre la correlación entre $X$ y $Z$ donde $Z = 6X$.
     </li>
     </ol>
 
@@ -119,20 +119,20 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     A partir de esta ecuación, calcule
     <ol type="a">
     <li>
-    El valor \(k\) que hace que la función \(f(x,y,z)\), sea una función
+    El valor $k$ que hace que la función $f(x,y,z)$, sea una función
     de densidad válida.
     </li>
     <li>
-    La función de densidad marginal conjunta de \(Y\) y \(Z\).
+    La función de densidad marginal conjunta de $Y$ y $Z$.
     </li>
     <li>
-    La densidad marginal de \(Y\).
+    La densidad marginal de $Y$.
     </li>
     <li>
-    \(\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)\)
+    $\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)$
     </li>
     <li>
-    \(\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)\)
+    $\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)$
     </li>
     </ol>
 
@@ -217,25 +217,25 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
 
     <ol type="a">
     <li>
-    La \(f(x,y)\) es efectivamente una función de densidad de
+    La $f(x,y)$ es efectivamente una función de densidad de
     probabilidad conjunta bien definida? de no serlo, por qué constante
-    \(k\) la multiplicaría?.
+    $k$ la multiplicaría?.
     </li>
     <li>
-    Determine la distribución marginal de \(X\).
+    Determine la distribución marginal de $X$.
     </li>
     <li>
-    Determine la distribución marginal de \(Y\).
+    Determine la distribución marginal de $Y$.
     </li>
     <li>
-    ¿Cuál es la probabilidad de \(4\lt X\lt 6\) y \(Y\gt 2\)?.
+    ¿Cuál es la probabilidad de $4\lt X\lt 6$ y $Y\gt 2$?.
     </li>
     <li>
-    Determine la distribución condicional \(f(X | 1\lt Y\lt 4)\).
+    Determine la distribución condicional $f(X | 1\lt Y\lt 4)$.
     </li>
     <li>
-    Si se sabe que \(Y\gt 5\), entonces, cuál es la probabilidad de que
-    \(X\lt 8\).
+    Si se sabe que $Y\gt 5$, entonces, cuál es la probabilidad de que
+    $X\lt 8$.
     </li>
     </ol>
 
@@ -245,13 +245,13 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
     <li>
-    la media y varianza de \(X\) y \(Y\)
+    la media y varianza de $X$ y $Y$
     </li>
     <li>
-    el coeficiente de asimetría de \(X\) y \(Y\)
+    el coeficiente de asimetría de $X$ y $Y$
     </li>
     <li>
-    la correlación de \(3X\) y \(2Y\)
+    la correlación de $3X$ y $2Y$
     </li>
     </ol>
 
@@ -267,12 +267,12 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
 
     <ol type="a">
     <li>
-    ¿Son independientes las dos variables aleatorias \(X\) y \(Y\)?
+    ¿Son independientes las dos variables aleatorias $X$ y $Y$?
     Justifique su respuesta.
     </li>
     <li>
     ¿Cuál es la probabilidad de que, durante el periodo en cuestión,
-    lleguen menos de \(4\) vehículos a las dos esquinas?.
+    lleguen menos de $4$ vehículos a las dos esquinas?.
     </li>
     </ol>
 
@@ -285,10 +285,10 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
 
     <ol type="a">
     <li>
-    Determine la esperanza condicional \(\mathbb{E}(Y | X)\)
+    Determine la esperanza condicional $\mathbb{E}(Y | X)$
     </li>
     <li>
-    Determine la esperanza condicional \(\mathbb{E}(X | Y)\)
+    Determine la esperanza condicional $\mathbb{E}(X | Y)$
     </li>
     </ol>
 
@@ -297,17 +297,17 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     `$x=1,2,3$`; `$y=1,2,3$`.
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) que hace que \(f(x,y)\) sea una función
+    Encuentre el valor de $k$ que hace que $f(x,y)$ sea una función
     de masa de probabilidad conjunta.
     </li>
     <li>
-    Encuentre la distribución marginal de \(X\) y \(Y\).
+    Encuentre la distribución marginal de $X$ y $Y$.
     </li>
     <li>
-    Encuentre la distribución condicional de \(X\) dado \(Y=1\).
+    Encuentre la distribución condicional de $X$ dado $Y=1$.
     </li>
     <li>
-    las v.a \(X\) y \(Y\) son independientes?.
+    las v.a $X$ y $Y$ son independientes?.
     </li>
     </ol>
 
@@ -324,16 +324,16 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     Calcule
     <ol type="a">
     <li>
-    \(\mathbb{P}(X \leq 2, Y = 1)\)
+    $\mathbb{P}(X \leq 2, Y = 1)$
     </li>
     <li>
-    \(\mathbb{P}(X\gt Y)\).
+    $\mathbb{P}(X\gt Y)$.
     </li>
     <li>
-    \(\mathbb{P}(X+Y = 4)\).
+    $\mathbb{P}(X+Y = 4)$.
     </li>
     <li>
-    \(\mathbb{P}(X\gt 2|Y\leq1)\).
+    $\mathbb{P}(X\gt 2|Y\leq1)$.
     </li>
     </ol>
 
@@ -345,13 +345,13 @@ $$\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en 
     Calcule
     <ol type="a">
     <li>
-    la correlación de \(X\) y \(Y\).
+    la correlación de $X$ y $Y$.
     </li>
     <li>
-    la correlación de \(X\) y \(Z\).
+    la correlación de $X$ y $Z$.
     </li>
     <li>
-    la correlación de \(Y\) y \(Z\).
+    la correlación de $Y$ y $Z$.
     </li>
     </ol>
 
@@ -362,19 +362,19 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) para que hace que \(f(x,y,z)\) sea una
+    Calcule el valor $k$ para que hace que $f(x,y,z)$ sea una
     función de densidad de probabilidad conjunta.
     </li>
     <li>
-    Calcule las distribuciones marginales \(g(x)\), \(h(y)\), \(i(z)\),
-    \(j(x,y)\), \(k(x,z)\) y \(l(y,z)\).
+    Calcule las distribuciones marginales $g(x)$, $h(y)$, $i(z)$,
+    $j(x,y)$, $k(x,z)$ y $l(y,z)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)\).
+    Calcule $\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)$.
     </li>
     <li>
     Calcule
-    \(\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})\).
+    $\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})$.
     </li>
     </ol>
 
@@ -392,16 +392,16 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
     <li>
-    La distribución de probabilidad conjunta de \(X\) y \(Y\).
+    La distribución de probabilidad conjunta de $X$ y $Y$.
     </li>
     <li>
-    La distribución marginal de \(X\).
+    La distribución marginal de $X$.
     </li>
     <li>
-    La distribución marginal de \(Y\).
+    La distribución marginal de $Y$.
     </li>
     <li>
-    La probabilidad de que ocurra al menos \(1\) cara.
+    La probabilidad de que ocurra al menos $1$ cara.
     </li>
     </ol>
 
@@ -417,10 +417,10 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
 
     <ol type="a">
     <li>
-    Calcule la esperanza de \(Z = 3Y - 2X\)
+    Calcule la esperanza de $Z = 3Y - 2X$
     </li>
     <li>
-    Calcule la varianza de \(Z\)
+    Calcule la varianza de $Z$
     </li>
     </ol>
 
@@ -444,8 +444,8 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
     </li>
     <li>
     Calcule la probabilidad de que el peso de los chiclosos en una caja
-    sea menor que \(1/8\) de kilogramo, si se sabe que las cremas
-    constituyen \(3/4\) partes del peso.
+    sea menor que $1/8$ de kilogramo, si se sabe que las cremas
+    constituyen $3/4$ partes del peso.
     </li>
     </ol>
 
@@ -456,11 +456,11 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) que hace que la función de densidad de
+    Calcule el valor $k$ que hace que la función de densidad de
     probabilidad conjunta esté bien definida.
     </li>
     <li>
-    Calcule \(\mathbb{E}(X |Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)\)
+    Calcule $\mathbb{E}(X |Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)$
     </li>
     </ol>
 
@@ -471,26 +471,26 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
 
     <ol type="a">
     <li>
-    Obtener el valor \(k\) que hace que la función esté bien definida y
+    Obtener el valor $k$ que hace que la función esté bien definida y
     encuentre la función de distribución acumulada conjunta.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que \(X\lt 3/2\) y \(Y\lt 2\)?.
+    ¿Cuál es la probabilidad de que $X\lt 3/2$ y $Y\lt 2$?.
     </li>
     <li>
-    Obtenga las funciones marginales para \(X\) y \(Y\).
+    Obtenga las funciones marginales para $X$ y $Y$.
     </li>
     <li>
-    Obtenga las función de distribución acumulada de \(X\) y de \(Y\).
+    Obtenga las función de distribución acumulada de $X$ y de $Y$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(0.8\lt X\lt 1.6)\) y \(\mathbb{P}(Y\gt 2.3)\).
+    Calcule $\mathbb{P}(0.8\lt X\lt 1.6)$ y $\mathbb{P}(Y\gt 2.3)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)\).
+    Calcule $\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)$.
     </li>
     <li>
-    Pruebe si \(X\) y \(Y\) son independientes.
+    Pruebe si $X$ y $Y$ son independientes.
     </li>
     </ol>
 
@@ -501,16 +501,16 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
 
     <ol type="a">
     <li>
-    Determine la distribución marginal \(g(x)\) de la proporción \(X\) y
+    Determine la distribución marginal $g(x)$ de la proporción $X$ y
     verifique que sea una función de densidad válida.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que la proporción \(Y\) sea menor que
-    \(0.5\), dado que \(X\) es \(0.7\)?.
+    ¿Cuál es la probabilidad de que la proporción $Y$ sea menor que
+    $0.5$, dado que $X$ es $0.7$?.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que la proporción \(X\) sea mayor que
-    \(0.5\), dado que \(Y\) es \(0.7\)?.
+    ¿Cuál es la probabilidad de que la proporción $X$ sea mayor que
+    $0.5$, dado que $Y$ es $0.7$?.
     </li>
     </ol>
 
@@ -591,19 +591,19 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
     </table>
     <ol type="a">
     <li>
-    Evalúe la distribución marginal de \(X\).
+    Evalúe la distribución marginal de $X$.
     </li>
     <li>
-    Evalué la distribución marginal de \(Y\).
+    Evalué la distribución marginal de $Y$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(Y = 2 | X = 1)\).
+    Calcule $\mathbb{P}(Y = 2 | X = 1)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X\lt 2|Y\leq1)\).
+    Calcule $\mathbb{P}(X\lt 2|Y\leq1)$.
     </li>
     <li>
-    Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
     </li>
     </ol>
 
@@ -616,21 +616,21 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
 
     <ol type="a">
     <li>
-    Determine la distribución marginal de \(X\).
+    Determine la distribución marginal de $X$.
     </li>
     <li>
-    Determine la distribución marginal de \(Y\).
+    Determine la distribución marginal de $Y$.
     </li>
     <li>
     ¿Cuál es la probabilidad de que las proporciones del componente
-    generen los resultados \(X \lt  0.2\) y \(Y \gt  0.5\)?.
+    generen los resultados $X \lt  0.2$ y $Y \gt  0.5$?.
     </li>
     <li>
-    Determine la distribución condicional \(f(X | Y)\).
+    Determine la distribución condicional $f(X | Y)$.
     </li>
     <li>
-    Si se sabe que \(Y\gt 0.2\), entonces, cuál es la probabilidad de que
-    \(X\lt 0.1\).
+    Si se sabe que $Y\gt 0.2$, entonces, cuál es la probabilidad de que
+    $X\lt 0.1$.
     </li>
     </ol>
 
@@ -708,19 +708,19 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </table>
     <ol type="a">
     <li>
-    Evalúe la distribución marginal de \(X\).
+    Evalúe la distribución marginal de $X$.
     </li>
     <li>
-    Evalué la distribución marginal de \(Y\).
+    Evalué la distribución marginal de $Y$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(Y = 3 | X = 2)\).
+    Calcule $\mathbb{P}(Y = 3 | X = 2)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X\geq2|Y\leq3)\).
+    Calcule $\mathbb{P}(X\geq2|Y\leq3)$.
     </li>
     <li>
-    Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
     </li>
     </ol>
 
@@ -739,12 +739,12 @@ $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-
     <ol type="a">
     <li>
     Obtener la probabilidad conjunta de que el tiempo de espera no sea
-    mayor de ocho minutos y el de ejecución no sea mayor de \(12\)
+    mayor de ocho minutos y el de ejecución no sea mayor de $12$
     segundos.
     </li>
     <li>
     Si se sabe que el tiempo de espera es mayor a seis minutos, calcule
-    la probabilidad de que el tiempo de ejecición sea menor a \(15\)
+    la probabilidad de que el tiempo de ejecición sea menor a $15$
     segundos.
     </li>
     <li>

@@ -182,7 +182,7 @@ Resumen tabular individual
 <p>
 Para ilustrar su empleo, suponga que se desea observar el estado en el
 cual se encontraron las obras al momento de realizar el censo
-(<tt>estado\(\_\)act</tt>). Al ser una sola variable, se emplea la
+(<tt>estado$\_$act</tt>). Al ser una sola variable, se emplea la
 función <tt>table()</tt> de la forma
 </p>
 <section class="language-r highlighter-rouge">
@@ -215,9 +215,9 @@ Resumen tabular dos variables
 </h3>
 <p>
 Ahora suponga, que se desea observar el cruce que hay entre el año en
-que se realizó el censo (<tt>ano\(\_\)censo</tt>) y el estado actual en
+que se realizó el censo (<tt>ano$\_$censo</tt>) y el estado actual en
 el cual se encontraron las obras al momento de realizar el censo
-(<tt>estado\(\_\)act</tt>). En éste caso, al ser dos variables, se
+(<tt>estado$\_$act</tt>). En éste caso, al ser dos variables, se
 emplea la función <tt>table()</tt> de la forma.
 </p>
 <section class="language-r highlighter-rouge">
@@ -277,7 +277,7 @@ Resumen tabular individual
 <p>
 Para ilustrar su empleo, suponga que se desea observar el valor
 porcentual para los diferentes estados en el cual se encontraron las
-obras al momento de realizar el censo (<tt>estado\(\_\)act</tt>). Al ser
+obras al momento de realizar el censo (<tt>estado$\_$act</tt>). Al ser
 una sola variable, la función <tt>prop.table()</tt> se emplea de la
 siguiente forma
 </p>
@@ -524,7 +524,7 @@ Histograma
 </h3>
 <p>
 Suponga que se desea presentar mediante un histograma, el comportamiento
-de la variable que corresponde al precio de venta por \(m^2\) del
+de la variable que corresponde al precio de venta por $m^2$ del
 inmueble (<tt>preciovtax</tt>). Para ello, podemos emplear la función
 <tt>hist()</tt> de la forma
 </p>
@@ -613,8 +613,8 @@ Diagrama de dispersión
 <p>
 Para entender la forma en que se aplica un diagrama de dispersión,
 suponga que se quiere observar, si éxiste alguna relación entre el área
-del lote donde se construye la obra o proyecto (<tt>area\(\_\)lote</tt>)
-y el precio de venta por \(m^2\) (<tt>preciovtax</tt>). Para ello,
+del lote donde se construye la obra o proyecto (<tt>area$\_$lote</tt>)
+y el precio de venta por $m^2$ (<tt>preciovtax</tt>). Para ello,
 podemos emplear la función <tt>plot()</tt> de la forma.
 </p>
 <section class="language-r highlighter-rouge">
@@ -653,7 +653,7 @@ Matriz de dispersión
 <p>
 Para ello, suponga que se desea observar la relación que hay entre las
 variables, área del lote donde se construye la obra o proyecto
-(<tt>area\(\_\)lote</tt>), porcentaje de avance de la obra en
+(<tt>area$\_$lote</tt>), porcentaje de avance de la obra en
 contrucción (<tt>gradoavanc</tt>) y área total vendible por unidad
 (<tt>areavenuni</tt>). Para ello empleamos la función <tt>pairs()</tt>
 de la forma.
@@ -744,7 +744,7 @@ Gráfico de barras una variable
 <p>
 Para ilustrar su empleo, suponga que se desea observar el estado en el
 cual se encontraron las obras al momento de realizar el censo
-(<tt>estado\(\_\)act</tt>). En este caso, la función <tt>barplot()</tt>
+(<tt>estado$\_$act</tt>). En este caso, la función <tt>barplot()</tt>
 se emplea de la siguiente forma.
 </p>
 <section class="language-r highlighter-rouge">
@@ -887,8 +887,8 @@ Gráfico de barras dos variables
 <p>
 Para ilustrar su empleo, suponga que se desea observar el estado en el
 cual se encontraron las obras al momento de realizar el censo
-(<tt>estado\(\_\)act</tt>), respecto a si la obra cuenta o no con
-licencia (<tt>ob\(\_\)formal</tt>). En este caso, la función
+(<tt>estado$\_$act</tt>), respecto a si la obra cuenta o no con
+licencia (<tt>ob$\_$formal</tt>). En este caso, la función
 <tt>barplot()</tt> se emplea junto a la función <tt>legend()</tt> de la
 siguiente forma.
 </p>
@@ -929,7 +929,7 @@ Gráfico de balón
 <p>
 Para ilustrar el empleo de la función, suponga que se desea observar el
 estado en el cual se encontraron las obras al momento de realizar el
-censo (<tt>estado\(\_\)act</tt>), respecto al estado en que se encuentra
+censo (<tt>estado$\_$act</tt>), respecto al estado en que se encuentra
 la obra (<tt>movimiento</tt>). En este caso, la función
 <tt>ggballoonplot()</tt> puede emplearse de la forma.
 </p>
@@ -974,7 +974,7 @@ Gráfico de caja y bigotes por grupos
 <p>
 Suponga que se tiene interés en realizar un cruce entre la variable
 cualitativa que indica si la obra cuenta o no con licencia
-(<tt>ob\(\_\)formal</tt>) y la variable cuantitativa del grado de avance
+(<tt>ob$\_$formal</tt>) y la variable cuantitativa del grado de avance
 de la obra (<tt>gradoavanc</tt>). Para ello, puede emplearse el gráfico
 de caja y bigotes de la forma.
 </p>

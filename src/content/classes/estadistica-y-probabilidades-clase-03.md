@@ -47,9 +47,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -399,13 +399,13 @@ calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(X)\)
+$\mathbb{E}(X)$
 </li>
 <li>
-\(\mathbb{E}(Y)\)
+$\mathbb{E}(Y)$
 </li>
 <li>
-\(\mathbb{E}(XY)\)
+$\mathbb{E}(XY)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -413,9 +413,9 @@ Solución
 </h3>
 <ol>
 <li>
-Dado que estamos interesados en calcular \(\mathbb{E}(X)\), la cual solo
-depende de la variable aleatoria \(X\), entonces podemos emplear la
-distribución marginal \(g(x)\) para realizar el cálculo, tal que
+Dado que estamos interesados en calcular $\mathbb{E}(X)$, la cual solo
+depende de la variable aleatoria $X$, entonces podemos emplear la
+distribución marginal $g(x)$ para realizar el cálculo, tal que
 $$\begin{align*}
 \mathbb{E}(X)&=\sum_{x=2}^{12}x\,g(x) \\
              &=(2)\,g(2)+(3)\,g(3)+(4)\,g(4)+\ldots+(12)\,g(12) \\
@@ -424,13 +424,13 @@ $$\begin{align*}
              &=\frac{252}{36} \\
              &=7
 \end{align*}$$ Por tanto se tendrá que el valor esperado para la suma
-resultante de los dos dados es de \(7\).
+resultante de los dos dados es de $7$.
 </li>
 <li>
 Similar al procedimiento anterior, se realiza el cálculo de la
-\(\mathbb{E}(Y)\), la cual, al depender solo de la variable aleatoria
-\(Y\), permite que se realice el cálculo mediante el empleo de la
-distribución marginal \(h(y)\), tal que $$\begin{align*}
+$\mathbb{E}(Y)$, la cual, al depender solo de la variable aleatoria
+$Y$, permite que se realice el cálculo mediante el empleo de la
+distribución marginal $h(y)$, tal que $$\begin{align*}
 \mathbb{E}(Y)&=\sum_{y=0}^{5}y\,h(y) \\
              &=(0)\,h(0)+(1)\,h(1)+(2)\,h(2)+\ldots+(5)\,h(5) \\
              &=0\left(\frac{6}{36}\right)+1\left(\frac{10}{36}\right)+2\left(\frac{8}{36}\right)+\ldots + 5\left(\frac{2}{36}\right) \\
@@ -438,21 +438,21 @@ distribución marginal \(h(y)\), tal que $$\begin{align*}
              &=\frac{70}{36} \\
              &=1.9444
 \end{align*}$$ Por tanto se tendrá que el valor esperado para el valor
-absoluto de la diferencia de los dos dados es de \(1.9444\).
+absoluto de la diferencia de los dos dados es de $1.9444$.
 </li>
 <li>
-En este caso, estamos interesados en calcular la \(\mathbb{E}(XY)\), en
+En este caso, estamos interesados en calcular la $\mathbb{E}(XY)$, en
 donde, al depender la esperanza matemática de las dos variables
 aleatorias, entonces empleamos la función de distribución conjunta
-\(p(x,y)\) tal que $$\begin{align*}
+$p(x,y)$ tal que $$\begin{align*}
 \mathbb{E}(XY)&=\sum_{x=2}^{12}\sum_{y=0}^{5}xy\,p(x,y) \\
              &=(2)(0)\,p(2,0)+(2)(1)\,p(2,1)+\ldots + (3)(0)\,p(3,0)+(3)(1)\,p(3,1)+\ldots+(12)(5)\,p(12,5) \\
              &=(2)(0)\left(\frac{1}{36}\right)+(2)(1)\left(0\right)+\ldots+(3)(0)\left(0\right)+(3)(1)\left(\frac{2}{36}\right)+\ldots + (12)(5)\left(0\right) \\
              &=0+\frac{6}{36}+\ldots+0+ \frac{6}{36}+\ldots + 0 \\
              &=\frac{720}{36} \\
              &=13.0556
-\end{align*}$$ Por tanto se tendrá que el valor esperado de \(XY\) es de
-\(13.0556\) (Es anotar que solo las esperanzas simples de \(X\) y \(Y\)
+\end{align*}$$ Por tanto se tendrá que el valor esperado de $XY$ es de
+$13.0556$ (Es anotar que solo las esperanzas simples de $X$ y $Y$
 tienen interpretación en el contexto de los datos).
 </li>
 </ol>
@@ -474,25 +474,25 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule
 </p>
 <ol>
 <li>
-\(\mathbb{E}(X)\)
+$\mathbb{E}(X)$
 </li>
 <li>
-\(\mathbb{E}(Y)\)
+$\mathbb{E}(Y)$
 </li>
 <li>
-\(\mathbb{E}(XY)\)
+$\mathbb{E}(XY)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -500,9 +500,9 @@ Solución
 </h3>
 <ol>
 <li>
-Dado que estamos interesados en calcular \(\mathbb{E}(X)\), la cual solo
-depende de la variable aleatoria \(X\), entonces podemos emplear la
-distribución marginal \(g(x)\) para realizar el cálculo, tal que
+Dado que estamos interesados en calcular $\mathbb{E}(X)$, la cual solo
+depende de la variable aleatoria $X$, entonces podemos emplear la
+distribución marginal $g(x)$ para realizar el cálculo, tal que
 $$\begin{align*}
 \mathbb{E}(X)&=\int_{-\infty}^{\infty}x\,g(x) dx\\
              &=\int_{0}^{2}x\left(\frac{1}{2}x\right) dx \\
@@ -515,13 +515,13 @@ $$\begin{align*}
              &=1.333333 
 \end{align*}$$ Por tanto se tendrá que el valor esperado para el número
 de horas promedio de tiempo libre que tiene el profesor de Estadística I
-en un día es de \(1.3333\) horas.
+en un día es de $1.3333$ horas.
 </li>
 <li>
-Similar al cálculo de la esperanza de \(X\), se realiza el cálculo de la
-\(\mathbb{E}(Y)\), la cual, al depender solo de la variable aleatoria
-\(Y\), permite que el cálculo se realice mediante el empleo de la
-distribución marginal \(h(y)\), tal que $$\begin{align*}
+Similar al cálculo de la esperanza de $X$, se realiza el cálculo de la
+$\mathbb{E}(Y)$, la cual, al depender solo de la variable aleatoria
+$Y$, permite que el cálculo se realice mediante el empleo de la
+distribución marginal $h(y)$, tal que $$\begin{align*}
 \mathbb{E}(Y)&=\int_{-\infty}^{\infty}y\,h(y) dy\\
              &=\int_{1}^{4}y\left(\frac{1}{21}y^2\right) dy \\
              &=\frac{1}{21}\int_{1}^{4}y^3 dy \\
@@ -532,14 +532,14 @@ distribución marginal \(h(y)\), tal que $$\begin{align*}
              &=3.035714 
 \end{align*}$$ Por tanto se tendrá que el valor esperado para el número
 promedio de horas de tiempo libre que tienen los estudiantes que cursan
-Estadística I es de \(3.035714\) horas
+Estadística I es de $3.035714$ horas
 </li>
 <li>
 En este punto, estamos interesados en calcular la esperanza conjunta de
-\(XY\), esto es, \(\mathbb{E}(XY)\), en donde, se observa que la
+$XY$, esto es, $\mathbb{E}(XY)$, en donde, se observa que la
 esperanza matemática depende de dos variables aleatorias, y por tanto
 para resolver el ejercicio empleamos la función de distribución conjunta
-\(f(x,y)\) tal que $$\begin{align*}
+$f(x,y)$ tal que $$\begin{align*}
 \mathbb{E}(XY)&=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}xy\,f(x,y) dy\\
              &=\int_{1}^{4}\int_{0}^{2}xy\left(\frac{1}{42}xy^2\right) dxdy \\
              &=\frac{1}{42}\int_{1}^{4}\int_{0}^{2} x^2y^3 dxdy \\
@@ -553,8 +553,8 @@ para resolver el ejercicio empleamos la función de distribución conjunta
              &=\frac{4}{63}\left(\frac{255}{4}\right) \\
              &=\frac{255}{63} \\
              &=4.047619
-\end{align*}$$ Por tanto se tendrá que el valor esperado de \(XY\) es de
-\(4.047619\) (Es anotar que solo las esperanzas simples de \(X\) y \(Y\)
+\end{align*}$$ Por tanto se tendrá que el valor esperado de $XY$ es de
+$4.047619$ (Es anotar que solo las esperanzas simples de $X$ y $Y$
 tienen interpretación en el contexto de los datos).
 </li>
 </ol>
@@ -587,9 +587,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -935,14 +935,14 @@ dada por
 </table>
 <p>
 Entonces, basados en dicha función de masa de probabilidad conjunta,
-calcule la esperanza matemática de \(X\) dado que \(Y=3\)
+calcule la esperanza matemática de $X$ dado que $Y=3$
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Para poder encontrar la esperanza matemática de \(X\) dado que \(Y=3\),
-es necesario usar la distribución condicional de \(X\) dado \(Y=3\), la
+Para poder encontrar la esperanza matemática de $X$ dado que $Y=3$,
+es necesario usar la distribución condicional de $X$ dado $Y=3$, la
 cual está dada por
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto; font-size:120%!important">
@@ -1031,8 +1031,8 @@ Para ver el procedimiento de cómo llegar a la distribución condicional,
 remitase al ejemplo discreto para
 <a href="../../EstadisticaI/EstIClase10.html#distribuciones-condicionales" target="\_blank">Distribuciones
 Condicionales</a>.<br> <br> Entonces, basados en la distribución
-condicional de \(X\) dado \(Y=3\) se realiza el cálculo de la esperanza
-matemática de \(X\) dado que \(Y=3\), tal que
+condicional de $X$ dado $Y=3$ se realiza el cálculo de la esperanza
+matemática de $X$ dado que $Y=3$, tal que
 
 $$\begin{align*}
 \mathbb{E}(X|Y=3)&=\sum_{x=2}^{12}x\,f(x|y=3) \\
@@ -1042,8 +1042,8 @@ $$\begin{align*}
              &=\frac{42}{6} \\
              &=7
 \end{align*}$$ Por tanto se tendrá que, el resultado esperado para la
-suma de los dos dados es igual a \(7\), cuando se sabe que el valor
-absoluto de la diferencia de los dos dados fue igual a \(3\).
+suma de los dos dados es igual a $7$, cuando se sabe que el valor
+absoluto de la diferencia de los dos dados fue igual a $3$.
 </p>
 </main>
 <button id="Show4" class="btn btn-secondary">
@@ -1063,31 +1063,31 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$ Calcule el valor esperado de \(Y\), dado que \(X\) es a
-lo más \(1.3\)
+\end{align*}$$ Calcule el valor esperado de $Y$, dado que $X$ es a
+lo más $1.3$
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Para poder encontrar la esperanza matemática de \(Y\) dado que
-\(X\leq 1.3\), es necesario usar la distribución condicional de \(Y\)
-dado que \(X\leq 1.3\), la cual está dada por $$\begin{align*}
+Para poder encontrar la esperanza matemática de $Y$ dado que
+$X\leq 1.3$, es necesario usar la distribución condicional de $Y$
+dado que $X\leq 1.3$, la cual está dada por $$\begin{align*}
 f(y|x\leq1.3) =& 0.0476y^2 \quad \quad 1<y<4
 \end{align*}$$ Para ver el procedimiento de cómo llegar a la
 distribución condicional, remitase al ejemplo continuo para
 <a href="../../EstadisticaI/EstIClase10.html#distribuciones-condicionales" target="\_blank">Distribuciones
 Condicionales</a>. <br> <br> Entonces, basados en la distribución
-condicional de \(Y\) dado \(X\leq 1.3\) se realiza el cálculo de la
+condicional de $Y$ dado $X\leq 1.3$ se realiza el cálculo de la
 esperanza matemática de interés, tal que $$\begin{align*}
 \mathbb{E}(Y|X\leq 1.3) &= \int_{1}^4 y f(y|x\leq1.3) dy \\
                         &= \int_{1}^4 y \left(0.0476y^2\right) dy\\
@@ -1100,9 +1100,9 @@ esperanza matemática de interés, tal que $$\begin{align*}
 \end{align*}$$
 
 Por tanto, si se sabe que el número promedio de horas de tiempo libre
-que poseen los estudiantes es a lo más de \(1.3\), se tendrá que el
+que poseen los estudiantes es a lo más de $1.3$, se tendrá que el
 valor esperado del número de horas promedio de tiempo libre que tiene el
-profesor será de \(2.4276\).
+profesor será de $2.4276$.
 </p>
 </main>
 
@@ -1147,9 +1147,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -1499,10 +1499,10 @@ calcule
 </p>
 <ol>
 <li>
-\(Sd(X)\)
+$Sd(X)$
 </li>
 <li>
-\(Sd(Y)\)
+$Sd(Y)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -1518,14 +1518,14 @@ $$\begin{align*}
 Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2
 \end{align*}$$
 
-En donde, el valor de la \(\mathbb{E}(X)\) se calculó en el ejemplo
+En donde, el valor de la $\mathbb{E}(X)$ se calculó en el ejemplo
 discreto de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(X) = 7\). Por tanto nos faltaría realizar el cálculo de
-\(\mathbb{E}(X^2)\), la cual al depender solamente de la variable
-aleatoria \(X\), entonces se procede al cálculo mediante la distribución
-marginal \(g(x)\), tal que
+$\mathbb{E}(X) = 7$. Por tanto nos faltaría realizar el cálculo de
+$\mathbb{E}(X^2)$, la cual al depender solamente de la variable
+aleatoria $X$, entonces se procede al cálculo mediante la distribución
+marginal $g(x)$, tal que
 
 $$\begin{align*}
 \mathbb{E}(X^2)&=\sum_{x=2}^{12}x^2\,g(x) \\
@@ -1549,8 +1549,8 @@ Sd(X) &= \sqrt{Var(X)}\\
       &= \sqrt{5.833333}\\
       &= 2.415229
 \end{align*}$$ es decir que, el valor promedio que se espera para la
-suma resultante de los dos dados es de \(7\), con una desviación
-estándar de \(2.415229\).
+suma resultante de los dos dados es de $7$, con una desviación
+estándar de $2.415229$.
 </li>
 <li>
 
@@ -1560,15 +1560,15 @@ ecuación $$\begin{align*}
 Var(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2
 \end{align*}$$
 
-En donde, el valor de la \(\mathbb{E}(Y)\) se calculó en el ejemplo
+En donde, el valor de la $\mathbb{E}(Y)$ se calculó en el ejemplo
 discreto de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(Y) = 1.9444\). Ahora, dado que no poseemos el valor para
-\(\mathbb{E}(Y^2)\), procedemos a realizar su cálculo, en donde, al
+$\mathbb{E}(Y) = 1.9444$. Ahora, dado que no poseemos el valor para
+$\mathbb{E}(Y^2)$, procedemos a realizar su cálculo, en donde, al
 depender el valor esperado de interés solo de la variable aleatoria
-\(Y\), entonces realizamos el cálculo mediante la distribución marginal
-\(h(y)\), tal que $$\begin{align*}
+$Y$, entonces realizamos el cálculo mediante la distribución marginal
+$h(y)$, tal que $$\begin{align*}
 \mathbb{E}(Y^2)&=\sum_{y=0}^{5}y^2\,h(y) \\
              &=(0)^2\,h(0)+(1)^2\,h(1)+(2)^2\,h(2)+\ldots+(5)^2\,h(5) \\
              &=0\left(\frac{6}{36}\right)+1\left(\frac{10}{36}\right)+4\left(\frac{8}{36}\right)+\ldots + 25\left(\frac{2}{36}\right) \\
@@ -1591,8 +1591,8 @@ Sd(Y) &= \sqrt{Var(Y)}\\
 \end{align*}$$
 
 Por tanto se tendrá que el valor esperado para el valor absoluto de la
-diferencia de los dos dados es de \(1.9444\), con una desviación
-estándar de \(1.432704\).
+diferencia de los dos dados es de $1.9444$, con una desviación
+estándar de $1.432704$.
 </li>
 </ol>
 </main>
@@ -1613,22 +1613,22 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule
 </p>
 <ol>
 <li>
-\(Sd(X)\)
+$Sd(X)$
 </li>
 <li>
-\(Sd(Y)\)
+$Sd(Y)$
 </li>
 </ol>
 <h3 data-toc-skip>
@@ -1642,14 +1642,14 @@ estándar del número promedio de horas de tiempo libre del profesor, y
 para ello necesitamos calcular el valor de la varianza, la cual estará
 dada por $$\begin{align*}
 Var(X) =& \mathbb{E}(X^2) - \mathbb{E}(X)^2
-\end{align*}$$ En donde, el valor de la \(\mathbb{E}(X)\) se calculó en
+\end{align*}$$ En donde, el valor de la $\mathbb{E}(X)$ se calculó en
 el ejemplo continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(X) = 1.333333\), pero no se realizó el cálculo del valor de
-\(\mathbb{E}(X^2)\). <br> <br> Así que se procede al cálculo de
-\(\mathbb{E}(X^2)\), en donde, al depender solo de la variable aleatoria
-\(X\), se emplea para su cálculo la distribución marginal \(g(x)\), tal
+$\mathbb{E}(X) = 1.333333$, pero no se realizó el cálculo del valor de
+$\mathbb{E}(X^2)$. <br> <br> Así que se procede al cálculo de
+$\mathbb{E}(X^2)$, en donde, al depender solo de la variable aleatoria
+$X$, se emplea para su cálculo la distribución marginal $g(x)$, tal
 que $$\begin{align*}
 \mathbb{E}(X^2)&=\int_{-\infty}^{\infty}x^2\,g(x) dx\\
                &=\int_{0}^{2}x^2\left(\frac{1}{2}x\right) dx \\
@@ -1679,7 +1679,7 @@ Sd(X) &= \sqrt{Var(X)}\\
 
 Por tanto se tendrá que el valor esperado para el número de horas
 promedio de tiempo libre que tiene el profesor de Estadística I en un
-día es de \(1.3333\) horas, con una desviación estándar de \(0.4714053\)
+día es de $1.3333$ horas, con una desviación estándar de $0.4714053$
 horas.
 </li>
 <li>
@@ -1690,14 +1690,14 @@ mediante la ecuación $$\begin{align*}
 Var(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2
 \end{align*}$$
 
-En donde, el valor de la \(\mathbb{E}(Y)\) se calculó en el ejemplo
+En donde, el valor de la $\mathbb{E}(Y)$ se calculó en el ejemplo
 continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, y se encontró que
-\(\mathbb{E}(Y) = 3.035714\). Ahora, dado que no poseemos el valor para
-\(\mathbb{E}(Y^2)\), procedemos a realizar su cálculo, en donde, al
+$\mathbb{E}(Y) = 3.035714$. Ahora, dado que no poseemos el valor para
+$\mathbb{E}(Y^2)$, procedemos a realizar su cálculo, en donde, al
 depender el valor esperado de interés solo de la variable aleatoria
-\(Y\), empleamos para su cálculo la distribución marginal \(h(y)\), tal
+$Y$, empleamos para su cálculo la distribución marginal $h(y)$, tal
 que $$\begin{align*}
 \mathbb{E}(Y^2)&=\int_{-\infty}^{\infty}y^2\,h(y) dy\\
                &=\int_{1}^{4}y^2\left(\frac{1}{21}y^2\right) dy \\
@@ -1724,7 +1724,7 @@ Sd(Y) &= \sqrt{Var(Y)}\\
 
 Por tanto se tendrá que el valor esperado para el número promedio de
 horas de tiempo libre que tienen los estudiantes que cursan Estadística
-I es de \(3.035714\) horas, con una desviación estándar de \(0.7261525\)
+I es de $3.035714$ horas, con una desviación estándar de $0.7261525$
 horas.
 </li>
 </ol>

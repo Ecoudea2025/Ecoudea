@@ -130,8 +130,8 @@ MA(1)
 </td>
 <td style="text-align:left;width: 6cm; ">
 Solo el primer (1) coeficiente de autocorrelación es significativo. El
-resto de coeficientes se anulan luego del primer rezago (\(\rho(k) = 0\)
-para retardo \(k&gt;1\))
+resto de coeficientes se anulan luego del primer rezago ($\rho(k) = 0$
+para retardo $k&gt;1$)
 </td>
 <td style="text-align:left;width: 6cm; ">
 Decrecimiento rápido exponencial atenuado y/o en ondas sinusoidales.
@@ -224,7 +224,7 @@ MA(q)
 <td style="text-align:left;width: 6cm; ">
 Solo los q primeros coeficientes de autocorrelación son significativos.
 El resto de coeficientes se anulan luego del q-ésimo rezago
-(\(\rho(k) = 0\) para retardo \(k&gt;q\))
+($\rho(k) = 0$ para retardo $k&gt;q$)
 </td>
 <td style="text-align:left;width: 6cm; ">
 Decrecimiento rápido exponencial atenuado y/o en ondas sinusoidales.
@@ -320,7 +320,7 @@ Decrecimiento rápido exponencial atenuado y/o en ondas sinusoidales.
 <td style="text-align:left;width: 6cm; ">
 Solo el primer (1) coeficientes de autocorrelación parcial es
 significativos. El resto de coeficientes se anulan luego del primer
-rezago (\(\phi_{kk} = 0\) para retardo \(k&gt;1\))
+rezago ($\phi_{kk} = 0$ para retardo $k&gt;1$)
 </td>
 </tr>
 </tbody>
@@ -391,7 +391,7 @@ Decrecimiento rápido exponencial atenuado y/o en ondas sinusoidales.
 <td style="text-align:left;width: 6cm; ">
 Solo los p primeros coeficientes de autocorrelación parcial son
 significativos. El resto de coeficientes se anulan luego del p-ésimo
-rezago (\(\phi_{kk} = 0\) para retardo \(k&gt;p\))
+rezago ($\phi_{kk} = 0$ para retardo $k&gt;p$)
 </td>
 </tr>
 </tbody>

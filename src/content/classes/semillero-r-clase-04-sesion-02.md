@@ -59,10 +59,10 @@ Ocultar Ejemplo en <tt>R</tt>
 Selección en vectores
 </h3>
 <p>
-Supongamos un vector \(x\) dado por los números
-\(3.1, 7.8, 8.9, 10.5, 2.7, 5.7\), entonces si se desea seleccionar los
-valores \(8.9\) y \(2.7\) del vector, notamos que estos números se
-encuentran en la posición \(3\) y \(5\), respectivamente, y por tanto,
+Supongamos un vector $x$ dado por los números
+$3.1, 7.8, 8.9, 10.5, 2.7, 5.7$, entonces si se desea seleccionar los
+valores $8.9$ y $2.7$ del vector, notamos que estos números se
+encuentran en la posición $3$ y $5$, respectivamente, y por tanto,
 podemos emplear la notación $$\begin{align*}
 x[c(3,5)]
 \end{align*}$$ tal que
@@ -101,12 +101,12 @@ Duplicar en vectores
 </h3>
 <p>
 También es posible seleccionar dos veces un mismo valor con el fin de
-duplicarlo, por ejemplo, deseamos seleccionar el valor \(3.1\) y
-duplicar el valor \(10.5\), entonces como el valor \(3.1\) está en la
-posición \(1\) y el valor \(10.5\) está en la posición \(4\), podemos
+duplicarlo, por ejemplo, deseamos seleccionar el valor $3.1$ y
+duplicar el valor $10.5$, entonces como el valor $3.1$ está en la
+posición $1$ y el valor $10.5$ está en la posición $4$, podemos
 emplear la notación $$\begin{align*}
 x[c(1, 4, 4)]
-\end{align*}$$ en donde se nota que escribimos dos veces el valor \(4\),
+\end{align*}$$ en donde se nota que escribimos dos veces el valor $4$,
 tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -143,8 +143,8 @@ Reemplazar en vectores
 
 Para reasignar valores, podemos llamar la posición de interés, y usar el
 operador de asignación, para reemplazar dicha posición por el valor de
-interés. Suponga que del vector \(x\) queremos reemplazar el valor
-\(5.7\), por un \(1000\), entonces, como el valor \(5.7\) se encuentra
+interés. Suponga que del vector $x$ queremos reemplazar el valor
+$5.7$, por un $1000$, entonces, como el valor $5.7$ se encuentra
 en la sexta posición, podemos llamar dicha posición mediante el operador
 de subconjuntos y el operador de asignación, mediante la notación
 $$\begin{align*}
@@ -184,10 +184,10 @@ Ocultar Ejemplo en <tt>R</tt>
 Eliminar
 </h3>
 <p>
-Supongamos un vector \(y\) dado por los números
-\(3.1, NA, 8.9, 10.5, 2.7, 5.7\), entonces si se desea eliminar el valor
+Supongamos un vector $y$ dado por los números
+$3.1, NA, 8.9, 10.5, 2.7, 5.7$, entonces si se desea eliminar el valor
 <tt style="color: #ff628c!important">NA</tt> del vector, notamos que
-este valor se encuentran en la posición \(2\), y por tanto, podemos
+este valor se encuentran en la posición $2$, y por tanto, podemos
 emplear la notación $$\begin{align*}
 y[-c(2)]
 \end{align*}$$ dentro del operador de subconjuntos para eliminar dicho
@@ -227,12 +227,12 @@ Ocultar Ejemplo en <tt>R</tt>
 Seleccionar con vectores lógicos
 </h3>
 <p>
-Supongamos nuevamente el vector \(x\) dado por los números
-\(3.1, 7.8, 8.9, 10.5, 2.7, 5.7\), entonces podemos usar un vector de
+Supongamos nuevamente el vector $x$ dado por los números
+$3.1, 7.8, 8.9, 10.5, 2.7, 5.7$, entonces podemos usar un vector de
 <tt style="color: #ff628c!important">TRUE</tt> o
 <tt style="color: #ff628c!important">FALSE</tt> para seleccionar los
 valores de interés. Supongamos que deseamos seleccionar solo los dos
-primeros valores del vector \(x\), entonces podemos emplear un vector de
+primeros valores del vector $x$, entonces podemos emplear un vector de
 la forma $$\begin{align*}
 x[c(T,T,F,F,F,F)]
 \end{align*}$$ tal que
@@ -256,8 +256,8 @@ Filtrar con un condicional
 </h3>
 <p>
 También podemos emplear condicionales para filtrar valores, suponga que
-se quiere filtrar aquellos valores que sean menores a \(4\) del vector
-\(x\), entonces podemos usar el condicional $$\begin{align*}
+se quiere filtrar aquellos valores que sean menores a $4$ del vector
+$x$, entonces podemos usar el condicional $$\begin{align*}
 x[x < 4]
 \end{align*}$$ tal que
 </p>
@@ -322,7 +322,7 @@ Ocultar Ejemplo en <tt>R</tt>
 Vector de caracteres
 </h3>
 <p>
-Supongamos un vector \(w\) dado por los caracteres <tt>“Daniel”,
+Supongamos un vector $w$ dado por los caracteres <tt>“Daniel”,
 “Carlos”, “Paola”, “Daniel”, “Juan”, “Ana”</tt>, entonces si estamos
 interesados en aquellos valores que contienen la cadena de caracteres
 <tt>“uno”</tt>, entonces podemos emplear la notación $$\begin{align*}
@@ -350,7 +350,7 @@ x[x == “Daniel”]
 Vector con nombres
 </h3>
 <p>
-Similarmente, supongamos un vector numérico \(z\), que posee caracteres
+Similarmente, supongamos un vector numérico $z$, que posee caracteres
 asociados a los números, tal que <tt>“Daniel” = 4, “Carlos” = 8, “Paola”
 = 12.4, “Ana” = 2.4, “Juan”= 8, “Ana” = 1</tt>. Entonces, si queremos
 filtrar por <tt>“Ana”</tt> empleando el operador de subconjuntos,
@@ -420,14 +420,14 @@ Ocultar Ejemplo en <tt>R</tt>
 Matrices por entrada
 </h3>
 <p>
-Supongamos una matriz <tt>M</tt> de dimensión \(2\times3\) dada por
+Supongamos una matriz <tt>M</tt> de dimensión $2\times3$ dada por
 </p>
 $$\begin{align*}
 M = \begin{bmatrix}6 & 2 & 3 \\12 & 7 & 9 \end{bmatrix}_{2\times3}
 \end{align*}$$
 <p>
-Entonces, si deseamos filtrar el valor \(9\) que se encuentra en la
-posición \(2,3\) (fila \(2\), columna \(3\)), podemos emplear el
+Entonces, si deseamos filtrar el valor $9$ que se encuentra en la
+posición $2,3$ (fila $2$, columna $3$), podemos emplear el
 operador de subconjuntos con la notación $$\begin{align*}
 M[2,3]
 \end{align*}$$ tal que
@@ -457,7 +457,7 @@ Ahora, si queremos seleccionar solo una fila o columna, entonces podemos
 emplear el operador de asignación, dejando vacío el valor antes de la
 coma, si deseamos filtrar por columna, o dejar vacío el valor después de
 la coma, si deseamos filtrar por fila. Por ejemplo, si queremos filtrar
-por la columna \(1\) de la matriz <tt>M</tt>, empleando la notación
+por la columna $1$ de la matriz <tt>M</tt>, empleando la notación
 $$\begin{align*}
 M[\;,1]
 \end{align*}$$ en donde se puede notar que no hay ningún valor asignado
@@ -485,11 +485,11 @@ Funcionan similar a las matrices, pero con la diferencia de éstos pueden
 tener dimensiones extra. Por ello, es cuestión de agregar las nuevas
 dimensiones dentro del operador de subconjuntos, separando cada
 dimensión mediante comas. Por ejemplo se tiene un arreglo
-\(2\times2\times3\), formado por las tres matrices \(A_1, A_2, A_3\),
-\(2\times2\) siguientes $$\begin{align*}
+$2\times2\times3$, formado por las tres matrices $A_1, A_2, A_3$,
+$2\times2$ siguientes $$\begin{align*}
 A_1 = \begin{bmatrix}6 & 2 \\7 & 9 \end{bmatrix}_{2\times2} \qquad A_2 = \begin{bmatrix}3 & 7 \\12 & 8 \end{bmatrix}_{2\times2} \qquad A_3 = \begin{bmatrix}13 & 2 \\3 & 11 \end{bmatrix}_{2\times2}
-\end{align*}$$ Entonces, si deseamos filtrar el valor \(3\) que se
-encuentra en la posición \(2,1\) (fila \(2\), columna \(1\)) de la
+\end{align*}$$ Entonces, si deseamos filtrar el valor $3$ que se
+encuentra en la posición $2,1$ (fila $2$, columna $1$) de la
 tercera matriz, podemos emplear el operador de subconjuntos con la
 notación $$\begin{align*}
 A[2,1,3]
@@ -527,11 +527,11 @@ la primera coma y después de la segunda, tercera…. coma (dependiendo de
 la dimensión del arreglo), si deseamos filtrar por columna, o dejar
 vacío los valores después la primera, segunda, tercera…. coma
 (dependiendo de la dimensión del arreglo), si deseamos filtrar por fila.
-Por ejemplo, si queremos filtrar por la fila \(2\) del arreglo
+Por ejemplo, si queremos filtrar por la fila $2$ del arreglo
 <tt>A</tt>, podemos emplear la notación $$\begin{align*}
 A[2,\; ,\; ]
 \end{align*}$$ en donde, solo se usan dos comas debido a que la
-dimensión del arreglo es de \(3d\).
+dimensión del arreglo es de $3d$.
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -553,12 +553,12 @@ dimensión del arreglo es de \(3d\).
 Arreglo por dimensiones superiores
 </h3>
 <p>
-Para filtrar por un dimensión superior a \(2d\), es necesario
+Para filtrar por un dimensión superior a $2d$, es necesario
 identificar el orden de interés del arreglo, y escribir el valor para la
 dimensión luego de la coma, asociada a la dimensión en la que se está
-interesado. Por ejemplo, \(A\) es un arreglo de \(2\times2\times3\), así
+interesado. Por ejemplo, $A$ es un arreglo de $2\times2\times3$, así
 que si estoy interesado solo en la segunda matriz, entonces puedo
-escribir un \(2\) luego de la segunda coma, ya que estoy interesado en
+escribir un $2$ luego de la segunda coma, ya que estoy interesado en
 la tercera dimensión del arreglo. Dicha notación sería $$\begin{align*}
 A[\;, \; ,2]
 \end{align*}$$ en donde, se observa, que los valores asociados a las
@@ -866,7 +866,7 @@ function(x) class(x)
 
 Adicionalmente, supongamos que deseamos extraer la matriz que se
 encuentra dentro de lista. Dado que la matriz es el segundo objeto de la
-lista, podemos emplear tres alternativas. Usar la posición \(2\) debido
+lista, podemos emplear tres alternativas. Usar la posición $2$ debido
 a que es el segundo objeto de la lista, usar el nombre que posee dentro
 de la lista, o usar el operador <code>$</code> seguido del nombre dentro
 de la lista
@@ -974,7 +974,7 @@ tal que
 <p>
 En donde se aprecia, que el objeto <tt>AR</tt> es un arreglo, y en
 consecuencia, para extraer la segunda matriz, debe usarse el operador de
-asignación, con un \(2\) luego de la segunda coma, debido a que estamos
+asignación, con un $2$ luego de la segunda coma, debido a que estamos
 interesados en la segunda matriz
 </p>
 </main>

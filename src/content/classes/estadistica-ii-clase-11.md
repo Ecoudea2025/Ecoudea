@@ -31,7 +31,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se insertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -41,8 +41,8 @@ millones de pesos $$\begin{align*}
 \end{align*}$$
 
 Basados en la información anterior, construya un intervalo de confianza
-del \(97\%\) para la verdadera proporción de egresados que tienen un
-salario superior a \(2\) millones de pesos.
+del $97\%$ para la verdadera proporción de egresados que tienen un
+salario superior a $2$ millones de pesos.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -50,8 +50,8 @@ Solución
 <p>
 
 En este caso estamos interesados en el cálculo de un intervalo de
-confianza del \(97\%\) para la proporción de egresados que poseen un
-salario superior a \(2\) millones de pesos. <br> <br> En donde, al no
+confianza del $97\%$ para la proporción de egresados que poseen un
+salario superior a $2$ millones de pesos. <br> <br> En donde, al no
 mencionar un límite de confianza en particular se deberá realizar el
 cálculo de un intervalo bilateral, el cual para el caso de una
 proporción tiene la estructura
@@ -67,17 +67,17 @@ En donde se observa que requerimos de la proporción muestral para
 realizar el cálculo, y por tanto se deberá proceder a realizar su
 cálculo, localizando en cuales valores muestrales se localiza un éxito,
 el cual está dado por aquellos salarios que posean un valor superior a
-\(2\) millones de pesos, y para ello, denotaremos como \(1\) aquellas
-observaciones que sean superiores a \(2\) millones de pesos, y \(0\)
+$2$ millones de pesos, y para ello, denotaremos como $1$ aquellas
+observaciones que sean superiores a $2$ millones de pesos, y $0$
 aquellas observaciones que no cumplan la condición, tal que
 $$\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
 \end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
-total de \(x=4\) éxitos en un total de \(n=15\) muestras, y por tanto,
+total de $x=4$ éxitos en un total de $n=15$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
-proporción muestral de egresados que poseen salarios superiores a \(2\)
+proporción muestral de egresados que poseen salarios superiores a $2$
 millones, tal que $$\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
@@ -86,8 +86,8 @@ millones, tal que $$\begin{align*}
 \end{align*}$$
 
 Ahora, al emplear este valor junto con el nivel de confianza
-\(1-\alpha=0.97\) y el valor crítico
-\(Z_{\frac{\alpha}{2}=0.015}=2.17009\), para calcular el intervalo de
+$1-\alpha=0.97$ y el valor crítico
+$Z_{\frac{\alpha}{2}=0.015}=2.17009$, para calcular el intervalo de
 confianza de interés obtendremos que $$\begin{align*}
   & 0.2666667 \pm 2.17009\sqrt{\frac{0.2666667(1-0.2666667)}{15}} \\
   & 0.2666667 \pm 2.17009(0.1141798)\\
@@ -95,9 +95,9 @@ confianza de interés obtendremos que $$\begin{align*}
   & 0.0188863 < p < 0.5144471
 \end{align*}$$
 
-Por tanto, con una confianza del \(97\%\) se concluye que la verdadera
-proporción de egresados que poseen un salario superior a \(2\) millones
-de pesos, se encontrará entre \(1.89\%\) y \(51.44\%\).
+Por tanto, con una confianza del $97\%$ se concluye que la verdadera
+proporción de egresados que poseen un salario superior a $2$ millones
+de pesos, se encontrará entre $1.89\%$ y $51.44\%$.
 </p>
 </main>
 
@@ -134,12 +134,12 @@ determinar si el cambio en el proceso de fabricación mejora el
 rendimiento que sus equipos ofrecen, deciden tomar una muestra de
 equipos antes y después de la implementación del nuevo proceso de
 fabricación y se evalúa la velocidad de procesamiento para la ejecución
-de un programa determinado. Suponga que se encuentra que \(120\) de
-\(500\) computadores fabricados con el método actual ofrece un
-rendimiento superior al promedio, mientras que, \(220\) de \(700\)
+de un programa determinado. Suponga que se encuentra que $120$ de
+$500$ computadores fabricados con el método actual ofrece un
+rendimiento superior al promedio, mientras que, $220$ de $700$
 computadores fabricados con el nuevo método ofrece un rendimiento
 superior al promedio.<br> <br> Basados en la información obtenida,
-calcule un intervalo de confianza del \(98\%\) para la verdadera
+calcule un intervalo de confianza del $98\%$ para la verdadera
 diferencia entre las proporciones de equipos que ofrecen un rendimiento
 superior al promedio entre el proceso de fabricación actual y el nuevo.
 Es posible pensar que el nuevo proceso si mejora el rendimiento promedio
@@ -151,7 +151,7 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(98\%\) para la diferencia entre la proporción de equipos
+confianza del $98\%$ para la diferencia entre la proporción de equipos
 que son fabricados mediante un proceso de fabricación nuevo y aquellos
 que son fabricados con un proceso de fabricación actual, en donde, se
 debe construir un intervalo de confianza bilateral debido a que no nos
@@ -159,13 +159,13 @@ preguntan por un límite en específico. <br> <br> Para llevar a cabo el
 cálculo debemos revisar la información que poseemos. En primer lugar
 observamos que nos hablan de los tamaños de muestra para cada una de las
 poblaciones en donde el tamaño de muestra para los equipos fabricados
-mediante el proceso de fabricación nuevo fue de \(n_N= 500\), mientras
+mediante el proceso de fabricación nuevo fue de $n_N= 500$, mientras
 que, el tamaño de muestra para lo equipos fabricados mediante el proceso
-de fabricación actual es de \(n_A=700\).<br> <br> Adicionalmente, se
+de fabricación actual es de $n_A=700$.<br> <br> Adicionalmente, se
 presenta para cada valor de la muestra, el número de equipos que
 ofrecieron una velocidad de procesamiento superior al promedio, siendo
 dichos valores para los equipos fabricados con el proceso nuevo y actual
-\(x_N=120\) y \(x_A=220\), respectivamente. Con estos valores es posible
+$x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
 con el nuevo procedimiento tenemos que $$\begin{align*}
@@ -193,8 +193,8 @@ debemos hacer tendrá la forma $$\begin{align*}
 
 En donde se observa que entre los valores ya calculados para las
 proporciones muestrales, se requiere del nivel de confianza
-\(1-\alpha=0.98\) y el valor crítico
-\(Z_{\frac{\alpha}{2}}=Z_{0.01}=2.326348\). Al reemplazar estos valores
+$1-\alpha=0.98$ y el valor crítico
+$Z_{\frac{\alpha}{2}}=Z_{0.01}=2.326348$. Al reemplazar estos valores
 en el intervalo de interés obtenemos que $$\begin{align*}
   & (0.3142857-0.24) \pm 2.326348\sqrt{\frac{0.3142857(1-0.3142857)}{700}+\frac{0.24(1-0.24)}{500}} \\
   &0.0742857 \pm 2.326348 (0.02593592) \\
@@ -203,25 +203,25 @@ en el intervalo de interés obtenemos que $$\begin{align*}
 \end{align*}$$
 
 Dado el resultado anterior, se concluye con una confianza del del
-\(98\%\) que la diferencia entre la proporción de equipos que son
+$98\%$ que la diferencia entre la proporción de equipos que son
 fabricados mediante un proceso de fabricación nuevo y aquellos que son
 fabricados con un proceso de fabricación actual se encontrará entre
-\(1.39\%\) y \(13.46\%\).<br> <br> Ahora, como el intervalo es
+$1.39\%$ y $13.46\%$.<br> <br> Ahora, como el intervalo es
 bilateral, podemos verificar si existen o no diferencias significativas
 entre la proporción de equipos que son fabricados mediante el nuevo
 proceso de fabricación y aquellos que son fabricados mediante el proceso
 actual, y para ello debemos verificar la posición en la que se encuentra
-el intervalo de confianza para la diferencia entre \(p_N - p_A\).
+el intervalo de confianza para la diferencia entre $p_N - p_A$.
 
 <img src="/assets/images/Intervalos4b.jpg" alt="" style="max-width: 80%;">
 
 En donde se observa que el intervalo calculado se encuentra sobre el
-valor de \(0\), el cual representa la igualdad entre las dos
+valor de $0$, el cual representa la igualdad entre las dos
 proporciones, tal que $$\begin{align*}
   p_N = p_A \quad =>\quad p_N - p_A = 0
 \end{align*}$$
 
-y por tanto, podremos afirmar con un nivel de confianza del \(99\%\) que
+y por tanto, podremos afirmar con un nivel de confianza del $99\%$ que
 la proporción de equipos que ofrece un redimiento superior al promedio y
 son fabricados mediante el nuevo proceso, es superior a la proporción de
 aquellos fabricados mediante el proceso actual.
@@ -251,7 +251,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -326,7 +326,7 @@ ciudad, en millones de pesos, fueron de
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, calcule un intervalo de confianza
 para la variabilidad de los costos de construir cualquier parque,
-empleando un nivel de confianza del \(95\%\)
+empleando un nivel de confianza del $95\%$
 </p>
 <h3 data-toc-skip>
 Solución
@@ -347,11 +347,11 @@ la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de la varianza muestral \(S^2 = 230541.2\), el nivel de
-confianza \(1-\alpha=0.95\), los valores críticos
-\(\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233\) y
-\(\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516\) y el tamaño
-muestral \(n=20\). <br> <br> Al reemplazar dichos valores en el
+requiere de la varianza muestral $S^2 = 230541.2$, el nivel de
+confianza $1-\alpha=0.95$, los valores críticos
+$\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233$ y
+$\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516$ y el tamaño
+muestral $n=20$. <br> <br> Al reemplazar dichos valores en el
 intervalo de confianza, se tendrá que $$\begin{align*}
     \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}} &< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}} \\
     \frac{(20-1)230541.2}{32.85233}&< \sigma^2 <\frac{(20-1)230541.2}{8.906516} \\
@@ -365,9 +365,9 @@ $$\begin{align*}
   365.1472 &< \sigma <  701.2892\\
 \end{align*}$$
 
-De lo anterior, se podrá concluir con un nivel de confianza del \(95\%\)
+De lo anterior, se podrá concluir con un nivel de confianza del $95\%$
 que el verdadero valor para la desviación estándar de los costos de
-construcción de cualquier parque estará entre \(365.1472\) y
-\(701.2892\) millones de pesos.
+construcción de cualquier parque estará entre $365.1472$ y
+$701.2892$ millones de pesos.
 </p>
 </main>

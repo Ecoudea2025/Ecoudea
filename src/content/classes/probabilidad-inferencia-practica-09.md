@@ -22,7 +22,7 @@ bibliography: "../../referencias.bib"
     <tbody>
     <tr>
     <td style="text-align:center;">
-    Años, \(x\)
+    Años, $x$
     </td>
     <td style="text-align:left;">
     3
@@ -57,7 +57,7 @@ bibliography: "../../referencias.bib"
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
     0.03
@@ -98,11 +98,11 @@ bibliography: "../../referencias.bib"
     nuevos medicamentos.
     </li>
     <li>
-    Encuentre la función de distribución acumulada \(F(x)\).
+    Encuentre la función de distribución acumulada $F(x)$.
     </li>
     <li>
     Calcule la probabilidad de que el tiempo de vida en años de la
-    patente sea a lo más \(9\) años.
+    patente sea a lo más $9$ años.
     </li>
     </ol>
 2.  Sea `$X$` la variable aleatoria del número de clientes que llegan a
@@ -114,16 +114,16 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     <ol type="a">
     <li>
     Encuentre la función de masa de probabilidad de la variable
-    aleatoria \(X\).
+    aleatoria $X$.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X \gt  4.3)\).
+    Calcule la $\mathbb{P}(X \gt  4.3)$.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(3\leq X\leq 7)\).
+    Calcule la $\mathbb{P}(3\leq X\leq 7)$.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X=5)\).
+    Calcule la $\mathbb{P}(X=5)$.
     </li>
     <li>
     Calcule la media y desviación estándar del número de clientes que
@@ -136,16 +136,16 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro ca
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) para que \(f(x)\) sea una función de
+    Encuentre el valor de $k$ para que $f(x)$ sea una función de
     densidad de probabilidad bien definida.
     </li>
     <li>
-    Calcule la función de distribución acumulada \(F(x)\) y utilice el
-    resultado para calcular \(\mathbb{P}(0.24 \lt  X \lt  0.63)\).
+    Calcule la función de distribución acumulada $F(x)$ y utilice el
+    resultado para calcular $\mathbb{P}(0.24 \lt  X \lt  0.63)$.
     </li>
     <li>
     Calcule el valor promedio y desviación estándar de la variable
-    aleatoria \(X\).
+    aleatoria $X$.
     </li>
     </ol>
 4.  Suponga que el tiempo medido en unidades de `$100$` horas, en las
@@ -159,18 +159,18 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     <li>
     Pruebe si efectivamente es una función de densidad de probabilidad
     bien definida, de no serlo, multiplique la función por una constante
-    \(k\) que hace a \(p(x)\) estar bien definida.
+    $k$ que hace a $p(x)$ estar bien definida.
     </li>
     <li>
-    Calcule la función de distribución acumulada \(F(x)\).
+    Calcule la función de distribución acumulada $F(x)$.
     </li>
     <li>
     Calcule la probabilidad de que en un año una familia use la
-    licuadora entre \(65\) y \(100\) horas.
+    licuadora entre $65$ y $100$ horas.
     </li>
     <li>
     Calcule la media y la varianza del tiempo de uso de la licuadora,
-    medido en unidades de \(100\) horas.
+    medido en unidades de $100$ horas.
     </li>
     </ol>
 5.  El tiempo que pasa, en minutos, para que un radar detecte entre
@@ -185,10 +185,10 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     velocidad sea menor de `$12$` minutos
     <ol type="a">
     <li>
-    Usando la función de distribución acumulativa de \(X\).
+    Usando la función de distribución acumulativa de $X$.
     </li>
     <li>
-    Utilizando la función de densidad de probabilidad de \(X\).
+    Utilizando la función de densidad de probabilidad de $X$.
     </li>
     </ol>
 6.  Sea `$X$` una variable aleatoria continua que representa el tiempo,
@@ -199,22 +199,22 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
 
     <ol type="a">
     <li>
-    Verifique si \(f(x)\) es efectivamente una función de densidad de
+    Verifique si $f(x)$ es efectivamente una función de densidad de
     probabilidad.
     </li>
     <li>
-    Suponga que \(\theta = 100\). Cuál es la probabilidad de que el
-    hamster tarde a lo más de \(200\) minutos en superar el laberinto? y
-    cuál es la probabilidad de que tarde al menos \(200\) minutos?.
+    Suponga que $\theta = 100$. Cuál es la probabilidad de que el
+    hamster tarde a lo más de $200$ minutos en superar el laberinto? y
+    cuál es la probabilidad de que tarde al menos $200$ minutos?.
     </li>
     <li>
-    Suponga nuevamente que \(\theta = 100\). ¿Cuál es el valor esperado
+    Suponga nuevamente que $\theta = 100$. ¿Cuál es el valor esperado
     y varianza de del tiempo que tarda el hamster en superar el
     laberinto?.
     </li>
     <li>
     De una expresión para la función de confiabilidad
-    \(R(x) = \mathbb{P}(X \gt  x)\)?.
+    $R(x) = \mathbb{P}(X \gt  x)$?.
     </li>
     </ol>
 7.  Considere a `$X$` la variable aleatoria que representa la suma de
@@ -225,20 +225,20 @@ $$\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En ot
 
     <ol type="a">
     <li>
-    Compruebe si \(f(x)\) es es efectivamente una función de masa de
-    probabilidad bien definida. De no serlo, encuentre el valor \(k\)
-    que haría a \(f(x)\) bien definida.
+    Compruebe si $f(x)$ es es efectivamente una función de masa de
+    probabilidad bien definida. De no serlo, encuentre el valor $k$
+    que haría a $f(x)$ bien definida.
     </li>
     <li>
-    Calcule la función de distribución acumulada, \(F(x)\).
+    Calcule la función de distribución acumulada, $F(x)$.
     </li>
     <li>
     Calcule la probabilidad de que la suma de las caras se encuentren
-    entre \(5\) y \(9\) inclusive.
+    entre $5$ y $9$ inclusive.
     </li>
     <li>
     Calcule la probabilidad de que la suma de las caras sean mayores que
-    \(7\) o a lo más \(4\).
+    $7$ o a lo más $4$.
     </li>
     </ol>
 8.  El `$20\%$` de las inversiones realizadas por un experto en finanzas
@@ -276,11 +276,11 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
-    momento en que han entrado \(1\) llamada al conmutador?
+    momento en que han entrado $1$ llamada al conmutador?
     </li>
     <li>
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
-    momento en que han entrado \(3\) llamadas al conmutador?
+    momento en que han entrado $3$ llamadas al conmutador?
     $$\begin{align*}
     f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}} \quad x>0,\; \alpha>0, \;\beta>0
     \end{align*}
@@ -294,11 +294,11 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     distribución de Weibull(`$\alpha = 2.25, \beta = 2109.705$`).
     <ol type="a">
     <li>
-    Determine la probabilidad de que un cojinete dure más de \(1000\)
+    Determine la probabilidad de que un cojinete dure más de $1000$
     horas.
     </li>
     <li>
-    Determine la probabilidad de que un cojinete dure menos de \(2000\)
+    Determine la probabilidad de que un cojinete dure menos de $2000$
     horas.
     </li>
     <li>
@@ -306,7 +306,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     cojinete.
     </li>
     <li>
-    ¿Cuál es el riesgo en \(t = 2000\) horas?.
+    ¿Cuál es el riesgo en $t = 2000$ horas?.
     </li>
     </ol>
 13. El periodo de vida de una broca en una operación mecánica, en horas,
@@ -319,12 +319,12 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     aparezcan en la intersección.
     <ol type="a">
     <li>
-    Cuál es la probabilidad de que más de \(4\) automóviles aparezcan en
+    Cuál es la probabilidad de que más de $4$ automóviles aparezcan en
     la intersección durante cualquier minuto determinado.
     </li>
     <li>
     Cuál es la probabilidad de que transcurran más de 2 minutos antes de
-    que lleguen \(4\) autos.
+    que lleguen $4$ autos.
     </li>
     <li>
     Determine la media y desviación estándar del tiempo que transcurre
@@ -340,9 +340,9 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     cliente?.
     </li>
     <li>
-    Si en los \(10\) primeros minutos no ha llegado ningún cliente,
+    Si en los $10$ primeros minutos no ha llegado ningún cliente,
     ¿Cuál es la probabilidad de que llegue un cliente en los próximos
-    \(10\) minutos?.
+    $10$ minutos?.
     </li>
     </ol>
 16. Cada semestre se presentan miles de personas para ganar uno de los
@@ -354,11 +354,11 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     <li>
     ¿Cuál es la probabilidad de que una persona que se presenta a
     ingeniería industrial sea admitida si se tiene que el puntaje de
-    corte es de \(67.14\) puntos?.
+    corte es de $67.14$ puntos?.
     </li>
     <li>
-    Si se sabe que una persona sacó más de \(57.3\) puntos, ¿Cuál es la
-    probabilidad de que haya superado el puntaje de corte de \(67.14\)
+    Si se sabe que una persona sacó más de $57.3$ puntos, ¿Cuál es la
+    probabilidad de que haya superado el puntaje de corte de $67.14$
     puntos?.
     </li>
     </ol>
@@ -395,7 +395,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     <tbody>
     <tr>
     <td style="text-align:center;">
-    \(x\)
+    $x$
     </td>
     <td style="text-align:left;">
     1
@@ -415,7 +415,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
     0.31
@@ -453,10 +453,10 @@ $$\begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro cas
 
     <ol type="a">
     <li>
-    Calcule la esperanza de \(1/X\).
+    Calcule la esperanza de $1/X$.
     </li>
     <li>
-    Calcule la esperanza de \(2/X^2\)
+    Calcule la esperanza de $2/X^2$
     </li>
     </ol>
 24. Suponga que cierto tipo de pequeñas empresas de procesamiento de
@@ -469,11 +469,11 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
 
     <ol type="a">
     <li>
-    ¿Cuál es el valor de \(k\) que hace de la anterior una función de
+    ¿Cuál es el valor de $k$ que hace de la anterior una función de
     densidad válida?
     </li>
     <li>
-    Calcule la varianza de la variable aleatoria \(Z=3Y-4\).
+    Calcule la varianza de la variable aleatoria $Z=3Y-4$.
     </li>
     </ol>
 25. El tiempo que trabaja en horas un profesor normalmente, posee una
@@ -481,15 +481,15 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, un profesor
-    trabaje entre \(5\) y \(6\) horas?.
+    trabaje entre $5$ y $6$ horas?.
     </li>
     <li>
     Cuál es la media y la desviación estándar del tiempo en horas que
     trabaja una profesor en un día.
     </li>
     <li>
-    Si en un día un profesor ya ha trabajado \(5\) horas, cuál es la
-    probabilidad de que trabaje menos de \(3\) horas más?.
+    Si en un día un profesor ya ha trabajado $5$ horas, cuál es la
+    probabilidad de que trabaje menos de $3$ horas más?.
     </li>
     </ol>
 26. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
@@ -503,16 +503,16 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
 
     <ol type="a">
     <li>
-    Calcule la esperanza de la variable aleatoria \(Y\).
+    Calcule la esperanza de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la varianza de la variable aleatoria \(Y\).
+    Calcule la varianza de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la asimetría de la variable aleatoria \(Y\).
+    Calcule la asimetría de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la curtosis de la variable aleatoria \(Y\).
+    Calcule la curtosis de la variable aleatoria $Y$.
     </li>
     </ol>
 27. Unas partículas están suspendidas en un medio líquido con
@@ -520,15 +520,15 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     un volumen grande de la suspensión, y después se extrae `$3_{mL}$`.
     <ol type="a">
     <li>
-    ¿Cuál es la probabilidad de que sólo se retiren \(15\) partículas?
+    ¿Cuál es la probabilidad de que sólo se retiren $15$ partículas?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que se retiren menos de \(8\) o más de
-    \(18\) partículas?
+    ¿Cuál es la probabilidad de que se retiren menos de $8$ o más de
+    $18$ partículas?
     </li>
     <li>
     Cuál es el número promedio y desviación estándar de partículas que
-    se retirarían, si se extrae un total de \(4_{mL}\)?.
+    se retirarían, si se extrae un total de $4_{mL}$?.
     </li>
     </ol>
 28. Suponga que se tiene cierto tipo de tablero de circuitos que
@@ -539,7 +539,7 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     ¿Cuál es la probabilidad de que fallen exactamente dos diodos?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que fallen más de \(45\) diodos?
+    ¿Cuál es la probabilidad de que fallen más de $45$ diodos?
     </li>
     <li>
     ¿Cuál es la media del número de diodos que falla?
@@ -569,7 +569,7 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     `$10$` y de forma `$2$`.
     <ol type="a">
     <li>
-    Cuál es la probabilidad de que falle antes de \(8\) horas de uso?
+    Cuál es la probabilidad de que falle antes de $8$ horas de uso?
     </li>
     <li>
     Cómo es el comportamiento de su función de falla?
@@ -587,14 +587,14 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     definida.
     </li>
     <li>
-    Calcule la función de distribución acumulada de \(X\).
+    Calcule la función de distribución acumulada de $X$.
     </li>
     <li>
     Calcule el valor esperado y la varianza del tiempo que tarda un
     camión en cruzar debajo del puente de la madre Laura.
     </li>
     <li>
-    Calcule la probabilidad de que tarde más de \(2\) minutos, hasta que
+    Calcule la probabilidad de que tarde más de $2$ minutos, hasta que
     cruce un camión.
     </li>
     </ol>
@@ -603,7 +603,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     aleatoriamente `$30$` trabajadores de la empresa,
     <ol type="a">
     <li>
-    Cuál es la probabilidad de que al menos \(18\) pero menos de \(23\)
+    Cuál es la probabilidad de que al menos $18$ pero menos de $23$
     de los trabajadores, no sean mujeres cabeza de familia.
     </li>
     <li>
@@ -628,11 +628,11 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     </li>
     <li>
     Cuál es el tiempo de revisión de una motocicleta, si se sabe éste ha
-    superado el \(10\%\) de los tiempos de revisión.
+    superado el $10\%$ de los tiempos de revisión.
     </li>
     <li>
     Suponga que el costo de revisión de una motocicleta está dado por,
-    \(C = 250 + 15 X\). Calcule la varianza para el costo de revisión de
+    $C = 250 + 15 X$. Calcule la varianza para el costo de revisión de
     las motocicletas.
     </li>
     </ol>
@@ -662,7 +662,7 @@ $$\begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{ali
     <ol type="a">
     <li>
     Cuál es la probabilidad de que el tiempo que tarda una llamada en
-    entrar a un Call Center, se encuentre entre \(5\) y \(9\) minutos.
+    entrar a un Call Center, se encuentre entre $5$ y $9$ minutos.
     </li>
     <li>
     Calcule el tiempo promedio y desviación estándar, del tiempo que
@@ -682,14 +682,14 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 
     <ol type="a">
     <li>
     Calcule la probabilidad de que la vida útil que tiene una
-    computadora Hewlett-Packard se encuentre entre \(3.2\) y \(8.4\)
+    computadora Hewlett-Packard se encuentre entre $3.2$ y $8.4$
     años.
     </li>
     <li>
-    Calcule la función de distribución acumulada, \(F(x)\).
+    Calcule la función de distribución acumulada, $F(x)$.
     </li>
     <li>
-    De una expresión para la tasa de fallas, \(h(t)\), y evalúe como es
+    De una expresión para la tasa de fallas, $h(t)$, y evalúe como es
     su comportamiento a medida que pasa el tiempo.
     </li>
     </ol>
@@ -702,12 +702,12 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 
     un estudiante al azar
     <ol type="a">
     <li>
-    Cuál es el tiempo, en horas, que pasa el \(82%\) superior de los
+    Cuál es el tiempo, en horas, que pasa el $82%$ superior de los
     estudiantes frente a la computadora?.
     </li>
     <li>
-    Si se sabe que el estudiante pasa al menos \(3\) horas frente a la
-    computadora, Cuál es la probabilidad de que pase más de \(5\) horas
+    Si se sabe que el estudiante pasa al menos $3$ horas frente a la
+    computadora, Cuál es la probabilidad de que pase más de $5$ horas
     frente a ella?.
     </li>
     </ol>
@@ -720,11 +720,11 @@ $$\begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & 
     <ol type="a">
     <li>
     Construya una tabla para la función de masa de probabilidad
-    \((x, p(x))\), para \(x = 1, 2, 3, 4, 5\) y \(6\) o más.
+    $(x, p(x))$, para $x = 1, 2, 3, 4, 5$ y $6$ o más.
     </li>
     <li>
     Calcule la probabilidad de que el número de vehículos que llegan a
-    la esquina no sea superior a \(4\) vehículos.
+    la esquina no sea superior a $4$ vehículos.
     </li>
     </ol>
 40. Suponga que la distancia, en kilómetros, que recorre un atleta al
@@ -736,13 +736,13 @@ $$\begin{align*}f(x)=\begin{cases}x^3 & 2\leq x < 4 \\ (x - 2)^2 & 4 \leq x < 8\
     <ol type="a">
     <li>
     Verifique si la función de densidad de probabilidad está bien
-    definida, y de no estarlo, encuentre el valor de \(k\) para que
-    \(f(x)\) sea una función de densidad de probabilidad bien definida.
+    definida, y de no estarlo, encuentre el valor de $k$ para que
+    $f(x)$ sea una función de densidad de probabilidad bien definida.
     </li>
     <li>
-    Calcule la función de distribución acumulada \(F(x)\), y utilice el
+    Calcule la función de distribución acumulada $F(x)$, y utilice el
     resultado para calcular la probabilidad de que la distancia
-    recorrida por un atleta se encuentre entre \(3.3\) y \(5.6\)
+    recorrida por un atleta se encuentre entre $3.3$ y $5.6$
     kilómetros.
     </li>
     <li>

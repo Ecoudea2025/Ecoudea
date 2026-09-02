@@ -30,7 +30,7 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:center;">
-    Años, \(x\)
+    Años, $x$
     </td>
     <td style="text-align:left;">
     3
@@ -65,7 +65,7 @@ Lista de ejercicios
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(f(x)\)
+    $f(x)$
     </td>
     <td style="text-align:left;">
     0.03
@@ -107,7 +107,7 @@ Lista de ejercicios
     </li>
     <li>
     Encuentre la probabilidad de que el tiempo de vida real de las
-    patentes se encuentre al menos a \(1.5\) desviaciones estándar de la
+    patentes se encuentre al menos a $1.5$ desviaciones estándar de la
     vida real promedio, y compare este resultado con el obtenido con el
     teorema de Chebyshev.
     </li>
@@ -147,11 +147,11 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) que hace a la función de masa de
+    Calcule el valor $k$ que hace a la función de masa de
     probabilidad, una función de probabilidad bien definida.
     </li>
     <li>
-    Encuentre la correlación entre \(X\) y \(Z\) donde \(Z = 6X\).
+    Encuentre la correlación entre $X$ y $Z$ donde $Z = 6X$.
     </li>
     </ol>
 
@@ -161,7 +161,7 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
     <tbody>
     <tr>
     <td style="text-align:center;">
-    \(x\)
+    $x$
     </td>
     <td style="text-align:left;">
     1
@@ -181,7 +181,7 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(f(x)\)
+    $f(x)$
     </td>
     <td style="text-align:left;">
     0.31
@@ -216,10 +216,10 @@ $$\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
     <ol type="a">
     <li>
     Cuál es el número promedio de peras echadas a perder en la muestra
-    de \(15\)?.
+    de $15$?.
     </li>
     <li>
-    Si entre las \(15\) peras seleccionadas, ya han encontrado \(3\)
+    Si entre las $15$ peras seleccionadas, ya han encontrado $3$
     echadas a perder, ¿Cuál es la probabilidad de que no rechacen el
     pedido?.
     </li>
@@ -332,13 +332,13 @@ $$\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
     <li>
-    la media y varianza de \(X\) y \(Y\)
+    la media y varianza de $X$ y $Y$
     </li>
     <li>
-    el coeficiente de asimetría de \(X\) y \(Y\)
+    el coeficiente de asimetría de $X$ y $Y$
     </li>
     <li>
-    la correlación de \(3X\) y \(2Y\)
+    la correlación de $3X$ y $2Y$
     </li>
     </ol>
 
@@ -351,10 +351,10 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
 
     <ol type="a">
     <li>
-    Determine la esperanza condicional \(\mathbb{E}(Y | X)\)
+    Determine la esperanza condicional $\mathbb{E}(Y | X)$
     </li>
     <li>
-    Determine la esperanza condicional \(\mathbb{E}(X | Y)\)
+    Determine la esperanza condicional $\mathbb{E}(X | Y)$
     </li>
     </ol>
 
@@ -366,8 +366,8 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     ¿Cuál es el número esperado de fallas que tenga la impresora?
     </li>
     <li>
-    Si la impresora ya ha presentado al menos \(2\) fallas, ¿Cuál es la
-    probabilidad de que presente exactamente \(3\)?
+    Si la impresora ya ha presentado al menos $2$ fallas, ¿Cuál es la
+    probabilidad de que presente exactamente $3$?
     </li>
     </ol>
 
@@ -377,10 +377,10 @@ $$\begin{align*}f(x) =\begin{cases}\frac{3}{2}\sqrt{x}, & 0< x < 1\\ 0, & \text{
 
     <ol type="a">
     <li>
-    Calcule la esperanza de \(1/X\).
+    Calcule la esperanza de $1/X$.
     </li>
     <li>
-    Calcule la esperanza de \(2/X^2\)
+    Calcule la esperanza de $2/X^2$
     </li>
     </ol>
 
@@ -412,13 +412,13 @@ $$\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en 
     Calcule
     <ol type="a">
     <li>
-    la correlación de \(X\) y \(Y\).
+    la correlación de $X$ y $Y$.
     </li>
     <li>
-    la correlación de \(X\) y \(Z\).
+    la correlación de $X$ y $Z$.
     </li>
     <li>
-    la correlación de \(Y\) y \(Z\).
+    la correlación de $Y$ y $Z$.
     </li>
     </ol>
 
@@ -430,13 +430,13 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
 
     <ol type="a">
     <li>
-    Calcule la media y varianza de la variable aleatoria \(X\)
+    Calcule la media y varianza de la variable aleatoria $X$
     </li>
     <li>
-    Calcule la varianza de la variable aleatoria \(Y=2X+3\).
+    Calcule la varianza de la variable aleatoria $Y=2X+3$.
     </li>
     <li>
-    Calcule la covarianza entre \(X\) y \(Y\).
+    Calcule la covarianza entre $X$ y $Y$.
     </li>
     </ol>
 
@@ -456,14 +456,14 @@ $$\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
 
     <ol type="a">
     <li>
-    Calcule el valor promedio de la variable aleatoria \(X\).
+    Calcule el valor promedio de la variable aleatoria $X$.
     </li>
     <li>
-    Calcule la desviación estándar de la variable aleatoria \(X\).
+    Calcule la desviación estándar de la variable aleatoria $X$.
     </li>
     <li>
-    Encuentre la probabilidad de que la variable aleatoria \(X\), se
-    encuentre a lo más a \(1.5\) desviaciones estándar de su media y
+    Encuentre la probabilidad de que la variable aleatoria $X$, se
+    encuentre a lo más a $1.5$ desviaciones estándar de su media y
     compare el resultado obtenido con el teorema de Chebyshev.
     </li>
     </ol>
@@ -473,14 +473,14 @@ $$\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     consumidores escogidos al azar,
     <ol type="a">
     <li>
-    ¿Cuál es la probabilidad de que al menos \(5\) personas tengan que
+    ¿Cuál es la probabilidad de que al menos $5$ personas tengan que
     ser entrevistadas para hallar el primer consumidor que prefiera la
-    marca \(A\) de pasta dental?
+    marca $A$ de pasta dental?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que a lo más \(12\) personas tengan que
+    ¿Cuál es la probabilidad de que a lo más $12$ personas tengan que
     ser entrevistadas para hallar el tercer consumidor que prefiera la
-    marca \(A\) de pasta dental?
+    marca $A$ de pasta dental?
     </li>
     </ol>
 
@@ -494,7 +494,7 @@ $$\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     profesor hasta cometer un error?.
     </li>
     <li>
-    Calcule la desviación estándar de la variable aleatoria \(X\).
+    Calcule la desviación estándar de la variable aleatoria $X$.
     </li>
     <li>
     Si van 7 ejercicios y aún no se equivoca, ¿Cuál es la probabilidad
@@ -509,14 +509,14 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) que haga a \(f(x)\) una función densidad
+    Encuentre el valor de $k$ que haga a $f(x)$ una función densidad
     de probabilidad.
     </li>
     <li>
-    Calcule la media y la varianza de la variable aleatoria \(Y=X^2\).
+    Calcule la media y la varianza de la variable aleatoria $Y=X^2$.
     </li>
     <li>
-    Encuentre la probabilidad de que la variable aleatoria \(X\), se
+    Encuentre la probabilidad de que la variable aleatoria $X$, se
     encuentre a lo más a 2.3 desviaciones estándar de su media y compare
     el resultado obtenido con el teorema de Chebyshev.
     </li>
@@ -538,11 +538,11 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1,\\0 & \text{en ot
 
     <ol type="a">
     <li>
-    ¿Cuál es el valor de \(k\) que hace de la anterior una función de
+    ¿Cuál es el valor de $k$ que hace de la anterior una función de
     densidad válida?
     </li>
     <li>
-    Calcule la varianza de la variable aleatoria \(Z=3Y-4\).
+    Calcule la varianza de la variable aleatoria $Z=3Y-4$.
     </li>
     </ol>
 
@@ -552,11 +552,11 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1,\\0 & \text{en ot
     <ol type="a">
     <li>
     ¿Cuál es el número promedio y desviación estándar de clientes que
-    llegada donde pastora en \(2\) horas?
+    llegada donde pastora en $2$ horas?
     </li>
     <li>
     Encuentre la probabilidad de que el número de clientes que llegan
-    donde pastora en \(2\) horas, se encuentre al menos a \(2\)
+    donde pastora en $2$ horas, se encuentre al menos a $2$
     desviaciones estándar de su media y compare el resultado obtenido
     con el teorema de Chebyshev.
     </li>
@@ -591,10 +591,10 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
 
     <ol type="a">
     <li>
-    Calcule la esperanza de \(Z = 3Y - 2X\)
+    Calcule la esperanza de $Z = 3Y - 2X$
     </li>
     <li>
-    Calcule la varianza de \(Z\)
+    Calcule la varianza de $Z$
     </li>
     </ol>
 
@@ -604,11 +604,11 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, un profesor
-    tome entre \(5\) y \(6\) vasos, inclusive?.
+    tome entre $5$ y $6$ vasos, inclusive?.
     </li>
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, el número de
-    tintos que toma un profesor se encuentre a más de \(1.2\)
+    tintos que toma un profesor se encuentre a más de $1.2$
     desviaciones estándar de la media? Compare el resultado con el
     obtenido mediante el teorema de Chebyshev.
     </li>
@@ -621,11 +621,11 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) que hace que la función de densidad de
+    Calcule el valor $k$ que hace que la función de densidad de
     probabilidad conjunta esté bien definida.
     </li>
     <li>
-    Calcule \(\mathbb{E}(X |Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)\)
+    Calcule $\mathbb{E}(X |Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)$
     </li>
     </ol>
 
@@ -636,7 +636,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
     iniciativa.
     <ol type="a">
     <li>
-    ¿Cuál es la probabilidad de que entre \(30\) y \(40\) votantes,
+    ¿Cuál es la probabilidad de que entre $30$ y $40$ votantes,
     inclusive, estén a favor de dicha iniciativa?.
     </li>
     <li>
@@ -675,16 +675,16 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
 
     <ol type="a">
     <li>
-    Calcule la esperanza de la variable aleatoria \(Y\).
+    Calcule la esperanza de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la varianza de la variable aleatoria \(Y\).
+    Calcule la varianza de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la asimetría de la variable aleatoria \(Y\).
+    Calcule la asimetría de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la curtosis de la variable aleatoria \(Y\).
+    Calcule la curtosis de la variable aleatoria $Y$.
     </li>
     </ol>
 
@@ -696,9 +696,9 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
 
     <ol type="a">
     <li>
-    Calcule la esperanza de \(X\).
+    Calcule la esperanza de $X$.
     </li>
     <li>
-    Calcule la esperanza de \(Y=\sqrt{3X}\).
+    Calcule la esperanza de $Y=\sqrt{3X}$.
     </li>
     </ol>

@@ -157,7 +157,7 @@ $$\begin{align*}\mathbb{E}(Y_t)=\mu_t = \mu \text{ para todo } t=1,2,\ldots T\en
     
 $$\begin{align*}Var(Y_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,\ldots T\end{align*}$$
 
-3.  La autocovarianza sólo depende de la distancia \(k\) de las
+3.  La autocovarianza sólo depende de la distancia $k$ de las
     observaciones en el tiempo de las variables del proceso
     
 $$\begin{align*}Cov(Y_t, Y_{t+k})=\gamma(k)= Cov(Y_{t-k}, Y_{t})=\gamma(-k)\end{align*}$$
@@ -179,16 +179,16 @@ consistentes a los parámetros reales, a medida que aumenta el total de
 datos.
 <ol type="a">
 <li>
-\(\lim_{T\to\infty} \hat{\mu} = \mu\) donde
-\(\hat{\mu} = \frac{1}{T}\sum_{t=1}^Ty_t\)
+$\lim_{T\to\infty} \hat{\mu} = \mu$ donde
+$\hat{\mu} = \frac{1}{T}\sum_{t=1}^Ty_t$
 </li>
 <li>
-\(\lim_{T\to\infty} \hat{\sigma}^2 = \sigma^2\) donde
-\(\hat{\sigma}^2 = \frac{1}{T-1}\sum_{t=1}^{T}(y_t-\hat{\mu})^2\)
+$\lim_{T\to\infty} \hat{\sigma}^2 = \sigma^2$ donde
+$\hat{\sigma}^2 = \frac{1}{T-1}\sum_{t=1}^{T}(y_t-\hat{\mu})^2$
 </li>
 <li>
-\(\lim_{T\to\infty} \hat{\gamma}(k) = \gamma(k)\) donde
-\(\hat{\gamma}(k) = \frac{1}{T-1}\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})\)
+$\lim_{T\to\infty} \hat{\gamma}(k) = \gamma(k)$ donde
+$\hat{\gamma}(k) = \frac{1}{T-1}\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})$
 </li>
 </ol>
 

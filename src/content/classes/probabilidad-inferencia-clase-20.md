@@ -176,7 +176,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el coeficiente de asimetría de las notas obtenidas por los
-\(10\) estudiantes, en el primer y cuarto parcial del curso de
+$10$ estudiantes, en el primer y cuarto parcial del curso de
 Estadística I de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -185,8 +185,8 @@ Solución Manual
 <p>
 
 El coeficiente de asimetría asociado a la nota de los estudiantes del
-curso de Estadística I, para los parciales \(1\) y \(4\), depende del
-valor promedio \(\bar{X}\) y la desviación estándar \(S\). Por tanto al
+curso de Estadística I, para los parciales $1$ y $4$, depende del
+valor promedio $\bar{X}$ y la desviación estándar $S$. Por tanto al
 emplear los valores ya calculados en
 <a href="https://jiperezga.github.io/ProbabilidadeInferencia/PeIEClase04.html#media" target="\_blank">Clase
 04</a> y
@@ -200,7 +200,7 @@ $$\begin{align*}
   \gamma_{1,P_4} &= \frac{1}{10}\left[\frac{(1.8 - 3.14)^3 + (4.7 - 3.14)^3 + \ldots + (2.0 - 3.14)^3}{1.273839^3}\right] \\
                  &= -0.536286
 \end{align*}$$ De lo anterior se observa que en ambos casos el
-coeficiente de asimetría es menor que \(0\), lo cual significa que las
+coeficiente de asimetría es menor que $0$, lo cual significa que las
 notas obtenidas en los dos parciales posee una asimetría negativa, es
 decir, las notas obtenidas por los estudiantes se encuentran agrupadas
 en la parte derecha, y en consecuencia, se tiene que algunos (pocos)
@@ -225,7 +225,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el coeficiente de asimetría de las notas obtenidas por los
-\(10\) estudiantes, en el primer y cuarto parcial del curso de
+$10$ estudiantes, en el primer y cuarto parcial del curso de
 Estadística I en <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -233,8 +233,8 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo del coeficiente de asimetría, para la nota
-obtenida por los estudiantes de Estadística I en los los parciales \(1\)
-y \(4\), se emplea la función <code>skewness()</code> de la librería
+obtenida por los estudiantes de Estadística I en los los parciales $1$
+y $4$, se emplea la función <code>skewness()</code> de la librería
 <code>e1071</code> de <tt>R</tt>, tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -312,7 +312,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el coeficiente de exceso de curtosis de las notas obtenidas por
-los \(10\) estudiantes, en el primer y cuarto parcial del curso de
+los $10$ estudiantes, en el primer y cuarto parcial del curso de
 Estadística I, de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -321,8 +321,8 @@ Solución Manual
 <p>
 
 Similar al coeficiente de asimetría, el coeficiente de exceso de
-curtosis depende del valor promedio \(\bar{X}\) y la desviación estándar
-\(S\), de los parciales \(1\) y \(4\) del curso de Estadística I. Por
+curtosis depende del valor promedio $\bar{X}$ y la desviación estándar
+$S$, de los parciales $1$ y $4$ del curso de Estadística I. Por
 tanto al emplear los valores ya calculados en
 <a href="https://jiperezga.github.io/ProbabilidadeInferencia/PeIEClase04.html#media" target="\_blank">Clase
 04</a> y
@@ -338,7 +338,7 @@ $$\begin{align*}
 \end{align*}$$
 
 A partir de los valores calculados, se observa que en ambos casos, los
-coeficientes de exceso de curtoris es menor que \(0\), y por tanto, se
+coeficientes de exceso de curtoris es menor que $0$, y por tanto, se
 puede concluir que las notas de los estudiantes posee un comportamiento
 platicúrtico, es decir, las notas obtenidas por los estudiantes en el
 curso de Estadística I, poseen un comportamiento relativamente uniforme,
@@ -357,7 +357,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el coeficiente de exceso de curtosis de las notas obtenidas por
-los \(10\) estudiantes, en el primer y cuarto parcial del curso de
+los $10$ estudiantes, en el primer y cuarto parcial del curso de
 Estadística I en <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -366,7 +366,7 @@ Solución en <tt>R</tt>
 <p>
 Para realizar el cálculo del coeficiente de exceso de curtosis, para la
 nota obtenida por los estudiantes de Estadística I en los los parciales
-\(1\) y \(4\), se emplea la función <code>kurtosis()</code> de la
+$1$ y $4$, se emplea la función <code>kurtosis()</code> de la
 librería <code>e1071</code> de <tt>R</tt>, tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -440,7 +440,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el covarianza que hay entre las notas obtenidas en el primer
-parcial y el cuarto parcial, por los \(10\) estudiantes que vieron el
+parcial y el cuarto parcial, por los $10$ estudiantes que vieron el
 curso de Estadística I de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -451,11 +451,11 @@ Solución Manual
 A diferencia de las anteriores medidas, el coeficiente de covarianza
 buscar observar si existe o no una dependencia lineal entre dos grupos
 de observaciones. Para ello, se emplean los valores promedio
-\(\bar{X}_{P1}\) y \(\bar{X}_{P4}\) obtenido en la clase
+$\bar{X}_{P1}$ y $\bar{X}_{P4}$ obtenido en la clase
 <a href="https://jiperezga.github.io/ProbabilidadeInferencia/PeIEClase04.html#media" target="\_blank">Clase
 04</a> para ambos parciales, y con éstos se busca comparar si hay una
-relación entre las notas obtenidas en el parcial \(1\) y el parcial
-\(4\), tal que
+relación entre las notas obtenidas en el parcial $1$ y el parcial
+$4$, tal que
 
 $$\begin{align*}
   S_{P_1P_4} &= \frac{1}{10}\left[(2.7-2.75)(1.8-3.14) + \ldots + (2.1 - 2.75)(2.0 - 3.14)\right] \\ 
@@ -463,7 +463,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Dado que del coeficiente de covarianza, solo es posible interpretar el
-signo o cuando el valor está muy cercano a \(0\), se concluye entonces
+signo o cuando el valor está muy cercano a $0$, se concluye entonces
 que existe una relación lineal positiva entre la nota obtenida en el
 primer parcial y el cuarto parcial.
 </p>
@@ -480,7 +480,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el covarianza que hay entre las notas obtenidas en el primer
-parcial y el cuarto parcial, por los \(10\) estudiantes que vieron el
+parcial y el cuarto parcial, por los $10$ estudiantes que vieron el
 curso de Estadística I en <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -488,7 +488,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para calcular la covarianza de la nota obtenida por los estudiantes de
-Estadística I en los los parciales \(1\) y \(4\), se emplea la función
+Estadística I en los los parciales $1$ y $4$, se emplea la función
 <code>cov()</code> de <tt>R</tt>, tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -561,7 +561,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule la correlación que hay entre las notas obtenidas en el primer
-parcial y el cuarto parcial, por los \(10\) estudiantes que vieron el
+parcial y el cuarto parcial, por los $10$ estudiantes que vieron el
 curso de Estadística I de forma manual.
 </p>
 <h3 data-toc-skip>
@@ -573,7 +573,7 @@ Similar al coeficiente de covarianza, el coeficiente de correlación
 buscar si existe o no una dependencia lineal entre dos grupos de
 observaciones, pero a diferencia de éste, el coeficiente de correlación
 muestra la fuerza de dicha relación. Por tanto, para realizar el cálculo
-de la correlación entre los parciales \(1\) y \(4\), se emplea el
+de la correlación entre los parciales $1$ y $4$, se emplea el
 coeficiente de covarianza y las desviaciones estándar calculadas
 anteriormente en esta misma clase, tal que
 
@@ -581,7 +581,7 @@ $$\begin{align*}
   \rho_{xy} = \frac{0.2655556}{(0.7121954)(1.273839)} = 0.2927127
 \end{align*}$$ Del resultado anterior se concluye, que hay existe una
 correlación débil entre las notas obtenidas por los estudiantes en el
-parcial \(1\) y el parcial \(4\), del curso de Estadística 1.
+parcial $1$ y el parcial $4$, del curso de Estadística 1.
 </p>
 </main>
 <button id="Show8" class="btn btn-secondary">
@@ -596,7 +596,7 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule la correlación que hay entre las notas obtenidas en el primer
-parcial y el cuarto parcial, por los \(10\) estudiantes que vieron el
+parcial y el cuarto parcial, por los $10$ estudiantes que vieron el
 curso de Estadística I en <tt>R</tt>.
 </p>
 <h3 data-toc-skip>
@@ -604,7 +604,7 @@ Solución en <tt>R</tt>
 </h3>
 <p>
 Para calcular la correlación de la nota obtenida por los estudiantes de
-Estadística I en los los parciales \(1\) y \(4\), se emplea la función
+Estadística I en los los parciales $1$ y $4$, se emplea la función
 <code>cor()</code> del programa <tt>R</tt>, tal que
 </p>
 <section class="language-r highlighter-rouge">

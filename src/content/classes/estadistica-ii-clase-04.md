@@ -35,10 +35,10 @@ siguientes casos de estudio.
 <strong>Caso 1 (Diseño experimental controlado)</strong>: Se realiza un
 estudio en un supermercado para observar la relación existente entre el
 espacio asignado para la exhibición de licores y las ventas semanales de
-licores que se realizan. Suponga que durante \(15\) semanas se decide
+licores que se realizan. Suponga que durante $15$ semanas se decide
 distribuir de forma aleatoria el espacio disponible para la exhibición,
-usando como referencia el número de estanterías iguales a \(3\), \(5\) y
-\(7\). Los resultados para las \(15\) semanas se registran a
+usando como referencia el número de estanterías iguales a $3$, $5$ y
+$7$. Los resultados para las $15$ semanas se registran a
 continuación.
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -185,11 +185,11 @@ los licores y las ventas semanales.
 </li>
 <li>
 Hacer la estimación de las ventas semanales cuando se asigna un espacio
-para exhibición de licor de \(7\) estanterías.
+para exhibición de licor de $7$ estanterías.
 </li>
 <li>
 Predecir el valor de las ventas semanales si para la semana siguiente se
-asigna un espacio de \(4\) estanterías para exhibir licor.
+asigna un espacio de $4$ estanterías para exhibir licor.
 </li>
 </ul>
 </li>
@@ -199,7 +199,7 @@ asigna un espacio de \(4\) estanterías para exhibir licor.
 socioeconómica de proyectos quiere observar si hay una relación entre el
 gasto en campañas publicitarias y las donaciones recibidas para la
 construcción de parques y bibliotecas para sectores de la población con
-bajos recursos. Para realizar el estudio se toma como referencia \(10\)
+bajos recursos. Para realizar el estudio se toma como referencia $10$
 meses en los cuales hicieron gastos en publicidad y obtuvieron los
 siguientes datos en millones de pesos
 
@@ -307,7 +307,7 @@ función del gasto en publicidad.
 </li>
 <li>
 Predecir el valor de las donaciones realizadas en caso de gastar en
-publicidad \(53\) millones de pesos.
+publicidad $53$ millones de pesos.
 </li>
 </ul>
 </li>
@@ -315,7 +315,7 @@ publicidad \(53\) millones de pesos.
 
 <strong>Caso 3 (Datos Históricos)</strong>: Un perito desea determinar
 si existe alguna relación entre el costo de una propiedad y el valor
-registrado en el predial. Para ello selecciona \(10\) propiedades de una
+registrado en el predial. Para ello selecciona $10$ propiedades de una
 base de datos y registra el valor de la propiedad para verificar el
 valor registrado en el predial obteniendo los siguientes resultados en
 millones de pesos
@@ -420,11 +420,11 @@ propiedad en función del valor del predial
 </li>
 <li>
 Predecir el valor de una propiedad cuyo valor en el predial es de
-\(180\) millones de pesos.
+$180$ millones de pesos.
 </li>
 </ul>
 <strong>Nota:</strong> Note que en este último caso, el costo de la
-propiedad \(Y\), puede estar determinada por otras variables además del
+propiedad $Y$, puede estar determinada por otras variables además del
 predial, pero inicialmente solo nos concentraremos en la relación lineal
 entre el costo y el predial.
 </li>
@@ -535,9 +535,9 @@ $$\begin{align*}
 \end{align*}$$
 
 Ahora, para encontrar los estimadores que maximizan la función
-\(\ell(\cdot)\), se deriva parcialmente la función de log-verosimilitud
+$\ell(\cdot)$, se deriva parcialmente la función de log-verosimilitud
 respecto a cada uno de los parámetros y se iguala a cero. Derivando
-inicialmente respecto a \(\beta_0\) se tiene
+inicialmente respecto a $\beta_0$ se tiene
 
 $$\begin{align*}
   \frac{\partial \ell}{\partial \beta_0} = \frac{1}{\sigma^2}\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0
@@ -556,7 +556,7 @@ $$\begin{align*}
   \hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
 \end{align*}$$
 
-Derivando ahora respecto a \(\beta_1\) se tiene
+Derivando ahora respecto a $\beta_1$ se tiene
 
 $$\begin{align*}
   \frac{\partial \ell}{\partial \beta_1} = \frac{1}{\sigma^2}\sum_{i=1}^n x_i(y_i - \beta_0 - \beta_1 x_i) = 0
@@ -568,7 +568,7 @@ $$\begin{align*}
   \sum_{i=1}^n x_iy_i - \hat{\beta}_0\sum_{i=1}^n x_i - \hat{\beta}_1\sum_{i=1}^n x_i^2 = 0
 \end{align*}$$
 
-y al reemplazar \(\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}\) en la
+y al reemplazar $\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}$ en la
 expresión anterior
 
 $$\begin{align*}
@@ -577,9 +577,9 @@ $$\begin{align*}
 \end{align*}$$
 
 Entonces, recordando que
-\(S_{xy}=\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y}) = \sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y}\)
+$S_{xy}=\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y}) = \sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y}$
 y que
-\(S_{xx}=\sum_{i=1}^{n}(x_i - \bar{X})^2 = \sum_{i=1}^n x_i^2 - n\bar{X}^2\),
+$S_{xx}=\sum_{i=1}^{n}(x_i - \bar{X})^2 = \sum_{i=1}^n x_i^2 - n\bar{X}^2$,
 se concluye que
 
 $$\begin{align*}
@@ -587,14 +587,14 @@ $$\begin{align*}
 \end{align*}$$
 
 Finalmente, derivando la función de log-verosimilitud respecto a
-\(\sigma^2\) se tiene
+$\sigma^2$ se tiene
 
 $$\begin{align*}
   \frac{\partial \ell}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2\sigma^4}\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2 = 0
 \end{align*}$$
 
-y al multiplicar ambos lados de la igualdad por \(2\hat{\sigma}^4\) y
-evaluar en \(\hat{\beta}_0\) y \(\hat{\beta}_1\) se obtiene
+y al multiplicar ambos lados de la igualdad por $2\hat{\sigma}^4$ y
+evaluar en $\hat{\beta}_0$ y $\hat{\beta}_1$ se obtiene
 
 $$\begin{align*}
   -n\hat{\sigma}^2 + \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2 = 0
@@ -674,17 +674,17 @@ Demostración
 </h3>
 <p>
 
-Para encontrar los valores de \(\hat{\beta}_0\) y \(\hat{\beta}_1\) que
+Para encontrar los valores de $\hat{\beta}_0$ y $\hat{\beta}_1$ que
 minimizan la suma de los cuadrados de los errores, se deriva
-parcialmente la función \(SCE\) respecto a cada uno de los estimadores y
-se iguala a cero. Derivando inicialmente respecto a \(\hat{\beta}_0\) se
+parcialmente la función $SCE$ respecto a cada uno de los estimadores y
+se iguala a cero. Derivando inicialmente respecto a $\hat{\beta}_0$ se
 tiene
 
 $$\begin{align*}
   \frac{\partial SCE}{\partial \hat{\beta}_0} = -2\sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i) = 0
 \end{align*}$$
 
-mientras que al derivar respecto a \(\hat{\beta}_1\) se tiene
+mientras que al derivar respecto a $\hat{\beta}_1$ se tiene
 
 $$\begin{align*}
   \frac{\partial SCE}{\partial \hat{\beta}_1} = -2\sum_{i=1}^n x_i(y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i) = 0
@@ -698,7 +698,7 @@ $$\begin{align*}
   \hat{\beta}_0\sum_{i=1}^n x_i + \hat{\beta}_1\sum_{i=1}^n x_i^2 &= \sum_{i=1}^n x_iy_i
 \end{align*}$$
 
-De la primera ecuación normal, al dividir ambos lados por \(n\), se
+De la primera ecuación normal, al dividir ambos lados por $n$, se
 obtiene directamente que
 
 $$\begin{align*}
@@ -734,11 +734,11 @@ $$\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \
 
 <ul>
 <li>
-Los estimadores para \(\beta_0\) y \(\beta_1\) coinciden tanto para el
+Los estimadores para $\beta_0$ y $\beta_1$ coinciden tanto para el
 método de máxima verosimilitud cómo para el método de mínimos cuadrados.
 </li>
 <li>
-Observe que los estimadores \(\hat{\beta}_0\) y \(\hat{\beta}_1\) pueden
+Observe que los estimadores $\hat{\beta}_0$ y $\hat{\beta}_1$ pueden
 ser reescritos como
 </li>
 </ul>
@@ -752,40 +752,40 @@ $$\begin{align*}\hat{\beta}_1 &= \sum_{i=1}^{n} y_ic_i \qquad \text{ donde } c_i
 Además, se puede probar que
 <ul>
 <li>
-\(\sum_{i=1}^{n}c_i=0\)
+$\sum_{i=1}^{n}c_i=0$
 </li>
 <li>
-\(\sum_{i=1}^{n}d_i=1\)
+$\sum_{i=1}^{n}d_i=1$
 </li>
 <li>
-\(\sum_{i=1}^{n}c_ix_i=1\)
+$\sum_{i=1}^{n}c_ix_i=1$
 </li>
 <li>
-\(\sum_{i=1}^{n}d_ix_i=0\)
+$\sum_{i=1}^{n}d_ix_i=0$
 </li>
 <li>
-\(\sum_{i=1}^{n}c_i^2=\frac{1}{\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{1}{S_{xx}}\)
+$\sum_{i=1}^{n}c_i^2=\frac{1}{\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{1}{S_{xx}}$
 </li>
 <li>
-\(\sum_{i=1}^{n}d_i^2=\frac{\sum_{i=1}^{n}x_i^2}{n\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{\sum_{i=1}^{n}x_i^2}{nS_{xx}} = \frac{S_{xx} + n\bar{X}^2}{nS_{xx}} = \frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\)
+$\sum_{i=1}^{n}d_i^2=\frac{\sum_{i=1}^{n}x_i^2}{n\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{\sum_{i=1}^{n}x_i^2}{nS_{xx}} = \frac{S_{xx} + n\bar{X}^2}{nS_{xx}} = \frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}$
 </li>
 </ul>
 </li>
 <li>
 Basado en estas condiciones, se presentan algunas propiedades que
-cumplen los estimadores \(\hat{\beta}_0, \hat{\beta}_1\).
+cumplen los estimadores $\hat{\beta}_0, \hat{\beta}_1$.
 <ul>
 <li>
-\(\mathbb{E}(\hat{\beta}_0) = \beta_0\)
+$\mathbb{E}(\hat{\beta}_0) = \beta_0$
 </li>
 <li>
-\(\mathbb{E}(\hat{\beta}_1) = \beta_1\)
+$\mathbb{E}(\hat{\beta}_1) = \beta_1$
 </li>
 <li>
-\(Var(\hat{\beta}_0) = \sigma^2 \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\)
+$Var(\hat{\beta}_0) = \sigma^2 \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]$
 </li>
 <li>
-\(Var(\hat{\beta}_1) = \frac{1}{S_{xx}}\sigma^2\)
+$Var(\hat{\beta}_1) = \frac{1}{S_{xx}}\sigma^2$
 </li>
 </ul>
 </li>
@@ -802,23 +802,23 @@ Demostración
 </h3>
 <p>
 Para la demostración de las cuatro propiedades se emplearán las formas
-lineales \(\hat{\beta}_1 = \sum_{i=1}^{n} c_iy_i\) y
-\(\hat{\beta}_0 = \sum_{i=1}^{n} d_iy_i\), junto con los resultados
-\(\sum_{i=1}^{n}c_i=0\), \(\sum_{i=1}^{n}c_ix_i=1\),
-\(\sum_{i=1}^{n}c_i^2=\frac{1}{S_{xx}}\) y
-\(\sum_{i=1}^{n}d_i^2=\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\), además
+lineales $\hat{\beta}_1 = \sum_{i=1}^{n} c_iy_i$ y
+$\hat{\beta}_0 = \sum_{i=1}^{n} d_iy_i$, junto con los resultados
+$\sum_{i=1}^{n}c_i=0$, $\sum_{i=1}^{n}c_ix_i=1$,
+$\sum_{i=1}^{n}c_i^2=\frac{1}{S_{xx}}$ y
+$\sum_{i=1}^{n}d_i^2=\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}$, además
 de recordar que bajo los supuestos del modelo
-\(\mathbb{E}(y_i)=\beta_0+\beta_1x_i\), \(Var(y_i)=\sigma^2\) y que las
-observaciones \(y_i\) son independientes entre sí.
+$\mathbb{E}(y_i)=\beta_0+\beta_1x_i$, $Var(y_i)=\sigma^2$ y que las
+observaciones $y_i$ son independientes entre sí.
 </p>
 <h4 data-toc-skip>
-Demostración Esperanza de \(\hat{\beta}_1\)
+Demostración Esperanza de $\hat{\beta}_1$
 </h4>
 <p>
 
-Dado que los \(c_i\) son constantes (ya que dependen únicamente de los
-valores \(x_i\)), al aplicar el operador esperanza sobre
-\(\hat{\beta}_1\) se tiene
+Dado que los $c_i$ son constantes (ya que dependen únicamente de los
+valores $x_i$), al aplicar el operador esperanza sobre
+$\hat{\beta}_1$ se tiene
 
 $$\begin{align*}
   \mathbb{E}(\hat{\beta}_1) &= \mathbb{E}\left(\sum_{i=1}^{n} c_iy_i\right) = \sum_{i=1}^{n} c_i\mathbb{E}(y_i) = \sum_{i=1}^{n} c_i(\beta_0 + \beta_1x_i)\\
@@ -828,13 +828,13 @@ $$\begin{align*}
 \end{align*}$$
 </p>
 <h4 data-toc-skip>
-Demostración Esperanza de \(\hat{\beta}_0\)
+Demostración Esperanza de $\hat{\beta}_0$
 </h4>
 <p>
 
-Empleando la definición \(\hat{\beta}_0=\bar{Y} - \hat{\beta}_1\bar{X}\)
+Empleando la definición $\hat{\beta}_0=\bar{Y} - \hat{\beta}_1\bar{X}$
 junto con el resultado anterior, y notando que
-\(\mathbb{E}(\bar{Y}) = \frac{1}{n}\sum_{i=1}^{n}\mathbb{E}(y_i) = \frac{1}{n}\sum_{i=1}^{n}(\beta_0 + \beta_1x_i) = \beta_0 + \beta_1\bar{X}\),
+$\mathbb{E}(\bar{Y}) = \frac{1}{n}\sum_{i=1}^{n}\mathbb{E}(y_i) = \frac{1}{n}\sum_{i=1}^{n}(\beta_0 + \beta_1x_i) = \beta_0 + \beta_1\bar{X}$,
 se tiene
 
 $$\begin{align*}
@@ -844,11 +844,11 @@ $$\begin{align*}
 \end{align*}$$
 </p>
 <h4 data-toc-skip>
-Demostración Varianza de \(\hat{\beta}_1\)
+Demostración Varianza de $\hat{\beta}_1$
 </h4>
 <p>
 
-Dado que las observaciones \(y_i\) son independientes, la varianza de la
+Dado que las observaciones $y_i$ son independientes, la varianza de la
 suma es la suma de las varianzas, y por tanto
 
 $$\begin{align*}
@@ -860,20 +860,20 @@ $$\begin{align*}
 \end{align*}$$
 </p>
 <h4 data-toc-skip>
-Demostración Varianza de \(\hat{\beta}_0\)
+Demostración Varianza de $\hat{\beta}_0$
 </h4>
 <p>
 
 De forma análoga al caso anterior, empleando la forma lineal
-\(\hat{\beta}_0 = \sum_{i=1}^{n} d_iy_i\) y la independencia de las
+$\hat{\beta}_0 = \sum_{i=1}^{n} d_iy_i$ y la independencia de las
 observaciones, se tiene
 
 $$\begin{align*}
   Var(\hat{\beta}_0) &= Var\left(\sum_{i=1}^{n} d_iy_i\right) = \sum_{i=1}^{n} d_i^2Var(y_i) = \sigma^2\sum_{i=1}^{n} d_i^2
 \end{align*}$$
 
-donde, al desarrollar la suma \(\sum_{i=1}^{n} d_i^2\) empleando la
-definición \(d_i = \frac{1}{n} - c_i\bar{X}\), se obtiene
+donde, al desarrollar la suma $\sum_{i=1}^{n} d_i^2$ empleando la
+definición $d_i = \frac{1}{n} - c_i\bar{X}$, se obtiene
 
 $$\begin{align*}
   \sum_{i=1}^{n} d_i^2 &= \sum_{i=1}^{n} \left(\frac{1}{n} - c_i\bar{X}\right)^2 = \sum_{i=1}^{n} \left(\frac{1}{n^2} - \frac{2c_i\bar{X}}{n} + c_i^2\bar{X}^2\right)\\

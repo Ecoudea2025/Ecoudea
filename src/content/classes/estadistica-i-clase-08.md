@@ -38,7 +38,7 @@ Ejemplo
 </h3>
 <p>
 Los siguientes, son algunos ejemplos de casos que pueden considerarse
-como Procesos Bernoulli, debido a que cumplen las \(4\) condiciones
+como Procesos Bernoulli, debido a que cumplen las $4$ condiciones
 propuestas anteriormente.
 </p>
 <ul>
@@ -88,7 +88,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que en un estudio se encontró que \(2\) de cada \(5\)
+Suponga que en un estudio se encontró que $2$ de cada $5$
 estudiantes no desea tomar clases virtuales. Si se selecciona
 aleatoriamente un estudiante, cuál es la probabilidad de que éste desee
 tomar clases virtuales, y determine su media y desviación estándar.
@@ -98,10 +98,10 @@ Solución
 </h3>
 <p>
 
-En este caso estamos interesados en la variable \(X\), que representa el
+En este caso estamos interesados en la variable $X$, que representa el
 número de estudiantes que desean tomar clases virtuales, en donde
-sabemos que si, \(2\) de cada \(5\) no quieren tomar clases virtuales,
-entonces se tendrá que \(3\) de cada \(5\) si desean tomar clases
+sabemos que si, $2$ de cada $5$ no quieren tomar clases virtuales,
+entonces se tendrá que $3$ de cada $5$ si desean tomar clases
 virtuales. Por tanto al aplicar la definición de frecuencia relativa se
 tiene que
 
@@ -109,7 +109,7 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5} \\
   &= 0.6
-\end{align*}$$ siendo \(p\) la probabilidad de que un estudiante desee
+\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 
 Ahora, la probabilidad de que se seleccione un estudiante al azar, y
@@ -121,7 +121,7 @@ Ahora, la probabilidad de que se seleccione un estudiante al azar, y
 \end{align*}$$
 
 es decir, que la probabilidad de que el estudiante seleccionado desee
-tomar clases virtuales será del \(60\%\).
+tomar clases virtuales será del $60\%$.
 
 Ahora, para calcular la desviación estándar se requiere calcular
 inicialmente la varianza de la variable aleatoria, la cual está dada por
@@ -137,12 +137,12 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.24} \\
       &= 0.4898979
 \end{align*}$$ Entonces, como el valor esperado de un proceso Bernoulli
-es igual a \(p\), esto es $$\begin{align*}
+es igual a $p$, esto es $$\begin{align*}
 \mathbb{E}(X) &= p \\
               &= 0.6
 \end{align*}$$ Por tanto, al seleccionar un solo estudiante, se espera
-que \(0.6\) estudiantes respondan que desean tomar clases virtuales, con
-una desviación estándar de \(0.489\).
+que $0.6$ estudiantes respondan que desean tomar clases virtuales, con
+una desviación estándar de $0.489$.
 </p>
 </main>
 
@@ -178,16 +178,16 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que en un estudio se encontró que \(2\) de cada \(5\)
+Suponga que en un estudio se encontró que $2$ de cada $5$
 estudiantes no desea tomar clases virtuales. Si se selecciona
-aleatoriamente \(20\) estudiantes, calcule
+aleatoriamente $20$ estudiantes, calcule
 <ol>
 <li>
-Cuál es la probabilidad de que no más de \(3\) estudiantes deseen tomar
+Cuál es la probabilidad de que no más de $3$ estudiantes deseen tomar
 clases virtuales?
 </li>
 <li>
-Cuál es la probabilidad de que no menos de \(6\) pero menos de \(12\)
+Cuál es la probabilidad de que no menos de $6$ pero menos de $12$
 deseen tomar clases virtuales?
 </li>
 <li>
@@ -201,10 +201,10 @@ Solución
 </h3>
 <p>
 
-En este caso estamos interesados en la variable \(X\), que representa el
+En este caso estamos interesados en la variable $X$, que representa el
 número de estudiantes que desean tomar clases virtuales, en donde
-sabemos que si, \(2\) de cada \(5\) no quieren tomar clases virtuales,
-entonces se tendrá que \(3\) de cada \(5\) si desean tomar clases
+sabemos que si, $2$ de cada $5$ no quieren tomar clases virtuales,
+entonces se tendrá que $3$ de cada $5$ si desean tomar clases
 virtuales. Por tanto al aplicar la definición de frecuencia relativa se
 tiene que
 
@@ -212,39 +212,39 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5}\\ 
   &= 0.6
-\end{align*}$$ siendo \(p\) la probabilidad de que un estudiante desee
+\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 </p>
 <ol>
 <li>
 En este caso, estamos interesados en calcular la probabilidad de que no
-más de \(3\) estudiantes deseen tomar clases virtuales, lo cual puede
+más de $3$ estudiantes deseen tomar clases virtuales, lo cual puede
 representarse mediante la siguiente probabilidad $$\begin{align*}
 P(X\leq 3) &= \sum_{x=0}^3 \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 0\end{array}\right)0.6^0(0.4)^{20-0} + \ldots + \left(\begin{array}{c}20\\ 3\end{array}\right)0.6^3(0.4)^{20-3} \\
            &= 0.00000001099512 + 0.0000003298535 + 0.000004700412 + 0.00004230371 \\
            &= 0.00004734497
-\end{align*}$$ Es decir, la probabilidad de que como máximo \(3\)
-estudiantes de los \(20\) seleccionados, deseen tomar clases virtuales,
-es del \(0.0047\%\).
+\end{align*}$$ Es decir, la probabilidad de que como máximo $3$
+estudiantes de los $20$ seleccionados, deseen tomar clases virtuales,
+es del $0.0047\%$.
 </li>
 <li>
 Ahora, se tiene interés en conocer la probabilidad de que no menos de
-\(6\) pero menos de \(12\) deseen tomar clases virtuales. En este caso,
+$6$ pero menos de $12$ deseen tomar clases virtuales. En este caso,
 la probabilidad asociada puede calcularse de la siguiente manera.
 $$\begin{align*}
 P(6 \leq x < 12) &= \sum_{x=6}^{11} \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 6\end{array}\right)0.6^6(0.4)^{20-6} + \ldots + \left(\begin{array}{c}20\\ 11\end{array}\right)0.6^{11}(0.4)^{20-11} \\
            &= 0.4027898
-\end{align*}$$ Es decir que, la probabilidad de que como mínimo \(6\)
-pero menos de \(12\) estudiantes deseen tomar clases virtuales de los
-\(20\) seleccionados, es del \(40.28\%\).
+\end{align*}$$ Es decir que, la probabilidad de que como mínimo $6$
+pero menos de $12$ estudiantes deseen tomar clases virtuales de los
+$20$ seleccionados, es del $40.28\%$.
 </li>
 <li>
 
 Finalmente, se tiene interés en conocer cual será el número promedio y
 desviación estándar, de estudiantes que desean tomar clases virtuales,
-cuando se realiza la selección aleatoria de \(20\). Al aplicar la
+cuando se realiza la selección aleatoria de $20$. Al aplicar la
 formular de esperanza matemática para la distribución binomial, se tiene
 que el valor esperado de estudiantes que desean tomar clases virtuales
 es de $$\begin{align*}
@@ -265,8 +265,8 @@ Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(4.8)} \\
       & = 2.19089
 \end{align*}$$ De lo anterior se tiene que, al realizar la selección
-aleatoria de \(20\) estudiantes, es espera que \(12\) estudiantes desean
-tomar clases virtuales, con una desviación estándar de \(2.19\)
+aleatoria de $20$ estudiantes, es espera que $12$ estudiantes desean
+tomar clases virtuales, con una desviación estándar de $2.19$
 estudiantes.
 </li>
 </ol>
@@ -309,14 +309,14 @@ Ejercicio
 </h3>
 <p>
 Suponga que una persona compra un container que contiene un lote de
-\(40\) repuestos para computadora. El comprador revisa el container
-mediante un procedimiento de muestreo, y si encuentra \(3\) o más
+$40$ repuestos para computadora. El comprador revisa el container
+mediante un procedimiento de muestreo, y si encuentra $3$ o más
 componentes defectuosos, devuelve el container a su proveedor.<br> <br>
 El procedimiento de revisión consta en seleccionar una muestra aleatoria
-de \(10\) repuestos del lote de interés, y si se encuentran \(3\) o más
+de $10$ repuestos del lote de interés, y si se encuentran $3$ o más
 repuestos defectuosos, se rechaza el lote y se devuelve al proveedor.
 <br> <br> Si en un lote de repuestos de computadora hay un total de
-\(7\) defectuosos,
+$7$ defectuosos,
 </p>
 <ol>
 <li>
@@ -335,17 +335,17 @@ Solución
 
 En este primer punto estamos interesados en conocer la probabilidad de
 que el comprador no devuelva el container, y para ello se requerirá que
-en la muestra de \(10\) repuestos que el comprador revisa, encuentren
-menos de \(3\) repuestos defectuosos, estos es $$\begin{align*}
+en la muestra de $10$ repuestos que el comprador revisa, encuentren
+menos de $3$ repuestos defectuosos, estos es $$\begin{align*}
 \mathbb{P}(X<3)
 \end{align*}$$
 
-Donde \(X\): representa el número de repuestos defectuosos. Además, de
+Donde $X$: representa el número de repuestos defectuosos. Además, de
 la información suministrada tenemos que el total de artículos
-defectuosos que hay en el lote de \(40\) repuestos es de \(7\) repuestos
-defectuosos. Entonces, si llamamos a \(N=40\): el número total de
-repuestos, \(n=10\): el total de repuestos que revisa el comprador y
-\(M=7\): el número de repuestos defectuosos que hay en el container, se
+defectuosos que hay en el lote de $40$ repuestos es de $7$ repuestos
+defectuosos. Entonces, si llamamos a $N=40$: el número total de
+repuestos, $n=10$: el total de repuestos que revisa el comprador y
+$M=7$: el número de repuestos defectuosos que hay en el container, se
 tendrá la siguiente distribución de probabilidad
 
 $$\begin{align*}
@@ -360,7 +360,7 @@ la cual está definida para $$\begin{align*}
 0 &\leq x \leq 7 \\
 \end{align*}$$ en donde, al ser la distribución hipergeométrica una
 distribución discreta, tendremos que el número de repuestos defectuosos
-encontrados en la muestra puede ser de \(x=0, 1, 2, \ldots 7\). <br>
+encontrados en la muestra puede ser de $x=0, 1, 2, \ldots 7$. <br>
 <br> Ahora, al emplear esta función de distribución para calcular la
 probabilidad de interés tendremos que
 
@@ -371,16 +371,16 @@ $$\begin{align*}
                 &= 0.7716509
 \end{align*}$$
 
-En consecuencia, se tendrá un \(77.16\%\) de probabilidad, de que el
+En consecuencia, se tendrá un $77.16\%$ de probabilidad, de que el
 comprador no rechace el container de repuestos para computadora.
 </li>
 <li>
 
 En esta ocasión estamos interesados en calcular el número promedio y
 desviación estándar del número de repuestos defectuosos que se esperan
-encontrar cuando se revisa un total de \(n=10\) repuestos de un
-container que contiene \(N=40\) repuestos para computadora, y en el cual
-se sabe que hay \(M=7\) repuestos defectuosos. Y para ello usamos la
+encontrar cuando se revisa un total de $n=10$ repuestos de un
+container que contiene $N=40$ repuestos para computadora, y en el cual
+se sabe que hay $M=7$ repuestos defectuosos. Y para ello usamos la
 formula de la media y la varianza asociadas a la distribución
 hipergeométrica, tal que $$\begin{align*}
 \mathbb{E}(X) &=n\frac{M}{N} \\
@@ -407,8 +407,8 @@ Sd(X) &= \sqrt{Var(X)} \\
 \end{align*}$$
 
 Por tanto se tendrá que el comprador encontrará en sus revisiones un
-promedio de \(1.75\) repuestos defectuosos, en un container de \(40\)
-repuestos para computadora, con una desviación estándar de \(0.3332\)
+promedio de $1.75$ repuestos defectuosos, en un container de $40$
+repuestos para computadora, con una desviación estándar de $0.3332$
 repuestos defectuosos.
 </li>
 </ol>

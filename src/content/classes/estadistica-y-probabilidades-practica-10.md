@@ -30,7 +30,7 @@ Lista de ejercicios
     <tbody>
     <tr>
     <td style="text-align:center;">
-    \(X\) (Años)
+    $X$ (Años)
     </td>
     <td style="text-align:left;">
     3
@@ -65,7 +65,7 @@ Lista de ejercicios
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
     0.03
@@ -111,7 +111,7 @@ Lista de ejercicios
     </li>
     <li>
     Encuentre la probabilidad de que el tiempo de vida real de las
-    patentes se encuentre al menos a \(1.5\) desviaciones estándar de la
+    patentes se encuentre al menos a $1.5$ desviaciones estándar de la
     vida real promedio.
     </li>
     </ol>
@@ -134,8 +134,8 @@ $$\begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\
     </li>
     <li>
     Si se selecciona una persona al azar, cuál sería la probabilidad de
-    que el número de fotomultas que tenga sea más de \(3\), pero a lo
-    más \(8\).
+    que el número de fotomultas que tenga sea más de $3$, pero a lo
+    más $8$.
     </li>
     </ol>
 
@@ -151,7 +151,7 @@ $$\begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\
     <tbody>
     <tr>
     <td style="text-align:center;">
-    \(X\)
+    $X$
     </td>
     <td style="text-align:left;">
     1
@@ -171,7 +171,7 @@ $$\begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
     0.31
@@ -214,10 +214,10 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     <ol type="a">
     <li>
     Cuál es el número promedio de peras echadas a perder en la muestra
-    de \(15\)?.
+    de $15$?.
     </li>
     <li>
-    Si entre las \(15\) peras seleccionadas, ya han encontrado \(3\)
+    Si entre las $15$ peras seleccionadas, ya han encontrado $3$
     echadas a perder, ¿Cuál es la probabilidad de que no rechacen el
     pedido?.
     </li>
@@ -247,12 +247,12 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un mes cualquiera, la impresora
-    presente a lo más \(7\) fallas?
+    presente a lo más $7$ fallas?
     </li>
     <li>
-    Si la impresora ya ha presentado \(2\) fallas, ¿Cuál es la
+    Si la impresora ya ha presentado $2$ fallas, ¿Cuál es la
     probabilidad de que al finalizar el mes ésta presente exactamente
-    \(3\) fallas?
+    $3$ fallas?
     </li>
     </ol>
 
@@ -296,7 +296,7 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     </li>
     <li>
     Encuentre la probabilidad de que el número de fallas que tiene una
-    máquina en un día antes de apagarse, se encuentre a lo más a \(1.5\)
+    máquina en un día antes de apagarse, se encuentre a lo más a $1.5$
     desviaciones estándar de su media.
     </li>
     </ol>
@@ -306,12 +306,12 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     consumidores escogidos al azar,
     <ol type="a">
     <li>
-    ¿Cuál es la probabilidad de que al menos \(5\) personas tengan que
+    ¿Cuál es la probabilidad de que al menos $5$ personas tengan que
     ser entrevistadas para hallar el primer consumidor que prefiera la
     marca `$A$` de pasta dental?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que a lo más \(12\) personas tengan que
+    ¿Cuál es la probabilidad de que a lo más $12$ personas tengan que
     ser entrevistadas para hallar el tercer consumidor que prefiera la
     marca `$A$` de pasta dental?
     </li>
@@ -327,10 +327,10 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     profesor hasta cometer un error?.
     </li>
     <li>
-    Calcule la desviación estándar de la variable aleatoria \(X\).
+    Calcule la desviación estándar de la variable aleatoria $X$.
     </li>
     <li>
-    Si van \(7\) ejercicios y aún no se equivoca, ¿Cuál es la
+    Si van $7$ ejercicios y aún no se equivoca, ¿Cuál es la
     probabilidad de que se equivoque en el décimo ejercicio?
     </li>
     </ol>
@@ -341,11 +341,11 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     <ol type="a">
     <li>
     ¿Cuál es el número promedio y desviación estándar de clientes que
-    llegan a la cafetería de Ingeniería en \(2\) horas?
+    llegan a la cafetería de Ingeniería en $2$ horas?
     </li>
     <li>
     Encuentre la probabilidad de que el número de clientes que llegan a
-    la cafetería \(2\) horas, se encuentre al menos a \(2\) desviaciones
+    la cafetería $2$ horas, se encuentre al menos a $2$ desviaciones
     estándar de su media.
     </li>
     </ol>
@@ -366,11 +366,11 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, un profesor
-    tome más de \(3\) pero no más de \(6\) tazas de café?.
+    tome más de $3$ pero no más de $6$ tazas de café?.
     </li>
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, el número de
-    tazas de café que toma un profesor se encuentre a más de \(1.2\)
+    tazas de café que toma un profesor se encuentre a más de $1.2$
     desviaciones estándar de la media?
     </li>
     </ol>
@@ -407,8 +407,8 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     hallado en el segundo motor revisado?.
     </li>
     <li>
-    ¿Cuál es la probabilidad de los primeros \(6\) motores revisados, se
-    encuentren no más de \(2\) defectuoso?.
+    ¿Cuál es la probabilidad de los primeros $6$ motores revisados, se
+    encuentren no más de $2$ defectuoso?.
     </li>
     </ol>
 
@@ -425,11 +425,11 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     <ol type="a">
     <li>
     Encuentre la función de distribución de probabilidad para el número
-    de niños que hay en una familia que posee \(3\) hijos.
+    de niños que hay en una familia que posee $3$ hijos.
     </li>
     <li>
     Encuentre la función de distribución acumulada para el número de
-    niñas que hay en una familia que posee \(3\) hijos.
+    niñas que hay en una familia que posee $3$ hijos.
     </li>
     </ol>
 

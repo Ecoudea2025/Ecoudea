@@ -120,10 +120,10 @@ Ocultar ejemplo para %&gt;%
 Ejemplo en <tt>R</tt>
 </h3>
 <p>
-Suponga que \(x\) es un vector compuesto por los números
-\(0.3, 3, 0.9\), sea una función \(f() = exp()\), una función
-\(g()=abs()\) y una función \(h() = log()\). Entonces si se desea
-calcular la función \(f(g(h(x)))\) se tendrá que
+Suponga que $x$ es un vector compuesto por los números
+$0.3, 3, 0.9$, sea una función $f() = exp()$, una función
+$g()=abs()$ y una función $h() = log()$. Entonces si se desea
+calcular la función $f(g(h(x)))$ se tendrá que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -181,10 +181,10 @@ Ocultar ejemplo para %&lt;&gt;%
 Ejemplo en <tt>R</tt>
 </h3>
 <p>
-Suponga al igual que en el ejemplo anterior, \(x\) es un vector
-compuesto por los números \(0.3, 3, 0.9\), las funciones
-\(f() = exp()\), \(g()=abs()\) y \(h() = log()\). Entonces si se desea
-calcular la función \(f(g(h(x)))\) y almacenarla en \(x\).
+Suponga al igual que en el ejemplo anterior, $x$ es un vector
+compuesto por los números $0.3, 3, 0.9$, las funciones
+$f() = exp()$, $g()=abs()$ y $h() = log()$. Entonces si se desea
+calcular la función $f(g(h(x)))$ y almacenarla en $x$.
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">

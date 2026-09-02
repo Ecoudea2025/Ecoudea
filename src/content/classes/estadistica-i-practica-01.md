@@ -22,7 +22,7 @@ bibliography: "../../referencias.bib"
     <tbody>
     <tr>
     <td style="text-align:center;">
-    Años, \(x\)
+    Años, $x$
     </td>
     <td style="text-align:left;">
     3
@@ -57,7 +57,7 @@ bibliography: "../../referencias.bib"
     </tr>
     <tr>
     <td style="text-align:center;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
     0.03
@@ -110,12 +110,12 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
-    sirva más de \(8\) litros?
+    sirva más de $8$ litros?
     </li>
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
-    sirva más de \(8.8\) litros, si en lo que va del día ya ha servido
-    \(7.8\)?
+    sirva más de $8.8$ litros, si en lo que va del día ya ha servido
+    $7.8$?
     </li>
     </ol>
 
@@ -129,11 +129,11 @@ $$\begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\
     <ol type="a">
     <li>
     Encuentre su función generadora de momentos de la variable aleatoria
-    \(X\).
+    $X$.
     </li>
     <li>
     Encuentre la media, varianza, asimetría y exceso de curtosis de la
-    variable aleatoria \(X\) mediante la función generadora de momentos.
+    variable aleatoria $X$ mediante la función generadora de momentos.
     </li>
     </ol>
 
@@ -143,11 +143,11 @@ $$\begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
-    momento en que ha entrado \(1\) llamada al conmutador?
+    momento en que ha entrado $1$ llamada al conmutador?
     </li>
     <li>
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
-    momento en que han entrado \(3\) llamadas al conmutador?
+    momento en que han entrado $3$ llamadas al conmutador?
     </li>
     </ol>
 
@@ -159,11 +159,11 @@ $$\begin{align*}p(x)=p(1-p)^{x-1} \text{  para  }  x=1,2,3,\ldots\end{align*}$$
     <ol type="a">
     <li>
     Encuentre su función generadora de momentos de la variable aleatoria
-    \(X\).
+    $X$.
     </li>
     <li>
     Encuentre la media, varianza, asimetría y exceso de curtosis de la
-    variable aleatoria \(X\) mediante la función generadora de momentos.
+    variable aleatoria $X$ mediante la función generadora de momentos.
     </li>
     </ol>
 
@@ -180,16 +180,16 @@ $$\begin{align*}p(x)=\frac{6-|7-x|}{36} \text{  para  } x = 2,3,\ldots,12\end{al
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
-    menos \(40\) segundos?.
+    menos $40$ segundos?.
     </li>
     <li>
     ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
-    menos \(40\) segundos, si ya han pasado \(20\) segundos y aún no
+    menos $40$ segundos, si ya han pasado $20$ segundos y aún no
     llega ningún taxi al acopio del metro?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que lleguen al acopio más de \(10\) pero
-    no menos de \(15\) taxis en un intervalo de \(20\) minutos.
+    ¿Cuál es la probabilidad de que lleguen al acopio más de $10$ pero
+    no menos de $15$ taxis en un intervalo de $20$ minutos.
     </li>
     </ol>
 
@@ -240,12 +240,12 @@ $$\begin{align*}M_x(t) = e^{4(e^t-1)}\end{align*}$$
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que un profesor obtenga un puntaje
-    superior a \(79\) puntos?.
+    superior a $79$ puntos?.
     </li>
     <li>
-    Si el profesor sabe que tendrá una puntuación superior a \(66\)
+    Si el profesor sabe que tendrá una puntuación superior a $66$
     puntos, cuál es la probabilidad de que éste obtenga una puntuación
-    menor a \(80\) puntos?
+    menor a $80$ puntos?
     </li>
     </ol>
 
@@ -257,10 +257,10 @@ $$\begin{align*}f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)}x^{\frac{\nu}{2}-1}e^{-\f
     <ol type="a">
     <li>
     Encuentre su función generadora de momentos de la variable aleatoria
-    \(X\).
+    $X$.
     </li>
     <li>
-    Encuentre la media y la varianza de la variable aleatoria \(X\)
+    Encuentre la media y la varianza de la variable aleatoria $X$
     mediante la función generadora de momentos.
     </li>
     </ol>
@@ -280,11 +280,11 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n
     <ol type="a">
     <li>
     Encuentre su función generadora de momentos de la variable aleatoria
-    \(X\).
+    $X$.
     </li>
     <li>
     Encuentre la media, varianza, asimetría y curtosis de la variable
-    aleatoria \(X\) mediante la función generadora de momentos.
+    aleatoria $X$ mediante la función generadora de momentos.
     </li>
     </ol>
 
@@ -295,12 +295,12 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que el próximo cliente en llegar donde
-    Pastora tarde al menos \(20\) minutos?
+    Pastora tarde al menos $20$ minutos?
     </li>
     <li>
     ¿Cuál es la probabilidad de que lleguen donde Pastora en menos de
-    \(50\) minutos, \(3\) clientes, si se sabe que han transcurrido
-    \(24\) minutos y aún no llegan los \(3\) clientes?
+    $50$ minutos, $3$ clientes, si se sabe que han transcurrido
+    $24$ minutos y aún no llegan los $3$ clientes?
     </li>
     </ol>
 

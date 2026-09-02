@@ -19,15 +19,15 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
 
     <ol type="a">
     <li>
-    Encuentre el valor \(k\) que hace que la función presentada, sea una
+    Encuentre el valor $k$ que hace que la función presentada, sea una
     función de masa de probabilidad bien definida.
     </li>
     <li>
-    Encuentre la función de distribución acumulada \(F(X)\).
+    Encuentre la función de distribución acumulada $F(X)$.
     </li>
     <li>
     Encuentre la probabilidad de que la proporción de entregas exitosas
-    sea al menos de \(0.55\), pero no más de \(0.65\).
+    sea al menos de $0.55$, pero no más de $0.65$.
     </li>
     <li>
     Encuentre el promedio y desviación estándar de la proporción de
@@ -46,7 +46,7 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
     <ol type="a">
     <li>
     Encuentre la probabilidad de que la mayorista venda al menos
-    \(90\%\) de su existencia en una semana determinada.
+    $90\%$ de su existencia en una semana determinada.
     </li>
     <li>
     Encuentre el promedio y desviación estándar de la proporción de
@@ -65,11 +65,11 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
 
     <ol type="a">
     <li>
-    Determine \(k\), que hace que \(f(x)\), sea una función de densidad
+    Determine $k$, que hace que $f(x)$, sea una función de densidad
     válida.
     </li>
     <li>
-    Calcule la función de distribución acumulada \(F(X)\).
+    Calcule la función de distribución acumulada $F(X)$.
     </li>
     <li>
     Calcule el número promedio de la magnitud del error de medición de
@@ -77,11 +77,11 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     </li>
     <li>
     Calcule la probabilidad de que un error aleatorio en la medición sea
-    menor que \(\frac{1}{2}\).
+    menor que $\frac{1}{2}$.
     </li>
     <li>
     Para esta medición específica, resulta indeseable si la magnitud del
-    error (es decir, \(|x|\)) es mayor que \(0.8\). ¿Cuál es la
+    error (es decir, $|x|$) es mayor que $0.8$. ¿Cuál es la
     probabilidad de que esto ocurra?
     </li>
     </ol>
@@ -92,13 +92,13 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     <ol type="a">
     <li>
     Encuentre la probabilidad de que la magnitud de un temblor que
-    ocurra en esta región registre un magnitud mayor a \(2.3\) en la
+    ocurra en esta región registre un magnitud mayor a $2.3$ en la
     escala de Richter.
     </li>
     <li>
-    Si ocurre un temblor en esta región con magnitud mayor a \(2.3\) en
+    Si ocurre un temblor en esta región con magnitud mayor a $2.3$ en
     la escala de Richter, cuál es la probabilidad de que la magnitud de
-    éste temblor sea a lo más de \(3.5\) en la escala de Richter?.
+    éste temblor sea a lo más de $3.5$ en la escala de Richter?.
     </li>
     </ol>
 
@@ -113,7 +113,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
 
     <ol type="a">
     <li>
-    ¿Cuál es el valor de \(k\) que hace de la anterior una función de
+    ¿Cuál es el valor de $k$ que hace de la anterior una función de
     densidad válida?
     </li>
     <li>
@@ -123,12 +123,12 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     <li>
     Calcule la probabilidad de que la proporción de utilidades que
     obtiene una empresa pequeña durante su primer año sea de al menos el
-    \(50\%\).
+    $50\%$.
     </li>
     <li>
     Calcule la probabilidad de que la proporción de utlidades que
     obtiene una empresa pequeña durante su primer año sea de al menos el
-    \(80\%\), pero no más del \(90\%\).
+    $80\%$, pero no más del $90\%$.
     </li>
     </ol>
 
@@ -139,13 +139,13 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     <ol type="a">
     <li>
     Calcule la probabilidad de que la demanda durante las primeras horas
-    de la tarde en un día cualquiera sea mayor que \(200_{pcs}\) pero no
-    más de \(300_{pcs}\).
+    de la tarde en un día cualquiera sea mayor que $200_{pcs}$ pero no
+    más de $300_{pcs}$.
     </li>
     <li>
     Si se sabe que la demanda durante las primeras horas de la tarde de
-    un día cualquiera es mayor a \(200_{pcs}\), cuál es la probabilidad
-    de que supere los \(250_{pcs}\)?.
+    un día cualquiera es mayor a $200_{pcs}$, cuál es la probabilidad
+    de que supere los $250_{pcs}$?.
     </li>
     </ol>
 
@@ -156,16 +156,16 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) que hace a \(f(x)\) una función de
+    Encuentre el valor de $k$ que hace a $f(x)$ una función de
     densidad de probabilidad.
     </li>
     <li>
     Calcule la función de distribución acumulada y esperanza matemática
-    de la variable aleatoria \(X\).
+    de la variable aleatoria $X$.
     </li>
     <li>
-    Calcular \(\mathbb{P}(X\geq 2.3)\) y
-    \(\mathbb{P}(-3 \leq X \leq 3)\)
+    Calcular $\mathbb{P}(X\geq 2.3)$ y
+    $\mathbb{P}(-3 \leq X \leq 3)$
     </li>
     </ol>
 
@@ -185,7 +185,7 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     Encuentre la función de densidad de probabilidad.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X\lt 20)\).
+    Calcule $\mathbb{P}(X\lt 20)$.
     </li>
     </ol>
 
@@ -196,11 +196,11 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     cualquiera
     <ol type="a">
     <li>
-    Cuál es la probabilidad de que ocurra al menos \(5\) accidentes
+    Cuál es la probabilidad de que ocurra al menos $5$ accidentes
     aéreos?.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X\lt 20)\).
+    Calcule $\mathbb{P}(X\lt 20)$.
     </li>
     </ol>
 
@@ -212,12 +212,12 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) para que \(f(x)\) sea una función de
+    Encuentre el valor de $k$ para que $f(x)$ sea una función de
     densidad de probabilidad.
     </li>
     <li>
-    Calcule \(F(x)\) y utilice el resultado para calcular la
-    \(\mathbb{P}(0.24 \lt  X \lt  0.63)\).
+    Calcule $F(x)$ y utilice el resultado para calcular la
+    $\mathbb{P}(0.24 \lt  X \lt  0.63)$.
     </li>
     </ol>
 
@@ -226,7 +226,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     `$3$` y `$1.5$` respectivamente.
     <ol type="a">
     <li>
-    Calcule la probabilidad de que falle antes de \(6\) años de uso.
+    Calcule la probabilidad de que falle antes de $6$ años de uso.
     </li>
     <li>
     Calcule el número promedio y desviación estándar del número de años
@@ -246,10 +246,10 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     velocidad sea menor de `$12$` minutos
     <ol type="a">
     <li>
-    Usando la función de distribución acumulativa de \(X\)
+    Usando la función de distribución acumulativa de $X$
     </li>
     <li>
-    Utilizando la función de densidad de probabilidad de \(X\).
+    Utilizando la función de densidad de probabilidad de $X$.
     </li>
     </ol>
 
@@ -259,11 +259,11 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que el tiempo de ciclo se a lo más de
-    \(68\) minutos?
+    $68$ minutos?
     </li>
     <li>
-    ¿Cuál es la probabilidad de que el tiempo de ciclo exceda de \(65\)
-    minutos si se sabe que el tiempo de ciclo excede de \(55\) minutos?
+    ¿Cuál es la probabilidad de que el tiempo de ciclo exceda de $65$
+    minutos si se sabe que el tiempo de ciclo excede de $55$ minutos?
     </li>
     </ol>
 
@@ -276,15 +276,15 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     <ol type="a">
     <li>
     Pruebe si efectivamente es una función de densidad de probabilidad,
-    de no serlo, por qué constante \(k\) multiplicaría la función?.
+    de no serlo, por qué constante $k$ multiplicaría la función?.
     </li>
     <li>
     Calcule la probabilidad de que en un año una familia use menos de
-    \(120\) horas la licuadora.
+    $120$ horas la licuadora.
     </li>
     <li>
     Calcule la probabilidad de que en un año una familia use la
-    licuadora entre \(65\) y \(100\) horas.
+    licuadora entre $65$ y $100$ horas.
     </li>
     </ol>
 
@@ -293,11 +293,11 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
-    menos \(40\) segundos?.
+    menos $40$ segundos?.
     </li>
     <li>
     ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
-    menos \(40\) segundos, si ya han pasado \(20\) segundos y aún no
+    menos $40$ segundos, si ya han pasado $20$ segundos y aún no
     llega ningún taxi al acopio del metro?
     </li>
     </ol>
@@ -315,7 +315,7 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     </li>
     <li>
     Calcule la probabilidad de que una pelota loca tenga un diámetro
-    entre \(3\) y \(6\) centímetros.
+    entre $3$ y $6$ centímetros.
     </li>
     </ol>
 
@@ -326,17 +326,17 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     varianza de `$4$`. Basados en lo anterior
     <ol type="a">
     <li>
-    Calcule el valor de los parámetros \(\alpha\) y \(\beta\) asociadas
+    Calcule el valor de los parámetros $\alpha$ y $\beta$ asociadas
     a la distribución Gamma.
     </li>
     <li>
-    Calcule la probabilidad de que la empresa emplee más de \(4\)
+    Calcule la probabilidad de que la empresa emplee más de $4$
     toneladas del producto específico en un día determinado.
     </li>
     <li>
-    Si en un día cualquiera la empresa ya ha usado más de \(3\)
+    Si en un día cualquiera la empresa ya ha usado más de $3$
     toneladas, calcule la probabilidad de que la empresa emplee no más
-    de \(6\) toneladas del producto específico.
+    de $6$ toneladas del producto específico.
     </li>
     </ol>
 
@@ -348,17 +348,17 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
 
     <ol type="a">
     <li>
-    Verifique si \(f(x)\) es efectivamente una función de densidad de
+    Verifique si $f(x)$ es efectivamente una función de densidad de
     probabilidad.
     </li>
     <li>
-    Suponga que \(\theta = 100\). Cuál es la probabilidad de que el
-    hamster tarde a lo más de \(200\) minutos en superar el laberinto? y
-    cuál es la probabilidad de que tarde al menos \(200\) minutos?.
+    Suponga que $\theta = 100$. Cuál es la probabilidad de que el
+    hamster tarde a lo más de $200$ minutos en superar el laberinto? y
+    cuál es la probabilidad de que tarde al menos $200$ minutos?.
     </li>
     <li>
     De una expresión para la función de distribución acumulada
-    \(F(x) = \mathbb{P}(X \leq x)\)?.
+    $F(x) = \mathbb{P}(X \leq x)$?.
     </li>
     </ol>
 
@@ -369,12 +369,12 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que un profesor obtenga un puntaje
-    superior a \(79\) puntos?.
+    superior a $79$ puntos?.
     </li>
     <li>
-    Si el profesor sabe que tendrá una puntuación superior a \(66\)
+    Si el profesor sabe que tendrá una puntuación superior a $66$
     puntos, cuál es la probabilidad de que éste obtenga una puntuación
-    menor a \(80\) puntos?
+    menor a $80$ puntos?
     </li>
     </ol>
 
@@ -385,15 +385,15 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) que haga a \(f(x)\) una función densidad
+    Encuentre el valor de $k$ que haga a $f(x)$ una función densidad
     de probabilidad.
     </li>
     <li>
-    Calcule la media y la varianza de la variable aleatoria \(Y=X^2\).
+    Calcule la media y la varianza de la variable aleatoria $Y=X^2$.
     </li>
     <li>
-    Encuentre la probabilidad de que la variable aleatoria \(X\), se
-    encuentre a lo más a \(2.3\) desviaciones estándar de su media.
+    Encuentre la probabilidad de que la variable aleatoria $X$, se
+    encuentre a lo más a $2.3$ desviaciones estándar de su media.
     </li>
     </ol>
 
@@ -406,11 +406,11 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     <ol type="a">
     <li>
     Calcule la probabilidad de que una botella posea más de
-    \(360_{ml}\).
+    $360_{ml}$.
     </li>
     <li>
-    Calcule la probabilidad de que una botella posea entre \(355_{ml}\)
-    y \(360_{ml}\).
+    Calcule la probabilidad de que una botella posea entre $355_{ml}$
+    y $360_{ml}$.
     </li>
     </ol>
 
@@ -439,10 +439,10 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
 
     <ol type="a">
     <li>
-    Calcule la esperanza de la variable aleatoria \(Y\).
+    Calcule la esperanza de la variable aleatoria $Y$.
     </li>
     <li>
-    Calcule la varianza de la variable aleatoria \(Y\).
+    Calcule la varianza de la variable aleatoria $Y$.
     </li>
     </ol>
 
@@ -454,12 +454,12 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     <ol type="a">
     <li>
     Calcule la probabilidad de que la proporción de humedad que muestra
-    el medidor sea a lo más de \(90%\).
+    el medidor sea a lo más de $90%$.
     </li>
     <li>
     Si se sabe que la proporción de humedad de una cosecha se encuentra
-    por encima del \(50%\), cuál es la probabilidad de que la proporción
-    de humedad que muestra el medidor sea a lo más de \(70%\).
+    por encima del $50%$, cuál es la probabilidad de que la proporción
+    de humedad que muestra el medidor sea a lo más de $70%$.
     </li>
     </ol>
 
@@ -469,12 +469,12 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
-    sirva más de \(8\) litros?
+    sirva más de $8$ litros?
     </li>
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
-    sirva más de \(8.8\) litros, si en lo que va del día ya ha servido
-    \(7.8\)?
+    sirva más de $8.8$ litros, si en lo que va del día ya ha servido
+    $7.8$?
     </li>
     </ol>
 

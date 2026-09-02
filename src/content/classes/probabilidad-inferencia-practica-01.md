@@ -177,29 +177,29 @@ bibliography: "../../referencias.bib"
     si
     <ol type="a">
     <li>
-    obtiene una media muestral de \(10.2_{cm}\) y la verdadera media
-    \(\mu=9.6_{cm}\)
+    obtiene una media muestral de $10.2_{cm}$ y la verdadera media
+    $\mu=9.6_{cm}$
     </li>
     <li>
-    obtiene una media muestral de \(10.2_{cm}\) y la verdadera media
-    \(\mu=9.8cm\)
+    obtiene una media muestral de $10.2_{cm}$ y la verdadera media
+    $\mu=9.8cm$
     </li>
     <li>
-    obtiene una media muestral de \(9.4_{cm}\) y la verdadera media
-    \(\mu=9.6cm\)
+    obtiene una media muestral de $9.4_{cm}$ y la verdadera media
+    $\mu=9.6cm$
     </li>
     <li>
-    obtiene una media muestral de \(9.4_{cm}\) y la verdadera media
-    \(\mu=9.8cm\)
+    obtiene una media muestral de $9.4_{cm}$ y la verdadera media
+    $\mu=9.8cm$
     </li>
     <li>
-    Si la desviación estándar es igual a \(2_{cm}\), calcule la
+    Si la desviación estándar es igual a $2_{cm}$, calcule la
     probabilidad de cometer Error Tipo I.
     </li>
     <li>
-    Si la desviación estándar es igual a \(2_{cm}\), Calcule la
+    Si la desviación estándar es igual a $2_{cm}$, Calcule la
     probabilidad de cometer Error Tipo II, si la verdadera media
-    \(\mu=9.8cm\).
+    $\mu=9.8cm$.
     </li>
     </ol>
 4.  Suponga que el contenido de ácido sulfúrico, en litros, de una
@@ -327,15 +327,15 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     Si se sabe que la desviación estándar para todos los trabajadores es
-    de \(2\) unidades, emplee un nivel de significancia del \(2\%\) para
+    de $2$ unidades, emplee un nivel de significancia del $2\%$ para
     probar si tiene o no apoyo la sospecha del gerente de que el número
-    promedio de unidades producidas por el trabajador es menor a \(15\)
+    promedio de unidades producidas por el trabajador es menor a $15$
     unidades? Obtener el P-valor para el contraste.
     </li>
     <li>
-    Emplee un nivel de significancia del \(5\%\) para probar si la
-    proporción de días que el trabajador produce menos de \(15\)
-    unidades es mayor al \(80\%\).
+    Emplee un nivel de significancia del $5\%$ para probar si la
+    proporción de días que el trabajador produce menos de $15$
+    unidades es mayor al $80\%$.
     </li>
     </ol>
 9.  ¿Está menguando el romance de los estadounidenses con el cine?, En
@@ -498,17 +498,17 @@ bibliography: "../../referencias.bib"
     </li>
     <li>
     Calcule la probabilidad de cometer un error tipo II, si la media
-    real de la envergadura de los insectos es de \(12.5_{mm}\)
+    real de la envergadura de los insectos es de $12.5_{mm}$
     </li>
     <li>
     ¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
-    media de \(12.9_{mm}\), y se tiene que la media real de la
-    envergadura de los insectos es \(12.5mm\)?
+    media de $12.9_{mm}$, y se tiene que la media real de la
+    envergadura de los insectos es $12.5mm$?
     </li>
     <li>
     ¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
-    media de \(12.9_{mm}\), y se tiene que la media real de la
-    envergadura de los insectos es \(12.3_{mm}\)?
+    media de $12.9_{mm}$, y se tiene que la media real de la
+    envergadura de los insectos es $12.3_{mm}$?
     </li>
     </ol>
 16. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
@@ -560,18 +560,18 @@ bibliography: "../../referencias.bib"
     </table>
     <ol type="a">
     <li>
-    Suponiendo normalidad, emplee un nivel de significancia del \(10\%\)
+    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
     para observar si la calificación promedio del SAT verbal obtenida
-    por los alumnos de último año es superior a \(520\) puntos.
+    por los alumnos de último año es superior a $520$ puntos.
     </li>
     <li>
-    Suponiendo normalidad, emplee un nivel de significancia del \(10\%\)
+    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
     para observar si la calificación promedio del SAT de matemáticas
-    obtenida por los alumnos de último año es a lo más de \(508\)
+    obtenida por los alumnos de último año es a lo más de $508$
     puntos.
     </li>
     <li>
-    Suponiendo normalidad, emplee un nivel de significancia del \(10\%\)
+    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
     para observar si la variabilidad en la calificación obtenida por los
     estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
     </li>
@@ -631,15 +631,15 @@ bibliography: "../../referencias.bib"
     </table>
     <ol type="a">
     <li>
-    Emplee un nivel de significancia del \(2\%\) para probar si la
+    Emplee un nivel de significancia del $2\%$ para probar si la
     cantidad promedio de gramos de acetanilida que se puede recuperar de
-    \(4.85\) gramos de anilina es superior a \(3.85\) gramos.
+    $4.85$ gramos de anilina es superior a $3.85$ gramos.
     </li>
     <li>
-    Emplee un nivel de significancia del \(10\%\) para probar si al
-    emplear \(4.85\) gramos de anilina, la proporción de experimentos
-    que recuperan una cantidad de acetanilida superior a \(3.85\) gramos
-    es superior al \(20\%\).
+    Emplee un nivel de significancia del $10\%$ para probar si al
+    emplear $4.85$ gramos de anilina, la proporción de experimentos
+    que recuperan una cantidad de acetanilida superior a $3.85$ gramos
+    es superior al $20\%$.
     </li>
     </ol>
 19. Para comparar dos clases de protectores de defensas, se muestrearon
@@ -760,7 +760,7 @@ bibliography: "../../referencias.bib"
     <ol type="a">
     <li>
     ¿Se encuentra apoyada la sospecha del propietario con un nivel de
-    significancia del \(1\%\)? ¿Cuál es el P-valor en este caso?
+    significancia del $1\%$? ¿Cuál es el P-valor en este caso?
     </li>
     <li>
     ¿Está de acuerdo con la afirmación de normalidad realizada por el

@@ -19,21 +19,21 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
 
     <ol type="a">
     <li>
-    Encuentre el valor \(k\) que hace que la función presentada, sea una
+    Encuentre el valor $k$ que hace que la función presentada, sea una
     función de masa de probabilidad bien definida.
     </li>
     <li>
     Encuentre la función de distribución acumulada.
     </li>
     <li>
-    Encuentre la probabilidad de que \(X\) sea a lo más de \(2\).
+    Encuentre la probabilidad de que $X$ sea a lo más de $2$.
     </li>
     <li>
-    Encuentre la probabilidad de que \(X\) se al menos de \(1\), pero no
-    más de \(2\).
+    Encuentre la probabilidad de que $X$ se al menos de $1$, pero no
+    más de $2$.
     </li>
     <li>
-    Encuentre \(F(1.2)\).
+    Encuentre $F(1.2)$.
     </li>
     </ol>
 
@@ -120,14 +120,14 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     </table>
     <ol type="a">
     <li>
-    Obtenga las funciones de probabilidad marginales de \(X\) y de
-    \(Y\).
+    Obtenga las funciones de probabilidad marginales de $X$ y de
+    $Y$.
     </li>
     <li>
-    Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X=1|Y\leq 0)\).
+    Calcule la $\mathbb{P}(X=1|Y\leq 0)$.
     </li>
     </ol>
 
@@ -137,56 +137,56 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(X\)
+    $X$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{-1}\)
+    $\mathbf{-1}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{3}\)
+    $\mathbf{3}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{4}\)
+    $\mathbf{4}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{5}\)
+    $\mathbf{5}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{7}\)
+    $\mathbf{7}$
     </td>
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
-    \(0.31\)
+    $0.31$
     </td>
     <td style="text-align:left;">
-    \(k\)
+    $k$
     </td>
     <td style="text-align:left;">
-    \(0.15\)
+    $0.15$
     </td>
     <td style="text-align:left;">
-    \(0.18\)
+    $0.18$
     </td>
     <td style="text-align:left;">
-    \(0.23\)
+    $0.23$
     </td>
     </tr>
     </tbody>
     </table>
     <ol type="a">
     <li>
-    Encuentre el valor \(k\) que tal que \(p(x)\) sea una función de
+    Encuentre el valor $k$ que tal que $p(x)$ sea una función de
     masa de probabilidad bien especificada.
     </li>
     <li>
-    Calcule la función de distribución acumulada \(F(X)\).
+    Calcule la función de distribución acumulada $F(X)$.
     </li>
     <li>
-    Encuentre \(\mathbb{P}(X\gt 3)\).
+    Encuentre $\mathbb{P}(X\gt 3)$.
     </li>
     </ol>
 
@@ -200,14 +200,14 @@ $$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\e
     esté bien definida y con esta función
     <ol type="a">
     <li>
-    Calcule la función de distribución acumulada \(F(X)\).
+    Calcule la función de distribución acumulada $F(X)$.
     </li>
     <li>
-    Realice el gráfico de la función de distribución acumulada \(F(X)\).
+    Realice el gráfico de la función de distribución acumulada $F(X)$.
     </li>
     <li>
     Calcule la probabilidad de que el número de automóviles blancos que
-    vende en un día sea a lo más \(1\).
+    vende en un día sea a lo más $1$.
     </li>
     </ol>
 
@@ -221,19 +221,19 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
 
     <ol type="a">
     <li>
-    Determine \(k\), que hace que \(f(x)\), sea una función de densidad
+    Determine $k$, que hace que $f(x)$, sea una función de densidad
     válida.
     </li>
     <li>
-    Calcule la función de distribución acumulada \(F(X)\).
+    Calcule la función de distribución acumulada $F(X)$.
     </li>
     <li>
     Calcule la probabilidad de que un error aleatorio en la medición sea
-    menor que \(\frac{1}{2}\).
+    menor que $\frac{1}{2}$.
     </li>
     <li>
     Para esta medición específica, resulta indeseable si la magnitud del
-    error (es decir, \(|x|\)) es mayor que \(0.8\). ¿Cuál es la
+    error (es decir, $|x|$) es mayor que $0.8$. ¿Cuál es la
     probabilidad de que esto ocurra?
     </li>
     </ol>
@@ -246,20 +246,20 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     A partir de esta ecuación, calcule
     <ol type="a">
     <li>
-    El valor \(k\) que hace que la función \(f(x,y,z)\), sea una función
+    El valor $k$ que hace que la función $f(x,y,z)$, sea una función
     de densidad válida.
     </li>
     <li>
-    La función de densidad marginal conjunta de \(Y\) y \(Z\).
+    La función de densidad marginal conjunta de $Y$ y $Z$.
     </li>
     <li>
-    La densidad marginal de \(Y\).
+    La densidad marginal de $Y$.
     </li>
     <li>
-    \(\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)\)
+    $\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)$
     </li>
     <li>
-    \(\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)\)
+    $\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)$
     </li>
     </ol>
 
@@ -270,14 +270,14 @@ $$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x<
     <ol type="a">
     <li>
     Encuentre la función de masa de probabilidad de la variable
-    aleatoria \(X\).
+    aleatoria $X$.
     </li>
     <li>
-    Calcule la probabilidad de que \(X\) sea mayor a \(4\).
+    Calcule la probabilidad de que $X$ sea mayor a $4$.
     </li>
     <li>
     Calcule la probabilidad de que la variable aleatoria se encuentre
-    entre \(2\) y \(5\), inclusive.
+    entre $2$ y $5$, inclusive.
     </li>
     </ol>
 
@@ -292,18 +292,18 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
 
     <ol type="a">
     <li>
-    ¿Cuál es el valor de \(k\) que hace de la anterior una función de
+    ¿Cuál es el valor de $k$ que hace de la anterior una función de
     densidad válida?
     </li>
     <li>
     Calcule la probabilidad de que la proporción de utilidades que
     obtiene una empresa pequeña durante su primer año sea de al menos el
-    \(50\%\).
+    $50\%$.
     </li>
     <li>
     Calcule la probabilidad de que la proporción de utlidades que
     obtiene una empresa pequeña durante su primer año sea de al menos el
-    \(80\%\), pero no más del \(90\%\).
+    $80\%$, pero no más del $90\%$.
     </li>
     </ol>
 
@@ -317,11 +317,11 @@ $$\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{ali
 
     <ol type="a">
     <li>
-    Calcule la probabilidad de que en un periodo específico de \(20\)
+    Calcule la probabilidad de que en un periodo específico de $20$
     segundos más de 8 automóviles lleguen a la intersección.
     </li>
     <li>
-    Calcule la probabilidad de que sólo lleguen \(2\) automóviles.
+    Calcule la probabilidad de que sólo lleguen $2$ automóviles.
     </li>
     </ol>
 
@@ -334,22 +334,22 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     <ol type="a">
     <li>
     Encuentre la función de masa de probabilidad de la variable
-    aleatoria \(X\).
+    aleatoria $X$.
     </li>
     <li>
     Calcule la probabilidad de que el número de clientes que llega al
-    centro comercial sea mayor a \(4\).
+    centro comercial sea mayor a $4$.
     </li>
     <li>
     Calcule la probabilidad de que el número de clientes que llega al
-    centro comercial se encuentre entre \(3\) y \(7\), inclusive.
+    centro comercial se encuentre entre $3$ y $7$, inclusive.
     </li>
     <li>
     Calcule la probabilidad de que el número de clientes que llega al
-    centro comercial sea mayor a \(4\) pero como máximo de \(8\).
+    centro comercial sea mayor a $4$ pero como máximo de $8$.
     </li>
     <li>
-    Calcule la probabilidad de que llegue un número diferente de \(5\)
+    Calcule la probabilidad de que llegue un número diferente de $5$
     clientes al centro comercial.
     </li>
     </ol>
@@ -366,96 +366,96 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     <tbody>
     <tr>
     <td style="text-align:left;">
-    \(X\) (en años)
+    $X$ (en años)
     </td>
     <td style="text-align:left;">
-    \(\mathbf{3}\)
+    $\mathbf{3}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{4}\)
+    $\mathbf{4}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{5}\)
+    $\mathbf{5}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{6}\)
+    $\mathbf{6}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{7}\)
+    $\mathbf{7}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{8}\)
+    $\mathbf{8}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{9}\)
+    $\mathbf{9}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{10}\)
+    $\mathbf{10}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{11}\)
+    $\mathbf{11}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{12}\)
+    $\mathbf{12}$
     </td>
     <td style="text-align:left;">
-    \(\mathbf{13}\)
+    $\mathbf{13}$
     </td>
     </tr>
     <tr>
     <td style="text-align:left;">
-    \(p(x)\)
+    $p(x)$
     </td>
     <td style="text-align:left;">
-    \(0.03\)
+    $0.03$
     </td>
     <td style="text-align:left;">
-    \(0.05\)
+    $0.05$
     </td>
     <td style="text-align:left;">
-    \(0.07\)
+    $0.07$
     </td>
     <td style="text-align:left;">
-    \(0.10\)
+    $0.10$
     </td>
     <td style="text-align:left;">
-    \(0.14\)
+    $0.14$
     </td>
     <td style="text-align:left;">
-    \(0.20\)
+    $0.20$
     </td>
     <td style="text-align:left;">
-    \(0.18\)
+    $0.18$
     </td>
     <td style="text-align:left;">
-    \(0.12\)
+    $0.12$
     </td>
     <td style="text-align:left;">
-    \(0.07\)
+    $0.07$
     </td>
     <td style="text-align:left;">
-    \(0.03\)
+    $0.03$
     </td>
     <td style="text-align:left;">
-    \(0.01\)
+    $0.01$
     </td>
     </tr>
     </tbody>
     </table>
     <ol type="a">
     <li>
-    Encuentre la función de distribución acumulada \(F(X)\).
+    Encuentre la función de distribución acumulada $F(X)$.
     </li>
     <li>
-    Realice el gráfico de la función de distribución acumulada \(F(X)\).
+    Realice el gráfico de la función de distribución acumulada $F(X)$.
     </li>
     <li>
     Calcule la probabilidad de que el tiempo de vida en años sea a lo
-    más \(9\) años.
+    más $9$ años.
     </li>
     <li>
     Calcule la probabilidad de que el tiempo de vida en años sea más de
-    \(8\) años, pero no más de \(11\).
+    $8$ años, pero no más de $11$.
     </li>
     </ol>
 
@@ -466,15 +466,15 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) que hace a \(f(x)\) una función de
+    Encuentre el valor de $k$ que hace a $f(x)$ una función de
     densidad de probabilidad.
     </li>
     <li>
     Calcule la función de distribución acumulada.
     </li>
     <li>
-    Calcular \(\mathbb{P}(X\geq 2.3)\) y
-    \(\mathbb{P}(-3 \leq X \leq 3)\)
+    Calcular $\mathbb{P}(X\geq 2.3)$ y
+    $\mathbb{P}(-3 \leq X \leq 3)$
     </li>
     </ol>
 
@@ -485,25 +485,25 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
 
     <ol type="a">
     <li>
-    La \(f(x,y)\) es efectivamente una función de densidad de
+    La $f(x,y)$ es efectivamente una función de densidad de
     probabilidad conjunta bien definida? de no serlo, por qué constante
-    \(k\) la multiplicaría?.
+    $k$ la multiplicaría?.
     </li>
     <li>
-    Determine la distribución marginal de \(X\).
+    Determine la distribución marginal de $X$.
     </li>
     <li>
-    Determine la distribución marginal de \(Y\).
+    Determine la distribución marginal de $Y$.
     </li>
     <li>
-    ¿Cuál es la probabilidad de \(4\lt X\lt 6\) y \(Y\gt 2\)?.
+    ¿Cuál es la probabilidad de $4\lt X\lt 6$ y $Y\gt 2$?.
     </li>
     <li>
-    Determine la distribución condicional \(f(X | 1\lt Y\lt 4)\).
+    Determine la distribución condicional $f(X | 1\lt Y\lt 4)$.
     </li>
     <li>
-    Si se sabe que \(Y\gt 5\), entonces, cuál es la probabilidad de que
-    \(X\lt 8\).
+    Si se sabe que $Y\gt 5$, entonces, cuál es la probabilidad de que
+    $X\lt 8$.
     </li>
     </ol>
 
@@ -519,12 +519,12 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
 
     <ol type="a">
     <li>
-    ¿Son independientes las dos variables aleatorias \(X\) y \(Y\)?
+    ¿Son independientes las dos variables aleatorias $X$ y $Y$?
     Justifique su respuesta.
     </li>
     <li>
     ¿Cuál es la probabilidad de que, durante el periodo en cuestión,
-    lleguen menos de \(4\) vehículos a las dos esquinas?.
+    lleguen menos de $4$ vehículos a las dos esquinas?.
     </li>
     </ol>
 
@@ -534,11 +534,11 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
     en la muestra, calcule
     <ol type="a">
     <li>
-    la distribución de probabilidad conjunta de \(X\) y \(Y\).
+    la distribución de probabilidad conjunta de $X$ y $Y$.
     </li>
     <li>
-    \(\mathbb{P}[(X, Y) \in A]\), donde A es la región dada por
-    \(\{(x, y) | x + y \leq 2\}\).
+    $\mathbb{P}[(X, Y) \in A]$, donde A es la región dada por
+    $\{(x, y) | x + y \leq 2\}$.
     </li>
     </ol>
 
@@ -554,15 +554,15 @@ $$\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & 
     <ol type="a">
     <li>
     Compruebe si es efectivamente una función de masa de probabilidad y
-    calcule \(F(x)\).
+    calcule $F(x)$.
     </li>
     <li>
     Calcule la probabilidad de que la suma de las caras se encuentren
-    entre \(5\) y \(9\) inclusive.
+    entre $5$ y $9$ inclusive.
     </li>
     <li>
     Calcule la probabilidad de que la suma de las caras sean mayores que
-    \(7\) pero a lo más \(10\).
+    $7$ pero a lo más $10$.
     </li>
     </ol>
 
@@ -574,12 +574,12 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
 
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) para que \(f(x)\) sea una función de
+    Encuentre el valor de $k$ para que $f(x)$ sea una función de
     densidad de probabilidad.
     </li>
     <li>
-    Calcule \(F(x)\) y utilice el resultado para calcular la
-    \(\mathbb{P}(0.24 \lt  X \lt  0.63)\).
+    Calcule $F(x)$ y utilice el resultado para calcular la
+    $\mathbb{P}(0.24 \lt  X \lt  0.63)$.
     </li>
     </ol>
 
@@ -588,17 +588,17 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     `$x=1,2,3$`; `$y=1,2,3$`.
     <ol type="a">
     <li>
-    Encuentre el valor de \(k\) que hace que \(f(x,y)\) sea una función
+    Encuentre el valor de $k$ que hace que $f(x,y)$ sea una función
     de masa de probabilidad conjunta.
     </li>
     <li>
-    Encuentre la distribución marginal de \(X\) y \(Y\).
+    Encuentre la distribución marginal de $X$ y $Y$.
     </li>
     <li>
-    Encuentre la distribución condicional de \(X\) dado \(Y=1\).
+    Encuentre la distribución condicional de $X$ dado $Y=1$.
     </li>
     <li>
-    las v.a \(X\) y \(Y\) son independientes?.
+    las v.a $X$ y $Y$ son independientes?.
     </li>
     </ol>
 
@@ -610,16 +610,16 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     Calcule
     <ol type="a">
     <li>
-    \(\mathbb{P}(X \leq 2, Y = 1)\)
+    $\mathbb{P}(X \leq 2, Y = 1)$
     </li>
     <li>
-    \(\mathbb{P}(X\gt Y)\).
+    $\mathbb{P}(X\gt Y)$.
     </li>
     <li>
-    \(\mathbb{P}(X+Y = 4)\).
+    $\mathbb{P}(X+Y = 4)$.
     </li>
     <li>
-    \(\mathbb{P}(X\gt 2|Y\leq1)\).
+    $\mathbb{P}(X\gt 2|Y\leq1)$.
     </li>
     </ol>
 
@@ -631,17 +631,17 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     <ol type="a">
     <li>
     Obtenga la función de masa de probabilidad y la función de
-    distribución acumulada de la variable aleatoria \(X\)
+    distribución acumulada de la variable aleatoria $X$
     </li>
     <li>
     Suponga que la moneda está cargada, de manera que existe el doble de
     probabilidad de que ocurra una cara que una cruz. Obtenga la función
     de masa de probabilidad y la función de distribución acumulada de la
-    variable aleatoria \(X\).
+    variable aleatoria $X$.
     </li>
     <li>
     Bajo las dos situaciones anteriores, cuál es la probabilidad de que
-    salga al menos \(3\) caras?.
+    salga al menos $3$ caras?.
     </li>
     </ol>
 
@@ -657,10 +657,10 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     velocidad sea menor de `$12$` minutos
     <ol type="a">
     <li>
-    Usando la función de distribución acumulativa de \(X\)
+    Usando la función de distribución acumulativa de $X$
     </li>
     <li>
-    Utilizando la función de densidad de probabilidad de \(X\).
+    Utilizando la función de densidad de probabilidad de $X$.
     </li>
     </ol>
 
@@ -673,15 +673,15 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     mide la longitud de `$5$` tubos elegidos al azar.
     <ol type="a">
     <li>
-    Muestre que la función de probabilidad de \(Y\), el número de tubos
+    Muestre que la función de probabilidad de $Y$, el número de tubos
     de cada 5 que cumplen con las especificaciones de longitud, está
     dada por la siguiente función de probabilidad discreta:
-    \(f(y)=\frac{5!}{y!(5-y)!}(0.99)^y(0.01)^{5-y}\)
+    $f(y)=\frac{5!}{y!(5-y)!}(0.99)^y(0.01)^{5-y}$
     </li>
     <li>
-    Suponga que se eligen artículos de la línea al azar y \(3\) no
-    cumplen con las especificaciones. Utilice la \(f(y)\) anterior para
-    apoyar o refutar la conjetura de que hay \(0.99\) de probabilidades
+    Suponga que se eligen artículos de la línea al azar y $3$ no
+    cumplen con las especificaciones. Utilice la $f(y)$ anterior para
+    apoyar o refutar la conjetura de que hay $0.99$ de probabilidades
     de que un solo tubo cumpla con las especificaciones.
     </li>
     </ol>
@@ -693,19 +693,19 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) para que hace que \(f(x,y,z)\) sea una
+    Calcule el valor $k$ para que hace que $f(x,y,z)$ sea una
     función de densidad de probabilidad conjunta.
     </li>
     <li>
-    Calcule las distribuciones marginales \(g(x)\), \(h(y)\), \(i(z)\),
-    \(j(x,y)\), \(k(x,z)\) y \(l(y,z)\).
+    Calcule las distribuciones marginales $g(x)$, $h(y)$, $i(z)$,
+    $j(x,y)$, $k(x,z)$ y $l(y,z)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)\).
+    Calcule $\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)$.
     </li>
     <li>
     Calcule
-    \(\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})\).
+    $\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})$.
     </li>
     </ol>
 
@@ -718,15 +718,15 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     <ol type="a">
     <li>
     Pruebe si efectivamente es una función de densidad de probabilidad,
-    de no serlo, por qué constante \(k\) multiplicaría la función?.
+    de no serlo, por qué constante $k$ multiplicaría la función?.
     </li>
     <li>
     Calcule la probabilidad de que en un año una familia use menos de
-    \(120\) horas la licuadora.
+    $120$ horas la licuadora.
     </li>
     <li>
     Calcule la probabilidad de que en un año una familia use la
-    licuadora entre \(65\) y \(100\) horas.
+    licuadora entre $65$ y $100$ horas.
     </li>
     </ol>
 
@@ -736,16 +736,16 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
     <li>
-    La distribución de probabilidad conjunta de \(X\) y \(Y\).
+    La distribución de probabilidad conjunta de $X$ y $Y$.
     </li>
     <li>
-    La distribución marginal de \(X\).
+    La distribución marginal de $X$.
     </li>
     <li>
-    La distribución marginal de \(Y\).
+    La distribución marginal de $Y$.
     </li>
     <li>
-    La probabilidad de que ocurra al menos \(1\) cara.
+    La probabilidad de que ocurra al menos $1$ cara.
     </li>
     </ol>
 
@@ -769,8 +769,8 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
     </li>
     <li>
     Calcule la probabilidad de que el peso de los chiclosos en una caja
-    sea menor que \(1/8\) de kilogramo, si se sabe que las cremas
-    constituyen \(3/4\) partes del peso.
+    sea menor que $1/8$ de kilogramo, si se sabe que las cremas
+    constituyen $3/4$ partes del peso.
     </li>
     </ol>
 
@@ -781,26 +781,26 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
 
     <ol type="a">
     <li>
-    Obtener el valor \(k\) que hace que la función esté bien definida y
+    Obtener el valor $k$ que hace que la función esté bien definida y
     encuentre la función de distribución acumulada conjunta.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que \(X\lt 3/2\) y \(Y\lt 2\)?.
+    ¿Cuál es la probabilidad de que $X\lt 3/2$ y $Y\lt 2$?.
     </li>
     <li>
-    Obtenga las funciones marginales para \(X\) y \(Y\).
+    Obtenga las funciones marginales para $X$ y $Y$.
     </li>
     <li>
-    Obtenga las función de distribución acumulada de \(X\) y de \(Y\).
+    Obtenga las función de distribución acumulada de $X$ y de $Y$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(0.8\lt X\lt 1.6)\) y \(\mathbb{P}(Y\gt 2.3)\).
+    Calcule $\mathbb{P}(0.8\lt X\lt 1.6)$ y $\mathbb{P}(Y\gt 2.3)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)\).
+    Calcule $\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)$.
     </li>
     <li>
-    Pruebe si \(X\) y \(Y\) son independientes.
+    Pruebe si $X$ y $Y$ son independientes.
     </li>
     </ol>
 
@@ -817,7 +817,7 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     </li>
     <li>
     Calcule la probabilidad de que una pelota loca tenga un diámetro
-    entre \(3\) y \(6\) centímetros.
+    entre $3$ y $6$ centímetros.
     </li>
     </ol>
 
@@ -828,16 +828,16 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
 
     <ol type="a">
     <li>
-    Determine la distribución marginal \(g(x)\) de la proporción \(X\) y
+    Determine la distribución marginal $g(x)$ de la proporción $X$ y
     verifique que sea una función de densidad válida.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que la proporción \(Y\) sea menor que
-    \(0.5\), dado que \(X\) es \(0.7\)?.
+    ¿Cuál es la probabilidad de que la proporción $Y$ sea menor que
+    $0.5$, dado que $X$ es $0.7$?.
     </li>
     <li>
-    ¿Cuál es la probabilidad de que la proporción \(X\) sea mayor que
-    \(0.5\), dado que \(Y\) es \(0.7\)?.
+    ¿Cuál es la probabilidad de que la proporción $X$ sea mayor que
+    $0.5$, dado que $Y$ es $0.7$?.
     </li>
     </ol>
 
@@ -852,14 +852,14 @@ $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4
 
     <ol type="a">
     <li>
-    Calcule el valor \(k\) que hace a \(p(x)\) una función de masa de
+    Calcule el valor $k$ que hace a $p(x)$ una función de masa de
     probabilidad bien definida.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X\geq 3)\).
+    Calcule la $\mathbb{P}(X\geq 3)$.
     </li>
     <li>
-    Calcule la \(\mathbb{P}(X\geq 3|X\lt 5)\).
+    Calcule la $\mathbb{P}(X\geq 3|X\lt 5)$.
     </li>
     </ol>
 
@@ -875,17 +875,17 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
 
     <ol type="a">
     <li>
-    Verifique si \(f(x)\) es efectivamente una función de densidad de
+    Verifique si $f(x)$ es efectivamente una función de densidad de
     probabilidad.
     </li>
     <li>
-    Suponga que \(\theta = 100\). Cuál es la probabilidad de que el
-    hamster tarde a lo más de \(200\) minutos en superar el laberinto? y
-    cuál es la probabilidad de que tarde al menos \(200\) minutos?.
+    Suponga que $\theta = 100$. Cuál es la probabilidad de que el
+    hamster tarde a lo más de $200$ minutos en superar el laberinto? y
+    cuál es la probabilidad de que tarde al menos $200$ minutos?.
     </li>
     <li>
     De una expresión para la función de distribución acumulada
-    \(F(x) = \mathbb{P}(X \leq x)\)?.
+    $F(x) = \mathbb{P}(X \leq x)$?.
     </li>
     </ol>
 
@@ -961,19 +961,19 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     </table>
     <ol type="a">
     <li>
-    Evalúe la distribución marginal de \(X\).
+    Evalúe la distribución marginal de $X$.
     </li>
     <li>
-    Evalué la distribución marginal de \(Y\).
+    Evalué la distribución marginal de $Y$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(Y = 2 | X = 1)\).
+    Calcule $\mathbb{P}(Y = 2 | X = 1)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X\lt 2|Y\leq1)\).
+    Calcule $\mathbb{P}(X\lt 2|Y\leq1)$.
     </li>
     <li>
-    Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
     </li>
     </ol>
 
@@ -986,21 +986,21 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
 
     <ol type="a">
     <li>
-    Determine la distribución marginal de \(X\).
+    Determine la distribución marginal de $X$.
     </li>
     <li>
-    Determine la distribución marginal de \(Y\).
+    Determine la distribución marginal de $Y$.
     </li>
     <li>
     ¿Cuál es la probabilidad de que las proporciones del componente
-    generen los resultados \(X \lt  0.2\) y \(Y \gt  0.5\)?.
+    generen los resultados $X \lt  0.2$ y $Y \gt  0.5$?.
     </li>
     <li>
-    Determine la distribución condicional \(f(X | Y)\).
+    Determine la distribución condicional $f(X | Y)$.
     </li>
     <li>
-    Si se sabe que \(Y\gt 0.2\), entonces, cuál es la probabilidad de que
-    \(X\lt 0.1\).
+    Si se sabe que $Y\gt 0.2$, entonces, cuál es la probabilidad de que
+    $X\lt 0.1$.
     </li>
     </ol>
 
@@ -1078,19 +1078,19 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </table>
     <ol type="a">
     <li>
-    Evalúe la distribución marginal de \(X\).
+    Evalúe la distribución marginal de $X$.
     </li>
     <li>
-    Evalué la distribución marginal de \(Y\).
+    Evalué la distribución marginal de $Y$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(Y = 3 | X = 2)\).
+    Calcule $\mathbb{P}(Y = 3 | X = 2)$.
     </li>
     <li>
-    Calcule \(\mathbb{P}(X\geq2|Y\leq3)\).
+    Calcule $\mathbb{P}(X\geq2|Y\leq3)$.
     </li>
     <li>
-    Pruebe si las variables aleatorias \(X\) y \(Y\) son independientes.
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
     </li>
     </ol>
 
@@ -1109,12 +1109,12 @@ $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-
     <ol type="a">
     <li>
     Obtener la probabilidad conjunta de que el tiempo de espera no sea
-    mayor de ocho minutos y el de ejecución no sea mayor de \(12\)
+    mayor de ocho minutos y el de ejecución no sea mayor de $12$
     segundos.
     </li>
     <li>
     Si se sabe que el tiempo de espera es mayor a seis minutos, calcule
-    la probabilidad de que el tiempo de ejecición sea menor a \(15\)
+    la probabilidad de que el tiempo de ejecición sea menor a $15$
     segundos.
     </li>
     <li>

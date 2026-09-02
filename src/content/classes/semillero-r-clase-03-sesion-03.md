@@ -124,12 +124,12 @@ Ocultar Ejemplo en <tt>R</tt>
 Función <tt>if</tt>
 </h3>
 <p>
-Establezca una semilla con número \(1754\), realice la selección
-aleatoria de dos números entre el \(1\) y el \(10\) sin remplazo, y
-calcule una variable \(X\) igual a la resta entre el primero y el
-segundo número. Establezca un condicional que evalué la variable \(X\) e
+Establezca una semilla con número $1754$, realice la selección
+aleatoria de dos números entre el $1$ y el $10$ sin remplazo, y
+calcule una variable $X$ igual a la resta entre el primero y el
+segundo número. Establezca un condicional que evalué la variable $X$ e
 imprima el mensaje <i>“La resta es negativa”</i>, si se encuentra que la
-resta es menor a \(0\).
+resta es menor a $0$.
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -177,9 +177,9 @@ resta es menor a \(0\).
 Función <tt>if/else</tt>
 </h3>
 <p>
-Establezca una semilla con número \(143\), realice la selección
-aleatoria de un número entre el \(-10\) y el \(10\), sin incluir el
-\(0\). Si el número generado es positivo imprima el mensaje <i>“El
+Establezca una semilla con número $143$, realice la selección
+aleatoria de un número entre el $-10$ y el $10$, sin incluir el
+$0$. Si el número generado es positivo imprima el mensaje <i>“El
 número generado es positivo e igual a”</i> seguido del número generado,
 en caso de que no se cumpla la condición, imprima el mensaje <i>“El
 número generado es negativo e igual a”</i> seguido del número.
@@ -239,7 +239,7 @@ número generado es negativo e igual a”</i> seguido del número.
 Función <tt>ifelse</tt>
 </h3>
 <p>
-Tome todas las letras del abecedario, y cree una variable \(C\) mediante
+Tome todas las letras del abecedario, y cree una variable $C$ mediante
 un condicional, que clasifique las letras entre vocales y consonantes, e
 imprima el resultado junto con la vocal asociada
 </p>
@@ -359,9 +359,9 @@ Ocultar Ejemplo en <tt>R</tt>
 Función <tt>for</tt>
 </h3>
 <p>
-Cree una secuencia de número del \(6\) al \(25\), y calcule e imprima de
+Cree una secuencia de número del $6$ al $25$, y calcule e imprima de
 forma iterativa la raíz cuadrada de cada valor de la secuencia, mientras
-que se cumpla la condición de que la raíz cuadrada es menor a \(4\).
+que se cumpla la condición de que la raíz cuadrada es menor a $4$.
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -400,11 +400,11 @@ que se cumpla la condición de que la raíz cuadrada es menor a \(4\).
 Función <tt>while</tt>
 </h3>
 <p>
-Establezca una semilla igual a \(184\), y haga la selección aleatoria de
-un número entre el \(1\) y el \(100\). Cree un ciclo, con un contador de
-iteraciones, en el cual se seleccione un número aleatorio entre \(1\) y
-\(10\), y se le sume y reemplace el valor inicialmente generado. Repita
-el ciclo hasta que el número final sea mayor a \(200\), y reporte el
+Establezca una semilla igual a $184$, y haga la selección aleatoria de
+un número entre el $1$ y el $100$. Cree un ciclo, con un contador de
+iteraciones, en el cual se seleccione un número aleatorio entre $1$ y
+$10$, y se le sume y reemplace el valor inicialmente generado. Repita
+el ciclo hasta que el número final sea mayor a $200$, y reporte el
 número de iteraciones que fueron necesarias para llegar a dicho número.
 </p>
 <section class="language-r highlighter-rouge">
@@ -435,11 +435,11 @@ número de iteraciones que fueron necesarias para llegar a dicho número.
 Función <tt>repeat</tt>
 </h3>
 <p>
-Establezca una semilla igual a \(20\), y genere un número aleatorio de
-una distribución normal con media \(18\) y varianza \(16\), para
+Establezca una semilla igual a $20$, y genere un número aleatorio de
+una distribución normal con media $18$ y varianza $16$, para
 emplearla como variable control. Cree un ciclo en cual se generen
 números aleatorios de una distribución uniforme con límite inferior
-\(6\) y límite superior \(30\), y guarde los resultados obtenidos en un
+$6$ y límite superior $30$, y guarde los resultados obtenidos en un
 objeto, hasta que el número generado por la distribución uniforme sea
 mayor al número generado inicialmente por la distribución normal.
 Reporte el valor promedio, la desviación estándar obtenida por los
@@ -532,7 +532,7 @@ Función <tt>function</tt>
 </h3>
 <p>
 Cree una función que permita calcular la probabilidad de obtener más de
-\(3\) caras en el lanzamiento de \(10\) monedas, y compare el resultado
+$3$ caras en el lanzamiento de $10$ monedas, y compare el resultado
 obtenido con el de una distribución binomial.
 </p>
 <section class="language-r highlighter-rouge">

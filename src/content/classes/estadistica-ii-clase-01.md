@@ -54,11 +54,11 @@ $$\begin{align*}
 \end{align*}$$
 
 <li>
-Las expresiones de \(SCT\), \(SCR\) y \(SCE\) pueden ser reescritas como
+Las expresiones de $SCT$, $SCR$ y $SCE$ pueden ser reescritas como
 $$\begin{align*}
  &SCT = \sum_{i=1}^{n}y_i^2 - n\bar{Y}^2\\
  &SCR = \hat{\beta}_1S_{xy} = \hat{\beta}_1^2 S_{xx}\\
-\end{align*}$$ y luego se podrá calcular \(SCE\) como $$\begin{align*}
+\end{align*}$$ y luego se podrá calcular $SCE$ como $$\begin{align*}
  &SCE = SCT - SCR
 \end{align*}$$
 </li>

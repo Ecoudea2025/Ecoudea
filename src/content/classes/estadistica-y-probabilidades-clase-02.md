@@ -55,9 +55,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -412,7 +412,7 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular la covarianza entre las
-variables \(X\) y \(Y\), la cual podemos calcular mediante la ecuación
+variables $X$ y $Y$, la cual podemos calcular mediante la ecuación
 $$\begin{align*}
 Cov(X,Y) = \mathbb{E}(XY) -  \mathbb{E}(X)\mathbb{E}(Y)
 \end{align*}$$
@@ -420,14 +420,14 @@ Cov(X,Y) = \mathbb{E}(XY) -  \mathbb{E}(X)\mathbb{E}(Y)
 Al emplear los valores ya calculados en el ejemplo discreto de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, se tiene que
-\(\mathbb{E}(X)=7\), \(\mathbb{E}(Y)=1.9444\) y
-\(\mathbb{E}(XY)=13.0556\), y por tanto se tendrá que $$\begin{align*}
+$\mathbb{E}(X)=7$, $\mathbb{E}(Y)=1.9444$ y
+$\mathbb{E}(XY)=13.0556$, y por tanto se tendrá que $$\begin{align*}
 Cov(X,Y) &= 13.0556 -  (7)(1.9444) \\
          &= -0.5552
 \end{align*}$$
 
 Por tanto se tendrá que la covarianza entre la suma resultante y el
-valor absoluto de la diferencia de los dos dados es de \(-0.5552\), lo
+valor absoluto de la diferencia de los dos dados es de $-0.5552$, lo
 cual, al observar el signo resultante, se tendrá que hay una dependencia
 lineal negativa entre las variables.<br> <br> Es de anotar, que al tener
 una covarianza con un valor tan cercano a 0, no posible afirmar si la
@@ -452,12 +452,12 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule la covarianza entre el número promedio de horas
@@ -470,8 +470,8 @@ Solución
 <p>
 
 En este caso estamos interesados en realizar el cálculo de la covarianza
-entre la variable \(X\) la cual hace referencia al número de horas
-promedio de tiempo libre del profesor, y la variable \(Y\) la cual hace
+entre la variable $X$ la cual hace referencia al número de horas
+promedio de tiempo libre del profesor, y la variable $Y$ la cual hace
 referencia al número de horas promedio de tiempo libre de los
 estudiantes. Esta covarianza puede ser calculada de forma simple por la
 ecuación $$\begin{align*}
@@ -481,9 +481,9 @@ cálculo de la covarianza, fueron calculados previamente en el ejemplo
 continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, siendo los valores calculados
-iguales a \(\mathbb{E}(X)=4/3 =1.333333\),
-\(\mathbb{E}(Y)=85/28=3.035714\) y
-\(\mathbb{E}(XY)=255/63 = 4.047619\).<br> <br> Al reemplazar estos
+iguales a $\mathbb{E}(X)=4/3 =1.333333$,
+$\mathbb{E}(Y)=85/28=3.035714$ y
+$\mathbb{E}(XY)=255/63 = 4.047619$.<br> <br> Al reemplazar estos
 valores en la función de covarianza tendremos que $$\begin{align*}
 Cov(X,Y) &= \frac{255}{63} - \left(\frac{4}{3}\right)\left(\frac{85}{28}\right)\\
          &= 0
@@ -552,9 +552,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -910,7 +910,7 @@ Solución
 <p>
 
 En este ejercicio debemos calcular la correlación entre las variables
-\(X\) y \(Y\), y para ello podemos emplear la ecuación de correlación,
+$X$ y $Y$, y para ello podemos emplear la ecuación de correlación,
 dada por $$\begin{align*}
 Cor(X,Y) = \frac{Cov(X,Y)}{Sd(X)Sd(Y)}
 \end{align*}$$
@@ -921,7 +921,7 @@ multivariado de la
 <a href="../../EstadisticaI/EstIClase12.html#caso-multivariado" target="\_blank">Varianza</a>
 y el valor obtenido para la
 <a href="../../EstadisticaI/EstIClase13.html#covarianza" target="\_blank">Covarianza</a>,
-tal que, \(Sd(X)=2.415229\), \(Sd(Y)=1.432704\) y \(Cov(X,Y)=−0.5552\),
+tal que, $Sd(X)=2.415229$, $Sd(Y)=1.432704$ y $Cov(X,Y)=−0.5552$,
 y por tanto, al reemplazar en la formula de correlación, tendremos que
 $$\begin{align*}
 Cor(X,Y) &= \frac{−0.5552}{(2.415229)(1.432704)} \\
@@ -929,7 +929,7 @@ Cor(X,Y) &= \frac{−0.5552}{(2.415229)(1.432704)} \\
 \end{align*}$$
 
 Por tanto se tendrá que la correlación entre la suma resultante y el
-valor absoluto de la diferencia de los dos dados es de \(-16.04\%\), lo
+valor absoluto de la diferencia de los dos dados es de $-16.04\%$, lo
 cual quiere decir, que existe una dependencia lineal negativa débil
 entre las variables de interés.
 </p>
@@ -951,12 +951,12 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule la correlación entre el número promedio de horas
@@ -981,7 +981,7 @@ en los ejemplos continuos para el caso multivariado de la
 <a href="../../EstadisticaI/EstIClase12.html#caso-multivariado" target="\_blank">Varianza</a>
 y el valor obtenido para la
 <a href="../../EstadisticaI/EstIClase13.html#covarianza" target="\_blank">Covarianza</a>,
-tal que, \(Sd(X)=0.4714053\), \(Sd(Y)=0.7261525\) y \(Cov(X,Y)=0\), y
+tal que, $Sd(X)=0.4714053$, $Sd(Y)=0.7261525$ y $Cov(X,Y)=0$, y
 por tanto, al reemplazar en la formula de correlación, tendremos que
 $$\begin{align*}
 Cor(X,Y) &= \frac{0}{(0.4714053)(0.7261525)} \\
@@ -1022,9 +1022,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -1378,7 +1378,7 @@ Solución
 </h3>
 <p>
 
-Para probar si las variables \(X\) y \(Y\) son independientes, debemos
+Para probar si las variables $X$ y $Y$ son independientes, debemos
 verificar si la multiplicación entre el valor esperado de la suma
 resultante de los dos dados y el valor esperado del valor absoluto de la
 diferencia de los dos dados, es igual a la esperanza conjunta de las dos
@@ -1388,8 +1388,8 @@ variables, tal que se pueda probar si $$\begin{align*}
 
 Entonces, al emplear los
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Valores
-Esperados</a> \(\mathbb{E}(X)=7\), \(\mathbb{E}(Y)=1.9444\) y
-\(\mathbb{E}(XY)=13.0556\), que fueron calculados en el ejemplo discreto
+Esperados</a> $\mathbb{E}(X)=7$, $\mathbb{E}(Y)=1.9444$ y
+$\mathbb{E}(XY)=13.0556$, que fueron calculados en el ejemplo discreto
 para el caso multivariado, se tendrá que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 13.0556 &= (7)(1.9444) \\
@@ -1417,12 +1417,12 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Pruebe si el número promedio de horas de tiempo libre que
@@ -1444,8 +1444,8 @@ tal que se pueda probar si $$\begin{align*}
 \end{align*}$$ Basados en los
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Valores
 Esperados</a> calculados en el ejemplo continuo para el caso
-multivariado, tenemos que \(\mathbb{E}(X)=4/3\), \(\mathbb{E}(Y)=85/28\)
-y \(\mathbb{E}(XY)=255/63\). Entonces, al reemplazar en la ecuación
+multivariado, tenemos que $\mathbb{E}(X)=4/3$, $\mathbb{E}(Y)=85/28$
+y $\mathbb{E}(XY)=255/63$. Entonces, al reemplazar en la ecuación
 anterior, tenemos que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 \frac{255}{63} &= \left(\frac{4}{3}\right)\left(\frac{85}{28}\right) \\

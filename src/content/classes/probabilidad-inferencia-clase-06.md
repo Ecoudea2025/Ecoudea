@@ -45,8 +45,8 @@ confianza inferior y superior, tal que
 
 <ol type="a">
 <li>
-Usualmente se usan valores para \(\alpha\) de \(0.1, 0.05\) y $ 0.01$,
-es decir, niveles de confianza de \(0.9, 0.95\) y \(0.99\).
+Usualmente se usan valores para $\alpha$ de $0.1, 0.05$ y $ 0.01$,
+es decir, niveles de confianza de $0.9, 0.95$ y $0.99$.
 </li>
 <li>
 La longitud o amplitud del intervalo construido, medirá la
@@ -97,7 +97,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 Ingeniería Industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -109,7 +109,7 @@ millones de pesos $$\begin{align*}
 Si es posible supone que los salarios de los egresados se distribuyen
 aproximadamente normal, calcule el límite superior del salario promedio
 que ganan los egresados del programa de ingeniería industrial empleando
-un nivel de confianza del \(98\%\).
+un nivel de confianza del $98\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -123,7 +123,7 @@ poseemos.<br> <br> De la información extraída del enunciado tenemos que
 la varianza poblacional no es conocida, ya que no la mencionan en el
 enunciado, tenemos que la población es normal, debido a que mencionan
 que puede suponerse que los salarios son aproximadamente normales, y los
-tamaños de muestra son pequeños, debido a que solo tenemos \(15\) datos,
+tamaños de muestra son pequeños, debido a que solo tenemos $15$ datos,
 estas características se ilustra en la siguiente imagen<br><br>
 
 <img src="/assets/images/Intervalos1a.jpg" alt="" style="max-width: 80%;">
@@ -132,10 +132,10 @@ es de la forma $$\begin{align*}
   \mu < \bar{X}+t_{\alpha, n-1}\frac{S}{\sqrt{n}}
 \end{align*}$$
 
-En donde observamos que requerimos de \(5\) variables, la media muestral
-\(\bar{X}=1.659333\), la desviación estándar muestral \(S=0.6709425\),
-el tamaño de muestra \(n=15\), el nivel de confianza \(1-\alpha=0.98\) y
-el valor crítico \(t_{\alpha=0.02, n-1=14}=2.263781\) calculado a partir
+En donde observamos que requerimos de $5$ variables, la media muestral
+$\bar{X}=1.659333$, la desviación estándar muestral $S=0.6709425$,
+el tamaño de muestra $n=15$, el nivel de confianza $1-\alpha=0.98$ y
+el valor crítico $t_{\alpha=0.02, n-1=14}=2.263781$ calculado a partir
 del nivel de confianza y el tamaño de la muestra. Al reemplazar en el
 intervalo tenemos que $$\begin{align*}
   \mu &< 1.659333+2.263781\frac{0.6709425}{\sqrt{15}}\\
@@ -143,9 +143,9 @@ intervalo tenemos que $$\begin{align*}
   \mu &< 2.051503
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(98\%\), que el
+Entonces podremos afirmar con un nivel de confianza del $98\%$, que el
 salario máximo promedio que ganan los egresados del Departamento de
-Ingeniería Industrial es de \(2.051503\) millones de pesos, es decir,
+Ingeniería Industrial es de $2.051503$ millones de pesos, es decir,
 dos millones cincuenta y un mil quinientos tres pesos.
 </p>
 </main>
@@ -163,11 +163,11 @@ Ejercicio
 Suponga que Postobon desarrolla una nueva máquina de bebidas para servir
 de forma automática gaseosas en los cines, de tal forma que la cantidad
 servida, en mililitros, se distribuya Weibull con desviación estándar de
-\(5703.473_{ml}\).<br> <br> Si se decide tomar una muestra aleatoria de
-\(8000\) vasos de gaseosa servidos por una de las nuevas máquinas de
-bebidas, y se obtiene una promedio de \(345_{ml}\) con una desviación
-estándar de \(5240.35_{ml}\), construya un intervalo de confianza del
-\(90\%\) para la verdadera cantidad promedio de refresco servida por la
+$5703.473_{ml}$.<br> <br> Si se decide tomar una muestra aleatoria de
+$8000$ vasos de gaseosa servidos por una de las nuevas máquinas de
+bebidas, y se obtiene una promedio de $345_{ml}$ con una desviación
+estándar de $5240.35_{ml}$, construya un intervalo de confianza del
+$90\%$ para la verdadera cantidad promedio de refresco servida por la
 máquina.
 </p>
 <h3 data-toc-skip>
@@ -180,10 +180,10 @@ bilateral del $90% $ para la cantidad promedio de refresco servida por
 la nueva máquina de bebidas, pero para realizar el cálculo debemos
 evaluar previamente la información que poseemos.<br> <br> Del contexto
 del ejercicio tenemos que la población no es normal, debido a que se
-menciona que es Weibull, con desviación estándar de \(5703.473_{ml}\),
+menciona que es Weibull, con desviación estándar de $5703.473_{ml}$,
 por lo cual tendremos que la varianza poblacional es conocida.
 Adicionalmente, tenemos que el tamaño de muestra de vasos de gaseosa
-servidos por la máquina es de \(8000\) vasos, por lo cual, basados en la
+servidos por la máquina es de $8000$ vasos, por lo cual, basados en la
 información que poseemos tenemos las siguientes<br><br> características
 
 <img src="/assets/images/Intervalos1b.jpg" alt="" style="max-width: 80%;">
@@ -192,20 +192,20 @@ es de la forma $$\begin{align*}
   \bar{X}-Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X}+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
 \end{align*}$$
 
-En donde observamos que requerimos la media muestral \(\bar{X}=345\), la
-desviación estándar poblacional \(\sigma=5703.473\), el tamaño de
-muestra \(n=8000\), el nivel de confianza \(1-\alpha=0.90\) y el valor
-crítico \(Z_{\alpha/2=0.05}=1.644854\) calculado a partir del nivel de
+En donde observamos que requerimos la media muestral $\bar{X}=345$, la
+desviación estándar poblacional $\sigma=5703.473$, el tamaño de
+muestra $n=8000$, el nivel de confianza $1-\alpha=0.90$ y el valor
+crítico $Z_{\alpha/2=0.05}=1.644854$ calculado a partir del nivel de
 confianza. Al reemplazar en el intervalo tenemos que $$\begin{align*}
   &345\pm 1.644854 \frac{5703.473}{\sqrt{8000}} \\
   &345\pm 104.8870143 \\
   &240.1129856 < \mu < 449.8870144
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(90\%\), que la
+Entonces podremos afirmar con un nivel de confianza del $90\%$, que la
 cantidad promedio de refresco servida de forma automática por la nueva
-máquina de bebidas se encontrará entre \(240.1129_{ml}\) y
-\(449.8870_{ml}\).
+máquina de bebidas se encontrará entre $240.1129_{ml}$ y
+$449.8870_{ml}$.
 </p>
 </main>
 <button id="Show3" class="btn btn-secondary">
@@ -220,14 +220,14 @@ Ejercicio
 </h3>
 <p>
 Suponga que la marca de cigarrillo Malboro, asegura que el contenido
-promedio de nicotina de sus cigarrillos es de \(1.1\) miligramos. Un
+promedio de nicotina de sus cigarrillos es de $1.1$ miligramos. Un
 estudio realizado por un grupo de investigación de la Universidad de
 Antioquia mide el contenido de nicotina de una muestra aleatoria de
-\(145\) cigarrillos y encuentra que la nicotina promedio y desviación
-estándar de la muestra fue de \(1.02\) y \(0.23\) miligramos de
+$145$ cigarrillos y encuentra que la nicotina promedio y desviación
+estándar de la muestra fue de $1.02$ y $0.23$ miligramos de
 nicotina, respectivamente. <br> <br> Si se supone que la cantidad de
 nicotina en los cigarrillos Malboro se distribuye normalmente, calcule
-con un nivel de confianza del \(85\%\) el límite inferior para la
+con un nivel de confianza del $85\%$ el límite inferior para la
 verdadera cantidad promedio de nicotina que poseen los cigarrillos
 Malboro.
 </p>
@@ -237,16 +237,16 @@ Solución
 <p>
 
 En este ejercicio se está interesado en construir un intervalo de
-confianza inferior del \(85\%\) para la cantidad promedio de nicotina
+confianza inferior del $85\%$ para la cantidad promedio de nicotina
 que poseen los cigarrillos Malboro, y para realizar el cálculo debemos
 evaluar la información que poseemos.<br> <br> En donde, basados en el
 contexto del ejercicio nos dicen que la distribución de probabilidad de
 la cantidad de nicotina de los cigarrillos se distribuye normalmente,
 con varianza poblacional desconocida. Además, mencionan que en un
 estudio realizado por un grupo de investigación se toma una muestra
-aleatoria de tamaño \(145\) cigarrillos, a partir de la cual encuentran
-un contenido promedio de nicotina de \(1.02\) miligramos con una
-desviación estándar de \(0.23\) miligramos, y en consecuencia nos
+aleatoria de tamaño $145$ cigarrillos, a partir de la cual encuentran
+un contenido promedio de nicotina de $1.02$ miligramos con una
+desviación estándar de $0.23$ miligramos, y en consecuencia nos
 encontramos en la siguiente situación<br><br>
 
 <img src="/assets/images/Intervalos1c.jpg" alt="" style="max-width: 80%;">
@@ -255,19 +255,19 @@ es de la forma $$\begin{align*}
   \bar{X}-Z_{\alpha}\frac{S}{\sqrt{n}} < \mu
 \end{align*}$$
 
-En donde observamos que necesitamos la media muestral \(\bar{X}=1.02\),
-la desviación estándar muestral \(S=0.23\), el tamaño de muestra
-\(n=145\), el nivel de confianza \(1-\alpha=0.85\) y el valor crítico
-\(Z_{\alpha=0.15}=1.036433\) calculado a partir del nivel de confianza.
+En donde observamos que necesitamos la media muestral $\bar{X}=1.02$,
+la desviación estándar muestral $S=0.23$, el tamaño de muestra
+$n=145$, el nivel de confianza $1-\alpha=0.85$ y el valor crítico
+$Z_{\alpha=0.15}=1.036433$ calculado a partir del nivel de confianza.
 Al reemplazar en el intervalo de interés tenemos que $$\begin{align*}
   1.02-1.036433\frac{0.23}{\sqrt{145}} &< \mu \\
   1.02-0.01979635 &< \mu \\
   1.000204 &< \mu
 \end{align*}$$
 
-Lo cual significa que, con un nivel de confianza del \(85\%\) podemos
+Lo cual significa que, con un nivel de confianza del $85\%$ podemos
 afirmar que la cantidad mínima promedio de nicotina que poseen los
-cigarrillos Malboro es de \(1.000204\) miligramos de nicotina.
+cigarrillos Malboro es de $1.000204$ miligramos de nicotina.
 </p>
 </main>
 
@@ -295,18 +295,18 @@ Ocultar Ejercicio 1
 Ejercicio
 </h3>
 <p>
-Una empresa envía a \(12\) de sus agentes de ventas a un curso diseñado
+Una empresa envía a $12$ de sus agentes de ventas a un curso diseñado
 para incrementar la motivación, y por tanto, presuntamente su
 efectividad. Un año después, estos agentes generan unas ventas con un
-valor promedio de \(43.5\) millones de pesos y una desviación estándar
-de \(5.6\) millones de pesos.<br> <br> Durante el mismo periodo, se
-extrajo una muestra aleatoria independiente de \(15\) personas que no
+valor promedio de $43.5$ millones de pesos y una desviación estándar
+de $5.6$ millones de pesos.<br> <br> Durante el mismo periodo, se
+extrajo una muestra aleatoria independiente de $15$ personas que no
 habían asistido al curso y las ventas medias generadas y su desviación
-estándar fueron de \(40.8\) y \(4.3\) millones de pesos respectivamente.
+estándar fueron de $40.8$ y $4.3$ millones de pesos respectivamente.
 <br> <br> Si es posible suponer que las poblaciones se distribuyen
-normalmente con varianzas iguales a \(28\) millones de pesos\(^2\) para
-quienes se capacitaron y a \(20\) millones de pesos\(^2\) para quienes
-no se capacitaron, construya un intervalo de confianza del \(90\%\) para
+normalmente con varianzas iguales a $28$ millones de pesos$^2$ para
+quienes se capacitaron y a $20$ millones de pesos$^2$ para quienes
+no se capacitaron, construya un intervalo de confianza del $90\%$ para
 la diferencia entre los promedios de ventas de los dos grupos. Es
 posible pensar que los cursos de motivación mejoran el promedio de
 ventas sobre quienes no recibieron estos cursos?
@@ -324,8 +324,8 @@ información presentada en el enunciado. <br> <br> En donde, se observa
 que nos dan el valor de las medias y desviaciones estándar muestrales
 para cada uno de los grupos, además nos menciona que las poblaciones se
 distribuyen normalmente con varianzas poblacionales conocidas e iguales
-a \(28\) millones de pesos\(^2\) para quienes se capacitaron y a \(20\)
-millones de pesos\(^2\) para quienes no se capacitaron, y por tanto
+a $28$ millones de pesos$^2$ para quienes se capacitaron y a $20$
+millones de pesos$^2$ para quienes no se capacitaron, y por tanto
 estamos en la situación <br><br>
 
 <img src="/assets/images/Intervalos2a.jpg" alt="" style="max-width: 80%;">
@@ -335,10 +335,10 @@ hacer tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 Para realizar el cálculo requerimos de las media muestrales
-\(\bar{X}_C=43.5\) y \(\bar{X}_S=40.8\), las varianzas poblacionales
-\(\sigma^2_C=5.6\) y \(\sigma^2_S=4.3\), los tamaños de muestrales
-\(n_C=12\) y \(n_S=15\), el nivel de confianza \(1-\alpha=0.90\) y el
-valor crítico \(Z_{\frac{\alpha}{2}=0.05}=1.644854\) calculado a partir
+$\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas poblacionales
+$\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de muestrales
+$n_C=12$ y $n_S=15$, el nivel de confianza $1-\alpha=0.90$ y el
+valor crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$ calculado a partir
 del nivel de confianza. Al reemplazar en el intervalo tenemos que
 $$\begin{align*}
   &(43.5-40.8) \pm 1.644854\sqrt{\frac{5.6}{12}+\frac{4.3}{15}} \\
@@ -347,21 +347,21 @@ $$\begin{align*}
   &1.272353 < \mu_C - \mu_S < 4.127647
 \end{align*}$$
 
-Entonces podremos afirmar con un nivel de confianza del \(90\%\), de que
+Entonces podremos afirmar con un nivel de confianza del $90\%$, de que
 la diferencia entre el promedio de ventas de las personas que asisten a
 un curso de capacitación, respecto a las personas que no asisten a dicho
-curso de capacitación, se encuentra entre \(1.272353\) y \(4.127647\)
+curso de capacitación, se encuentra entre $1.272353$ y $4.127647$
 millones de pesos. <br> <br> Ahora, para saber si la capacitación mejora
 o no las ventas hay que tener en cuenta la posición en la que se
 encuentre el intervalo para la diferencia entre
-\(\mu_C - \mu_S\).<br><br>
+$\mu_C - \mu_S$.<br><br>
 
 <img src="/assets/images/Intervalos2b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que la totalidad del intervalo se encuentra
-localizado en la sección que es mayor a \(0\), lo cual indica que para
-todo el intervalo de confianza del \(90\%\) el promedio de ventas del
-grupo que recibió un curso de capacitación \(\mu_C\) es mayor al
-promedio de quienes no recibieron capacitación \(mu_S\), y por tanto, se
+localizado en la sección que es mayor a $0$, lo cual indica que para
+todo el intervalo de confianza del $90\%$ el promedio de ventas del
+grupo que recibió un curso de capacitación $\mu_C$ es mayor al
+promedio de quienes no recibieron capacitación $mu_S$, y por tanto, se
 podrá concluir que la capacitación si mejora el promedio de ventas y se
 recomendará a la empresa que envíe a capacitación al resto de empleados.
 </p>
@@ -382,14 +382,14 @@ los niños y las niñas que se encuentran cursando su primaria en los
 colegios ubicados en las regiones del departamento, y decide contratar a
 un grupo de investigación la Universidad de Antioquia para llevar a cabo
 dicho estudio.<br> <br> El grupo de investigación decide tomar una
-muestra aleatoria de \(22\) niños y \(28\) niñas que se encuentran
+muestra aleatoria de $22$ niños y $28$ niñas que se encuentran
 realizando sus estudios de primaria entre los colegios que hay en la
 región antioqueña, encontrando que el peso promedio y desviación
-estándar de los niños fue de \(52\) kilos con una desviación estándar de
-\(8\) kilos, mientras que el peso promedio y desviación estándar de las
-niñas fue de \(46\) kilos con una desviación estándar de \(6.2\) kilos.
+estándar de los niños fue de $52$ kilos con una desviación estándar de
+$8$ kilos, mientras que el peso promedio y desviación estándar de las
+niñas fue de $46$ kilos con una desviación estándar de $6.2$ kilos.
 <br> <br> Si el peso de los niños y niñas puede asumirse como una normal
-con varianzas iguales, construya un intervalo de confianza del \(90\%\)
+con varianzas iguales, construya un intervalo de confianza del $90\%$
 para la diferencia promedio que hay entre el peso de los niños y las
 niñas. Es posible pensar que hay diferencias significativas entre los
 pesos promedio de los dos grupos?.
@@ -400,14 +400,14 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(90\%\) para la diferencia promedio entre el peso de los
+confianza del $90\%$ para la diferencia promedio entre el peso de los
 niños y las niñas. En donde, el intervalo de confianza será bilateral
 debido a que no especifican que se debe calcular el límite superior o
 inferior solamente. Para saber cuál es el intervalo de interés, debemos
 revisar la información presentada en el enunciado. <br> <br> En el
 enunciado se aprecia que nos dan las medias y desviaciones estándar
 muestrales para cada uno de los grupos, obtenidos a partir de muestras
-de tamaños \(22\) y \(28\), respectivamente. Además, se menciona que el
+de tamaños $22$ y $28$, respectivamente. Además, se menciona que el
 peso de los niños y las niñas se distribuye normalmente con varianzas
 desconocidas pero iguales, y por tanto estaremos en la siguiente
 situación<br><br>
@@ -419,7 +419,7 @@ hacer tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 En donde observamos que entre otros valores, requerimos calcular el
-valor de la desviación estándar conjunta \(Sp\), la cual está dada por
+valor de la desviación estándar conjunta $Sp$, la cual está dada por
 
 $$\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
@@ -433,9 +433,9 @@ Sp &= \sqrt{Sp^2} \\
 
 Ahora, los valores adicionales que se requieren para realizar el cálculo
 del intervalo de confianza serán, las medias muestrales
-\(\bar{X}_H=52\), y \(\bar{X}_M=46\), los tamaños muestrales \(n_H=22\)
-y \(n_M=28\), el nivel de confianza \(1-\alpha=0.90\) y el valor crítico
-\(t_{\frac{\alpha}{2}=0.05, n_H+n_M-2 = 28}=1.701131\). Al reemplazar
+$\bar{X}_H=52$, y $\bar{X}_M=46$, los tamaños muestrales $n_H=22$
+y $n_M=28$, el nivel de confianza $1-\alpha=0.90$ y el valor crítico
+$t_{\frac{\alpha}{2}=0.05, n_H+n_M-2 = 28}=1.701131$. Al reemplazar
 estos valores en el intervalo de interés obtenemos que $$\begin{align*}
   &(52-46) \pm 1.701131(7.044324)\sqrt{\frac{1}{22}+\frac{1}{28}} \\
   &6 \pm 1.701131(7.044324)(0.2849014)\\
@@ -443,22 +443,22 @@ estos valores en el intervalo de interés obtenemos que $$\begin{align*}
   &-0.714064 < \mu_H - \mu_M < 6.114064
 \end{align*}$$
 
-Por tanto, con un nivel de confianza del \(90\%\) se tendrá que la
+Por tanto, con un nivel de confianza del $90\%$ se tendrá que la
 diferencia entre el peso promedio de los niños y el peso promedio de las
-niñas se encontrará entre \(-0.714064\) y \(6.114064\) kilogramos. <br>
+niñas se encontrará entre $-0.714064$ y $6.114064$ kilogramos. <br>
 <br> Ahora, para saber si existe diferencias significativas entre los
 pesos promedio de niños y niñas debemos tener en cuenta la posición en
 la que se encuentre el intervalo para la diferencia entre
-\(\mu_H - \mu_M\).<br><br>
+$\mu_H - \mu_M$.<br><br>
 
 <img src="/assets/images/Intervalos2d.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo encontrado contiene el valor
-\(0\), el cual simboliza la igualdad entre los pesos promedio de niños y
+$0$, el cual simboliza la igualdad entre los pesos promedio de niños y
 niñas, tal que $$\begin{align*}
   \mu_H = \mu_M \quad =>\quad \mu_H - \mu_M = 0
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(90\%\) no será posible
+y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que existen diferencias significativas entre los pesos promedio
 de niños y niñas.
 </p>
@@ -478,17 +478,17 @@ Suponga que la Universidad de Antioquia adelanta un estudio sobre el
 salario de sus egresados y desea comparar si es cierta la creencia que
 las mujeres ganan en promedio menos dinero que los hombres. <br> <br>
 Para comprobar si las creencias son ciertas, un grupo de investigación
-de la Universidad toma una muestra representativa de \(250\) mujeres y
-\(270\) hombres egresados de la Universidad y se les pregunta sobre cuál
+de la Universidad toma una muestra representativa de $250$ mujeres y
+$270$ hombres egresados de la Universidad y se les pregunta sobre cuál
 es el salario que ganan actualmente, obteniendo en su investigación que
-las mujeres ganan en promedio \(2.3\) millones de pesos con una
-desviación estándar de \(0.7\) millones de pesos, mientras que los
-hombres ganan en promedio \(2.6\) millones de pesos con una desviación
-estándar de \(1.2\) millones de pesos.<br> <br> Si el grupo de
+las mujeres ganan en promedio $2.3$ millones de pesos con una
+desviación estándar de $0.7$ millones de pesos, mientras que los
+hombres ganan en promedio $2.6$ millones de pesos con una desviación
+estándar de $1.2$ millones de pesos.<br> <br> Si el grupo de
 investigación encuentra que los salarios no se distribuyen normalmente,
 calcule el límite superior para la diferencia promedio del salario de
 sus egresados hombres y egresados mujeres. Emplee un nivel de confianza
-de \(80\%\).
+de $80\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -497,17 +497,17 @@ Solución
 
 En este enunciado estamos interesados en calcular el límite superior
 para la diferencia promedio entre el salario de hombres y mujeres que
-egresaron de la Universidad, la cual está dada por \(\mu_H - \mu_M\),
-empleando para ello un nivel de confianza del \(80\%\). Ahora, para
+egresaron de la Universidad, la cual está dada por $\mu_H - \mu_M$,
+empleando para ello un nivel de confianza del $80\%$. Ahora, para
 identificar el intervalo de interés, debemos revisar la información
 presentada por el grupo de investigación de la Universidad. <br> <br> El
-cual a partir de una muestra de \(250\) mujeres y \(270\) hombres,
-encontró unos salarios promedios iguales a \(2.3\) y \(2.6\), con
-desviaciones estándar de \(0.7\) y \(1.2\), respectivamente. Además
+cual a partir de una muestra de $250$ mujeres y $270$ hombres,
+encontró unos salarios promedios iguales a $2.3$ y $2.6$, con
+desviaciones estándar de $0.7$ y $1.2$, respectivamente. Además
 encuentra que los salarios no se distribuyen normalmente, y al no
 mencionar cuales son las varianzas poblacionales, se asume que éstas no
 son conocidas, y por tanto estaremos en la siguiente situación dado que
-los tamaños muestrales son mayores a \(30\).<br><br>
+los tamaños muestrales son mayores a $30$.<br><br>
 
 <img src="/assets/images/Intervalos2e.jpg" alt="" style="max-width: 80%;">
 <br> y por tanto al ser un intervalo unilateral derecho (límite
@@ -518,12 +518,12 @@ superior), el calculo que debemos hacer tendrá la forma $$\begin{align*}
 en donde se observa que al ser unilateral derecho, el intervalo solo
 cuenta con la suma de la resta de medias muestrales y el término de
 error, además de que, el valor crítico solo será para el valor
-\(\alpha\), y no \(\alpha/2\) como es el caso de los intervalos
+$\alpha$, y no $\alpha/2$ como es el caso de los intervalos
 bilaterales. <br> <br> Ahora, al reemplazar los valores encontrados por
-el grupo de investigación \(n_H=270\), \(\bar{X}_H=2.6\), \(S_H=1.2\)
-para los hombres, \(n_M=250\), \(\bar{X}_M=2.3\), \(S_M=0.7\) para las
-mujeres, el nivel de confianza \(1-\alpha = 0.80\) y el valor crítico
-\(Z_{\alpha=0.2}=0.8416212\), tendremos que $$\begin{align*}
+el grupo de investigación $n_H=270$, $\bar{X}_H=2.6$, $S_H=1.2$
+para los hombres, $n_M=250$, $\bar{X}_M=2.3$, $S_M=0.7$ para las
+mujeres, el nivel de confianza $1-\alpha = 0.80$ y el valor crítico
+$Z_{\alpha=0.2}=0.8416212$, tendremos que $$\begin{align*}
   &\mu_H - \mu_M < (2.6-2.3) + 0.8416212\sqrt{\frac{1.2^2}{270}+\frac{0.7^2}{250}} \\
   &\mu_H - \mu_M < 0.3 + 0.8416212(0.08540101)\\
   &\mu_H - \mu_M < 0.3 + 0.0718753 \\
@@ -532,8 +532,8 @@ mujeres, el nivel de confianza \(1-\alpha = 0.80\) y el valor crítico
 
 Por tanto, se tendrá que el valor máximo que se espera tener parar la
 diferencia entre los salarios promedio de hombres y mujeres es de
-\(0.3718753\) millones de pesos, lo anterior con un nivel de confianza
-del \(80\%\).
+$0.3718753$ millones de pesos, lo anterior con un nivel de confianza
+del $80\%$.
 </p>
 </main>
 <button id="Show7" class="btn btn-secondary">
@@ -548,18 +548,18 @@ Ejercicio
 </h3>
 <p>
 Se realiza un estudio con el fin de comparar el rendimiento de
-combustible en kilómetros por galón para dos tipos de motores \(A\) y
-\(B\). Suponga que se decide realizar un total de \(47\) experimentos
-con el motor \(A\) y \(56\) experimentos con el motor \(B\), encontrando
-para cada caso, un rendimiento promedio de gasolina de \(44\) y \(48\)
-kilómetros, respectivamente, con desviaciones estándar de \(8.3\) y
-\(6.6\), respectivamente. <br> <br> Basados en la información anterior,
+combustible en kilómetros por galón para dos tipos de motores $A$ y
+$B$. Suponga que se decide realizar un total de $47$ experimentos
+con el motor $A$ y $56$ experimentos con el motor $B$, encontrando
+para cada caso, un rendimiento promedio de gasolina de $44$ y $48$
+kilómetros, respectivamente, con desviaciones estándar de $8.3$ y
+$6.6$, respectivamente. <br> <br> Basados en la información anterior,
 calcule el límite inferior para la diferencia promedio entre los
 rendimiento de combustible en kilómetro por galón de gasolina para los
-motores \(B\) y \(A\), empleando un nivel de confianza del \(88\%\).
+motores $B$ y $A$, empleando un nivel de confianza del $88\%$.
 Suponga que los rendimientos de los combustibles no poseen una
 distribución normal, pero se tiene que las varianzas son conocidas e
-iguales a \(38.44\) y \(57.76\) para las maderas \(A\) y \(B\)
+iguales a $38.44$ y $57.76$ para las maderas $A$ y $B$
 respectivamente.
 </p>
 <h3 data-toc-skip>
@@ -568,14 +568,14 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular el límite inferior de un
-intervalo de confianza del \(88\%\) para la diferencia promedio entre el
+intervalo de confianza del $88\%$ para la diferencia promedio entre el
 rendimiento de combustible en kilómetros por galón de gasolina que
-ofrecen dos tipos de motores \(B\) y \(A\), tal que , \(\mu_B - \mu_A\),
+ofrecen dos tipos de motores $B$ y $A$, tal que , $\mu_B - \mu_A$,
 y para calcular este límite inferior debemos revisar la información que
 poseemos.<br> <br> Del enunciado se menciona que los rendimientos de
 combustible no poseen una distribución normal, pero se menciona que las
-varianzas poblacionales son conocidas e iguales a \(\sigma^2_A=38.44\) y
-\(\sigma^2_B=57.56\) para las maderas \(A\) y \(B\). En consecuencia,
+varianzas poblacionales son conocidas e iguales a $\sigma^2_A=38.44$ y
+$\sigma^2_B=57.56$ para las maderas $A$ y $B$. En consecuencia,
 tendremos que el intervalo de interés será el siguiente<br><br>
 
 <img src="/assets/images/Intervalos2f.jpg" alt="" style="max-width: 80%;">
@@ -585,10 +585,10 @@ debemos hacer tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 Para realizar el cálculo del intervalo, se aprecia que requerimos de los
-tamaños muestrales \(n_A=47\) y \(n_B=56\), las medias muestrales
-\(\bar{X}_A=44\), y \(\bar{X}_B=48\), las varianzas poblacionales
-\(\sigma^2_A=38.44\) y \(\sigma^2_B=57.56\), el nivel de confianza
-\(1-\alpha=0.88\) y el valor crítico \(Z_{\alpha=0.12}=1.174987\). Al
+tamaños muestrales $n_A=47$ y $n_B=56$, las medias muestrales
+$\bar{X}_A=44$, y $\bar{X}_B=48$, las varianzas poblacionales
+$\sigma^2_A=38.44$ y $\sigma^2_B=57.56$, el nivel de confianza
+$1-\alpha=0.88$ y el valor crítico $Z_{\alpha=0.12}=1.174987$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
 $$\begin{align*}
   & (48-44) - 1.174987\sqrt{\frac{57.56}{56}+\frac{38.44}{47}} \\
@@ -597,10 +597,10 @@ $$\begin{align*}
   & 2.403691 < \mu_B - \mu_A 
 \end{align*}$$
 
-y por tanto, se tendrá un con un nivel de confianza del \(88\%\), que el
+y por tanto, se tendrá un con un nivel de confianza del $88\%$, que el
 límite inferior para la diferencia promedio entre los rendimiento de
-combustible en kilómetro por galón de gasolina para los motores \(B\) y
-\(A\) será de \(2.403691\) kilómetros.
+combustible en kilómetro por galón de gasolina para los motores $B$ y
+$A$ será de $2.403691$ kilómetros.
 </p>
 </main>
 <button id="Show8" class="btn btn-secondary">
@@ -618,16 +618,16 @@ Suponga que se contrata a un grupo de investigación de la Universidad de
 Antioquia para que realice un análisis de tensión sobre la unión pegada
 con una resina experimental a dos clases diferentes de madera. Para
 realizar el estudio, el grupo de investigación toma una muestra
-aleatoria de \(18\) uniones pegadas con la resina especial a la madera
-\(A\) y encontró que la tensión promedio de corte y desviación estándar
-fueron de \(1130_{psi}\) y \(420_{psi}\), respectivamente. Por su parte,
-toman una muestra aleatoria de \(12\) uniones pegadas con la resina
-especial a la madera \(B\), encontrando que la tensión promedio de corte
-y desviación estándar fueron de \(1010_{psi}\) y \(380_{psi}\).<br> <br>
+aleatoria de $18$ uniones pegadas con la resina especial a la madera
+$A$ y encontró que la tensión promedio de corte y desviación estándar
+fueron de $1130_{psi}$ y $420_{psi}$, respectivamente. Por su parte,
+toman una muestra aleatoria de $12$ uniones pegadas con la resina
+especial a la madera $B$, encontrando que la tensión promedio de corte
+y desviación estándar fueron de $1010_{psi}$ y $380_{psi}$.<br> <br>
 Si se asume que la tensión sobre la unión pegada con la resina
 experimental en cada clase de madera se distribuye aproximadamente
 normal con varianzas diferentes. Construya un intervalo de confianza del
-\(92\%\) para la diferencia de tensión promedio de corte para las dos
+$92\%$ para la diferencia de tensión promedio de corte para las dos
 marcas de madera.
 </p>
 <h3 data-toc-skip>
@@ -636,18 +636,18 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(92\%\) para la diferencia entre los promedio a la
+confianza del $92\%$ para la diferencia entre los promedio a la
 tensión sobre la unión pegada con una resina experimental para dos
-clases de madera \(A\) y \(B\). En este caso, el intervalo de confianza
+clases de madera $A$ y $B$. En este caso, el intervalo de confianza
 que se empleará será bilateral dado que no nos mencionan que se realice
 el cálculo del límite superior o inferior para la diferencia. Para saber
 cuál es el intervalo de interés, debemos revisar la información
 calculada por el grupo de investigación. <br> <br> De los datos
 calculados por el grupo de investigación, encontramos que se realizó una
-selección de \(18\) y \(12\) uniones para las maderas \(A\) y \(B\)
+selección de $18$ y $12$ uniones para las maderas $A$ y $B$
 respectivamente, para las cuales se encontró de forma respectiva unas
-medias muestrales de \(1130_{psi}\) y \(1010_{psi}\) junto a unas
-desviaciones estándar de \(420_{psi}\) y \(380_{psi}\). Además, se
+medias muestrales de $1130_{psi}$ y $1010_{psi}$ junto a unas
+desviaciones estándar de $420_{psi}$ y $380_{psi}$. Además, se
 menciona de que las dos poblaciones se distribuyen de forma
 aproximadamente normal con varianzas diferentes y en consecuencia se
 tendrá el siguiente caso<br><br>
@@ -659,7 +659,7 @@ hacer tendrá la forma $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que entre otros valores, requerimos calcular el
-valor de los grados de libertad \(\nu\), tal que
+valor de los grados de libertad $\nu$, tal que
 
 $$\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
@@ -668,20 +668,20 @@ $$\begin{align*}
     &= 25.33837
 \end{align*}$$
 
-Al calcular el valor techo de \(\nu\) tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
 \end{align*}$$
 
 y por tanto. se tendrá que los grados de libertad asociados a la
-distribución \(t\) serán iguales a \(\nu= 26\). Ahora, los valores
+distribución $t$ serán iguales a $\nu= 26$. Ahora, los valores
 adicionales que se requieren para realizar el cálculo del intervalo de
-interés serán los tamaños muestrales \(n_A=12\) y \(n_B=18\), las medias
-muestrales \(\bar{X}_A=1130\), y \(\bar{X}_B=1010\), las desviaciones
-estándar muestrales \(S_A=420\) y \(S_B=380\), el nivel de confianza
-\(1-\alpha=0.92\) y el valor crítico
-\(t_{\frac{\alpha}{2}=0.04, \nu = 26}=1.821863\). Al reemplazar estos
+interés serán los tamaños muestrales $n_A=12$ y $n_B=18$, las medias
+muestrales $\bar{X}_A=1130$, y $\bar{X}_B=1010$, las desviaciones
+estándar muestrales $S_A=420$ y $S_B=380$, el nivel de confianza
+$1-\alpha=0.92$ y el valor crítico
+$t_{\frac{\alpha}{2}=0.04, \nu = 26}=1.821863$. Al reemplazar estos
 valores en el intervalo de interés obtenemos que $$\begin{align*}
   & (1130-1010) \pm 1.821863\sqrt{\frac{420^2}{18}+\frac{380^2}{12}} \\
   & 120 \pm 1.821863(147.7611)\\
@@ -689,23 +689,23 @@ valores en el intervalo de interés obtenemos que $$\begin{align*}
   & -149.2004 < \mu_A - \mu_B < 389.2004
 \end{align*}$$
 
-De lo anterior, se concluye que con una confianza del \(92\%\), la
+De lo anterior, se concluye que con una confianza del $92\%$, la
 diferencia promedio entre la tensión promedio de corte entre las maderas
-\(A\) y \(B\) se encontrará entre \(-149.2004_{psi}\) y
-\(389.2004_{psi}\). <br> <br> Ahora, como el intervalo es bilateral,
+$A$ y $B$ se encontrará entre $-149.2004_{psi}$ y
+$389.2004_{psi}$. <br> <br> Ahora, como el intervalo es bilateral,
 podemos verificar si existen o no diferencias significativas entre la
 tensión promedio de corte de dos tipos de madera, y para ello debemos
 verificar la posición en la que se encuentra el intervalo de confianza
-para la diferencia entre \(\mu_A - \mu_B\).<br><br>
+para la diferencia entre $\mu_A - \mu_B$.<br><br>
 
 <img src="/assets/images/Intervalos2h.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado contiene el valor de
-\(0\), el cual representa la igualdad entre la tensión promedio de corte
+$0$, el cual representa la igualdad entre la tensión promedio de corte
 de dos tipos de madera, tal que $$\begin{align*}
   \mu_A = \mu_B \quad =>\quad \mu_A - \mu_B = 0
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(92\%\) no será posible
+y por tanto, con un nivel de confianza del $92\%$ no será posible
 afirmar que existen diferencias significativas entre la tensión promedio
 de corte de dos tipos de madera.
 </p>
@@ -734,7 +734,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se insertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -744,8 +744,8 @@ millones de pesos $$\begin{align*}
 \end{align*}$$
 
 Basados en la información anterior, construya un intervalo de confianza
-del \(97\%\) para la verdadera proporción de egresados que tienen un
-salario superior a \(2\) millones de pesos.
+del $97\%$ para la verdadera proporción de egresados que tienen un
+salario superior a $2$ millones de pesos.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -753,8 +753,8 @@ Solución
 <p>
 
 En este caso estamos interesados en el cálculo de un intervalo de
-confianza del \(97\%\) para la proporción de egresados que poseen un
-salario superior a \(2\) millones de pesos. <br> <br> En donde, al no
+confianza del $97\%$ para la proporción de egresados que poseen un
+salario superior a $2$ millones de pesos. <br> <br> En donde, al no
 mencionar un límite de confianza en particular se deberá realizar el
 cálculo de un intervalo bilateral, el cual para el caso de una
 proporción tiene la estructura<br><br>
@@ -769,17 +769,17 @@ En donde se observa que requerimos de la proporción muestral para
 realizar el cálculo, y por tanto se deberá proceder a realizar su
 cálculo, localizando en cuales valores muestrales se localiza un éxito,
 el cual está dado por aquellos salarios que posean un valor superior a
-\(2\) millones de pesos, y para ello, denotaremos como \(1\) aquellas
-observaciones que sean superiores a \(2\) millones de pesos, y \(0\)
+$2$ millones de pesos, y para ello, denotaremos como $1$ aquellas
+observaciones que sean superiores a $2$ millones de pesos, y $0$
 aquellas observaciones que no cumplan la condición, tal que
 $$\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
 \end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
-total de \(x=4\) éxitos en un total de \(n=15\) muestras, y por tanto,
+total de $x=4$ éxitos en un total de $n=15$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
-proporción muestral de egresados que poseen salarios superiores a \(2\)
+proporción muestral de egresados que poseen salarios superiores a $2$
 millones, tal que $$\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
@@ -788,8 +788,8 @@ millones, tal que $$\begin{align*}
 \end{align*}$$
 
 Ahora, al emplear este valor junto con el nivel de confianza
-\(1-\alpha=0.97\) y el valor crítico
-\(Z_{\frac{\alpha}{2}=0.015}=2.17009\), para calcular el intervalo de
+$1-\alpha=0.97$ y el valor crítico
+$Z_{\frac{\alpha}{2}=0.015}=2.17009$, para calcular el intervalo de
 confianza de interés obtendremos que $$\begin{align*}
   & 0.2666667 \pm 2.17009\sqrt{\frac{0.2666667(1-0.2666667)}{15}} \\
   & 0.2666667 \pm 2.17009(0.1141798)\\
@@ -797,9 +797,9 @@ confianza de interés obtendremos que $$\begin{align*}
   & 0.0188863 < p < 0.5144471
 \end{align*}$$
 
-Por tanto, con una confianza del \(97\%\) se concluye que la verdadera
-proporción de egresados que poseen un salario superior a \(2\) millones
-de pesos, se encontrará entre \(1.89\%\) y \(51.44\%\).
+Por tanto, con una confianza del $97\%$ se concluye que la verdadera
+proporción de egresados que poseen un salario superior a $2$ millones
+de pesos, se encontrará entre $1.89\%$ y $51.44\%$.
 </p>
 </main>
 
@@ -836,12 +836,12 @@ determinar si el cambio en el proceso de fabricación mejora el
 rendimiento que sus equipos ofrecen, deciden tomar una muestra de
 equipos antes y después de la implementación del nuevo proceso de
 fabricación y se evalúa la velocidad de procesamiento para la ejecución
-de un programa determinado. Suponga que se encuentra que \(120\) de
-\(500\) computadores fabricados con el método actual ofrece un
-rendimiento superior al promedio, mientras que, \(220\) de \(700\)
+de un programa determinado. Suponga que se encuentra que $120$ de
+$500$ computadores fabricados con el método actual ofrece un
+rendimiento superior al promedio, mientras que, $220$ de $700$
 computadores fabricados con el nuevo método ofrece un rendimiento
 superior al promedio.<br> <br> Basados en la información obtenida,
-calcule un intervalo de confianza del \(98\%\) para la verdadera
+calcule un intervalo de confianza del $98\%$ para la verdadera
 diferencia entre las proporciones de equipos que ofrecen un rendimiento
 superior al promedio entre el proceso de fabricación actual y el nuevo.
 Es posible pensar que el nuevo proceso si mejora el rendimiento promedio
@@ -853,7 +853,7 @@ Solución
 <p>
 
 En este enunciado estamos interesados en construir un intervalo de
-confianza del \(98\%\) para la diferencia entre la proporción de equipos
+confianza del $98\%$ para la diferencia entre la proporción de equipos
 que son fabricados mediante un proceso de fabricación nuevo y aquellos
 que son fabricados con un proceso de fabricación actual, en donde, se
 debe construir un intervalo de confianza bilateral debido a que no nos
@@ -861,13 +861,13 @@ preguntan por un límite en específico. <br> <br> Para llevar a cabo el
 cálculo debemos revisar la información que poseemos. En primer lugar
 observamos que nos hablan de los tamaños de muestra para cada una de las
 poblaciones en donde el tamaño de muestra para los equipos fabricados
-mediante el proceso de fabricación nuevo fue de \(n_N= 500\), mientras
+mediante el proceso de fabricación nuevo fue de $n_N= 500$, mientras
 que, el tamaño de muestra para lo equipos fabricados mediante el proceso
-de fabricación actual es de \(n_A=700\).<br> <br> Adicionalmente, se
+de fabricación actual es de $n_A=700$.<br> <br> Adicionalmente, se
 presenta para cada valor de la muestra, el número de equipos que
 ofrecieron una velocidad de procesamiento superior al promedio, siendo
 dichos valores para los equipos fabricados con el proceso nuevo y actual
-\(x_N=120\) y \(x_A=220\), respectivamente. Con estos valores es posible
+$x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
 con el nuevo procedimiento tenemos que $$\begin{align*}
@@ -894,8 +894,8 @@ que debemos hacer tendrá la forma $$\begin{align*}
 
 En donde se observa que entre los valores ya calculados para las
 proporciones muestrales, se requiere del nivel de confianza
-\(1-\alpha=0.98\) y el valor crítico
-\(Z_{\frac{\alpha}{2}}=Z_{0.01}=2.326348\). Al reemplazar estos valores
+$1-\alpha=0.98$ y el valor crítico
+$Z_{\frac{\alpha}{2}}=Z_{0.01}=2.326348$. Al reemplazar estos valores
 en el intervalo de interés obtenemos que $$\begin{align*}
   & (0.3142857-0.24) \pm 2.326348\sqrt{\frac{0.3142857(1-0.3142857)}{700}+\frac{0.24(1-0.24)}{500}} \\
   &0.0742857 \pm 2.326348 (0.02593592) \\
@@ -904,25 +904,25 @@ en el intervalo de interés obtenemos que $$\begin{align*}
 \end{align*}$$
 
 Dado el resultado anterior, se concluye con una confianza del del
-\(98\%\) que la diferencia entre la proporción de equipos que son
+$98\%$ que la diferencia entre la proporción de equipos que son
 fabricados mediante un proceso de fabricación nuevo y aquellos que son
 fabricados con un proceso de fabricación actual se encontrará entre
-\(1.39\%\) y \(13.46\%\).<br> <br> Ahora, como el intervalo es
+$1.39\%$ y $13.46\%$.<br> <br> Ahora, como el intervalo es
 bilateral, podemos verificar si existen o no diferencias significativas
 entre la proporción de equipos que son fabricados mediante el nuevo
 proceso de fabricación y aquellos que son fabricados mediante el proceso
 actual, y para ello debemos verificar la posición en la que se encuentra
 el intervalo de confianza para la diferencia entre
-\(p_N - p_A\).<br><br>
+$p_N - p_A$.<br><br>
 
 <img src="/assets/images/Intervalos4b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado se encuentra sobre
-el valor de \(0\), el cual representa la igualdad entre las dos
+el valor de $0$, el cual representa la igualdad entre las dos
 proporciones, tal que $$\begin{align*}
   p_N = p_A \quad =>\quad p_N - p_A = 0
 \end{align*}$$
 
-y por tanto, podremos afirmar con un nivel de confianza del \(99\%\) que
+y por tanto, podremos afirmar con un nivel de confianza del $99\%$ que
 la proporción de equipos que ofrece un redimiento superior al promedio y
 son fabricados mediante el nuevo proceso, es superior a la proporción de
 aquellos fabricados mediante el proceso actual.
@@ -952,7 +952,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1027,7 +1027,7 @@ ciudad, en millones de pesos, fueron de
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, calcule un intervalo de confianza
 para la variabilidad de los costos de construir cualquier parque,
-empleando un nivel de confianza del \(95\%\)
+empleando un nivel de confianza del $95\%$
 </p>
 <h3 data-toc-skip>
 Solución
@@ -1047,11 +1047,11 @@ posee la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de la varianza muestral \(S^2 = 230541.2\), el nivel de
-confianza \(1-\alpha=0.95\), los valores críticos
-\(\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233\) y
-\(\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516\) y el tamaño
-muestral \(n=20\). <br> <br> Al reemplazar dichos valores en el
+requiere de la varianza muestral $S^2 = 230541.2$, el nivel de
+confianza $1-\alpha=0.95$, los valores críticos
+$\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233$ y
+$\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516$ y el tamaño
+muestral $n=20$. <br> <br> Al reemplazar dichos valores en el
 intervalo de confianza, se tendrá que $$\begin{align*}
     \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}} &< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}} \\
     \frac{(20-1)230541.2}{32.85233}&< \sigma^2 <\frac{(20-1)230541.2}{8.906516} \\
@@ -1065,10 +1065,10 @@ $$\begin{align*}
   365.1472 &< \sigma <  701.2892\\
 \end{align*}$$
 
-De lo anterior, se podrá concluir con un nivel de confianza del \(95\%\)
+De lo anterior, se podrá concluir con un nivel de confianza del $95\%$
 que el verdadero valor para la desviación estándar de los costos de
-construcción de cualquier parque estará entre \(365.1472\) y
-\(701.2892\) millones de pesos.
+construcción de cualquier parque estará entre $365.1472$ y
+$701.2892$ millones de pesos.
 </p>
 </main>
 
@@ -1095,7 +1095,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Se aplican pruebas a \(10\) cables conductores soldados a un dispositivo
+Se aplican pruebas a $10$ cables conductores soldados a un dispositivo
 semiconductor con el fin de determinar su resistencia a la tracción. Las
 pruebas demostraron que para romper la unión se requiere las libras de
 fuerza que se listan a continuación.
@@ -1140,7 +1140,7 @@ Sin Encapsulado
 </thead>
 </table>
 <p>
-Otra conjunto de \(8\) cables conductores que forman otro dispositivo,
+Otra conjunto de $8$ cables conductores que forman otro dispositivo,
 se encapsulan y se prueban para determinar si el encapsulado aumenta la
 resistencia a la tracción, obteniendo para este caso se requirieron las
 siguientes libras de fuerza para romper la unión
@@ -1180,7 +1180,7 @@ Con Encapsulado
 </table>
 <p>
 Si se supone que las resistencias a la tracción se distribuyen
-normalmente, construya un intervalo del \(90\%\) para la razón de
+normalmente, construya un intervalo del $90\%$ para la razón de
 varianzas entre la variabilidad de los cables sin encapsulado y la
 variabilidad de los cables con encapsulado. Es posible afirmar que la
 variabilidad de de los cables con encapsulado es superior a los cables
@@ -1205,11 +1205,11 @@ varianzas posee la estructura $$\begin{align*}
 \end{align*}$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
-requiere de los varianzas muestrales \(S^2_S\) y \(S^2_C\), el nivel de
-confianza \(1-\alpha\) y los valores críticos
-\(f_{\alpha/2, n_C-1, n_S-1}\) y \(f_{\alpha/2, n_S-1, n_C-1}\). <br>
+requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
+confianza $1-\alpha$ y los valores críticos
+$f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 <br> Para realizar el cálculo de las varianzas muestrales, se emplean
-los datos muestrales y los tamaños de muestra \(n_C=8\) y \(n_S=10\),
+los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
 $$\begin{align*}
@@ -1218,8 +1218,8 @@ S^2_S &= 10.441
 \end{align*}$$
 
 Por su parte, al buscar los valores críticos para un nivel de
-significancia \(1-\alpha=0.90\) y tamaños muestrales \(n_C=8\) y
-\(n_S=10\) tenemos que
+significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
+$n_S=10$ tenemos que
 
 $$\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} = 3.292746\\ 
@@ -1232,24 +1232,24 @@ confianza, se procede a su cálculo, tal que $$\begin{align*}
    0.05524463 &< \frac{\sigma^2_C}{\sigma^2_S} < 0.6688112
 \end{align*}$$
 
-Por tanto, se podrá concluir con un nivel de confianza del \(90\%\) que
+Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
 de los cables sin encapsulado y la variabilidad de los cables con
-encapsulado, se encontrará entre \(0.05524463\) y \(0.6688112\).<br>
+encapsulado, se encontrará entre $0.05524463$ y $0.6688112$.<br>
 <br> Ahora, para verificar si existen o no diferencias significativas
 entre las varianzas de resistencia a la tracción de los cables
 encapsulados o sin encapsular, debemos verificar la posición en la que
 se encuentra el intervalo de confianza para la razón de varianzas
-\(\sigma^2_C/\sigma^2_S\). <br><br>
+$\sigma^2_C/\sigma^2_S$. <br><br>
 
 <img src="/assets/images/Intervalos6b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado contiene el valor de
-\(1\), el cual representa la igualdad entre la varianza de los dos tipos
+$1$, el cual representa la igualdad entre la varianza de los dos tipos
 de cable, tal que $$\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
 \end{align*}$$
 
-y por tanto, con un nivel de confianza del \(90\%\) no será posible
+y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que la variabilidad de la resistencia a la tracción de los
 cables encapsulados o sin encapsular sean diferentes, y por tanto, debe
 asumirse que éstos son iguales.

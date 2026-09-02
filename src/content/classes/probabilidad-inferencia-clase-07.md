@@ -45,7 +45,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -56,8 +56,8 @@ millones de pesos $$\begin{align*}
 
 Basados e la información anterior, calcule la probabilidad de que el
 salario promedio de todos los egresados del programa de ingeniería
-industrial sea a lo más de \(2\) millones de pesos, si se sabe, que los
-salarios se distribuyen normalmente con desviación estándar de \(0.5\)
+industrial sea a lo más de $2$ millones de pesos, si se sabe, que los
+salarios se distribuyen normalmente con desviación estándar de $0.5$
 millones de pesos.
 </p>
 <h3 data-toc-skip>
@@ -66,12 +66,12 @@ Solución
 <p>
 
 En este caso, estamos interesados en calcular la probabilidad de que la
-media poblacional del salario de los egresados, sea como máximo de \(2\)
+media poblacional del salario de los egresados, sea como máximo de $2$
 millones de pesos, esto es $$\begin{align*}
 \mathbb{P}(\mu\leq 2)
 \end{align*}$$ Ahora, dado que para encontrar la probabilidad asociada a
 la media poblacional, requeriríamos conocer la distribución de
-probabilidad de \(\mu\), y ésta, no es una distribución conocida,
+probabilidad de $\mu$, y ésta, no es una distribución conocida,
 entonces podemos emplear la distribución muestral de los salarios, la
 cual se distribuye normalmente.<br> <br> Y para ello, debemos realizar
 operaciones matemáticas, de tal forma que la probabilidad planteada
@@ -83,9 +83,9 @@ Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)
 \end{align*}$$
 
 Con esta estructura en mente, y con el valor de la desviación estándar
-poblacional conocida e igual a \(\sigma=0.5\) y habiendo calculado
-previamente la media de de la muestra de las \(n=15\) observaciones, la
-cual dió un resultado igual a \(\bar{X} = 1.659333\), realizamos las
+poblacional conocida e igual a $\sigma=0.5$ y habiendo calculado
+previamente la media de de la muestra de las $n=15$ observaciones, la
+cual dió un resultado igual a $\bar{X} = 1.659333$, realizamos las
 siguientes operaciones matemáticas para llevar la probabilidad original,
 a una forma conocida, tal que $$\begin{align*}
 \mathbb{P}(\mu\leq 2) &= \mathbb{P}(-\mu\geq -2) \\
@@ -94,7 +94,7 @@ a una forma conocida, tal que $$\begin{align*}
                       &= \mathbb{P}\left(Z \geq -2.638793\right) \\
 \end{align*}$$
 
-Y como \(Z \sim N(0,1)\), entonces podemos encontrar la probabilidad de
+Y como $Z \sim N(0,1)$, entonces podemos encontrar la probabilidad de
 interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -111,8 +111,8 @@ $$\begin{align*}
 \end{align*}$$
 
 es decir que la probabilidad de que el salario promedio de todos los
-egresados del programa de ingeniería industrial sea como máximo de \(2\)
-millones de pesos, es del \(99.58\%\).
+egresados del programa de ingeniería industrial sea como máximo de $2$
+millones de pesos, es del $99.58\%$.
 </p>
 </main>
 <button id="Show2" class="btn btn-secondary">
@@ -129,11 +129,11 @@ Ejercicio
 Suponga que Postobon desarrolla una nueva máquina de bebidas para servir
 de forma automática gaseosas en los cines, de tal forma que la cantidad
 servida, en mililitros, se distribuya Weibull con parámetro de forma
-\(\alpha = 1/5\) y parámetro de escala \(\beta = 3\).<br> <br> Entonces,
-si se decide tomar una muestra aleatoria de \(40\) vasos de gaseosa
+$\alpha = 1/5$ y parámetro de escala $\beta = 3$.<br> <br> Entonces,
+si se decide tomar una muestra aleatoria de $40$ vasos de gaseosa
 servidos por una de las nuevas máquinas de bebidas, cuál es la
 probabilidad de quela cantidad promedio de bebida obtenida sea como
-máximo de \(340_{ml}\)?.
+máximo de $340_{ml}$?.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -142,15 +142,15 @@ Solución
 
 En este caso tenemos que la cantidad servida de gaseosa por la nueva
 máquina no se distribuye normalmente, si no que tiene una distribución
-Weibull, con parámetros \(\alpha = 1/5\) y \(\beta = 3\).
+Weibull, con parámetros $\alpha = 1/5$ y $\beta = 3$.
 Adicionalmente, nos piden calcular la probabilidad de que una muestra de
-\(40\) vasos de gaseosa se obtenga como máximo un promedio muestral de
-\(340_{ml}\), es decir $$\begin{align*}
+$40$ vasos de gaseosa se obtenga como máximo un promedio muestral de
+$340_{ml}$, es decir $$\begin{align*}
 \mathbb{P}(\bar{X} \leq 340)
 \end{align*}$$
 
 Entonces, dado que los datos no se distribuyen normalmente, pero el
-tamaño de la muestra \(n\geq30\), podemos aplicar el teorema del límite
+tamaño de la muestra $n\geq30$, podemos aplicar el teorema del límite
 central el cual nos dice que, mediante la aplicación de la
 estandarización $$\begin{align*}
 Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)
@@ -187,15 +187,15 @@ Sd(X) = \sigma &= \sqrt{Var(X)} \\
                &= 5703.473
 \end{align*}$$
 
-Ahora, con los valores ya calculados para \(\mu=360\) y
-\(\sigma=5703.473\), se realiza la estandarización de la probabilidad,
+Ahora, con los valores ya calculados para $\mu=360$ y
+$\sigma=5703.473$, se realiza la estandarización de la probabilidad,
 para poder realizar su cálculo, tal que $$\begin{align*}
 \mathbb{P}(\bar{X} \leq 340) &= \mathbb{P}(\bar{X} - \mu \leq 340 - 360)\\
                              &= \mathbb{P}\left(\frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \leq \frac{340 - 360}{5703.473/\sqrt{40}}\right)\\
                              &= \mathbb{P}\left(Z \leq -0.02217791\right)\\
 \end{align*}$$
 
-Y como \(Z \stackrel{a}{\sim} N(0,1)\), podemos encontrar la
+Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar la
 probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -210,8 +210,8 @@ $$\begin{align*}
 \end{align*}$$
 
 es decir que la probabilidad de que la cantidad promedio de bebida
-obtenida en la muestra de \(40\) vasos sea como máximo de \(340_{ml}\)
-es de \(49.11\%\).
+obtenida en la muestra de $40$ vasos sea como máximo de $340_{ml}$
+es de $49.11\%$.
 </p>
 </main>
 <button id="Show3" class="btn btn-secondary">
@@ -226,11 +226,11 @@ Ejercicio
 </h3>
 <p>
 Suponga que la marca de cigarrillo Malboro, asegura que el contenido
-promedio de nicotina de sus cigarrillos es de \(1.1\) miligramos. Un
+promedio de nicotina de sus cigarrillos es de $1.1$ miligramos. Un
 estudio realizado por un grupo de investigación de la Universidad de
 Antioquia mide el contenido de nicotina de una muestra aleatoria de
-\(25\) cigarrillos y encuentra que la nicotina promedio y desviación
-estándar de la muestra fue de \(1.02\) y \(0.23\) miligramos de
+$25$ cigarrillos y encuentra que la nicotina promedio y desviación
+estándar de la muestra fue de $1.02$ y $0.23$ miligramos de
 nicotina, respectivamente. <br> <br> Si se supone que la cantidad de
 nicotina en los cigarrillos Malboro se distribuye normalmente, cuál es
 la probabilidad de que el promedio muestral sea como máximo el
@@ -243,26 +243,26 @@ Solución
 <p>
 
 En este punto, nos preguntan sobre la probabilidad de que el promedio
-muestral \(\bar{X}\) sea como máximo el encontrado por el grupo de
+muestral $\bar{X}$ sea como máximo el encontrado por el grupo de
 investigación, es decir que se desea calcular la siguiente probabilidad
 $$\begin{align*}
 \mathbb{P}(\bar{X} \leq 1.02)
 \end{align*}$$ En donde sabemos que la distribución de probabilidad de
-la media muestral \(\bar{X} \sim N(\mu, \sigma^2/n)\), por lo cual
+la media muestral $\bar{X} \sim N(\mu, \sigma^2/n)$, por lo cual
 podríamos calcular directamente la probabilidad de interés, en caso de
 que conocieramos la varianza poblacional, pero al no ser nuestro caso,
 debemos realizar operaciones matemáticas con el fin de llevar la
 probabilidad de interés, a una forma conocida, tal como lo es la
-estructura de una distribución \(t\) con \(n-1\) grados de libertad, tal
+estructura de una distribución $t$ con $n-1$ grados de libertad, tal
 que $$\begin{align*}
 t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}
 \end{align*}$$
 
 En donde tenemos que la distribución de la nicotina de los cigarrillos
-se distribuye normalmente con una media poblacional \(\mu = 1.1\), la
+se distribuye normalmente con una media poblacional $\mu = 1.1$, la
 cual es la asegurada por la compañia Malboro, Además de la muestra,
-encontramos que la desviación estándar muestral para las \(n=25\)
-cigarrillos muestreados es igual a \(S=0.23\) miligramos de nicotina.
+encontramos que la desviación estándar muestral para las $n=25$
+cigarrillos muestreados es igual a $S=0.23$ miligramos de nicotina.
 Basados en estas variables realizamos las siguientes operaciones
 matemáticas para llevar la probabilidad original, a la estructura
 planteada, tal que $$\begin{align*}
@@ -287,9 +287,9 @@ $$\begin{align*}
 \end{align*}$$
 
 es decir que la probabilidad de obtener una media muestral inferior a
-\(1.02\) miligramos de nicotina en una muestra de \(25\), es de
-\(4.74\%\), si el verdadero valor de la media de nicotina de todos los
-cigarrillos producidos por la empresa Malboro es de \(1.1\). Por lo cual
+$1.02$ miligramos de nicotina en una muestra de $25$, es de
+$4.74\%$, si el verdadero valor de la media de nicotina de todos los
+cigarrillos producidos por la empresa Malboro es de $1.1$. Por lo cual
 parecería poco probable que la afirmación de la compañía sea poco
 creíble.
 </p>
@@ -320,9 +320,9 @@ ingeniería un exámen a estudiantes de primer y segundo semestre para
 observar la finidad de éstos con la carrera que se encuentran cursando.
 Los directivos creen por estudios anteriores, que la calificación
 obtenida por los estudiantes es aproximadamente normal con media de
-\(72\) y varianza de \(5\) puntos. <br> <br> Si estre semestre se
-realiza el examen a \(26\) estudiantes ¿Encuentre la probabilidad de que
-se obtenga una la desviación estándar muestral superior a \(2.828427\)
+$72$ y varianza de $5$ puntos. <br> <br> Si estre semestre se
+realiza el examen a $26$ estudiantes ¿Encuentre la probabilidad de que
+se obtenga una la desviación estándar muestral superior a $2.828427$
 puntos?
 </p>
 <h3 data-toc-skip>
@@ -332,8 +332,8 @@ Solución
 
 En este punto estamos interesados en calcular la probabilidad de que la
 desviación estándar de la calificación obtenida por una muestra de
-\(26\) estudiantes de primero y segundo semestre de la facultad de
-ingeniería, en el exámen, sea superior a \(2.828427\) puntos, esto es
+$26$ estudiantes de primero y segundo semestre de la facultad de
+ingeniería, en el exámen, sea superior a $2.828427$ puntos, esto es
 $$\begin{align*}
 \mathbb{P}(S > 2.828427)
 \end{align*}$$
@@ -356,8 +356,8 @@ $$\begin{align*}
                          &= \mathbb{P}(\chi^2_{25} > 40) \\
 \end{align*}$$
 
-Entonces, como la distribución asociada es una chi cuadrado con \(25\)
-grados de libertad, \(\chi^2_{25}\), entonces podemos encontrar la
+Entonces, como la distribución asociada es una chi cuadrado con $25$
+grados de libertad, $\chi^2_{25}$, entonces podemos encontrar la
 probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistChiSquare.pdf">Tabla
 de la Distribución Chi-Cuadrado</a>, la función <tt>pchisq()</tt> del
@@ -369,10 +369,10 @@ $$\begin{align*}
 \end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(S > 2.828427) = 0.0291644
-\end{align*}$$ es decir, se tendrá un \(2.92\%\) de probabilidad de que
+\end{align*}$$ es decir, se tendrá un $2.92\%$ de probabilidad de que
 la desviación estándar de la calificación obtenida por una muestra de
-\(26\) estudiantes de primero y segundo semestre de la facultad de
-ingeniería, en el exámen, sea superior a \(2.828427\) puntos.
+$26$ estudiantes de primero y segundo semestre de la facultad de
+ingeniería, en el exámen, sea superior a $2.828427$ puntos.
 </p>
 </main>
 
@@ -399,7 +399,7 @@ Ejercicio
 
 Suponga que se realiza un estudio sobre el salario de los estudiantes de
 ingeniería industrial una vez finalizan su pregrado y se incertan en el
-mercado laboral. Para ello, se le pregunta a \(15\) egresados
+mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
 millones de pesos $$\begin{align*}
@@ -409,8 +409,8 @@ millones de pesos $$\begin{align*}
 \end{align*}$$
 
 Basados en la información anterior, calcule la probabilidad de que la
-proporción de egresados que tienen un salario superior a \(2\) millones
-de pesos sea mayor al \(40\%\).
+proporción de egresados que tienen un salario superior a $2$ millones
+de pesos sea mayor al $40\%$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -418,27 +418,27 @@ Solución
 <p>
 
 En este punto, nos preguntan por la proporción de egresados que tienen
-un salario superior a \(2\) millones de pesos sea mayor al \(40\%\), es
+un salario superior a $2$ millones de pesos sea mayor al $40\%$, es
 decir $$\begin{align*}
   \mathbb{P}(p > 0.4)
 \end{align*}$$
 
-Pero al observar la información recolectada por los \(15\) egresados,
+Pero al observar la información recolectada por los $15$ egresados,
 apreciamos que que nos dan el salario que devengan, y no la proporción
-muestral, de quienes tienen un salario superior a \(2\) millones de
+muestral, de quienes tienen un salario superior a $2$ millones de
 pesos, por lo cual, será necesario calcular la proporción muestral, y
-para ello, denotaremos como \(1\) aquellas observaciones que sean
-superiores a \(2\) millones de pesos, y \(0\) aquellas observaciones que
+para ello, denotaremos como $1$ aquellas observaciones que sean
+superiores a $2$ millones de pesos, y $0$ aquellas observaciones que
 no cumplan la condición, tal que $$\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
 \end{align*}$$
 
-Entonces, si los \(1\) representa los éxitos, tendremos un total de
-\(x=4\) éxitos en las \(n=15\) muestras, entonces podemos aplicar la
+Entonces, si los $1$ representa los éxitos, tendremos un total de
+$x=4$ éxitos en las $n=15$ muestras, entonces podemos aplicar la
 fórmula de frecuencia relativa para calcular la proporción muestral de
-egresados que poseen salarios superiores a \(2\) millones.
+egresados que poseen salarios superiores a $2$ millones.
 $$\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
@@ -465,7 +465,7 @@ conocida, tal que $$\begin{align*}
                       &= \mathbb{P}\left(Z < -1.054092\right)
 \end{align*}$$
 
-Y como \(Z \sim N(0,1)\), entonces podemos encontrar la probabilidad de
+Y como $Z \sim N(0,1)$, entonces podemos encontrar la probabilidad de
 interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -481,9 +481,9 @@ $$\begin{align*}
 \mathbb{P}(p > 0.4) = 0.1459204
 \end{align*}$$
 
-Y por tanto, se tendrá un \(14.59\%\) de probabilidad de que la
-proporción de egresados que tienen un salario superior a \(2\) millones
-de pesos, sea mayor al \(40\%\).
+Y por tanto, se tendrá un $14.59\%$ de probabilidad de que la
+proporción de egresados que tienen un salario superior a $2$ millones
+de pesos, sea mayor al $40\%$.
 </p>
 </main>
 
@@ -513,20 +513,20 @@ Ocultar Ejercicio 1
 Ejercicio
 </h3>
 <p>
-Una empresa envía a \(12\) de sus agentes de ventas a un curso diseñado
+Una empresa envía a $12$ de sus agentes de ventas a un curso diseñado
 para incrementar la motivación, y por tanto, presuntamente su
 efectividad. Un año después, estos agentes generan unas ventas con un
-valor promedio de \(43.5\) millones de pesos y una desviación estándar
-de \(5.6\) millones de pesos.<br> <br> Durante el mismo periodo, se
-extrajo una muestra aleatoria independiente de \(15\) personas que no
+valor promedio de $43.5$ millones de pesos y una desviación estándar
+de $5.6$ millones de pesos.<br> <br> Durante el mismo periodo, se
+extrajo una muestra aleatoria independiente de $15$ personas que no
 habían asistido al curso y las ventas medias generadas y su desviación
-estándar fueron de \(40.8\) y \(4.3\) millones de pesos respectivamente.
+estándar fueron de $40.8$ y $4.3$ millones de pesos respectivamente.
 <br> <br> Si es posible suponer que las poblaciones se distribuyen
-normalmente con varianzas iguales a \(28\) millones de pesos\(^2\) para
-quienes se capacitaron y a \(20\) millones de pesos\(^2\) para quienes
+normalmente con varianzas iguales a $28$ millones de pesos$^2$ para
+quienes se capacitaron y a $20$ millones de pesos$^2$ para quienes
 no se capacitaron, Cuál es la probabilidad que el promedio de ventas de
 personas que reciben capacitación sea superior al promedio de ventas de
-quienes no reciben capacitación por almenos \(3\) millones de pesos?
+quienes no reciben capacitación por almenos $3$ millones de pesos?
 </p>
 <h3 data-toc-skip>
 Solución
@@ -535,8 +535,8 @@ Solución
 
 En este caso se desea calcular la probabilidad de que la diferencia
 entre los promedios de ventas entre personas que reciben capacitación
-\(\mu_C\) y quienes no reciben capacitación \(\mu_S\), sea superior a
-\(3\) millones de pesos, esto es $$\begin{align*}
+$\mu_C$ y quienes no reciben capacitación $\mu_S$, sea superior a
+$3$ millones de pesos, esto es $$\begin{align*}
 \mathbb{P}(\mu_C - \mu_S > 3)
 \end{align*}$$
 
@@ -551,8 +551,8 @@ Z_c=\frac{(\bar{X}_C - \bar{X}_S) - (\mu_C - \mu_S)}{\sqrt{\frac{\sigma^2_C}{n_C
 \end{align*}$$
 
 En donde apreciamos que requerimos de las varianzas poblacionales
-\(\sigma^2_C\) y \(\sigma^2_S\), los cuales nos dicen que son iguales a
-\(\sigma^2_C=20\) y \(\sigma^2_S=28\). Entonces al realizar las
+$\sigma^2_C$ y $\sigma^2_S$, los cuales nos dicen que son iguales a
+$\sigma^2_C=20$ y $\sigma^2_S=28$. Entonces al realizar las
 operaciones matemáticas correspondientes, tendremos que
 
 $$\begin{align*}
@@ -561,7 +561,7 @@ $$\begin{align*}
                               &= \mathbb{P}\left(\frac{(\bar{X}_C - \bar{X}_S) - (\mu_C - \mu_S)}{\sqrt{\frac{\sigma^2_C}{n_C} + \frac{\sigma^2_S}{n_S}}} < \frac{(43.5 - 40.8) - 3}{\sqrt{\frac{20}{12} + \frac{28}{15}}}\right) \\
                               &= \mathbb{P}\left(Z < \frac{-0.3 }{1.825742}\right) \\
                               &= \mathbb{P}\left(Z < -0.1595986\right) \\
-\end{align*}$$ Y como \(Z \sim N(0,1)\), podemos encontrar la
+\end{align*}$$ Y como $Z \sim N(0,1)$, podemos encontrar la
 probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -573,10 +573,10 @@ significará que $$\begin{align*}
 \mathbb{P}(\mu_C - \mu_S > 3) = 0.4365986
 \end{align*}$$
 
-y consecuencia, se tendrá una probabilidad del \(43.66\%\) de que la
+y consecuencia, se tendrá una probabilidad del $43.66\%$ de que la
 diferencia entre los promedios de ventas entre personas que reciben
-capacitación \(\mu_C\) y quienes no reciben capacitación \(\mu_S\), sea
-superior a \(3\) millones de pesos.
+capacitación $\mu_C$ y quienes no reciben capacitación $\mu_S$, sea
+superior a $3$ millones de pesos.
 </p>
 </main>
 <button id="Show7" class="btn btn-secondary">
@@ -594,13 +594,13 @@ Suponga que la Universidad de Antioquia adelanta un estudio sobre el
 salario de sus egresados y desea comparar si es cierta la creencia que
 las mujeres ganan en promedio menos dinero que los hombres. <br> <br>
 Para comprobar si las creencias son ciertas, un grupo de investigación
-de la Universidad toma una muestra representativa de \(250\) mujeres y
-\(270\) hombres egresados de la Universidad y se les pregunta sobre cuál
+de la Universidad toma una muestra representativa de $250$ mujeres y
+$270$ hombres egresados de la Universidad y se les pregunta sobre cuál
 es el salario que ganan actualmente, obteniendo en su invesgicación que
-las mujeres ganan en promedio \(2.3\) millones de pesos con una
-desviación estándar de \(0.7\) millones de pesos, mientras que los
-hombres ganan en promedio \(2.6\) millones de pesos con una desviación
-estándar de \(1.2\) millones de pesos. Si el grupo de investigación
+las mujeres ganan en promedio $2.3$ millones de pesos con una
+desviación estándar de $0.7$ millones de pesos, mientras que los
+hombres ganan en promedio $2.6$ millones de pesos con una desviación
+estándar de $1.2$ millones de pesos. Si el grupo de investigación
 encuentra que los salarios se distribuyen normalmente, cuál es la
 probabilidad de que la creencia de que las mujeres ganan en promedio
 menos dinero que los hombres?
@@ -625,8 +625,8 @@ Z_c=\frac{(\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M)}{\sqrt{\frac{S^2_H}{n_H} + \
 \end{align*}$$
 
 En donde el grupo de investigación encontró que a partir de las muestras
-\(n_H=270\) y \(n_M=250\) se encontró que \(\bar{X}_H=2.6\),
-\(S_H=1.2\), \(\bar{X}_M=2.3\) y \(S_M=0.7\). Entonces al realizar las
+$n_H=270$ y $n_M=250$ se encontró que $\bar{X}_H=2.6$,
+$S_H=1.2$, $\bar{X}_M=2.3$ y $S_M=0.7$. Entonces al realizar las
 operaciones matemáticas correspondientes, tendremos que $$\begin{align*}
 \mathbb{P}(\mu_H > \mu_M) &= \mathbb{P}(\mu_H - \mu_M > 0) \\
                           &= \mathbb{P}(- (\mu_H - \mu_M) < - 0) \\
@@ -634,7 +634,7 @@ operaciones matemáticas correspondientes, tendremos que $$\begin{align*}
                           &= \mathbb{P}\left(\frac{(\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M)}{\sqrt{\frac{S^2_H}{n_H} + \frac{S^2_M}{n_M}}} < \frac{(2.6 - 2.3) - 0}{\sqrt{\frac{1.2^2}{270} + \frac{0.7^2}{250}}}\right) \\
                           &= \mathbb{P}\left(Z < \frac{0.3}{0.08540101}\right) \\
                           &= \mathbb{P}\left(Z < 3.512839\right) \\
-\end{align*}$$ Y como \(Z \stackrel{a}{\sim} N(0,1)\), podemos encontrar
+\end{align*}$$ Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar
 la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -647,7 +647,7 @@ significará que $$\begin{align*}
 \end{align*}$$
 
 y consecuencia, el grupo de investigación deberá concluir con una
-probabilidad \(99.97\%\) de que el salario promedio de sus egresados
+probabilidad $99.97\%$ de que el salario promedio de sus egresados
 hombres es superior que el salario promedio de sus egresados mujeres, lo
 cual corrobora la creencia de que las mujeres ganan en promedio menos
 dinero que los hombres.
@@ -669,15 +669,15 @@ los niños y las niñas que se encuentran cursando su primaria en los
 colegios ubicados en las regiones del departamento, y decide contratar a
 un grupo de investigación la Universidad de Antioquia para llevar a cabo
 dicho estudio.<br> <br> El grupo de investigación decide tomar una
-muestra aleatoria de \(22\) niños y \(28\) niñas que se encuentran
+muestra aleatoria de $22$ niños y $28$ niñas que se encuentran
 realizando sus estudios de primaria entre los colegios que hay en la
 región antioqueña, encontrando que el peso promedio y desviación
-estándar de los niños fue de \(52\) kilos con una desviación estándar de
-\(8\) kilos, mientras que el peso promedio y desviación estándar de las
-niñas fue de \(46\) kilos con una desviación estándar de \(6.2\) kilos.
+estándar de los niños fue de $52$ kilos con una desviación estándar de
+$8$ kilos, mientras que el peso promedio y desviación estándar de las
+niñas fue de $46$ kilos con una desviación estándar de $6.2$ kilos.
 Si el peso de los niños y niñas se distribuye normalmente, calcule la
 probabilidad de que el peso promedio de los niños sea a lo más el peso
-promedio de las niñas más \(3\) kilogramos. Suponga que la variabilidad
+promedio de las niñas más $3$ kilogramos. Suponga que la variabilidad
 de los pesos de los niños y las niñas son iguales.
 </p>
 <h3 data-toc-skip>
@@ -687,8 +687,8 @@ Solución
 
 En este punto estamos interesados en calcular la probabilidad de que el
 peso promedio de los niños sea a lo más el peso promedio de las niñas
-más \(3\) kilogramos, lo cual es equivalente a que, la diferencia entre
-los pesos promedio de niños y niñas sea como máximo de \(3\), esto es
+más $3$ kilogramos, lo cual es equivalente a que, la diferencia entre
+los pesos promedio de niños y niñas sea como máximo de $3$, esto es
 $$\begin{align*}
 \mathbb{P}(\mu_H \leq \mu_M + 3) = \mathbb{P}(\mu_H - \mu_M \leq 3) 
 \end{align*}$$
@@ -698,16 +698,16 @@ para llevar la estructura de la probabilidad de interés a una estructura
 conocida, dependiendo de la información que poseemos. En este caso,
 tenemos que el peso de los niños y las niñas se distruye normalmente con
 varianzas desconocidas pero iguales, y además poseemos que los tamaños
-muestrales son pequeños (\(n_H, n_M \leq 30\)) y por tanto podemos
-llevar la estructura a la forma de una distribución \(t\) de
-\(n_H+n_M-2\) grados de libertad, tal que
+muestrales son pequeños ($n_H, n_M \leq 30$) y por tanto podemos
+llevar la estructura a la forma de una distribución $t$ de
+$n_H+n_M-2$ grados de libertad, tal que
 
 $$\begin{align*}
 t_c=\frac{(\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M)}{Sp\sqrt{\frac{1}{n_H} + \frac{1}{n_M}}} \sim t_{n_H+n_M-2}
 \end{align*}$$
 
 En donde observamos que entre otros valores, requerimos calcular el
-valor de la desviación estándar conjunta \(Sp\), la cual está dada por
+valor de la desviación estándar conjunta $Sp$, la cual está dada por
 
 $$\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
@@ -719,15 +719,15 @@ Sp &= \sqrt{Sp^2} \\
    &= 7.044324
 \end{align*}$$
 
-Ahora, al usar los valores encontrados en la investigación \(n_H=22\) y
-\(n_M=28\), \(\bar{X}_H=52\), \(S_H=8\), \(\bar{X}_M=46\) y \(S_M=6.2\),
+Ahora, al usar los valores encontrados en la investigación $n_H=22$ y
+$n_M=28$, $\bar{X}_H=52$, $S_H=8$, $\bar{X}_M=46$ y $S_M=6.2$,
 tendremos que la probabilidad de interés será igual a $$\begin{align*}
 \mathbb{P}(\mu_H - \mu_M \leq 3) &= \mathbb{P}(-(\mu_H - \mu_M) \geq - 3) \\
                                  &= \mathbb{P}((\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M) \geq (52 - 46) - 3) \\
                                  &= \mathbb{P}\left(\frac{(\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M)}{Sp\sqrt{\frac{1}{n_H} + \frac{1}{n_M}}} \geq \frac{(52 - 46) - 3}{7.044324\sqrt{\frac{1}{22} + \frac{1}{28}}}\right) \\
                                  &= \mathbb{P}\left(t_{28+22-2} \geq \frac{3}{2.006938}\right) \\
                                  &= \mathbb{P}\left(t_{48} \geq 1.494814\right) \\
-\end{align*}$$ Y como \(t \sim t_{48}\), podemos entonces podemos
+\end{align*}$$ Y como $t \sim t_{48}$, podemos entonces podemos
 encontrar la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistTStudent.pdf">Tabla
 de la Distribución t de Student</a>, la función <tt>pt()</tt> del
@@ -740,10 +740,10 @@ significará que $$\begin{align*}
 \end{align*}$$
 
 y consecuencia, se tendrá que la probabilidad de que la diferencia entre
-los pesos promedio de niños y niñas sea como máximo de \(3\) kilos, es
-del \(7.07\%\), lo cual parece poco probable, y por tanto podría
+los pesos promedio de niños y niñas sea como máximo de $3$ kilos, es
+del $7.07\%$, lo cual parece poco probable, y por tanto podría
 pensarse que la diferencia entre los pesos promedio debería ser mayor a
-\(3\) kilos.
+$3$ kilos.
 </p>
 </main>
 <button id="Show9" class="btn btn-secondary">
@@ -761,17 +761,17 @@ Suponga que se contrata a un grupo de investigación de la Universidad de
 Antioquia para que realice un análisis de tensión sobre la unión pegada
 con una resina experimental a dos clases diferentes de madera. Para
 realizar el estudio, el grupo de investigación toma una muestra
-aleatoria de \(18\) uniones pegadas con la resina especial a la madera
-\(A\) y encontró que la tensión promedio de corte y desviación estándar
-fueron de \(1130_{psi}\) y \(420_{psi}\), respectivamente. Por su parte,
-toman una muestra aleatoria de \(12\) uniones pegadas con la resina
-especial a la madera \(B\), encontrando que la tensión promedio de corte
-y desviación estándar fueron de \(1010_{psi}\) y \(380_{psi}\).<br> <br>
+aleatoria de $18$ uniones pegadas con la resina especial a la madera
+$A$ y encontró que la tensión promedio de corte y desviación estándar
+fueron de $1130_{psi}$ y $420_{psi}$, respectivamente. Por su parte,
+toman una muestra aleatoria de $12$ uniones pegadas con la resina
+especial a la madera $B$, encontrando que la tensión promedio de corte
+y desviación estándar fueron de $1010_{psi}$ y $380_{psi}$.<br> <br>
 Si se asume que la tensión sobre la unión pegada con la resina
 experimental en cada clase de madera se distribuye aproximadamente
 normal con varianzas diferentes. Calcule la probabilidad de que la
-tensión promedio de corte de la madera \(B\) sea menor a la tensión
-promedio de corte de la madera \(A\).
+tensión promedio de corte de la madera $B$ sea menor a la tensión
+promedio de corte de la madera $A$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -779,26 +779,26 @@ Solución
 <p>
 
 En este ejercicio estamos interesados en calcular la probabilidad de que
-la tesión promedio de la madera \(B\) sea menor a la tensión promedio de
-corte de la madera \(A\), esto es $$\begin{align*}
+la tesión promedio de la madera $B$ sea menor a la tensión promedio de
+corte de la madera $A$, esto es $$\begin{align*}
 \mathbb{P}(\mu_B < \mu_A)
 \end{align*}$$
 
-Dado que no conocemos la distribución de \(\mu_B - \mu_A\) para realizar
+Dado que no conocemos la distribución de $\mu_B - \mu_A$ para realizar
 el cálculo de la probabilidad de interés, debemos realizar operaciones
 matemáticas para llevar dicha estructura a una forma conocida, en donde,
 para este caso tenemos que la unión pegada con la resina experimental en
 cada clase de madera se distribuye aproximadamente normal con varianzas
 diferentes pero desconocidas, y además poseemos que los tamaños
-muestrales son pequeños (\(n_A, n_B \leq 30\)) y por tanto podemos
-llevar la estructura a la forma de una distribución \(t\) de \(\nu\)
+muestrales son pequeños ($n_A, n_B \leq 30$) y por tanto podemos
+llevar la estructura a la forma de una distribución $t$ de $\nu$
 grados de libertad, tal que
 
 $$\begin{align*}
 t_c=\frac{(\bar{X}_B - \bar{X}_A) - (\mu_B - \mu_A)}{\sqrt{\frac{S^2_B}{n_B} + \frac{S^2_A}{n_A}}} \sim t_\nu
 \end{align*}$$
 
-siendo el valor de los grados de libertad \(\nu\) iguales a
+siendo el valor de los grados de libertad $\nu$ iguales a
 $$\begin{align*}
 \lceil\nu\rceil &= \frac{\left(\frac{S_B^2}{n_B} + \frac{S_A^2}{n_A}\right)^2}{\left[\frac{(S_B^2/n_B)^2}{n_B-1}\right] + \left[\frac{(S_A^2/n_A)^2}{12-1}\right]}\\
                 &= \frac{\left(\frac{380^2}{12} + \frac{420^2}{18}\right)^2}{\left[\frac{(380^2/12)^2}{12-1}\right] + \left[\frac{(420^2/18)^2}{18-1}\right]}\\
@@ -816,7 +816,7 @@ igual a $$\begin{align*}
                           &= \mathbb{P}\left(\frac{(\bar{X}_B - \bar{X}_A) - (\mu_B - \mu_A)}{\sqrt{\frac{S^2_B}{n_B} + \frac{S^2_A}{n_A}}} > \frac{(1010 - 1130) - 0}{\sqrt{\frac{380^2}{12} + \frac{420^2}{18}}}\right) \\
                           &= \mathbb{P}\left(t_{26} > \frac{-120}{147.7611}\right) \\
                           &= \mathbb{P}\left(t_{26} > -0.8121217\right) \\
-\end{align*}$$ Y como \(t \sim t_{26}\), podemos entonces podemos
+\end{align*}$$ Y como $t \sim t_{26}$, podemos entonces podemos
 encontrar la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistTStudent.pdf">Tabla
 de la Distribución t de Student</a>, la función <tt>pt()</tt> del
@@ -829,8 +829,8 @@ significará que $$\begin{align*}
 \end{align*}$$
 
 y consecuencia, se tendrá que la probabilidad de que la tesión promedio
-de la madera \(B\) sea menor a la tensión promedio de corte de la madera
-\(A\) es del \(78.79\%\), lo cual parece muy probable.
+de la madera $B$ sea menor a la tensión promedio de corte de la madera
+$A$ es del $78.79\%$, lo cual parece muy probable.
 </p>
 </main>
 <button id="Show10" class="btn btn-secondary">
@@ -845,14 +845,14 @@ Ejercicio
 </h3>
 <p>
 Se realiza un estudio con el fin de comparar el rendimiento de
-combustible en kilómetros por galón para dos tipos de motores \(A\) y
-\(B\). Suponga que se decide realizar un total de \(47\) experimentos
-con el motor \(A\) y \(56\) expermientos con el motor \(B\), encontrando
-para cada caso, un rendimiento promedio de gasolina de \(44\) y \(48\)
-kilómetros, respectivamente, con desviaciones estándar de \(6.2\) y
-\(7.6\), respectivamente. <br> <br> Calcule la probabilidad de que el
+combustible en kilómetros por galón para dos tipos de motores $A$ y
+$B$. Suponga que se decide realizar un total de $47$ experimentos
+con el motor $A$ y $56$ expermientos con el motor $B$, encontrando
+para cada caso, un rendimiento promedio de gasolina de $44$ y $48$
+kilómetros, respectivamente, con desviaciones estándar de $6.2$ y
+$7.6$, respectivamente. <br> <br> Calcule la probabilidad de que el
 rendimiento promedio de combustible en kilómetro por galón de gasolina
-sea inferior para el motor \(B\) que para el motor \(A\). Suponga que
+sea inferior para el motor $B$ que para el motor $A$. Suponga que
 los rendimientos no poseen una distribución normal.
 </p>
 <h3 data-toc-skip>
@@ -863,23 +863,23 @@ Solución
 Para resolver este ejercicio es necesario tener en cuenta que nos
 mencionan que la distribución de los rendimientos no se distribuye
 normalmente, y por tanto para poder calcular la probabilidad de interés,
-es necesario verificar si los tamaños de muestra son mayores a \(30\)
+es necesario verificar si los tamaños de muestra son mayores a $30$
 para ambos motores, ya que, de ser menores, no será posible realizar el
 cálculo.<br> <br> Dado que los tamaños de muestra son para los motores
-\(A\) y \(B\), de \(47\) y \(56\), respectivamente, podremos llevar la
+$A$ y $B$, de $47$ y $56$, respectivamente, podremos llevar la
 probabilidad de que el rendimiento promedio de combustible en kilómetro
-por galón de gasolina sea inferior para el motor \(B\) que para el motor
-\(A\), la cual se define como $$\begin{align*}
+por galón de gasolina sea inferior para el motor $B$ que para el motor
+$A$, la cual se define como $$\begin{align*}
 \mathbb{P}(\mu_B < \mu_A)
 \end{align*}$$
 
-Como no se conoce la distribución de \(\mu_B - \mu_A\) para realizar el
+Como no se conoce la distribución de $\mu_B - \mu_A$ para realizar el
 cálculo de la probabilidad de interés, podemos llevar la estructura de
 la probabilidad a una conocida, como lo es la forma aproximada de la
 distribución normal estándar, dado que nos encontramos en un caso en el
 cual, los datos no poseen una distribución normal, ni conocemos las
 varianzas poblacionales, pero que tenemos tamaños muestrales mayores a
-\(30\), tal que $$\begin{align*}
+$30$, tal que $$\begin{align*}
 Z_c=\frac{(\bar{X}_B - \bar{X}_A) - (\mu_B - \mu_A)}{\sqrt{\frac{S^2_B}{n_B} + \frac{S^2_A}{n_A}}} \stackrel{a}{\sim} N(0,1)
 \end{align*}$$
 
@@ -891,7 +891,7 @@ acaba de presentar, tendremos que $$\begin{align*}
                           &= \mathbb{P}\left(\frac{(\bar{X}_B - \bar{X}_A) - (\mu_B - \mu_A)}{\sqrt{\frac{S^2_B}{n_B} + \frac{S^2_A}{n_A}}} > \frac{(48 - 44) - 0}{\sqrt{\frac{7.6^2}{56} + \frac{6.2^2}{47}}}\right) \\
                           &= \mathbb{P}\left(Z > \frac{4}{1.35989}\right) \\
                           &= \mathbb{P}\left(Z > 2.941414\right) \\
-\end{align*}$$ Y como \(Z \stackrel{a}{\sim} N(0,1)\), podemos encontrar
+\end{align*}$$ Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar
 la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -905,9 +905,9 @@ significará que $$\begin{align*}
 
 y consecuencia, se tendrá que la probabilidad de que el rendimiento
 promedio de combustible en kilómetro por galón de gasolina sea inferior
-para el motor \(B\) que para el motor \(A\), es menor al \(1\%\), lo
+para el motor $B$ que para el motor $A$, es menor al $1\%$, lo
 cual quiere decir que, basados en los datos muestrales, es improbable
-que el rendimiento del motor B sea inferior al del motor \(A\).
+que el rendimiento del motor B sea inferior al del motor $A$.
 </p>
 </main>
 
@@ -941,9 +941,9 @@ determinar si el cambio en el proceso de fabricación mejora el
 rendimiento que sus equipos ofrecen, deciden tomar una muestra de
 equipos antes y después de la implementación del nuevo proceso de
 fabricación y se evalúa la velocidad de procesamiento para la ejecución
-de un programa determinado. Suponga que se encuentra que \(120\) de
-\(500\) computadores fabricados con el método actual ofrece un
-rendimiento superior al promedio, mientras que, \(220\) de \(700\)
+de un programa determinado. Suponga que se encuentra que $120$ de
+$500$ computadores fabricados con el método actual ofrece un
+rendimiento superior al promedio, mientras que, $220$ de $700$
 computadores fabricados con el nuevo método ofrece un rendimiento
 superior al promedio.<br> <br> Basados en la información presentada,
 calcule la probabilidad de que la proporción de equipos de computo
@@ -966,7 +966,7 @@ computo fabricados mediante el proceso actual, esto es $$\begin{align*}
 en donde, para poder calcular la proporción, será necesario llevar la
 estructura actual, a la forma de una distribución aproximadamente
 normal, aprovechando que se cumple la condición de que los tamaños
-muestrales \(n_N\) y \(n_A\geq 30\), y por tanto, podemos llevar la
+muestrales $n_N$ y $n_A\geq 30$, y por tanto, podemos llevar la
 estructura de la probabilidad a la forma $$\begin{align*}
 Z_c=\frac{(\hat{p}_N - \hat{p}_A) - (p_N - p_A)}{\sqrt{\frac{p_N(1-p_N)}{n_N} + \frac{p_A(1-p_A)}{n_A}}} \stackrel{a}{\sim} N(0,1)
 \end{align*}$$
@@ -1008,7 +1008,7 @@ $$\begin{align*}
                       &= \mathbb{P}\left(Z < 2.815407\right)
 \end{align*}$$
 
-Y como \(Z \stackrel{a}{\sim} N(0,1)\), podemos encontrar la
+Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar la
 probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
@@ -1023,7 +1023,7 @@ significará que $$\begin{align*}
 y consecuencia, se tendrá que la probabilidad de que la proporción de
 equipos de computo fabricados con el nuevo proceso de fabricación
 ofrezca un rendimiento promedio superior a la propoción de equipos de
-computo fabricados mediante el proceso actual es del \(99.76\%\).
+computo fabricados mediante el proceso actual es del $99.76\%$.
 Entonces, como la probabilidad es tan alta, podría pensarse con una alta
 seguridad, de que el proceso nuevo ofrece una mejora signiticativa
 respecto a la mejora promedio de rendimiento respecto al proceso actual.
@@ -1053,7 +1053,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Se aplican pruebas a \(10\) cables conductores soldados a un dispositivo
+Se aplican pruebas a $10$ cables conductores soldados a un dispositivo
 semiconductor con el fin de determinar su resistencia a la tracción. Las
 pruebas demostraron que para romper la unión se requiere las libras de
 fuerza que se listan a continuación.
@@ -1098,7 +1098,7 @@ Sin Encapsulado
 </thead>
 </table>
 <p>
-Otra conjunto de \(8\) cables conductores que forman otro dispositivo,
+Otra conjunto de $8$ cables conductores que forman otro dispositivo,
 se encapsulan y se prueban para determinar si el encapsulado aumenta la
 resistencia a la tracción, obteniendo para este caso se requirieron las
 siguientes libras de fuerza para romper la unión
@@ -1146,23 +1146,23 @@ Solución
 <p>
 
 En este punto, nos preguntan sobre la probabilidad de que la varianza de
-los cables sin encapsulado, \(\sigma^2_S\), sea mayor a la varianza de
-los cables con encapsulado, \(\sigma^2_C\), esto es $$\begin{align*}
+los cables sin encapsulado, $\sigma^2_S$, sea mayor a la varianza de
+los cables con encapsulado, $\sigma^2_C$, esto es $$\begin{align*}
 \mathbb{P}(\sigma^2_S > \sigma^2_C) = \mathbb{P}\left(\frac{\sigma^2_S}{\sigma^2_C} > 1\right)
 \end{align*}$$
 
 Es de anotar que, al no conocer la distribución de probabilidad del
 cocience de las varianzas, debemos realizar operaciones matemáticas para
 llevar la probabilidad planteada a una forma conocida, tal como lo es la
-estructura de una distribución \(F\) con \(n_C-1\) grados de libertad en
-el numerador y \(n_S-1\) grados de libertad en el denominador, tal que
+estructura de una distribución $F$ con $n_C-1$ grados de libertad en
+el numerador y $n_S-1$ grados de libertad en el denominador, tal que
 $$\begin{align*}
 F_c  = \frac{S^2_C\sigma^2_S}{S^2_S\sigma^2_C} \sim F_{n_C-1, n_S-1}
 \end{align*}$$
 
-En donde apreciamos que requerimos de las varianzas muestrales \(S^2_C\)
-y \(S^2_S\), los cuales podemos calcular a partir de los datos
-muestrales y los tamaños de muestra \(n_C=8\) y \(n_S=10\), tal que al
+En donde apreciamos que requerimos de las varianzas muestrales $S^2_C$
+y $S^2_S$, los cuales podemos calcular a partir de los datos
+muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$, tal que al
 realizar el cálculo obtenemos
 
 $$\begin{align*}
@@ -1193,7 +1193,7 @@ $$\begin{align*}
 \mathbb{P}(\sigma^2_S > \sigma^2_C) = 0.862944957
 \end{align*}$$
 
-por tanto, se tiene una probabilidad del \(86.29\%\) de que la
+por tanto, se tiene una probabilidad del $86.29\%$ de que la
 variabilidad de los cables sin encapsulado sea mayor a la variabilidad
 de los cables con encapsulado, es decir, que es muy probable que el
 encapsulado disminuya la variabilidad de la resistencia a la tracción.

@@ -1081,7 +1081,7 @@ Prueba de bondad de ajuste
 </h3>
 <p>
 Para ilustrar el método de empleo, suponga que se desea probar si, el
-área del lote (<tt>area\(\_\)lote</tt>), posee el comportamiento de una
+área del lote (<tt>area$\_$lote</tt>), posee el comportamiento de una
 distribución Weibull. Entonces, para probar esta distribución, será
 necesario usar la función <tt>fitdistr()</tt> para encontrar los
 parámetros que nos servirán para el ajuste, y posteriormente emplear una
@@ -1298,9 +1298,9 @@ Ocultar Ejemplo
 Prueba para una media
 </h3>
 <p>
-Suponga que se desea probar con nivel de significancia del \(5\%\), la
-hipótesis de que el número promedio en \(m^2\) de las áreas comunes es
-superior a \(154\) \(m^2\) (<tt>areatotzc</tt>). Para realizar la prueba
+Suponga que se desea probar con nivel de significancia del $5\%$, la
+hipótesis de que el número promedio en $m^2$ de las áreas comunes es
+superior a $154$ $m^2$ (<tt>areatotzc</tt>). Para realizar la prueba
 de hipótesis para una media, bajo los supuestos de que, la distribución
 es normal o aproximadamente normal y que la varianza poblacional no es
 conocidas, puede emplearse la función <tt>t.test()</tt> de <tt>R</tt>,
@@ -1354,9 +1354,9 @@ Ocultar Ejemplo
 Prueba para diferencia de medias
 </h3>
 <p>
-Suponga que se desea probar con nivel de significancia del \(1\%\), la
-hipótesis de que el precio promedio de venta por \(m^2\) en Antioquia,
-es menor que el precio promedio de venta por \(m^2\) en el Valle
+Suponga que se desea probar con nivel de significancia del $1\%$, la
+hipótesis de que el precio promedio de venta por $m^2$ en Antioquia,
+es menor que el precio promedio de venta por $m^2$ en el Valle
 (<tt>preciovtax</tt>) y (<tt>region</tt>). <br> <br> Si pudieramos
 suponer normalidad, y varianzas desconocidas, en <tt>R</tt> es posible
 emplear la función <tt>t.test()</tt> para probar la hipótesis de
@@ -1409,9 +1409,9 @@ Ocultar Ejemplo
 Prueba para una proporción
 </h3>
 <p>
-Suponga que se desea probar con nivel de significancia del \(10\%\), la
+Suponga que se desea probar con nivel de significancia del $10\%$, la
 hipótesis de que la proporción de viviendas de interés social es
-superior al \(43\%\) (<tt>tipovivi</tt>). En este caso, es posible
+superior al $43\%$ (<tt>tipovivi</tt>). En este caso, es posible
 emplear la función <tt>prop.test</tt> de <tt>R</tt> para probar la
 hipótesis de interés. <br> <br> Si pudieramos suponer normalidad, y
 varianzas desconocidas, en <tt>R</tt> es posible emplear la función
@@ -1469,10 +1469,10 @@ Prueba para diferencia de proporciones
 </h3>
 <p>
 Suponga que se tiene interés en probar la hipótesis si la proporción de
-viviendas de interés social en el \(2016\) es inferior a la proporción
-de viviendas de interés social en el \(2018\) (<tt>tipovivi</tt>) y
-(<tt>ano\(\_\)censo</tt>), empleando un nivel de significancia del
-\(12\%\). En este caso, puede emplearse la función <tt>prop.table</tt>
+viviendas de interés social en el $2016$ es inferior a la proporción
+de viviendas de interés social en el $2018$ (<tt>tipovivi</tt>) y
+(<tt>ano$\_$censo</tt>), empleando un nivel de significancia del
+$12\%$. En este caso, puede emplearse la función <tt>prop.table</tt>
 de <tt>R</tt>, mediante la estructura.
 </p>
 <section class="language-r highlighter-rouge">
@@ -1525,9 +1525,9 @@ Prueba para una varianza
 </h3>
 <p>
 Suponga que se tiene interés en probar con un nivel de significancia del
-\(5\%\), si existe evidencia significativa respecto a que la
+$5\%$, si existe evidencia significativa respecto a que la
 variabilidad del precio unitario de ventas por metro cuadrado
-(<tt>preciovtax</tt>), es mayor a \(1250000\) pesos. En este caso, puede
+(<tt>preciovtax</tt>), es mayor a $1250000$ pesos. En este caso, puede
 emplearse la función <tt>varTest</tt> de la librería <tt>EnvStats</tt>,
 mediante la estructura.
 </p>
@@ -1580,10 +1580,10 @@ Ocultar Ejemplo
 Prueba para cociente de varianzas
 </h3>
 <p>
-Empleando un nivel de significancial del \(5\%\), verifique si existe
+Empleando un nivel de significancial del $5\%$, verifique si existe
 evidencia significativa respecto a que la variabilidad del área de los
 lotes, es diferente para las viviendas de interés social y las viviendas
-que no son de interés social (<tt>area\(\_\)lote</tt>) y
+que no son de interés social (<tt>area$\_$lote</tt>) y
 (<tt>tipovivi</tt>). <br> <br> En este caso, como la hipótesis de
 interés es probar si la varianza entre dos poblaciones es o no igual, es
 posible usar la función <tt>var.test()</tt> de <tt>R</tt> de la forma.

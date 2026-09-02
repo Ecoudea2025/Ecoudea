@@ -40,13 +40,13 @@ Ejercicio
 </h3>
 <ol>
 <li>
-Suponga que en un grupo de Estadística hay un total de \(10\) hombres y
-\(7\) mujeres, de cuantas formas posibles puede el profesor escoger un
+Suponga que en un grupo de Estadística hay un total de $10$ hombres y
+$7$ mujeres, de cuantas formas posibles puede el profesor escoger un
 hombre y luego una mujer para que resuelvan un ejercicio?
 </li>
 <li>
-Cuantos números impares de \(2\) dígitos pueden formarse con el conjunto
-de números \(1,3,4,2,6,0,9,8\) si cada uno de ellos sólo puede ser
+Cuantos números impares de $2$ dígitos pueden formarse con el conjunto
+de números $1,3,4,2,6,0,9,8$ si cada uno de ellos sólo puede ser
 seleccionado una sola vez?
 </li>
 </ol>
@@ -55,8 +55,8 @@ Solución
 </h3>
 <ol type="1">
 <li>
-Como hay un total de \(n_1=10\) foras de seleccionar un hombre y
-\(n_2=7\) formas de seleccionar una mujer, entonces el número de formas
+Como hay un total de $n_1=10$ foras de seleccionar un hombre y
+$n_2=7$ formas de seleccionar una mujer, entonces el número de formas
 de seleccionar un hombre y luego una mujer es de $$\begin{align*}
 n_1\times n_2 = (10)(7) = 70 \text{ formas}
 \end{align*}$$
@@ -64,17 +64,17 @@ n_1\times n_2 = (10)(7) = 70 \text{ formas}
 <li>
 
 Como el número puede ser impar, entonces el <strong>número posibilidades
-asociadas a las unidades</strong> debe terminar en \(1,3 \text{ o } 9\),
-lo cual da un total de \(n_1=3\) posibilidades. <br>
+asociadas a las unidades</strong> debe terminar en $1,3 \text{ o } 9$,
+lo cual da un total de $n_1=3$ posibilidades. <br>
 
 Por su parte, el <strong>número asociado a las decenas</strong>, puede
-tomar cualquier valor de los posibles, es decir, \(1,3,4,2,6,0,9,8\)
+tomar cualquier valor de los posibles, es decir, $1,3,4,2,6,0,9,8$
 <strong>restringido al números seleccionado en las unidades</strong>,
-entonces el número de posibilidades para las decenas será de \(n_2=7\)
+entonces el número de posibilidades para las decenas será de $n_2=7$
 posibilidades. <br>
 
 Entonces el número de posibilidades de armar números pares con el
-conjunto de números \(1,3,4,2,6,0,9,8\) es de $$\begin{align*}
+conjunto de números $1,3,4,2,6,0,9,8$ es de $$\begin{align*}
 n_1\times n_2 = (3)(7) = 21 \text{ posibilidades}
 \end{align*}$$
 </li>
@@ -102,7 +102,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que en el curso de Estadística hay un total de \(8\) estudiantes
+Suponga que en el curso de Estadística hay un total de $8$ estudiantes
 que van a presentar un supletorio, de cuantas formas puede organizar el
 profesor los estudiantes en una fila?
 </p>
@@ -110,10 +110,10 @@ profesor los estudiantes en una fila?
 Solución
 </h3>
 <p>
-Como hay un total de \(8\) estudiantes, entonces el total de formas en
+Como hay un total de $8$ estudiantes, entonces el total de formas en
 que el profesor puede ordenar el total de estudiantes en una fila es,
-\(8\) posibles estudiantes en el primer puesto, \(7\) posibles
-estudiantes en el segundo puesto, \(\ldots\), y \(1\) posible estudiante
+$8$ posibles estudiantes en el primer puesto, $7$ posibles
+estudiantes en el segundo puesto, $\ldots$, y $1$ posible estudiante
 en el último puesto. Esto es, $$\begin{align*}
 8! = 8\times7\times6\times5\times4\times3\times2\times1=40320 \text{ formas}
 \end{align*}$$
@@ -144,22 +144,22 @@ Ejercicio
 </h3>
 <p>
 Suponga que en la facultad de Ciencias Económicas se encuentran en
-elecciones, y se van a seleccionar \(4\) profesores para cubrir los
+elecciones, y se van a seleccionar $4$ profesores para cubrir los
 puestos de Decano, Vicedecano, Jefe del departamento de Ingeniería
 Industrial y Jefe del departamento de Ingeniería Financiera. Si se tiene
-un total de \(25\) candidatos, de cuantas maneras se pueden llenar estos
-\(4\) puestos.
+un total de $25$ candidatos, de cuantas maneras se pueden llenar estos
+$4$ puestos.
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
 
-Como hay un total de \(25\) aspirantes, entonces se tendrán \(25\)
-posibilidades para ocupar el puesto de Decano, \(24\) posibilidades para
+Como hay un total de $25$ aspirantes, entonces se tendrán $25$
+posibilidades para ocupar el puesto de Decano, $24$ posibilidades para
 ocupar el puesto de Vicedecano dado que se ocupó ya el primer puesto,
-\(23\) posibilidades para ocupar el puesto de Jefe del departamento de
-Economía dado que ya se ocuparon los dos primeros puestos, y \(22\)
+$23$ posibilidades para ocupar el puesto de Jefe del departamento de
+Economía dado que ya se ocuparon los dos primeros puestos, y $22$
 posibilidades para ocupar el puesto de Jefe del departamento de
 Administración de Empresas dado que ya se ocuparon los tres primeros
 puestos. Esto es $$\begin{align*}
@@ -167,8 +167,8 @@ puestos. Esto es $$\begin{align*}
 \end{align*}$$
 
 Lo anterior es equivalente al obtenido usando el teorema de permutación
-de \(n\) objetos tomados de a \(r\), en donde, se tiene un total de
-\(n=25\) aspirantes, para los cuales se les asignará un total de \(r=4\)
+de $n$ objetos tomados de a $r$, en donde, se tiene un total de
+$n=25$ aspirantes, para los cuales se les asignará un total de $r=4$
 puestos, dando como resultado $$\begin{align*}
 _{25}P_4 = \frac{25!}{(25-4)!} = 303600 \text{ formas}
 \end{align*}$$
@@ -193,7 +193,7 @@ Ocultar Ejercicio
 Solución
 </h3>
 <p>
-De cuantas manera puede organizar el profesor de Estadística a \(6\)
+De cuantas manera puede organizar el profesor de Estadística a $6$
 estudiantes (Andrés, Ana, Luisa, Camila, Sebastián, Pedro) en una mesa
 redonda para resolver un trabajo, si
 </p>
@@ -229,16 +229,16 @@ entonces, se tendrá \[2!=2\]
 formas diferentes de sentar a Luisa y a Camila (primero Luisa y luego
 Camila, o primero Camila y luego Luisa), una ves resuelto esto,
 <strong>se toman estas dos personas como si fueran un solo
-individuo</strong>, dejando un total de \(5\) grupos (uno con Camila y
+individuo</strong>, dejando un total de $5$ grupos (uno con Camila y
 Luisa, y los otros individuales) sin restricción para sentar en la mesa
 redonda. <br>
 
 Dejando a uno de los grupos en un punto fijo, el profesor tendrá un
 total de $$\begin{align*}
 (5-1)! = 24 \text{ formas}
-\end{align*}$$ de sentar en un mesa redonda a los \(5\) grupos. Ahora,
+\end{align*}$$ de sentar en un mesa redonda a los $5$ grupos. Ahora,
 si tenemos en cuenta la restricción anteriormente calculada, entonces se
-tendrá que el profesor podrá sentar a los \(6\) estudiantes en una mesa
+tendrá que el profesor podrá sentar a los $6$ estudiantes en una mesa
 redonda, con Luisa y Camila juntas de $$\begin{align*}
 2 * 24 = 48 \text{ formas}
 \end{align*}$$
@@ -246,9 +246,9 @@ redonda, con Luisa y Camila juntas de $$\begin{align*}
 <li>
 Similar al punto anterior, solo que en este caso la idea es encontrar el
 número de formas en donde Luisa y Camila no se sienten juntas. Si
-seguimos el proceso del inciso anterior, tendremos que en \(24\) formas
-de las \(120\) totales, Luisa y Camila estarán sentadas juntas, eso
-quiere decir que el profesor podrá sentar a los \(6\) estudiantes en una
+seguimos el proceso del inciso anterior, tendremos que en $24$ formas
+de las $120$ totales, Luisa y Camila estarán sentadas juntas, eso
+quiere decir que el profesor podrá sentar a los $6$ estudiantes en una
 mesa redonda, con Luisa y Camila separadas de $$\begin{align*}
 120 - 24 = 96 \text{ formas}
 \end{align*}$$
@@ -278,26 +278,26 @@ Ejercicio
 </h3>
 <p>
 En la facultad de Ciencias Económicas están interesados de armar un
-equipo de fútbol y para ello necesitan inscribir \(15\) jugadores. Entre
-los cuales se inscriben \(3\) de primer semestre, \(5\) de segundo
-semestre, \(2\) de tercer semestre, \(1\) de cuarto semestre, \(2\) de
-quinto semestre, \(1\) de octavo semestre y \(1\) de décimo semestre. Si
+equipo de fútbol y para ello necesitan inscribir $15$ jugadores. Entre
+los cuales se inscriben $3$ de primer semestre, $5$ de segundo
+semestre, $2$ de tercer semestre, $1$ de cuarto semestre, $2$ de
+quinto semestre, $1$ de octavo semestre y $1$ de décimo semestre. Si
 al finalizar el torneo el equipo de Ciencias Económicas queda de segundo
 y para la entrega de medallas se desea entregarlas por semestre al que
 pertenecen los estudiantes. De cuantas formas diferentes pueden
-ordenarse los \(15\) jugadores para recibir las medallas, si solo
+ordenarse los $15$ jugadores para recibir las medallas, si solo
 importa el semestre en el que pertenecen?
 </p>
 <h3 data-toc-skip>
 Solución
 </h3>
 <p>
-Dado que solo importa el semestre al que pertenecen los \(15\)
-estudiantes, entonces se tendrán un total de \(7\) clases, entre las
-cuales, la primera posee \(3\) estudiantes, la segunda posee \(5\)
-estudiantes, la tercera posee \(2\) estudiantes, la cuarta posee \(1\)
-estudiante, la quinta posee \(2\) estudiantes, la sexta posee \(1\)
-estudiante y la séptima posee \(1\) estudiante. Por tanto, para entregar
+Dado que solo importa el semestre al que pertenecen los $15$
+estudiantes, entonces se tendrán un total de $7$ clases, entre las
+cuales, la primera posee $3$ estudiantes, la segunda posee $5$
+estudiantes, la tercera posee $2$ estudiantes, la cuarta posee $1$
+estudiante, la quinta posee $2$ estudiantes, la sexta posee $1$
+estudiante y la séptima posee $1$ estudiante. Por tanto, para entregar
 las medallas, el número de arreglos diferentes que pueden formarse son
 $$\begin{align*}
 \frac{15!}{3!\;5!\;2!\;1!\;2!\;1!\;1!} = \frac{1307674368000}{2880} = 454053600 \text{ formas}
@@ -332,10 +332,10 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que entre el total de \(27\) estudiantes que están en el curso
-de Estadística, el profesor decide seleccionar \(4\) para que realicen
+Suponga que entre el total de $27$ estudiantes que están en el curso
+de Estadística, el profesor decide seleccionar $4$ para que realicen
 un quiz sorpresa. De cuantas maneras puede el profesor escoger un grupo
-de \(4\) personas del total de estudiantes del curso?
+de $4$ personas del total de estudiantes del curso?
 </p>
 <h3 data-toc-skip>
 Solución
@@ -343,8 +343,8 @@ Solución
 <p>
 Dado que no importa el orden en el cual el estudiante sea escogido va a
 tener que presentar el quiz y un estudiante no puede ser seleccionado
-más de una vez, se tiene que el total de estudiantes \(n=27\), mientras
-que el total de estudiantes que tomará son \(r=4\), entonces se tendrá
+más de una vez, se tiene que el total de estudiantes $n=27$, mientras
+que el total de estudiantes que tomará son $r=4$, entonces se tendrá
 que el número de formas en que el profesor puede hacer la selección es
 $$\begin{align*}
 _{27}C_{4}= \frac{27!}{4! (27-4)!} = 17550 \text{ formas}
@@ -375,7 +375,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Suponga que un grupo de \(10\) estudiantes del grupo de Estadística
+Suponga que un grupo de $10$ estudiantes del grupo de Estadística
 asisten a un congreso y deciden hospedarse en un hostal. Si una hay dos
 habitación triple, una doble y dos privadas, de cuantas formas pueden
 repartirse los estudiantes?
@@ -384,9 +384,9 @@ repartirse los estudiantes?
 Solución
 </h3>
 <p>
-El número de formas posibles en que pueden repartirse los \(10\)
-estudiantes, siendo \(n_1=3\) y \(n_2=3\) las dos habitaciones triples,
-\(n_3=2\) la habitaciones doble y \(n_4=1\) y \(n_5=1\) las dos
+El número de formas posibles en que pueden repartirse los $10$
+estudiantes, siendo $n_1=3$ y $n_2=3$ las dos habitaciones triples,
+$n_3=2$ la habitaciones doble y $n_4=1$ y $n_5=1$ las dos
 habitaciones privadas, entonces $$\begin{align*}
 \left(\begin{array}{c}10\\ 3, 3, 2, 1, 1\end{array}\right) = \frac{10!}{3!\;3!\;2!\;1!\;1!} = 50400 \text{ formas}
 \end{align*}$$
@@ -458,8 +458,8 @@ Ejercicio
 </h3>
 <p>
 Suponga que se está interesado en jugar una lotería, en la cual deben
-seleccionarse \(4\) diferentes números. De cuantas formas es posible
-seleccionar estos \(4\) números
+seleccionarse $4$ diferentes números. De cuantas formas es posible
+seleccionar estos $4$ números
 </p>
 <ol>
 <li>
@@ -486,14 +486,14 @@ Solución
 <li>
 Dado que <strong>influye el orden</strong> de los números y <strong>no
 se puede seleccionar un número dos veces</strong>, se tiene que el total
-números de \(4\) dígitos que se pueden formar son $$\begin{align*}
+números de $4$ dígitos que se pueden formar son $$\begin{align*}
 _{10}P_4= \frac{10!}{(10-4)!} = 5040 \text{ números}
 \end{align*}$$
 </li>
 <li>
 Dado que <strong>influye el orden</strong> de los números y <strong>se
 posible seleccionar un número más de una vez</strong>, se tiene que el
-total de números de \(4\) dígitos que se pueden formar son
+total de números de $4$ dígitos que se pueden formar son
 $$\begin{align*}
 10^4 = 10000 \text{ números}
 \end{align*}$$
@@ -501,7 +501,7 @@ $$\begin{align*}
 <li>
 Dado que <strong>no influye el orden</strong> de los números y
 <strong>no se puede seleccionar un número dos veces</strong>, se tiene
-que el total números de \(4\) dígitos que se pueden formar son
+que el total números de $4$ dígitos que se pueden formar son
 $$\begin{align*}
 _{10}C_4= \frac{10!}{4!\;(10-4)!} = 210 \text{ números}
 \end{align*}$$
@@ -509,7 +509,7 @@ _{10}C_4= \frac{10!}{4!\;(10-4)!} = 210 \text{ números}
 <li>
 Dado que <strong>no influye el orden</strong> de los números y
 <strong>se posible seleccionar un número más de una vez</strong>, se
-tiene que el total de números de \(4\) dígitos que se pueden formar son
+tiene que el total de números de $4$ dígitos que se pueden formar son
 $$\begin{align*}
 _{10+4-1}C_4 = \frac{(10+4-1)!}{4!\;(10-1)!} = 715 \text{ números}
 \end{align*}$$

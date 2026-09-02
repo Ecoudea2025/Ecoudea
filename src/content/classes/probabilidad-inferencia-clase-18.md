@@ -764,9 +764,9 @@ Interpretación
 </h3>
 <p>
 En el diagrama de tallo y hojas se aprecia que la edad mínima de los
-encuestados es de \(16\) años, mientras que la mayor es de \(40\),
+encuestados es de $16$ años, mientras que la mayor es de $40$,
 adicionalmente, se aprecia que la edad posee un comportamiento similar
-en \(20\) y \(40\) años, donde se aprecian \(3\) ocurrencias para cada
+en $20$ y $40$ años, donde se aprecian $3$ ocurrencias para cada
 valor. También se aprecia un comportamiento asimétrico positivo, en
 donde se aprecia que el conjunto de las edad se encuentra más reunida
 para edades más bajas que para edades más altas.
@@ -815,14 +815,14 @@ Interpretación
 </h3>
 <p>
 En el diagrama de caja y bigotes se aprecia que la mediana del peso de
-las personas se encuentra alrededor de \(79\) kg, en donde el primer y
-tercer cuartil se encuentran cercanos a \(66\) y \(88\) kg,
+las personas se encuentra alrededor de $79$ kg, en donde el primer y
+tercer cuartil se encuentran cercanos a $66$ y $88$ kg,
 respectivamente. No se aprecian observaciones extremas por fuera de los
 bigotes del gráfico y se observa un comportamiento asimétrico negativo,
 pues se aprecia que la mediana se encuentra más cercana al tercer
 cuartil que al primero. Finalmente se evidencia que la caja del gráfico
 es relativamente grande, presentando un rango intercuartílico cercano a
-\(22\) kg, lo cual podría considerarse como evidencia sobre que los
+$22$ kg, lo cual podría considerarse como evidencia sobre que los
 datos poseen una gran dispersión.
 </p>
 </main>
@@ -865,14 +865,14 @@ Interpretación
 <p>
 En la figura anterior, se aprecia que el histograma realiza una
 agrupación de personas por categorías, con diferencia de cada una de
-\(0.05\) metros de diferencia, en donde se evidencia que la categoría
-para la altura entre \(1.55-1.60\) metros, es la que posee mayor
-frecuencia con un total de \(5\) entradas. También se puede observar que
+$0.05$ metros de diferencia, en donde se evidencia que la categoría
+para la altura entre $1.55-1.60$ metros, es la que posee mayor
+frecuencia con un total de $5$ entradas. También se puede observar que
 gran parte de las observaciones están reunidas en la parte derecha del
 histograma, y en consecuencia, se podría pensar que el conjunto de
 alturas posee una asimetría negativa. <br> <br> Adicionalmente, al ser
 una variable de altura de personas, y ver que hay personas que pueden
-medir desde \(1.55-1.60\) metros hasta \(1.90-1.95\), entonces se
+medir desde $1.55-1.60$ metros hasta $1.90-1.95$, entonces se
 considera que la dispersión de las alturas es relativamente alta, lo
 cual podría ser corroborarse mediante un análisis numérico. Finalmente,
 como se aprecia que hay varias observaciones en las dos categorías
@@ -927,8 +927,8 @@ Interpretación
 <p>
 En el gráfico de densidad, se aprecia un comportamiento relativamente
 simétrico, y por tanto se tendrá que el promedio de los salarios de los
-encuestados debe estar alrededor de \(2\) millones de pesos, con una
-desviación estándar de aproximadamente \(500\) mil pesos.<br> <br> En la
+encuestados debe estar alrededor de $2$ millones de pesos, con una
+desviación estándar de aproximadamente $500$ mil pesos.<br> <br> En la
 distribución de los salarios no se aprecian colas pesadas (valores
 extremos), a excepción de que hay algunos valores que se encuentran por
 debajo del salario mínimo, lo cual podría ser explicado si se tuviera
@@ -1086,32 +1086,32 @@ En la matriz de dispersión mejoradas, es posible observar un poco más de
 información al respecto al conjunto de observaciones. Inicialmente,
 vemos en la diagonal un histograma de cada variable individual, en donde
 para la Edad, se aprecia que cada barra está compuesta por bloques de
-\(5\) años, mostrando que la mayor proporción de personas posee menos de
-\(20\) años, seguido por personas entre \(35-40\) años, también se
+$5$ años, mostrando que la mayor proporción de personas posee menos de
+$20$ años, seguido por personas entre $35-40$ años, también se
 aprecia un comportamiento decreciente entre las edades, lo cual podría
 pensarse en una forma asimetría ligeramente positiva. <br> <br> Respecto
-a la altura, vemos que cada barra está compuesta por bloques de \(0.05\)
-metros de diferencia, comenzando en \(1.55-1.60\) metros y terminando en
-\(1.95\) metros, en donde, se aprecia que la mayor proporción de
-personas posee una altura menor a \(1.60\) metros, seguido por una
-altura mayor a \(1.90\) metros. En ésta se observa una altura
+a la altura, vemos que cada barra está compuesta por bloques de $0.05$
+metros de diferencia, comenzando en $1.55-1.60$ metros y terminando en
+$1.95$ metros, en donde, se aprecia que la mayor proporción de
+personas posee una altura menor a $1.60$ metros, seguido por una
+altura mayor a $1.90$ metros. En ésta se observa una altura
 relativamente simétrica, con una amplia dispersión. <br> <br> Para el
-peso, se observa que las barras del histograma saltan de \(5\) en \(5\)
-kg, iniciando en \(60\) kg hasta \(95\), siendo la categoría \(85-90\)
+peso, se observa que las barras del histograma saltan de $5$ en $5$
+kg, iniciando en $60$ kg hasta $95$, siendo la categoría $85-90$
 kg la que posee mayor número de observaciones, seguida por la categoría
-\(65-70\) kg. No se observan valores atípicos en el conjunto de los
+$65-70$ kg. No se observan valores atípicos en el conjunto de los
 pesos, dado los valores planteados son valores comúnmente alcanzables.
 No es posible asegurar la existencia de una estructura asimétrica
 definida, debido al comportamiento de las barras que no tiene
 crecimientos ni decrecimientos uniformes.<br> <br> En la parte inferior
 izquierda, se muestran los valores asociados a la correlación entre cada
 par de variables, en donde se observa que la correlación entre la Edad y
-la Altura es de \(0.19\), entre la Altura y el Peso de \(0.17\) y entre
-la Edad y el Peso de prácticamente \(0\). De lo anterior, si usamos los
+la Altura es de $0.19$, entre la Altura y el Peso de $0.17$ y entre
+la Edad y el Peso de prácticamente $0$. De lo anterior, si usamos los
 valores de referencia presentados en la
 <a href="https://jiperezga.github.io/ProbabilidadeInferencia/PeIEClase05.html#medidas-de-asociación">Clase
 05 sobre Medidas de Asociación</a>, se tendrá que al tener una
-correlación menores a \(30\%\), se concluirá que la correlación entre
+correlación menores a $30\%$, se concluirá que la correlación entre
 cada uno de los pares de variables es débil o nula.<br> <br> Finalmente,
 en la parte superior derecha, se presenta el gráfico de dispersión entre
 cada par de variables junto con su recta de regresión. En el gráfico
@@ -1161,10 +1161,10 @@ Gráfico de barras una variable para frecuencias absoluta
 Interpretación
 </h3>
 <p>
-En el gráfico de barras, se observa que entre el total de los \(20\)
-encuestados, la mayoría con \(5\) personas viven en la Estrella, seguido
-por los municipios de Bello, Caldas y Medellín con un total de \(4\)
-personas, y el municipio de Itagüí con \(3\) personas encuestadas.
+En el gráfico de barras, se observa que entre el total de los $20$
+encuestados, la mayoría con $5$ personas viven en la Estrella, seguido
+por los municipios de Bello, Caldas y Medellín con un total de $4$
+personas, y el municipio de Itagüí con $3$ personas encuestadas.
 </p>
 <h3 data-toc-skip>
 Gráfico de barras una variable para frecuencias relativas
@@ -1186,8 +1186,8 @@ Interpretación
 En el gráfico de barra anterior, se aprecia de forma visual el
 comportamiento de la proporción de encuestados respecto al municipio en
 donde viven, mostrando que en los municipios de Bello, Caldas y Medellín
-se realizó en cada una un \(20\%\) de las encuestas, mientras que en la
-Estrella e Itagüí se realizó un \(25\%\) y \(15\%\) de las encuestas
+se realizó en cada una un $20\%$ de las encuestas, mientras que en la
+Estrella e Itagüí se realizó un $25\%$ y $15\%$ de las encuestas
 respectivamente.
 </p>
 </main>
@@ -1255,11 +1255,11 @@ eje (izquierdo o derecho) que se observe.<br> <br> Dicho comportamiento
 es resumido en la tabla de análisis de pareto, en donde se presentan las
 frecuencias-proporciones simples en orden descendente, desde la que
 posee mayor cantidad, hasta la que posee una menor cantidad. En la tabla
-de salida se observa que \(5\) personas que equivalen a \(25\%\) de los
-datos totales habitan en la Estrella, \(4\) personas que equivalen a
-\(20\%\) del total de la población habitan en Bello. Frecuencia y
+de salida se observa que $5$ personas que equivalen a $25\%$ de los
+datos totales habitan en la Estrella, $4$ personas que equivalen a
+$20\%$ del total de la población habitan en Bello. Frecuencia y
 proporción similar a Bello habitan en Caldas y Medellín. Finalmente, con
-una frecuencia de \(3\) encuestados, que equivale a \(15\%\) del total
+una frecuencia de $3$ encuestados, que equivale a $15\%$ del total
 del total de los encuestados, habita en Itagüí.
 
 </p>
@@ -1317,9 +1317,9 @@ menor frecuencia. Dado que no es posible saber con certeza si los
 triángulos son iguales o diferentes, se agrega en la parte izquierda un
 cuadro con el nombre de la categoría y la frecuencia absoluta entre
 paréntesis. En este cuadro, se aprecia que el municipio de la Estrella
-es quién posee la mayor frecuencia en la encuesta, con un total de \(5\)
-encuestados, seguidos por Bello, Caldas y Medellín con un total de \(4\)
-encuestados cada una, y seguido por \(3\) encuestados pertenecientes al
+es quién posee la mayor frecuencia en la encuesta, con un total de $5$
+encuestados, seguidos por Bello, Caldas y Medellín con un total de $4$
+encuestados cada una, y seguido por $3$ encuestados pertenecientes al
 municipio de Itagüí.
 </p>
 <h3 data-toc-skip>
@@ -1342,15 +1342,15 @@ Interpretación
 <p>
 En el gráfico anterior, se presenta la proporción de encuestas
 realizadas en cada uno de los municipios de interés, en donde el gráfico
-de pastel representa el \(100\%\) de las encuesta realizadas, y cada
+de pastel representa el $100\%$ de las encuesta realizadas, y cada
 triángulo la proporción asociada a cada uno de los municipios. En donde,
 como es difícil saber con certeza si los triángulos son o no iguales, se
 agrega la proporción asociada en la parte izquierda mediante un cuadro
 que muestra el nombre del municipio y la frecuencia relativa o
 proporción asociada entre paréntesis. En el cuadro se evidencia que la
-Estrella posee el \(25\%\) del total del diagrama del pastel, los
-municipios de Bello, Caldas y Medellín el \(20\%\) cada uno, y el
-municipio de Itagüí el \(15\%\) restante.
+Estrella posee el $25\%$ del total del diagrama del pastel, los
+municipios de Bello, Caldas y Medellín el $20\%$ cada uno, y el
+municipio de Itagüí el $15\%$ restante.
 </p>
 </main>
 
@@ -1394,8 +1394,8 @@ El gráfico de puntos, funciona similar al gráfico de barras solo que en
 lugar de mostrar barras para mostrar el valor que posee cada categoría,
 éste gráfico muestra un punto asociado a un valor, que puede
 evidenciarse en el eje inferior. El gráfico anterior muestra un punto
-para el valor de \(3\) en el caso de Itagüí, un valor de \(4\) en el
-caso de Bello, Caldas y Medellín, y un valor de \(5\) en el caso de la
+para el valor de $3$ en el caso de Itagüí, un valor de $4$ en el
+caso de Bello, Caldas y Medellín, y un valor de $5$ en el caso de la
 Estrella. Dichos valores representan el número de encuestados que hay en
 la base de datos.
 </p>
@@ -1418,10 +1418,10 @@ Interpretación
 <p>
 El gráfico de puntos también puede mostrar la proporción asociada en la
 categoría en el eje inferior. En este caso vemos que los valores en el
-eje van saltando de \(0.02\) en \(0.02\), y por ello, en este caso se
-tendrá que el municipio de Itagüí representa el \(15\%\) de todas todas
-las encuestas, Bello, Caldas y Bello cada uno representa el \(20\%\), y
-el municipio de la Estrella representa al \(25\%\) de la totalidad de
+eje van saltando de $0.02$ en $0.02$, y por ello, en este caso se
+tendrá que el municipio de Itagüí representa el $15\%$ de todas todas
+las encuestas, Bello, Caldas y Bello cada uno representa el $20\%$, y
+el municipio de la Estrella representa al $25\%$ de la totalidad de
 las encuestas.
 </p>
 </main>
@@ -1467,14 +1467,14 @@ Interpretación
 </h3>
 <p>
 En el gráfico de barras para el cruce entre el deporte favorito y el
-municipio de vivienda, se observa que de las \(6\) personas que
-prefieren Baloncesto sobre otros deportes, hay \(3\) que residen en
-Medellín, \(2\) en la Estrella y \(1\) en Itagüí. Por su parte, de las
-\(10\) personas que prefieren el Fútbol, se aprecia que la mayoría de
+municipio de vivienda, se observa que de las $6$ personas que
+prefieren Baloncesto sobre otros deportes, hay $3$ que residen en
+Medellín, $2$ en la Estrella y $1$ en Itagüí. Por su parte, de las
+$10$ personas que prefieren el Fútbol, se aprecia que la mayoría de
 las personas habitan en Caldas, seguido por Bello, Itagüí y Medellín,
-con una frecuencia de \(4\), \(3\), \(2\) y \(1\) respectivamente. Para
-las \(3\) personas encuestadas que prefieren Tenis sobre otros deportes,
-se tiene que \(2\) viven en la Estrella y \(1\) en Bello, mientras que
+con una frecuencia de $4$, $3$, $2$ y $1$ respectivamente. Para
+las $3$ personas encuestadas que prefieren Tenis sobre otros deportes,
+se tiene que $2$ viven en la Estrella y $1$ en Bello, mientras que
 de los encuestados, solo una persona prefiere Voleibol sobre otros
 deportes, y éste reside en la Estrella.
 </p>
@@ -1498,16 +1498,16 @@ Interpretación
 </h3>
 <p>
 En el gráfico anterior, se ilustra el cruce entre las variables de
-deporte y municipio, y se observa que el \(30\%\) de los encuestados
+deporte y municipio, y se observa que el $30\%$ de los encuestados
 prefieren baloncesto sobre otros deportes, porcentaje que se divide
-entre \(15\%\) asociado a personas que habitan en Medellín, \(10\%\) que
-habitan en la Estrella y \(5\%\) en Itagüí. De forma similar, se aprecia
-que \(50\%\) de los encuestados prefieren el fútbol, de donde el
-\(20\%\) habitan en Caldas, \(15\%\) en Bello, \(10\%\) en Itagüí y
-\(5\%\) en Medellín. Para las personas que prefieren el Tenis y Voleibol
-sobre otros deportes, se tiene un \(15\%\) y \(5\%\), respectivamente,
-de donde, de los que prefieren el Tenis, el \(10\%\) habitan en la
-Estrella y \(5\%\) en Bello, mientras que, los que prefieren Voleibol
+entre $15\%$ asociado a personas que habitan en Medellín, $10\%$ que
+habitan en la Estrella y $5\%$ en Itagüí. De forma similar, se aprecia
+que $50\%$ de los encuestados prefieren el fútbol, de donde el
+$20\%$ habitan en Caldas, $15\%$ en Bello, $10\%$ en Itagüí y
+$5\%$ en Medellín. Para las personas que prefieren el Tenis y Voleibol
+sobre otros deportes, se tiene un $15\%$ y $5\%$, respectivamente,
+de donde, de los que prefieren el Tenis, el $10\%$ habitan en la
+Estrella y $5\%$ en Bello, mientras que, los que prefieren Voleibol
 habitan todos en la Estrella.
 </p>
 </main>
@@ -1551,12 +1551,12 @@ Interpretación
 En el gráfico de puntos anterior, se observan las categorías de
 municipio de vivienda anidadas dentro del deporte favorito de las
 personas, en donde, para el deporte baloncesto, se aprecia en el eje
-inferior, que \(3\) de ellos viven en Medellín, \(2\) en la Estrella y
-\(1\) en Itagüí. <br> <br> En el caso de quienes prefieren Fútbol se
-observa la mayor cantidad de encuestados, en donde se tiene \(1\)
-habitante con localidad en Medellín, \(2\) en Itagüí, \(4\) en Caldas y
-\(3\) en Bello. Similarmente, para quienes prefieren practicar Tenis se
-encuentran \(2\) personas que viven en la Estrella y \(2\) en Bello.
+inferior, que $3$ de ellos viven en Medellín, $2$ en la Estrella y
+$1$ en Itagüí. <br> <br> En el caso de quienes prefieren Fútbol se
+observa la mayor cantidad de encuestados, en donde se tiene $1$
+habitante con localidad en Medellín, $2$ en Itagüí, $4$ en Caldas y
+$3$ en Bello. Similarmente, para quienes prefieren practicar Tenis se
+encuentran $2$ personas que viven en la Estrella y $2$ en Bello.
 Finalmente, la única persona que prefiere el Voleibol sobre otros
 deportes, se encuentra que vive en la Estrella.
 </p>
@@ -1579,20 +1579,20 @@ Interpretación
 <p>
 En el gráfico de puntos para frecuencias relativas, se aprecia un cruce
 entre el municipio de vivienda y el deporte favorito de las personas en
-el eje \(Y\), mientras la proporción asociada en el eje \(X\). Al
+el eje $Y$, mientras la proporción asociada en el eje $X$. Al
 observar por deporte, encontramos que el deporte menos popular es el
 voleibol con solo una persona que lo prefiere sobre los demás, la cual
-vive en la Estrella y representa el \(5\%\) del totalidad de la
+vive en la Estrella y representa el $5\%$ del totalidad de la
 encuesta. <br> <br> El deporte más popular es el fútbol con un total del
-\(50\%\) de los encuestados los cuales se dividen entre \(5\%\) que
-reside en la Estrella, \(10\%\) en Itagüí, \(20\%\) en Caldas y \(15\%\)
+$50\%$ de los encuestados los cuales se dividen entre $5\%$ que
+reside en la Estrella, $10\%$ en Itagüí, $20\%$ en Caldas y $15\%$
 en Bello. También se presenta información sobre las personas que
-prefieren baloncesto sobre otros deportes con un total de \(30\%\) de la
+prefieren baloncesto sobre otros deportes con un total de $30\%$ de la
 totalidad de las encuestas, porcentaje que se reparte entre Medellín, la
-Estrella e Itagüí con el \(15\%\), \(10\%\) y \(5\%\), respectivamente.
-Adicionalmente se evidencia que el \(15\%\) restante de los encuestados
-prefieren el Tenis sobre otros deportes, siendo un \(10\%\) personas que
-viven la Estrella y el \(5\%\) personas que viven en Bello.
+Estrella e Itagüí con el $15\%$, $10\%$ y $5\%$, respectivamente.
+Adicionalmente se evidencia que el $15\%$ restante de los encuestados
+prefieren el Tenis sobre otros deportes, siendo un $10\%$ personas que
+viven la Estrella y el $5\%$ personas que viven en Bello.
 </p>
 </main>
 
@@ -1640,9 +1640,9 @@ En el gráfico de balón, se muestra el número de observaciones que hay
 entre el cruce de las variables deporte y municipio. En dicho gráfico se
 observa que la mayor frecuencia de observaciones se da en el cruce entre
 los encuestados que viven en el municipio de Caldas y que prefieren el
-fútbol entre los demás deportes, con un tal de \(4\) observaciones,
+fútbol entre los demás deportes, con un tal de $4$ observaciones,
 seguido por los cruces entre Bello-Fútbol y Medellín-Baloncesto con un
-total de \(3\) observaciones. Adicionalmente se observa que de todos los
+total de $3$ observaciones. Adicionalmente se observa que de todos los
 municipios, en el departamento de La Estrella, es donde se evidencia que
 hay personas que prefieren el Voleibol sobre los demás deportes.
 </p>
@@ -1685,18 +1685,18 @@ Interpretación
 <p>
 En el gráfico anterior, se hace una comparación entre la altura de los
 encuestados y el estrato socioeconómico al que pertenece cada
-encuestado. En éste se aprecia que de los \(6\) estratos, el estrato
-\(2\) es el que posee la mayor mediana de estatura respecto a los demás
+encuestado. En éste se aprecia que de los $6$ estratos, el estrato
+$2$ es el que posee la mayor mediana de estatura respecto a los demás
 estratos. <br> <br> También se observa que solo existe una observación
-en el estrato \(5\), por lo cual solo se aprecia una barra vertical que
+en el estrato $5$, por lo cual solo se aprecia una barra vertical que
 representa el valor de esa observación. Se evidencia además que la
-mediana de la altura de los encuestados pertenecientes al estrato \(6\),
-\(4\) y \(1\) poseen una mediana similar que ronda los \(1.74\) metros.
-<br> <br> Asimismo, puede apreciarse que de los \(6\) estratos, los
-estratos \(1\) y \(2\) poseen la mayor variabilidad entre todos los
+mediana de la altura de los encuestados pertenecientes al estrato $6$,
+$4$ y $1$ poseen una mediana similar que ronda los $1.74$ metros.
+<br> <br> Asimismo, puede apreciarse que de los $6$ estratos, los
+estratos $1$ y $2$ poseen la mayor variabilidad entre todos los
 estratos, pues son los que poseen mayor rango y mayor rango
 intercuartílico. Se nota además, que para todos los estratos se observa
-un comportamiento simétrico, a excepción del estrato \(2\), el cual
+un comportamiento simétrico, a excepción del estrato $2$, el cual
 posee una asimetría negativa, dado que el valor de la mediana se
 encuentra en la parte derecha de la caja. <br> <br> Finalmente, puede
 notarse que no se evidencia ningún punto a la derecha o izquierda de los
@@ -1758,19 +1758,19 @@ intervalos de confianza para la mediana, con el fin de observar si las
 medianas de cada estrato es significativamente diferente que el de otros
 estratos o no. <br> <br> En el gráfico se aprecia que en casi todos los
 estratos se observa que las bandas de confianza son mayores al primer y
-tercer cuartil, a excepción de los estratos \(5\) y \(2\) en donde, el
+tercer cuartil, a excepción de los estratos $5$ y $2$ en donde, el
 primero posee una sola observación, y en consecuencia sus bandas de
 confianza son iguales a su mediana o único valor registrado, mientras
 que, para el segundo se aprecia que la banda de confianza solo supera el
 tercer cuartil.<br> <br> Se evidencia que de las medianas presentadas,
-las de los estratos \(6\), \(4\) y \(1\) son muy similares situándose
-alrededor de \(1.74\) metros, mientras que el estrato que presenta una
-mayor mediana es el \(2\) con un valor cercano a \(1.86\). La diferencia
+las de los estratos $6$, $4$ y $1$ son muy similares situándose
+alrededor de $1.74$ metros, mientras que el estrato que presenta una
+mayor mediana es el $2$ con un valor cercano a $1.86$. La diferencia
 entre la mediana de los estratos no parece ser significativamente
 diferente aunque se aprecie que hay unos valores mayores o menores que
-otros, debido a que los intervalos de confianza del \(95\%\) para la
+otros, debido a que los intervalos de confianza del $95\%$ para la
 mediana se traslapan unos con otros. <br> <br> También se nota, que de
-los estratos propuestos, la altura de los estratos \(1\) y \(2\) parecen
+los estratos propuestos, la altura de los estratos $1$ y $2$ parecen
 ser los que poseen la mayor variabilidad entre todas las categorías, ya
 que se que tanto su rango, rango intercuartílico como bandas de
 confianza son las más grandes. Es de anotar, que para ninguno de los
@@ -1825,14 +1825,14 @@ Interpretación
 <p>
 A diferencia del gráfico de caja y bigotes, el gráfico de medias muestra
 el valor promedio del conjunto de observaciones por cada grupo de
-interés, junto con sus respectivos intervalos de confianza del \(95\%\)
+interés, junto con sus respectivos intervalos de confianza del $95\%$
 para la media, para poder observar si hay diferencias significativas
 entre una categorías y otra.<br> <br> Del gráfico anterior, se evidencia
-que el peso promedio de las personas se encuentra alrededor de \(75\)
-kg, siendo el estrato \(4\) el que presenta un mayor promedio con un
-valor cercano a \(80\) kg, y el estrato \(5\) el que presenta un menor
-promedio con un valor cercano a \(65\) kg. Es de anotar que el estrato
-\(5\) no posee bandas de confianza debido a que dicho estrato solo
+que el peso promedio de las personas se encuentra alrededor de $75$
+kg, siendo el estrato $4$ el que presenta un mayor promedio con un
+valor cercano a $80$ kg, y el estrato $5$ el que presenta un menor
+promedio con un valor cercano a $65$ kg. Es de anotar que el estrato
+$5$ no posee bandas de confianza debido a que dicho estrato solo
 cuenta con una observación, y en consecuencia no posee medidas de
 variabilidad.<br> <br> Aunque hay una pequeña diferencia entre la media
 de los estratos, no es posible hablar sobre que las diferencias son

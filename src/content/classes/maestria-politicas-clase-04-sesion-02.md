@@ -69,7 +69,7 @@ metros cuadrados, se emplea la función <code>mean()</code> tal que
 </section>
 <p>
 Lo cual significa que en promedio el precio de venta en metros
-cuadrados, sin incluir el garaje, en miles de pesos es de \(1524.358\).
+cuadrados, sin incluir el garaje, en miles de pesos es de $1524.358$.
 </p>
 </main>
 
@@ -123,7 +123,7 @@ emplea la función <code>median()</code> tal que
 </section>
 <p>
 Lo cual significa que el precio mediano de venta en metros cuadrados, en
-miles de pesos sin incluir el garaje es de \(1200\).
+miles de pesos sin incluir el garaje es de $1200$.
 </p>
 </main>
 
@@ -192,7 +192,7 @@ emplea la función <code>Moda()</code> que se creó previamente, tal que
 </section>
 <p>
 Lo cual significa que el precio de venta por en metros cuadrados que más
-se repite, en miles de pesos sin incluir el garaje es de \(1000\).
+se repite, en miles de pesos sin incluir el garaje es de $1000$.
 </p>
 </main>
 
@@ -223,14 +223,14 @@ Ejercicio Caso de Estudio
 </h3>
 <p>
 Calcule el precio promedio de venta en metros cuadrados
-<tt>preciovtax</tt>, recortada al \(10\%\).
+<tt>preciovtax</tt>, recortada al $10\%$.
 </p>
 <h3 data-toc-skip>
 Solución en <tt>R</tt>
 </h3>
 <p>
 Para realizar el cálculo en <tt>R</tt> del precio promedio de venta en
-metros cuadrados recordando los datos al \(10\%\), se emplea la función
+metros cuadrados recordando los datos al $10\%$, se emplea la función
 <code>mean()</code>, junto con el argumento <code>trim = 0.10</code> tal
 que
 </p>
@@ -247,10 +247,10 @@ que
 </section>
 </section>
 <p>
-Lo cual significa que al eliminar la influencia del \(10\%\) superior e
+Lo cual significa que al eliminar la influencia del $10\%$ superior e
 inferior de los datos, se tiene que en promedio el precio de venta en
 metros cuadrados, sin incluir el garaje, en miles de pesos es de
-\(1336\).
+$1336$.
 </p>
 </main>
 
@@ -329,8 +329,8 @@ al precio de venta en metros cuadrados, se emplea la función
 </section>
 <p>
 Encontrando que los tres valores que dividen el precio de venta en
-metros cuadrados en cuatro partes iguales son, \(790\), \(1200\) y
-\(1900\).
+metros cuadrados en cuatro partes iguales son, $790$, $1200$ y
+$1900$.
 </p>
 </main>
 
@@ -401,8 +401,8 @@ al precio de venta en metros cuadrados, se emplea la función
 </section>
 <p>
 Encontrando que los cuatro valores que dividen el precio de venta en
-metros cuadrados en cinco partes iguales son, \(700\), \(1000\),
-\(1433\) y \(2110.6\).
+metros cuadrados en cinco partes iguales son, $700$, $1000$,
+$1433$ y $2110.6$.
 </p>
 </main>
 
@@ -473,8 +473,8 @@ precio de venta en metros cuadrados, se emplea la función
 </section>
 <p>
 Encontrando que los nueve valores que dividen el precio de venta en
-metros cuadrados en diez partes iguales son, \(580\), \(700\), \(850\),
-\(1000\), \(1200\), \(1433\), \(1748\), \(2110.6\), \(2844\).
+metros cuadrados en diez partes iguales son, $580$, $700$, $850$,
+$1000$, $1200$, $1433$, $1748$, $2110.6$, $2844$.
 </p>
 </main>
 
@@ -622,7 +622,7 @@ tal que
 <p>
 Encontrando que el valor de la varianza para el precio de venta en
 metros cuadrados sin incluir el garaje, en miles de pesos cuadrados es
-de \(1238067\).
+de $1238067$.
 </p>
 </main>
 
@@ -674,8 +674,8 @@ asociada al precio de venta en metros cuadrados, se emplea la función
 </section>
 <p>
 Lo cual significa que en promedio el precio de venta en metros
-cuadrados, sin incluir el garaje, en miles de pesos es de \(1524.358\),
-con una desviación estándar de \(1112.684\) miles de pesos.
+cuadrados, sin incluir el garaje, en miles de pesos es de $1524.358$,
+con una desviación estándar de $1112.684$ miles de pesos.
 </p>
 </main>
 
@@ -743,7 +743,7 @@ previamente, tal que
 <p>
 Lo cual significa que el porcentaje de variación del precio de venta por
 en metros cuadrados, en miles de pesos sin incluir el garaje es del
-\(72.99%\).
+$72.99%$.
 </p>
 </main>
 
@@ -811,7 +811,7 @@ emplea la función <code>Rango()</code> que se creó previamente, tal que
 <p>
 Lo cual significa que la diferencia entre el precio más alto y el más
 bajo de venta en metros cuadrados, en miles de pesos sin incluir el
-garaje es del \(16552\).
+garaje es del $16552$.
 </p>
 </main>
 
@@ -863,9 +863,9 @@ garaje del bien, se emplea la función <code>IQR()</code>, tal que
 </section>
 </section>
 <p>
-Lo cual significa que la diferencia entre el \(50\%\) central de los
+Lo cual significa que la diferencia entre el $50\%$ central de los
 precio de venta en metros cuadrados, en miles de pesos sin incluir el
-garaje es del \(1110\).
+garaje es del $1110$.
 </p>
 </main>
 
@@ -926,8 +926,8 @@ el garaje del bien, se emplea la función <code>mad()</code>, tal que
 </section>
 <p>
 Lo cual significa que el precio mediano de venta en metros cuadrados, en
-miles de pesos sin incluir el garaje es de \(1200\), con una desviación
-absoluta mediana de \(741.3\) miles de pesos.
+miles de pesos sin incluir el garaje es de $1200$, con una desviación
+absoluta mediana de $741.3$ miles de pesos.
 </p>
 </main>
 
@@ -1008,7 +1008,7 @@ librería <tt>e1071</tt>, tal que
 <p>
 Lo cual significa que el coeficiente de asimetría del precio de venta en
 metros cuadrados, en miles de pesos sin incluir el garaje es de
-\(2.3964\), lo cual significa que al ser positivo, quiere decir que es
+$2.3964$, lo cual significa que al ser positivo, quiere decir que es
 más probable que los precios de venta se encuentren más reunidos para
 precios bajos, y que los precios altos son menos probables.
 </p>
@@ -1083,7 +1083,7 @@ de la librería <tt>e1071</tt>, tal que
 <p>
 Lo cual significa que el coeficiente de exceso de curtosis del precio de
 venta en metros cuadrados, en miles de pesos sin incluir el garaje es de
-\(9.817481\), lo cual significa que al ser un valor positivo, quiere
+$9.817481$, lo cual significa que al ser un valor positivo, quiere
 decir que es la forma de los precios de venta es leptocurtica, es decir,
 que los datos se encuentran más reunidos y la forma de la distribución
 tiene forma punteaguda.
@@ -1158,7 +1158,7 @@ emplea la función <code>cov()</code>, tal que
 <p>
 Lo cual significa que la covarianza entre la variable precio de venta en
 metros cuadrados <tt>preciovtax</tt> y la variable del metros cuadrados
-de la unidad de garaje <tt>areaunitga</tt> es de \(1806.643\), y por
+de la unidad de garaje <tt>areaunitga</tt> es de $1806.643$, y por
 tanto, como dicho valor es positivo significa que existe una dependencia
 lineal positiva entre estas dos variables.
 </p>
@@ -1246,7 +1246,7 @@ función <code>cor()</code>, tal que
 Lo cual significa que la correlación que exite entre la variable precio
 de venta en metros cuadrados <tt>preciovtax</tt> y la variable del
 metros cuadrados de la unidad de garaje <tt>areaunitga</tt> es del
-\(44.19%\), lo cual significa que hay una relación lineal positiva
+$44.19%$, lo cual significa que hay una relación lineal positiva
 moderada entre estas dos variables.
 </p>
 </main>

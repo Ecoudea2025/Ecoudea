@@ -52,9 +52,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -409,7 +409,7 @@ Solución
 <p>
 
 En este caso estamos interesados en calcular la covarianza entre las
-variables \(X\) y \(Y\), la cual podemos calcular mediante la ecuación
+variables $X$ y $Y$, la cual podemos calcular mediante la ecuación
 $$\begin{align*}
 Cov(X,Y) = \mathbb{E}(XY) -  \mathbb{E}(X)\mathbb{E}(Y)
 \end{align*}$$
@@ -417,17 +417,17 @@ Cov(X,Y) = \mathbb{E}(XY) -  \mathbb{E}(X)\mathbb{E}(Y)
 Al emplear los valores ya calculados en el ejemplo discreto de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, se tiene que
-\(\mathbb{E}(X)=7\), \(\mathbb{E}(Y)=1.9444\) y
-\(\mathbb{E}(XY)=13.61111\), y por tanto se tendrá que $$\begin{align*}
+$\mathbb{E}(X)=7$, $\mathbb{E}(Y)=1.9444$ y
+$\mathbb{E}(XY)=13.61111$, y por tanto se tendrá que $$\begin{align*}
 Cov(X,Y) &= 13.61111 -  (7)(1.9444) \\
          &= 0.00031
 \end{align*}$$
 
 Por tanto se tendrá que la covarianza entre la suma resultante y el
-valor absoluto de la diferencia de los dos dados es de \(0.00031\), lo
+valor absoluto de la diferencia de los dos dados es de $0.00031$, lo
 cual, al observar el signo resultante, se tendrá que hay una dependencia
 lineal positiva entre las variables. <br> <br> Es de anotar, que al
-tener una covarianza con un valor tan cercano a \(0\), no posible
+tener una covarianza con un valor tan cercano a $0$, no posible
 afirmar si la dependencia lineal es o no es significativa, y por ello
 será necesario realizar el cálculo de la correlación.
 </p>
@@ -449,12 +449,12 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule la covarianza entre el número promedio de horas
@@ -467,8 +467,8 @@ Solución
 <p>
 
 En este caso estamos interesados en realizar el cálculo de la covarianza
-entre la variable \(X\) la cual hace referencia al número de horas
-promedio de tiempo libre del profesor, y la variable \(Y\) la cual hace
+entre la variable $X$ la cual hace referencia al número de horas
+promedio de tiempo libre del profesor, y la variable $Y$ la cual hace
 referencia al número de horas promedio de tiempo libre de los
 estudiantes. Esta covarianza puede ser calculada de forma simple por la
 ecuación $$\begin{align*}
@@ -478,9 +478,9 @@ cálculo de la covarianza, fueron calculados previamente en el ejemplo
 continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
 Matemática</a> para el caso multivariado, siendo los valores calculados
-iguales a \(\mathbb{E}(X)=4/3 =1.333333\),
-\(\mathbb{E}(Y)=85/28=3.035714\) y
-\(\mathbb{E}(XY)=255/63 = 4.047619\).<br> <br> Al reemplazar estos
+iguales a $\mathbb{E}(X)=4/3 =1.333333$,
+$\mathbb{E}(Y)=85/28=3.035714$ y
+$\mathbb{E}(XY)=255/63 = 4.047619$.<br> <br> Al reemplazar estos
 valores en la función de covarianza tendremos que $$\begin{align*}
 Cov(X,Y) &= \frac{255}{63} - \left(\frac{4}{3}\right)\left(\frac{85}{28}\right)\\
          &= 0
@@ -549,9 +549,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -907,7 +907,7 @@ Solución
 <p>
 
 En este ejercicio debemos calcular la correlación entre las variables
-\(X\) y \(Y\), y para ello podemos emplear la ecuación de correlación,
+$X$ y $Y$, y para ello podemos emplear la ecuación de correlación,
 dada por $$\begin{align*}
 Cor(X,Y) = \frac{Cov(X,Y)}{Sd(X)Sd(Y)}
 \end{align*}$$
@@ -918,7 +918,7 @@ multivariado de la
 <a href="../../EstadisticaI/EstIClase12.html#caso-multivariado" target="\_blank">Varianza</a>
 y el valor obtenido para la
 <a href="../../EstadisticaI/EstIClase13.html#covarianza" target="\_blank">Covarianza</a>,
-tal que, \(Sd(X)=2.415229\), \(Sd(Y)=1.432704\) y \(Cov(X,Y)=−0.5552\),
+tal que, $Sd(X)=2.415229$, $Sd(Y)=1.432704$ y $Cov(X,Y)=−0.5552$,
 y por tanto, al reemplazar en la formula de correlación, tendremos que
 $$\begin{align*}
 Cor(X,Y) &= \frac{0.00031}{(2.415229)(1.432704)} \\
@@ -927,9 +927,9 @@ Cor(X,Y) &= \frac{0.00031}{(2.415229)(1.432704)} \\
 
 Por tanto se tendrá que la correlación entre la suma resultante y el
 valor absoluto de la diferencia de los dos dados es de
-\(0.008958739\%\), lo cual quiere decir, que existe una dependencia
+$0.008958739\%$, lo cual quiere decir, que existe una dependencia
 lineal positiva débil o nula entre las variables de interés, debido a
-que el valor está muy cercano a \(0\).
+que el valor está muy cercano a $0$.
 </p>
 </main>
 <button id="Show4" class="btn btn-secondary">
@@ -949,12 +949,12 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Calcule la correlación entre el número promedio de horas
@@ -979,7 +979,7 @@ en los ejemplos continuos para el caso multivariado de la
 <a href="../../EstadisticaI/EstIClase12.html#caso-multivariado" target="\_blank">Varianza</a>
 y el valor obtenido para la
 <a href="../../EstadisticaI/EstIClase13.html#covarianza" target="\_blank">Covarianza</a>,
-tal que, \(Sd(X)=0.4714053\), \(Sd(Y)=0.7261525\) y \(Cov(X,Y)=0\), y
+tal que, $Sd(X)=0.4714053$, $Sd(Y)=0.7261525$ y $Cov(X,Y)=0$, y
 por tanto, al reemplazar en la formula de correlación, tendremos que
 $$\begin{align*}
 Cor(X,Y) &= \frac{0}{(0.4714053)(0.7261525)} \\
@@ -1020,9 +1020,9 @@ Ocultar Ejercicio Caso Discreto
 Ejercicio
 </h3>
 <p>
-Suponga un experimento que consta en lanzar dos dados al aire. Sea \(X\)
+Suponga un experimento que consta en lanzar dos dados al aire. Sea $X$
 la variable aleatoria que indica la suma resultante de los dos dados, y
-\(Y\) la variable aleatoria del valor absoluto de la diferencia de los
+$Y$ la variable aleatoria del valor absoluto de la diferencia de los
 dos dados, en donde, la función de masa de probabilidad conjunta está
 dada por
 </p>
@@ -1376,7 +1376,7 @@ Solución
 </h3>
 <p>
 
-Para probar si las variables \(X\) y \(Y\) son independientes, debemos
+Para probar si las variables $X$ y $Y$ son independientes, debemos
 verificar si la multiplicación entre el valor esperado de la suma
 resultante de los dos dados y el valor esperado del valor absoluto de la
 diferencia de los dos dados, es igual a la esperanza conjunta de las dos
@@ -1386,8 +1386,8 @@ variables, tal que se pueda probar si $$\begin{align*}
 
 Entonces, al emplear los
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Valores
-Esperados</a> \(\mathbb{E}(X)=7\), \(\mathbb{E}(Y)=1.9444\) y
-\(\mathbb{E}(XY)=13.61111\), que fueron calculados en el ejemplo
+Esperados</a> $\mathbb{E}(X)=7$, $\mathbb{E}(Y)=1.9444$ y
+$\mathbb{E}(XY)=13.61111$, que fueron calculados en el ejemplo
 discreto para el caso multivariado, se tendrá que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 13.61111 &= (7)(1.9444) \\
@@ -1415,12 +1415,12 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo \(X\) la variable aleatoria que representa el
-número promedio de horas de tiempo libre del profesor y \(Y\) el número
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
-distribuciones marginales de \(X\) está dada por $$\begin{align*}
+distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de \(Y\) está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
 \end{align*}$$ Pruebe si el número promedio de horas de tiempo libre que
@@ -1442,8 +1442,8 @@ tal que se pueda probar si $$\begin{align*}
 \end{align*}$$ Basados en los
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Valores
 Esperados</a> calculados en el ejemplo continuo para el caso
-multivariado, tenemos que \(\mathbb{E}(X)=4/3\), \(\mathbb{E}(Y)=85/28\)
-y \(\mathbb{E}(XY)=255/63\). Entonces, al reemplazar en la ecuación
+multivariado, tenemos que $\mathbb{E}(X)=4/3$, $\mathbb{E}(Y)=85/28$
+y $\mathbb{E}(XY)=255/63$. Entonces, al reemplazar en la ecuación
 anterior, tenemos que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 \frac{255}{63} &= \left(\frac{4}{3}\right)\left(\frac{85}{28}\right) \\
@@ -1526,9 +1526,9 @@ Ejercicio
 </h3>
 <p>
 Suponga un experimento aleatorio que consta en consultar una familia
-conformada por \(3\) hijos, en donde, se asume que la probabilidad de
+conformada por $3$ hijos, en donde, se asume que la probabilidad de
 ser niño o niña es la misma. Entonces, si se define la variable
-aleatoria \(X\), el número de niñas que hay en la familia, y se define
+aleatoria $X$, el número de niñas que hay en la familia, y se define
 la función de masa de probabilidad como
 </p>
 
@@ -1536,36 +1536,36 @@ la función de masa de probabilidad como
 <tbody>
 <tr>
 <td style="text-align:left;">
-\(X\)
+$X$
 </td>
 <td style="text-align:left;">
-\(0\)
+$0$
 </td>
 <td style="text-align:left;">
-\(1\)
+$1$
 </td>
 <td style="text-align:left;">
-\(2\)
+$2$
 </td>
 <td style="text-align:left;">
-\(3\)
+$3$
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
-\(p(x)\)
+$p(x)$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{3}{8}\)
+$\frac{3}{8}$
 </td>
 <td style="text-align:left;">
-\(\frac{1}{8}\)
+$\frac{1}{8}$
 </td>
 </tr>
 </tbody>
@@ -1573,8 +1573,8 @@ la función de masa de probabilidad como
 
 <p>
 Entonces, basados en la función de masa de probabilidad, calcule la
-probabilidad de que el número de niñas que hay en una familia de \(3\)
-hijos difiera de su media en más de \(1.1258\), mediante
+probabilidad de que el número de niñas que hay en una familia de $3$
+hijos difiera de su media en más de $1.1258$, mediante
 </p>
 <ol>
 <li>
@@ -1600,7 +1600,7 @@ $$\begin{align*}
                            &= 1 - \mathbb{P}(\mu - 1.1258 < X < \mu + 1.1258)\\
 \end{align*}$$
 
-En donde, como \(\mu=\mathbb{E}(X)=1.5\), siendo dicho valor calculado
+En donde, como $\mu=\mathbb{E}(X)=1.5$, siendo dicho valor calculado
 previamente en el ejemplo discreto para la
 <a href="../../EstadisticaI/EstIClase11.html#caso-univariado" target="\_blank">Esperanza
 Matemática</a> del caso univariado, entonces tendremos que
@@ -1615,9 +1615,9 @@ $$\begin{align*}
                            &= 0.25 \\
 \end{align*}$$
 
-Es decir, se tendrá una probabilidad del \(25\%\), de que el número de
-niñas que hay en una familia de \(3\) hijos, difiera de su media en más
-de \(1.1258\).
+Es decir, se tendrá una probabilidad del $25\%$, de que el número de
+niñas que hay en una familia de $3$ hijos, difiera de su media en más
+de $1.1258$.
 </li>
 <li>
 
@@ -1631,9 +1631,9 @@ estructura $$\begin{align*}
                            &= 1 - \mathbb{P}(\mu - 1.1258 < X < \mu + 1.1258)
 \end{align*}$$
 
-De lo anterior se observa que el valor \(1.1258=k\sigma\), y como la
+De lo anterior se observa que el valor $1.1258=k\sigma$, y como la
 desviación estándar de la distribución es igual a
-\(\sigma=Sd(X)=0.866\), siendo dicho valor calculado previamente en el
+$\sigma=Sd(X)=0.866$, siendo dicho valor calculado previamente en el
 ejemplo discreto para la
 <a href="../../EstadisticaI/EstIClase12.html#caso-univariado" target="\_blank">Varianza</a>
 del caso univariado, tendremos que $$\begin{align*}
@@ -1645,7 +1645,7 @@ k &= 1.3
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) \\
 \end{align*}$$ Lo cual nos daría la estructura del teorema de Chevyshev.
-Ahora, al aplicar el teorema, reemplazando \(k\) por \(1.3\) tendremos
+Ahora, al aplicar el teorema, reemplazando $k$ por $1.3$ tendremos
 que $$\begin{align*}
 \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) &\geq 1 - \frac{1}{(1.3)^2} \\
 \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) &\geq 0.408284 \\
@@ -1662,9 +1662,9 @@ se tendrá que $$\begin{align*}
 \end{align*}$$
 
 Es decir, se tendrá que la probabilidad de que el número de niñas que
-hay en una familia de \(3\) hijos, difiera de su media en más de
-\(1.1258\), será como máximo del \(59.17\%\), lo cual es consistente con
-la probabilidad calculada de forma exacta, la cual es igual a \(25\%\).
+hay en una familia de $3$ hijos, difiera de su media en más de
+$1.1258$, será como máximo del $59.17\%$, lo cual es consistente con
+la probabilidad calculada de forma exacta, la cual es igual a $25\%$.
 </li>
 </ol>
 </main>
@@ -1683,11 +1683,11 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo \(X\) una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Entonces, basados en la función de densidad de probabilidad, calcule la
 probabilidad de que el tiempo en horas que tarda la serie financiera en
-cumplir un ciclo se encuentre entre \(0.0464\) y \(0.9536\) horas,
+cumplir un ciclo se encuentre entre $0.0464$ y $0.9536$ horas,
 mediante
 </p>
 <ol>
@@ -1704,8 +1704,8 @@ Solución
 <ol>
 <li>
 En este caso nos piden la probabilidad de que, el tiempo en horas que
-tarda una serie financiera en dar un ciclo se encuentre entre \(0.0464\)
-y \(0.9536\) horas, esto es $$\begin{align*}
+tarda una serie financiera en dar un ciclo se encuentre entre $0.0464$
+y $0.9536$ horas, esto es $$\begin{align*}
 \mathbb{P}(0.0464<X<0.9536)
 \end{align*}$$ Entonces al emplear la función de densidad de
 probabilidad tendremos que $$\begin{align*}
@@ -1719,8 +1719,8 @@ probabilidad tendremos que $$\begin{align*}
                             &= 30 (0.03327128) \\
                             &= 0.9981385
 \end{align*}$$ Es decir que, la probabilidad de que la serie financiera
-tarde entre \(0.0464\) y \(0.9536\) horas, en dar un ciclo es del
-\(99.81\%\).
+tarde entre $0.0464$ y $0.9536$ horas, en dar un ciclo es del
+$99.81\%$.
 </li>
 <li>
 
@@ -1733,17 +1733,17 @@ estructura $$\begin{align*}
 en donde, en el ejemplo continuo para la
 <a href="../../EstadisticaI/EstIClase11.html#caso-univariado" target="\_blank">Esperanza
 Matemática</a> del caso univariado, se encontró que
-\(\mathbb{E}(X)=\mu=0.5\), mientras que, del ejemplo continuo para la
+$\mathbb{E}(X)=\mu=0.5$, mientras que, del ejemplo continuo para la
 <a href="../../EstadisticaI/EstIClase12.html#caso-univariado" target="\_blank">Varianza</a>
-del caso discreto, se encontró que \(Sd(X)=\sigma= 0.1889822\). <br>
+del caso discreto, se encontró que $Sd(X)=\sigma= 0.1889822$. <br>
 <br> Entonces al retomar la probabilidad de interés, tenemos que
 $$\begin{align*}
 \mathbb{P}(0.0464<X<0.9536)
 \end{align*}$$
 
-Siendo el límite inferior \(0.0464=\mu - k\sigma\), mientras que, el
-límite superior \(0.9536=\mu + k\sigma\), los cuales, al reemplazar los
-valores de \(\mu\) y \(\sigma\) por la media y la desviación estándar de
+Siendo el límite inferior $0.0464=\mu - k\sigma$, mientras que, el
+límite superior $0.9536=\mu + k\sigma$, los cuales, al reemplazar los
+valores de $\mu$ y $\sigma$ por la media y la desviación estándar de
 la distribución, tendremos que a través de las dos ecuaciones se llega a
 que $$\begin{align*}
 0.0464 &= \mu - k\sigma  & 0.9536 &= \mu + k\sigma\\
@@ -1764,9 +1764,9 @@ Ahora, al aplicar el teorema de Chebyshev, se tiene que $$\begin{align*}
 \end{align*}$$
 
 Es decir que, la probabilidad de que la serie financiera tarde entre
-\(0.0464\) y \(0.9536\) horas, en dar un ciclo es como mínimo del
-\(82.64\%\), lo cual es consistente con la probabilidad calculada de
-forma exacta, la cual es igual a \(99.81\%\).
+$0.0464$ y $0.9536$ horas, en dar un ciclo es como mínimo del
+$82.64\%$, lo cual es consistente con la probabilidad calculada de
+forma exacta, la cual es igual a $99.81\%$.
 </li>
 </ol>
 </main>

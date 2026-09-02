@@ -40,12 +40,12 @@ determinar si el cambio en el proceso de fabricación mejora el
 rendimiento que sus equipos ofrecen, deciden tomar una muestra de
 equipos antes y después de la implementación del nuevo proceso de
 fabricación y se evalúa la velocidad de procesamiento para la ejecución
-de un programa determinado. Suponga que se encuentra que \(120\) de
-\(500\) computadores fabricados con el método actual ofrece un
-rendimiento superior al promedio, mientras que, \(220\) de \(700\)
+de un programa determinado. Suponga que se encuentra que $120$ de
+$500$ computadores fabricados con el método actual ofrece un
+rendimiento superior al promedio, mientras que, $220$ de $700$
 computadores fabricados con el nuevo método ofrece un rendimiento
 superior al promedio.<br> <br> Basados en la información obtenida,
-emplee un nivel de confianza del \(2\%\) para probar si la proporción de
+emplee un nivel de confianza del $2\%$ para probar si la proporción de
 nuevos equipos que ofrecen un rendimiento superior al promedio, es igual
 o superior a la proporción de equipos actuales que ofrecen un
 rendimiento superior al promedio.
@@ -75,8 +75,8 @@ $$\begin{align*}
 \end{align*}$$
 
 De lo anterior se observa que para el cálculo se requiere de las
-proporciones muestrales \(\hat{p}_{N}\) y \(\hat{p}_{A}\), y
-proporciones conjuntas \(p^*\), las cuales se pueden obtener a partir
+proporciones muestrales $\hat{p}_{N}$ y $\hat{p}_{A}$, y
+proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
 que $$\begin{align*}
@@ -114,7 +114,7 @@ cual estará dada por $$\begin{align*}
   RC:\{Z|Z<-Z_{\alpha}\}
 \end{align*}$$
 
-en donde el valor crítico \(Z_{\alpha=0.02}=2.053749\) y por tanto la
+en donde el valor crítico $Z_{\alpha=0.02}=2.053749$ y por tanto la
 región crítica será $$\begin{align*}
   RC:\{Z|Z<-2.053749\}
 \end{align*}$$
@@ -151,7 +151,7 @@ Ejercicio
 <p>
 Suponga que se realiza un estudio sobre los costos que han tenido
 proyectos de renovación de parques en la ciudad de Medellín, encontrando
-que los costos asociados a \(20\) proyectos que se han a cabo en le
+que los costos asociados a $20$ proyectos que se han a cabo en le
 ciudad, en millones de pesos, fueron de
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -225,8 +225,8 @@ ciudad, en millones de pesos, fueron de
 <p>
 Si es posible supone que el costo de construir cualquier parque se
 distribuyen aproximadamente normal, emplee un nivel de significancia del
-\(5\%\) para observar si la variabilidad de los costos de cualquier
-construcción es de al menos \(300000\) millones de pesos\(^2\).
+$5\%$ para observar si la variabilidad de los costos de cualquier
+construcción es de al menos $300000$ millones de pesos$^2$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -234,8 +234,8 @@ Solución
 <p>
 
 Como estamos interesados en este punto de observar si la variabilidad de
-los costos de cualquier construcción es de al menos \(300000\) millones
-de pesos\(^2\) y por tanto la hipótesis de interés está dada por
+los costos de cualquier construcción es de al menos $300000$ millones
+de pesos$^2$ y por tanto la hipótesis de interés está dada por
 $$\begin{align*}
   H_0:\sigma^2 \geq 300000\\
   H_1:\sigma^2 < 300000
@@ -251,8 +251,8 @@ por $$\begin{align*}
 \end{align*}$$
 
 De lo anterior, se observa que para el cálculo del estadístico de
-prueba, se requiere de la varianza muestral \(S^2 = 230541.2\), el
-tamaño de muestra \(n=20\) y el valor de la hipótesis nula, en donde, al
+prueba, se requiere de la varianza muestral $S^2 = 230541.2$, el
+tamaño de muestra $n=20$ y el valor de la hipótesis nula, en donde, al
 reemplazar dichos valores en el estadístico de prueba se tendrá que
 $$\begin{align*}
    \chi^2_c &= \frac{(20-1)230541.2}{300000} \\
@@ -266,10 +266,10 @@ tendrá que el P-valor para este caso está dado por $$\begin{align*}
 \end{align*}$$
 
 Entonces, como el P-valor obtenido es superior al nivel de significancia
-preestablecido del \(5\%\), se concluye que no hay evidencia suficiente
+preestablecido del $5\%$, se concluye que no hay evidencia suficiente
 para rechazar la hipótesis nula, y por tanto, se tendrá que la
 variabilidad de los costos de cualquier construcción es de al menos
-\(300000\) millones de pesos\(^2\).
+$300000$ millones de pesos$^2$.
 </p>
 </main>
 
@@ -297,7 +297,7 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Se aplican pruebas a \(10\) cables conductores soldados a un dispositivo
+Se aplican pruebas a $10$ cables conductores soldados a un dispositivo
 semiconductor con el fin de determinar su resistencia a la tracción. Las
 pruebas demostraron que para romper la unión se requiere las libras de
 fuerza que se listan a continuación.
@@ -342,7 +342,7 @@ Sin Encapsulado
 </thead>
 </table>
 <p>
-Otra conjunto de \(8\) cables conductores que forman otro dispositivo,
+Otra conjunto de $8$ cables conductores que forman otro dispositivo,
 se encapsulan y se prueban para determinar si el encapsulado aumenta la
 resistencia a la tracción, obteniendo para este caso se requirieron las
 siguientes libras de fuerza para romper la unión
@@ -382,7 +382,7 @@ Con Encapsulado
 </table>
 <p>
 Si se supone que las resistencias a la tracción se distribuyen
-normalmente, pruebe con un nivel de significancia del \(10%\) su la
+normalmente, pruebe con un nivel de significancia del $10%$ su la
 variabilidad de los cables sin encapsulado es menor a la variabilidad de
 los cables con encapsulado.?
 </p>
@@ -408,8 +408,8 @@ en donde se aprecia que el estadístico de prueba para esta ocasión
 estará dado por $$\begin{align*}
    F_c=\frac{S^2_{S}}{S^2_{C}}\sim F_{n_S-1, n_C-1}
 \end{align*}$$ En donde se observa que para realizar el cálculo del
-estadístico, se requiere de las varianzas muestrales \(S^2_S\) y
-\(S^2_C\), las cuales son iguales a
+estadístico, se requiere de las varianzas muestrales $S^2_S$ y
+$S^2_C$, las cuales son iguales a
 
 $$\begin{align*}
 S^2_S &= 3.231254\\
@@ -431,8 +431,8 @@ $$\begin{align*}
   RC:\left\{F\Bigg|F< \frac{1}{F_{\alpha, n_C -1, n_S - 1}}\right\}
 \end{align*}$$
 
-En donde se tiene que al reemplazar el valor \(\alpha = 0.10\),
-\(n_C=8\) y \(n_S=10\) en el valor crítico de interés, se tendrá que
+En donde se tiene que al reemplazar el valor $\alpha = 0.10$,
+$n_C=8$ y $n_S=10$ en el valor crítico de interés, se tendrá que
 $$\begin{align*}
   F_{\alpha, n_C -1, n_S - 1} &= F_{0.10, 8 - 1, 10 - 1}\\
   F_{\alpha, n_C -1, n_S - 1} &= F_{0.10, 7, 9}\\
@@ -457,9 +457,9 @@ $$\begin{align*}
 
 Encontrando con ello que al caer el estadístico de prueba por fuera de
 la región crítica, y al ser el P-valor mayor al nivel de significancia
-\(\alpha = 0.10\), no se encuentra evidencia muestral suficiente para
+$\alpha = 0.10$, no se encuentra evidencia muestral suficiente para
 rechazar la hipótesis nula, lo cual quiere decir que con un nivel de
-significancia del \(10%\) se concluye que la variabilidad de los cables
+significancia del $10%$ se concluye que la variabilidad de los cables
 sin encapsulado no es menor a la variabilidad de los cables con
 encapsulado.
 </p>
@@ -796,7 +796,7 @@ región antioqueña, encontrado los siguientes registros (en miles)
 </tbody>
 </table>
 <p>
-Si se decide emplear un nivel de significancia del \(5\%\), pruebe si
+Si se decide emplear un nivel de significancia del $5\%$, pruebe si
 las hipótesis planteadas por el grupo de la economía de la salud se
 encuentran o no apoyadas por la información empírica.
 </p>
@@ -806,7 +806,7 @@ Solución
 <p>
 
 En este caso estamos interesados en emplear un nivel de significancia
-\(\alpha=0.05\) para probar si la información obtenida en \(61\) días
+$\alpha=0.05$ para probar si la información obtenida en $61$ días
 apoya o no la hipótesis sobre que los contagios que se han presentado
 durante las últimas semanas por el COVID-19 poseen una distribución
 Weibull, esto es
@@ -850,7 +850,7 @@ distribución Weibull que mejor ajustan los datos, mediante la función
 <p>
 Una vez conocidos el valor de los parámetros de la distribución Weibull
 que ofrecen un mejor ajuste a los datos muestrales, tal que
-\(\alpha = 33.781908\) y \(\beta = 724.649562\), se procede al ajuste de
+$\alpha = 33.781908$ y $\beta = 724.649562$, se procede al ajuste de
 la distribución mediante el empleo de la prueba Cramer-Von Mises,
 mediante la función <tt>cvm.test</tt> de la librería <tt>goftest</tt>
 </p>
@@ -878,13 +878,13 @@ omega2 = 0.067026, p-value = 0.7718
 </section>
 <p>
 Donde se observa que la prueba de bondad de ajuste arrojó un
-P-valor\(=0.7718\), por lo cual al ser mayor que al nivel de
-significancia \(\alpha=0.05\), se concluirá que no hay evidencia en
+P-valor$=0.7718$, por lo cual al ser mayor que al nivel de
+significancia $\alpha=0.05$, se concluirá que no hay evidencia en
 contra de rechazar la hipótesis nula de que los datos poseen una
-distribución Weibull con parámetro de forma \(\alpha = 33.781908\) y
-parámetro de escala \(\beta = 724.649562\). <br> <br> Adicionalmente,
+distribución Weibull con parámetro de forma $\alpha = 33.781908$ y
+parámetro de escala $\beta = 724.649562$. <br> <br> Adicionalmente,
 podemos ver el ajuste que tiene la distribución Weibull de parámetros
-\(\alpha = 33.781908\) y \(\beta = 724.649562\), mediante un QQ-plot,
+$\alpha = 33.781908$ y $\beta = 724.649562$, mediante un QQ-plot,
 tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -901,12 +901,12 @@ tal que
 </p>
 <p>
 en donde se observa que todos los puntos asociados a la distirbución
-empírica caen dentro de los límites de confianza del \(95\%\) del
+empírica caen dentro de los límites de confianza del $95\%$ del
 QQ-plot, y por tanto se tendrá con un nivel de significancia
-\(\alpha=0.05\), que el número de contagios que se han presentado
+$\alpha=0.05$, que el número de contagios que se han presentado
 durante las últimas semanas por el COVID-19, posee una distribución
-Weibull con parámetro de forma \(\alpha = 33.781908\) y parámetro de
-escala \(\beta = 724.649562\).
+Weibull con parámetro de forma $\alpha = 33.781908$ y parámetro de
+escala $\beta = 724.649562$.
 </p>
 </main>
 
@@ -1253,7 +1253,7 @@ región antioqueña, encontrado los siguientes registros (en miles)
 </tbody>
 </table>
 <p>
-Si se decide emplear un nivel de significancia del \(5\%\), pruebe si
+Si se decide emplear un nivel de significancia del $5\%$, pruebe si
 las hipótesis planteadas por el grupo de la economía de la salud se
 encuentran o no apoyadas por la información empírica.
 </p>
@@ -1281,10 +1281,10 @@ D = 0.066013, p-value = 0.7321
 </section>
 </section>
 <p>
-Observando que al obtener un P-valor\(=0.7321\) se tendrá que no hay
+Observando que al obtener un P-valor$=0.7321$ se tendrá que no hay
 evidencia en contra de la hipótesis nula, ya que el P-valor obtenido en
 la prueba de normalidad es superior al nivel de significancia
-\(\alpha=0.05\), concluyendo entonces que el número de contagios que se
+$\alpha=0.05$, concluyendo entonces que el número de contagios que se
 han presentado durante las últimas semanas por el COVID-19, posee una
 distribución Normal.<br> <br> Además, si realizamos el QQ-plot para
 observar el ajuste de las observaciones a la distribución normal se
@@ -1303,9 +1303,9 @@ tiene que
 </p>
 <p>
 En donde se aprecia que la totalidad de los puntos asociados a los datos
-muestrales caen dentro de las bandas de confianza del \(95\%\) de la
+muestrales caen dentro de las bandas de confianza del $95\%$ de la
 distribución normal, por lo cual se concluye con un nivel de
-significancia del \(5\%\) que el número de contagios que se han
+significancia del $5\%$ que el número de contagios que se han
 presentado durante las últimas semanas por el COVID-19, si posee una
 distribución Normal.
 </p>

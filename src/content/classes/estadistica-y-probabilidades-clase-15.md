@@ -32,7 +32,7 @@ Ejercicio
 Suponga que se realiza un estudio en la Facultad de Ingeniería, en donde
 se le pregunta a sus estudiantes, en cuál deporte preferirían practicar
 entre Fútbol, Baloncesto, Voleibol y Tenis. Dicha pregunta se le realiza
-a un total de \(400\) estudiantes, encontrando los siguientes resultados
+a un total de $400$ estudiantes, encontrando los siguientes resultados
 </p>
 <table class="table table-striped" style="width: auto !important; margin-left:auto; margin-right: auto;">
 <thead>
@@ -144,8 +144,8 @@ Solución
 Dado que el interés es construir una tabla de probabilidades, es cuEyPón
 de dividir cada una de las entradas por el total de estudiantes
 encuestados, esto con el fin de que la suma de todos los puntos
-muestrales sea igual a \(1\), es decir, \(\mathbb{P}(S) = 1\), siendo
-\(S\) el espacio muestral. Por tanto se tendrá que
+muestrales sea igual a $1$, es decir, $\mathbb{P}(S) = 1$, siendo
+$S$ el espacio muestral. Por tanto se tendrá que
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -308,7 +308,7 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </table>
 $$\begin{align*}
 \mathbb{P}(F)=0.120+0.085+0.165=0.37
-\end{align*}$$ Por tanto, se tendrá un \(37\%\) de probabilidad de que
+\end{align*}$$ Por tanto, se tendrá un $37\%$ de probabilidad de que
 el estudiante seleccionado prefiera el Fútbol sobre los demás deportes.
 </li>
 <li>
@@ -400,7 +400,7 @@ Economía
 
 $$\begin{align*}
 \mathbb{P}(C)=0.085+0.1025+0.0625+0.0250=0.275
-\end{align*}$$ Por tanto, se tendrá un \(27.5\%\) de probabilidad de que
+\end{align*}$$ Por tanto, se tendrá un $27.5\%$ de probabilidad de que
 el estudiante seleccionado sea de Contaduría.
 
 </li>
@@ -490,7 +490,7 @@ De donde obtendremos que $$\begin{align*}
 \mathbb{P}(E \cap V)=0.10
 \end{align*}$$ lo cual indica que la probabilidad de que un estudiante
 sea de Economía y prefiera el Tenis sobre los otros deportes es del
-\(10\%\).
+$10\%$.
 
 </li>
 <li>
@@ -504,9 +504,9 @@ realizar el cálculo de $$\begin{align*}
 \mathbb{P}(V|C) = \frac{\mathbb{P}(V \cap C)}{\mathbb{P}(C)}
 \end{align*}$$
 
-Tendremos entonces que la \(\mathbb{P}(C) = 0.275\) obtenida a partir de
+Tendremos entonces que la $\mathbb{P}(C) = 0.275$ obtenida a partir de
 la suma de las probabilidades individuales en la fila de Contaduría,
-mientras que la \(\mathbb{P}(V \cap C) = 0.0625\), obtenida a partir de
+mientras que la $\mathbb{P}(V \cap C) = 0.0625$, obtenida a partir de
 la casilla en donde se intersectan la columna de Voleibol y fila de
 Contaduría. <br><br>
 
@@ -518,7 +518,7 @@ $$\begin{align*}
 
 Lo cual indica que la probabilidad de que se seleccione un estudiante
 que prefiera Voleibol, dado que se sabe que estudia Contaduría, es del
-\(22.73\%\).
+$22.73\%$.
 
 </li>
 <li>
@@ -530,9 +530,9 @@ otros deportes, es decir,
 
 $$\begin{align*}
 \mathbb{P}(E|B) = \frac{\mathbb{P}(E \cap B)}{\mathbb{P}(B)}
-\end{align*}$$ De esto tendremos que \(\mathbb{P}(B) = 0.2975\) obtenida
+\end{align*}$$ De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
 a partir de la suma de las probabilidades individuales en la columna de
-Baloncesto, mientras que la \(\mathbb{P}(E \cap B) = 0.1275\), obtenida
+Baloncesto, mientras que la $\mathbb{P}(E \cap B) = 0.1275$, obtenida
 a partir de la casilla en donde se intersectan la fila de Economía y la
 columna de Baloncesto. <br><br>
 
@@ -544,7 +544,7 @@ $$\begin{align*}
 
 Lo cual indica que la probabilidad de que se seleccione un estudiante
 que curse Economía, dado que se sabe que prefiere el Baloncesto sobre
-otros deportes, es del \(42.86\%\).
+otros deportes, es del $42.86\%$.
 </li>
 </ol>
 </main>
@@ -695,8 +695,8 @@ Ocultar Ejercicio
 Ejercicio
 </h3>
 <p>
-Una bolsa contiene \(100\) pelotas, de las cuales \(25\) son rojas,
-\(40\) son azules y \(35\) son negras.
+Una bolsa contiene $100$ pelotas, de las cuales $25$ son rojas,
+$40$ son azules y $35$ son negras.
 </p>
 <ol type="1">
 <li>
@@ -744,13 +744,13 @@ $$\begin{align*}
 \end{align*}$$
 
 Encontrando entonces que la probabilidad de sacar una bola Negra en el
-primer paso y una bola azul en el segundo paso es del \(14\%\). <br>
+primer paso y una bola azul en el segundo paso es del $14\%$. <br>
 
 Ahora, para saber si los eventos planteados son o no independientes,
 podemos centrarnos en la primera linea, en donde tenemos que la
 probabilidad de sacar una bola negra es de
-\(\mathbb{P}(N_1)= \frac{35}{100}\), mientras que la probabilidad de
-sacar una bola azul es de \(\mathbb{P}(A_1)=\frac{40}{100}\), y en
+$\mathbb{P}(N_1)= \frac{35}{100}$, mientras que la probabilidad de
+sacar una bola azul es de $\mathbb{P}(A_1)=\frac{40}{100}$, y en
 consecuencia, al verificar la formula asociada a independencia entre
 eventos, tendremos que $$\begin{align*}
 \mathbb{P}(N_1 \cap A_2) & = \mathbb{P}(N_1) \mathbb{P}(A_1) \\
@@ -765,7 +765,7 @@ eventos son independientes.
 <li>
 
 Similar al punto anterior, pero con la diferencia a que se realizan
-\(3\) pasos, en donde, luego de sacar la primera bola, se registra y se
+$3$ pasos, en donde, luego de sacar la primera bola, se registra y se
 reemplaza la bola con una del mismo color, pero al sacar la segunda
 bola, no se realiza reemplazo antes de sacar la tercera bola, alterando
 las probabilidades de cada una de las bolas dentro de la bolsa, tal como
@@ -788,9 +788,9 @@ $$\begin{align*}
 Ahora, para saber si los eventos planteados son o no independientes,
 podemos centrarnos en la primera linea, en donde tenemos que la
 probabilidad de sacar una bola negra es de
-\(\mathbb{P}(N_1)= \frac{35}{100}\), sacar una bola azul es de
-\(\mathbb{P}(A_1)=\frac{40}{100}\), y sacar una bola roja es de
-\(\mathbb{P}(R_1)= \frac{25}{100}\), y en consecuencia, al verificar la
+$\mathbb{P}(N_1)= \frac{35}{100}$, sacar una bola azul es de
+$\mathbb{P}(A_1)=\frac{40}{100}$, y sacar una bola roja es de
+$\mathbb{P}(R_1)= \frac{25}{100}$, y en consecuencia, al verificar la
 formula asociada a independencia entre eventos, tendremos que
 
 $$\begin{align*}
@@ -834,19 +834,19 @@ Ejercicio
 </h3>
 <p>
 
-Tres máquinas de cierta planta de ensamble \(A_1, A_2, A_3\) montan
-\(30\%, 45\%, 25\%\) del total de los productos producidos por la
-empresa, respectivamente. Se sabe por experiencia que \(4\%, 5\%, 2\%\)
+Tres máquinas de cierta planta de ensamble $A_1, A_2, A_3$ montan
+$30\%, 45\%, 25\%$ del total de los productos producidos por la
+empresa, respectivamente. Se sabe por experiencia que $4\%, 5\%, 2\%$
 de los productos ensamblados por cada maquina tienen defectos,
 respectivamente. <br><br>
 
 Si selecciona de forma aleatoria un producto terminado. Cuál es la
 probabilidad de que éste se encuentra defectuoso? <br><br>
 
-\(B\): El producto se encuentra defectuoso. <br> \(A_1\): el producto
-fue producido por la máquina \(1\). <br> \(A_2\): el producto fue
-producido por la máquina \(2\). <br> \(A_3\): el producto fue producido
-por la máquina \(3\).
+$B$: El producto se encuentra defectuoso. <br> $A_1$: el producto
+fue producido por la máquina $1$. <br> $A_2$: el producto fue
+producido por la máquina $2$. <br> $A_3$: el producto fue producido
+por la máquina $3$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -855,18 +855,18 @@ Solución
 
 Dado que el interés radica en encontrar la probabilidad de que se
 seleccione un producto y resulte defectuoso, entonces nos están pidiendo
-que se desea calcular la \(\mathbb{P}(B)\). <br><br>
+que se desea calcular la $\mathbb{P}(B)$. <br><br>
 
 Como entre la información dada en el enunciado no nos da la probabilidad
 de que un artículo se encuentre defectuoso, entonces podemos tratar de
 calcularla mediante el teorema de probabilidad total, aprovechando que
-los eventos \(A_1, A_2, A_3\) son eventos <strong>mutuamente
+los eventos $A_1, A_2, A_3$ son eventos <strong>mutuamente
 excluyentes</strong> (Un artículo que es ensamblado por una máquina, no
 puede ser ensamblado simultáneamente por otra),
 <strong>exhaustivos</strong> (El total de los productos ensamblados por
 la empresa, solo puede ser producido por alguna de estas tres máquinas)
-y que nos están dando las probabilidades de los eventos \(B|A_1\),
-\(B|A_2\) y \(B|A_3\). <br><br>
+y que nos están dando las probabilidades de los eventos $B|A_1$,
+$B|A_2$ y $B|A_3$. <br><br>
 
 Partiendo de esto tenemos las siguientes probabilidades:<br>
 $$\begin{align*}
@@ -886,7 +886,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Obteniendo por tanto, que la probabilidad de que un artículo producido
-en la empresa sea defectuoso es del \(3.95\%\)
+en la empresa sea defectuoso es del $3.95\%$
 </p>
 </main>
 
@@ -924,20 +924,20 @@ Ejercicio
 </h3>
 <p>
 
-Tres máquinas de cierta planta de ensamble \(A_1, A_2, A_3\) montan
-\(30\%, 45\%, 25\%\) del total de los productos producidos por la
-empresa, respectivamente. Se sabe por experiencia que \(4\%, 5\%, 2\%\)
+Tres máquinas de cierta planta de ensamble $A_1, A_2, A_3$ montan
+$30\%, 45\%, 25\%$ del total de los productos producidos por la
+empresa, respectivamente. Se sabe por experiencia que $4\%, 5\%, 2\%$
 de los productos ensamblados por cada maquina tienen defectos,
 respectivamente. <br><br>
 
 Si selecciona de forma aleatoria un producto terminado y se encuentra
 que es defectuoso, Cuál es la probabilidad de que éste artículo haya
-sido ensamblado por la máquina \(3\)? <br><br>
+sido ensamblado por la máquina $3$? <br><br>
 
-\(B\): El producto se encuentra defectuoso. <br> \(A_1\): el producto
-fue producido por la máquina \(1\). <br> \(A_2\): el producto fue
-producido por la máquina \(2\). <br> \(A_3\): el producto fue producido
-por la máquina \(3\).
+$B$: El producto se encuentra defectuoso. <br> $A_1$: el producto
+fue producido por la máquina $1$. <br> $A_2$: el producto fue
+producido por la máquina $2$. <br> $A_3$: el producto fue producido
+por la máquina $3$.
 </p>
 <h3 data-toc-skip>
 Solución
@@ -945,10 +945,10 @@ Solución
 <p>
 
 En este caso, se tiene interés en saber la probabilidad de que un
-artículo haya sido ensamblado por la máquina \(3\), \(A_3\),
+artículo haya sido ensamblado por la máquina $3$, $A_3$,
 <strong>dado que</strong> se sabe que el artículo seleccionado esta
-defectuoso, \(B\), se tendrá que se desea calcular la
-\(\mathbb{P}{(A_3|B)}\). <br><br>
+defectuoso, $B$, se tendrá que se desea calcular la
+$\mathbb{P}{(A_3|B)}$. <br><br>
 
 De lo anterior apreciamos que nos están preguntando una probabilidad
 condicional la cual se puede expresar de la forma $$\begin{align*}
@@ -961,11 +961,11 @@ de las dos probabilidades que necesitamos para llevar a cabo el cálculo
 de interés. <br> <br>
 
 Al detallar la ecuación más detenidamente, observamos que los eventos
-\(A_1, A_2, A_3\) son <strong>mutuamente excluyentes</strong> y
+$A_1, A_2, A_3$ son <strong>mutuamente excluyentes</strong> y
 <strong>exhaustivos</strong>, lo cual nos permite poder calcular la
-\(\mathbb{P}(B)\) mediante el teorema de
+$\mathbb{P}(B)$ mediante el teorema de
 <a href="../../EstadisticayProbabilidades/EyPClase04.html#probabilidad-total" target="\_blank">Probabilidad
-total</a>, y la probabilidad \(\mathbb{P}(A_3 \cap B)\) mediante el
+total</a>, y la probabilidad $\mathbb{P}(A_3 \cap B)$ mediante el
 teorema de la
 <a href="../../EstadisticayProbabilidades/EyPClase04.html#regla-multiplicativa" target="\_blank">Regla
 multiplicativa</a>. Lo cual nos lleva a la siguiente expresión.
@@ -977,7 +977,7 @@ $$\begin{align*}
 \end{align*}$$
 
 Es decir, se tiene que la probabilidad de que un artículo que se sabe
-está defectuoso, haya sido ensamblado por la máquina \(3\), es del
-\(12.69\%.\)
+está defectuoso, haya sido ensamblado por la máquina $3$, es del
+$12.69\%.$
 </p>
 </main>
