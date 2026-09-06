@@ -274,6 +274,20 @@
     border-color: oklch(from #6c9a06 l c h / 0.5);
     background: var(--color-accent-soft);
   }
+  /* ── TOC jerárquico con scrollspy ─────────────────────────────── */
+  #class-toc nav { max-height: calc(100vh - 12rem); overflow-y: auto; scrollbar-width: thin; }
+  #class-toc .toc-sub { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  #class-toc .toc-sub.open { max-height: 480px; }
+  #class-toc a.toc-active {
+    color: #8bc34a;
+    background: oklch(from #064e3b l c h / 0.45);
+    border: 1px solid oklch(from #6c9a06 l c h / 0.45);
+    font-weight: 700;
+  }
+  #class-toc a.toc-parent-active {
+    color: #8bc34a;
+    background: oklch(from #064e3b l c h / 0.25);
+  }
   .pill .pill-count {
     font-size: 0.75rem;
     font-weight: 600;
@@ -378,6 +392,21 @@
 .prose-class h3 { font-size: 1.25rem; color: #8bc34a; }
 .prose-class h4 { font-size: 1.1rem; color: #94a3a8; }
 .prose-class p { margin-bottom: 1.25rem; text-align: justify; }
+.prose-class h2, .prose-class h3 { scroll-margin-top: 5.5rem; }
+.prose-class h2 {
+  position: relative;
+  padding-left: 0.85rem;
+}
+.prose-class h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #6c9a06, #0e7774);
+}
 .prose-class strong { color: #8bc34a; }
 .prose-class a { color: #6c9a06; text-decoration: none; transition: color 0.2s; }
 .prose-class a:hover { color: #8bc34a; text-decoration: underline; }

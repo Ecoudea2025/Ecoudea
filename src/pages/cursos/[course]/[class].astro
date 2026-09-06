@@ -55,20 +55,31 @@ const tl = typeLabels[classEntry.data.classType] || 'Clase';
       <span class="text-text truncate max-w-[180px] sm:max-w-[300px]">{classEntry.data.title}</span>
     </nav>
 
-    <div class="relative overflow-hidden rounded-2xl gradient-bg border border-border-subtle p-5 sm:p-7 mb-6">
-      <div class="absolute top-0 right-0 w-48 h-48 rounded-full bg-accent/5 blur-3xl pointer-events-none" />
-      <div class="flex items-start gap-4 relative z-10">
-        <div class={`shrink-0 w-12 h-12 rounded-xl border-2 ${tc} flex items-center justify-center text-base font-bold`}>{classNum}</div>
+    <div class="relative overflow-hidden rounded-2xl gradient-bg border border-accent/20 shadow-xl shadow-accent/5 p-5 sm:p-8 mb-6">
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-secondary to-accent" aria-hidden="true" />
+      <div class="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-accent/10 blur-3xl pointer-events-none" />
+      <div class="absolute -bottom-12 left-10 w-48 h-48 rounded-full bg-secondary/10 blur-3xl pointer-events-none" />
+      <div class="flex items-start gap-4 sm:gap-5 relative z-10">
+        <div class={`shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl border-2 ${tc} bg-surface/60 backdrop-blur flex items-center justify-center text-xl sm:text-2xl font-extrabold tabular-nums shadow-lg`}>{classNum}</div>
         <div class="flex-1 min-w-0">
-          <div class="flex items-center gap-2 mb-1">
-            <span class={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${tc}`}>{tl}</span>
-            <span class="text-[10px] text-text-muted">{classNum} de {totalInCourse}</span>
+          <div class="flex items-center gap-2 mb-2 flex-wrap">
+            <span class={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${tc}`}>{tl}</span>
+            <span class="text-[11px] text-text-muted tabular-nums">{classNum} de {totalInCourse} · {course.data.title}</span>
           </div>
-          <h1 class="text-xl sm:text-2xl font-bold text-text">{classEntry.data.title}</h1>
-          {classEntry.data.description && <p class="text-sm text-text-muted mt-1 leading-relaxed">{classEntry.data.description}</p>}
+          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-text leading-tight">{classEntry.data.title}</h1>
+          {classEntry.data.description && <p class="text-sm sm:text-base text-text-muted mt-2 leading-relaxed max-w-3xl">{classEntry.data.description}</p>}
+          <div class="mt-4 max-w-md">
+            <div class="flex items-center justify-between text-[11px] text-text-muted mb-1.5">
+              <span>Progreso del curso</span>
+              <span class="tabular-nums">{Math.round((classNum / totalInCourse) * 100)}%</span>
+            </div>
+            <div class="h-2 rounded-full bg-white/10 overflow-hidden">
+              <div class="h-full rounded-full bg-gradient-to-r from-accent to-secondary" style={`width: ${(classNum / totalInCourse) * 100}%`} />
+            </div>
+          </div>
         </div>
-        <button id="progress-btn" data-course={courseId} data-class={classId} class="shrink-0 w-10 h-10 rounded-xl border-2 border-border-subtle text-text-muted hover:border-accent/50 hover:text-accent flex items-center justify-center transition-all cursor-pointer" aria-label="Marcar como completado">
-          <svg id="progress-check" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
+        <button id="progress-btn" data-course={courseId} data-class={classId} class="shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-2xl border-2 border-border-subtle bg-surface/60 backdrop-blur text-text-muted hover:border-accent/60 hover:text-accent hover:shadow-lg hover:shadow-accent/10 flex items-center justify-center transition-all cursor-pointer" aria-label="Marcar como completado" title="Marcar como completada">
+          <svg id="progress-check" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" /></svg>
         </button>
       </div>
     </div>
