@@ -57,8 +57,10 @@
 
       var wrapper = document.createElement('div');
       wrapper.className = 'overflow-hidden transition-all duration-500 ease-in-out my-3 rounded-xl border border-accent/20 bg-elevated/30';
-      wrapper.style.maxHeight = '0';
-      wrapper.style.opacity = '0';
+      // Estado inicial EXPANDIDO (como el sitio anterior): el contenido se ve
+      // siempre; los botones solo permiten ocultar/mostrar a voluntad.
+      wrapper.style.maxHeight = 'none';
+      wrapper.style.opacity = '1';
       content.parentNode.insertBefore(wrapper, content);
       wrapper.appendChild(content);
       content.style.display = 'block';
@@ -67,10 +69,11 @@
       content.style.padding = '1.25rem';
 
       btn.className = 'inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-accent text-white text-sm font-medium cursor-pointer hover:bg-accent-hover transition-all duration-200 border-0 shadow-sm hover:shadow-md mb-1';
+      btn.style.display = 'none';
 
       if (hideBtn) {
         hideBtn.className = 'inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-secondary text-white text-sm font-medium cursor-pointer hover:bg-secondary-hover transition-all duration-200 border-0 shadow-sm hover:shadow-md mb-1';
-        hideBtn.style.display = 'none';
+        hideBtn.style.display = 'inline-flex';
       }
 
       btn.addEventListener('click', function () {
