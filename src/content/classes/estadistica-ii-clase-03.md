@@ -13,8 +13,8 @@ bibliography: "../../referencias.bib"
 En la
 <a href="https://jiperezga.github.io/EstadisticaII/EstIIClase17.html" target="\_blank">Clase
 17</a> se estudió el modelo de regresión lineal simple, en el cual la
-variable respuesta $Y$ se explica en función de **una única** variable
-explicativa $X$. Sin embargo, en la mayoría de los problemas
+variable respuesta `$Y$` se explica en función de **una única** variable
+explicativa `$X$`. Sin embargo, en la mayoría de los problemas
 prácticos, la variable de interés no depende de una sola variable, sino
 que **es explicada de forma simultánea por dos o más variables
 independientes**.
@@ -25,14 +25,14 @@ bibliotecas no dependen únicamente del gasto en publicidad, sino también
 de otras variables como el número de eventos de recaudación realizados
 durante el mes, el número de voluntarios, la época del año, entre otras.
 
-Cuando la relación entre la variable respuesta y las $k$ variables
+Cuando la relación entre la variable respuesta y las `$k$` variables
 explicativas se supone lineal, el modelo que permite estudiar dicha
 relación se conoce como **modelo de regresión lineal múltiple**.
 
 ### Regresión Lineal Múltiple
 
-Suponga que se tiene una variable respuesta $Y$ y un conjunto de $k$
-variables explicativas $X_1, X_2, \ldots, X_k$. El modelo de regresión
+Suponga que se tiene una variable respuesta `$Y$` y un conjunto de `$k$`
+variables explicativas `$X_1, X_2, \ldots, X_k$`. El modelo de regresión
 lineal múltiple está dado por
 
 $$\begin{align*}Y=\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon \quad \quad (I)\end{align*}$$
@@ -40,47 +40,47 @@ $$\begin{align*}Y=\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \
 
 donde
 
-- $\beta_0, \beta_1, \ldots, \beta_k$: son $k+1$ constantes
+- `$\beta_0, \beta_1, \ldots, \beta_k$`: son `$k+1$` constantes
   desconocidas denominadas parámetros del modelo o coeficientes de
   regresión, estimados a partir de los datos.
-- $\beta_0$ representa el intercepto, es decir, el valor medio de
-  $Y$ cuando todas las variables explicativas toman el valor de cero.
-- $\beta_j$ para $j=1,2,\ldots,k$, representa el cambio esperado en
-  la variable respuesta $Y$ por cada unidad de cambio en $X_j$,
+- `$\beta_0$` representa el intercepto, es decir, el valor medio de
+  `$Y$` cuando todas las variables explicativas toman el valor de cero.
+- `$\beta_j$` para `$j=1,2,\ldots,k$`, representa el cambio esperado en
+  la variable respuesta `$Y$` por cada unidad de cambio en `$X_j$`,
   **cuando las demás variables explicativas permanecen constantes**,
-  razón por la cual los $\beta_j$ se conocen como coeficientes de
+  razón por la cual los `$\beta_j$` se conocen como coeficientes de
   regresión parciales.
-- $\varepsilon$ representa al componente de error aleatorio, el cual
+- `$\varepsilon$` representa al componente de error aleatorio, el cual
   recoge los efectos de todas las variables no consideradas en el
   modelo, errores de medición u otras consideraciones no tenidas en
   cuenta por el investigador.
 
 **Nota:** El término “lineal” hace referencia a que el modelo es lineal
-**en los parámetros** $\beta_0, \beta_1, \ldots, \beta_k$, y no
+**en los parámetros** `$\beta_0, \beta_1, \ldots, \beta_k$`, y no
 necesariamente en las variables explicativas. Por ejemplo, el modelo
 polinomial
 
 $$\begin{align*}Y=\beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon\end{align*}$$
 
 es un modelo de regresión lineal múltiple, ya que puede reescribirse
-tomando $X_1 = X$ y $X_2=X^2$.
+tomando `$X_1 = X$` y `$X_2=X^2$`.
 
 #### Supuestos del modelo de regresión lineal múltiple
 
-1.  Se tiene una muestra aleatoria de $n$ observaciones
-    $(y_i, x_{i1}, x_{i2}, \ldots, x_{ik})$ para $i=1,2,\ldots,n$,
-    con $n > k+1$, las cuales se supone que satisfacen el modelo
-    $(I)$, tal que
+1.  Se tiene una muestra aleatoria de `$n$` observaciones
+    `$(y_i, x_{i1}, x_{i2}, \ldots, x_{ik})$` para `$i=1,2,\ldots,n$`,
+    con `$n > k+1$`, las cuales se supone que satisfacen el modelo
+    `$(I)$`, tal que
     
 $$\begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik} + \varepsilon_i \quad \text{ para } i =1,2, \ldots, n \quad \quad (II)\end{align*}$$
 
-    donde $y_i$ es la i-ésima observación de la variable $Y$, y
-    $x_{ij}$ es la i-ésima observación de la j-ésima variable
+    donde `$y_i$` es la i-ésima observación de la variable `$Y$`, y
+    `$x_{ij}$` es la i-ésima observación de la j-ésima variable
     explicativa.
 
-2.  Del modelo $(II)$ suponga que los $\varepsilon_i$ son variables
-    aleatorias independientes con media $\mathbb{E}(\varepsilon_i)=0$
-    y varianza $Var(\varepsilon_i)=\sigma^2$, de tal forma que
+2.  Del modelo `$(II)$` suponga que los `$\varepsilon_i$` son variables
+    aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
+    y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
 $$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik}\end{align*}$$
 
@@ -89,20 +89,20 @@ $$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdo
 $$\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}$$
 
     en donde, si además se cumple que
-    $\varepsilon_i\sim N(0,\sigma^2)$, entonces se tendrá que
+    `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
 $$\begin{align*}y_i\sim N(\beta_0 + \beta_1 x_{i1} + \cdots + \beta_k x_{ik}, \; \sigma^2)\end{align*}$$
 
-3.  Las variables explicativas $X_1, X_2, \ldots, X_k$ no presentan
+3.  Las variables explicativas `$X_1, X_2, \ldots, X_k$` no presentan
     una relación lineal exacta entre ellas (ausencia de
     multicolinealidad perfecta).
 
 ### Notación matricial
 
-Dado que el modelo de regresión lineal múltiple involucra $n$
+Dado que el modelo de regresión lineal múltiple involucra `$n$`
 ecuaciones (una por cada observación), resulta mucho más conveniente
 expresar el modelo empleando notación matricial. Así, el conjunto de
-ecuaciones dado en $(II)$ puede reescribirse como
+ecuaciones dado en `$(II)$` puede reescribirse como
 
 $$\begin{align*}\mathbf{Y}=\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}\end{align*}$$
 
@@ -113,17 +113,17 @@ donde
 $$\begin{align*}\mathbf{Y}=\begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}, \qquad \mathbf{X}=\begin{bmatrix}  1 & x_{11} & x_{12} & \cdots & x_{1k}\\  1 & x_{21} & x_{22} & \cdots & x_{2k}\\  \vdots & \vdots & \vdots & \ddots & \vdots\\  1 & x_{n1} & x_{n2} & \cdots & x_{nk} \end{bmatrix}, \qquad \boldsymbol{\beta}=\begin{bmatrix} \beta_0 \\ \beta_1 \\ \vdots \\ \beta_k \end{bmatrix}, \qquad \boldsymbol{\varepsilon}=\begin{bmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{bmatrix}\end{align*}$$
 
 
-- $\mathbf{Y}$ es el vector de observaciones de dimensión
-  $n\times 1$.
-- $\mathbf{X}$ es la matriz de diseño de dimensión $n\times (k+1)$,
+- `$\mathbf{Y}$` es el vector de observaciones de dimensión
+  `$n\times 1$`.
+- `$\mathbf{X}$` es la matriz de diseño de dimensión `$n\times (k+1)$`,
   cuya primera columna es un vector de unos asociado al intercepto.
-- $\boldsymbol{\beta}$ es el vector de parámetros de dimensión
-  $(k+1)\times 1$.
-- $\boldsymbol{\varepsilon}$ es el vector de errores aleatorios de
-  dimensión $n\times 1$, con
-  $\mathbb{E}(\boldsymbol{\varepsilon})=\mathbf{0}$ y
-  $Var(\boldsymbol{\varepsilon})=\sigma^2\mathbf{I}_n$, siendo
-  $\mathbf{I}_n$ la matriz identidad de dimensión $n \times n$.
+- `$\boldsymbol{\beta}$` es el vector de parámetros de dimensión
+  `$(k+1)\times 1$`.
+- `$\boldsymbol{\varepsilon}$` es el vector de errores aleatorios de
+  dimensión `$n\times 1$`, con
+  `$\mathbb{E}(\boldsymbol{\varepsilon})=\mathbf{0}$` y
+  `$Var(\boldsymbol{\varepsilon})=\sigma^2\mathbf{I}_n$`, siendo
+  `$\mathbf{I}_n$` la matriz identidad de dimensión `$n \times n$`.
 
 De esta forma, los supuestos del modelo pueden resumirse como
 
@@ -133,29 +133,29 @@ $$\begin{align*}\mathbb{E}(\mathbf{Y})=\mathbf{X}\boldsymbol{\beta} \qquad \text
 ### Estimación de parámetros
 
 Al igual que en el caso de la regresión lineal simple, el objetivo será
-estimar el vector de parámetros $\boldsymbol{\beta}$ y la varianza
-$\sigma^2$, para lo cual puede emplearse el método de mínimos
+estimar el vector de parámetros `$\boldsymbol{\beta}$` y la varianza
+`$\sigma^2$`, para lo cual puede emplearse el método de mínimos
 cuadrados o el método de máxima verosimilitud.
 
 #### Método de Máxima Verosimilitud
 
 Bajo el supuesto de que
-$\boldsymbol{\varepsilon} \sim N_n(\mathbf{0},\sigma^2\mathbf{I}_n)$,
+`$\boldsymbol{\varepsilon} \sim N_n(\mathbf{0},\sigma^2\mathbf{I}_n)$`,
 entonces
-$\mathbf{Y} \sim N_n(\mathbf{X}\boldsymbol{\beta}, \sigma^2\mathbf{I}_n)$,
+`$\mathbf{Y} \sim N_n(\mathbf{X}\boldsymbol{\beta}, \sigma^2\mathbf{I}_n)$`,
 luego la función de verosimilitud está dada por
 
 $$\begin{align*}L(\boldsymbol{\beta}, \sigma^2; \mathbf{Y}) = \frac{1}{(2\pi\sigma^2)^{n/2}}e^{-\frac{1}{2\sigma^2}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})}\end{align*}$$
 
 
 Al maximizar la función de verosimilitud respecto a
-$\boldsymbol{\beta}$ y $\sigma^2$, se encuentra que los estimadores
+`$\boldsymbol{\beta}$` y `$\sigma^2$`, se encuentra que los estimadores
 de máxima verosimilitud están dados por
 
 $$\begin{align*}\hat{\boldsymbol{\beta}} &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\\ \hat{\sigma}^2 &= \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n}\end{align*}$$
 
 
-observando nuevamente que el EMV para $\boldsymbol{\beta}$ coincide
+observando nuevamente que el EMV para `$\boldsymbol{\beta}$` coincide
 con el estimador de mínimos cuadrados.
 
 <button id="Show1" class="btn btn-secondary">
@@ -241,8 +241,8 @@ $$\begin{align*}
 #### Método de Mínimos Cuadrados
 
 Si denotamos por
-$\hat{\boldsymbol{\beta}}=(\hat{\beta}_0, \hat{\beta}_1, \ldots, \hat{\beta}_k)^\top$
-al estimador del vector de parámetros $\boldsymbol{\beta}$, entonces
+`$\hat{\boldsymbol{\beta}}=(\hat{\beta}_0, \hat{\beta}_1, \ldots, \hat{\beta}_k)^\top$`
+al estimador del vector de parámetros `$\boldsymbol{\beta}$`, entonces
 el vector de valores ajustados estará dado por
 
 $$\begin{align*}\hat{\mathbf{Y}}=\mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}$$
@@ -254,13 +254,13 @@ $$\begin{align*}\mathbf{e} = \mathbf{Y} - \hat{\mathbf{Y}} = \mathbf{Y} - \mathb
 
 
 El método de mínimos cuadrados consiste en encontrar el vector
-$\hat{\boldsymbol{\beta}}$ que minimiza la suma de los cuadrados de
+`$\hat{\boldsymbol{\beta}}$` que minimiza la suma de los cuadrados de
 los errores, la cual en notación matricial está dada por
 
 $$\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \mathbf{e}^\top\mathbf{e} &= (\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})\\ &= \mathbf{Y}^\top\mathbf{Y} - 2\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y} + \hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}$$
 
 
-Derivando la expresión anterior respecto a $\hat{\boldsymbol{\beta}}$
+Derivando la expresión anterior respecto a `$\hat{\boldsymbol{\beta}}$`
 e igualando a cero
 
 $$\begin{align*}\frac{\partial SCE}{\partial \hat{\boldsymbol{\beta}}} = -2\mathbf{X}^\top\mathbf{Y} + 2\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{0}\end{align*}$$
@@ -272,8 +272,8 @@ $$\begin{align*}\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{X}^\
 
 
 y dado que por el supuesto de ausencia de multicolinealidad perfecta la
-matriz $\mathbf{X}^\top\mathbf{X}$ es invertible, el estimador de
-mínimos cuadrados de $\boldsymbol{\beta}$ estará dado por
+matriz `$\mathbf{X}^\top\mathbf{X}$` es invertible, el estimador de
+mínimos cuadrados de `$\boldsymbol{\beta}$` estará dado por
 
 $$\begin{align*}\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\end{align*}$$
 
@@ -357,36 +357,36 @@ $\mathbf{v}=\mathbf{0}$.
 </p>
 </main>
 
-**Nota sobre estimador** $\sigma^2$
+**Nota sobre estimador** `$\sigma^2$`
 
 Dado que el estimador de máxima verosimilitud de la varianza
-$\sigma^2$ es sesgado, se emplea entonces un estimador insesgado el
+`$\sigma^2$` es sesgado, se emplea entonces un estimador insesgado el
 cual estará dado por
 
 $$\begin{align*}\hat{\sigma}^2_e &=\frac{SCE}{n-(k+1)} = \frac{\sum_{i=1}^n e^2_i}{n-k-1} \\             &= \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n-k-1}\end{align*}$$
 
 
-conocido como el **cuadrado medio del error** ($CME$), en donde
-$n-k-1$ son los grados de libertad asociados al error, ya que se
-estiman $k+1$ parámetros a partir de las $n$ observaciones.
+conocido como el **cuadrado medio del error** (`$CME$`), en donde
+`$n-k-1$` son los grados de libertad asociados al error, ya que se
+estiman `$k+1$` parámetros a partir de las `$n$` observaciones.
 
-### Propiedades de $\hat{\boldsymbol{\beta}}$
+### Propiedades de `$\hat{\boldsymbol{\beta}}$`
 
 A continuación se presentan algunas propiedades que cumple el estimador
-$\hat{\boldsymbol{\beta}}$.
+`$\hat{\boldsymbol{\beta}}$`.
 
-- $\mathbb{E}(\hat{\boldsymbol{\beta}}) = \boldsymbol{\beta}$, es
-  decir, $\hat{\boldsymbol{\beta}}$ es un estimador insesgado de
-  $\boldsymbol{\beta}$.
-- $Var(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1}$,
-  en donde la varianza del estimador $\hat{\beta}_j$ corresponde al
+- `$\mathbb{E}(\hat{\boldsymbol{\beta}}) = \boldsymbol{\beta}$`, es
+  decir, `$\hat{\boldsymbol{\beta}}$` es un estimador insesgado de
+  `$\boldsymbol{\beta}$`.
+- `$Var(\hat{\boldsymbol{\beta}}) = \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1}$`,
+  en donde la varianza del estimador `$\hat{\beta}_j$` corresponde al
   j-ésimo elemento de la diagonal de dicha matriz, tal que
-  $Var(\hat{\beta}_j)=\sigma^2 C_{jj}$, siendo $C_{jj}$ el j-ésimo
-  elemento de la diagonal de $(\mathbf{X}^\top\mathbf{X})^{-1}$.
+  `$Var(\hat{\beta}_j)=\sigma^2 C_{jj}$`, siendo `$C_{jj}$` el j-ésimo
+  elemento de la diagonal de `$(\mathbf{X}^\top\mathbf{X})^{-1}$`.
 - Si
-  $\boldsymbol{\varepsilon} \sim N_n(\mathbf{0},\sigma^2\mathbf{I}_n)$,
+  `$\boldsymbol{\varepsilon} \sim N_n(\mathbf{0},\sigma^2\mathbf{I}_n)$`,
   entonces
-  $\hat{\boldsymbol{\beta}} \sim N_{k+1}(\boldsymbol{\beta}, \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1})$.
+  `$\hat{\boldsymbol{\beta}} \sim N_{k+1}(\boldsymbol{\beta}, \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1})$`.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Demostración

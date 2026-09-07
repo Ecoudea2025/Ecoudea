@@ -10,16 +10,16 @@ bibliography: "../../referencias.bib"
 
 ## Covarianza
 
-Sean $X,Y$ variables aleatorias con función de masa de probabilidad
-conjunta dada por $p(x,y)$ o función de densidad de probabilidad
-conjunta dada por $f(x,y)$, entonces la covarianza de $X$ y $Y$,
-denotada por $Cov(X,Y)$ o $\sigma_{xy}$ está dada por
+Sean `$X,Y$` variables aleatorias con función de masa de probabilidad
+conjunta dada por `$p(x,y)$` o función de densidad de probabilidad
+conjunta dada por `$f(x,y)$`, entonces la covarianza de `$X$` y `$Y$`,
+denotada por `$Cov(X,Y)$` o `$\sigma_{xy}$` está dada por
 
 $$\begin{align*}Cov(X,Y) &= \sigma_{xy} = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)\left(Y-\mathbb{E}(Y)\right)\right] \\ Cov(X,Y) &=  \begin{cases}\sum_x\sum_y(x-\mathbb{E}(X))(y-\mathbb{E}(Y))p(x,y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty \int_{-\infty}^\infty (x-\mathbb{E}(X))(y-\mathbb{E}(Y))f(x,y)dxdy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
 Puede demostrarse a partir de la ecuación anterior, que existe una
-alternativa más simple para el cálculo de la $Cov(X,Y)$, la cual está
+alternativa más simple para el cálculo de la `$Cov(X,Y)$`, la cual está
 dada por
 
 $$\begin{align*}Cov(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\end{align*}$$
@@ -27,18 +27,18 @@ $$\begin{align*}Cov(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\end{align
 
 ### Nota
 
-La covarianza entre dos variables aleatorias $X,Y$ es una medida de
+La covarianza entre dos variables aleatorias `$X,Y$` es una medida de
 asociación entre ambas, que describe la relación lineal entre las dos
-variables aleatorias. El signo de la $Cov(X,Y)$ indicará el tipo de
+variables aleatorias. El signo de la `$Cov(X,Y)$` indicará el tipo de
 dependencia lineal que hay entre las variables.
 
--   $Cov(X,Y) > 0$ indica que hay dependencia lineal positiva entre
+-   `$Cov(X,Y) > 0$` indica que hay dependencia lineal positiva entre
     las variables, es decir, cuando aumenta una variable, la otra
     también aumenta.
--   $Cov(X,Y) < 0$ indica que hay dependencia lineal negativa entre
+-   `$Cov(X,Y) < 0$` indica que hay dependencia lineal negativa entre
     las variables, es decir, cuando aumenta una variable, la otra
     disminuye.
--   $Cov(X,Y) \approx 0$ indica que no existencia dependencia lineal
+-   `$Cov(X,Y) \approx 0$` indica que no existencia dependencia lineal
     entre las dos variables.
 
 <button id="Show1" class="btn btn-secondary">
@@ -449,18 +449,15 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$
-siendo $X$ la variable aleatoria que representa el
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$
-y la distribución marginal de $Y$ está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$
-Calcule la covarianza entre el número promedio de horas
+\end{align*}$$ Calcule la covarianza entre el número promedio de horas
 de tiempo libre del profesor, y de los estudiantes del curso de
 Estadística I.
 </p>
@@ -476,8 +473,7 @@ referencia al número de horas promedio de tiempo libre de los
 estudiantes. Esta covarianza puede ser calculada de forma simple por la
 ecuación $$\begin{align*}
 Cov(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)
-\end{align*}$$
-En donde, el valor para las esperanzas requeridas para el
+\end{align*}$$ En donde, el valor para las esperanzas requeridas para el
 cálculo de la covarianza, fueron calculados previamente en el ejemplo
 continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
@@ -499,48 +495,48 @@ de los estudiantes del curso de Estadística I.
 
 ## Correlación
 
-Sean $X,Y$ variables aleatorias con covarianza $Cov(X,Y)$, y
-desviaciones estándar $Sd(X)$ y $Sd(Y)$, entonces la correlación de
-$X$ y $Y$, denotada por $Cor(X,Y)$ o $\rho_{xy}$ está dada por
+Sean `$X,Y$` variables aleatorias con covarianza `$Cov(X,Y)$`, y
+desviaciones estándar `$Sd(X)$` y `$Sd(Y)$`, entonces la correlación de
+`$X$` y `$Y$`, denotada por `$Cor(X,Y)$` o `$\rho_{xy}$` está dada por
 
 $$\begin{align*}Cor(X,Y) = \rho_{xy} = \frac{Cov(X,Y)}{Sd(X)Sd(Y)}\end{align*}$$
 
 
 ### Nota
 
-La correlación entre dos variables aleatorias $X,Y$ es una medida de
+La correlación entre dos variables aleatorias `$X,Y$` es una medida de
 asociación entre ambas, que describe la fuerza de la relación lineal
-entre las dos variables aleatorias. El valor de $\rho_{xy}$ indica el
+entre las dos variables aleatorias. El valor de `$\rho_{xy}$` indica el
 tipo y fuerza de la dependencia lineal que hay entre las variables
 
--   $\rho_{xy} = 1$ indica que existe dependencia lineal positiva
+-   `$\rho_{xy} = 1$` indica que existe dependencia lineal positiva
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra aumenta proporcionalmente en la misma cantidad. Este aumento
-    es de la forma $Y = a + bX$, siendo $a$ y $b$ dos constantes,
-    con $b>0$.
--   $\rho_{xy} = -1$ indica que existe dependencia lineal negativa
+    es de la forma `$Y = a + bX$`, siendo `$a$` y `$b$` dos constantes,
+    con `$b>0$`.
+-   `$\rho_{xy} = -1$` indica que existe dependencia lineal negativa
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra disminuye proporcionalmente en la misma cantidad. Este
-    aumento es de la forma $Y = a + bX$ con $a$ y $b$ dos
-    constantes, y $b<0$.
--   $\rho_{xy} = 0$ No existe dependencia lineal entre las variables.
+    aumento es de la forma `$Y = a + bX$` con `$a$` y `$b$` dos
+    constantes, y `$b<0$`.
+-   `$\rho_{xy} = 0$` No existe dependencia lineal entre las variables.
 
 Además, se tendrá que si
 
--   $0.5 < \rho_{xy} \leq 1$ fuerte correlación positiva entre $X$ y
-    $Y$.
--   $0.3 < \rho_{xy} \leq 0.5$ moderada correlación positiva entre
-    $X$ y $Y$.
--   $0.1 < \rho_{xy} \leq 0.3$ débil correlación positiva entre $X$
-    y $Y$.
--   $-0.1 \leq \rho_{xy} \leq 0.1$ débil o ninguna correlación entre
-    $X$ y $Y$.
--   $-0.3 \leq \rho_{xy} < -0.1$ débil correlación negativa entre
-    $X$ y $Y$.
--   $-0.5 \leq \rho_{xy} < -0.3$ moderada correlación negativa entre
-    $X$ y $Y$.
--   $-1 \leq \rho_{xy} < -0.5$ fuerte correlación negativa entre $X$
-    y $Y$.
+-   `$0.5 < \rho_{xy} \leq 1$` fuerte correlación positiva entre `$X$` y
+    `$Y$`.
+-   `$0.3 < \rho_{xy} \leq 0.5$` moderada correlación positiva entre
+    `$X$` y `$Y$`.
+-   `$0.1 < \rho_{xy} \leq 0.3$` débil correlación positiva entre `$X$`
+    y `$Y$`.
+-   `$-0.1 \leq \rho_{xy} \leq 0.1$` débil o ninguna correlación entre
+    `$X$` y `$Y$`.
+-   `$-0.3 \leq \rho_{xy} < -0.1$` débil correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-0.5 \leq \rho_{xy} < -0.3$` moderada correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-1 \leq \rho_{xy} < -0.5$` fuerte correlación negativa entre `$X$`
+    y `$Y$`.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio Caso Discreto
@@ -953,18 +949,15 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$
-siendo $X$ la variable aleatoria que representa el
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$
-y la distribución marginal de $Y$ está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$
-Calcule la correlación entre el número promedio de horas
+\end{align*}$$ Calcule la correlación entre el número promedio de horas
 de tiempo libre del profesor, y de los estudiantes del curso de
 Estadística I.
 </p>
@@ -1002,7 +995,7 @@ estudiantes del curso de Estadística I.
 
 ## Independencia
 
-Si las variables aleatorias $X, Y$ son independientes, entonces se
+Si las variables aleatorias `$X, Y$` son independientes, entonces se
 debe cumplir que
 
 $$\begin{align*}\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)\end{align*}$$
@@ -1399,8 +1392,7 @@ discreto para el caso multivariado, se tendrá que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 13.61111 &= (7)(1.9444) \\
 13.61111 &\neq 13.6108
-\end{align*}$$
-En consecuencia, dado que la igualdad no se cumple, se
+\end{align*}$$ En consecuencia, dado que la igualdad no se cumple, se
 concluye que la variable de la suma resultante de los dos dados es
 dependiente de la variable del valor absoluto de la diferencia de los
 dos dados.
@@ -1423,18 +1415,15 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$
-siendo $X$ la variable aleatoria que representa el
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$
-y la distribución marginal de $Y$ está dada por
+\end{align*}$$ y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$
-Pruebe si el número promedio de horas de tiempo libre que
+\end{align*}$$ Pruebe si el número promedio de horas de tiempo libre que
 tiene el profesor son independientes del número promedio de horas de
 tiempo libre que tienen los estudiantes del curso de Estadística I.
 </p>
@@ -1450,8 +1439,7 @@ los dos dados y el valor esperado del valor absoluto de la diferencia de
 los dos dados, es igual a la esperanza conjunta de las dos variables,
 tal que se pueda probar si $$\begin{align*}
 \mathbb{E}(XY) = \mathbb{E}(X) \mathbb{E}(Y)
-\end{align*}$$
-Basados en los
+\end{align*}$$ Basados en los
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Valores
 Esperados</a> calculados en el ejemplo continuo para el caso
 multivariado, tenemos que $\mathbb{E}(X)=4/3$, $\mathbb{E}(Y)=85/28$
@@ -1460,8 +1448,7 @@ anterior, tenemos que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 \frac{255}{63} &= \left(\frac{4}{3}\right)\left(\frac{85}{28}\right) \\
 \frac{85}{21} &= \frac{85}{21}
-\end{align*}$$
-En consecuencia, dado que la igualdad se cumple, se
+\end{align*}$$ En consecuencia, dado que la igualdad se cumple, se
 concluye que el número promedio de horas de tiempo libre que tiene el
 profesor es independientes del número promedio de horas de tiempo libre
 que tienen los estudiantes del curso de Estadística I.
@@ -1470,52 +1457,52 @@ que tienen los estudiantes del curso de Estadística I.
 
 ## Propiedades de la varianza, covarianza y correlación
 
-Sea $a$ y $b$ números reales (constantes) y $X$ y $Y$ dos
+Sea `$a$` y `$b$` números reales (constantes) y `$X$` y `$Y$` dos
 variables aleatorias discretas o continuas, entonces
 
-1.  $Var(a)=0$
+1.  `$Var(a)=0$`
 
-2.  $Var(aX)=a^2Var(X)$
+2.  `$Var(aX)=a^2Var(X)$`
 
-3.  $Var(a+bX) = b^2Var(X)$
+3.  `$Var(a+bX) = b^2Var(X)$`
 
-4.  $Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$
+4.  `$Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$`
 
-5.  $Var(X-Y) = Var(X) + Var(Y) - 2 Cov(X,Y)$
+5.  `$Var(X-Y) = Var(X) + Var(Y) - 2 Cov(X,Y)$`
 
-6.  Si $X, Y$ son independientes entonces
-    $Var(X+Y) = Var(X) + Var(Y)$
+6.  Si `$X, Y$` son independientes entonces
+    `$Var(X+Y) = Var(X) + Var(Y)$`
 
-7.  Si $X, Y$ son independientes entonces
-    $Var(X-Y) = Var(X) + Var(Y)$
+7.  Si `$X, Y$` son independientes entonces
+    `$Var(X-Y) = Var(X) + Var(Y)$`
 
-8.  $Cov(aX,bY) = abCov(X,Y)$
+8.  `$Cov(aX,bY) = abCov(X,Y)$`
 
-9.  Si $X, Y$ son linealmente independientes entonces
-    $Cov(aX,bY) = 0$
+9.  Si `$X, Y$` son linealmente independientes entonces
+    `$Cov(aX,bY) = 0$`
 
-10. $Cor(aX,bY) = Cor(X,Y)$
+10. `$Cor(aX,bY) = Cor(X,Y)$`
 
-11. Si $X, Y$ son linealmente independientes entonces
-    $Cor(aX,bY) = 0$
+11. Si `$X, Y$` son linealmente independientes entonces
+    `$Cor(aX,bY) = 0$`
 
 ## Desigualdad de Chebyshev
 
 ### Desigualdad de Markov
 
-Sea $q(x)$ una función no negativa de la variable aleatoria $X$.
-Entonces, si $\mathbb{E}(q(x))$ existe, se tendrá que para todo
-$\tau>0$
+Sea `$q(x)$` una función no negativa de la variable aleatoria `$X$`.
+Entonces, si `$\mathbb{E}(q(x))$` existe, se tendrá que para todo
+`$\tau>0$`
 
 $$\begin{align*}\mathbb{P}(q(x)\geq \tau)\leq \frac{\mathbb{E}(q(X))}{\tau}\end{align*}$$
 
 
 ### Desigualdad de Chebyshev
 
-Sea $X$ una variable aleatoria que tiene una distribución de
+Sea `$X$` una variable aleatoria que tiene una distribución de
 probabilidad para la cual solo se supone que existe la varianza
-$\sigma^2$. Entonces, si $\tau = k^2$ y $q(x)=(x-\mu)^2/\sigma^2$,
-donde $\mu=\mathbb{E}(X)$ y $\sigma^2=Var(X)$, se tendrá que
+`$\sigma^2$`. Entonces, si `$\tau = k^2$` y `$q(x)=(x-\mu)^2/\sigma^2$`,
+donde `$\mu=\mathbb{E}(X)$` y `$\sigma^2=Var(X)$`, se tendrá que
 
 $$\begin{align*}\mathbb{P}\left(\frac{(x-\mu)^2}{\sigma^2}\geq k^2\right) \leq \frac{1}{k^2}\mathbb{E}\left(\frac{(x-\mu)^2}{\sigma^2}\right)\end{align*}$$
 
@@ -1525,7 +1512,7 @@ en donde, puede demostrarse que la expresión anterior es igual a
 $$\begin{align*}\mathbb{P}\left(\mu - k\sigma \leq x \leq \mu + k\sigma \right) \geq 1 - \frac{1}{k^2}\end{align*}$$
 
 
-siendo $k$ cualquier número positivo, tal que $k>1$.
+siendo `$k$` cualquier número positivo, tal que `$k>1$`.
 
 <button id="Show7" class="btn btn-secondary">
 Mostrar Ejercicio Caso Discreto
@@ -1606,8 +1593,7 @@ Solución
 En este caso, nos piden calcular la siguiente probabilidad
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258)
-\end{align*}$$
-La cual, al desarrollarla nos lleva a la estructura
+\end{align*}$$ La cual, al desarrollarla nos lleva a la estructura
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(|X-\mu|<1.1258)\\
                            &= 1 - \mathbb{P}(-1.1258 < X - \mu < 1.1258)\\
@@ -1639,8 +1625,7 @@ Ahora, estamos interesados en realizar el cálculo mediante el teorema de
 Chebyshev, y para ello, debemos llevar la probabilidad de interés a la
 estructura $$\begin{align*}
 \mathbb{P}\left(\mu - k\sigma \leq x \leq \mu + k\sigma \right)
-\end{align*}$$
-tal que $$\begin{align*}
+\end{align*}$$ tal que $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(|X-\mu|<1.1258)\\
                            &= 1 - \mathbb{P}(-1.1258 < X - \mu < 1.1258)\\
                            &= 1 - \mathbb{P}(\mu - 1.1258 < X < \mu + 1.1258)
@@ -1656,18 +1641,15 @@ del caso univariado, tendremos que $$\begin{align*}
 1.1258 &= k(0.866) \\
 \frac{1.1258}{0.866} &= k \\
 k &= 1.3
-\end{align*}$$
-haciendo que la probabilidad anterior se transforme en
+\end{align*}$$ haciendo que la probabilidad anterior se transforme en
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) \\
-\end{align*}$$
-Lo cual nos daría la estructura del teorema de Chevyshev.
+\end{align*}$$ Lo cual nos daría la estructura del teorema de Chevyshev.
 Ahora, al aplicar el teorema, reemplazando $k$ por $1.3$ tendremos
 que $$\begin{align*}
 \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) &\geq 1 - \frac{1}{(1.3)^2} \\
 \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) &\geq 0.408284 \\
-\end{align*}$$
-Ahora, como estamos interesados es en calcular
+\end{align*}$$ Ahora, como estamos interesados es en calcular
 $$\begin{align*}
 1 - \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma)
 \end{align*}$$
@@ -1701,8 +1683,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Entonces, basados en la función de densidad de probabilidad, calcule la
 probabilidad de que el tiempo en horas que tarda la serie financiera en
@@ -1726,8 +1707,7 @@ En este caso nos piden la probabilidad de que, el tiempo en horas que
 tarda una serie financiera en dar un ciclo se encuentre entre $0.0464$
 y $0.9536$ horas, esto es $$\begin{align*}
 \mathbb{P}(0.0464<X<0.9536)
-\end{align*}$$
-Entonces al emplear la función de densidad de
+\end{align*}$$ Entonces al emplear la función de densidad de
 probabilidad tendremos que $$\begin{align*}
 \mathbb{P}(0.0464<X<0.9536) &= \int_{0.0464}^{0.9536} f(x) dx\\
                             &= \int_{0.0464}^{0.9536} 30x^2(1-x)^2 dx\\
@@ -1738,8 +1718,7 @@ probabilidad tendremos que $$\begin{align*}
                             & \quad \; - \left(\frac{0.0464^3}{3} - \frac{2(0.0464)^4}{4} + \frac{(0.0464)^5}{5}\right)\Bigg] \\
                             &= 30 (0.03327128) \\
                             &= 0.9981385
-\end{align*}$$
-Es decir que, la probabilidad de que la serie financiera
+\end{align*}$$ Es decir que, la probabilidad de que la serie financiera
 tarde entre $0.0464$ y $0.9536$ horas, en dar un ciclo es del
 $99.81\%$.
 </li>

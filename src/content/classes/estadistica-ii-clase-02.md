@@ -11,20 +11,20 @@ bibliography: "../../referencias.bib"
 
 ### Prueba de hipótesis
 
-Note que $\hat{\beta}_0$ y $\hat{\beta}_1$ son combinaciones
-lineales de $y_i$, que son normales e independientes, entonces por
+Note que `$\hat{\beta}_0$` y `$\hat{\beta}_1$` son combinaciones
+lineales de `$y_i$`, que son normales e independientes, entonces por
 propiedades de la distribución normal se obtiene que
 
 $$\begin{align*}\hat{\beta}_0 &\sim N\left(\beta_0, \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2\right)  \\  \hat{\beta}_1 &\sim N\left(\beta_1, \frac{\sigma^2}{S_{xx}}\right)\end{align*}$$
 
 
-en donde, dado que la varianza $\sigma^2$ es desconocida, se reemplaza
-por su estimador insesgado $\sigma^2_e$, y por tanto los estadísticos
+en donde, dado que la varianza `$\sigma^2$` es desconocida, se reemplaza
+por su estimador insesgado `$\sigma^2_e$`, y por tanto los estadísticos
 asociados dejarán de seguir una distribución normal para seguir una
-distribución t-student con $n-2$ grados de libertad.
+distribución t-student con `$n-2$` grados de libertad.
 
-Entonces, para realizar el contraste de hipótesis $\beta_0$ y
-$\beta_1$ de la forma
+Entonces, para realizar el contraste de hipótesis `$\beta_0$` y
+`$\beta_1$` de la forma
 
 $$\begin{align*}H_0: \beta_0 = \beta_{00} \quad & \quad H_0: \beta_1 = \beta_{10}\\  H_1: \beta_0 \neq \beta_{00} \quad & \quad H_1: \beta_1 \neq \beta_{10}\\\end{align*}$$
 
@@ -39,25 +39,25 @@ región crítica la cual está dada por
 
 $$\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-2} \quad ó \quad t > t_{\frac{\alpha}{2}, n-2}\}\end{align*}$$
 
-en donde si $t_{\hat{\beta}_{i}} \in RC$ para $i=0,1$, se rechaza
-$H_0$. Mientras que el P-valor está dado por
+en donde si `$t_{\hat{\beta}_{i}} \in RC$` para `$i=0,1$`, se rechaza
+`$H_0$`. Mientras que el P-valor está dado por
 
 $$\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-2}\geq |t_{\hat{\beta}_i}|) \quad \text{ para } i = 0,1\end{align*}$$
 
 
-en donde si P-valor es menor al nivel de significancia $\alpha$,
-entonces se rechaza $H_0$.
+en donde si P-valor es menor al nivel de significancia `$\alpha$`,
+entonces se rechaza `$H_0$`.
 
 **Nota**
 
-- Usualmente se quiere probar si $\beta_{0}=0$ y $\beta_{1}=0$, ya
+- Usualmente se quiere probar si `$\beta_{0}=0$` y `$\beta_{1}=0$`, ya
   que se quiere probar la significancia de los parámetros.
-- Observe que rechazar $H_0:\beta_{1}=0$, en la prueba de
+- Observe que rechazar `$H_0:\beta_{1}=0$`, en la prueba de
   significancia, permite afirmar que la relación entre las variables
-  $Y$ y $X$ se pueden aproximar mediante una linea recta.
-- Si no se rechaza $H_0:\beta_{1}=0$, significa que independiente del
-  valor de $X$, el valor de $Y$ será el mismo, y por tanto, no habrá
-  una relación lineal entre $Y$ y $X$.
+  `$Y$` y `$X$` se pueden aproximar mediante una linea recta.
+- Si no se rechaza `$H_0:\beta_{1}=0$`, significa que independiente del
+  valor de `$X$`, el valor de `$Y$` será el mismo, y por tanto, no habrá
+  una relación lineal entre `$Y$` y `$X$`.
 - Estas pruebas son las que reporta la función <tt>summary()</tt> de
   <tt>R</tt> en las columnas <tt>t value</tt> y <tt>Pr(&gt;|t|)</tt>
   para cada uno de los coeficientes del modelo ajustado mediante la
@@ -65,23 +65,23 @@ entonces se rechaza $H_0$.
 
 ### Intervalo de confianza
 
-El intervalo de confianza para $\beta_0$ está dado por
+El intervalo de confianza para `$\beta_0$` está dado por
 
 $$\begin{align*}\hat{\beta}_0 - t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}} < \beta_0 < \hat{\beta}_0 + t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}}\end{align*}$$
 
 
-para el caso de $\beta_1$, el intervalo de confianza está dado por
+para el caso de `$\beta_1$`, el intervalo de confianza está dado por
 
 $$\begin{align*}\hat{\beta}_1 - t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}} < \beta_1 < \hat{\beta}_1 + t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}}\end{align*}$$
 
 
 **Nota**
 
-- Si el Intervalo de Confianza de $\beta_1$ no contiene el cero, se
-  puede afirmar que la variable $Y$ está relacionada linealmente con
-  la variable independiente $X$. En caso contrario, no existe relación
-  lineal entre $X$ y $Y$, es decir, la variable $X$ no es adecuada
-  para predecir el comportamiento de $Y$.
+- Si el Intervalo de Confianza de `$\beta_1$` no contiene el cero, se
+  puede afirmar que la variable `$Y$` está relacionada linealmente con
+  la variable independiente `$X$`. En caso contrario, no existe relación
+  lineal entre `$X$` y `$Y$`, es decir, la variable `$X$` no es adecuada
+  para predecir el comportamiento de `$Y$`.
 - En <tt>R</tt>, los intervalos de confianza para todos los coeficientes
   del modelo pueden obtenerse mediante la función <tt>confint(modelo,
   level = 0.95)</tt>.
@@ -104,24 +104,24 @@ análisis de varianza, y la cual será estudiada en la siguiente clase.
 Recordando de la
 <a href="https://jiperezga.github.io/EstadisticaII/EstIIClase18.html" target="\_blank">Clase
 18</a> que si
-$\boldsymbol{\varepsilon} \sim N_n(\mathbf{0},\sigma^2\mathbf{I}_n)$,
+`$\boldsymbol{\varepsilon} \sim N_n(\mathbf{0},\sigma^2\mathbf{I}_n)$`,
 entonces
-$\hat{\boldsymbol{\beta}} \sim N_{k+1}(\boldsymbol{\beta}, \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1})$,
+`$\hat{\boldsymbol{\beta}} \sim N_{k+1}(\boldsymbol{\beta}, \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1})$`,
 se tendrá que cada coeficiente estimado de forma individual se
 distribuye
 
 $$\begin{align*}\hat{\beta}_j \sim N\left(\beta_j, \sigma^2 C_{jj}\right) \quad \text{ para } j = 0,1,\ldots,k\end{align*}$$
 
 
-donde $C_{jj}$ es el j-ésimo elemento de la diagonal de la matriz
-$(\mathbf{X}^\top\mathbf{X})^{-1}$. Nuevamente, dado que la varianza
-$\sigma^2$ es desconocida, se reemplaza por su estimador insesgado
-$\hat{\sigma}^2_e = \frac{SCE}{n-k-1}$, y los estadísticos asociados
-seguirán una distribución t-student, ahora con $n-k-1$ grados de
+donde `$C_{jj}$` es el j-ésimo elemento de la diagonal de la matriz
+`$(\mathbf{X}^\top\mathbf{X})^{-1}$`. Nuevamente, dado que la varianza
+`$\sigma^2$` es desconocida, se reemplaza por su estimador insesgado
+`$\hat{\sigma}^2_e = \frac{SCE}{n-k-1}$`, y los estadísticos asociados
+seguirán una distribución t-student, ahora con `$n-k-1$` grados de
 libertad.
 
 Entonces, para realizar el contraste de hipótesis sobre el coeficiente
-$\beta_j$ de la forma
+`$\beta_j$` de la forma
 
 $$\begin{align*}H_0&: \beta_j = \beta_{j0}\\  H_1&: \beta_j \neq \beta_{j0}\end{align*}$$
 
@@ -137,27 +137,27 @@ región crítica la cual está dada por
 $$\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-k-1} \quad ó \quad t > t_{\frac{\alpha}{2}, n-k-1}\}\end{align*}$$
 
 
-en donde si $t_{\hat{\beta}_{j}} \in RC$, se rechaza $H_0$. Mientras
+en donde si `$t_{\hat{\beta}_{j}} \in RC$`, se rechaza `$H_0$`. Mientras
 que el P-valor está dado por
 
 $$\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-k-1}\geq |t_{\hat{\beta}_j}|)\end{align*}$$
 
 
-en donde si P-valor es menor al nivel de significancia $\alpha$,
-entonces se rechaza $H_0$.
+en donde si P-valor es menor al nivel de significancia `$\alpha$`,
+entonces se rechaza `$H_0$`.
 
 **Nota**
 
-- Usualmente se quiere probar si $\beta_{j}=0$, es decir, la
-  significancia individual del parámetro. Rechazar $H_0:\beta_{j}=0$
-  permite afirmar que la variable $X_j$ aporta significativamente a la
-  explicación de $Y$, **dado que las demás variables ya se encuentran
+- Usualmente se quiere probar si `$\beta_{j}=0$`, es decir, la
+  significancia individual del parámetro. Rechazar `$H_0:\beta_{j}=0$`
+  permite afirmar que la variable `$X_j$` aporta significativamente a la
+  explicación de `$Y$`, **dado que las demás variables ya se encuentran
   incluidas en el modelo**.
 - Lo anterior implica que la prueba de significancia individual es una
   **prueba de aporte marginal o parcial**, ya que evalúa la contribución
-  de $X_j$ en presencia de las demás variables explicativas. Por
-  tanto, si no se rechaza $H_0:\beta_{j}=0$, no significa
-  necesariamente que $X_j$ no esté relacionada con $Y$, sino que
+  de `$X_j$` en presencia de las demás variables explicativas. Por
+  tanto, si no se rechaza `$H_0:\beta_{j}=0$`, no significa
+  necesariamente que `$X_j$` no esté relacionada con `$Y$`, sino que
   dicha variable no aporta información adicional una vez las demás
   variables se encuentran en el modelo.
 - Estas pruebas son las que reporta la función <tt>summary()</tt> de
@@ -168,22 +168,22 @@ entonces se rechaza $H_0$.
 ### Intervalos de confianza
 
 De forma análoga al caso de la regresión lineal simple, y empleando la
-distribución t-student con $n-k-1$ grados de libertad, el intervalo de
-confianza del $(1-\alpha)100\%$ para el coeficiente $\beta_j$ está
+distribución t-student con `$n-k-1$` grados de libertad, el intervalo de
+confianza del `$(1-\alpha)100\%$` para el coeficiente `$\beta_j$` está
 dado por
 
 $$\begin{align*}\hat{\beta}_j - t_{\frac{\alpha}{2}, n-k-1} \sqrt{\hat{\sigma}^2_{e} C_{jj}} < \beta_j < \hat{\beta}_j + t_{\frac{\alpha}{2}, n-k-1} \sqrt{\hat{\sigma}^2_{e} C_{jj}} \quad \text{ para } j = 0,1,\ldots,k\end{align*}$$
 
 
-donde $C_{jj}$ es el j-ésimo elemento de la diagonal de la matriz
-$(\mathbf{X}^\top\mathbf{X})^{-1}$.
+donde `$C_{jj}$` es el j-ésimo elemento de la diagonal de la matriz
+`$(\mathbf{X}^\top\mathbf{X})^{-1}$`.
 
 **Nota**
 
-- Si el intervalo de confianza de $\beta_j$ no contiene el cero, se
-  puede afirmar que la variable $X_j$ aporta significativamente a la
-  explicación de $Y$, dado que las demás variables se encuentran en el
-  modelo. En caso contrario, la variable $X_j$ no aporta información
+- Si el intervalo de confianza de `$\beta_j$` no contiene el cero, se
+  puede afirmar que la variable `$X_j$` aporta significativamente a la
+  explicación de `$Y$`, dado que las demás variables se encuentran en el
+  modelo. En caso contrario, la variable `$X_j$` no aporta información
   adicional en presencia de las demás variables explicativas.
 - En <tt>R</tt>, los intervalos de confianza para todos los coeficientes
   del modelo pueden obtenerse mediante la función <tt>confint(modelo,
@@ -246,7 +246,7 @@ Esta prueba puede realizarse en <tt>R</tt> mediante la función
 El segundo supuesto que se debe considerar es que los términos de error
 (residuales) de la regresión se distribuyan normalmente, debido a que si
 éstos se distribuyen normalmente, se tendrá que la variable respuesta
-$Y$ también se distribuya normalmente, habilitando que las ecuaciones
+`$Y$` también se distribuya normalmente, habilitando que las ecuaciones
 del cálculo de los estimadores sean correctas.
 
 Para probar la normalidad del los residuales es cuestión de usar alguna
@@ -292,7 +292,7 @@ Esta prueba puede realizarse en <tt>R</tt> con la función
 
 El cuarto supuesto del modelo de regresión lineal lo que busca es
 verificar si los residuales están incorrelacionados, y por tanto, se
-tendrá que la covarianza de los términos de error será igual a $0$.
+tendrá que la covarianza de los términos de error será igual a `$0$`.
 
 Para probar este supuesto, es posible plantear una gráfica entre los
 residuos contra el orden de las observaciones, para verificar que si los
@@ -325,7 +325,7 @@ conocido como **multicolinealidad**.
 
 La presencia de multicolinealidad, aunque no afecta el insesgamiento de
 los estimadores, infla las varianzas
-$Var(\hat{\beta}_j)=\sigma^2 C_{jj}$ de los coeficientes estimados,
+`$Var(\hat{\beta}_j)=\sigma^2 C_{jj}$` de los coeficientes estimados,
 generando estimaciones inestables, intervalos de confianza muy amplios y
 pruebas de significancia individual poco confiables.
 
@@ -336,22 +336,22 @@ cada variable explicativa como
 $$\begin{align*}VIF_j = \frac{1}{1-R^2_j} \quad \text{ para } j = 1,2,\ldots,k\end{align*}$$
 
 
-donde $R^2_j$ es el coeficiente de determinación obtenido al ajustar
-una regresión de la variable $X_j$ en función de las demás variables
+donde `$R^2_j$` es el coeficiente de determinación obtenido al ajustar
+una regresión de la variable `$X_j$` en función de las demás variables
 explicativas del modelo.
 
 **Umbrales de Decisión**
 
-- $VIF = 1$: Ausencia total de colinealidad. Las variables
+- `$VIF = 1$`: Ausencia total de colinealidad. Las variables
   independientes no están correlacionadas en absoluto. Es el escenario
   ideal.
-- $1 < VIF < 5$: Multicolinealidad baja/moderada. Es el rango normal y
+- `$1 < VIF < 5$`: Multicolinealidad baja/moderada. Es el rango normal y
   aceptable. No afecta la confiabilidad de los resultados de tu
   regresión.
-- $VIF ≥ 5$: Multicolinealidad preocupante. Sugiere que los errores
+- `$VIF ≥ 5$`: Multicolinealidad preocupante. Sugiere que los errores
   estándar están empezando a inflarse y los coeficientes se vuelven
   inestables.
-- $VIF ≥ 10$: Multicolinealidad grave. Indica que la colinealidad está
+- `$VIF ≥ 10$`: Multicolinealidad grave. Indica que la colinealidad está
   sesgando severamente el modelo, inflando los errores estándar y
   ocultando variables que podrían ser significativas.
 

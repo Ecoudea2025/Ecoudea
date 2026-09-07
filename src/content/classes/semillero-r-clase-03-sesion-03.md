@@ -501,10 +501,10 @@ función <tt>function</tt>, la cual posee una estructura de la forma
 ```
 
 Una aspecto importante de las funciones es que éstas pueden dividirse en
-$3$ tipos de elementos diferentes. El primero, está asociado a los
+`$3$` tipos de elementos diferentes. El primero, está asociado a los
 **argumentos** que se le dan a la función, éstos pueden ser múltiples y
 deben separarse por coma unos de otros. Adicionalmente, existe un
-argumento en particular, dado por tres puntos consecutivos “$\ldots$”,
+argumento en particular, dado por tres puntos consecutivos “`$\ldots$`”,
 el cual permite pasar un número variable de argumentos de una función a
 otra.
 

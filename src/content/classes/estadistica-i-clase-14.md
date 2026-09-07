@@ -13,17 +13,17 @@ Distribución de probabilidad conjunta
 
 ### Distribución de probabilidad conjunta discreta
 
-Se dice que la función $p(x,y)$, es una función de masa de
-probabilidad conjunta de las variables aleatorias discretas $X, Y$, si
+Se dice que la función `$p(x,y)$`, es una función de masa de
+probabilidad conjunta de las variables aleatorias discretas `$X, Y$`, si
 se cumple que
 
-1.  $p(x,y)\geq0$ para todo $x,y \in$ al rango de $X,Y$,
+1.  `$p(x,y)\geq0$` para todo `$x,y \in$` al rango de `$X,Y$`,
     respectivamente.
 
-2.  $\sum_x\sum_y p(x,y)=1$
+2.  `$\sum_x\sum_y p(x,y)=1$`
 
-3.  ${\sum\sum}_{(x,y)\in A}p(x,y) = \mathbb{P}[(X,Y)\in A]$ con
-    $A\in$ al rango de $X,Y$.
+3.  `${\sum\sum}_{(x,y)\in A}p(x,y) = \mathbb{P}[(X,Y)\in A]$` con
+    `$A\in$` al rango de `$X,Y$`.
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -740,16 +740,16 @@ del $16.67\%$.
 
 ### Distribución de probabilidad conjunta continua
 
-Se dice que la función $f(x,y)$, es una función de densidad de
-probabilidad conjunta de las variables aleatorias discretas $X, Y$, si
+Se dice que la función `$f(x,y)$`, es una función de densidad de
+probabilidad conjunta de las variables aleatorias discretas `$X, Y$`, si
 se cumple que
 
-1.  $f(x,y)\geq0$ para todo $x,y \in \mathbb{R}$.
+1.  `$f(x,y)\geq0$` para todo `$x,y \in \mathbb{R}$`.
 
-2.  $\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} f(x,y) dxdy=1$
+2.  `$\int_{-\infty}^{\infty}\int_{-\infty}^{\infty} f(x,y) dxdy=1$`
 
-3.  $\iint_{(x,y)\in A}f(x,y) = \mathbb{P}[(X,Y)\in A]$ con $A$ un
-    intervalo de valores $\in \mathbb{R}$
+3.  `$\iint_{(x,y)\in A}f(x,y) = \mathbb{P}[(X,Y)\in A]$` con `$A$` un
+    intervalo de valores `$\in \mathbb{R}$`
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -768,8 +768,7 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{k}{8}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$
-siendo $X$ la variable aleatoria que representa el
+\end{align*}$$ siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. A partir de dicha
 función
@@ -844,8 +843,7 @@ $$\begin{align*}
   =& \frac{10.439}{252}(0.7^2 - 0^2) \\
   =& \frac{10.439}{252}(0.49) \\
   =& 0.0203 \\
-\end{align*}$$
-En consecuencia se tendrá que la probabilidad de que el
+\end{align*}$$ En consecuencia se tendrá que la probabilidad de que el
 tiempo promedio libre que tiene el profesor sea a lo más de $0.7$
 horas, y el tiempo promedio libre que tienen los estudiantes se
 encuentre entre $1.2$ y $2.3$ horas, es del $2.03\%$.

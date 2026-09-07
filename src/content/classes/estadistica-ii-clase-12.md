@@ -8,16 +8,16 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Intervalos de confianza para diferencia de medias $\mu_1 - \mu_2$
+## Intervalos de confianza para diferencia de medias `$\mu_1 - \mu_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$ con medias desconocidas
-$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$` con medias desconocidas
+`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes intervalos de confianza para la diferencia de medias
-$\mu_1 - \mu_2$.
+`$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Intervalos2.jpg)
 
@@ -164,8 +164,7 @@ $$\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
      &= \frac{(22-1)8^2 + (28-1)6.2^2}{22 + 28 - 2} \\
      &= 49.6225
-\end{align*}$$
-y por tanto $$\begin{align*}
+\end{align*}$$ y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{49.6225} \\
    &= 7.044324

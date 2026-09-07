@@ -21,12 +21,12 @@ rápidamente la estructura de los mismos.
 
 Estas medidas tienen por objetivo buscar valores que muestren el lugar
 en el cual se encuentra el centro de un conjunto de observaciones. Si se
-define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
+define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
 observaciones, entonces
 
 #### Media
 
-Es el promedio numérico de las $n$ observaciones.
+Es el promedio numérico de las `$n$` observaciones.
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
 
@@ -83,7 +83,7 @@ observaciones de forma ascendente.
 
 $$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
 
-donde $x_{\left[j\right]}$ representa la $j$-ésima observación
+donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
 ordenada. En <tt>R</tt> puede calcularse la mediana de un conjunto de
 observaciones mediante la función `median(datos)`.
 
@@ -200,8 +200,8 @@ se repite, en miles de pesos sin incluir el garaje es de $1000$.
 
 Es una medida similar a la media, con la diferencia de que, en este
 caso, se ordenan las observaciones de forma ascendente, y luego se
-recortan un número $r$ observaciones superiores e inferiores, tal que
-$r=n\times trim$, $trim$ un valor porcentual entre 0 y 0.5
+recortan un número `$r$` observaciones superiores e inferiores, tal que
+`$r=n\times trim$`, `$trim$` un valor porcentual entre 0 y 0.5
 
 
 $$\begin{align*}\bar{X}_{trim}=\frac{1}{n-2r}\sum_{i={r+1}}^{n-r}x_i\end{align*}$$
@@ -259,15 +259,15 @@ $1336$.
 Estas medidas tienen por objetivo dividir un conjunto de datos ordenado
 en partes iguales, entendidas estas como intervalos que contienen la
 misma proporción de observaciones. Si se define
-$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$, como un conjunto de $n$
+`$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$`, como un conjunto de `$n$`
 observaciones ordenadas en forma creciente, entonces
 
 #### Cuartil
 
-Son los **tres valores** $(j=1,2,3)$, que dividen a un conjunto de
+Son los **tres valores** `$(j=1,2,3)$`, que dividen a un conjunto de
 datos ordenados en **cuatro partes** iguales. Para ello, es necesario
-calcular inicialmente una variable $h_j$ de posicionamiento dado el
-cuartil $j$ de interés, tal que
+calcular inicialmente una variable `$h_j$` de posicionamiento dado el
+cuartil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}$$
 
@@ -278,8 +278,8 @@ interés
 $$\begin{align*}C_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Cuartil
@@ -336,10 +336,10 @@ $1900$.
 
 #### Quintil
 
-Son los **cuatro valores** $(j=1,2,3,4)$, que dividen a un conjunto de
+Son los **cuatro valores** `$(j=1,2,3,4)$`, que dividen a un conjunto de
 datos ordenados en **cinco partes** iguales. Para ello, es necesario
-calcular inicialmente una variable $h_j$ de posicionamiento dado el
-quintil $j$ de interés, tal que
+calcular inicialmente una variable `$h_j$` de posicionamiento dado el
+quintil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}$$
 
@@ -350,8 +350,8 @@ interés
 $$\begin{align*}Q_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Quintil
@@ -408,10 +408,10 @@ $1433$ y $2110.6$.
 
 #### Decil
 
-Son los **nueve valores** $(j=1,2,\ldots,9)$, que dividen a un
+Son los **nueve valores** `$(j=1,2,\ldots,9)$`, que dividen a un
 conjunto de datos ordenados en **diez partes** iguales. Para ello, es
-necesario calcular inicialmente una variable $h_j$ de posicionamiento
-dado el decil $j$ de interés, tal que
+necesario calcular inicialmente una variable `$h_j$` de posicionamiento
+dado el decil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}$$
 
@@ -422,8 +422,8 @@ interés
 $$\begin{align*}D_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Decil
@@ -480,10 +480,10 @@ $1000$, $1200$, $1433$, $1748$, $2110.6$, $2844$.
 
 #### Percentil
 
-Son los **noventa y nueve valores** $(j=1,2,\ldots,99)$, que dividen a
+Son los **noventa y nueve valores** `$(j=1,2,\ldots,99)$`, que dividen a
 un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
-necesario calcular inicialmente una variable $h_j$ de posicionamiento
-dado el percentil $j$ de interés, tal que
+necesario calcular inicialmente una variable `$h_j$` de posicionamiento
+dado el percentil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
 
@@ -494,8 +494,8 @@ interés
 $$\begin{align*}P_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Percentil
@@ -570,7 +570,7 @@ venta en metros cuadrados en cien partes.
 Estas medidas tienen por objetivo determinar la dispersión o
 variabilidad que posee un conjunto de observaciones, en donde, entre
 mayor sean estas medidas, mayor será el grado de dispersión de los
-datos. Si se define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
+datos. Si se define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
 observaciones, entonces
 
 #### Varianza
@@ -691,7 +691,7 @@ $$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
 que calcule el coeficiente de variación de un conjunto de observaciones,
 pero éste es fácil de calcular mediante el cociente entre la desviación
-estándar $S$ y el valor absoluto de la media $\bar{X}$, o creando
+estándar `$S$` y el valor absoluto de la media `$\bar{X}$`, o creando
 una función que realice el cálculo, de la forma
 
 ``` r
@@ -817,8 +817,8 @@ garaje es del $16552$.
 
 #### Rango intercuartílico
 
-Es la distancia o amplitud que hay entre el tercer cuartil $C_3$ y el
-primer cuartil $C_1$, de un conjunto de datos. Éste muestra la
+Es la distancia o amplitud que hay entre el tercer cuartil `$C_3$` y el
+primer cuartil `$C_1$`, de un conjunto de datos. Éste muestra la
 amplitud del 50% de los datos centrales de un conjunto de observaciones.
 Esta medida puede ser tomada como una medida de variabilidad para la
 mediana. 
@@ -878,11 +878,11 @@ a su mediana
 $$\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}$$
 
 
-donde $b$ es una constante definida como $b=1/C_{3}$, con $C_{3}$
+donde `$b$` es una constante definida como `$b=1/C_{3}$`, con `$C_{3}$`
 el valor del tercer cuartil de la distribución de interés (no el
-obtenido de los datos) y con $Me(|X_i-\tilde{X}|)$ la mediana del
-valor absoluto de la diferencia $X_i-\tilde{X}$. Además, si la
-distribución es normal, entonces $b\approx1.4826$.
+obtenido de los datos) y con `$Me(|X_i-\tilde{X}|)$` la mediana del
+valor absoluto de la diferencia `$X_i-\tilde{X}$`. Además, si la
+distribución es normal, entonces `$b\approx1.4826$`.
 
 En <tt>R</tt> puede calcularse la desviación absoluta mediana de un
 conjunto de observaciones, asumiendo que la distribución es normal,
@@ -944,15 +944,15 @@ uniformemente alrededor de las medidas de tendencia central.
 
 $$\begin{align*}\gamma_1 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
 
-El signo de $\gamma_1$ indica la dirección de la asimetría.
+El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
--   $\gamma_1>0$ indica asimetría positiva, es decir, las
+-   `$\gamma_1>0$` indica asimetría positiva, es decir, las
     observaciones se reúnen más en la parte izquierda de las medidas de
     tendencia central.
--   $\gamma_1<0$ indica asimetría negativa, es decir, las
+-   `$\gamma_1<0$` indica asimetría negativa, es decir, las
     observaciones se reúnen más en la parte derecha de las medidas de
     tendencia central.
--   $\gamma_1\sim0$ indica simetría, es decir, existe aproximadamente
+-   `$\gamma_1\sim0$` indica simetría, es decir, existe aproximadamente
     la misma cantidad de observaciones a los dos lados de las medidas de
     tendencia central.
 
@@ -1022,13 +1022,13 @@ datos
 $$\begin{align*}\gamma_2 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-3 \quad \quad -2<\gamma_2<\infty\end{align*}$$
 
 
-El signo de $\gamma_2$ indica el nivel de concentración.
+El signo de `$\gamma_2$` indica el nivel de concentración.
 
--   $\gamma_2>0$ indica leptocurtosis, es decir, la forma de los datos
+-   `$\gamma_2>0$` indica leptocurtosis, es decir, la forma de los datos
     es más en punta y posee colas menos anchas.
--   $\gamma_2<0$ indica platicurtosis, es decir, la forma de los datos
+-   `$\gamma_2<0$` indica platicurtosis, es decir, la forma de los datos
     es más plana y posee colas más anchas.
--   $\gamma_2\sim0$ indica mesocurtosis, es decir, tanto la punta como
+-   `$\gamma_2\sim0$` indica mesocurtosis, es decir, tanto la punta como
     las colas son similares a la distribución normal.
 
 <h4 align="center">
@@ -1095,8 +1095,8 @@ tiene forma punteaguda.
 Estas medidas tienen por objetivo estimar la magnitud con la que dos
 fenómenos se relacionan, en donde, entre mayor sean estas medidas, mayor
 será el grado de asociación que tendrán las variables. Si se define
-$x_1, x_2, \ldots, x_n$ y $y_1, y_2, \ldots, y_n$ como dos conjuntos
-de $n$ observaciones, entonces
+`$x_1, x_2, \ldots, x_n$` y `$y_1, y_2, \ldots, y_n$` como dos conjuntos
+de `$n$` observaciones, entonces
 
 #### Covarianza
 
@@ -1106,15 +1106,15 @@ grado de variación conjunta de dos variables respecto a sus medias
 $$\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}$$
 
 
-El signo de $S_{xy}$ indica el tipo de dependencia lineal que hay
+El signo de `$S_{xy}$` indica el tipo de dependencia lineal que hay
 entre las variables.
 
--   $S_{xy} > 0$ indica que hay dependencia lineal positiva entre las
+-   `$S_{xy} > 0$` indica que hay dependencia lineal positiva entre las
     variables, es decir, cuando aumenta una variable, la otra también
     aumenta.
--   $S_{xy} < 0$ indica que hay dependencia lineal negativa entre las
+-   `$S_{xy} < 0$` indica que hay dependencia lineal negativa entre las
     variables, es decir, cuando aumenta una variable, la otra disminuye.
--   $S_{xy} \approx 0$ indica que no existencia dependencia lineal
+-   `$S_{xy} \approx 0$` indica que no existencia dependencia lineal
     entre las dos variables.
 
 En <tt>R</tt> puede calcularse la covarianza de dos conjunto de
@@ -1172,37 +1172,37 @@ entre -1 y 1
 $$\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}$$
 
 
-El valor de $\rho_{xy}$ indica el tipo y fuerza de la dependencia
+El valor de `$\rho_{xy}$` indica el tipo y fuerza de la dependencia
 lineal que hay entre las variables
 
--   $\rho_{xy} = 1$ indica que existe dependencia lineal positiva
+-   `$\rho_{xy} = 1$` indica que existe dependencia lineal positiva
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra aumenta proporcionalmente en la misma cantidad. Este aumento
-    es de la forma $Y = a + bX$, siendo $a$ y $b$ dos constantes,
-    con $b>0$.
--   $\rho_{xy} = -1$ indica que existe dependencia lineal negativa
+    es de la forma `$Y = a + bX$`, siendo `$a$` y `$b$` dos constantes,
+    con `$b>0$`.
+-   `$\rho_{xy} = -1$` indica que existe dependencia lineal negativa
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra disminuye proporcionalmente en la misma cantidad. Este
-    aumento es de la forma $Y = a + bX$ con $a y b$ dos constantes,
-    y $b<0$.
--   $\rho_{xy} = 0$ No existe dependencia lineal entre las variables.
+    aumento es de la forma `$Y = a + bX$` con `$a y b$` dos constantes,
+    y `$b<0$`.
+-   `$\rho_{xy} = 0$` No existe dependencia lineal entre las variables.
 
 Además, se tendrá que si
 
--   $0.5 < \rho_{xy} \leq 1$ fuerte correlación positiva entre $X$ y
-    $Y$.
--   $0.3 < \rho_{xy} \leq 0.5$ moderada correlación positiva entre
-    $X$ y $Y$.
--   $0.1 < \rho_{xy} \leq 0.3$ débil correlación positiva entre $X$
-    y $Y$.
--   $-0.1 \leq \rho_{xy} \leq 0.1$ débil o ninguna correlación entre
-    $X$ y $Y$.
--   $-0.3 \leq \rho_{xy} < -0.1$ débil correlación negativa entre
-    $X$ y $Y$.
--   $-0.5 \leq \rho_{xy} < -0.3$ moderada correlación negativa entre
-    $X$ y $Y$.
--   $-1 \leq \rho_{xy} < -0.5$ fuerte correlación negativa entre $X$
-    y $Y$.
+-   `$0.5 < \rho_{xy} \leq 1$` fuerte correlación positiva entre `$X$` y
+    `$Y$`.
+-   `$0.3 < \rho_{xy} \leq 0.5$` moderada correlación positiva entre
+    `$X$` y `$Y$`.
+-   `$0.1 < \rho_{xy} \leq 0.3$` débil correlación positiva entre `$X$`
+    y `$Y$`.
+-   `$-0.1 \leq \rho_{xy} \leq 0.1$` débil o ninguna correlación entre
+    `$X$` y `$Y$`.
+-   `$-0.3 \leq \rho_{xy} < -0.1$` débil correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-0.5 \leq \rho_{xy} < -0.3$` moderada correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-1 \leq \rho_{xy} < -0.5$` fuerte correlación negativa entre `$X$`
+    y `$Y$`.
 
 En <tt>R</tt> puede calcularse la correlación de dos conjunto de
 observaciones mediante la función `cor(datos1, datos2)`.

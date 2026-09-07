@@ -27,7 +27,7 @@ comportamiento de la serie tome un comportamiento repetitivo a través de
 los años.
 
 La periodicidad de la componente estacional es usualmente denotada por
-la letra $s$, y define la longitud o número de periodos en los cuales
+la letra `$s$`, y define la longitud o número de periodos en los cuales
 se observa que se repite el comportamiento de la serie. Ahora bien, dado
 que la estacionalidad es una señal de que la serie de tiempo no es
 estacionaria, **es necesario eliminar dicha componente con el fin de
@@ -38,25 +38,25 @@ Operador de diferencia estacional
 
 Con tal propósito en mente, la forma más usual de eliminación de la
 estacionalidad de una serie temporal, es mediante **la diferencia de la
-serie temporal con respecto a la serie rezagada $s$ periodos en el
+serie temporal con respecto a la serie rezagada `$s$` periodos en el
 tiempo**. Éste procedimiento es conocido como **diferencia estacional**
 y se define como
 
 $$\begin{align*}\Delta_s Y_t = Y_t - Y_{t-s}\end{align*}$$
 
 
-siendo $\Delta_s = (1-L^s)$. **Note que $\Delta_s \neq \Delta^s$,
-pues $\Delta^s = (1-L)^s$ representa el operador de diferencias
+siendo `$\Delta_s = (1-L^s)$`. **Note que `$\Delta_s \neq \Delta^s$`,
+pues `$\Delta^s = (1-L)^s$` representa el operador de diferencias
 presentado en la** <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_11.html" target="_blank" rel="noopener noreferrer">Clase
 11</a>.
-En general, el operador de diferencias estacionales de periodo $s$ se
+En general, el operador de diferencias estacionales de periodo `$s$` se
 define como 
 $$\begin{align*}\Delta_s^D = (1-L^s)^D\end{align*}$$
 
 
-Siendo $D$ el parámetro que indica el número de diferencias
+Siendo `$D$` el parámetro que indica el número de diferencias
 estacionales. Ahora, al aplicar dicho operador a la serie temporal
-$Y_t$ se tiene que
+`$Y_t$` se tiene que
 
 $$\begin{align*}\Delta_s^D Y_t = (1-L^s)^D Y_t = \sum_{j=0}^D\binom{D}{j}(-1)^jY_{t-js}\end{align*}$$
 
@@ -64,28 +64,28 @@ $$\begin{align*}\Delta_s^D Y_t = (1-L^s)^D Y_t = \sum_{j=0}^D\binom{D}{j}(-1)^jY
 Modelos autorregresivos integrados de media móvil estacionales (SARIMA)
 -----------------------------------------------------------------------
 
-Se dice que una serie de tiempo $\widetilde{Y}_t=Y_t-\mu$ posee una
+Se dice que una serie de tiempo `$\widetilde{Y}_t=Y_t-\mu$` posee una
 estructura SARIMA(p,d,q)(P,D,Q)\[s\] si se cumple que
 
 $$\begin{align*}\Phi_{P} (L^s) \Phi_p (L) \Delta^D_s \Delta^d \widetilde{Y}_t = \Theta_{Q} (L^s) \Theta_q (L)\varepsilon_t\end{align*}$$
 
 
-con $\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$ y donde
+con `$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$` y donde
 
 $$\begin{align*}\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j \\ \Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j\end{align*}$$
 
 
 son los polinomios de rezagos autorregresivos y de medias móviles,
 regulares, respectivamente, **sin raíces comúnes y cada uno con módulo
-mayor a 1**, y $\Delta^d=(1-L)^d$ es el operador de diferencias, con
-$L$ el operador de rezagos. Además,
+mayor a 1**, y `$\Delta^d=(1-L)^d$` es el operador de diferencias, con
+`$L$` el operador de rezagos. Además,
 
 $$\begin{align*}\Phi_{P}(z^s) = 1 - \sum_{j=1}^{P}\phi_{s,j} z^{js} \\ \Theta_{Q}(z^s) = 1 + \sum_{j=1}^{Q}\theta_{s,j} z^{js}\end{align*}$$
 
 
 ambos polinomios de rezagos autorregresivos y de medias móviles,
 estacionales, respectivamente, **sin raíces comunes y con módulo mayor a
-1**, y $\Delta^D_s=(1-L^s)^D$ es el operador de diferencias
+1**, y `$\Delta^D_s=(1-L^s)^D$` es el operador de diferencias
 estacionales.
 
 Además, se podrán derivar varios casos particulares de los modelos
@@ -96,37 +96,37 @@ SARIMA(0,0,0)(P,D,Q)\[s\] = SARIMA(P,D,Q)\[s\], con ecuación
 $$\begin{align*}\Phi_{P} (L^s) \Delta^D_s \widetilde{Y}_t = \Theta_{Q}(L^s) \varepsilon_t\end{align*}$$
 
 
-si $D=0, Q=0$ se tendrá un modelo AR(P)\[s\], donde
+si `$D=0, Q=0$` se tendrá un modelo AR(P)\[s\], donde
 
 $$\begin{align*}\Phi_{P}(L^s) \widetilde{Y}_t & = \varepsilon_t \\ \left(1 - \sum_{j=1}^{P}\phi_{s,j} L^{js}\right) \widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t & = \sum_{j=1}^{P}\phi_{s,j} L^{js} \widetilde{Y}_t + \varepsilon_t \\                                  & = \phi_{1,s}\widetilde{Y}_{t-s} + \phi_{2,s}\widetilde{Y}_{t-2s} + \ldots + \phi_{P,s}\widetilde{Y}_{t-Ps} + \varepsilon_t\end{align*}$$
 
 
 en este caso se tendrá un modelo autorregresivo estacional de orden
-$P$, AR(P)\[s\]. **En este modelo se puede observar que la PACF tendrá
+`$P$`, AR(P)\[s\]. **En este modelo se puede observar que la PACF tendrá
 autocorrelaciones parciales significativas en los rezagos
-$s, 2s, \ldots, Ps$, y una ACF que decae sinusoidalmente o
+`$s, 2s, \ldots, Ps$`, y una ACF que decae sinusoidalmente o
 exponencialmente en sus rezagos estacionales**.
 
-si $P=0, D=0$ se tendrá un modelo MA(Q)\[s\], donde
+si `$P=0, D=0$` se tendrá un modelo MA(Q)\[s\], donde
 
 $$\begin{align*}\widetilde{Y}_t & = \Theta_{Q}(L^s) \varepsilon_t \\ \widetilde{Y}_t & = \sum_{j=1}^{Q}\theta_{s,j} L^{js} \varepsilon_t \\                                  & = \varepsilon_t - \theta_{1,s} \varepsilon_{t-s} - \theta_{2,s} \varepsilon_{t-2s} - \ldots - \theta_{Q,s} \varepsilon_{t-Qs}\end{align*}$$
 
 
 en este caso se tendrá un modelo de media móvil estacional de orden
-$Q$, SMA(Q)\[s\]. **En este modelo se puede observar que la ACF tendrá
+`$Q$`, SMA(Q)\[s\]. **En este modelo se puede observar que la ACF tendrá
 autocorrelaciones parciales significativas en los rezagos
-$s, 2s, \ldots, Qs$, y una PACF que decae sinusoidalmente o
+`$s, 2s, \ldots, Qs$`, y una PACF que decae sinusoidalmente o
 exponencialmente en sus rezagos estacionales**.
 
-Otro de los modelos son aquellos donde $d=D=0$, lo cual genera un
+Otro de los modelos son aquellos donde `$d=D=0$`, lo cual genera un
 modelo ARIMA(p,0,q)(P,0,Q)\[s\] = ARMA(p,q)(P,Q)\[s\] el cual está dado
 por
 
 $$\begin{align*}\Phi_{P} (L^s) \Phi_p (L) \widetilde{Y}_t = \Theta_{Q}(L^s) \Theta_q (L)\varepsilon_t\end{align*}$$
 
-con $\Phi_{P} (z^s)$ y $\Phi_p (z)$ los polinomios de rezago
+con `$\Phi_{P} (z^s)$` y `$\Phi_p (z)$` los polinomios de rezago
 autorregresivo regular y estacional, cada uno **sin raíces unitarias en
-$z$ y $z^s$**, respectivamente.
+`$z$` y `$z^s$`**, respectivamente.
 
 ### Raices unitarias estacionales
 
@@ -144,18 +144,18 @@ permita probar la existencia de raíces unitarias estacionales.
 Para introducir la idea de las pruebas de raíz unitaria estacional,
 recordemos de lo presentado en la <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_11.html" target="_blank" rel="noopener noreferrer">Clase
 11</a>,
-en donde se señala que si $Y_t \sim ARMA(p,q)$ posee una raíz unitaria
-en su polinomio autorregresivo $\Phi_{p}(z)$, entonces se tendrá que
-el polinomio se puede factorizar de la forma $(1-z)\Phi_{p-1}(z)$.
+en donde se señala que si `$Y_t \sim ARMA(p,q)$` posee una raíz unitaria
+en su polinomio autorregresivo `$\Phi_{p}(z)$`, entonces se tendrá que
+el polinomio se puede factorizar de la forma `$(1-z)\Phi_{p-1}(z)$`.
 
-Basado en ésto, se tendrá que si la serie temporal $Y_t\sim ARMA(p,q)$
-es integrada estacional, de periodo $s=2,3,\ldots$, entonces se
-cumplirá que alguna o todas las raíces de $z^s=1$, serán raíces
-unitarias del polinomio autorregresivo $\Phi_{p}(z)$.
+Basado en ésto, se tendrá que si la serie temporal `$Y_t\sim ARMA(p,q)$`
+es integrada estacional, de periodo `$s=2,3,\ldots$`, entonces se
+cumplirá que alguna o todas las raíces de `$z^s=1$`, serán raíces
+unitarias del polinomio autorregresivo `$\Phi_{p}(z)$`.
 
 ### Prueba HEGY
 
-**Con el fin de identificar si una serie temporal $Y_t$ posee raices
+**Con el fin de identificar si una serie temporal `$Y_t$` posee raices
 unitarias estacionales**, se introduce la prueba HEGY, la cual fue
 propuesta por Hylleberg, Engle, Granger, and Yoo
 ([1990](#ref-Hylleberg1990)), como una generalización de la prueba
@@ -187,44 +187,44 @@ considera el siguiente modelo de regresión
 $$\begin{align*}Y_t = \beta_0 + \beta_1 t + \sum_{j=1}^k \left[\alpha_j sin\left(\frac{2\pi jt}{s}\right) + \gamma_j cos\left(\frac{2\pi jt }{s}\right)\right] + \varepsilon_t\end{align*}$$
 
 
-con $k = s/2$ con $s$ par, donde el $j$−ésimo par
-$\left(sin\left(\frac{2\pi jt}{s}\right), cos\left(\frac{2\pi jt }{s}\right)\right)$
-corresponde a la $j$−ésima frecuencia estacional armónica
-$\lambda_j=2\pi j/s$. Se requiere además que $Y_t$ no tenga raíces
+con `$k = s/2$` con `$s$` par, donde el `$j$`−ésimo par
+`$\left(sin\left(\frac{2\pi jt}{s}\right), cos\left(\frac{2\pi jt }{s}\right)\right)$`
+corresponde a la `$j$`−ésima frecuencia estacional armónica
+`$\lambda_j=2\pi j/s$`. Se requiere además que `$Y_t$` no tenga raíces
 unitarias en la frecuencia cero con el fin de distinguir la no
 estacionariedad en las frecuencias estacionales y en la frecuencia cero.
 Pues de existir raíces unitarias en la fracuencia cero, se tendrá que
-$\Delta Y_t = Y_t- Y_{t-1}$ como la variable dependiente.
+`$\Delta Y_t = Y_t- Y_{t-1}$` como la variable dependiente.
 
 Bajo la hipótesis alterna, un patrón estacional cambiante puede conducir
-a la variación en los vectores de coeficientes $\boldsymbol{\alpha}$ y
-$\boldsymbol{\gamma}$ a lo largo del tiempo según una caminata
+a la variación en los vectores de coeficientes `$\boldsymbol{\alpha}$` y
+`$\boldsymbol{\gamma}$` a lo largo del tiempo según una caminata
 aleatoria, es decir,
-$\boldsymbol{\alpha}_t = \boldsymbol{\alpha}_{t-1} + \mathbf{u}_t$ y
-$\boldsymbol{\gamma}_t = \boldsymbol{\gamma}_{t-1} + \mathbf{v}_t$,
-donde $\mathbf{u}_t$ y $\mathbf{v}_t$ son vectores aleatorios *iid*
-de media cero e independientes de $\varepsilon_t$. Para probar la
+`$\boldsymbol{\alpha}_t = \boldsymbol{\alpha}_{t-1} + \mathbf{u}_t$` y
+`$\boldsymbol{\gamma}_t = \boldsymbol{\gamma}_{t-1} + \mathbf{v}_t$`,
+donde `$\mathbf{u}_t$` y `$\mathbf{v}_t$` son vectores aleatorios *iid*
+de media cero e independientes de `$\varepsilon_t$`. Para probar la
 estabilidad de los parámetros estacionales se prueba que las
-autocovarianzas de $\mathbf{u}_t$ y $\mathbf{v}_t$, respectivamente
+autocovarianzas de `$\mathbf{u}_t$` y `$\mathbf{v}_t$`, respectivamente
 es cero mientras que bajo la hipótesis alterna, en cada caso, es mayor
 que cero, o equivalentemente
 
 $$\begin{align*}H_0: \boldsymbol{\alpha}_t = \boldsymbol{\alpha} \quad \text{vs} \quad  H_1: \boldsymbol{\alpha}_t = \boldsymbol{\alpha}_{t-1} + \mathbf{u}_t\\ H_0: \boldsymbol{\gamma}_t = \boldsymbol{\gamma} \quad \text{vs} \quad  H_1: \boldsymbol{\gamma}_t = \boldsymbol{\gamma}_{t-1} + \mathbf{v}_t\end{align*}$$
 
 
-El estadístico de la prueba denominado $L$ sugerido por Canova y
+El estadístico de la prueba denominado `$L$` sugerido por Canova y
 Hansen no tiene una distribución estándar (como la t-Student, la normal
-estándar, la F-Fisher) pero tiene $p$ grados de libertad, donde $p$
+estándar, la F-Fisher) pero tiene `$p$` grados de libertad, donde `$p$`
 se deriva del número posible de raíces unitarias.
 
 La prueba Canova-Hansen puede realizarse en <tt>R</tt>, mediante la
 función `ch.test()` de la librería `uroot`. Para aplicar el test
 Canova-Hansen **es necesario eliminar** la tendencia de la serie en caso
 de existir, lo cual puede hacerse eliminando la componente de tendencia
-estimada $T_t$ mediante las funciones `stl()` o `decompose()`, vistas
+estimada `$T_t$` mediante las funciones `stl()` o `decompose()`, vistas
 en la <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_01.html" target="_blank" rel="noopener noreferrer">Clase
 01</a>
-y aplicamos el test sobre $W_t = Y_t − T_t = S_t + \varepsilon_t$, con
+y aplicamos el test sobre `$W_t = Y_t − T_t = S_t + \varepsilon_t$`, con
 los argumentos `lag1=FALSE`, `pvalue = "raw"`.
 
 Alternativamente, puede observarse el número de diferencias estacionales
@@ -272,8 +272,8 @@ $$\begin{align*}H_0: \beta_2 = 0 \quad \text{vs} \quad H_1: \beta_2 < 0\end{alig
 
 La prueba OCSB puede realizarse en <tt>R</tt>, mediante la función
 `ocsb.test()` de la librería `forecast`, y cálcula solamente el
-estadístico de prueba asociado al parámetro $\beta_2$, junto al valor
-crítico para el nivel de significación de $5\%$. En donde, **si el
+estadístico de prueba asociado al parámetro `$\beta_2$`, junto al valor
+crítico para el nivel de significación de `$5\%$`. En donde, **si el
 estadísitico de prueba cae por debajo del valor crítico** se rechaza la
 hipótesis nula a favor de alguna de sus alternativas.
 

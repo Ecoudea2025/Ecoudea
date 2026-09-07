@@ -211,9 +211,9 @@ deben tenerse en cuenta para la realización de encuestas:
         tiene igual oportunidad de ser seleccionado.
         -   La selección de la muestra es objetiva y el error muestral
             puede ser medido.
-        -   Toma una muestra de tamaño $n$ de una población de tamaño
-            $N$.
-        -   Cada elemento tiene una probabilidad $n/N$ de entrar en la
+        -   Toma una muestra de tamaño `$n$` de una población de tamaño
+            `$N$`.
+        -   Cada elemento tiene una probabilidad `$n/N$` de entrar en la
             muestra.
     -   **Muestreo sistemático:** Los elementos seleccionados en una
         manera ordenada.

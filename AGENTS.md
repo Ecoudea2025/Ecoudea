@@ -33,7 +33,7 @@ Guidelines:
 
 - **One class = one file.** Editing a class never touches other files → small, reviewable commits.
 - **Never edit `public/assets/` blindly.** Images there are referenced by name from Markdown; use `tools/optimize-images.ps1` for optimization (writes to a separate folder, never overwrites).
-- **Frontmatter of classes:** `title`, `course` (course id), `order` (sequential), `classType` (`clase`|`practica`|`presentacion`|`guia`), optional `description`, `tags`, `math` (`true` if LaTeX — controls KaTeX CSS; rendering happens at build time).
+- **Frontmatter of classes:** `title`, `course` (course id), `order` (sequential), `classType` (`clase`|`practica`|`presentacion`|`guia`), optional `description`, `tags`, `math` (`true` if LaTeX — controls KaTeX loading).
 - **New course:** add `src/content/courses/<id>.md` + classes referencing `course: <id>`.
 
 ## Commit Convention

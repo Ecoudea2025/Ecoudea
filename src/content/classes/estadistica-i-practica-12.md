@@ -12,44 +12,44 @@ Lista de ejercicios
 -------------------
 
 1.  Suponga que el número de entregas que realiza un camión de
-    Servientrega en $1$ hora posee una función de masa de probabilidad
+    Servientrega en `$1$` hora posee una función de masa de probabilidad
     de la forma
     
 $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Encuentre el valor $k$ que hace que la función presentada, sea una
-función de masa de probabilidad bien definida.
-</li>
-<li>
-Encuentre la función de distribución acumulada.
-</li>
-<li>
-Encuentre la probabilidad de que $X$ sea a lo más de $2$.
-</li>
-<li>
-Encuentre la probabilidad de que $X$ se al menos de $1$, pero no
-más de $2$.
-</li>
-<li>
-Encuentre $F(1.2)$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre el valor $k$ que hace que la función presentada, sea una
+    función de masa de probabilidad bien definida.
+    </li>
+    <li>
+    Encuentre la función de distribución acumulada.
+    </li>
+    <li>
+    Encuentre la probabilidad de que $X$ sea a lo más de $2$.
+    </li>
+    <li>
+    Encuentre la probabilidad de que $X$ se al menos de $1$, pero no
+    más de $2$.
+    </li>
+    <li>
+    Encuentre $F(1.2)$.
+    </li>
+    </ol>
 
 2.  Suponga que se tiene un total de tres cajas exactamente iguales,
     donde cada una de las cajas contiene un animal encerrado, a saber,
     un conejo, un hamster y una cobaya. Si se trata de adivinar qué
-    clase de animal hay en cada caja, siendo $X$ la variable aleatoria
+    clase de animal hay en cada caja, siendo `$X$` la variable aleatoria
     que representa el numero de aciertos. Escriba la función de masa de
-    probabilidad de la variable aleatoria $X$, su función de
+    probabilidad de la variable aleatoria `$X$`, su función de
     distribución acumulada y calcule la probabilidad de que acierte al
-    menos $2$ animales.
+    menos `$2$` animales.
 
-3.  Sean $X$ y $Y$ dos variables aleatorias discretas las cuales
-    pueden tomar como posibles valores $-1$, $0$, y $1$. En la
+3.  Sean `$X$` y `$Y$` dos variables aleatorias discretas las cuales
+    pueden tomar como posibles valores `$-1$`, `$0$`, y `$1$`. En la
     siguiente tabla se dan las probabilidades conjuntas para todos los
-    posibles valores de $X$ y $Y$.
+    posibles valores de `$X$` y `$Y$`.
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -118,21 +118,21 @@ Encuentre $F(1.2)$.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Obtenga las funciones de probabilidad marginales de $X$ y de
-$Y$.
-</li>
-<li>
-Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
-</li>
-<li>
-Calcule la $\mathbb{P}(X=1|Y\leq 0)$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Obtenga las funciones de probabilidad marginales de $X$ y de
+    $Y$.
+    </li>
+    <li>
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
+    </li>
+    <li>
+    Calcule la $\mathbb{P}(X=1|Y\leq 0)$.
+    </li>
+    </ol>
 
-4.  Sea $X$ una variable aleatoria con distribución de probabilidades
-    $p(x)$ dada por:
+4.  Sea `$X$` una variable aleatoria con distribución de probabilidades
+    `$p(x)$` dada por:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -177,18 +177,18 @@ Calcule la $\mathbb{P}(X=1|Y\leq 0)$.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Encuentre el valor $k$ que tal que $p(x)$ sea una función de
-masa de probabilidad bien especificada.
-</li>
-<li>
-Calcule la función de distribución acumulada $F(X)$.
-</li>
-<li>
-Encuentre $\mathbb{P}(X\gt 3)$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre el valor $k$ que tal que $p(x)$ sea una función de
+    masa de probabilidad bien especificada.
+    </li>
+    <li>
+    Calcule la función de distribución acumulada $F(X)$.
+    </li>
+    <li>
+    Encuentre $\mathbb{P}(X\gt 3)$.
+    </li>
+    </ol>
 
 5.  Suponga una función de probabilidad que representa el número de
     automóviles blancos que vende un concesionario en un día está dada
@@ -196,163 +196,163 @@ Encuentre $\mathbb{P}(X\gt 3)$.
     
 $$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\end{align*}$$
 
-    Encuentre el valor $k$ que hace que la función de probabilidad
+    Encuentre el valor `$k$` que hace que la función de probabilidad
     esté bien definida y con esta función
-<ol type="a">
-<li>
-Calcule la función de distribución acumulada $F(X)$.
-</li>
-<li>
-Realice el gráfico de la función de distribución acumulada $F(X)$.
-</li>
-<li>
-Calcule la probabilidad de que el número de automóviles blancos que
-vende en un día sea a lo más $1$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Calcule la función de distribución acumulada $F(X)$.
+    </li>
+    <li>
+    Realice el gráfico de la función de distribución acumulada $F(X)$.
+    </li>
+    <li>
+    Calcule la probabilidad de que el número de automóviles blancos que
+    vende en un día sea a lo más $1$.
+    </li>
+    </ol>
 
 6.  Las mediciones en los sistemas científicos siempre están sujetas a
     variación, algunas veces más que otras. Hay muchas estructuras para
     los errores de medición y los estadísticos pasan mucho tiempo
-    modelándolos. Suponga que el error de medición $X$ de cierta
+    modelándolos. Suponga que el error de medición `$X$` de cierta
     cantidad física es determinado por la siguiente función de densidad:
     
 $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Determine $k$, que hace que $f(x)$, sea una función de densidad
-válida.
-</li>
-<li>
-Calcule la función de distribución acumulada $F(X)$.
-</li>
-<li>
-Calcule la probabilidad de que un error aleatorio en la medición sea
-menor que $\frac{1}{2}$.
-</li>
-<li>
-Para esta medición específica, resulta indeseable si la magnitud del
-error (es decir, $|x|$) es mayor que $0.8$. ¿Cuál es la
-probabilidad de que esto ocurra?
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Determine $k$, que hace que $f(x)$, sea una función de densidad
+    válida.
+    </li>
+    <li>
+    Calcule la función de distribución acumulada $F(X)$.
+    </li>
+    <li>
+    Calcule la probabilidad de que un error aleatorio en la medición sea
+    menor que $\frac{1}{2}$.
+    </li>
+    <li>
+    Para esta medición específica, resulta indeseable si la magnitud del
+    error (es decir, $|x|$) es mayor que $0.8$. ¿Cuál es la
+    probabilidad de que esto ocurra?
+    </li>
+    </ol>
 
 7.  Suponga una función de densidad de probabilidad conjunta de las
-    variables aleatorias $X$, $Y$ y $Z$, la cual se define como
+    variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
     A partir de esta ecuación, calcule
-<ol type="a">
-<li>
-El valor $k$ que hace que la función $f(x,y,z)$, sea una función
-de densidad válida.
-</li>
-<li>
-La función de densidad marginal conjunta de $Y$ y $Z$.
-</li>
-<li>
-La densidad marginal de $Y$.
-</li>
-<li>
-$\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)$
-</li>
-<li>
-$\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)$
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    El valor $k$ que hace que la función $f(x,y,z)$, sea una función
+    de densidad válida.
+    </li>
+    <li>
+    La función de densidad marginal conjunta de $Y$ y $Z$.
+    </li>
+    <li>
+    La densidad marginal de $Y$.
+    </li>
+    <li>
+    $\mathbb{P}(\frac{1}{4}\lt  X \lt  \frac{1}{2}, Y \gt  \frac{1}{3}, 1 \lt  Z \lt  2)$
+    </li>
+    <li>
+    $\mathbb{P}(0 \lt  X \lt  \frac{1}{2}| Y = \frac{1}{4} , Z = 2)$
+    </li>
+    </ol>
 
 8.  Suponga la siguiente función de distribución acumulada
     
 $$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x< 3 \\ 0.48 & 3\leq x< 5\\ 0.74 & 5\leq x< 8 \\ 1 & x\geq 8\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Encuentre la función de masa de probabilidad de la variable
-aleatoria $X$.
-</li>
-<li>
-Calcule la probabilidad de que $X$ sea mayor a $4$.
-</li>
-<li>
-Calcule la probabilidad de que la variable aleatoria se encuentre
-entre $2$ y $5$, inclusive.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre la función de masa de probabilidad de la variable
+    aleatoria $X$.
+    </li>
+    <li>
+    Calcule la probabilidad de que $X$ sea mayor a $4$.
+    </li>
+    <li>
+    Calcule la probabilidad de que la variable aleatoria se encuentre
+    entre $2$ y $5$, inclusive.
+    </li>
+    </ol>
 
 9.  Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
-    densidad de probabilidad que caracteriza la proporción $X$ de
+    densidad de probabilidad que caracteriza la proporción `$X$` de
     utilidades que obtiene una pequeña empresa durante su primer año
     está dada por
     
 $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-¿Cuál es el valor de $k$ que hace de la anterior una función de
-densidad válida?
-</li>
-<li>
-Calcule la probabilidad de que la proporción de utilidades que
-obtiene una empresa pequeña durante su primer año sea de al menos el
-$50\%$.
-</li>
-<li>
-Calcule la probabilidad de que la proporción de utlidades que
-obtiene una empresa pequeña durante su primer año sea de al menos el
-$80\%$, pero no más del $90\%$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    ¿Cuál es el valor de $k$ que hace de la anterior una función de
+    densidad válida?
+    </li>
+    <li>
+    Calcule la probabilidad de que la proporción de utilidades que
+    obtiene una empresa pequeña durante su primer año sea de al menos el
+    $50\%$.
+    </li>
+    <li>
+    Calcule la probabilidad de que la proporción de utlidades que
+    obtiene una empresa pequeña durante su primer año sea de al menos el
+    $80\%$, pero no más del $90\%$.
+    </li>
+    </ol>
 
 10. Suponga que a partir de una gran cantidad de datos históricos, se
-    sabe que $X$ representa el número de automóviles que llegan a una
-    intersección específica durante un periodo de $20$ segundos, la
+    sabe que `$X$` representa el número de automóviles que llegan a una
+    intersección específica durante un periodo de `$20$` segundos, la
     cual puede ser determinada mediante la siguiente función de
     probabilidad discreta
     
 $$\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{align*}$$
 
-<ol type="a">
-<li>
-Calcule la probabilidad de que en un periodo específico de $20$
-segundos más de 8 automóviles lleguen a la intersección.
-</li>
-<li>
-Calcule la probabilidad de que sólo lleguen $2$ automóviles.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Calcule la probabilidad de que en un periodo específico de $20$
+    segundos más de 8 automóviles lleguen a la intersección.
+    </li>
+    <li>
+    Calcule la probabilidad de que sólo lleguen $2$ automóviles.
+    </li>
+    </ol>
 
-11. Sea $X$ la variable aleatoria que determina el número de clientes
+11. Sea `$X$` la variable aleatoria que determina el número de clientes
     que llega a una centro comercial en un periodo de una hora. Si la
-    distribución acumulada de $X$ está dada por:
+    distribución acumulada de `$X$` está dada por:
     
 $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Encuentre la función de masa de probabilidad de la variable
-aleatoria $X$.
-</li>
-<li>
-Calcule la probabilidad de que el número de clientes que llega al
-centro comercial sea mayor a $4$.
-</li>
-<li>
-Calcule la probabilidad de que el número de clientes que llega al
-centro comercial se encuentre entre $3$ y $7$, inclusive.
-</li>
-<li>
-Calcule la probabilidad de que el número de clientes que llega al
-centro comercial sea mayor a $4$ pero como máximo de $8$.
-</li>
-<li>
-Calcule la probabilidad de que llegue un número diferente de $5$
-clientes al centro comercial.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre la función de masa de probabilidad de la variable
+    aleatoria $X$.
+    </li>
+    <li>
+    Calcule la probabilidad de que el número de clientes que llega al
+    centro comercial sea mayor a $4$.
+    </li>
+    <li>
+    Calcule la probabilidad de que el número de clientes que llega al
+    centro comercial se encuentre entre $3$ y $7$, inclusive.
+    </li>
+    <li>
+    Calcule la probabilidad de que el número de clientes que llega al
+    centro comercial sea mayor a $4$ pero como máximo de $8$.
+    </li>
+    <li>
+    Calcule la probabilidad de que llegue un número diferente de $5$
+    clientes al centro comercial.
+    </li>
+    </ol>
 
 12. Se sabe por ley que la vida máxima de la patente para un nuevo
     medicamento es de 17 años. Si restamos el tiempo requerido por la
@@ -442,129 +442,129 @@ clientes al centro comercial.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Encuentre la función de distribución acumulada $F(X)$.
-</li>
-<li>
-Realice el gráfico de la función de distribución acumulada $F(X)$.
-</li>
-<li>
-Calcule la probabilidad de que el tiempo de vida en años sea a lo
-más $9$ años.
-</li>
-<li>
-Calcule la probabilidad de que el tiempo de vida en años sea más de
-$8$ años, pero no más de $11$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre la función de distribución acumulada $F(X)$.
+    </li>
+    <li>
+    Realice el gráfico de la función de distribución acumulada $F(X)$.
+    </li>
+    <li>
+    Calcule la probabilidad de que el tiempo de vida en años sea a lo
+    más $9$ años.
+    </li>
+    <li>
+    Calcule la probabilidad de que el tiempo de vida en años sea más de
+    $8$ años, pero no más de $11$.
+    </li>
+    </ol>
 
-13. Sea $X$ una variable aleatoria con distribución de probabilidades
+13. Sea `$X$` una variable aleatoria con distribución de probabilidades
     dada por
     
 $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Encuentre el valor de $k$ que hace a $f(x)$ una función de
-densidad de probabilidad.
-</li>
-<li>
-Calcule la función de distribución acumulada.
-</li>
-<li>
-Calcular $\mathbb{P}(X\geq 2.3)$ y
-$\mathbb{P}(-3 \leq X \leq 3)$
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre el valor de $k$ que hace a $f(x)$ una función de
+    densidad de probabilidad.
+    </li>
+    <li>
+    Calcule la función de distribución acumulada.
+    </li>
+    <li>
+    Calcular $\mathbb{P}(X\geq 2.3)$ y
+    $\mathbb{P}(-3 \leq X \leq 3)$
+    </li>
+    </ol>
 
-14. Si $X$ y $Y$ son variables aleatorias con función de
+14. Si `$X$` y `$Y$` son variables aleatorias con función de
     probabilidad conjunta dada por
     
 $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
 
-<ol type="a">
-<li>
-La $f(x,y)$ es efectivamente una función de densidad de
-probabilidad conjunta bien definida? de no serlo, por qué constante
-$k$ la multiplicaría?.
-</li>
-<li>
-Determine la distribución marginal de $X$.
-</li>
-<li>
-Determine la distribución marginal de $Y$.
-</li>
-<li>
-¿Cuál es la probabilidad de $4\lt X\lt 6$ y $Y\gt 2$?.
-</li>
-<li>
-Determine la distribución condicional $f(X | 1\lt Y\lt 4)$.
-</li>
-<li>
-Si se sabe que $Y\gt 5$, entonces, cuál es la probabilidad de que
-$X\lt 8$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    La $f(x,y)$ es efectivamente una función de densidad de
+    probabilidad conjunta bien definida? de no serlo, por qué constante
+    $k$ la multiplicaría?.
+    </li>
+    <li>
+    Determine la distribución marginal de $X$.
+    </li>
+    <li>
+    Determine la distribución marginal de $Y$.
+    </li>
+    <li>
+    ¿Cuál es la probabilidad de $4\lt X\lt 6$ y $Y\gt 2$?.
+    </li>
+    <li>
+    Determine la distribución condicional $f(X | 1\lt Y\lt 4)$.
+    </li>
+    <li>
+    Si se sabe que $Y\gt 5$, entonces, cuál es la probabilidad de que
+    $X\lt 8$.
+    </li>
+    </ol>
 
-15. Considere las variables aleatorias $X$ y $Y$ que representan el
+15. Considere las variables aleatorias `$X$` y `$Y$` que representan el
     número de vehículos que llegan a dos esquinas de calles separadas
-    durante cierto periodo de $2$ minutos. Estas esquinas de las
+    durante cierto periodo de `$2$` minutos. Estas esquinas de las
     calles están bastante cerca una de la otra, así que es importante
     que los ingenieros de tráfico se ocupen de ellas de manera conjunta
-    si fuera necesario. Se sabe que la distribución conjunta de $X$ y
-    $Y$ es
+    si fuera necesario. Se sabe que la distribución conjunta de `$X$` y
+    `$Y$` es
     
 $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-¿Son independientes las dos variables aleatorias $X$ y $Y$?
-Justifique su respuesta.
-</li>
-<li>
-¿Cuál es la probabilidad de que, durante el periodo en cuestión,
-lleguen menos de $4$ vehículos a las dos esquinas?.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    ¿Son independientes las dos variables aleatorias $X$ y $Y$?
+    Justifique su respuesta.
+    </li>
+    <li>
+    ¿Cuál es la probabilidad de que, durante el periodo en cuestión,
+    lleguen menos de $4$ vehículos a las dos esquinas?.
+    </li>
+    </ol>
 
-16. De un saco de frutas que contiene $3$ naranjas, $2$ manzanas y
-    $3$ plátanos se selecciona una muestra aleatoria de $4$ frutas.
-    Si $X$ es el número de naranjas y $Y$ es el número de manzanas
+16. De un saco de frutas que contiene `$3$` naranjas, `$2$` manzanas y
+    `$3$` plátanos se selecciona una muestra aleatoria de `$4$` frutas.
+    Si `$X$` es el número de naranjas y `$Y$` es el número de manzanas
     en la muestra, calcule
-<ol type="a">
-<li>
-la distribución de probabilidad conjunta de $X$ y $Y$.
-</li>
-<li>
-$\mathbb{P}[(X, Y) \in A]$, donde A es la región dada por
-$\{(x, y) | x + y \leq 2\}$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    la distribución de probabilidad conjunta de $X$ y $Y$.
+    </li>
+    <li>
+    $\mathbb{P}[(X, Y) \in A]$, donde A es la región dada por
+    $\{(x, y) | x + y \leq 2\}$.
+    </li>
+    </ol>
 
-17. Sea $X$ una variable aleatoria continua con
-    $F(x)=\frac{1}{1+e^{-x}}$, para $x>0$, encuentre la función de
-    densidad de probabilidad y calcule $\mathbb{P}(X<20)$.
+17. Sea `$X$` una variable aleatoria continua con
+    `$F(x)=\frac{1}{1+e^{-x}}$`, para `$x>0$`, encuentre la función de
+    densidad de probabilidad y calcule `$\mathbb{P}(X<20)$`.
 
-18. Considere a $X$ la variable aleatoria que representa la suma de
+18. Considere a `$X$` la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con f.m.p dada por
     
 $$\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Compruebe si es efectivamente una función de masa de probabilidad y
-calcule $F(x)$.
-</li>
-<li>
-Calcule la probabilidad de que la suma de las caras se encuentren
-entre $5$ y $9$ inclusive.
-</li>
-<li>
-Calcule la probabilidad de que la suma de las caras sean mayores que
-$7$ pero a lo más $10$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Compruebe si es efectivamente una función de masa de probabilidad y
+    calcule $F(x)$.
+    </li>
+    <li>
+    Calcule la probabilidad de que la suma de las caras se encuentren
+    entre $5$ y $9$ inclusive.
+    </li>
+    <li>
+    Calcule la probabilidad de que la suma de las caras sean mayores que
+    $7$ pero a lo más $10$.
+    </li>
+    </ol>
 
 19. Considere la siguiente función de densidad de probabilidad que
     representa la proporción de personas que están a favor de una
@@ -572,78 +572,78 @@ $7$ pero a lo más $10$.
     
 $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Encuentre el valor de $k$ para que $f(x)$ sea una función de
-densidad de probabilidad.
-</li>
-<li>
-Calcule $F(x)$ y utilice el resultado para calcular la
-$\mathbb{P}(0.24 \lt  X \lt  0.63)$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre el valor de $k$ para que $f(x)$ sea una función de
+    densidad de probabilidad.
+    </li>
+    <li>
+    Calcule $F(x)$ y utilice el resultado para calcular la
+    $\mathbb{P}(0.24 \lt  X \lt  0.63)$.
+    </li>
+    </ol>
 
-20. Si $X$ y $Y$ son variables aleatorias discretas con función de
-    probabilidad dada por: $f(x,y)=k(\frac{x+y}{xy})$,para
-    $x=1,2,3$; $y=1,2,3$.
-<ol type="a">
-<li>
-Encuentre el valor de $k$ que hace que $f(x,y)$ sea una función
-de masa de probabilidad conjunta.
-</li>
-<li>
-Encuentre la distribución marginal de $X$ y $Y$.
-</li>
-<li>
-Encuentre la distribución condicional de $X$ dado $Y=1$.
-</li>
-<li>
-las v.a $X$ y $Y$ son independientes?.
-</li>
-</ol>
+20. Si `$X$` y `$Y$` son variables aleatorias discretas con función de
+    probabilidad dada por: `$f(x,y)=k(\frac{x+y}{xy})$`,para
+    `$x=1,2,3$`; `$y=1,2,3$`.
+    <ol type="a">
+    <li>
+    Encuentre el valor de $k$ que hace que $f(x,y)$ sea una función
+    de masa de probabilidad conjunta.
+    </li>
+    <li>
+    Encuentre la distribución marginal de $X$ y $Y$.
+    </li>
+    <li>
+    Encuentre la distribución condicional de $X$ dado $Y=1$.
+    </li>
+    <li>
+    las v.a $X$ y $Y$ son independientes?.
+    </li>
+    </ol>
 
-21. Si la distribución de probabilidad conjunta de $X$ y $Y$ está
+21. Si la distribución de probabilidad conjunta de `$X$` y `$Y$` está
     dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
   
     Calcule
-<ol type="a">
-<li>
-$\mathbb{P}(X \leq 2, Y = 1)$
-</li>
-<li>
-$\mathbb{P}(X\gt Y)$.
-</li>
-<li>
-$\mathbb{P}(X+Y = 4)$.
-</li>
-<li>
-$\mathbb{P}(X\gt 2|Y\leq1)$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    $\mathbb{P}(X \leq 2, Y = 1)$
+    </li>
+    <li>
+    $\mathbb{P}(X\gt Y)$.
+    </li>
+    <li>
+    $\mathbb{P}(X+Y = 4)$.
+    </li>
+    <li>
+    $\mathbb{P}(X\gt 2|Y\leq1)$.
+    </li>
+    </ol>
 
-22. Sea $X$ la variable aleatoria que da el número de caras menos el
+22. Sea `$X$` la variable aleatoria que da el número de caras menos el
     número de cruces en cuatro lanzamientos de una moneda. Liste los
-    elementos del espacio muestral $S$ para los cuatro lanzamientos de
-    la moneda y asigne un valor $x$ a cada punto muestral de la
+    elementos del espacio muestral `$S$` para los cuatro lanzamientos de
+    la moneda y asigne un valor `$x$` a cada punto muestral de la
+    variable aleatoria `$X$`.
+    <ol type="a">
+    <li>
+    Obtenga la función de masa de probabilidad y la función de
+    distribución acumulada de la variable aleatoria $X$
+    </li>
+    <li>
+    Suponga que la moneda está cargada, de manera que existe el doble de
+    probabilidad de que ocurra una cara que una cruz. Obtenga la función
+    de masa de probabilidad y la función de distribución acumulada de la
     variable aleatoria $X$.
-<ol type="a">
-<li>
-Obtenga la función de masa de probabilidad y la función de
-distribución acumulada de la variable aleatoria $X$
-</li>
-<li>
-Suponga que la moneda está cargada, de manera que existe el doble de
-probabilidad de que ocurra una cara que una cruz. Obtenga la función
-de masa de probabilidad y la función de distribución acumulada de la
-variable aleatoria $X$.
-</li>
-<li>
-Bajo las dos situaciones anteriores, cuál es la probabilidad de que
-salga al menos $3$ caras?.
-</li>
-</ol>
+    </li>
+    <li>
+    Bajo las dos situaciones anteriores, cuál es la probabilidad de que
+    salga al menos $3$ caras?.
+    </li>
+    </ol>
 
 23. El tiempo que pasa, en horas, para que un radar detecte entre
     conductores sucesivos a los que exceden los límites de velocidad es
@@ -654,243 +654,243 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
   
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
-    velocidad sea menor de $12$ minutos
-<ol type="a">
-<li>
-Usando la función de distribución acumulativa de $X$
-</li>
-<li>
-Utilizando la función de densidad de probabilidad de $X$.
-</li>
-</ol>
+    velocidad sea menor de `$12$` minutos
+    <ol type="a">
+    <li>
+    Usando la función de distribución acumulativa de $X$
+    </li>
+    <li>
+    Utilizando la función de densidad de probabilidad de $X$.
+    </li>
+    </ol>
 
 24. Los tubos de magnetrón se producen en una línea de ensamble
     automatizada. Periódicamente se utiliza un plan de muestreo para
     evaluar la calidad en la longitud de los tubos; sin embargo, dicha
     medida está sujeta a incertidumbre. Se considera que la probabilidad
     de que un tubo elegido al azar cumpla con las especificaciones de
-    longitud es $0.99$. Se utiliza un plan de muestreo en el cual se
-    mide la longitud de $5$ tubos elegidos al azar.
-<ol type="a">
-<li>
-Muestre que la función de probabilidad de $Y$, el número de tubos
-de cada 5 que cumplen con las especificaciones de longitud, está
-dada por la siguiente función de probabilidad discreta:
-$f(y)=\frac{5!}{y!(5-y)!}(0.99)^y(0.01)^{5-y}$
-</li>
-<li>
-Suponga que se eligen artículos de la línea al azar y $3$ no
-cumplen con las especificaciones. Utilice la $f(y)$ anterior para
-apoyar o refutar la conjetura de que hay $0.99$ de probabilidades
-de que un solo tubo cumpla con las especificaciones.
-</li>
-</ol>
+    longitud es `$0.99$`. Se utiliza un plan de muestreo en el cual se
+    mide la longitud de `$5$` tubos elegidos al azar.
+    <ol type="a">
+    <li>
+    Muestre que la función de probabilidad de $Y$, el número de tubos
+    de cada 5 que cumplen con las especificaciones de longitud, está
+    dada por la siguiente función de probabilidad discreta:
+    $f(y)=\frac{5!}{y!(5-y)!}(0.99)^y(0.01)^{5-y}$
+    </li>
+    <li>
+    Suponga que se eligen artículos de la línea al azar y $3$ no
+    cumplen con las especificaciones. Utilice la $f(y)$ anterior para
+    apoyar o refutar la conjetura de que hay $0.99$ de probabilidades
+    de que un solo tubo cumpla con las especificaciones.
+    </li>
+    </ol>
 
-25. Si $X$, $Y$ y $Z$ tienen la siguiente función de densidad de
+25. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Calcule el valor $k$ para que hace que $f(x,y,z)$ sea una
-función de densidad de probabilidad conjunta.
-</li>
-<li>
-Calcule las distribuciones marginales $g(x)$, $h(y)$, $i(z)$,
-$j(x,y)$, $k(x,z)$ y $l(y,z)$.
-</li>
-<li>
-Calcule $\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)$.
-</li>
-<li>
-Calcule
-$\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Calcule el valor $k$ para que hace que $f(x,y,z)$ sea una
+    función de densidad de probabilidad conjunta.
+    </li>
+    <li>
+    Calcule las distribuciones marginales $g(x)$, $h(y)$, $i(z)$,
+    $j(x,y)$, $k(x,z)$ y $l(y,z)$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(X \lt  \frac{1}{4}, Y \gt  \frac{1}{2}, 1 \lt  Z \lt  2)$.
+    </li>
+    <li>
+    Calcule
+    $\mathbb{P}(X \lt  \frac{1}{3} | Y \lt  \frac{1}{8}, Z \gt  \frac{2}{3})$.
+    </li>
+    </ol>
 
-26. Suponga que el tiempo medido en unidades de $100$ horas, que se
+26. Suponga que el tiempo medido en unidades de `$100$` horas, que se
     usa una licuadora en un hogar durante un año es una v.a continua
-    $X$ con función de densidad de probabilidad dada por:
+    `$X$` con función de densidad de probabilidad dada por:
     
 $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Pruebe si efectivamente es una función de densidad de probabilidad,
-de no serlo, por qué constante $k$ multiplicaría la función?.
-</li>
-<li>
-Calcule la probabilidad de que en un año una familia use menos de
-$120$ horas la licuadora.
-</li>
-<li>
-Calcule la probabilidad de que en un año una familia use la
-licuadora entre $65$ y $100$ horas.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Pruebe si efectivamente es una función de densidad de probabilidad,
+    de no serlo, por qué constante $k$ multiplicaría la función?.
+    </li>
+    <li>
+    Calcule la probabilidad de que en un año una familia use menos de
+    $120$ horas la licuadora.
+    </li>
+    <li>
+    Calcule la probabilidad de que en un año una familia use la
+    licuadora entre $65$ y $100$ horas.
+    </li>
+    </ol>
 
-27. Una moneda se lanza dos veces. Sea $X$ el número de caras en el
-    primer lanzamiento y $Y$ el número total de caras en los $2$
+27. Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
+    primer lanzamiento y `$Y$` el número total de caras en los `$2$`
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
     sello es dos veces la probabilidad de cara, calcule
-<ol type="a">
-<li>
-La distribución de probabilidad conjunta de $X$ y $Y$.
-</li>
-<li>
-La distribución marginal de $X$.
-</li>
-<li>
-La distribución marginal de $Y$.
-</li>
-<li>
-La probabilidad de que ocurra al menos $1$ cara.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    La distribución de probabilidad conjunta de $X$ y $Y$.
+    </li>
+    <li>
+    La distribución marginal de $X$.
+    </li>
+    <li>
+    La distribución marginal de $Y$.
+    </li>
+    <li>
+    La probabilidad de que ocurra al menos $1$ cara.
+    </li>
+    </ol>
 
 28. Una empresa dulcera distribuye cajas de chocolates con un surtido de
-    cremas, chiclosos y envinados. Suponga que cada caja pesa $1$
+    cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
     envinados varían de una a otra cajas. Para una caja seleccionada al
-    azar, represente los pesos de las cremas y los chiclosos con $X$ y
-    $Y$, respectivamente, y suponga que la función de densidad
+    azar, represente los pesos de las cremas y los chiclosos con `$X$` y
+    `$Y$`, respectivamente, y suponga que la función de densidad
     conjunta de estas variables es
     
 $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Calcule la probabilidad de que en una caja dada los envinados
-representen más de la mitad del peso.
-</li>
-<li>
-Calcule la densidad marginal para el peso de las cremas.
-</li>
-<li>
-Calcule la probabilidad de que el peso de los chiclosos en una caja
-sea menor que $1/8$ de kilogramo, si se sabe que las cremas
-constituyen $3/4$ partes del peso.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Calcule la probabilidad de que en una caja dada los envinados
+    representen más de la mitad del peso.
+    </li>
+    <li>
+    Calcule la densidad marginal para el peso de las cremas.
+    </li>
+    <li>
+    Calcule la probabilidad de que el peso de los chiclosos en una caja
+    sea menor que $1/8$ de kilogramo, si se sabe que las cremas
+    constituyen $3/4$ partes del peso.
+    </li>
+    </ol>
 
-29. Sean $X$ y $Y$ dos variables aleatorias con función de
+29. Sean `$X$` y `$Y$` dos variables aleatorias con función de
     probabilidad dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Obtener el valor $k$ que hace que la función esté bien definida y
-encuentre la función de distribución acumulada conjunta.
-</li>
-<li>
-¿Cuál es la probabilidad de que $X\lt 3/2$ y $Y\lt 2$?.
-</li>
-<li>
-Obtenga las funciones marginales para $X$ y $Y$.
-</li>
-<li>
-Obtenga las función de distribución acumulada de $X$ y de $Y$.
-</li>
-<li>
-Calcule $\mathbb{P}(0.8\lt X\lt 1.6)$ y $\mathbb{P}(Y\gt 2.3)$.
-</li>
-<li>
-Calcule $\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)$.
-</li>
-<li>
-Pruebe si $X$ y $Y$ son independientes.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Obtener el valor $k$ que hace que la función esté bien definida y
+    encuentre la función de distribución acumulada conjunta.
+    </li>
+    <li>
+    ¿Cuál es la probabilidad de que $X\lt 3/2$ y $Y\lt 2$?.
+    </li>
+    <li>
+    Obtenga las funciones marginales para $X$ y $Y$.
+    </li>
+    <li>
+    Obtenga las función de distribución acumulada de $X$ y de $Y$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(0.8\lt X\lt 1.6)$ y $\mathbb{P}(Y\gt 2.3)$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(0.8\lt X\lt 1.6|Y\gt 2.3)$.
+    </li>
+    <li>
+    Pruebe si $X$ y $Y$ son independientes.
+    </li>
+    </ol>
 
 30. Suponga una empresa que fabrica pelotas locas con diámetros que
-    oscilan entre $4$ y 8 centímetros. Si $X$ es la variable
+    oscilan entre `$4$` y 8 centímetros. Si `$X$` es la variable
     aleatoria que representa el diámetro de las pelotas locas, y la
-    empresa sabe que la función de probabilidad de $X$ es de la forma
+    empresa sabe que la función de probabilidad de `$X$` es de la forma
     
 $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Prueba si la función de probabilidad está bien definida.
-</li>
-<li>
-Calcule la probabilidad de que una pelota loca tenga un diámetro
-entre $3$ y $6$ centímetros.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Prueba si la función de probabilidad está bien definida.
+    </li>
+    <li>
+    Calcule la probabilidad de que una pelota loca tenga un diámetro
+    entre $3$ y $6$ centímetros.
+    </li>
+    </ol>
 
 31. Suponga que la función de probabilidad conjunta de un sistema
     químico puede ser representado como
     
 $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Determine la distribución marginal $g(x)$ de la proporción $X$ y
-verifique que sea una función de densidad válida.
-</li>
-<li>
-¿Cuál es la probabilidad de que la proporción $Y$ sea menor que
-$0.5$, dado que $X$ es $0.7$?.
-</li>
-<li>
-¿Cuál es la probabilidad de que la proporción $X$ sea mayor que
-$0.5$, dado que $Y$ es $0.7$?.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Determine la distribución marginal $g(x)$ de la proporción $X$ y
+    verifique que sea una función de densidad válida.
+    </li>
+    <li>
+    ¿Cuál es la probabilidad de que la proporción $Y$ sea menor que
+    $0.5$, dado que $X$ es $0.7$?.
+    </li>
+    <li>
+    ¿Cuál es la probabilidad de que la proporción $X$ sea mayor que
+    $0.5$, dado que $Y$ es $0.7$?.
+    </li>
+    </ol>
 
-32. Sean $X$ y $Y$ variables aleatorias independientes tal que sus
-    distribuciones marginales son $g(x)=3x^2$ para $0<x<1$ y
-    $h(y)=2y$ para $0<y<1$. Calcule
-    $\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$.
+32. Sean `$X$` y `$Y$` variables aleatorias independientes tal que sus
+    distribuciones marginales son `$g(x)=3x^2$` para `$0<x<1$` y
+    `$h(y)=2y$` para `$0<y<1$`. Calcule
+    `$\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$`.
 
 33. Suponga una función de masa de probabilidad dada por
     
 $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4,5\end{align*}$$
 
-<ol type="a">
-<li>
-Calcule el valor $k$ que hace a $p(x)$ una función de masa de
-probabilidad bien definida.
-</li>
-<li>
-Calcule la $\mathbb{P}(X\geq 3)$.
-</li>
-<li>
-Calcule la $\mathbb{P}(X\geq 3|X\lt 5)$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Calcule el valor $k$ que hace a $p(x)$ una función de masa de
+    probabilidad bien definida.
+    </li>
+    <li>
+    Calcule la $\mathbb{P}(X\geq 3)$.
+    </li>
+    <li>
+    Calcule la $\mathbb{P}(X\geq 3|X\lt 5)$.
+    </li>
+    </ol>
 
-34. Sea $f(x)=\frac{9}{2}x^2-x$, para $0<x<1$, la distribución de
-    probabilidad de una variable aleatoria $X$, encuentre la función
-    de distribución acumulada y con ésta, calcule $\mathbb{P}(X<0.3)$.
+34. Sea `$f(x)=\frac{9}{2}x^2-x$`, para `$0<x<1$`, la distribución de
+    probabilidad de una variable aleatoria `$X$`, encuentre la función
+    de distribución acumulada y con ésta, calcule `$\mathbb{P}(X<0.3)$`.
 
-35. Sea $X$ una variable aleatoria continua que representa el tiempo,
+35. Sea `$X$` una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
-    la función de densidad de probabilidad $f(x)$ está dada por:
+    la función de densidad de probabilidad `$f(x)$` está dada por:
     
 $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Verifique si $f(x)$ es efectivamente una función de densidad de
-probabilidad.
-</li>
-<li>
-Suponga que $\theta = 100$. Cuál es la probabilidad de que el
-hamster tarde a lo más de $200$ minutos en superar el laberinto? y
-cuál es la probabilidad de que tarde al menos $200$ minutos?.
-</li>
-<li>
-De una expresión para la función de distribución acumulada
-$F(x) = \mathbb{P}(X \leq x)$?.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Verifique si $f(x)$ es efectivamente una función de densidad de
+    probabilidad.
+    </li>
+    <li>
+    Suponga que $\theta = 100$. Cuál es la probabilidad de que el
+    hamster tarde a lo más de $200$ minutos en superar el laberinto? y
+    cuál es la probabilidad de que tarde al menos $200$ minutos?.
+    </li>
+    <li>
+    De una expresión para la función de distribución acumulada
+    $F(x) = \mathbb{P}(X \leq x)$?.
+    </li>
+    </ol>
 
 36. Suponga la siguiente función de probabilidad para las variables
-    aleatorias $X$ y $Y$
+    aleatorias `$X$` y `$Y$`
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -959,53 +959,53 @@ $F(x) = \mathbb{P}(X \leq x)$?.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Evalúe la distribución marginal de $X$.
-</li>
-<li>
-Evalué la distribución marginal de $Y$.
-</li>
-<li>
-Calcule $\mathbb{P}(Y = 2 | X = 1)$.
-</li>
-<li>
-Calcule $\mathbb{P}(X\lt 2|Y\leq1)$.
-</li>
-<li>
-Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Evalúe la distribución marginal de $X$.
+    </li>
+    <li>
+    Evalué la distribución marginal de $Y$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(Y = 2 | X = 1)$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(X\lt 2|Y\leq1)$.
+    </li>
+    <li>
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
+    </li>
+    </ol>
 
 37. Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
-    conjunta que describe las proporciones $X$ y $Y$ de estos dos
+    conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
     componentes está dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Determine la distribución marginal de $X$.
-</li>
-<li>
-Determine la distribución marginal de $Y$.
-</li>
-<li>
-¿Cuál es la probabilidad de que las proporciones del componente
-generen los resultados $X \lt  0.2$ y $Y \gt  0.5$?.
-</li>
-<li>
-Determine la distribución condicional $f(X | Y)$.
-</li>
-<li>
-Si se sabe que $Y\gt 0.2$, entonces, cuál es la probabilidad de que
-$X\lt 0.1$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Determine la distribución marginal de $X$.
+    </li>
+    <li>
+    Determine la distribución marginal de $Y$.
+    </li>
+    <li>
+    ¿Cuál es la probabilidad de que las proporciones del componente
+    generen los resultados $X \lt  0.2$ y $Y \gt  0.5$?.
+    </li>
+    <li>
+    Determine la distribución condicional $f(X | Y)$.
+    </li>
+    <li>
+    Si se sabe que $Y\gt 0.2$, entonces, cuál es la probabilidad de que
+    $X\lt 0.1$.
+    </li>
+    </ol>
 
-38. Sea $X$ el número de veces que fallará cierta máquina de control
-    numérico: $1$, $2$ o $3$ veces en un día dado. Y sea $Y$ el
+38. Sea `$X$` el número de veces que fallará cierta máquina de control
+    numérico: `$1$`, `$2$` o `$3$` veces en un día dado. Y sea `$Y$` el
     número de veces que se llama a un técnico para una emergencia, su
     distribución de probabilidad conjunta estará dada como
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1076,28 +1076,28 @@ $X\lt 0.1$.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Evalúe la distribución marginal de $X$.
-</li>
-<li>
-Evalué la distribución marginal de $Y$.
-</li>
-<li>
-Calcule $\mathbb{P}(Y = 3 | X = 2)$.
-</li>
-<li>
-Calcule $\mathbb{P}(X\geq2|Y\leq3)$.
-</li>
-<li>
-Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Evalúe la distribución marginal de $X$.
+    </li>
+    <li>
+    Evalué la distribución marginal de $Y$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(Y = 3 | X = 2)$.
+    </li>
+    <li>
+    Calcule $\mathbb{P}(X\geq2|Y\leq3)$.
+    </li>
+    <li>
+    Pruebe si las variables aleatorias $X$ y $Y$ son independientes.
+    </li>
+    </ol>
 
 39. En funcion de su prioridad, un programa para computadora espera en
     la fila de entrada cierto tiempo, después del cual lo ejecuta el
     procesador central en un lapso dado. La función de densidad conjunta
-    para los tiempos de espera $X$ (en minutos) y ejecución $Y$ (en
+    para los tiempos de espera `$X$` (en minutos) y ejecución `$Y$` (en
     segundos) se determina por
     
 $$\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -1106,24 +1106,24 @@ $$\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0
     
 $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-10y}\right]  & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-<ol type="a">
-<li>
-Obtener la probabilidad conjunta de que el tiempo de espera no sea
-mayor de ocho minutos y el de ejecución no sea mayor de $12$
-segundos.
-</li>
-<li>
-Si se sabe que el tiempo de espera es mayor a seis minutos, calcule
-la probabilidad de que el tiempo de ejecición sea menor a $15$
-segundos.
-</li>
-<li>
-Obtener las funciones de densidad marginal y probar si estos lapsos
-de tiempo son variables aleatorias independientes.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Obtener la probabilidad conjunta de que el tiempo de espera no sea
+    mayor de ocho minutos y el de ejecución no sea mayor de $12$
+    segundos.
+    </li>
+    <li>
+    Si se sabe que el tiempo de espera es mayor a seis minutos, calcule
+    la probabilidad de que el tiempo de ejecición sea menor a $15$
+    segundos.
+    </li>
+    <li>
+    Obtener las funciones de densidad marginal y probar si estos lapsos
+    de tiempo son variables aleatorias independientes.
+    </li>
+    </ol>
 
-40. Sean $X$ y $Y$ variables aleatorias continuas distribuidas
-    conjuntamente con $f(x,y)=kxy$ para $0<x<5$, $1<y<x$. El valor
-    de $k$ que hace que $f(x,y)$ sea una función de densidad de
+40. Sean `$X$` y `$Y$` variables aleatorias continuas distribuidas
+    conjuntamente con `$f(x,y)=kxy$` para `$0<x<5$`, `$1<y<x$`. El valor
+    de `$k$` que hace que `$f(x,y)$` sea una función de densidad de
     probabilidad conjunta es?

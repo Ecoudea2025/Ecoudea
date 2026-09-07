@@ -8,12 +8,12 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Prueba de hipótesis para la media $\mu$
+## Prueba de hipótesis para la media `$\mu$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$ con media desconocida $\mathbb{E}(X)=\mu$, y varianza
-$Var(X)=\sigma^2<\infty$, entonces dependiendo de las condiciones, se
-tendrán los siguientes pruebas de hipótesis para la media $\mu$.
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$` con media desconocida `$\mathbb{E}(X)=\mu$`, y varianza
+`$Var(X)=\sigma^2<\infty$`, entonces dependiendo de las condiciones, se
+tendrán los siguientes pruebas de hipótesis para la media `$\mu$`.
 
 ![](/assets/images/Hipotesis3.jpg)
 
@@ -310,16 +310,16 @@ cigarrillos Malboro es diferente a $25$ mil millones de pesos.
 </p>
 </main>
 
-## Prueba de hipótesis para diferencia de medias $\mu_1 - \mu_2$
+## Prueba de hipótesis para diferencia de medias `$\mu_1 - \mu_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$ con medias desconocidas
-$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$` con medias desconocidas
+`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes pruebas de hipótesis para la diferencia de medias
-$\mu_1 - \mu_2$.
+`$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Hipotesis4.jpg)
 
@@ -466,8 +466,7 @@ podemos obtener mediante la ecuación $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$
-y por tanto $$\begin{align*}
+\end{align*}$$ y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
@@ -675,8 +674,7 @@ Solución
 El juego de hipótesis en esta dado por $$\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$
-debido a que se quiere probar si hay o no diferencias
+\end{align*}$$ debido a que se quiere probar si hay o no diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera. Adicionalmente, debido a que estamos en una situación en la
 cual sabemos que las tensiones de corte se distribuyen normalmente con
@@ -729,13 +727,13 @@ de madera.
 </p>
 </main>
 
-## Prueba de hipótesis para una proporción $p$
+## Prueba de hipótesis para una proporción `$p$`
 
-Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
-grande tal que $n\geq30$, y la proporción desconocida $p$ no se
-encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
-entonces un una prueba de hipótesis para la proporción verdadera $p$
+Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
+grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
+encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
+entonces un una prueba de hipótesis para la proporción verdadera `$p$`
 será de la forma
 
 ![](/assets/images/Hipotesis5.jpg)
@@ -872,7 +870,7 @@ $x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
 muestral de egresados que poseen salarios superiores a $1900$
 millones, tal que $$\begin{align*}
-  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25

@@ -8,13 +8,13 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Intervalos de confianza para una proporción $p$
+## Intervalos de confianza para una proporción `$p$`
 
-Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
-grande tal que $n\geq30$, y la proporción desconocida $p$ no se
-encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
-entonces un intervalo de confianza para la proporción $p$ es de la
+Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
+grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
+encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
+entonces un intervalo de confianza para la proporción `$p$` es de la
 forma ![](/assets/images/Intervalos3.jpg)
 
 <button id="Show6" class="btn btn-secondary">
@@ -74,13 +74,12 @@ $$\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
-\end{align*}$$
-Al contar el número de éxitos, observamos que tenemos un
+\end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
 total de $x=4$ éxitos en un total de $n=15$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a $2$
 millones, tal que $$\begin{align*}
-  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667
@@ -102,17 +101,17 @@ de pesos, se encontrará entre $1.89\%$ y $51.44\%$.
 </p>
 </main>
 
-## Intervalos de confianza para diferencia de proporciones $p_1-p_2$
+## Intervalos de confianza para diferencia de proporciones `$p_1-p_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$, tal que $X_{1}\sim b(n,p)$ y
-$X_{1}\sim b(n,p)$. Entonces si $n_1$ y $n_2$ son suficientemente
-grandes tal que $n_1, n_2 \geq30$, y las proporciones desconocidas
-$p_1$ y $p_2$ no se encuentran cercanas a $0$ o $1$, tal que
-$n_1p_1>5$, $n_2p_2>5$, $n_1(1-p_1)>5$ y $n_2(1-p_2)>5$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$`, tal que `$X_{1}\sim b(n,p)$` y
+`$X_{1}\sim b(n,p)$`. Entonces si `$n_1$` y `$n_2$` son suficientemente
+grandes tal que `$n_1, n_2 \geq30$`, y las proporciones desconocidas
+`$p_1$` y `$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que
+`$n_1p_1>5$`, `$n_2p_2>5$`, `$n_1(1-p_1)>5$` y `$n_2(1-p_2)>5$`,
 entonces un intervalo de confianza para la diferencia de proporciones
-$p_1-p_2$ es de la forma
+`$p_1-p_2$` es de la forma
 
 ![](/assets/images/Intervalos4.jpg)
 
@@ -170,19 +169,17 @@ $x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
 con el nuevo procedimiento tenemos que $$\begin{align*}
-\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$
-mientras que, para los equipos que fueron construidos con
+\end{align*}$$ mientras que, para los equipos que fueron construidos con
 el procedimiento actual tenemos que $$\begin{align*}
-\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$
-Ahora, dado que el intervalo que nos piden es bilateral,
+\end{align*}$$ Ahora, dado que el intervalo que nos piden es bilateral,
 y tenemos que los tamaños muestrales para cada población son
 suficientemente grandes, tenfremos que el intervalo de interés es de la
 forma
@@ -231,12 +228,12 @@ aquellos fabricados mediante el proceso actual.
 </p>
 </main>
 
-## Intervalos de confianza para una varianza $\sigma^2$
+## Intervalos de confianza para una varianza `$\sigma^2$`
 
-Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria normal de
-tamaño $n$ con media $\mathbb{E}(X)=\mu$ y varianza desconocida
-$Var(X)=\sigma^2<\infty$, respectivamente, entonces un intervalo de
-confianza del $100(1-\alpha)\%$ para una varianza $\sigma^2$ estará
+Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria normal de
+tamaño `$n$` con media `$\mathbb{E}(X)=\mu$` y varianza desconocida
+`$Var(X)=\sigma^2<\infty$`, respectivamente, entonces un intervalo de
+confianza del `$100(1-\alpha)\%$` para una varianza `$\sigma^2$` estará
 dado por
 
 ![](/assets/images/Intervalos5.jpg)

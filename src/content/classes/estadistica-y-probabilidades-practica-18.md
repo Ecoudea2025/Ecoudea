@@ -14,7 +14,7 @@ Lista de ejercicios
 ===================
 
 1.  Los siguientes datos representan los consumos en kWh, medidos en una
-    hora en $50$ establecimientos nucleados en una zona comercial.
+    hora en `$50$` establecimientos nucleados en una zona comercial.
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -179,31 +179,31 @@ Lista de ejercicios
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Defina la variable bajo estudio y clasifíquela de acuerdo a su tipo.
-</li>
-<li>
-Construya un histograma a partir de los datos registrados.
-</li>
-<li>
-¿Qué puede decir acerca del gráfico realizado en el inciso b)?
-</li>
-<li>
-Calcule todas las medidas descriptivas que crea convenientes para
-comprender el comportamiento de la variable bajo estudio.
-</li>
-<li>
-Describa el comportamiento de la variable bajo estudio teniendo en
-cuenta las medidas estadísticas calculadas en los incisos
-anteriores.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Defina la variable bajo estudio y clasifíquela de acuerdo a su tipo.
+    </li>
+    <li>
+    Construya un histograma a partir de los datos registrados.
+    </li>
+    <li>
+    ¿Qué puede decir acerca del gráfico realizado en el inciso b)?
+    </li>
+    <li>
+    Calcule todas las medidas descriptivas que crea convenientes para
+    comprender el comportamiento de la variable bajo estudio.
+    </li>
+    <li>
+    Describa el comportamiento de la variable bajo estudio teniendo en
+    cuenta las medidas estadísticas calculadas en los incisos
+    anteriores.
+    </li>
+    </ol>
 
 2.  Los siguientes datos representan los costos de mantenimiento (en
-    miles de pesos) de una determinada máquina trabajando en $15$
+    miles de pesos) de una determinada máquina trabajando en `$15$`
     establecimientos productivos distintos, durante el periodo
-    $2016- 2017$
+    `$2016- 2017$`
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -259,16 +259,16 @@ anteriores.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Identifica el tipo de variable bajo análisis.
-</li>
-<li>
-Utilizar las herramientas descriptivas y/o exploratorias para
-extraer conclusiones respecto de los costos de mantenimiento de la
-máquina analizada.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Identifica el tipo de variable bajo análisis.
+    </li>
+    <li>
+    Utilizar las herramientas descriptivas y/o exploratorias para
+    extraer conclusiones respecto de los costos de mantenimiento de la
+    máquina analizada.
+    </li>
+    </ol>
 
 3.  Los grandes autoservicios disponen de estacionamiento para sus
     clientes. Los siguientes datos se refieren al número de horas que
@@ -469,24 +469,24 @@ máquina analizada.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Clasifique la variable bajo estudio.
-</li>
-<li>
-El número de horas de permanencia en el estacionamiento, ¿muestra
-una marcada dispersión?. Justifique. ¿Cómo se interpreta?
-</li>
-<li>
-El número de horas de permanencia en el estacionamiento, ¿muestra
-una marcada asimetría?. ¿en qué dirección?. Justifique. ¿Cómo se
-interpreta?.
-</li>
-<li>
-Realice un gráfico conveniente para mostrar cómo se distribuye la
-variable bajo estudio. Obtenga conclusiones del mismo.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Clasifique la variable bajo estudio.
+    </li>
+    <li>
+    El número de horas de permanencia en el estacionamiento, ¿muestra
+    una marcada dispersión?. Justifique. ¿Cómo se interpreta?
+    </li>
+    <li>
+    El número de horas de permanencia en el estacionamiento, ¿muestra
+    una marcada asimetría?. ¿en qué dirección?. Justifique. ¿Cómo se
+    interpreta?.
+    </li>
+    <li>
+    Realice un gráfico conveniente para mostrar cómo se distribuye la
+    variable bajo estudio. Obtenga conclusiones del mismo.
+    </li>
+    </ol>
 
 4.  Un comisionista de bolsa desea determinar la estabilidad de los
     precios de dos acciones en particular. Decide basar su juicio en la
@@ -496,8 +496,8 @@ variable bajo estudio. Obtenga conclusiones del mismo.
     durante algún tiempo y que hay muchos precios de cierre desde hace
     varios meses. En lugar de utilizar todos estos precios, el
     comisionista decide simplificar su aritmética y seleccionar una
-    muestra de tamaño $6$ para la acción $1$ y $7$ para la acción
-    $2$. Los precios de cierre son:
+    muestra de tamaño `$6$` para la acción `$1$` y `$7$` para la acción
+    `$2$`. Los precios de cierre son:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -573,26 +573,26 @@ variable bajo estudio. Obtenga conclusiones del mismo.
     último año. Describa el interés particular que usted tiene sobre
     estas acciones y la finalidad de realizar el estudio descriptivo con
     estas y sus rentabilidades.
-<ol type="a">
-<li>
-Halle y describa alrededor de qué valor se centran los precios de
-las acciones seleccionadas en el último año y halle su volatilidad
-histórica (desviación estándar de los precios) e interprétela. ¿Qué
-acción presenta mayor precio medio? ¿Cuál tiene mayor dispersión? Si
-se desea invertir en una de estas acciones, ¿Se prefiere que los
-precios tengan alta o baja dispersión? ¿Por qué?.
-</li>
-<li>
-Comente sobre las características de la distribución en los precios
-de ambas acciones. Apóyese en las medidas de forma y en la
-construcción de un boxplot y el histograma de frecuencias para cada
-una.
-</li>
-<li>
-Para cada acción, determine hasta que valor se encuentra el $20\%$
-de los precios más bajos y el 15% de los precios más altos.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Halle y describa alrededor de qué valor se centran los precios de
+    las acciones seleccionadas en el último año y halle su volatilidad
+    histórica (desviación estándar de los precios) e interprétela. ¿Qué
+    acción presenta mayor precio medio? ¿Cuál tiene mayor dispersión? Si
+    se desea invertir en una de estas acciones, ¿Se prefiere que los
+    precios tengan alta o baja dispersión? ¿Por qué?.
+    </li>
+    <li>
+    Comente sobre las características de la distribución en los precios
+    de ambas acciones. Apóyese en las medidas de forma y en la
+    construcción de un boxplot y el histograma de frecuencias para cada
+    una.
+    </li>
+    <li>
+    Para cada acción, determine hasta que valor se encuentra el $20\%$
+    de los precios más bajos y el 15% de los precios más altos.
+    </li>
+    </ol>
 
 6.  En una entidad de salud llegan diariamente casos relacionados con la
     solicitud de certificados y requerimientos de quejas. Basados en la
@@ -647,20 +647,20 @@ de los precios más bajos y el 15% de los precios más altos.
     información presentada a continuación, calcular e interpretar para
     las variables “Cantidad de quejas gestionadas” y “Cantidad de
     certificados enviados” las siguientes medidas:
-<ol type="a">
-<li>
-Promedio.
-</li>
-<li>
-Cuartil 1.
-</li>
-<li>
-Cuartil 2 (Mediana).
-</li>
-<li>
-Cuartil 3.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Promedio.
+    </li>
+    <li>
+    Cuartil 1.
+    </li>
+    <li>
+    Cuartil 2 (Mediana).
+    </li>
+    <li>
+    Cuartil 3.
+    </li>
+    </ol>
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -801,7 +801,7 @@ Cuartil 3.
 8.  Los préstamos bancarios para compra de bienes productivos tienen
     distintas tasas de amortización dependiendo de la ubicación, del
     tipo del bien, de la facturación promedio del comprador y otros
-    factores. Una muestra de tamaño $25$, de los registros que se
+    factores. Una muestra de tamaño `$25$`, de los registros que se
     tienen sobre tasas de amortización para préstamos bancarios se
     presentan a continuación:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -893,30 +893,30 @@ Cuartil 3.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-Construya un histograma e interprete.
-</li>
-<li>
-¿Qué porcentaje de clientes han pedido préstamos bancarios para
-compra de bienes que tienen una tasa de amortización menor o igual a
-$7\%$?.
-</li>
-<li>
-¿Qué tipo de asimetría presenta la distribución? Justifique.
-</li>
-<li>
-¿Qué tipo de kurtosis presenta la distribución? Justifique.
-</li>
-<li>
-A partir de que tasa de amortización se encuentra el 30% de los
-compradores que pagan mayor interés. ¿El $10\%$? o ¿el $5\%$?.
-</li>
-<li>
-Una tasa de amortización de $6.3$ está entre el $10\%$ de los
-compradores que pagan menos interés?.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Construya un histograma e interprete.
+    </li>
+    <li>
+    ¿Qué porcentaje de clientes han pedido préstamos bancarios para
+    compra de bienes que tienen una tasa de amortización menor o igual a
+    $7\%$?.
+    </li>
+    <li>
+    ¿Qué tipo de asimetría presenta la distribución? Justifique.
+    </li>
+    <li>
+    ¿Qué tipo de kurtosis presenta la distribución? Justifique.
+    </li>
+    <li>
+    A partir de que tasa de amortización se encuentra el 30% de los
+    compradores que pagan mayor interés. ¿El $10\%$? o ¿el $5\%$?.
+    </li>
+    <li>
+    Una tasa de amortización de $6.3$ está entre el $10\%$ de los
+    compradores que pagan menos interés?.
+    </li>
+    </ol>
 
 9.  Suponga que es un agente de compras de una empresa manufacturera que
     toma pedidos de dos proveedores distintos mensualmente. Después de
@@ -982,24 +982,24 @@ compradores que pagan menos interés?.
     </tr>
     </tbody>
     </table>
-<ol type="a">
-<li>
-¿Tiene estos proveedores el mismo grado de confiabilidad?.
-</li>
-<li>
-¿Qué proveedor prefiere usted?.
-</li>
-<li>
-Para cada proveedor, determine valor de tiempo, $A$, tal que el
-$5\%$ de los meses se presente un tiempo de entrega inferior a
-$A$.
-</li>
-<li>
-Para cada proveedor, determine valor de tiempo, $B$, tal que el
-$5\%$ de los meses se presente un tiempo de entrega superior a
-$B$.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    ¿Tiene estos proveedores el mismo grado de confiabilidad?.
+    </li>
+    <li>
+    ¿Qué proveedor prefiere usted?.
+    </li>
+    <li>
+    Para cada proveedor, determine valor de tiempo, $A$, tal que el
+    $5\%$ de los meses se presente un tiempo de entrega inferior a
+    $A$.
+    </li>
+    <li>
+    Para cada proveedor, determine valor de tiempo, $B$, tal que el
+    $5\%$ de los meses se presente un tiempo de entrega superior a
+    $B$.
+    </li>
+    </ol>
 
 10. Los datos cuantitativos continuos son aquellos que:
 
@@ -1011,56 +1011,56 @@ $B$.
     una población, se suele tomar una porción o grupo representativo de
     la población para realizar el estudio y generalizar los resultados
     obtenidos. Esta porción o grupo representativo se denomina
-<ol type="a">
-<li>
-Individuo.
-</li>
-<li>
-Media.
-</li>
-<li>
-Muestra.
-</li>
-<li>
-Variable.
-</li>
-<li>
-Todas las anteriores.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Individuo.
+    </li>
+    <li>
+    Media.
+    </li>
+    <li>
+    Muestra.
+    </li>
+    <li>
+    Variable.
+    </li>
+    <li>
+    Todas las anteriores.
+    </li>
+    </ol>
 
 14. Cual de las siguientes medidas, no es una medida de posicionamiento
-<ol type="a">
-<li>
-Decil.
-</li>
-<li>
-Quintil.
-</li>
-<li>
-Cuartil.
-</li>
-<li>
-Ventil.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Decil.
+    </li>
+    <li>
+    Quintil.
+    </li>
+    <li>
+    Cuartil.
+    </li>
+    <li>
+    Ventil.
+    </li>
+    </ol>
 
 15. Cuales de las siguientes variables es una variable cuantitativa
     Discreta
-<ol type="a">
-<li>
-Edad.
-</li>
-<li>
-Estrato.
-</li>
-<li>
-Temperatura.
-</li>
-<li>
-Partido político.
-</li>
-<li>
-Número de empleados.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Edad.
+    </li>
+    <li>
+    Estrato.
+    </li>
+    <li>
+    Temperatura.
+    </li>
+    <li>
+    Partido político.
+    </li>
+    <li>
+    Número de empleados.
+    </li>
+    </ol>

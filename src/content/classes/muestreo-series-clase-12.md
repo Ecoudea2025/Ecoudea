@@ -45,12 +45,12 @@ cuenta a la hora de realizar el proceso de identificación:
 -   Es conveniente proponer modelos simples que expliquen los rasgos
     obvios del proceso en su ACF y PACF, comenzando con modelos AR y MA
     preferiblemente de orden bajo, buscando evitar la identificación
-    inicial de modelos tipo ARMA, ya que, si p$\geq$q$\geq$1, la ACF
+    inicial de modelos tipo ARMA, ya que, si p`$\geq$`q`$\geq$`1, la ACF
     y la PACF no tienen un patrón general.
 -   Una alternativa para identificar la pareja de órdenes (p, q) de un
     modelo ARMA, consiste en buscar dentro de un rango inicial, por
     ejemplo p, q = 0, 1, . . . , 10, que minimice alguna función de
-    $\hat{\varepsilon}^2$, como por ejemplo el AIC, BIC o AICC, o
+    `$\hat{\varepsilon}^2$`, como por ejemplo el AIC, BIC o AICC, o
     mediante la función de autocorrelación extendida (EACF).
 
 Métodos en minimización de criterios de información
@@ -76,9 +76,9 @@ ecuaciones
 $$\begin{align*}AIC & = 2k - 2\text{ ln}(\hat{L}) \\ BIC & = ln(n)k-2ln(\hat{L})\\ AICC & = 2k - 2\text{ ln}(\hat{L}) + \frac{2k^2 + 2k}{n-k-1}\end{align*}$$
 
 
-donde, $\hat{L}$ es el valor que maximiza la función de verosimilitud
-del modelo estimado, $k$ es el número de parámetros en el modelo,
-$n$ es el número de observaciones.
+donde, `$\hat{L}$` es el valor que maximiza la función de verosimilitud
+del modelo estimado, `$k$` es el número de parámetros en el modelo,
+`$n$` es el número de observaciones.
 
 Para la estimación de un modelo ARMA en <tt>R</tt>, puede emplearse las
 función `arima()` y `Arima()` de la librería `stats` y `forecast`,
@@ -103,34 +103,34 @@ corte en su ACF.
 Para ellos, Wei ([2006](#ref-Wei2006), p. 129) señala que se deben
 estimar los coeficientes AR mediante una sucesión finita de regresiones,
 en donde, se inicia con un valor p, y se realiza una regresión mediante
-mínimos cuadrados ordinarios de $\widetilde{Y}_t$ contra sus primeros
+mínimos cuadrados ordinarios de `$\widetilde{Y}_t$` contra sus primeros
 p rezagos,
-$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$.
+`$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$`.
 
 $$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(0)}\widetilde{Y}{t-i} +\varepsilon_t^{(0)}, \quad \quad t = p + 1, \ldots, T\end{align*}$$
 
 Una vez realizada la estimación, **se realiza la evaluación de los
-residuales $\hat{\varepsilon}_t^{(0)}$para observar si éstos son ruido
-blanco**. Si los residuales $\hat{\varepsilon}_t^{(0)}$, no posee un
+residuales `$\hat{\varepsilon}_t^{(0)}$`para observar si éstos son ruido
+blanco**. Si los residuales `$\hat{\varepsilon}_t^{(0)}$`, no posee un
 comportamiento de ruido blando, entonces se realiza el ajuste de un
-segundo modelo de regresión de $\widetilde{Y}_t$ contra sus primeros p
+segundo modelo de regresión de `$\widetilde{Y}_t$` contra sus primeros p
 rezagos,
-$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$ y
+`$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$` y
 el rezago de orden uno de los residuales del primer modelo
-$\hat{e}_{t-1}^{(0)}$.
+`$\hat{e}_{t-1}^{(0)}$`.
 
 $$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(1)}\widetilde{Y}{t-i} + \theta_1^{(1)} \hat{\varepsilon}_{t-1}^{(0)}+\varepsilon_t^{(1)}, \quad \quad t = p + 2, \ldots, T\end{align*}$$
 
 Una vez realizada la estimación, **se realiza nuevamente la evaluación
-de los residuales $\hat{\varepsilon}_t^{(1)}$para observar si éstos
+de los residuales `$\hat{\varepsilon}_t^{(1)}$`para observar si éstos
 son ruido blanco**. Si nuevamente se observa que los residuales
-$\hat{\varepsilon}_t^{(1)}$ de este modelo no son un ruido blanco, se
-ajusta un tercer modelo de regresión de $\widetilde{Y}_t$ contra los
+`$\hat{\varepsilon}_t^{(1)}$` de este modelo no son un ruido blanco, se
+ajusta un tercer modelo de regresión de `$\widetilde{Y}_t$` contra los
 primeros p rezagos,
-$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$,
+`$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$`,
 el rezago de orden uno de los residuales
-$\hat{\varepsilon}_{t-1}^{(1)}$ y los rezagos de orden dos de los
-residuales $\hat{e}_{t-2}^{(0)}$.
+`$\hat{\varepsilon}_{t-1}^{(1)}$` y los rezagos de orden dos de los
+residuales `$\hat{e}_{t-2}^{(0)}$`.
 
 $$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(2)}\widetilde{Y}{t-i} + \theta_1^{(2)} \hat{\varepsilon}_{t-1}^{(1)} + \theta_2^{(2)} \hat{\varepsilon}_{t-2}^{(0)} + \varepsilon_t^{(2)} \quad \quad t = p + 3, \ldots, T\end{align*}$$
 
@@ -148,24 +148,24 @@ deben estimarse, y por ello, se sugiere emplear la propuesta realizada
 por Tsay and Tiao ([1984](#ref-Tsay1984)), la cual consta de la
 realización de un conjunto general de regresiones iteradas para estimar
 los ordenes p y q, conocidas como autocorrelación de muestra extendida
-(EACF). Especificamente, para $m=0,1,2,\ldots,$ el orden del modelo
-AR, sea $\hat{phi}_i^{(m)}$ con $i = 1,\ldots, m$, los coeficientes
-estimados para la $j$-ésima regresión AR(m) del proceso ARMA
-$\widetilde{Y}{t}$. Entonces, defina al $m$-ésimo EACF muestral para
-el rezago $j$, $\hat{rho}^{(m)}$, de $\widetilde{Y}{t}$ como la
+(EACF). Especificamente, para `$m=0,1,2,\ldots,$` el orden del modelo
+AR, sea `$\hat{phi}_i^{(m)}$` con `$i = 1,\ldots, m$`, los coeficientes
+estimados para la `$j$`-ésima regresión AR(m) del proceso ARMA
+`$\widetilde{Y}{t}$`. Entonces, defina al `$m$`-ésimo EACF muestral para
+el rezago `$j$`, `$\hat{rho}^{(m)}$`, de `$\widetilde{Y}{t}$` como la
 función de autocorrelación muestral para la serie transformada
 
 $$\begin{align*}W_{t}^{(j)} = (1 - \hat{\phi}_1^{(j)}L-\ldots- \hat{\phi}_m^{(j)}L^m)\widetilde{Y}_{t}\end{align*}$$
 
 
 Con el fin de resumir las autocorrelaciones obtenidas mediante
-$W{t}^{(j)}$ por las diferentes combinaciones de $j$ y $m$, se
-presenta una tabla donde el elemento en la fila $m$ y columna $j$
-toma el valor del símbolo $\times$ si la autocorrelación muestral de
-$W$ de orden $j$, $\hat{\rho}_j^{(m)}$es significativamente
+`$W{t}^{(j)}$` por las diferentes combinaciones de `$j$` y `$m$`, se
+presenta una tabla donde el elemento en la fila `$m$` y columna `$j$`
+toma el valor del símbolo `$\times$` si la autocorrelación muestral de
+`$W$` de orden `$j$`, `$\hat{\rho}_j^{(m)}$`es significativamente
 diferente de cero, **es decir, si la autocorrelación para la combinación
-$m,j$ no muestra un comportamiento de ruido blando** y toma el valor
-de $0$ en caso contrario.
+`$m,j$` no muestra un comportamiento de ruido blando** y toma el valor
+de `$0$` en caso contrario.
 
 **Teóricamente, los órdenes p,q del modelo ARMA tendrán un
 comportamiento de tríangulo de ceros, con vértice superior izquierdo

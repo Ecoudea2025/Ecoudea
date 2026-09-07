@@ -16,30 +16,30 @@ Operador de rezagos
 El operador de rezagos es un término usado en series de tiempo, para
 operar la serie de tiempo de interés, y obtener una serie rezagada o
 retardada un periodo hacia atrás, en donde al aplicar dicho operador
-varias veces, es posible obtener la serie rezagada o retardada $p$
+varias veces, es posible obtener la serie rezagada o retardada `$p$`
 periodos hacia atrás.
 
-Por tanto, si denotamos al operador de rezagos como $L$, tendremos que
-$L(Y_t)=Y_{t-1}$, en donde se observa que la función $L$ rezaga la
+Por tanto, si denotamos al operador de rezagos como `$L$`, tendremos que
+`$L(Y_t)=Y_{t-1}$`, en donde se observa que la función `$L$` rezaga la
 serie original en una observación. En general si aplicamos la función
-$L$ un total de $p=1,2,\ldots$ veces, se tendrá
+`$L$` un total de `$p=1,2,\ldots$` veces, se tendrá
 
 $$\begin{align*}L(Y_t)=Y_{t-1} \\ L^2(Y_t)=Y_{t-2} \\ \vdots \quad \quad \quad \\ L^p(Y_t)=Y_{t-p}\end{align*}$$
 
-Además, para el caso particular en que $p=0$, se tendrá que $L^0=I$,
-donde $I$ se conoce como la función identidad.
+Además, para el caso particular en que `$p=0$`, se tendrá que `$L^0=I$`,
+donde `$I$` se conoce como la función identidad.
 
-Sea ahora, un polinomio de rezagos de orden $p$ (un filtro lineal), el
-cual se aplica al operador de rezagos $L$, para obtener una
-combinación lineal de $L$ de la forma
+Sea ahora, un polinomio de rezagos de orden `$p$` (un filtro lineal), el
+cual se aplica al operador de rezagos `$L$`, para obtener una
+combinación lineal de `$L$` de la forma
 
 $$\begin{align*}B_p(L)=\beta_0I+\beta_1L+\beta_2L^2+\ldots+\beta_pL^p\end{align*}$$
 
 
-donde cada $\beta_j$ representa un valor constantes, con
-$j=0,1, \ldots, p$, y en donde, se observa que la ecuación anterior
-define un polinomio de orden $p$ en $L$, el cual, al ser
-multiplicado por la serie $Y_t$ se obtendrá que
+donde cada `$\beta_j$` representa un valor constantes, con
+`$j=0,1, \ldots, p$`, y en donde, se observa que la ecuación anterior
+define un polinomio de orden `$p$` en `$L$`, el cual, al ser
+multiplicado por la serie `$Y_t$` se obtendrá que
 
 $$\begin{align*}B_p(L)(Y_t) & = (\beta_0I+\beta_1L+\beta_2L^2+\ldots+\beta_pL^p)(Y_t) \\             & = \beta_0I(Y_t)+\beta_1L(Y_t)+\beta_2L^2(Y_t)+\ldots+\beta_pL^p(Y_t) \\             & = \sum_{j=0}^p\beta_jL^j(Y_t) \\             & = \sum_{j=0}^p\beta_jY_{t-j} \\             & = \beta_0Y_t+\beta_1Y_{t-2}+\beta_2Y_{t-2}+\ldots+\beta_pY_{t-p}\end{align*}$$
 
@@ -48,9 +48,9 @@ Modelos de medias móviles (MA)
 ------------------------------
 
 Guerrero ([2003](#ref-Guerrero2003), pp. 80–81) se introduce a los
-modelos de medias móviles como un proceso estocástico $\{Yt\}$, cuyos
+modelos de medias móviles como un proceso estocástico `$\{Yt\}$`, cuyos
 valores pueden ser dependientes unos de otros, como una suma finita
-ponderada de choques aleatorios independientes $\{\varepsilon_t\}$. En
+ponderada de choques aleatorios independientes `$\{\varepsilon_t\}$`. En
 donde, el término de medias móviles parece sugerir que el modelo se
 obtiene como un promedio de los choques aleatorios que intervienen, pero
 no es así, puesto que los parámetros no tienen que ser necesariamente
@@ -59,8 +59,8 @@ poderado.
 
 ### Proceso de media móvil de orden 1 o MA(1)
 
-<!-- Una forma de entender los procesos de media móvil, es mediante el concepto de **juego de suma cero**. Suponga un juego que involucra lanzar una moneda, si sale cara se obtiene una ganancia de $G$, mientras que si sale sello se obtiene una pérdida de $G$, es decir, el mismo monto. Dado esto, se tendrá que la ganancia promedio del juego será igual a $0$, y por tanto, la ganancia a obtener puede ser representada mediante un ruido blanco ($\varepsilon_t$) con media $0$ y varianza $\sigma^2$. -->
-<!-- Entonces, si queremos representar la ganancia $Y_t$ obtenida en el juego, al lanzar una moneda se tendrá que -->
+<!-- Una forma de entender los procesos de media móvil, es mediante el concepto de **juego de suma cero**. Suponga un juego que involucra lanzar una moneda, si sale cara se obtiene una ganancia de `$G$`, mientras que si sale sello se obtiene una pérdida de `$G$`, es decir, el mismo monto. Dado esto, se tendrá que la ganancia promedio del juego será igual a `$0$`, y por tanto, la ganancia a obtener puede ser representada mediante un ruido blanco (`$\varepsilon_t$`) con media `$0$` y varianza `$\sigma^2$`. -->
+<!-- Entonces, si queremos representar la ganancia `$Y_t$` obtenida en el juego, al lanzar una moneda se tendrá que -->
 <!-- 
 $$\begin{align*}-->
 <!-- Y_t = \beta_0\varepsilon_t -->
@@ -72,16 +72,16 @@ $$\begin{align*}-->
 <!-- Y_t = \beta_0\varepsilon_t + \beta_1\varepsilon_{t-1} -->
 <!--\end{align*}$$
  -->
-<!-- siendo \beta_i la probabilidad de ocurrencia, en donde en este caso será igual a $1/2$, para $i\leq 1$ y $0$ para $i>1$. Si se lanza la moneda tres veces -->
+<!-- siendo \beta_i la probabilidad de ocurrencia, en donde en este caso será igual a `$1/2$`, para `$i\leq 1$` y `$0$` para `$i>1$`. Si se lanza la moneda tres veces -->
 <!-- 
 $$\begin{align*}-->
 <!-- Y_t = \beta_0\varepsilon_t + \beta_1\varepsilon_{t-1} + \beta_2\varepsilon_{t-2} -->
 <!--\end{align*}$$
  -->
-<!-- siendo \beta_i la probabilidad de ocurrencia, en donde en este caso será igual a $1/3$, para $i\leq 2$ y $0$ para $i>2$, y así sucesivamente. Es de anotar, que en este caso, a pesar de que el proceso MA se encuentra integrado por puros $\varepsilon_t$,  -->
+<!-- siendo \beta_i la probabilidad de ocurrencia, en donde en este caso será igual a `$1/3$`, para `$i\leq 2$` y `$0$` para `$i>2$`, y así sucesivamente. Es de anotar, que en este caso, a pesar de que el proceso MA se encuentra integrado por puros `$\varepsilon_t$`,  -->
 
-Se dice que $\{Y_t\}_{t≥1}$ es un proceso de media móvil de orden 1,
-si podemos expresar a $\widetilde{Y}_t = Y_t - \mu$ en términos de un
+Se dice que `$\{Y_t\}_{t≥1}$` es un proceso de media móvil de orden 1,
+si podemos expresar a `$\widetilde{Y}_t = Y_t - \mu$` en términos de un
 proceso estacionario de media cero, tal que
 
 $$\begin{align*}\widetilde{Y}_t & = (1+\theta_1 L)\varepsilon_t \\     & = \varepsilon_t + \theta_1 L\varepsilon_t \\     & = \varepsilon_t + \theta_1 \varepsilon_{t-1}\end{align*}$$
@@ -89,8 +89,8 @@ $$\begin{align*}\widetilde{Y}_t & = (1+\theta_1 L)\varepsilon_t \\     & = \vare
 
 De la ecuación anterior, se evidencia que un proceso MA(1) puede
 definirse como un operador de rezagos de un ruido blanco
-$\varepsilon_t\sim(0,\sigma^2_{\varepsilon})$, con
-$\beta_1 = \theta_1$, y $\beta_j = 0$, para $j ≥ 2$. Además, se
+`$\varepsilon_t\sim(0,\sigma^2_{\varepsilon})$`, con
+`$\beta_1 = \theta_1$`, y `$\beta_j = 0$`, para `$j ≥ 2$`. Además, se
 puede probar que la media, varianza y autocovarianza del proceso MA(1),
 están dados por
 
@@ -99,9 +99,9 @@ $$\begin{align*}\mathbb{E}(\widetilde{Y}_t) & = 0 \\ Var(\widetilde{Y}_t) & =\ga
 
 lo cual hace que el proceso MA(1) sea **siempre un proceso
 estacionario**, pero para ser invertible, se requiere que la raíz del
-polinomio de rezagos $1+\theta_1 L =0$caiga fuera del circulo
+polinomio de rezagos `$1+\theta_1 L =0$`caiga fuera del circulo
 unitario. Además, como el proceso MA(1) posee autocorrelacíones iguales
-a cero para rezagos $k$ mayores a 1, se tendrá que el proceso MA(1)
+a cero para rezagos `$k$` mayores a 1, se tendrá que el proceso MA(1)
 **no recuerda más allá de lo ocurrido en el período inmediatamente
 anterior**, es decír, tiene una memoria limitada a un solo período.
 
@@ -164,9 +164,9 @@ ilustrar el comportamiento de la ACF y la PACF de un proceso MA(1).
 
 ### Proceso de media móvil de orden q o MA(q)
 
-Similar al proceso MA(1), se dice que $\{Y_t\}_{t≥1}$ es un proceso de
+Similar al proceso MA(1), se dice que `$\{Y_t\}_{t≥1}$` es un proceso de
 media móvil de orden q, si es posible expresar a
-$\widetilde{Y}_t=Y_t-\mu$ en términos de un proceso estacionario en
+`$\widetilde{Y}_t=Y_t-\mu$` en términos de un proceso estacionario en
 covarianza de media cero, tal que
 
 $$\begin{align*}\widetilde{Y}_t & = (\Theta_q (L))\varepsilon_t \\     & = (1 + \theta_1 L + \theta_2 L^2 + \ldots + \theta_q L^q) \varepsilon_t \\     & = \varepsilon_t + \theta_1 L\varepsilon_t + \theta_2 L^2\varepsilon_t + \ldots + \theta_q L^q\varepsilon_t\\      & = \varepsilon_t + \theta_1 \varepsilon_{t-1} + \theta_2 \varepsilon_{t-2} + \ldots + \theta_q \varepsilon_{t-q}\end{align*}$$
@@ -180,23 +180,23 @@ por
 $$\begin{align*}\mathbb{E}(\widetilde{Y}_t) & = 0 \\ Var(\widetilde{Y}_t) & = \gamma(0) = \sigma^2_{\varepsilon}(1+\theta_1^2+\theta_2^2+\ldots+\theta_q^2) \\ Cov(\widetilde{Y}_t, \widetilde{Y}_{t+k}) & = \gamma(k) = \begin{cases} \sigma_\varepsilon^2 \sum_{j=0}^{q-k}\theta_j\theta_{j+k} & 0\leq k\leq q \\ 0 & k\geq q+1\end{cases}\end{align*}$$
 
 
-con $\theta_0 = 1$ y donde se observa que
-$Var(\widetilde{Y}_t)>Var(\varepsilon_t)=\sigma_\varepsilon^2$. Por
+con `$\theta_0 = 1$` y donde se observa que
+`$Var(\widetilde{Y}_t)>Var(\varepsilon_t)=\sigma_\varepsilon^2$`. Por
 consiguiente, se tendrá que **todo proceso MA(q) será un proceso
 estacionario**, pero para ser invertible, se requiere que la raíz del
-polinomio de rezagos $(\Theta_1 (L))$ caiga fuera del circulo
+polinomio de rezagos `$(\Theta_1 (L))$` caiga fuera del circulo
 unitario. Además, el proceso MA(q) tendrá una **memoria limitada a q
-periodos**, ya que, para rezagos $k$ mayores a q, la autocorrelaciones
+periodos**, ya que, para rezagos `$k$` mayores a q, la autocorrelaciones
 serán iguales a 0.
 
 En Guerrero ([2003](#ref-Guerrero2003), p. 81) el autor define a los
 procesos MA como un proceso en equilibrio, en donde las fluctuaciones
-alrededor del punto de equilibrio, ${\widetilde{Y}_t}_{t≥1}$, son
+alrededor del punto de equilibrio, `${\widetilde{Y}_t}_{t≥1}$`, son
 causadas por choques asociados a eventos inesperados. Tales choques no
 necesariamente se asimilan de manera instantánea, sino que pueden seguir
 causando efectos aún después de transcurrido cierto número de períodos y
 además la intensidad del choque se refleja en el valor de su ponderación
-$\theta_j$.
+`$\theta_j$`.
 
 Para la identificación de un proceso MA(q) es posible analizar las
 funciones ACF y PACF, y observar si se cumplen o no los siguientes
@@ -241,7 +241,7 @@ está dada por <!-- Citar Davies, Pate y Frost (1974) -->
 $$\begin{align*}|\rho_k|\leq \begin{cases}cos(\pi/(M+1)) & \text{ si } k \text{ es divisor de } q+1 \\ cos(\pi/(M+2)) & \text{ si } k \text{ no es divisor de } q+1 \end{cases}\end{align*}$$
 
 
-donde $M$ es el mayor entero menor o igual a $(q+1)/k$.
+donde `$M$` es el mayor entero menor o igual a `$(q+1)/k$`.
 
 A continuación, se realiza la simulación de tres escenarios para
 ilustrar el comportamiento de la ACF y la PACF de un proceso MA(q).
@@ -261,31 +261,31 @@ valores pasados más una perturbación o choque aleatorio aditivo.
 
 ### Modelos autorregresivos de orden 1 o AR(1)
 
-Se dice que $\{Y_t\}_{t≥1}$ sigue un proceso de autorregresivo de
+Se dice que `$\{Y_t\}_{t≥1}$` sigue un proceso de autorregresivo de
 orden 1 con media cero, si podemos expresar a
-$\widetilde{Y} = Y_t - \mu$ en términos de un proceso estacionario de
+`$\widetilde{Y} = Y_t - \mu$` en términos de un proceso estacionario de
 media cero, tal que
 
 $$\begin{align*}(1 - \phi_1 L)\widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t - \phi_1 L\widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t - \phi_1 \widetilde{Y}_{t-1} & = \varepsilon_t \\ \widetilde{Y}_t & = \phi_1 \widetilde{Y}_{t-1} + \varepsilon_t\end{align*}$$
 
 
-con $\varepsilon_t\sim RB(0, \sigma_{\varepsilon}^2)$ independiente de
-$\widetilde{Y}_{t+k}$ para todo $k>0$. De la ecuación anterior, se
+con `$\varepsilon_t\sim RB(0, \sigma_{\varepsilon}^2)$` independiente de
+`$\widetilde{Y}_{t+k}$` para todo `$k>0$`. De la ecuación anterior, se
 observa que se tiene una estructura de regresión entre
-$\widetilde{Y}_t$ y $\widetilde{Y}_{t-1}$, lo cual indica **existe
+`$\widetilde{Y}_t$` y `$\widetilde{Y}_{t-1}$`, lo cual indica **existe
 una relación lineal entre las observaciones y los valores de la misma
-rezagadas un periodo**, siendo el parámetro $\phi_1$ el parámetro del
+rezagadas un periodo**, siendo el parámetro `$\phi_1$` el parámetro del
 modelo.
 
 Además, se puede probar que la media, varianza y autocovarianza del
-proceso AR(1), bajo el supuesto $|\phi_1|<1$ están dados por
+proceso AR(1), bajo el supuesto `$|\phi_1|<1$` están dados por
 
 $$\begin{align*}\mathbb{E}(\widetilde{Y}_t) & = 0 \\ Var(\widetilde{Y}_t) & =\gamma(0) = \frac{\sigma^2_{\varepsilon}}{(1-\phi_1^2)} & \text { para } k  = 0, \pm 1, \pm 2, \ldots \\ Cov(\widetilde{Y}_t, \widetilde{Y}_{t+k}) & = \gamma(k) = \phi^k \left(\frac{\sigma^2_\varepsilon}{1-\phi_1^2}\right) & \text { para } k  = 0, \pm 1, \pm 2, \ldots\end{align*}$$
 
 
-lo cual indica que, a medida que $k > 0$ crece, la ACF debe tender a
-cero, con decaimiento del tipo exponencial cuando $0<\phi<1$ y con
-signos alternados cuando $-1 < \phi < 0$. La condición $|\phi|<1$ es
+lo cual indica que, a medida que `$k > 0$` crece, la ACF debe tender a
+cero, con decaimiento del tipo exponencial cuando `$0<\phi<1$` y con
+signos alternados cuando `$-1 < \phi < 0$`. La condición `$|\phi|<1$` es
 requerida para que la serie sea estacionaria en covarianza, ya que
 **ésto garantiza que la raíz del polinomio de rezagos caiga fuera del
 círculo unitario**. Adicionalmente, y a diferencia del modelo MA(q), se
@@ -336,23 +336,23 @@ ilustrar el comportamiento de la ACF y la PACF de un proceso AR(1).
 
 ### Modelos autorregresivos de orden p o AR(p)
 
-Se dice que $\{Y_t\}_{t≥1}$ sigue un proceso de autorregresivo de
+Se dice que `$\{Y_t\}_{t≥1}$` sigue un proceso de autorregresivo de
 orden p con media cero, si podemos expresar a
-$\widetilde{Y} = Y_t - \mu$ en términos de un proceso estacionario de
+`$\widetilde{Y} = Y_t - \mu$` en términos de un proceso estacionario de
 media cero, tal que
 
 $$\begin{align*}(\Phi_p (L))\widetilde{Y}_t & = \varepsilon_t \\ (1 - \phi_1 (L) - \phi_2 L^2 - \ldots - \phi_p L^p)\widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t - \phi_1 L \widetilde{Y}_t - \phi_2 L^2 \widetilde{Y}_t - \ldots - \phi_p L^p \widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t - \phi_1 \widetilde{Y}_{t-1} - \phi_2 \widetilde{Y}_{t-2} - \ldots - \phi_p \widetilde{Y}_{t-p} & = \varepsilon_t \\ \widetilde{Y}_t & = \phi_1 \widetilde{Y}_{t-1} + \phi_2 \widetilde{Y}_{t-2} + \ldots + \phi_p \widetilde{Y}_{t-p} + \varepsilon_t\end{align*}$$
 
 
-con $\varepsilon_t\sim R.B(0, \sigma_{\varepsilon}^2)$ independiente
-de $\widetilde{Y}_{t+k}$ para todo $k>0$. Similar al proceso AR(1),
+con `$\varepsilon_t\sim R.B(0, \sigma_{\varepsilon}^2)$` independiente
+de `$\widetilde{Y}_{t+k}$` para todo `$k>0$`. Similar al proceso AR(1),
 se observa que se tiene una estructura de regresión entre
-$\widetilde{Y}_t$ y $\widetilde{Y}_{t-j}$, con
-$j = 1,2, \ldots, p$ lo cual indica que **existe una relación lineal
+`$\widetilde{Y}_t$` y `$\widetilde{Y}_{t-j}$`, con
+`$j = 1,2, \ldots, p$` lo cual indica que **existe una relación lineal
 entre las observaciones y los p periodos pasados de la misma variable**.
 
 Adicionalmente, para garantizar que el modelo AR(p) sea estacionario,
-**se requiere que el polinomio de rezagos $(\Phi_p L)=0$**, con el fin
+**se requiere que el polinomio de rezagos `$(\Phi_p L)=0$`**, con el fin
 de que su modulo caiga fuera del circulo unitario. Por otro lado, se
 tiene que **todo proceso AR(p) es invertible**.
 
@@ -416,8 +416,8 @@ condiciones cuando se tiene un modelo AR o uno MA.
 
 <!-- Modificar ya que es tomado de Norman -->
 
-Suponga que se tiene que $\widetilde{Y}\sim MA(q)$, entonces
-$\widetilde{Y}$ puede ser escrito como
+Suponga que se tiene que `$\widetilde{Y}\sim MA(q)$`, entonces
+`$\widetilde{Y}$` puede ser escrito como
 
 $$\begin{align*}\widetilde{Y}_t & = \varepsilon_t + \theta_1 \varepsilon_{t-1} + \theta_2 \varepsilon_{t-2} + \ldots + \theta_q \varepsilon_{t-q}\end{align*}$$
 
@@ -426,16 +426,16 @@ donde
 $$\begin{align*}\Theta (L) = (1 + \theta_1 L + \theta_2 L^2 + \ldots + \theta_q L^q)\end{align*}$$
 
 
-entonces, si las raíces de $\Theta (z) = 0$, con
-$z_1, z_2, \ldots, z_q$ cumplen
+entonces, si las raíces de `$\Theta (z) = 0$`, con
+`$z_1, z_2, \ldots, z_q$` cumplen
 
 $$\begin{align*}|z_i|>1 \text{ con } i = 1, 2 . . . , q\end{align*}$$
 
 
-**se dice que $\widetilde{Y}_t$ es invertible**. En <tt>R</tt> puede
+**se dice que `$\widetilde{Y}_t$` es invertible**. En <tt>R</tt> puede
 emplearse la función `polyroot()` para el cálculo de la raíz del
 polinomio y la función `Mod()` para el cálculo del módulo de la raíz del
-polinomio. si el resultado es mayor a 1, entonces $\widetilde{Y}_t$ es
+polinomio. si el resultado es mayor a 1, entonces `$\widetilde{Y}_t$` es
 invertible. Además, como se señaló previamente, **un proceso de medias
 móviles siempre es estacionario!**
 <!-- Ver ejercicio norman pag 147 y pag 123-124 -->
@@ -444,8 +444,8 @@ móviles siempre es estacionario!**
 
 <!-- Modificar ya que es tomado de Norman -->
 
-Suponga que se tiene que $\widetilde{Y}\sim AR(p)$, entonces
-$\widetilde{Y}$ puede ser escrito como
+Suponga que se tiene que `$\widetilde{Y}\sim AR(p)$`, entonces
+`$\widetilde{Y}$` puede ser escrito como
 
 $$\begin{align*}\widetilde{Y}_t & = \phi_1 \widetilde{Y}_{t-1} + \phi_2 \widetilde{Y}_{t-2} + \ldots + \phi_p \widetilde{Y}_{t-p} + \varepsilon_t\end{align*}$$
 
@@ -455,16 +455,16 @@ donde
 $$\begin{align*}(\Phi_p L) = (1 - \phi_1 L - \phi_2 L^2 - \ldots - \phi_p L^p)\end{align*}$$
 
 
-entonces, si las raíces de $\Phi_p(z) = 0$, con
-$z_1, z_2, \ldots, z_p$ cumplen
+entonces, si las raíces de `$\Phi_p(z) = 0$`, con
+`$z_1, z_2, \ldots, z_p$` cumplen
 
 $$\begin{align*}|z_i|>1 \text{ con } i = 1, 2 . . . , p\end{align*}$$
 
 
-**se dice que $\widetilde{Y}_t$ es estacionaria**. En <tt>R</tt> puede
+**se dice que `$\widetilde{Y}_t$` es estacionaria**. En <tt>R</tt> puede
 emplearse la función `polyroot()` para el cálculo de la raíz del
 polinomio y la función `Mod()` para el cálculo del módulo de la raíz del
-polinomio. si el resultado es mayor a 1, entonces $\widetilde{Y}_t$ es
+polinomio. si el resultado es mayor a 1, entonces `$\widetilde{Y}_t$` es
 estacionaria. Además, como se señaló previamente, **un proceso de
 autorregresivo siempre es invertible!**
 
@@ -476,13 +476,13 @@ y MA, pues consiste en combinar ambas clases de modelos para obtener lo
 que se conoce como modelos autorregresivos de medias móviles.
 
 Una forma sencilla de introducir los modelos ARMA(p,q), es partiendo de
-que $\widetilde{Y}_t = Y_t - \mu \sim$AR(p), y por tanto, éste puede
+que `$\widetilde{Y}_t = Y_t - \mu \sim$`AR(p), y por tanto, éste puede
 ser escrito como
 
 $$\begin{align*}\widetilde{Y}_t - \phi_1 \widetilde{Y}_{t-1} - \phi_2 \widetilde{Y}_{t-2} - \ldots - \phi_p \widetilde{Y}_{t-p}& = \varepsilon_t\end{align*}$$
 
-donde $\varepsilon_t\sim R.B(0,\sigma_\varepsilon^2)$. Ahora, si se
-reemplaza $\varepsilon_t$ por un proceso MA(q)
+donde `$\varepsilon_t\sim R.B(0,\sigma_\varepsilon^2)$`. Ahora, si se
+reemplaza `$\varepsilon_t$` por un proceso MA(q)
 
 $$\begin{align*}Z_t= \varepsilon_t + \theta_1 \varepsilon_{t-1} + \theta_2 \varepsilon_{t-2} + \ldots + \theta_q \varepsilon_{t-q}\end{align*}$$
 
@@ -497,23 +497,23 @@ propiedades de ruido débilmente autocorrelacionado de los MA(q), lo cual
 le da suficiente flexibilidad y parsimonia para representar una variedad
 grande de procesos estacionarios en covarianza.
 
-En general, Se dice que $\{Y_t\}_{t≥1}$ es un proceso de autoregresivo
+En general, Se dice que `$\{Y_t\}_{t≥1}$` es un proceso de autoregresivo
 de media móvil de ordenes (p,q), si podemos expresar a
-$\widetilde{Y}_t = Y_t - \mu$ en términos de un proceso estacionario
+`$\widetilde{Y}_t = Y_t - \mu$` en términos de un proceso estacionario
 de media cero, tal que
 
 $$\begin{align*}\Phi_p (L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
 
 
-donde $\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j$ y
-$\Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j$ son los polinomios de
+donde `$\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j$` y
+`$\Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j$` son los polinomios de
 rezagos autorregresivo y de medias móviles, respectivamente.
 
 Adicionalmente, dado que el modelo ARMA(p,q) se construye a partir de un
 modelo AR(p) y un modelo MA(q), se asume que **las condiciones de
 estacionariedad de la parte AR(p) y de invertibilidad de la parte MA(q)
 se cumplen para el modelo ARMA(p,q)**, es decir, se tendrá que las
-raíces de los polinomios $\Phi_p(z)=0$ y $\Theta_q(z)=0$ se
+raíces de los polinomios `$\Phi_p(z)=0$` y `$\Theta_q(z)=0$` se
 encuentran por fuera del circulo unitario (es decir, tienen módulo mayor
 a uno). También, se asume que los dos polinomios no tienen raíces en
 común. Si estas dos condiciones se cumplen, se tendrá que el proceso

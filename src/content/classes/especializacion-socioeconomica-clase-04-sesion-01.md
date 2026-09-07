@@ -149,7 +149,7 @@ Suponga que se está interesado en la construcción de una nueva vía
 sur-norte cerca a la avenida Guayabal con el objetivo de reducir el
 tráfico en dicha vía y la autopista Sur, y para ello se decide registrar
 entre otras variables, el número de vehículos que transitan dicha vía
-por día, tomando de referencia un total de $28$ días para realizar los
+por día, tomando de referencia un total de `$28$` días para realizar los
 análisis, obteniendo los siguientes resultados
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto; text-align: center;">
@@ -252,7 +252,7 @@ análisis, obteniendo los siguientes resultados
 </table>
 
 Otra variable de interés registrada para estos $28$ días, es la del
-material particulado $2.5$ $PM_{2.5}$, con el objetivo de medir de
+material particulado `$2.5$` `$PM_{2.5}$`, con el objetivo de medir de
 cierta manera la contaminación generada en estos días, obteniendo los
 siguientes resultados
 
@@ -464,12 +464,12 @@ sector para iniciar las obras.
 ### Medidas de tendencia central
 
 Estas medidas tienen por objetivo cuantificar el comportamiento central
-de un conjunto de observaciones. Si se define $x_1, x_2, \ldots, x_n$
-como un conjunto de $n$ observaciones, entonces
+de un conjunto de observaciones. Si se define `$x_1, x_2, \ldots, x_n$`
+como un conjunto de `$n$` observaciones, entonces
 
 #### Media
 
-Es el promedio numérico de las $n$ observaciones.
+Es el promedio numérico de las `$n$` observaciones.
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}\end{align*}$$
 
@@ -512,13 +512,13 @@ avenida Guayabal en un día es igual a $1359.5$ automóviles.
 
 Es el valor que ocupa el lugar central en un conjunto de datos, es
 decir, el valor que divide el conjunto de observaciones en dos partes
-que contienen el $50\%$ de las observaciones. Para realizar el cálculo
+que contienen el `$50\%$` de las observaciones. Para realizar el cálculo
 de la mediana es necesario ordenar inicialmente el conjunto de
 observaciones de forma ascendente.
 
 $$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
 
-donde $x_{\left[j\right]}$ representa la $j$-ésima observación
+donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
 ordenada.
 
 En <tt>Excel</tt> puede calcularse la mediana de un conjunto de
@@ -836,15 +836,15 @@ se repiten dos veces en el conjunto de observaciones.
 Estas medidas tienen por objetivo dividir un conjunto de datos ordenado
 en partes iguales, entendidas estas como intervalos que contienen la
 misma proporción de observaciones. Si se define
-$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$, como un conjunto de $n$
+`$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$`, como un conjunto de `$n$`
 observaciones ordenadas en forma creciente, entonces
 
 #### Percentil
 
-Son los **noventa y nueve valores** $(j=1,2,\ldots,99)$, que dividen a
+Son los **noventa y nueve valores** `$(j=1,2,\ldots,99)$`, que dividen a
 un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
-necesario calcular inicialmente una variable $h_j$ de posicionamiento
-dado el cuartil $j$ de interés, tal que
+necesario calcular inicialmente una variable `$h_j$` de posicionamiento
+dado el cuartil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
 
@@ -855,8 +855,8 @@ interés
 $$\begin{align*}P_j=x_{[\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 En <tt>Excel</tt> puede calcularse el k-ésimo percentil de un conjunto
 de observaciones mediante la función `PERCENTIL.INC()`.
@@ -1015,7 +1015,7 @@ o igual a $1604.45$.
 Estas medidas tienen por objetivo determinar la dispersión o
 variabilidad que posee un conjunto de observaciones, en donde, entre
 mayor sean estas medidas, mayor será el grado de dispersión de los
-datos. Si se define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
+datos. Si se define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
 observaciones, entonces
 
 #### Varianza
@@ -1056,8 +1056,7 @@ tal que $$\begin{align*}
   S^2 &= \frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2} \\
       &= \frac{1}{28-1}\left[(1142 - 1359.5)^2 + \ldots + (1220 - 1359.5) ^2\right] \\
       &= 39226.6296296
-\end{align*}$$
-Es de anotar, que la interpretación de la varianza no
+\end{align*}$$ Es de anotar, que la interpretación de la varianza no
 tiene mucho sentido, debido a que la unidad de medición estará elevada
 al cuadrado, así que en general, los valores calculados se usan para
 realizar el cálculo de la desviación estándar.
@@ -1125,7 +1124,7 @@ $$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
 Entre las funciones base de <tt>Excel</tt> no hay ninguna función que
 calcule el coeficiente de variación de un conjunto de observaciones de
 forma directa, pero éste es fácil de calcular mediante el empleo de la
-desviación estándar $S$ y el valor absoluto de la media $\bar{X}$,
+desviación estándar `$S$` y el valor absoluto de la media `$\bar{X}$`,
 los cuales pueden calcularse mediante las funciones `DESVEST.M()` y
 `PROMEDIO()`, respectivamente.
 
@@ -1155,8 +1154,7 @@ que $$\begin{align*}
   CV &= \frac{S}{|\bar{X}|} \\
      &= \frac{198.0571373}{|1359.5|} \times 100\% \\
      &= 14.5683808 \% 
-\end{align*}$$
-De lo anterior, se aprecia que la variación porcentual
+\end{align*}$$ De lo anterior, se aprecia que la variación porcentual
 del número de automóviles en un día no es muy alto respecto a su media
 ya que el porcentaje de variación asciende solo hasta el
 $14.5683808 \%$ y por tanto se tendrá que los datos no se encuentran
@@ -1166,8 +1164,8 @@ muy dispersos respecto a su media.
 
 #### Rango intercuartílico
 
-Es la distancia o amplitud que hay entre el percentil $25$ y percentil
-$75$, de un conjunto de datos. Éste muestra la amplitud del $50\%$
+Es la distancia o amplitud que hay entre el percentil `$25$` y percentil
+`$75$`, de un conjunto de datos. Éste muestra la amplitud del `$50\%$`
 de los datos centrales de un conjunto de observaciones. Esta medida
 puede ser tomada como una medida de variabilidad para la mediana.
 
@@ -1177,7 +1175,7 @@ $$\begin{align*}IQR = P_{75} - P_{25}\end{align*}$$
 Entre las funciones base de <tt>Excel</tt> no hay ninguna función que
 calcule el rango intercuartílico de un conjunto de observaciones de
 forma directa, pero éste es fácil de calcular mediante el empleo del
-percentil $75$ $P_{75}$ y percentil $25$, $P_{25}$, los cuales
+percentil `$75$` `$P_{75}$` y percentil `$25$`, `$P_{25}$`, los cuales
 pueden calcularse mediante la función `PERCENTIL.INC()`.
 
 <button id="Show8" class="btn btn-secondary">
@@ -1227,11 +1225,11 @@ a su mediana
 $$\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}$$
 
 
-donde $b$ es una constante definida como $b=1/C_{3}$, con $C_{3}$
+donde `$b$` es una constante definida como `$b=1/C_{3}$`, con `$C_{3}$`
 el valor del tercer cuartil de la distribución de interés (no el
-obtenido de los datos) y con $Me(|X_i-\tilde{X}|)$ la mediana del
-valor absoluto de la diferencia $X_i-\tilde{X}$. Además, si la
-distribución es normal, entonces $b\approx1.4826$.
+obtenido de los datos) y con `$Me(|X_i-\tilde{X}|)$` la mediana del
+valor absoluto de la diferencia `$X_i-\tilde{X}$`. Además, si la
+distribución es normal, entonces `$b\approx1.4826$`.
 
 Entre las funciones base de <tt>Excel</tt> no hay ninguna función que
 calcule la desviación absoluta mediana de un conjunto de observaciones
@@ -1396,8 +1394,7 @@ $$\begin{align*}
 MAD &= b\times Me(|X_i-\tilde{X}|)\\
     &= 1.4826 \times 172.5 \\
     &= 255.7485 
-\end{align*}$$
-De lo anterior se obtiene que la mediana del número de
+\end{align*}$$ De lo anterior se obtiene que la mediana del número de
 vehículo que transitan en un día por la avenida Guayabal sur-norte es de
 $1365$ vehículos, con una desviación absoluta mediana de $255.7485$.
 </p>
@@ -1416,15 +1413,15 @@ uniformemente alrededor de las medidas de tendencia central.
 
 $$\begin{align*}\gamma_1 = \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
 
-El signo de $\gamma_1$ indica la dirección de la asimetría.
+El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
--   $\gamma_1>0$ indica asimetría positiva, es decir, las
+-   `$\gamma_1>0$` indica asimetría positiva, es decir, las
     observaciones se reúnen más en la parte izquierda de las medidas de
     tendencia central.
--   $\gamma_1<0$ indica asimetría negativa, es decir, las
+-   `$\gamma_1<0$` indica asimetría negativa, es decir, las
     observaciones se reúnen más en la parte derecha de las medidas de
     tendencia central.
--   $\gamma_1\sim0$ indica simetría, es decir, existe aproximadamente
+-   `$\gamma_1\sim0$` indica simetría, es decir, existe aproximadamente
     la misma cantidad de observaciones a los dos lados de las medidas de
     tendencia central.
 
@@ -1463,8 +1460,7 @@ coeficiente de asimetría estará dado por $$\begin{align*}
   \gamma_{1} &= \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3}\\
              &= \frac{28}{(27)(26)}\left[\frac{(1142 - 1359.5)^3 + \ldots + (1588 - 1359.5)^3}{198.0571373^3}\right] \\
              &= -0.0106128
-\end{align*}$$
-De lo anterior se observa que el coeficiente de asimetría
+\end{align*}$$ De lo anterior se observa que el coeficiente de asimetría
 es negativa pero cercana a $0$, lo cual significa que el número de
 vehículos que transita por la avenida Guayabal en un día es
 aproximadamente simétrica con un leve sesgo hacia la izquierda, es
@@ -1481,13 +1477,13 @@ datos
 $$\begin{align*}\gamma_2 = \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)} \quad -2<\gamma_2<\infty\end{align*}$$
 
 
-El signo de $\gamma_2$ indica el nivel de concentración.
+El signo de `$\gamma_2$` indica el nivel de concentración.
 
--   $\gamma_2>0$ indica leptocurtosis, es decir, la forma de los datos
+-   `$\gamma_2>0$` indica leptocurtosis, es decir, la forma de los datos
     es más en punta y posee colas menos anchas.
--   $\gamma_2<0$ indica platicurtosis, es decir, la forma de los datos
+-   `$\gamma_2<0$` indica platicurtosis, es decir, la forma de los datos
     es más plana y posee colas más anchas.
--   $\gamma_2\sim0$ indica mesocurtosis, es decir, tanto la punta como
+-   `$\gamma_2\sim0$` indica mesocurtosis, es decir, tanto la punta como
     las colas son similares a la distribución normal.
 
 <h4 align="center">
@@ -1524,8 +1520,7 @@ la avenida Guayabal en un día, dando como resultado $$\begin{align*}
   \gamma_{2} &= \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)}\\
              &= \frac{28(29)}{27}(26)(25)\left[\frac{(1142 - 1359.5)^4 + \ldots + (1142 - 1359.5)^4}{198.0571373^4}\right] - \frac{3(27)^2}{(26)(25)} \\
              &= -1.1414707
-\end{align*}$$
-A partir del valor calculado, se observa que el
+\end{align*}$$ A partir del valor calculado, se observa que el
 coeficiente de exceso de curtosis es menor que $0$, y por tanto, se
 puede concluir que el número de automóviles que transitan por la avenida
 Guayabal en un día posee un comportamiento platicúrtico, es decir que el
@@ -1539,8 +1534,8 @@ relativamente uniforme, debido a que su comportamiento es muy plano.
 Estas medidas tienen por objetivo estimar la magnitud con la que dos
 fenómenos se relacionan, en donde, entre mayor sean estas medidas, mayor
 será el grado de asociación que tendrán las variables. Si se define
-$x_1, x_2, \ldots, x_n$ y $y_1, y_2, \ldots, y_n$ como dos conjuntos
-de $n$ observaciones, entonces
+`$x_1, x_2, \ldots, x_n$` y `$y_1, y_2, \ldots, y_n$` como dos conjuntos
+de `$n$` observaciones, entonces
 
 #### Covarianza
 
@@ -1550,15 +1545,15 @@ grado de variación conjunta de dos variables respecto a sus medias
 $$\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}$$
 
 
-El signo de $S_{xy}$ indica el tipo de dependencia lineal que hay
+El signo de `$S_{xy}$` indica el tipo de dependencia lineal que hay
 entre las variables.
 
--   $S_{xy} > 0$ indica que hay dependencia lineal positiva entre las
+-   `$S_{xy} > 0$` indica que hay dependencia lineal positiva entre las
     variables, es decir, cuando aumenta una variable, la otra también
     aumenta.
--   $S_{xy} < 0$ indica que hay dependencia lineal negativa entre las
+-   `$S_{xy} < 0$` indica que hay dependencia lineal negativa entre las
     variables, es decir, cuando aumenta una variable, la otra disminuye.
--   $S_{xy} \approx 0$ indica que no existencia dependencia lineal
+-   `$S_{xy} \approx 0$` indica que no existencia dependencia lineal
     entre las dos variables.
 
 En <tt>Excel</tt> puede calcularse la covarianza de dos conjunto de
@@ -1609,42 +1604,42 @@ registrado en un día.
 #### Correlación
 
 Mide la fuerza de la dependencia lineal que hay entre variables, esta va
-entre $-1$ y $1$
+entre `$-1$` y `$1$`
 
 $$\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}$$
 
 
-El valor de $\rho_{xy}$ indica el tipo y fuerza de la dependencia
+El valor de `$\rho_{xy}$` indica el tipo y fuerza de la dependencia
 lineal que hay entre las variables
 
--   $\rho_{xy} = 1$ indica que existe dependencia lineal positiva
+-   `$\rho_{xy} = 1$` indica que existe dependencia lineal positiva
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra aumenta proporcionalmente en la misma cantidad. Este aumento
-    es de la forma $Y = a + bX$, siendo $a$ y $b$ dos constantes,
-    con $b>0$.
--   $\rho_{xy} = -1$ indica que existe dependencia lineal negativa
+    es de la forma `$Y = a + bX$`, siendo `$a$` y `$b$` dos constantes,
+    con `$b>0$`.
+-   `$\rho_{xy} = -1$` indica que existe dependencia lineal negativa
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra disminuye proporcionalmente en la misma cantidad. Este
-    aumento es de la forma $Y = a + bX$ con $a y b$ dos constantes,
-    y $b<0$.
--   $\rho_{xy} = 0$ No existe dependencia lineal entre las variables.
+    aumento es de la forma `$Y = a + bX$` con `$a y b$` dos constantes,
+    y `$b<0$`.
+-   `$\rho_{xy} = 0$` No existe dependencia lineal entre las variables.
 
 Además, se tendrá que si
 
--   $0.5 < \rho_{xy} \leq 1$ fuerte correlación positiva entre $X$ y
-    $Y$.
--   $0.3 < \rho_{xy} \leq 0.5$ moderada correlación positiva entre
-    $X$ y $Y$.
--   $0.1 < \rho_{xy} \leq 0.3$ débil correlación positiva entre $X$
-    y $Y$.
--   $-0.1 \leq \rho_{xy} \leq 0.1$ débil o ninguna correlación entre
-    $X$ y $Y$.
--   $-0.3 \leq \rho_{xy} < -0.1$ débil correlación negativa entre
-    $X$ y $Y$.
--   $-0.5 \leq \rho_{xy} < -0.3$ moderada correlación negativa entre
-    $X$ y $Y$.
--   $-1 \leq \rho_{xy} < -0.5$ fuerte correlación negativa entre $X$
-    y $Y$.
+-   `$0.5 < \rho_{xy} \leq 1$` fuerte correlación positiva entre `$X$` y
+    `$Y$`.
+-   `$0.3 < \rho_{xy} \leq 0.5$` moderada correlación positiva entre
+    `$X$` y `$Y$`.
+-   `$0.1 < \rho_{xy} \leq 0.3$` débil correlación positiva entre `$X$`
+    y `$Y$`.
+-   `$-0.1 \leq \rho_{xy} \leq 0.1$` débil o ninguna correlación entre
+    `$X$` y `$Y$`.
+-   `$-0.3 \leq \rho_{xy} < -0.1$` débil correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-0.5 \leq \rho_{xy} < -0.3$` moderada correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-1 \leq \rho_{xy} < -0.5$` fuerte correlación negativa entre `$X$`
+    y `$Y$`.
 
 En <tt>Excel</tt> puede calcularse la correlación de dos conjunto de
 observaciones mediante la función `COEF.DE.CORREL()`.

@@ -8,16 +8,16 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Prueba de hipótesis para diferencia de proporciones $p_1 - p_2$
+## Prueba de hipótesis para diferencia de proporciones `$p_1 - p_2$`
 
-Sean $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
-tamaño $n_1$ y $n_2$, tal que $X_{i}\sim b(n_i,p_i)$, para
-$i=1,2$, entonces si $n_1$ y $n_2$ son suficientemente grandes tal
-que $n_1, n_2\geq30$, y si las proporciones desconocidas $p_1$ y
-$p_2$ no se encuentran cercanas a $0$ o $1$, tal que $n_ip_i>5$
-y $n_i(1-p_i)>5$, para $i=1,2$, entonces un una prueba de hipótesis
-para la diferencia de las proporciones $p_1-p_2$ será de la forma
+Sean `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
+tamaño `$n_1$` y `$n_2$`, tal que `$X_{i}\sim b(n_i,p_i)$`, para
+`$i=1,2$`, entonces si `$n_1$` y `$n_2$` son suficientemente grandes tal
+que `$n_1, n_2\geq30$`, y si las proporciones desconocidas `$p_1$` y
+`$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que `$n_ip_i>5$`
+y `$n_i(1-p_i)>5$`, para `$i=1,2$`, entonces un una prueba de hipótesis
+para la diferencia de las proporciones `$p_1-p_2$` será de la forma
 
 ![](/assets/images/Hipotesis6.jpg)
 
@@ -80,7 +80,7 @@ proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
 que $$\begin{align*}
-\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
@@ -90,7 +90,7 @@ mientras que para los equipos que se construyen con el procedimiento
 actual, se tendrá que
 
 $$\begin{align*}
-\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
@@ -128,13 +128,13 @@ superiores al promedio.
 </p>
 </main>
 
-## Prueba de hipótesis para una varianza $\sigma^2$
+## Prueba de hipótesis para una varianza `$\sigma^2$`
 
-Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria de una
-población normal de tamaño $n$ conmedias $\mathbb{E}(X)=\mu$ y
-varianza desconocidas $Var(X)=\sigma_1^2<\infty$, entonces un
-contraste de hipótesis para la varianza real $\sigma^2$, a un nivel de
-significancia $\alpha$ será de la forma
+Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria de una
+población normal de tamaño `$n$` conmedias `$\mathbb{E}(X)=\mu$` y
+varianza desconocidas `$Var(X)=\sigma_1^2<\infty$`, entonces un
+contraste de hipótesis para la varianza real `$\sigma^2$`, a un nivel de
+significancia `$\alpha$` será de la forma
 
 ![](/assets/images/Hipotesis7.jpg)
 
@@ -273,16 +273,16 @@ $300000$ millones de pesos$^2$.
 </p>
 </main>
 
-## Prueba de hipótesis para cociente de varianzas $\sigma^2_1/\sigma^2_2$
+## Prueba de hipótesis para cociente de varianzas `$\sigma^2_1/\sigma^2_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
-de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
-$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
+de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
+`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces un contraste de hipótesis para el cociente de
-varianzas $\sigma^2_1/\sigma^2_2$, a un nivel de significancia
-$\alpha$ será de la forma
+varianzas `$\sigma^2_1/\sigma^2_2$`, a un nivel de significancia
+`$\alpha$` será de la forma
 
 ![](/assets/images/Hipotesis8.jpg)
 
@@ -407,8 +407,7 @@ la otra, significa que estaremos bajo la siguientes situación
 en donde se aprecia que el estadístico de prueba para esta ocasión
 estará dado por $$\begin{align*}
    F_c=\frac{S^2_{S}}{S^2_{C}}\sim F_{n_S-1, n_C-1}
-\end{align*}$$
-En donde se observa que para realizar el cálculo del
+\end{align*}$$ En donde se observa que para realizar el cálculo del
 estadístico, se requiere de las varianzas muestrales $S^2_S$ y
 $S^2_C$, las cuales son iguales a
 
@@ -483,7 +482,7 @@ La hipótesis a probar de interés estará dada por
 $$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
 
 
-Siendo $F_0(x)$ la distribución de probabilidad hipótetica que se
+Siendo `$F_0(x)$` la distribución de probabilidad hipótetica que se
 quiere probar.
 
 Entre las pruebas de bondad de ajuste más usadas se tiene:

@@ -89,14 +89,14 @@ en donde
     un carácter especial para datos de clase numérica, para indicar un
     valor asociado a un cálculo cuyo resultado es desconocido, el cual
     seguramente no es un número. Este puede obtenerse mediante
-    operaciones tales como $0/0$, $Inf/Inf$, $Inf-Inf$.
+    operaciones tales como `$0/0$`, `$Inf/Inf$`, `$Inf-Inf$`.
 -   **<tt style="color: #ff628c!important">NA</tt> (Not Available)**: Es
     un carácter especial para indicar valores perdidos o faltantes.
 -   **<tt style="color: #ff628c!important">NA\_integer\_, NA\_real\_,
     NA\_complex\_, NA\_character\_</tt>**: Son carácteres especiales que
     indican valores perdidos o faltantes para diferentes tipo de
     vectores atómicos.
--   $\text{… }$: Es un carácter especial que se emplea para permitir a
+-   `$\text{… }$`: Es un carácter especial que se emplea para permitir a
     una función pueda configurarse con los argumento a otra función.
 
 El listado palabras reservadas en el lenguaje <tt>R</tt> también pueden
@@ -511,14 +511,14 @@ cuando se deseen manipular.
 Los tipos de datos más que pueden encontrarse en <tt>R</tt> son:
 
 -   **<tt>numeric</tt>**: Datos númericos, los cuales soportan números
-    que se encuentren en el conjunto de los reales, $\mathbb{R}$, y
+    que se encuentren en el conjunto de los reales, `$\mathbb{R}$`, y
     por tanto soporta tanto números enteros (<tt>integer</tt>) y números
     de doble presición (<tt>double</tt>).
 -   **<tt>integer</tt>**: Datos enteros, los cuales soportan números que
-    se encuentren en el conjunto de los enteros, $\mathbb{Z}$, y en
+    se encuentren en el conjunto de los enteros, `$\mathbb{Z}$`, y en
     consecuencia, solo soporta números enteros.
 -   **<tt>complex</tt>**: Datos complejos, los cuales soportan números
-    que se encuentren en el conjunto de los complejos, $\mathbb{C}$, y
+    que se encuentren en el conjunto de los complejos, `$\mathbb{C}$`, y
     por tanto, soporta tanto números reales como imaginarios.
 -   **<tt>character</tt>**: Datos de carácter, los cuales soportan
     carácteres alfanuméricos, es decir, datos numéricos y alfabéticos.
@@ -681,8 +681,8 @@ Estructura de datos
 La idea de esta sección es resumir las estructuras básicas más
 importantes que puede tener un conjunto de datos en <tt>R</tt>.
 
-Dichas estructuras se pueden organizar por su dimensionalidad ($1d$,
-$2d$ o $nd$) y si permiten o no diferentes tipos de objetos a la vez
+Dichas estructuras se pueden organizar por su dimensionalidad (`$1d$`,
+`$2d$` o `$nd$`) y si permiten o no diferentes tipos de objetos a la vez
 (homogeneidad o heterogeneidad).
 
 Para resumir la estructura de datos en <tt>R</tt>, podemos remitirnos a

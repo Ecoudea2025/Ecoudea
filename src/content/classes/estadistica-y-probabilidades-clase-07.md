@@ -13,8 +13,8 @@ Distribuciones de probabilidad continuas
 
 ### Distribución Chi-Cuadrado
 
-Se dice que la variable aleatoria $X$ tiene una distribución
-Chi-Cuadrado con $\nu$ grados de libertad si su función de densidad de
+Se dice que la variable aleatoria `$X$` tiene una distribución
+Chi-Cuadrado con `$\nu$` grados de libertad si su función de densidad de
 probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{2^{\frac{\nu}{2}}\Gamma(\frac{\nu}{2})} x^{\frac{\nu}{2}-1}e^{-{\frac{x}{2}}} \quad \quad & x>0; \nu>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
@@ -22,21 +22,21 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{2^{\frac{\nu}{2}}\Gamma(\frac{\nu}
 
 en donde se observa que ésta distribución es un caso particular de la
 distribución Gamma cuando el parámetro de forma
-$\alpha = \frac{\nu}{2}$ y el parámetro de razón $\beta = 1/2$.
+`$\alpha = \frac{\nu}{2}$` y el parámetro de razón `$\beta = 1/2$`.
 
 #### Media y Varianza Chi-Cuadrado
 
-Si $X\sim \chi^2_\nu$, entonces se puede probar que la media y
-varianza de la variable aleatoria $X$ están dadas por
+Si `$X\sim \chi^2_\nu$`, entonces se puede probar que la media y
+varianza de la variable aleatoria `$X$` están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \nu \quad \quad Var(X)=2\nu\end{align*}$$
 
 
 <button id="Show1" class="btn btn-secondary">
-Mostrar Ejercicio Manejo de Tabla $\chi^2$
+Mostrar Ejercicio Manejo de Tabla `$\chi^2$`
 </button>
 <button id="Hide1" class="btn btn-info">
-Ocultar Ejercicio Manejo de Tabla $\chi^2$
+Ocultar Ejercicio Manejo de Tabla `$\chi^2$`
 </button>
 <main id="botoncito1">
 <h3 data-toc-skip>
@@ -118,8 +118,7 @@ similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
-\end{align*}$$
-En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
 $\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
@@ -162,8 +161,7 @@ $$\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} \leq 15.812) - \mathbb{P}(\chi^2_{12} \leq 9.034) \\
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
-\end{align*}$$
-obteniendo que la probabilidad
+\end{align*}$$ obteniendo que la probabilidad
 $\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
 $\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
@@ -298,8 +296,7 @@ y finalmente buscando cada una de las probabilidades individuales en el
 software, en donde la probabilidad exacta de $\mathbb{P}(X \lt  15)$ es
 igual a $$\begin{align*}
   \mathbb{P}(X < 15) = 0.2235924
-\end{align*}$$
-mientras que la probabilidad exacta de
+\end{align*}$$ mientras que la probabilidad exacta de
 $\mathbb{P}(X \geq 10)$ es igual a $$\begin{align*}
   \mathbb{P}(X < 10) = 0.03182806
 \end{align*}$$
@@ -365,21 +362,21 @@ el cálculo de la probabilidad de forma manual.
 
 ### Distribución Beta
 
-Se dice que la variable aleatoria $X$ tiene una distribución beta con
-parámetros de forma $\alpha$ y $\beta$ si su función de densidad de
+Se dice que la variable aleatoria `$X$` tiene una distribución beta con
+parámetros de forma `$\alpha$` y `$\beta$` si su función de densidad de
 probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1} (1 - x)^{\beta - 1} \quad \quad & 0<x<1; \alpha>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
 
 
 en donde se observa que ésta distribución es un caso particular de la
-distribución Uniforme en el intervalo $(0, 1)$ cuando los parámetros
-de forma $\alpha = 1$ y $\beta = 1$.
+distribución Uniforme en el intervalo `$(0, 1)$` cuando los parámetros
+de forma `$\alpha = 1$` y `$\beta = 1$`.
 
 #### Media y Varianza Beta
 
-Si $X\sim Beta(\alpha, \beta)$, entonces se puede probar que la media
-y varianza de la variable aleatoria $X$ están dadas por
+Si `$X\sim Beta(\alpha, \beta)$`, entonces se puede probar que la media
+y varianza de la variable aleatoria `$X$` están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \frac{\alpha}{\alpha + \beta} \quad \quad Var(X)=\frac{\alpha\beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}\end{align*}$$
 
@@ -473,8 +470,8 @@ un $66.66\%$ del tanque con una desviación estándar de $17.82\%$.
 
 ### Distribución Normal
 
-Se dice que la variable aleatoria $X$ tiene una distribución Normal
-con parámetros $\mu$ y $\sigma^2)$, si su función de densidad de
+Se dice que la variable aleatoria `$X$` tiene una distribución Normal
+con parámetros `$\mu$` y `$\sigma^2)$`, si su función de densidad de
 probabilidad es de la forma
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
@@ -482,18 +479,18 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x -
 
 #### Media y Varianza Normal
 
-Si $X\sim N(\mu, \sigma^2)$, entonces se puede probar que la media y
-la varianza de la variable aleatoria $X$ están dadas por
+Si `$X\sim N(\mu, \sigma^2)$`, entonces se puede probar que la media y
+la varianza de la variable aleatoria `$X$` están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}$$
 
 
 ### Distribución Normal estándar
 
-Un caso particular de la distribución normal cuando la media $\mu=0$ y
-ka varianza $\sigma^2=1$, recibe el nombre de distribución normal
-estándar, cuya variable aleatoria se simboliza con $Z$, tal que
-$Z\sim N(0,1)$, y donde su función de densidad de probabilidad está
+Un caso particular de la distribución normal cuando la media `$\mu=0$` y
+ka varianza `$\sigma^2=1$`, recibe el nombre de distribución normal
+estándar, cuya variable aleatoria se simboliza con `$Z$`, tal que
+`$Z\sim N(0,1)$`, y donde su función de densidad de probabilidad está
 dada por
 
 
@@ -502,38 +499,38 @@ $$\begin{align*}f(z) = \begin{cases} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} & -
 
 #### Teorema de Estandarización
 
-Si $X\sim N(\mu, \sigma^2)$, siendo $a$ y $b$ dos constantes
+Si `$X\sim N(\mu, \sigma^2)$`, siendo `$a$` y `$b$` dos constantes
 cualquiera, entonces si se realiza la transformación
-$Z=\frac{x-\mu}{\sigma}$ conocida como **estandarización**, se tendrá
-que $Z\sim N(0,1)$, con $z_1$ y $z_2$ las dos constantes
+`$Z=\frac{x-\mu}{\sigma}$` conocida como **estandarización**, se tendrá
+que `$Z\sim N(0,1)$`, con `$z_1$` y `$z_2$` las dos constantes
 transformadas.
 
 ![](/assets/images/Estandarizacion.jpg)
 
 #### Propiedades Distribución Normal Estándar
 
-Si $X\sim N(\mu, \sigma^2)$, entonces al aplicar el teorema de
-estandarización $Z=\frac{x-\mu}{\sigma} \sim N(0,1)$, y por tanto, si
-$z_1$ y $z_2$ son constantes, se tendrá que
+Si `$X\sim N(\mu, \sigma^2)$`, entonces al aplicar el teorema de
+estandarización `$Z=\frac{x-\mu}{\sigma} \sim N(0,1)$`, y por tanto, si
+`$z_1$` y `$z_2$` son constantes, se tendrá que
 
-1.  $\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$
+1.  `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$`
 
-2.  $\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$
+2.  `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$`
 
-3.  $\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$
+3.  `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$`
 
-4.  Si $z_1 = - z_2$ entonces
-    $\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$
+4.  Si `$z_1 = - z_2$` entonces
+    `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$`
 
-5.  $Z_\alpha$ es el valor de la variable aleatoria $Z\sim N(0,1)$
-    tal que $\mathbb{P}(Z\geq Z_\alpha)=\alpha$, y
-    $\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$
+5.  `$Z_\alpha$` es el valor de la variable aleatoria `$Z\sim N(0,1)$`
+    tal que `$\mathbb{P}(Z\geq Z_\alpha)=\alpha$`, y
+    `$\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$`
 
 En donde, debe recordarse que, al ser la distribución normal una
-distribución continua, la $\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z< z_1)$
-y $\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z > z_1)$. Lo anterior debido a
+distribución continua, la `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z< z_1)$`
+y `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z > z_1)$`. Lo anterior debido a
 que en la distribuciones continuas la probabilidad puntual es igual a
-$0$.
+`$0$`.
 
 <button id="Show4" class="btn btn-secondary">
 Mostrar Ejercicio Manejo de Tabla Normal Estándar
@@ -618,8 +615,7 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$
-En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -656,8 +652,7 @@ acumulada para el caso continuo, ya presentadas en la
 
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$
-obteniendo que la probabilidad
+\end{align*}$$ obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -748,8 +743,7 @@ En este caso estamos interesados en que la batería de una celular dure
 al menos $4$ años, es decir, queremos calcular la siguiente
 probabilidad. $$\begin{align*}
 \mathbb{P}(X \geq 4)
-\end{align*}$$
-Pero en este caso tenemos que la distribución de los
+\end{align*}$$ Pero en este caso tenemos que la distribución de los
 datos no se distribuye $N(0,1)$, si no que se distribuye
 $N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
 con el fin de llevar la distribución $N(5, 1.2)$ a una normal
@@ -757,14 +751,12 @@ estándar, tal que $$\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$
-En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
 la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
-\end{align*}$$
-y en consecuencia podemos ahora buscar la probabilidad
+\end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}(Z \lt  -0.83)$ en la tabla de la distribución normal
 estándar, de la siguiente manera
 
@@ -798,18 +790,18 @@ celular dure al menos $4$ años, es del $76.67\%$.
 
 ### Distribución Lognormal
 
-Se dice que la variable aleatoria $X$ tiene una distribución
-lognormal, si la variable aleatoria $Y=ln(X)$ posee una distribución
-normal con parámetros $\mu$ y $\sigma^2$, tal que la función de
-densidad de probabilidad de $X$ será igual a
+Se dice que la variable aleatoria `$X$` tiene una distribución
+lognormal, si la variable aleatoria `$Y=ln(X)$` posee una distribución
+normal con parámetros `$\mu$` y `$\sigma^2$`, tal que la función de
+densidad de probabilidad de `$X$` será igual a
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{x \sqrt{2\pi\sigma^2}}e^{-\frac{(ln(x) - \mu)^2}{2\sigma^2}} & x>0, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
 
 
 #### Media y Varianza Lognormal
 
-Si $X\sim LogN(\mu, \sigma)$, entonces se puede probar que la media y
-la varianza de la variable aleatoria $X$ están dadas por
+Si `$X\sim LogN(\mu, \sigma)$`, entonces se puede probar que la media y
+la varianza de la variable aleatoria `$X$` están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=e^{\mu+\frac{\sigma^2}{2}} \quad \quad Var(X)=e^{2\mu+\sigma^2} (e^{\sigma^2}  - 1)\end{align*}$$
 
@@ -902,8 +894,7 @@ de concentración de contaminación es de $$\begin{align*}
 \mathbb{E}(X) &= e^{\mu+\frac{\sigma^2}{2}} \\
               &= e^{5+\frac{2.8^2}{2}} \\
               &= 7480.089
-\end{align*}$$
-la varianza será igual a $$\begin{align*}
+\end{align*}$$ la varianza será igual a $$\begin{align*}
 Var(X) &= e^{2\mu+\sigma^2} (e^{\sigma^2}  - 1) \\
        &= e^{2(5)+2.8^2} (e^{2.8^2}  - 1) \\
        &= 55951735 (2540.205  - 1) \\

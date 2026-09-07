@@ -74,7 +74,7 @@ apply(X, MARGIN, FUN, ...)
     elementos de <tt>X</tt>. Donde el identificador 1 indica filas y el
     identificador 2 indica.
 -   <tt>FUN</tt>: La función que se aplicará a las filas o las columnas.
--   <tt>$\ldots$</tt>: Argumentos adicionales asociados a
+-   <tt>`$\ldots$`</tt>: Argumentos adicionales asociados a
     <tt>FUN</tt>.
 
 <button id="Show1" class="btn btn-secondary">
@@ -90,8 +90,7 @@ Función <tt>apply</tt>
 <p>
 Construya una matríz de la forma $$\begin{align*}
 M = \begin{bmatrix}5 & 12 & 14 \\13 & 6 & 3 \\8 & 9 & 12 \\15 & 12 & 11 \end{bmatrix}
-\end{align*}$$
-Y con ésta, encuentre el número máximo y número mínimo
+\end{align*}$$ Y con ésta, encuentre el número máximo y número mínimo
 por cada fila y por cada columna.
 </p>
 <section class="language-r highlighter-rouge">
@@ -213,7 +212,7 @@ lapply(X, FUN, ...)
 -   <tt>X</tt>: Conjunto de observaciones que puede coercionarse a una
     lista.
 -   <tt>FUN</tt>: La función que se aplicará a las filas o las columnas.
--   <tt>$\ldots$</tt>: Argumentos adicionales asociados a
+-   <tt>`$\ldots$`</tt>: Argumentos adicionales asociados a
     <tt>FUN</tt>.
 
 <button id="Show2" class="btn btn-secondary">
@@ -289,7 +288,7 @@ sapply(X, FUN, ..., simplify = TRUE)
 -   <tt>X</tt>: Conjunto de observaciones que puede coercionarse a una
     lista.
 -   <tt>FUN</tt>: La función que se aplicará a las filas o las columnas.
--   <tt>$\ldots$</tt>: Argumentos adicionales asociados a
+-   <tt>`$\ldots$`</tt>: Argumentos adicionales asociados a
     <tt>FUN</tt>.
 -   <tt>simplify</tt>: valor lógico, que permite simplificar el
     resultado obtenido a un vector, matriz o arreglos, si <tt>simplify =
@@ -371,7 +370,7 @@ vapply(X, FUN, FUN.VALUE, ...)
 -   <tt>FUN.VALUE</tt>: Un vector (generalizado), asociado a los valores
     que se retornarán en <tt>FUN</tt> para observar si éstos cumplen o
     no la condición.
--   <tt>$\ldots$</tt>: Argumentos adicionales asociados a
+-   <tt>`$\ldots$`</tt>: Argumentos adicionales asociados a
     <tt>FUN</tt>.
 
 <button id="Show4" class="btn btn-secondary">
@@ -441,7 +440,7 @@ mapply(FUN, ..., MoreArgs = NULL, SIMPLIFY = TRUE)
 ```
 
 -   <tt>FUN</tt>: La función que se aplicará a las filas o las columnas.
--   <tt>$\ldots$</tt>: Argumentos adicionales asociados a
+-   <tt>`$\ldots$`</tt>: Argumentos adicionales asociados a
     <tt>FUN</tt>.
 -   <tt>MoreArgs</tt>: Una lista de otros argumentos asociados a
     <tt>FUN</tt>.
@@ -524,7 +523,7 @@ tapply(X, INDEX, FUN, ..., simplify = TRUE)
     coercionarse a unn factores. Debe ser del mismo tamaño de
     <tt>X</tt>.
 -   <tt>FUN</tt>: La función que se aplicará a las filas o las columnas.
--   <tt>$\ldots$</tt>: Argumentos adicionales asociados a
+-   <tt>`$\ldots$`</tt>: Argumentos adicionales asociados a
     <tt>FUN</tt>.
 -   <tt>simplify</tt>: valor lógico, que permite simplificar el
     resultado.

@@ -37,12 +37,12 @@ por orden de magnitud.
 
 ### Estadísticos muestrales
 
-Sea $X_1, X_2, \ldots, Xn$ una muestra aleatoria *iid* de tamaño
-$n$, entonces se tendrán los siguientes estadísticos muestrales
+Sea `$X_1, X_2, \ldots, Xn$` una muestra aleatoria *iid* de tamaño
+`$n$`, entonces se tendrán los siguientes estadísticos muestrales
 
 #### Media muestral
 
-Es el promedio aritmético del total de las $n$ observaciones
+Es el promedio aritmético del total de las `$n$` observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
@@ -59,8 +59,8 @@ pertenecientes a una muestra aleatoria, respecto a la media muestra.
 $$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
 
 
-siendo el valor $n-1$ conocido como la corrección de Bessel, el cuál
-se usa en lugar de la división sobre $n$ con el fin de corregir el
+siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
+se usa en lugar de la división sobre `$n$` con el fin de corregir el
 sesgo tendría el estimador.
 
 En Excel puede calcularse la varianza de un conjunto de observaciones
@@ -87,8 +87,8 @@ la muestra pertenece a la categoría de interés, y por tanto, puede ser
 calculada mediante la definición de frecuencia relativa, tal que
 
 $$\begin{align*}\hat{p}=\frac{x}{n}\end{align*}$$
- siendo $x$ el
-número de éxitos en la muestra, y $n$ el total de observaciones de la
+ siendo `$x$` el
+número de éxitos en la muestra, y `$n$` el total de observaciones de la
 muestra aleatoria.
 
 ## Prueba de hipótesis
@@ -100,23 +100,23 @@ información obtenida de una muestra de la población de interés.
 
 Por ejemplo, un médico afirma que el peso ideal de las personas de
 cierta población sigue una distribución normal con peso promedio de
-$73$kg y desviación estándar de $3$kg.
+`$73$`kg y desviación estándar de `$3$`kg.
 
 #### Componentes de una prueba de hipótesis
 
 #### Hipótesis nula
 
-Sea $\theta$ un parámetro de interés desconocido y sea $\theta_0$ un
-valor particular de $\theta$, entonces se tendrá que la hipótesis nula
+Sea `$\theta$` un parámetro de interés desconocido y sea `$\theta_0$` un
+valor particular de `$\theta$`, entonces se tendrá que la hipótesis nula
 estará dado por
 
--   **Bilateral** $H_0: \theta = \theta_0$
--   **Unilateral izquierda** $H_0: \theta \geq \theta_0$
--   **Unilateral derecho** $H_0: \theta \leq \theta_0$
+-   **Bilateral** `$H_0: \theta = \theta_0$`
+-   **Unilateral izquierda** `$H_0: \theta \geq \theta_0$`
+-   **Unilateral derecho** `$H_0: \theta \leq \theta_0$`
 
-matemáticamente $H_0: \theta \geq \theta_0$ y
-$H_0: \theta \leq \theta_0$ es matemáticamente equivalente a escribir
-$H_0: \theta = \theta_0$ y por tanto, se acostumbra a usar esta última
+matemáticamente `$H_0: \theta \geq \theta_0$` y
+`$H_0: \theta \leq \theta_0$` es matemáticamente equivalente a escribir
+`$H_0: \theta = \theta_0$` y por tanto, se acostumbra a usar esta última
 en los tres casos.
 
 #### Hipótesis alternativa
@@ -124,9 +124,9 @@ en los tres casos.
 Es el complemento lógico de la hipótesis nula, y por tanto, ésta estará
 dado por
 
--   **Bilateral** $H_1: \theta \neq \theta_0$
--   **Unilateral izquierda** $H_1: \theta < \theta_0$
--   **Unilateral derecho** $H_1: \theta > \theta_0$
+-   **Bilateral** `$H_1: \theta \neq \theta_0$`
+-   **Unilateral izquierda** `$H_1: \theta < \theta_0$`
+-   **Unilateral derecho** `$H_1: \theta > \theta_0$`
 
 Ésta hipótesis no puede contener la igualdad, a menos que se quiera una
 hipótesis alternativa específica.
@@ -134,9 +134,9 @@ hipótesis alternativa específica.
 #### Estadístico de prueba
 
 El estadístico de prueba será el valor usado para tomar la decisión
-entre $H_0$ y $H_1$. Éste dependerá del parámetro de interés y de la
+entre `$H_0$` y `$H_1$`. Éste dependerá del parámetro de interés y de la
 distribución muestral del estadístico. Entre los estadísticos de prueba
-más usados de tiene a $Z$, $t_v$. $\chi^2_v$ y $F_{v_1,v_2}$.
+más usados de tiene a `$Z$`, `$t_v$`. `$\chi^2_v$` y `$F_{v_1,v_2}$`.
 
 #### Región crítica
 
@@ -165,11 +165,11 @@ $$\begin{align*}RC:\{\bar{X}|\bar{X}<71 \text{ o } \bar{X}>75\}\end{align*}$$
 Es el nivel de significancia más bajo en el que el valor observado del
 estadístico de prueba es significativo. Por tanto, un valor
 relativamente pequeño puede sugerir que el valor observado del
-estadístico de prueba sea poco probable, y por tanto, $H_0$ deba ser
+estadístico de prueba sea poco probable, y por tanto, `$H_0$` deba ser
 rechazado.
 
 Dado que el P-valor puede interpretarse como el tamaño de la región
-crítica $RC$ que se obtiene a partir de los datos, entonces para un
+crítica `$RC$` que se obtiene a partir de los datos, entonces para un
 nivel de significancia preestablecido, el criterio de decisión debe ser
 
 $$\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}$$
@@ -192,7 +192,7 @@ La hipótesis a probar de interés estará dada por
 $$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
 
 
-Siendo $F_0(x)$ la distribución de probabilidad hipotética que se
+Siendo `$F_0(x)$` la distribución de probabilidad hipotética que se
 quiere probar.
 
 Entre las pruebas de bondad de ajuste más usadas se tiene:
@@ -227,9 +227,9 @@ en donde el estadístico de prueba estará dado por
 $$\begin{align*}JB = \frac{n}{6} \left[\gamma_1^2 + \left(\frac{\gamma_2^2}{4}\right)\right] \sim \chi^2_2\end{align*}$$
 
 
-donde $n$: representa el número total de datos, $\gamma_1$:
+donde `$n$`: representa el número total de datos, `$\gamma_1$`:
 representa el coeficiente de asimetría que posean los datos, y
-$\gamma_2$: representa el coeficiente de exceso de curtosis.
+`$\gamma_2$`: representa el coeficiente de exceso de curtosis.
 
 Finalmente, para decidir si se rechaza o no la hipótesis nula sobre la
 normalidad de los datos se puede emplear como criterio de decisión el
@@ -244,12 +244,12 @@ distribución específica son los gráficos Cuartil-Cuartil, los cuales se
 construyen al comparar los cuartiles del conjunto de datos observados,
 contra los cuartiles de la distribución de interés.
 
-### Prueba de hipótesis para la media $\mu$
+### Prueba de hipótesis para la media `$\mu$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$ con media desconocida $\mathbb{E}(X)=\mu$, y varianza
-$Var(X)=\sigma^2<\infty$, entonces dependiendo de las condiciones, se
-tendrán los siguientes pruebas de hipótesis para la media $\mu$.
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$` con media desconocida `$\mathbb{E}(X)=\mu$`, y varianza
+`$Var(X)=\sigma^2<\infty$`, entonces dependiendo de las condiciones, se
+tendrán los siguientes pruebas de hipótesis para la media `$\mu$`.
 
 ![](/assets/images/Hipotesis3.jpg)
 
@@ -551,16 +551,16 @@ cigarrillos Malboro es diferente a $25$ mil millones de pesos.
 </p>
 </main>
 
-### Prueba de hipótesis para diferencia de medias $\mu_1 - \mu_2$
+### Prueba de hipótesis para diferencia de medias `$\mu_1 - \mu_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$ con medias desconocidas
-$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$` con medias desconocidas
+`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes pruebas de hipótesis para la diferencia de medias
-$\mu_1 - \mu_2$.
+`$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Hipotesis4.jpg)
 
@@ -713,8 +713,7 @@ podemos obtener mediante la ecuación $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$
-y por tanto $$\begin{align*}
+\end{align*}$$ y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
@@ -932,8 +931,7 @@ Solución
 El juego de hipótesis en esta dado por $$\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$
-debido a que se quiere probar si hay o no diferencias
+\end{align*}$$ debido a que se quiere probar si hay o no diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera. Adicionalmente, debido a que estamos en una situación en la
 cual sabemos que las tensiones de corte se distribuyen normalmente con
@@ -992,13 +990,13 @@ de madera.
 </p>
 </main>
 
-### Prueba de hipótesis para una proporción $p$
+### Prueba de hipótesis para una proporción `$p$`
 
-Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
-grande tal que $n\geq30$, y la proporción desconocida $p$ no se
-encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
-entonces un una prueba de hipótesis para la proporción verdadera $p$
+Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
+grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
+encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
+entonces un una prueba de hipótesis para la proporción verdadera `$p$`
 será de la forma
 
 ![](/assets/images/Hipotesis5.jpg)
@@ -1135,7 +1133,7 @@ $x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
 muestral de egresados que poseen salarios superiores a $1900$
 millones, tal que $$\begin{align*}
-  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25
@@ -1166,16 +1164,16 @@ de pesos no es mayor a $40\%$.
 </p>
 </main>
 
-### Prueba de hipótesis para diferencia de proporciones $p_1 - p_2$
+### Prueba de hipótesis para diferencia de proporciones `$p_1 - p_2$`
 
-Sean $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
-tamaño $n_1$ y $n_2$, tal que $X_{i}\sim b(n_i,p_i)$, para
-$i=1,2$, entonces si $n_1$ y $n_2$ son suficientemente grandes tal
-que $n_1, n_2\geq30$, y si las proporciones desconocidas $p_1$ y
-$p_2$ no se encuentran cercanas a $0$ o $1$, tal que $n_ip_i>5$
-y $n_i(1-p_i)>5$, para $i=1,2$, entonces un una prueba de hipótesis
-para la diferencia de las proporciones $p_1-p_2$ será de la forma
+Sean `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
+tamaño `$n_1$` y `$n_2$`, tal que `$X_{i}\sim b(n_i,p_i)$`, para
+`$i=1,2$`, entonces si `$n_1$` y `$n_2$` son suficientemente grandes tal
+que `$n_1, n_2\geq30$`, y si las proporciones desconocidas `$p_1$` y
+`$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que `$n_ip_i>5$`
+y `$n_i(1-p_i)>5$`, para `$i=1,2$`, entonces un una prueba de hipótesis
+para la diferencia de las proporciones `$p_1-p_2$` será de la forma
 
 ![](/assets/images/Hipotesis6.jpg)
 
@@ -1238,7 +1236,7 @@ proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
 que $$\begin{align*}
-\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
@@ -1248,7 +1246,7 @@ mientras que para los equipos que se construyen con el procedimiento
 actual, se tendrá que
 
 $$\begin{align*}
-\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
@@ -1288,13 +1286,13 @@ superiores al promedio.
 </p>
 </main>
 
-### Prueba de hipótesis para una varianza $\sigma^2$
+### Prueba de hipótesis para una varianza `$\sigma^2$`
 
-Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria de una
-problación normal de tamaño $n$ conmedias $\mathbb{E}(X)=\mu$ y
-varianza desconocidas $Var(X)=\sigma_1^2<\infty$, entonces un
-contraste de hipótesis para la varianza real $\sigma^2$, a un nivel de
-significancia $\alpha$ será de la forma
+Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria de una
+problación normal de tamaño `$n$` conmedias `$\mathbb{E}(X)=\mu$` y
+varianza desconocidas `$Var(X)=\sigma_1^2<\infty$`, entonces un
+contraste de hipótesis para la varianza real `$\sigma^2$`, a un nivel de
+significancia `$\alpha$` será de la forma
 
 ![](/assets/images/Hipotesis7.jpg)
 
@@ -1425,7 +1423,7 @@ tendrá que el P-valor para este caso está dado por $$\begin{align*}
 \end{align*}$$
 
 Entonces, al emplear la función de <tt>Excel</tt>
-<code>DISTR.CHICUAD(14.60094; 20-1; VERDADERO)</code> se tiene que
+<code>DISTR.CHICUAD(14.60094; 20-1; VERDADERO)</code> se tiene que $$$$
 
 Entonces, como el P-valor obtenido es superior al nivel de significancia
 preestablecido del $5\%$, se concluye que no hay evidencia suficiente
@@ -1435,16 +1433,16 @@ $300000$ millones de pesos$^2$.
 </p>
 </main>
 
-### Prueba de hipótesis para cociente de varianzas $\sigma^2_1/\sigma^2_2$
+### Prueba de hipótesis para cociente de varianzas `$\sigma^2_1/\sigma^2_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
-de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
-$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
+de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
+`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces un contraste de hipótesis para el cociente de
-varianzas $\sigma^2_1/\sigma^2_2$, a un nivel de significancia
-$\alpha$ será de la forma
+varianzas `$\sigma^2_1/\sigma^2_2$`, a un nivel de significancia
+`$\alpha$` será de la forma
 
 ![](/assets/images/Hipotesis8.jpg)
 
@@ -1631,17 +1629,17 @@ verdadero del parámetro poblacional.
 
 #### Definición
 
-Sea $\theta$ un parámetro poblacional desconocido, entonces basándose
+Sea `$\theta$` un parámetro poblacional desconocido, entonces basándose
 en la información de una muestra aleatoria de dicha población, el
-objetivo será encontrar dos variables aleatorias $\hat{\Theta}_I$ y
-$\hat{\Theta}_S$ tal que
+objetivo será encontrar dos variables aleatorias `$\hat{\Theta}_I$` y
+`$\hat{\Theta}_S$` tal que
 
 $$\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}$$
 
-donde $(1-\alpha)$ se conoce como nivel de confianza y
-$\hat{\Theta}_I$ y $\hat{\Theta}_S$ se denominan como límites de
+donde `$(1-\alpha)$` se conoce como nivel de confianza y
+`$\hat{\Theta}_I$` y `$\hat{\Theta}_S$` se denominan como límites de
 confianza inferior y superior, tal que
-$\hat{\Theta}_I<\hat{\Theta}_S$.
+`$\hat{\Theta}_I<\hat{\Theta}_S$`.
 
 #### Nota
 
@@ -1668,20 +1666,20 @@ hace más pequeño.
 
 #### Interpretación de nivel de confianza
 
-El nivel de confianza, $1-\alpha$, mide la fiabilidad del intervalo de
+El nivel de confianza, `$1-\alpha$`, mide la fiabilidad del intervalo de
 probabilidad, esto es, la probabilidad de que el verdadero valor del
 parámetro se encuentre dentro del intervalo construido. Es decir, que si
 se realiza el experimento muchas veces, se tendrá que en el
-$100(1-\alpha)\%$ de los intervalos de confianza construidos en cada
+`$100(1-\alpha)\%$` de los intervalos de confianza construidos en cada
 experimento, se encontrará contenido el verdadero valor del parámetro de
 interés.
 
-### Intervalos de confianza para una media $\mu$
+### Intervalos de confianza para una media `$\mu$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$ con media desconocida $\mathbb{E}(X)=\mu$, y varianza
-$Var(X)=\sigma^2<\infty$, entonces dependiendo de las condiciones, se
-tendrán los siguientes intervalos de confianza para la media $\mu$.
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$` con media desconocida `$\mathbb{E}(X)=\mu$`, y varianza
+`$Var(X)=\sigma^2<\infty$`, entonces dependiendo de las condiciones, se
+tendrán los siguientes intervalos de confianza para la media `$\mu$`.
 
 ![](/assets/images/Intervalos1.jpg)
 
@@ -1942,16 +1940,16 @@ cual se encuentra por debajo del valor afirmado.
 </p>
 </main>
 
-### Intervalos de confianza para diferencia de medias $\mu_1 - \mu_2$
+### Intervalos de confianza para diferencia de medias `$\mu_1 - \mu_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$ con medias desconocidas
-$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$` con medias desconocidas
+`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes intervalos de confianza para la diferencia de medias
-$\mu_1 - \mu_2$.
+`$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Intervalos2.jpg)
 
@@ -2105,8 +2103,7 @@ $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$
-y por tanto $$\begin{align*}
+\end{align*}$$ y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
@@ -2402,13 +2399,13 @@ de corte de dos tipos de madera.
 </p>
 </main>
 
-### Intervalos de confianza para una proporción $p$
+### Intervalos de confianza para una proporción `$p$`
 
-Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
-grande tal que $n\geq30$, y la proporción desconocida $p$ no se
-encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
-entonces un intervalo de confianza para la proporción $p$ es de la
+Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
+grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
+encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
+entonces un intervalo de confianza para la proporción `$p$` es de la
 forma ![](/assets/images/Intervalos3.jpg)
 
 <button id="Show9" class="btn btn-secondary">
@@ -2529,13 +2526,12 @@ aquellas observaciones que no cumplan la condición, tal que
 $$\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
-\end{align*}$$
-Al contar el número de éxitos, observamos que tenemos un
+\end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
 total de $x=5$ éxitos en un total de $n=20$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a
 $1900$ millones, tal que $$\begin{align*}
-  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25
@@ -2557,17 +2553,17 @@ millones de pesos, se encontrará entre $3.99\%$ y $46.01\%$.
 </p>
 </main>
 
-### Intervalos de confianza para diferencia de proporciones $p_1-p_2$
+### Intervalos de confianza para diferencia de proporciones `$p_1-p_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$, tal que $X_{1}\sim b(n,p)$ y
-$X_{1}\sim b(n,p)$. Entonces si $n_1$ y $n_2$ son suficientemente
-grandes tal que $n_1, n_2 \geq30$, y las proporciones desconocidas
-$p_1$ y $p_2$ no se encuentran cercanas a $0$ o $1$, tal que
-$n_1p_1>5$, $n_2p_2>5$, $n_1(1-p_1)>5$ y $n_2(1-p_2)>5$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$`, tal que `$X_{1}\sim b(n,p)$` y
+`$X_{1}\sim b(n,p)$`. Entonces si `$n_1$` y `$n_2$` son suficientemente
+grandes tal que `$n_1, n_2 \geq30$`, y las proporciones desconocidas
+`$p_1$` y `$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que
+`$n_1p_1>5$`, `$n_2p_2>5$`, `$n_1(1-p_1)>5$` y `$n_2(1-p_2)>5$`,
 entonces un intervalo de confianza para la diferencia de proporciones
-$p_1-p_2$ es de la forma
+`$p_1-p_2$` es de la forma
 
 ![](/assets/images/Intervalos4.jpg)
 
@@ -2625,19 +2621,17 @@ $x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
 con el nuevo procedimiento tenemos que $$\begin{align*}
-\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$
-mientras que, para los equipos que fueron construidos con
+\end{align*}$$ mientras que, para los equipos que fueron construidos con
 el procedimiento actual tenemos que $$\begin{align*}
-\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$
-Ahora, dado que el intervalo que nos piden es bilateral,
+\end{align*}$$ Ahora, dado que el intervalo que nos piden es bilateral,
 y tenemos que los tamaños muestrales para cada población son
 suficientemente grandes, tendremos que el intervalo de interés es de la
 forma
@@ -2686,13 +2680,13 @@ de aquellos fabricados mediante el proceso actual.
 </p>
 </main>
 
-### Intervalos de confianza para una varianza $\sigma^2$
+### Intervalos de confianza para una varianza `$\sigma^2$`
 
-Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria de una
-problación normal de tamaño $n$ conmedias $\mathbb{E}(X)=\mu$ y
-varianza desconocidas $Var(X)=\sigma_1^2<\infty$, entonces un
-intervalo de confianza del $100(1-\alpha)\%$ para la varianza
-desconocida $\sigma^2$ estará dada por
+Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria de una
+problación normal de tamaño `$n$` conmedias `$\mathbb{E}(X)=\mu$` y
+varianza desconocidas `$Var(X)=\sigma_1^2<\infty$`, entonces un
+intervalo de confianza del `$100(1-\alpha)\%$` para la varianza
+desconocida `$\sigma^2$` estará dada por
 
 ![](/assets/images/Intervalos5.jpg)
 
@@ -2830,15 +2824,15 @@ $701.2892$ millones de pesos.
 </p>
 </main>
 
-### Intervalos de confianza para razón de varianzas $\sigma^2_1/\sigma^2_2$
+### Intervalos de confianza para razón de varianzas `$\sigma^2_1/\sigma^2_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
-de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
-$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
+de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
+`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces un intervalo de confianza del
-$100(1-\alpha)\%$ para $\sigma^2_1/\sigma^2_2$ estará dada por
+`$100(1-\alpha)\%$` para `$\sigma^2_1/\sigma^2_2$` estará dada por
 
 ![](/assets/images/Intervalos6.jpg)
 
@@ -3027,12 +3021,12 @@ tanto **puede ser considerada como la técnica estadística más usada en
 la práctica**.
 
 Para entender este tipo de relación, se suponen inicialmente dos
-variables, la primera variable será la variable $Y$ la cual es
+variables, la primera variable será la variable `$Y$` la cual es
 variable dependiente o variable respuesta, mientras que la segunda
-variable será la variable $X$ la cual es la variable independiente o
+variable será la variable `$X$` la cual es la variable independiente o
 variable explicativa.
 
-El objetivo será estudiar la relación asociada entre $Y$ y $X$ (la
+El objetivo será estudiar la relación asociada entre `$Y$` y `$X$` (la
 cual no es necesariamente de causa-efecto), y para ello miraremos los
 siguientes casos de estudio.
 
@@ -3439,7 +3433,7 @@ entre el costo y el predial.
 
 ### Regresión Lineal Simple
 
-Si se supone que la relación entre $Y$ y $X$ es lineal, un modelo
+Si se supone que la relación entre `$Y$` y `$X$` es lineal, un modelo
 adecuado estaría dado por
 
 $$\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}$$
@@ -3447,35 +3441,35 @@ $$\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}$$
 
 donde
 
--   $\beta_0$ y $\beta_1$: son dos constantes desconocidas
+-   `$\beta_0$` y `$\beta_1$`: son dos constantes desconocidas
     denominadas parámetros del modelo, estimados a partir de los datos.
--   $\beta_0$ representa el intercepto.
--   $\beta_1$ representa la pendiente.
--   $\varepsilon$ representa al componente de error aleatorio
+-   `$\beta_0$` representa el intercepto.
+-   `$\beta_1$` representa la pendiente.
+-   `$\varepsilon$` representa al componente de error aleatorio
     denominado error estadístico, el cual explica por qué el modelo de
     regresión lineal simple no ajusta exactamente los datos.
 
-**Nota:** Es de anotar que el término de error $\varepsilon$ contiene
+**Nota:** Es de anotar que el término de error `$\varepsilon$` contiene
 todos los efectos de otras variables que no fueron consideradas en el
 modelo, errores de medición u otras consideraciones no tenidas en cuenta
 por el investigador.
 
 #### Supuestos del modelo de regresión lineal simple
 
-1.  Se tiene una muestra aleatoria de $n$ parejas
-    $(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$, en donde el objetivo
+1.  Se tiene una muestra aleatoria de `$n$` parejas
+    `$(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$`, en donde el objetivo
     principal del análisis de regresión es encontrar la recta que mejor
     ajuste a los pares de observaciones, y por tanto se supone que las
-    parejas satisfacen el modelo $(I)$, tal que
+    parejas satisfacen el modelo `$(I)$`, tal que
     
 $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}$$
 
-    donde $y_i$ es la i-ésima observación de la variable $Y$, dado
-    que $X$ es igual a $x_i$.
+    donde `$y_i$` es la i-ésima observación de la variable `$Y$`, dado
+    que `$X$` es igual a `$x_i$`.
 
-2.  Del modelo $(II)$ suponga que las $\varepsilon_i$ son variables
-    aleatorias independientes con media $\mathbb{E}(\varepsilon_i)=0$
-    y varianza $Var(\varepsilon_i)=\sigma^2$, de tal forma que
+2.  Del modelo `$(II)$` suponga que las `$\varepsilon_i$` son variables
+    aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
+    y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
 $$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}$$
 
@@ -3484,7 +3478,7 @@ $$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i)
 $$\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}$$
 
     en donde, si además se cumple que
-    $\varepsilon_i\sim N(0,\sigma^2)$, entonces se tendrá que
+    `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
 $$\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}$$
 
@@ -3492,17 +3486,17 @@ $$\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}$$
 ### Estimación de parámetros
 
 El objetivo de un modelo de regresión será entonces estimar los
-parámetros $\beta_0, \beta_1, \sigma^2$ del modelo lineal, y para ello
+parámetros `$\beta_0, \beta_1, \sigma^2$` del modelo lineal, y para ello
 puede recurrirse a diferentes métodos, entre los cuales destaca el
 método de Máxima Verosimilitud y el método de mínimos cuadrados.
 
 #### Método de Máxima Verosimiliud
 
 Bajo el supuesto de que
-$\varepsilon \stackrel{iid}{\sim} N(0,\sigma^2)$, entonces
-$y_i|x_i \stackrel{iid}{\sim} N(\beta_0 + \beta_1 x_i, \sigma^2)$,
-luego la función de verosimilitud asociada a los pares $(y_1, x_1)$,
-$(y_2, x_2)$, $\ldots$, $ (y_n,x_n)$ está dada por
+`$\varepsilon \stackrel{iid}{\sim} N(0,\sigma^2)$`, entonces
+`$y_i|x_i \stackrel{iid}{\sim} N(\beta_0 + \beta_1 x_i, \sigma^2)$`,
+luego la función de verosimilitud asociada a los pares `$(y_1, x_1)$`,
+`$(y_2, x_2)$`, `$\ldots$`, `$ (y_n,x_n)$` está dada por
 
 $$\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i; \beta_0, \beta_1, \sigma^2)\\   &= \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\end{align*}$$
 
@@ -3510,8 +3504,8 @@ $$\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i
 Entonces, al maximizar la función de probabilidad tal como se enseño en
 la
 <a href="https://jiperezga.github.io/EstadisticaII/EstIIClase08.html#método-de-máxima-verosimilitud" target="\_blank">Clase
-08</a> se encontrará que los estimadores de $\beta_0$, $\beta_1$ y
-$\sigma^2$ que maximizan $L(\cdot)$ están dados por
+08</a> se encontrará que los estimadores de `$\beta_0$`, `$\beta_1$` y
+`$\sigma^2$` que maximizan `$L(\cdot)$` están dados por
 
 
 $$\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&=\frac{S_{xy}}{S_{xx}}= \frac{\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y})}{\sum_{i=1}^{n}(x_i - \bar{X})^2} = \frac{\sum_{i=1}^{n}(x_i-\bar{X}) y_i}{\sum_{i=1}^{n} (x_i - \bar{X})^2}\\    \hat{\sigma}^2&= \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}\end{align*}$$
@@ -3519,38 +3513,38 @@ $$\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&
 
 #### Método de Mínimos Cuadrados
 
-Sea una muestra aleatoria $(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$
+Sea una muestra aleatoria `$(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$`
 a partir de la cual se desea ajustar el siguiente modelo
 
 $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i\end{align*}$$
 
 
-donde $\varepsilon_i$ es una variable aleatoria desconocida con
+donde `$\varepsilon_i$` es una variable aleatoria desconocida con
 distribución de probabilidad independiente e idénticamente distribuida
-con media $\mathbb{E}(\varepsilon_i)=0$ y varianza
-$Var(\varepsilon_i)=\sigma^2$.
+con media `$\mathbb{E}(\varepsilon_i)=0$` y varianza
+`$Var(\varepsilon_i)=\sigma^2$`.
 
-Entonces si denotamos a $\hat{\beta}_0, \hat{\beta}_1$, los
-estimadores de los parámetros $\beta_0, \beta_1$, entonces la recta de
+Entonces si denotamos a `$\hat{\beta}_0, \hat{\beta}_1$`, los
+estimadores de los parámetros `$\beta_0, \beta_1$`, entonces la recta de
 regresión estimada será
 
 $$\begin{align*}\hat{y_i}=\hat{\beta}_0 + \hat{\beta}_1 x_i\end{align*}$$
 
 
-donde $\hat{y}_i$ es el estimador de $\mathbb{E}(y_i|x=x_i)$.
-Entonces la diferencia entre $y_i$ y $\hat{y_i}$ se conoce como
-error de estimación del ajuste $e_i$ y está dado por
+donde `$\hat{y}_i$` es el estimador de `$\mathbb{E}(y_i|x=x_i)$`.
+Entonces la diferencia entre `$y_i$` y `$\hat{y_i}$` se conoce como
+error de estimación del ajuste `$e_i$` y está dado por
 
 $$\begin{align*}e_i = y_i - \hat{y}_i = y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i\end{align*}$$
 
 
 **Supuestos**
 
--   $e_i\sim N(0,\sigma^2_e)$, varianza constante (homocedasticidad)
--   $cov(e_i. e_j)=0$ para todo $i \neq j$.
+-   `$e_i\sim N(0,\sigma^2_e)$`, varianza constante (homocedasticidad)
+-   `$cov(e_i. e_j)=0$` para todo `$i \neq j$`.
 
 A partir de la ecuación anterior será posible encontrar los estimadores
-$\hat{\beta}_0$ y $\hat{\beta}_1$ mediante la minimización de la
+`$\hat{\beta}_0$` y `$\hat{\beta}_1$` mediante la minimización de la
 suma de los cuadrados de los errores.
 
 
@@ -3571,9 +3565,9 @@ $$\begin{align*}\hat{\beta}_1 &= \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{
 
 **Note que**
 
--   Los EMV para $\beta_0$ y $\beta_1$ coinciden con los estimadores
+-   Los EMV para `$\beta_0$` y `$\beta_1$` coinciden con los estimadores
     de mínimos cuadrados.
--   Observe que $\hat{\beta}_0$ y $\hat{\beta}_1$ pueden ser
+-   Observe que `$\hat{\beta}_0$` y `$\hat{\beta}_1$` pueden ser
     reescritos como
 
 
@@ -3582,28 +3576,28 @@ $$\begin{align*}\hat{\beta}_1 &= \sum_{i=1}^{n} y_ic_i \qquad \text{ donde } c_i
 
 Además, se puede probar que
 
--   $\sum_{i=1}^{n}c_i=0$
--   $\sum_{i=1}^{n}d_i=1$
--   $\sum_{i=1}^{n}c_ix_i=1$
--   $\sum_{i=1}^{n}d_ix_i=0$
--   $\sum_{i=1}^{n}c_i^2=\frac{1}{\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{1}{S_{xx}}$
--   $\sum_{i=1}^{n}d_i^2=\frac{\sum_{i=1}^{n}x_i^2}{n\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{\sum_{i=1}^{n}x_i^2}{nS_{xx}}$
+-   `$\sum_{i=1}^{n}c_i=0$`
+-   `$\sum_{i=1}^{n}d_i=1$`
+-   `$\sum_{i=1}^{n}c_ix_i=1$`
+-   `$\sum_{i=1}^{n}d_ix_i=0$`
+-   `$\sum_{i=1}^{n}c_i^2=\frac{1}{\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{1}{S_{xx}}$`
+-   `$\sum_{i=1}^{n}d_i^2=\frac{\sum_{i=1}^{n}x_i^2}{n\sum_{i=1}^{n} (x_i-\bar{X})^2} = \frac{\sum_{i=1}^{n}x_i^2}{nS_{xx}}$`
 
-#### Propiedades de $\hat{\beta}_0, \hat{\beta}_1$
+#### Propiedades de `$\hat{\beta}_0, \hat{\beta}_1$`
 
 A continuación se presentan algunas propiedades que cumplen los
-estimadores de los parámetros $\hat{\beta}_0, \hat{\beta}_1$. La
+estimadores de los parámetros `$\hat{\beta}_0, \hat{\beta}_1$`. La
 demostración corre por cuenta del estudiante.
 
--   $\mathbb{E}(\hat{\beta}_0) = \beta_0$
--   $\mathbb{E}(\hat{\beta}_1) = \beta_1$
--   $Var(\hat{\beta}_0) = \sigma^2 \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]$
--   $Var(\hat{\beta}_1) = \frac{1}{S_{xx}}\sigma^2$
+-   `$\mathbb{E}(\hat{\beta}_0) = \beta_0$`
+-   `$\mathbb{E}(\hat{\beta}_1) = \beta_1$`
+-   `$Var(\hat{\beta}_0) = \sigma^2 \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]$`
+-   `$Var(\hat{\beta}_1) = \frac{1}{S_{xx}}\sigma^2$`
 
 **Nota**
 
 Dado que el método de mínimos cuadrados no posee un estimador para la
-varianza $\sigma^2$, se emplea entonces un estimador insesgado el cual
+varianza `$\sigma^2$`, se emplea entonces un estimador insesgado el cual
 estará dado por
 
 $$\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \frac{1}{n-2}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\              &= \frac{S_{yy} - \hat{\beta}_1 S_{xy}}{n-2}\end{align*}$$
@@ -3611,15 +3605,15 @@ $$\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \
 
 ### Prueba de hipótesis
 
-Note que $\hat{\beta}_0$ y $\hat{\beta}_1$ son combinaciones
-lineales de $y_i$, que son normales e independientes, entonces por
+Note que `$\hat{\beta}_0$` y `$\hat{\beta}_1$` son combinaciones
+lineales de `$y_i$`, que son normales e independientes, entonces por
 propiedades de la distribución normal se obtiene que
 
 $$\begin{align*}\hat{\beta}_0 &\sim N\left(\beta_0, \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e\right)  \\  \hat{\beta}_1 &\sim N\left(\beta_1, \frac{\sigma^2_e}{S_{xx}}\right)\end{align*}$$
 
 
-Entonces, para realizar el contraste de hipótesis $\beta_0$ y
-$\beta_1$ de la forma
+Entonces, para realizar el contraste de hipótesis `$\beta_0$` y
+`$\beta_1$` de la forma
 
 $$\begin{align*}H_0: \beta_0 = \beta_{00} \quad & \quad H_0: \beta_1 = \beta_{10}\\  H_1: \beta_0 \neq \beta_{00} \quad & \quad H_1: \beta_1 \neq \beta_{10}\\\end{align*}$$
 
@@ -3634,59 +3628,59 @@ región crítica la cual está dada por
 
 $$\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-2} \quad ó \quad t > t_{\frac{\alpha}{2}, n-2}\}\end{align*}$$
 
-en donde si $t_{\hat{\beta}_{i}} \in RC$ para $i=0,1$, se rechaza
-$H_0$. Mientras que el P-valor está dada por
+en donde si `$t_{\hat{\beta}_{i}} \in RC$` para `$i=0,1$`, se rechaza
+`$H_0$`. Mientras que el P-valor está dada por
 
 $$\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-2}\geq |t_{\hat{\beta}_i}|) \quad \text{ para } i = 0,1\end{align*}$$
 
 
-en donde si P-valor es menor al nivel de significancia $\alpha$,
-entonces se rechaza $H_0$.
+en donde si P-valor es menor al nivel de significancia `$\alpha$`,
+entonces se rechaza `$H_0$`.
 
 **Nota**
 
--   Usualmente se quiere probar si $\beta_{0}=0$ y $\beta_{1}=0$, ya
+-   Usualmente se quiere probar si `$\beta_{0}=0$` y `$\beta_{1}=0$`, ya
     que se quiere probar a significancia de los parámetros.
--   Observe que rechazar $H_0:\beta_{1}=0$, en la prueba de
+-   Observe que rechazar `$H_0:\beta_{1}=0$`, en la prueba de
     significancia, permite afirmar que la relación entre las variables
-    $Y$ y $X$ se pueden aproximar mediante una linea recta.
--   Si no se rechaza $H_0:\beta_{1}=0$, significa que independiente
-    del valor de $X$, el valor de $Y$ será el mismo, y por tanto, no
-    habrá una relación lineal entre $Y$ y $X$.
+    `$Y$` y `$X$` se pueden aproximar mediante una linea recta.
+-   Si no se rechaza `$H_0:\beta_{1}=0$`, significa que independiente
+    del valor de `$X$`, el valor de `$Y$` será el mismo, y por tanto, no
+    habrá una relación lineal entre `$Y$` y `$X$`.
 
 ### Intervalo de confianza
 
-El intervalo de confianza par $\beta_0$ está dado por
+El intervalo de confianza par `$\beta_0$` está dado por
 
 $$\begin{align*}\hat{\beta}_0 - t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}} < \beta_0 < \hat{\beta}_0 + t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}}\end{align*}$$
 
 
-para el caso de $\beta_1$, el intervalo de confianza está dado por
+para el caso de `$\beta_1$`, el intervalo de confianza está dado por
 
 $$\begin{align*}\hat{\beta}_1 - t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}} < \beta_1 < \hat{\beta}_1 + t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}}\end{align*}$$
 
 
 **Nota**
 
-Si el Intervalo de Confianza de $\beta_1$ no contiene el cero, se
-puede afirmar que la variable $Y$ está relacionada linealmente con la
-variable independiente $X$. En caso contrario, no existe relación
-lineal entre $X$ y $Y$, es decir, la variable $X$ no es adecuada
-para predecir el comportamiento de $Y$.
+Si el Intervalo de Confianza de `$\beta_1$` no contiene el cero, se
+puede afirmar que la variable `$Y$` está relacionada linealmente con la
+variable independiente `$X$`. En caso contrario, no existe relación
+lineal entre `$X$` y `$Y$`, es decir, la variable `$X$` no es adecuada
+para predecir el comportamiento de `$Y$`.
 
 ### Analisis de varianza
 
 Una forma equivalente de hacer la prueba de significancia de la
-regresión $H_0:\beta_1=0$ vs $H_1:\beta_1\neq0$ es a partir del
-análisis de varianza, donde se descompone la varianza total de $Y$
-($SCT$) en dos fuentes, la variabilidad explicada por el modelo
-($SCR$) y la variabilidad no explicada por el modelo ($SCE$).
+regresión `$H_0:\beta_1=0$` vs `$H_1:\beta_1\neq0$` es a partir del
+análisis de varianza, donde se descompone la varianza total de `$Y$`
+(`$SCT$`) en dos fuentes, la variabilidad explicada por el modelo
+(`$SCR$`) y la variabilidad no explicada por el modelo (`$SCE$`).
 
--   $SCT = \sum_{i=1}^n (y_i-\bar{Y})^2$
--   $SCR = \sum_{i=1}^n (\hat{y}_i-\bar{Y})^2$
--   $SCE = \sum_{i=1}^n (y_i-\hat{y}_i)^2$
+-   `$SCT = \sum_{i=1}^n (y_i-\bar{Y})^2$`
+-   `$SCR = \sum_{i=1}^n (\hat{y}_i-\bar{Y})^2$`
+-   `$SCE = \sum_{i=1}^n (y_i-\hat{y}_i)^2$`
 
-Observe que las diferencias de las $y_i$ con a su media $\bar{Y}$
+Observe que las diferencias de las `$y_i$` con a su media `$\bar{Y}$`
 pueden escribirse como
 
 
@@ -3707,7 +3701,7 @@ a)Para llegar a la ecuación anterior se puede verificar que
 $$\begin{align*}\sum_{i=1}^{n}(\hat{y}_i - \bar{Y})e_i = \sum_{i=1}^{n}(\hat{y}_i - \bar{Y}) (y_i - \hat{y_i})\end{align*}$$
 
 
-b)La expresiones de $SCT$, $SCR$ y $SCE$ pueden ser reescritas
+b)La expresiones de `$SCT$`, `$SCR$` y `$SCE$` pueden ser reescritas
 como
 
 $$\begin{align*}&SST = \sum_{i=1}^{n}y_i^2 - n\bar{Y}\\  &SSR = \hat{\beta}_1S_{xy} = \hat{\beta}_1^2 S_{xx}\\  &\text{y luego se podrá calcular }SCE \text{ como}\\  &SCE = SST - SSR\end{align*}$$
@@ -3720,7 +3714,7 @@ $$\begin{align*}\underbrace{SCT}_{n-1} = \underbrace{SCR}_{1} + \underbrace{SCE}
 
 
 con base en lo anterior es posible construir estimadores independientes
-de $\sigma^2$, usando la respectiva suma de cuadrados dividido sus
+de `$\sigma^2$`, usando la respectiva suma de cuadrados dividido sus
 grados de libertad, tal que
 
 
@@ -3744,48 +3738,48 @@ o el P-valor, el cual estará dado por
 $$\begin{align*}\text{P-valor} =  \mathbb{P}(F_{1,n-2} > F_c)\end{align*}$$
 
 
-donde si P-valor es menor al nivel de significancia $\alpha$ se
+donde si P-valor es menor al nivel de significancia `$\alpha$` se
 rechaza la hipótesis nula y se concluye que el modelo lineal propuesto
-es significativo para explicar el comportamiento $Y$.
+es significativo para explicar el comportamiento `$Y$`.
 
 ### Coeficiente de determinación
 
 Una forma de medir la bondad del ajuste del modelo de regresión es
-mediante el coeficiente de determinación $R^2$, el cual se define como
+mediante el coeficiente de determinación `$R^2$`, el cual se define como
 
 $$\begin{align*}R^2=\frac{SCR}{SCT} = 1 - \frac{SCE}{SCT}\end{align*}$$
 
 
-y representa la proporción de variación total de $Y$, explicada por su
-relación lineal con $X$.
+y representa la proporción de variación total de `$Y$`, explicada por su
+relación lineal con `$X$`.
 
-Dado que $R^2$ se encuentra entre $0$ y $1$, entonces valores
-cercanos a cero indican que la relación entre $X$ y $Y$ es muy
+Dado que `$R^2$` se encuentra entre `$0$` y `$1$`, entonces valores
+cercanos a cero indican que la relación entre `$X$` y `$Y$` es muy
 pobre, mientras que, valores cercanos a uno, indican que la recta
 ajustada se aproxima relativamente bien a los puntos.
 
-**Nota**: Un $R^2$ alto no garantiza necesariamente que el modelo
+**Nota**: Un `$R^2$` alto no garantiza necesariamente que el modelo
 regresión lineal ajustado sea adecuado para los datos, debido que hay
 factores que afectan a este valor, como lo es el número de datos usados.
 
 ### Respuesta media y predicción de nuevas observaciones
 
 Una importante utilidad del modelo de regresión es que nos permite la
-estimación de la media de la distribución de $Y$ para un valor dado de
-$X$, y además nos permite realizar predicciones sobre una nueva
-variable $y_0$ correspondiente a un nivel especificado de variables
-$x_0$.
+estimación de la media de la distribución de `$Y$` para un valor dado de
+`$X$`, y además nos permite realizar predicciones sobre una nueva
+variable `$y_0$` correspondiente a un nivel especificado de variables
+`$x_0$`.
 
 #### Respuesta media
 
-Considere un valor determinado $x = x_0$, y el objetivo será estimar
-su respuesta media $\mathbb{E}(Y|x_0)$. La estimación puede ser
+Considere un valor determinado `$x = x_0$`, y el objetivo será estimar
+su respuesta media `$\mathbb{E}(Y|x_0)$`. La estimación puede ser
 puntual o por intervalo, y donde, **la estimación es válida solo para
-valores de $x_0$ dentro del rango de valores originales de $X$, que
+valores de `$x_0$` dentro del rango de valores originales de `$X$`, que
 se usaron para ajustar el modelo**.
 
-Entonces el estimador puntual de la respuesta media de $Y$ dado
-$x_0$
+Entonces el estimador puntual de la respuesta media de `$Y$` dado
+`$x_0$`
 
 $$\begin{align*}\hat{y_0}= \hat{\mathbb{E}}(Y|x_0)= \hat{\beta}_0 + \hat{\beta}_1 x_0\end{align*}$$
 
@@ -3795,7 +3789,7 @@ donde se puede probar que
 $$\begin{align*}\mathbb{E}(\hat{y_0}) &= \beta_0 + \beta_1 x_0 \\  Var(\hat{y_0}) &= \hat{\sigma}^2_e\left[\frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\end{align*}$$
 
 
-Además, para un nivel de confianza del $100(1-\alpha)\%$ un intervalo
+Además, para un nivel de confianza del `$100(1-\alpha)\%$` un intervalo
 de confianza para la respuesta media será de la forma
 
 
@@ -3804,20 +3798,20 @@ $$\begin{align*}\hat{y}_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\l
 
 Es de anotar que si se decide construir un intervalo de confianza para
 todos los posibles valores de X, se obtendrán las bandas de confianza
-del $100(1-\alpha)\%$ para la respuesta media $\beta_0+\beta_1x_i$
+del `$100(1-\alpha)\%$` para la respuesta media `$\beta_0+\beta_1x_i$`
 
 #### Predicción de nuevas observaciones
 
-Suponga que $x_0$ es un valor de interés que para predecir, entonces
-para obtener un valor único $y_0$, podremos utilizar la fórmula de la
+Suponga que `$x_0$` es un valor de interés que para predecir, entonces
+para obtener un valor único `$y_0$`, podremos utilizar la fórmula de la
 recta de regresión tal que, al igual que en el caso de la respuesta
-media la estimación puntual media de $Y$ dado $x_0$
+media la estimación puntual media de `$Y$` dado `$x_0$`
 
 $$\begin{align*}\hat{y_0}= \hat{\mathbb{E}}(Y|x_0)= \hat{\beta}_0 + \hat{\beta}_1 x_0\end{align*}$$
 
 
 Pero en este al ser un valor predicho tendremos que estimar la varianza
-de la diferencia $\hat{y}_0 - y_0$, la cual tiene una media
+de la diferencia `$\hat{y}_0 - y_0$`, la cual tiene una media
 
 $$\begin{align*}\mathbb{E}(\hat{y_0} - y_0) &=\mathbb{E}[\hat{\beta}_0+\hat{\beta}_1x_0] - (\beta_0 + \beta_1 x_0 +\varepsilon)] = 0\end{align*}$$
 
@@ -3826,8 +3820,8 @@ y varianza \\
 $$\begin{align*}Var(\hat{y_0} - y_0) &= \sigma^2\left[\frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right] + \sigma^2\\   &=\sigma^2\left[1 + \frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\\   &=\hat{\sigma}^2_e\left[1 + \frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\\\end{align*}$$
 
 
-Entonces, un intervalo de confianza del $100(1-\alpha)\%$ para un
-valor predicho $y_0$, se puede construir de la forma
+Entonces, un intervalo de confianza del `$100(1-\alpha)\%$` para un
+valor predicho `$y_0$`, se puede construir de la forma
 
 
 $$\begin{align*}y_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\left[1+\frac{1}{n}+ \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]}\end{align*}$$
@@ -3835,4 +3829,4 @@ $$\begin{align*}y_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\left[1+
 
 Es de anotar que si se decide construir un intervalo de confianza para
 todos los posibles valores de X, se obtendrán las bandas de confianza
-del $100(1-\alpha)\%$ para la predicción individual.
+del `$100(1-\alpha)\%$` para la predicción individual.

@@ -221,9 +221,9 @@ deben tenerse en cuenta para la realización de encuestas:
         tiene igual oportunidad de ser seleccionado.
         -   La selección de la muestra es objetiva y el error muestral
             puede ser medido.
-        -   Toma una muestra de tamaño $n$ de una población de tamaño
-            $N$.
-        -   Cada elemento tiene una probabilidad $n/N$ de entrar en la
+        -   Toma una muestra de tamaño `$n$` de una población de tamaño
+            `$N$`.
+        -   Cada elemento tiene una probabilidad `$n/N$` de entrar en la
             muestra.
     -   **Muestreo sistemático:** Los elementos seleccionados en una
         manera ordenada.
@@ -448,7 +448,7 @@ Los métodos de muestreo probabilísticos son aquellos que se basan en el
 principio de equiprobabilidad. Es decir, aquellos en los que todos los
 individuos tienen la misma probabilidad de ser elegidos para formar
 parte de una muestra y, consiguientemente, todas las posibles muestras
-de tamaño $n$ tienen la misma probabilidad de ser seleccionadas.
+de tamaño `$n$` tienen la misma probabilidad de ser seleccionadas.
 **Sólo estos métodos de muestreo probabilísticos nos aseguran la
 representatividad de la muestra extraída** y son, por tanto, los más
 recomendables.
@@ -456,14 +456,14 @@ recomendables.
 #### Muestreo aleatorio simple (MAS)
 
 El muestreo aleatorio simple es un procedimiento estadístico a partir
-del cual **se selecciona, sin reemplazo, una muestra de tamaño $n$ de
-una población de tamaño $N$ unidades, garantizando que cada muestra de
-tamaño $n$ tenga a misma probabilidad de ser seleccionada**.
+del cual **se selecciona, sin reemplazo, una muestra de tamaño `$n$` de
+una población de tamaño `$N$` unidades, garantizando que cada muestra de
+tamaño `$n$` tenga a misma probabilidad de ser seleccionada**.
 
 En la práctica, cuando se emplea este tipo de muestreo, las unidades
 muestrales deben ser seleccionadas una a una, en donde, inicialmente,
-las unidades muestrales deben ser enumeradas de $1$ a $N$, con el
-fin de generar posteriormente, $n$ números aleatorios por algún
+las unidades muestrales deben ser enumeradas de `$1$` a `$N$`, con el
+fin de generar posteriormente, `$n$` números aleatorios por algún
 algoritmo de aleatorización. Éstos números aleatorios pueden ser
 generados mediante el programa <tt>R</tt>, Excel, tablas de números
 aleatorios, calculadora, etc.
@@ -483,12 +483,12 @@ Posteriormente, a partir de la segmentación realizada, se realiza el
 muestreo de cada estrato, mediante la técnica de MAS, independiente.
 
 Para emplear este método se requiere que la población objetivo, tenga un
-comportamiento **homogeneo** dentro de cada uno de los $L$ estrato, y
+comportamiento **homogeneo** dentro de cada uno de los `$L$` estrato, y
 un comportamiento **heterogeneo** entre estratos, con respecto a las
 características de interés.
 
 El objetivo del método de MAE, será maximizar la información obtenida o
-minimizar el valor del límite del error de estimación $B$, para cada
+minimizar el valor del límite del error de estimación `$B$`, para cada
 una de los estratos, teniendo en cuenta la variabilidad de la población
 cuando ésta debido a que ésta no posee un comportamiento **homogeneo**,
 además de obtener estimaciones de los parámetros poblacionales de
@@ -621,11 +621,11 @@ aquellas unidades que componen la muestra en etapas sucesivas.
 
 En [Gutiérrez](#ref-Gutierrez2015) ([2015, p. 205](#ref-Gutierrez2015)),
 el autor presenta el principio que sigue el muestreo polietápico, el
-cual puede define como un proceso jerárquico que se realiza $l$ veces,
+cual puede define como un proceso jerárquico que se realiza `$l$` veces,
 siguiente los siguientes dos pasos.
 
-1.  Construcción de $l$ marcos de muestreo de unidades (se realizan
-    conglomerados en las primeras $l-1$ etapas del diseño muestral y
+1.  Construcción de `$l$` marcos de muestreo de unidades (se realizan
+    conglomerados en las primeras `$l-1$` etapas del diseño muestral y
     de elementos en la última etapa).
 
 2.  Aplicación del diseño muestral y selección de la muestras (o
@@ -691,12 +691,12 @@ aleatorias, que **tienen por objetivo estimar o hacer inferencia acerca
 de parámetros desconocidos de una población**.
 
 Entonces, si se tiene un conjunto de observaciones
-$X_1, X_2, \ldots, Xn$ obtenidas de una muestra aleatoria *iid* de
-tamaño $n$, entonces se tendrán los siguientes estadísticos muestrales
+`$X_1, X_2, \ldots, Xn$` obtenidas de una muestra aleatoria *iid* de
+tamaño `$n$`, entonces se tendrán los siguientes estadísticos muestrales
 
 ### Media muestral
 
-Es el promedio aritmético del total de las $n$ observaciones
+Es el promedio aritmético del total de las `$n$` observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
@@ -713,8 +713,8 @@ pertenecientes a una muestra aleatoria, respecto a la media muestra.
 $$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
 
 
-siendo el valor $n-1$ conocido como la corrección de Bessel, el cuál
-se usa en lugar de la división sobre $n$ con el fin de corregir el
+siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
+se usa en lugar de la división sobre `$n$` con el fin de corregir el
 sesgo tendría el estimador.
 
 En <tt>R</tt> puede calcularse la varianza muestral de una muestra
@@ -754,12 +754,12 @@ aleatorias observadas en una muestra, se tendrá que, éstos también serán
 variables aleatorias que **tendrán distribuciones de probabilidad
 asociadas**, las cuales son llamadas distribuciones muestrales.
 
-### Distribución muestral $Z$
+### Distribución muestral `$Z$`
 
 **Se usa para hacer inferencia sobre la media de una o dos poblaciones
 normales con varianzas conocidas**. Para el caso de una población, sea
-$X_1, X_2, \ldots, X_n$ una muestra aleatoria de tamaño $n$ de una
-distribución normal con media $\mu$ y varianza $\sigma^2$ conocida,
+`$X_1, X_2, \ldots, X_n$` una muestra aleatoria de tamaño `$n$` de una
+distribución normal con media `$\mu$` y varianza `$\sigma^2$` conocida,
 entonces se tendrá que
 
 $$\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$$
@@ -768,10 +768,10 @@ $$\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$
 se distribuirá como una normal estándar de forma exacta.
 
 Mientras que, para el caso de dos poblaciones, sea
-$X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* con
-medias $\mu_1$ y $\mu_2$, y varianzas $\sigma_1^2$ y
-$\sigma_2^2$, para $i=1,2,\ldots,n_1$ y $j=1,2,\ldots,n_2$,
+`$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* con
+medias `$\mu_1$` y `$\mu_2$`, y varianzas `$\sigma_1^2$` y
+`$\sigma_2^2$`, para `$i=1,2,\ldots,n_1$` y `$j=1,2,\ldots,n_2$`,
 entonces se tendrá que
 
 
@@ -780,26 +780,26 @@ $$\begin{align*}Z_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac
 
 se distribuirá como una normal estándar de forma exacta.
 
-### Distribución muestral $t$ de Student
+### Distribución muestral `$t$` de Student
 
 **Se usa para hacer inferencia sobre la media de una o dos poblaciones
 normales con varianzas desconocidas**. Para el caso de una población,
-sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de una población
-normal con media $\mu$ y varianza $\sigma^2$ desconocida, se tendrá
+sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de una población
+normal con media `$\mu$` y varianza `$\sigma^2$` desconocida, se tendrá
 
 
 $$\begin{align*}t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}\end{align*}$$
 
 
-tiene una distribución $t$ con $(n-1)$ grados de libertad.
+tiene una distribución `$t$` con `$(n-1)$` grados de libertad.
 
 Mientras que, para el caso de dos poblaciones, sea
-$X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* con
-medias $\mu_1$ y $\mu_2$, y varianzas $\sigma_1^2$ y
-$\sigma_2^2$ desconocidas, para $i=1,2,\ldots,n_1$ y
-$j=1,2,\ldots,n_2$, entonces si se cumple que
-$\sigma_1^2=\sigma_2^2$, se tendrá que
+`$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* con
+medias `$\mu_1$` y `$\mu_2$`, y varianzas `$\sigma_1^2$` y
+`$\sigma_2^2$` desconocidas, para `$i=1,2,\ldots,n_1$` y
+`$j=1,2,\ldots,n_2$`, entonces si se cumple que
+`$\sigma_1^2=\sigma_2^2$`, se tendrá que
 
 
 $$\begin{align*}t_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{S_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \sim t_{n_1+n_2-2}\end{align*}$$
@@ -809,7 +809,7 @@ donde
 $$\begin{align*}S_p^2 = \frac{(n_1-1)S^2_1+(n_2-1)S^2_2}{n_1+n_2-2}\end{align*}$$
 
 
-o si se cumple que $\sigma_1^2\neq\sigma_2^2$, se tendrá que
+o si se cumple que `$\sigma_1^2\neq\sigma_2^2$`, se tendrá que
 
 
 $$\begin{align*}t_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{S^2_1}{n_1} + \frac{S^2_2}{n_2}}} \sim t_\nu\end{align*}$$
@@ -819,28 +819,28 @@ donde
 $$\begin{align*}\lceil\nu\rceil = \frac{\left(\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}\right)^2}{\left[\frac{(S_1^2/n_1)^2}{n_1-1}\right] + \left[\frac{(S_2^2/n_2)^2}{n_2-1}\right]}\end{align*}$$
 
 
-En estos dos casos, $t_c$ se distribuirá como una $t$ con
-$(n_1+n_2-1)$ grados de libertad o $(n-1)$ grados de libertad,
+En estos dos casos, `$t_c$` se distribuirá como una `$t$` con
+`$(n_1+n_2-1)$` grados de libertad o `$(n-1)$` grados de libertad,
 respectivamente.
 
 ### Teorema del límite central
 
 **Se usa para hacer inferencia sobre la media de una o dos poblaciones
 no normales con varianzas conocidas o desconocidas**. Para el caso de
-una población, sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid*
-con media $\mu$ y varianza $\sigma^2$ entonces, cuando
-$n\to \infty$, se tendrá que
+una población, sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid*
+con media `$\mu$` y varianza `$\sigma^2$` entonces, cuando
+`$n\to \infty$`, se tendrá que
 
 $$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
 
 tendrá una distribución aproximadamente normal estándar, cuando
-$n\sim \infty$.
+`$n\sim \infty$`.
 
 Para el caso de dos poblaciones, sea
-$X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* con
-medias $\mu_1$ y $\mu_2$, y varianzas $\sigma_1^2$ y
-$\sigma_2^2$, para $i=1,2,\ldots,n_1$ y $j=1,2,\ldots,n_2$,
+`$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* con
+medias `$\mu_1$` y `$\mu_2$`, y varianzas `$\sigma_1^2$` y
+`$\sigma_2^2$`, para `$i=1,2,\ldots,n_1$` y `$j=1,2,\ldots,n_2$`,
 entonces se tendrá que
 
 
@@ -848,44 +848,44 @@ $$\begin{align*}Z_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac
 
 
 tendrá una distribución aproximadamente normal estándar, cuando
-$n\sim \infty$. En caso de que la varianza sea desconocida se
-reemplaza en las formulas la varianza poblacional $\sigma^2_i$ por la
-varianza muestral $S^2_i$.
+`$n\sim \infty$`. En caso de que la varianza sea desconocida se
+reemplaza en las formulas la varianza poblacional `$\sigma^2_i$` por la
+varianza muestral `$S^2_i$`.
 
-### Distribución muestral $\chi^2$
+### Distribución muestral `$\chi^2$`
 
 **Se usa para hacer inferencia sobre la varianza de una población
-normal**. Para el caso de una población, sea $X_1, X_2, \ldots, X_n$
-una muestra aleatoria de una población normal con media $\mu$ y
-varianza $\sigma^2$ desconocida, se tendrá
+normal**. Para el caso de una población, sea `$X_1, X_2, \ldots, X_n$`
+una muestra aleatoria de una población normal con media `$\mu$` y
+varianza `$\sigma^2$` desconocida, se tendrá
 
 
 $$\begin{align*}\chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\end{align*}$$
 
-tiene una distribución chi-cuadrado con $n-1$ grados de libertad.
+tiene una distribución chi-cuadrado con `$n-1$` grados de libertad.
 
-### Distribución muestral $F$ de Fisher-Snedecor
+### Distribución muestral `$F$` de Fisher-Snedecor
 
 **Se usa para hacer inferencia sobre el cociente de varianzas de dos
-poblaciones normales**. Si $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ son dos muestras aleatorias
-independientes de poblaciones normales con medias $\mu_1, \mu_2$ y
-varianzas $\sigma^2_1, \sigma^2,2$, respectivamente, entonces
+poblaciones normales**. Si `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` son dos muestras aleatorias
+independientes de poblaciones normales con medias `$\mu_1, \mu_2$` y
+varianzas `$\sigma^2_1, \sigma^2,2$`, respectivamente, entonces
 
 
 $$\begin{align*}F_c = \frac{S^2_1\sigma^2_2}{S^2_2\sigma^2_1} \sim F_{n_1-1, n_2-1}\end{align*}$$
 
 
-tienen una distribución $F$ con $n_1-1$ grados de libertad en el
-numerador y $n_2-1$ grados de libertad en el denominador.
+tienen una distribución `$F$` con `$n_1-1$` grados de libertad en el
+numerador y `$n_2-1$` grados de libertad en el denominador.
 
-### Distribución muestral para proporciones $p$
+### Distribución muestral para proporciones `$p$`
 
 **Se usa para hacer inferencia sobre la proporción de una o dos
-poblaciones**. Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid*
-de tamaño $n$, tal que $X\sim b(n,p)$. Entonces si $n$ es
-suficientemente grande, y la proporción $p$ no está muy cercana a
-$0$ o a $1$, tal que $np$ y $n(1-p)>5$, entonces se puede probar
+poblaciones**. Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid*
+de tamaño `$n$`, tal que `$X\sim b(n,p)$`. Entonces si `$n$` es
+suficientemente grande, y la proporción `$p$` no está muy cercana a
+`$0$` o a `$1$`, tal que `$np$` y `$n(1-p)>5$`, entonces se puede probar
 que
 
 $$\begin{align*}\hat{p}  = \frac{x}{n} \stackrel{a}{\sim} N\left(p, \frac{p(1-p)}{n}\right)\end{align*}$$
@@ -896,12 +896,12 @@ $$\begin{align*}Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\si
 
 
 Mientras que, para el caso de dos poblaciones, sea tendrá que si
-$X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* de
-tamaño $n_1$ y $n_2$, tal que $X_{1i}\sim b(n_1,p_1)$ y
-$X_{2i}\sim b(n_2,p_2)$. Entonces si $n_1$ y $n_2$ son
-suficientemente grandes, y las proporción $p_1$, $p_2$ no está muy
-cercana a $0$ o a $1$, tal que $n_ip_i$ y $n_i(1-p_i)>5$,
+`$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* de
+tamaño `$n_1$` y `$n_2$`, tal que `$X_{1i}\sim b(n_1,p_1)$` y
+`$X_{2i}\sim b(n_2,p_2)$`. Entonces si `$n_1$` y `$n_2$` son
+suficientemente grandes, y las proporción `$p_1$`, `$p_2$` no está muy
+cercana a `$0$` o a `$1$`, tal que `$n_ip_i$` y `$n_i(1-p_i)>5$`,
 entonces se puede probar que
 
 $$\begin{align*}\hat{p_1}  = \frac{x_1}{n_1} \stackrel{a}{\sim} N\left(p_1, \frac{p_1(1-p_1)}{n_1}\right) \quad \quad \text{ y } \quad \quad \hat{p_2}  = \frac{x_2}{n_2} \stackrel{a}{\sim} N\left(p_2, \frac{p_2(1-p_2)}{n_2}\right)\end{align*}$$
@@ -922,17 +922,17 @@ información obtenida de una muestra de la población de interés.
 
 #### Hipótesis nula
 
-Sea $\theta$ un parámetro de interés desconocido y sea $\theta_0$ un
-valor particular de $\theta$, entonces se tendrá que la hipótesis nula
+Sea `$\theta$` un parámetro de interés desconocido y sea `$\theta_0$` un
+valor particular de `$\theta$`, entonces se tendrá que la hipótesis nula
 estará dado por
 
--   **Bilateral** $H_0: \theta = \theta_0$
--   **Unilateral izquierda** $H_0: \theta \geq \theta_0$
--   **Unilateral derecho** $H_0: \theta \leq \theta_0$
+-   **Bilateral** `$H_0: \theta = \theta_0$`
+-   **Unilateral izquierda** `$H_0: \theta \geq \theta_0$`
+-   **Unilateral derecho** `$H_0: \theta \leq \theta_0$`
 
-matemáticamente $H_0: \theta \geq \theta_0$ y
-$H_0: \theta \leq \theta_0$ es matemáticamente equivalente a escribir
-$H_0: \theta = \theta_0$ y por tanto, se acostumbra a usar esta última
+matemáticamente `$H_0: \theta \geq \theta_0$` y
+`$H_0: \theta \leq \theta_0$` es matemáticamente equivalente a escribir
+`$H_0: \theta = \theta_0$` y por tanto, se acostumbra a usar esta última
 en los tres casos.
 
 #### Hipótesis alternativa
@@ -940,9 +940,9 @@ en los tres casos.
 Es el complemento lógico de la hipótesis nula, y por tanto, ésta estará
 dado por
 
--   **Bilateral** $H_0: \theta \neq \theta_0$
--   **Unilateral izquierda** $H_0: \theta < \theta_0$
--   **Unilateral derecho** $H_0: \theta > \theta_0$
+-   **Bilateral** `$H_0: \theta \neq \theta_0$`
+-   **Unilateral izquierda** `$H_0: \theta < \theta_0$`
+-   **Unilateral derecho** `$H_0: \theta > \theta_0$`
 
 Ésta hipótesis no puede contener la igualdad, a menos que se quiera una
 hipótesis alternativa específica.
@@ -950,7 +950,7 @@ hipótesis alternativa específica.
 #### Estadístico de prueba
 
 El estadístico de prueba será el valor usado para tomar la decisión
-entre $H_0$ y $H_1$. Éste dependerá del parámetro de interés y de la
+entre `$H_0$` y `$H_1$`. Éste dependerá del parámetro de interés y de la
 distribución muestral del estadístico asociado.
 
 #### P-valor
@@ -958,7 +958,7 @@ distribución muestral del estadístico asociado.
 Es el nivel de significancia más bajo en el que el valor observado del
 estadístico de prueba es significativo. Por tanto, un valor
 relativamente pequeño puede sugerir que el valor observado del
-estadístico de prueba sea poco probable, y por tanto, $H_0$ deba ser
+estadístico de prueba sea poco probable, y por tanto, `$H_0$` deba ser
 rechazado.
 
 En general, como criterio de decisión para el P-valor, dado un nivel de
@@ -984,7 +984,7 @@ La hipótesis a probar de interés estará dada por
 $$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
 
 
-Siendo $F_0(x)$ la distribución de probabilidad hipótetica que se
+Siendo `$F_0(x)$` la distribución de probabilidad hipótetica que se
 quiere probar.
 
 Entre las pruebas de bondad de ajuste más usadas se tiene:
@@ -1278,12 +1278,12 @@ gráfico QQ, de la forma
 </section>
 </main>
 
-### Prueba de hipótesis para la media $\mu$
+### Prueba de hipótesis para la media `$\mu$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$ con media desconocida $\mu$, y varianza $\sigma^2<\infty$,
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$` con media desconocida `$\mu$`, y varianza `$\sigma^2<\infty$`,
 entonces dependiendo de las condiciones, se tendrán los siguientes
-pruebas de hipótesis para la media $\mu$.
+pruebas de hipótesis para la media `$\mu$`.
 
 ![](/assets/images/Hipotesis3.jpg)
 
@@ -1330,16 +1330,16 @@ mean of x
 </section>
 </main>
 
-### Prueba de hipótesis para diferencia de medias $\mu_1 - \mu_2$
+### Prueba de hipótesis para diferencia de medias `$\mu_1 - \mu_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
-tamaños $n_1$, y $n_2$ con medias desconocidas
-$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
+tamaños `$n_1$`, y `$n_2$` con medias desconocidas
+`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes pruebas de hipótesis para la diferencia de medias
-$\mu_1 - \mu_2$.
+`$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Hipotesis4.jpg)
 
@@ -1387,13 +1387,13 @@ mean of x mean of y
 </section>
 </main>
 
-### Prueba de hipótesis para una proporción $p$
+### Prueba de hipótesis para una proporción `$p$`
 
-Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
-grande tal que $n\geq30$, y la proporción desconocida $p$ no se
-encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
-entonces un una prueba de hipótesis para la proporción verdadera $p$
+Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
+grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
+encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
+entonces un una prueba de hipótesis para la proporción verdadera `$p$`
 será de la forma
 
 ![](/assets/images/Hipotesis5.jpg)
@@ -1444,16 +1444,16 @@ sample estimates:
 </section>
 </main>
 
-### Prueba de hipótesis para diferencia de proporciones $p_1 - p_2$
+### Prueba de hipótesis para diferencia de proporciones `$p_1 - p_2$`
 
-Sean $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
-tamaño $n_1$ y $n_2$, tal que $X_{i}\sim b(n_i,p_i)$, para
-$i=1,2$, entonces si $n_1$ y $n_2$ son suficientemente grandes tal
-que $n_1, n_2\geq30$, y si las proporciones desconocidas $p_1$ y
-$p_2$ no se encuentran cercanas a $0$ o $1$, tal que $n_ip_i>5$
-y $n_i(1-p_i)>5$, para $i=1,2$, entonces un una prueba de hipótesis
-para la diferencia de las proporciones $p_1-p_2$ será de la forma
+Sean `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
+tamaño `$n_1$` y `$n_2$`, tal que `$X_{i}\sim b(n_i,p_i)$`, para
+`$i=1,2$`, entonces si `$n_1$` y `$n_2$` son suficientemente grandes tal
+que `$n_1, n_2\geq30$`, y si las proporciones desconocidas `$p_1$` y
+`$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que `$n_ip_i>5$`
+y `$n_i(1-p_i)>5$`, para `$i=1,2$`, entonces un una prueba de hipótesis
+para la diferencia de las proporciones `$p_1-p_2$` será de la forma
 
 ![](/assets/images/Hipotesis6.jpg)
 
@@ -1503,13 +1503,13 @@ sample estimates:
 </section>
 </main>
 
-### Prueba de hipótesis para una varianza $\sigma^2$
+### Prueba de hipótesis para una varianza `$\sigma^2$`
 
-Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria normal de
-tamaño $n$ con media $\mathbb{E}(X)=\mu$ y varianza desconocida
-$Var(X)=\sigma^2<\infty$, respectivamente, entonces un contraste de
-hipótesis para una varianza $\sigma^2$, a un nivel de significancia
-$\alpha$ será de la forma
+Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria normal de
+tamaño `$n$` con media `$\mathbb{E}(X)=\mu$` y varianza desconocida
+`$Var(X)=\sigma^2<\infty$`, respectivamente, entonces un contraste de
+hipótesis para una varianza `$\sigma^2$`, a un nivel de significancia
+`$\alpha$` será de la forma
 
 ![](/assets/images/Hipotesis7.jpg)
 
@@ -1556,16 +1556,16 @@ variance
 </section>
 </main>
 
-### Prueba de hipótesis para cociente de varianzas $\sigma^2_1/\sigma^2_2$
+### Prueba de hipótesis para cociente de varianzas `$\sigma^2_1/\sigma^2_2$`
 
-Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
-$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
-de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
-$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
+Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
+`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
+de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
+`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
 respectivamente, entonces un contraste de hipótesis para el cociente de
-varianzas $\sigma^2_1/\sigma^2_2$, a un nivel de significancia
-$\alpha$ será de la forma
+varianzas `$\sigma^2_1/\sigma^2_2$`, a un nivel de significancia
+`$\alpha$` será de la forma
 
 ![](/assets/images/Hipotesis8.jpg)
 

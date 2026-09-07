@@ -13,7 +13,7 @@ bibliography: "../../referencias.bib"
 #### Caso de estudio
 
 Suponga que se está interesado en observar la evolución en el desempeño
-que tuvo un grupo de $10$ estudiantes en el curso de Estadística I.
+que tuvo un grupo de `$10$` estudiantes en el curso de Estadística I.
 Para ello se toma de referencia la nota obtenida en el primer y cuarto
 parcial de la materia, obteniendo los siguientes resultados
 
@@ -141,15 +141,15 @@ uniformemente alrededor de las medidas de tendencia central.
 
 $$\begin{align*}\gamma_1 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
 
-El signo de $\gamma_1$ indica la dirección de la asimetría.
+El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
--   $\gamma_1>0$ indica asimetría positiva, es decir, las
+-   `$\gamma_1>0$` indica asimetría positiva, es decir, las
     observaciones se reúnen más en la parte izquierda de las medidas de
     tendencia central.
--   $\gamma_1<0$ indica asimetría negativa, es decir, las
+-   `$\gamma_1<0$` indica asimetría negativa, es decir, las
     observaciones se reúnen más en la parte derecha de las medidas de
     tendencia central.
--   $\gamma_1\sim0$ indica simetría, es decir, existe aproximadamente
+-   `$\gamma_1\sim0$` indica simetría, es decir, existe aproximadamente
     la misma cantidad de observaciones a los dos lados de las medidas de
     tendencia central.
 
@@ -199,8 +199,7 @@ $$\begin{align*}
                  &= -0.3213918 \\
   \gamma_{1,P_4} &= \frac{1}{10}\left[\frac{(1.8 - 3.14)^3 + (4.7 - 3.14)^3 + \ldots + (2.0 - 3.14)^3}{1.273839^3}\right] \\
                  &= -0.536286
-\end{align*}$$
-De lo anterior se observa que en ambos casos el
+\end{align*}$$ De lo anterior se observa que en ambos casos el
 coeficiente de asimetría es menor que $0$, lo cual significa que las
 notas obtenidas en los dos parciales posee una asimetría negativa, es
 decir, las notas obtenidas por los estudiantes se encuentran agrupadas
@@ -281,13 +280,13 @@ datos
 $$\begin{align*}\gamma_2 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-3 \quad \quad -2<\gamma_2<\infty\end{align*}$$
 
 
-El signo de $\gamma_2$ indica el nivel de concentración.
+El signo de `$\gamma_2$` indica el nivel de concentración.
 
--   $\gamma_2>0$ indica leptocurtosis, es decir, la forma de los datos
+-   `$\gamma_2>0$` indica leptocurtosis, es decir, la forma de los datos
     es más en punta y posee colas menos anchas.
--   $\gamma_2<0$ indica platicurtosis, es decir, la forma de los datos
+-   `$\gamma_2<0$` indica platicurtosis, es decir, la forma de los datos
     es más plana y posee colas más anchas.
--   $\gamma_2\sim0$ indica mesocurtosis, es decir, tanto la punta como
+-   `$\gamma_2\sim0$` indica mesocurtosis, es decir, tanto la punta como
     las colas son similares a la distribución normal.
 
 <h4 align="center">
@@ -404,8 +403,8 @@ librería <code>e1071</code> de <tt>R</tt>, tal que
 Estas medidas tienen por objetivo estimar la magnitud con la que dos
 fenómenos se relacionan, en donde, entre mayor sean estas medidas, mayor
 será el grado de asociación que tendrán las variables. Si se define
-$x_1, x_2, \ldots, x_n$ y $y_1, y_2, \ldots, y_n$ como dos conjuntos
-de $n$ observaciones, entonces
+`$x_1, x_2, \ldots, x_n$` y `$y_1, y_2, \ldots, y_n$` como dos conjuntos
+de `$n$` observaciones, entonces
 
 #### Covarianza
 
@@ -415,15 +414,15 @@ grado de variación conjunta de dos variables respecto a sus medias
 $$\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}$$
 
 
-El signo de $S_{xy}$ indica el tipo de dependencia lineal que hay
+El signo de `$S_{xy}$` indica el tipo de dependencia lineal que hay
 entre las variables.
 
--   $S_{xy} > 0$ indica que hay dependencia lineal positiva entre las
+-   `$S_{xy} > 0$` indica que hay dependencia lineal positiva entre las
     variables, es decir, cuando aumenta una variable, la otra también
     aumenta.
--   $S_{xy} < 0$ indica que hay dependencia lineal negativa entre las
+-   `$S_{xy} < 0$` indica que hay dependencia lineal negativa entre las
     variables, es decir, cuando aumenta una variable, la otra disminuye.
--   $S_{xy} \approx 0$ indica que no existencia dependencia lineal
+-   `$S_{xy} \approx 0$` indica que no existencia dependencia lineal
     entre las dos variables.
 
 En <tt>R</tt> puede calcularse la covarianza de dos conjunto de
@@ -515,37 +514,37 @@ entre -1 y 1
 $$\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}$$
 
 
-El valor de $\rho_{xy}$ indica el tipo y fuerza de la dependencia
+El valor de `$\rho_{xy}$` indica el tipo y fuerza de la dependencia
 lineal que hay entre las variables
 
--   $\rho_{xy} = 1$ indica que existe dependencia lineal positiva
+-   `$\rho_{xy} = 1$` indica que existe dependencia lineal positiva
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra aumenta proporcionalmente en la misma cantidad. Este aumento
-    es de la forma $Y = a + bX$, siendo $a$ y $b$ dos constantes,
-    con $b>0$.
--   $\rho_{xy} = -1$ indica que existe dependencia lineal negativa
+    es de la forma `$Y = a + bX$`, siendo `$a$` y `$b$` dos constantes,
+    con `$b>0$`.
+-   `$\rho_{xy} = -1$` indica que existe dependencia lineal negativa
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra disminuye proporcionalmente en la misma cantidad. Este
-    aumento es de la forma $Y = a + bX$ con $a y b$ dos constantes,
-    y $b<0$.
--   $\rho_{xy} = 0$ No existe dependencia lineal entre las variables.
+    aumento es de la forma `$Y = a + bX$` con `$a y b$` dos constantes,
+    y `$b<0$`.
+-   `$\rho_{xy} = 0$` No existe dependencia lineal entre las variables.
 
 Además, se tendrá que si
 
--   $0.5 < \rho_{xy} \leq 1$ fuerte correlación positiva entre $X$ y
-    $Y$.
--   $0.3 < \rho_{xy} \leq 0.5$ moderada correlación positiva entre
-    $X$ y $Y$.
--   $0.1 < \rho_{xy} \leq 0.3$ débil correlación positiva entre $X$
-    y $Y$.
--   $-0.1 \leq \rho_{xy} \leq 0.1$ débil o ninguna correlación entre
-    $X$ y $Y$.
--   $-0.3 \leq \rho_{xy} < -0.1$ débil correlación negativa entre
-    $X$ y $Y$.
--   $-0.5 \leq \rho_{xy} < -0.3$ moderada correlación negativa entre
-    $X$ y $Y$.
--   $-1 \leq \rho_{xy} < -0.5$ fuerte correlación negativa entre $X$
-    y $Y$.
+-   `$0.5 < \rho_{xy} \leq 1$` fuerte correlación positiva entre `$X$` y
+    `$Y$`.
+-   `$0.3 < \rho_{xy} \leq 0.5$` moderada correlación positiva entre
+    `$X$` y `$Y$`.
+-   `$0.1 < \rho_{xy} \leq 0.3$` débil correlación positiva entre `$X$`
+    y `$Y$`.
+-   `$-0.1 \leq \rho_{xy} \leq 0.1$` débil o ninguna correlación entre
+    `$X$` y `$Y$`.
+-   `$-0.3 \leq \rho_{xy} < -0.1$` débil correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-0.5 \leq \rho_{xy} < -0.3$` moderada correlación negativa entre
+    `$X$` y `$Y$`.
+-   `$-1 \leq \rho_{xy} < -0.5$` fuerte correlación negativa entre `$X$`
+    y `$Y$`.
 
 En <tt>R</tt> puede calcularse la correlación de dos conjunto de
 observaciones mediante la función `cor(datos1, datos2)`.
@@ -580,8 +579,7 @@ anteriormente en esta misma clase, tal que
 
 $$\begin{align*}
   \rho_{xy} = \frac{0.2655556}{(0.7121954)(1.273839)} = 0.2927127
-\end{align*}$$
-Del resultado anterior se concluye, que hay existe una
+\end{align*}$$ Del resultado anterior se concluye, que hay existe una
 correlación débil entre las notas obtenidas por los estudiantes en el
 parcial $1$ y el parcial $4$, del curso de Estadística 1.
 </p>

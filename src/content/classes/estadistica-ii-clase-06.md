@@ -25,7 +25,7 @@ La hipótesis a probar de interés estará dada por
 $$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
 
 
-Siendo $F_0(x)$ la distribución de probabilidad hipótetica que se
+Siendo `$F_0(x)$` la distribución de probabilidad hipótetica que se
 quiere probar.
 
 Entre las pruebas de bondad de ajuste más usadas se tiene:
@@ -864,10 +864,10 @@ siguiente juego de hipótesis
 $$\begin{align*}H_0&: \text{Los atributos de la población son independientes}\\ H_1&: \text{Los atributos de la población son dependientes}\end{align*}$$
 
 
-Suponga que en una población se clasifica según los atributos $A$ y
-$B$, y además suponga que existen $r$ categorías en el atributo
-$A$ y $c$ categorías en el atributo $B$, de forma que hay un total
-de $r\times c$ posibles combinaciones entre los atributos, tal que
+Suponga que en una población se clasifica según los atributos `$A$` y
+`$B$`, y además suponga que existen `$r$` categorías en el atributo
+`$A$` y `$c$` categorías en el atributo `$B$`, de forma que hay un total
+de `$r\times c$` posibles combinaciones entre los atributos, tal que
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -1005,22 +1005,22 @@ de $r\times c$ posibles combinaciones entre los atributos, tal que
 </tbody>
 </table>
 
-Donde $O_{ij}$: es el número de observaciones entre la i-ésima
-categoría de $A$ y la j-ésima categoría de $B$, $R_{i}$: es la
-suma de las observaciones por fila, y $C_{j}$: es la suma de las
+Donde `$O_{ij}$`: es el número de observaciones entre la i-ésima
+categoría de `$A$` y la j-ésima categoría de `$B$`, `$R_{i}$`: es la
+suma de las observaciones por fila, y `$C_{j}$`: es la suma de las
 observaciones por columnas, tal que
 
 $$\begin{align*}R_{i}=\sum_{j=1}^{c}O_{ij} \qquad \qquad C_{j}=\sum_{i=1}^{r}O_{ij}\end{align*}$$
 
 
 Ahora, con el fin de probar si hay o no independencia entre las
-categorías, es necesario calcular $E_{ij}$ el número de observaciones
-esperadas en la casilla $ij$, tal que
+categorías, es necesario calcular `$E_{ij}$` el número de observaciones
+esperadas en la casilla `$ij$`, tal que
 
 $$\begin{align*}E_{ij}=np_{ij}\end{align*}$$
 
 
-donde $pij$ es la probabilidad conjunta bajo el supuesto de
+donde `$pij$` es la probabilidad conjunta bajo el supuesto de
 independiencia, entonces
 
 $$\begin{align*}p_{ij} = \frac{R_{i}}{n}\times \frac{C_{j}}{n} =\frac{R_{i}C_{j}}{n^2}\end{align*}$$
@@ -1030,7 +1030,7 @@ y por tanto
 $$\begin{align*}E_{ij} = \frac{R_{i}C_{j}}{n}\end{align*}$$
 
 
-Una vez calculados cada uno de los $E_{ij}$, es posible reescribir
+Una vez calculados cada uno de los `$E_{ij}$`, es posible reescribir
 dichos valores de forma en forma de matríz de la forma
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1134,8 +1134,8 @@ dichos valores de forma en forma de matríz de la forma
 </tbody>
 </table>
 
-Finalmente, al comparar las frecuencias observadas $O_{ij}$ con las
-frecuencias esperadas $E_{ij}$, se tendrá que el estadístico de prueba
+Finalmente, al comparar las frecuencias observadas `$O_{ij}$` con las
+frecuencias esperadas `$E_{ij}$`, se tendrá que el estadístico de prueba
 para probar la independencia, será de la forma
 
 $$\begin{align*}\chi^2_{c}=\sum_{i=1}^{r}\sum_{j=1}^{c} \frac{(O_{ij}- E_{ij})^2}{E_{ij}} \sim \chi^2_{(r-1)(c-1)}\end{align*}$$

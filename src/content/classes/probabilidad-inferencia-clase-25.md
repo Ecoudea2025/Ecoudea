@@ -10,8 +10,8 @@ bibliography: "../../referencias.bib"
 
 ## Probabilidad Condicional
 
-Es la probabilidad de que ocurra un evento $A$, cuando se sabe que ya
-ocurrió un evento $B$, se denota por $\mathbb P(A|B)$ y se define
+Es la probabilidad de que ocurra un evento `$A$`, cuando se sabe que ya
+ocurrió un evento `$B$`, se denota por `$\mathbb P(A|B)$` y se define
 como
 
 $$\begin{align*}\mathbb P(A|B)=\frac{\mathbb P(A\cap B)}{\mathbb P(B)}; \text{ con } \mathbb P(B)>0\end{align*}$$
@@ -308,8 +308,7 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </table>
 $$\begin{align*}
 \mathbb{P}(F)=0.120+0.085+0.165=0.37
-\end{align*}$$
-Por tanto, se tendrá un $37\%$ de probabilidad de que
+\end{align*}$$ Por tanto, se tendrá un $37\%$ de probabilidad de que
 el estudiante seleccionado prefiera el Fútbol sobre los demás deportes.
 </li>
 <li>
@@ -401,8 +400,7 @@ Economía
 
 $$\begin{align*}
 \mathbb{P}(C)=0.085+0.1025+0.0625+0.0250=0.275
-\end{align*}$$
-Por tanto, se tendrá un $27.5\%$ de probabilidad de que
+\end{align*}$$ Por tanto, se tendrá un $27.5\%$ de probabilidad de que
 el estudiante seleccionado sea de Contaduría.
 
 </li>
@@ -490,8 +488,7 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 
 De donde obtendremos que $$\begin{align*}
 \mathbb{P}(E \cap V)=0.10
-\end{align*}$$
-lo cual indica que la probabilidad de que un estudiante
+\end{align*}$$ lo cual indica que la probabilidad de que un estudiante
 sea de Economía y prefiera el Tenis sobre los otros deportes es del
 $10\%$.
 
@@ -533,8 +530,7 @@ otros deportes, es decir,
 
 $$\begin{align*}
 \mathbb{P}(E|B) = \frac{\mathbb{P}(E \cap B)}{\mathbb{P}(B)}
-\end{align*}$$
-De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
+\end{align*}$$ De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
 a partir de la suma de las probabilidades individuales en la columna de
 Baloncesto, mientras que la $\mathbb{P}(E \cap B) = 0.1275$, obtenida
 a partir de la casilla en donde se intersectan la fila de Economía y la
@@ -555,13 +551,13 @@ otros deportes, es del $42.86\%$.
 
 ## Regla multiplicativa
 
-Si un experimento estadístico pueden ocurrir dos eventos $A$ y $B$,
+Si un experimento estadístico pueden ocurrir dos eventos `$A$` y `$B$`,
 entonces
 
 $$\begin{align*}\mathbb P(A\cap B)=\mathbb P(B)\mathbb P(A|B)=\mathbb P(A)\mathbb P(B|A); \text{ para } \mathbb P(B)>0 \text{ y } \mathbb P(A)>0\end{align*}$$
 
 
-En general, si pueden ocurrir los eventos $A_1, A_2, \ldots, A_n$,
+En general, si pueden ocurrir los eventos `$A_1, A_2, \ldots, A_n$`,
 entonces
 
 $$\begin{align*}\mathbb P\left(\underset{i=1}{\stackrel{n}{\cap}} A_i\right)=\mathbb P(A_1) \mathbb P(A_2|A_1)\mathbb P(A_3|A_1\cap A_2)\ldots \mathbb P\left(A_n \Big|\underset{i=1}{\stackrel{n-1}{\cap}} A_i\right)\end{align*}$$
@@ -625,8 +621,7 @@ mientras que la probabilidad de sacar una bola roja de la segunda bolsa
 
 $$\begin{align*}
 \mathbb{P}(R_2|R_1) = \frac{8}{10}
-\end{align*}$$
-Y por tanto, al aplicar la regla multiplicativa, tenemos
+\end{align*}$$ Y por tanto, al aplicar la regla multiplicativa, tenemos
 que la probabilidad de sacar una bola roja de la primera bolsa,
 introducirla en la segunda bolsa, y posteriormente sacar una bola roja
 de la segunda bolsa, es de
@@ -674,7 +669,7 @@ $$\begin{align*}
 
 ## Independencia entre eventos
 
-Si un experimento estadístico pueden ocurrir dos eventos $A$ y $B$
+Si un experimento estadístico pueden ocurrir dos eventos `$A$` y `$B$`
 que son independientes entre si, entonces
 
 $$\begin{align*}\mathbb P(A|B)=\mathbb P(A) \quad \text{ o } \quad \mathbb P(B|A)=\mathbb P(B)\end{align*}$$
@@ -685,7 +680,7 @@ lo cual es equivalente a
 $$\begin{align*}\mathbb P(A\cap B)=\mathbb P(A)\mathbb P(B)\end{align*}$$
 
 
-En cualquier otro caso, los eventos $A$ y $B$ son dependientes.
+En cualquier otro caso, los eventos `$A$` y `$B$` son dependientes.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -801,8 +796,7 @@ $$\begin{align*}
 \frac{35000}{990000} & = \frac{35}{100} \times \frac{40}{100} \times \frac{25}{100} \\
 \frac{35000}{990000} & = \frac{35000}{1000000} \\
 0.03535354 &\neq 0.035
-\end{align*}$$
-Y por tanto, al verificar que la igualdad NO se cumple,
+\end{align*}$$ Y por tanto, al verificar que la igualdad NO se cumple,
 se concluye que los eventos NO son independientes.
 
 </li>

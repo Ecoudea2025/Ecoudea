@@ -21,12 +21,12 @@ un evento determinado.
 
 ### Regla multiplicativa
 
-**Si una operación consiste en $k$ diferentes pasos**, donde el primer
-paso puede realizarse de $n_1$ formas distintas, el segundo paso puede
-realizarse de $n_2$ formas distintas, $\ldots$ y el $i$-ésimo paso
-puede realizarse de $n_i$ formas distintas, con $i=1,2,\ldots,k$,
+**Si una operación consiste en `$k$` diferentes pasos**, donde el primer
+paso puede realizarse de `$n_1$` formas distintas, el segundo paso puede
+realizarse de `$n_2$` formas distintas, `$\ldots$` y el `$i$`-ésimo paso
+puede realizarse de `$n_i$` formas distintas, con `$i=1,2,\ldots,k$`,
 entonces la operación completa se puede realizar de
-$(n_1)(n_2)(n_3)\ldots(n_k)$ formas distintas.
+`$(n_1)(n_2)(n_3)\ldots(n_k)$` formas distintas.
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -81,15 +81,15 @@ n_1\times n_2 = (3)(7) = 21 \text{ posibilidades}
 </ol>
 </main>
 
-### Permutación de $n$ objetos
+### Permutación de `$n$` objetos
 
-Para cualquier número entero no negativo $n$, se tiene que el número
-de permutaciones o arreglos **ordenados** de $n$ objetos diferentes es
-$n!$
+Para cualquier número entero no negativo `$n$`, se tiene que el número
+de permutaciones o arreglos **ordenados** de `$n$` objetos diferentes es
+`$n!$`
 
 $$\begin{align*}n! &= n(n-1)! \\ n! &= n(n-1)(n-2)! \\ n! &= n(n-1)(n-2)\ldots(3)(2)(1) \\\end{align*}$$
 
-donde el caso especial de $0!=1$
+donde el caso especial de `$0!=1$`
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -120,14 +120,14 @@ en el último puesto. Esto es, $$\begin{align*}
 </p>
 </main>
 
-### Permutación de $n$ objetos tomados de a $r$
+### Permutación de `$n$` objetos tomados de a `$r$`
 
-Similarmente, el número de formas de ordenar $n$ objetos diferentes
-tomados de $r$ objetos a la vez estará dado por
+Similarmente, el número de formas de ordenar `$n$` objetos diferentes
+tomados de `$r$` objetos a la vez estará dado por
 
 $$\begin{align*}_nP_r= n(n-1)(n-2)\ldots(n-r+1)=\frac{n!}{(n-r)!}\\\end{align*}$$
 
-donde en el caso especial de $n=r$, se tendrá la formula
+donde en el caso especial de `$n=r$`, se tendrá la formula
 
 $$\begin{align*}_nP_n= \frac{n!}{(n-n)!}=\frac{n!}{0!}=n!\\\end{align*}$$
 
@@ -177,8 +177,8 @@ _{25}P_4 = \frac{25!}{(25-4)!} = 303600 \text{ formas}
 
 ### Permutación en circulo
 
-El número de permutaciones de $n$ objetos ordenados en forma circular
-es de $(n-1)!$. Dos permutaciones circulares no se consideran
+El número de permutaciones de `$n$` objetos ordenados en forma circular
+es de `$(n-1)!$`. Dos permutaciones circulares no se consideran
 diferentes a menos que los objetos correspondientes en los dos arreglos
 estén precedidos o seguidos por un objeto diferente.
 
@@ -236,8 +236,7 @@ redonda. <br>
 Dejando a uno de los grupos en un punto fijo, el profesor tendrá un
 total de $$\begin{align*}
 (5-1)! = 24 \text{ formas}
-\end{align*}$$
-de sentar en un mesa redonda a los $5$ grupos. Ahora,
+\end{align*}$$ de sentar en un mesa redonda a los $5$ grupos. Ahora,
 si tenemos en cuenta la restricción anteriormente calculada, entonces se
 tendrá que el profesor podrá sentar a los $6$ estudiantes en una mesa
 redonda, con Luisa y Camila juntas de $$\begin{align*}
@@ -259,13 +258,13 @@ mesa redonda, con Luisa y Camila separadas de $$\begin{align*}
 
 ### Permutación por clases
 
-El número de permutaciones distintas en $n$ objetos, en los que
-$n_1$ objetos son de una clase, $n_2$ objetos de una segunda clase,
-$\ldots$, y $n_k$ objetos de una $k$-ésima clase es
+El número de permutaciones distintas en `$n$` objetos, en los que
+`$n_1$` objetos son de una clase, `$n_2$` objetos de una segunda clase,
+`$\ldots$`, y `$n_k$` objetos de una `$k$`-ésima clase es
 
 $$\begin{align*}\frac{n!}{n_1! n_2! \ldots n_k!}\end{align*}$$
  donde
-$n=n_1+n_2+\ldots+n_k$
+`$n=n_1+n_2+\ldots+n_k$`
 
 <button id="Show5" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -308,11 +307,11 @@ $$\begin{align*}
 
 ### Combinatoria
 
-El número de combinaciones de $n$ objetos, tomando $r$ objetos a la
-vez, es el número de subconjuntos de tamaño $r$, que se pueden formar
-a partir de los $n$ objetos en los cuales **el orden no importa**.
-Entonces, el número de subconjuntos **desordenados** de tamaño $r$
-escogidos **sin reemplazo**, de un total de $n$ objetos disponibles es
+El número de combinaciones de `$n$` objetos, tomando `$r$` objetos a la
+vez, es el número de subconjuntos de tamaño `$r$`, que se pueden formar
+a partir de los `$n$` objetos en los cuales **el orden no importa**.
+Entonces, el número de subconjuntos **desordenados** de tamaño `$r$`
+escogidos **sin reemplazo**, de un total de `$n$` objetos disponibles es
 
 $$\begin{align*}_nC_r=\left(\begin{array}{c}n\\ r\end{array}\right) = \frac{n!}{r! (n-r)!}\end{align*}$$
 
@@ -320,7 +319,7 @@ en donde puede observarse que
 
 $$\begin{align*}_nC_r=\frac{_nP_r}{r!}\end{align*}$$
  y en consecuencia
-$_nC_r <\; _nP_r$
+`$_nC_r <\; _nP_r$`
 
 <button id="Show6" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -355,15 +354,15 @@ _{27}C_{4}= \frac{27!}{4! (27-4)!} = 17550 \text{ formas}
 
 ### Combinatoria por subconjuntos
 
-El número de maneras en que un conjunto de $n$ objetos diferentes se
-puede dividir o partir en $k$ subconjuntos de $n_1$ objetos el
-primer subconjunto, $n_2$ objetos el segundo subconjunto, $\ldots$,
-y $n_k$ objetos el $k$-ésimo subconjunto es
+El número de maneras en que un conjunto de `$n$` objetos diferentes se
+puede dividir o partir en `$k$` subconjuntos de `$n_1$` objetos el
+primer subconjunto, `$n_2$` objetos el segundo subconjunto, `$\ldots$`,
+y `$n_k$` objetos el `$k$`-ésimo subconjunto es
 
 $$\begin{align*}\left(\begin{array}{c}n\\ n_1, n_2, \ldots, n_k\end{array}\right) = \frac{n!}{n_1!\;n_2!\;\ldots\;n_k!}\end{align*}$$
 
 
-siendo $\sum_{i=1}^kn_i=n$.
+siendo `$\sum_{i=1}^kn_i=n$`.
 
 <button id="Show7" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -400,8 +399,8 @@ Con el proposito de identificar cuando se deben usar permutaciones y
 cuando se deben usar combinatorias, es necesario determinar si **el
 conteo se realiza con reemplazo o sin reemplazo**, y además determinar
 si **los objetos se encuentran o no ordenados**. Entonces, suponga que
-se tienen $n$ objetos de los cuales se desean tomar $r$ a la vez,
-entonces planteamos los siguientes $4$ escenarios
+se tienen `$n$` objetos de los cuales se desean tomar `$r$` a la vez,
+entonces planteamos los siguientes `$4$` escenarios
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>

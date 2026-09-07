@@ -12,9 +12,9 @@ Variables aleatorias
 --------------------
 
 Es una función que asocia un número real a cada elemento del espacio
-muestral $S$. Comúnmente las variables aleatorias se denotan por
-letras mayúsculas del final del alfabeto $(X,Y,Z)$ y a los valores
-observados por letras minúsculas $(x,y,z)$.
+muestral `$S$`. Comúnmente las variables aleatorias se denotan por
+letras mayúsculas del final del alfabeto `$(X,Y,Z)$` y a los valores
+observados por letras minúsculas `$(x,y,z)$`.
 
 Las variables aleatorias se pueden clasificar en tres tipos
 
@@ -65,8 +65,7 @@ el dado, el número $4$ puede caer en el primer lanzamiento, o en el
 segundo, o en el tercero, etc, etc, y por tanto el espacio muestral
 estará dado por $$\begin{align*}
 S:\{E, FE, FFE, FFFE, \ldots\}
-\end{align*}$$
-y en consecuencia, podemos definir la <strong>variable
+\end{align*}$$ y en consecuencia, podemos definir la <strong>variable
 aleatoria discreta $X$ </strong> con los números $1$, $2$, $3$,
 $\ldots$, para el número de lanzamientos necesarios hasta obtener un
 $4$. Es decir, la variable aleatoria tendrá dominio en
@@ -89,8 +88,7 @@ muestral con dos puntos situaciones, $D$ si el artículo está
 defectuoso, y $N$ si el artículo no está defectuoso, tal que
 $$\begin{align*}
 S:\{D,N\}
-\end{align*}$$
-Entonces, como solo pueden haber dos posibilidades,
+\end{align*}$$ Entonces, como solo pueden haber dos posibilidades,
 defectuoso y no defectuoso, podemos definir una variable aleatoria
 Bernoulli $Z$, la cual se definirá como $$\begin{align*}
 Z = \begin{cases}
@@ -107,16 +105,16 @@ Variables aleatorias discretas
 
 ### Función de probabilidad
 
-Se dice que el conjunto de pares ordenados $(x,p(x))$ es una función
-de masa de probabilidad (*fmp*) de la variable aleatoria discreta $X$,
-si para cualquier resultado posible de $X$ se cumple que
+Se dice que el conjunto de pares ordenados `$(x,p(x))$` es una función
+de masa de probabilidad (*fmp*) de la variable aleatoria discreta `$X$`,
+si para cualquier resultado posible de `$X$` se cumple que
 
-1.  $p(x)\geq0$ para todo $x \in$ en el dominio de $X$
+1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
 
-2.  $\sum_x p(x)=1$
+2.  `$\sum_x p(x)=1$`
 
-3.  $\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$ con $A$ un conjunto de
-    valores $\in$ al dominio de $X$.
+3.  `$\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$` con `$A$` un conjunto de
+    valores `$\in$` al dominio de `$X$`.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -169,8 +167,7 @@ niñas que hay en la familia, se tendrá entonces que a partir del espacio
 muestral $S$ se puede contar el número de éxitos que hay en cada
 situación $$\begin{align*}
 S = \{\underset{0}{HHH},\;\underset{1}{HHM},\;\underset{1}{HMH},\;\underset{1}{MHH},\;\underset{2}{HMM},\;\underset{2}{MHM},\;\underset{2}{MMH},\;\underset{3}{MMM}\}
-\end{align*}$$
-Evidenciando, que podemos asignar los valores $0,$
+\end{align*}$$ Evidenciando, que podemos asignar los valores $0,$
 $1,$ $2$ y $3$ a la variable aleatoria $X$.
 </li>
 <li>
@@ -191,8 +188,7 @@ la definición de
 relativa</a>, se tendrá que la probabilidad de que $X=0$, es
 $$\begin{align*}
 \mathbb{P}(X=0) = \frac{1}{8}
-\end{align*}$$
-Procedimiento similar se aplica para $X=1$, $X=2$ y
+\end{align*}$$ Procedimiento similar se aplica para $X=1$, $X=2$ y
 $X=3$, obteniendo como resultado la siguiente tabla de probabilidades
 <div style="font-size:120%!important">
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -298,28 +294,28 @@ de $3$ hijos, se tenga $2$ o más niñas, es del $50\%$.
 
 ### Función de distribución acumulada
 
-La función de distribución acumulada (*fda*) denotada por $F(x)$, para
-una variable aleatoria discreta $X$ con distribución de probabilidad
-$p(x)$ es de la forma
+La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
+una variable aleatoria discreta `$X$` con distribución de probabilidad
+`$p(x)$` es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
 
-para cualquier $x$ dentro del rango de $X$, $F(x)$ será la suma
-acumulada de todos los valores de rango de $X$ menores a $x$.
+para cualquier `$x$` dentro del rango de `$X$`, `$F(x)$` será la suma
+acumulada de todos los valores de rango de `$X$` menores a `$x$`.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso discreto, entonces, si $a$ y $b$
+distribución acumulada en el caso discreto, entonces, si `$a$` y `$b$`
 son dos números **constantes enteras**, deberán tenerse en cuenta las
 siguientes reglas
 
--   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$
--   $\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$
--   $\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$
--   $\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$
--   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$
--   $\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
--   $\mathbb{P}(X \leq b) = F(b)$
--   $\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$
+-   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$`
+-   `$\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$`
+-   `$\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$`
+-   `$\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$`
+-   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$`
+-   `$\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
+-   `$\mathbb{P}(X \leq b) = F(b)$`
+-   `$\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$`
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -419,8 +415,7 @@ F(x) = \begin{cases} 0 & x<0 \\
                      \frac{7}{8}  & 2\leq x<3 \\
                      \frac{8}{8}  & x\geq 3
        \end{cases}
-\end{align*}$$
-En donde se aprecia, que para valores menores a $0$, no
+\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
 $0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
 valores mayores o iguales a $1$ pero menores que $2$ está definido
@@ -454,9 +449,9 @@ $3$ hijos, tengan $2$ o más niñas es de $50\%$.
 
 ### Esperanza matemática
 
-Si $X$ es una variable aleatoria con función de masa de probabilidad
-$p(x)$, entonces la media o valor esperado de la variable aleatoria se
-denota por $\mathbb{E}(X)$ o $\mu$ está dada por
+Si `$X$` es una variable aleatoria con función de masa de probabilidad
+`$p(x)$`, entonces la media o valor esperado de la variable aleatoria se
+denota por `$\mathbb{E}(X)$` o `$\mu$` está dada por
 
 $$\begin{align*}\mathbb{E}(X)=\sum_{x}xp(x)\end{align*}$$
 
@@ -544,13 +539,13 @@ familia que posee $3$ hijos es de $1.5$ niñas.
 
 ### Propiedades de la esperanza matemática
 
-Sea $a$ y $b$ dos números constantes (reales) y $X$ una variable
+Sea `$a$` y `$b$` dos números constantes (reales) y `$X$` una variable
 aleatoria, entonces se tiene que
 
--   $\mathbb{E}(a) = a$
--   $\mathbb{E}(bX) = b\mathbb{E}(X)$
--   $\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$
--   si $m(X)$ es una función de $X$, entonces
+-   `$\mathbb{E}(a) = a$`
+-   `$\mathbb{E}(bX) = b\mathbb{E}(X)$`
+-   `$\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$`
+-   si `$m(X)$` es una función de `$X$`, entonces
 
 
 $$\begin{align*}\mathbb{E}(m(X))=\sum_xm(x)p(x)\end{align*}$$
@@ -668,8 +663,7 @@ $$\begin{align*}
              &=\frac{9}{8}+\frac{18}{8}+\frac{9}{8} \\
              &=\frac{36}{8} \\
              &=4.5
-\end{align*}$$
-Resultado similar, puede obtenerse mediante la propiedad
+\end{align*}$$ Resultado similar, puede obtenerse mediante la propiedad
 $\mathbb{E}(aX)=a\mathbb{E}(X)$, en donde ya sabemos que
 $\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 

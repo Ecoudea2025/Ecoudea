@@ -21,13 +21,13 @@ poblacionales desconocidos, que nos permitirán realizar el cálculo de
 probabilidades usando distribuciones muestrales específicas. Dichas
 condiciones y transformaciones se irán listando a lo largo de la clase.
 
-### Transformación muestrales para una medias $\mu$
+### Transformación muestrales para una medias `$\mu$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$ de una población con media $\mu$ y varianza $\sigma^2$
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$` de una población con media `$\mu$` y varianza `$\sigma^2$`
 conocida o desconocida, se tendrá que dependiendo de las condiciones de
 la muestra y sobre la población, se tendrán las siguientes
-transformaciones para hacer inferencia sobre $\mu$.
+transformaciones para hacer inferencia sobre `$\mu$`.
 
 ![](/assets/images/Transformacion1.jpg)
 
@@ -69,8 +69,7 @@ En este caso, estamos interesados en calcular la probabilidad de que la
 media poblacional del salario de los egresados, sea como máximo de $2$
 millones de pesos, esto es $$\begin{align*}
 \mathbb{P}(\mu\leq 2)
-\end{align*}$$
-Ahora, dado que para encontrar la probabilidad asociada a
+\end{align*}$$ Ahora, dado que para encontrar la probabilidad asociada a
 la media poblacional, requeriríamos conocer la distribución de
 probabilidad de $\mu$, y ésta, no es una distribución conocida,
 entonces podemos emplear la distribución muestral de los salarios, la
@@ -155,8 +154,7 @@ tamaño de la muestra $n\geq30$, podemos aplicar el teorema del límite
 central el cual nos dice que, mediante la aplicación de la
 estandarización $$\begin{align*}
 Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
-podemos obtener una distribución aproximadamente normal,
+\end{align*}$$ podemos obtener una distribución aproximadamente normal,
 lo cual nos permitirá realizar el cálculo de la probabilidad de
 interés.<br> <br> Ahora, para poder aplicar la estandarización, debemos
 calcular primero el valor de la media y desviación estandar
@@ -170,8 +168,7 @@ media poblacional será igual a $$\begin{align*}
                       &= 3 (6-1)!\\
                       &= 3 (120) \\
                       &= 360
-\end{align*}$$
-mientras que, la varianza poblacional será igual a
+\end{align*}$$ mientras que, la varianza poblacional será igual a
 $$\begin{align*}
 Var(X) = \sigma^2 &= \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gamma\left(1 + \frac{1}{\alpha}\right)^2\right] \\
                   &= 3^2\left[\Gamma\left(1 + \frac{2}{(1/5)}\right) - \Gamma\left(1 + \frac{1}{(1/5)}\right)^2\right] \\
@@ -183,8 +180,7 @@ Var(X) = \sigma^2 &= \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gam
                   &= 9\left[3628800 - 14400\right] \\
                   &= 9\left[3614400\right] \\
                   &= 32529600
-\end{align*}$$
-es decir que, la desviación estándar poblacional será
+\end{align*}$$ es decir que, la desviación estándar poblacional será
 igual a $$\begin{align*}
 Sd(X) = \sigma &= \sqrt{Var(X)} \\
                &= \sqrt{32529600} \\
@@ -251,8 +247,7 @@ muestral $\bar{X}$ sea como máximo el encontrado por el grupo de
 investigación, es decir que se desea calcular la siguiente probabilidad
 $$\begin{align*}
 \mathbb{P}(\bar{X} \leq 1.02)
-\end{align*}$$
-En donde sabemos que la distribución de probabilidad de
+\end{align*}$$ En donde sabemos que la distribución de probabilidad de
 la media muestral $\bar{X} \sim N(\mu, \sigma^2/n)$, por lo cual
 podríamos calcular directamente la probabilidad de interés, en caso de
 que conocieramos la varianza poblacional, pero al no ser nuestro caso,
@@ -300,12 +295,12 @@ creíble.
 </p>
 </main>
 
-### Transformación muestrales para una varianza $\sigma^2$
+### Transformación muestrales para una varianza `$\sigma^2$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$ de una población normal con media $\mu$ y varianza $\sigma^2$
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$` de una población normal con media `$\mu$` y varianza `$\sigma^2$`
 conocida o desconocida, se tendrá la siguiente transformación para hacer
-inferencia sobre $\sigma^2$.
+inferencia sobre `$\sigma^2$`.
 
 ![](/assets/images/Transformacion2.jpg)
 
@@ -371,24 +366,22 @@ software <tt>R</tt> o las funciones <tt>DISTR.CHICUAD()</tt> o
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{25} > 40) = 0.0291644
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(S > 2.828427) = 0.0291644
-\end{align*}$$
-es decir, se tendrá un $2.92\%$ de probabilidad de que
+\end{align*}$$ es decir, se tendrá un $2.92\%$ de probabilidad de que
 la desviación estándar de la calificación obtenida por una muestra de
 $26$ estudiantes de primero y segundo semestre de la facultad de
 ingeniería, en el exámen, sea superior a $2.828427$ puntos.
 </p>
 </main>
 
-### Transformación muestrales para una proporción $p$
+### Transformación muestrales para una proporción `$p$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
-$n$, tal que $X\sim b(n,p)$. Entonces si $n$ es suficientemente
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
+`$n$`, tal que `$X\sim b(n,p)$`. Entonces si `$n$` es suficientemente
 grande, se tendrá la siguiente transformación para hacer inferencia
-sobre una proporción $p$
+sobre una proporción `$p$`
 
 ![](/assets/images/Transformacion3.jpg)
 
@@ -447,7 +440,7 @@ $x=4$ éxitos en las $n=15$ muestras, entonces podemos aplicar la
 fórmula de frecuencia relativa para calcular la proporción muestral de
 egresados que poseen salarios superiores a $2$ millones.
 $$\begin{align*}
-  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667
@@ -494,18 +487,18 @@ de pesos, sea mayor al $40\%$.
 </p>
 </main>
 
-### Transformación muestrales para diferencia de medias $\mu_1 - \mu_2$
+### Transformación muestrales para diferencia de medias `$\mu_1 - \mu_2$`
 
-Sea $X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* con
-medias $\mathbb{E}(X_{1i})=\mu_1$ y $\mathbb{E}(X_{2j})=\mu_2$, y
-varianzas $Var(X_{1i})=\sigma_1^2<\infty$ y
-$Var(X_{2j})=\sigma_2^2<\infty$, para $i=1,2,\ldots,n_1$ y
-$j=1,2,\ldots,n_2$, entonces dependiendo de la distribución de donde
-provengan las muestras aleatorias, los tamaños muestrales $n_1$ y
-$n_2$, y de si se conocen o no las varianzas $\sigma^2_1$ y
-$\sigma^2_2$, se tendrán las siguientes transformaciones para hacer
-inferencia sobre la diferencia de medias $\mu_1 - \mu_2$.
+Sea `$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* con
+medias `$\mathbb{E}(X_{1i})=\mu_1$` y `$\mathbb{E}(X_{2j})=\mu_2$`, y
+varianzas `$Var(X_{1i})=\sigma_1^2<\infty$` y
+`$Var(X_{2j})=\sigma_2^2<\infty$`, para `$i=1,2,\ldots,n_1$` y
+`$j=1,2,\ldots,n_2$`, entonces dependiendo de la distribución de donde
+provengan las muestras aleatorias, los tamaños muestrales `$n_1$` y
+`$n_2$`, y de si se conocen o no las varianzas `$\sigma^2_1$` y
+`$\sigma^2_2$`, se tendrán las siguientes transformaciones para hacer
+inferencia sobre la diferencia de medias `$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Transformacion4.jpg)
 
@@ -568,16 +561,14 @@ $$\begin{align*}
                               &= \mathbb{P}\left(\frac{(\bar{X}_C - \bar{X}_S) - (\mu_C - \mu_S)}{\sqrt{\frac{\sigma^2_C}{n_C} + \frac{\sigma^2_S}{n_S}}} < \frac{(43.5 - 40.8) - 3}{\sqrt{\frac{20}{12} + \frac{28}{15}}}\right) \\
                               &= \mathbb{P}\left(Z < \frac{-0.3 }{1.825742}\right) \\
                               &= \mathbb{P}\left(Z < -0.1595986\right) \\
-\end{align*}$$
-Y como $Z \sim N(0,1)$, podemos encontrar la
+\end{align*}$$ Y como $Z \sim N(0,1)$, podemos encontrar la
 probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
 Excel, tal que $$\begin{align*}
 \mathbb{P}\left(Z < -0.1595986\right) = 0.4365986
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(\mu_C - \mu_S > 3) = 0.4365986
 \end{align*}$$
@@ -643,16 +634,14 @@ operaciones matemáticas correspondientes, tendremos que $$\begin{align*}
                           &= \mathbb{P}\left(\frac{(\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M)}{\sqrt{\frac{S^2_H}{n_H} + \frac{S^2_M}{n_M}}} < \frac{(2.6 - 2.3) - 0}{\sqrt{\frac{1.2^2}{270} + \frac{0.7^2}{250}}}\right) \\
                           &= \mathbb{P}\left(Z < \frac{0.3}{0.08540101}\right) \\
                           &= \mathbb{P}\left(Z < 3.512839\right) \\
-\end{align*}$$
-Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar
+\end{align*}$$ Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar
 la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
 Excel, tal que $$\begin{align*}
 \mathbb{P}\left(Z < 3.512839\right) = 0.9997783
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(\mu_H > \mu_M) = 0.9997783
 \end{align*}$$
@@ -724,8 +713,7 @@ $$\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
      &= \frac{(22-1)8^2 + (28-1)6.2^2}{22 + 28 - 2} \\
      &= 49.6225
-\end{align*}$$
-y por tanto $$\begin{align*}
+\end{align*}$$ y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{49.6225} \\
    &= 7.044324
@@ -739,16 +727,14 @@ tendremos que la probabilidad de interés será igual a $$\begin{align*}
                                  &= \mathbb{P}\left(\frac{(\bar{X}_H - \bar{X}_M) - (\mu_H - \mu_M)}{Sp\sqrt{\frac{1}{n_H} + \frac{1}{n_M}}} \geq \frac{(52 - 46) - 3}{7.044324\sqrt{\frac{1}{22} + \frac{1}{28}}}\right) \\
                                  &= \mathbb{P}\left(t_{28+22-2} \geq \frac{3}{2.006938}\right) \\
                                  &= \mathbb{P}\left(t_{48} \geq 1.494814\right) \\
-\end{align*}$$
-Y como $t \sim t_{48}$, podemos entonces podemos
+\end{align*}$$ Y como $t \sim t_{48}$, podemos entonces podemos
 encontrar la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistTStudent.pdf">Tabla
 de la Distribución t de Student</a>, la función <tt>pt()</tt> del
 software <tt>R</tt> o las funciones <tt>DISTR.T.N()</tt> o
 <tt>DISTR.T.CD()</tt> de Excel, tal que $$\begin{align*}
 \mathbb{P}\left(t_{48} > 1.494814\right) = 0.07075437
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(\mu_H - \mu_M \leq 3) = 0.07075437
 \end{align*}$$
@@ -830,16 +816,14 @@ igual a $$\begin{align*}
                           &= \mathbb{P}\left(\frac{(\bar{X}_B - \bar{X}_A) - (\mu_B - \mu_A)}{\sqrt{\frac{S^2_B}{n_B} + \frac{S^2_A}{n_A}}} > \frac{(1010 - 1130) - 0}{\sqrt{\frac{380^2}{12} + \frac{420^2}{18}}}\right) \\
                           &= \mathbb{P}\left(t_{26} > \frac{-120}{147.7611}\right) \\
                           &= \mathbb{P}\left(t_{26} > -0.8121217\right) \\
-\end{align*}$$
-Y como $t \sim t_{26}$, podemos entonces podemos
+\end{align*}$$ Y como $t \sim t_{26}$, podemos entonces podemos
 encontrar la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistTStudent.pdf">Tabla
 de la Distribución t de Student</a>, la función <tt>pt()</tt> del
 software <tt>R</tt> o las funciones <tt>DISTR.T.N()</tt> o
 <tt>DISTR.T.CD()</tt> de Excel, tal que $$\begin{align*}
 \mathbb{P}\left(t_{26} > -0.8121217\right)= 0.7879523
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(\mu_B < \mu_A) = 0.7879523
 \end{align*}$$
@@ -907,16 +891,14 @@ acaba de presentar, tendremos que $$\begin{align*}
                           &= \mathbb{P}\left(\frac{(\bar{X}_B - \bar{X}_A) - (\mu_B - \mu_A)}{\sqrt{\frac{S^2_B}{n_B} + \frac{S^2_A}{n_A}}} > \frac{(48 - 44) - 0}{\sqrt{\frac{7.6^2}{56} + \frac{6.2^2}{47}}}\right) \\
                           &= \mathbb{P}\left(Z > \frac{4}{1.35989}\right) \\
                           &= \mathbb{P}\left(Z > 2.941414\right) \\
-\end{align*}$$
-Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar
+\end{align*}$$ Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar
 la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
 Excel, tal que $$\begin{align*}
 \mathbb{P}\left(Z > 2.941414\right)= 0.001633588
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(\mu_B < \mu_A) = 0.001633588
 \end{align*}$$
@@ -929,14 +911,14 @@ que el rendimiento del motor B sea inferior al del motor $A$.
 </p>
 </main>
 
-### Distribución muestral para diferencia de proporciones $p_1 - p_2$
+### Distribución muestral para diferencia de proporciones `$p_1 - p_2$`
 
-Sea $X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* de
-tamaño $n_1$ y $n_2$, tal que $X_{1i}\sim b(n_1,p_1)$ y
-$X_{2i}\sim b(n_2,p_2)$. Entonces si $n_1$ y $n_2$ son
+Sea `$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* de
+tamaño `$n_1$` y `$n_2$`, tal que `$X_{1i}\sim b(n_1,p_1)$` y
+`$X_{2i}\sim b(n_2,p_2)$`. Entonces si `$n_1$` y `$n_2$` son
 suficientemente grandes, se tendrá la siguiente transformación para
-hacer inferencia sobre la diferencia de proporciones $\mu_1 - \mu_2$.
+hacer inferencia sobre la diferencia de proporciones `$\mu_1 - \mu_2$`.
 
 ![](/assets/images/Transformacion5.jpg)
 
@@ -996,14 +978,13 @@ equipos que presentan un rendimiento superior al promedio, lo cual
 podemos hacer mediante el empleo de la ecuación de frecuencia relativa,
 tal que para el caso de los equipos que fueron construidos con el nuevo
 procedimiento tenemos que $$\begin{align*}
-\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$
-mientras que, para los equipos que fueron construidos con
+\end{align*}$$ mientras que, para los equipos que fueron construidos con
 el procedimiento actual tenemos que $$\begin{align*}
-\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
@@ -1034,8 +1015,7 @@ de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
 Excel, tal que $$\begin{align*}
 \mathbb{P}\left(Z < 2.815407\right)= 0.9975642
-\end{align*}$$
-lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(p_N > p_A) = 0.9975642
 \end{align*}$$
@@ -1050,15 +1030,15 @@ respecto a la mejora promedio de rendimiento respecto al proceso actual.
 </p>
 </main>
 
-### Distribución muestral para razón de varianzas $\sigma^2_1/\sigma^2_2$
+### Distribución muestral para razón de varianzas `$\sigma^2_1/\sigma^2_2$`
 
-Sea $X_{11}, X_{12}, \ldots, X_{1n_1}$ y
-$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* de
-una distribución normal con medias $\mathbb{E}(X_{1})=\mu_1$ y
-$\mathbb{E}(X_{2})=\mu_2$, y varianzas
-$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma_2^2<\infty$
+Sea `$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
+`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* de
+una distribución normal con medias `$\mathbb{E}(X_{1})=\mu_1$` y
+`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
+`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma_2^2<\infty$`
 desconocidas, entonces se tendrá la siguiente transformaciones para
-hacer inferencia sobre la razón de varianzas $\sigma^2_1/\sigma^2_2$.
+hacer inferencia sobre la razón de varianzas `$\sigma^2_1/\sigma^2_2$`.
 
 ![](/assets/images/Transformacion6.jpg)
 

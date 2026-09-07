@@ -64,12 +64,12 @@ por orden de magnitud.
 
 ## Estadísticos muestrales
 
-Sea $X_1, X_2, \ldots, Xn$ una muestra aleatoria *iid* de tamaño
-$n$, entonces se tendrán los siguientes estadísticos muestrales
+Sea `$X_1, X_2, \ldots, Xn$` una muestra aleatoria *iid* de tamaño
+`$n$`, entonces se tendrán los siguientes estadísticos muestrales
 
 ### Media muestral
 
-Es el promedio aritmético del total de las $n$ observaciones
+Es el promedio aritmético del total de las `$n$` observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
@@ -115,13 +115,11 @@ $15$ egresados. <br> <br> Entonces para realizar el cálculo empleamos
 la ecuación para el cálculo de la media muestral, tal que
 $$\begin{align*}
   \bar{X}=\sum_{i=1}^n\frac{x_i}{n}
-\end{align*}$$
-En donde, si llamamos cada una de las observaciones como
+\end{align*}$$ En donde, si llamamos cada una de las observaciones como
 $X_1, X_2, \ldots, X_{15}$, tendremos que $$\begin{align*}
   \bar{X} &= \frac{1.79 + 2.93 + 1.22 + \ldots + 3.24}{15}\\
           &= 1.659333
-\end{align*}$$
-Por tanto, se tendrá que el promedio muestral obtenido
+\end{align*}$$ Por tanto, se tendrá que el promedio muestral obtenido
 para el salario de los egresados del programa de ingeniería industrial
 es de $1.659$ millones de pesos.
 </p>
@@ -135,8 +133,8 @@ pertenecientes a una muestra aleatoria, respecto a la media muestra.
 $$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
 
 
-siendo el valor $n-1$ conocido como la corrección de Bessel, el cuál
-se usa en lugar de la división sobre $n$ con el fin de corregir el
+siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
+se usa en lugar de la división sobre `$n$` con el fin de corregir el
 sesgo tendría el estimador.
 
 En <tt>R</tt> puede calcularse la varianza muestral de una muestra
@@ -179,15 +177,13 @@ egresados. <br> <br> Para realizar el cálculo de la varianza de los
 salarios de los egresados, empleamos la ecuación de la varianza
 muestral, tal que $$\begin{align*}
   S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}
-\end{align*}$$
-En donde, si cada una de las observaciones hace
+\end{align*}$$ En donde, si cada una de las observaciones hace
 referencia los valores $X_1, X_2, \ldots, X_{15}$, y el valor de la
 media es igual a $\bar{X}=1.659333$ tendremos que $$\begin{align*}
   S^2 &= \frac{(1.78 - 1.659333)^2 + (2.93 - 1.659333)^2+\ldots+(3.24 - 1.659333)^2}{15-1} \\
       &= \frac{0.01456052 + 1.614595 + \ldots + 2.498508}{14}\\
       &= 0.4501638
-\end{align*}$$
-Por tanto, se tendrá que la varianza muestral del salario
+\end{align*}$$ Por tanto, se tendrá que la varianza muestral del salario
 de los egresados del programa de ingeniería industrial es de
 $0.4501638$.
 </p>
@@ -265,26 +261,26 @@ aleatorias observadas en una muestra, éstos también serán variables
 aleatorias que tendrán distribuciones de probabilidad asociadas,
 distribuciones que son llamadas distribuciones muestrales.
 
-### Distribución muestral de $\bar{X}$
+### Distribución muestral de `$\bar{X}$`
 
-Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de tamaño $n$ de
-una distribución normal con media $\mu$ y varianza $\sigma^2$,
+Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de tamaño `$n$` de
+una distribución normal con media `$\mu$` y varianza `$\sigma^2$`,
 entonces se puede mostrar que
 
 $$\begin{align*}\bar{X}=\frac{1}{n}\sum_{i=1}^n x_i \sim N(\mu, \sigma^2/n)\end{align*}$$
 
-se distribuye normalmente con media $\mu$ y varianza $\sigma^2/n$.
+se distribuye normalmente con media `$\mu$` y varianza `$\sigma^2/n$`.
 
 #### Teorema
 
-Dado que $\bar{X}\sim N(\mu,\sigma^2/n)$, entonces se puede aplicar la
+Dado que `$\bar{X}\sim N(\mu,\sigma^2/n)$`, entonces se puede aplicar la
 estandarización que se emplea a la distribución normal para llevar ésta,
 a una distribución normal estándar. Dicha estandarización sería de la
 forma
 
 $$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$$
 
-y se tendrá que $Z$ se distribuirá como una normal estándar de forma
+y se tendrá que `$Z$` se distribuirá como una normal estándar de forma
 exacta.
 
 <button id="Show4" class="btn btn-secondary">
@@ -370,8 +366,7 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$
-En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -409,8 +404,7 @@ forma
 
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$
-obteniendo que la probabilidad
+\end{align*}$$ obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -513,8 +507,7 @@ En este caso, estamos interesados en calcular la probabilidad de que la
 media poblacional del salario de los egresados, sea como máximo de $2$
 millones de pesos, esto es $$\begin{align*}
 \mathbb{P}(\mu\leq 2)
-\end{align*}$$
-Ahora, dado que para encontrar la probabilidad asociada a
+\end{align*}$$ Ahora, dado que para encontrar la probabilidad asociada a
 la media poblacional, requeriríamos conocer la distribución de
 probabilidad de $\mu$, y ésta, no es una distribución conocida,
 entonces podemos emplear la distribución muestral de los salarios, la

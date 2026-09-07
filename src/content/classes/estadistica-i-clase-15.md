@@ -12,9 +12,9 @@ Variables aleatorias
 --------------------
 
 Es una función que asocia un número real a cada elemento del espacio
-muestral $S$. Comúnmente las variables aleatorias se denotan por
-letras mayúsculas del final del abecedario $(X,Y,Z)$ y a los valores
-observados por letras minúsculas $(x,y,z)$.
+muestral `$S$`. Comúnmente las variables aleatorias se denotan por
+letras mayúsculas del final del abecedario `$(X,Y,Z)$` y a los valores
+observados por letras minúsculas `$(x,y,z)$`.
 
 Las variables aleatorias se pueden clasificar en tres tipos
 
@@ -65,8 +65,7 @@ el dado, el número $4$ puede caer en el primer lanzamiento, o en el
 segundo, o en el tercero, etc, etc, y por tanto el espacio muestral
 estará dado por $$\begin{align*}
 S:\{E, FE, FFE, FFFE, \ldots\}
-\end{align*}$$
-y en consecuencia, podemos definir la <strong>variable
+\end{align*}$$ y en consecuencia, podemos definir la <strong>variable
 aleatoria discreta $X$ </strong> con los números $1$, $2$, $3$,
 $\ldots$, para el número de lanzamientos necesarios hasta obtener un
 $4$. Es decir, la variable aleatoria tendrá dominio en
@@ -89,8 +88,7 @@ muestral con dos puntos situaciones, $D$ si el artículo está
 defectuoso, y $N$ si el artículo no está defectuoso, tal que
 $$\begin{align*}
 S:\{D,N\}
-\end{align*}$$
-Entonces, como solo pueden haber dos posibilidades,
+\end{align*}$$ Entonces, como solo pueden haber dos posibilidades,
 defectuoso y no defectuoso, podemos definir una variable aleatoria
 Bernoulli $Z$, la cual se definirá como $$\begin{align*}
 Z = \begin{cases}
@@ -105,16 +103,16 @@ Z = \begin{cases}
 Distribución de probabilidad discreta
 -------------------------------------
 
-Se dice que el conjunto de pares ordenados $(x,p(x))$ es una función
-de masa de probabilidad $(fmp)$ de la variable aleatoria discreta
-$X$, si para cualquier resultado posible de $X$ se cumple que
+Se dice que el conjunto de pares ordenados `$(x,p(x))$` es una función
+de masa de probabilidad `$(fmp)$` de la variable aleatoria discreta
+`$X$`, si para cualquier resultado posible de `$X$` se cumple que
 
-1.  $p(x)\geq0$ para todo $x \in$ en el dominio de $X$
+1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
 
-2.  $\sum_x p(x)=1$
+2.  `$\sum_x p(x)=1$`
 
-3.  $\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$ con $A$ un conjunto de
-    valores $\in$ al dominio de $X$.
+3.  `$\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$` con `$A$` un conjunto de
+    valores `$\in$` al dominio de `$X$`.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -167,8 +165,7 @@ niñas que hay en la familia, se tendrá entonces que a partir del espacio
 muestral $S$ se puede contar el número de éxitos que hay en cada
 situación $$\begin{align*}
 S = \{\underset{0}{HHH},\;\underset{1}{HHM},\;\underset{1}{HMH},\;\underset{1}{MHH},\;\underset{2}{HMM},\;\underset{2}{MHM},\;\underset{2}{MMH},\;\underset{3}{MMM}\}
-\end{align*}$$
-Evidenciando, que podemos asignar los valores $0,$
+\end{align*}$$ Evidenciando, que podemos asignar los valores $0,$
 $1,$ $2$ y $3$ a la variable aleatoria $X$.
 </li>
 <li>
@@ -189,8 +186,7 @@ la definición de
 relativa</a>, se tendrá que la probabilidad de que $X=0$, es
 $$\begin{align*}
 \mathbb{P}(X=0) = \frac{1}{8}
-\end{align*}$$
-Procedimiento similar se aplica para $X=1$, $X=2$ y
+\end{align*}$$ Procedimiento similar se aplica para $X=1$, $X=2$ y
 $X=3$, obteniendo como resultado la siguiente tabla de probabilidades
 <div style="font-size:120%!important">
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -297,29 +293,29 @@ de $3$ hijos, se tenga $2$ o más niñas, es del $50\%$.
 Función de distribución acumulada caso discreto
 -----------------------------------------------
 
-La función de distribución acumulada $(fda)$ denotada por $F(x)$,
-para una variable aleatoria discreta $X$ con distribución de
-probabilidad $p(x)$ es de la forma
+La función de distribución acumulada `$(fda)$` denotada por `$F(x)$`,
+para una variable aleatoria discreta `$X$` con distribución de
+probabilidad `$p(x)$` es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
 
 
-Para cualquier $x$ dentro del dominio de $X$, $F(x)$ será la suma
-acumulada de todos los $X$ menores a $x$, evaluados en $f(x)$.
+Para cualquier `$x$` dentro del dominio de `$X$`, `$F(x)$` será la suma
+acumulada de todos los `$X$` menores a `$x$`, evaluados en `$f(x)$`.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso discreto, entonces, si $a$ y $b$
+distribución acumulada en el caso discreto, entonces, si `$a$` y `$b$`
 son dos números **constantes enteras**, deberán tenerse en cuenta las
 siguientes reglas
 
--   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$
--   $\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$
--   $\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$
--   $\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$
--   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$
--   $\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
--   $\mathbb{P}(X \leq b) = F(b)$
--   $\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$
+-   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$`
+-   `$\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$`
+-   `$\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$`
+-   `$\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$`
+-   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$`
+-   `$\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
+-   `$\mathbb{P}(X \leq b) = F(b)$`
+-   `$\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$`
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -419,8 +415,7 @@ F(x) = \begin{cases} 0 & x<0 \\
                      \frac{7}{8}  & 2\leq x<3 \\
                      \frac{8}{8}  & x\geq 3
        \end{cases}
-\end{align*}$$
-En donde se aprecia, que para valores menores a $0$, no
+\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
 $0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
 valores mayores o iguales a $1$ pero menores que $2$ está definido
@@ -455,16 +450,16 @@ $3$ hijos, tengan $2$ o más niñas es de $50\%$.
 Distribución de probabilidad continua
 -------------------------------------
 
-La función $f(x)$ es una función de densidad de probabilidad (*fdp*)
-para la variable aleatoria continua $X$, definida en el conjunto de
+La función `$f(x)$` es una función de densidad de probabilidad (*fdp*)
+para la variable aleatoria continua `$X$`, definida en el conjunto de
 números reales, si
 
-1.  $f(x)\geq0$ para todo $x\in \mathbb R$
+1.  `$f(x)\geq0$` para todo `$x\in \mathbb R$`
 
-2.  $\int_{-\infty}^\infty f(x)dx=1$
+2.  `$\int_{-\infty}^\infty f(x)dx=1$`
 
-3.  $\int_a^b f(x) dx = \mathbb{P}(a<x<b)$ con $a$ y $b$ dos
-    constantes $\in \mathbb{R}$
+3.  `$\int_a^b f(x) dx = \mathbb{P}(a<x<b)$` con `$a$` y `$b$` dos
+    constantes `$\in \mathbb{R}$`
 
 <button id="Show4" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -481,8 +476,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -511,8 +505,7 @@ cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1)=(0.1)^2(1-0.1)^2=0.0081 \\
 f(0.4)=(0.4)^2(1-0.4)^2=0.0576 \\
 f(0.7)=(0.7)^2(1-0.7)^2=0.0441
-\end{align*}$$
-La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
+\end{align*}$$ La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
 $f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
@@ -527,8 +520,7 @@ $$\begin{align*}
  & = \left(\frac{x^3}{3} - \frac{2x^4}{4} + \frac{x^5}{5} \right)\Bigg|^1_0 \\
  & = \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) - \left(\frac{0^3}{3} - \frac{0^4}{2} + \frac{0^5}{5} \right) \\
  & = \frac{1}{30}
-\end{align*}$$
-Entonces, como la integral no da exactamente $1$, se
+\end{align*}$$ Entonces, como la integral no da exactamente $1$, se
 tendrá que multiplicar dicha función de densidad por una constante $k$
 que haga que su resultado sea $1$, es decir, si multiplicamos la
 función por $k=30$, se tendrá como resultado que la integral será
@@ -537,8 +529,7 @@ igual a $1$, ya que, $$\begin{align*}
  & = 30 \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) \\
  & = \frac{30}{30} \\
  & = 1
-\end{align*}$$
-Y en consecuencia, se tendrá que la nueva función de
+\end{align*}$$ Y en consecuencia, se tendrá que la nueva función de
 densidad de probabilidad está bien definida. $$\begin{align*}
 f(x) = 30x^2(1-x)^2 \quad \quad 0<x<1
 \end{align*}$$
@@ -550,15 +541,13 @@ Dado que la función de densidad está en horas, será necesario pasar los
 minutos a horas, en donde, al aplicar una regla de tres para cada límite
 de la integral que nos piden se tendrá que $$\begin{align*}
 60_\text{min}  &- 1_\text{hora} & \quad \quad & 60_\text{min} - 1_\text{hora}\\30_\text{min} &- a & \quad \quad & 50_\text{min} - b
-\end{align*}$$
-Entonces, al realizar la operación encontramos que los
+\end{align*}$$ Entonces, al realizar la operación encontramos que los
 límites de la integral serán
 $$\begin{align*}a&=\frac{30_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.5_\text{horas} \\
 b&=\frac{50_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.8333_\text{horas}
-\end{align*}$$
-Ahora, al realizar la integral tendremos que
+\end{align*}$$ Ahora, al realizar la integral tendremos que
 
 $$\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333) & = \int_{0.5}^{0.8333} 30 x^2(1-x)^2\; dx \\
@@ -578,23 +567,23 @@ $30$ minutos y $50$ minutos.
 Función de distribución acumulada caso continuo
 -----------------------------------------------
 
-La función de distribución acumulada (*fda*) denotada por $F(x)$, para
-una variable aleatoria continua $X$ con distribución de densidad de
-probabilidad $f(x)$ es de la forma
+La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
+una variable aleatoria continua `$X$` con distribución de densidad de
+probabilidad `$f(x)$` es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\int_{-\infty}^x f(t)dt \quad \quad -\infty<x<\infty\end{align*}$$
 
-para cualquier $x$, $F(x)$ es el área bajo la curva de densidad a la
-izquierda de valor que tome $x$.
+para cualquier `$x$`, `$F(x)$` es el área bajo la curva de densidad a la
+izquierda de valor que tome `$x$`.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso continuo, entonces, si $a$ y $b$
+distribución acumulada en el caso continuo, entonces, si `$a$` y `$b$`
 son dos números constantes, deberán tenerse en cuenta las siguientes
 reglas
 
--   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$
--   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
--   $\mathbb{P}(X \leq b) = F(b)$
+-   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$`
+-   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
+-   `$\mathbb{P}(X \leq b) = F(b)$`
 
 **Nota:** Recordar que en el caso continuo, las probabilidad con o sin
 la igualdad son equivalentes, y por tanto, solo se escriben las tres
@@ -615,8 +604,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>

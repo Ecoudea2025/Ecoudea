@@ -65,8 +65,7 @@ valores $8.9$ y $2.7$ del vector, notamos que estos números se
 encuentran en la posición $3$ y $5$, respectivamente, y por tanto,
 podemos emplear la notación $$\begin{align*}
 x[c(3,5)]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -107,8 +106,7 @@ duplicar el valor $10.5$, entonces como el valor $3.1$ está en la
 posición $1$ y el valor $10.5$ está en la posición $4$, podemos
 emplear la notación $$\begin{align*}
 x[c(1, 4, 4)]
-\end{align*}$$
-en donde se nota que escribimos dos veces el valor $4$,
+\end{align*}$$ en donde se nota que escribimos dos veces el valor $4$,
 tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -151,8 +149,7 @@ en la sexta posición, podemos llamar dicha posición mediante el operador
 de subconjuntos y el operador de asignación, mediante la notación
 $$\begin{align*}
 x[c(6)] <- 1000
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -193,8 +190,7 @@ $3.1, NA, 8.9, 10.5, 2.7, 5.7$, entonces si se desea eliminar el valor
 este valor se encuentran en la posición $2$, y por tanto, podemos
 emplear la notación $$\begin{align*}
 y[-c(2)]
-\end{align*}$$
-dentro del operador de subconjuntos para eliminar dicho
+\end{align*}$$ dentro del operador de subconjuntos para eliminar dicho
 valor, tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -239,8 +235,7 @@ valores de interés. Supongamos que deseamos seleccionar solo los dos
 primeros valores del vector $x$, entonces podemos emplear un vector de
 la forma $$\begin{align*}
 x[c(T,T,F,F,F,F)]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -264,8 +259,7 @@ También podemos emplear condicionales para filtrar valores, suponga que
 se quiere filtrar aquellos valores que sean menores a $4$ del vector
 $x$, entonces podemos usar el condicional $$\begin{align*}
 x[x < 4]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -292,8 +286,7 @@ filtrar del vector <tt>y</tt>, los valores que sean mayores o igual a
 <tt>5</tt> o sean <tt style="color: #ff628c!important">NA</tt>. Para
 ello empleamos la notación $$\begin{align*}
 y[y >= 5 | is.na(y)]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -334,8 +327,7 @@ Supongamos un vector $w$ dado por los caracteres <tt>“Daniel”,
 interesados en aquellos valores que contienen la cadena de caracteres
 <tt>“uno”</tt>, entonces podemos emplear la notación $$\begin{align*}
 x[x == “Daniel”]
-\end{align*}$$
-para filtrar dichos valores de interés, tal que
+\end{align*}$$ para filtrar dichos valores de interés, tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -364,11 +356,9 @@ asociados a los números, tal que <tt>“Daniel” = 4, “Carlos” = 8, “Pao
 filtrar por <tt>“Ana”</tt> empleando el operador de subconjuntos,
 podemos emplear la notación $$\begin{align*}
 z[\text{names}(z) == “Ana”]
-\end{align*}$$
-o la notación numérica $$\begin{align*}
+\end{align*}$$ o la notación numérica $$\begin{align*}
 z[z == 2.4 | z == 1.0]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -440,8 +430,7 @@ Entonces, si deseamos filtrar el valor $9$ que se encuentra en la
 posición $2,3$ (fila $2$, columna $3$), podemos emplear el
 operador de subconjuntos con la notación $$\begin{align*}
 M[2,3]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -471,8 +460,7 @@ la coma, si deseamos filtrar por fila. Por ejemplo, si queremos filtrar
 por la columna $1$ de la matriz <tt>M</tt>, empleando la notación
 $$\begin{align*}
 M[\;,1]
-\end{align*}$$
-en donde se puede notar que no hay ningún valor asignado
+\end{align*}$$ en donde se puede notar que no hay ningún valor asignado
 antes de la coma.
 </p>
 <section class="language-r highlighter-rouge">
@@ -500,14 +488,12 @@ dimensión mediante comas. Por ejemplo se tiene un arreglo
 $2\times2\times3$, formado por las tres matrices $A_1, A_2, A_3$,
 $2\times2$ siguientes $$\begin{align*}
 A_1 = \begin{bmatrix}6 & 2 \\7 & 9 \end{bmatrix}_{2\times2} \qquad A_2 = \begin{bmatrix}3 & 7 \\12 & 8 \end{bmatrix}_{2\times2} \qquad A_3 = \begin{bmatrix}13 & 2 \\3 & 11 \end{bmatrix}_{2\times2}
-\end{align*}$$
-Entonces, si deseamos filtrar el valor $3$ que se
+\end{align*}$$ Entonces, si deseamos filtrar el valor $3$ que se
 encuentra en la posición $2,1$ (fila $2$, columna $1$) de la
 tercera matriz, podemos emplear el operador de subconjuntos con la
 notación $$\begin{align*}
 A[2,1,3]
-\end{align*}$$
-tal que
+\end{align*}$$ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -544,8 +530,7 @@ vacío los valores después la primera, segunda, tercera…. coma
 Por ejemplo, si queremos filtrar por la fila $2$ del arreglo
 <tt>A</tt>, podemos emplear la notación $$\begin{align*}
 A[2,\; ,\; ]
-\end{align*}$$
-en donde, solo se usan dos comas debido a que la
+\end{align*}$$ en donde, solo se usan dos comas debido a que la
 dimensión del arreglo es de $3d$.
 </p>
 <section class="language-r highlighter-rouge">
@@ -576,8 +561,7 @@ que si estoy interesado solo en la segunda matriz, entonces puedo
 escribir un $2$ luego de la segunda coma, ya que estoy interesado en
 la tercera dimensión del arreglo. Dicha notación sería $$\begin{align*}
 A[\;, \; ,2]
-\end{align*}$$
-en donde, se observa, que los valores asociados a las
+\end{align*}$$ en donde, se observa, que los valores asociados a las
 filas y las columnas se encuentra vacíos.
 </p>
 <section class="language-r highlighter-rouge">
@@ -966,7 +950,7 @@ etc, etc. Por ejemplo, tenemos la lista, deseamos extraer la segunda
 matriz del objeto <tt>AR</tt>, entonces podemos emplear la notación
 
 $$\begin{align*}
-Lista\$AR[\;, \;, 2]
+Lista$AR[\;, \;, 2]
 \end{align*}$$
 
 tal que

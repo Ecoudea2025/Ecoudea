@@ -221,7 +221,7 @@ rápidamente la estructura de los mismos.
 Suponga que se está interesado en la construcción de una nueva vía
 sur-norte para la avenida Guayabal y para ello debe registrarse el
 número de vehículos que transitan dicha vía por día. Si se toma de
-referencia un total de $28$ días obteniendo los siguientes resultados
+referencia un total de `$28$` días obteniendo los siguientes resultados
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <tbody>
@@ -326,12 +326,12 @@ referencia un total de $28$ días obteniendo los siguientes resultados
 
 Estas medidas tienen por objetivo buscar valores que muestren el lugar
 en el cual se encuentra el centro de un conjunto de observaciones. Si se
-define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
+define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
 observaciones, entonces
 
 #### Media
 
-Es el promedio numérico de las $n$ observaciones.
+Es el promedio numérico de las `$n$` observaciones.
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
 
@@ -383,7 +383,7 @@ observaciones de forma ascendente.
 
 $$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
 
-donde $x_{\left[j\right]}$ representa la $j$-ésima observación
+donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
 ordenada.
 
 En <tt>R</tt> puede calcularse la mediana de un conjunto de
@@ -718,15 +718,15 @@ se repiten dos veces en el conjunto de observaciones.
 Estas medidas tienen por objetivo dividir un conjunto de datos ordenado
 en partes iguales, entendidas estas como intervalos que contienen la
 misma proporción de observaciones. Si se define
-$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$, como un conjunto de $n$
+`$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$`, como un conjunto de `$n$`
 observaciones ordenadas en forma creciente, entonces
 
 #### Cuartil
 
-Son los **tres valores** $(j=1,2,3)$, que dividen a un conjunto de
+Son los **tres valores** `$(j=1,2,3)$`, que dividen a un conjunto de
 datos ordenados en **cuatro partes** iguales. Para ello, es necesario
-calcular inicialmente una variable $h_j$ de posicionamiento dado el
-cuartil $j$ de interés, tal que
+calcular inicialmente una variable `$h_j$` de posicionamiento dado el
+cuartil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}$$
 
@@ -737,8 +737,8 @@ interés
 $$\begin{align*}C_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Cuartil
@@ -904,10 +904,10 @@ a $1365$.
 
 #### Quintil
 
-Son los **cuatro valores** $(j=1,2,3,4)$, que dividen a un conjunto de
+Son los **cuatro valores** `$(j=1,2,3,4)$`, que dividen a un conjunto de
 datos ordenados en **cinco partes** iguales. Para ello, es necesario
-calcular inicialmente una variable $h_j$ de posicionamiento dado el
-quintil $j$ de interés, tal que
+calcular inicialmente una variable `$h_j$` de posicionamiento dado el
+quintil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}$$
 
@@ -918,8 +918,8 @@ interés
 $$\begin{align*}Q_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Quintil
@@ -1085,10 +1085,10 @@ mayor o igual a $1540.4$.
 
 #### Decil
 
-Son los **nueve valores** $(j=1,2,\ldots,9)$, que dividen a un
+Son los **nueve valores** `$(j=1,2,\ldots,9)$`, que dividen a un
 conjunto de datos ordenados en **diez partes** iguales. Para ello, es
-necesario calcular inicialmente una variable $h_j$ de posicionamiento
-dado el decil $j$ de interés, tal que
+necesario calcular inicialmente una variable `$h_j$` de posicionamiento
+dado el decil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}$$
 
@@ -1099,8 +1099,8 @@ interés
 $$\begin{align*}D_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Decil
@@ -1266,10 +1266,10 @@ mayor o igual a $1520.8$.
 
 #### Percentil
 
-Son los **noventa y nueve valores** $(j=1,2,\ldots,99)$, que dividen a
+Son los **noventa y nueve valores** `$(j=1,2,\ldots,99)$`, que dividen a
 un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
-necesario calcular inicialmente una variable $h_j$ de posicionamiento
-dado el percentil $j$ de interés, tal que
+necesario calcular inicialmente una variable `$h_j$` de posicionamiento
+dado el percentil `$j$` de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
 
@@ -1280,8 +1280,8 @@ interés
 $$\begin{align*}P_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
 
 
-siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
-entero de $h$ aproximando siempre hacia abajo**.
+siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
+entero de `$h$` aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Percentil
@@ -1451,7 +1451,7 @@ o igual a $1604.45$.
 Estas medidas tienen por objetivo determinar la dispersión o
 variabilidad que posee un conjunto de observaciones, en donde, entre
 mayor sean estas medidas, mayor será el grado de dispersión de los
-datos. Si se define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
+datos. Si se define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
 observaciones, entonces
 
 #### Varianza
@@ -1495,8 +1495,7 @@ tal que $$\begin{align*}
   S^2 &= \frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2} \\
       &= \frac{1}{28-1}\left[(1142 - 1359.5)^2 + \ldots + (1220 - 1359.5) ^2\right] \\
       &= 39226.6296296
-\end{align*}$$
-Es de anotar, que la interpretación de la varianza no
+\end{align*}$$ Es de anotar, que la interpretación de la varianza no
 tiene mucho sentido, debido a que la unidad de medición estará elevada
 al cuadrado, así que en general, los valores calculados se usan para
 realizar el cálculo de la desviación estándar.
@@ -1567,7 +1566,7 @@ $$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
 que calcule el coeficiente de variación de un conjunto de observaciones,
 pero éste es fácil de calcular mediante el cociente entre la desviación
-estándar $S$ y el valor absoluto de la media $\bar{X}$, o creando
+estándar `$S$` y el valor absoluto de la media `$\bar{X}$`, o creando
 una función que realice el cálculo, de la forma
 
 ``` r
@@ -1581,7 +1580,7 @@ de un conjunto de observaciones mediante la función `CV(datos)`.
 Entre las funciones base de <tt>Excel</tt> no hay ninguna función que
 calcule el coeficiente de variación de un conjunto de observaciones de
 forma directa, pero éste es fácil de calcular mediante el empleo de la
-desviación estándar $S$ y el valor absoluto de la media $\bar{X}$,
+desviación estándar `$S$` y el valor absoluto de la media `$\bar{X}$`,
 los cuales pueden calcularse mediante las funciones `DESVEST.M()` y
 `PROMEDIO()`, respectivamente.
 
@@ -1611,8 +1610,7 @@ que $$\begin{align*}
   CV &= \frac{S}{|\bar{X}|} \\
      &= \frac{198.0571373}{|1359.5|} \times 100\% \\
      &= 14.5683808 \% 
-\end{align*}$$
-De lo anterior, se aprecia que la variación porcentual
+\end{align*}$$ De lo anterior, se aprecia que la variación porcentual
 del número de automóviles en un día no es muy alto respecto a su media
 ya que el porcentaje de variación asciende solo hasta el
 $14.5683808 \%$ y por tanto se tendrá que los datos no se encuentran
@@ -1691,8 +1689,8 @@ $732$.
 
 #### Rango intercuartílico
 
-Es la distancia o amplitud que hay entre el percentil $25$ y percentil
-$75$, de un conjunto de datos. Éste muestra la amplitud del $50\%$
+Es la distancia o amplitud que hay entre el percentil `$25$` y percentil
+`$75$`, de un conjunto de datos. Éste muestra la amplitud del `$50\%$`
 de los datos centrales de un conjunto de observaciones. Esta medida
 puede ser tomada como una medida de variabilidad para la mediana.
 
@@ -1705,7 +1703,7 @@ de observaciones mediante la función `IQR(datos)`.
 Entre las funciones base de <tt>Excel</tt> no hay ninguna función que
 calcule el rango intercuartílico de un conjunto de observaciones de
 forma directa, pero éste es fácil de calcular mediante el empleo del
-percentil $75$ $P_{75}$ y percentil $25$, $P_{25}$, los cuales
+percentil `$75$` `$P_{75}$` y percentil `$25$`, `$P_{25}$`, los cuales
 pueden calcularse mediante la función `PERCENTIL.INC()`.
 
 <button id="Show13" class="btn btn-secondary">
@@ -1759,15 +1757,15 @@ uniformemente alrededor de las medidas de tendencia central.
 
 $$\begin{align*}\gamma_1 = \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
 
-El signo de $\gamma_1$ indica la dirección de la asimetría.
+El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
--   $\gamma_1>0$ indica asimetría positiva, es decir, las
+-   `$\gamma_1>0$` indica asimetría positiva, es decir, las
     observaciones se reúnen más en la parte izquierda de las medidas de
     tendencia central.
--   $\gamma_1<0$ indica asimetría negativa, es decir, las
+-   `$\gamma_1<0$` indica asimetría negativa, es decir, las
     observaciones se reúnen más en la parte derecha de las medidas de
     tendencia central.
--   $\gamma_1\sim0$ indica simetría, es decir, existe aproximadamente
+-   `$\gamma_1\sim0$` indica simetría, es decir, existe aproximadamente
     la misma cantidad de observaciones a los dos lados de las medidas de
     tendencia central.
 
@@ -1811,8 +1809,7 @@ coeficiente de asimetría estará dado por $$\begin{align*}
   \gamma_{1} &= \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3}\\
              &= \frac{28}{(27)(26)}\left[\frac{(1142 - 1359.5)^3 + \ldots + (1588 - 1359.5)^3}{198.0571373^3}\right] \\
              &= -0.0106128
-\end{align*}$$
-De lo anterior se observa que el coeficiente de asimetría
+\end{align*}$$ De lo anterior se observa que el coeficiente de asimetría
 es negativa pero cercana a $0$, lo cual significa que el número de
 vehículos que transita por la avenida Guayabal en un día es
 aproximadamente simétrica con un leve sesgo hacia la izquierda, es
@@ -1829,13 +1826,13 @@ datos
 $$\begin{align*}\gamma_2 = \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)} \quad -2<\gamma_2<\infty\end{align*}$$
 
 
-El signo de $\gamma_2$ indica el nivel de concentración.
+El signo de `$\gamma_2$` indica el nivel de concentración.
 
--   $\gamma_2>0$ indica leptocurtosis, es decir, la forma de los datos
+-   `$\gamma_2>0$` indica leptocurtosis, es decir, la forma de los datos
     es más en punta y posee colas menos anchas.
--   $\gamma_2<0$ indica platicurtosis, es decir, la forma de los datos
+-   `$\gamma_2<0$` indica platicurtosis, es decir, la forma de los datos
     es más plana y posee colas más anchas.
--   $\gamma_2\sim0$ indica mesocurtosis, es decir, tanto la punta como
+-   `$\gamma_2\sim0$` indica mesocurtosis, es decir, tanto la punta como
     las colas son similares a la distribución normal.
 
 <h4 align="center">
@@ -1877,8 +1874,7 @@ la avenida Guayabal en un día, dando como resultado $$\begin{align*}
   \gamma_{2} &= \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)}\\
              &= \frac{28(29)}{27}(26)(25)\left[\frac{(1142 - 1359.5)^4 + \ldots + (1142 - 1359.5)^4}{198.0571373^4}\right] - \frac{3(27)^2}{(26)(25)} \\
              &= -1.1414707
-\end{align*}$$
-A partir del valor calculado, se observa que el
+\end{align*}$$ A partir del valor calculado, se observa que el
 coeficiente de exceso de curtosis es menor que $0$, y por tanto, se
 puede concluir que el número de automóviles que transitan por la avenida
 Guayabal en un día posee un comportamiento platicúrtico, es decir que el

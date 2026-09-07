@@ -13,15 +13,15 @@ Variables aleatorias continuas
 
 ### Función de probabilidad
 
-Se dice que la función $f(x)$ es una función de densidad de
-probabilidad (*fdp*) de la variable aleatoria continua $X$, definida
+Se dice que la función `$f(x)$` es una función de densidad de
+probabilidad (*fdp*) de la variable aleatoria continua `$X$`, definida
 en el conjunto de números reales si
 
-1.  $f(x)\geq0$ para todo $x \in \mathbb{R}$
+1.  `$f(x)\geq0$` para todo `$x \in \mathbb{R}$`
 
-2.  $\int_{-\infty}^\infty f(x) dx=1$
+2.  `$\int_{-\infty}^\infty f(x) dx=1$`
 
-3.  $\int_{a}^b f(x) dx = \mathbb{P}(a<X<b)$
+3.  `$\int_{a}^b f(x) dx = \mathbb{P}(a<X<b)$`
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -38,8 +38,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -68,8 +67,7 @@ cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1)=(0.1)^2(1-0.1)^2=0.0081 \\
 f(0.4)=(0.4)^2(1-0.4)^2=0.0576 \\
 f(0.7)=(0.7)^2(1-0.7)^2=0.0441
-\end{align*}$$
-La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
+\end{align*}$$ La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
 $f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
@@ -84,8 +82,7 @@ $$\begin{align*}
  & = \left(\frac{x^3}{3} - \frac{2x^4}{4} + \frac{x^5}{5} \right)\Bigg|^1_0 \\
  & = \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) - \left(\frac{0^3}{3} - \frac{0^4}{2} + \frac{0^5}{5} \right) \\
  & = \frac{1}{30}
-\end{align*}$$
-Entonces, como la integral no da exactamente $1$, se
+\end{align*}$$ Entonces, como la integral no da exactamente $1$, se
 tendrá que multiplicar dicha función de densidad por una constante $k$
 que haga que su resultado sea $1$, es decir, si multiplicamos la
 función por $k=30$, se tendrá como resultado que la integral será
@@ -94,8 +91,7 @@ igual a $1$, ya que, $$\begin{align*}
  & = 30 \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) \\
  & = \frac{30}{30} \\
  & = 1
-\end{align*}$$
-Y en consecuencia, se tendrá que la nueva función de
+\end{align*}$$ Y en consecuencia, se tendrá que la nueva función de
 densidad de probabilidad está bien definida. $$\begin{align*}
 f(x) = 30x^2(1-x)^2 \quad \quad 0<x<1
 \end{align*}$$
@@ -107,15 +103,13 @@ Dado que la función de densidad está en horas, será necesario pasar los
 minutos a horas, en donde, al aplicar una regla de tres para cada límite
 de la integral que nos piden se tendrá que $$\begin{align*}
 60_\text{min}  &- 1_\text{hora} & \quad \quad & 60_\text{min} - 1_\text{hora}\\30_\text{min} &- a & \quad \quad & 50_\text{min} - b
-\end{align*}$$
-Entonces, al realizar la operación encontramos que los
+\end{align*}$$ Entonces, al realizar la operación encontramos que los
 límites de la integral serán
 $$\begin{align*}a&=\frac{30_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.5_\text{horas} \\
 b&=\frac{50_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.8333_\text{horas}
-\end{align*}$$
-Ahora, al realizar la integral tendremos que
+\end{align*}$$ Ahora, al realizar la integral tendremos que
 
 $$\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333) & = \int_{0.5}^{0.8333} 30 x^2(1-x)^2\; dx \\
@@ -135,24 +129,24 @@ $30$ minutos y $50$ minutos.
 Función de distribución acumulada caso continuo
 -----------------------------------------------
 
-La función de distribución acumulada (*fda*) denotada por $F(x)$, para
-una variable aleatoria continua $X$ con distribución de probabilidad
-$f(x)$ es de la forma
+La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
+una variable aleatoria continua `$X$` con distribución de probabilidad
+`$f(x)$` es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\int_{-\infty}^x f(t) dt \quad \quad\end{align*}$$
 
 
-para cualquier $x$, $F(x)$ es el área izquierda bajo la curva de
+para cualquier `$x$`, `$F(x)$` es el área izquierda bajo la curva de
 densidad.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso continuo, entonces, si $a$ y $b$
+distribución acumulada en el caso continuo, entonces, si `$a$` y `$b$`
 son dos números constantes, deberán tenerse en cuenta las siguientes
 reglas
 
--   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$
--   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
--   $\mathbb{P}(X \leq b) = F(b)$
+-   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$`
+-   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
+-   `$\mathbb{P}(X \leq b) = F(b)$`
 
 **Nota:** Recordar que en el caso continuo, las probabilidad con o sin
 la igualdad son equivalentes, y por tanto, solo se escriben las tres
@@ -173,8 +167,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -232,9 +225,9 @@ $50$ minutos, es de $46.45\%$.
 Esperanza matemática caso continuo
 ----------------------------------
 
-Si $x$ es una variable aleatoria con *fdp* $f(x)$, entonces la media
+Si `$x$` es una variable aleatoria con *fdp* `$f(x)$`, entonces la media
 o valor esperado de la variable aleatoria se denota por
-$\mathbb{E}(X)$ o $\mu$ está dada por
+`$\mathbb{E}(X)$` o `$\mu$` está dada por
 
 $$\begin{align*}\mathbb{E}(X)=\int_{-\infty}^\infty xf(x) dx\end{align*}$$
 
@@ -254,8 +247,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule el valor esperado en que tarda la serie financiera en cumplir un
 ciclo.
@@ -277,8 +269,7 @@ ciclo, tal que $$\begin{align*}
              &= 30 \left[\left(\frac{1^4}{4} - 2\frac{1^5}{5} + \frac{1^6}{6}\right) - \left(\frac{0^4}{4} - 2\frac{0^5}{5} + \frac{0^6}{6}\right)\right] \\
              &= 30 \left(\frac{1}{4} - \frac{2}{5} + \frac{1}{6}\right) \\
              &= 0.5
-\end{align*}$$
-Y por tanto, se tendrá que el tiempo esperado que tarda
+\end{align*}$$ Y por tanto, se tendrá que el tiempo esperado que tarda
 una serie financiera en cumplir un ciclo será $0.5$ horas, la cual al
 pasarla a minutos mediante la regla de tres
 
@@ -297,13 +288,13 @@ será de $30$ minutos.
 
 ### Propiedades de la esperanza matemática
 
-Sea $a$ y $b$ dos números constantes (reales) y $X$ una variable
+Sea `$a$` y `$b$` dos números constantes (reales) y `$X$` una variable
 aleatoria, entonces se tiene que
 
--   $\mathbb{E}(a) = a$
--   $\mathbb{E}(bX) = b\mathbb{E}(X)$
--   $\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$
--   si $m(X)$ es una función de $X$, entonces
+-   `$\mathbb{E}(a) = a$`
+-   `$\mathbb{E}(bX) = b\mathbb{E}(X)$`
+-   `$\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$`
+-   si `$m(X)$` es una función de `$X$`, entonces
 
 
 $$\begin{align*}\mathbb{E}(m(X))=\int_{-\infty}^\infty m(x)f(x)\end{align*}$$
@@ -324,8 +315,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule
 </p>
@@ -416,23 +406,23 @@ $$\begin{align*}
 Varianza caso continuo
 ----------------------
 
-Sea $X$ una variable aleatoria con *fdp* $f(x)$, entonces si
-$m(X) = (X - \mathbb{E}(X))^2$, se tendrá que la varianza de $X$ que
-se denota $Var(X)$ o $\sigma^2$ estará dada por
+Sea `$X$` una variable aleatoria con *fdp* `$f(x)$`, entonces si
+`$m(X) = (X - \mathbb{E}(X))^2$`, se tendrá que la varianza de `$X$` que
+se denota `$Var(X)$` o `$\sigma^2$` estará dada por
 
 $$\begin{align*}Var(X) = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right]=\int_{-\infty}^\infty(x-\mathbb{E}(X))^2f(x) dx\end{align*}$$
 
 
 Similar al caso discreto, se puede demostrar a partir de la ecuación
-anterior, que una alternativa para el cálculo de la $Var(X)$ es de la
+anterior, que una alternativa para el cálculo de la `$Var(X)$` es de la
 forma
 
 
 $$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
 
 
-además, la raíz cuadrada de la varianza de $X$ se llama desviación
-estándar de $X$, se denota por $Sd(X)$ o $\sigma$ y se define como
+además, la raíz cuadrada de la varianza de `$X$` se llama desviación
+estándar de `$X$`, se denota por `$Sd(X)$` o `$\sigma$` y se define como
 
 $$\begin{align*}Sd(X) = \sqrt{Var(X)}\end{align*}$$
 
@@ -452,8 +442,7 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
-siendo $X$ una variable aleatoria que representa el
+\end{align*}$$ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 </p>
 <ol>

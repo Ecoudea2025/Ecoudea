@@ -134,21 +134,21 @@ Lista de ejercicios
     </tbody>
     </table>
     A partir de la información anterior, responda
-<ol type="a">
-<li>
-A partir de un nivel de significancia del $5\%$, plantee la prueba
-de hipótesis dada en la ACF de manera general y determine la región
-crítica.
-</li>
-<li>
-Grafique el correlograma y las bandas de confianza asociadas al
-nivel de significancia $\alpha=0.05$.
-</li>
-<li>
-Hay evidencia para creer que la serie de tiempo es estacional?.
-explique por qué sí o por qué no?
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    A partir de un nivel de significancia del $5\%$, plantee la prueba
+    de hipótesis dada en la ACF de manera general y determine la región
+    crítica.
+    </li>
+    <li>
+    Grafique el correlograma y las bandas de confianza asociadas al
+    nivel de significancia $\alpha=0.05$.
+    </li>
+    <li>
+    Hay evidencia para creer que la serie de tiempo es estacional?.
+    explique por qué sí o por qué no?
+    </li>
+    </ol>
 3.  Suponga una serie de tiempo asociada al valor total de las ventas de
     camperos de producción nacional que contiene un total de 119
     observaciones trimestrales registradas desde el primer trimestre
@@ -265,158 +265,158 @@ explique por qué sí o por qué no?
     </tbody>
     </table>
     A partir de la información anterior, responda
-<ol type="a">
-<li>
-A partir de un nivel de significancia del $8\%$, plantee la prueba
-de hipótesis dada en la ACF de manera general y determine la región
-crítica.
-</li>
-<li>
-Grafique el correlograma y las bandas de confianza asociadas al
-nivel de significancia $\alpha=0.08$.
-</li>
-<li>
-Hay evidencia para creer que la serie de tiempo es estacionaria en
-media?. explique por qué sí o por qué no?
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    A partir de un nivel de significancia del $8\%$, plantee la prueba
+    de hipótesis dada en la ACF de manera general y determine la región
+    crítica.
+    </li>
+    <li>
+    Grafique el correlograma y las bandas de confianza asociadas al
+    nivel de significancia $\alpha=0.08$.
+    </li>
+    <li>
+    Hay evidencia para creer que la serie de tiempo es estacionaria en
+    media?. explique por qué sí o por qué no?
+    </li>
+    </ol>
 4.  Suponga el siguiente modelo de regresión lineal simple ajustado a un
     conjunto de 100 observaciones
     
 $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
  A partir
     de este modelo calcule
-<ol type="a">
-<li>
-Encuentre los pronósticos $\hat{Y}_{T+H}$, para
-$H = 1,2,3,4,5,6$ correspondientes para los siguientes valores de
-$X$
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;">
-$H$
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-6
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-$X_{T+H}$
-</td>
-<td style="text-align:left;">
-15.461
-</td>
-<td style="text-align:left;">
-13.329
-</td>
-<td style="text-align:left;">
-13.042
-</td>
-<td style="text-align:left;">
-14.103
-</td>
-<td style="text-align:left;">
-9.744
-</td>
-<td style="text-align:left;">
-13.017
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-$\hat{Y}_{T+H}$
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-Si los valores reales de $Y_{T+H}$ para $H=1,2,3,4,5,6$ están
-dados por
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<tbody>
-<tr>
-<td style="text-align:left;">
-$H$
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-6
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-$Y_{T+H}$
-</td>
-<td style="text-align:left;">
-52.576
-</td>
-<td style="text-align:left;">
-45.206
-</td>
-<td style="text-align:left;">
-44.951
-</td>
-<td style="text-align:left;">
-49.992
-</td>
-<td style="text-align:left;">
-37.528
-</td>
-<td style="text-align:left;">
-46.082
-</td>
-</tr>
-</tbody>
-</table>
-cálcule las medidas de error $ME, MAE, MSE$ y $RMSE$ asociadas a
-las estimaciones obtenidas en el punto a, e interprete los
-resultados obtenidos.
-</li>
-</ol>
+    <ol type="a">
+    <li>
+    Encuentre los pronósticos $\hat{Y}_{T+H}$, para
+    $H = 1,2,3,4,5,6$ correspondientes para los siguientes valores de
+    $X$
+    <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+    <tbody>
+    <tr>
+    <td style="text-align:left;">
+    $H$
+    </td>
+    <td style="text-align:left;">
+    1
+    </td>
+    <td style="text-align:left;">
+    2
+    </td>
+    <td style="text-align:left;">
+    3
+    </td>
+    <td style="text-align:left;">
+    4
+    </td>
+    <td style="text-align:left;">
+    5
+    </td>
+    <td style="text-align:left;">
+    6
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:left;">
+    $X_{T+H}$
+    </td>
+    <td style="text-align:left;">
+    15.461
+    </td>
+    <td style="text-align:left;">
+    13.329
+    </td>
+    <td style="text-align:left;">
+    13.042
+    </td>
+    <td style="text-align:left;">
+    14.103
+    </td>
+    <td style="text-align:left;">
+    9.744
+    </td>
+    <td style="text-align:left;">
+    13.017
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:left;">
+    $\hat{Y}_{T+H}$
+    </td>
+    <td style="text-align:left;">
+    </td>
+    <td style="text-align:left;">
+    </td>
+    <td style="text-align:left;">
+    </td>
+    <td style="text-align:left;">
+    </td>
+    <td style="text-align:left;">
+    </td>
+    <td style="text-align:left;">
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </li>
+    <li>
+    Si los valores reales de $Y_{T+H}$ para $H=1,2,3,4,5,6$ están
+    dados por
+    <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+    <tbody>
+    <tr>
+    <td style="text-align:left;">
+    $H$
+    </td>
+    <td style="text-align:left;">
+    1
+    </td>
+    <td style="text-align:left;">
+    2
+    </td>
+    <td style="text-align:left;">
+    3
+    </td>
+    <td style="text-align:left;">
+    4
+    </td>
+    <td style="text-align:left;">
+    5
+    </td>
+    <td style="text-align:left;">
+    6
+    </td>
+    </tr>
+    <tr>
+    <td style="text-align:left;">
+    $Y_{T+H}$
+    </td>
+    <td style="text-align:left;">
+    52.576
+    </td>
+    <td style="text-align:left;">
+    45.206
+    </td>
+    <td style="text-align:left;">
+    44.951
+    </td>
+    <td style="text-align:left;">
+    49.992
+    </td>
+    <td style="text-align:left;">
+    37.528
+    </td>
+    <td style="text-align:left;">
+    46.082
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    cálcule las medidas de error $ME, MAE, MSE$ y $RMSE$ asociadas a
+    las estimaciones obtenidas en el punto a, e interprete los
+    resultados obtenidos.
+    </li>
+    </ol>
 5.  Suponga el siguiente modelo de regresión lineal simple ajustado a un
     conjunto de 1000 observaciones
     

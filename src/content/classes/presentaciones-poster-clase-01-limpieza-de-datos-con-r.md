@@ -13,7 +13,7 @@ Qué es limpieza de datos?
 El DataCleaning o limpieza de datos, es **uno de los aspectos más
 importantes** en la ciencia de datos, a tal punto que muchos
 investigadores aseguran que en este procedimiento puede emplearse
-regularmente desde el $50\%$ hasta el $80\%$ del tiempo total de la
+regularmente desde el `$50\%$` hasta el `$80\%$` del tiempo total de la
 investigación, siendo el tiempo restante invertido en los procesos de
 recolección, análisis y entrega de resultados.
 
@@ -93,7 +93,7 @@ se van a emplear los siguientes paquetes
 Este operador es una función de adición, el cual va tomando los
 elementos de izquierda a derecha y los va ejecutando en orden. Para
 entender el funcionamiento del operador, suponga un conjunto de datos
-$x$ y las funciones $f()$, $g()$ y $h()$.
+`$x$` y las funciones `$f()$`, `$g()$` y `$h()$`.
 
 Suponga además, que se desea realizar la siguiente operación
 
@@ -101,7 +101,7 @@ $$\begin{align*}f(g(h(x)))\end{align*}$$
 
 
 entonces, es posible realizar el siguiente procedimiento, en donde se
-presenta su equivalencia mediante el operador $\%>\%$.
+presenta su equivalencia mediante el operador `$\%>\%$`.
 
 <h6 align="center">
 Ilustración Operador pipe de continuidad
@@ -159,10 +159,10 @@ calcular la función $f(g(h(x)))$ se tendrá que
 ### Operador pipe de asignación compuesta %&lt;&gt;%
 
 Este operador funciona de forma similar al pipe de continuidad
-$\%>\%$, pero con la diferencia, de que luego de realizar las
-operaciones deseadas, éste reemplaza la variable $x$ original, por el
+`$\%>\%$`, pero con la diferencia, de que luego de realizar las
+operaciones deseadas, éste reemplaza la variable `$x$` original, por el
 resultado obtenido mediante la secuencia de funciones que se le aplican
-a la misma variable $x$.
+a la misma variable `$x$`.
 
 <h6 align="center">
 Ilustración operador pipe de asignación compuesta
@@ -579,8 +579,8 @@ si se encuentran casillas vacías, valores especiales, tales como
     number):** Es un carácter especial para datos de clase numérica,
     para indicar un valor asociado a un cálculo cuyo resultado es
     desconocido, el cual seguramente no es un número. Este puede
-    obtenerse mediante operaciones tales como $0/0$, $Inf/Inf$,
-    $Inf-Inf$. Éstos pueden ser detectados en <tt>R</tt> mediante la
+    obtenerse mediante operaciones tales como `$0/0$`, `$Inf/Inf$`,
+    `$Inf-Inf$`. Éstos pueden ser detectados en <tt>R</tt> mediante la
     función <tt>is.nan()</tt>, aunque también son detectados por la
     función <tt>is.na()</tt>.
 -   **<code style="color: #ff628c!important">NULL</code>:** Es un
@@ -635,8 +635,8 @@ faltantes
     [1] 10
 
 De la salida anterior se observa que en todas las variables aparece con
-valores faltantes la fila número $10$. Adicionalmente, se aprecian
-valores $NA$ para las variables <tt>municipio</tt>, <tt>ingresos</tt>,
+valores faltantes la fila número `$10$`. Adicionalmente, se aprecian
+valores `$NA$` para las variables <tt>municipio</tt>, <tt>ingresos</tt>,
 <tt>deuda\_vivienda</tt>, <tt>costo\_vivienda</tt>,
 <tt>percent\_pagado</tt> y <tt>muni</tt>, en donde celdas similares se
 encontrarán en el proceso de verificación de datos.
@@ -744,7 +744,7 @@ plot(Errores)
 En la imagen anterior se presentan dos gráficos. El gráfico superior
 muestra **cuales son las condiciones que más se están violando**, en
 donde se aprecia que la condición <tt>dat1</tt>, es la que tiene una
-mayor porcentaje de errores, con un poco más del $35\%$ de las
+mayor porcentaje de errores, con un poco más del `$35\%$` de las
 violaciones de la base de datos. Cabe anotar que en el caso de variables
 categóricas, **los <code style="color: #ff628c!important">NA</code> son
 contados como una violación** debido a que éstas son tomadas como una
@@ -804,8 +804,8 @@ apply(X = loc, MARGIN = 2, FUN = function(x) which(x == TRUE))
      4 10 
 
 De la salida anterior, observamos que hay violaciones en la entrada
-$5$ y $10$ de la variable <tt>estrato</tt>, en las entradas $4, 9$
-y $10$ de la variable <tt>municipio</tt>, etc, etc, etc. Cabe anotar
+`$5$` y `$10$` de la variable <tt>estrato</tt>, en las entradas `$4, 9$`
+y `$10$` de la variable <tt>municipio</tt>, etc, etc, etc. Cabe anotar
 que todos los valores faltantes también son detectados por el proceso de
 verificación de datos.
 
@@ -834,7 +834,7 @@ detección de datos atípicos.
 
 En este método se emplean estadísticos de orden no paramétricos, para
 calcular un gráfico de caja y bigotes, con el fin de visualizar los
-datos atípicos que se encuentren por encima y por debajo de $1.5$
+datos atípicos que se encuentren por encima y por debajo de `$1.5$`
 veces el rango intercuartílico.
 
 <h6 align="center">
@@ -873,9 +873,9 @@ Creo la función ya que no encontré una función que lo hiciera :D
     </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">TRUE</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> 
         </span><span class="n">stop</span><span class="p">(</span><span class="s2">"row argument must be equal to TRUE or FALSE"</span><span class="p">)</span><span class="w">
     </span><span class="n">aux</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">vars</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">select</span><span class="p">(</span><span class="n">vars</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">boxplot</span><span class="p">(</span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="o">%&#36;%</span><span class="w"> </span><span class="n">out</span><span class="w">
+        </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">select</span><span class="p">(</span><span class="n">vars</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">boxplot</span><span class="p">(</span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="o">%$%</span><span class="w"> </span><span class="n">out</span><span class="w">
         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">suppressWarnings</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">parse</span><span class="p">(</span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="s2">"data&#36;"</span><span class="p">,</span><span class="w"> 
+            </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">suppressWarnings</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">parse</span><span class="p">(</span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="s2">"data$"</span><span class="p">,</span><span class="w"> 
                 </span><span class="n">vars</span><span class="p">)))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Outlier</span><span class="p">))</span><span class="w">
         </span><span class="p">}</span><span class="w">
         </span><span class="nf">return</span><span class="p">(</span><span class="n">vars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Outlier</span><span class="p">)</span><span class="w">
@@ -903,14 +903,14 @@ datos %>% Outliers(row = FALSE)
     [1] 0.75 0.05
 
 De la salida anterior, se aprecia que la observación atípica de la
-variable <tt>ingresos</tt> corresponde a un salario de $630700$ pesos,
+variable <tt>ingresos</tt> corresponde a un salario de `$630700$` pesos,
 mientras que, para la variable <tt>costo\_vivienda</tt> corresponde a un
-costo de vivienda de $3838$ millones de pesos, y para la variable
-<tt>percent\_pagado</tt> lo porcentajes de $0.05$ y $0.75$.
+costo de vivienda de `$3838$` millones de pesos, y para la variable
+<tt>percent\_pagado</tt> lo porcentajes de `$0.05$` y `$0.75$`.
 
 Es de anotar que de estos datos, solo el valor atípico de
 <tt>costo\_vivienda</tt> es el único que parece tener un valor excesivo,
-pues se cree que se agregó un $0$ de más.
+pues se cree que se agregó un `$0$` de más.
 
 <pre style="font-family: 'Open Sans',sans-serif; margin-bottom: -3rem; margin-top: -3rem;">
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto; font-size: 90%;"><thead><tr><th style="text-align:left;">fecha</th>
@@ -1163,10 +1163,10 @@ HotImp %<>% mutate(percent_pagado = if_else(deuda_vivienda == "Sí", as.numeric(
 
 #### Imputación kNN
 
-El método de imputación del $k$-ésimo vecino más cercano ($k$
+El método de imputación del `$k$`-ésimo vecino más cercano (`$k$`
 Nearest Neighbor), también puede ser aplicado a variables numéricas y
 variables factor, y consta de la aplicación de una función de distancia
-$d(i, j)$ que calcula una medida de disimilitud (poca semejanza) entre
+`$d(i, j)$` que calcula una medida de disimilitud (poca semejanza) entre
 los registros, y **selecciona para reemplazar el dato faltante, a aquel
 valor que tenga una distancia más pequeña respecto al valor de
 interés**, es decir, a su vecino más cercano.
@@ -1355,7 +1355,7 @@ Solución <tt>R</tt>
 </span><span class="n">Errores</span><span class="w">
 
 </span><span class="c1"># Localiza y muestra por variable las violaciones</span><span class="w">
-</span><span class="n">loc</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">localizeErrors</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">CondC</span><span class="p">,</span><span class="w"> </span><span class="n">CondN</span><span class="p">),</span><span class="w"> </span><span class="n">datos</span><span class="p">)</span><span class="o">&#36;</span><span class="n">adapt</span><span class="w">
+</span><span class="n">loc</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">localizeErrors</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">CondC</span><span class="p">,</span><span class="w"> </span><span class="n">CondN</span><span class="p">),</span><span class="w"> </span><span class="n">datos</span><span class="p">)</span><span class="o">$</span><span class="n">adapt</span><span class="w">
 </span><span class="n">apply</span><span class="p">(</span><span class="n">X</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">loc</span><span class="p">,</span><span class="w"> </span><span class="n">MARGIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">FUN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">which</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w">
 
 
@@ -1377,9 +1377,9 @@ Solución <tt>R</tt>
     </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">TRUE</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> 
         </span><span class="n">stop</span><span class="p">(</span><span class="s2">"row argument must be equal to TRUE or FALSE"</span><span class="p">)</span><span class="w">
     </span><span class="n">aux</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">vars</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">select</span><span class="p">(</span><span class="n">vars</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">boxplot</span><span class="p">(</span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="o">%&#36;%</span><span class="w"> </span><span class="n">out</span><span class="w">
+        </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">select</span><span class="p">(</span><span class="n">vars</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">boxplot</span><span class="p">(</span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w"> </span><span class="o">%$%</span><span class="w"> </span><span class="n">out</span><span class="w">
         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">row</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">suppressWarnings</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">parse</span><span class="p">(</span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"data&#36;"</span><span class="p">,</span><span class="w"> 
+            </span><span class="n">Outlier</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">suppressWarnings</span><span class="p">(</span><span class="n">which</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="n">parse</span><span class="p">(</span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paste0</span><span class="p">(</span><span class="s2">"data$"</span><span class="p">,</span><span class="w"> 
                 </span><span class="n">vars</span><span class="p">)))</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">Outlier</span><span class="p">))</span><span class="w">
         </span><span class="p">}</span><span class="w">
         </span><span class="nf">return</span><span class="p">(</span><span class="n">vars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Outlier</span><span class="p">)</span><span class="w">

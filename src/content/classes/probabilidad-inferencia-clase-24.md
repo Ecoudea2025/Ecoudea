@@ -10,10 +10,10 @@ bibliography: "../../referencias.bib"
 
 ## Probabilidad total
 
-Sean $A_1, A_2, \ldots, A_k$ eventos **mutuamente excluyentes**
-$(A_i\cap A_j = \oslash, \text{ para } i\neq j)$ y **exhaustivos**
-$\left(\underset{i=1}{\stackrel{k}{\cup}} A_i = S\right)$, entonces
-para cualquier otro evento $B$
+Sean `$A_1, A_2, \ldots, A_k$` eventos **mutuamente excluyentes**
+`$(A_i\cap A_j = \oslash, \text{ para } i\neq j)$` y **exhaustivos**
+`$\left(\underset{i=1}{\stackrel{k}{\cup}} A_i = S\right)$`, entonces
+para cualquier otro evento `$B$`
 
 $$\begin{align*}\mathbb{P}(B) &= \mathbb P(B\cap A_1)+\mathbb P(B\cap A_2)+\ldots+\mathbb P(B\cap A_k)\end{align*}$$
 
@@ -94,10 +94,10 @@ en la empresa sea defectuoso es del $3.95\%$
 
 ## Teorema de Bayes
 
-Sea $A_1, A_2, \ldots, A_k$ eventos **mutuamente excluyentes** y
-**exhaustivos**, con probabilidades previas $\mathbb P(A_i)$, para
-$i=1,2,\ldots,k$, entonces para cualquier evento $B$ para el cual
-$\mathbb P(B)>0$, la probabilidad posterior $A_j$ dado que $B$ ha
+Sea `$A_1, A_2, \ldots, A_k$` eventos **mutuamente excluyentes** y
+**exhaustivos**, con probabilidades previas `$\mathbb P(A_i)$`, para
+`$i=1,2,\ldots,k$`, entonces para cualquier evento `$B$` para el cual
+`$\mathbb P(B)>0$`, la probabilidad posterior `$A_j$` dado que `$B$` ha
 ocurrido, está dada por
 
 $$\begin{align*}\mathbb P(A_j|B) &= \frac{\mathbb P(A_j\cap B)}{\mathbb P(B)}\end{align*}$$
