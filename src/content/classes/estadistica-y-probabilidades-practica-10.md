@@ -100,21 +100,21 @@ Lista de ejercicios
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Encuentre la función de distribución acumulada del número de
-    patentes para nuevos medicamentos.
-    </li>
-    <li>
-    Encuentre el tiempo de vida real promedio de las patentes para
-    nuevos medicamentos.
-    </li>
-    <li>
-    Encuentre la probabilidad de que el tiempo de vida real de las
-    patentes se encuentre al menos a $1.5$ desviaciones estándar de la
-    vida real promedio.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre la función de distribución acumulada del número de
+patentes para nuevos medicamentos.
+</li>
+<li>
+Encuentre el tiempo de vida real promedio de las patentes para
+nuevos medicamentos.
+</li>
+<li>
+Encuentre la probabilidad de que el tiempo de vida real de las
+patentes se encuentre al menos a $1.5$ desviaciones estándar de la
+vida real promedio.
+</li>
+</ol>
 
 3.  Suponga que se realiza un estudio en la ciudad de Medellín para
     observar el número de fotomultas que se le han impuesto a las
@@ -126,18 +126,18 @@ Lista de ejercicios
 $$\begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\leq x<1 \\           0.0420 & 1\leq x<2 \\           0.0992 & 2\leq x<3 \\           0.1909 & 3\leq x<4 \\           0.3130 & 4\leq x<5 \\           0.4526 & 5\leq x<6 \\           0.5922 & 6\leq x<7 \\           0.7162 & 7\leq x<9 \\           0.8155 & 9\leq x<11 \\           0.9377 & 11\leq x<15 \\           1 & x\geq 15         \end{cases}\end{align*}$$
 
     A partir de esta función de probabilidad
-    <ol type="a">
-    <li>
-    Verifique si la función de distribución acumulada está bien
-    definida, y de estarlo, calcule la función de masa de probabilidad
-    del número de fotomultas por persona.
-    </li>
-    <li>
-    Si se selecciona una persona al azar, cuál sería la probabilidad de
-    que el número de fotomultas que tenga sea más de $3$, pero a lo
-    más $8$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Verifique si la función de distribución acumulada está bien
+definida, y de estarlo, calcule la función de masa de probabilidad
+del número de fotomultas por persona.
+</li>
+<li>
+Si se selecciona una persona al azar, cuál sería la probabilidad de
+que el número de fotomultas que tenga sea más de $3$, pero a lo
+más $8$.
+</li>
+</ol>
 
 4.  En una tienda de barrio, el dueño exhibe $15$ ollas arroceras de
     la misma marca, $9$ negras y $6$ grises. Suponga que en el día,
@@ -211,32 +211,32 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     el fin de aceptar dicho pedido, en la minorista realizan una
     selección aleatoria de $15$ peras, y si encuentran más de $5$
     peras echadas a perder, rechazan el pedido del granjero.
-    <ol type="a">
-    <li>
-    Cuál es el número promedio de peras echadas a perder en la muestra
-    de $15$?.
-    </li>
-    <li>
-    Si entre las $15$ peras seleccionadas, ya han encontrado $3$
-    echadas a perder, ¿Cuál es la probabilidad de que no rechacen el
-    pedido?.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Cuál es el número promedio de peras echadas a perder en la muestra
+de $15$?.
+</li>
+<li>
+Si entre las $15$ peras seleccionadas, ya han encontrado $3$
+echadas a perder, ¿Cuál es la probabilidad de que no rechacen el
+pedido?.
+</li>
+</ol>
 
 8.  Una empresa de exploración petrolera va a hacer una serie de
     perforaciones de sondeo en una zona determinada en busca de un pozo
     productivo. La probabilidad de que tenga éxito en un intento dado es
     $0.2$.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que como máximo la tercera perforación
-    sea la primera en dar un pozo productivo?.
-    </li>
-    <li>
-    Si la empresa puede darse el lujo de perforar a lo sumo diez pozos,
-    ¿cuál es la probabilidad de que no encuentre un pozo productivo?.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que como máximo la tercera perforación
+sea la primera en dar un pozo productivo?.
+</li>
+<li>
+Si la empresa puede darse el lujo de perforar a lo sumo diez pozos,
+¿cuál es la probabilidad de que no encuentre un pozo productivo?.
+</li>
+</ol>
 
 9.  Dado que ya hemos lanzado al aire una moneda balanceada diez veces y
     no obtuvimos caras, ¿cuál es la probabilidad de que debamos lanzar
@@ -244,17 +244,17 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
 
 10. Suponga que el número promedio de fallas que puede presentar una
     máquina de ensamble en una empresa al mes es de $6$ fallas.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que en un mes cualquiera, la impresora
-    presente a lo más $7$ fallas?
-    </li>
-    <li>
-    Si la impresora ya ha presentado $2$ fallas, ¿Cuál es la
-    probabilidad de que al finalizar el mes ésta presente exactamente
-    $3$ fallas?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que en un mes cualquiera, la impresora
+presente a lo más $7$ fallas?
+</li>
+<li>
+Si la impresora ya ha presentado $2$ fallas, ¿Cuál es la
+probabilidad de que al finalizar el mes ésta presente exactamente
+$3$ fallas?
+</li>
+</ol>
 
 11. Suponga que el transito de Medellín afirma que $3$ de cada $10$
     accidentes de tráfico se debe a que al menos uno de los implicados
@@ -285,70 +285,70 @@ $$\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\
     
 $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Calcule la función de distribución acumulada para el número de
-    fallas que tiene una máquina en un día antes de apagarse.
-    </li>
-    <li>
-    Calcule el valor promedio y desviación estándar para el número de
-    fallas que tiene una máquina en un día antes de apagarse.
-    </li>
-    <li>
-    Encuentre la probabilidad de que el número de fallas que tiene una
-    máquina en un día antes de apagarse, se encuentre a lo más a $1.5$
-    desviaciones estándar de su media.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la función de distribución acumulada para el número de
+fallas que tiene una máquina en un día antes de apagarse.
+</li>
+<li>
+Calcule el valor promedio y desviación estándar para el número de
+fallas que tiene una máquina en un día antes de apagarse.
+</li>
+<li>
+Encuentre la probabilidad de que el número de fallas que tiene una
+máquina en un día antes de apagarse, se encuentre a lo más a $1.5$
+desviaciones estándar de su media.
+</li>
+</ol>
 
 15. De una población de consumidores, $60\%$ tienen fama de preferir
     una marca $A$ de pasta dental. Si se entrevista a un grupo de
     consumidores escogidos al azar,
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que al menos $5$ personas tengan que
-    ser entrevistadas para hallar el primer consumidor que prefiera la
-    marca $A$ de pasta dental?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que a lo más $12$ personas tengan que
-    ser entrevistadas para hallar el tercer consumidor que prefiera la
-    marca $A$ de pasta dental?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que al menos $5$ personas tengan que
+ser entrevistadas para hallar el primer consumidor que prefiera la
+marca $A$ de pasta dental?
+</li>
+<li>
+¿Cuál es la probabilidad de que a lo más $12$ personas tengan que
+ser entrevistadas para hallar el tercer consumidor que prefiera la
+marca $A$ de pasta dental?
+</li>
+</ol>
 
 16. Dos estudiantes apuestan sobre el número de ejercicios correctos
     realizados por un profesor de matemáticas hasta que cometa un error.
     Si la probabilidad de que el profesor cometa una error en un
     ejercicio es de $0.08$.
-    <ol type="a">
-    <li>
-    ¿Cuál es el promedio del número de ejercicios realizados por el
-    profesor hasta cometer un error?.
-    </li>
-    <li>
-    Calcule la desviación estándar de la variable aleatoria $X$.
-    </li>
-    <li>
-    Si van $7$ ejercicios y aún no se equivoca, ¿Cuál es la
-    probabilidad de que se equivoque en el décimo ejercicio?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es el promedio del número de ejercicios realizados por el
+profesor hasta cometer un error?.
+</li>
+<li>
+Calcule la desviación estándar de la variable aleatoria $X$.
+</li>
+<li>
+Si van $7$ ejercicios y aún no se equivoca, ¿Cuál es la
+probabilidad de que se equivoque en el décimo ejercicio?
+</li>
+</ol>
 
 17. Suponga que se realiza un estudio estadístico en la UdeM y se
     encuentra que el número promedio de clientes que llegan a la
     cafetería de Ingeniería cada media hora, es de $12$ clientes.
-    <ol type="a">
-    <li>
-    ¿Cuál es el número promedio y desviación estándar de clientes que
-    llegan a la cafetería de Ingeniería en $2$ horas?
-    </li>
-    <li>
-    Encuentre la probabilidad de que el número de clientes que llegan a
-    la cafetería $2$ horas, se encuentre al menos a $2$ desviaciones
-    estándar de su media.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es el número promedio y desviación estándar de clientes que
+llegan a la cafetería de Ingeniería en $2$ horas?
+</li>
+<li>
+Encuentre la probabilidad de que el número de clientes que llegan a
+la cafetería $2$ horas, se encuentre al menos a $2$ desviaciones
+estándar de su media.
+</li>
+</ol>
 
 18. En una noche de tragos dos estudiantes de Estadística y
     Probabilidades van a un bar que posee una diana de dardos, y deciden
@@ -363,33 +363,33 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
 19. La cantidad diaria de tazas de café que toma un profesor
     normalmente, es una variable aleatoria discreta con un promedio de
     $7$ tazas de café.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que en un día cualquiera, un profesor
-    tome más de $3$ pero no más de $6$ tazas de café?.
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que en un día cualquiera, el número de
-    tazas de café que toma un profesor se encuentre a más de $1.2$
-    desviaciones estándar de la media?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que en un día cualquiera, un profesor
+tome más de $3$ pero no más de $6$ tazas de café?.
+</li>
+<li>
+¿Cuál es la probabilidad de que en un día cualquiera, el número de
+tazas de café que toma un profesor se encuentre a más de $1.2$
+desviaciones estándar de la media?
+</li>
+</ol>
 
 20. Se cree que de los $10000$ votantes que residen en una ciudad,
     $4000$ están a favor de la iniciativa de talar arboles para
     construir nuevas vías. Se seleccionan al azar $60$ votantes de los
     $10000$ y se les pregunta si están o no de acuerdo con dicha
     iniciativa.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que entre $30$ y $40$ votantes,
-    inclusive, estén a favor de dicha iniciativa?.
-    </li>
-    <li>
-    ¿Cuál es el número esperado de votantes que estarán a favor de la
-    iniciativa?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que entre $30$ y $40$ votantes,
+inclusive, estén a favor de dicha iniciativa?.
+</li>
+<li>
+¿Cuál es el número esperado de votantes que estarán a favor de la
+iniciativa?
+</li>
+</ol>
 
 21. Dos personas, por turnos, tiran un dado imparcial hasta que una de
     ellas lanza un $6$. La persona $A$ tiró primero, la $B$ en
@@ -401,16 +401,16 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
 22. En una industria automotriz, se sabe que $10\%$ de los motores
     fabricados en una línea de ensamble son defectuosos. Si los motores
     se seleccionan al azar uno a la vez y se prueban,
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que el primer motor no defectuoso sea
-    hallado en el segundo motor revisado?.
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de los primeros $6$ motores revisados, se
-    encuentren no más de $2$ defectuoso?.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que el primer motor no defectuoso sea
+hallado en el segundo motor revisado?.
+</li>
+<li>
+¿Cuál es la probabilidad de los primeros $6$ motores revisados, se
+encuentren no más de $2$ defectuoso?.
+</li>
+</ol>
 
 23. Luego de una revisión exhaustiva, se encuentra que en promedio una
     oblea de silicio producidas por un fabricante tienen dos defectos
@@ -422,27 +422,27 @@ $$\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}$$
     posean $3$ hijos para observar si hay mayor predominancia en que
     haya más niños o más niñas en la familia. Si la Alcaldía encuentra
     que la probabilidad de ser niño o niña es la misma,
-    <ol type="a">
-    <li>
-    Encuentre la función de distribución de probabilidad para el número
-    de niños que hay en una familia que posee $3$ hijos.
-    </li>
-    <li>
-    Encuentre la función de distribución acumulada para el número de
-    niñas que hay en una familia que posee $3$ hijos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre la función de distribución de probabilidad para el número
+de niños que hay en una familia que posee $3$ hijos.
+</li>
+<li>
+Encuentre la función de distribución acumulada para el número de
+niñas que hay en una familia que posee $3$ hijos.
+</li>
+</ol>
 
 25. Por experiencia se sabe que el $20\%$ de las inversiones
     realizadas por un experto en finanzas terminan en pérdida. Si se
     seleccionan aleatoriamente $5$ inversiones realizadas por el
     experto,
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que una o tres, no terminen en pérdida?.
-    </li>
-    <li>
-    ¿Cuál es el número promedio de inversiones que no terminen en
-    pérdida?.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que una o tres, no terminen en pérdida?.
+</li>
+<li>
+¿Cuál es el número promedio de inversiones que no terminen en
+pérdida?.
+</li>
+</ol>

@@ -175,33 +175,33 @@ bibliography: "../../referencias.bib"
     de este intervalo, el botánico rechazará tal hipótesis. ¿Qué
     decisión deberá tomará el botánico y qué situación estará ocurriendo
     si
-    <ol type="a">
-    <li>
-    obtiene una media muestral de $10.2_{cm}$ y la verdadera media
-    $\mu=9.6_{cm}$
-    </li>
-    <li>
-    obtiene una media muestral de $10.2_{cm}$ y la verdadera media
-    $\mu=9.8cm$
-    </li>
-    <li>
-    obtiene una media muestral de $9.4_{cm}$ y la verdadera media
-    $\mu=9.6cm$
-    </li>
-    <li>
-    obtiene una media muestral de $9.4_{cm}$ y la verdadera media
-    $\mu=9.8cm$
-    </li>
-    <li>
-    Si la desviación estándar es igual a $2_{cm}$, calcule la
-    probabilidad de cometer Error Tipo I.
-    </li>
-    <li>
-    Si la desviación estándar es igual a $2_{cm}$, Calcule la
-    probabilidad de cometer Error Tipo II, si la verdadera media
-    $\mu=9.8cm$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+obtiene una media muestral de $10.2_{cm}$ y la verdadera media
+$\mu=9.6_{cm}$
+</li>
+<li>
+obtiene una media muestral de $10.2_{cm}$ y la verdadera media
+$\mu=9.8cm$
+</li>
+<li>
+obtiene una media muestral de $9.4_{cm}$ y la verdadera media
+$\mu=9.6cm$
+</li>
+<li>
+obtiene una media muestral de $9.4_{cm}$ y la verdadera media
+$\mu=9.8cm$
+</li>
+<li>
+Si la desviación estándar es igual a $2_{cm}$, calcule la
+probabilidad de cometer Error Tipo I.
+</li>
+<li>
+Si la desviación estándar es igual a $2_{cm}$, Calcule la
+probabilidad de cometer Error Tipo II, si la verdadera media
+$\mu=9.8cm$.
+</li>
+</ol>
 4.  Suponga que el contenido de ácido sulfúrico, en litros, de una
     muestra aleatoria de $7$ contenedores similares es de
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -324,20 +324,20 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Si se sabe que la desviación estándar para todos los trabajadores es
-    de $2$ unidades, emplee un nivel de significancia del $2\%$ para
-    probar si tiene o no apoyo la sospecha del gerente de que el número
-    promedio de unidades producidas por el trabajador es menor a $15$
-    unidades? Obtener el P-valor para el contraste.
-    </li>
-    <li>
-    Emplee un nivel de significancia del $5\%$ para probar si la
-    proporción de días que el trabajador produce menos de $15$
-    unidades es mayor al $80\%$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si se sabe que la desviación estándar para todos los trabajadores es
+de $2$ unidades, emplee un nivel de significancia del $2\%$ para
+probar si tiene o no apoyo la sospecha del gerente de que el número
+promedio de unidades producidas por el trabajador es menor a $15$
+unidades? Obtener el P-valor para el contraste.
+</li>
+<li>
+Emplee un nivel de significancia del $5\%$ para probar si la
+proporción de días que el trabajador produce menos de $15$
+unidades es mayor al $80\%$.
+</li>
+</ol>
 9.  ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a $800$ adultos
     seleccionados de forma aleatoria, se encontró que $45\%$ de los
@@ -492,25 +492,25 @@ bibliography: "../../referencias.bib"
     e igual a $0.8_{mm}$. Si se toma una muestra aleatoria de $12$
     insectos y se decide aceptar la hipótesis nula si y sólo si la media
     de la muestral cae entre $12.0_{mm}$ y $12.6_{mm}$,
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de cometer un error tipo I.
-    </li>
-    <li>
-    Calcule la probabilidad de cometer un error tipo II, si la media
-    real de la envergadura de los insectos es de $12.5_{mm}$
-    </li>
-    <li>
-    ¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
-    media de $12.9_{mm}$, y se tiene que la media real de la
-    envergadura de los insectos es $12.5mm$?
-    </li>
-    <li>
-    ¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
-    media de $12.9_{mm}$, y se tiene que la media real de la
-    envergadura de los insectos es $12.3_{mm}$?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de cometer un error tipo I.
+</li>
+<li>
+Calcule la probabilidad de cometer un error tipo II, si la media
+real de la envergadura de los insectos es de $12.5_{mm}$
+</li>
+<li>
+¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
+media de $12.9_{mm}$, y se tiene que la media real de la
+envergadura de los insectos es $12.5mm$?
+</li>
+<li>
+¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
+media de $12.9_{mm}$, y se tiene que la media real de la
+envergadura de los insectos es $12.3_{mm}$?
+</li>
+</ol>
 16. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
     examen, ahora han empezado a subir. Originalmente, una calificación
@@ -558,24 +558,24 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
-    para observar si la calificación promedio del SAT verbal obtenida
-    por los alumnos de último año es superior a $520$ puntos.
-    </li>
-    <li>
-    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
-    para observar si la calificación promedio del SAT de matemáticas
-    obtenida por los alumnos de último año es a lo más de $508$
-    puntos.
-    </li>
-    <li>
-    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
-    para observar si la variabilidad en la calificación obtenida por los
-    estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Suponiendo normalidad, emplee un nivel de significancia del $10\%$
+para observar si la calificación promedio del SAT verbal obtenida
+por los alumnos de último año es superior a $520$ puntos.
+</li>
+<li>
+Suponiendo normalidad, emplee un nivel de significancia del $10\%$
+para observar si la calificación promedio del SAT de matemáticas
+obtenida por los alumnos de último año es a lo más de $508$
+puntos.
+</li>
+<li>
+Suponiendo normalidad, emplee un nivel de significancia del $10\%$
+para observar si la variabilidad en la calificación obtenida por los
+estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
+</li>
+</ol>
 17. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
     experiencia, se sabe que la probabilidad de que el sistema existente
@@ -629,19 +629,19 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Emplee un nivel de significancia del $2\%$ para probar si la
-    cantidad promedio de gramos de acetanilida que se puede recuperar de
-    $4.85$ gramos de anilina es superior a $3.85$ gramos.
-    </li>
-    <li>
-    Emplee un nivel de significancia del $10\%$ para probar si al
-    emplear $4.85$ gramos de anilina, la proporción de experimentos
-    que recuperan una cantidad de acetanilida superior a $3.85$ gramos
-    es superior al $20\%$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Emplee un nivel de significancia del $2\%$ para probar si la
+cantidad promedio de gramos de acetanilida que se puede recuperar de
+$4.85$ gramos de anilina es superior a $3.85$ gramos.
+</li>
+<li>
+Emplee un nivel de significancia del $10\%$ para probar si al
+emplear $4.85$ gramos de anilina, la proporción de experimentos
+que recuperan una cantidad de acetanilida superior a $3.85$ gramos
+es superior al $20\%$.
+</li>
+</ol>
 19. Para comparar dos clases de protectores de defensas, se muestrearon
     $6$ de cada clase en cierta marca de auto compacto. Entonces cada
     auto se hizo chocar contra una pared de concreto a $5$ millas por
@@ -757,16 +757,16 @@ bibliography: "../../referencias.bib"
     distancia por galón es una variable aleatoria que se distribuye
     normal con una desviación estándar conocida de $1.4$ millas por
     galón. Con base en esta información,
-    <ol type="a">
-    <li>
-    ¿Se encuentra apoyada la sospecha del propietario con un nivel de
-    significancia del $1\%$? ¿Cuál es el P-valor en este caso?
-    </li>
-    <li>
-    ¿Está de acuerdo con la afirmación de normalidad realizada por el
-    propietario?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Se encuentra apoyada la sospecha del propietario con un nivel de
+significancia del $1\%$? ¿Cuál es el P-valor en este caso?
+</li>
+<li>
+¿Está de acuerdo con la afirmación de normalidad realizada por el
+propietario?
+</li>
+</ol>
 
 <!--        \item  Una organización de salud se interesa en actualizar su información con respecto a la proporción de hombres que fuman. Con base en estudios previos, se cree que la proporción es de 40\%. La organización lleva a cabo una encuesta en la que se selecciona en forma aleatoria 1200 hombres a los cuales se les pregunta sus hábitos de fumador. De los 1200, 420 son fumadores. Con un nivel de significancia del $1\%$ -->
 <!--        \begin{enumerate} -->

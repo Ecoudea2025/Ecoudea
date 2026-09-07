@@ -92,32 +92,32 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Calcule el primer momento alrededor del origen.
-    </li>
-    <li>
-    Calcule el segundo momento alrededor del origen.
-    </li>
-    <li>
-    Calcule el segundo momento central.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule el primer momento alrededor del origen.
+</li>
+<li>
+Calcule el segundo momento alrededor del origen.
+</li>
+<li>
+Calcule el segundo momento central.
+</li>
+</ol>
 
 2.  La cantidad diaria de café, en litros, que sirve la maquina de las
     burbujas, es una variable aleatoria uniforme en el intervalo de
     $6.8$ hasta $10$ litros.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
-    sirva más de $8$ litros?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
-    sirva más de $8.8$ litros, si en lo que va del día ya ha servido
-    $7.8$?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que en un día cualquiera, la maquina
+sirva más de $8$ litros?
+</li>
+<li>
+¿Cuál es la probabilidad de que en un día cualquiera, la maquina
+sirva más de $8.8$ litros, si en lo que va del día ya ha servido
+$7.8$?
+</li>
+</ol>
 
 3.  Suponga que a partir de gran cantidad de datos históricos se sabe
     que $X$, el número de automóviles que llegan a una intersección
@@ -126,46 +126,46 @@ bibliography: "../../referencias.bib"
     
 $$\begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\dots\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Encuentre su función generadora de momentos de la variable aleatoria
-    $X$.
-    </li>
-    <li>
-    Encuentre la media, varianza, asimetría y exceso de curtosis de la
-    variable aleatoria $X$ mediante la función generadora de momentos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre su función generadora de momentos de la variable aleatoria
+$X$.
+</li>
+<li>
+Encuentre la media, varianza, asimetría y exceso de curtosis de la
+variable aleatoria $X$ mediante la función generadora de momentos.
+</li>
+</ol>
 
 4.  Suponga que el número de llamadas telefónicas que entran a un
     conmutador particular siguen un proceso de Poisson con un promedio
     de $5$ llamadas entrantes por minuto.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
-    momento en que ha entrado $1$ llamada al conmutador?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
-    momento en que han entrado $3$ llamadas al conmutador?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que transcurra hasta un minuto en el
+momento en que ha entrado $1$ llamada al conmutador?
+</li>
+<li>
+¿Cuál es la probabilidad de que transcurra hasta un minuto en el
+momento en que han entrado $3$ llamadas al conmutador?
+</li>
+</ol>
 
 5.  Sea $X$ una variable aleatoria con función de masa de probabilidad
     geométrica dada por
     
 $$\begin{align*}p(x)=p(1-p)^{x-1} \text{  para  }  x=1,2,3,\ldots\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Encuentre su función generadora de momentos de la variable aleatoria
-    $X$.
-    </li>
-    <li>
-    Encuentre la media, varianza, asimetría y exceso de curtosis de la
-    variable aleatoria $X$ mediante la función generadora de momentos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre su función generadora de momentos de la variable aleatoria
+$X$.
+</li>
+<li>
+Encuentre la media, varianza, asimetría y exceso de curtosis de la
+variable aleatoria $X$ mediante la función generadora de momentos.
+</li>
+</ol>
 
 6.  Considere a $X$ la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con función de masa de
@@ -177,21 +177,21 @@ $$\begin{align*}p(x)=\frac{6-|7-x|}{36} \text{  para  } x = 2,3,\ldots,12\end{al
 
 7.  El tiempo entre arribos de taxis al acopio de una estación del metro
     tiene una media de $60$ segundos.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
-    menos $40$ segundos?.
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
-    menos $40$ segundos, si ya han pasado $20$ segundos y aún no
-    llega ningún taxi al acopio del metro?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que lleguen al acopio más de $10$ pero
-    no menos de $15$ taxis en un intervalo de $20$ minutos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
+menos $40$ segundos?.
+</li>
+<li>
+¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
+menos $40$ segundos, si ya han pasado $20$ segundos y aún no
+llega ningún taxi al acopio del metro?
+</li>
+<li>
+¿Cuál es la probabilidad de que lleguen al acopio más de $10$ pero
+no menos de $15$ taxis en un intervalo de $20$ minutos.
+</li>
+</ol>
 
 8.  Demuestre que el $r$-ésimo momento alrededor del origen de la
     distribución gamma es
@@ -237,33 +237,33 @@ $$\begin{align*}M_x(t) = e^{4(e^t-1)}\end{align*}$$
     anuales para observar las habilidades y competencias de sus
     profesores. Si se sabe que el puntaje de estas pruebas se distribuye
     gamma con un promedio de de $76.2$ y una varianza de $1935.48$.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que un profesor obtenga un puntaje
-    superior a $79$ puntos?.
-    </li>
-    <li>
-    Si el profesor sabe que tendrá una puntuación superior a $66$
-    puntos, cuál es la probabilidad de que éste obtenga una puntuación
-    menor a $80$ puntos?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que un profesor obtenga un puntaje
+superior a $79$ puntos?.
+</li>
+<li>
+Si el profesor sabe que tendrá una puntuación superior a $66$
+puntos, cuál es la probabilidad de que éste obtenga una puntuación
+menor a $80$ puntos?
+</li>
+</ol>
 
 14. Sea $X$ una variable aleatoria con función de densidad de
     probabilidad chi-cuadrado dada por
     
 $$\begin{align*}f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)}x^{\frac{\nu}{2}-1}e^{-\frac{x}{2}} \text{  para  } x>0\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Encuentre su función generadora de momentos de la variable aleatoria
-    $X$.
-    </li>
-    <li>
-    Encuentre la media y la varianza de la variable aleatoria $X$
-    mediante la función generadora de momentos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre su función generadora de momentos de la variable aleatoria
+$X$.
+</li>
+<li>
+Encuentre la media y la varianza de la variable aleatoria $X$
+mediante la función generadora de momentos.
+</li>
+</ol>
 
 15. Por experiencia se sabe que el $20\%$ de las inversiones
     realizadas por un experto en finanzas terminan en pérdida. Si se
@@ -277,32 +277,32 @@ $$\begin{align*}f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)}x^{\frac{\nu}{2}-1}e^{-\f
     
 $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n-x} \text{  para  } x=0,1,2,\ldots,n\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Encuentre su función generadora de momentos de la variable aleatoria
-    $X$.
-    </li>
-    <li>
-    Encuentre la media, varianza, asimetría y curtosis de la variable
-    aleatoria $X$ mediante la función generadora de momentos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre su función generadora de momentos de la variable aleatoria
+$X$.
+</li>
+<li>
+Encuentre la media, varianza, asimetría y curtosis de la variable
+aleatoria $X$ mediante la función generadora de momentos.
+</li>
+</ol>
 
 17. Suponga que se realiza un estudio estadístico y se encuentra que el
     número de clientes que llega donde Pastora en media hora, es una
     variable aleatoria Poisson con media de $4$ clientes. Basados en
     lo anterior
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que el próximo cliente en llegar donde
-    Pastora tarde al menos $20$ minutos?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que lleguen donde Pastora en menos de
-    $50$ minutos, $3$ clientes, si se sabe que han transcurrido
-    $24$ minutos y aún no llegan los $3$ clientes?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que el próximo cliente en llegar donde
+Pastora tarde al menos $20$ minutos?
+</li>
+<li>
+¿Cuál es la probabilidad de que lleguen donde Pastora en menos de
+$50$ minutos, $3$ clientes, si se sabe que han transcurrido
+$24$ minutos y aún no llegan los $3$ clientes?
+</li>
+</ol>
 
 18. Suponga una variable aleatoria $X$ con función de distribución de
     probabilidad exponencial dada por

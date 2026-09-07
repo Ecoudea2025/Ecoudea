@@ -201,33 +201,33 @@ bibliography: "../../referencias.bib"
     de este intervalo, el botánico rechazará tal hipótesis. ¿Qué
     decisión deberá tomará el botánico y qué situación estará ocurriendo
     si
-    <ol type="a">
-    <li>
-    obtiene una media muestral de $10.2_{cm}$ y la verdadera media
-    $\mu=9.6_{cm}$
-    </li>
-    <li>
-    obtiene una media muestral de $10.2_{cm}$ y la verdadera media
-    $\mu=9.8cm$
-    </li>
-    <li>
-    obtiene una media muestral de $9.4_{cm}$ y la verdadera media
-    $\mu=9.6cm$
-    </li>
-    <li>
-    obtiene una media muestral de $9.4_{cm}$ y la verdadera media
-    $\mu=9.8cm$
-    </li>
-    <li>
-    Si la desviación estándar es igual a $2_{cm}$, calcule la
-    probabilidad de cometer Error Tipo I.
-    </li>
-    <li>
-    Si la desviación estándar es igual a $2_{cm}$, Calcule la
-    probabilidad de cometer Error Tipo II, si la verdadera media
-    $\mu=9.8cm$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+obtiene una media muestral de $10.2_{cm}$ y la verdadera media
+$\mu=9.6_{cm}$
+</li>
+<li>
+obtiene una media muestral de $10.2_{cm}$ y la verdadera media
+$\mu=9.8cm$
+</li>
+<li>
+obtiene una media muestral de $9.4_{cm}$ y la verdadera media
+$\mu=9.6cm$
+</li>
+<li>
+obtiene una media muestral de $9.4_{cm}$ y la verdadera media
+$\mu=9.8cm$
+</li>
+<li>
+Si la desviación estándar es igual a $2_{cm}$, calcule la
+probabilidad de cometer Error Tipo I.
+</li>
+<li>
+Si la desviación estándar es igual a $2_{cm}$, Calcule la
+probabilidad de cometer Error Tipo II, si la verdadera media
+$\mu=9.8cm$.
+</li>
+</ol>
 
 7.  Suponga que el contenido de ácido sulfúrico, en litros, de una
     muestra aleatoria de $7$ contenedores similares es de
@@ -258,17 +258,17 @@ bibliography: "../../referencias.bib"
     </tr>
     </thead>
     </table>
-    <ol type="a">
-    <li>
-    Construya un intervalo de confianza del $95\%$ para el contenido
-    promedio de todos los contenedores.
-    </li>
-    <li>
-    Emplee el P-valor para verificar si hay evidencia sobre que el
-    contenido promedio de todos los contenedores de ácido sulfúrico es
-    de más de $10$ litros.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un intervalo de confianza del $95\%$ para el contenido
+promedio de todos los contenedores.
+</li>
+<li>
+Emplee el P-valor para verificar si hay evidencia sobre que el
+contenido promedio de todos los contenedores de ácido sulfúrico es
+de más de $10$ litros.
+</li>
+</ol>
 
 8.  Para un experimento de pruebas psicológicas se seleccionan al azar
     $25$ sujetos de prueba y se les mide sus tiempos de reacción, en
@@ -342,27 +342,27 @@ bibliography: "../../referencias.bib"
     ello, toma una muestra aleatoria de $38$ estudiantes
     universitarios y encuentra que la estatura promedio fue de $174.5$
     centímetros con una desviación estándar de $6.9$ centímetros.
-    <ol type="a">
-    <li>
-    Construya un intervalo de confianza del $98\%$ para la estatura
-    media de todos los estudiantes universitarios.
-    </li>
-    <li>
-    ¿Qué podemos afirmar con una confianza del $98\%$ acerca del
-    posible tamaño de nuestro error, si estimamos que la estatura media
-    de todos los estudiantes universitarios es de $174.5$ centímetros?
-    </li>
-    <li>
-    Pruebe si la estatura promedio de todos los estudiantes es a lo sumo
-    $172$ centímetros, si suponemos que las alturas se distribuyen
-    <i>iid</i> con desviación estándar de $7.3$ centímetros.
-    </li>
-    <li>
-    Empleando un nivel de significancia del $2\%$, pruebe si la altura
-    promedio de todos los estudiantes de la universidad es de al menos
-    $173$ centímetros.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un intervalo de confianza del $98\%$ para la estatura
+media de todos los estudiantes universitarios.
+</li>
+<li>
+¿Qué podemos afirmar con una confianza del $98\%$ acerca del
+posible tamaño de nuestro error, si estimamos que la estatura media
+de todos los estudiantes universitarios es de $174.5$ centímetros?
+</li>
+<li>
+Pruebe si la estatura promedio de todos los estudiantes es a lo sumo
+$172$ centímetros, si suponemos que las alturas se distribuyen
+<i>iid</i> con desviación estándar de $7.3$ centímetros.
+</li>
+<li>
+Empleando un nivel de significancia del $2\%$, pruebe si la altura
+promedio de todos los estudiantes de la universidad es de al menos
+$173$ centímetros.
+</li>
+</ol>
 
 13. Dos marcas de refrigeradores, denotadas por $A$ y $B$ poseen
     garantías de $1$ año. Suponga que en una muestra aleatoria de
@@ -371,20 +371,20 @@ bibliography: "../../referencias.bib"
     que, una muestra aleatoria independiente de $60$ refrigeradores de
     la marca $B$ también reveló que $12$ de ellos fallaron durante
     el período de garantía.
-    <ol type="a">
-    <li>
-    Pruebe si la proporción de refrigeradores que fallan durante el
-    periodo de garantía para la marca $A$ sea superior la proporción
-    de refrigeradores de la marca $B$ que fallan durante el periodo de
-    garantía.
-    </li>
-    <li>
-    ¿Podría concluirse que hay evidencia suficiente para afirma que las
-    proporciones de fallas de la marca $A$ de refrigeradores es
-    superior a la proporción de falla de la marca $B$ de
-    refrigeradores, dentro del período de garantía? ¿Por qué?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Pruebe si la proporción de refrigeradores que fallan durante el
+periodo de garantía para la marca $A$ sea superior la proporción
+de refrigeradores de la marca $B$ que fallan durante el periodo de
+garantía.
+</li>
+<li>
+¿Podría concluirse que hay evidencia suficiente para afirma que las
+proporciones de fallas de la marca $A$ de refrigeradores es
+superior a la proporción de falla de la marca $B$ de
+refrigeradores, dentro del período de garantía? ¿Por qué?
+</li>
+</ol>
 
 14. El gerente de una planta sospecha que el número promedio de piezas
     que produce un trabajador en particular por día, es menor que el
@@ -428,20 +428,20 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Si se sabe que la desviación estándar para todos los trabajadores es
-    de $2$ unidades, emplee un nivel de significancia del $2\%$ para
-    probar si tiene o no apoyo la sospecha del gerente de que el número
-    promedio de unidades producidas por el trabajador es menor a $15$
-    unidades? Obtener el P-valor para el contraste.
-    </li>
-    <li>
-    Emplee un nivel de significancia del $5\%$ para probar si la
-    proporción de días que el trabajador produce menos de $15$
-    unidades es mayor al $80\%$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si se sabe que la desviación estándar para todos los trabajadores es
+de $2$ unidades, emplee un nivel de significancia del $2\%$ para
+probar si tiene o no apoyo la sospecha del gerente de que el número
+promedio de unidades producidas por el trabajador es menor a $15$
+unidades? Obtener el P-valor para el contraste.
+</li>
+<li>
+Emplee un nivel de significancia del $5\%$ para probar si la
+proporción de días que el trabajador produce menos de $15$
+unidades es mayor al $80\%$.
+</li>
+</ol>
 
 15. ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a $800$ adultos
@@ -449,21 +449,21 @@ bibliography: "../../referencias.bib"
     encuestados indicaron que el cine estaba mejorando, mientras que,
     $43\%$ de los encuestados dijeron que el cine estaba empeorando.
     Basados en lo anterior
-    <ol type="a">
-    <li>
-    Encuentre un intervalo de confianza de $87\%$ para la proporción
-    total de adultos que piensan que el cine está mejorando.
-    </li>
-    <li>
-    ¿El intervalo incluye el valor $p = 0.50$? ¿Piensa usted que la
-    mayoría de los adultos piensa que el cine está mejorando?
-    </li>
-    <li>
-    Emplee un nivel de significancia del $12\%$ para probar si la
-    proporción total de adultos que piensan que el cine está mejorando
-    es superior al $50\%$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre un intervalo de confianza de $87\%$ para la proporción
+total de adultos que piensan que el cine está mejorando.
+</li>
+<li>
+¿El intervalo incluye el valor $p = 0.50$? ¿Piensa usted que la
+mayoría de los adultos piensa que el cine está mejorando?
+</li>
+<li>
+Emplee un nivel de significancia del $12\%$ para probar si la
+proporción total de adultos que piensan que el cine está mejorando
+es superior al $50\%$.
+</li>
+</ol>
 
 16. Los administradores de un hospital deseaban estimar el número
     promedio de días necesarios para el tratamiento de enfermos
@@ -471,19 +471,19 @@ bibliography: "../../referencias.bib"
     aleatoria de $500$ pacientes entre estas edades produjo una media
     y una desviación estándar igual a $5.4$ y $3.1$ días,
     respectivamente. Basado en la información anterior,
-    <ol type="a">
-    <li>
-    Si se asume que los datos se distribuye normalmente, calcule la
-    probabilidad de que la varianza de la población de pacientes de la
-    cual se extrajo la muestra, tenga un valor superior a
-    $8_{días^2}$.
-    </li>
-    <li>
-    Calcule el límite superior de un intervalo de confianza del $95\%$
-    para la duración media de permanencia de la población de pacientes
-    de la cual se extrajo la muestra.  
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si se asume que los datos se distribuye normalmente, calcule la
+probabilidad de que la varianza de la población de pacientes de la
+cual se extrajo la muestra, tenga un valor superior a
+$8_{días^2}$.
+</li>
+<li>
+Calcule el límite superior de un intervalo de confianza del $95\%$
+para la duración media de permanencia de la población de pacientes
+de la cual se extrajo la muestra.  
+</li>
+</ol>
 
 17. Un estudio del número de comidas de negocios que los ejecutivos de
     las industrias de seguros y bancos reclaman mensualmente como gastos
@@ -548,45 +548,45 @@ bibliography: "../../referencias.bib"
     encuesta realizada a $1000$ adultos, realizada por KRC Research &
     Consulting, se encontró que $78\%$ sintieron que los deportes de
     gran atractivo tienen un efecto positivo en la sociedad.
-    <ol type="a">
-    <li>
-    Encuentre un intervalo de confianza de $95\%$ para el porcentaje
-    del público que piensa que los deportes tienen un efecto positivo en
-    la sociedad.
-    </li>
-    <li>
-    La encuesta publicó un margen de error de “más o menos $3.1\%$”.
-    ¿Esto concuerda con la respuesta encontrada en el inciso a)? ¿Qué
-    valor de $p$ produce el margen de error dado por la encuesta?
-    </li>
-    <li>
-    Emplee un nivel de significancia del $5\%$ para probar si la
-    mayoría de estadounidenses piensan que los deportes tienen un efecto
-    positivo en la sociedad.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre un intervalo de confianza de $95\%$ para el porcentaje
+del público que piensa que los deportes tienen un efecto positivo en
+la sociedad.
+</li>
+<li>
+La encuesta publicó un margen de error de “más o menos $3.1\%$”.
+¿Esto concuerda con la respuesta encontrada en el inciso a)? ¿Qué
+valor de $p$ produce el margen de error dado por la encuesta?
+</li>
+<li>
+Emplee un nivel de significancia del $5\%$ para probar si la
+mayoría de estadounidenses piensan que los deportes tienen un efecto
+positivo en la sociedad.
+</li>
+</ol>
 
 19. Para una comparación de los porcentajes de piezas defectuosas
     producidas por dos líneas de montaje, de cada línea se seleccionaron
     muestras aleatorias independientes de $100$ piezas. La línea $A$
     produjo $18$ piezas defectuosas en la muestra y la línea $B$
     contenía $12$ piezas defectuosas.
-    <ol type="a">
-    <li>
-    Encuentre un intervalo de confianza de $98\%$ para la verdadera
-    diferencia en proporciones de piezas defectuosas para las dos
-    líneas.
-    </li>
-    <li>
-    ¿Hay evidencia aquí que sugiera que una línea produce una proporción
-    más alta de piezas defectuosas que la otra?
-    </li>
-    <li>
-    Emplee un nivel de significancia del $2\%$ para probar si una
-    línea de montaje produce una proporción más alta de piezas
-    defectuosas que la otra.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre un intervalo de confianza de $98\%$ para la verdadera
+diferencia en proporciones de piezas defectuosas para las dos
+líneas.
+</li>
+<li>
+¿Hay evidencia aquí que sugiera que una línea produce una proporción
+más alta de piezas defectuosas que la otra?
+</li>
+<li>
+Emplee un nivel de significancia del $2\%$ para probar si una
+línea de montaje produce una proporción más alta de piezas
+defectuosas que la otra.
+</li>
+</ol>
 
 20. Es frecuente que encuestadores por teléfono entrevisten entre
     $1000$ y $1500$ personas sobre sus opiniones en asuntos varios.
@@ -595,25 +595,25 @@ bibliography: "../../referencias.bib"
     del público del prestigio de las instituciones?. Y por ello, se
     realizará una nueva encuesta para ver si hay diferencia entre las
     opiniones de hombres y mujeres sobre este asunto.
-    <ol type="a">
-    <li>
-    Si se han de entrevistar $1000$ hombres y $1000$ mujeres, y se
-    emplea un nivel de confianza del $95\%$ ¿con cuánta precisión
-    podría usted estimar la diferencia en las proporciones que piensan
-    que el rendimiento de sus equipos de atletismo tiene un impacto
-    positivo en la percepción del público acerca del prestigio de las
-    instituciones? Encuentre un límite máximo para el error de
-    estimación.
-    </li>
-    <li>
-    Supongamos que usted estuviera diseñando la encuesta y desea estimar
-    la diferencia en un par de proporciones, entonces si desea que el
-    error de estimación que no supere $0.02$, y decide emplear un
-    nivel de confianza de $90\%$. ¿Cuántas entrevistas deberán
-    realizarse a cada población si suponemos que las muestras son
-    iguales?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si se han de entrevistar $1000$ hombres y $1000$ mujeres, y se
+emplea un nivel de confianza del $95\%$ ¿con cuánta precisión
+podría usted estimar la diferencia en las proporciones que piensan
+que el rendimiento de sus equipos de atletismo tiene un impacto
+positivo en la percepción del público acerca del prestigio de las
+instituciones? Encuentre un límite máximo para el error de
+estimación.
+</li>
+<li>
+Supongamos que usted estuviera diseñando la encuesta y desea estimar
+la diferencia en un par de proporciones, entonces si desea que el
+error de estimación que no supere $0.02$, y decide emplear un
+nivel de confianza de $90\%$. ¿Cuántas entrevistas deberán
+realizarse a cada población si suponemos que las muestras son
+iguales?
+</li>
+</ol>
 
 21. Se tiene la creencia que las profesoras de la Universidad suelen
     gastar en promedio más dinero en café que los profesores en un mes.
@@ -693,25 +693,25 @@ bibliography: "../../referencias.bib"
     e igual a $0.8_{mm}$. Si se toma una muestra aleatoria de $12$
     insectos y se decide aceptar la hipótesis nula si y sólo si la media
     de la muestral cae entre $12.0_{mm}$ y $12.6_{mm}$,
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de cometer un error tipo I.
-    </li>
-    <li>
-    Calcule la probabilidad de cometer un error tipo II, si la media
-    real de la envergadura de los insectos es de $12.5_{mm}$
-    </li>
-    <li>
-    ¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
-    media de $12.9_{mm}$, y se tiene que la media real de la
-    envergadura de los insectos es $12.5mm$?
-    </li>
-    <li>
-    ¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
-    media de $12.9_{mm}$, y se tiene que la media real de la
-    envergadura de los insectos es $12.3_{mm}$?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de cometer un error tipo I.
+</li>
+<li>
+Calcule la probabilidad de cometer un error tipo II, si la media
+real de la envergadura de los insectos es de $12.5_{mm}$
+</li>
+<li>
+¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
+media de $12.9_{mm}$, y se tiene que la media real de la
+envergadura de los insectos es $12.5mm$?
+</li>
+<li>
+¿Qué decisión estaría tomando la bióloga si obtiene de la muestra un
+media de $12.9_{mm}$, y se tiene que la media real de la
+envergadura de los insectos es $12.3_{mm}$?
+</li>
+</ol>
 
 24. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
@@ -760,24 +760,24 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
-    para observar si la calificación promedio del SAT verbal obtenida
-    por los alumnos de último año es superior a $520$ puntos.
-    </li>
-    <li>
-    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
-    para observar si la calificación promedio del SAT de matemáticas
-    obtenida por los alumnos de último año es a lo más de $508$
-    puntos.
-    </li>
-    <li>
-    Suponiendo normalidad, emplee un nivel de significancia del $10\%$
-    para observar si la variabilidad en la calificación obtenida por los
-    estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Suponiendo normalidad, emplee un nivel de significancia del $10\%$
+para observar si la calificación promedio del SAT verbal obtenida
+por los alumnos de último año es superior a $520$ puntos.
+</li>
+<li>
+Suponiendo normalidad, emplee un nivel de significancia del $10\%$
+para observar si la calificación promedio del SAT de matemáticas
+obtenida por los alumnos de último año es a lo más de $508$
+puntos.
+</li>
+<li>
+Suponiendo normalidad, emplee un nivel de significancia del $10\%$
+para observar si la variabilidad en la calificación obtenida por los
+estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
+</li>
+</ol>
 
 25. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
@@ -785,16 +785,16 @@ bibliography: "../../referencias.bib"
     tenga un lanzamiento exitoso es del $80\%$. Si se toma una muestra
     de $40$ lanzamientos experimentales con el nuevo sistema y $34$
     resultan exitosos.
-    <ol type="a">
-    <li>
-    Emplee un nivel de significancia del $8\%$ para probar si el nuevo
-    sistema es mejor que el sistema actual.
-    </li>
-    <li>
-    Construya un intervalo de confianza para la verdadera proporción de
-    lanzamientos que resultan exitosos con el nuevo sistema.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Emplee un nivel de significancia del $8\%$ para probar si el nuevo
+sistema es mejor que el sistema actual.
+</li>
+<li>
+Construya un intervalo de confianza para la verdadera proporción de
+lanzamientos que resultan exitosos con el nuevo sistema.
+</li>
+</ol>
 
 <!-- 18. Es frecuente que los químicos orgánicos purifiquen compuestos orgánicos por medio de un método conocido como cristalización fraccional. Un experimentador desea preparar y purificar $4.85$ gramos de anilina. Diez especímenes de $4.85$ gramos de anilina se prepararon y purificaron para producir acetanilida. Se obtuvieron los siguientes resultados en seco: -->
 <!-- <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;"> -->

@@ -15,16 +15,16 @@ bibliography: "../../referencias.bib"
     de $2.6$ gramos por mililitro. Si la función de probabilidad no es
     conocida, pero se sabe su desviación estándar es de $0.3$ gramos
     por mililitro. Basado en lo anterior
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que la concentración media de zinc en el
-    río se encuentre entre $2.4$ y $2.5$ gramos por mililitro.
-    </li>
-    <li>
-    Calcule un intervalo de confianza del $95\%$ para la concentración
-    media de zinc en el río?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que la concentración media de zinc en el
+río se encuentre entre $2.4$ y $2.5$ gramos por mililitro.
+</li>
+<li>
+Calcule un intervalo de confianza del $95\%$ para la concentración
+media de zinc en el río?
+</li>
+</ol>
 2.  ¿Qué tan grande debe ser el tamaño muestral del punto anterior si
     queremos tener $95\%$ de confianza en que nuestra estimación de la
     media poblacional diferirá por menos de $0.05$?
@@ -79,16 +79,16 @@ bibliography: "../../referencias.bib"
     los diferentes tipos de estímulos es de $4_{s^2}$ y que la
     distribución de probabilidad para los tiempos de reacción es
     aproximadamente normal. Basado en lo anterior
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el tiempo de reacción promedio para
-    todos los individuos sea a lo más de $6$ segundos.
-    </li>
-    <li>
-    Calcule el límite superior del $95\%$ para el tiempo medio de
-    reacción de todos los individuos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el tiempo de reacción promedio para
+todos los individuos sea a lo más de $6$ segundos.
+</li>
+<li>
+Calcule el límite superior del $95\%$ para el tiempo medio de
+reacción de todos los individuos.
+</li>
+</ol>
 6.  Un investigador de la <tt>ucla</tt> afirma que la esperanza de vida
     de los ratones se puede extender hasta en $25\%$ cuando se reduce
     aproximadamente $40\%$ de las calorías de su dieta desde el
@@ -107,23 +107,23 @@ bibliography: "../../referencias.bib"
     que la estatura promedio fue de $174.5$ centímetros con una
     desviación estándar de $6.9$ centímetros. Basados en la
     información anterior,
-    <ol type="a">
-    <li>
-    Construya un intervalo de confianza del $98\%$ para la estatura
-    media de todos los estudiantes universitarios.
-    </li>
-    <li>
-    ¿Qué podemos afirmar con una confianza del $98\%$ acerca del
-    posible tamaño de nuestro error, si estimamos que la estatura media
-    de todos los estudiantes universitarios es de $174.5$ centímetros?
-    </li>
-    <li>
-    Cual es la probabilidad de que la estatura promedio de todos los
-    estudiantes sea a lo sumo $172$ centímetros, si suponemos que las
-    alturas se distribuyen <i>iid</i> con desviación estándar de $7.3$
-    centímetros.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un intervalo de confianza del $98\%$ para la estatura
+media de todos los estudiantes universitarios.
+</li>
+<li>
+¿Qué podemos afirmar con una confianza del $98\%$ acerca del
+posible tamaño de nuestro error, si estimamos que la estatura media
+de todos los estudiantes universitarios es de $174.5$ centímetros?
+</li>
+<li>
+Cual es la probabilidad de que la estatura promedio de todos los
+estudiantes sea a lo sumo $172$ centímetros, si suponemos que las
+alturas se distribuyen <i>iid</i> con desviación estándar de $7.3$
+centímetros.
+</li>
+</ol>
 8.  Dos marcas de refrigeradores, denotadas por $A$ y $B$ poseen
     garantías de $1$ año. Suponga que en una muestra aleatoria de
     $50$ refrigeradores de la marca $A$, se observó que $12$ de
@@ -131,89 +131,89 @@ bibliography: "../../referencias.bib"
     que, una muestra aleatoria independiente de $60$ refrigeradores de
     la marca $B$ también reveló que $12$ de ellos fallaron durante
     el período de garantía.
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que la proporción de refrigeradores que
-    fallan durante el periodo de garantía para la marca $A$ sea
-    superior la proporción de refrigeradores de la marca $B$ que
-    fallan durante el periodo de garantía.
-    </li>
-    <li>
-    ¿Podría concluirse que hay evidencia suficiente para afirma que las
-    proporciones de fallas de la marca $A$ de refrigeradores es
-    superior a la proporción de falla de la marca $B$ de
-    refrigeradores, dentro del período de garantía? ¿Por qué?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que la proporción de refrigeradores que
+fallan durante el periodo de garantía para la marca $A$ sea
+superior la proporción de refrigeradores de la marca $B$ que
+fallan durante el periodo de garantía.
+</li>
+<li>
+¿Podría concluirse que hay evidencia suficiente para afirma que las
+proporciones de fallas de la marca $A$ de refrigeradores es
+superior a la proporción de falla de la marca $B$ de
+refrigeradores, dentro del período de garantía? ¿Por qué?
+</li>
+</ol>
 9.  ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a $800$ adultos
     seleccionados de forma aleatoria, se encontró que $45\%$ de los
     encuestados indicaron que el cine estaba mejorando, mientras que,
     $43\%$ de los encuestados dijeron que el cine estaba empeorando.
     Basados en lo anterior
-    <ol type="a">
-    <li>
-    Encuentre un intervalo de confianza de $87\%$ para la proporción
-    total de adultos que piensan que el cine está mejorando.
-    </li>
-    <li>
-    ¿El intervalo incluye el valor $p = 0.50$? ¿Piensa usted que la
-    mayoría de los adultos piensa que el cine está mejorando?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre un intervalo de confianza de $87\%$ para la proporción
+total de adultos que piensan que el cine está mejorando.
+</li>
+<li>
+¿El intervalo incluye el valor $p = 0.50$? ¿Piensa usted que la
+mayoría de los adultos piensa que el cine está mejorando?
+</li>
+</ol>
 10. Los administradores de un hospital deseaban estimar el número
     promedio de días necesarios para el tratamiento de enfermos
     internados entre las edades de $25$ y $34$ años. Una muestra
     aleatoria de $500$ pacientes entre estas edades produjo una media
     y una desviación estándar igual a $5.4$ y $3.1$ días,
     respectivamente. Basado en la información anterior,
-    <ol type="a">
-    <li>
-    Si se asume que los datos se distribuye normalmente, calcule la
-    probabilidad de que la varianza de la población de pacientes de la
-    cual se extrajo la muestra, tenga un valor superior a
-    $8_{días^2}$.
-    </li>
-    <li>
-    Calcule el límite superior de un intervalo de confianza del $95\%$
-    para la duración media de permanencia de la población de pacientes
-    de la cual se extrajo la muestra.  
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si se asume que los datos se distribuye normalmente, calcule la
+probabilidad de que la varianza de la población de pacientes de la
+cual se extrajo la muestra, tenga un valor superior a
+$8_{días^2}$.
+</li>
+<li>
+Calcule el límite superior de un intervalo de confianza del $95\%$
+para la duración media de permanencia de la población de pacientes
+de la cual se extrajo la muestra.  
+</li>
+</ol>
 11. A la mayoría de estadounidenses les gusta participar en eventos
     deportivos o al menos verlos. Algunos sienten que los deportes
     tienen más que sólo valor de entretenimiento, tanto así, que en una
     encuesta realizada a $1000$ adultos, realizada por KRC Research &
     Consulting, se encontró que $78\%$ sintieron que los deportes de
     gran atractivo tienen un efecto positivo en la sociedad.
-    <ol type="a">
-    <li>
-    Encuentre un intervalo de confianza de $95\%$ para el porcentaje
-    del público que piensa que los deportes tienen un efecto positivo en
-    la sociedad.
-    </li>
-    <li>
-    La encuesta publicó un margen de error de “más o menos $3.1\%$”.
-    ¿Esto concuerda con la respuesta encontrada en el inciso a)? ¿Qué
-    valor de $p$ produce el margen de error dado por la encuesta?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre un intervalo de confianza de $95\%$ para el porcentaje
+del público que piensa que los deportes tienen un efecto positivo en
+la sociedad.
+</li>
+<li>
+La encuesta publicó un margen de error de “más o menos $3.1\%$”.
+¿Esto concuerda con la respuesta encontrada en el inciso a)? ¿Qué
+valor de $p$ produce el margen de error dado por la encuesta?
+</li>
+</ol>
 12. Para una comparación de los porcentajes de piezas defectuosas
     producidas por dos líneas de montaje, de cada línea se seleccionaron
     muestras aleatorias independientes de $100$ piezas. La línea $A$
     produjo $18$ piezas defectuosas en la muestra y la línea B
     contenía $12$ piezas defectuosas.
-    <ol type="a">
-    <li>
-    Encuentre un intervalo de confianza de $98\%$ para la verdadera
-    diferencia en proporciones de piezas defectuosas para las dos
-    líneas.
-    </li>
-    <li>
-    ¿Hay evidencia aquí que sugiera que una línea produce una proporción
-    más alta de piezas defectuosas que la otra?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre un intervalo de confianza de $98\%$ para la verdadera
+diferencia en proporciones de piezas defectuosas para las dos
+líneas.
+</li>
+<li>
+¿Hay evidencia aquí que sugiera que una línea produce una proporción
+más alta de piezas defectuosas que la otra?
+</li>
+</ol>
 13. Es frecuente que encuestadores por teléfono entrevisten entre
     $1000$ y $1500$ personas sobre sus opiniones en asuntos varios.
     En este caso tienen interés en ¿El rendimiento de los equipos de
@@ -221,24 +221,24 @@ bibliography: "../../referencias.bib"
     del público del prestigio de las instituciones?. Y por ello, se
     realizará una nueva encuesta para ver si hay diferencia entre las
     opiniones de hombres y mujeres sobre este asunto.
-    <ol type="a">
-    <li>
-    Si se han de entrevistar $1000$ hombres y $1000$ mujeres, y se
-    emplea un nivel de confianza del $95\%$ ¿con cuánta precisión
-    podría usted estimar la diferencia en las proporciones que piensan
-    que el rendimiento de sus equipos de atletismo tiene un impacto
-    positivo en la percepción del público acerca del prestigio de las
-    instituciones? Encuentre un límite máximo para el error de
-    estimación.
-    </li>
-    <li>
-    Supongamos que usted estuviera diseñando la encuesta y desea estimar
-    la diferencia en un par de proporciones, entonces si desea que el
-    error de estimación no supere $0.02$, y decide emplear un nivel de
-    confianza de $90\%$. ¿Cuántas entrevistas deberán realizarse a
-    cada población si suponemos que las muestras son iguales?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si se han de entrevistar $1000$ hombres y $1000$ mujeres, y se
+emplea un nivel de confianza del $95\%$ ¿con cuánta precisión
+podría usted estimar la diferencia en las proporciones que piensan
+que el rendimiento de sus equipos de atletismo tiene un impacto
+positivo en la percepción del público acerca del prestigio de las
+instituciones? Encuentre un límite máximo para el error de
+estimación.
+</li>
+<li>
+Supongamos que usted estuviera diseñando la encuesta y desea estimar
+la diferencia en un par de proporciones, entonces si desea que el
+error de estimación no supere $0.02$, y decide emplear un nivel de
+confianza de $90\%$. ¿Cuántas entrevistas deberán realizarse a
+cada población si suponemos que las muestras son iguales?
+</li>
+</ol>
 14. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
     examen, ahora han empezado a subir. Originalmente, una calificación
@@ -286,39 +286,39 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Suponiendo normalidad, encuentre un intervalo de confianza de
-    $90\%$ para la media de calificaciones del SAT verbal para alumnos
-    de último año de preparatoria urbana.
-    </li>
-    <li>
-    ¿El intervalo hallado por usted en el inciso a) incluye el valor
-    $508$?, la calificación media real del SAT verbal para $2005$?
-    ¿Qué puede concluir?
-    </li>
-    <li>
-    Construya un intervalo de confianza de $90\%$ para la calificación
-    media del SAT de matemáticas para alumnos de último año de
-    preparatoria urbana. ¿El intervalo incluye $520$, la calificación
-    media real de matemáticas para $2005$? ¿Qué puede concluir?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Suponiendo normalidad, encuentre un intervalo de confianza de
+$90\%$ para la media de calificaciones del SAT verbal para alumnos
+de último año de preparatoria urbana.
+</li>
+<li>
+¿El intervalo hallado por usted en el inciso a) incluye el valor
+$508$?, la calificación media real del SAT verbal para $2005$?
+¿Qué puede concluir?
+</li>
+<li>
+Construya un intervalo de confianza de $90\%$ para la calificación
+media del SAT de matemáticas para alumnos de último año de
+preparatoria urbana. ¿El intervalo incluye $520$, la calificación
+media real de matemáticas para $2005$? ¿Qué puede concluir?
+</li>
+</ol>
 15. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
     experiencia, se sabe que la probabilidad de que el sistema existente
     tenga un lanzamiento exitoso es del $80\%$. Si se toma una muestra
     de $40$ lanzamientos experimentales con el nuevo sistema y $34$
     resultan exitosos.
-    <ol type="a">
-    <li>
-    Construya un intervalo de confianza del $95\%$ para $p$.
-    </li>
-    <li>
-    ¿Con base en sus resultados, concluiría que el nuevo sistema es
-    mejor?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un intervalo de confianza del $95\%$ para $p$.
+</li>
+<li>
+¿Con base en sus resultados, concluiría que el nuevo sistema es
+mejor?
+</li>
+</ol>
 16. Es frecuente que los químicos orgánicos purifiquen compuestos
     orgánicos por medio de un método conocido como cristalización
     fraccional. Un experimentador desea preparar y purificar $4.85$
@@ -365,38 +365,38 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Construya un intervalo de confianza de $95\%$ para el número medio
-    de gramos de acetanilida que se puede recuperar de $4.85$ gramos
-    de anilina. Suponga que los gramos de acetanilida que se pueden
-    recuperar tiene un comportamiento aproximadamente normal.
-    </li>
-    <li>
-    Construya un intervalo de confianza de $90\%$ para la proporción
-    de experimentos que recuperan una cantidad de acetanilida superior a
-    $3.82$ gramos, al emplear $4.85$ gramos de anilina.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un intervalo de confianza de $95\%$ para el número medio
+de gramos de acetanilida que se puede recuperar de $4.85$ gramos
+de anilina. Suponga que los gramos de acetanilida que se pueden
+recuperar tiene un comportamiento aproximadamente normal.
+</li>
+<li>
+Construya un intervalo de confianza de $90\%$ para la proporción
+de experimentos que recuperan una cantidad de acetanilida superior a
+$3.82$ gramos, al emplear $4.85$ gramos de anilina.
+</li>
+</ol>
 17. Dos nuevos medicamentos se dieron a pacientes con hipertensión. El
     primero de ellos bajó la presión sanguínea de $16$ pacientes en un
     promedio de $11$ puntos, con una desviación estándar de $6$
     puntos; el segundo bajó la presión de otros $20$ pacientes en un
     promedio de $12$ puntos, con desviación estándar de $8$ puntos.
     Basado en la información anterior
-    <ol type="a">
-    <li>
-    Determine un intervalo de confianza de $95\%$ para la diferencia
-    de las reducciones medias en presión sanguínea, suponiendo que las
-    mediciones están distribuidas normalmente.
-    </li>
-    <li>
-    Calcule la probabilidad de la diferencia de las reducciones medias
-    en la presión sanguínea con el medicamento $A$ sea menor que la
-    reducción media que ofrece el medicamento $B$, suponiendo que las
-    mediciones están distribuidas normalmente.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Determine un intervalo de confianza de $95\%$ para la diferencia
+de las reducciones medias en presión sanguínea, suponiendo que las
+mediciones están distribuidas normalmente.
+</li>
+<li>
+Calcule la probabilidad de la diferencia de las reducciones medias
+en la presión sanguínea con el medicamento $A$ sea menor que la
+reducción media que ofrece el medicamento $B$, suponiendo que las
+mediciones están distribuidas normalmente.
+</li>
+</ol>
 18. ¿El precio pagado por el atún depende del método de empaque?
     *Consumer Reports* da el precio promedio estimado para una lata de
     $6$ onzas o una bolsa de $7.06$ onzas de atún, con base en
@@ -591,27 +591,27 @@ bibliography: "../../referencias.bib"
     una muestra aleatoria de todas las marcas de atún existentes en
     Estados Unidos, y que estos precios se encuentran normalmente
     distribuidos.
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el precio promedio de atún blanco
-    empacado en aceite sea a lo más $1.4$ dolares.
-    </li>
-    <li>
-    Calcule la probabilidad de que la variabilidad del precio del atún
-    blanco empacado en agua, sea mayor a la variabilidad del precio del
-    atún claro empacado en agua.
-    </li>
-    <li>
-    Calcule un intervalo de confianza del $92\%$ para el precio
-    promedio de atún claro empacado en aceite. Interprete el intervalo.
-    Específicamente, ¿a qué se refiere el “$92\%$”?
-    </li>
-    <li>
-    Calcule un intervalo de confianza de $99\%$ para la diferencia en
-    el precio medio de atún claro empacado en agua y atún claro empacado
-    en aceite.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el precio promedio de atún blanco
+empacado en aceite sea a lo más $1.4$ dolares.
+</li>
+<li>
+Calcule la probabilidad de que la variabilidad del precio del atún
+blanco empacado en agua, sea mayor a la variabilidad del precio del
+atún claro empacado en agua.
+</li>
+<li>
+Calcule un intervalo de confianza del $92\%$ para el precio
+promedio de atún claro empacado en aceite. Interprete el intervalo.
+Específicamente, ¿a qué se refiere el “$92\%$”?
+</li>
+<li>
+Calcule un intervalo de confianza de $99\%$ para la diferencia en
+el precio medio de atún claro empacado en agua y atún claro empacado
+en aceite.
+</li>
+</ol>
 19. Un experimentador desea comprobar la variabilidad de mediciones
     obtenidas al usar equipo diseñado para medir el volumen de una
     fuente de audio. Tres mediciones independientes registradas por este
@@ -654,17 +654,17 @@ bibliography: "../../referencias.bib"
     </thead>
     </table>
     Basados en esta información y bajo el supuesto de normalidad
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que la varianza de las lecturas de
-    emisión de ruido de camiones, sea mayor a $2_{dB}$. Interprete sus
-    resultados.
-    </li>
-    <li>
-    Calcule la probabilidad de que la diferencia entre la media real y
-    muestral sea como máximo de $0.4_{dB}$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que la varianza de las lecturas de
+emisión de ruido de camiones, sea mayor a $2_{dB}$. Interprete sus
+resultados.
+</li>
+<li>
+Calcule la probabilidad de que la diferencia entre la media real y
+muestral sea como máximo de $0.4_{dB}$.
+</li>
+</ol>
 21. En el trabajo de laboratorio es deseable realizar cuidadosas
     verificaciones de la variabilidad de lecturas producidas en muestras
     estándar. En un estudio de la cantidad de calcio en agua potable
@@ -736,18 +736,18 @@ bibliography: "../../referencias.bib"
     </table>
     Si asumimos que las mediciones se distribuyen normalmente con una
     media desconocida pero con una varianza de $3$,
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el promedio desconocido de las
-    mediciones realizadas por el instrumento de precisión se encuentre
-    entre $358$ y $363$.
-    </li>
-    <li>
-    Construya un intervalo de confianza del $84\%$ para la medición
-    promedio de todas las mediciones realizadas por el instrumento de
-    precisión.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el promedio desconocido de las
+mediciones realizadas por el instrumento de precisión se encuentre
+entre $358$ y $363$.
+</li>
+<li>
+Construya un intervalo de confianza del $84\%$ para la medición
+promedio de todas las mediciones realizadas por el instrumento de
+precisión.
+</li>
+</ol>
 23. El Departamento de zoología de Virginia Tech llevó a cabo un estudio
     para estimar la diferencia en la cantidad de ortofósforo químico
     medido en dos estaciones diferentes del río James. El ortofósforo se
@@ -1068,18 +1068,18 @@ bibliography: "../../referencias.bib"
     </table>
     Suponiendo que la duración de todas las baterías se distribuye de
     forma aproximadamente normal.
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el tiempo promedio de durabilidad de
-    todas las baterías sea de $3$ o más años.
-    </li>
-    <li>
-    Construya un intervalo de confianza del $92\%$ para el promedio de
-    durabilidad de todas las baterías y después decida si la afirmación
-    del fabricante sobre que el promedio de durabilidad es de $3$, es
-    o no válida.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el tiempo promedio de durabilidad de
+todas las baterías sea de $3$ o más años.
+</li>
+<li>
+Construya un intervalo de confianza del $92\%$ para el promedio de
+durabilidad de todas las baterías y después decida si la afirmación
+del fabricante sobre que el promedio de durabilidad es de $3$, es
+o no válida.
+</li>
+</ol>
 31. Dos marcas de refrigeradores, denotadas por $A$ y $B$ poseen
     garantías de $3$ año. Suponga que en una muestra aleatoria de
     $50$ refrigeradores de la marca $A$, se encontró que el tiempo
@@ -1088,15 +1088,15 @@ bibliography: "../../referencias.bib"
     aleatoria independiente de $60$ refrigeradores de la marca $B$,
     se encontró que el tiempo promedio de vida de los refrigeradores es
     de $5.5$ años con una desviación estándar de $1.7$ años.
-    <ol type="a">
-    <li>
-    Calcule con un nivel de confianza del $90\%$ un intervalo para la
-    diferencia los tiempos promedio de vida de los refrigeradores de las
-    marcas $A$ y $B$.
-    </li>
-    <li>
-    ¿Podría concluirse que hay evidencia suficiente para afirma que
-    existen diferencia significativas entre los tiempos de vida promedio
-    para las dos marcas de refrigeradores? ¿Por qué?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule con un nivel de confianza del $90\%$ un intervalo para la
+diferencia los tiempos promedio de vida de los refrigeradores de las
+marcas $A$ y $B$.
+</li>
+<li>
+¿Podría concluirse que hay evidencia suficiente para afirma que
+existen diferencia significativas entre los tiempos de vida promedio
+para las dos marcas de refrigeradores? ¿Por qué?
+</li>
+</ol>

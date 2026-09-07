@@ -14,16 +14,16 @@ Lista de ejercicios
 1.  Suponga que es sábado y planea con su pareja sentarse a ver todo el
     día películas. Si entre los dos han seleccionado un total de $7$
     películas para ver ese día.
-    <ol type="a">
-    <li>
-    De cuantas formas podrían ver las películas ese día?
-    </li>
-    <li>
-    Si entre las $7$ películas seleccionadas hay $2$ de romance,
-    $2$ de acción y $3$ de suspenso, de cuantas formas puede ver la
-    pareja las $7$ películas ese día?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+De cuantas formas podrían ver las películas ese día?
+</li>
+<li>
+Si entre las $7$ películas seleccionadas hay $2$ de romance,
+$2$ de acción y $3$ de suspenso, de cuantas formas puede ver la
+pareja las $7$ películas ese día?
+</li>
+</ol>
 
 2.  Un moneda esta cargada de tal forma que la probabilidad de que
     aparezca cara es tres veces mayor a que aparezca sello. Si se decide
@@ -45,26 +45,26 @@ Lista de ejercicios
     y $Z = \{t | 7 < t < 12\}$, el tiempo que tardan los estudiantes
     que estudiaron menos de $3$ horas. Dado lo anterior, encuentre e
     interprete en lo posible los siguientes eventos.
-    <ol type="a">
-    <li>
-    $X \cup Y$
-    </li>
-    <li>
-    $X \cap Y$
-    </li>
-    <li>
-    $X'\cap Z$
-    </li>
-    <li>
-    $X' \cup Z'$
-    </li>
-    <li>
-    $X' \cap Y'$
-    </li>
-    <li>
-    $Z' \cup Y$
-    </li>
-    </ol>
+<ol type="a">
+<li>
+$X \cup Y$
+</li>
+<li>
+$X \cap Y$
+</li>
+<li>
+$X'\cap Z$
+</li>
+<li>
+$X' \cup Z'$
+</li>
+<li>
+$X' \cap Y'$
+</li>
+<li>
+$Z' \cup Y$
+</li>
+</ol>
 
 5.  Para un examen de Estadística I a las $6$AM, un estudiante
     programa un despertador, el cual sabe que consigue despertarlo el
@@ -72,16 +72,16 @@ Lista de ejercicios
     despertador, la probabilidad de que llegue a tiempo al examen es del
     $90\%$, mientras que, si no escucha el despertador, la
     probabilidad de que llegue a tiempo al examen es del $50\%$.
-    <ol type="a">
-    <li>
-    Si el estudiante llega a tiempo al examen, ¿Cuál es la probabilidad
-    de que haya escuchado el despertador?
-    </li>
-    <li>
-    Si el estudiante no llega a tiempo al examen, ¿Cuál es la
-    probabilidad de que no haya escuchado el despertador?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si el estudiante llega a tiempo al examen, ¿Cuál es la probabilidad
+de que haya escuchado el despertador?
+</li>
+<li>
+Si el estudiante no llega a tiempo al examen, ¿Cuál es la
+probabilidad de que no haya escuchado el despertador?
+</li>
+</ol>
 
 6.  En la facultad de Química de la UdeA, adelantan un estudio para
     saber si usar vapeadores puede afectar el tiempo de descanso de los
@@ -92,19 +92,19 @@ Lista de ejercicios
     
 $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347.6 }\\                              & \text{353.2  348.1  352.7  334.4 }\\                              & \text{360.2  343.8  323.2  313.8 }\\      \text{Usan vapeador: }  & \text{328.6  235.1  326.4  334.9 }\\                              & \text{329.8  328.4  338.5  330.2 }\\                              & \text{330.6  331.8  341.6  321.1 } \\                              & \text{336.0  337.9  313.9}\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Calcule el tiempo promedio de sueño para cada grupo e interprete.
-    </li>
-    <li>
-    Calcule la desviación estándar para cada grupo. Cuál tiene mayor
-    dispersión? Qué significa esto?
-    </li>
-    <li>
-    Comente qué clase de efecto parece tener el hecho de usar vapeor
-    sobre el tiempo de descanso de los estudiantes.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule el tiempo promedio de sueño para cada grupo e interprete.
+</li>
+<li>
+Calcule la desviación estándar para cada grupo. Cuál tiene mayor
+dispersión? Qué significa esto?
+</li>
+<li>
+Comente qué clase de efecto parece tener el hecho de usar vapeor
+sobre el tiempo de descanso de los estudiantes.
+</li>
+</ol>
 
 7.  Suponga que se descubre que, en un grupo de $500$ estudiantes
     universitarios de último año, $210$ fuman, $258$ consumen
@@ -114,31 +114,31 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     tienen esos tres hábitos nocivos para la salud. Si se selecciona al
     azar a un miembro de este grupo, escriba el evento de interés y
     calcule la probabilidad de que el estudiante
-    <ol type="a">
-    <li>
-    fume pero no consuma bebidas alcohólicas.
-    </li>
-    <li>
-    coma entre comidas y consuma bebidas alcohólicas pero no fume.
-    </li>
-    <li>
-    no fume ni coma entre comidas.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+fume pero no consuma bebidas alcohólicas.
+</li>
+<li>
+coma entre comidas y consuma bebidas alcohólicas pero no fume.
+</li>
+<li>
+no fume ni coma entre comidas.
+</li>
+</ol>
 
 8.  Una Lotería consiste en seleccionar $6$ números de un total de
     $45$ números, y una serie que consta de un número del
     $1 \text{ al } 6$. La lotería se gana si se aciertan los $6$
     números y la serie. Calcule la probabilidad de acertar el resultado
     ganador bajo las siguientes condiciones de juego.
-    <ol type="a">
-    <li>
-    Teniendo en cuenta el orden en que aparezca el número ganador..
-    </li>
-    <li>
-    Sin tener en cuenta el orden.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Teniendo en cuenta el orden en que aparezca el número ganador..
+</li>
+<li>
+Sin tener en cuenta el orden.
+</li>
+</ol>
 
 9.  La proporción de personas que estudia para el examen de Estadística
     I desde la página del profe es del $54\%$. Si la persona estudia
@@ -156,20 +156,20 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     $B$. Se supone que la probabilidad de que funcione cada componente
     es independiente de los demás. A partir de la información anterior
     calcule
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que funcione el subsistema M?.
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que funcione el subsistema N?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que no funcione el subsistema O?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que haya comunicación entra A y B?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que funcione el subsistema M?.
+</li>
+<li>
+¿Cuál es la probabilidad de que funcione el subsistema N?
+</li>
+<li>
+¿Cuál es la probabilidad de que no funcione el subsistema O?
+</li>
+<li>
+¿Cuál es la probabilidad de que haya comunicación entra A y B?
+</li>
+</ol>
 
 11. Suponga que para poder graduarse en la facultad de Ciencias
     Económicas un los estudiantes pueden optar por tomar $6$ niveles
@@ -184,35 +184,35 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
 12. Suponga que usted desea realizar un diagrama de pastel para una
     presentación, y posee un total de $6$ categorías para realizar la
     gráfica.
-    <ol type="a">
-    <li>
-    De cuantas formas puede usted organizar las categorías?
-    </li>
-    <li>
-    Si dos categorías no pueden estar juntas, de cuantas formas puede
-    organizar las categorías?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+De cuantas formas puede usted organizar las categorías?
+</li>
+<li>
+Si dos categorías no pueden estar juntas, de cuantas formas puede
+organizar las categorías?
+</li>
+</ol>
 
 13. Una fraternidad local está realizando una rifa en la que se han de
     vender $50$ boletas, una por cliente. Hay tres premios para ser
     concedidos. Si los cuatro organizadores de la rifa compran un boleto
     cada uno, ¿cuál es la probabilidad de que los cuatro organizadores
     ganen
-    <ol type="a">
-    <li>
-    todos los premios?.
-    </li>
-    <li>
-    exactamente dos de los premios?
-    </li>
-    <li>
-    exactamente uno de los premios?
-    </li>
-    <li>
-    ninguno de los premios?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+todos los premios?.
+</li>
+<li>
+exactamente dos de los premios?
+</li>
+<li>
+exactamente uno de los premios?
+</li>
+<li>
+ninguno de los premios?
+</li>
+</ol>
 
 14. Un grupo asesor $A$ contiene $3$ hombres y $3$ mujeres. Otro
     grupo asesor $B$ contiene $3$ hombres y $2$ mujeres. Se
@@ -288,31 +288,31 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    ¿Cual es la probabilidad de seleccionar un cliente que visite
-    frecuentemente el supermercado y compre regularmente productos
-    alimenticios?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que se seleccione un cliente nunca
-    compre productos alimenticios?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de seleccionar un cliente que nunca compra
-    productos alimenticios, si se sabe que visita el supermercado
-    frecuentemente?
-    </li>
-    <li>
-    ¿Son independientes los sucesos “nunca compra productos
-    alimenticios” y “visita el supermercado frecuentemente”?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de seleccionar un cliente que visite el
-    establecimiento frecuentemente o un cliente que nunca compre
-    productos alimenticios?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cual es la probabilidad de seleccionar un cliente que visite
+frecuentemente el supermercado y compre regularmente productos
+alimenticios?
+</li>
+<li>
+¿Cuál es la probabilidad de que se seleccione un cliente nunca
+compre productos alimenticios?
+</li>
+<li>
+¿Cuál es la probabilidad de seleccionar un cliente que nunca compra
+productos alimenticios, si se sabe que visita el supermercado
+frecuentemente?
+</li>
+<li>
+¿Son independientes los sucesos “nunca compra productos
+alimenticios” y “visita el supermercado frecuentemente”?
+</li>
+<li>
+¿Cuál es la probabilidad de seleccionar un cliente que visite el
+establecimiento frecuentemente o un cliente que nunca compre
+productos alimenticios?
+</li>
+</ol>
 
 16. Suponga que existen dos enfermedades $A$ y $B$, que son comunes
     entre las personas que estudian Biología debido a las salidas de
@@ -324,17 +324,17 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
 
 17. Un experimento incluye lanzar un par de dados y observar los números
     de sus caras superiores.
-    <ol type="a">
-    <li>
-    Encuentre el número de puntos muestrales en el espacio muestral para
-    el experimento, si no se tiene en cuenta que los dos dados saquen el
-    mismo resultado.
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que el número obtenido en los dos dados
-    sea igual?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre el número de puntos muestrales en el espacio muestral para
+el experimento, si no se tiene en cuenta que los dos dados saquen el
+mismo resultado.
+</li>
+<li>
+¿Cuál es la probabilidad de que el número obtenido en los dos dados
+sea igual?
+</li>
+</ol>
 
 18. Un estudiante vive en un pueblo aledaño del Valle de Aburrá, y sólo
     cuenta con dos rutas de transporte para poder llegar a Caldas. Una
@@ -350,26 +350,26 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     una carta roja y $D$ representa el evento de obtener un $10$
     rojo, una $J$ negra o un $5$ de cualquier color, diga con
     palabras a que conjuntos que corresponden a los siguientes eventos:
-    <ol type="a">
-    <li>
-    $A \cup C$
-    </li>
-    <li>
-    $A \cap B$
-    </li>
-    <li>
-    $C'$
-    </li>
-    <li>
-    $(C' \cap D) \cup B$
-    </li>
-    <li>
-    $(S \cap A)'$
-    </li>
-    <li>
-    $A \cap C \cap D$
-    </li>
-    </ol>
+<ol type="a">
+<li>
+$A \cup C$
+</li>
+<li>
+$A \cap B$
+</li>
+<li>
+$C'$
+</li>
+<li>
+$(C' \cap D) \cup B$
+</li>
+<li>
+$(S \cap A)'$
+</li>
+<li>
+$A \cap C \cap D$
+</li>
+</ol>
 
 20. Suponga que usted le pide el favor a un compañero de curso que lo
     inscriba en cierta materia. Si su compañero olvida hacer la
@@ -397,14 +397,14 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     en fondos comunes de inversión es $0.3$ y la de que invierta en
     ambos es $0.15$. En esta ocasión encuentre la probabilidad de que
     un cliente invierta
-    <ol type="a">
-    <li>
-    en bonos libres de impuestos o en fondos comunes de inversión.
-    </li>
-    <li>
-    en ninguno de esos dos instrumentos
-    </li>
-    </ol>
+<ol type="a">
+<li>
+en bonos libres de impuestos o en fondos comunes de inversión.
+</li>
+<li>
+en ninguno de esos dos instrumentos
+</li>
+</ol>
 
 23. Si el profesor pone $10$ preguntas en el primer parcial y deja
     escoger $8$ cualesquiera para que resuelvan, de cuantas formas
@@ -448,15 +448,15 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
 
 30. Un alergólogo afirma que $30\%$ de los pacientes que examina son
     alérgicos a algún tipo de hierba. ¿Cuál es la probabilidad de que…
-    <ol type="a">
-    <li>
-    exactamente $3$ de sus $4$ pacientes siguientes sean alérgicos a
-    hierbas?
-    </li>
-    <li>
-    ninguno de sus $4$ pacientes siguientes sea alérgico a hierbas?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+exactamente $3$ de sus $4$ pacientes siguientes sean alérgicos a
+hierbas?
+</li>
+<li>
+ninguno de sus $4$ pacientes siguientes sea alérgico a hierbas?
+</li>
+</ol>
 
 31. Suponga que una familia sale de vacaciones de verano en su casa
     rodante. Si $M$ es el evento de que sufrirán fallas mecánicas,
@@ -465,26 +465,26 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     para acampar que esté lleno. Basado en el siguiente diagráma de Venn
     ![](/assets/images/Venn1.PNG) liste los
     números de las regiones que representan los siguientes eventos
-    <ol type="a">
-    <li>
-    La familia no experimentará fallas mecánicas y no será multada por
-    cometer una infracción de tránsito, pero llegará a un lugar para
-    acampar que está lleno.
-    </li>
-    <li>
-    La familia experimentará tanto fallas mecánicas como problemas para
-    localizar un lugar disponible para acampar, pero no será multada por
-    cometer una infracción de tránsito.
-    </li>
-    <li>
-    La familia experimentará fallas mecánicas o encontrará un lugar para
-    acampar lleno, pero no será multada por cometer una infracción de
-    tránsito.
-    </li>
-    <li>
-    La familia no llegará a un lugar para acampar lleno.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+La familia no experimentará fallas mecánicas y no será multada por
+cometer una infracción de tránsito, pero llegará a un lugar para
+acampar que está lleno.
+</li>
+<li>
+La familia experimentará tanto fallas mecánicas como problemas para
+localizar un lugar disponible para acampar, pero no será multada por
+cometer una infracción de tránsito.
+</li>
+<li>
+La familia experimentará fallas mecánicas o encontrará un lugar para
+acampar lleno, pero no será multada por cometer una infracción de
+tránsito.
+</li>
+<li>
+La familia no llegará a un lugar para acampar lleno.
+</li>
+</ol>
 
 32. Una flota de $9$ taxis se ha de despachar a $3$ aeropuertos en
     forma tal que $3$ vayan al aeropuerto A, $5$ al aeropuerto B y
@@ -498,15 +498,15 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     psicología, $10$ las tres materias y $8$ no cursaron ninguna de
     las tres. Seleccione al azar a un estudiante de este grupo y calcule
     la probabilidad de los siguientes eventos:
-    <ol type="a">
-    <li>
-    Una persona inscrita en psicología y cursa las tres materias.
-    </li>
-    <li>
-    Una persona que no está inscrita en psicología y esté cursando
-    historia y matemáticas.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Una persona inscrita en psicología y cursa las tres materias.
+</li>
+<li>
+Una persona que no está inscrita en psicología y esté cursando
+historia y matemáticas.
+</li>
+</ol>
 
 34. De un grupo de $9$ estudiantes, se tiene que $6$ estudian
     Economía y $3$ estudian Administración de Empresas. De cuantas
@@ -518,14 +518,14 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     Beijing, China, es $0.4$ y la probabilidad de que se ubique en
     Shanghái o Beijing, o en ambas ciudades, es $0.8$. ¿Cuál es la
     probabilidad de que la industria se ubique…
-    <ol type="a">
-    <li>
-    en ambas ciudades?
-    </li>
-    <li>
-    en ninguna de esas ciudades?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+en ambas ciudades?
+</li>
+<li>
+en ninguna de esas ciudades?
+</li>
+</ol>
 
 36. Un testigo de un accidente automovilístico le dijo a la policía que
     la matrícula del culpable, que huyó, contenía las letras $RLH$
@@ -541,55 +541,55 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     
 $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{align*}$$
 
-    <ol type="a">
-    <li>
-    Calcule la media, la mediana y la moda de la muestra e interprete en
-    base al enunciado.
-    </li>
-    <li>
-    Obtenga la varianza, la desviación estándar y el rango
-    intercuartílico de la muestra.
-    </li>
-    <li>
-    Obtenga los coeficientes de asimetría y curtosis.
-    </li>
-    <li>
-    Con base en los estadísticos calculados en los incisos a) y b), ¿qué
-    comentaría acerca de la calidad de los neumáticos?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la media, la mediana y la moda de la muestra e interprete en
+base al enunciado.
+</li>
+<li>
+Obtenga la varianza, la desviación estándar y el rango
+intercuartílico de la muestra.
+</li>
+<li>
+Obtenga los coeficientes de asimetría y curtosis.
+</li>
+<li>
+Con base en los estadísticos calculados en los incisos a) y b), ¿qué
+comentaría acerca de la calidad de los neumáticos?
+</li>
+</ol>
 
 38. Suponga una lotería en la cual el jugador debe seleccionar $5$
     números del $1$ al $30$ y una serie la cual está dada por un
     número del $1$ al $12$. El jugador ganará la lotería si acierta
     los $5$ números en cualquier orden y el valor de la serie.
-    <ol type="a">
-    <li>
-    De cuantas formas puede un jugador armar su juego.
-    </li>
-    <li>
-    Si un jugador siempre juega por serie el mes de su cumpleaños, De
-    cuantas formas puede un jugador armar su juego.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+De cuantas formas puede un jugador armar su juego.
+</li>
+<li>
+Si un jugador siempre juega por serie el mes de su cumpleaños, De
+cuantas formas puede un jugador armar su juego.
+</li>
+</ol>
 
 39. Un experimento consiste en lanzar un dado. Si el número en el dado
     es par, se lanzar una moneda una vez. Si el número en el dado es
     impar, la moneda se lanza dos veces.
-    <ol type="a">
-    <li>
-    Construya un diagrama de árbol para mostrar los elementos del
-    espacio muestral $S$.
-    </li>
-    <li>
-    Calcule la probabilidad de obtener un $5$ en el dado, seguido de
-    dos caras de la moneda.
-    </li>
-    <li>
-    Calcule la probabilidad de obtener un número par en el dado, seguido
-    de un sello de la moneda.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un diagrama de árbol para mostrar los elementos del
+espacio muestral $S$.
+</li>
+<li>
+Calcule la probabilidad de obtener un $5$ en el dado, seguido de
+dos caras de la moneda.
+</li>
+<li>
+Calcule la probabilidad de obtener un número par en el dado, seguido
+de un sello de la moneda.
+</li>
+</ol>
 
 40. Un banco ha comprobado que uno de cada $1000$ clientes con fondos
     expide un cheque con fecha equivocada. En cambio, todo cliente sin
@@ -599,31 +599,31 @@ $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{a
     cliente sin fondos?
 
 41. Resuelva
-    <ol type="a">
-    <li>
-    ¿De cuántas maneras se pueden formar $6$ personas para abordar un
-    autobús?.
-    </li>
-    <li>
-    ¿Cuántas maneras son posibles si, de las $6$, $3$ personas
-    específicas insisten en formarse una después de la otra?
-    </li>
-    <li>
-    ¿De cuántas maneras se pueden formar si, de las $6$, $2$
-    personas específicas se rehúsan a formarse una detrás de la otra?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿De cuántas maneras se pueden formar $6$ personas para abordar un
+autobús?.
+</li>
+<li>
+¿Cuántas maneras son posibles si, de las $6$, $3$ personas
+específicas insisten en formarse una después de la otra?
+</li>
+<li>
+¿De cuántas maneras se pueden formar si, de las $6$, $2$
+personas específicas se rehúsan a formarse una detrás de la otra?
+</li>
+</ol>
 
 42. Andrés, Ana, Pedro, Carlos, Sandra, Andrea y Juan hacen un
     reencuentro luego de muchos años de haber terminado el colegio y
     desean ir a comer. Si al restaurante se sientan en cualquier
     posición,
-    <ol type="a">
-    <li>
-    Cuál es la probabilidad de que Ana y Carlos queden sentados juntos?
-    </li>
-    <li>
-    Cuál es la probabilidad de que Pedro y Juan queden sentados
-    separados?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Cuál es la probabilidad de que Ana y Carlos queden sentados juntos?
+</li>
+<li>
+Cuál es la probabilidad de que Pedro y Juan queden sentados
+separados?
+</li>
+</ol>

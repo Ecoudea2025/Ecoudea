@@ -18,26 +18,26 @@ bibliography: "../../referencias.bib"
     ![](/assets/images/Venn1.PNG) liste los
     números y defina la notación de las regiones que representan los
     siguientes eventos
-    <ol type="a">
-    <li>
-    La familia no experimentará fallas mecánicas y no será multada por
-    cometer una infracción de tránsito, pero llegará a un lugar para
-    acampar que está lleno.
-    </li>
-    <li>
-    La familia experimentará tanto fallas mecánicas como problemas para
-    localizar un lugar disponible para acampar, pero no será multada por
-    cometer una infracción de tránsito.
-    </li>
-    <li>
-    La familia experimentará fallas mecánicas o encontrará un lugar para
-    acampar lleno, pero no será multada por cometer una infracción de
-    tránsito.
-    </li>
-    <li>
-    La familia no llegará a un lugar para acampar lleno.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+La familia no experimentará fallas mecánicas y no será multada por
+cometer una infracción de tránsito, pero llegará a un lugar para
+acampar que está lleno.
+</li>
+<li>
+La familia experimentará tanto fallas mecánicas como problemas para
+localizar un lugar disponible para acampar, pero no será multada por
+cometer una infracción de tránsito.
+</li>
+<li>
+La familia experimentará fallas mecánicas o encontrará un lugar para
+acampar lleno, pero no será multada por cometer una infracción de
+tránsito.
+</li>
+<li>
+La familia no llegará a un lugar para acampar lleno.
+</li>
+</ol>
 2.  Un moneda esta cargada de tal forma que la probabilidad de que
     aparezca cara es tres veces mayor a que aparezca sello. Si se decide
     lanzar la moneda tres veces, cuál es la probabilidad de sacar al
@@ -56,42 +56,42 @@ bibliography: "../../referencias.bib"
     horas, y $Z = \{t | t \geq 7\}$, el tiempo que tardan los
     estudiantes que estudiaron mínimo $7$ horas. Dado lo anterior,
     encuentre e interprete en lo posible los siguientes eventos.
-    <ol type="a">
-    <li>
-    $X \cup Y$
-    </li>
-    <li>
-    $X \cap Y$
-    </li>
-    <li>
-    $X'\cap Z$
-    </li>
-    <li>
-    $X' \cup Z'$
-    </li>
-    <li>
-    $X' \cap Y'$
-    </li>
-    <li>
-    $Z' \cup Y$
-    </li>
-    </ol>
+<ol type="a">
+<li>
+$X \cup Y$
+</li>
+<li>
+$X \cap Y$
+</li>
+<li>
+$X'\cap Z$
+</li>
+<li>
+$X' \cup Z'$
+</li>
+<li>
+$X' \cap Y'$
+</li>
+<li>
+$Z' \cup Y$
+</li>
+</ol>
 5.  Para un examen de probabilidad e inferencia estadística a las
     $6$AM, un estudiante programa un despertador, el cual sabe que
     consigue despertarlo el $80\%$ de las veces. Además, sabe que si
     escucha sonar el despertador, la probabilidad de que llegue a tiempo
     al examen es del $90\%$, mientras que, si no lo escucha, la
     probabilidad de llegue a tiempo al examen es del $50\%$.
-    <ol type="a">
-    <li>
-    Si el estudiante llega a tiempo al examen, ¿Cuál es la probabilidad
-    de que haya escuchado el despertador?
-    </li>
-    <li>
-    Si el estudiante no llega a tiempo al examen, ¿Cuál es la
-    probabilidad de que no haya escuchado el despertador?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si el estudiante llega a tiempo al examen, ¿Cuál es la probabilidad
+de que haya escuchado el despertador?
+</li>
+<li>
+Si el estudiante no llega a tiempo al examen, ¿Cuál es la
+probabilidad de que no haya escuchado el despertador?
+</li>
+</ol>
 6.  Suponga que se descubre que, en un grupo de $500$ estudiantes
     universitarios de último año, $210$ fuman, $258$ consumen
     bebidas alcohólicas, $216$ comen entre comidas, $122$ fuman y
@@ -100,43 +100,43 @@ bibliography: "../../referencias.bib"
     tienen esos tres hábitos nocivos para la salud. Si se selecciona al
     azar a un miembro de este grupo, escriba el evento de interés y
     calcule la probabilidad de que el estudiante
-    <ol type="a">
-    <li>
-    fume, pero no consuma bebidas alcohólicas.
-    </li>
-    <li>
-    coma entre comidas y consuma bebidas alcohólicas pero no fume.
-    </li>
-    <li>
-    no fume ni coma entre comidas.
-    </li>
-    <li>
-    Coma entre comidas o consuma bebidas alcohólicas, pero no fume.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+fume, pero no consuma bebidas alcohólicas.
+</li>
+<li>
+coma entre comidas y consuma bebidas alcohólicas pero no fume.
+</li>
+<li>
+no fume ni coma entre comidas.
+</li>
+<li>
+Coma entre comidas o consuma bebidas alcohólicas, pero no fume.
+</li>
+</ol>
 7.  Encuentre los errores en cada una de las siguientes aseveraciones:
-    <ol type="a">
-    <li>
-    Las probabilidades de que un vendedor de automóviles venda $0$,
-    $1$, $2$ o $3$ unidades en un día dado de febrero son
-    $0.19$, $0.38$, $0.29$ y $0.15$, respectivamente.
-    </li>
-    <li>
-    La probabilidad de que llueva mañana es $0.40$ y la probabilidad
-    de que no llueva es $0.52$.
-    </li>
-    <li>
-    Las probabilidades de que una impresora cometa $0$, $1$, $2$,
-    $3$ o $4$ o más errores al imprimir un documento son $0.19$,
-    $0.34$, $-0.25$, $0.43$ y $0.29$, respectivamente.
-    </li>
-    <li>
-    Al sacar una carta de una baraja en un solo intento la probabilidad
-    de seleccionar un corazón es $1/4$, la probabilidad de seleccionar
-    una carta negra es $1/2$, y la probabilidad de seleccionar una
-    carta de corazones y negra es $1/4$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Las probabilidades de que un vendedor de automóviles venda $0$,
+$1$, $2$ o $3$ unidades en un día dado de febrero son
+$0.19$, $0.38$, $0.29$ y $0.15$, respectivamente.
+</li>
+<li>
+La probabilidad de que llueva mañana es $0.40$ y la probabilidad
+de que no llueva es $0.52$.
+</li>
+<li>
+Las probabilidades de que una impresora cometa $0$, $1$, $2$,
+$3$ o $4$ o más errores al imprimir un documento son $0.19$,
+$0.34$, $-0.25$, $0.43$ y $0.29$, respectivamente.
+</li>
+<li>
+Al sacar una carta de una baraja en un solo intento la probabilidad
+de seleccionar un corazón es $1/4$, la probabilidad de seleccionar
+una carta negra es $1/2$, y la probabilidad de seleccionar una
+carta de corazones y negra es $1/4$.
+</li>
+</ol>
 8.  Se sacan tres cartas seguidas, sin reemplazo, de una baraja
     ordinaria. Encuentre la probabilidad de la primera carta sea una
     $A$ roja, la segunda carta sea una $J$ una $Q$ o una $K$ y
@@ -154,25 +154,25 @@ bibliography: "../../referencias.bib"
     es posible encontrar un camino entre $A$ y $B$. Se supone que la
     probabilidad de que funcione cada componente es independiente de los
     demás. A partir de la información anterior calcule
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que funcione el subsistema $M$?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que funcione el subsistema $N$?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que no funcione el subsistema $O$?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que haya comunicación entra $A$ y
-    $B$?
-    </li>
-    <li>
-    Escriba mediante eventos, la estructura de uniones e intersecciones
-    necesarias para que el circuito funcione
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que funcione el subsistema $M$?
+</li>
+<li>
+¿Cuál es la probabilidad de que funcione el subsistema $N$?
+</li>
+<li>
+¿Cuál es la probabilidad de que no funcione el subsistema $O$?
+</li>
+<li>
+¿Cuál es la probabilidad de que haya comunicación entra $A$ y
+$B$?
+</li>
+<li>
+Escriba mediante eventos, la estructura de uniones e intersecciones
+necesarias para que el circuito funcione
+</li>
+</ol>
 11. En un centro escolar los alumnos pueden optar por cursar como lengua
     extranjera ingles o francés. En un determinado curso, el $90\%$ de
     los alumnos estudia ingles y el resto francés. El $30\%$ de los
@@ -261,31 +261,31 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    ¿Cual es la probabilidad de seleccionar un cliente que visite
-    frecuentemente el supermercado y compre regularmente productos
-    alimenticios?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que se seleccione un cliente nunca
-    compre productos alimenticios?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de seleccionar un cliente que nunca compra
-    productos alimenticios, si se sabe que visita el supermercado
-    frecuentemente?
-    </li>
-    <li>
-    ¿Son independientes los sucesos “nunca compra productos
-    alimenticios” y “visita el supermercado frecuentemente”?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de seleccionar un cliente que visite el
-    establecimiento frecuentemente o un cliente que nunca compre
-    productos alimenticios?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cual es la probabilidad de seleccionar un cliente que visite
+frecuentemente el supermercado y compre regularmente productos
+alimenticios?
+</li>
+<li>
+¿Cuál es la probabilidad de que se seleccione un cliente nunca
+compre productos alimenticios?
+</li>
+<li>
+¿Cuál es la probabilidad de seleccionar un cliente que nunca compra
+productos alimenticios, si se sabe que visita el supermercado
+frecuentemente?
+</li>
+<li>
+¿Son independientes los sucesos “nunca compra productos
+alimenticios” y “visita el supermercado frecuentemente”?
+</li>
+<li>
+¿Cuál es la probabilidad de seleccionar un cliente que visite el
+establecimiento frecuentemente o un cliente que nunca compre
+productos alimenticios?
+</li>
+</ol>
 16. Las enfermedades $A$ y $B$ son comunes entre las personas que
     habitan una determinada isla. Si se supone que el $50\%$ de la
     población contrae la enfermedad $A$ alguna vez durante su vida,
@@ -300,46 +300,46 @@ bibliography: "../../referencias.bib"
 18. Un experimento consiste en lanzar un dado. Si el número en el dado
     es par, se lanzar un dado una vez. Si el número en el dado es impar,
     se lanza una moneda dos veces.
-    <ol type="a">
-    <li>
-    Construya un diagrama de árbol para mostrar los elementos del
-    espacio muestral $S$.
-    </li>
-    <li>
-    Calcule la probabilidad de obtener al menos un $5$ en uno de los
-    dos dados.
-    </li>
-    <li>
-    Calcule la probabilidad de obtener un número impar en el dado,
-    seguido de al menos un sello en la moneda.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Construya un diagrama de árbol para mostrar los elementos del
+espacio muestral $S$.
+</li>
+<li>
+Calcule la probabilidad de obtener al menos un $5$ en uno de los
+dos dados.
+</li>
+<li>
+Calcule la probabilidad de obtener un número impar en el dado,
+seguido de al menos un sello en la moneda.
+</li>
+</ol>
 19. Si $S = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$,
     $A = \{0, 2, 4, 6, 8\}$, $B = \{1, 3, 5, 7, 9\}$,
     $C = \{2, 3, 4, 5\}$ y $D = \{1, 6, 7\}$, liste los elementos de
     los conjuntos, en el siguiente diagrama de Venn
     ![](/assets/images/Venn2.PNG) y posteriormente
     señale en el diagrama los siguientes eventos:
-    <ol type="a">
-    <li>
-    $A \cup C$
-    </li>
-    <li>
-    $A \cap B$
-    </li>
-    <li>
-    $C'$
-    </li>
-    <li>
-    $(C' \cap D) \cup B$
-    </li>
-    <li>
-    $(S \cap C)'$
-    </li>
-    <li>
-    $A \cap C \cap D'$
-    </li>
-    </ol>
+<ol type="a">
+<li>
+$A \cup C$
+</li>
+<li>
+$A \cap B$
+</li>
+<li>
+$C'$
+</li>
+<li>
+$(C' \cap D) \cup B$
+</li>
+<li>
+$(S \cap C)'$
+</li>
+<li>
+$A \cap C \cap D'$
+</li>
+</ol>
 20. Suponga que usted le pide el favor a un compañero de curso que lo
     inscriba en cierta materia. Si su compañero olvida hacer la
     inscripción a tiempo, la probabilidad de que usted consiga cupo para
@@ -363,14 +363,14 @@ bibliography: "../../referencias.bib"
     en fondos comunes de inversión es $0.3$ y la de que invierta en
     ambos es $0.15$. En esta ocasión encuentre la probabilidad de que
     un cliente invierta
-    <ol type="a">
-    <li>
-    en bonos libres de impuestos o en fondos comunes de inversión.
-    </li>
-    <li>
-    en ninguno de esos dos instrumentos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+en bonos libres de impuestos o en fondos comunes de inversión.
+</li>
+<li>
+en ninguno de esos dos instrumentos.
+</li>
+</ol>
 23. Un banco ha comprobado que uno de cada $1000$ clientes con fondos
     expide un cheque con fecha equivocada. En cambio, todo cliente sin
     fondos pone una fecha errónea en sus cheques. El $90\%$ de los
@@ -393,16 +393,16 @@ bibliography: "../../referencias.bib"
     químicos. De los industriales se tienen que $5$ tienen al menos
     $21$ años y de los químicos, se tiene que $3$ son menores de
     $21$ años. Se escoge al azar un papelito.
-    <ol type="a">
-    <li>
-    Cuál es la probabilidad de que el elegido sea un ingeniero
-    industrial o sea menor de $21$ años.
-    </li>
-    <li>
-    Cuál es la probabilidad de que el elegido sea un químico de $21$
-    años o más?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Cuál es la probabilidad de que el elegido sea un ingeniero
+industrial o sea menor de $21$ años.
+</li>
+<li>
+Cuál es la probabilidad de que el elegido sea un químico de $21$
+años o más?
+</li>
+</ol>
 26. Existen dos métodos $A$ y $B$ para enseñar a los trabajadores
     cierta habilidad industrial. El porcentaje de fracasos es $20\%$
     para $A$ y $10\%$ para $B$. Sin embargo, $B$ cuesta más y
@@ -410,16 +410,16 @@ bibliography: "../../referencias.bib"
     consecuencia, se utiliza el método $A$ el resto de las veces. Si
     se entrena a un trabajador según uno de los dos métodos, pero no
     logra aprenderlo correctamente.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que haya recibido entrenamiento con el
-    método $A$?
-    </li>
-    <li>
-    ¿Cuál es la probabilidad de que haya recibido entrenamiento con el
-    método $B$?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que haya recibido entrenamiento con el
+método $A$?
+</li>
+<li>
+¿Cuál es la probabilidad de que haya recibido entrenamiento con el
+método $B$?
+</li>
+</ol>
 27. Suponga que la probabilidad de sobrevivir a una cierta operación de
     trasplante es de $0.55$. Si un paciente sobrevive la operación, la
     probabilidad que su cuerpo rechace el trasplante en menos de un mes
@@ -431,20 +431,20 @@ bibliography: "../../referencias.bib"
     alternativas son, respectivamente, $0.25$, $0.29$, $0.23$,
     $0.19$ y $0.04$. ¿Cuál es la probabilidad de que en su próxima
     visita al supermercado,
-    <ol type="a">
-    <li>
-    ¿No pague en efectivo?
-    </li>
-    <li>
-    ¿No use ninguna de sus tarjetas de crédito?
-    </li>
-    <li>
-    ¿Use su tarjeta uno, o pague con cheque o pague en efectivo?
-    </li>
-    <li>
-    ¿No pague en efectivo ni en cheque?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿No pague en efectivo?
+</li>
+<li>
+¿No use ninguna de sus tarjetas de crédito?
+</li>
+<li>
+¿Use su tarjeta uno, o pague con cheque o pague en efectivo?
+</li>
+<li>
+¿No pague en efectivo ni en cheque?
+</li>
+</ol>
 29. Se sabe que $2/3$ de los reclusos en cierta prisión federal son
     menores de $25$ años de edad. También se sabe que $3/5$ de los
     reos son hombres, y que $5/8$ son mujeres de $25$ años de edad o
@@ -458,27 +458,27 @@ bibliography: "../../referencias.bib"
     psicología, $10$ las tres materias y $8$ no cursaron ninguna de
     las tres. Seleccione al azar a un estudiante de este grupo y calcule
     la probabilidad de los siguientes eventos:
-    <ol type="a">
-    <li>
-    Una persona inscrita en psicología y cursa las tres materias.
-    </li>
-    <li>
-    Una persona que no está inscrita en psicología y esté cursando
-    historia y matemáticas.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Una persona inscrita en psicología y cursa las tres materias.
+</li>
+<li>
+Una persona que no está inscrita en psicología y esté cursando
+historia y matemáticas.
+</li>
+</ol>
 31. Un experimento incluye lanzar un par de dados y observar los números
     de sus caras superiores.
-    <ol type="a">
-    <li>
-    Cuál es la probabilidad de obtener un $7$ en la suma del resultado
-    de los dos dados.
-    </li>
-    <li>
-    Cuál es la probabilidad de que el número obtenido en los dos dados
-    sea igual?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Cuál es la probabilidad de obtener un $7$ en la suma del resultado
+de los dos dados.
+</li>
+<li>
+Cuál es la probabilidad de que el número obtenido en los dos dados
+sea igual?
+</li>
+</ol>
 32. Una pequeña ciudad dispone de un carro de bomberos y una ambulancia
     para emergencias. La probabilidad de que el carro de bomberos esté
     disponible cuando se necesite es $0.98$ y la probabilidad de que
@@ -545,16 +545,16 @@ bibliography: "../../referencias.bib"
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que un cliente seleccionado al azar sea
-    empleado?
-    </li>
-    <li>
-    Si él sabe que el paciente sufre de depresión, ¿Cuál es la
-    probabilidad de que sea desempleado?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que un cliente seleccionado al azar sea
+empleado?
+</li>
+<li>
+Si él sabe que el paciente sufre de depresión, ¿Cuál es la
+probabilidad de que sea desempleado?
+</li>
+</ol>
 38. En una prueba de tipo falso o verdadero, una persona no tiene ni la
     menor idea de las respuestas correspondientes a $3$ preguntas, así
     que decide adivinarlas. ¿Cual es la probabilidad de que responda más
@@ -569,16 +569,16 @@ bibliography: "../../referencias.bib"
     $0.20$. Basándose en la información disponible, el presidente de
     la compañía estima que hay una probabilidad de $0.60$ de que la
     autopista sea aprobada.
-    <ol type="a">
-    <li>
-    ¿Cuál es la probabilidad de que la compañía construya el centro
-    comercial?
-    </li>
-    <li>
-    Sabiendo que el centro comercial fue construido, ¿Cuál es la
-    probabilidad de que la autopista hasta sido aprobada?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+¿Cuál es la probabilidad de que la compañía construya el centro
+comercial?
+</li>
+<li>
+Sabiendo que el centro comercial fue construido, ¿Cuál es la
+probabilidad de que la autopista hasta sido aprobada?
+</li>
+</ol>
 40. De $10$ cartas numeradas del $1$ al $10$, se seleccionan
     aleatoriamente y en forma sucesiva $2$ de ellas. Hallar la
     probabilidad de que la suma sea impar.

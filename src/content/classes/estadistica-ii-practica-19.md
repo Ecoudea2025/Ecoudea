@@ -29,16 +29,16 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     verdadero número de vehículos que transitan por el rompoy en un día
     se distribuye Poisson con promedio de $260$. Si se emplea como
     verdadera la afirmación de los agentes de movilidad
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de obtener un promedio muestral de $280$ o
-    más?
-    </li>
-    <li>
-    Calcule la probabilidad de que el promedio real sea de a lo más
-    $270$?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de obtener un promedio muestral de $280$ o
+más?
+</li>
+<li>
+Calcule la probabilidad de que el promedio real sea de a lo más
+$270$?
+</li>
+</ol>
 
 3.  En una empresa se deciden comparar la resistencia de dos clases de
     hilo, y para ello se prueban $50$ piezas de cada clase de hilo en
@@ -87,19 +87,19 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
 
 5.  Sean $X_1, X_2, \ldots, X_n$ variables aleatorias independientes
     distribuidas uniformemente en el intervalo $(0, \theta)$.
-    <ol type="a">
-    <li>
-    Encuentre la función de densidad de
-    $X_{(n)} = \max(X_1, X_2, \ldots, X_n)$.
-    </li>
-    <li>
-    Encuentre la función de distribución acumulada de
-    $X_{(n)} = \max(X_1, X_2, \ldots, X_n)$.
-    </li>
-    <li>
-    Encuentre la media y la varianza de $X_{(n)}$
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Encuentre la función de densidad de
+$X_{(n)} = \max(X_1, X_2, \ldots, X_n)$.
+</li>
+<li>
+Encuentre la función de distribución acumulada de
+$X_{(n)} = \max(X_1, X_2, \ldots, X_n)$.
+</li>
+<li>
+Encuentre la media y la varianza de $X_{(n)}$
+</li>
+</ol>
 
 6.  Un investigador de la <tt>ucla</tt> afirma que la esperanza de vida
     de los ratones se puede extender hasta en $25\%$ cuando se reduce
@@ -119,18 +119,18 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     universitarios y encuentra que la estatura promedio fue de $174.5$
     centímetros con una desviación estándar de $6.9$ centímetros.
     Basados en la información anterior,
-    <ol type="a">
-    <li>
-    Cual es la probabilidad de que la estatura promedio de todos los
-    estudiantes sea a lo sumo $172$ centímetros.
-    </li>
-    <li>
-    Cual es la probabilidad de que la estatura promedio de todos los
-    estudiantes sea a lo sumo $172$ centímetros, si suponemos que las
-    alturas se distribuyen <i>iid</i> con desviación estándar de $7.3$
-    centímetros.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Cual es la probabilidad de que la estatura promedio de todos los
+estudiantes sea a lo sumo $172$ centímetros.
+</li>
+<li>
+Cual es la probabilidad de que la estatura promedio de todos los
+estudiantes sea a lo sumo $172$ centímetros, si suponemos que las
+alturas se distribuyen <i>iid</i> con desviación estándar de $7.3$
+centímetros.
+</li>
+</ol>
 
 8.  Dos marcas de refrigeradores, denotadas por $A$ y $B$ poseen
     garantías de $1$ año. Suponga que en una muestra aleatoria de
@@ -229,18 +229,18 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     </tr>
     </tbody>
     </table>
-    <ol type="a">
-    <li>
-    Suponiendo normalidad, cuál es la probabilidad de que la
-    calificación media de la prueba SAT verbal de todos los alumnos de
-    último año sea al menos de $508$ puntos.
-    </li>
-    <li>
-    Suponiendo normalidad, cuál es la probabilidad de que la
-    calificación media de la prueba SAT de matemáticas de todos los
-    alumnos de último año sea a lo sumo de $520$ puntos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Suponiendo normalidad, cuál es la probabilidad de que la
+calificación media de la prueba SAT verbal de todos los alumnos de
+último año sea al menos de $508$ puntos.
+</li>
+<li>
+Suponiendo normalidad, cuál es la probabilidad de que la
+calificación media de la prueba SAT de matemáticas de todos los
+alumnos de último año sea a lo sumo de $520$ puntos.
+</li>
+</ol>
 
 15. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
@@ -309,16 +309,16 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     la reducción promedio en la presión sanguínea que otorga el
     medicamento $A$ sea menor que la reducción promedio que ofrece el
     medicamento $B$.
-    <ol type="a">
-    <li>
-    Suponga que las mediciones están distribuidas normalmente con
-    varianzas iguales.
-    </li>
-    <li>
-    Suponga que las mediciones están distribuidas normalmente con
-    varianzas diferentes
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Suponga que las mediciones están distribuidas normalmente con
+varianzas iguales.
+</li>
+<li>
+Suponga que las mediciones están distribuidas normalmente con
+varianzas diferentes
+</li>
+</ol>
 
 18. ¿El precio pagado por el atún depende del método de empaque?
     *Consumer Reports* da el precio promedio estimado para una lata de
@@ -513,22 +513,22 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     una muestra aleatoria de todas las marcas de atún existentes en
     Estados Unidos, y que estos precios se encuentran normalmente
     distribuidos.
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el precio promedio de atún blanco
-    empacado en aceite sea a lo más $1.4$ dolares.
-    </li>
-    <li>
-    Calcule la probabilidad de que la variabilidad del precio del atún
-    blanco empacado en agua, sea mayor a la variabilidad del precio del
-    atún claro empacado en agua.
-    </li>
-    <li>
-    Calcule la probabilidad de que el precio promedio del atún blanco
-    empacado en aceite sea menor que el precio promedio de atún claro
-    empacado en aceite.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el precio promedio de atún blanco
+empacado en aceite sea a lo más $1.4$ dolares.
+</li>
+<li>
+Calcule la probabilidad de que la variabilidad del precio del atún
+blanco empacado en agua, sea mayor a la variabilidad del precio del
+atún claro empacado en agua.
+</li>
+<li>
+Calcule la probabilidad de que el precio promedio del atún blanco
+empacado en aceite sea menor que el precio promedio de atún claro
+empacado en aceite.
+</li>
+</ol>
 
 19. Un experimentador desea comprobar la variabilidad de mediciones
     obtenidas al usar equipo diseñado para medir el volumen de una
@@ -573,17 +573,17 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     </thead>
     </table>
     Basados en esta información y bajo el supuesto de normalidad
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que la varianza de las lecturas de
-    emisión de ruido de camiones, sea mayor a $2_{dB^2}$. Interprete
-    sus resultados.
-    </li>
-    <li>
-    Calcule la probabilidad de que la diferencia absoluta entre la media
-    real y muestral sea como máximo de $0.4_{dB}$.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que la varianza de las lecturas de
+emisión de ruido de camiones, sea mayor a $2_{dB^2}$. Interprete
+sus resultados.
+</li>
+<li>
+Calcule la probabilidad de que la diferencia absoluta entre la media
+real y muestral sea como máximo de $0.4_{dB}$.
+</li>
+</ol>
 
 21. Suponga que el número de entregas que realiza un camión de
     Servientrega en una hora posee una distribución de probabilidad dada
@@ -686,16 +686,16 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     los diferentes tipos de estímulos es de $4_{s^2}$ y que la
     distribución de probabilidad para los tiempos de reacción es
     aproximadamente normal. Basado en lo anterior
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el tiempo de reacción promedio para
-    todos los individuos sea a lo más de $6$ segundos.
-    </li>
-    <li>
-    Calcule la probabilidad de que el tiempo de reacción promedio para
-    todos los individuos no supere los $7$ segundos.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el tiempo de reacción promedio para
+todos los individuos sea a lo más de $6$ segundos.
+</li>
+<li>
+Calcule la probabilidad de que el tiempo de reacción promedio para
+todos los individuos no supere los $7$ segundos.
+</li>
+</ol>
 
 24. ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a $800$ adultos
@@ -768,19 +768,19 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     basales de pinos similares durante muchos años, descubrió que estas
     mediciones (en pulgadas cuadradas) están distribuidas normalmente
     con desviación estándar aproxima de $4$ pulgadas cuadradas.
-    <ol type="a">
-    <li>
-    Si el guardabosque muestrea un total de $12$ árboles, encuentre la
-    probabilidad de que la media muestral se encuentre a no más de $2$
-    pulgadas cuadradas de la media poblacional.
-    </li>
-    <li>
-    Suponga que al guardabosque le gustaría que la media muestral
-    estuviera a no más de $0.8$ pulgadas cuadrada de la media
-    poblacional, con probabilidad del $90\%$. ¿Cuántos árboles debe
-    medir para asegurar este grado de precisión?
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Si el guardabosque muestrea un total de $12$ árboles, encuentre la
+probabilidad de que la media muestral se encuentre a no más de $2$
+pulgadas cuadradas de la media poblacional.
+</li>
+<li>
+Suponga que al guardabosque le gustaría que la media muestral
+estuviera a no más de $0.8$ pulgadas cuadrada de la media
+poblacional, con probabilidad del $90\%$. ¿Cuántos árboles debe
+medir para asegurar este grado de precisión?
+</li>
+</ol>
 
 30. Suponga que el periodo de vida de una broca en una operación
     mecánica, en horas, tiene una distribución Weibull con parámetros
@@ -1097,16 +1097,16 @@ $$\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}$$
     </table>
     Suponiendo que la duración de todas las baterías se distribuye de
     forma aproximadamente normal.
-    <ol type="a">
-    <li>
-    Calcule la probabilidad de que el tiempo promedio de durabilidad de
-    todas las baterías sea de $3$ o más años.
-    </li>
-    <li>
-    Calcule la probabilidad de que la desviación estándar de todas las
-    baterías se encuentre entre $0.8$ y $1.2$ años.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Calcule la probabilidad de que el tiempo promedio de durabilidad de
+todas las baterías sea de $3$ o más años.
+</li>
+<li>
+Calcule la probabilidad de que la desviación estándar de todas las
+baterías se encuentre entre $0.8$ y $1.2$ años.
+</li>
+</ol>
 
 36. Las siguientes son las calificaciones obtenidas en un examen de
     personalidad por $2$ muestras de $9$ mujeres casadas y solteras:
@@ -1224,14 +1224,14 @@ $$\begin{align*}f(x)=\begin{cases}x & 0\leq x\leq 1 \\1 & 1<x\leq 1.5 \\0 & \tex
     distribución poblacional es normal. Hallar la probabilidad de que la
     media muestral del consumo de combustible sea menor que $10$
     kilómetros por litro si
-    <ol type="a">
-    <li>
-    Se toma una muestra aleatoria de una observación.
-    </li>
-    <li>
-    Se toma una muestra aleatoria de cuatro observaciones.
-    </li>
-    <li>
-    Se toma una muestra aleatoria de dieciséis observaciones.
-    </li>
-    </ol>
+<ol type="a">
+<li>
+Se toma una muestra aleatoria de una observación.
+</li>
+<li>
+Se toma una muestra aleatoria de cuatro observaciones.
+</li>
+<li>
+Se toma una muestra aleatoria de dieciséis observaciones.
+</li>
+</ol>
