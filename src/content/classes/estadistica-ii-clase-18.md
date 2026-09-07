@@ -213,7 +213,8 @@ y el estimador $\bar{X}_2$ como
 
 $$\begin{align*}
   \bar{X}_2=\frac{1}{4} (X_1 + X_7 + X_{10} + X_{50})
-\end{align*}$$ estimadores para la media desconocida $\mu$, calcule la
+\end{align*}$$
+estimadores para la media desconocida $\mu$, calcule la
 eficiencia relativa y concluya cuál de los dos estimadores es más
 eficiente.
 </p>

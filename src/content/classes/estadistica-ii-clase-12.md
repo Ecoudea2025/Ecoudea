@@ -164,7 +164,8 @@ $$\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
      &= \frac{(22-1)8^2 + (28-1)6.2^2}{22 + 28 - 2} \\
      &= 49.6225
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}$$
+y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{49.6225} \\
    &= 7.044324

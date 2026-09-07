@@ -199,7 +199,8 @@ $$\begin{align*}
                  &= -0.3213918 \\
   \gamma_{1,P_4} &= \frac{1}{10}\left[\frac{(1.8 - 3.14)^3 + (4.7 - 3.14)^3 + \ldots + (2.0 - 3.14)^3}{1.273839^3}\right] \\
                  &= -0.536286
-\end{align*}$$ De lo anterior se observa que en ambos casos el
+\end{align*}$$
+De lo anterior se observa que en ambos casos el
 coeficiente de asimetría es menor que $0$, lo cual significa que las
 notas obtenidas en los dos parciales posee una asimetría negativa, es
 decir, las notas obtenidas por los estudiantes se encuentran agrupadas
@@ -579,7 +580,8 @@ anteriormente en esta misma clase, tal que
 
 $$\begin{align*}
   \rho_{xy} = \frac{0.2655556}{(0.7121954)(1.273839)} = 0.2927127
-\end{align*}$$ Del resultado anterior se concluye, que hay existe una
+\end{align*}$$
+Del resultado anterior se concluye, que hay existe una
 correlación débil entre las notas obtenidas por los estudiantes en el
 parcial $1$ y el parcial $4$, del curso de Estadística 1.
 </p>

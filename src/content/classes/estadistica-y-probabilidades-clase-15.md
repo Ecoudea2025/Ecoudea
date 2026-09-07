@@ -308,7 +308,8 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </table>
 $$\begin{align*}
 \mathbb{P}(F)=0.120+0.085+0.165=0.37
-\end{align*}$$ Por tanto, se tendrá un $37\%$ de probabilidad de que
+\end{align*}$$
+Por tanto, se tendrá un $37\%$ de probabilidad de que
 el estudiante seleccionado prefiera el Fútbol sobre los demás deportes.
 </li>
 <li>
@@ -400,7 +401,8 @@ Economía
 
 $$\begin{align*}
 \mathbb{P}(C)=0.085+0.1025+0.0625+0.0250=0.275
-\end{align*}$$ Por tanto, se tendrá un $27.5\%$ de probabilidad de que
+\end{align*}$$
+Por tanto, se tendrá un $27.5\%$ de probabilidad de que
 el estudiante seleccionado sea de Contaduría.
 
 </li>
@@ -488,7 +490,8 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 
 De donde obtendremos que $$\begin{align*}
 \mathbb{P}(E \cap V)=0.10
-\end{align*}$$ lo cual indica que la probabilidad de que un estudiante
+\end{align*}$$
+lo cual indica que la probabilidad de que un estudiante
 sea de Economía y prefiera el Tenis sobre los otros deportes es del
 $10\%$.
 
@@ -530,7 +533,8 @@ otros deportes, es decir,
 
 $$\begin{align*}
 \mathbb{P}(E|B) = \frac{\mathbb{P}(E \cap B)}{\mathbb{P}(B)}
-\end{align*}$$ De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
+\end{align*}$$
+De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
 a partir de la suma de las probabilidades individuales en la columna de
 Baloncesto, mientras que la $\mathbb{P}(E \cap B) = 0.1275$, obtenida
 a partir de la casilla en donde se intersectan la fila de Economía y la
@@ -622,7 +626,8 @@ mientras que la probabilidad de sacar una bola roja de la segunda bolsa
 
 $$\begin{align*}
 \mathbb{P}(R_2|R_1) = \frac{8}{10}
-\end{align*}$$ Y por tanto, al aplicar la regla multiplicativa, tenemos
+\end{align*}$$
+Y por tanto, al aplicar la regla multiplicativa, tenemos
 que la probabilidad de sacar una bola roja de la primera bolsa,
 introducirla en la segunda bolsa, y posteriormente sacar una bola roja
 de la segunda bolsa, es de
@@ -798,7 +803,8 @@ $$\begin{align*}
 \frac{35000}{990000} & = \frac{35}{100} \times \frac{40}{100} \times \frac{25}{100} \\
 \frac{35000}{990000} & = \frac{35000}{1000000} \\
 0.03535354 &\neq 0.035
-\end{align*}$$ Y por tanto, al verificar que la igualdad NO se cumple,
+\end{align*}$$
+Y por tanto, al verificar que la igualdad NO se cumple,
 se concluye que los eventos NO son independientes.
 
 </li>

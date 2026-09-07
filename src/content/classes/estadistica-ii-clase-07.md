@@ -80,7 +80,7 @@ proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
 que $$\begin{align*}
-\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
@@ -90,7 +90,7 @@ mientras que para los equipos que se construyen con el procedimiento
 actual, se tendrá que
 
 $$\begin{align*}
-\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
@@ -407,7 +407,8 @@ la otra, significa que estaremos bajo la siguientes situación
 en donde se aprecia que el estadístico de prueba para esta ocasión
 estará dado por $$\begin{align*}
    F_c=\frac{S^2_{S}}{S^2_{C}}\sim F_{n_S-1, n_C-1}
-\end{align*}$$ En donde se observa que para realizar el cálculo del
+\end{align*}$$
+En donde se observa que para realizar el cálculo del
 estadístico, se requiere de las varianzas muestrales $S^2_S$ y
 $S^2_C$, las cuales son iguales a
 

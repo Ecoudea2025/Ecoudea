@@ -7,7 +7,7 @@ export interface Props {
   description?: string;
   image?: string;
   showTools?: boolean;
-  /** Carga KaTeX (CSS+JS+enhance) — solo necesario en páginas con fórmulas */
+  /** Carga el CSS KaTeX — el renderizado ocurre en el build */
   math?: boolean;
   /** Schema JSON-LD adicional (p. ej. Course) */
   jsonLd?: string;
@@ -70,8 +70,6 @@ const canonical = Astro.url;
 
     <script defer src={`${base}/assets/js/animations.js`}></script>
     {unlock && <script defer src={`${base}/assets/js/unlock.js`}></script>}
-    {math && <script defer src={`${base}/assets/js/katex.min.js`}></script>}
-    {math && <script defer src={`${base}/assets/js/auto-render.min.js`}></script>}
-    {math && <script defer src={`${base}/assets/js/enhance.js`}></script>}
+    {(math || showTools) && <script defer src={`${base}/assets/js/enhance.js`}></script>}
   </body>
 </html>

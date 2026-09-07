@@ -449,15 +449,18 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de $Y$ está dada por
+\end{align*}$$
+y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$ Calcule la covarianza entre el número promedio de horas
+\end{align*}$$
+Calcule la covarianza entre el número promedio de horas
 de tiempo libre del profesor, y de los estudiantes del curso de
 Estadística I.
 </p>
@@ -473,7 +476,8 @@ referencia al número de horas promedio de tiempo libre de los
 estudiantes. Esta covarianza puede ser calculada de forma simple por la
 ecuación $$\begin{align*}
 Cov(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)
-\end{align*}$$ En donde, el valor para las esperanzas requeridas para el
+\end{align*}$$
+En donde, el valor para las esperanzas requeridas para el
 cálculo de la covarianza, fueron calculados previamente en el ejemplo
 continuo de la
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Esperanza
@@ -949,15 +953,18 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de $Y$ está dada por
+\end{align*}$$
+y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$ Calcule la correlación entre el número promedio de horas
+\end{align*}$$
+Calcule la correlación entre el número promedio de horas
 de tiempo libre del profesor, y de los estudiantes del curso de
 Estadística I.
 </p>
@@ -1392,7 +1399,8 @@ discreto para el caso multivariado, se tendrá que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 13.61111 &= (7)(1.9444) \\
 13.61111 &\neq 13.6108
-\end{align*}$$ En consecuencia, dado que la igualdad no se cumple, se
+\end{align*}$$
+En consecuencia, dado que la igualdad no se cumple, se
 concluye que la variable de la suma resultante de los dos dados es
 dependiente de la variable del valor absoluto de la diferencia de los
 dos dados.
@@ -1415,15 +1423,18 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de $Y$ está dada por
+\end{align*}$$
+y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$ Pruebe si el número promedio de horas de tiempo libre que
+\end{align*}$$
+Pruebe si el número promedio de horas de tiempo libre que
 tiene el profesor son independientes del número promedio de horas de
 tiempo libre que tienen los estudiantes del curso de Estadística I.
 </p>
@@ -1439,7 +1450,8 @@ los dos dados y el valor esperado del valor absoluto de la diferencia de
 los dos dados, es igual a la esperanza conjunta de las dos variables,
 tal que se pueda probar si $$\begin{align*}
 \mathbb{E}(XY) = \mathbb{E}(X) \mathbb{E}(Y)
-\end{align*}$$ Basados en los
+\end{align*}$$
+Basados en los
 <a href="../../EstadisticaI/EstIClase11.html#caso-multivariado" target="\_blank">Valores
 Esperados</a> calculados en el ejemplo continuo para el caso
 multivariado, tenemos que $\mathbb{E}(X)=4/3$, $\mathbb{E}(Y)=85/28$
@@ -1448,7 +1460,8 @@ anterior, tenemos que $$\begin{align*}
 \mathbb{E}(XY) &= \mathbb{E}(X) \mathbb{E}(Y) \\
 \frac{255}{63} &= \left(\frac{4}{3}\right)\left(\frac{85}{28}\right) \\
 \frac{85}{21} &= \frac{85}{21}
-\end{align*}$$ En consecuencia, dado que la igualdad se cumple, se
+\end{align*}$$
+En consecuencia, dado que la igualdad se cumple, se
 concluye que el número promedio de horas de tiempo libre que tiene el
 profesor es independientes del número promedio de horas de tiempo libre
 que tienen los estudiantes del curso de Estadística I.
@@ -1593,7 +1606,8 @@ Solución
 En este caso, nos piden calcular la siguiente probabilidad
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258)
-\end{align*}$$ La cual, al desarrollarla nos lleva a la estructura
+\end{align*}$$
+La cual, al desarrollarla nos lleva a la estructura
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(|X-\mu|<1.1258)\\
                            &= 1 - \mathbb{P}(-1.1258 < X - \mu < 1.1258)\\
@@ -1625,7 +1639,8 @@ Ahora, estamos interesados en realizar el cálculo mediante el teorema de
 Chebyshev, y para ello, debemos llevar la probabilidad de interés a la
 estructura $$\begin{align*}
 \mathbb{P}\left(\mu - k\sigma \leq x \leq \mu + k\sigma \right)
-\end{align*}$$ tal que $$\begin{align*}
+\end{align*}$$
+tal que $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(|X-\mu|<1.1258)\\
                            &= 1 - \mathbb{P}(-1.1258 < X - \mu < 1.1258)\\
                            &= 1 - \mathbb{P}(\mu - 1.1258 < X < \mu + 1.1258)
@@ -1641,15 +1656,18 @@ del caso univariado, tendremos que $$\begin{align*}
 1.1258 &= k(0.866) \\
 \frac{1.1258}{0.866} &= k \\
 k &= 1.3
-\end{align*}$$ haciendo que la probabilidad anterior se transforme en
+\end{align*}$$
+haciendo que la probabilidad anterior se transforme en
 $$\begin{align*}
 \mathbb{P}(|X-\mu|>1.1258) &= 1 - \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) \\
-\end{align*}$$ Lo cual nos daría la estructura del teorema de Chevyshev.
+\end{align*}$$
+Lo cual nos daría la estructura del teorema de Chevyshev.
 Ahora, al aplicar el teorema, reemplazando $k$ por $1.3$ tendremos
 que $$\begin{align*}
 \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) &\geq 1 - \frac{1}{(1.3)^2} \\
 \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma) &\geq 0.408284 \\
-\end{align*}$$ Ahora, como estamos interesados es en calcular
+\end{align*}$$
+Ahora, como estamos interesados es en calcular
 $$\begin{align*}
 1 - \mathbb{P}(\mu - 1.3\sigma < X < \mu + 1.3\sigma)
 \end{align*}$$
@@ -1683,7 +1701,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Entonces, basados en la función de densidad de probabilidad, calcule la
 probabilidad de que el tiempo en horas que tarda la serie financiera en
@@ -1707,7 +1726,8 @@ En este caso nos piden la probabilidad de que, el tiempo en horas que
 tarda una serie financiera en dar un ciclo se encuentre entre $0.0464$
 y $0.9536$ horas, esto es $$\begin{align*}
 \mathbb{P}(0.0464<X<0.9536)
-\end{align*}$$ Entonces al emplear la función de densidad de
+\end{align*}$$
+Entonces al emplear la función de densidad de
 probabilidad tendremos que $$\begin{align*}
 \mathbb{P}(0.0464<X<0.9536) &= \int_{0.0464}^{0.9536} f(x) dx\\
                             &= \int_{0.0464}^{0.9536} 30x^2(1-x)^2 dx\\
@@ -1718,7 +1738,8 @@ probabilidad tendremos que $$\begin{align*}
                             & \quad \; - \left(\frac{0.0464^3}{3} - \frac{2(0.0464)^4}{4} + \frac{(0.0464)^5}{5}\right)\Bigg] \\
                             &= 30 (0.03327128) \\
                             &= 0.9981385
-\end{align*}$$ Es decir que, la probabilidad de que la serie financiera
+\end{align*}$$
+Es decir que, la probabilidad de que la serie financiera
 tarde entre $0.0464$ y $0.9536$ horas, en dar un ciclo es del
 $99.81\%$.
 </li>

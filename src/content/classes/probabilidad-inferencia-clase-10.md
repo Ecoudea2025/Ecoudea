@@ -155,7 +155,8 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -192,7 +193,8 @@ acumulada para el caso continuo, ya presentadas en la
 
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -283,7 +285,8 @@ En este caso estamos interesados en que la batería de una celular dure
 al menos $4$ años, es decir, queremos calcular la siguiente
 probabilidad. $$\begin{align*}
 \mathbb{P}(X \geq 4)
-\end{align*}$$ Pero en este caso tenemos que la distribución de los
+\end{align*}$$
+Pero en este caso tenemos que la distribución de los
 datos no se distribuye $N(0,1)$, si no que se distribuye
 $N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
 con el fin de llevar la distribución $N(5, 1.2)$ a una normal
@@ -291,12 +294,14 @@ estándar, tal que $$\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+\end{align*}$$
+En donde $Z\sim N(0,1)$. Ahora, como la estructura de
 la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
-\end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
+\end{align*}$$
+y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}(Z \lt  -0.83)$ en la tabla de la distribución normal
 estándar, de la siguiente manera
 
@@ -365,14 +370,16 @@ número de artículos defectuosos $X$, sea de al menos $30$
 defectuosos, sabiendo que la probabilidad de producir un artículo
 defectuoso es del $3\%$. Esto es $$\begin{align*}
 \mathbb{P}(X \geq 30)&= \sum_{x=30}^{900} \left(\begin{array}{c}900\\ x\end{array}\right) (0.03)^x(0.97)^{900-x}
-\end{align*}$$ En donde, como se tiene una sumatoria desde $30$ hasta
+\end{align*}$$
+En donde, como se tiene una sumatoria desde $30$ hasta
 $900$ se decide emplear el complemento de la probabilidad, tal que
 $$\begin{align*}
 \mathbb{P}(X \geq 30) &= 1 - \mathbb{P}(X < 30) \\
                       &= 1 - \sum_{x=0}^{29} \left(\begin{array}{c}900\\ x\end{array}\right) (0.03)^x(0.97)^{900-x} \\
                       &= 1 - 0.695578212 \\
                       &= 0.3044218
-\end{align*}$$ Es decir, que la probabilidad de que al menos $30$
+\end{align*}$$
+Es decir, que la probabilidad de que al menos $30$
 artículos de los $900$ sean defectuosos es del $30.44\%$. <br> <br>
 
 Ahora, si realizamos la aproximación de la distribución binomial a la
@@ -383,7 +390,8 @@ distribución Poisson, el cual está dado por $$\begin{align*}
 \lambda &= np \\
         &= 900(0.03) \\
         &= 27
-\end{align*}$$ Es decir que la distribución $b(n=900, p=0.03)$ puede
+\end{align*}$$
+Es decir que la distribución $b(n=900, p=0.03)$ puede
 aproximarse a una distribución $Pois(\lambda=27)$, que $n$ es grande
 y $p$ es pequeño (aunque éste no cumpla la condición de que
 $p\leq 0.01$, pero dichas condiciones son valores para tener como
@@ -393,7 +401,8 @@ distribución Poisson tenemos que $$\begin{align*}
                       &= 1 - \sum_{x=0}^{29} \frac{e^{-27}27^x}{x!} \\
                       &= 1 - 0.6934654545 \\
                       &= 0.3065345
-\end{align*}$$ Lo cual indica que, al realizar la aproximación, se tiene
+\end{align*}$$
+Lo cual indica que, al realizar la aproximación, se tiene
 un $30.65\%$ de probabilidad de que al menos $30$ artículos de los
 $900$ seleccionados, resulten tener algún tipo de defecto. <br> <br>
 
@@ -457,7 +466,8 @@ decir, tenemos que $X\sim b(n=1500, p=0.15)$, y deseamos calcular
 $$\begin{align*}
 \mathbb{P}(X<220)&= \sum_{x=0}^{219} \left(\begin{array}{c}1500\\ x\end{array}\right) (0.15)^x(0.85)^{1500-x} \\
                  &= 0.3480602
-\end{align*}$$ Es de anotar que el valor de la probabilidad presentada
+\end{align*}$$
+Es de anotar que el valor de la probabilidad presentada
 no es posible calcularla en una calculadora, debido a que las
 limitaciones que posee ésta, no permiten calcular una combinatoria de
 tal magnitud, y en consecuencia, resulta el intento de calcular dicha
@@ -491,7 +501,8 @@ probabilidad de interés, en donde, al aplicar el factor corrector de
 continuidad a la probabilidad se tendrá que $$\begin{align*}
 \text{Binomial} & & & & \text{Normal} \quad \quad \quad \quad \quad \\
 \mathbb{P}(X< 220) & & & & \mathbb{P}(X\leq 220 - 0.5) \quad \quad \quad \quad \; \\
-\end{align*}$$ es decir que, si $X\sim b(n=1500, p=0.15)$ estamos
+\end{align*}$$
+es decir que, si $X\sim b(n=1500, p=0.15)$ estamos
 interesados en calcular $\mathbb{P}(X\lt  220)$, mientras que si
 $X\stackrel{a}{\sim}N(\mu=225,\sigma^2=191.25)$ estaríamos interesados
 en calcular $\mathbb{P}(X\leq 219.5)$. Por tanto, al aplicar el
@@ -515,12 +526,14 @@ Donde se aprecia que
 
 $$\begin{align*}
 \mathbb{P}(Z \leq -0.40)=0.3446
-\end{align*}$$ o equivalentemente, se tendrá que
+\end{align*}$$
+o equivalentemente, se tendrá que
 
 $$\begin{align*}
 \mathbb{P}(X \leq 219.5) &= \mathbb{P}(Z \leq -0.40) \\
                          &= 0.3446
-\end{align*}$$ Es decir que la probabilidad aproximada de que menos de
+\end{align*}$$
+Es decir que la probabilidad aproximada de que menos de
 $220$ personas mueran de los $1500$ antes de llegar a los $62$
 años, es del $34.46\%$. <br> <br>
 

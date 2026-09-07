@@ -166,7 +166,8 @@ Var(X) &= \frac{(4-0)^2}{12} \\
        &= \frac{4^2}{12} \\
        &= \frac{16}{12} \\
        &= 1.33333
-\end{align*}$$ En donde, dada la relación de la varianza con la
+\end{align*}$$
+En donde, dada la relación de la varianza con la
 desviación estándar, tendremos que $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)}\\
       &= \sqrt{1.33333}\\
@@ -249,7 +250,8 @@ valor de la función gamma será de la forma $$\begin{align*}
             &= (2.5)(1.5)\Gamma(1.5) \\
             &= (2.5)(1.5)(1.5 - 1)\Gamma(1.5 - 1) \\
             &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
-\end{align*}$$ Y como $\Gamma(0.5)=\sqrt{\pi}$, entonces tendremos que
+\end{align*}$$
+Y como $\Gamma(0.5)=\sqrt{\pi}$, entonces tendremos que
 $$\begin{align*}
 \Gamma(3.5) &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
             &=(2.5)(1.5)(0.5)(\sqrt{\pi})\\
@@ -266,7 +268,8 @@ valor de la función gamma será de la forma $$\begin{align*}
             &= (2.5)(1.5)\Gamma(1.5) \\
             &= (2.5)(1.5)(1.5 - 1)\Gamma(1.5 - 1) \\
             &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
-\end{align*}$$ Y como por propiedades tenemos que
+\end{align*}$$
+Y como por propiedades tenemos que
 $\Gamma(0.5)=\sqrt{\pi}$, entonces al reemplazar tendremos que
 $$\begin{align*}
 \Gamma(3.5) &= (2.5)(1.5)(0.5)\Gamma(0.5) \\
@@ -282,28 +285,33 @@ propiedades el valor de la función ya que $$\begin{align*}
             &= (1.9)\Gamma(1.9) \\
             &= (1.9)(1.9-1)\Gamma(1.9 -1) \\
             &= (1.9)(0.9)\Gamma(0.9)
-\end{align*}$$ No es posible calcular de forma manual mediante
+\end{align*}$$
+No es posible calcular de forma manual mediante
 propiedades el valor de la función Gamma cuando el valor $\alpha$ no
 es un entero o terminado en $0.5$, y en consecuencia para calcular el
 valor de interés, se requerirá hacer una aproximación numérica para la
 integral $$\begin{align*}
 \Gamma(0.9) = \int_{0}^\infty t^{0.9 -  1} e^{-t} dt
-\end{align*}$$ la cual puede realizarse con la calculadora, o un
+\end{align*}$$
+la cual puede realizarse con la calculadora, o un
 software tal como lo es <tt>R</tt> mediante la función <tt>gamma()</tt>,
 o Excel mediante la función <tt>GAMMA()</tt>, las cuales arrojan que el
 valor de la función gamma para $0.9$ será $$\begin{align*}
 \Gamma(0.9) = 1.068629
-\end{align*}$$ Y por tanto el valor de la función gamma de interés será
+\end{align*}$$
+Y por tanto el valor de la función gamma de interés será
 igual a $$\begin{align*}
 \Gamma(2.9) &= (1.9)(0.9)\Gamma(0.9) \\
             &= (1.9)(0.9)(1.068629)\\
             &= 1.827355
-\end{align*}$$ Alternativamente se puede buscar en la calculadora o en
+\end{align*}$$
+Alternativamente se puede buscar en la calculadora o en
 los software, el valor de la gamma de $2.9$ directamente, en donde
 $$\begin{align*}
 \Gamma(2.9) &= \int_{0}^\infty t^{2.9 -  1} e^{-t} dt \\
             &= 1.827355
-\end{align*}$$ y en consecuencia se deberá obtener el mismo valor.
+\end{align*}$$
+y en consecuencia se deberá obtener el mismo valor.
 </li>
 </ol>
 </main>
@@ -368,7 +376,8 @@ la misma. Y por ello debemos despejar de las fórmulas de media y
 varianza el valor de los dos parámetros, tal que $$\begin{align*}
 \mathbb{E}(X) &= \alpha\beta \\
 37 &= \alpha\beta\\
-\end{align*}$$ mientras que $$\begin{align*}
+\end{align*}$$
+mientras que $$\begin{align*}
 Var(X)     &= \alpha\beta^2 \\
 Sd(X)^2    &= \alpha\beta^2 \\
 21.36196^2 &= \alpha\beta^2
@@ -380,18 +389,21 @@ de las ecuaciones y reemplazar en la otra, para obtener el valor de uno
 de los parametros tal que $$\begin{align*}
 37                &= \alpha\beta\\
 \frac{37}{\alpha} &= \beta
-\end{align*}$$ entonces al reemplazar el resultado anterior en la
+\end{align*}$$
+entonces al reemplazar el resultado anterior en la
 fórmula de la varianza tendremos que el valor del parámetro $\alpha$
 será igual a $$\begin{align*}
 21.36196^2 &= \alpha\left(\frac{37}{\alpha}\right)^2\\
 21.36196^2 &= \frac{37^2}{\alpha}\\
 \alpha     &= \frac{37^2}{21.36196^2} \\
 \alpha     &= 3
-\end{align*}$$ ahora al reemplazar el valor de $\alpha=3$ en la
+\end{align*}$$
+ahora al reemplazar el valor de $\alpha=3$ en la
 fórmula de la media tendremos que $$\begin{align*}
 37           &= (3)\beta\\
 \frac{37}{3} &= \beta
-\end{align*}$$ Y por tanto, se tendrá que las transferencias de datos en
+\end{align*}$$
+Y por tanto, se tendrá que las transferencias de datos en
 un sistema de red informática tendrá una distribución
 $Gamma(\alpha= 3, \beta = 37/3)$.
 </li>
@@ -401,7 +413,8 @@ Basados en los parámetros calculados en el punto anterior, estamos
 interesados en calcular la probabilidad de que el tiempo de
 transferencia de datos exceda los $50_{ms}$, es decir $$\begin{align*}
 \mathbb{P}(X>50) 
-\end{align*}$$ la cual, al emplear la distribución
+\end{align*}$$
+la cual, al emplear la distribución
 $Gamma(\alpha=3, \beta=37/3)$ se tendrá que $$\begin{align*}
 \mathbb{P}(X>50) &= \int_{50}^{\infty} \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\alpha-1}e^{-{\frac{x}{\beta}}} dx \\
                  &= \int_{50}^{\infty} \frac{1}{\Gamma(3)(37/3)^3} x^{3-1}e^{-{\frac{x}{(37/3)}}} dx \\
@@ -422,14 +435,16 @@ $$\begin{align*}
                  &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)x}{3^2} e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                  &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)}{3^2} xe^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                  &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty 
-\end{align*}$$ Por tanto al evaluar la variable $x$ en los límites de
+\end{align*}$$
+Por tanto al evaluar la variable $x$ en los límites de
 interés tendremos que $$\begin{align*}
 \mathbb{P}(X>50) &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty \\
                  &= \left(0 + 0 + 0 \right) - \left(-\frac{3^2}{\Gamma(3)(37)^2}(50^2) e^{-{\frac{3(50)}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} (50)e^{-{\frac{3(50)}{37}}} - \frac{(2)}{\Gamma(3)} e^{-{\frac{3(50)}{37}}}\right) \\
                  &= \frac{3^2}{\Gamma(3)(37)^2}(50^2) e^{-{\frac{3(50)}{37}}} + \frac{(2)(3)}{\Gamma(3)(37)} (50)e^{-{\frac{3(50)}{37}}} + \frac{(2)}{\Gamma(3)} e^{-{\frac{3(50)}{37}}} \\
                  &= 0.14259 + 0.07035 + 0.01735 \\
                  &= 0.23029
-\end{align*}$$ Es decir, que la probabilidad de que el tiempo de
+\end{align*}$$
+Es decir, que la probabilidad de que el tiempo de
 transferencia de datos exceda los $50_{ms}$, es del $23.029\%$.
 </li>
 <li>
@@ -439,7 +454,8 @@ sabe que ya ha superado los $20_{ms}$, por lo cual se tendrá una
 probabilidad condicional de la forma $$\begin{align*}
 \mathbb{P}(X\leq 70 | X>20) &= \frac{\mathbb{P}(X\leq 70 \cap X>20)}{\mathbb{P}(X>20)} \\
                             &= \frac{\mathbb{P}(20 < X \leq 70)}{\mathbb{P}(X>20)}
-\end{align*}$$ Por tanto debemos calcular dos probabilidades diferentes,
+\end{align*}$$
+Por tanto debemos calcular dos probabilidades diferentes,
 y luego realizar la división de las mismas, en donde, al emplear la
 integral realizada en el punto anterior, tendremos que la probabilidad
 del numerador será igual a $$\begin{align*}
@@ -449,18 +465,21 @@ del numerador será igual a $$\begin{align*}
                  &= \left(- 0.05522 - 0.01946 - 0.00343\right) - \left(- 0.25978 - 0.32040 - 0.19758\right) \\
                  &= (-0.07811) - (- 0.77776) \\
                  &= 0.69965
-\end{align*}$$ Ahora, calculamos la probabilidad asociada al denominador
+\end{align*}$$
+Ahora, calculamos la probabilidad asociada al denominador
 de la misma forma $$\begin{align*}
 \mathbb{P}(X > 20) &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{20}^{\infty} \\
                  &= \left(0 + 0 + 0\right) - \left(-\frac{3^2}{\Gamma(3)(37)^2}(20^2) e^{-{\frac{3(20)}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} (20)e^{-{\frac{3(20)}{37}}} - \frac{(2)}{\Gamma(3)} e^{-{\frac{3(20)}{37}}}\right) \\
                  &= - \left(- 0.25978 - 0.32040 - 0.19758\right) \\
                  &= 0.77776
-\end{align*}$$ Y por tanto, al reemplazar estos valores en la
+\end{align*}$$
+Y por tanto, al reemplazar estos valores en la
 probabilidad condicional tendremos que $$\begin{align*}
 \mathbb{P}(X\leq 70 | X>20) &= \frac{\mathbb{P}(20 < X \leq 70)}{\mathbb{P}(X>20)} \\
                             &= \frac{0.69965}{0.77776} \\
                             &= 0.8995706
-\end{align*}$$ Y por tanto, si el tiempo de transferencia de datos ha
+\end{align*}$$
+Y por tanto, si el tiempo de transferencia de datos ha
 superado $20_{ms}$, se tendrá una probabilidad del $89.96\%$ de que
 el tiempo de transferencia será como máximo de $70_{ms}$.
 </li>
@@ -531,13 +550,16 @@ del parámetro de la distribución Exponencial, en donde, nos dicen en el
 enunciado, que el tiempo promedio entre llegadas sucesivas es de $0.8$
 minutos, tal que $$\begin{align*}
 \mathbb{E}(X) &= 0.8
-\end{align*}$$ Entonces como para la distribución Exponencial se tiene
+\end{align*}$$
+Entonces como para la distribución Exponencial se tiene
 que el valor de la esperanza matemática está dada por $$\begin{align*}
 \mathbb{E}(X) &= \beta
-\end{align*}$$ se tendrá que el parámetro $\beta$ de la distribución
+\end{align*}$$
+se tendrá que el parámetro $\beta$ de la distribución
 Exponencial será igual a $$\begin{align*}
 \beta &= 0.8
-\end{align*}$$ Ahora, con el valor de este parámetro podemos calcular la
+\end{align*}$$
+Ahora, con el valor de este parámetro podemos calcular la
 probabilidad de interés empleando la función de distribución acumulada
 Exponencial, tal que $$\begin{align*}
 \mathbb{P}(X>4) &= 1 - \mathbb{P}(X\leq 4) \\
@@ -546,7 +568,8 @@ Exponencial, tal que $$\begin{align*}
                 &= 1 - \left(1 - e^{-{\frac{4}{0.8}}}\right) \\
                 &= e^{-{\frac{4}{3}}} \\
                 &= 0.006737947
-\end{align*}$$ Es decir que la probabilidad de que la próxima persona en
+\end{align*}$$
+Es decir que la probabilidad de que la próxima persona en
 llegar cajero de Bancolombia tarde más de $4$ minutos es de
 $0.67\%$.
 </li>
@@ -625,7 +648,8 @@ próxima persona tarde a lo más $2$ minutos, dado que ya han pasado
 $0.8$ minutos y no llega ninguna persona, estará dada por una
 probabilidad condicional de la forma $$\begin{align*}
 \mathbb{P}(X\leq2|X>0.8) 
-\end{align*}$$ la cual se podrá calcular mediante mediante la definición
+\end{align*}$$
+la cual se podrá calcular mediante mediante la definición
 de probabilidad condicional, de la forma
 
 $$\begin{align*}
@@ -643,7 +667,8 @@ condicional será igual a $$\begin{align*}
 En donde, por propiedad de carencia de memoria de la distribución
 exponencial se tendrá una estructura similar a $$\begin{align*}
 \mathbb{P}(X\leq a+b | x \geq b) = \mathbb{P}(X\leq a)
-\end{align*}$$ y por tanto, la probabilidad de interés será de la forma
+\end{align*}$$
+y por tanto, la probabilidad de interés será de la forma
 $$\begin{align*}
 \mathbb{P}(X\leq2|X>0.8) &= \mathbb{P}(X\leq1.2 + 0.8|X>0.8) \\
                          &= \mathbb{P}(X\leq1.2) \\
@@ -665,10 +690,12 @@ probabilidad de que una persona tarde más de $4$ minutos en llegar al
 cajero de Bancolombia, si se sabe que ya han pasado $2$ minutos y aún
 no llega ningúna persona al cajero, tal que $$\begin{align*}
 \mathbb{P}(X>4|X>2) 
-\end{align*}$$ Entonces, al aplicar la propiedad de carencia de memoria
+\end{align*}$$
+Entonces, al aplicar la propiedad de carencia de memoria
 de la distribución Exponencial, se tendrá que $$\begin{align*}
 \mathbb{P}(X\geq a+b | x \geq b) = \mathbb{P}(X\geq a)
-\end{align*}$$ y por tanto la probabilidad de interés será igual a
+\end{align*}$$
+y por tanto la probabilidad de interés será igual a
 $$\begin{align*}
 \mathbb{P}(X>4|X>2) &= \mathbb{P}(X > 4 - 2 + 2|X > 2) \\
                     &= \mathbb{P}(X > 2 + 2|X > 2) \\
@@ -725,14 +752,16 @@ en un intervalo de tiempo. Además nos dicen que el número promedio de
 llamadas que entran al Call Center posee una media de $2$ llamadas por
 minuto, por lo cual se tendrá que $$\begin{align*}
 \mathbb{E}(X) = \lambda = 2_{llamadas/min}
-\end{align*}$$ siendo $X$ el número de llamadas que entran al Call
+\end{align*}$$
+siendo $X$ el número de llamadas que entran al Call
 Center en un intervalo de $1$ minuto.<br> <br> Ahora, cuando
 observamos la probabilidad que nos piden, se observa que en lugar de
 preguntarnos por el número de sucesos que ocurren en un intervalo de
 tiempo, nos piden la probabilidad de que pase más de $3_{min}$ hasta
 que entre al Call Center la próxima llamada, esto es $$\begin{align*}
 \mathbb{P}(Y>3)
-\end{align*}$$ en donde $Y$ representaría el tiempo que pasa en un
+\end{align*}$$
+en donde $Y$ representaría el tiempo que pasa en un
 Call Center entre llamadas sucesivas, la cual podría pensarse que posee
 una distribución Exponencial, debido a que se pregunta por una unidad de
 tiempo hasta que ocurra un evento.<br> <br> Y por tanto, para calcular
@@ -743,11 +772,13 @@ calcular mediante el empleo de una regla de $3$, el valor del
 parámetro $\beta$, tal que $$\begin{align*}
 2_{llamadas} &- 1_{min} \\
 1_{llamada} &- \beta_{min}
-\end{align*}$$ entonces al multiplicar en cruz, tendremos que
+\end{align*}$$
+entonces al multiplicar en cruz, tendremos que
 $$\begin{align*}
 \beta &= \frac{1_{min}\times 1_{llamada}}{2_{llamadas}} \\
 \beta &= \frac{1}{2}_{min}
-\end{align*}$$ Ahora, al conocer el valor del parámetro de la
+\end{align*}$$
+Ahora, al conocer el valor del parámetro de la
 distribución Exponencial, se procede al cálculo de la probabilidad de
 interés, tal que $$\begin{align*}
 \mathbb{P}(Y>3) &= 1 - \mathbb{P}(Y\leq3) \\
@@ -755,7 +786,8 @@ interés, tal que $$\begin{align*}
                 &= 1 - \left(1 - e^{-\frac{3}{1/2}}\right)\\
                 &= e^{-6}\\
                 &= 0.002478752
-\end{align*}$$ Encontrando que, la probabilidad de que pasen más de
+\end{align*}$$
+Encontrando que, la probabilidad de que pasen más de
 $3$ minutos hasta que entre la próxima llamada al Call Center, es de
 $0.24\%$.
 </p>
@@ -790,7 +822,8 @@ automóviles, inclusive, que excedan los límites de velocidad
 establecidos para transitar en la avenida regional, lo cual está dado
 por $$\begin{align*}
 \mathbb{P}(3 \leq X \leq 6)
-\end{align*}$$ Siendo $X$ el número de automóviles que exceden los
+\end{align*}$$
+Siendo $X$ el número de automóviles que exceden los
 límites de velocidad en un intervalo de $30$ minutos, por lo cual
 puede asumirse que $X$ sigue una distribución Poisson.<br> <br> Ahora,
 del enunciado nos mencionan que el tiempo promedio que transcurre hasta
@@ -812,13 +845,15 @@ que $$\begin{align*}
 en donde, al multiplicar en cruz, tendremos que $$\begin{align*}
 \lambda &= \frac{30_{min}\times 1_{automóvil}}{10_{min}} \\
 \lambda &= 3_{automóviles}
-\end{align*}$$ Por tanto, al conocer el valor del parámetro de la
+\end{align*}$$
+Por tanto, al conocer el valor del parámetro de la
 distribución Poisson, se procede al cálculo de la probabilidad de
 interés, tal que $$\begin{align*}
 \mathbb{P}(3 \leq X \leq 6) &= \sum_{x=3}^{6} \frac{e^{-3} 3^{x}}{x!} \\
                             &= 0.22404181 + 0.16803136 + 0.10081881 + 0.05040941 \\
                             &= 0.5433014
-\end{align*}$$ Encontrando una probabilidad del $54.33\%$ de que en un
+\end{align*}$$
+Encontrando una probabilidad del $54.33\%$ de que en un
 intervalo de $30$ minutos se detecten mínimo $3$ pero máximo $6$
 automóviles que excedan los límites de velocidad establecidos para
 transitar en la avenida regional.

@@ -1392,7 +1392,8 @@ cada parcial, y se realiza entonces el cálculo del rango para cada caso
 $$\begin{align*}
   R_{P1} &= 4.0 - 1.3 = 2.7 \\ 
   R_{P4} &= 4.7 - 0.7 = 4.0
-\end{align*}$$ Se evidencia entonces que la amplitud de las notas del
+\end{align*}$$
+Se evidencia entonces que la amplitud de las notas del
 parcial $4$ es mucho mayor a la amplitud del parcial $1$, puesto que
 se observa que el rango obtenido por las notas del parcial $4$ es de
 $4.0$ puntos, mientras que el rango obtenido por las notas del parcial
@@ -1755,7 +1756,8 @@ $4$ son de
 $$\begin{align*}
   MAD_{P1} &= 1.4826 \times 0.25 = 0.37065 \\
   MAD_{P4} &= 1.4826 \times 0.9 = 1.33434
-\end{align*}$$ Se tiene entonces que la desviación abosulta mediana o
+\end{align*}$$
+Se tiene entonces que la desviación abosulta mediana o
 dispersión respecto a la mediana que poseen las notas de los estudiantes
 de Estadística I, en el primer parcial es de $0.37$, mientras para el
 cuarto parcial es de $1.33434$, lo cual indica que la dispersión de

@@ -8,7 +8,7 @@ Plataforma de cursos de estadística, probabilidad y programación.
 
 - [Astro](https://astro.build) — Framework estático (v7, con prefetch)
 - [Tailwind CSS v4](https://tailwindcss.com) — Estilos
-- [KaTeX](https://katex.org) — Renderizado de fórmulas matemáticas (LaTeX, self-hosted)
+- [KaTeX](https://katex.org) — Fórmulas matemáticas renderizadas en el build (LaTeX, CSS self-hosted, sin JS en cliente)
 - [GitHub Actions](https://github.com/features/actions) — Deploy automático a GitHub Pages
 
 ## 📁 Estructura
@@ -43,7 +43,7 @@ Plataforma de cursos de estadística, probabilidad y programación.
 - 🔒 **Desbloqueo progresivo** configurable por curso (abierto o secuencial)
 - 🛠 **Panel de administración** en `/admin` (configuración de cursos + resumen de clases)
 - 🗺 **SEO**: sitemap.xml, robots.txt, JSON-LD (schema Course), Open Graph
-- ⚡ **Rendimiento**: prefetch, KaTeX condicional, gzip precompresión, lazy images
+- ⚡ **Rendimiento**: prefetch, KaTeX renderizado en build con CSS condicional, gzip precompresión, lazy images
 
 ## 🎬 Agregar un video a una clase
 

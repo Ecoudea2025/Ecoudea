@@ -221,7 +221,8 @@ Dado que nos están restringiendo el tiempo en el cual puede salir el
 decano de la oficina a menos de $1$ hora, entonces se tendrá que el
 evento $B_1$ estará dado por $$\begin{align*}
               B_1 =\{\mathbb{t \in R^+ | 0 \leq t < 60}\}
-        \end{align*}$$ siendo $t$ el <strong>tiempo en
+        \end{align*}$$
+siendo $t$ el <strong>tiempo en
 minutos</strong> que tarda el decano en salir de la oficina para comprar
 un tinto en la burbuja.
 </li>
@@ -231,7 +232,8 @@ el cual puede salir el decano de la oficina a un lapso entre $20$
 minutos y $70$ minutos, entonces se tendrá que el evento $B_2$
 estará dado por $$\begin{align*}
               B_2 =\{\mathbb{t \in R^+ | 20 < t < 70}\}
-        \end{align*}$$ siendo $t$ el <strong>tiempo en
+        \end{align*}$$
+siendo $t$ el <strong>tiempo en
 minutos</strong> que tarda el decano en salir de la oficina para comprar
 un tinto en la burbuja.
 </li>
@@ -349,7 +351,8 @@ $B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}$ entonces un evento
 <strong>mutuamente excluyente</strong> podría ser de la forma
 $$\begin{align*}
       B_3 = \{\mathbb{t \in R^+ | 80 < t < 120}\}
-  \end{align*}$$ tal que $B_2\cap B_3 = \phi$.
+  \end{align*}$$
+tal que $B_2\cap B_3 = \phi$.
 </li>
 </ol>
 </main>

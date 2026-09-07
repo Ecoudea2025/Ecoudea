@@ -118,14 +118,15 @@ nos preguntan por el número de ensayos que hay que realizar, hasta
 obtener $1$ éxito, estamos en una situación asociada a una
 distribución Geométrica, la cual tiene la estructura $$\begin{align*}
 p(x) = p(1-p)^{x-1} \quad \quad x = 1,2,\ldots
-\end{align*}$$ En donde se sabe por experiencia que $1$ de cada $5$
+\end{align*}$$
+En donde se sabe por experiencia que $1$ de cada $5$
 personas que solicitan la Visa es rechazada, y por tanto, como nuestro
 éxito está asociado a que se otorgue la Visa, se tendrá que a $4$ de
 cada $5$ personas que solicitan la Visa, se les otorga de forma
 satisfactoriamente, es decir que al aplicar la definición de frecuencia
 relativa, tendremos que la proporción $p$, estará dada por
 $$\begin{align*}
-p &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
+p &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
   &= \frac{4}{5} \\
   &= 0.80
 \end{align*}$$
@@ -179,7 +180,8 @@ distribución Geométrica, se tendrá que $$\begin{align*}
 Var(X) &= \frac{1-p}{p^2} \\
        &= \frac{1-0.8}{0.8^2} \\
        &= 0.3125
-\end{align*}$$ y con este valor calculamos la desviación estándar,
+\end{align*}$$
+y con este valor calculamos la desviación estándar,
 mediante la ecuación $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.3125} \\
@@ -269,7 +271,7 @@ tendrá que a $4$ de cada $5$ personas que solicitan la Visa, se les
 otorga ésta de forma satisfactoriamente, es decir que al aplicar la
 definición de frecuencia relativa, tendremos que la proporción $p$,
 estará dada por $$\begin{align*}
-p &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
+p &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
   &= \frac{4}{5} \\
   &= 0.80
 \end{align*}$$
@@ -318,7 +320,8 @@ Var(X) &= r\frac{(1-p)}{p^2} \\
        &= 8\left(\frac{1-0.8}{0.8^2}\right) \\
        &= 8(0.3125) \\
        &= 2.5
-\end{align*}$$ y basados en este resultado, procedemos con el cálculo de
+\end{align*}$$
+y basados en este resultado, procedemos con el cálculo de
 la desviación estándar, mediante la ecuación $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{2.5} \\
@@ -449,7 +452,8 @@ P(X\leq 1) &= \sum_{x=0}^1 \frac{e^{-1.5}1.5^x}{x!} \\
            &= \frac{e^{-1.5}1.5^0}{0!} + \frac{e^{-1.5}1.5^1}{1!} \\\\
            &= 0.2231302 + 0.3346952 \\
            &= 0.5578254
-\end{align*}$$ Es decir, la probabilidad de que no aparezca más de un
+\end{align*}$$
+Es decir, la probabilidad de que no aparezca más de un
 hueco en la carretera en el tramo de dos kilómetros es del $55.78\%$.
 </li>
 <li>
@@ -462,16 +466,19 @@ nuestro parámetro $\lambda$ mediante el empleo de una regla de $3$,
 de la siguiente manera. $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  1_{\text{km}} &- \lambda
-\end{align*}$$ esto es, $$\begin{align*}
+\end{align*}$$
+esto es, $$\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 1_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 0.75_{\text{huecos}}
-\end{align*}$$ Es decir, que en un tramo de un kilómetro ocurren
+\end{align*}$$
+Es decir, que en un tramo de un kilómetro ocurren
 $0.75$ huecos en promedio. Conocido el valor del parámetro $\lambda$
 para el tramo de un kilómetro, se procede a calcular la probabilidad de
 que aparezca más de un hueco en el tramo de un kilómetro, tal que
 $$\begin{align*}
  \mathbb{P}(X>1) = \sum_{x=2}^\infty \frac{e^{-0.75}0.75^x}{x!} \\
-\end{align*}$$ En donde se aprecia que es una suma infinita, y en
+\end{align*}$$
+En donde se aprecia que es una suma infinita, y en
 consecuencia se procede a trabajar tal probabilidad por su complemento.
 $$\begin{align*}
  \mathbb{P}(X>1) &= 1 - \mathbb{P}(X\leq1)  \\
@@ -496,7 +503,8 @@ necesario recalcular el valor de $\lambda$, ta que
 $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  5_{\text{km}} &- \lambda
-\end{align*}$$ esto es, $$\begin{align*}
+\end{align*}$$
+esto es, $$\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 5_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 3.75_{\text{huecos}}
 \end{align*}$$
@@ -513,12 +521,14 @@ calcular la desviación estándar, del número de huecos que hay en un
 tramo de $5$ kilómetros $$\begin{align*}
 Var(X) &= \lambda \\
        &= 3.75\\
-\end{align*}$$ y con este valor, se procede a calcular la desviación
+\end{align*}$$
+y con este valor, se procede a calcular la desviación
 estándar $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(3.75)} \\
 Sd(X) & = 1.936492
-\end{align*}$$ De lo anterior se tiene que, en el tramo de $5$
+\end{align*}$$
+De lo anterior se tiene que, en el tramo de $5$
 kilómetros de carretera, se espera encontrar $3.75$ huecos, con una
 desviación estándar de $1.93$ huecos.
 </li>

@@ -157,7 +157,8 @@ Ejercicio
 Sea $X_2, X_3, x_4, \ldots$ una secuencia de variables aleatorias
 distribuidas, tal que $$\begin{align*}
   F_{X_i}(x)=1-\left(1-\frac{1}{i}\right)^{ix} \text{ para } x>0
-\end{align*}$$ muestre que $X_n$ converge a una distribución
+\end{align*}$$
+muestre que $X_n$ converge a una distribución
 $Exp(1)$.
 </p>
 <h3 data-toc-skip>
@@ -170,7 +171,8 @@ tendrá que para $x\geq 0$ $$\begin{align*}
   &=1-\lim_{n\to\infty}\left(1-\frac{1}{n}\right)^{nx} \\
   &=1-e^{-x} \\
   &=F_{X}(x) \text{ para todo } x
-\end{align*}$$ concluyendo que $X_{n}\stackrel{d}{\to}X$.
+\end{align*}$$
+concluyendo que $X_{n}\stackrel{d}{\to}X$.
 </p>
 </main>
 <!-- #### Propiedades euler -->
@@ -181,7 +183,8 @@ tendrá que para $x\geq 0$ $$\begin{align*}
 <!-- &4. \lim_{n\to\infty} \left(1 + \frac{k}{n+m}\right)^{n+m} = e^{k}\\ -->
 <!-- &5. \lim_{n\to\infty} \left(1 + \frac{1}{n}\right)^{nx} = e^{x}\\ -->
 <!-- &6. \lim_{n\to\infty} \left(1 + \frac{k}{n}\right)^{nx} = e^{xk}\\ -->
-<!-- \end{align*}$$ -->
+<!-- \end{align*}$$
+-->
 
 ### Convergencia en Probabilidad
 
@@ -226,7 +229,8 @@ $$\begin{align*}
   \lim_{n\to\infty}\mathbb{P}(|X_n - 0| \geq \varepsilon) &= \lim_{n\to\infty}\mathbb{P}(X_n \geq \varepsilon) \\
   &= \lim_{n\to\infty}e^{-n\varepsilon} \\
   &= 0 \quad \text{ para todo } \varepsilon >0\\
-\end{align*}$$ concluyendo que $X_n\stackrel{p}{\to}X$.
+\end{align*}$$
+concluyendo que $X_n\stackrel{p}{\to}X$.
 </p>
 </main>
 
@@ -287,11 +291,13 @@ $\varepsilon \gt  0$ $$\begin{align*}
   &\leq \frac{\mathbb{E}[(\bar{X} - \mu)^2]}{\varepsilon^2} \quad \text{ (Por teorema de Chebyshev)} \\
   &\leq \frac{Var(\bar{X})}{\varepsilon^2} \\
   &\leq \frac{\sigma^2}{n\varepsilon^2}
-\end{align*}$$ y por tanto al aplicar límite cuando $n\to\infty$ se
+\end{align*}$$
+y por tanto al aplicar límite cuando $n\to\infty$ se
 tendrá que $$\begin{align*}
   \lim_{n\to\infty}\mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) &\leq \lim_{n\to\infty}\frac{\sigma^2}{n\varepsilon^2} \\
   \lim_{n\to\infty}\mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) &=0 \quad \text{ para todo } \varepsilon>0
-\end{align*}$$ concluyendo que $\bar{X}\stackrel{p}{\to} \mu$
+\end{align*}$$
+concluyendo que $\bar{X}\stackrel{p}{\to} \mu$
 </p>
 </main>
 
@@ -346,11 +352,13 @@ entonces se tendrá que $$\begin{align*}
                           &= \int_{0}^{\frac{1}{n}} x^r f_{X_n}(x)\ dx\\
                           &= \int_{0}^{\frac{1}{n}} x^r n\ dx\\
                           &= \frac{1}{(r+1)n^r} \\
-\end{align*}$$ y por tanto al aplicar límite cuando $n\to\infty$ se
+\end{align*}$$
+y por tanto al aplicar límite cuando $n\to\infty$ se
 tendrá que $$\begin{align*}
   \lim_{n\to \infty} \mathbb{E}(|X_n - 0|^r) &= \lim_{n\to \infty} \frac{1}{(r+1)n^r} \\
   &= 0 \quad \text{ para todo }  r\geq 1 \\
-\end{align*}$$ concluyendo que $X_n\stackrel{L^r}{\to} 0$
+\end{align*}$$
+concluyendo que $X_n\stackrel{L^r}{\to} 0$
 </p>
 </main>
 
@@ -398,7 +406,8 @@ Para demostrar esto defina un punto muestral fijo $s\in[0,1)$,
 entonces la secuencia de variables aleatoria $X_n(s)$ tendrá límite
 igual a $$\begin{align*}
   \lim_{n\to \infty} X_n(s)=\lim_{n\to \infty} s^{n} = 0
-\end{align*}$$ sin embargo, si $s=1$, la secuencia de variables
+\end{align*}$$
+sin embargo, si $s=1$, la secuencia de variables
 aleatorias $X_n(s)$ tendrá límite igual a $$\begin{align*}
   \lim_{n\to \infty} X_n(1)=\lim_{n\to \infty} 1^{n} = 1
 \end{align*}$$
@@ -418,7 +427,8 @@ seguramente a $X(s)$ ya que
 
 $$\begin{align*}
   \mathbb{P}\left(\{s\in[0,1):\lim_{n\to \infty}X_n(s) = X(s)\}\right) = 1
-\end{align*}$$ concluyendo que $X_n\stackrel{cs}{\to} 0$
+\end{align*}$$
+concluyendo que $X_n\stackrel{cs}{\to} 0$
 </p>
 </main>
 

@@ -62,7 +62,8 @@ tamaño de la muestra $n\geq30$, podemos aplicar el teorema del límite
 central el cual nos dice que, mediante la aplicación de la
 estandarización $$\begin{align*}
 Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$ podemos obtener una distribución aproximadamente normal,
+\end{align*}$$
+podemos obtener una distribución aproximadamente normal,
 lo cual nos permitirá realizar el cálculo de la probabilidad de
 interés.<br> <br> Ahora, para poder aplicar la estandarización, debemos
 calcular primero el valor de la media y desviación estandar
@@ -76,7 +77,8 @@ media poblacional será igual a $$\begin{align*}
                       &= 3 (6-1)!\\
                       &= 3 (120) \\
                       &= 360
-\end{align*}$$ mientras que, la varianza poblacional será igual a
+\end{align*}$$
+mientras que, la varianza poblacional será igual a
 $$\begin{align*}
 Var(X) = \sigma^2 &= \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gamma\left(1 + \frac{1}{\alpha}\right)^2\right] \\
                   &= 3^2\left[\Gamma\left(1 + \frac{2}{(1/5)}\right) - \Gamma\left(1 + \frac{1}{(1/5)}\right)^2\right] \\
@@ -88,7 +90,8 @@ Var(X) = \sigma^2 &= \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gam
                   &= 9\left[3628800 - 14400\right] \\
                   &= 9\left[3614400\right] \\
                   &= 32529600
-\end{align*}$$ es decir que, la desviación estándar poblacional será
+\end{align*}$$
+es decir que, la desviación estándar poblacional será
 igual a $$\begin{align*}
 Sd(X) = \sigma &= \sqrt{Var(X)} \\
                &= \sqrt{32529600} \\
@@ -148,7 +151,8 @@ Sean $X_1$ y $X_2$ dos variables aleatorias normalmente distribuidas
 con media $\mu$ y varianza $\sigma^2$. Y si $Y$ es una combinación
 lineal de $X_1$ y $X_2$, tal que $$\begin{align*}
 Y = X_1 + X_2
-\end{align*}$$ entonces, la media de $Y$ estará dada por
+\end{align*}$$
+entonces, la media de $Y$ estará dada por
 $$\begin{align*}
 \mathbb{E}(Y) = \mu_1 + \mu_2
 \end{align*}$$
@@ -254,7 +258,8 @@ serán variables aleatorias independientes con distribuciones
 chi-cuadrado con $1$ grado de libertad. Entonces, basados en el
 Teorema 3 se obtiene que $$\begin{align*}
 Y = \sum_{i=1}^n Z_i^2 = \sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n
-\end{align*}$$ tendrá una distribución chi-cuadrado con $n$ grados de
+\end{align*}$$
+tendrá una distribución chi-cuadrado con $n$ grados de
 libertad.
 </p>
 </main>
@@ -401,7 +406,8 @@ similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
 $\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
@@ -444,7 +450,8 @@ $$\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} \leq 15.812) - \mathbb{P}(\chi^2_{12} \leq 9.034) \\
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
 $\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
@@ -575,10 +582,12 @@ software <tt>R</tt> o las funciones <tt>DISTR.CHICUAD()</tt> o
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{25} > 40) = 0.0291644
-\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
+\end{align*}$$
+lo cual, dada la equivalencia de la igualdad anterior,
 significará que $$\begin{align*}
 \mathbb{P}(S > 2.828427) = 0.0291644
-\end{align*}$$ es decir, se tendrá un $2.92\%$ de probabilidad de que
+\end{align*}$$
+es decir, se tendrá un $2.92\%$ de probabilidad de que
 la desviación estándar de la calificación obtenida por una muestra de
 $26$ estudiantes de primero y segundo semestre de la facultad de
 ingeniería, en el exámen, sea superior a $2.828427$ puntos.
@@ -742,7 +751,8 @@ $$\begin{align*}
 \mathbb{P}(0.862 < t_{18} \leq 2.214) &= \mathbb{P}(t_{18} \leq 2.214) - \mathbb{P}(t_{18} \leq 0.862) \\
                                       &= [1 - \mathbb{P}(t_{18} > 2.214)] - [1- \mathbb{P}(t_{18} > 0.862)] \\
                                       &= \mathbb{P}(t_{18} > 0.862) - \mathbb{P}(t_{18} > 2.214)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)$, puede ser calculada mediante
 el empleo de las probabilidades $\mathbb{P}(t_{18} \gt  0.862)$ y
 $\mathbb{P}(t_{18} \gt  2.214)$, las cuales se calculan en la tabla de
@@ -826,7 +836,8 @@ muestral $\bar{X}$ sea como máximo el encontrado por el grupo de
 investigación, es decir que se desea calcular la siguiente probabilidad
 $$\begin{align*}
 \mathbb{P}(\bar{X} \leq 1.02)
-\end{align*}$$ En donde sabemos que la distribución de probabilidad de
+\end{align*}$$
+En donde sabemos que la distribución de probabilidad de
 la media muestral $\bar{X} \sim N(\mu, \sigma^2/n)$, por lo cual
 podríamos calcular directamente la probabilidad de interés, en caso de
 que conocieramos la varianza poblacional, pero al no ser nuestro caso,
@@ -1128,7 +1139,8 @@ $$\begin{align*}
 \mathbb{P}(0.31 < F_{15, 5} \leq 9.6) &= \mathbb{P}(F_{15, 5} \leq 9.6) - \mathbb{P}(F_{15, 5} \leq 0.31) \\
                                        &= [1 - \mathbb{P}(F_{15, 5} > 9.6)] - [1- \mathbb{P}(F_{15, 5} > 0.31)] \\
                                        &= \mathbb{P}(F_{15, 5} > 0.31) - \mathbb{P}(F_{15, 5} > 9.6)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)$, puede ser calculada mediante
 el empleo de las probabilidades $\mathbb{P}(F_{15, 5} \gt  0.31)$ y
 $\mathbb{P}(F_{15, 5} \gt  9.6)$. Para calcular esta probabilidad debemos
@@ -1430,7 +1442,7 @@ $x=4$ éxitos en las $n=15$ muestras, entonces podemos aplicar la
 fórmula de frecuencia relativa para calcular la proporción muestral de
 egresados que poseen salarios superiores a $2$ millones.
 $$\begin{align*}
-  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667

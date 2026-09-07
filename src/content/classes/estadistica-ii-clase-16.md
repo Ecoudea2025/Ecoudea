@@ -118,7 +118,8 @@ $$\begin{align*}
                  &=\left(\frac{1}{\infty}- \frac{5}{\infty^2}\right)\sigma^2\\
                  &= \left(0-0\right)\sigma^2\\
                  &=0
-\end{align*}$$ Encontrando que al cumplir también la segunda condición
+\end{align*}$$
+Encontrando que al cumplir también la segunda condición
 que se requiere para que el estimador sea consistente, se concluirá que
 el estimador $\bar{X}_{2}$ es un estimador consistente para el
 parámetro $\mu$.

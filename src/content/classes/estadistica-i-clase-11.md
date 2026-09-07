@@ -120,7 +120,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule el valor esperado del tiempo que tarda la serie financiera en
 cumplir un ciclo.
@@ -142,7 +143,8 @@ ciclo, tal que $$\begin{align*}
              &= 30 \left[\left(\frac{1^4}{4} - 2\frac{1^5}{5} + \frac{1^6}{6}\right) - \left(\frac{0^4}{4} - 2\frac{0^5}{5} + \frac{0^6}{6}\right)\right] \\
              &= 30 \left(\frac{1}{4} - \frac{2}{5} + \frac{1}{6}\right) \\
              &= 0.5
-\end{align*}$$ Y por tanto, se tendrá que el tiempo esperado que tarda
+\end{align*}$$
+Y por tanto, se tendrá que el tiempo esperado que tarda
 una serie financiera en cumplir un ciclo será $0.5$ horas, la cual al
 pasarla a minutos mediante la regla de tres
 
@@ -286,7 +288,8 @@ $$\begin{align*}
              &=\frac{9}{8}+\frac{18}{8}+\frac{9}{8} \\
              &=\frac{36}{8} \\
              &=4.5
-\end{align*}$$ Resultado similar, puede obtenerse mediante la propiedad
+\end{align*}$$
+Resultado similar, puede obtenerse mediante la propiedad
 $\mathbb{E}(aX)=a\mathbb{E}(X)$, en donde ya sabemos que
 $\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 
@@ -328,7 +331,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule
 </p>
@@ -828,7 +832,8 @@ $$\begin{align*}
              &=\frac{2}{36}+\frac{6}{36}+\frac{12}{36}+\ldots + \frac{12}{36} \\
              &=\frac{252}{36} \\
              &=7
-\end{align*}$$ Por tanto se tendrá que el valor esperado para la suma
+\end{align*}$$
+Por tanto se tendrá que el valor esperado para la suma
 resultante de los dos dados es de $7$.
 </li>
 <li>
@@ -842,7 +847,8 @@ distribución marginal $h(y)$, tal que $$\begin{align*}
              &=0+\frac{10}{36}+\frac{16}{36}+\ldots + \frac{10}{36} \\
              &=\frac{70}{36} \\
              &=1.9444
-\end{align*}$$ Por tanto se tendrá que el valor esperado para el valor
+\end{align*}$$
+Por tanto se tendrá que el valor esperado para el valor
 absoluto de la diferencia de los dos dados es de $1.9444$.
 </li>
 <li>
@@ -856,7 +862,8 @@ $p(x,y)$ tal que $$\begin{align*}
              &=0+\frac{6}{36}+\ldots+0+ \frac{6}{36}+\ldots + 0 \\
              &=\frac{490}{36} \\
              &=13.61111
-\end{align*}$$ Por tanto se tendrá que el valor esperado de $XY$ es de
+\end{align*}$$
+Por tanto se tendrá que el valor esperado de $XY$ es de
 $13.61111$ (Es anotar que solo las esperanzas simples de $X$ y $Y$
 tienen interpretación en el contexto de los datos).
 </li>
@@ -879,15 +886,18 @@ horas de tiempo libre que poseen los estudiantes a los cuales se les
 dicta un curso de Estadística I. Para ello, se encuentra que la función
 de densidad de probabilidad conjunta está dada por $$\begin{align*}
 f(x,y)=\frac{1}{42}xy^2 \quad \quad 0<x<2; 1<y<4
-\end{align*}$$ siendo $X$ la variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ la variable aleatoria que representa el
 número promedio de horas de tiempo libre del profesor y $Y$ el número
 promedio de horas de tiempo libre de los estudiantes. Entonces, si las
 distribuciones marginales de $X$ está dada por $$\begin{align*}
 g(x) =& \frac{1}{2}x \quad \quad 0<x<2
-\end{align*}$$ y la distribución marginal de $Y$ está dada por
+\end{align*}$$
+y la distribución marginal de $Y$ está dada por
 $$\begin{align*}
 h(y) =& \frac{1}{21}y^2 \quad \quad 1<y<4
-\end{align*}$$ Calcule
+\end{align*}$$
+Calcule
 </p>
 <ol>
 <li>
@@ -918,7 +928,8 @@ $$\begin{align*}
              &=\frac{1}{2}\left(\frac{8}{3}\right) \\
              &=\frac{4}{3} \\
              &=1.333333 
-\end{align*}$$ Por tanto se tendrá que el valor esperado para el número
+\end{align*}$$
+Por tanto se tendrá que el valor esperado para el número
 de horas promedio de tiempo libre que tiene el profesor de Estadística I
 en un día es de $1.3333$ horas.
 </li>
@@ -935,7 +946,8 @@ distribución marginal $h(y)$, tal que $$\begin{align*}
              &=\frac{1}{21}\left(\frac{256}{4} - \frac{1}{4}\right) \\
              &=\frac{85}{28} \\
              &=3.035714 
-\end{align*}$$ Por tanto se tendrá que el valor esperado para el número
+\end{align*}$$
+Por tanto se tendrá que el valor esperado para el número
 promedio de horas de tiempo libre que tienen los estudiantes que cursan
 Estadística I es de $3.035714$ horas
 </li>
@@ -958,7 +970,8 @@ $f(x,y)$ tal que $$\begin{align*}
              &=\frac{4}{63}\left(\frac{255}{4}\right) \\
              &=\frac{255}{63} \\
              &=4.047619
-\end{align*}$$ Por tanto se tendrá que el valor esperado de $XY$ es de
+\end{align*}$$
+Por tanto se tendrá que el valor esperado de $XY$ es de
 $4.047619$ (Es anotar que solo las esperanzas simples de $X$ y $Y$
 tienen interpretación en el contexto de los datos).
 </li>

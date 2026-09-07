@@ -66,7 +66,8 @@ $$\begin{align*}
          &= \int_{0}^{\infty} x f(x) dx\\
          &= \int_{0}^{\infty} x \frac{1}{\Gamma\left(\frac{\nu}{2}\right)2^{\frac{\nu}{2}}} x^{\frac{\nu}{2} - 1} e^{-\frac{x}{2}} dx\\ 
          &=\frac{1}{\Gamma\left( \frac{\nu}{2} \right)2^{\frac{\nu}{2}}} \int_{0}^{\infty} x^{\frac{\nu}{2}} e^{-\frac{x}{2}} dx
-\end{align*}$$ En donde, al realizar un cambio de variable para
+\end{align*}$$
+En donde, al realizar un cambio de variable para
 facilitar la integral se tiene que $$\begin{align*}
   u=\frac{x}{2} &=>2u =x\\
   du= \frac{1}{2} dx&=> 2du = dx
@@ -198,7 +199,8 @@ $$\begin{align*}
   \frac{\partial\ell(x_i|a)}{\partial a} &= 0 \\     \frac{n}{10-a} &= 0 \\
   n &= 0 (10 - a)\\
   n &= 0
-\end{align*}$$ Encontrando que no hay forma de despejar en este caso el
+\end{align*}$$
+Encontrando que no hay forma de despejar en este caso el
 parámetro $a$ de la derivada de la función de log-verosimilitud, y por
 tanto no es posible encontrar un estimador por el método de máxima
 verosimilitud para el parámetro $a$.

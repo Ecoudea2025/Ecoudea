@@ -425,7 +425,8 @@ $$\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
      &= \frac{(22-1)8^2 + (28-1)6.2^2}{22 + 28 - 2} \\
      &= 49.6225
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}$$
+y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{49.6225} \\
    &= 7.044324
@@ -776,12 +777,13 @@ $$\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
-\end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
+\end{align*}$$
+Al contar el número de éxitos, observamos que tenemos un
 total de $x=4$ éxitos en un total de $n=15$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a $2$
 millones, tal que $$\begin{align*}
-  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667
@@ -871,17 +873,19 @@ $x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
 con el nuevo procedimiento tenemos que $$\begin{align*}
-\hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
+\hat{p}_N &= \frac{\text{\# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$ mientras que, para los equipos que fueron construidos con
+\end{align*}$$
+mientras que, para los equipos que fueron construidos con
 el procedimiento actual tenemos que $$\begin{align*}
-\hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
+\hat{p}_A &= \frac{\text{\# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$ Ahora, dado que el intervalo que nos piden es bilateral,
+\end{align*}$$
+Ahora, dado que el intervalo que nos piden es bilateral,
 y tenemos que los tamaños muestrales para cada población son
 suficientemente grandes, tenfremos que el intervalo de interés es de la
 forma<br><br>

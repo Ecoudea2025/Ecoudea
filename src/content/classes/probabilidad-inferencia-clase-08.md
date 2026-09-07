@@ -88,11 +88,13 @@ $15$ egresados. <br> <br> Entonces para realizar el cálculo empleamos
 la ecuación para el cálculo de la media muestral, tal que
 $$\begin{align*}
   \bar{X}=\sum_{i=1}^n\frac{x_i}{n}
-\end{align*}$$ En donde, si llamamos cada una de las observaciones como
+\end{align*}$$
+En donde, si llamamos cada una de las observaciones como
 $X_1, X_2, \ldots, X_{15}$, tendremos que $$\begin{align*}
   \bar{X} &= \frac{1.79 + 2.93 + 1.22 + \ldots + 3.24}{15}\\
           &= 1.659333
-\end{align*}$$ Por tanto, se tendrá que el promedio muestral obtenido
+\end{align*}$$
+Por tanto, se tendrá que el promedio muestral obtenido
 para el salario de los egresados del programa de ingeniería industrial
 es de $1.659$ millones de pesos.
 </p>
@@ -150,13 +152,15 @@ egresados. <br> <br> Para realizar el cálculo de la varianza de los
 salarios de los egresados, empleamos la ecuación de la varianza
 muestral, tal que $$\begin{align*}
   S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}
-\end{align*}$$ En donde, si cada una de las observaciones hace
+\end{align*}$$
+En donde, si cada una de las observaciones hace
 referencia los valores $X_1, X_2, \ldots, X_{15}$, y el valor de la
 media es igual a $\bar{X}=1.659333$ tendremos que $$\begin{align*}
   S^2 &= \frac{(1.78 - 1.659333)^2 + (2.93 - 1.659333)^2+\ldots+(3.24 - 1.659333)^2}{15-1} \\
       &= \frac{0.01456052 + 1.614595 + \ldots + 2.498508}{14}\\
       &= 0.4501638
-\end{align*}$$ Por tanto, se tendrá que la varianza muestral del salario
+\end{align*}$$
+Por tanto, se tendrá que la varianza muestral del salario
 de los egresados del programa de ingeniería industrial es de
 $0.4501638$.
 </p>
@@ -417,7 +421,8 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -454,7 +459,8 @@ acumulada para el caso continuo, ya presentadas en la
 
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -569,7 +575,8 @@ Sean $X_1$ y $X_2$ dos variables aleatorias normalmente distribuidas
 con media $\mu$ y varianza $\sigma^2$. Y si $Y$ es una combinación
 lineal de $X_1$ y $X_2$, tal que $$\begin{align*}
 Y = X_1 + X_2
-\end{align*}$$ entonces, la media de $Y$ estará dada por
+\end{align*}$$
+entonces, la media de $Y$ estará dada por
 $$\begin{align*}
 \mathbb{E}(Y) = \mu_1 + \mu_2
 \end{align*}$$
@@ -675,7 +682,8 @@ serán variables aleatorias independientes con distribuciones
 chi-cuadrado con $1$ grado de libertad. Entonces, basados en el
 Teorema 3 se obtiene que $$\begin{align*}
 Y = \sum_{i=1}^n Z_i^2 = \sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n
-\end{align*}$$ tendrá una distribución chi-cuadrado con $n$ grados de
+\end{align*}$$
+tendrá una distribución chi-cuadrado con $n$ grados de
 libertad.
 </p>
 </main>
@@ -821,7 +829,8 @@ similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
 $\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
@@ -864,7 +873,8 @@ $$\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} \leq 15.812) - \mathbb{P}(\chi^2_{12} \leq 9.034) \\
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
 $\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
@@ -1091,7 +1101,8 @@ $$\begin{align*}
 \mathbb{P}(0.862 < t_{18} \leq 2.214) &= \mathbb{P}(t_{18} \leq 2.214) - \mathbb{P}(t_{18} \leq 0.862) \\
                                       &= [1 - \mathbb{P}(t_{18} > 2.214)] - [1- \mathbb{P}(t_{18} > 0.862)] \\
                                       &= \mathbb{P}(t_{18} > 0.862) - \mathbb{P}(t_{18} > 2.214)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)$, puede ser calculada mediante
 el empleo de las probabilidades $\mathbb{P}(t_{18} \gt  0.862)$ y
 $\mathbb{P}(t_{18} \gt  2.214)$, las cuales se calculan en la tabla de
@@ -1397,7 +1408,8 @@ $$\begin{align*}
 \mathbb{P}(0.31 < F_{15, 5} \leq 9.6) &= \mathbb{P}(F_{15, 5} \leq 9.6) - \mathbb{P}(F_{15, 5} \leq 0.31) \\
                                        &= [1 - \mathbb{P}(F_{15, 5} > 9.6)] - [1- \mathbb{P}(F_{15, 5} > 0.31)] \\
                                        &= \mathbb{P}(F_{15, 5} > 0.31) - \mathbb{P}(F_{15, 5} > 9.6)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)$, puede ser calculada mediante
 el empleo de las probabilidades $\mathbb{P}(F_{15, 5} \gt  0.31)$ y
 $\mathbb{P}(F_{15, 5} \gt  9.6)$. Para calcular esta probabilidad debemos

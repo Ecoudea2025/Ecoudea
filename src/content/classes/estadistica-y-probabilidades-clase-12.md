@@ -242,7 +242,8 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5} \\
   &= 0.6
-\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
+\end{align*}$$
+siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 
 Ahora, la probabilidad de que se seleccione un estudiante al azar, y
@@ -269,11 +270,13 @@ a $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.24} \\
       &= 0.4898979
-\end{align*}$$ Entonces, como el valor esperado de un proceso Bernoulli
+\end{align*}$$
+Entonces, como el valor esperado de un proceso Bernoulli
 es igual a $p$, esto es $$\begin{align*}
 \mathbb{E}(X) &= p \\
               &= 0.6
-\end{align*}$$ Por tanto, al seleccionar un solo estudiante, se espera
+\end{align*}$$
+Por tanto, al seleccionar un solo estudiante, se espera
 que $0.6$ estudiantes respondan que desean tomar clases virtuales, con
 una desviación estándar de $0.489$.
 </p>
@@ -345,7 +348,8 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5}\\ 
   &= 0.6
-\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
+\end{align*}$$
+siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 </p>
 <ol>
@@ -357,7 +361,8 @@ P(X\leq 3) &= \sum_{x=0}^3 \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1
            &= \left(\begin{array}{c}20\\ 0\end{array}\right)0.6^0(0.4)^{20-0} + \ldots + \left(\begin{array}{c}20\\ 3\end{array}\right)0.6^3(0.4)^{20-3} \\
            &= 0.00000001099512 + 0.0000003298535 + 0.000004700412 + 0.00004230371 \\
            &= 0.00004734497
-\end{align*}$$ Es decir, la probabilidad de que como máximo $3$
+\end{align*}$$
+Es decir, la probabilidad de que como máximo $3$
 estudiantes de los $20$ seleccionados, deseen tomar clases virtuales,
 es del $0.0047\%$.
 </li>
@@ -369,7 +374,8 @@ $$\begin{align*}
 P(6 \leq x < 12) &= \sum_{x=6}^{11} \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 6\end{array}\right)0.6^6(0.4)^{20-6} + \ldots + \left(\begin{array}{c}20\\ 11\end{array}\right)0.6^{11}(0.4)^{20-11} \\
            &= 0.4027898
-\end{align*}$$ Es decir que, la probabilidad de que como mínimo $6$
+\end{align*}$$
+Es decir que, la probabilidad de que como mínimo $6$
 pero menos de $12$ estudiantes deseen tomar clases virtuales de los
 $20$ seleccionados, es del $40.28\%$.
 </li>
@@ -392,12 +398,14 @@ virtuales, tal que $$\begin{align*}
 Var(X) &= np(1-p) \\
        &= 20(0.6)(1-0.6)\\
        & = 4.8
-\end{align*}$$ y con este valor, se procede a calcular la desviación
+\end{align*}$$
+y con este valor, se procede a calcular la desviación
 estándar $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(4.8)} \\
       & = 2.19089
-\end{align*}$$ De lo anterior se tiene que, al realizar la selección
+\end{align*}$$
+De lo anterior se tiene que, al realizar la selección
 aleatoria de $20$ estudiantes, es espera que $12$ estudiantes desean
 tomar clases virtuales, con una desviación estándar de $2.19$
 estudiantes.
@@ -491,7 +499,8 @@ la cual está definida para $$\begin{align*}
 \max\{0, 7-(30)\} &\leq x \leq \min\{7,10\} \\ 
 \max\{0, -23\} &\leq x \leq \min\{7,10\} \\
 0 &\leq x \leq 7 \\
-\end{align*}$$ en donde, al ser la distribución hipergeométrica una
+\end{align*}$$
+en donde, al ser la distribución hipergeométrica una
 distribución discreta, tendremos que el número de repuestos defectuosos
 encontrados en la muestra puede ser de $x=0, 1, 2, \ldots 7$. <br>
 <br> Ahora, al emplear esta función de distribución para calcular la

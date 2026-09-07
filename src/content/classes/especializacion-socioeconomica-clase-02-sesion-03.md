@@ -125,7 +125,8 @@ Como $X$ es la variable aleatoria del número de ambulancias que llegan
 al hospital en una hora, se tendrá que nos preguntan por la probabilidad
 $$\begin{align*}
 \mathbb{P}(X>=4)
-\end{align*}$$ la cual, al ser una variable aleatoria discreta podremos
+\end{align*}$$
+la cual, al ser una variable aleatoria discreta podremos
 calcularla mediante sumatorias, tal que $$\begin{align*}
 \mathbb{P}(X\geq 4) &= 1 - \mathbb{P}(X < 4) \\
                     &= 1 - \sum_{x=0}^{3} p(x) \\
@@ -271,7 +272,8 @@ F(x) = \begin{cases} 0 & x<0 \\
                      0.8712  & 4\leq x<5 \\
                      1       & x\geq5
        \end{cases}
-\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
+\end{align*}$$
+En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
 $0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
 valores mayores o iguales a $1$ pero menores que $2$ está definido
@@ -405,7 +407,8 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}}\\
   &= \frac{2}{5} \\
   &= 0.4
-\end{align*}$$ siendo $p$ la probabilidad de que no se superen las
+\end{align*}$$
+siendo $p$ la probabilidad de que no se superen las
 utilidades en un mes.
 
 Ahora, la probabilidad de que en un mes no se haya superado las
@@ -519,7 +522,8 @@ $$\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}}\\
   &= \frac{2}{5} \\
   &= 0.4
-\end{align*}$$ siendo $p$ la probabilidad de que no se superen las
+\end{align*}$$
+siendo $p$ la probabilidad de que no se superen las
 utilidades en un mes.
 </p>
 <ol>
@@ -532,7 +536,8 @@ P(X\leq 3) &= \sum_{x=0}^3 \left(\begin{array}{c}10\\ x\end{array}\right)0.4^x(1
            &= \left(\begin{array}{c}10\\ 0\end{array}\right)0.4^0(0.6)^{10-0} + \ldots + \left(\begin{array}{c}10\\ 3\end{array}\right)0.4^3(0.6)^{10-3} \\
            &= 0.0060466 + 0.0403108 + 0.1209324 + 0.2149908 \\
            &= 0.3822806
-\end{align*}$$ Es decir, la probabilidad de que como máximo en $3$
+\end{align*}$$
+Es decir, la probabilidad de que como máximo en $3$
 meses de los $10$ seleccionados aleatoriamente, no se superen las
 utilidades esperadas en un mes, es del $38.23\%$.
 </li>
@@ -543,7 +548,8 @@ a las esperadas, la cual está dada por $$\begin{align*}
 P(6 \leq x < 8) &= \sum_{x=6}^{7} \left(\begin{array}{c}10\\ x\end{array}\right)0.4^x(1-0.4)^{10-x} \\
            &= \left(\begin{array}{c}10\\ 6\end{array}\right)0.4^6(0.6)^{10-6} + \ldots + \left(\begin{array}{c}10\\ 7\end{array}\right)0.4^{7}(0.6)^{10-7} \\
            &= 0.1539441
-\end{align*}$$ Es decir que, la probabilidad de que en como mínimo $6$
+\end{align*}$$
+Es decir que, la probabilidad de que en como mínimo $6$
 pero menos de $8$ meses de los $10$ seleccionados aleatoriamente, no
 se superen las utilidades esperadas en un mes, es del $15.39\%$.
 </li>
@@ -564,12 +570,14 @@ binomial se tendrá que $$\begin{align*}
 Var(X) &= np(1-p) \\
        &= 10(0.4)(1-0.4)\\
 Var(X) & = 2.4
-\end{align*}$$ y con este valor, se realiza el cálculo de la desviación
+\end{align*}$$
+y con este valor, se realiza el cálculo de la desviación
 estándar $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(2.4)} \\
 Sd(X) & = 1.549193
-\end{align*}$$ De lo anterior se tiene que, al realizar la selección
+\end{align*}$$
+De lo anterior se tiene que, al realizar la selección
 aleatoria de $10$ meses, se espera que en promedio en $4$ meses no
 se superen las utilidades esperadas, con una desviación estándar de
 $1.549193$ meses.
@@ -664,7 +672,8 @@ la cual está definida para $$\begin{align*}
 \max\{0, 10-(6)\} &\leq x \leq \min\{10,9\} \\ 
 \max\{0, 4\} &\leq x \leq \min\{10,9\} \\
 4 &\leq x \leq 9 \\
-\end{align*}$$ en donde, al ser la distribución hipergeométrica una
+\end{align*}$$
+en donde, al ser la distribución hipergeométrica una
 distribución discreta, tendremos que el número de miembros a favor del
 proyecto puede ser de $x=4, 5, \ldots 9$. <br> <br> Ahora, al emplear
 esta función de distribución para calcular la probabilidad de interés
@@ -769,8 +778,8 @@ $$\begin{align*}p(x) = \left(\begin{array}{c}x-1\\ k-1\end{array}\right)p^k(1-p)
 
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Binomiales Negativas
-mediante la función `NEGBINOM.DIST()` con `$\text{núm_fracasos} = x-k$`
-y `$\text{núm_éxitos} = k$`.
+mediante la función `NEGBINOM.DIST()` con `$\text{núm\_\_fracasos} = x-k$`
+y `$\text{núm\_\_éxitos} = k$`.
 
 #### Media y Varianza Binomial Negativa
 
@@ -826,14 +835,15 @@ obtener $1$ éxito, estamos en una situación asociada a una
 distribución Binomial Negativa, la cual tiene la estructura
 $$\begin{align*}
 p(x) = \left(\begin{array}{c}x-1\\ k-1\end{array}\right)p^k(1-p)^{x-k} \quad \quad x=k, k+1, \ldots
-\end{align*}$$ En donde se sabe por experiencia que $4$ de cada $5$
+\end{align*}$$
+En donde se sabe por experiencia que $4$ de cada $5$
 edificios construidos por dicha constructora cumple los estándares de
 calidad, y por tanto, como nuestro éxito está asociado a que no se
 cumplan los estándares de calidad, se tendrá que $1$ de cada $5$
 edificios no cumple dichos estándares, es decir que al aplicar la
 definición de frecuencia relativa, tendremos que la proporción $p$ de
 interés, estará dada por $$\begin{align*}
-p &= \frac{\text{# éxitos}}{\text{total Ensayos}} \\
+p &= \frac{\text{\# éxitos}}{\text{total Ensayos}} \\
   &= \frac{1}{5} \\
   &= 0.20
 \end{align*}$$
@@ -875,7 +885,8 @@ caso de una distribución Geométrica, tal que $$\begin{align*}
 Var(X) &= k\frac{(1-p)}{p^2} \\
        &= 2\frac{1-0.2}{0.2^2} \\
        &= 40
-\end{align*}$$ y con este valor se realiza el cálculo de la desviación
+\end{align*}$$
+y con este valor se realiza el cálculo de la desviación
 estándar, mediante la ecuación $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{40} \\
@@ -1004,7 +1015,8 @@ P(X\leq 1) &= \sum_{x=0}^1 \frac{e^{-1.5}1.5^x}{x!} \\
            &= \frac{e^{-1.5}1.5^0}{0!} + \frac{e^{-1.5}1.5^1}{1!} \\\\
            &= 0.2231302 + 0.3346952 \\
            &= 0.5578254
-\end{align*}$$ Es decir, la probabilidad de que no aparezca más de un
+\end{align*}$$
+Es decir, la probabilidad de que no aparezca más de un
 hueco en la carretera en el tramo de dos kilómetros es del $55.78\%$.
 </li>
 <li>
@@ -1017,16 +1029,19 @@ nuestro parámetro $\lambda$ mediante el empleo de una regla de $3$,
 de la siguiente manera. $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  1_{\text{km}} &- \lambda
-\end{align*}$$ esto es, $$\begin{align*}
+\end{align*}$$
+esto es, $$\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 1_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 0.75_{\text{huecos}}
-\end{align*}$$ Es decir, que en un tramo de un kilómetro ocurren
+\end{align*}$$
+Es decir, que en un tramo de un kilómetro ocurren
 $0.75$ huecos en promedio. Conocido el valor del parámetro $\lambda$
 para el tramo de un kilómetro, se procede a calcular la probabilidad de
 que aparezca más de un hueco en el tramo de un kilómetro, tal que
 $$\begin{align*}
  \mathbb{P}(X>1) = \sum_{x=2}^\infty \frac{e^{-0.75}0.75^x}{x!} \\
-\end{align*}$$ En donde se aprecia que es una suma infinita, y en
+\end{align*}$$
+En donde se aprecia que es una suma infinita, y en
 consecuencia se procede a trabajar tal probabilidad por su complemento.
 $$\begin{align*}
  \mathbb{P}(X>1) &= 1 - \mathbb{P}(X\leq1)  \\
@@ -1051,7 +1066,8 @@ necesario recalcular el valor de $\lambda$, ta que
 $$\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  5_{\text{km}} &- \lambda
-\end{align*}$$ esto es, $$\begin{align*}
+\end{align*}$$
+esto es, $$\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 5_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 3.75_{\text{huecos}}
 \end{align*}$$
@@ -1068,12 +1084,14 @@ calcular la desviación estándar, del número de huecos que hay en un
 tramo de $5$ kilómetros $$\begin{align*}
 Var(X) &= \lambda \\
        &= 3.75\\
-\end{align*}$$ y con este valor, se procede a calcular la desviación
+\end{align*}$$
+y con este valor, se procede a calcular la desviación
 estándar $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(3.75)} \\
 Sd(X) & = 1.936492
-\end{align*}$$ De lo anterior se tiene que, en el tramo de $5$
+\end{align*}$$
+De lo anterior se tiene que, en el tramo de $5$
 kilómetros de carretera, se espera encontrar $3.75$ huecos, con una
 desviación estándar de $1.93$ huecos.
 </li>
@@ -1108,7 +1126,8 @@ Suponga que las ventas realizada por una compañía gaseosas, en millones
 de pesos por mes, es una variable aleatoria continua con función de
 probabilidad dada por $$\begin{align*}
 f(x)=\frac{1}{12}e^{\frac{-x}{12}} \quad \quad x>0
-\end{align*}$$ siendo $X$ una variable aleatoria que representa las
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa las
 ventas realizadas en un mes en millones de pesos. A partir de dicha
 función
 </p>
@@ -1137,7 +1156,8 @@ cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1) &= \frac{1}{12}e^{\frac{-0.1}{12}}=0.08264177 \\
 f(10) &= \frac{1}{12}e^{\frac{-10}{12}}=0.03621652 \\
 f(300) &= \frac{1}{12}e^{\frac{-300}{12}}=0.000000000001157329
-\end{align*}$$ Evidenciando que para todo $x\gt 0$, $f(x)\geq0$.<br>
+\end{align*}$$
+Evidenciando que para todo $x\gt 0$, $f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
 probabilidad está bien definida, es necesario observar si al integrar
@@ -1151,7 +1171,8 @@ $$\begin{align*}
  & = \left[-e^{\frac{-\infty}{12}} + e^{\frac{-0}{12}}\right] \\
  & = -0 + 1 \\
  & = 1
-\end{align*}$$ Entonces, como la integral da exactamente $1$, se
+\end{align*}$$
+Entonces, como la integral da exactamente $1$, se
 tendrá que la función de densidad está bien definida.
 </li>
 <li>
@@ -1214,7 +1235,8 @@ Suponga que las ventas realizada por una compañía gaseosas, en millones
 de pesos por mes, es una variable aleatoria continua con función de
 probabilidad dada por $$\begin{align*}
 f(x)=\frac{1}{12}e^{\frac{-x}{12}} \quad \quad x>0
-\end{align*}$$ siendo $X$ una variable aleatoria que representa las
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa las
 ventas realizadas en un mes en millones de pesos. A partir de dicha
 función
 </p>
@@ -1426,7 +1448,8 @@ Var(X) &= \frac{(4-0)^2}{12} \\
        &= \frac{4^2}{12} \\
        &= \frac{16}{12} \\
        &= 1.33333
-\end{align*}$$ En donde, dada la relación de la varianza con la
+\end{align*}$$
+En donde, dada la relación de la varianza con la
 desviación estándar, tendremos que $$\begin{align*}
 Sd(X) &= \sqrt{Var(X)}\\
       &= \sqrt{1.33333}\\
@@ -1487,7 +1510,8 @@ Basados en los parámetros de forma y escala, estamos interesados en
 calcular la probabilidad de que el tiempo de transferencia de datos
 exceda los $50_{ms}$, es decir $$\begin{align*}
   \mathbb{P}(X>50) 
-\end{align*}$$ la cual, al emplear la distribución
+\end{align*}$$
+la cual, al emplear la distribución
 $Gamma(\alpha=3, \beta=37/3)$ se tendrá que $$\begin{align*}
   \mathbb{P}(X>50) &= \int_{50}^{\infty} \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\alpha-1}e^{-{\frac{x}{\beta}}} dx \\
                   &= \int_{50}^{\infty} \frac{1}{\Gamma(3)(37/3)^3} x^{3-1}e^{-{\frac{x}{(37/3)}}} dx \\
@@ -1508,14 +1532,16 @@ $$\begin{align*}
                    &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)x}{3^2} e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                    &= \frac{3^3}{\Gamma(3)(37)^3} \left[-\frac{37}{3}x^2 e^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty -\frac{(2)(37^2)}{3^2} xe^{-{\frac{3x}{37}}} \Bigg|_{50}^\infty - \frac{(2)(37^3)}{3^3}   e^{-{\frac{3x}{37}}}\Bigg|_{50}^\infty \right] \\
                    &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty 
-\end{align*}$$ Por tanto al evaluar la variable $x$ en los límites de
+\end{align*}$$
+Por tanto al evaluar la variable $x$ en los límites de
 interés tendremos que $$\begin{align*}
 \mathbb{P}(X>50) &= \left(-\frac{3^2}{\Gamma(3)(37)^2}x^2 e^{-{\frac{3x}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} xe^{-{\frac{3x}{37}}} - \frac{(2)}{\Gamma(3)}   e^{-{\frac{3x}{37}}}\right)\Bigg|_{50}^\infty \\
                  &= \left(0 + 0 + 0 \right) - \left(-\frac{3^2}{\Gamma(3)(37)^2}(50^2) e^{-{\frac{3(50)}{37}}} - \frac{(2)(3)}{\Gamma(3)(37)} (50)e^{-{\frac{3(50)}{37}}} - \frac{(2)}{\Gamma(3)} e^{-{\frac{3(50)}{37}}}\right) \\
                  &= \frac{3^2}{\Gamma(3)(37)^2}(50^2) e^{-{\frac{3(50)}{37}}} + \frac{(2)(3)}{\Gamma(3)(37)} (50)e^{-{\frac{3(50)}{37}}} + \frac{(2)}{\Gamma(3)} e^{-{\frac{3(50)}{37}}} \\
                  &= 0.14259 + 0.07035 + 0.01735 \\
                  &= 0.23029
-\end{align*}$$ Es decir, que la probabilidad de que el tiempo de
+\end{align*}$$
+Es decir, que la probabilidad de que el tiempo de
 transferencia de datos exceda los $50_{ms}$, es del $23.029\%$.
 </p>
 </main>
@@ -1578,13 +1604,16 @@ del parámetro de la distribución Exponencial, en donde, nos dicen en el
 enunciado, que el tiempo promedio entre llegadas sucesivas es de $0.8$
 minutos, tal que $$\begin{align*}
 \mathbb{E}(X) &= 0.8
-\end{align*}$$ Entonces como para la distribución Exponencial se tiene
+\end{align*}$$
+Entonces como para la distribución Exponencial se tiene
 que el valor de la esperanza matemática está dada por $$\begin{align*}
 \mathbb{E}(X) &= \beta
-\end{align*}$$ se tendrá que el parámetro $\beta$ de la distribución
+\end{align*}$$
+se tendrá que el parámetro $\beta$ de la distribución
 Exponencial será igual a $$\begin{align*}
 \beta &= 0.8
-\end{align*}$$ Ahora, con el valor de este parámetro podemos calcular la
+\end{align*}$$
+Ahora, con el valor de este parámetro podemos calcular la
 probabilidad de interés empleando la función de distribución acumulada
 Exponencial, tal que $$\begin{align*}
 \mathbb{P}(X>4) &= 1 - \mathbb{P}(X\leq 4) \\
@@ -1593,7 +1622,8 @@ Exponencial, tal que $$\begin{align*}
                 &= 1 - \left(1 - e^{-{\frac{4}{0.8}}}\right) \\
                 &= e^{-{\frac{4}{3}}} \\
                 &= 0.006737947
-\end{align*}$$ Es decir que la probabilidad de que la próxima persona en
+\end{align*}$$
+Es decir que la probabilidad de que la próxima persona en
 llegar cajero de Bancolombia tarde más de $4$ minutos es de
 $0.67\%$.
 </p>
@@ -1660,9 +1690,11 @@ interesados en calcular la probabilidad de que el aire acondicionado
 falle después de $3$, es decir, que la vida útil supere los $3$
 años. Esto es $$\begin{align*}
 \mathbb{P}(X>3) = \int_3^\infty \frac{2}{8}\left(\frac{x}{8}\right)^{2 - 1}e^{-\left(\frac{x}{8}\right)^2} dx
-\end{align*}$$ Al hacer cambio de variable tenemos que $$\begin{align*}
+\end{align*}$$
+Al hacer cambio de variable tenemos que $$\begin{align*}
 u= \left(\frac{x}{8}\right)^2 \quad \quad du = \frac{2}{8}\left(\frac{x}{8}\right)^{2-1} dx
-\end{align*}$$ Entonces, al evaluar los límites de la integral debido al
+\end{align*}$$
+Entonces, al evaluar los límites de la integral debido al
 cambio de variable, se tiene que cuando $x=3$, el valor de
 $u=(3/8)^2$, y cuando $x=\infty$, el valor de
 $u=(\infty/8)^2 = \infty$. Por tanto, al hacer el cambio de variable y
@@ -1672,7 +1704,8 @@ cambiar los límites de integración tenemos que $$\begin{align*}
                    &=  -e^{-\infty} + e^{-\left(\frac{3}{8}\right)^2} \\
                    &=  0 + 0.8688151 \\
                    &=  0.8688151
-\end{align*}$$ Es decir, se tendrá una probabilidad del $86.88\%$ de
+\end{align*}$$
+Es decir, se tendrá una probabilidad del $86.88\%$ de
 que el aire acondicionado falle después de los $3$ años de uso.
 </p>
 </main>
@@ -1773,7 +1806,8 @@ En este caso estamos interesados en que la batería de una celular dure
 al menos $4$ años, es decir, queremos calcular la siguiente
 probabilidad. $$\begin{align*}
 \mathbb{P}(X \geq 4)
-\end{align*}$$ Pero en este caso tenemos que la distribución de los
+\end{align*}$$
+Pero en este caso tenemos que la distribución de los
 datos no se distribuye $N(0,1)$, si no que se distribuye
 $N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
 con el fin de llevar la distribución $N(5, 1.2)$ a una normal
@@ -1781,12 +1815,14 @@ estándar, tal que $$\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+\end{align*}$$
+En donde $Z\sim N(0,1)$. Ahora, como la estructura de
 la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
-\end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
+\end{align*}$$
+y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}(Z \lt  -0.83)$ usando la función `DISTR.NORM.ESTAND.N()` de
 <tt>Excel</tt>, donde se aprecia que
 

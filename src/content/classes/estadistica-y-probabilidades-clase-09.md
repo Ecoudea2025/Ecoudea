@@ -38,7 +38,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -67,7 +68,8 @@ cuales vamos a evaluar en la función de densidad. $$\begin{align*}
 f(0.1)=(0.1)^2(1-0.1)^2=0.0081 \\
 f(0.4)=(0.4)^2(1-0.4)^2=0.0576 \\
 f(0.7)=(0.7)^2(1-0.7)^2=0.0441
-\end{align*}$$ La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
+\end{align*}$$
+La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
 $f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
@@ -82,7 +84,8 @@ $$\begin{align*}
  & = \left(\frac{x^3}{3} - \frac{2x^4}{4} + \frac{x^5}{5} \right)\Bigg|^1_0 \\
  & = \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) - \left(\frac{0^3}{3} - \frac{0^4}{2} + \frac{0^5}{5} \right) \\
  & = \frac{1}{30}
-\end{align*}$$ Entonces, como la integral no da exactamente $1$, se
+\end{align*}$$
+Entonces, como la integral no da exactamente $1$, se
 tendrá que multiplicar dicha función de densidad por una constante $k$
 que haga que su resultado sea $1$, es decir, si multiplicamos la
 función por $k=30$, se tendrá como resultado que la integral será
@@ -91,7 +94,8 @@ igual a $1$, ya que, $$\begin{align*}
  & = 30 \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) \\
  & = \frac{30}{30} \\
  & = 1
-\end{align*}$$ Y en consecuencia, se tendrá que la nueva función de
+\end{align*}$$
+Y en consecuencia, se tendrá que la nueva función de
 densidad de probabilidad está bien definida. $$\begin{align*}
 f(x) = 30x^2(1-x)^2 \quad \quad 0<x<1
 \end{align*}$$
@@ -103,13 +107,15 @@ Dado que la función de densidad está en horas, será necesario pasar los
 minutos a horas, en donde, al aplicar una regla de tres para cada límite
 de la integral que nos piden se tendrá que $$\begin{align*}
 60_\text{min}  &- 1_\text{hora} & \quad \quad & 60_\text{min} - 1_\text{hora}\\30_\text{min} &- a & \quad \quad & 50_\text{min} - b
-\end{align*}$$ Entonces, al realizar la operación encontramos que los
+\end{align*}$$
+Entonces, al realizar la operación encontramos que los
 límites de la integral serán
 $$\begin{align*}a&=\frac{30_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.5_\text{horas} \\
 b&=\frac{50_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.8333_\text{horas}
-\end{align*}$$ Ahora, al realizar la integral tendremos que
+\end{align*}$$
+Ahora, al realizar la integral tendremos que
 
 $$\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333) & = \int_{0.5}^{0.8333} 30 x^2(1-x)^2\; dx \\
@@ -167,7 +173,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -247,7 +254,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule el valor esperado en que tarda la serie financiera en cumplir un
 ciclo.
@@ -269,7 +277,8 @@ ciclo, tal que $$\begin{align*}
              &= 30 \left[\left(\frac{1^4}{4} - 2\frac{1^5}{5} + \frac{1^6}{6}\right) - \left(\frac{0^4}{4} - 2\frac{0^5}{5} + \frac{0^6}{6}\right)\right] \\
              &= 30 \left(\frac{1}{4} - \frac{2}{5} + \frac{1}{6}\right) \\
              &= 0.5
-\end{align*}$$ Y por tanto, se tendrá que el tiempo esperado que tarda
+\end{align*}$$
+Y por tanto, se tendrá que el tiempo esperado que tarda
 una serie financiera en cumplir un ciclo será $0.5$ horas, la cual al
 pasarla a minutos mediante la regla de tres
 
@@ -315,7 +324,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 Calcule
 </p>
@@ -442,7 +452,8 @@ Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
 probabilidad dada por $$\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}$$
+siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo.
 </p>
 <ol>

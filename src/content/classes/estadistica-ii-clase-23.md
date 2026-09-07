@@ -115,11 +115,13 @@ $15$ egresados. <br> <br> Entonces para realizar el cálculo empleamos
 la ecuación para el cálculo de la media muestral, tal que
 $$\begin{align*}
   \bar{X}=\sum_{i=1}^n\frac{x_i}{n}
-\end{align*}$$ En donde, si llamamos cada una de las observaciones como
+\end{align*}$$
+En donde, si llamamos cada una de las observaciones como
 $X_1, X_2, \ldots, X_{15}$, tendremos que $$\begin{align*}
   \bar{X} &= \frac{1.79 + 2.93 + 1.22 + \ldots + 3.24}{15}\\
           &= 1.659333
-\end{align*}$$ Por tanto, se tendrá que el promedio muestral obtenido
+\end{align*}$$
+Por tanto, se tendrá que el promedio muestral obtenido
 para el salario de los egresados del programa de ingeniería industrial
 es de $1.659$ millones de pesos.
 </p>
@@ -177,13 +179,15 @@ egresados. <br> <br> Para realizar el cálculo de la varianza de los
 salarios de los egresados, empleamos la ecuación de la varianza
 muestral, tal que $$\begin{align*}
   S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}
-\end{align*}$$ En donde, si cada una de las observaciones hace
+\end{align*}$$
+En donde, si cada una de las observaciones hace
 referencia los valores $X_1, X_2, \ldots, X_{15}$, y el valor de la
 media es igual a $\bar{X}=1.659333$ tendremos que $$\begin{align*}
   S^2 &= \frac{(1.78 - 1.659333)^2 + (2.93 - 1.659333)^2+\ldots+(3.24 - 1.659333)^2}{15-1} \\
       &= \frac{0.01456052 + 1.614595 + \ldots + 2.498508}{14}\\
       &= 0.4501638
-\end{align*}$$ Por tanto, se tendrá que la varianza muestral del salario
+\end{align*}$$
+Por tanto, se tendrá que la varianza muestral del salario
 de los egresados del programa de ingeniería industrial es de
 $0.4501638$.
 </p>
@@ -366,7 +370,8 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -404,7 +409,8 @@ forma
 
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -507,7 +513,8 @@ En este caso, estamos interesados en calcular la probabilidad de que la
 media poblacional del salario de los egresados, sea como máximo de $2$
 millones de pesos, esto es $$\begin{align*}
 \mathbb{P}(\mu\leq 2)
-\end{align*}$$ Ahora, dado que para encontrar la probabilidad asociada a
+\end{align*}$$
+Ahora, dado que para encontrar la probabilidad asociada a
 la media poblacional, requeriríamos conocer la distribución de
 probabilidad de $\mu$, y ésta, no es una distribución conocida,
 entonces podemos emplear la distribución muestral de los salarios, la

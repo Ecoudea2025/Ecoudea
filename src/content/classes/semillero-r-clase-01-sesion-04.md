@@ -90,7 +90,8 @@ Función <tt>apply</tt>
 <p>
 Construya una matríz de la forma $$\begin{align*}
 M = \begin{bmatrix}5 & 12 & 14 \\13 & 6 & 3 \\8 & 9 & 12 \\15 & 12 & 11 \end{bmatrix}
-\end{align*}$$ Y con ésta, encuentre el número máximo y número mínimo
+\end{align*}$$
+Y con ésta, encuentre el número máximo y número mínimo
 por cada fila y por cada columna.
 </p>
 <section class="language-r highlighter-rouge">

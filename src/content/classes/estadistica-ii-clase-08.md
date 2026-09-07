@@ -466,7 +466,8 @@ podemos obtener mediante la ecuación $$\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}$$
+y por tanto $$\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
@@ -674,7 +675,8 @@ Solución
 El juego de hipótesis en esta dado por $$\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$ debido a que se quiere probar si hay o no diferencias
+\end{align*}$$
+debido a que se quiere probar si hay o no diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera. Adicionalmente, debido a que estamos en una situación en la
 cual sabemos que las tensiones de corte se distribuyen normalmente con
@@ -870,7 +872,7 @@ $x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
 muestral de egresados que poseen salarios superiores a $1900$
 millones, tal que $$\begin{align*}
-  \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
+  \hat{p} &= \frac{\text{\# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25

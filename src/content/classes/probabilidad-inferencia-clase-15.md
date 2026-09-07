@@ -64,7 +64,8 @@ el dado, el número $4$ puede caer en el primer lanzamiento, o en el
 segundo, o en el tercero, etc, etc, y por tanto el espacio muestral
 estará dado por $$\begin{align*}
 S:\{E, FE, FFE, FFFE, \ldots\}
-\end{align*}$$ y en consecuencia, podemos definir la <strong>variable
+\end{align*}$$
+y en consecuencia, podemos definir la <strong>variable
 aleatoria discreta $X$ </strong> con los números $1$, $2$, $3$,
 $\ldots$, para el número de lanzamientos necesarios hasta obtener un
 $4$. Es decir, la variable aleatoria tendrá dominio en
@@ -87,7 +88,8 @@ muestral con dos puntos situaciones, $D$ si el artículo está
 defectuoso, y $N$ si el artículo no está defectuoso, tal que
 $$\begin{align*}
 S:\{D,N\}
-\end{align*}$$ Entonces, como solo pueden haber dos posibilidades,
+\end{align*}$$
+Entonces, como solo pueden haber dos posibilidades,
 defectuoso y no defectuoso, podemos definir una variable aleatoria
 Bernoulli $Z$, la cual se definirá como $$\begin{align*}
 Z = \begin{cases}
@@ -161,7 +163,8 @@ niñas que hay en la familia, se tendrá entonces que a partir del espacio
 muestral $S$ se puede contar el número de éxitos que hay en cada
 situación $$\begin{align*}
 S = \{\underset{0}{HHH},\;\underset{1}{HHM},\;\underset{1}{HMH},\;\underset{1}{MHH},\;\underset{2}{HMM},\;\underset{2}{MHM},\;\underset{2}{MMH},\;\underset{3}{MMM}\}
-\end{align*}$$ Evidenciando, que podemos asignar los valores $0,$
+\end{align*}$$
+Evidenciando, que podemos asignar los valores $0,$
 $1,$ $2$ y $3$ a la variable aleatoria $X$.
 </li>
 <li>
@@ -182,7 +185,8 @@ la definición de
 relativa</a>, se tendrá que la probabilidad de que $X=0$, es
 $$\begin{align*}
 \mathbb{P}(X=0) = \frac{1}{8}
-\end{align*}$$ Procedimiento similar se aplica para $X=1$, $X=2$ y
+\end{align*}$$
+Procedimiento similar se aplica para $X=1$, $X=2$ y
 $X=3$, obteniendo como resultado la siguiente tabla de probabilidades
 
 <table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
@@ -408,7 +412,8 @@ F(x) = \begin{cases} 0 & x<0 \\
                      \frac{7}{8}  & 2\leq x<3 \\
                      \frac{8}{8}  & x\geq 3
        \end{cases}
-\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
+\end{align*}$$
+En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
 $0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
 valores mayores o iguales a $1$ pero menores que $2$ está definido
@@ -657,7 +662,8 @@ $$\begin{align*}
              &=\frac{9}{8}+\frac{18}{8}+\frac{9}{8} \\
              &=\frac{36}{8} \\
              &=4.5
-\end{align*}$$ Resultado similar, puede obtenerse mediante la propiedad
+\end{align*}$$
+Resultado similar, puede obtenerse mediante la propiedad
 $\mathbb{E}(aX)=a\mathbb{E}(X)$, en donde ya sabemos que
 $\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 

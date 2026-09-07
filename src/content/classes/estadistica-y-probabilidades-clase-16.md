@@ -236,7 +236,8 @@ redonda. <br>
 Dejando a uno de los grupos en un punto fijo, el profesor tendrá un
 total de $$\begin{align*}
 (5-1)! = 24 \text{ formas}
-\end{align*}$$ de sentar en un mesa redonda a los $5$ grupos. Ahora,
+\end{align*}$$
+de sentar en un mesa redonda a los $5$ grupos. Ahora,
 si tenemos en cuenta la restricción anteriormente calculada, entonces se
 tendrá que el profesor podrá sentar a los $6$ estudiantes en una mesa
 redonda, con Luisa y Camila juntas de $$\begin{align*}

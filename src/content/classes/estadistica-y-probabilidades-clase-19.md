@@ -1495,7 +1495,8 @@ tal que $$\begin{align*}
   S^2 &= \frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2} \\
       &= \frac{1}{28-1}\left[(1142 - 1359.5)^2 + \ldots + (1220 - 1359.5) ^2\right] \\
       &= 39226.6296296
-\end{align*}$$ Es de anotar, que la interpretación de la varianza no
+\end{align*}$$
+Es de anotar, que la interpretación de la varianza no
 tiene mucho sentido, debido a que la unidad de medición estará elevada
 al cuadrado, así que en general, los valores calculados se usan para
 realizar el cálculo de la desviación estándar.
@@ -1610,7 +1611,8 @@ que $$\begin{align*}
   CV &= \frac{S}{|\bar{X}|} \\
      &= \frac{198.0571373}{|1359.5|} \times 100\% \\
      &= 14.5683808 \% 
-\end{align*}$$ De lo anterior, se aprecia que la variación porcentual
+\end{align*}$$
+De lo anterior, se aprecia que la variación porcentual
 del número de automóviles en un día no es muy alto respecto a su media
 ya que el porcentaje de variación asciende solo hasta el
 $14.5683808 \%$ y por tanto se tendrá que los datos no se encuentran
@@ -1809,7 +1811,8 @@ coeficiente de asimetría estará dado por $$\begin{align*}
   \gamma_{1} &= \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3}\\
              &= \frac{28}{(27)(26)}\left[\frac{(1142 - 1359.5)^3 + \ldots + (1588 - 1359.5)^3}{198.0571373^3}\right] \\
              &= -0.0106128
-\end{align*}$$ De lo anterior se observa que el coeficiente de asimetría
+\end{align*}$$
+De lo anterior se observa que el coeficiente de asimetría
 es negativa pero cercana a $0$, lo cual significa que el número de
 vehículos que transita por la avenida Guayabal en un día es
 aproximadamente simétrica con un leve sesgo hacia la izquierda, es
@@ -1874,7 +1877,8 @@ la avenida Guayabal en un día, dando como resultado $$\begin{align*}
   \gamma_{2} &= \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)}\\
              &= \frac{28(29)}{27}(26)(25)\left[\frac{(1142 - 1359.5)^4 + \ldots + (1142 - 1359.5)^4}{198.0571373^4}\right] - \frac{3(27)^2}{(26)(25)} \\
              &= -1.1414707
-\end{align*}$$ A partir del valor calculado, se observa que el
+\end{align*}$$
+A partir del valor calculado, se observa que el
 coeficiente de exceso de curtosis es menor que $0$, y por tanto, se
 puede concluir que el número de automóviles que transitan por la avenida
 Guayabal en un día posee un comportamiento platicúrtico, es decir que el

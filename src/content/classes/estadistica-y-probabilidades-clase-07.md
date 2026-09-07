@@ -118,7 +118,8 @@ similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
 $\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
@@ -161,7 +162,8 @@ $$\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} \leq 15.812) - \mathbb{P}(\chi^2_{12} \leq 9.034) \\
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
 $\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
@@ -296,7 +298,8 @@ y finalmente buscando cada una de las probabilidades individuales en el
 software, en donde la probabilidad exacta de $\mathbb{P}(X \lt  15)$ es
 igual a $$\begin{align*}
   \mathbb{P}(X < 15) = 0.2235924
-\end{align*}$$ mientras que la probabilidad exacta de
+\end{align*}$$
+mientras que la probabilidad exacta de
 $\mathbb{P}(X \geq 10)$ es igual a $$\begin{align*}
   \mathbb{P}(X < 10) = 0.03182806
 \end{align*}$$
@@ -615,7 +618,8 @@ obtener una estructura similar a la propuesta por la tabla, tal que
 
 $$\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}$$
+En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -652,7 +656,8 @@ acumulada para el caso continuo, ya presentadas en la
 
 $$\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}$$
+obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -743,7 +748,8 @@ En este caso estamos interesados en que la batería de una celular dure
 al menos $4$ años, es decir, queremos calcular la siguiente
 probabilidad. $$\begin{align*}
 \mathbb{P}(X \geq 4)
-\end{align*}$$ Pero en este caso tenemos que la distribución de los
+\end{align*}$$
+Pero en este caso tenemos que la distribución de los
 datos no se distribuye $N(0,1)$, si no que se distribuye
 $N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
 con el fin de llevar la distribución $N(5, 1.2)$ a una normal
@@ -751,12 +757,14 @@ estándar, tal que $$\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+\end{align*}$$
+En donde $Z\sim N(0,1)$. Ahora, como la estructura de
 la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
 probabilidad, tal que $$\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
-\end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
+\end{align*}$$
+y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}(Z \lt  -0.83)$ en la tabla de la distribución normal
 estándar, de la siguiente manera
 
@@ -894,7 +902,8 @@ de concentración de contaminación es de $$\begin{align*}
 \mathbb{E}(X) &= e^{\mu+\frac{\sigma^2}{2}} \\
               &= e^{5+\frac{2.8^2}{2}} \\
               &= 7480.089
-\end{align*}$$ la varianza será igual a $$\begin{align*}
+\end{align*}$$
+la varianza será igual a $$\begin{align*}
 Var(X) &= e^{2\mu+\sigma^2} (e^{\sigma^2}  - 1) \\
        &= e^{2(5)+2.8^2} (e^{2.8^2}  - 1) \\
        &= 55951735 (2540.205  - 1) \\

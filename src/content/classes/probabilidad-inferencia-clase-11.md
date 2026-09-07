@@ -75,9 +75,11 @@ En este primer punto, nos encontramos interesados en calcular la
 probabilidad de que el aire acondicionado falle después de $3$, es
 decir, que la vida útil supere los $3$ años. Esto es $$\begin{align*}
 \mathbb{P}(X>3) = \int_3^\infty \frac{2}{8}\left(\frac{x}{8}\right)^{2 - 1}e^{-\left(\frac{x}{8}\right)^2} dx
-\end{align*}$$ Al hacer cambio de variable tenemos que $$\begin{align*}
+\end{align*}$$
+Al hacer cambio de variable tenemos que $$\begin{align*}
 u= \left(\frac{x}{8}\right)^2 \quad \quad du = \frac{2}{8}\left(\frac{x}{8}\right)^{2-1} dx
-\end{align*}$$ Entonces, al evaluar los límites de la integral debido al
+\end{align*}$$
+Entonces, al evaluar los límites de la integral debido al
 cambio de variable, se tiene que cuando $x=3$, el valor de
 $u=(3/8)^2$, y cuando $x=\infty$, el valor de
 $u=(\infty/8)^2 = \infty$. Por tanto, al hacer el cambio de variable y
@@ -87,7 +89,8 @@ cambiar los límites de integración tenemos que $$\begin{align*}
                    &=  -e^{-\infty} + e^{-\left(\frac{3}{8}\right)^2} \\
                    &=  0 + 0.8688151 \\
                    &=  0.8688151
-\end{align*}$$ Es decir, se tendrá una probabilidad del $86.88\%$ de
+\end{align*}$$
+Es decir, se tendrá una probabilidad del $86.88\%$ de
 que el aire acondicionado falle después de los $3$ años de uso.
 </li>
 <li>
@@ -96,10 +99,12 @@ probabilidad de que la vida útil del aire acondicionado se encuentre
 entre $6$ y $9$ años. Es decir, se desea calcular la siguiente
 probabilidad $$\begin{align*}
 \mathbb{P}(6<X<9) = \int_{6}^9 \frac{2}{8}\left(\frac{x}{8}\right)^{2 - 1}e^{-\left(\frac{x}{8}\right)^2} dx
-\end{align*}$$ Al aplicar el cambio de variable usado en el punto
+\end{align*}$$
+Al aplicar el cambio de variable usado en el punto
 anterior se tiene que $$\begin{align*}
 u= \left(\frac{x}{8}\right)^2 \quad \quad du = \frac{2}{8}\left(\frac{x}{8}\right)^{2-1} dx
-\end{align*}$$ en donde, al evaluar el límite inferior y superior de la
+\end{align*}$$
+en donde, al evaluar el límite inferior y superior de la
 integrar en $u$, se tendrá que cuando $x=6$, $u=(6/8)^2$, mientras
 que, cuando $x=9$, $u=(9/8)^2$, obteniendo con ello, la siguiente
 expresión $$\begin{align*}
@@ -108,7 +113,8 @@ expresión $$\begin{align*}
                     &=  -e^{-\left(\frac{9}{8}\right)^2} + e^{-\left(\frac{6}{8}\right)^2} \\
                     &=  -0.282063 + 0.5697828 \\
                     &=  0.2877199
-\end{align*}$$ Es decir, se tendrá un $28.77\%$ de probabilidad, de
+\end{align*}$$
+Es decir, se tendrá un $28.77\%$ de probabilidad, de
 que el aire acondicionado dure entre entre $6$ y $9$ años.
 </li>
 <li>
@@ -133,12 +139,14 @@ Var(X)& = \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gamma\left(1 +
       & = 64\left[1 - \frac{\pi}{4}\right] \\
       & = 64(0.2146018) \\
       & = 13.73452
-\end{align*}$$ y ahora, empleando el resultado de la varianza se procede
+\end{align*}$$
+y ahora, empleando el resultado de la varianza se procede
 a calcular la desviación estándar, tal que $$\begin{align*}
 Sd(X)& = \sqrt{Var(X)} \\
       & = \sqrt{13.73452} \\
       & = 3.706011
-\end{align*}$$ Es decir, se espera que el tiempo de vida promedio del
+\end{align*}$$
+Es decir, se espera que el tiempo de vida promedio del
 aire acondicionado es de $7.09$ años con una desviación estándar de
 $3.706$ años.
 </li>
@@ -197,7 +205,8 @@ caso continuo, ya presentadas en la
                    & = e^{-\left(\frac{7}{8}\right)^2} - e^{-\left(\frac{12}{8}\right)^2} \\
                    & = 0.4650432 - 0.1053992 \\
                    & = 0.359644
-\end{align*}$$ Es decir, se tendrá un $35.96\%$ de probabilidad, de
+\end{align*}$$
+Es decir, se tendrá un $35.96\%$ de probabilidad, de
 que la vida útil del aire acondicionado se encuentre entre $7$ y
 $12$ años.
 </p>
@@ -259,7 +268,8 @@ $$\begin{align*}
 \mathbb{P}(X>9) &= R(9) \\
                   &= e^{-\frac{9}{3}}  \\
                   &= 0.04978707
-\end{align*}$$ Es decir, que se tendrá una probabilidad de $4.98\%$,
+\end{align*}$$
+Es decir, que se tendrá una probabilidad de $4.98\%$,
 de que el catalizador solido reduzca el tiempo de reacción química en
 más de $9$ minutos.
 </p>
@@ -310,7 +320,8 @@ confiabilidad para resolver tal probabilidad. $$\begin{align*}
 \mathbb{P}(X>3) & = R(3) \\
                 & = e^{-\left(\frac{3}{8}\right)^2} \\
                 & = 0.8688151
-\end{align*}$$ Es decir, que se tendrá un $86.88\%$ de probabilidad,
+\end{align*}$$
+Es decir, que se tendrá un $86.88\%$ de probabilidad,
 de que la vida útil del aire acondicionado supere los $3$ años.
 </p>
 </main>
@@ -374,7 +385,8 @@ h(t) = \frac{1}{3}
 Ahora, al evaluar la tasa de fallas en $3$, $5$ y $7$ minutos, se
 tiene que $$\begin{align*}
 h(3) =  h(5) =  h(7) = \frac{1}{3} 
-\end{align*}$$ Es decir, la tasa de fallas es constante en el tiempo e
+\end{align*}$$
+Es decir, la tasa de fallas es constante en el tiempo e
 igual a $\frac{1}{3}$.
 </p>
 </main>
@@ -445,7 +457,8 @@ tiene que $$\begin{align*}
 h(3) = \frac{2}{8}\left(\frac{3}{8}\right)^{2-1} = 0.09375 \\
 h(5) = \frac{2}{8}\left(\frac{5}{8}\right)^{2-1} = 0.15625 \\
 h(7) = \frac{2}{8}\left(\frac{7}{8}\right)^{2-1} = 0.21875
-\end{align*}$$ Es decir, se aprecia que a medida que aumenta el número
+\end{align*}$$
+Es decir, se aprecia que a medida que aumenta el número
 de años, la tasa de riesgo va aumentando, es decir, se tendrá que a
 medida que pasa el tiempo aumenta el riesgo de que el aire acondicionado
 falle.
