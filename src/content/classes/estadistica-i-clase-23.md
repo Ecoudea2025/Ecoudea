@@ -74,14 +74,14 @@ cuando se deseen manipular.
 Los tipos de datos más que pueden encontrarse en <tt>R</tt> son:
 
 -   **<tt>numeric</tt>**: Datos numéricos, los cuales soportan números
-    que se encuentren en el conjunto de los reales, `$\mathbb{R}$`, y
+    que se encuentren en el conjunto de los reales, $\mathbb{R}$, y
     por tanto soporta tanto números enteros (<tt>integer</tt>) y números
     de doble precisión (<tt>double</tt>).
 -   **<tt>integer</tt>**: Datos enteros, los cuales soportan números que
-    se encuentren en el conjunto de los enteros, `$\mathbb{Z}$`, y en
+    se encuentren en el conjunto de los enteros, $\mathbb{Z}$, y en
     consecuencia, solo soporta números enteros.
 -   **<tt>complex</tt>**: Datos complejos, los cuales soportan números
-    que se encuentren en el conjunto de los complejos, `$\mathbb{C}$`, y
+    que se encuentren en el conjunto de los complejos, $\mathbb{C}$, y
     por tanto, soporta tanto números reales como imaginarios.
 -   **<tt>character</tt>**: Datos de carácter, los cuales soportan
     caracteres alfanuméricos, es decir, datos numéricos y alfabéticos.

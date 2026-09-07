@@ -13,8 +13,8 @@ Distribuciones de probabilidad discretas
 
 ### Distribución Uniforme Discreta
 
-Se dice que la variable aleatoria `$X$` tiene una distribución uniforme
-discreta en los enteros `$a, a+1,\ldots, b$`, si su distribución de
+Se dice que la variable aleatoria $X$ tiene una distribución uniforme
+discreta en los enteros $a, a+1,\ldots, b$, si su distribución de
 probabilidad es de la forma
 
 $$\begin{align*}p(x) = \frac{1}{b-a+1} \quad \quad x = a,a+1, \ldots, b\end{align*}$$
@@ -22,16 +22,16 @@ $$\begin{align*}p(x) = \frac{1}{b-a+1} \quad \quad x = a,a+1, \ldots, b\end{alig
 
 #### Media y Varianza Uniforme Discreta
 
-Si `$X\sim Unif\{a, a+1,\ldots,b\}$` entonces se puede probar que la
-media y varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Unif\{a, a+1,\ldots,b\}$ entonces se puede probar que la
+media y varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\frac{a+b}{2} \quad \quad Var(X)=\frac{(b-a+1)^2-1}{12}\end{align*}$$
 
 
 #### Distribución Acumulada Uniforme Discreta
 
-Si `$X\sim Unif\{a, a+1,\ldots,b\}$` entonces se puede probar que la
-función de distribución acumulada de la variable aleatoria `$X$` es de
+Si $X\sim Unif\{a, a+1,\ldots,b\}$ entonces se puede probar que la
+función de distribución acumulada de la variable aleatoria $X$ es de
 la forma
 
 $$\begin{align*}F(x) = \frac{x-a+1}{b-a+1} \quad \quad & a\leq x\leq b\end{align*}$$
@@ -172,9 +172,9 @@ Teoremas de Aproximación
 
 ### Teorema de Aproximación Hipergeométrica a Binomial
 
-Si `$X\sim h(N,M,n)$` con `$n$` pequeña en comparación con `$N$`
-(`$n/N <0.05$`) entonces se dice que `$X\stackrel{a}{\sim}b(n,p)$` con
-`$p = M/N$`.
+Si $X\sim h(N,M,n)$ con $n$ pequeña en comparación con $N$
+($n/N <0.05$) entonces se dice que $X\stackrel{a}{\sim}b(n,p)$ con
+$p = M/N$.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -261,9 +261,9 @@ aproximación al que se obtendría con la distribución hipergeométrica.
 
 ### Teorema de Aproximación Binomial a Poisson
 
-Si `$X\sim b(n,p)$` con `$n$` grande `$(n\geq 100)$` y `$p$` pequeña
-`$(p\leq 0.01)$` entonces se dice que `$X\stackrel{a}{\sim}P(\lambda)$`
-donde `$\lambda = np$`
+Si $X\sim b(n,p)$ con $n$ grande $(n\geq 100)$ y $p$ pequeña
+$(p\leq 0.01)$ entonces se dice que $X\stackrel{a}{\sim}P(\lambda)$
+donde $\lambda = np$
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio

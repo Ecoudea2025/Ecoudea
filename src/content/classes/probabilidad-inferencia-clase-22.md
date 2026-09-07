@@ -259,7 +259,7 @@ rápidamente la estructura de los mismos.
 #### Caso de estudio
 
 Suponga que se está interesado en observar la evolución en el desempeño
-que tuvo un grupo de `$10$` estudiantes en el curso de Probabilidad e
+que tuvo un grupo de $10$ estudiantes en el curso de Probabilidad e
 Inferencia Estadística. Para ello se toma de referencia la nota obtenida
 en el primer y cuarto parcial de la materia, obteniendo los siguientes
 resultados
@@ -379,12 +379,12 @@ Parcial 4
 
 Estas medidas tienen por objetivo buscar valores que muestren el lugar
 en el cual se encuentra el centro de un conjunto de observaciones. Si se
-define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
+define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
 observaciones, entonces
 
 #### Media
 
-Es el promedio numérico de las `$n$` observaciones.
+Es el promedio numérico de las $n$ observaciones.
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
 
@@ -494,7 +494,7 @@ observaciones de forma ascendente.
 
 $$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
 
-donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
+donde $x_{\left[j\right]}$ representa la $j$-ésima observación
 ordenada. En <tt>R</tt> puede calcularse la mediana de un conjunto de
 observaciones mediante la función `median(datos)`.
 
@@ -939,8 +939,8 @@ estudiantes en los dos parciales se emplea la función
 
 Es una medida similar a la media, con la diferencia de que, en este
 caso, se ordenan las observaciones de forma ascendente, y luego se
-recortan un número `$r$` observaciones superiores e inferiores, tal que
-`$r=n\times trim$`, `$trim$` un valor porcentual entre 0 y 0.5
+recortan un número $r$ observaciones superiores e inferiores, tal que
+$r=n\times trim$, $trim$ un valor porcentual entre 0 y 0.5
 
 
 $$\begin{align*}\bar{X}_{trim}=\frac{1}{n-2r}\sum_{i={r+1}}^{n-r}x_i\end{align*}$$

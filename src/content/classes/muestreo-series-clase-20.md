@@ -20,25 +20,25 @@ Para aplicar dichos métodos, una alternativa es la implementación de un
 procedimiento conocido como *validación cruzada*, el cual consta de
 dividir el conjunto de observaciones de la serie en dos grupos. El
 primer grupo estará dado por las observaciones
-`$\{Y_1, Y_2, \ldots, Y_{T-m}\}$`, denotadas como datos de
+$\{Y_1, Y_2, \ldots, Y_{T-m}\}$, denotadas como datos de
 entrenamiento, y serán las observaciones que se emplearán para realizar
 la estimación del modelo y estimación de los pronósticos. El segundo
 grupo estará dado por las observaciones
-`$\{Y_{T-m+1}, Y_{T-m+2}, \ldots, Y_{T}\}$`, denotadas como datos de
+$\{Y_{T-m+1}, Y_{T-m+2}, \ldots, Y_{T}\}$, denotadas como datos de
 validación, y serán las observaciones que se emplearán para evaluar el
 desempeño de los modelos.
 
 Entonces, suponga que a partir del conjunto de entrenamiento se realizan
 los pronósticos
-`$\{\hat{Y}_{T-m+1}, \hat{Y}_{T-m+2}, \ldots, \hat{Y}_{T}\}$`, entonces
-puede definirse el error de estimación `$e_t=\hat{varepsilon}_t$`, entre
-las observación real `$t$` y el valor pronosticado `$t$`, de la forma
+$\{\hat{Y}_{T-m+1}, \hat{Y}_{T-m+2}, \ldots, \hat{Y}_{T}\}$, entonces
+puede definirse el error de estimación $e_t=\hat{varepsilon}_t$, entre
+las observación real $t$ y el valor pronosticado $t$, de la forma
 
 $$\begin{align*}e_t= Y_t - \hat{Y}_t\end{align*}$$
 
 
-con `$t={T-m+1}, {T-m+2}, \ldots, {T}$`. A partir de los errores de
-estimación `$e_t$`, es posible realizar el cálculo de diferentes medidas
+con $t={T-m+1}, {T-m+2}, \ldots, {T}$. A partir de los errores de
+estimación $e_t$, es posible realizar el cálculo de diferentes medidas
 de error que permitan cuantificar diferentes aspectos de los valores
 pronosticados. Con el fin de ilustrar y mejorar el entendimiento de las
 medidas de error, se presentarán las propiedades que posee cada uno de

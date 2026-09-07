@@ -24,11 +24,11 @@ posee, lo cual le permite ser utilización en distintos contextos sin la
 necesidad de abonar en éstos.
 
 Similar a <tt>R</tt>, pero con un crecimiento aún mayor durante los
-últimos años, <tt>Python</tt> se ha consolidado en el top `$5$` de
+últimos años, <tt>Python</tt> se ha consolidado en el top $5$ de
 software más usados en el mundo, codeandose con otros lenguajes como
 <tt>Java</tt>, <tt>C</tt> o <tt>C++</tt>. Ésto puede verse reflejado en
 el Indice TIOBE, donde se aprecia que <tt>Python</tt> ocupa actualmente
-el puesto número `$3$`.
+el puesto número $3$.
 
 ![Índice TIOBE](/assets/images/Ranking_Leng.png)
 

@@ -12,9 +12,9 @@ Variables aleatorias
 --------------------
 
 Es una función que asocia un número real a cada elemento del espacio
-muestral `$S$`. Comúnmente las variables aleatorias se denotan por
-letras mayúsculas del final del abecedario `$(X,Y,Z)$` y a los valores
-observados por letras minúsculas `$(x,y,z)$`.
+muestral $S$. Comúnmente las variables aleatorias se denotan por
+letras mayúsculas del final del abecedario $(X,Y,Z)$ y a los valores
+observados por letras minúsculas $(x,y,z)$.
 
 Las variables aleatorias se pueden clasificar en tres tipos
 
@@ -105,16 +105,16 @@ Z = \begin{cases}
 Distribución de probabilidad discreta
 -------------------------------------
 
-Se dice que el conjunto de pares ordenados `$(x,p(x))$` es una función
-de masa de probabilidad `$(fmp)$` de la variable aleatoria discreta
-`$X$`, si para cualquier resultado posible de `$X$` se cumple que
+Se dice que el conjunto de pares ordenados $(x,p(x))$ es una función
+de masa de probabilidad $(fmp)$ de la variable aleatoria discreta
+$X$, si para cualquier resultado posible de $X$ se cumple que
 
-1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
+1.  $p(x)\geq0$ para todo $x \in$ en el dominio de $X$
 
-2.  `$\sum_x p(x)=1$`
+2.  $\sum_x p(x)=1$
 
-3.  `$\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$` con `$A$` un conjunto de
-    valores `$\in$` al dominio de `$X$`.
+3.  $\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$ con $A$ un conjunto de
+    valores $\in$ al dominio de $X$.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -297,29 +297,29 @@ de $3$ hijos, se tenga $2$ o más niñas, es del $50\%$.
 Función de distribución acumulada caso discreto
 -----------------------------------------------
 
-La función de distribución acumulada `$(fda)$` denotada por `$F(x)$`,
-para una variable aleatoria discreta `$X$` con distribución de
-probabilidad `$p(x)$` es de la forma
+La función de distribución acumulada $(fda)$ denotada por $F(x)$,
+para una variable aleatoria discreta $X$ con distribución de
+probabilidad $p(x)$ es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
 
 
-Para cualquier `$x$` dentro del dominio de `$X$`, `$F(x)$` será la suma
-acumulada de todos los `$X$` menores a `$x$`, evaluados en `$f(x)$`.
+Para cualquier $x$ dentro del dominio de $X$, $F(x)$ será la suma
+acumulada de todos los $X$ menores a $x$, evaluados en $f(x)$.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso discreto, entonces, si `$a$` y `$b$`
+distribución acumulada en el caso discreto, entonces, si $a$ y $b$
 son dos números **constantes enteras**, deberán tenerse en cuenta las
 siguientes reglas
 
--   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$`
--   `$\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$`
--   `$\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$`
--   `$\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$`
--   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$`
--   `$\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
--   `$\mathbb{P}(X \leq b) = F(b)$`
--   `$\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$`
+-   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$
+-   $\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$
+-   $\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$
+-   $\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$
+-   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$
+-   $\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
+-   $\mathbb{P}(X \leq b) = F(b)$
+-   $\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -455,16 +455,16 @@ $3$ hijos, tengan $2$ o más niñas es de $50\%$.
 Distribución de probabilidad continua
 -------------------------------------
 
-La función `$f(x)$` es una función de densidad de probabilidad (*fdp*)
-para la variable aleatoria continua `$X$`, definida en el conjunto de
+La función $f(x)$ es una función de densidad de probabilidad (*fdp*)
+para la variable aleatoria continua $X$, definida en el conjunto de
 números reales, si
 
-1.  `$f(x)\geq0$` para todo `$x\in \mathbb R$`
+1.  $f(x)\geq0$ para todo $x\in \mathbb R$
 
-2.  `$\int_{-\infty}^\infty f(x)dx=1$`
+2.  $\int_{-\infty}^\infty f(x)dx=1$
 
-3.  `$\int_a^b f(x) dx = \mathbb{P}(a<x<b)$` con `$a$` y `$b$` dos
-    constantes `$\in \mathbb{R}$`
+3.  $\int_a^b f(x) dx = \mathbb{P}(a<x<b)$ con $a$ y $b$ dos
+    constantes $\in \mathbb{R}$
 
 <button id="Show4" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -578,23 +578,23 @@ $30$ minutos y $50$ minutos.
 Función de distribución acumulada caso continuo
 -----------------------------------------------
 
-La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
-una variable aleatoria continua `$X$` con distribución de densidad de
-probabilidad `$f(x)$` es de la forma
+La función de distribución acumulada (*fda*) denotada por $F(x)$, para
+una variable aleatoria continua $X$ con distribución de densidad de
+probabilidad $f(x)$ es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\int_{-\infty}^x f(t)dt \quad \quad -\infty<x<\infty\end{align*}$$
 
-para cualquier `$x$`, `$F(x)$` es el área bajo la curva de densidad a la
-izquierda de valor que tome `$x$`.
+para cualquier $x$, $F(x)$ es el área bajo la curva de densidad a la
+izquierda de valor que tome $x$.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso continuo, entonces, si `$a$` y `$b$`
+distribución acumulada en el caso continuo, entonces, si $a$ y $b$
 son dos números constantes, deberán tenerse en cuenta las siguientes
 reglas
 
--   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$`
--   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
--   `$\mathbb{P}(X \leq b) = F(b)$`
+-   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$
+-   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
+-   $\mathbb{P}(X \leq b) = F(b)$
 
 **Nota:** Recordar que en el caso continuo, las probabilidad con o sin
 la igualdad son equivalentes, y por tanto, solo se escriben las tres

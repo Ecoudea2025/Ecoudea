@@ -29,17 +29,17 @@ verdadero del parámetro poblacional.
 
 ### Definición
 
-Sea `$\theta$` un parámetro poblacional desconocido, entonces basándose
+Sea $\theta$ un parámetro poblacional desconocido, entonces basándose
 en la información de una muestra aleatoria de dicha población, el
-objetivo será encontrar dos variables aleatorias `$\hat{\Theta}_I$` y
-`$\hat{\Theta}_S$` tal que
+objetivo será encontrar dos variables aleatorias $\hat{\Theta}_I$ y
+$\hat{\Theta}_S$ tal que
 
 $$\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}$$
 
-donde `$(1-\alpha)$` se conoce como nivel de confianza y
-`$\hat{\Theta}_I$` y `$\hat{\Theta}_S$` se denominan como límites de
+donde $(1-\alpha)$ se conoce como nivel de confianza y
+$\hat{\Theta}_I$ y $\hat{\Theta}_S$ se denominan como límites de
 confianza inferior y superior, tal que
-`$\hat{\Theta}_I<\hat{\Theta}_S$`.
+$\hat{\Theta}_I<\hat{\Theta}_S$.
 
 ### Nota
 
@@ -66,20 +66,20 @@ hace más pequeño.
 
 ## Interpretación de nivel de confianza
 
-El nivel de confianza, `$1-\alpha$`, mide la fiabilidad del intervalo de
+El nivel de confianza, $1-\alpha$, mide la fiabilidad del intervalo de
 probabilidad, esto es, la probabilidad de que el verdadero valor del
 parámetro se encuentre dentro del intervalo construido. Es decir, que si
 se realiza el experimento muchas veces, se tendrá que en el
-`$100(1-\alpha)\%$` de los intervalos de confianza construidos en cada
+$100(1-\alpha)\%$ de los intervalos de confianza construidos en cada
 experimento, se encontrará contenido el verdadero valor del parámetro de
 interés.
 
-## Intervalos de confianza para una media `$\mu$`
+## Intervalos de confianza para una media $\mu$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$` con media desconocida `$\mathbb{E}(X)=\mu$`, y varianza
-`$Var(X)=\sigma^2<\infty$`, entonces dependiendo de las condiciones, se
-tendrán los siguientes intervalos de confianza para la media `$\mu$`.
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$ con media desconocida $\mathbb{E}(X)=\mu$, y varianza
+$Var(X)=\sigma^2<\infty$, entonces dependiendo de las condiciones, se
+tendrán los siguientes intervalos de confianza para la media $\mu$.
 
 ![](/assets/images/Intervalos1.jpg)
 
@@ -271,16 +271,16 @@ cigarrillos Malboro es de $1.000204$ miligramos de nicotina.
 </p>
 </main>
 
-## Intervalos de confianza para diferencia de medias `$\mu_1 - \mu_2$`
+## Intervalos de confianza para diferencia de medias $\mu_1 - \mu_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
-tamaños `$n_1$`, y `$n_2$` con medias desconocidas
-`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
-`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
+tamaños $n_1$, y $n_2$ con medias desconocidas
+$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
+$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes intervalos de confianza para la diferencia de medias
-`$\mu_1 - \mu_2$`.
+$\mu_1 - \mu_2$.
 
 ![](/assets/images/Intervalos2.jpg)
 
@@ -712,13 +712,13 @@ de corte de dos tipos de madera.
 </p>
 </main>
 
-## Intervalos de confianza para una proporción `$p$`
+## Intervalos de confianza para una proporción $p$
 
-Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
-grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
-encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
-entonces un intervalo de confianza para la proporción `$p$` es de la
+Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
+grande tal que $n\geq30$, y la proporción desconocida $p$ no se
+encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
+entonces un intervalo de confianza para la proporción $p$ es de la
 forma ![](/assets/images/Intervalos3.jpg)
 
 <button id="Show9" class="btn btn-secondary">
@@ -805,17 +805,17 @@ de pesos, se encontrará entre $1.89\%$ y $51.44\%$.
 </p>
 </main>
 
-## Intervalos de confianza para diferencia de proporciones `$p_1-p_2$`
+## Intervalos de confianza para diferencia de proporciones $p_1-p_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
-tamaños `$n_1$`, y `$n_2$`, tal que `$X_{1}\sim b(n,p)$` y
-`$X_{1}\sim b(n,p)$`. Entonces si `$n_1$` y `$n_2$` son suficientemente
-grandes tal que `$n_1, n_2 \geq30$`, y las proporciones desconocidas
-`$p_1$` y `$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que
-`$n_1p_1>5$`, `$n_2p_2>5$`, `$n_1(1-p_1)>5$` y `$n_2(1-p_2)>5$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
+tamaños $n_1$, y $n_2$, tal que $X_{1}\sim b(n,p)$ y
+$X_{1}\sim b(n,p)$. Entonces si $n_1$ y $n_2$ son suficientemente
+grandes tal que $n_1, n_2 \geq30$, y las proporciones desconocidas
+$p_1$ y $p_2$ no se encuentran cercanas a $0$ o $1$, tal que
+$n_1p_1>5$, $n_2p_2>5$, $n_1(1-p_1)>5$ y $n_2(1-p_2)>5$,
 entonces un intervalo de confianza para la diferencia de proporciones
-`$p_1-p_2$` es de la forma
+$p_1-p_2$ es de la forma
 
 ![](/assets/images/Intervalos4.jpg)
 
@@ -933,12 +933,12 @@ aquellos fabricados mediante el proceso actual.
 </p>
 </main>
 
-## Intervalos de confianza para una varianza `$\sigma^2$`
+## Intervalos de confianza para una varianza $\sigma^2$
 
-Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria normal de
-tamaño `$n$` con media `$\mathbb{E}(X)=\mu$` y varianza desconocida
-`$Var(X)=\sigma^2<\infty$`, respectivamente, entonces un intervalo de
-confianza del `$100(1-\alpha)\%$` para una varianza `$\sigma^2$` estará
+Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria normal de
+tamaño $n$ con media $\mathbb{E}(X)=\mu$ y varianza desconocida
+$Var(X)=\sigma^2<\infty$, respectivamente, entonces un intervalo de
+confianza del $100(1-\alpha)\%$ para una varianza $\sigma^2$ estará
 dado por
 
 ![](/assets/images/Intervalos5.jpg)
@@ -1076,15 +1076,15 @@ $701.2892$ millones de pesos.
 </p>
 </main>
 
-## Intervalos de confianza para razón de varianzas `$\sigma^2_1/\sigma^2_2$`
+## Intervalos de confianza para razón de varianzas $\sigma^2_1/\sigma^2_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
-de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
-`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
-`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
+de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
+$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
+$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
 respectivamente, entonces un intervalo de confianza del
-`$100(1-\alpha)\%$` para `$\sigma^2_1/\sigma^2_2$` estará dada por
+$100(1-\alpha)\%$ para $\sigma^2_1/\sigma^2_2$ estará dada por
 
 ![](/assets/images/Intervalos6.jpg)
 

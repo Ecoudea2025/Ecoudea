@@ -12,8 +12,8 @@ bibliography: "../../referencias.bib"
 
 ## Distribución Exponencial
 
-Se dice que la variable aleatoria `$X$` tiene una distribución
-Exponencial con parámetro `$\beta$`, si su función de densidad de
+Se dice que la variable aleatoria $X$ tiene una distribución
+Exponencial con parámetro $\beta$, si su función de densidad de
 probabilidad es de la forma
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\beta}e^{-\frac{x}{\beta}} & x\geq 0, \beta>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
@@ -21,8 +21,8 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{\beta}e^{-\frac{x}{\beta}} & x\geq
 
 #### Teorema
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la media y la
-varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Exp(\beta)$, entonces se puede probar que la media y la
+varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\beta \quad \quad Var(X)=\beta^2\end{align*}$$
 
@@ -156,8 +156,8 @@ sea de $3$ minutos con una desviación estándar de $3$ minutos.
 
 #### Función de distribución acumulada Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la función de
-distribución acumulada de `$X$` está dada por
+Si $X\sim Exp(\beta)$, entonces se puede probar que la función de
+distribución acumulada de $X$ está dada por
 
 $$\begin{align*}F(x) = \mathbb{P}(X\leq x) = \begin{cases} 0 & x<0 \\ 1- e^{-\frac{x}{\beta}} & x\geq 0, \beta>0  \end{cases}\end{align*}$$
 
@@ -216,11 +216,11 @@ en un valor entre $5$ y $8$ minutos.
 ## Relación entre la distribución Exponencial y el proceso Poisson
 
 Suponga que el número de eventos que ocurren en un intervalo de tiempo
-`$t$`, tiene una distribución Poisson con parámetro `$\lambda$` y que el
+$t$, tiene una distribución Poisson con parámetro $\lambda$ y que el
 número ocurrencias en intervalos de tiempo distintos son independientes
 entre si. Entonces se tendrá que la distribución del tiempo transcurrido
 entre dos eventos de Poisson sucesivos es Exponencial con parámetro
-`$\beta = \frac{t}{\lambda}$`.
+$\beta = \frac{t}{\lambda}$.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -342,12 +342,12 @@ Metro.
 
 ## Propiedad de carencia de memoria
 
-Suponga que `$X$` es una variable aleatoria tal que
-`$X\sim Exp(\beta)$`, entonces sean dos reales positivos `$a$` y `$b$`,
+Suponga que $X$ es una variable aleatoria tal que
+$X\sim Exp(\beta)$, entonces sean dos reales positivos $a$ y $b$,
 entonces se puede probar que
 
-1.  `$\mathbb{P}(X\geq a+b | x \geq b) = \mathbb{P}(X\geq a)$`
-2.  `$\mathbb{P}(X\leq a+b | x \geq b) = \mathbb{P}(X\leq a)$`
+1.  $\mathbb{P}(X\geq a+b | x \geq b) = \mathbb{P}(X\geq a)$
+2.  $\mathbb{P}(X\leq a+b | x \geq b) = \mathbb{P}(X\leq a)$
 
 <button id="Show5" class="btn btn-secondary">
 Mostrar Ejercicio

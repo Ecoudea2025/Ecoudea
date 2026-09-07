@@ -18,17 +18,17 @@ verdadero del parámetro poblacional.
 
 ### Definición
 
-Sea `$\theta$` un parámetro poblacional desconocido, entonces basándose
+Sea $\theta$ un parámetro poblacional desconocido, entonces basándose
 en la información de una muestra aleatoria de dicha población, el
-objetivo será encontrar dos variables aleatorias `$\hat{\Theta}_I$` y
-`$\hat{\Theta}_S$` tal que
+objetivo será encontrar dos variables aleatorias $\hat{\Theta}_I$ y
+$\hat{\Theta}_S$ tal que
 
 $$\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}$$
 
-donde `$(1-\alpha)$` se conoce como nivel de confianza y
-`$\hat{\Theta}_I$` y `$\hat{\Theta}_S$` se denominan como límites de
+donde $(1-\alpha)$ se conoce como nivel de confianza y
+$\hat{\Theta}_I$ y $\hat{\Theta}_S$ se denominan como límites de
 confianza inferior y superior, tal que
-`$\hat{\Theta}_I<\hat{\Theta}_S$`.
+$\hat{\Theta}_I<\hat{\Theta}_S$.
 
 ### Nota
 
@@ -55,20 +55,20 @@ hace más pequeño.
 
 ## Interpretación de nivel de confianza
 
-El nivel de confianza, `$1-\alpha$`, mide la fiabilidad del intervalo de
+El nivel de confianza, $1-\alpha$, mide la fiabilidad del intervalo de
 probabilidad, esto es, la probabilidad de que el verdadero valor del
 parámetro se encuentre dentro del intervalo construido. Es decir, que si
 se realiza el experimento muchas veces, se tendrá que en el
-`$100(1-\alpha)\%$` de los intervalos de confianza construidos en cada
+$100(1-\alpha)\%$ de los intervalos de confianza construidos en cada
 experimento, se encontrará contenido el verdadero valor del parámetro de
 interés.
 
-## Intervalos de confianza para una media `$\mu$`
+## Intervalos de confianza para una media $\mu$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$` con media desconocida `$\mathbb{E}(X)=\mu$`, y varianza
-`$Var(X)=\sigma^2<\infty$`, entonces dependiendo de las condiciones, se
-tendrán los siguientes intervalos de confianza para la media `$\mu$`.
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$ con media desconocida $\mathbb{E}(X)=\mu$, y varianza
+$Var(X)=\sigma^2<\infty$, entonces dependiendo de las condiciones, se
+tendrán los siguientes intervalos de confianza para la media $\mu$.
 
 ![](/assets/images/Intervalos1.jpg)
 

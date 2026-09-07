@@ -8,13 +8,13 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Intervalos de confianza para una proporción `$p$`
+## Intervalos de confianza para una proporción $p$
 
-Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
-grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
-encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
-entonces un intervalo de confianza para la proporción `$p$` es de la
+Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
+grande tal que $n\geq30$, y la proporción desconocida $p$ no se
+encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
+entonces un intervalo de confianza para la proporción $p$ es de la
 forma ![](/assets/images/Intervalos3.jpg)
 
 <button id="Show6" class="btn btn-secondary">
@@ -102,17 +102,17 @@ de pesos, se encontrará entre $1.89\%$ y $51.44\%$.
 </p>
 </main>
 
-## Intervalos de confianza para diferencia de proporciones `$p_1-p_2$`
+## Intervalos de confianza para diferencia de proporciones $p_1-p_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` dos muestras aleatorias *iid* de
-tamaños `$n_1$`, y `$n_2$`, tal que `$X_{1}\sim b(n,p)$` y
-`$X_{1}\sim b(n,p)$`. Entonces si `$n_1$` y `$n_2$` son suficientemente
-grandes tal que `$n_1, n_2 \geq30$`, y las proporciones desconocidas
-`$p_1$` y `$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que
-`$n_1p_1>5$`, `$n_2p_2>5$`, `$n_1(1-p_1)>5$` y `$n_2(1-p_2)>5$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ dos muestras aleatorias *iid* de
+tamaños $n_1$, y $n_2$, tal que $X_{1}\sim b(n,p)$ y
+$X_{1}\sim b(n,p)$. Entonces si $n_1$ y $n_2$ son suficientemente
+grandes tal que $n_1, n_2 \geq30$, y las proporciones desconocidas
+$p_1$ y $p_2$ no se encuentran cercanas a $0$ o $1$, tal que
+$n_1p_1>5$, $n_2p_2>5$, $n_1(1-p_1)>5$ y $n_2(1-p_2)>5$,
 entonces un intervalo de confianza para la diferencia de proporciones
-`$p_1-p_2$` es de la forma
+$p_1-p_2$ es de la forma
 
 ![](/assets/images/Intervalos4.jpg)
 
@@ -231,12 +231,12 @@ aquellos fabricados mediante el proceso actual.
 </p>
 </main>
 
-## Intervalos de confianza para una varianza `$\sigma^2$`
+## Intervalos de confianza para una varianza $\sigma^2$
 
-Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria normal de
-tamaño `$n$` con media `$\mathbb{E}(X)=\mu$` y varianza desconocida
-`$Var(X)=\sigma^2<\infty$`, respectivamente, entonces un intervalo de
-confianza del `$100(1-\alpha)\%$` para una varianza `$\sigma^2$` estará
+Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria normal de
+tamaño $n$ con media $\mathbb{E}(X)=\mu$ y varianza desconocida
+$Var(X)=\sigma^2<\infty$, respectivamente, entonces un intervalo de
+confianza del $100(1-\alpha)\%$ para una varianza $\sigma^2$ estará
 dado por
 
 ![](/assets/images/Intervalos5.jpg)

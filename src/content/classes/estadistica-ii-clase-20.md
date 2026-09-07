@@ -11,16 +11,16 @@ bibliography: "../../referencias.bib"
 ## Estadísticos de orden
 
 Los estadísticos de orden de una muestra aleatoria
-`$X_{1}, X_{2}, \ldots, X_{n}$` son los valores muestrales puestos en
+$X_{1}, X_{2}, \ldots, X_{n}$ son los valores muestrales puestos en
 orden ascendente, los cuales se denotan como
-`$X_{(1)}, X_{(2)}, \ldots, X_{(n)}$` tal que
-`$X_{(1)} \leq X_{(2)} \leq \ldots \leq X_{(n)}$`.
+$X_{(1)}, X_{(2)}, \ldots, X_{(n)}$ tal que
+$X_{(1)} \leq X_{(2)} \leq \ldots \leq X_{(n)}$.
 
-Ahora si `$X_{(1)}, X_{(2)}, \ldots, X_{(n)}$` son los estadísticos de
-orden de una muestra aleatoria `$X_{1}, X_{2}, \ldots, X_{n}$` de una
-población continua con función de densidad de probabilidad `$f(x)$` y
-función de distribución acumulada `$F(x)$`, entonces la función de
-densidad de probabilidad del j-ésimo estadístico de orden `$x_{(j)}$`
+Ahora si $X_{(1)}, X_{(2)}, \ldots, X_{(n)}$ son los estadísticos de
+orden de una muestra aleatoria $X_{1}, X_{2}, \ldots, X_{n}$ de una
+población continua con función de densidad de probabilidad $f(x)$ y
+función de distribución acumulada $F(x)$, entonces la función de
+densidad de probabilidad del j-ésimo estadístico de orden $x_{(j)}$
 está dada por
 
 $$\begin{align*}f_{j}(x_j) = \frac{n!}{(j-1)!(n-j)!} f(x_j) [F(x_j)]^{j-1}[1-F(x_j)]^{n-j} \quad \text{ para } -\infty < x_j < \infty\end{align*}$$
@@ -95,21 +95,21 @@ intervalo $(0,4)$ sea a lo más de $3.2$.
 ## Convergencia de variables aleatorias
 
 El término convergencia hace referencia a que a medida que el tamaño de
-una secuencia de variables aleatorias `$X_1, X_2, X_3, \ldots$` es más y
-más grande, se espera que el valor de `$X_n$` se acerque cada vez más a
-una variable aleatoria `$X$` a medida que `$n\to\infty$`
+una secuencia de variables aleatorias $X_1, X_2, X_3, \ldots$ es más y
+más grande, se espera que el valor de $X_n$ se acerque cada vez más a
+una variable aleatoria $X$ a medida que $n\to\infty$
 
 **Para entender el concepto de convergencia**, suponga una variable
-aleatoria desconocida `$X$` la cual deseamos conocer su valor. Como la
+aleatoria desconocida $X$ la cual deseamos conocer su valor. Como la
 variable aleatoria no puede observarse directamente, se decide realizar
-algún tipo de medición y obtener una estimación de `$X$` la cual podemos
-llamar `$X_1$`. Luego se realiza otra medición y se actualiza la
-estimación que se tenía de `$X$`, la cual llamamos `$X_2$`. Entonces si
+algún tipo de medición y obtener una estimación de $X$ la cual podemos
+llamar $X_1$. Luego se realiza otra medición y se actualiza la
+estimación que se tenía de $X$, la cual llamamos $X_2$. Entonces si
 se continúa este proceso, para obtener las estimaciones
-`$X_1, X_2, X_3, \ldots$`, se espera entonces que a medida que `$n$`
-aumenta, la estimación `$X_n$` para `$X$` se acercará cada vez más al
-valor real, es decir, se espera que `$X_n$` converja a `$X$` cuando
-`$n\to\infty$`.
+$X_1, X_2, X_3, \ldots$, se espera entonces que a medida que $n$
+aumenta, la estimación $X_n$ para $X$ se acercará cada vez más al
+valor real, es decir, se espera que $X_n$ converja a $X$ cuando
+$n\to\infty$.
 
 Aunque el supuesto de que el tamaño de una muestra se acerque a infinito
 es un supuesto poco realista y se usa meramente como un concepto
@@ -132,16 +132,16 @@ style="width:100.0%" />
 
 ### Convergencia en Distribución
 
-Sea `$X_1, X_2, X_3, \ldots$` una secuencia de variables aleatorias, y
-sea `$X$` una variable aleatoria definida en el espacio muestral,
-entonces, si `$F_{X_{n}}$` y `$F_{X}$` son las funciones de distribución
-acumulada de `$X_n$` y `$X$` respectivamente, se tendrá que `$X_n$`
-converge en distribución a `$X$`, si
+Sea $X_1, X_2, X_3, \ldots$ una secuencia de variables aleatorias, y
+sea $X$ una variable aleatoria definida en el espacio muestral,
+entonces, si $F_{X_{n}}$ y $F_{X}$ son las funciones de distribución
+acumulada de $X_n$ y $X$ respectivamente, se tendrá que $X_n$
+converge en distribución a $X$, si
 
 $$\begin{align*}\lim_{n\to\infty} F_{X_{n}}(x) = F_{X}(x)\end{align*}$$
 
-para todos los puntos `$x$` donde `$F_{X}(x)$` está definida. En tal
-caso se escribirá que `$X_n\stackrel{d}{\to}X$`.
+para todos los puntos $x$ donde $F_{X}(x)$ está definida. En tal
+caso se escribirá que $X_n\stackrel{d}{\to}X$.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -188,10 +188,10 @@ concluyendo que $X_{n}\stackrel{d}{\to}X$.
 
 ### Convergencia en Probabilidad
 
-Sea `$X_1, X_2, \ldots$` una secuencia de variables aleatorias, y sea
-`$X$` una variable aleatoria definida en el espacio muestral, entonces,
-se tendrá que `$X_1, X_2, \ldots$` convergen en probabilidad a `$X$`, si
-para todo `$\varepsilon>0$`
+Sea $X_1, X_2, \ldots$ una secuencia de variables aleatorias, y sea
+$X$ una variable aleatoria definida en el espacio muestral, entonces,
+se tendrá que $X_1, X_2, \ldots$ convergen en probabilidad a $X$, si
+para todo $\varepsilon>0$
 
 $$\begin{align*}\lim_{n\to\infty} \mathbb{P}(|X_n - X| \geq \varepsilon) = 0\end{align*}$$
 
@@ -201,7 +201,7 @@ o equivalentemente
 $$\begin{align*}\lim_{n\to\infty} \mathbb{P}(|X_n - X| < \varepsilon) = 1\end{align*}$$
 
 
-En tal caso se escribirá que `$X_n\stackrel{p}{\to}X$`.
+En tal caso se escribirá que $X_n\stackrel{p}{\to}X$.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -249,20 +249,20 @@ teórica.
 
 #### Teorema: Ley débil de los grandes números
 
-Sea `$X_1, X_2, \ldots, X_n$` una secuencia de variables aleatorias iid
-con media y varianza finita tal que `$\mathbb{E}(X_i) = \mu<\infty$`,
-`$Var(X_i) = \sigma^2 <\infty$` entonces para todo `$\varepsilon > 0$`
+Sea $X_1, X_2, \ldots, X_n$ una secuencia de variables aleatorias iid
+con media y varianza finita tal que $\mathbb{E}(X_i) = \mu<\infty$,
+$Var(X_i) = \sigma^2 <\infty$ entonces para todo $\varepsilon > 0$
 se tendrá que
 
 $$\begin{align*}\lim_{n\to \infty} \mathbb{P}(|\bar{X} - \mu| \geq \varepsilon) =0\end{align*}$$
 
-en donde `$\bar{X}$` representa a la media muestral, con media y
+en donde $\bar{X}$ representa a la media muestral, con media y
 varianza dadas por
 
 $$\begin{align*}\mathbb{E}(\bar{X}) =\mu \quad \quad Var(\bar{X}) = \frac{\sigma^2}{n}\end{align*}$$
 
 
-En tal caso se escribirá que `$\bar{X}\stackrel{p}{\to}\mu$`.
+En tal caso se escribirá que $\bar{X}\stackrel{p}{\to}\mu$.
 
 <button id="Show4" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -303,21 +303,21 @@ concluyendo que $\bar{X}\stackrel{p}{\to} \mu$
 
 ### Convergencia en Media
 
-Sea `$r\geq 1$` un número fijo, entonces la secuencia de variables
-aleatorias `$X_1, X_2, X_3, \ldots$` convergen en la `$r$`-ésima media o
-en la `$L^r$` forma a la variable aleatoria `$X$`, si
-`$\mathbb{E}(|X_n|^r)<\infty$` y
+Sea $r\geq 1$ un número fijo, entonces la secuencia de variables
+aleatorias $X_1, X_2, X_3, \ldots$ convergen en la $r$-ésima media o
+en la $L^r$ forma a la variable aleatoria $X$, si
+$\mathbb{E}(|X_n|^r)<\infty$ y
 
 $$\begin{align*}\lim_{n\to \infty} \mathbb{E}(|X_n - X|^r) =0\end{align*}$$
 
 
-En tal caso se escribirá que `$X_n\stackrel{L^r}{\to}X$`. Si `$r=2$` se
+En tal caso se escribirá que $X_n\stackrel{L^r}{\to}X$. Si $r=2$ se
 llama convegencia de media cuadrática y se escribiría
-`$X_n\stackrel{m.c}{\to}X$`
+$X_n\stackrel{m.c}{\to}X$
 
 **Nota:** Si una sucesión de variables aleatorias converge en media de
-orden `$r$`, entonces también converge en media en ordenes menores a
-`$r$`.
+orden $r$, entonces también converge en media en ordenes menores a
+$r$.
 
 <button id="Show5" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -335,7 +335,7 @@ distribuidas exponencialmente de la forma
 $X_i\sim Unif(0,\frac{1}{i})$, muestre que
 $X_{n}\stackrel{L^r}{\to}0$ para cualquier $r\geq1$, es decir,
 demuestre que la secuencia $X_1, X_2, \ldots$ converge en la
-`$r$`-ésima media a la variable aleatoria $X=0$
+$r$-ésima media a la variable aleatoria $X=0$
 </p>
 <h3 data-toc-skip>
 Solución
@@ -364,11 +364,11 @@ concluyendo que $X_n\stackrel{L^r}{\to} 0$
 
 ### Convergencia Casi Segura
 
-Sea `$X_1, X_2, \ldots$` una secuencia de variables aleatorias definidas
-en el espacio muestral `$S = \{s_1, s_2,\ldots, s_k\}$`, y sea `$X$` una
+Sea $X_1, X_2, \ldots$ una secuencia de variables aleatorias definidas
+en el espacio muestral $S = \{s_1, s_2,\ldots, s_k\}$, y sea $X$ una
 variable aleatoria definida en el espacio muestral, entonces, se tendrá
-que `$X_1, X_2, \ldots$` convergen casi seguramente a `$X$`, si para
-todo `$\varepsilon>0$`
+que $X_1, X_2, \ldots$ convergen casi seguramente a $X$, si para
+todo $\varepsilon>0$
 
 $$\begin{align*}\mathbb{P}\left(\{s\in S:\lim_{n\to \infty}|X_n(s) - X(s)|^r < \varepsilon\} \right) = 1\end{align*}$$
 
@@ -378,7 +378,7 @@ o equivalentemente
 $$\begin{align*}\mathbb{P}\left(\{s\in S:\lim_{n\to \infty}X_n(s) = X(s)\}\right) = 1\end{align*}$$
 
 
-En tal caso se escribirá que `$X_n\stackrel{cs}{\to}X$`.
+En tal caso se escribirá que $X_n\stackrel{cs}{\to}X$.
 
 <button id="Show6" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -434,17 +434,17 @@ concluyendo que $X_n\stackrel{cs}{\to} 0$
 
 #### Teorema: Ley fuerte de los grandes números
 
-Sea `$X_1, X_2, \ldots, X_n$` una secuencia de variables aleatorias iid
-con media y varianza finita tal que `$\mathbb{E}(X_i) = \mu<\infty$`,
-`$Var(X_i) = \sigma^2 <\infty$` entonces para todo `$\varepsilon > 0$`
+Sea $X_1, X_2, \ldots, X_n$ una secuencia de variables aleatorias iid
+con media y varianza finita tal que $\mathbb{E}(X_i) = \mu<\infty$,
+$Var(X_i) = \sigma^2 <\infty$ entonces para todo $\varepsilon > 0$
 se tendrá que
 
 $$\begin{align*}\mathbb{P}\left(\lim_{n\to \infty}|\bar{X} - \mu| < \varepsilon \right) = 1\end{align*}$$
 
-en donde `$\bar{X}$` representa a la media muestral, con media y
+en donde $\bar{X}$ representa a la media muestral, con media y
 varianza dadas por
 
 $$\begin{align*}\mathbb{E}(\bar{X}) =\mu \quad \quad Var(\bar{X}) = \frac{\sigma^2}{n}\end{align*}$$
 
 
-En tal caso se escribirá que `$\bar{X}\stackrel{cs}{\to}\mu$`.
+En tal caso se escribirá que $\bar{X}\stackrel{cs}{\to}\mu$.

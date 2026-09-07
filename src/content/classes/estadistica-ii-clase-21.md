@@ -21,13 +21,13 @@ poblacionales desconocidos, que nos permitirán realizar el cálculo de
 probabilidades usando distribuciones muestrales específicas. Dichas
 condiciones y transformaciones se irán listando a lo largo de la clase.
 
-### Transformación muestrales para una medias `$\mu$`
+### Transformación muestrales para una medias $\mu$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$` de una población con media `$\mu$` y varianza `$\sigma^2$`
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$ de una población con media $\mu$ y varianza $\sigma^2$
 conocida o desconocida, se tendrá que dependiendo de las condiciones de
 la muestra y sobre la población, se tendrán las siguientes
-transformaciones para hacer inferencia sobre `$\mu$`.
+transformaciones para hacer inferencia sobre $\mu$.
 
 ![](/assets/images/Transformacion1.jpg)
 
@@ -300,12 +300,12 @@ creíble.
 </p>
 </main>
 
-### Transformación muestrales para una varianza `$\sigma^2$`
+### Transformación muestrales para una varianza $\sigma^2$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$` de una población normal con media `$\mu$` y varianza `$\sigma^2$`
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$ de una población normal con media $\mu$ y varianza $\sigma^2$
 conocida o desconocida, se tendrá la siguiente transformación para hacer
-inferencia sobre `$\sigma^2$`.
+inferencia sobre $\sigma^2$.
 
 ![](/assets/images/Transformacion2.jpg)
 
@@ -383,12 +383,12 @@ ingeniería, en el exámen, sea superior a $2.828427$ puntos.
 </p>
 </main>
 
-### Transformación muestrales para una proporción `$p$`
+### Transformación muestrales para una proporción $p$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$`, tal que `$X\sim b(n,p)$`. Entonces si `$n$` es suficientemente
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, tal que $X\sim b(n,p)$. Entonces si $n$ es suficientemente
 grande, se tendrá la siguiente transformación para hacer inferencia
-sobre una proporción `$p$`
+sobre una proporción $p$
 
 ![](/assets/images/Transformacion3.jpg)
 
@@ -494,18 +494,18 @@ de pesos, sea mayor al $40\%$.
 </p>
 </main>
 
-### Transformación muestrales para diferencia de medias `$\mu_1 - \mu_2$`
+### Transformación muestrales para diferencia de medias $\mu_1 - \mu_2$
 
-Sea `$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
-`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* con
-medias `$\mathbb{E}(X_{1i})=\mu_1$` y `$\mathbb{E}(X_{2j})=\mu_2$`, y
-varianzas `$Var(X_{1i})=\sigma_1^2<\infty$` y
-`$Var(X_{2j})=\sigma_2^2<\infty$`, para `$i=1,2,\ldots,n_1$` y
-`$j=1,2,\ldots,n_2$`, entonces dependiendo de la distribución de donde
-provengan las muestras aleatorias, los tamaños muestrales `$n_1$` y
-`$n_2$`, y de si se conocen o no las varianzas `$\sigma^2_1$` y
-`$\sigma^2_2$`, se tendrán las siguientes transformaciones para hacer
-inferencia sobre la diferencia de medias `$\mu_1 - \mu_2$`.
+Sea $X_{11}, X_{12}, \ldots, X_{1n_1}$ y
+$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* con
+medias $\mathbb{E}(X_{1i})=\mu_1$ y $\mathbb{E}(X_{2j})=\mu_2$, y
+varianzas $Var(X_{1i})=\sigma_1^2<\infty$ y
+$Var(X_{2j})=\sigma_2^2<\infty$, para $i=1,2,\ldots,n_1$ y
+$j=1,2,\ldots,n_2$, entonces dependiendo de la distribución de donde
+provengan las muestras aleatorias, los tamaños muestrales $n_1$ y
+$n_2$, y de si se conocen o no las varianzas $\sigma^2_1$ y
+$\sigma^2_2$, se tendrán las siguientes transformaciones para hacer
+inferencia sobre la diferencia de medias $\mu_1 - \mu_2$.
 
 ![](/assets/images/Transformacion4.jpg)
 
@@ -929,14 +929,14 @@ que el rendimiento del motor B sea inferior al del motor $A$.
 </p>
 </main>
 
-### Distribución muestral para diferencia de proporciones `$p_1 - p_2$`
+### Distribución muestral para diferencia de proporciones $p_1 - p_2$
 
-Sea `$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
-`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* de
-tamaño `$n_1$` y `$n_2$`, tal que `$X_{1i}\sim b(n_1,p_1)$` y
-`$X_{2i}\sim b(n_2,p_2)$`. Entonces si `$n_1$` y `$n_2$` son
+Sea $X_{11}, X_{12}, \ldots, X_{1n_1}$ y
+$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* de
+tamaño $n_1$ y $n_2$, tal que $X_{1i}\sim b(n_1,p_1)$ y
+$X_{2i}\sim b(n_2,p_2)$. Entonces si $n_1$ y $n_2$ son
 suficientemente grandes, se tendrá la siguiente transformación para
-hacer inferencia sobre la diferencia de proporciones `$\mu_1 - \mu_2$`.
+hacer inferencia sobre la diferencia de proporciones $\mu_1 - \mu_2$.
 
 ![](/assets/images/Transformacion5.jpg)
 
@@ -1050,15 +1050,15 @@ respecto a la mejora promedio de rendimiento respecto al proceso actual.
 </p>
 </main>
 
-### Distribución muestral para razón de varianzas `$\sigma^2_1/\sigma^2_2$`
+### Distribución muestral para razón de varianzas $\sigma^2_1/\sigma^2_2$
 
-Sea `$X_{11}, X_{12}, \ldots, X_{1n_1}$` y
-`$X_{21}, X_{22}, \ldots, X_{2n_1}$` dos muestras aleatorias *iid* de
-una distribución normal con medias `$\mathbb{E}(X_{1})=\mu_1$` y
-`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
-`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma_2^2<\infty$`
+Sea $X_{11}, X_{12}, \ldots, X_{1n_1}$ y
+$X_{21}, X_{22}, \ldots, X_{2n_1}$ dos muestras aleatorias *iid* de
+una distribución normal con medias $\mathbb{E}(X_{1})=\mu_1$ y
+$\mathbb{E}(X_{2})=\mu_2$, y varianzas
+$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma_2^2<\infty$
 desconocidas, entonces se tendrá la siguiente transformaciones para
-hacer inferencia sobre la razón de varianzas `$\sigma^2_1/\sigma^2_2$`.
+hacer inferencia sobre la razón de varianzas $\sigma^2_1/\sigma^2_2$.
 
 ![](/assets/images/Transformacion6.jpg)
 

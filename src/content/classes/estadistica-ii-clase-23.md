@@ -64,12 +64,12 @@ por orden de magnitud.
 
 ## Estadísticos muestrales
 
-Sea `$X_1, X_2, \ldots, Xn$` una muestra aleatoria *iid* de tamaño
-`$n$`, entonces se tendrán los siguientes estadísticos muestrales
+Sea $X_1, X_2, \ldots, Xn$ una muestra aleatoria *iid* de tamaño
+$n$, entonces se tendrán los siguientes estadísticos muestrales
 
 ### Media muestral
 
-Es el promedio aritmético del total de las `$n$` observaciones
+Es el promedio aritmético del total de las $n$ observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
@@ -135,8 +135,8 @@ pertenecientes a una muestra aleatoria, respecto a la media muestra.
 $$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
 
 
-siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
-se usa en lugar de la división sobre `$n$` con el fin de corregir el
+siendo el valor $n-1$ conocido como la corrección de Bessel, el cuál
+se usa en lugar de la división sobre $n$ con el fin de corregir el
 sesgo tendría el estimador.
 
 En <tt>R</tt> puede calcularse la varianza muestral de una muestra
@@ -265,26 +265,26 @@ aleatorias observadas en una muestra, éstos también serán variables
 aleatorias que tendrán distribuciones de probabilidad asociadas,
 distribuciones que son llamadas distribuciones muestrales.
 
-### Distribución muestral de `$\bar{X}$`
+### Distribución muestral de $\bar{X}$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de tamaño `$n$` de
-una distribución normal con media `$\mu$` y varianza `$\sigma^2$`,
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de tamaño $n$ de
+una distribución normal con media $\mu$ y varianza $\sigma^2$,
 entonces se puede mostrar que
 
 $$\begin{align*}\bar{X}=\frac{1}{n}\sum_{i=1}^n x_i \sim N(\mu, \sigma^2/n)\end{align*}$$
 
-se distribuye normalmente con media `$\mu$` y varianza `$\sigma^2/n$`.
+se distribuye normalmente con media $\mu$ y varianza $\sigma^2/n$.
 
 #### Teorema
 
-Dado que `$\bar{X}\sim N(\mu,\sigma^2/n)$`, entonces se puede aplicar la
+Dado que $\bar{X}\sim N(\mu,\sigma^2/n)$, entonces se puede aplicar la
 estandarización que se emplea a la distribución normal para llevar ésta,
 a una distribución normal estándar. Dicha estandarización sería de la
 forma
 
 $$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$$
 
-y se tendrá que `$Z$` se distribuirá como una normal estándar de forma
+y se tendrá que $Z$ se distribuirá como una normal estándar de forma
 exacta.
 
 <button id="Show4" class="btn btn-secondary">

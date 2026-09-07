@@ -41,12 +41,12 @@ ello se emplea los siguientes juegos de hipótesis.
 $$\begin{align*}H_0: \theta_i = 0 & & \text{vs} & & H_1: \theta_i \neq 0 \\ H_0: \phi_j = 0 & & \text{vs} & & H_1: \phi_j \neq 0\end{align*}$$
 
 
-donde `$\theta_i$` son los parámetros de la parte autorregresiva, con
-`$i=0,1,\ldots,p$`, y `$\phi_j$` son los parámetros de la parte de media
-móvil, con `$j=0,1,\ldots,q$`.
+donde $\theta_i$ son los parámetros de la parte autorregresiva, con
+$i=0,1,\ldots,p$, y $\phi_j$ son los parámetros de la parte de media
+móvil, con $j=0,1,\ldots,q$.
 
-El estadístico de prueba empleado para tomar la decisión entre `$H_0$` y
-`$H_1$` estará dado por una distribución t-student, el cual tiene la
+El estadístico de prueba empleado para tomar la decisión entre $H_0$ y
+$H_1$ estará dado por una distribución t-student, el cual tiene la
 forma
 
 $$\begin{align*}t_c = \frac{\hat{\theta}_i}{se(\hat{\theta}_i)}\end{align*}$$
@@ -65,7 +65,7 @@ estadístico de prueba está dado por
 $$\begin{align*}RC:\{T|T<-t_{\frac{\alpha}{2}, n-k} \text{ o } T>t_{\frac{\alpha}{2}, n-k}\}\end{align*}$$
 
 
-con `$k$` el número de parámetros en el modelo, y `$n-k$` el número de
+con $k$ el número de parámetros en el modelo, y $n-k$ el número de
 grados de libertad del modelo.
 
 Y finalmente, el P-valor asociado a cada uno de los estadísticos de
@@ -170,8 +170,8 @@ incorrelación, se debe probar el siguiente juego de hipótesis
 $$\begin{align*}\begin{split} H_0: \rho(k) = 0 \\ H_1: \rho(k) \neq 0  \end{split} \quad \quad \text{ para todo } k=1,2,\ldots, h\end{align*}$$
 
 
-**en donde, si no se rechaza `$H_0$` para todo
-`$h = max(k) = \left\lceil\frac{T}{4}\right\rceil$` se tendrá evidencia
+**en donde, si no se rechaza $H_0$ para todo
+$h = max(k) = \left\lceil\frac{T}{4}\right\rceil$ se tendrá evidencia
 para concluir que los residuales del modelo ajustado son
 incorrelacionados.**
 
@@ -236,7 +236,7 @@ hipótesis
 $$\begin{align*}H_0: \varepsilon_t \sim Normal \\ H_1: \varepsilon_t \not\sim Normal\end{align*}$$
 
 
-**en donde, si no se rechaza `$H_0$` se tendrá evidencia para concluir
+**en donde, si no se rechaza $H_0$ se tendrá evidencia para concluir
 que los residuales ajustados provienen de una distribución normal.**
 
 #### Prueba de normalidad Kolmogorov-Smirnov
@@ -248,18 +248,18 @@ mejores resultados. Esta prueba posee un estadístico de prueba dado por
 $$\begin{align*}KS = \sup|\hat{F}_n(x_i) - F_0(x_i)|\end{align*}$$
 
 
-donde `$x_i$` es el `$i$`-ésimo valor observado en la muestra, cuyos
-valores son ordenados de forma ascendente, |`$\hat{F}_n(x_i)$` es la
-función de distribución acumulada empírica evaluada en `$x_i$`, y
-`$F_0(x_i)$` es la función de distribución acumulada bajo `$H_0$` es
-cierta, evaluada en `$x_i$`.
+donde $x_i$ es el $i$-ésimo valor observado en la muestra, cuyos
+valores son ordenados de forma ascendente, |$\hat{F}_n(x_i)$ es la
+función de distribución acumulada empírica evaluada en $x_i$, y
+$F_0(x_i)$ es la función de distribución acumulada bajo $H_0$ es
+cierta, evaluada en $x_i$.
 
-Además, se tendrá que si `$K$` es una variable aleatoria tal que
+Además, se tendrá que si $K$ es una variable aleatoria tal que
 
 $$\begin{align*}K = \sup_{t\in[0,1]}|B(t)|\end{align*}$$
 
 
-siendo `$B(t)$` conocido como un puente browniando, con función de
+siendo $B(t)$ conocido como un puente browniando, con función de
 distribución acumulada dada por
 
 $$\begin{align*}P(K\leq x) = \frac{\sqrt{2\pi}}{x} \sum_{k=1}^\infty e^{-\frac{(2k-1)^2\pi^2}{8x^2}}\end{align*}$$
@@ -311,7 +311,7 @@ homocedasticidad, es necesario probar el siguiente juego de hipótesis
 $$\begin{align*}\begin{split} H_0: Var(\varepsilon_t) = \sigma^2 \\ H_1: Var(\varepsilon_t) \neq \sigma^2 \end{split}  \quad \quad \text{ para todo } t\end{align*}$$
 
 
-**en donde, si no se rechaza `$H_0$` se tendrá evidencia para concluir
+**en donde, si no se rechaza $H_0$ se tendrá evidencia para concluir
 que los residuales ajustados son homocedásticos.**
 
 #### Prueba de Breusch-Pagan
@@ -322,15 +322,15 @@ empleada para probar heterocedasticidad en los residuales de un modelos
 de regresión lineal.
 
 Para realizar la prueba, se emplea el valor obtenido por el coeficiente
-de determinación `$R^2$` de una regresión auxiliar el cual tiene la
+de determinación $R^2$ de una regresión auxiliar el cual tiene la
 forma
 
 $$\begin{align*}e_i^2 = \gamma_1 + \gamma_2z_{2i} + \ldots + \gamma_jz_{ji} + \eta_i\end{align*}$$
 
 
-donde `$Z_t$` son algunas (o todas) las variables explicativas del
-vector `$X_t$` y/o funciones conocidas de ellas, `$\eta_i$` es un
-término de error que suponemos tiene esperanza cero y `$j$` es el número
+donde $Z_t$ son algunas (o todas) las variables explicativas del
+vector $X_t$ y/o funciones conocidas de ellas, $\eta_i$ es un
+término de error que suponemos tiene esperanza cero y $j$ es el número
 de variables explicativas (incluyendo la constante) en el modelo de
 regresión lineal auxiliar. Una vez calculado el coeficiente de
 terminación, es posible calcular el estadístico de prueba de la forma
@@ -338,7 +338,7 @@ terminación, es posible calcular el estadístico de prueba de la forma
 $$\begin{align*}BP = TR^2\sim\chi^2_{j-1}\end{align*}$$
 
 
-siendo `$T$` el total de observaciones que se poseen. Además, el P-valor
+siendo $T$ el total de observaciones que se poseen. Además, el P-valor
 asociado será de la forma
 
 $$\begin{align*}\text{P-valor} = \mathbb{P}(BP<BP_\alpha)\end{align*}$$
@@ -358,15 +358,15 @@ total de observaciones en dos grupos, para luego comprobar si la
 varianza de los dos grupos es o no significativamente diferente.
 
 Para ello, ordena los residuales en base a una de las variables
-independientes `$X_t$`, dividir el total de observaciones en dos grupos,
+independientes $X_t$, dividir el total de observaciones en dos grupos,
 y cada uno de ellos calcular la suma de los cuadrados de los errores
-`$SCE$`, para luego calcular un estadístico de prueba `$F$` que tiene la
+$SCE$, para luego calcular un estadístico de prueba $F$ que tiene la
 forma
 
 $$\begin{align*}F_c = \frac{SCE_1/df_1}{SCE_2/df_2} \sim F_{df_1,df_2}\end{align*}$$
 
 
-donde `$df$` representa los grados de libertad del grupo 1 y 2,
+donde $df$ representa los grados de libertad del grupo 1 y 2,
 respectivamente. Además, se tendrá que la región crítica asociada al
 estadístico de prueba será de la forma
 
@@ -378,7 +378,7 @@ y un P-valor
 $$\begin{align*}\text{P-valor} = (2\mathbb{P}(F_{df_1,df_2}>F_c) \wedge 2\mathbb{P}(F_{df_1,df_2}<F_c)\end{align*}$$
 
 
-donde `$(a\wedge b) = min(a,b)$`. La prueba Goldfeld-Quandt puede
+donde $(a\wedge b) = min(a,b)$. La prueba Goldfeld-Quandt puede
 realizarse en <tt>R</tt>, mediante la función `gqtest()` de la librería
 `lmtest`.
 

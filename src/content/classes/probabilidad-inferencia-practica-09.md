@@ -11,7 +11,7 @@ bibliography: "../../referencias.bib"
 # Lista de ejercicios
 
 1.  Suponga que por Ley, la vida máxima de la patente para un nuevo
-    medicamento es `$17$` años. Si restamos el tiempo requerido por la
+    medicamento es $17$ años. Si restamos el tiempo requerido por la
     FDA para someter a pruebas y aprobar el medicamento, se obtiene la
     vida real de la patente para el medicamento, es decir, el tiempo que
     la compañía tiene para recuperar los costos de investigación,
@@ -105,9 +105,9 @@ bibliography: "../../referencias.bib"
     patente sea a lo más $9$ años.
     </li>
     </ol>
-2.  Sea `$X$` la variable aleatoria del número de clientes que llegan a
+2.  Sea $X$ la variable aleatoria del número de clientes que llegan a
     un centro comercial en un periodo de una hora. Si la distribución
-    acumulada de `$X$` es:
+    acumulada de $X$ es:
     
 $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}$$
 
@@ -148,9 +148,9 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro ca
     aleatoria $X$.
     </li>
     </ol>
-4.  Suponga que el tiempo medido en unidades de `$100$` horas, en las
+4.  Suponga que el tiempo medido en unidades de $100$ horas, en las
     cuales, se usa una licuadora en un hogar durante un año, es una
-    variable aleatoria continua `$X$` con función de densidad de
+    variable aleatoria continua $X$ con función de densidad de
     probabilidad dada por:
     
 $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{En otro caso}\end{cases}\end{align*}$$
@@ -182,7 +182,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
 
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
-    velocidad sea menor de `$12$` minutos
+    velocidad sea menor de $12$ minutos
     <ol type="a">
     <li>
     Usando la función de distribución acumulativa de $X$.
@@ -191,9 +191,9 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     Utilizando la función de densidad de probabilidad de $X$.
     </li>
     </ol>
-6.  Sea `$X$` una variable aleatoria continua que representa el tiempo,
+6.  Sea $X$ una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
-    la función de densidad de probabilidad `$f(x)$` está dada por:
+    la función de densidad de probabilidad $f(x)$ está dada por:
     
 $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
 
@@ -217,7 +217,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     $R(x) = \mathbb{P}(X \gt  x)$?.
     </li>
     </ol>
-7.  Considere a `$X$` la variable aleatoria que representa la suma de
+7.  Considere a $X$ la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con función de masa de
     probabilidad dada por
     
@@ -241,8 +241,8 @@ $$\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En ot
     $7$ o a lo más $4$.
     </li>
     </ol>
-8.  El `$20\%$` de las inversiones realizadas por un experto en finanzas
-    terminan en pérdida. Si se seleccionan aleatoriamente `$5$`
+8.  El $20\%$ de las inversiones realizadas por un experto en finanzas
+    terminan en pérdida. Si se seleccionan aleatoriamente $5$
     inversiones realizadas por el experto, ¿Cuál es la probabilidad de
     que una o tres, no terminen en pérdida?
 9.  Suponga que se realiza un estudio en la ciudad de Medellín para
@@ -267,12 +267,12 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </li>
     </ol>
 10. Según una página de estadísticas deportivas, el número promedio de
-    goles que anota el Barcelona por partido es de `$2.61$`. ¿Cuál es la
-    probabilidad de que en un determinado partido anote más de `$2$`
+    goles que anota el Barcelona por partido es de $2.61$. ¿Cuál es la
+    probabilidad de que en un determinado partido anote más de $2$
     goles?.
 11. Suponga que el número de llamadas telefónicas que entran a un
     conmutador particular siguen un proceso de Poisson con un promedio
-    de `$5$` llamadas entrantes por minuto.
+    de $5$ llamadas entrantes por minuto.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
@@ -291,7 +291,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     Only One Complete Failure Observation, International Journal of
     Reliability, Quality, and Safety Engineering, 2001:109-122*”, se
     modela la duración, en horas, de cierto tipo de cojinete con la
-    distribución de Weibull(`$\alpha = 2.25, \beta = 2109.705$`).
+    distribución de Weibull($\alpha = 2.25, \beta = 2109.705$).
     <ol type="a">
     <li>
     Determine la probabilidad de que un cojinete dure más de $1000$
@@ -310,12 +310,12 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </li>
     </ol>
 13. El periodo de vida de una broca en una operación mecánica, en horas,
-    tiene una distribución de Weibull con `$\alpha = 1/2$` y
-    `$\beta = 35$`. Calcule la probabilidad de que la broca falle antes
-    de `$10$` horas de uso.
+    tiene una distribución de Weibull con $\alpha = 1/2$ y
+    $\beta = 35$. Calcule la probabilidad de que la broca falle antes
+    de $10$ horas de uso.
 14. El número de automóviles que llegan a cierta intersección por minuto
-    tiene una distribución de Poisson con una media de `$3$`. Existe
-    interés por el tiempo que transcurre antes de que `$4$` automóviles
+    tiene una distribución de Poisson con una media de $3$. Existe
+    interés por el tiempo que transcurre antes de que $4$ automóviles
     aparezcan en la intersección.
     <ol type="a">
     <li>
@@ -333,7 +333,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </ol>
 15. Suponga que se realiza un estudio estadístico y se encuentra que
     número de clientes que llega donde Pastora en media hora, es una
-    variable aleatoria Poisson con media de `$4$`.
+    variable aleatoria Poisson con media de $4$.
     <ol type="a">
     <li>
     ¿Cuál es el tiempo promedio y la desviación para la llegada de cada
@@ -346,10 +346,10 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </li>
     </ol>
 16. Cada semestre se presentan miles de personas para ganar uno de los
-    `$260$` cupos que se abren para el programa de ingeniería
+    $260$ cupos que se abren para el programa de ingeniería
     industrial. Si el puntaje obtenido por los estudiantes se distribuye
-    aproximadamente normal con media de `$52.7$` puntos y desviación
-    estándar de `$15.3$` puntos.
+    aproximadamente normal con media de $52.7$ puntos y desviación
+    estándar de $15.3$ puntos.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que una persona que se presenta a
@@ -363,12 +363,12 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </li>
     </ol>
 17. Se sabe que los resultados en cierto examen de estadística, tienen
-    una distribución normal, con media `$3.1$` y desviación estándar
-    `$0.35$`. ¿Cuál es la probabilidad de que un estudiante obtenga una
-    nota entre `$3$` y `$3.5$`?
+    una distribución normal, con media $3.1$ y desviación estándar
+    $0.35$. ¿Cuál es la probabilidad de que un estudiante obtenga una
+    nota entre $3$ y $3.5$?
 18. La magnitud de temblores registrados en una región de América del
     Norte puede modelarse como si tuviera una distribución exponencial
-    con media `$2.4$`, según se mide en la escala de Richter. Encuentre
+    con media $2.4$, según se mide en la escala de Richter. Encuentre
     la probabilidad de que un temblor que ocurra en esta región
     <ol type="a">
     <li>
@@ -378,19 +378,19 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     Caiga entre 2.0 y 3.0 en la escala de Richter.
     </li>
     </ol>
-19. El tiempo `$Y$` necesario para completar una operación clave en la
+19. El tiempo $Y$ necesario para completar una operación clave en la
     construcción de casas tiene una distribución exponencial con media
-    de `$10$` horas. La fórmula `$C = 100 + 40Y + 3Y^2$` relaciona el
-    costo `$C$` de completar esta operación con el cuadrado del tiempo
-    para completarla. Encuentre la media y la varianza de `$C$`.
-20. Suponga que el transito de Medellín afirma que `$3$` de cada `$10$`
+    de $10$ horas. La fórmula $C = 100 + 40Y + 3Y^2$ relaciona el
+    costo $C$ de completar esta operación con el cuadrado del tiempo
+    para completarla. Encuentre la media y la varianza de $C$.
+20. Suponga que el transito de Medellín afirma que $3$ de cada $10$
     accidentes de tráfico se debe a que al menos uno de los implicados
-    no pasó la prueba de alcoholemia. Si ocurren `$15$` accidentes de
+    no pasó la prueba de alcoholemia. Si ocurren $15$ accidentes de
     tráfico un día cualquiera. ¿Cuál es la probabilidad de que al menos
-    `$4$` pero menos de `$7$` accidentes, no hayan sido causados por
+    $4$ pero menos de $7$ accidentes, no hayan sido causados por
     “borrachitos”.
-21. Sea `$X$` una variable aleatoria discreta con distribución de
-    probabilidades `$f(x)$` dada por:
+21. Sea $X$ una variable aleatoria discreta con distribución de
+    probabilidades $f(x)$ dada por:
     <table class="table table-striped" style="color: black; width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -462,7 +462,7 @@ $$\begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro cas
 24. Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
-    densidad de probabilidad que caracteriza la proporción `$Y$` que
+    densidad de probabilidad que caracteriza la proporción $Y$ que
     obtiene utilidades está dada por
     
 $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -477,7 +477,7 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
     </li>
     </ol>
 25. El tiempo que trabaja en horas un profesor normalmente, posee una
-    distribución exponencial con parámetro de escala `$6$`.
+    distribución exponencial con parámetro de escala $6$.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, un profesor
@@ -492,11 +492,11 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
     probabilidad de que trabaje menos de $3$ horas más?.
     </li>
     </ol>
-26. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
+26. Un proveedor de queroseno tiene un tanque de $150$ galones que se
     llena al empezar cada semana. Su demanda semanal muestra un
     comportamiento de frecuencia relativo que aumenta de manera continua
-    hasta `$100$` galones y luego se nivela entre `$100$` y `$150$`
-    galones. Si `$Y$` denota la demanda semanal en cientos de galones,
+    hasta $100$ galones y luego se nivela entre $100$ y $150$
+    galones. Si $Y$ denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
 $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -516,8 +516,8 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     </li>
     </ol>
 27. Unas partículas están suspendidas en un medio líquido con
-    concentración de seis partículas por `$mL$`. Se agita por completo
-    un volumen grande de la suspensión, y después se extrae `$3_{mL}$`.
+    concentración de seis partículas por $mL$. Se agita por completo
+    un volumen grande de la suspensión, y después se extrae $3_{mL}$.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que sólo se retiren $15$ partículas?
@@ -532,8 +532,8 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     </li>
     </ol>
 28. Suponga que se tiene cierto tipo de tablero de circuitos que
-    contiene un total de `$250$` diodos. Si se sabe por experiencia que
-    la probabilidad de que falle cualquier diodo es de `$0.002$`.
+    contiene un total de $250$ diodos. Si se sabe por experiencia que
+    la probabilidad de que falle cualquier diodo es de $0.002$.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que fallen exactamente dos diodos?
@@ -558,15 +558,15 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     </ol>
 29. Un fabricante de alimentos usa una máquina de moldeo por inyección
     (que produce galletas del tamaño de un bocado y botanas) que
-    proporciona un ingreso para la empresa a razón de `$200$` por hora
+    proporciona un ingreso para la empresa a razón de $200$ por hora
     cuando está en operación. No obstante, la máquina se descompone a un
-    promedio de dos veces por cada día que trabaja. Si `$Y$` denota el
+    promedio de dos veces por cada día que trabaja. Si $Y$ denota el
     número de descomposturas por día, el ingreso diario generado por la
-    máquina es `$R = 1600 – 50Y^2$`. Encuentre el ingreso diario
+    máquina es $R = 1600 – 50Y^2$. Encuentre el ingreso diario
     esperado por usar la máquina.
-30. El tiempo de vida `$X$`, en horas, de un artículo en el taller
+30. El tiempo de vida $X$, en horas, de un artículo en el taller
     mecánico tiene una distribución de Weibull con parámetro de escala
-    `$10$` y de forma `$2$`.
+    $10$ y de forma $2$.
     <ol type="a">
     <li>
     Cuál es la probabilidad de que falle antes de $8$ horas de uso?
@@ -598,9 +598,9 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     cruce un camión.
     </li>
     </ol>
-32. En una empresa de call center, se encontró que el `$38\%$` de los
+32. En una empresa de call center, se encontró que el $38\%$ de los
     trabajadores son mujeres cabeza de familia. Si se elige
-    aleatoriamente `$30$` trabajadores de la empresa,
+    aleatoriamente $30$ trabajadores de la empresa,
     <ol type="a">
     <li>
     Cuál es la probabilidad de que al menos $18$ pero menos de $23$
@@ -618,7 +618,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     </li>
     </ol>
 33. Suponga que el tiempo que tarda la revisión de una moto en un
-    taller, se distribuye exponencialmente con una media de `$23$`
+    taller, se distribuye exponencialmente con una media de $23$
     minutos.
     <ol type="a">
     <li>
@@ -638,23 +638,23 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     </ol>
 34. Un jugador de baloncesto del equipo de la Universidad, es el mejor
     de su equipo, tanto así que es capaz de encestar desde cualquier
-    punto `$8$` de cada `$9$` tiros que realiza. Si durante un partido,
-    el jugador lanza `$30$` veces y se sabe que ha encestado al menos
-    `$12$` tiros, cuál es la probabilidad de que haya encestado
-    exactamente `$27$` tiros.
-35. Sea `$X$` una variable aleatoria que representa el número de
+    punto $8$ de cada $9$ tiros que realiza. Si durante un partido,
+    el jugador lanza $30$ veces y se sabe que ha encestado al menos
+    $12$ tiros, cuál es la probabilidad de que haya encestado
+    exactamente $27$ tiros.
+35. Sea $X$ una variable aleatoria que representa el número de
     perforaciones que debe realizar una perforadora de petroleo para
     encontrar un yacimiento, tal que, su función de masa de probabilidad
     está dada por
     
 $$\begin{align*}p(x)=p(1-p)^x \quad \quad \text{para } x=0,1,2,\ldots\end{align*}$$
 
-    Si la probabilidad `$p$` de encontrar un yacimiento en una
-    perforación es del `$18\%$`, cuál es la probabilidad de que se
-    necesiten realizar no más de `$5$` perforaciones hasta encontrar un
+    Si la probabilidad $p$ de encontrar un yacimiento en una
+    perforación es del $18\%$, cuál es la probabilidad de que se
+    necesiten realizar no más de $5$ perforaciones hasta encontrar un
     yacimiento.
 36. Suponga que el tiempo, en minutos, que tarda una llamada en entrar a
-    un Call Center en una, es una variable aleatoria `$X$` con función
+    un Call Center en una, es una variable aleatoria $X$ con función
     de densidad de probabilidad dada por
     
 $$\begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{align*}$$
@@ -697,8 +697,8 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 
     un estudio experimental sobre el tiempo que pasan los estudiantes en
     una computadora durante el día. En dicho estudio el grupo ALIADO
     revela que el tiempo que pasan los estudiante frente a la
-    computadora, se distribuye normalmente con un promedio de `$4.8$`
-    horas, y una desviación estándar de `$2.5$` horas. Si se selecciona
+    computadora, se distribuye normalmente con un promedio de $4.8$
+    horas, y una desviación estándar de $2.5$ horas. Si se selecciona
     un estudiante al azar
     <ol type="a">
     <li>
@@ -712,7 +712,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 
     </li>
     </ol>
 39. Suponga que el número de vehículos que llegan a una esquina de un
-    pueblo durante un periodo de `$5$` minutos, es una variable
+    pueblo durante un periodo de $5$ minutos, es una variable
     aleatoria discreta con función de masa de probabilidad dada por
     
 $$\begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & \text{En otro caso}\end{cases}\end{align*}$$

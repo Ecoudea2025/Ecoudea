@@ -8,12 +8,12 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Prueba de hipótesis para la media `$\mu$`
+## Prueba de hipótesis para la media $\mu$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$` con media desconocida `$\mathbb{E}(X)=\mu$`, y varianza
-`$Var(X)=\sigma^2<\infty$`, entonces dependiendo de las condiciones, se
-tendrán los siguientes pruebas de hipótesis para la media `$\mu$`.
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$ con media desconocida $\mathbb{E}(X)=\mu$, y varianza
+$Var(X)=\sigma^2<\infty$, entonces dependiendo de las condiciones, se
+tendrán los siguientes pruebas de hipótesis para la media $\mu$.
 
 ![](/assets/images/Hipotesis3.jpg)
 
@@ -310,16 +310,16 @@ cigarrillos Malboro es diferente a $25$ mil millones de pesos.
 </p>
 </main>
 
-## Prueba de hipótesis para diferencia de medias `$\mu_1 - \mu_2$`
+## Prueba de hipótesis para diferencia de medias $\mu_1 - \mu_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
-tamaños `$n_1$`, y `$n_2$` con medias desconocidas
-`$\mathbb{E}(X_{1})=\mu_1$` y `$\mathbb{E}(X_{2})=\mu_2$`, y varianzas
-`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
+tamaños $n_1$, y $n_2$ con medias desconocidas
+$\mathbb{E}(X_{1})=\mu_1$ y $\mathbb{E}(X_{2})=\mu_2$, y varianzas
+$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes pruebas de hipótesis para la diferencia de medias
-`$\mu_1 - \mu_2$`.
+$\mu_1 - \mu_2$.
 
 ![](/assets/images/Hipotesis4.jpg)
 
@@ -729,13 +729,13 @@ de madera.
 </p>
 </main>
 
-## Prueba de hipótesis para una proporción `$p$`
+## Prueba de hipótesis para una proporción $p$
 
-Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
-grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
-encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
-entonces un una prueba de hipótesis para la proporción verdadera `$p$`
+Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
+grande tal que $n\geq30$, y la proporción desconocida $p$ no se
+encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
+entonces un una prueba de hipótesis para la proporción verdadera $p$
 será de la forma
 
 ![](/assets/images/Hipotesis5.jpg)

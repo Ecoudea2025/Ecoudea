@@ -12,9 +12,9 @@ Variables aleatorias
 --------------------
 
 Es una función que asocia un número real a cada elemento del espacio
-muestral `$S$`. Comúnmente las variables aleatorias se denotan por
-letras mayúsculas del final del alfabeto `$(X,Y,Z)$` y a los valores
-observados por letras minúsculas `$(x,y,z)$`.
+muestral $S$. Comúnmente las variables aleatorias se denotan por
+letras mayúsculas del final del alfabeto $(X,Y,Z)$ y a los valores
+observados por letras minúsculas $(x,y,z)$.
 
 Las variables aleatorias se pueden clasificar en tres tipos
 
@@ -107,16 +107,16 @@ Variables aleatorias discretas
 
 ### Función de probabilidad
 
-Se dice que el conjunto de pares ordenados `$(x,p(x))$` es una función
-de masa de probabilidad (*fmp*) de la variable aleatoria discreta `$X$`,
-si para cualquier resultado posible de `$X$` se cumple que
+Se dice que el conjunto de pares ordenados $(x,p(x))$ es una función
+de masa de probabilidad (*fmp*) de la variable aleatoria discreta $X$,
+si para cualquier resultado posible de $X$ se cumple que
 
-1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
+1.  $p(x)\geq0$ para todo $x \in$ en el dominio de $X$
 
-2.  `$\sum_x p(x)=1$`
+2.  $\sum_x p(x)=1$
 
-3.  `$\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$` con `$A$` un conjunto de
-    valores `$\in$` al dominio de `$X$`.
+3.  $\sum_{x\in A}p(x) = \mathbb{P}(X\in A)$ con $A$ un conjunto de
+    valores $\in$ al dominio de $X$.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -298,28 +298,28 @@ de $3$ hijos, se tenga $2$ o más niñas, es del $50\%$.
 
 ### Función de distribución acumulada
 
-La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
-una variable aleatoria discreta `$X$` con distribución de probabilidad
-`$p(x)$` es de la forma
+La función de distribución acumulada (*fda*) denotada por $F(x)$, para
+una variable aleatoria discreta $X$ con distribución de probabilidad
+$p(x)$ es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
 
-para cualquier `$x$` dentro del rango de `$X$`, `$F(x)$` será la suma
-acumulada de todos los valores de rango de `$X$` menores a `$x$`.
+para cualquier $x$ dentro del rango de $X$, $F(x)$ será la suma
+acumulada de todos los valores de rango de $X$ menores a $x$.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso discreto, entonces, si `$a$` y `$b$`
+distribución acumulada en el caso discreto, entonces, si $a$ y $b$
 son dos números **constantes enteras**, deberán tenerse en cuenta las
 siguientes reglas
 
--   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$`
--   `$\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$`
--   `$\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$`
--   `$\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$`
--   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$`
--   `$\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
--   `$\mathbb{P}(X \leq b) = F(b)$`
--   `$\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$`
+-   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a - 1) = F(b) - F(a - 1)$
+-   $\mathbb{P}(a < X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a)  = F(b) - F(a)$
+-   $\mathbb{P}(a \leq X < b) = \mathbb{P}(X\leq b-1) - \mathbb{P}(X\leq a-1) = F(b - 1) - F(a - 1)$
+-   $\mathbb{P}(a < X < b) = \mathbb{P}(X\leq b-1) + \mathbb{P}(X\leq a) = F(b - 1) - F(a)$
+-   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a-1) = 1 - F(a-1)$
+-   $\mathbb{P}(X > a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
+-   $\mathbb{P}(X \leq b) = F(b)$
+-   $\mathbb{P}(X < b) = \mathbb{P}(X\leq b-1) = F(b - 1)$
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -454,9 +454,9 @@ $3$ hijos, tengan $2$ o más niñas es de $50\%$.
 
 ### Esperanza matemática
 
-Si `$X$` es una variable aleatoria con función de masa de probabilidad
-`$p(x)$`, entonces la media o valor esperado de la variable aleatoria se
-denota por `$\mathbb{E}(X)$` o `$\mu$` está dada por
+Si $X$ es una variable aleatoria con función de masa de probabilidad
+$p(x)$, entonces la media o valor esperado de la variable aleatoria se
+denota por $\mathbb{E}(X)$ o $\mu$ está dada por
 
 $$\begin{align*}\mathbb{E}(X)=\sum_{x}xp(x)\end{align*}$$
 
@@ -544,13 +544,13 @@ familia que posee $3$ hijos es de $1.5$ niñas.
 
 ### Propiedades de la esperanza matemática
 
-Sea `$a$` y `$b$` dos números constantes (reales) y `$X$` una variable
+Sea $a$ y $b$ dos números constantes (reales) y $X$ una variable
 aleatoria, entonces se tiene que
 
--   `$\mathbb{E}(a) = a$`
--   `$\mathbb{E}(bX) = b\mathbb{E}(X)$`
--   `$\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$`
--   si `$m(X)$` es una función de `$X$`, entonces
+-   $\mathbb{E}(a) = a$
+-   $\mathbb{E}(bX) = b\mathbb{E}(X)$
+-   $\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$
+-   si $m(X)$ es una función de $X$, entonces
 
 
 $$\begin{align*}\mathbb{E}(m(X))=\sum_xm(x)p(x)\end{align*}$$

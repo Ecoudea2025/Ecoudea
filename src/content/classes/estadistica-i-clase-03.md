@@ -12,8 +12,8 @@ bibliography: "../../referencias.bib"
 
 ### Distribución Normal
 
-Se dice que la variable aleatoria `$X$` tiene una distribución Normal
-con parámetros `$\mu$` y `$\sigma^2)$`, si su función de densidad de
+Se dice que la variable aleatoria $X$ tiene una distribución Normal
+con parámetros $\mu$ y $\sigma^2)$, si su función de densidad de
 probabilidad es de la forma
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
@@ -21,18 +21,18 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x -
 
 #### Teorema
 
-Si `$X\sim N(\mu, \sigma^2)$`, entonces se puede probar que la media y
-la varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim N(\mu, \sigma^2)$, entonces se puede probar que la media y
+la varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}$$
 
 
 ### Distribución Normal estándar
 
-Un caso particular de la distribución normal cuando la media `$\mu=0$` y
-ka varianza `$\sigma^2=1$`, recibe el nombre de distribución normal
-estándar, cuya variable aleatoria se simboliza con `$Z$`, tal que
-`$Z\sim N(0,1)$`, y donde su función de densidad de probabilidad está
+Un caso particular de la distribución normal cuando la media $\mu=0$ y
+ka varianza $\sigma^2=1$, recibe el nombre de distribución normal
+estándar, cuya variable aleatoria se simboliza con $Z$, tal que
+$Z\sim N(0,1)$, y donde su función de densidad de probabilidad está
 dada por
 
 
@@ -41,38 +41,38 @@ $$\begin{align*}f(z) = \begin{cases} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} & -
 
 ### Teorema de Estandarización
 
-Si `$X\sim N(\mu, \sigma^2)$`, siendo `$a$` y `$b$` dos constantes
+Si $X\sim N(\mu, \sigma^2)$, siendo $a$ y $b$ dos constantes
 cualquiera, entonces si se realiza la transformación
-`$Z=\frac{x-\mu}{\sigma}$` conocida como **estandarización**, se tendrá
-que `$Z\sim N(0,1)$`, con `$z_1$` y `$z_2$` las dos constantes
+$Z=\frac{x-\mu}{\sigma}$ conocida como **estandarización**, se tendrá
+que $Z\sim N(0,1)$, con $z_1$ y $z_2$ las dos constantes
 transformadas.
 
 ![](/assets/images/Estandarizacion.jpg)
 
 ### Propiedades
 
-Si `$X\sim N(\mu, \sigma^2)$`, entonces al aplicar el teorema de
-estandarización `$Z=\frac{x-\mu}{\sigma} \sim N(0,1)$`, y por tanto, si
-`$z_1$` y `$z_2$` son constantes, se tendrá que
+Si $X\sim N(\mu, \sigma^2)$, entonces al aplicar el teorema de
+estandarización $Z=\frac{x-\mu}{\sigma} \sim N(0,1)$, y por tanto, si
+$z_1$ y $z_2$ son constantes, se tendrá que
 
-1.  `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$`
+1.  $\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$
 
-2.  `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$`
+2.  $\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$
 
-3.  `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$`
+3.  $\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$
 
-4.  Si `$z_1 = - z_2$` entonces
-    `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$`
+4.  Si $z_1 = - z_2$ entonces
+    $\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$
 
-5.  `$Z_\alpha$` es el valor de la variable aleatoria `$Z\sim N(0,1)$`
-    tal que `$\mathbb{P}(Z\geq Z_\alpha)=\alpha$`, y
-    `$\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$`
+5.  $Z_\alpha$ es el valor de la variable aleatoria $Z\sim N(0,1)$
+    tal que $\mathbb{P}(Z\geq Z_\alpha)=\alpha$, y
+    $\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$
 
 En donde, debe recordarse que, al ser la distribución normal una
-distribución continua, la `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z< z_1)$`
-y `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z > z_1)$`. Lo anterior debido a
+distribución continua, la $\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z< z_1)$
+y $\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z > z_1)$. Lo anterior debido a
 que en la distribuciones continuas la probabilidad puntual es igual a
-`$0$`.
+$0$.
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio Manejo de Tabla Normal Estándar
@@ -339,17 +339,17 @@ celular dure al menos $4$ años, es del $76.67\%$.
 
 ### Teorema de Aproximación Binomial a Normal
 
-Si `$X\sim b(n,p)$` con `$n$` grande `$(n\geq 30)$` y `$p$` cercano a
-0.5 `$(p\approx 0.5)$` entonces se dice que
-`$X\stackrel{a}{\sim}N(\mu,\sigma^2)$` donde `$\mu = np$` y
-`$\sigma^2 = np(1-p)$`.
+Si $X\sim b(n,p)$ con $n$ grande $(n\geq 30)$ y $p$ cercano a
+0.5 $(p\approx 0.5)$ entonces se dice que
+$X\stackrel{a}{\sim}N(\mu,\sigma^2)$ donde $\mu = np$ y
+$\sigma^2 = np(1-p)$.
 
-Además, se tendrá que `$Z\stackrel{a}{\sim}N(0,1)$`, tal que
+Además, se tendrá que $Z\stackrel{a}{\sim}N(0,1)$, tal que
 
 $$\begin{align*}Z=\frac{x-np}{\sqrt{np(1-p)}}\stackrel{a}{\sim}N(0,1)\end{align*}$$
 
 
-La aproximación será buena si `$np$` y `$n(1-p)>5$`.
+La aproximación será buena si $np$ y $n(1-p)>5$.
 
 **Nota:** Para realizar la aproximación de binomial a normal, se debe
 usar un factor de corrección de continuidad de 0.5, así
@@ -469,11 +469,11 @@ aproximación para la distribución binomial.
 
 ### Teorema de Aproximación Poisson a Normal
 
-Si `$X\sim P(\lambda)$` con `$\lambda$` grande `$(\lambda\geq 30)$`
-entonces se dice que `$X\stackrel{a}{\sim}N(\mu,\sigma^2)$` donde
-`$\mu = \lambda$` y `$\sigma^2 = \lambda$`.
+Si $X\sim P(\lambda)$ con $\lambda$ grande $(\lambda\geq 30)$
+entonces se dice que $X\stackrel{a}{\sim}N(\mu,\sigma^2)$ donde
+$\mu = \lambda$ y $\sigma^2 = \lambda$.
 
-Además, se tendrá que `$Z\stackrel{a}{\sim}N(0,1)$`, tal que
+Además, se tendrá que $Z\stackrel{a}{\sim}N(0,1)$, tal que
 
 $$\begin{align*}Z=\frac{x-\lambda}{\sqrt{\lambda}}\stackrel{a}{\sim}N(0,1)\end{align*}$$
 

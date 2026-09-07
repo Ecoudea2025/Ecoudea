@@ -13,15 +13,15 @@ Distribución de probabilidad conjunta
 
 ### Distribuciones marginales
 
-Sean `$X, Y$` dos variables aleatorias con función de masa de
-probabilidad conjunta `$p(x,y)$`o función de densidad de probabilidad
-conjunta `$f(x,y)$`, entonces las distribuciones marginales solo de
-`$X$`, están dada por
+Sean $X, Y$ dos variables aleatorias con función de masa de
+probabilidad conjunta $p(x,y)$o función de densidad de probabilidad
+conjunta $f(x,y)$, entonces las distribuciones marginales solo de
+$X$, están dada por
 
 $$\begin{align*}g(x)=\begin{cases} \sum_{y}p(x,y) & \text{ si } x,y \text{ son discretas} \\ \int_{-\infty}^\infty f(x,y) dy & \text{ si } x,y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Similarmente, las distribuciones marginales solo de `$Y$`, están dadas
+Similarmente, las distribuciones marginales solo de $Y$, están dadas
 por
 
 $$\begin{align*}h(y)=\begin{cases} \sum_{x}p(x,y) & \text{ si } x,y \text{ son discretas} \\ \int_{-\infty}^\infty f(x,y) dx & \text{ si } x,y \text{ son continuas} \end{cases}\end{align*}$$
@@ -744,14 +744,14 @@ solo depende de la variable aleatoria $Y$.
 
 ### Distribuciones condicionales
 
-Sea `$X, Y$` dos variables aleatorias con función de masa de
+Sea $X, Y$ dos variables aleatorias con función de masa de
 probabilidad conjunta o función de densidad de probabilidad conjunta
-entonces la distribución condicional de `$X$` dado `$Y$` es
+entonces la distribución condicional de $X$ dado $Y$ es
 
 $$\begin{align*}f(x|y)=\frac{f(x,y)}{h(y)} \text{ con } h(y)>0\end{align*}$$
 
 
-Análogamente, la distribución condicional de `$Y$` dado `$X$` es
+Análogamente, la distribución condicional de $Y$ dado $X$ es
 
 $$\begin{align*}f(y|x)=\frac{f(x,y)}{g(x)} \text{ con } g(x)>0\end{align*}$$
 
@@ -1315,16 +1315,16 @@ f(y|x\leq1.3) =& \frac{0.0201y^2}{0.4225} \\
 
 ### Independencia estadística
 
-Sea `$X, Y$` dos variables aleatorias discretas con función de masa de
-probabilidad conjunta `$p(x,y)$` o continuas con función de densidad de
-probabilidad conjunta `$f(x,y)$`, y con distribuciones marginales
-`$g(x)$` y `$h(y)$`. entonces, se dice que las variables aleatorias
-`$X,Y$` son estadísticamente independientes si y solo si
+Sea $X, Y$ dos variables aleatorias discretas con función de masa de
+probabilidad conjunta $p(x,y)$ o continuas con función de densidad de
+probabilidad conjunta $f(x,y)$, y con distribuciones marginales
+$g(x)$ y $h(y)$. entonces, se dice que las variables aleatorias
+$X,Y$ son estadísticamente independientes si y solo si
 
 $$\begin{align*}f(x,y)=g(x)h(y)\end{align*}$$
 
 
-para todo `$(x,y)$` dentro de sus rangos o planos.
+para todo $(x,y)$ dentro de sus rangos o planos.
 
 <button id="Show5" class="btn btn-secondary">
 Mostrar Ejercicio Caso Discreto

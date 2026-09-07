@@ -55,7 +55,7 @@ Unidades detalladas
 -   Muestras aleatorias
 -   Estadísticos y sus propiedades
 -   Distribuciones relacionadas con la distribución Gaussiana
-    -   Distribución `$\chi^2$`
+    -   Distribución $\chi^2$
     -   Distribución t-Student
     -   Distribución F-Snedecor
 -   Estadísticas de orden

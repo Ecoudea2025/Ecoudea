@@ -8,15 +8,15 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Intervalos de confianza para razón de varianzas `$\sigma^2_1/\sigma^2_2$`
+## Intervalos de confianza para razón de varianzas $\sigma^2_1/\sigma^2_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
-de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
-`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
-`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
+de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
+$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
+$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
 respectivamente, entonces un intervalo de confianza del
-`$100(1-\alpha)\%$` para `$\sigma^2_1/\sigma^2_2$` estará dada por
+$100(1-\alpha)\%$ para $\sigma^2_1/\sigma^2_2$ estará dada por
 
 ![](/assets/images/Intervalos6.jpg)
 

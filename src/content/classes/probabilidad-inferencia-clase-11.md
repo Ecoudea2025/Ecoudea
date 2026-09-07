@@ -12,21 +12,21 @@ bibliography: "../../referencias.bib"
 
 ## Distribución Weibull
 
-Se dice que la variable aleatoria `$X$` tiene una distribución Weibull
-con parámetros `$\alpha$` y `$\beta$`, si su función de densidad de
+Se dice que la variable aleatoria $X$ tiene una distribución Weibull
+con parámetros $\alpha$ y $\beta$, si su función de densidad de
 probabilidad es de la forma
 
 $$\begin{align*}f(x) = \begin{cases} \frac{\alpha}{\beta}\left(\frac{x}{\beta}\right)^{\alpha - 1}e^{-\left(\frac{x}{\beta}\right)^\alpha} & x\geq 0, \alpha>0, \beta>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
 
 
-donde, `$\alpha$` se conoce como el parámetro de forma y `$\beta$` como
-el parámetro de escala. Además, si `$\alpha=1$` se tendrá que la
+donde, $\alpha$ se conoce como el parámetro de forma y $\beta$ como
+el parámetro de escala. Además, si $\alpha=1$ se tendrá que la
 distribución Weibull será igual a la distribución Exponencial.
 
 #### Teorema
 
-Si `$X\sim Wei(\alpha, \beta)$`, entonces se puede probar que la media y
-la varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Wei(\alpha, \beta)$, entonces se puede probar que la media y
+la varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\beta\;\Gamma\left(1 + \frac{1}{\alpha}\right) \quad \quad Var(X)=\beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gamma\left(1 + \frac{1}{\alpha}\right)^2\right]\end{align*}$$
 
@@ -156,8 +156,8 @@ $3.706$ años.
 
 #### Función de distribución acumulada Weibull
 
-Si `$X\sim Wei(\alpha, \beta)$`, entonces se puede probar que la función
-de distribución acumulada de `$X$` está dada por
+Si $X\sim Wei(\alpha, \beta)$, entonces se puede probar que la función
+de distribución acumulada de $X$ está dada por
 
 $$\begin{align*}F(x) = \mathbb{P}(X\leq x) = \begin{cases} 0 & x<0 \\ 1- e^{-\left(\frac{x}{\beta}\right)^\alpha} & x\geq 0 \end{cases}\end{align*}$$
 
@@ -215,18 +215,18 @@ $12$ años.
 ## Función de confiabilidad (función de supervivencia)
 
 Es una función decreciente que mide la probabilidad de que un componente
-funcione adecuadamente por al menos un tiempo `$t$`. Esta se representa
+funcione adecuadamente por al menos un tiempo $t$. Esta se representa
 como
 
 $$\begin{align*}R(t) = \mathbb{P}(T > t) = \int_t^\infty f(x) dx = 1- F(t)\end{align*}$$
 
-donde `$F(t)$` es la función de distribución acumulada de la variable
-aleatoria `$T$`.
+donde $F(t)$ es la función de distribución acumulada de la variable
+aleatoria $T$.
 
 ### Función de confiabilidad Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la función de
-confiabilidad de la variable aleatoria `$X$` está dada por
+Si $X\sim Exp(\beta)$, entonces se puede probar que la función de
+confiabilidad de la variable aleatoria $X$ está dada por
 
 $$\begin{align*}R(t) = e^{-\frac{t}{\beta}} \quad \quad t>0\end{align*}$$
 
@@ -277,8 +277,8 @@ más de $9$ minutos.
 
 ### Función de confiabilidad Weibull
 
-Si `$X\sim Wei(\alpha, \beta)$`, entonces se puede probar que la función
-de confiabilidad de la variable aleatoria `$X$` está dada por
+Si $X\sim Wei(\alpha, \beta)$, entonces se puede probar que la función
+de confiabilidad de la variable aleatoria $X$ está dada por
 
 $$\begin{align*}R(t) = e^{-\left(\frac{t}{\beta}\right)^\alpha} \quad \quad t>0\end{align*}$$
 
@@ -329,21 +329,21 @@ de que la vida útil del aire acondicionado supere los $3$ años.
 ## Tasa de fallas (tasa de riesgo)
 
 Representa la probabilidad de falla instantánea, dado que el componente
-funciona en el momento `$t$`, y se representa como
+funciona en el momento $t$, y se representa como
 
 $$\begin{align*}h(t) & = \lim_{\Delta t\to0}\frac{\mathbb{P}(t<T<t+\Delta t|T>t)}{\Delta t} \\      & = \lim_{\Delta t\to0}\frac{1}{\Delta t}\frac{F(t+\Delta t) - F(t)}{R(t)} \\      & = \frac{F^´(t)}{R(t)} \\      & = \frac{f(t)}{1 - F(t)}\end{align*}$$
 
 
 Y mide la tasa de cambio con el tiempo (Desgaste o Fortalecimiento) de
-la probabilidad de que el componente dure un `$\Delta t$` adicional,
-dado que ha durado `$t$`.
+la probabilidad de que el componente dure un $\Delta t$ adicional,
+dado que ha durado $t$.
 
 ![](/assets/images/tasadefallas.jpg)
 
 ### Tasa de fallas Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la tasa de fallas
-de la variable aleatoria `$X$` está dada por
+Si $X\sim Exp(\beta)$, entonces se puede probar que la tasa de fallas
+de la variable aleatoria $X$ está dada por
 
 $$\begin{align*}h(t) = \frac{1}{\beta} \quad \quad t>0\end{align*}$$
 
@@ -393,8 +393,8 @@ igual a $\frac{1}{3}$.
 
 ### Tasa de fallas Weibull
 
-Si `$X\sim Wei(\alpha, \beta)$`, entonces se puede probar que la tasa de
-fallas de la variable aleatoria `$X$` está dada por
+Si $X\sim Wei(\alpha, \beta)$, entonces se puede probar que la tasa de
+fallas de la variable aleatoria $X$ está dada por
 
 $$\begin{align*}h(t) = \frac{\alpha}{\beta}\left(\frac{t}{\beta}\right)^{\alpha-1} \quad \quad t>0\end{align*}$$
 

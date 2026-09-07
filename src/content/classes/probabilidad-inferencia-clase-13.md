@@ -10,13 +10,13 @@ bibliography: "../../referencias.bib"
 
 ## Funciones de probabilidad continuas
 
-Se dice que la función `$f(x)$` es una función de densidad de
-probabilidad (*fdp*) de la variable aleatoria continua `$X$`, definida
+Se dice que la función $f(x)$ es una función de densidad de
+probabilidad (*fdp*) de la variable aleatoria continua $X$, definida
 en el conjunto de números reales si
 
-1.  `$f(x)\geq0$` para todo `$x \in \mathbb{R}$`
-2.  `$\int_{-\infty}^\infty f(x) dx=1$`
-3.  `$\int_{a}^b f(x) dx = \mathbb{P}(a<X<b)$`
+1.  $f(x)\geq0$ para todo $x \in \mathbb{R}$
+2.  $\int_{-\infty}^\infty f(x) dx=1$
+3.  $\int_{a}^b f(x) dx = \mathbb{P}(a<X<b)$
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -129,24 +129,24 @@ $30$ minutos y $50$ minutos.
 
 ## Función de distribución acumulada caso continuo
 
-La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
-una variable aleatoria continua `$X$` con distribución de probabilidad
-`$f(x)$` es de la forma
+La función de distribución acumulada (*fda*) denotada por $F(x)$, para
+una variable aleatoria continua $X$ con distribución de probabilidad
+$f(x)$ es de la forma
 
 $$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\int_{-\infty}^x f(t) dt \quad \quad\end{align*}$$
 
 
-para cualquier `$x$`, `$F(x)$` es el área izquierda bajo la curva de
+para cualquier $x$, $F(x)$ es el área izquierda bajo la curva de
 densidad.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso continuo, entonces, si `$a$` y `$b$`
+distribución acumulada en el caso continuo, entonces, si $a$ y $b$
 son dos números constantes, deberán tenerse en cuenta las siguientes
 reglas
 
--   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$`
--   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$`
--   `$\mathbb{P}(X \leq b) = F(b)$`
+-   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X\leq b) - \mathbb{P}(X\leq a) = F(b) - F(a)$
+-   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X\leq a) = 1 - F(a)$
+-   $\mathbb{P}(X \leq b) = F(b)$
 
 **Nota:** Recordar que en el caso continuo, las probabilidad con o sin
 la igualdad son equivalentes, y por tanto, solo se escriben las tres
@@ -225,9 +225,9 @@ $50$ minutos, es de $46.45\%$.
 
 ## Esperanza matemática caso continuo
 
-Si `$x$` es una variable aleatoria con *fdp* `$f(x)$`, entonces la media
+Si $x$ es una variable aleatoria con *fdp* $f(x)$, entonces la media
 o valor esperado de la variable aleatoria se denota por
-`$\mathbb{E}(X)$` o `$\mu$` está dada por
+$\mathbb{E}(X)$ o $\mu$ está dada por
 
 $$\begin{align*}\mathbb{E}(X)=\int_{-\infty}^\infty xf(x) dx\end{align*}$$
 
@@ -290,13 +290,13 @@ será de $30$ minutos.
 
 ### Propiedades de la esperanza matemática
 
-Sea `$a$` y `$b$` dos números constantes (reales) y `$X$` una variable
+Sea $a$ y $b$ dos números constantes (reales) y $X$ una variable
 aleatoria, entonces se tiene que
 
--   `$\mathbb{E}(a)=a$`
--   `$\mathbb{E}(X+b)=\mathbb{E}(X)+b$`
--   `$\mathbb{E}(aX)=a\mathbb{E}(X)$`
--   si `$m(X)$` es una función de `$X$`, entonces
+-   $\mathbb{E}(a)=a$
+-   $\mathbb{E}(X+b)=\mathbb{E}(X)+b$
+-   $\mathbb{E}(aX)=a\mathbb{E}(X)$
+-   si $m(X)$ es una función de $X$, entonces
 
 
 $$\begin{align*}\mathbb{E}(m(X))=\int_{-\infty}^\infty m(x)f(x)\end{align*}$$
@@ -408,23 +408,23 @@ $$\begin{align*}
 
 ## Varianza caso continuo
 
-Sea `$X$` una variable aleatoria con *fdp* `$f(x)$`, entonces si
-`$m(X) = (X - \mathbb{E}(X))^2$`, se tendrá que la varianza de `$X$` que
-se denota `$Var(X)$` o `$\sigma^2$` estará dada por
+Sea $X$ una variable aleatoria con *fdp* $f(x)$, entonces si
+$m(X) = (X - \mathbb{E}(X))^2$, se tendrá que la varianza de $X$ que
+se denota $Var(X)$ o $\sigma^2$ estará dada por
 
 $$\begin{align*}Var(X) = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right]=\int_{-\infty}^\infty(x-\mathbb{E}(X))^2f(x) dx\end{align*}$$
 
 
 Similar al caso discreto, se puede demostrar a partir de la ecuación
-anterior, que una alternativa para el cálculo de la `$Var(X)$` es de la
+anterior, que una alternativa para el cálculo de la $Var(X)$ es de la
 forma
 
 
 $$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
 
 
-además, la raíz cuadrada de la varianza de `$X$` se llama desviación
-estándar de `$X$`, se denota por `$Sd(X)$` o `$\sigma$` y se define como
+además, la raíz cuadrada de la varianza de $X$ se llama desviación
+estándar de $X$, se denota por $Sd(X)$ o $\sigma$ y se define como
 
 $$\begin{align*}Sd(X) = \sqrt{Var(X)}\end{align*}$$
 
@@ -501,9 +501,9 @@ con una desviación de $11.33893$.
 
 ### Propiedades de la varianza
 
-Sea `$a$` y `$b$` números reales (constantes) y `$X$` una variable
+Sea $a$ y $b$ números reales (constantes) y $X$ una variable
 aleatorias, entonces se tiene que
 
-1.  `$Var(a)=0$`
-2.  `$Var(aX)=a^2Var(X)$`
-3.  `$Var(a+bX) = b^2Var(X)$`
+1.  $Var(a)=0$
+2.  $Var(aX)=a^2Var(X)$
+3.  $Var(a+bX) = b^2Var(X)$

@@ -10,17 +10,17 @@ bibliography: "../../referencias.bib"
 Ejercicios
 ----------
 
--   Cree tres vectores de longitud `$3$` con nombres `$a$`, `$b$` y
-    `$c$`, a partir de la selección de un número entero entre el `$0$` y
-    el `$9$`. Combine estos tres vectores por columna, de modo que se
-    contruya una matriz `$3\times3$` y obtenga el determinante de la
+-   Cree tres vectores de longitud $3$ con nombres $a$, $b$ y
+    $c$, a partir de la selección de un número entero entre el $0$ y
+    el $9$. Combine estos tres vectores por columna, de modo que se
+    contruya una matriz $3\times3$ y obtenga el determinante de la
     misma.
 -   Calcule dos matrices
     
 $$\begin{align*}A = \begin{bmatrix} 2 & 0 & 5 \\ 1 & 3 & -2 \end{bmatrix} \quad \quad B = \begin{bmatrix} 5 & 2 \\ 4 & -1 \\ 8 & 9 \end{bmatrix}\end{align*}$$
 
     y con éstas, calcula mediante multiplicación matricial, una matriz
-    `$3\times 3$` y una matriz `$2\times 2$`.
+    $3\times 3$ y una matriz $2\times 2$.
 -   Construya el siguiente marco de datos
     <pre style="font-family: 'Open Sans',sans-serif; margin-bottom: -3rem; margin-top: -3rem; font-size: 120%;">
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -99,8 +99,8 @@ $$\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}$$
 
     -   Emplee la columna de <tt>IMC</tt> creada en el punto anterior, y
         con ésta, cree una nueva variable con los niveles,
-        <tt>Delgadez</tt> si `$IMC\leq 18.49$`, <tt>Normal</tt> si
-        `$18.49< IMC\leq 24.99$` y <tt>Sobrepeso</tt> si `$IMC>24.99$`.
+        <tt>Delgadez</tt> si $IMC\leq 18.49$, <tt>Normal</tt> si
+        $18.49< IMC\leq 24.99$ y <tt>Sobrepeso</tt> si $IMC>24.99$.
     -   Invierta la variable <tt>Sexo</tt>, para que éste coincida con
         el nombre de las personas.
     -   Agregue una nueva fila, que contenga su información.
@@ -118,7 +118,7 @@ $$\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}$$
         <tt>0</tt> por <tt>“Forma de V”</tt> y el <tt>1</tt> por
         <tt>“Recto”</tt>.
     -   Cree una variable empleando la variable <tt>wt</tt>,
-        estableciendo `$3$` niveles de pesos, <tt>Liviano</tt>,
+        estableciendo $3$ niveles de pesos, <tt>Liviano</tt>,
         <tt>Regular</tt>, <tt>Pesado</tt>, empleando como puntos de
         corte, el primer y tercer cuartil de la variable.
     -   Redondee a un solo decimal, la variable <tt>drat</tt>.
@@ -128,20 +128,20 @@ $$\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}$$
     dolares, o viceversa.
 -   Escriba un ciclo que imprima números aleatorios de una distribución
     normal estándar, pero se detiene si obtiene un número mayor que
-    `$1.8$`.
+    $1.8$.
 -   Escriba un ciclo que imprima números aleatorios de una distribución
-    uniforme en el intervalo `$-3$` y `$3$`, que resulten ser positivos,
-    y que pare luego de que el número generado sea mayor a `$2.3$`.
+    uniforme en el intervalo $-3$ y $3$, que resulten ser positivos,
+    y que pare luego de que el número generado sea mayor a $2.3$.
 -   Escriba una función que permita contar el número de caracteres que
     hay en una sarta de caracteres, y el número de caracteres
     individuales. Por ejemplo, emplee la sarta
     “ASDAGEQWDASDWQSDAGGRRTURYSDVDFASWQQWEQWFASF” y diga cuantas letras
     hay en total, y cuantas veces se repite cada letra.
--   Escriba un ciclo, que simule el lanzamiento de una moneda `$12$`
+-   Escriba un ciclo, que simule el lanzamiento de una moneda $12$
     veces y muestre una tabla con los resultados obtenidos.
--   Escriba un ciclo que imprima los primeros `$200$` números primos.
+-   Escriba un ciclo que imprima los primeros $200$ números primos.
 -   Escriba un ciclo anidado, que permita construir una matriz
-    `$4\times4$` de la forma
+    $4\times4$ de la forma
 
 `\begin{bmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 1 & 1 \\ 1 & 1 & 0 & 1 \\ 1 & 1 & 1 & 0 \end{bmatrix}`
 
@@ -150,17 +150,17 @@ $$\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}$$
     
 $$\begin{align*}1\times 2 \times 3 \times 4 \times \ldots\end{align*}$$
 
-    hasta alcanzar un número mayor a `$10$` millones
+    hasta alcanzar un número mayor a $10$ millones
 -   Escriba un ciclo que simule un stock de precios que comience en
-    `$120$` pesos, y que aumente o disminuya mediante un número
-    aleatorio de una distribución normal con media `$0$` y varianza de
-    `$0.1$` para cada periodo. Cuantos periodos pasarán hasta que el
-    precio se encuentre por encima de `$200$` o por debajo de `$50$`?
+    $120$ pesos, y que aumente o disminuya mediante un número
+    aleatorio de una distribución normal con media $0$ y varianza de
+    $0.1$ para cada periodo. Cuantos periodos pasarán hasta que el
+    precio se encuentre por encima de $200$ o por debajo de $50$?
 -   Escriba una función que retorne la suma de dos números enteros
 -   Escriba una función que retorne <tt>TRUE</tt>, si la división de dos
     números es un número entero.
--   Escriba una función que permita seleccionar los primeros `$X$`
-    números divisibles por por `$52$` que se desean obtener.
+-   Escriba una función que permita seleccionar los primeros $X$
+    números divisibles por por $52$ que se desean obtener.
 -   Escriba una función que tome un vector numérico, ordene los números
     en orden descendente y eleve al cuadrado cada valor.
 -   Escriba una función que tome un vector numérico y un número entero,

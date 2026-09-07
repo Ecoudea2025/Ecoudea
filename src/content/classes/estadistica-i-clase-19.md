@@ -45,7 +45,7 @@ características:
 Es el conjunto de **todos los posibles resultados de un experimento
 estadístico**. estos espacios pueden dividirse en espacios muestrales
 discretos y continuos. Generalmente, el espacio muestral se denota por
-la letra `$S$` o la letra griega `$\Omega$`.
+la letra $S$ o la letra griega $\Omega$.
 
 #### Espacio muestral discreto
 
@@ -117,9 +117,9 @@ en salir de la oficina para comprar un tinto en la burbuja.
 
 ### Evento de un espacio muestral
 
-Es un **subconjunto de resultados del espacio muestral** `$S$`.
+Es un **subconjunto de resultados del espacio muestral** $S$.
 Generalmente, los eventos se denotan por las primeras letras del
-abecedario de la forma `$A, B, C$` o `$A_1, A_2, A_3$`.
+abecedario de la forma $A, B, C$ o $A_1, A_2, A_3$.
 
 Los eventos pueden ser clasificados en tres tipos
 
@@ -130,7 +130,7 @@ Los eventos pueden ser clasificados en tres tipos
     independientes.
 -   **Imposible:** se da cuando el evento no puede ocurrir dentro del
     espacio muestral. El evento se denota entonces por el símbolo
-    `$\phi$` que representa al conjunto vacío.
+    $\phi$ que representa al conjunto vacío.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -144,7 +144,7 @@ Ejercicio
 </h3>
 <ol type="1">
 <li>
-Considere el experimento de lanzar un dado convencional de `$6$`
+Considere el experimento de lanzar un dado convencional de $6$
 caras.</br> Escriba el evento
 </li>
 <ul>
@@ -245,21 +245,21 @@ Dado que un evento puede estar compuestos por un conjunto de datos, las
 relaciones y resultados de la teoría de conjuntos, pueden ser utilizados
 para solucionar problemas de probabilidad. Por ello definimos a
 
-1.  El **complemento** de un evento `$A$` respecto al espacio muestral
-    `$S$`, es denotado por `$A^c$` o `$A'$`, y se define como el
-    subconjunto de todos los elementos de `$S$` que no están contenidos
-    en `$A$`.
+1.  El **complemento** de un evento $A$ respecto al espacio muestral
+    $S$, es denotado por $A^c$ o $A'$, y se define como el
+    subconjunto de todos los elementos de $S$ que no están contenidos
+    en $A$.
 
-2.  La **unión** de dos eventos `$A$` y `$B$`, es denotado por
-    `$A\cup B$`, y se define como el evento que contiene todos los
-    elementos que pertenecen a `$A$` o `$B$` o ambos.
+2.  La **unión** de dos eventos $A$ y $B$, es denotado por
+    $A\cup B$, y se define como el evento que contiene todos los
+    elementos que pertenecen a $A$ o $B$ o ambos.
 
-3.  La **intersección** de dos eventos `$A$` y `$B$`, es denotado por
-    `$A\cap B$`, es el evento que contiene todos los elementos que son
-    comunes en `$A$` y `$B$`.
+3.  La **intersección** de dos eventos $A$ y $B$, es denotado por
+    $A\cap B$, es el evento que contiene todos los elementos que son
+    comunes en $A$ y $B$.
 
-4.  Los eventos `$A$` y `$B$` son **mutuamente excluyentes** cuando
-    `$A\cap B=\phi$`, donde `$\phi$` se denota como el evento nulo.
+4.  Los eventos $A$ y $B$ son **mutuamente excluyentes** cuando
+    $A\cap B=\phi$, donde $\phi$ se denota como el evento nulo.
 
 <button id="Show4" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -567,12 +567,12 @@ negra y NO SACAR una bola roja será igual a $$\begin{align*}
 
 ### Axiomas de probabilidad
 
-Sea `$S$` el espacio muestral y `$A_1, A_2, \ldots$` eventos de `$S$`,
+Sea $S$ el espacio muestral y $A_1, A_2, \ldots$ eventos de $S$,
 entonces se deben cumplir los siguientes tres axiomas
 
--   **Axioma 1-** `$\mathbb P(A_i)\geq0$`
--   **Axioma 2-** `$\mathbb P(S)=1$`
--   **Axioma 3-** Si `$A_1, A_2, \ldots$` son eventos **mutuamente
+-   **Axioma 1-** $\mathbb P(A_i)\geq0$
+-   **Axioma 2-** $\mathbb P(S)=1$
+-   **Axioma 3-** Si $A_1, A_2, \ldots$ son eventos **mutuamente
     excluyentes**, entonces
     
 $$\begin{align*}\mathbb P(A_1\cup A_2\cup A_3\cup\ldots)=\sum_{i=1}^\infty \mathbb P(A_i)\end{align*}$$
@@ -580,15 +580,15 @@ $$\begin{align*}\mathbb P(A_1\cup A_2\cup A_3\cup\ldots)=\sum_{i=1}^\infty \math
 
 ### Propiedades de probabilidad
 
-Sea `$A$` y `$B$` eventos del espacio muestral `$S$`, entonces se deben
+Sea $A$ y $B$ eventos del espacio muestral $S$, entonces se deben
 cumplir las siguientes cinco propiedades
 
-1.  `$0 \leq \mathbb P(A) \leq 1$`
+1.  $0 \leq \mathbb P(A) \leq 1$
 
-2.  `$\mathbb P(\phi) = 0$`
+2.  $\mathbb P(\phi) = 0$
 
-3.  `$\mathbb P(A') = 1 - \mathbb P(A)$`
+3.  $\mathbb P(A') = 1 - \mathbb P(A)$
 
-4.  `$\mathbb P(A\cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A\cap B)$`
+4.  $\mathbb P(A\cup B) = \mathbb P(A) + \mathbb P(B) - \mathbb P(A\cap B)$
 
-5.  Si `$A\subseteq B$` entonces `$\mathbb P(A) \leq \mathbb P(B)$`
+5.  Si $A\subseteq B$ entonces $\mathbb P(A) \leq \mathbb P(B)$

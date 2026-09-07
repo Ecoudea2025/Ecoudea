@@ -32,7 +32,7 @@ años, es utilizado principalmente en investigación y academia, sin
 embargo, el software se está expandiendo rápidamente al mundo
 empresarial. Lo anterior puede verse cuantificado en el Indice TIOBE en
 donde se observa que <tt>R</tt> ocupa actualmente el puesto número
-`$15$` en el ranking de los lenguajes de programación más usados.
+$15$ en el ranking de los lenguajes de programación más usados.
 
 ![Índice TIOBE](/assets/images/Ranking_Leng.png)
 

@@ -129,11 +129,11 @@ aquellas unidades que componen la muestra en etapas sucesivas.
 
 En Gutiérrez ([2015](#ref-Gutierrez2015), p. 205), el autor presenta el
 principio que sigue el muestreo polietápico, el cual puede define como
-un proceso jerárquico que se realiza `$l$` veces, siguiente los
+un proceso jerárquico que se realiza $l$ veces, siguiente los
 siguientes dos pasos.
 
-1.  Construcción de `$l$` marcos de muestreo de unidades (se realizan
-    conglomerados en las primeras `$l-1$` etapas del diseño muestral y
+1.  Construcción de $l$ marcos de muestreo de unidades (se realizan
+    conglomerados en las primeras $l-1$ etapas del diseño muestral y
     de elementos en la última etapa).
 
 2.  Aplicación del diseño muestral y selección de la muestras (o
@@ -258,16 +258,16 @@ telefónicas, visitas de entrevistadores u otros medios de recolección.
 Supongamos dos estratos, el **estrato 1** corresponde al **grupo de
 respuesta**, y el **estrato 2** corresponde al **grupo de no
 respuesta**. Suponga además que se seleccionó inicialmente una muestra
-de `$n'$` unidades. Entonces se tendrá que entre las `$n'$` unidades
-iniciales, se encuentran `$n_1'$` unidades pertenecientes al grupo de
-respuesta y `$n_2'$` unidades pertenecientes al grupo de no respuesta,
+de $n'$ unidades. Entonces se tendrá que entre las $n'$ unidades
+iniciales, se encuentran $n_1'$ unidades pertenecientes al grupo de
+respuesta y $n_2'$ unidades pertenecientes al grupo de no respuesta,
 en la encuesta inicial.
 
 Si se realiza el segundo esfuerzo o muestreo doble sobre el **estrato
-2**, se tendrán `$n_2$` respuestas obtenidas de una muestra aleatoria
-simple de los `$n_2'$` que no respondieron inicialmente. Haciendo que se
-tenga un total de `$n_1'$` respuestas del estrato 1 y `$n_2$` respuestas
-de los `$n_2'$` individuos del estrato 2, las cuales fueron obtenidas a
+2**, se tendrán $n_2$ respuestas obtenidas de una muestra aleatoria
+simple de los $n_2'$ que no respondieron inicialmente. Haciendo que se
+tenga un total de $n_1'$ respuestas del estrato 1 y $n_2$ respuestas
+de los $n_2'$ individuos del estrato 2, las cuales fueron obtenidas a
 partir del muestreo estratificado de se realizó en la segunda fase.
 
 A partir de este resultado, será posible calcular un estimador insesgado
@@ -283,16 +283,16 @@ expresión
 $$\begin{align*}Var(\bar{y}_d)=\frac{N-n'}{N}\frac{\sigma^2}{n'}+\mathbb{E}\left[\sum_{h=1}^L \left(\frac{n_h'}{n'}\right)^2\left(\frac{n_h'-n_h}{n_h'}\right)\frac{\sigma_{h(s_1)}^2}{n_h}\right]\end{align*}$$
 
 
-donde `$L$` el total de estratos, `$\sigma$` es la varianza del total de
-la población y `$\sigma^2_{h(s_1)}$` es la varianza dentro del estrato
-`$h$` para la primera fase de muestreo `$s_1$` tal que
+donde $L$ el total de estratos, $\sigma$ es la varianza del total de
+la población y $\sigma^2_{h(s_1)}$ es la varianza dentro del estrato
+$h$ para la primera fase de muestreo $s_1$ tal que
 
 $$\begin{align*}\sigma_{h(s_1)}^2 = \frac{\sum_{i\in s_1h}(y_i-\bar{y}_h')^2}{n_h'-1}\end{align*}$$
 
 
 Dado que no es posible conocer la varianza poblacional de cada estrato,
-se presenta un estimador insesgado para la varianza de `$\bar{y}_d$`,
-mediante el empleo de la varianza muestral de cada estrato, `$s_h^2$`,
+se presenta un estimador insesgado para la varianza de $\bar{y}_d$,
+mediante el empleo de la varianza muestral de cada estrato, $s_h^2$,
 tal que
 
 $$\begin{align*}\hat{Var}(\bar{y}_d)=\frac{N-1}{N}\sum_{h=1}^L\left(\frac{n_h'-1}{n'-1}-\frac{n_h-1}{N-1}\right)\frac{n_h'}{n'}\frac{s_h^2}{n_h} + \frac{N-n'}{N(n'-1)}\sum_{h=1}^L\frac{n_h'}{n'}(\bar{y}_h - \bar{y}_d)^2\end{align*}$$

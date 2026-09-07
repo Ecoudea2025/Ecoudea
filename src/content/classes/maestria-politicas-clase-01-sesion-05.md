@@ -45,12 +45,12 @@ hace más pequeño.
 <!-- source(fun.int) # Carga funciones guardadas -->
 <!-- ``` -->
 
-### Intervalos de confianza para una media `$\mu$`
+### Intervalos de confianza para una media $\mu$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$` con media `$\mu$` desconocida, y varianza `$\sigma^2<\infty$`,
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$ con media $\mu$ desconocida, y varianza $\sigma^2<\infty$,
 entonces dependiendo de las condiciones, se tendrán los siguientes
-intervalos de confianza para la media `$\mu$`.
+intervalos de confianza para la media $\mu$.
 
 ![](/assets/images/Intervalos1.jpg)
 
@@ -94,7 +94,7 @@ mean of x
 </section>
 </section>
 </main>
-<!-- Suponga que se desea crear un intervalo de confianza del `$90\%$` para el número promedio de pisos de la construcción (<tt>nro_pisos</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para una media en <tt>R</tt> mediante la función <tt>IntUnaMedia</tt> de la forma -->
+<!-- Suponga que se desea crear un intervalo de confianza del $90\%$ para el número promedio de pisos de la construcción (<tt>nro_pisos</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para una media en <tt>R</tt> mediante la función <tt>IntUnaMedia</tt> de la forma -->
 <!-- ```{r eval=F} -->
 <!-- # Calcula intervalo de confianza para una media creada -->
 <!-- IntUnaMedia(datos = datos$nro_pisos, nivel.conf = 0.90) -->
@@ -105,15 +105,15 @@ mean of x
 <!-- t.test(x = datos$nro_pisos, conf.level = 0.90) -->
 <!-- ``` -->
 
-### Intervalos de confianza para diferencia de medias `$\mu_1 - \mu_2$`
+### Intervalos de confianza para diferencia de medias $\mu_1 - \mu_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
-tamaños `$n_1$`, y `$n_2$` con medias `$\mu_1$` y `$\mu_2$`
-desconocidas, y varianzas `$\sigma_1^2<\infty$` y `$\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
+tamaños $n_1$, y $n_2$ con medias $\mu_1$ y $\mu_2$
+desconocidas, y varianzas $\sigma_1^2<\infty$ y $\sigma^2_2<\infty$,
 respectivamente, entonces dependiendo de las condiciones, se tendrán los
 siguientes intervalos de confianza para la diferencia de medias
-`$\mu_1 - \mu_2$`.
+$\mu_1 - \mu_2$.
 
 ![](/assets/images/Intervalos2.jpg)
 
@@ -159,7 +159,7 @@ mean of x mean of y
 </section>
 </section>
 </main>
-<!-- Suponga que se desea crear un intervalo de confianza del `$95\%$` para la diferencia promedio entre el precio de venta por `$m^2$` (<tt>preciovtax</tt>), en los estratos `$2$` y `$4$` (<tt>estrato</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para la diferencia de media en <tt>R</tt> mediante la función <tt>IntDosMedias</tt> de la forma -->
+<!-- Suponga que se desea crear un intervalo de confianza del $95\%$ para la diferencia promedio entre el precio de venta por $m^2$ (<tt>preciovtax</tt>), en los estratos $2$ y $4$ (<tt>estrato</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para la diferencia de media en <tt>R</tt> mediante la función <tt>IntDosMedias</tt> de la forma -->
 <!-- ```{r eval=F} -->
 <!-- # Calcula intervalo de confianza para diferencia de medias creada -->
 <!-- IntDosMedias(datos1 = datos$preciovtax[datos$estrato == 2], datos2 = datos$preciovtax[datos$estrato == 4], nivel.conf = 0.95) -->
@@ -170,13 +170,13 @@ mean of x mean of y
 <!-- t.test(x = datos$preciovtax[datos$estrato == 2], y = datos$preciovtax[datos$estrato == 4], conf.level = 0.95, var.equal = F) -->
 <!-- ``` -->
 
-### Intervalos de confianza para una proporción `$p$`
+### Intervalos de confianza para una proporción $p$
 
-Sea `$X_1,X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$`, tal que `$X\sim b(n,p)$` entonces si `$n$` es suficientemente
-grande tal que `$n\geq30$`, y la proporción desconocida `$p$` no se
-encuentre cercana a `$0$` o `$1$`, tal que `$np>5$` y `$n(1-p)>5$`,
-entonces un intervalo de confianza para la proporción `$p$` es de la
+Sea $X_1,X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, tal que $X\sim b(n,p)$ entonces si $n$ es suficientemente
+grande tal que $n\geq30$, y la proporción desconocida $p$ no se
+encuentre cercana a $0$ o $1$, tal que $np>5$ y $n(1-p)>5$,
+entonces un intervalo de confianza para la proporción $p$ es de la
 forma ![](/assets/images/Intervalos3.jpg)
 
 <button id="Show11" class="btn btn-secondary">
@@ -221,7 +221,7 @@ sample estimates:
 </section>
 </section>
 </main>
-<!-- Suponga que se desea crear un intervalo de confianza del `$90\%$` para la proporción de empresas que poseen licencia de construcción (<tt>ob_formal</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para una proporción en <tt>R</tt> mediante la función <tt>IntDosMedias</tt> de la forma -->
+<!-- Suponga que se desea crear un intervalo de confianza del $90\%$ para la proporción de empresas que poseen licencia de construcción (<tt>ob_formal</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para una proporción en <tt>R</tt> mediante la función <tt>IntDosMedias</tt> de la forma -->
 <!-- ```{r eval=F} -->
 <!-- # Calcula intervalo de confianza para una proporción creada -->
 <!-- IntUnaProp(datos = datos$ob_formal, factor = "Sí", nivel.conf = 0.90) -->
@@ -234,16 +234,16 @@ sample estimates:
 <!-- prop.test(x = exitos, n = total, conf.level = 0.90) -->
 <!-- ``` -->
 
-### Intervalos de confianza para diferencia de proporciones `$p_1 - p_2$`
+### Intervalos de confianza para diferencia de proporciones $p_1 - p_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
-tamaños `$n_1$`, y `$n_2$` tal que `$X_1\sim b(n,p)$` y
-`$X_2\sim b(n,p)$`. Entonces si, `$n_1$`, y `$n_2$` son suficientemente
-grandes tal que `$n_1, n_2 \geq 30$`, y las proporciones desconocidas
-`$p_1$` y `$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que
-`$n_1p_1, n_2p_2, n_1(1-p_1)$` y `$n_2(1-p_2)>5$`, entonces un intervalo
-de confianza para la diferencia de proporciones `$p_1 - p_2$` es de la
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
+tamaños $n_1$, y $n_2$ tal que $X_1\sim b(n,p)$ y
+$X_2\sim b(n,p)$. Entonces si, $n_1$, y $n_2$ son suficientemente
+grandes tal que $n_1, n_2 \geq 30$, y las proporciones desconocidas
+$p_1$ y $p_2$ no se encuentran cercanas a $0$ o $1$, tal que
+$n_1p_1, n_2p_2, n_1(1-p_1)$ y $n_2(1-p_2)>5$, entonces un intervalo
+de confianza para la diferencia de proporciones $p_1 - p_2$ es de la
 forma
 
 ![](/assets/images/Intervalos4.jpg)
@@ -293,7 +293,7 @@ sample estimates:
 </section>
 </section>
 </main>
-<!-- Suponga que se desea crear un intervalo de confianza del `$90\%$` para la diferencia entre la proporción de empresas que poseen licencia de construcción (<tt>ob_formal</tt>), respecto a las regiones de Bogotá y Antioquia (<tt>region</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para la diferencia entre proporción en <tt>R</tt> mediante la función <tt>IntDosProp</tt> de la forma -->
+<!-- Suponga que se desea crear un intervalo de confianza del $90\%$ para la diferencia entre la proporción de empresas que poseen licencia de construcción (<tt>ob_formal</tt>), respecto a las regiones de Bogotá y Antioquia (<tt>region</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para la diferencia entre proporción en <tt>R</tt> mediante la función <tt>IntDosProp</tt> de la forma -->
 <!-- ```{r eval=F} -->
 <!-- # Calcula intervalo de confianza para diferencia de proporciones creada -->
 <!-- IntDosProp(datos1 = datos$ob_formal[datos$region == "Bogotá"], datos2 = datos$ob_formal[datos$region == "Antioquia"], factor1 = "Sí", factor2 = NULL, nivel.conf = 0.90) -->
@@ -308,12 +308,12 @@ sample estimates:
 <!-- prop.test(x = c(exitos1, exitos2), n = c(total1, total2), conf.level = 0.90) -->
 <!-- ``` -->
 
-### Intervalos de confianza para una varianza `$\sigma^2$`
+### Intervalos de confianza para una varianza $\sigma^2$
 
-Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria normal de
-tamaño `$n$` con media `$\mathbb{E}(X)=\mu$` y varianza desconocida
-`$Var(X)=\sigma^2<\infty$`, respectivamente, entonces un intervalo de
-confianza del `$100(1-\alpha)\%$` para una varianza `$\sigma^2$` estará
+Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria normal de
+tamaño $n$ con media $\mathbb{E}(X)=\mu$ y varianza desconocida
+$Var(X)=\sigma^2<\infty$, respectivamente, entonces un intervalo de
+confianza del $100(1-\alpha)\%$ para una varianza $\sigma^2$ estará
 dado por
 
 ![](/assets/images/Intervalos5.jpg)
@@ -360,14 +360,14 @@ variance
 </section>
 </main>
 
-### Intervalos de confianza para razón de varianzas `$\sigma^2_1/\sigma^2_2$`
+### Intervalos de confianza para razón de varianzas $\sigma^2_1/\sigma^2_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
-de tamaños `$n_1$`, y `$n_2$` con medias `$\mu_1$` y `$\mu_2$`, y
-varianzas desconocidas `$\sigma_1^2<\infty$` y `$\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
+de tamaños $n_1$, y $n_2$ con medias $\mu_1$ y $\mu_2$, y
+varianzas desconocidas $\sigma_1^2<\infty$ y $\sigma^2_2<\infty$,
 respectivamente, entonces un intervalo de confianza del
-`$100(1-\alpha)\%$` para `$\sigma^2_1/\sigma^2_2$` estará dada por
+$100(1-\alpha)\%$ para $\sigma^2_1/\sigma^2_2$ estará dada por
 
 ![](/assets/images/Intervalos6.jpg)
 
@@ -413,7 +413,7 @@ ratio of variances
 </section>
 </section>
 </main>
-<!-- Suponga que se desea crear un intervalo de confianza del `$95\%$` para el cociente de varianzas entre el precio de venta por `$m^2$` (<tt>preciovtax</tt>), en los estratos `$1$` y `$5$` (<tt>estrato</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para la diferencia de media en <tt>R</tt> mediante la función <tt>IntCosVar</tt> de la forma -->
+<!-- Suponga que se desea crear un intervalo de confianza del $95\%$ para el cociente de varianzas entre el precio de venta por $m^2$ (<tt>preciovtax</tt>), en los estratos $1$ y $5$ (<tt>estrato</tt>). En este caso, una vez descargadas las funciones para intervalos, podemos calcular un intervalo de confianza para la diferencia de media en <tt>R</tt> mediante la función <tt>IntCosVar</tt> de la forma -->
 <!-- ```{r eval=F} -->
 <!-- # Calcula intervalo de confianza para cociente de varianzas creada -->
 <!-- IntCosVar(datos1 = datos$preciovtax[datos$estrato == 1], datos2 = datos$preciovtax[datos$estrato == 5], nivel.conf = 0.95) -->

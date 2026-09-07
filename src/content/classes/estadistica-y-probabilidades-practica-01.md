@@ -11,10 +11,10 @@ bibliography: "../../referencias.bib"
 Lista de ejercicios
 ===================
 
-1.  Sean `$X$` y `$Y$` dos variables aleatorias discretas las cuales
-    pueden tomar como posibles valores `$-1$`, `$0$`, y `$1$`. En la
+1.  Sean $X$ y $Y$ dos variables aleatorias discretas las cuales
+    pueden tomar como posibles valores $-1$, $0$, y $1$. En la
     siguiente tabla se dan las probabilidades conjuntas para todos los
-    posibles valores de `$X$` y `$Y$`.
+    posibles valores de $X$ y $Y$.
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -96,7 +96,7 @@ Lista de ejercicios
     </li>
     </ol>
 
-2.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
+2.  Si $X$ y $Y$ son variables aleatorias discretas con función de
     probabilidad dada por:
     
 $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2,3\end{align*}$$
@@ -112,7 +112,7 @@ $$\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2
     </ol>
 
 3.  Suponga una función de densidad de probabilidad conjunta de las
-    variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
+    variables aleatorias $X$, $Y$ y $Z$, la cual se define como
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -136,8 +136,8 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     </li>
     </ol>
 
-4.  Sea `$X$` el número de veces que fallará cierta máquina de control
-    numérico: 1, 2 o 3 veces en un día dado, y `$Y$` denota el número de
+4.  Sea $X$ el número de veces que fallará cierta máquina de control
+    numérico: 1, 2 o 3 veces en un día dado, y $Y$ denota el número de
     veces que se llama a un técnico para una emergencia. Suponga que su
     distribución de probabilidad conjunta estará dada como
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -208,9 +208,9 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
     </tr>
     </tbody>
     </table>
-    Calcule el `$Corr(X,Y^2)$`.
+    Calcule el $Corr(X,Y^2)$.
 
-5.  Si `$X$` y `$Y$` son variables aleatorias con función de
+5.  Si $X$ y $Y$ son variables aleatorias con función de
     probabilidad conjunta dada por
     
 $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
@@ -239,8 +239,8 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     </li>
     </ol>
 
-6.  Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
-    primer lanzamiento y `$Y$` el número total de caras en los `$2$`
+6.  Una moneda se lanza dos veces. Sea $X$ el número de caras en el
+    primer lanzamiento y $Y$ el número total de caras en los $2$
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
@@ -255,13 +255,13 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     </li>
     </ol>
 
-7.  Considere las variables aleatorias `$X$` y `$Y$` que representan el
+7.  Considere las variables aleatorias $X$ y $Y$ que representan el
     número de vehículos que llegan a dos esquinas de calles separadas
-    durante cierto periodo de `$2$` minutos. Estas esquinas de las
+    durante cierto periodo de $2$ minutos. Estas esquinas de las
     calles están bastante cerca una de la otra, así que es importante
     que los ingenieros de tráfico se ocupen de ellas de manera conjunta
-    si fuera necesario. Se sabe que la distribución conjunta de `$X$` y
-    `$Y$` es
+    si fuera necesario. Se sabe que la distribución conjunta de $X$ y
+    $Y$ es
     
 $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -278,7 +278,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
 
 8.  Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
-    conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
+    conjunta que describe las proporciones $X$ y $Y$ de estos dos
     componentes está dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -292,9 +292,9 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </li>
     </ol>
 
-9.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
-    probabilidad dada por: `$f(x,y)=k(\frac{x+y}{xy})$`,para
-    `$x=1,2,3$`; `$y=1,2,3$`.
+9.  Si $X$ y $Y$ son variables aleatorias discretas con función de
+    probabilidad dada por: $f(x,y)=k(\frac{x+y}{xy})$,para
+    $x=1,2,3$; $y=1,2,3$.
     <ol type="a">
     <li>
     Encuentre el valor de $k$ que hace que $f(x,y)$ sea una función
@@ -311,12 +311,12 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </li>
     </ol>
 
-10. Calcule la covarianza de las variables aleatorias `$X$` y `$Y$` que
+10. Calcule la covarianza de las variables aleatorias $X$ y $Y$ que
     tienen la siguiente función de densidad de probabilidad conjunta
     
 $$\begin{align*}f(x,y)=\begin{cases}x+y & 0<x<1,\quad 0<y<1,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
-11. Si la distribución de probabilidad conjunta de `$X$` y `$Y$` está
+11. Si la distribución de probabilidad conjunta de $X$ y $Y$ está
     dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -338,7 +338,7 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     </ol>
 
 12. La función de densidad de probabilidad conjunta de las variables
-    aleatorias `$X$`, `$Y$` y `$Z$` está dada por
+    aleatorias $X$, $Y$ y $Z$ está dada por
     
 $$\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -355,7 +355,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en 
     </li>
     </ol>
 
-13. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
+13. Si $X$, $Y$ y $Z$ tienen la siguiente función de densidad de
     probabilidad conjunta:
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -378,16 +378,16 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
     </li>
     </ol>
 
-14. Sean `$X$` y `$Y$` son variables aleatorias que poseen la siguiente
+14. Sean $X$ y $Y$ son variables aleatorias que poseen la siguiente
     función de densidad de probabilidad conjunta
     
 $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
 
-    Entonces, a partir de ésta, calcule la covarianza de `$6X^2$` y
-    `$3Y^3$`.
+    Entonces, a partir de ésta, calcule la covarianza de $6X^2$ y
+    $3Y^3$.
 
-15. Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
-    primer lanzamiento y `$Y$` el número total de caras en los `$2$`
+15. Una moneda se lanza dos veces. Sea $X$ el número de caras en el
+    primer lanzamiento y $Y$ el número total de caras en los $2$
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
@@ -406,11 +406,11 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     </ol>
 
 16. Una empresa dulcera distribuye cajas de chocolates con un surtido de
-    cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
+    cremas, chiclosos y envinados. Suponga que cada caja pesa $1$
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
     envinados varían de una a otra caja. Para una caja seleccionada al
-    azar, represente los pesos de las cremas y los chiclosos con `$X$` y
-    `$Y$`, respectivamente, si se supone que la función de densidad
+    azar, represente los pesos de las cremas y los chiclosos con $X$ y
+    $Y$, respectivamente, si se supone que la función de densidad
     conjunta de estas variables es
     
 $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -425,11 +425,11 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \
     </ol>
 
 17. Una empresa dulcera distribuye cajas de chocolates con un surtido de
-    cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
+    cremas, chiclosos y envinados. Suponga que cada caja pesa $1$
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
     envinados varían de una a otra cajas. Para una caja seleccionada al
-    azar, represente los pesos de las cremas y los chiclosos con `$X$` y
-    `$Y$`, respectivamente, y suponga que la función de densidad
+    azar, represente los pesos de las cremas y los chiclosos con $X$ y
+    $Y$, respectivamente, y suponga que la función de densidad
     conjunta de estas variables es
     
 $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -449,7 +449,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
     </li>
     </ol>
 
-18. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
+18. Si $X$, $Y$ y $Z$ tienen la siguiente función de densidad de
     probabilidad conjunta:
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -464,7 +464,7 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 
     </li>
     </ol>
 
-19. Sean `$X$` y `$Y$` dos variables aleatorias con función de
+19. Sean $X$ y $Y$ dos variables aleatorias con función de
     probabilidad dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -514,13 +514,13 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
     </li>
     </ol>
 
-21. Sean `$X$` y `$Y$` variables aleatorias independientes tal que sus
-    distribuciones marginales son `$g(x)=3x^2$` para `$0<x<1$` y
-    `$h(y)=2y$` para `$0<y<1$`. Calcule
-    `$\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$`.
+21. Sean $X$ y $Y$ variables aleatorias independientes tal que sus
+    distribuciones marginales son $g(x)=3x^2$ para $0<x<1$ y
+    $h(y)=2y$ para $0<y<1$. Calcule
+    $\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$.
 
 22. Suponga la siguiente función de probabilidad para las variables
-    aleatorias `$X$` y `$Y$`
+    aleatorias $X$ y $Y$
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -609,7 +609,7 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
 
 23. Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
-    conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
+    conjunta que describe las proporciones $X$ y $Y$ de estos dos
     componentes está dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -634,8 +634,8 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </li>
     </ol>
 
-24. Sea `$X$` el número de veces que fallará cierta máquina de control
-    numérico: `$1$`, `$2$` o `$3$` veces en un día dado. Y sea `$Y$` el
+24. Sea $X$ el número de veces que fallará cierta máquina de control
+    numérico: $1$, $2$ o $3$ veces en un día dado. Y sea $Y$ el
     número de veces que se llama a un técnico para una emergencia, su
     distribución de probabilidad conjunta estará dada como
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -727,7 +727,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
 25. En funcion de su prioridad, un programa para computadora espera en
     la fila de entrada cierto tiempo, después del cual lo ejecuta el
     procesador central en un lapso dado. La función de densidad conjunta
-    para los tiempos de espera `$X$` (en minutos) y ejecución `$Y$` (en
+    para los tiempos de espera $X$ (en minutos) y ejecución $Y$ (en
     segundos) se determina por
     
 $$\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -753,10 +753,10 @@ $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-
     </li>
     </ol>
 
-26. Sean `$X$` y `$Y$` variables aleatorias continuas distribuidas
+26. Sean $X$ y $Y$ variables aleatorias continuas distribuidas
     conjuntamente con
     
 $$\begin{align*}f(x,y)=kxy \quad \text{ para } 0<x<5; \quad 1<y<x\end{align*}$$
 
-    El valor de `$k$` que hace que `$f(x,y)$` sea una función de
+    El valor de $k$ que hace que $f(x,y)$ sea una función de
     densidad de probabilidad conjunta es?

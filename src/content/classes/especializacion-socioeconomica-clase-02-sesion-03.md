@@ -11,9 +11,9 @@ bibliography: "../../referencias.bib"
 ## Variables aleatorias
 
 Es una función que asocia un número real a cada elemento del espacio
-muestral `$S$`. Comúnmente las variables aleatorias se denotan por
-letras mayúsculas del final del abecedario `$(X,Y,Z)$` y a los valores
-observados por letras minúsculas `$(x,y,z)$`.
+muestral $S$. Comúnmente las variables aleatorias se denotan por
+letras mayúsculas del final del abecedario $(X,Y,Z)$ y a los valores
+observados por letras minúsculas $(x,y,z)$.
 
 Las variables aleatorias se pueden clasificar en tres tipos
 
@@ -33,16 +33,16 @@ Las variables aleatorias se pueden clasificar en tres tipos
 
 ## Distribución de probabilidad discreta
 
-Se dice que el conjunto de pares ordenados `$(x,p(x))$` es una función
-de masa de probabilidad `$(fmp)$` de la variable aleatoria discreta
-`$X$`, si para cualquier valor posible de `$X$` se cumple que
+Se dice que el conjunto de pares ordenados $(x,p(x))$ es una función
+de masa de probabilidad $(fmp)$ de la variable aleatoria discreta
+$X$, si para cualquier valor posible de $X$ se cumple que
 
-1.  `$p(x)\geq0$` para todo `$x \in$` en el dominio de `$X$`
+1.  $p(x)\geq0$ para todo $x \in$ en el dominio de $X$
 
-2.  `$\sum_x p(x)=1$`
+2.  $\sum_x p(x)=1$
 
-3.  `$\mathbb{P}(X\in A)= \sum_{x\in A}p(x) $` con `$A$` un conjunto de
-    valores `$\in$` al dominio de `$X$`.
+3.  $\mathbb{P}(X\in A)= \sum_{x\in A}p(x) $ con $A$ un conjunto de
+    valores $\in$ al dominio de $X$.
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -144,29 +144,29 @@ al menos $4$ ambulancia en una hora
 
 ### Función de distribución acumulada caso discreto
 
-La función de distribución acumulada `$(fda)$` denotada por `$F(x)$`,
-para una variable aleatoria discreta `$X$` con distribución de
-probabilidad `$p(x)$` es de la forma
+La función de distribución acumulada $(fda)$ denotada por $F(x)$,
+para una variable aleatoria discreta $X$ con distribución de
+probabilidad $p(x)$ es de la forma
 
 $$\begin{align*}F(x)=P(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
 
 
-Para cualquier `$x$` dentro del dominio de `$X$`, `$F(x)$` será la suma
-acumulada de todos los `$X$` menores a `$x$`, evaluados en `$f(x)$`.
+Para cualquier $x$ dentro del dominio de $X$, $F(x)$ será la suma
+acumulada de todos los $X$ menores a $x$, evaluados en $f(x)$.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso discreto, entonces, si `$a$` y `$b$`
+distribución acumulada en el caso discreto, entonces, si $a$ y $b$
 son dos números **constantes enteros**, deberán tenerse en cuenta las
 siguientes reglas
 
--   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X \leq b) - \mathbb{P}(X < a)$`
--   `$\mathbb{P}(a < X \leq b) = \mathbb{P}(X \leq b) - \mathbb{P}(X \leq a)$`
--   `$\mathbb{P}(a \leq X < b) = \mathbb{P}(X < b) - \mathbb{P}(X < a)$`
--   `$\mathbb{P}(a < X < b) = \mathbb{P}(X < b) - \mathbb{P}(X \leq a)$`
--   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X < a)$`
--   `$\mathbb{P}(X > a) = 1 - \mathbb{P}(X \leq a)$`
--   `$\mathbb{P}(X \leq b) = F(b)$`
--   `$\mathbb{P}(X < b) = F(b - 1)$`
+-   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X \leq b) - \mathbb{P}(X < a)$
+-   $\mathbb{P}(a < X \leq b) = \mathbb{P}(X \leq b) - \mathbb{P}(X \leq a)$
+-   $\mathbb{P}(a \leq X < b) = \mathbb{P}(X < b) - \mathbb{P}(X < a)$
+-   $\mathbb{P}(a < X < b) = \mathbb{P}(X < b) - \mathbb{P}(X \leq a)$
+-   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X < a)$
+-   $\mathbb{P}(X > a) = 1 - \mathbb{P}(X \leq a)$
+-   $\mathbb{P}(X \leq b) = F(b)$
+-   $\mathbb{P}(X < b) = F(b - 1)$
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -312,7 +312,7 @@ Un proceso Bernoulli es aquel que cumple
 2.  Cada ensayo produce un resultado que se puede clasificar como éxito
     o fracaso.
 
-3.  La probabilidad de éxito se denota por `$p$` y permanece constante
+3.  La probabilidad de éxito se denota por $p$ y permanece constante
     de un ensayo a otro.
 
 4.  Los ensayos repetidos son independientes entre si.
@@ -347,20 +347,20 @@ El número de trabajadores de sexo femenino que trabajan en un proyecto.
 
 ### Ensayo de Bernoulli
 
-Si la probabilidad de éxito de un experimento es `$p$`, entonces la
-probabilidad de fallo debe ser `$1-p$` y la función de probabilidad de
-la variable aleatoria `$X\sim Be(p)$` para un ensayo Bernoulli será
+Si la probabilidad de éxito de un experimento es $p$, entonces la
+probabilidad de fallo debe ser $1-p$ y la función de probabilidad de
+la variable aleatoria $X\sim Be(p)$ para un ensayo Bernoulli será
 
 $$\begin{align*}f(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
 
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Bernoulli mediante
-la función `DISTR.BINOM.N()`, con `$\text{ensayos}=1$`.
+la función `DISTR.BINOM.N()`, con $\text{ensayos}=1$.
 
 #### Media y Varianza Ensayo de Bernoulli
 
-Si `$X\sim Be(p)$`, entonces se puede probar que la media y la varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim Be(p)$, entonces se puede probar que la media y la varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}$$
 
@@ -455,24 +455,24 @@ $0.4889$.
 
 ### Distribución Binomial
 
-Si `$X$` es la variable aleatoria del número de éxitos de `$n$` ensayos
-de Bernoulli, con probabilidad de éxito `$p$`, entonces se dice que
-`$X\sim b(n,p)$` tal que
+Si $X$ es la variable aleatoria del número de éxitos de $n$ ensayos
+de Bernoulli, con probabilidad de éxito $p$, entonces se dice que
+$X\sim b(n,p)$ tal que
 
 $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}$$
 
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo con
 reemplazo o en poblaciones infinitas en donde es posible **suponer que
-la probabilidad de éxito `$p$` es la misma** en cada ensayo Bernoulli.
+la probabilidad de éxito $p$ es la misma** en cada ensayo Bernoulli.
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Binomiales mediante
 la función `DISTR.BINOM.N()`.
 
 #### Media y Varianza Distribución Binomial
 
-Si `$X\sim b(n,p)$`, entonces se puede probar que la media y varianza de
-la variable aleatoria `$X$` están dadas por
+Si $X\sim b(n,p)$, entonces se puede probar que la media y varianza de
+la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}$$
 
@@ -587,28 +587,28 @@ $1.549193$ meses.
 
 ### Distribución Hipergeométrica
 
-Si `$X$` es el número de éxitos de una muestra completamente aleatoria
-de tamaño `$n$` extraída de una población `$N$` compuesta por `$M$`
-éxitos y `$(N-M)$` fracasos, entonces la distribución de
-`$X\sim h(N,M,n)$`, con función de masa de probabilidad
+Si $X$ es el número de éxitos de una muestra completamente aleatoria
+de tamaño $n$ extraída de una población $N$ compuesta por $M$
+éxitos y $(N-M)$ fracasos, entonces la distribución de
+$X\sim h(N,M,n)$, con función de masa de probabilidad
 
 $$\begin{align*}p(x)=\frac{\left(\begin{array}{c}M\\ x\end{array}\right) \left(\begin{array}{c}N-M\\ n-x\end{array}\right)}{\left(\begin{array}{c}N\\ n\end{array}\right)}\end{align*}$$
 
 
-con `$x$` un entero que satisface la condición
-`$\max\{0, M-(N-n)\} \leq x \leq \min\{M,n\}$`.
+con $x$ un entero que satisface la condición
+$\max\{0, M-(N-n)\} \leq x \leq \min\{M,n\}$.
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo **sin
-reemplazo**, en poblaciones finitas donde hay `$M$` éxitos de un total
-de `$N$` objetos, de los cuales se seleccionan `$n$` objetos a la vez.
+reemplazo**, en poblaciones finitas donde hay $M$ éxitos de un total
+de $N$ objetos, de los cuales se seleccionan $n$ objetos a la vez.
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Hipergeométricas
 mediante la función `DISTR.HIPERGEOM.N()`.
 
 #### Media y Varianza Hipergeométrica
 
-Si `$X\sim h(N,M,n)$`, entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim h(N,M,n)$, entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=n\frac{M}{N} \quad \quad Var(X)=\left(\frac{N-n}{N-1}\right)\left(\frac{M}{N}\right)\left(1-\frac{M}{N}\right)\end{align*}$$
 
@@ -730,9 +730,9 @@ $0.3086067$ miembros.
 Consideremos un experimento con las mismas propiedades de un experimento
 binomial, solo que en este caso, las pruebas se repetirán hasta que
 ocurra un número fijo de éxitos. Por lo tanto en vez de encontrar la
-probabilidad de `$X$` éxitos en `$n$` pruebas, donde `$n$` es fija,
-ahora nos interesa la probabilidad de que ocurra el `$k$`-ésimo éxito en
-la `$X$`-ésima prueba.
+probabilidad de $X$ éxitos en $n$ pruebas, donde $n$ es fija,
+ahora nos interesa la probabilidad de que ocurra el $k$-ésimo éxito en
+la $X$-ésima prueba.
 
 <button id="Show7" class="btn btn-secondary">
 Mostrar Ejemplo
@@ -770,21 +770,21 @@ duodécima mujer.
 
 ### Distribución Binomial Negativa
 
-Sea `$X$` el número de ensayos necesarios para generar `$k$` éxitos en
+Sea $X$ el número de ensayos necesarios para generar $k$ éxitos en
 un experimento Binomial Negativo, entonces se dice que
-`$X\sim b^*(k,p)$` si su función de probabilidad es de la forma
+$X\sim b^*(k,p)$ si su función de probabilidad es de la forma
 
 $$\begin{align*}p(x) = \left(\begin{array}{c}x-1\\ k-1\end{array}\right)p^k(1-p)^{x-k} \quad \quad x=k, k+1, \ldots\end{align*}$$
 
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Binomiales Negativas
-mediante la función `NEGBINOM.DIST()` con `$\text{núm\_\_fracasos} = x-k$`
-y `$\text{núm\_\_éxitos} = k$`.
+mediante la función `NEGBINOM.DIST()` con $\text{núm\_\_fracasos} = x-k$
+y $\text{núm\_\_éxitos} = k$.
 
 #### Media y Varianza Binomial Negativa
 
-Si `$X\sim b^*(k,p)$`, entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim b^*(k,p)$, entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\frac{k}{p} \quad \quad Var(X)=k\frac{(1-p)}{p^2}\end{align*}$$
 
@@ -946,12 +946,12 @@ año.
 ### Distribución Poisson
 
 El número de sucesos que ocurren en un intervalo de tiempo o región
-específica, es una variable aleatoria `$X$` con distribución de
+específica, es una variable aleatoria $X$ con distribución de
 probabilidad Poisson, tal que
 
 $$\begin{align*}f(x) = \frac{e^{-\lambda}\lambda^x}{x!} \quad \quad x=0,1,\ldots\end{align*}$$
 
-donde `$\lambda$` es el parámetro de la distribución y representa el
+donde $\lambda$ es el parámetro de la distribución y representa el
 número promedio de sucesos por unidad de tiempo o región específica.
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Poisson mediante la
@@ -959,8 +959,8 @@ función `POISSON.DIST()`.
 
 #### Media y Varianza Poisson
 
-Si `$X\sim P(\lambda)$` entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim P(\lambda)$ entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\lambda \quad \quad Var(X)=\lambda\end{align*}$$
 
@@ -1100,16 +1100,16 @@ desviación estándar de $1.93$ huecos.
 
 ## Distribución de probabilidad continua
 
-La función `$f(x)$` es una función de densidad de probabilidad (*fdp*)
-para la variable aleatoria continua `$X$`, definida en el conjunto de
+La función $f(x)$ es una función de densidad de probabilidad (*fdp*)
+para la variable aleatoria continua $X$, definida en el conjunto de
 números reales, si
 
-1.  `$f(x)\geq0$` para todo `$x\in \mathbb R$`
+1.  $f(x)\geq0$ para todo $x\in \mathbb R$
 
-2.  `$\int_{-\infty}^\infty f(x)dx=1$`
+2.  $\int_{-\infty}^\infty f(x)dx=1$
 
-3.  `$P(a<x<b) = \int_a^b f(x)dx$` con `$a$` y `$b$` dos constantes
-    `$\in \mathbb{R}$`
+3.  $P(a<x<b) = \int_a^b f(x)dx$ con $a$ y $b$ dos constantes
+    $\in \mathbb{R}$
 
 <button id="Show11" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -1196,25 +1196,25 @@ mes esta empresa se venda como máximo $8.3$ millones de pesos.
 
 ### Función de distribución acumulada caso continuo
 
-La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
-una variable aleatoria continua `$X$` con distribución de densidad de
-probabilidad `$f(x)$` es de la forma
+La función de distribución acumulada (*fda*) denotada por $F(x)$, para
+una variable aleatoria continua $X$ con distribución de densidad de
+probabilidad $f(x)$ es de la forma
 
 $$\begin{align*}F(x)=P(X\leq x)=\int_{-\infty}^x f(t)dt \quad \quad -\infty<x<\infty\end{align*}$$
 
-para cualquier `$x$`, `$F(x)$` es el área bajo la curva de densidad a la
-izquierda de valor que tome `$x$`.
+para cualquier $x$, $F(x)$ es el área bajo la curva de densidad a la
+izquierda de valor que tome $x$.
 
 **Nota:** Si se quieren calcular probabilidades con la función de
-distribución acumulada en el caso continuo, entonces, si `$a$` y `$b$`
+distribución acumulada en el caso continuo, entonces, si $a$ y $b$
 son dos números constantes, deberán tenerse en cuenta las siguientes
 reglas
 
--   `$\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X \leq b) - \mathbb{P}(X - a)$`
--   `$\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X < a)$`
--   `$\mathbb{P}(X > a) = 1 - \mathbb{P}(X \leq a)$`
--   `$\mathbb{P}(X \leq b) = F(b)$`
--   `$\mathbb{P}(X < b) = F(b)$`
+-   $\mathbb{P}(a \leq X \leq b) = \mathbb{P}(X \leq b) - \mathbb{P}(X - a)$
+-   $\mathbb{P}(X \geq a) = 1 - \mathbb{P}(X < a)$
+-   $\mathbb{P}(X > a) = 1 - \mathbb{P}(X \leq a)$
+-   $\mathbb{P}(X \leq b) = F(b)$
+-   $\mathbb{P}(X < b) = F(b)$
 
 **Nota:** Recordar que en el caso continuo, las probabilidad con o sin
 la igualdad son equivalentes, y por tanto, solo se escriben las tres
@@ -1295,8 +1295,8 @@ como mínimo $16$ millones de pesos es del $26.36\%$.
 
 ### Distribución Uniforme Continua
 
-Se dice que la variable aleatoria `$X$` tiene una distribución uniforme
-continua, definida en el intervalo `$(a,b)$`, si su función de
+Se dice que la variable aleatoria $X$ tiene una distribución uniforme
+continua, definida en el intervalo $(a,b)$, si su función de
 probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{b-a} \quad \quad & a\leq x\leq b \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
@@ -1304,16 +1304,16 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{b-a} \quad \quad & a\leq x\leq b \
 
 #### Media y Varianza Uniforme Continua
 
-Si `$X\sim Unif(a,b)$`, entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim Unif(a,b)$, entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \frac{b+a}{2} \quad \quad Var(X)=\frac{(b-a)^2}{12}\end{align*}$$
 
 
 #### Distribución Acumulada Uniforme Continua
 
-Si `$X\sim Unif(a,b)$`, entonces se puede probar que la función de
-distribución acumulada de la variable aleatoria `$X$` es de la forma
+Si $X\sim Unif(a,b)$, entonces se puede probar que la función de
+distribución acumulada de la variable aleatoria $X$ es de la forma
 
 $$\begin{align*}F(x) = \frac{x-a}{b-a} \quad \quad & a\leq x\leq b\end{align*}$$
 
@@ -1465,8 +1465,8 @@ $1.15$ horas.
 
 ### Distribución Gamma
 
-Se dice que la variable aleatoria `$X$` tiene una distribución Gamma con
-parámetro de forma `$\alpha$` y de escala `$\beta$`, si su función de
+Se dice que la variable aleatoria $X$ tiene una distribución Gamma con
+parámetro de forma $\alpha$ y de escala $\beta$, si su función de
 densidad de probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\alpha-1}e^{-{\frac{x}{\beta}}} \quad \quad & x>0; \alpha>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
@@ -1477,8 +1477,8 @@ función `DISTR.GAMMA.N()`.
 
 #### Media y Varianza Gamma
 
-Si `$X\sim Gamma(\alpha,\beta)$`, entonces se puede probar que la media
-y varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Gamma(\alpha,\beta)$, entonces se puede probar que la media
+y varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \alpha\beta \quad \quad Var(X)=\alpha\beta^2\end{align*}$$
 
@@ -1548,30 +1548,30 @@ transferencia de datos exceda los $50_{ms}$, es del $23.029\%$.
 
 ### Distribución Exponencial
 
-Se dice que la variable aleatoria `$X$` tiene una distribución
-Exponencial con parámetro de escala `$\beta$`, si su función de densidad
+Se dice que la variable aleatoria $X$ tiene una distribución
+Exponencial con parámetro de escala $\beta$, si su función de densidad
 de probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\beta} e^{-{\frac{x}{\beta}}} \quad \quad & x>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
 
 en donde se observa que ésta distribución es un caso particular de la
-distribución Gamma cuando `$\alpha=1$`.
+distribución Gamma cuando $\alpha=1$.
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Exponencial mediante
 la función `DISTR.EXP.N()`.
 
 #### Media y Varianza Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la media y
-varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Exp(\beta)$, entonces se puede probar que la media y
+varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \beta \quad \quad Var(X)=\beta^2\end{align*}$$
 
 
 #### Distribución Acumulada Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la función de
-distribución acumulada de la variable aleatoria `$X$` es de la forma
+Si $X\sim Exp(\beta)$, entonces se puede probar que la función de
+distribución acumulada de la variable aleatoria $X$ es de la forma
 
 $$\begin{align*}F(x) =  1 - e^{-{\frac{x}{\beta}}} \quad \quad & x>0; \beta>0\end{align*}$$
 
@@ -1631,15 +1631,15 @@ $0.67\%$.
 
 ### Distribución Weibull
 
-Se dice que la variable aleatoria `$X$` tiene una distribución Weibull
-con parámetros `$\alpha$` y `$\beta$`, si su función de densidad de
+Se dice que la variable aleatoria $X$ tiene una distribución Weibull
+con parámetros $\alpha$ y $\beta$, si su función de densidad de
 probabilidad es de la forma
 
 $$\begin{align*}f(x) = \begin{cases} \frac{\alpha}{\beta}\left(\frac{x}{\beta}\right)^{\alpha - 1}e^{-\left(\frac{x}{\beta}\right)^\alpha} & x\geq 0, \alpha>0, \beta>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
 
 
-donde, `$\alpha$` se conoce como el parámetro de forma y `$\beta$` como
-el parámetro de escala. Además, si `$\alpha=1$` se tendrá que la
+donde, $\alpha$ se conoce como el parámetro de forma y $\beta$ como
+el parámetro de escala. Además, si $\alpha=1$ se tendrá que la
 distribución Weibull será igual a la distribución Exponencial.
 
 En <tt>Excel</tt>, pueden calcularse probabilidades Weibull mediante la
@@ -1647,16 +1647,16 @@ función `DISTR.WEIBULL()`.
 
 #### Media y Varianza Weibull
 
-Si `$X\sim Wei(\alpha, \beta)$`, entonces se puede probar que la media y
-la varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Wei(\alpha, \beta)$, entonces se puede probar que la media y
+la varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\beta\;\Gamma\left(1 + \frac{1}{\alpha}\right) \quad \quad Var(X)=\beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gamma\left(1 + \frac{1}{\alpha}\right)^2\right]\end{align*}$$
 
 
 #### Función de distribución acumulada Weibull
 
-Si `$X\sim Wei(\alpha, \beta)$`, entonces se puede probar que la función
-de distribución acumulada de `$X$` está dada por
+Si $X\sim Wei(\alpha, \beta)$, entonces se puede probar que la función
+de distribución acumulada de $X$ está dada por
 
 $$\begin{align*}F(x) = \mathbb{P}(X\leq x) = \begin{cases} 0 & x<0 \\ 1- e^{-\left(\frac{x}{\beta}\right)^\alpha} & x\geq 0 \end{cases}\end{align*}$$
 
@@ -1712,8 +1712,8 @@ que el aire acondicionado falle después de los $3$ años de uso.
 
 ### Distribución Normal
 
-Se dice que la variable aleatoria `$X$` tiene una distribución Normal
-con parámetros `$\mu$` y `$\sigma^2)$`, si su función de densidad de
+Se dice que la variable aleatoria $X$ tiene una distribución Normal
+con parámetros $\mu$ y $\sigma^2)$, si su función de densidad de
 probabilidad es de la forma
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
@@ -1724,18 +1724,18 @@ función `DISTR.NORM.N()`.
 
 #### Media y Varianza Normal
 
-Si `$X\sim N(\mu, \sigma^2)$`, entonces se puede probar que la media y
-la varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim N(\mu, \sigma^2)$, entonces se puede probar que la media y
+la varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}$$
 
 
 ### Distribución Normal estándar
 
-Un caso particular de la distribución normal cuando la media `$\mu=0$` y
-ka varianza `$\sigma^2=1$`, recibe el nombre de distribución normal
-estándar, cuya variable aleatoria se simboliza con `$Z$`, tal que
-`$Z\sim N(0,1)$`, y donde su función de densidad de probabilidad está
+Un caso particular de la distribución normal cuando la media $\mu=0$ y
+ka varianza $\sigma^2=1$, recibe el nombre de distribución normal
+estándar, cuya variable aleatoria se simboliza con $Z$, tal que
+$Z\sim N(0,1)$, y donde su función de densidad de probabilidad está
 dada por
 
 
@@ -1747,38 +1747,38 @@ mediante la función `DISTR.NORM.ESTAND.N()`.
 
 #### Teorema de Estandarización
 
-Si `$X\sim N(\mu, \sigma^2)$`, siendo `$a$` y `$b$` dos constantes
+Si $X\sim N(\mu, \sigma^2)$, siendo $a$ y $b$ dos constantes
 cualquiera, entonces si se realiza la transformación
-`$Z=\frac{x-\mu}{\sigma}$` conocida como **estandarización**, se tendrá
-que `$Z\sim N(0,1)$`, con `$z_1$` y `$z_2$` las dos constantes
+$Z=\frac{x-\mu}{\sigma}$ conocida como **estandarización**, se tendrá
+que $Z\sim N(0,1)$, con $z_1$ y $z_2$ las dos constantes
 transformadas.
 
 ![](/assets/images/Estandarizacion.jpg)
 
 #### Propiedades
 
-Si `$X\sim N(\mu, \sigma^2)$`, entonces al aplicar el teorema de
-estandarización `$Z=\frac{x-\mu}{\sigma} \sim N(0,1)$`, y por tanto, si
-`$z_1$` y `$z_2$` son constantes, se tendrá que
+Si $X\sim N(\mu, \sigma^2)$, entonces al aplicar el teorema de
+estandarización $Z=\frac{x-\mu}{\sigma} \sim N(0,1)$, y por tanto, si
+$z_1$ y $z_2$ son constantes, se tendrá que
 
-1.  `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$`
+1.  $\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z\geq -z_1)$
 
-2.  `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$`
+2.  $\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z\leq -z_1) = 1- \mathbb{P}(Z\leq z_1)$
 
-3.  `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$`
+3.  $\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(Z\leq z_2) - \mathbb{P}(Z< z_1)$
 
-4.  Si `$z_1 = - z_2$` entonces
-    `$\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$`
+4.  Si $z_1 = - z_2$ entonces
+    $\mathbb{P}(z_1\leq Z\leq z_2) = \mathbb{P}(-z_2\leq Z\leq z_2) =2\mathbb{P}(Z\leq z_2) - 1$
 
-5.  `$Z_\alpha$` es el valor de la variable aleatoria `$Z\sim N(0,1)$`
-    tal que `$\mathbb{P}(Z\geq Z_\alpha)=\alpha$`, y
-    `$\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$`
+5.  $Z_\alpha$ es el valor de la variable aleatoria $Z\sim N(0,1)$
+    tal que $\mathbb{P}(Z\geq Z_\alpha)=\alpha$, y
+    $\mathbb{P}(Z\leq Z_\alpha)=1 - \alpha$
 
 En donde, debe recordarse que, al ser la distribución normal una
-distribución continua, la `$\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z< z_1)$`
-y `$\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z > z_1)$`. Lo anterior debido a
+distribución continua, la $\mathbb{P}(Z\leq z_1) = \mathbb{P}(Z< z_1)$
+y $\mathbb{P}(Z\geq z_1) = \mathbb{P}(Z > z_1)$. Lo anterior debido a
 que en la distribuciones continuas la probabilidad puntual es igual a
-`$0$`.
+$0$.
 
 <button id="Show17" class="btn btn-secondary">
 Mostrar Ejercicio

@@ -13,13 +13,13 @@ Introducción
 Una serie de tiempo es una secuencia de observaciones registradas y
 ordenadas de forma periódica, en intervalos de tiempo igualmente
 espaciados, tales como, días, meses, semestres, años, entre otros. Estas
-observaciones son caracterizadas por una variable aleatoria `$Y_t$`, la
-cual depende del tiempo `$t=1,2,\ldots,T$`, y donde el objetivo es
-modelar el comportamiento de `$Y_t$` contra `$t$`, siendo `$T$` el
+observaciones son caracterizadas por una variable aleatoria $Y_t$, la
+cual depende del tiempo $t=1,2,\ldots,T$, y donde el objetivo es
+modelar el comportamiento de $Y_t$ contra $t$, siendo $T$ el
 número total de observaciones que se tenga en la serie de tiempo.
 
 Un ejemplo de una serie temporal, se presenta a continuación donde se
-muestra el % anual del `$PIB$` per cápita de Colombia, para un intervalo
+muestra el % anual del $PIB$ per cápita de Colombia, para un intervalo
 de tiempo anual que va desde 1961 hasta 2017
 
 <pre>
@@ -27,8 +27,8 @@ de tiempo anual que va desde 1961 hasta 2017
 <script type="application/json" data-for="htmlwidget-907311b7a80de22e760f">{"x":{"visdat":{"4ba05eda6f97":["function () ","plotlyVisDat"]},"cur_data":"4ba05eda6f97","attrs":{"4ba05eda6f97":{"x":{},"y":{},"mode":"lines+markers","text":["PIB = 1.983","PIB = 2.293","PIB = 0.232","PIB = 3.034","PIB = 0.557","PIB = 2.157","PIB = 1.11","PIB = 2.925","PIB = 3.21","PIB = 3.462","PIB = 3.38","PIB = 5.181","PIB = 4.344","PIB = 3.415","PIB = 0.054","PIB = 2.386","PIB = 1.82","PIB = 6.026","PIB = 3.003","PIB = 1.744","PIB = -0.023","PIB = -1.316","PIB = -0.684","PIB = 1.093","PIB = 0.907","PIB = 3.625","PIB = 3.235","PIB = 2.009","PIB = 1.418","PIB = 2.313","PIB = 0.117","PIB = 2.167","PIB = 3.532","PIB = 4.009","PIB = 3.465","PIB = 0.428","PIB = 1.834","PIB = -0.939","PIB = -5.612","PIB = 1.435","PIB = 0.227","PIB = 1.065","PIB = 2.489","PIB = 3.923","PIB = 3.348","PIB = 5.439","PIB = 5.551","PIB = 2.045","PIB = 0.059","PIB = 3.207","PIB = 6.232","PIB = 2.851","PIB = 3.548","PIB = 3.745","PIB = 2.024","PIB = 1.073","PIB = 0.934"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"width":700,"height":400,"margin":{"b":60,"l":60,"t":60,"r":30,"pad":4},"title":"Crecimiento del PIB per cápita (% anual)","xaxis":{"domain":[0,1],"automargin":true,"title":"Año"},"yaxis":{"domain":[0,1],"automargin":true,"title":"PIB (% anual)"},"hovermode":"closest","showlegend":false},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017],"y":[1.983183392,2.292595551,0.231792643,3.033555246,0.557370132,2.156500316,1.110445303,2.924696885,3.209951184,3.462385145,3.379791618,5.181404836,4.344116951,3.415242062,0.054377114,2.385808489,1.819540279,6.026298262,3.003067413,1.744317806,-0.023027616,-1.316171395,-0.683991606,1.09300722,0.907423685,3.625085068,3.235271842,2.009085124,1.418335593,2.312929483,0.116795606,2.166679144,3.53222506,4.009005561,3.4647784,0.427584131,1.834165369,-0.939121717,-5.611912127,1.43545282,0.226857288,1.065060726,2.489228212,3.922772027,3.34837565,5.439446434,5.551168521,2.045206544,0.058604955,3.206963611,6.232264851,2.850694341,3.547537302,3.744554111,2.023519393,1.072527479,0.934070318],"mode":"lines+markers","text":["PIB = 1.983","PIB = 2.293","PIB = 0.232","PIB = 3.034","PIB = 0.557","PIB = 2.157","PIB = 1.11","PIB = 2.925","PIB = 3.21","PIB = 3.462","PIB = 3.38","PIB = 5.181","PIB = 4.344","PIB = 3.415","PIB = 0.054","PIB = 2.386","PIB = 1.82","PIB = 6.026","PIB = 3.003","PIB = 1.744","PIB = -0.023","PIB = -1.316","PIB = -0.684","PIB = 1.093","PIB = 0.907","PIB = 3.625","PIB = 3.235","PIB = 2.009","PIB = 1.418","PIB = 2.313","PIB = 0.117","PIB = 2.167","PIB = 3.532","PIB = 4.009","PIB = 3.465","PIB = 0.428","PIB = 1.834","PIB = -0.939","PIB = -5.612","PIB = 1.435","PIB = 0.227","PIB = 1.065","PIB = 2.489","PIB = 3.923","PIB = 3.348","PIB = 5.439","PIB = 5.551","PIB = 2.045","PIB = 0.059","PIB = 3.207","PIB = 6.232","PIB = 2.851","PIB = 3.548","PIB = 3.745","PIB = 2.024","PIB = 1.073","PIB = 0.934"],"type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 </pre>
 
-Otro ejemplo, se presenta para el material particulado `$PM_{10}$` y
-`$PM_{2.5}$` en la ciudad de Medellín para el mes de abril del año 2019,
+Otro ejemplo, se presenta para el material particulado $PM_{10}$ y
+$PM_{2.5}$ en la ciudad de Medellín para el mes de abril del año 2019,
 para el cual se realizan los registros en intervalos de una hora
 
 <pre style="height:610px">
@@ -275,7 +275,7 @@ plot(descIH, main = "Componentes de la variación porcentual de los ingresos rea
 
 ### Componente de tendencia
 
-El componente de tendencia se denota por `$T_t$`, es el componente de la
+El componente de tendencia se denota por $T_t$, es el componente de la
 serie que cambia más lentamente y describe el patrón suave que tiene una
 serie a largo plazo respecto a su nivel promedio (evolución a largo
 plazo de su media), el cual es caracterizado por un crecimiento o
@@ -324,7 +324,7 @@ de los ingresos reales de hoteles",
 
 ### Componente estacional
 
-El componente estacional se denota como `$S_t$`, es el segundo
+El componente estacional se denota como $S_t$, es el segundo
 componente de la serie que cambia más rápidamente y se describe como un
 patrón que se repite regularmente a través de la serie sobre una base
 anual. Este comportamiento es debido a factores tales como los consumos
@@ -373,7 +373,7 @@ de los ingresos reales de hoteles",
 
 ### Componente aleatorio, irregular o de error
 
-El componente de error se denota como `$\varepsilon_t$`, también llamado
+El componente de error se denota como $\varepsilon_t$, también llamado
 **ruido blanco**, es el componente de la serie que cambia más
 rápidamente y se caracteriza por presentar pequeñas fluctuaciones sobre
 alrededor de una media y varianza constantes sin ningún patrón aparente.
@@ -383,7 +383,7 @@ en un instante del tiempo.
 
 Es de anotar, que este componente es impredecible, pero puede ser
 modelado como observaciones aleatorias de alguna distribución, tal como
-lo es, una distribución `$N(0,\sigma^2)$`.
+lo es, una distribución $N(0,\sigma^2)$.
 
 Para el caso del **total mensual de pasajeros de líneas aéreas
 internacionales, para los años 1949 a 1960** se tiene que
@@ -424,7 +424,7 @@ abline(h = 0)
 
 ### Componente de fluctuación cíclica
 
-El componente de fluctuación cícluca se denota como `$C_t$`, es el
+El componente de fluctuación cícluca se denota como $C_t$, es el
 segundo componente de la serie que cambia más lentamente y se
 caracteriza por presentar patrones de onda en puntos recurrentes en el
 tiempo con duración más de un año. Este comportamiento es debido por
@@ -436,8 +436,8 @@ pronosticar, debido a que éstos poseen periodos más largos (medida en
 años) y amplitudes irregulares (diferencias entre altas y bajas) que
 están lejos de ser constantes, lo cual hace que éstos no sean fijos ni
 predecibles, y por tanto, las fluctuaciones cíclicas son mezcladas
-generalmente con el componente de error `$\varepsilon$` o se asume que
-cualquier cíclo es parte de la tendencia `$T_t$`.
+generalmente con el componente de error $\varepsilon$ o se asume que
+cualquier cíclo es parte de la tendencia $T_t$.
 
 Para el caso de las **variaciones porcentual de los ingresos reales
 totales de hoteles en Colombia entre Junio 2005 y Marzo 2019** se tiene

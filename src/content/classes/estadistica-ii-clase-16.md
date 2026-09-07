@@ -16,22 +16,22 @@ Es razonable pensar que **un buen estimador es aquel que mejore** en su
 estimación a medida que va **aumentando el tamaño de la muestra**. Esto
 es lo que se conoce como consistencia de un estimador.
 
-Si `$\hat{\theta}$` es un estimador del parámetro `$\theta$`, tal que
+Si $\hat{\theta}$ es un estimador del parámetro $\theta$, tal que
 
-1.  `$\hat{\theta}$` es un estimador insesgado o asintóticamente
+1.  $\hat{\theta}$ es un estimador insesgado o asintóticamente
     insesgado tal que
     
 $$\begin{align*}\lim_{n\to \infty}\mathbb{E}(\hat{\theta}) = \theta \quad \text{ ó }\quad \lim_{n\to \infty}\mathbb{B}(\hat{\theta}) = 0\end{align*}$$
 
 2.  A medida que aumenta el tamaño de muestra, las estimaciones de
-    `$\hat{\theta}$` se aproximan cada vez más al parámetro `$\theta$`,
+    $\hat{\theta}$ se aproximan cada vez más al parámetro $\theta$,
     tal que
     
 $$\begin{align*}\lim_{n\to \infty}Var(\hat{\theta}) = 0\end{align*}$$
 
 
 entonces de cumplirse estas dos condiciones se dice que el estimador
-`$\hat{\theta}$` del parámetro `$\theta$` es un estimador consistente.
+$\hat{\theta}$ del parámetro $\theta$ es un estimador consistente.
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -130,28 +130,28 @@ parámetro $\mu$.
 
 ### Estimador Suficiente
 
-Se dice que un estimador `$\hat{\theta}$` es suficiente para el
-parámetro `$\theta$`, cuando éste tiene tanta información sobre el
+Se dice que un estimador $\hat{\theta}$ es suficiente para el
+parámetro $\theta$, cuando éste tiene tanta información sobre el
 parámetro como al propia muestra, es decir, cuando es capaz de recoger o
 resumir toda la información de la muestra aleatoria sin depender del
 parámetro que está intentando estimar.
 
 #### Teorema de Factorización Neyman
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de tamaño `$n$` de
-una distribución `$f(X;\theta)$`, entonces un estadístico
-`$\hat{\theta}$` basado en una muestra aleatoria es suficiente para la
-estimación de `$\theta$` si y solo si se puede factorizar en dos
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de tamaño $n$ de
+una distribución $f(X;\theta)$, entonces un estadístico
+$\hat{\theta}$ basado en una muestra aleatoria es suficiente para la
+estimación de $\theta$ si y solo si se puede factorizar en dos
 funciones no negativas.
 
 $$\begin{align*}L(X_1, X_2, \ldots, X_n|\theta) = g(\hat{\theta}, \theta)h(X_1, X_2,\ldots, X_n)\end{align*}$$
 
 
-donde `$L(X_1, X_2, \ldots, X_n|\theta)=\prod_{i=1}^{n}f(x_i;\theta)$`
+donde $L(X_1, X_2, \ldots, X_n|\theta)=\prod_{i=1}^{n}f(x_i;\theta)$
 es la función de verosimilitud de la muestra aleatoria,
-`$g(\hat{\theta}, \theta)$` es una función solo de `$\hat{\theta}$` y
-`$\theta$`, y `$h(X_1, X_2,\ldots, X_n)$` es una función que depende
-solo de la muestra y no depende del parámetro `$\theta$`.
+$g(\hat{\theta}, \theta)$ es una función solo de $\hat{\theta}$ y
+$\theta$, y $h(X_1, X_2,\ldots, X_n)$ es una función que depende
+solo de la muestra y no depende del parámetro $\theta$.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio

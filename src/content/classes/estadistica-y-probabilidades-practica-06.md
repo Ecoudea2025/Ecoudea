@@ -41,8 +41,8 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
     cada lunes. De interés para la mayorista es la proporción de este
     suministro que se vende durante la semana. Durante varias semanas de
     observación, la distribuidora encontró que esta proporción podría
-    ser modelada por una distribución Beta con `$\alpha = 4$` y
-    `$\beta = 2$`.
+    ser modelada por una distribución Beta con $\alpha = 4$ y
+    $\beta = 2$.
     <ol type="a">
     <li>
     Encuentre la probabilidad de que la mayorista venda al menos
@@ -58,7 +58,7 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
 3.  Las mediciones en los sistemas científicos siempre están sujetas a
     variación, algunas veces más que otras. Hay muchas estructuras para
     los errores de medición y los estadísticos pasan mucho tiempo
-    modelándolos. Suponga que el error de medición `$X$` de cierta
+    modelándolos. Suponga que el error de medición $X$ de cierta
     cantidad física es determinado por la siguiente función de densidad:
     
 $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
@@ -88,7 +88,7 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
 
 4.  La magnitud de temblores registrados en una Japón durante los
     últimos meses puede modelarse mediante una distribución Chi-Cuadrado
-    con una media de magnitud `$2$` en la escala de Richter.
+    con una media de magnitud $2$ en la escala de Richter.
     <ol type="a">
     <li>
     Encuentre la probabilidad de que la magnitud de un temblor que
@@ -105,7 +105,7 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
 5.  Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
-    densidad de probabilidad que caracteriza la proporción `$X$` de
+    densidad de probabilidad que caracteriza la proporción $X$ de
     utilidades que obtiene una pequeña empresa durante su primer año
     está dada por
     
@@ -134,7 +134,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
 
 6.  El operador de una estación de bombeo ha observado que la demanda de
     agua durante las primeras horas de la tarde tiene una distribución
-    aproximadamente exponencial con media de `$100_{pcs}$`. Dado lo
+    aproximadamente exponencial con media de $100_{pcs}$. Dado lo
     anterior,
     <ol type="a">
     <li>
@@ -149,7 +149,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     </li>
     </ol>
 
-7.  Sea `$X$` una variable aleatoria con distribución de probabilidades
+7.  Sea $X$ una variable aleatoria con distribución de probabilidades
     dada por
     
 $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -169,13 +169,13 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     </li>
     </ol>
 
-8.  El tiempo `$X$` necesario para completar una operación clave en la
+8.  El tiempo $X$ necesario para completar una operación clave en la
     construcción de casas tiene una distribución exponencial con media
-    de `$10$` horas. La fórmula `$C = 100 + 40Y + 3Y^2$` relaciona el
-    costo `$C$` de completar esta operación con el cuadrado del tiempo
-    para completarla. Encuentre la media y la varianza de `$C$`.
+    de $10$ horas. La fórmula $C = 100 + 40Y + 3Y^2$ relaciona el
+    costo $C$ de completar esta operación con el cuadrado del tiempo
+    para completarla. Encuentre la media y la varianza de $C$.
 
-9.  Sea `$X$` una variable aleatoria continua con función de
+9.  Sea $X$ una variable aleatoria continua con función de
     probabilidad acumulada igual a
     
 $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
@@ -192,7 +192,7 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
 10. La evidencia histórica indica que los tiempos entre accidentes
     mortales en vuelos nacionales de horario programado en aviones de
     pasajeros en Estados Unidos tienen una distribución Chi-Cuadrado con
-    `$8$` grados de libertad. Si se selecciona aleatoriamente un mes
+    $8$ grados de libertad. Si se selecciona aleatoriamente un mes
     cualquiera
     <ol type="a">
     <li>
@@ -223,7 +223,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
 
 12. Suponga que el tiempo de vida de un portátil MSI, en años, tiene una
     distribución de Gamma con parámetro de forma y de escala dados por
-    `$3$` y `$1.5$` respectivamente.
+    $3$ y $1.5$ respectivamente.
     <ol type="a">
     <li>
     Calcule la probabilidad de que falle antes de $6$ años de uso.
@@ -243,7 +243,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
   
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
-    velocidad sea menor de `$12$` minutos
+    velocidad sea menor de $12$ minutos
     <ol type="a">
     <li>
     Usando la función de distribución acumulativa de $X$
@@ -255,7 +255,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
 
 14. El tiempo de ciclo para camiones que transportan concreto al lugar
     de construcción de una carretera está uniformemente distribuido en
-    el intervalo de `$50$` a `$70$` minutos.
+    el intervalo de $50$ a $70$ minutos.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que el tiempo de ciclo se a lo más de
@@ -267,9 +267,9 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     </li>
     </ol>
 
-15. Suponga que el tiempo medido en unidades de `$100$` horas, que se
+15. Suponga que el tiempo medido en unidades de $100$ horas, que se
     usa una licuadora en un hogar durante un año es una v.a continua
-    `$X$` con función de densidad de probabilidad dada por:
+    $X$ con función de densidad de probabilidad dada por:
     
 $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -289,7 +289,7 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     </ol>
 
 16. El tiempo entre arribos de taxis al acopio de una estación del metro
-    se distribuye exponencialmente con una media de `$60$` segundos.
+    se distribuye exponencialmente con una media de $60$ segundos.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que la llegada del próximo taxi tarde al
@@ -303,9 +303,9 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     </ol>
 
 17. Suponga una empresa que fabrica pelotas locas con diámetros que
-    oscilan entre `$4$` y 8 centímetros. Si `$X$` es la variable
+    oscilan entre $4$ y 8 centímetros. Si $X$ es la variable
     aleatoria que representa el diámetro de las pelotas locas, y la
-    empresa sabe que la función de probabilidad de `$X$` es de la forma
+    empresa sabe que la función de probabilidad de $X$ es de la forma
     
 $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
 
@@ -322,8 +322,8 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
 18. Una empresa manufacturera emplea para la producción de bolsas de
     plástico un producto específico que compra a granel. La cantidad del
     producto específico (en toneladas) empleado por día puede ser
-    modelado mediante una distribución Gamma con media de `$3$` y
-    varianza de `$4$`. Basados en lo anterior
+    modelado mediante una distribución Gamma con media de $3$ y
+    varianza de $4$. Basados en lo anterior
     <ol type="a">
     <li>
     Calcule el valor de los parámetros $\alpha$ y $\beta$ asociadas
@@ -340,9 +340,9 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     </li>
     </ol>
 
-19. Sea `$X$` una variable aleatoria continua que representa el tiempo,
+19. Sea $X$ una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
-    la función de densidad de probabilidad `$f(x)$` está dada por:
+    la función de densidad de probabilidad $f(x)$ está dada por:
     
 $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
 
@@ -365,7 +365,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
 20. Suponga que en una universidad se realizan pruebas de aptitud
     anuales para observar las habilidades y competencias de sus
     profesores. Si se sabe que el puntaje de estas pruebas se distribuye
-    gamma con un promedio de de `$76.2$` y una varianza de `$1935.48$`.
+    gamma con un promedio de de $76.2$ y una varianza de $1935.48$.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que un profesor obtenga un puntaje
@@ -378,8 +378,8 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     </li>
     </ol>
 
-21. Sea `$X$` una variable aleatoria continua con distribución de
-    probabilidades `$f(x)$` dada por
+21. Sea $X$ una variable aleatoria continua con distribución de
+    probabilidades $f(x)$ dada por
     
 $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -398,11 +398,11 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     </ol>
 
 22. Una cervecería usa una máquina que llena automáticamente botellas de
-    `$350_{ml}$`. Sin embargo, existe una variación en las cantidades de
+    $350_{ml}$. Sin embargo, existe una variación en las cantidades de
     cerveza que se ponen en las botellas que se llenan, en donde, se ha
     observado que la cantidad de cerveza de las botellas está
-    normalmente distribuida con media de `$350_{ml}$` onzas y desviación
-    estándar de `$25_{ml}$`.
+    normalmente distribuida con media de $350_{ml}$ onzas y desviación
+    estándar de $25_{ml}$.
     <ol type="a">
     <li>
     Calcule la probabilidad de que una botella posea más de
@@ -422,17 +422,17 @@ $$\begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}$$
 24. El sistema de puntuación Elo es un método matemático empleado para
     calcular la habilidad relativa de los jugadores en algunos deportes
     tales como el Ajedrez. Suponga que el puntaje Elo promedio de los
-    jugadores de cierta categoría es de `$1556$` con una desviación
-    estándar de `$14$`. Si pruebas estadísticas han sugerido que el
+    jugadores de cierta categoría es de $1556$ con una desviación
+    estándar de $14$. Si pruebas estadísticas han sugerido que el
     rendimiento de los ajedrecistas se distribuye normalmente. ¿Cuál es
     la probabilidad de que un ajedrecista de dicha categoría tenga un
-    puntaje Elo superior a `$1603$`?.
+    puntaje Elo superior a $1603$?.
 
-25. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
+25. Un proveedor de queroseno tiene un tanque de $150$ galones que se
     llena al empezar cada semana. Su demanda semanal muestra un
     comportamiento de frecuencia relativo que aumenta de manera continua
-    hasta `$100$` galones y luego se nivela entre `$100$` y `$150$`
-    galones. Si `$Y$` denota la demanda semanal en cientos de galones,
+    hasta $100$ galones y luego se nivela entre $100$ y $150$
+    galones. Si $Y$ denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
 $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -446,11 +446,11 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     </li>
     </ol>
 
-26. Suponga la variable aleatoria `$X$` que representa la humedad que
+26. Suponga la variable aleatoria $X$ que representa la humedad que
     posee el café para su cosecha. Si la humedad en el café se mide
     mediante un termohigrometro, y se sabe que la distribución de la
     humedad sigue una distribución beta con parámetros de forma
-    `$\alpha = 4$` y `$\beta=3$`.
+    $\alpha = 4$ y $\beta=3$.
     <ol type="a">
     <li>
     Calcule la probabilidad de que la proporción de humedad que muestra
@@ -465,7 +465,7 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
 
 27. La cantidad diaria de café, en litros, que sirve la maquina de las
     burbujas, es una variable aleatoria uniforme en el intervalo de
-    `$6.8$` hasta `$10$` litros.
+    $6.8$ hasta $10$ litros.
     <ol type="a">
     <li>
     ¿Cuál es la probabilidad de que en un día cualquiera, la maquina
@@ -481,7 +481,7 @@ $$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
 28. Luego de varios semestres, un profesor de estadística encuentra que
     los resultados que obtienen los estudiantes en el examen final del
     curso de Estadística y Probabilidades, tienen una distribución
-    normal con media `$3.2$` y varianza `$0.1225$`. Si un estudiante
-    necesita al menos un `$4$` para que la nota acumulada le quede sobre
-    `$2.96$`, cuál es la probabilidad de que luego de presentar el
+    normal con media $3.2$ y varianza $0.1225$. Si un estudiante
+    necesita al menos un $4$ para que la nota acumulada le quede sobre
+    $2.96$, cuál es la probabilidad de que luego de presentar el
     parcial gane la materia?

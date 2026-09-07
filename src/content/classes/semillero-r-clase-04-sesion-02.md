@@ -966,7 +966,7 @@ etc, etc. Por ejemplo, tenemos la lista, deseamos extraer la segunda
 matriz del objeto <tt>AR</tt>, entonces podemos emplear la notación
 
 $$\begin{align*}
-Lista$AR[\;, \;, 2]
+Lista\$AR[\;, \;, 2]
 \end{align*}$$
 
 tal que

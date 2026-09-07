@@ -13,10 +13,10 @@ Esperanza matemática
 
 ### Caso univariado
 
-Sea `$X$` una variable aleatoria con función de masa de probabilidad
-dada por `$p(x)$` o función de densidad de probabilidad dada por
-`$f(x)$`, entonces la media o valor esperado de `$X$`, denotado por
-`$\mathbb{E}(X)$` o `$\mu$` está dado por
+Sea $X$ una variable aleatoria con función de masa de probabilidad
+dada por $p(x)$ o función de densidad de probabilidad dada por
+$f(x)$, entonces la media o valor esperado de $X$, denotado por
+$\mathbb{E}(X)$ o $\mu$ está dado por
 
 $$\begin{align*}\mathbb{E}(X) = \mu =\begin{cases} \sum_{x}xp(x) & \text{ si } X \text{ es discreta}  \\ \int_{-\infty}^\infty xf(x) dx & \text{ si } X \text{ es continua} \end{cases}\end{align*}$$
 
@@ -163,14 +163,14 @@ será de $30$ minutos.
 
 ### Propiedades de la esperanza matemática
 
-Sea `$a$` y `$b$` números reales (constantes) y `$X$` una variable
-aleatoria con función de masa de probabilidad dada por `$p(x)$` o
-función de densidad de probabilidad dada por `$f(x)$`, entonces
+Sea $a$ y $b$ números reales (constantes) y $X$ una variable
+aleatoria con función de masa de probabilidad dada por $p(x)$ o
+función de densidad de probabilidad dada por $f(x)$, entonces
 
--   `$\mathbb{E}(a) = a$`
--   `$\mathbb{E}(bX) = b\mathbb{E}(X)$`
--   `$\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$`
--   Si `$m(X)$` es una función de `$X$`, entonces
+-   $\mathbb{E}(a) = a$
+-   $\mathbb{E}(bX) = b\mathbb{E}(X)$
+-   $\mathbb{E}(a+bX) = a+ b\mathbb{E}(X)$
+-   Si $m(X)$ es una función de $X$, entonces
 
 
 $$\begin{align*}\mathbb{E}(m(X))=\begin{cases} \sum_{x}m(x)p(x) & \text{ si } X \text{ es discreta}  \\ \int_{-\infty}^\infty m(x)f(x) dx & \text{ si } X \text{ es continua} \end{cases}\end{align*}$$
@@ -422,25 +422,25 @@ $$\begin{align*}
 
 ### Caso multivariado
 
-Sea `$X, Y$` variables aleatorias con función de masa de probabilidad
-conjunta dada por `$p(x,y)$` o función de densidad de probabilidad
-conjunta dada por `$f(x,y)$`, entonces si la función `$m(X,Y)$` que
-depende tanto de `$X$` como de `$Y$`, se tendrá que el valor esperado de
-`$m(X,Y)$` es de la forma
+Sea $X, Y$ variables aleatorias con función de masa de probabilidad
+conjunta dada por $p(x,y)$ o función de densidad de probabilidad
+conjunta dada por $f(x,y)$, entonces si la función $m(X,Y)$ que
+depende tanto de $X$ como de $Y$, se tendrá que el valor esperado de
+$m(X,Y)$ es de la forma
 
 $$\begin{align*}\mathbb{E}(m(X,Y))=\begin{cases} \sum_{y}\sum_{x}m(x,y)p(x,y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty \int_{-\infty}^\infty m(x,y)f(x,y) dxdy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Ahora, si la función `$m(X,Y) = m(X)$` solo depende de `$X$`, y `$g(x)$`
-es la función de distribución marginal de `$X$`, se tendrá que el valor
-esperado de `$m(X)$` es de la forma
+Ahora, si la función $m(X,Y) = m(X)$ solo depende de $X$, y $g(x)$
+es la función de distribución marginal de $X$, se tendrá que el valor
+esperado de $m(X)$ es de la forma
 
 $$\begin{align*}\mathbb{E}(m(X))=\begin{cases} \sum_{x}m(x)g(x) & \text{ si } X \text{ es discreta}  \\ \int_{-\infty}^\infty m(x)g(x) dx & \text{ si } X \text{ es continua} \end{cases}\end{align*}$$
 
 
-mientras que, si la función `$m(X,Y) = m(Y)$` solo depende de `$Y$`, y
-`$h(y)$` es la función de distribución marginal de `$Y$`, se tendrá que
-el valor esperado de `$m(Y)$` es de la forma
+mientras que, si la función $m(X,Y) = m(Y)$ solo depende de $Y$, y
+$h(y)$ es la función de distribución marginal de $Y$, se tendrá que
+el valor esperado de $m(Y)$ es de la forma
 
 $$\begin{align*}\mathbb{E}(m(Y))=\begin{cases} \sum_{y}m(y)h(y) & \text{ si } Y \text{ es discreta}  \\ \int_{-\infty}^\infty m(y)h(y) dy & \text{ si } Y \text{ es continua} \end{cases}\end{align*}$$
 

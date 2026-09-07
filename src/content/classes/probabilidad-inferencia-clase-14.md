@@ -18,7 +18,7 @@ Un proceso Bernoulli es aquel que cumple
     condiciones.
 2.  Cada ensayo produce un resultado que se puede clasificar como éxito
     o fracaso.
-3.  La probabilidad de éxito se denota por `$p$` y permanece constante
+3.  La probabilidad de éxito se denota por $p$ y permanece constante
     de un ensayo a otro.
 4.  Los ensayos repetidos son independientes entre si.
 
@@ -57,17 +57,17 @@ o no en Antioquia.
 
 ### Ensayo de Bernoulli
 
-Si la probabilidad de éxito de un experimento es `$p$`, entonces la
-probabilidad de fallo debe ser `$1-p$` y la función de probabilidad de
-la variable aleatoria `$X\sim Be(p)$` para un ensayo Bernoulli será
+Si la probabilidad de éxito de un experimento es $p$, entonces la
+probabilidad de fallo debe ser $1-p$ y la función de probabilidad de
+la variable aleatoria $X\sim Be(p)$ para un ensayo Bernoulli será
 
 $$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
 
 
 #### Teorema
 
-Si `$X\sim Be(p)$`, entonces se puede probar que la media y la varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim Be(p)$, entonces se puede probar que la media y la varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}$$
 
@@ -146,21 +146,21 @@ una desviación estándar de $0.489$.
 
 ### Distribución Binomial
 
-Si `$X$` es la variable aleatoria del número de éxitos de `$n$` ensayos
-de Bernoulli, con probabilidad de éxito `$p$`, entonces se dice que
-`$X\sim b(n,p)$` tal que
+Si $X$ es la variable aleatoria del número de éxitos de $n$ ensayos
+de Bernoulli, con probabilidad de éxito $p$, entonces se dice que
+$X\sim b(n,p)$ tal que
 
 $$\begin{align*}p(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}$$
 
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo con
 reemplazo o en poblaciones infinitas en donde es posible **suponer que
-la probabilidad de éxito `$p$` es la misma** en cada ensayo Bernoulli.
+la probabilidad de éxito $p$ es la misma** en cada ensayo Bernoulli.
 
 #### Teorema
 
-Si `$X\sim b(n,p)$`, entonces se puede probar que la media y varianza de
-la variable aleatoria `$X$` están dadas por
+Si $X\sim b(n,p)$, entonces se puede probar que la media y varianza de
+la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}$$
 
@@ -324,18 +324,18 @@ la carretera en un kilómetro.
 ### Distribución Poisson
 
 El número de sucesos que ocurren en un intervalo de tiempo o región
-específica, es una variable aleatoria `$X$` con distribución de
+específica, es una variable aleatoria $X$ con distribución de
 probabilidad Poisson, tal que
 
 $$\begin{align*}p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \quad \quad x=0,1,\ldots\end{align*}$$
 
-donde `$\lambda$` es el parámetro de la distribución y representa el
+donde $\lambda$ es el parámetro de la distribución y representa el
 número promedio de sucesos por unidad de tiempo o región específica.
 
 #### Teorema
 
-Si `$X\sim P(\lambda)$` entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim P(\lambda)$ entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\lambda \quad \quad Var(X)=\lambda\end{align*}$$
 

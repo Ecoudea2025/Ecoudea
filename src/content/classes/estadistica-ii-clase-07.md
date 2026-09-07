@@ -8,16 +8,16 @@ math: true
 bibliography: "../../referencias.bib"
 ---
 
-## Prueba de hipótesis para diferencia de proporciones `$p_1 - p_2$`
+## Prueba de hipótesis para diferencia de proporciones $p_1 - p_2$
 
-Sean `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias *iid* de
-tamaño `$n_1$` y `$n_2$`, tal que `$X_{i}\sim b(n_i,p_i)$`, para
-`$i=1,2$`, entonces si `$n_1$` y `$n_2$` son suficientemente grandes tal
-que `$n_1, n_2\geq30$`, y si las proporciones desconocidas `$p_1$` y
-`$p_2$` no se encuentran cercanas a `$0$` o `$1$`, tal que `$n_ip_i>5$`
-y `$n_i(1-p_i)>5$`, para `$i=1,2$`, entonces un una prueba de hipótesis
-para la diferencia de las proporciones `$p_1-p_2$` será de la forma
+Sean $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias *iid* de
+tamaño $n_1$ y $n_2$, tal que $X_{i}\sim b(n_i,p_i)$, para
+$i=1,2$, entonces si $n_1$ y $n_2$ son suficientemente grandes tal
+que $n_1, n_2\geq30$, y si las proporciones desconocidas $p_1$ y
+$p_2$ no se encuentran cercanas a $0$ o $1$, tal que $n_ip_i>5$
+y $n_i(1-p_i)>5$, para $i=1,2$, entonces un una prueba de hipótesis
+para la diferencia de las proporciones $p_1-p_2$ será de la forma
 
 ![](/assets/images/Hipotesis6.jpg)
 
@@ -128,13 +128,13 @@ superiores al promedio.
 </p>
 </main>
 
-## Prueba de hipótesis para una varianza `$\sigma^2$`
+## Prueba de hipótesis para una varianza $\sigma^2$
 
-Sea `$X_{1}, X_{2}, \ldots, X_{n}$` una muestra aleatoria de una
-población normal de tamaño `$n$` con medias `$\mathbb{E}(X)=\mu$` y
-varianza desconocidas `$Var(X)=\sigma_1^2<\infty$`, entonces un
-contraste de hipótesis para la varianza real `$\sigma^2$`, a un nivel de
-significancia `$\alpha$` será de la forma
+Sea $X_{1}, X_{2}, \ldots, X_{n}$ una muestra aleatoria de una
+población normal de tamaño $n$ con medias $\mathbb{E}(X)=\mu$ y
+varianza desconocidas $Var(X)=\sigma_1^2<\infty$, entonces un
+contraste de hipótesis para la varianza real $\sigma^2$, a un nivel de
+significancia $\alpha$ será de la forma
 
 ![](/assets/images/Hipotesis7.jpg)
 
@@ -273,16 +273,16 @@ $300000$ millones de pesos$^2$.
 </p>
 </main>
 
-## Prueba de hipótesis para cociente de varianzas `$\sigma^2_1/\sigma^2_2$`
+## Prueba de hipótesis para cociente de varianzas $\sigma^2_1/\sigma^2_2$
 
-Sea `$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$` dos muestras aleatorias normales
-de tamaños `$n_1$`, y `$n_2$` con medias `$\mathbb{E}(X_{1})=\mu_1$` y
-`$\mathbb{E}(X_{2})=\mu_2$`, y varianzas desconocidas
-`$Var(X_{1})=\sigma_1^2<\infty$` y `$Var(X_{2})=\sigma^2_2<\infty$`,
+Sea $X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_1}$ dos muestras aleatorias normales
+de tamaños $n_1$, y $n_2$ con medias $\mathbb{E}(X_{1})=\mu_1$ y
+$\mathbb{E}(X_{2})=\mu_2$, y varianzas desconocidas
+$Var(X_{1})=\sigma_1^2<\infty$ y $Var(X_{2})=\sigma^2_2<\infty$,
 respectivamente, entonces un contraste de hipótesis para el cociente de
-varianzas `$\sigma^2_1/\sigma^2_2$`, a un nivel de significancia
-`$\alpha$` será de la forma
+varianzas $\sigma^2_1/\sigma^2_2$, a un nivel de significancia
+$\alpha$ será de la forma
 
 ![](/assets/images/Hipotesis8.jpg)
 

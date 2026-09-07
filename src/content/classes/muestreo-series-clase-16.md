@@ -60,37 +60,37 @@ $$\begin{align*}S_t=\gamma (Y_t-a_t) + (1 - \gamma) S_{t-s}\end{align*}$$
 $$\begin{align*}\hat{Y}_{t+p}=a_t + b_t p + S_{t-s+p}\end{align*}$$
 
 
-donde `$a_t$` es la estimación del intercepto o del nuevo nivel del
-conjunto de observaciones en el periodo `$t$`, `$\alpha$` es la
-constante de suavización para el intercepto, tal que `$0<\alpha<1$`,
-`$b_t$` es la estimación de la tendencia en el periodo `$t$`, `$\beta$`
-es la constante de suavización para la tendencia, tal que `$0<\beta<1$`,
-`$S_t$` es el estimado de la estacionalidad, `$\gamma$` es la constante
+donde $a_t$ es la estimación del intercepto o del nuevo nivel del
+conjunto de observaciones en el periodo $t$, $\alpha$ es la
+constante de suavización para el intercepto, tal que $0<\alpha<1$,
+$b_t$ es la estimación de la tendencia en el periodo $t$, $\beta$
+es la constante de suavización para la tendencia, tal que $0<\beta<1$,
+$S_t$ es el estimado de la estacionalidad, $\gamma$ es la constante
 de suavización para el estimado de estacionalidad, tal que
-`$0<\gamma<1$`, y `$p=1,2,\ldots$` es el número de periodos que se
+$0<\gamma<1$, y $p=1,2,\ldots$ es el número de periodos que se
 desean estimar o pronosticar.
 
 Hanke and Wichern ([2010](#ref-Hanke2010), p. 132) señala que al igual
-que los pesos `$\alpha$`, `$\beta$` y `$\gamma$` pueden seleccionarse
+que los pesos $\alpha$, $\beta$ y $\gamma$ pueden seleccionarse
 subjetivamente o generarse al minimizar una medida de error de
-pronóstico, como el `$MSE$`. El enfoque más común para determinar estos
+pronóstico, como el $MSE$. El enfoque más común para determinar estos
 valores es usar un algoritmo de optimización para obtener las constantes
 óptimas de suavización.
 
-Para la selección de los primeros valores asociados a `$a_1$`, `$b_1$` y
-`$S_t$`, es necesario inicializar después de completado un período
-estacional `$s$`, y seleccionando uno de los tres métodos siguientes
+Para la selección de los primeros valores asociados a $a_1$, $b_1$ y
+$S_t$, es necesario inicializar después de completado un período
+estacional $s$, y seleccionando uno de los tres métodos siguientes
 
--   `$a_s = Y_1$`, `$b_s = 0$` y `$S_i = 1$`.
--   `$a_s = \frac{1}{s}\sum_{i=1}^{s}Y_i$`,
-    `$b_s = \bar{Y}_{2,s} - \bar{Y}_{1,s}$` y `$S_i = Y_i - a_s$`.
+-   $a_s = Y_1$, $b_s = 0$ y $S_i = 1$.
+-   $a_s = \frac{1}{s}\sum_{i=1}^{s}Y_i$,
+    $b_s = \bar{Y}_{2,s} - \bar{Y}_{1,s}$ y $S_i = Y_i - a_s$.
 -   Regresión lineal con variables indicadoras por estacionalidad, para
     luego usar la constante de esta ecuación como el estimado del nivel,
     la pendiente de la regresión como el estimado de la tendencia y los
     coeficientes de las variables indicadoras como los estimados de la
     estacionalidad.
 
-con `$i = 1,\ldots, s$`, siendo `$s$` el índice de estacionalidad.
+con $i = 1,\ldots, s$, siendo $s$ el índice de estacionalidad.
 
 Una vez definido el método para la selección del valor inicial, puede
 realizarse el ajuste de las observaciones para la suavización de
@@ -106,7 +106,7 @@ mientras que, el ajuste de pronósticos se hace de la forma
 $$\begin{align*}\hat{Y}_{T+h}=a_T + b_T h + S_{T-s+h}\end{align*}$$
 
 
-siendo `$h$` el número de periodos a pronosticar.
+siendo $h$ el número de periodos a pronosticar.
 
 Suavizamiento exponencial de Holt-Winters multiplicativo
 --------------------------------------------------------
@@ -138,30 +138,30 @@ $$\begin{align*}S_t=\gamma \left(\frac{Y_t}{a_t}\right) + (1 - \gamma) S_{t-s}\e
 $$\begin{align*}\hat{Y}_{t+p}=(a_t + b_t p)S_{t-s+p}\end{align*}$$
 
 
-donde `$a_t$` es la estimación del intercepto o del nuevo nivel del
-conjunto de observaciones en el periodo `$t$`, `$\alpha$` es la
-constante de suavización para el intercepto, tal que `$0<\alpha<1$`,
-`$b_t$` es la estimación de la tendencia en el periodo `$t$`, `$\beta$`
-es la constante de suavización para la tendencia, tal que `$0<\beta<1$`,
-`$S_t$` es el estimado de la estacionalidad, `$\gamma$` es la constante
+donde $a_t$ es la estimación del intercepto o del nuevo nivel del
+conjunto de observaciones en el periodo $t$, $\alpha$ es la
+constante de suavización para el intercepto, tal que $0<\alpha<1$,
+$b_t$ es la estimación de la tendencia en el periodo $t$, $\beta$
+es la constante de suavización para la tendencia, tal que $0<\beta<1$,
+$S_t$ es el estimado de la estacionalidad, $\gamma$ es la constante
 de suavización para el estimado de estacionalidad, tal que
-`$0<\gamma<1$`, y `$p=1,2,\ldots$` es el número de periodos que se
+$0<\gamma<1$, y $p=1,2,\ldots$ es el número de periodos que se
 desean estimar o pronosticar.
 
 Igual al caso aditivo, se presenta lo señalado por Hanke and Wichern
 ([2010](#ref-Hanke2010), p. 132) señala que al igual que los pesos
-`$\alpha$`, `$\beta$` y `$\gamma$` pueden seleccionarse subjetivamente o
+$\alpha$, $\beta$ y $\gamma$ pueden seleccionarse subjetivamente o
 generarse mediante minimización de alguna de las medida de error.
 
-Además, para la selección de los valores iniciales de `$a_s$`, `$b_s$` y
-`$S_i$`, es necesario inicializar la estimación después de completar un
-período estacional `$s$`, para luego seleccionar uno de los tres métodos
+Además, para la selección de los valores iniciales de $a_s$, $b_s$ y
+$S_i$, es necesario inicializar la estimación después de completar un
+período estacional $s$, para luego seleccionar uno de los tres métodos
 siguientes
 
--   `$a_s = Y_1$`, `$b_s = 0$` y `$S_i = 1$`.
--   `$a_s = \frac{1}{s}\sum_{i=1}^{s}Y_i$`,
-    `$b_s = \bar{Y}_{2,s} - \bar{Y}_{1,s}$` y
-    `$S_i = \frac{Y_i}{a_s} $`.
+-   $a_s = Y_1$, $b_s = 0$ y $S_i = 1$.
+-   $a_s = \frac{1}{s}\sum_{i=1}^{s}Y_i$,
+    $b_s = \bar{Y}_{2,s} - \bar{Y}_{1,s}$ y
+    $S_i = \frac{Y_i}{a_s} $.
 -   Regresión lineal con variables indicadoras por estacionalidad, para
     luego usar la constante de esta ecuación como el estimado del nivel,
     la pendiente de la regresión como el estimado de la tendencia y los
@@ -170,7 +170,7 @@ siguientes
 
 <!-- Usar función season(datos), de la librería TSA para extraer la seasonalidad para la regresión -->
 
-con `$i = 1,\ldots, s$`, siendo `$s$` el índice de estacionalidad.
+con $i = 1,\ldots, s$, siendo $s$ el índice de estacionalidad.
 
 Una vez definido el método para la selección del valor inicial, puede
 realizarse el ajuste de las observaciones para la suavización de
@@ -186,7 +186,7 @@ mientras que, el ajuste de pronósticos se hace de la forma
 $$\begin{align*}\hat{Y}_{T+h}=(a_T + b_T h) S_{Y-s+h}\end{align*}$$
 
 
-siendo `$h$` el número de periodos a pronosticar.
+siendo $h$ el número de periodos a pronosticar.
 
 Bibliografía
 ------------

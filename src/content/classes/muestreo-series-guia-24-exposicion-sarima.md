@@ -33,7 +33,7 @@ comportamiento de la serie tome un comportamiento repetitivo a través de
 los años.
 
 La periodicidad de la componente estacional es usualmente denotada por
-la letra `$s$`, y define la longitud o número de periodos en los cuales
+la letra $s$, y define la longitud o número de periodos en los cuales
 se observa que se repite el comportamiento de la serie. Ahora bien, dado
 que la estacionalidad es una señal de que la serie de tiempo no es
 estacionaria, **es necesario eliminar dicha componente** con el fin de
@@ -87,38 +87,38 @@ Ocultar código R
 Operador de diferencia estacional
 =================================
 
-Con tal propósito en mente, suponga una serie `$Y_t$` la cual **posee
-una componente estacional** con periodicidad `$s$`, entonces con el fin
+Con tal propósito en mente, suponga una serie $Y_t$ la cual **posee
+una componente estacional** con periodicidad $s$, entonces con el fin
 de eliminar dicha componente de la serie temporal, será necesaria
-**diferenciar la serie temporal con respecto a la serie rezagada `$s$`
+**diferenciar la serie temporal con respecto a la serie rezagada $s$
 periodos en el tiempo**. Éste procedimiento es conocido como
 **diferencia estacional** y se define como
 
 $$\begin{align*}\Delta_s Y_t = Y_t - Y_{t-s}\end{align*}$$
 
 
-siendo `$\Delta_s = (1-L^s)$`. **Note que `$\Delta_s \neq \Delta^s$`,
-pues `$\Delta^s = (1-L)^s$` representa el operador de diferencias
+siendo $\Delta_s = (1-L^s)$. **Note que $\Delta_s \neq \Delta^s$,
+pues $\Delta^s = (1-L)^s$ representa el operador de diferencias
 presentado en la** <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_11.html" target="_blank" rel="noopener noreferrer">Clase
 11</a>.
-En general, el operador de diferencias estacionales de periodo `$s$` se
+En general, el operador de diferencias estacionales de periodo $s$ se
 define como 
 $$\begin{align*}\Delta_s^D = (1-L^s)^D\end{align*}$$
 
 
-Siendo `$D$` el parámetro que indica el número de diferencias
+Siendo $D$ el parámetro que indica el número de diferencias
 estacionales.
 
 Modelos autorregresivos integrados de media móvil estacionales (SARIMA)
 =======================================================================
 
-Se dice que una serie de tiempo `$Y_t$` posee una estructura
-`$SARIMA(p,d,q)(P,D,Q)[S]$` si se cumple que
+Se dice que una serie de tiempo $Y_t$ posee una estructura
+$SARIMA(p,d,q)(P,D,Q)[S]$ si se cumple que
 
 $$\begin{align*}\Phi_{P} (L^s) \; \Phi_p (L)\; \Delta^D_s \; \Delta^d \; Y_t = \Theta_{Q} (L^s)\; \Theta_q (L) \;\varepsilon_t\end{align*}$$
 
 
-con `$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$`, donde
+con $\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$, donde
 
 $$\begin{align*}\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j \\ \Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j\end{align*}$$
 
@@ -132,7 +132,7 @@ $$\begin{align*}\Phi_{P}(z^s) = 1 - \sum_{j=1}^{P}\phi_{s,j} z^{js} \\ \Theta_{Q
 
 son los polinomios de rezagos autorregresivos y de medias móviles,
 estacionales, respectivamente, **sin raíces unitarias y con módulo mayor
-a 1**. Además, `$L$` el operador de rezagos,
+a 1**. Además, $L$ el operador de rezagos,
 
 $$\begin{align*}\Delta^d=(1-L)^d\end{align*}$$
  es el operador de
@@ -146,18 +146,18 @@ es el operador de diferencias estacionales.
 Identificación de un modelo SARIMA(p,d,q)(P,D,Q)\[S\]
 =====================================================
 
-Ahora bien, con el fin de identificar los órdenes regulares `$p$`,
-`$d$`, `$q$`, y estacionales `$P$`, `$D$` y `$Q$` asociados a un modelo
-`$SARIMA(p,d,q)(P,D,Q)[S]$`, es necesario realiza los siguientes
+Ahora bien, con el fin de identificar los órdenes regulares $p$,
+$d$, $q$, y estacionales $P$, $D$ y $Q$ asociados a un modelo
+$SARIMA(p,d,q)(P,D,Q)[S]$, es necesario realiza los siguientes
 procedimientos
 
-1.  Identificar el órden de integración regular `$d$` y estacional `$D$`
+1.  Identificar el órden de integración regular $d$ y estacional $D$
     que posee la serie temporal, mediante el análisis de raíces
     unitaria, con el fin de obtener una serie estacionaria en
     covarianza.
-2.  Identificar el órden autorregresivo regular `$p$` y estacional
-    `$P$`, al igual que el órden de media móvil regular `$q$` y
-    estacional `$Q$` que posee la serie temporal, mediante análisis
+2.  Identificar el órden autorregresivo regular $p$ y estacional
+    $P$, al igual que el órden de media móvil regular $q$ y
+    estacional $Q$ que posee la serie temporal, mediante análisis
     gráficos y estadístico de la serie, o serie diferenciada dependiendo
     de los hallazgos del punto anterior.
 
@@ -185,7 +185,7 @@ $$\begin{align*}H_0: Y_t \text{ posee raíces unitarias estacionales} \\H_1: Y_t
 
 En donde, **para rechazar** la hipótesis nula, se tendrá que el
 estadístico de prueba deberá ser menor al valór de la región crítica
-calculado a un `$5\%$` de significancia.
+calculado a un $5\%$ de significancia.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar código R
@@ -215,14 +215,14 @@ Ocultar código R
     Lag order 0 was selected using fixed
 
 De la prueba anterior, se encuentra que el estadístico de prueba posee
-un valor de `$-0.9148$`, mientras que el valor crítico de la región
-crítica calculado a un nivel de significancia del `$5\%$` es de
-`$-1.803$`.
+un valor de $-0.9148$, mientras que el valor crítico de la región
+crítica calculado a un nivel de significancia del $5\%$ es de
+$-1.803$.
 
 Por tanto, se concluye que la serie temporal posee una raíz unitaria
-estacional, esto es, `$D=1$`. Con el fin de observar si es necesario
+estacional, esto es, $D=1$. Con el fin de observar si es necesario
 realizar otra diferenciación estacional y o diferenciaciones regulares,
-será necesario aplicar una diferenciación estacional de orden `$s=12$`
+será necesario aplicar una diferenciación estacional de orden $s=12$
 (serie mensual), para así poder eliminar la raíz unitaria estacionaria
 encontrada y poder realizar nuevamente la prueba OCSB en el caso de
 raíces unitarias estacionales o la prueba Dickey-Fuller Aumentada (ADF)
@@ -261,9 +261,9 @@ Ocultar código R
     Lag order 0 was selected using fixed
 
 Al realizar nuevamente la prueba se encuentra que el valor del
-estadístico de prueba `$-7.1908$` se encuentra por debajo del valor
-crítico `$-1.803$`, y por tanto se concluye a un nivel de significancia
-del `$5\%$` que se rechaza la hipótesis nula, a favor de la alternativa,
+estadístico de prueba $-7.1908$ se encuentra por debajo del valor
+crítico $-1.803$, y por tanto se concluye a un nivel de significancia
+del $5\%$ que se rechaza la hipótesis nula, a favor de la alternativa,
 es decir, se rechaza la existencia de más raíces unitarias estacionales.
 
 Dado que no se encontraron raíces unitarias estacionales, se procede a
@@ -277,7 +277,7 @@ $$\begin{align*}H_0: Y_t \text{ posee raíces unitarias regulares} \\H_1: Y_t \t
 
 
 En donde, **para rechazar** la hipótesis nula, será necesario que el
-P-valor obtenido por la prueba sea menor al `$5\%$`, el cual es el nivel
+P-valor obtenido por la prueba sea menor al $5\%$, el cual es el nivel
 de significancia que estamos empleando para las pruebas.
 
 <button id="Show4" class="btn btn-secondary">
@@ -305,25 +305,25 @@ Ocultar código R
     alternative hypothesis: stationary
 
 De la prueba Dickey-Fuller Aumentada, se aprecia que el P-valor es igual
-a `$0.01$` o menor (debido a la advertencia que obtenida al aplicar la
+a $0.01$ o menor (debido a la advertencia que obtenida al aplicar la
 prueba), lo cual indica que hay evidencia suficiente para rechazar
-`$H_0$` a favor de la alternativa, esto es, concluir que no la serie
+$H_0$ a favor de la alternativa, esto es, concluir que no la serie
 diferenciada no posee raíces regulares.
 
 En conclusión a lo obtenido en esa sección, se tendrá que la serie
-empleada, posee un orden de diferenciación regular `$d=0$` y un órden de
-diferenciación estacional `$D=1$`
+empleada, posee un orden de diferenciación regular $d=0$ y un órden de
+diferenciación estacional $D=1$
 
 Identificación de órdenes p, q, P y Q
 -------------------------------------
 
 Para facilitar la identificación de los órdenes regulares y estacionales
-`$(p, q)$` y `$(P, Q)$`, respectivamente, se aconseja el empleo de la
+$(p, q)$ y $(P, Q)$, respectivamente, se aconseja el empleo de la
 serie obtenida de diferencias obtenida en la sección anterior, ésto
 debido a que, al eliminar las raíces unitarias que posee la serie
 temporal, se obtiene una serie estacionaria en covarianza, lo cual
 permite que puedan emplearse los mismos procedimientos explicados en
-modelos ARMA, para identificar los órdenes `$p$` y `$q$`, solo en en
+modelos ARMA, para identificar los órdenes $p$ y $q$, solo en en
 esta situación, será necesario observar si existen o no rezagos
 estacionales significativos.
 
@@ -337,7 +337,7 @@ regulares y estacionales que posee la serie temporal.
 Para ello se emplea las funciones `acf()` y `pacf()`, con el argumento
 `lag.max = 30`, ésto con el objetivo de poder visualizar al menos dos
 periodos estacionales, ya que tenemos que la periodicidad de la serie
-`$s=12$`.
+$s=12$.
 
 <button id="Show5" class="btn btn-secondary">
 Mostrar código R
@@ -398,16 +398,16 @@ comportamiento sinusoidal en su decaimiento. También se aprecia que
 entre los rezagos significativos estacionales, solo se encuentra el
 primer rezago estacional (reazago 12) como significativo. Por tanto, no
 hay evidecia alguna, sobre que la serie temporal de interés, posea
-órdenes `$q$` o `$Q$` mayores a 1.
+órdenes $q$ o $Q$ mayores a 1.
 
 Por su parte, en la PACF se aprecia un decaimiento rápido a cero de las
 autocorrelaciones parciales, en donde, es posible observar que los dos
 rezagos se encuentran por fuera de las bandas de confianza, por lo cual
-se tendrá evidencia sobre que el el órden `$p$` podría ser igual a
-`$2$`. Además, no se presenta ningún rezago estacional significativo, ya
-que tanto el rezago número `$12$` como el razago número `$24$` no
+se tendrá evidencia sobre que el el órden $p$ podría ser igual a
+$2$. Además, no se presenta ningún rezago estacional significativo, ya
+que tanto el rezago número $12$ como el razago número $24$ no
 resultan ser significativos, lo cual es evidencia sobre que el órden
-estacional `$P$` de la serie de interés no es mayor a `$1$`.
+estacional $P$ de la serie de interés no es mayor a $1$.
 
 Función de autocorrelación extendida (EACF)
 -------------------------------------------
@@ -595,7 +595,7 @@ Ocultar código R
     7 x o o o o o o o o o o  x  o  o 
 
 Aunque esto normalmente no ocurre, en este caso se logra apreciar en el
-gráfico de la EACF, un tríangulo que apunta al órden `$(p = 2, q = 0)$`
+gráfico de la EACF, un tríangulo que apunta al órden $(p = 2, q = 0)$
 lo cual es consistente con lo encontrado en los gráficos ACF y PACF.
 
 Análisis gráfico para subconjuntos de modelos a partir del BIC
@@ -605,7 +605,7 @@ Otra alternativa propuesta para la identificación de un modelo adecuado,
 es mediante la minimización de los criterios de información. En éste
 caso, la función `armasubsets()` de la librería `TSA` permite realizar
 un gráfico que precisa cuáles son las combinaciones de órdenes
-`$p, q, P$` y `$Q$` que mínimizan el Críterio de Información Bayesiano
+$p, q, P$ y $Q$ que mínimizan el Críterio de Información Bayesiano
 (BIC).
 
 Se realiza entonces la estimación del gráfico, aplicando los argumentos
@@ -636,21 +636,21 @@ Ocultar código R
 ![](/assets/images/Exposicionunnamed-chunk-9-1.png)
 
 Del gráfico anterior se aprecia que entre los órdenes que resultan ser
-significativos en las estimaciones, se encuentran los órdenes `$3, 11$`
-y `$18$` en la parte de médias moviles y los rezagos,
-`$1,2,3,4 11, 12, 13, 15, 17$` y `$20$` en la parte autorregresiva. De
+significativos en las estimaciones, se encuentran los órdenes $3, 11$
+y $18$ en la parte de médias moviles y los rezagos,
+$1,2,3,4 11, 12, 13, 15, 17$ y $20$ en la parte autorregresiva. De
 lo anterior, se aprecia que existen diferentes combinanciones de
-modelos, siento el que minimiza el BIC un `$ARMA(17, 10)$`, en donde si
+modelos, siento el que minimiza el BIC un $ARMA(17, 10)$, en donde si
 tenemos la parte de diferenciación que ya hicimos tendríamos un modelo
-`$SARIMA(17, 0, 10)(0, 1, 0)[12]$`.
+$SARIMA(17, 0, 10)(0, 1, 0)[12]$.
 
 Aunque el modelo parece ser el que mínimiza el críterio de información
 bayesiano, dicho modelo posee órdenes extremadamente grandes, entonces,
-si se tiene en cuenta el órden de estacionalidad `$12$` y el órden
-regular `$3 o 4$` de la parte autorregresiva, podría pensarse en modelos
-alternativos de la forma `$SARIMA(4, 0, 10)(1, 1, 0)[12]$`,
-`$SARIMA(3, 0, 10)(1, 1, 0)[12]$`, `$SARIMA(4, 0, 3)(1, 1, 0)[12]$`,
-`$SARIMA(3, 0, 3)(1, 1, 0)[12]$`, entre otros.
+si se tiene en cuenta el órden de estacionalidad $12$ y el órden
+regular $3 o 4$ de la parte autorregresiva, podría pensarse en modelos
+alternativos de la forma $SARIMA(4, 0, 10)(1, 1, 0)[12]$,
+$SARIMA(3, 0, 10)(1, 1, 0)[12]$, $SARIMA(4, 0, 3)(1, 1, 0)[12]$,
+$SARIMA(3, 0, 3)(1, 1, 0)[12]$, entre otros.
 
 Función auto.arima
 ------------------
@@ -665,7 +665,7 @@ serie estacionaria.
 Para la aplicación de la función `auto.arima` se recomienda emplear el
 argumento `ic = "bic"`, ya que por defecto emplea el críterio de
 información de Akaike, el cual suele tener un mejor desempeño, solo
-cuando se tengan modelos tipo `$MA(\infty)$` o `$AR(\infty)$`.
+cuando se tengan modelos tipo $MA(\infty)$ o $AR(\infty)$.
 
 Para la serie en diferencias se tendrá que
 
@@ -727,7 +727,7 @@ Ocultar código R
 
 De la estimación anterior se oserva por ambos métodos (empleando la
 serie original o la serie en diferencias) que el modelos más apropiados
-para ajustar la serie es un `$SARIMA(3,0,1)(1,1,0)[12]$`.
+para ajustar la serie es un $SARIMA(3,0,1)(1,1,0)[12]$.
 
 Ajuste del modelo SARIMA(p,d,q)(P,D,Q)\[S\]
 -------------------------------------------
@@ -784,7 +784,7 @@ que no presentan la significancia de los coeficientes ajustados, y por
 tanto, debe ser calculadas de forma manual.
 
 Y para ello, es necesario calcular los siguientes estadísticos de prueba
-`$t$` de student, definidos como
+$t$ de student, definidos como
 
 
 $$\begin{align*}t_c = \frac{\hat{\theta}_i}{\sqrt{Var(\hat{\theta}_i)}} = \frac{\hat{\theta}_i}{se(\hat{\theta}_i)}\end{align*}$$
@@ -802,9 +802,9 @@ Con éstos se busca probar los siguientes juegos de hipótesis
 $$\begin{align*}H_0: \theta_i = 0 & & \text{vs} & & H_1: \theta_i \neq 0 \\ H_0: \phi_j = 0 & & \text{vs} & & H_1: \phi_j \neq 0\end{align*}$$
 
 
-donde `$\theta_i$` son los parámetros de la parte autorregresiva, con
-`$i=0,1,\ldots,p$`, y `$\phi_j$` son los parámetros de la parte de media
-móvil, con `$j=0,1,\ldots,q$`.
+donde $\theta_i$ son los parámetros de la parte autorregresiva, con
+$i=0,1,\ldots,p$, y $\phi_j$ son los parámetros de la parte de media
+móvil, con $j=0,1,\ldots,q$.
 
 Además, la región crítica o región de rechazo que llevan al rechazo del
 estadístico de prueba está dado por
@@ -812,9 +812,9 @@ estadístico de prueba está dado por
 $$\begin{align*}RC:\{T|T<-t_{\frac{\alpha}{2}, n-d-s*D-k} \text{ o } T>t_{\frac{\alpha}{2}, n-d-s*D-k}\}\end{align*}$$
 
 
-con `$k$` el número de parámetros en el modelo, `$s$` la periodicidad de
-la serie, `$d$` el número de diferenciaciones regulares, `$D$` el número
-de diferenciaciones estacionales y `$n-d-s*D-k$` el número de grados de
+con $k$ el número de parámetros en el modelo, $s$ la periodicidad de
+la serie, $d$ el número de diferenciaciones regulares, $D$ el número
+de diferenciaciones estacionales y $n-d-s*D-k$ el número de grados de
 libertad del modelo.
 
 Y finalmente, el P-valor asociado a cada uno de los estadísticos de
@@ -864,7 +864,7 @@ Ocultar código R
     sar1  0.4435416 0.0984754   4.5040854 0.0000202
 
 De los resultados anteriores, se tiene entonces que solo los
-coeficientes asociados a los órdenes `$q=2$` y `$P=1$` resultan ser
+coeficientes asociados a los órdenes $q=2$ y $P=1$ resultan ser
 significativos, lo cual podría ser una señal de que el modelo no es
 adecuado para el ajuste de la serie de datos, y que por tanto sería
 bueno probar otro modelo seleccionado de la fase de identificación.
@@ -872,8 +872,8 @@ bueno probar otro modelo seleccionado de la fase de identificación.
 Validación de supuestos
 -----------------------
 
-Un aspecto importante a la hora de evaluar un modelo `$SARIMA(p,q)$`, es
-la fase de validación de los supuestos de los modelos `$SARIMA$`, a
+Un aspecto importante a la hora de evaluar un modelo $SARIMA(p,q)$, es
+la fase de validación de los supuestos de los modelos $SARIMA$, a
 partir de los residuales obtenidos en el ajuste. La evaluación de los
 supuestos incluye, **pruebas de incorrelación, de normalidad y de
 homocedasticidad**.
@@ -892,8 +892,8 @@ incorrelación, se debe probar el siguiente juego de hipótesis
 $$\begin{align*}\begin{split} H_0: \rho(k) = 0 \\ H_1: \rho(k) \neq 0  \end{split} \quad \quad \text{ para todo } k=1,2,\ldots, h\end{align*}$$
 
 
-en donde, **si no se rechaza** `$H_0$` para todo
-`$h = max(k) = \left\lceil\frac{T}{4}\right\rceil$` se tendrá evidencia
+en donde, **si no se rechaza** $H_0$ para todo
+$h = max(k) = \left\lceil\frac{T}{4}\right\rceil$ se tendrá evidencia
 para concluir que **los residuales del modelo ajustado son
 incorrelacionados.**
 
@@ -991,7 +991,7 @@ Ocultar código R
     X-squared = 0.11806, df = 1, p-value = 0.7312
 
 Donde se aprecia que el P-valor obtenido es mayor al nivel de
-significancia del `$5\%$`, concluyendo que no se rechaza la hipótesis
+significancia del $5\%$, concluyendo que no se rechaza la hipótesis
 nula, y en consecuencia, se concluye que los residuales del modelo
 ajustado son incorrelacionados.
 
@@ -1003,7 +1003,7 @@ normalidad, es necesario probar el siguiente juego de hipótesis
 $$\begin{align*}H_0: \varepsilon_t \sim Normal \\ H_1: \varepsilon_t \not\sim Normal\end{align*}$$
 
 
-**en donde, si no se rechaza `$H_0$` se tendrá evidencia para concluir
+**en donde, si no se rechaza $H_0$ se tendrá evidencia para concluir
 que los residuales ajustados provienen de una distribución normal.**
 
 Similar a la prueba de incorrelación, existen dos formas de probar si
@@ -1064,9 +1064,9 @@ Ocultar código R
     data:  res
     W = 0.9853, p-value = 0.2825
 
-En la prueba Shapiro-Wilk se obtiene entonces un P-valor de `$28.25\%$`
+En la prueba Shapiro-Wilk se obtiene entonces un P-valor de $28.25\%$
 lo cual indica que no se rechaza la hipótesis nula, y por tanto, con un
-nivel de significancia del `$5\%$` se asume que los residuales del
+nivel de significancia del $5\%$ se asume que los residuales del
 modelo estimado se distribuyen normalmente.
 
 ### Pruebas de homocedasticidad
@@ -1077,7 +1077,7 @@ homocedasticidad, es necesario probar el siguiente juego de hipótesis
 $$\begin{align*}\begin{split} H_0: Var(\varepsilon_t) = \sigma^2 \\ H_1: Var(\varepsilon_t) \neq \sigma^2 \end{split}  \quad \quad \text{ para todo } t\end{align*}$$
 
 
-en donde, **si no se rechaza** `$H_0$` se tendrá evidencia para concluir
+en donde, **si no se rechaza** $H_0$ se tendrá evidencia para concluir
 que **los residuales ajustados son homocedásticos.**
 
 Similar a los dos casos anteriores, se tiene tanto análisis gráfico como
@@ -1149,7 +1149,7 @@ Ocultar código R
 
 De la prueba anterior, se aprecia que el P-valor asociado a la prueba
 Breusch-Pagan es significativamente mayor al nivel de significancia del
-`$5\%$`, por lo cual se asume que los residuales del modelo son
+$5\%$, por lo cual se asume que los residuales del modelo son
 homocedásticos.
 
 Pronóstico del modelo

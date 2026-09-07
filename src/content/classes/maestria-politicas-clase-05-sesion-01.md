@@ -73,14 +73,14 @@ cuando se deseen manipular.
 Los tipos de datos más que pueden encontrarse en <tt>R</tt> son:
 
 -   **<tt>numeric</tt>**: Datos numéricos, los cuales soportan números
-    que se encuentren en el conjunto de los reales, `$\mathbb{R}$`, y
+    que se encuentren en el conjunto de los reales, $\mathbb{R}$, y
     por tanto soporta tanto números enteros (<tt>integer</tt>) y números
     de doble precisión (<tt>double</tt>).
 -   **<tt>integer</tt>**: Datos enteros, los cuales soportan números que
-    se encuentren en el conjunto de los enteros, `$\mathbb{Z}$`, y en
+    se encuentren en el conjunto de los enteros, $\mathbb{Z}$, y en
     consecuencia, solo soporta números enteros.
 -   **<tt>complex</tt>**: Datos complejos, los cuales soportan números
-    que se encuentren en el conjunto de los complejos, `$\mathbb{C}$`, y
+    que se encuentren en el conjunto de los complejos, $\mathbb{C}$, y
     por tanto, soporta tanto números reales como imaginarios.
 -   **<tt>character</tt>**: Datos de carácter, los cuales soportan
     caracteres alfanuméricos, es decir, datos numéricos y alfabéticos.
@@ -509,7 +509,7 @@ estadística:
 La limpieza o pre-procesamiento de los datos **es uno de los aspectos
 más importantes cuando se desea trabajar con conjuntos de datos**, a tal
 punto que muchos investigadores aseguran que en este procedimiento se
-emplea regularmente desde el `$50\%$` hasta el `$80\%$` del tiempo total
+emplea regularmente desde el $50\%$ hasta el $80\%$ del tiempo total
 de una investigación.
 
 El objetivo principal de la limpieza de datos, es el **asegurar la
@@ -541,7 +541,7 @@ que se posea.
 ### Caso de estudio y variables
 
 Como caso de estudio para esta sesión, se propone una base de datos
-construida a partir del `$10\%$` de la información contenida en el Censo
+construida a partir del $10\%$ de la información contenida en el Censo
 de Edificaciones que posee el DANE para el periodo comprendido entre
 2012-2018. Dicha base de datos puede ser descargada desde el siguiente
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/CesoEdificaciones2012-2018.csv" target="_blank" rel="noopener noreferrer">Link</a>.
@@ -1434,8 +1434,8 @@ si se encuentran casillas vacías, valores especiales, tales como
     number):** Es un carácter especial para datos de clase numérica,
     para indicar un valor asociado a un cálculo cuyo resultado es
     desconocido, el cual seguramente no es un número. Este puede
-    obtenerse mediante operaciones tales como `$0/0$`, `$Inf/Inf$`,
-    `$Inf-Inf$`. Éstos pueden ser detectados en <tt>R</tt> mediante la
+    obtenerse mediante operaciones tales como $0/0$, $Inf/Inf$,
+    $Inf-Inf$. Éstos pueden ser detectados en <tt>R</tt> mediante la
     función <tt>is.nan()</tt>, aunque también son detectados por la
     función <tt>is.na()</tt>.
 -   **<code style="color: #ff628c!important">NULL</code>:** Es un

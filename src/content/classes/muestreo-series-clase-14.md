@@ -89,7 +89,7 @@ posible que hayan otros modelo que también ofrezcan un buen ajuste.
 Entre los procedimientos que se realizan para la evaluación, validación
 o verificación del modelo, se incluye el análisis de los coeficientes
 del modelo (significancia de los coeficientes hasta los ordenes *p* y
-*q*), las pruebas de bondad de ajuste (`$R^2$` ajustado, *AIC*, *BIC*,
+*q*), las pruebas de bondad de ajuste ($R^2$ ajustado, *AIC*, *BIC*,
 *SC*, entre otros) y análisis de los residuos (comprobar que los
 residuos no tienen estructura de dependencia y siguen un proceso de
 **ruido blanco**).
@@ -111,15 +111,15 @@ Conceptos básicos de procesos estocásticos
 ------------------------------------------
 
 Un proceso estocástico es una sucesión de variables aleatorias
-{`$Y_t:t\in\mathbb{Z}^+$`}, indexadas para un conjunto `$t$`, el cual
-pertenece a un **espacio parametral** `$\mathbb{Z}^+$`, en donde cada
+{$Y_t:t\in\mathbb{Z}^+$}, indexadas para un conjunto $t$, el cual
+pertenece a un **espacio parametral** $\mathbb{Z}^+$, en donde cada
 una de las variables aleatorias del proceso tienen su propia función de
 distribución de probabilidad, y entre las cuales puede o no existir
 correlaciones entre si.
 
 Partiendo de esta definición, una serie de tiempo, puede definirse como
 una sucesión de observaciones generadas al tomar un único valor de cada
-una de las variables aleatorias `$Y_t$`, que conforman el proceso
+una de las variables aleatorias $Y_t$, que conforman el proceso
 estocástico. En donde, para la realización del modelamiento estadístico
 de una serie de tiempo, es necesario identificar la estructura
 probabilística del proceso estocástico al que corresponde la serie, y
@@ -129,11 +129,11 @@ posible, ya que para ello, se requeriría de múltiples realizaciones del
 proceso estocástico!!**.
 
 Debido a ello, y con el fin de dar una salida al problema, **se supone**
-que cada variable aleatoria `$Y_t \sim N(\mu_t,\sigma_t^2)$` y que
-`$\mathbf{Y}\sim N_T(\boldsymbol{\mu}, \boldsymbol{\Sigma})$`, siendo
-`$\mathbf{Y}=(Y_1,Y_2,\ldots,Y_T)'$` un vector de variables aleatorias
+que cada variable aleatoria $Y_t \sim N(\mu_t,\sigma_t^2)$ y que
+$\mathbf{Y}\sim N_T(\boldsymbol{\mu}, \boldsymbol{\Sigma})$, siendo
+$\mathbf{Y}=(Y_1,Y_2,\ldots,Y_T)'$ un vector de variables aleatorias
 que representa la variable aleatoria conjunta,
-`$\boldsymbol{\mu}=(\mu_1,\mu_2,\ldots,\mu_T)$` un vector de esperanzas
+$\boldsymbol{\mu}=(\mu_1,\mu_2,\ldots,\mu_T)$ un vector de esperanzas
 que representa la esperanza de la variable aleatoria conjunta, y
 
 
@@ -163,7 +163,7 @@ $$\begin{align*}Var(Y_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,\ldots T\e
 $$\begin{align*}Cov(Y_t, Y_{t+k})=\gamma(k)= Cov(Y_{t-k}, Y_{t})=\gamma(-k)\end{align*}$$
 
     donde, la función es simétrica alrededor de cero, con
-    `$\gamma(0)=Var(Y_t)$`. En consecuencia de la tercer condición, se
+    $\gamma(0)=Var(Y_t)$. En consecuencia de la tercer condición, se
     tendrá que la autocorrelación también sea una función simétrica
     alrededor de cero.
     
@@ -211,7 +211,7 @@ es decir, si posee una varianza no constante.
 Proceso de ruido blanco
 -----------------------
 
-Un proceso de ruido blanco `$\varepsilon_t$`, es un caso particular de
+Un proceso de ruido blanco $\varepsilon_t$, es un caso particular de
 proceso estacionario en covarianza, el cual debe cumplir las siguientes
 características:
 
@@ -228,32 +228,32 @@ $$\begin{align*}Var(\varepsilon_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,
     
 $$\begin{align*}Cov(\varepsilon_t, \varepsilon_{t+k}) &=\gamma(k) = 0 \\  Cor(\varepsilon_t, \varepsilon_{t+k}) &=\rho(k) = 0\end{align*}$$
 
-    para todo `$k\neq 0.$`
+    para todo $k\neq 0.$
 
 Función de autocorrelación (ACF)
 --------------------------------
 
 Tal como se definió en la <a href="../../MuestreoySeriesdeTiempo/MySTClase_03.html" target="_blank" rel="noopener noreferrer">Clase
 03</a>,
-la ACF de una serie de valores `$Y_1,Y_2,\ldots, Y_T$`, puede definirse
+la ACF de una serie de valores $Y_1,Y_2,\ldots, Y_T$, puede definirse
 como
 
 
 $$\begin{align*}Cor(Y_t,Y_{t+k}) = \hat{\rho(k)} = \frac{\hat{\gamma}(k)}{\hat{\gamma}(0)} = \frac{\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})}{\sum_{t=1}^{T}(y_t-\bar{y})^2}\end{align*}$$
 
 
-donde, `$\gamma(0)$` representa la varianza de la variable `$Y_t$`,
-`$\gamma(k)$` la covarianza de entre las variables `$Y_t$` y
-`$Y_{t+k}$`, siendo `$k$` el `$k$`-ésimo rezagos que se emplearán para
-el cálculo de la `$k$`-ésima autocorrelación.
+donde, $\gamma(0)$ representa la varianza de la variable $Y_t$,
+$\gamma(k)$ la covarianza de entre las variables $Y_t$ y
+$Y_{t+k}$, siendo $k$ el $k$-ésimo rezagos que se emplearán para
+el cálculo de la $k$-ésima autocorrelación.
 
-Cabe recordar, que **no se recomienda emplear valores de `$k$` muy
+Cabe recordar, que **no se recomienda emplear valores de $k$ muy
 altos**, ya que ésto provocará que se tengan menos términos para el
 cálculo de las autocorrelaciones. La selección del número de
 autocorrelaciones puede llevarse a cabo arbitrariamente a partir de los
 conocimientos del investigador, o mediante la regla empírica para el
 número máximo de rezagos que deben seleccionarse
-`$max(k)=\left\lceil\frac{T}{4}\right\rceil$`.
+$max(k)=\left\lceil\frac{T}{4}\right\rceil$.
 
 La importancia de la ACF en la metodología Box-Jenkins, radica en que
 permite determinar si la serie de tiempo de interés, es o no un proceso
@@ -263,15 +263,15 @@ de hipótesis para probar cuales autocorrelaciones son significativas
 $$\begin{align*}H_0: \rho(k)=0 \\  H_1: \rho(k)\neq 0\end{align*}$$
 
 
-con `$k = 1,2,\ldots, m$`. En donde, la autocorrelación `$k$` es
+con $k = 1,2,\ldots, m$. En donde, la autocorrelación $k$ es
 significativa si ésta se encuentra dentro de la región crítica, la cual
-se construye con un nivel de significancia `$\alpha$` y asumiendo
+se construye con un nivel de significancia $\alpha$ y asumiendo
 normalidad, mediante la formula:
 
 $$\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T}\end{align*}$$
 
 
-en donde, valores `$|\hat{\rho}(k)|> Z_{\frac{\alpha}{2}}/\sqrt{T}$`
+en donde, valores $|\hat{\rho}(k)|> Z_{\frac{\alpha}{2}}/\sqrt{T}$
 llevarán al rechazo de la hipótesis nula a favor de la alternativa.
 También recuerde que, si ninguna de las autocorrelaciones es
 significativamente diferente de cero, se dice que la serie es
@@ -281,41 +281,41 @@ Función de autocorrelación parcial (PACF)
 -----------------------------------------
 
 A diferencia de la ACF, la PACF de una serie de tiempo, mide la
-autocorrelación existente entre dos valores `$Y_t$` y `$Y_{t+k}$`, una
+autocorrelación existente entre dos valores $Y_t$ y $Y_{t+k}$, una
 vez se elimina la dependencia lineal de los rezagos intermedios a ambos,
-es decir, `$Y_{t+1}, Y_{t+2}, \ldots, Y_{t+k-1}$`.
+es decir, $Y_{t+1}, Y_{t+2}, \ldots, Y_{t+k-1}$.
 
 Dado lo anterior, la PACF puede definirse como la correlación
-condicional `$Cor(Y_{t},Y_{t+k}|Y_{t+1}, Y_{t+2}, \ldots, Y_{t+k-1})$`,
-la cual se denotará como `$\phi_{kk}$`.
+condicional $Cor(Y_{t},Y_{t+k}|Y_{t+1}, Y_{t+2}, \ldots, Y_{t+k-1})$,
+la cual se denotará como $\phi_{kk}$.
 
-Para hallar el valor del coeficiente `$\phi_{kk}$` se hace necesario
-conformar el siguiente sistema de ecuaciones de orden `$k\times k$`,
+Para hallar el valor del coeficiente $\phi_{kk}$ se hace necesario
+conformar el siguiente sistema de ecuaciones de orden $k\times k$,
 conocido como el **sistema de ecuaciones de Yule-Walker**, en donde
 matricialmente se tiene que
-`$\boldsymbol{\rho} = \boldsymbol{R}\boldsymbol{\phi}$`, lo cual es
+$\boldsymbol{\rho} = \boldsymbol{R}\boldsymbol{\phi}$, lo cual es
 equivalente a
-`$\boldsymbol{\phi} = \boldsymbol{R}^{-1}\boldsymbol{\rho}$`, donde
+$\boldsymbol{\phi} = \boldsymbol{R}^{-1}\boldsymbol{\rho}$, donde
 
 $$\begin{align*}\boldsymbol{\rho} = \begin{bmatrix}\rho(1) \\ \rho(2) \\ \rho(3) \\ \vdots \\ \rho(k)  \end{bmatrix}_{k\times1} \boldsymbol{R} = \begin{bmatrix}1 & \rho(1) & \rho(2) & \cdots & \rho(k-1) \\ \rho(1) & 1 & \rho(1) & \cdots & \rho(k-2) \\ \rho(2) & \rho(1) & 1 & \cdots & \rho(k-3)\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \rho(k-1) & \rho(k-2) & \rho(k-3) & \cdots & 1 \end{bmatrix}_{k\times k}\phi= \begin{bmatrix}\phi_{k1} \\ \phi_{k2} \\ \phi_{k3} \\ \vdots \\ \phi_{kk}  \end{bmatrix}_{k\times1}\end{align*}$$
 
 
-Además, la matriz `$\boldsymbol{R}^{-1}$` puede ser calculada la formula
+Además, la matriz $\boldsymbol{R}^{-1}$ puede ser calculada la formula
 
 $$\begin{align*}\boldsymbol{R}^{-1}=\frac{\text{adj}(\boldsymbol{R})}{\text{det}(\boldsymbol{R})}\end{align*}$$
 
 
-siempre y cuando `$\boldsymbol{R}$` sea invertible, donde
-`$\text{adj}(\boldsymbol{R})$` es la matriz adjunta de
-`$\boldsymbol{R}$` y `$\text{det}(\boldsymbol{R}^{-1})$` es el
-determinante de `$\boldsymbol{R}$`.
+siempre y cuando $\boldsymbol{R}$ sea invertible, donde
+$\text{adj}(\boldsymbol{R})$ es la matriz adjunta de
+$\boldsymbol{R}$ y $\text{det}(\boldsymbol{R}^{-1})$ es el
+determinante de $\boldsymbol{R}$.
 
 Adicionalmente, y similar al caso de la ACF, **no se recomienda emplear
-valores de `$k$` muy altos**, debido a la cantidad de términos que se
+valores de $k$ muy altos**, debido a la cantidad de términos que se
 tendrán para el cálculo de las autocorrelaciones, y por ello, se
 recomienda tener en cuenta nuevamente la regla empírica para el número
 máximo de rezagos que deben seleccionarse
-`$max(k)=\left\lceil\frac{T}{4}\right\rceil$`.
+$max(k)=\left\lceil\frac{T}{4}\right\rceil$.
 
 Para establecer si una autocorrelación parcial es o no significativa, es
 necesario establecer la siguiente prueba de hipótesis
@@ -323,18 +323,18 @@ necesario establecer la siguiente prueba de hipótesis
 $$\begin{align*}H_0: \phi_{kk}=0 \\  H_1: \phi_{kk}\neq 0\end{align*}$$
 
 
-para cada `$k = 1,2,\ldots, m$`. En donde, en donde, al igual que la
+para cada $k = 1,2,\ldots, m$. En donde, en donde, al igual que la
 ACF, la región de rechazo de la hipótesis puede ser establecida a un
-nivel de significancia `$\alpha$` y asumiendo normalidad, mediante la
+nivel de significancia $\alpha$ y asumiendo normalidad, mediante la
 formula: 
 $$\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T}\end{align*}$$
 
 
-en donde, el criterio de rechazo de `$H_0$` estará dado por la región
-`$|\hat{\phi}_{kk}|> Z_{\frac{\alpha}{2}}/\sqrt{T}$`.
+en donde, el criterio de rechazo de $H_0$ estará dado por la región
+$|\hat{\phi}_{kk}|> Z_{\frac{\alpha}{2}}/\sqrt{T}$.
 
 Finalmente, cabe resaltar que, mediante las autocorrelaciones parciales
 es posible observar si una serie de tiempo es esencialmente **ruido
-blanco**, ya que si se observa que para todo `$k$` se observa que la
+blanco**, ya que si se observa que para todo $k$ se observa que la
 PACF no es significativa, entonces es posible afirmar que el proceso es
 **ruido blanco**.

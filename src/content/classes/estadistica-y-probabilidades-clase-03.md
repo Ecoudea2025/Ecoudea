@@ -13,25 +13,25 @@ Distribución de probabilidad conjunta
 
 ### Esperanza Matemática
 
-Sea `$X, Y$` variables aleatorias con función de masa de probabilidad
-conjunta dada por `$p(x,y)$` o función de densidad de probabilidad
-conjunta dada por `$f(x,y)$`, entonces si la función `$m(X,Y)$` que
-depende tanto de `$X$` como de `$Y$`, se tendrá que el valor esperado de
-`$m(X,Y)$` es de la forma
+Sea $X, Y$ variables aleatorias con función de masa de probabilidad
+conjunta dada por $p(x,y)$ o función de densidad de probabilidad
+conjunta dada por $f(x,y)$, entonces si la función $m(X,Y)$ que
+depende tanto de $X$ como de $Y$, se tendrá que el valor esperado de
+$m(X,Y)$ es de la forma
 
 $$\begin{align*}\mathbb{E}(m(X,Y))=\begin{cases} \sum_{y}\sum_{x}m(x,y)p(x,y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty \int_{-\infty}^\infty m(x,y)f(x,y) dxdy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Ahora, si la función `$m(X,Y) = m(X)$` solo depende de `$X$`, y `$g(x)$`
-es la función de distribución marginal de `$X$`, se tendrá que el valor
-esperado de `$m(X)$` es de la forma
+Ahora, si la función $m(X,Y) = m(X)$ solo depende de $X$, y $g(x)$
+es la función de distribución marginal de $X$, se tendrá que el valor
+esperado de $m(X)$ es de la forma
 
 $$\begin{align*}\mathbb{E}(m(X))=\begin{cases} \sum_{x}m(x)g(x) & \text{ si } X \text{ es discreta}  \\ \int_{-\infty}^\infty m(x)g(x) dx & \text{ si } X \text{ es continua} \end{cases}\end{align*}$$
 
 
-mientras que, si la función `$m(X,Y) = m(Y)$` solo depende de `$Y$`, y
-`$h(y)$` es la función de distribución marginal de `$Y$`, se tendrá que
-el valor esperado de `$m(Y)$` es de la forma
+mientras que, si la función $m(X,Y) = m(Y)$ solo depende de $Y$, y
+$h(y)$ es la función de distribución marginal de $Y$, se tendrá que
+el valor esperado de $m(Y)$ es de la forma
 
 $$\begin{align*}\mathbb{E}(m(Y))=\begin{cases} \sum_{y}m(y)h(y) & \text{ si } Y \text{ es discreta}  \\ \int_{-\infty}^\infty m(y)h(y) dy & \text{ si } Y \text{ es continua} \end{cases}\end{align*}$$
 
@@ -571,15 +571,15 @@ tienen interpretación en el contexto de los datos).
 
 ### Esperanza matemática condicional
 
-Sean `$X,Y$` variables aleatorias con función de masa de probabilidad
-conjunta dada por `$p(x,y)$` o función de densidad de probabilidad
-conjunta dada por `$f(x,y)$`, entonces la esperanza condicional de `$Y$`
-dado `$X$` se define como
+Sean $X,Y$ variables aleatorias con función de masa de probabilidad
+conjunta dada por $p(x,y)$ o función de densidad de probabilidad
+conjunta dada por $f(x,y)$, entonces la esperanza condicional de $Y$
+dado $X$ se define como
 
 $$\begin{align*}\mathbb{E}(Y|X)=\begin{cases} \sum_{y}yp(y|x) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty yf(y|x) dy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Analogamente, la esperanza condicional de `$X$` dado `$Y$` se define
+Analogamente, la esperanza condicional de $X$ dado $Y$ se define
 como
 
 $$\begin{align*}\mathbb{E}(X|Y)=\begin{cases} \sum_{x}xp(x|y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty xf(x|y) dx & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
@@ -1122,29 +1122,29 @@ profesor será de $2.4276$.
 
 ### Varianza
 
-Sean `$X,Y$` variables aleatorias con función de masa de probabilidad
+Sean $X,Y$ variables aleatorias con función de masa de probabilidad
 conjunta o función de densidad de probabilidad conjunta, con
-distribuciones marginales `$g(x)$` y `$h(y)$`, entonces si
-`$m(X) = (X - \mathbb{E}(X))^2$` se tendrá que la varianza de `$X$` que
-se denota `$Var(X)$` o `$\sigma_x^2$` estará dada por
+distribuciones marginales $g(x)$ y $h(y)$, entonces si
+$m(X) = (X - \mathbb{E}(X))^2$ se tendrá que la varianza de $X$ que
+se denota $Var(X)$ o $\sigma_x^2$ estará dada por
 
 $$\begin{align*}Var(X) &= \sigma_x^2 = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right] \\ Var(X) &= \begin{cases}\sum_x(x-\mathbb{E}(X))^2g(x) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty(x-\mathbb{E}(X))^2g(x)dx & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-mientras que si `$m(Y) = (Y - \mathbb{E}(Y))^2$` se tendrá que la
-varianza de `$Y$` que se denota `$Var(Y)$` o `$\sigma_y^2$` estará dada
+mientras que si $m(Y) = (Y - \mathbb{E}(Y))^2$ se tendrá que la
+varianza de $Y$ que se denota $Var(Y)$ o $\sigma_y^2$ estará dada
 por
 
 $$\begin{align*}Var(Y) &= \sigma_y^2= \mathbb{E}\left[\left(Y-\mathbb{E}(Y)\right)^2\right] \\ Var(Y) &= \begin{cases}\sum_y(y-\mathbb{E}(Y))^2h(y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty(y-\mathbb{E}(Y))^2h(y)dy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Es de anotar que, la varianza de `$X$` también puede ser calculada
+Es de anotar que, la varianza de $X$ también puede ser calculada
 mediante la ecuación
 
 $$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
 
 
-mientras que, la varianza de `$Y$` pueden calcularse mediante la
+mientras que, la varianza de $Y$ pueden calcularse mediante la
 ecuación
 
 $$\begin{align*}Var(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2\end{align*}$$

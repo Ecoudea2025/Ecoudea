@@ -16,23 +16,23 @@ información obtenida de una muestra de la población de interés.
 
 Por ejemplo, un médico afirma que el peso ideal de las personas de
 cierta población sigue una distribución normal con peso promedio de
-`$73$`kg y desviación estándar de `$3$`kg.
+$73$kg y desviación estándar de $3$kg.
 
 ## Componentes de una prueba de hipótesis
 
 ### Hipótesis nula
 
-Sea `$\theta$` un parámetro de interés desconocido y sea `$\theta_0$` un
-valor particular de `$\theta$`, entonces se tendrá que la hipótesis nula
+Sea $\theta$ un parámetro de interés desconocido y sea $\theta_0$ un
+valor particular de $\theta$, entonces se tendrá que la hipótesis nula
 estará dado por
 
--   **Bilateral** `$H_0: \theta = \theta_0$`
--   **Unilateral izquierda** `$H_0: \theta \geq \theta_0$`
--   **Unilateral derecho** `$H_0: \theta \leq \theta_0$`
+-   **Bilateral** $H_0: \theta = \theta_0$
+-   **Unilateral izquierda** $H_0: \theta \geq \theta_0$
+-   **Unilateral derecho** $H_0: \theta \leq \theta_0$
 
-matemáticamente `$H_0: \theta \geq \theta_0$` y
-`$H_0: \theta \leq \theta_0$` es matemáticamente equivalente a escribir
-`$H_0: \theta = \theta_0$` y por tanto, se acostumbra a usar esta última
+matemáticamente $H_0: \theta \geq \theta_0$ y
+$H_0: \theta \leq \theta_0$ es matemáticamente equivalente a escribir
+$H_0: \theta = \theta_0$ y por tanto, se acostumbra a usar esta última
 en los tres casos.
 
 ### Hipótesis alternativa
@@ -40,9 +40,9 @@ en los tres casos.
 Es el complemento lógico de la hipótesis nula, y por tanto, ésta estará
 dado por
 
--   **Bilateral** `$H_1: \theta \neq \theta_0$`
--   **Unilateral izquierda** `$H_1: \theta < \theta_0$`
--   **Unilateral derecho** `$H_1: \theta > \theta_0$`
+-   **Bilateral** $H_1: \theta \neq \theta_0$
+-   **Unilateral izquierda** $H_1: \theta < \theta_0$
+-   **Unilateral derecho** $H_1: \theta > \theta_0$
 
 Ésta hipótesis no puede contener la igualdad, a menos que se quiera una
 hipótesis alternativa específica.
@@ -50,9 +50,9 @@ hipótesis alternativa específica.
 ### Estadístico de prueba
 
 El estadístico de prueba será el valor usado para tomar la decisión
-entre `$H_0$` y `$H_1$`. Éste dependerá del parámetro de interés y de la
+entre $H_0$ y $H_1$. Éste dependerá del parámetro de interés y de la
 distribución muestral del estadístico. Entre los estadísticos de prueba
-más usados de tiene a `$Z$`, `$t_v$`. `$\chi^2_v$` y `$F_{v_1,v_2}$`.
+más usados de tiene a $Z$, $t_v$. $\chi^2_v$ y $F_{v_1,v_2}$.
 
 ### Región crítica
 
@@ -81,11 +81,11 @@ $$\begin{align*}RC:\{\bar{X}|\bar{X}<71 \text{ o } \bar{X}>75\}\end{align*}$$
 Es el nivel de significancia más bajo en el que el valor observado del
 estadístico de prueba es significativo. Por tanto, un valor
 relativamente pequeño puede sugerir que el valor observado del
-estadístico de prueba sea poco probable, y por tanto, `$H_0$` deba ser
+estadístico de prueba sea poco probable, y por tanto, $H_0$ deba ser
 rechazado.
 
 Dado que el P-valor puede interpretarse como el tamaño de la región
-crítica `$RC$` que se obtiene a partir de los datos, entonces para un
+crítica $RC$ que se obtiene a partir de los datos, entonces para un
 nivel de significancia preestablecido, el criterio de decisión debe ser
 
 $$\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}$$
@@ -97,13 +97,13 @@ Dado un juego de hipótesis, se tendrán cuatro posibles escenarios
 
 ![](/assets/images/Hipotesis2.jpg)
 
-siendo `$\alpha$`: la probabilidad de cometer un error tipo I. Este se
+siendo $\alpha$: la probabilidad de cometer un error tipo I. Este se
 define como
 
 $$\begin{align*}\alpha = \mathbb{P}(\text{Rechazar }H_0|H_0 \text{ es verdadera})\end{align*}$$
 
-usualmente se emplean valores de `$\alpha$` de `$0.1, 0.05, 0.01$`. <br>
-`$\beta$`: la probabilidad de cometer un error tipo II. Este se define
+usualmente se emplean valores de $\alpha$ de $0.1, 0.05, 0.01$. <br>
+$\beta$: la probabilidad de cometer un error tipo II. Este se define
 como
 
 $$\begin{align*}\beta = \mathbb{P}(\text{No rechazar }H_0|H_0 \text{ es falsa})\end{align*}$$
@@ -112,7 +112,7 @@ Este valor es imposible de calcular a menos de que se tenga una
 hipótesis alternativa específica, tal que
 
 $$\begin{align*}H_1:\theta = \theta_1\end{align*}$$
- con `$\theta_1$` un
+ con $\theta_1$ un
 valor específico a probar.
 
 ### Nota
@@ -120,8 +120,8 @@ valor específico a probar.
 1.  Los errores tipo I y II están inversamente relacionados, es decir,
     cuando aumenta uno, disminuye el otro.
 
-2.  Un aumento en el tamaño muestral `$n$`, reducirá tanto `$\alpha$` y
-    `$\beta$` de forma simultanea.
+2.  Un aumento en el tamaño muestral $n$, reducirá tanto $\alpha$ y
+    $\beta$ de forma simultanea.
 
-3.  Si `$H_0$` es falsa, `$\beta$` es máxima cuando el verdadero valor
+3.  Si $H_0$ es falsa, $\beta$ es máxima cuando el verdadero valor
     del parámetro se aproxima al valor hipotético.

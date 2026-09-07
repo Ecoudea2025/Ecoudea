@@ -15,21 +15,21 @@ bibliography: "../../referencias.bib"
 Es un procedimiento que se usa para hallar un estimador para uno o más
 parámetros poblacionales a partir de los momentos muestrales.
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de una distribución
-`$X_i;\theta_1, \theta_2, \ldots \theta_k$`, y sea el `$k$`-ésimo
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de una distribución
+$X_i;\theta_1, \theta_2, \ldots \theta_k$, y sea el $k$-ésimo
 momento alrededor del origen dado por
 
 $$\begin{align*}\mu_k' = \mathbb{E}(X^k)\end{align*}$$
 
 
-y sea el `$k$`-ésimo momento muestral dado por
+y sea el $k$-ésimo momento muestral dado por
 
 $$\begin{align*}m_k' = \frac{1}{n}\sum_{i=1}^{n} x_i^k\end{align*}$$
 
 
 entonces, los estimadores
-`$(\hat{\theta}_1, \hat{\theta}_2, \ldots \hat{\theta}_k)$` para
-`$(\theta_1, \theta_2, \ldots \theta_k)$` se obtiene al igualas los
+$(\hat{\theta}_1, \hat{\theta}_2, \ldots \hat{\theta}_k)$ para
+$(\theta_1, \theta_2, \ldots \theta_k)$ se obtiene al igualas los
 correspondientes momentos poblacionales y muestrales para despejar los
 estimadores deseados.
 
@@ -110,17 +110,17 @@ desconocido $\nu$ es igual a $$\begin{align*}
 
 ### Método de máxima verosimilitud
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria iid de una
-distribución `$f(x; \theta_1, \theta_2, \ldots, \theta_k)$`, con función
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria iid de una
+distribución $f(x; \theta_1, \theta_2, \ldots, \theta_k)$, con función
 de verosimilitud dada por
 
 
 $$\begin{align*}L(\theta|x_i) &= L(\theta_1, \theta_2, \ldots, \theta_k| X_1, X_2, \ldots, X_k)\\                 &= \prod_{i=1}^{n} f(x_i, \theta_1, \theta_2, \ldots, \theta_k)\end{align*}$$
 
 
-Entonces el estimador de máxima verosimilitud de `$\hat{\theta}_{MV}$`
-para el parámetro `$\theta$`, es el valor que maximiza
-`$L(\theta| x_i)$`, es decir,
+Entonces el estimador de máxima verosimilitud de $\hat{\theta}_{MV}$
+para el parámetro $\theta$, es el valor que maximiza
+$L(\theta| x_i)$, es decir,
 
 
 $$\begin{align*}L(\hat{\theta}_{MV}| X_1, X_2, \ldots, X_k) = \max_{\theta} L(\theta_1, \theta_2, \ldots, \theta_k| X_1, X_2, \ldots, X_k)\end{align*}$$
@@ -128,11 +128,11 @@ $$\begin{align*}L(\hat{\theta}_{MV}| X_1, X_2, \ldots, X_k) = \max_{\theta} L(\t
 
 #### Observación
 
-Cómo `$L(\theta| X)$` es el producto de `$n$` funciones, es recomendable
-usar la función monótona creciente `$Ln(\cdot)$` antes de maximizar
-`$L(\theta|X)$`, debido a que es más sencillo hallar la derivada de
-`$\ell(\theta|X)=Ln(L(\theta|X))$` que hallar la derivada de la
-multiplicación de `$n$` funciones.
+Cómo $L(\theta| X)$ es el producto de $n$ funciones, es recomendable
+usar la función monótona creciente $Ln(\cdot)$ antes de maximizar
+$L(\theta|X)$, debido a que es más sencillo hallar la derivada de
+$\ell(\theta|X)=Ln(L(\theta|X))$ que hallar la derivada de la
+multiplicación de $n$ funciones.
 
 <button id="Show2" class="btn btn-secondary">
 Mostrar Ejercicio

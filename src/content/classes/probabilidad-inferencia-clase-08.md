@@ -37,12 +37,12 @@ por orden de magnitud.
 
 ## Estadísticos muestrales
 
-Sea `$X_1, X_2, \ldots, Xn$` una muestra aleatoria *iid* de tamaño
-`$n$`, entonces se tendrán los siguientes estadísticos muestrales
+Sea $X_1, X_2, \ldots, Xn$ una muestra aleatoria *iid* de tamaño
+$n$, entonces se tendrán los siguientes estadísticos muestrales
 
 ### Media muestral
 
-Es el promedio aritmético del total de las `$n$` observaciones
+Es el promedio aritmético del total de las $n$ observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
 $$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
@@ -108,8 +108,8 @@ pertenecientes a una muestra aleatoria, respecto a la media muestra.
 $$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
 
 
-siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
-se usa en lugar de la división sobre `$n$` con el fin de corregir el
+siendo el valor $n-1$ conocido como la corrección de Bessel, el cuál
+se usa en lugar de la división sobre $n$ con el fin de corregir el
 sesgo tendría el estimador.
 
 En <tt>R</tt> puede calcularse la varianza muestral de una muestra
@@ -233,11 +233,11 @@ millones de pesos, con una desviación estándar de $670$ mil pesos.
 
 ### Proporción muestral
 
-La proporción muestral para un total de `$n$` observaciones
+La proporción muestral para un total de $n$ observaciones
 pertenecientes a una muestra aleatoria, de la cual se sabe que hay un
-total de `$x$` éxitos, puede interpretarse como la frecuencia relativa o
+total de $x$ éxitos, puede interpretarse como la frecuencia relativa o
 porcentaje del número de éxito que se obtienen a partir de un conjunto
-de `$n$` observaciones que vienen de una muestra aleatoria.
+de $n$ observaciones que vienen de una muestra aleatoria.
 
 $$\begin{align*}\hat{p}=\frac{x}{n}\end{align*}$$
 
@@ -246,7 +246,7 @@ En <tt>R</tt> puede calcularse el porcentaje de éxitos de una muestra
 aleatoria mediante el cálculo de función
 `sum(condición) / length(datos)`, donde `condición` representa una
 condición que se quiere probar, por ejemplo, que los datos sean
-superiores a un `$10$`, por tanto `condición = datos > 10`.
+superiores a un $10$, por tanto `condición = datos > 10`.
 
 <button id="Show4" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -316,26 +316,26 @@ aleatorias observadas en una muestra, éstos también serán variables
 aleatorias que tendrán distribuciones de probabilidad asociadas,
 distribuciones que son llamadas distribuciones muestrales.
 
-### Distribución para la media muestral `$\bar{X}$`
+### Distribución para la media muestral $\bar{X}$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de tamaño `$n$` de
-una distribución normal con media `$\mu$` y varianza `$\sigma^2$`,
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria de tamaño $n$ de
+una distribución normal con media $\mu$ y varianza $\sigma^2$,
 entonces se puede mostrar que
 
 $$\begin{align*}\bar{X}=\frac{1}{n}\sum_{i=1}^n x_i \sim N(\mu, \sigma^2/n)\end{align*}$$
 
-se distribuye normalmente con media `$\mu$` y varianza `$\sigma^2/n$`.
+se distribuye normalmente con media $\mu$ y varianza $\sigma^2/n$.
 
 #### Teorema
 
-Dado que `$\bar{X}\sim N(\mu,\sigma^2/n)$`, entonces se puede aplicar la
+Dado que $\bar{X}\sim N(\mu,\sigma^2/n)$, entonces se puede aplicar la
 estandarización que se emplea a la distribución normal para llevar ésta,
 a una distribución normal estándar. Dicha estandarización sería de la
 forma
 
 $$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$$
 
-y se tendrá que `$Z$` se distribuirá como una normal estándar de forma
+y se tendrá que $Z$ se distribuirá como una normal estándar de forma
 exacta.
 
 <button id="Show5" class="btn btn-secondary">
@@ -528,22 +528,22 @@ $$\begin{align*}
 
 ### Teorema del límite central
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* con media
-`$\mathbb{E}(X_i) = \mu$` y varianza `$Var(X_i)=\sigma^2<\infty$`
-entonces, cuando `$n\to \infty$`, se tendrá que
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* con media
+$\mathbb{E}(X_i) = \mu$ y varianza $Var(X_i)=\sigma^2<\infty$
+entonces, cuando $n\to \infty$, se tendrá que
 
 $$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
 
 tendrá una distribución aproximadamente normal estándar, cuando
-`$n\sim \infty$` (usualmente, se usa como valor de referencia a
-`$n\geq 30$`).
+$n\sim \infty$ (usualmente, se usa como valor de referencia a
+$n\geq 30$).
 
-### Distribución muestral para la proporción muestral `$\hat{p}$`
+### Distribución muestral para la proporción muestral $\hat{p}$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
-`$n$`, tal que `$X\sim b(n,p)$`. Entonces si `$n$` es suficientemente
-grande, y la proporción `$p$` no está muy cercana a `$0$` o a `$1$`, tal
-que `$np$` y `$n(1-p)>5$`, entonces se puede probar que
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
+$n$, tal que $X\sim b(n,p)$. Entonces si $n$ es suficientemente
+grande, y la proporción $p$ no está muy cercana a $0$ o a $1$, tal
+que $np$ y $n(1-p)>5$, entonces se puede probar que
 
 $$\begin{align*}\hat{p}  = \frac{x}{n} \stackrel{a}{\sim} N\left(p, \frac{p(1-p)}{n}\right)\end{align*}$$
 
@@ -556,7 +556,7 @@ $$\begin{align*}Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\si
 
 En estadística aplicada a menudo se necesita conocer la distribución de
 probabilidad de una combinación lineal de variables aleatorias
-independientes. Y Por ello se presentan a continuación `$4$` teoremas
+independientes. Y Por ello se presentan a continuación $4$ teoremas
 que pueden ser de utilidad
 
 <button id="Show9" class="btn btn-secondary">
@@ -688,26 +688,26 @@ libertad.
 </p>
 </main>
 
-### Distribución muestral de `$\chi^2$`
+### Distribución muestral de $\chi^2$
 
-Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de una
-distribución `$N(\mu,\sigma^2)$` de tamaño `$n$`, entonces partiendo del
+Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de una
+distribución $N(\mu,\sigma^2)$ de tamaño $n$, entonces partiendo del
 <a href="../../ProbabilidadeInferencia/PeIEClase13.html#distribución-para-combinaciones-lineales">Teorema
 4</a> se tendrá que
 
 $$\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n\end{align*}$$
 
 
-En donde, al sumar y restar `$\bar{X}$` dentro de `$(X_i-\mu)^2$`
+En donde, al sumar y restar $\bar{X}$ dentro de $(X_i-\mu)^2$
 tendremos que
 
 $$\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} &= \sum_{i=1}^n\frac{(X_i - \bar{X} + \bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{[(X_i - \bar{X}) + (\bar{X} - \mu)]^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2 + 2(X_i - \bar{X})(\bar{X} - \mu) + (\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2 + 2(X_i - \bar{X})(\bar{X} - \mu) + (\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2}{\sigma^2} + \sum_{i=1}^n\frac{2(X_i - \bar{X})(\bar{X} - \mu)}{\sigma^2} + \sum_{i=1}^n\frac{(\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \frac{1}{\sigma^2}\sum_{i=1}^n(X_i - \bar{X})^2 + \frac{2(\bar{X} - \mu)}{\sigma^2}\sum_{i=1}^n(X_i - \bar{X}) + \frac{1}{\sigma^2}\sum_{i=1}^n(\bar{X} - \mu)^2\end{align*}$$
 
 
 De lo anterior se puede demostrar que
-`$\sum_{i=1}^n(X_i - \bar{X})^2=(n-1)S^2$`,
-`$\sum_{i=1}^n(X_i - \bar{X})=0$` y
-`$\sum_{i=1}^n(\bar{X} - \mu)^2 = n(\bar{X} - \mu)^2$`, lo cual al
+$\sum_{i=1}^n(X_i - \bar{X})^2=(n-1)S^2$,
+$\sum_{i=1}^n(X_i - \bar{X})=0$ y
+$\sum_{i=1}^n(\bar{X} - \mu)^2 = n(\bar{X} - \mu)^2$, lo cual al
 reemplazar estos valores en la ecuación anterior, se obtendrá que
 
 
@@ -728,26 +728,26 @@ Por tanto basados en el
 
 $$\begin{align*}\chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\end{align*}$$
 
-tiene una distribución chi-cuadrado con `$n-1$` grados de libertad.
+tiene una distribución chi-cuadrado con $n-1$ grados de libertad.
 
 #### Propiedades
 
-Si `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de una
-distribución `$N(\mu,\sigma^2)$` de tamaño `$n$`, y se tiene que
-`$\bar{X}$` y `$S^2$` son la media y varianza muestrales, entonces
+Si $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de una
+distribución $N(\mu,\sigma^2)$ de tamaño $n$, y se tiene que
+$\bar{X}$ y $S^2$ son la media y varianza muestrales, entonces
 
-1.  Las variables aleatorias `$\bar{X}$` y `$S^2$` son independientes.
-2.  la esperanza y la varianza de la variable aleatoria `$S^2$` estarán
+1.  Las variables aleatorias $\bar{X}$ y $S^2$ son independientes.
+2.  la esperanza y la varianza de la variable aleatoria $S^2$ estarán
     dadas por
     
 $$\begin{align*}\mathbb{E}(S^2)= \sigma^2 \quad \text{ y } \quad Var(S^2) = \frac{2(\sigma^2)^2}{n-1}\end{align*}$$
 
 
 <button id="Show13" class="btn btn-secondary">
-Mostrar Ejercicio Manejo de Tabla `$\chi^2$`
+Mostrar Ejercicio Manejo de Tabla $\chi^2$
 </button>
 <button id="Hide13" class="btn btn-info">
-Ocultar Ejercicio Manejo de Tabla `$\chi^2$`
+Ocultar Ejercicio Manejo de Tabla $\chi^2$
 </button>
 <main id="botoncito13">
 <h3 data-toc-skip>
@@ -944,23 +944,23 @@ $$\begin{align*}
 </ol>
 </main>
 
-### Distribución muestral `$t$` de Student
+### Distribución muestral $t$ de Student
 
-Sea `$Z$` una variable aleatoria distribuida `$N(0,1)$` y `$W$` una
-variable aleatoria distribuida `$\chi^2_v$`, entonces si `$Z$` y
-`$W$`son independientes, se tendrá que
+Sea $Z$ una variable aleatoria distribuida $N(0,1)$ y $W$ una
+variable aleatoria distribuida $\chi^2_v$, entonces si $Z$ y
+$W$son independientes, se tendrá que
 
 $$\begin{align*}t = \frac{Z}{\sqrt{W/v}} \sim t_v\end{align*}$$
  tiene
-una distribución `$t$` con `$v$` grados de libertad.
+una distribución $t$ con $v$ grados de libertad.
 
-Ahora, si `$X_1, X_2, \ldots, X_n$` es una muestra aleatoria de una
-población normal con media `$\mu$` y varianza `$\sigma^2$`, se tendrá
+Ahora, si $X_1, X_2, \ldots, X_n$ es una muestra aleatoria de una
+población normal con media $\mu$ y varianza $\sigma^2$, se tendrá
 
 $$\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1) \quad \text{ y } \quad W =\frac{(n-1)S^2}{\sigma^2}\sim \chi^2_{n-1}\end{align*}$$
 
-serán variables aleatorias independientes puesto que `$\bar{X}$` y
-`$S^2$` son independientes, entonces
+serán variables aleatorias independientes puesto que $\bar{X}$ y
+$S^2$ son independientes, entonces
 
 $$\begin{align*}t = \frac{\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}}{\sqrt{\left(\frac{(n-1)S^2}{\sigma^2}\right)/(n-1)}}\end{align*}$$
 
@@ -969,13 +969,13 @@ obteniendo como resultado luego de simplificar
 $$\begin{align*}t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}\end{align*}$$
 
 
-tiene una distribución `$t$` con `$(n-1)$` grados de libertad.
+tiene una distribución $t$ con $(n-1)$ grados de libertad.
 
 <button id="Show15" class="btn btn-secondary">
-Mostrar Ejercicio Manejo de Tabla `$t$`
+Mostrar Ejercicio Manejo de Tabla $t$
 </button>
 <button id="Hide15" class="btn btn-info">
-Ocultar Ejercicio Manejo de Tabla `$t$`
+Ocultar Ejercicio Manejo de Tabla $t$
 </button>
 <main id="botoncito15">
 <h3 data-toc-skip>
@@ -1154,25 +1154,25 @@ $$\begin{align*}
 </ol>
 </main>
 
-### Distribución muestral `$F$` de Fisher-Snedecor
+### Distribución muestral $F$ de Fisher-Snedecor
 
-Sea `$W_1$` una variable aleatoria `$\chi^2_{v_1}$` y `$W_2$` una
-variable aleatoria `$\chi^2_{v_2}$`, entonces si `$W_1$` y `$W_2$` son
+Sea $W_1$ una variable aleatoria $\chi^2_{v_1}$ y $W_2$ una
+variable aleatoria $\chi^2_{v_2}$, entonces si $W_1$ y $W_2$ son
 independientes.
 
 $$\begin{align*}F = \frac{W_1/v_1}{W_2/v_2}\sim F_{v_1, v_2}\end{align*}$$
 
-tiene una distribución `$F$` con `$v_1$` grados de libertad en el
-númerador y `$v_2$` grados de libertad en el denominador. Ahora si
-`$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$` y
-`$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$` son dos muestras aleatorias
-independientes de poblaciones normales con medias `$\mu_1, \mu_2$` y
-varianzas `$\sigma^2_1, \sigma^2,2$`, respectivamente, entonces
+tiene una distribución $F$ con $v_1$ grados de libertad en el
+númerador y $v_2$ grados de libertad en el denominador. Ahora si
+$X_{1,1}, X_{1,2}, \ldots, X_{1,n_1}$ y
+$X_{2,1}, X_{2,2}, \ldots, X_{2,n_2}$ son dos muestras aleatorias
+independientes de poblaciones normales con medias $\mu_1, \mu_2$ y
+varianzas $\sigma^2_1, \sigma^2,2$, respectivamente, entonces
 
 $$\begin{align*}W_1 = \frac{(n_1-1)S_1^2}{\sigma^2_1} \sim N(0,1) \quad \text{ y } \quad W_2 =\frac{(n_1-1)S_1^2}{\sigma^2_1}\sim \chi^2_{n_2-1}\end{align*}$$
 
-tienen distribuciones chi-cuadrado independientes con `$v_1=(n_1-1)$` y
-`$v_2 = (n_2-1)$` grados de libertad, respectivamente. Y por tanto
+tienen distribuciones chi-cuadrado independientes con $v_1=(n_1-1)$ y
+$v_2 = (n_2-1)$ grados de libertad, respectivamente. Y por tanto
 
 $$\begin{align*}F = \frac{\left(\frac{(n_1-1)S_1^2}{\sigma^2_1}\right)/(n_1-1)}{\left(\frac{(n_1-1)S_1^2}{\sigma^2_1}\right)/(n_2-1)} = \frac{S_1^2/\sigma^2_1}{S_2^2/\sigma^2_2}\end{align*}$$
 
@@ -1182,22 +1182,22 @@ En donde, al reordenar términos se tendrá que
 $$\begin{align*}F_c  = \frac{S^2_1\sigma^2_2}{S^2_2\sigma^2_1} \sim F_{n_1-1, n_2-1}\end{align*}$$
 
 
-tienen una distribución `$F$` con `$n_1-1$` grados de libertad en el
-numerador y `$n_2-1$` grados de libertad en el denominador.
+tienen una distribución $F$ con $n_1-1$ grados de libertad en el
+numerador y $n_2-1$ grados de libertad en el denominador.
 
 #### Teorema Cola Izquierda
 
-Para encontrar la probabilidad de la cola izquierda para `$\alpha$` de
+Para encontrar la probabilidad de la cola izquierda para $\alpha$ de
 la distribución F, usamos la siguiente formula
 
 $$\begin{align*}F_{1-\alpha,v_1,v_2} = \frac{1}{F_{\alpha, v_2, v_1}}\end{align*}$$
 
 
 <button id="Show17" class="btn btn-secondary">
-Mostrar Ejercicio Manejo de Tabla `$F$`
+Mostrar Ejercicio Manejo de Tabla $F$
 </button>
 <button id="Hide17" class="btn btn-info">
-Ocultar Ejercicio Manejo de Tabla `$F$`
+Ocultar Ejercicio Manejo de Tabla $F$
 </button>
 <main id="botoncito17">
 <h3 data-toc-skip>

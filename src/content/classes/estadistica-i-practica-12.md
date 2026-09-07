@@ -12,7 +12,7 @@ Lista de ejercicios
 -------------------
 
 1.  Suponga que el número de entregas que realiza un camión de
-    Servientrega en `$1$` hora posee una función de masa de probabilidad
+    Servientrega en $1$ hora posee una función de masa de probabilidad
     de la forma
     
 $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -40,16 +40,16 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
 2.  Suponga que se tiene un total de tres cajas exactamente iguales,
     donde cada una de las cajas contiene un animal encerrado, a saber,
     un conejo, un hamster y una cobaya. Si se trata de adivinar qué
-    clase de animal hay en cada caja, siendo `$X$` la variable aleatoria
+    clase de animal hay en cada caja, siendo $X$ la variable aleatoria
     que representa el numero de aciertos. Escriba la función de masa de
-    probabilidad de la variable aleatoria `$X$`, su función de
+    probabilidad de la variable aleatoria $X$, su función de
     distribución acumulada y calcule la probabilidad de que acierte al
-    menos `$2$` animales.
+    menos $2$ animales.
 
-3.  Sean `$X$` y `$Y$` dos variables aleatorias discretas las cuales
-    pueden tomar como posibles valores `$-1$`, `$0$`, y `$1$`. En la
+3.  Sean $X$ y $Y$ dos variables aleatorias discretas las cuales
+    pueden tomar como posibles valores $-1$, $0$, y $1$. En la
     siguiente tabla se dan las probabilidades conjuntas para todos los
-    posibles valores de `$X$` y `$Y$`.
+    posibles valores de $X$ y $Y$.
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -131,8 +131,8 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     </li>
     </ol>
 
-4.  Sea `$X$` una variable aleatoria con distribución de probabilidades
-    `$p(x)$` dada por:
+4.  Sea $X$ una variable aleatoria con distribución de probabilidades
+    $p(x)$ dada por:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -196,7 +196,7 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     
 $$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\end{align*}$$
 
-    Encuentre el valor `$k$` que hace que la función de probabilidad
+    Encuentre el valor $k$ que hace que la función de probabilidad
     esté bien definida y con esta función
     <ol type="a">
     <li>
@@ -214,7 +214,7 @@ $$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\e
 6.  Las mediciones en los sistemas científicos siempre están sujetas a
     variación, algunas veces más que otras. Hay muchas estructuras para
     los errores de medición y los estadísticos pasan mucho tiempo
-    modelándolos. Suponga que el error de medición `$X$` de cierta
+    modelándolos. Suponga que el error de medición $X$ de cierta
     cantidad física es determinado por la siguiente función de densidad:
     
 $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
@@ -239,7 +239,7 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     </ol>
 
 7.  Suponga una función de densidad de probabilidad conjunta de las
-    variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
+    variables aleatorias $X$, $Y$ y $Z$, la cual se define como
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -284,7 +284,7 @@ $$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x<
 9.  Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
-    densidad de probabilidad que caracteriza la proporción `$X$` de
+    densidad de probabilidad que caracteriza la proporción $X$ de
     utilidades que obtiene una pequeña empresa durante su primer año
     está dada por
     
@@ -308,8 +308,8 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     </ol>
 
 10. Suponga que a partir de una gran cantidad de datos históricos, se
-    sabe que `$X$` representa el número de automóviles que llegan a una
-    intersección específica durante un periodo de `$20$` segundos, la
+    sabe que $X$ representa el número de automóviles que llegan a una
+    intersección específica durante un periodo de $20$ segundos, la
     cual puede ser determinada mediante la siguiente función de
     probabilidad discreta
     
@@ -325,9 +325,9 @@ $$\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{ali
     </li>
     </ol>
 
-11. Sea `$X$` la variable aleatoria que determina el número de clientes
+11. Sea $X$ la variable aleatoria que determina el número de clientes
     que llega a una centro comercial en un periodo de una hora. Si la
-    distribución acumulada de `$X$` está dada por:
+    distribución acumulada de $X$ está dada por:
     
 $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}$$
 
@@ -459,7 +459,7 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     </li>
     </ol>
 
-13. Sea `$X$` una variable aleatoria con distribución de probabilidades
+13. Sea $X$ una variable aleatoria con distribución de probabilidades
     dada por
     
 $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -478,7 +478,7 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
     </li>
     </ol>
 
-14. Si `$X$` y `$Y$` son variables aleatorias con función de
+14. Si $X$ y $Y$ son variables aleatorias con función de
     probabilidad conjunta dada por
     
 $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
@@ -507,13 +507,13 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     </li>
     </ol>
 
-15. Considere las variables aleatorias `$X$` y `$Y$` que representan el
+15. Considere las variables aleatorias $X$ y $Y$ que representan el
     número de vehículos que llegan a dos esquinas de calles separadas
-    durante cierto periodo de `$2$` minutos. Estas esquinas de las
+    durante cierto periodo de $2$ minutos. Estas esquinas de las
     calles están bastante cerca una de la otra, así que es importante
     que los ingenieros de tráfico se ocupen de ellas de manera conjunta
-    si fuera necesario. Se sabe que la distribución conjunta de `$X$` y
-    `$Y$` es
+    si fuera necesario. Se sabe que la distribución conjunta de $X$ y
+    $Y$ es
     
 $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -528,9 +528,9 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
     </li>
     </ol>
 
-16. De un saco de frutas que contiene `$3$` naranjas, `$2$` manzanas y
-    `$3$` plátanos se selecciona una muestra aleatoria de `$4$` frutas.
-    Si `$X$` es el número de naranjas y `$Y$` es el número de manzanas
+16. De un saco de frutas que contiene $3$ naranjas, $2$ manzanas y
+    $3$ plátanos se selecciona una muestra aleatoria de $4$ frutas.
+    Si $X$ es el número de naranjas y $Y$ es el número de manzanas
     en la muestra, calcule
     <ol type="a">
     <li>
@@ -542,11 +542,11 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
     </li>
     </ol>
 
-17. Sea `$X$` una variable aleatoria continua con
-    `$F(x)=\frac{1}{1+e^{-x}}$`, para `$x>0$`, encuentre la función de
-    densidad de probabilidad y calcule `$\mathbb{P}(X<20)$`.
+17. Sea $X$ una variable aleatoria continua con
+    $F(x)=\frac{1}{1+e^{-x}}$, para $x>0$, encuentre la función de
+    densidad de probabilidad y calcule $\mathbb{P}(X<20)$.
 
-18. Considere a `$X$` la variable aleatoria que representa la suma de
+18. Considere a $X$ la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con f.m.p dada por
     
 $$\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -583,9 +583,9 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     </li>
     </ol>
 
-20. Si `$X$` y `$Y$` son variables aleatorias discretas con función de
-    probabilidad dada por: `$f(x,y)=k(\frac{x+y}{xy})$`,para
-    `$x=1,2,3$`; `$y=1,2,3$`.
+20. Si $X$ y $Y$ son variables aleatorias discretas con función de
+    probabilidad dada por: $f(x,y)=k(\frac{x+y}{xy})$,para
+    $x=1,2,3$; $y=1,2,3$.
     <ol type="a">
     <li>
     Encuentre el valor de $k$ que hace que $f(x,y)$ sea una función
@@ -602,7 +602,7 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     </li>
     </ol>
 
-21. Si la distribución de probabilidad conjunta de `$X$` y `$Y$` está
+21. Si la distribución de probabilidad conjunta de $X$ y $Y$ está
     dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -623,11 +623,11 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     </li>
     </ol>
 
-22. Sea `$X$` la variable aleatoria que da el número de caras menos el
+22. Sea $X$ la variable aleatoria que da el número de caras menos el
     número de cruces en cuatro lanzamientos de una moneda. Liste los
-    elementos del espacio muestral `$S$` para los cuatro lanzamientos de
-    la moneda y asigne un valor `$x$` a cada punto muestral de la
-    variable aleatoria `$X$`.
+    elementos del espacio muestral $S$ para los cuatro lanzamientos de
+    la moneda y asigne un valor $x$ a cada punto muestral de la
+    variable aleatoria $X$.
     <ol type="a">
     <li>
     Obtenga la función de masa de probabilidad y la función de
@@ -654,7 +654,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
   
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
-    velocidad sea menor de `$12$` minutos
+    velocidad sea menor de $12$ minutos
     <ol type="a">
     <li>
     Usando la función de distribución acumulativa de $X$
@@ -669,8 +669,8 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     evaluar la calidad en la longitud de los tubos; sin embargo, dicha
     medida está sujeta a incertidumbre. Se considera que la probabilidad
     de que un tubo elegido al azar cumpla con las especificaciones de
-    longitud es `$0.99$`. Se utiliza un plan de muestreo en el cual se
-    mide la longitud de `$5$` tubos elegidos al azar.
+    longitud es $0.99$. Se utiliza un plan de muestreo en el cual se
+    mide la longitud de $5$ tubos elegidos al azar.
     <ol type="a">
     <li>
     Muestre que la función de probabilidad de $Y$, el número de tubos
@@ -686,7 +686,7 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     </li>
     </ol>
 
-25. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
+25. Si $X$, $Y$ y $Z$ tienen la siguiente función de densidad de
     probabilidad conjunta:
     
 $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -709,9 +709,9 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
     </li>
     </ol>
 
-26. Suponga que el tiempo medido en unidades de `$100$` horas, que se
+26. Suponga que el tiempo medido en unidades de $100$ horas, que se
     usa una licuadora en un hogar durante un año es una v.a continua
-    `$X$` con función de densidad de probabilidad dada por:
+    $X$ con función de densidad de probabilidad dada por:
     
 $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
 
@@ -730,8 +730,8 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     </li>
     </ol>
 
-27. Una moneda se lanza dos veces. Sea `$X$` el número de caras en el
-    primer lanzamiento y `$Y$` el número total de caras en los `$2$`
+27. Una moneda se lanza dos veces. Sea $X$ el número de caras en el
+    primer lanzamiento y $Y$ el número total de caras en los $2$
     lanzamientos. Si la moneda no está balanceada y la probabilidad de
     sello es dos veces la probabilidad de cara, calcule
     <ol type="a">
@@ -750,11 +750,11 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     </ol>
 
 28. Una empresa dulcera distribuye cajas de chocolates con un surtido de
-    cremas, chiclosos y envinados. Suponga que cada caja pesa `$1$`
+    cremas, chiclosos y envinados. Suponga que cada caja pesa $1$
     kilogramo, pero que los pesos individuales de cremas, chiclosos y
     envinados varían de una a otra cajas. Para una caja seleccionada al
-    azar, represente los pesos de las cremas y los chiclosos con `$X$` y
-    `$Y$`, respectivamente, y suponga que la función de densidad
+    azar, represente los pesos de las cremas y los chiclosos con $X$ y
+    $Y$, respectivamente, y suponga que la función de densidad
     conjunta de estas variables es
     
 $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -774,7 +774,7 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
     </li>
     </ol>
 
-29. Sean `$X$` y `$Y$` dos variables aleatorias con función de
+29. Sean $X$ y $Y$ dos variables aleatorias con función de
     probabilidad dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -805,9 +805,9 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
     </ol>
 
 30. Suponga una empresa que fabrica pelotas locas con diámetros que
-    oscilan entre `$4$` y 8 centímetros. Si `$X$` es la variable
+    oscilan entre $4$ y 8 centímetros. Si $X$ es la variable
     aleatoria que representa el diámetro de las pelotas locas, y la
-    empresa sabe que la función de probabilidad de `$X$` es de la forma
+    empresa sabe que la función de probabilidad de $X$ es de la forma
     
 $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
 
@@ -841,10 +841,10 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
     </li>
     </ol>
 
-32. Sean `$X$` y `$Y$` variables aleatorias independientes tal que sus
-    distribuciones marginales son `$g(x)=3x^2$` para `$0<x<1$` y
-    `$h(y)=2y$` para `$0<y<1$`. Calcule
-    `$\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$`.
+32. Sean $X$ y $Y$ variables aleatorias independientes tal que sus
+    distribuciones marginales son $g(x)=3x^2$ para $0<x<1$ y
+    $h(y)=2y$ para $0<y<1$. Calcule
+    $\mathbb{P}(X\leq\frac{1}{3}|Y=\frac{1}{2})$.
 
 33. Suponga una función de masa de probabilidad dada por
     
@@ -863,13 +863,13 @@ $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4
     </li>
     </ol>
 
-34. Sea `$f(x)=\frac{9}{2}x^2-x$`, para `$0<x<1$`, la distribución de
-    probabilidad de una variable aleatoria `$X$`, encuentre la función
-    de distribución acumulada y con ésta, calcule `$\mathbb{P}(X<0.3)$`.
+34. Sea $f(x)=\frac{9}{2}x^2-x$, para $0<x<1$, la distribución de
+    probabilidad de una variable aleatoria $X$, encuentre la función
+    de distribución acumulada y con ésta, calcule $\mathbb{P}(X<0.3)$.
 
-35. Sea `$X$` una variable aleatoria continua que representa el tiempo,
+35. Sea $X$ una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
-    la función de densidad de probabilidad `$f(x)$` está dada por:
+    la función de densidad de probabilidad $f(x)$ está dada por:
     
 $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
 
@@ -890,7 +890,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     </ol>
 
 36. Suponga la siguiente función de probabilidad para las variables
-    aleatorias `$X$` y `$Y$`
+    aleatorias $X$ y $Y$
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -979,7 +979,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
 
 37. Un sistema químico que surge de una reacción química tiene dos
     componentes importantes, entre otros, en una mezcla. La distribución
-    conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
+    conjunta que describe las proporciones $X$ y $Y$ de estos dos
     componentes está dada por
     
 $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -1004,8 +1004,8 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     </li>
     </ol>
 
-38. Sea `$X$` el número de veces que fallará cierta máquina de control
-    numérico: `$1$`, `$2$` o `$3$` veces en un día dado. Y sea `$Y$` el
+38. Sea $X$ el número de veces que fallará cierta máquina de control
+    numérico: $1$, $2$ o $3$ veces en un día dado. Y sea $Y$ el
     número de veces que se llama a un técnico para una emergencia, su
     distribución de probabilidad conjunta estará dada como
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1097,7 +1097,7 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
 39. En funcion de su prioridad, un programa para computadora espera en
     la fila de entrada cierto tiempo, después del cual lo ejecuta el
     procesador central en un lapso dado. La función de densidad conjunta
-    para los tiempos de espera `$X$` (en minutos) y ejecución `$Y$` (en
+    para los tiempos de espera $X$ (en minutos) y ejecución $Y$ (en
     segundos) se determina por
     
 $$\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
@@ -1123,7 +1123,7 @@ $$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-
     </li>
     </ol>
 
-40. Sean `$X$` y `$Y$` variables aleatorias continuas distribuidas
-    conjuntamente con `$f(x,y)=kxy$` para `$0<x<5$`, `$1<y<x$`. El valor
-    de `$k$` que hace que `$f(x,y)$` sea una función de densidad de
+40. Sean $X$ y $Y$ variables aleatorias continuas distribuidas
+    conjuntamente con $f(x,y)=kxy$ para $0<x<5$, $1<y<x$. El valor
+    de $k$ que hace que $f(x,y)$ sea una función de densidad de
     probabilidad conjunta es?

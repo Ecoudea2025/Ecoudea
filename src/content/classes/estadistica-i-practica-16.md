@@ -12,7 +12,7 @@ Lista de ejercicios
 ===================
 
 1.  Suponga que es sábado y planea con su pareja sentarse a ver todo el
-    día películas. Si entre los dos han seleccionado un total de `$7$`
+    día películas. Si entre los dos han seleccionado un total de $7$
     películas para ver ese día.
     <ol type="a">
     <li>
@@ -32,18 +32,18 @@ Lista de ejercicios
 
 3.  Suponga un juego en donde se lanza un dado cargado de tal forma que
     la probabilidad de que caiga cualquier cara, es proporcional al
-    número de puntos que le falta a la cara para sumar `$6$`. ¿Cuál es
+    número de puntos que le falta a la cara para sumar $6$. ¿Cuál es
     la probabilidad de que al lanzar el dado salga un número impar?
 
-4.  Sea el espacio muestral `$S = \{t | 1 < t < 12\}$` definido como el
+4.  Sea el espacio muestral $S = \{t | 1 < t < 12\}$ definido como el
     rango de tiempo que puede tardar cualquier estudiante en realizar un
     trabajo de la universidad. Suponga que se tienen tres tipos de
-    estudiantes, el evento `$X = \{t | 1 < t < 3\}$` representa el
-    tiempo que tardan los estudiantes que estudiaron al menos de `$5$`
-    horas, el evento `$Y = \{t | 1.5 < t < 8\}$` representa el tiempo
-    que tardan los estudiantes que estudiaron entre `$2$` y `$6$` horas,
-    y `$Z = \{t | 7 < t < 12\}$`, el tiempo que tardan los estudiantes
-    que estudiaron menos de `$3$` horas. Dado lo anterior, encuentre e
+    estudiantes, el evento $X = \{t | 1 < t < 3\}$ representa el
+    tiempo que tardan los estudiantes que estudiaron al menos de $5$
+    horas, el evento $Y = \{t | 1.5 < t < 8\}$ representa el tiempo
+    que tardan los estudiantes que estudiaron entre $2$ y $6$ horas,
+    y $Z = \{t | 7 < t < 12\}$, el tiempo que tardan los estudiantes
+    que estudiaron menos de $3$ horas. Dado lo anterior, encuentre e
     interprete en lo posible los siguientes eventos.
     <ol type="a">
     <li>
@@ -66,12 +66,12 @@ Lista de ejercicios
     </li>
     </ol>
 
-5.  Para un examen de Estadística I a las `$6$`AM, un estudiante
+5.  Para un examen de Estadística I a las $6$AM, un estudiante
     programa un despertador, el cual sabe que consigue despertarlo el
-    `$80\%$` de las veces. Además, sabe que si escucha sonar el
+    $80\%$ de las veces. Además, sabe que si escucha sonar el
     despertador, la probabilidad de que llegue a tiempo al examen es del
-    `$90\%$`, mientras que, si no escucha el despertador, la
-    probabilidad de que llegue a tiempo al examen es del `$50\%$`.
+    $90\%$, mientras que, si no escucha el despertador, la
+    probabilidad de que llegue a tiempo al examen es del $50\%$.
     <ol type="a">
     <li>
     Si el estudiante llega a tiempo al examen, ¿Cuál es la probabilidad
@@ -87,7 +87,7 @@ Lista de ejercicios
     saber si usar vapeadores puede afectar el tiempo de descanso de los
     estudiantes universitarios. Para realizar dicho estudio, la facultad
     de Química realiza una medición del tiempo de sueño, en minutos, de
-    `$12$` estudiantes que usan vapeador y `$15$` estudiantes que no
+    $12$ estudiantes que usan vapeador y $15$ estudiantes que no
     usan vapeador. Se obtienen los siguientes datos:
     
 $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347.6 }\\                              & \text{353.2  348.1  352.7  334.4 }\\                              & \text{360.2  343.8  323.2  313.8 }\\      \text{Usan vapeador: }  & \text{328.6  235.1  326.4  334.9 }\\                              & \text{329.8  328.4  338.5  330.2 }\\                              & \text{330.6  331.8  341.6  321.1 } \\                              & \text{336.0  337.9  313.9}\end{align*}$$
@@ -106,11 +106,11 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-7.  Suponga que se descubre que, en un grupo de `$500$` estudiantes
-    universitarios de último año, `$210$` fuman, `$258$` consumen
-    bebidas alcohólicas, `$216$` comen entre comidas, `$122$` fuman y
-    consumen bebidas alcohólicas, `$83$` comen entre comidas y consumen
-    bebidas alcohólicas, `$97$` fuman y comen entre comidas y `$52$`
+7.  Suponga que se descubre que, en un grupo de $500$ estudiantes
+    universitarios de último año, $210$ fuman, $258$ consumen
+    bebidas alcohólicas, $216$ comen entre comidas, $122$ fuman y
+    consumen bebidas alcohólicas, $83$ comen entre comidas y consumen
+    bebidas alcohólicas, $97$ fuman y comen entre comidas y $52$
     tienen esos tres hábitos nocivos para la salud. Si se selecciona al
     azar a un miembro de este grupo, escriba el evento de interés y
     calcule la probabilidad de que el estudiante
@@ -126,9 +126,9 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-8.  Una Lotería consiste en seleccionar `$6$` números de un total de
-    `$45$` números, y una serie que consta de un número del
-    `$1 \text{ al } 6$`. La lotería se gana si se aciertan los `$6$`
+8.  Una Lotería consiste en seleccionar $6$ números de un total de
+    $45$ números, y una serie que consta de un número del
+    $1 \text{ al } 6$. La lotería se gana si se aciertan los $6$
     números y la serie. Calcule la probabilidad de acertar el resultado
     ganador bajo las siguientes condiciones de juego.
     <ol type="a">
@@ -141,19 +141,19 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </ol>
 
 9.  La proporción de personas que estudia para el examen de Estadística
-    I desde la página del profe es del `$54\%$`. Si la persona estudia
-    de la página, tiene una probabilidad del `$85\%$` de ganar el
+    I desde la página del profe es del $54\%$. Si la persona estudia
+    de la página, tiene una probabilidad del $85\%$ de ganar el
     examen; si no estudia de la página, la probabilidad de ganar el
-    examen es del `$18\%$`. Si se selecciona un estudiante al azar y
+    examen es del $18\%$. Si se selecciona un estudiante al azar y
     resulta que lo perdió el examen, ¿Cuál la probabilidad de que haya
     estudiado de la página del profe?  
 
 10. Un determinado circuito electrónico está compuesto por nueve
     componentes conectados según se muestra a continuación
     ![](/assets/images/Circuito1.PNG) la
-    probabilidad de que funcione cada componente es del `$95\%$`. El
-    circuito funcionará si es posible encontrar un camino entre `$A$` y
-    `$B$`. Se supone que la probabilidad de que funcione cada componente
+    probabilidad de que funcione cada componente es del $95\%$. El
+    circuito funcionará si es posible encontrar un camino entre $A$ y
+    $B$. Se supone que la probabilidad de que funcione cada componente
     es independiente de los demás. A partir de la información anterior
     calcule
     <ol type="a">
@@ -172,17 +172,17 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </ol>
 
 11. Suponga que para poder graduarse en la facultad de Ciencias
-    Económicas un los estudiantes pueden optar por tomar `$6$` niveles
+    Económicas un los estudiantes pueden optar por tomar $6$ niveles
     de ingles o francés. Si tomamos un determinado curso de la facultad,
-    observamos que el `$90\%$` de los alumnos está matriculado en cursos
+    observamos que el $90\%$ de los alumnos está matriculado en cursos
     de ingles y el resto de francés. Además, se identifica que el
-    `$30\%$` de los que tienen cursos de ingles son hombres y el
-    `$40\%$` de los que tienen cursos de francés son mujeres. Si se
+    $30\%$ de los que tienen cursos de ingles son hombres y el
+    $40\%$ de los que tienen cursos de francés son mujeres. Si se
     selecciona un estudiante de la facultad al azar, ¿Cuál es la
     probabilidad de que sea una mujer?.
 
 12. Suponga que usted desea realizar un diagrama de pastel para una
-    presentación, y posee un total de `$6$` categorías para realizar la
+    presentación, y posee un total de $6$ categorías para realizar la
     gráfica.
     <ol type="a">
     <li>
@@ -195,7 +195,7 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </ol>
 
 13. Una fraternidad local está realizando una rifa en la que se han de
-    vender `$50$` boletas, una por cliente. Hay tres premios para ser
+    vender $50$ boletas, una por cliente. Hay tres premios para ser
     concedidos. Si los cuatro organizadores de la rifa compran un boleto
     cada uno, ¿cuál es la probabilidad de que los cuatro organizadores
     ganen
@@ -214,14 +214,14 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-14. Un grupo asesor `$A$` contiene `$3$` hombres y `$3$` mujeres. Otro
-    grupo asesor `$B$` contiene `$3$` hombres y `$2$` mujeres. Se
+14. Un grupo asesor $A$ contiene $3$ hombres y $3$ mujeres. Otro
+    grupo asesor $B$ contiene $3$ hombres y $2$ mujeres. Se
     selecciona al azar un grupo y de él una persona al azar, si esta
     persona es un hombre, se selecciona otra persona del mismo grupo. Si
     la persona seleccionada es mujer, se selecciona otra persona del
     otro grupo. Si las dos personas seleccionadas son hombres, ¿Cuál es
     la probabilidad de que se haya seleccionado ambas del grupo asesor
-    `$A$`?
+    $A$?
 
 15. Un estudio realizado para un supermercado clasifica los clientes en
     aquellos que visitan el establecimiento de una manera frecuente u
@@ -314,11 +314,11 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-16. Suponga que existen dos enfermedades `$A$` y `$B$`, que son comunes
+16. Suponga que existen dos enfermedades $A$ y $B$, que son comunes
     entre las personas que estudian Biología debido a las salidas de
-    campo que realiza. Si se supone que el `$50\%$` de los Biologos
-    contrae la enfermedad `$A$` alguna vez durante su vida, `$60\%$`
-    contrae eventualmente la enfermedad `$B$` y el `$10\%$` no contraerá
+    campo que realiza. Si se supone que el $50\%$ de los Biologos
+    contrae la enfermedad $A$ alguna vez durante su vida, $60\%$
+    contrae eventualmente la enfermedad $B$ y el $10\%$ no contraerá
     ninguna enfermedad. ¿Cuál La probabilidad de que un Biologo
     contraiga ambas enfermedades durante su vida?
 
@@ -343,12 +343,12 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     llegar a la UdeA. De cuantas formas podrías llegar a la UdeA desde
     su casa?
 
-19. Si `$S$` representa el espacio muestral de todas las posibles cartas
-    que pueden seleccionarse de un mazo de `$52$` cartas, `$A$`
-    representa el evento de todos los números pares , `$B$` representa
-    el evento de todas las letras, `$C$` representa el evento de obtener
-    una carta roja y `$D$` representa el evento de obtener un `$10$`
-    rojo, una `$J$` negra o un `$5$` de cualquier color, diga con
+19. Si $S$ representa el espacio muestral de todas las posibles cartas
+    que pueden seleccionarse de un mazo de $52$ cartas, $A$
+    representa el evento de todos los números pares , $B$ representa
+    el evento de todas las letras, $C$ representa el evento de obtener
+    una carta roja y $D$ representa el evento de obtener un $10$
+    rojo, una $J$ negra o un $5$ de cualquier color, diga con
     palabras a que conjuntos que corresponden a los siguientes eventos:
     <ol type="a">
     <li>
@@ -374,28 +374,28 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
 20. Suponga que usted le pide el favor a un compañero de curso que lo
     inscriba en cierta materia. Si su compañero olvida hacer la
     inscripción a tiempo, la probabilidad de que usted consiga cupo para
-    dicha asignatura es de sólo el `$4\%$`, en tanto que si su compañero
+    dicha asignatura es de sólo el $4\%$, en tanto que si su compañero
     hace la inscripción a tiempo, la probabilidad de que usted consiga
-    cupo para dicha asignatura es del `$75\%$`. Usted está seguro en un
-    `$85\%$` de que su compañero hará la inscripción a tiempo. Si usted
+    cupo para dicha asignatura es del $75\%$. Usted está seguro en un
+    $85\%$ de que su compañero hará la inscripción a tiempo. Si usted
     obtuvo cupo, ¿Cuál la probabilidad de que su compañero no lo haya
     inscrito a tiempo?
 
 21. La policía planea hacer respetar los límites de velocidad usando un
-    sistema de radar en `$4$` diferentes puntos de la autopista. Las
-    trampas de radar en cada uno de los sitios `$L_1$`, `$L_2$`, `$L_3$`
-    y `$L_4$` operarán `$40\%$`, `$30\%$`, `$20\%$` y `$30\%$` del
+    sistema de radar en $4$ diferentes puntos de la autopista. Las
+    trampas de radar en cada uno de los sitios $L_1$, $L_2$, $L_3$
+    y $L_4$ operarán $40\%$, $30\%$, $20\%$ y $30\%$ del
     tiempo. Si una persona que excede el límite de velocidad cuando va a
-    su trabajo tiene probabilidades del `$20\%$`, `$10\%$`, `$50\%$` y
-    `$20\%$`, respectivamente, de pasar por esos lugares. Si pasa un
+    su trabajo tiene probabilidades del $20\%$, $10\%$, $50\%$ y
+    $20\%$, respectivamente, de pasar por esos lugares. Si pasa un
     carro cualquiera por la autopista, ¿Cuál es la probabilidad de que
     reciba una multa por conducir con exceso de velocidad?
 
 22. Basado en su experiencia, un agente bursátil considera que en las
     condiciones económicas actuales la probabilidad de que un cliente
-    invierta en bonos libres de impuestos es `$0.6$`, la de que invierta
-    en fondos comunes de inversión es `$0.3$` y la de que invierta en
-    ambos es `$0.15$`. En esta ocasión encuentre la probabilidad de que
+    invierta en bonos libres de impuestos es $0.6$, la de que invierta
+    en fondos comunes de inversión es $0.3$ y la de que invierta en
+    ambos es $0.15$. En esta ocasión encuentre la probabilidad de que
     un cliente invierta
     <ol type="a">
     <li>
@@ -406,16 +406,16 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-23. Si el profesor pone `$10$` preguntas en el primer parcial y deja
-    escoger `$8$` cualesquiera para que resuelvan, de cuantas formas
-    pueden los estudiantes escoger las `$8$` preguntas?
+23. Si el profesor pone $10$ preguntas en el primer parcial y deja
+    escoger $8$ cualesquiera para que resuelvan, de cuantas formas
+    pueden los estudiantes escoger las $8$ preguntas?
 
 24. Suponga una red de comunicaciones de cinco componentes conectados
     según se muestra a continuación
     ![](/assets/images/Circuito2.PNG)  
-    la probabilidad de que funcione el componente C1 es del `$98\%$`, la
-    de C2 es `$96\%$`, la de C3 es de `$83\%$`, la de C4 es de `$98\%$`
-    y la de C5 es de `$90\%$`. La red funciona si entre A y B es posible
+    la probabilidad de que funcione el componente C1 es del $98\%$, la
+    de C2 es $96\%$, la de C3 es de $83\%$, la de C4 es de $98\%$
+    y la de C5 es de $90\%$. La red funciona si entre A y B es posible
     encontrar un camino de componentes que funcione. Se supone que la
     probabilidad de funcionar cada componente es independiente de los
     demás. ¿Cuál es la probabilidad de que no haya comunicación entre A
@@ -425,28 +425,28 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     letra al azar del alfabeto, ¿Cuántos puntos habrá en el espacio
     muestral?
 
-26. De cuantas formas pueden acomodarse `$3$` bombillitos rojos, `$4$`
-    amarillos y `$2$` azules en una instalación navidella que posee
-    `$9$` entradas?
+26. De cuantas formas pueden acomodarse $3$ bombillitos rojos, $4$
+    amarillos y $2$ azules en una instalación navidella que posee
+    $9$ entradas?
 
 27. La probabilidad de sobrevivir a una cierta operación de trasplante
-    es de `$0.55$`. Si un paciente sobrevive la operación, la
+    es de $0.55$. Si un paciente sobrevive la operación, la
     probabilidad que su cuerpo rechace el trasplante en menos de un mes
-    es de `$0.20$`. ¿Cuál es la probabilidad de que sobreviva a estas
+    es de $0.20$. ¿Cuál es la probabilidad de que sobreviva a estas
     etapas críticas?
 
 28. Un dado balanceado se tira seis veces y cada vez se registra el
     número de su cara superior, ¿Cuál es la probabilidad de que los
-    números registrados sean `$1$`, `$2$`, `$3$`, `$4$`, `$5$` y `$6$`
+    números registrados sean $1$, $2$, $3$, $4$, $5$ y $6$
     en cualquier orden?
 
-29. De `$200$` empleados de una empresa, `$70$` poseen automóvil. Además
-    se sabe que de éstos, hay `$120$` profesionales, de los cuales
-    `$50$` tienen automóvil. Si se escoge una persona al azar de las
-    `$200$` y ésta posee automóvil, ¿Cuál es la probabilidad de que sea
+29. De $200$ empleados de una empresa, $70$ poseen automóvil. Además
+    se sabe que de éstos, hay $120$ profesionales, de los cuales
+    $50$ tienen automóvil. Si se escoge una persona al azar de las
+    $200$ y ésta posee automóvil, ¿Cuál es la probabilidad de que sea
     profesional?
 
-30. Un alergólogo afirma que `$30\%$` de los pacientes que examina son
+30. Un alergólogo afirma que $30\%$ de los pacientes que examina son
     alérgicos a algún tipo de hierba. ¿Cuál es la probabilidad de que…
     <ol type="a">
     <li>
@@ -459,9 +459,9 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </ol>
 
 31. Suponga que una familia sale de vacaciones de verano en su casa
-    rodante. Si `$M$` es el evento de que sufrirán fallas mecánicas,
-    `$T$` es el evento de que recibirán una infracción por cometer una
-    falta de tránsito y `$V$` es el evento de que llegarán a un lugar
+    rodante. Si $M$ es el evento de que sufrirán fallas mecánicas,
+    $T$ es el evento de que recibirán una infracción por cometer una
+    falta de tránsito y $V$ es el evento de que llegarán a un lugar
     para acampar que esté lleno. Basado en el siguiente diagráma de Venn
     ![](/assets/images/Venn1.PNG) liste los
     números de las regiones que representan los siguientes eventos
@@ -486,16 +486,16 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-32. Una flota de `$9$` taxis se ha de despachar a `$3$` aeropuertos en
-    forma tal que `$3$` vayan al aeropuerto A, `$5$` al aeropuerto B y
-    `$1$` al aeropuerto C. ¿En cuántas formas distintas se puede lograr
+32. Una flota de $9$ taxis se ha de despachar a $3$ aeropuertos en
+    forma tal que $3$ vayan al aeropuerto A, $5$ al aeropuerto B y
+    $1$ al aeropuerto C. ¿En cuántas formas distintas se puede lograr
     esto?
 
-33. En un grupo de `$100$` estudiantes de bachillerato que están
-    cursando el último año, `$42$` cursaron matemáticas, `$68$`
-    psicología, `$54$` historia, `$22$` matemáticas e historia, `$25$`
-    matemáticas y psicología, `$7$` historia pero ni matemáticas ni
-    psicología, `$10$` las tres materias y `$8$` no cursaron ninguna de
+33. En un grupo de $100$ estudiantes de bachillerato que están
+    cursando el último año, $42$ cursaron matemáticas, $68$
+    psicología, $54$ historia, $22$ matemáticas e historia, $25$
+    matemáticas y psicología, $7$ historia pero ni matemáticas ni
+    psicología, $10$ las tres materias y $8$ no cursaron ninguna de
     las tres. Seleccione al azar a un estudiante de este grupo y calcule
     la probabilidad de los siguientes eventos:
     <ol type="a">
@@ -508,15 +508,15 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </li>
     </ol>
 
-34. De un grupo de `$9$` estudiantes, se tiene que `$6$` estudian
-    Economía y `$3$` estudian Administración de Empresas. De cuantas
-    formas se puede enviar a `$3$` estudiantes de Economía y `$2$` de
+34. De un grupo de $9$ estudiantes, se tiene que $6$ estudian
+    Economía y $3$ estudian Administración de Empresas. De cuantas
+    formas se puede enviar a $3$ estudiantes de Economía y $2$ de
     Administración de Empresas para un congreso en Finanzas.
 
 35. La probabilidad de que una industria estadounidense se ubique en
-    Shanghái, China, es `$0.7$`, la probabilidad de que se ubique en
-    Beijing, China, es `$0.4$` y la probabilidad de que se ubique en
-    Shanghái o Beijing, o en ambas ciudades, es `$0.8$`. ¿Cuál es la
+    Shanghái, China, es $0.7$, la probabilidad de que se ubique en
+    Beijing, China, es $0.4$ y la probabilidad de que se ubique en
+    Shanghái o Beijing, o en ambas ciudades, es $0.8$. ¿Cuál es la
     probabilidad de que la industria se ubique…
     <ol type="a">
     <li>
@@ -528,15 +528,15 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     </ol>
 
 36. Un testigo de un accidente automovilístico le dijo a la policía que
-    la matrícula del culpable, que huyó, contenía las letras `$RLH$`
-    seguidas por `$3$` dígitos, de los cuales el primero era un `$5$`.
-    Si el testigo no recuerda los `$2$` últimos dígitos, pero está
-    seguro de que los `$3$` eran distintos, calcule la cantidad máxima
+    la matrícula del culpable, que huyó, contenía las letras $RLH$
+    seguidas por $3$ dígitos, de los cuales el primero era un $5$.
+    Si el testigo no recuerda los $2$ últimos dígitos, pero está
+    seguro de que los $3$ eran distintos, calcule la cantidad máxima
     de registros de automóviles que la policía tendría que revisar.
 
 37. Un fabricante de neumáticos quiere determinar el diámetro interior
     de un neumático de cierto grado de calidad, en donde, sabe que
-    idealmente el diámetro debería ser de `$570$` mm. Suponga que el
+    idealmente el diámetro debería ser de $570$ mm. Suponga que el
     fabricante tiene los siguientes datos:
     
 $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{align*}$$
@@ -559,10 +559,10 @@ $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{a
     </li>
     </ol>
 
-38. Suponga una lotería en la cual el jugador debe seleccionar `$5$`
-    números del `$1$` al `$30$` y una serie la cual está dada por un
-    número del `$1$` al `$12$`. El jugador ganará la lotería si acierta
-    los `$5$` números en cualquier orden y el valor de la serie.
+38. Suponga una lotería en la cual el jugador debe seleccionar $5$
+    números del $1$ al $30$ y una serie la cual está dada por un
+    número del $1$ al $12$. El jugador ganará la lotería si acierta
+    los $5$ números en cualquier orden y el valor de la serie.
     <ol type="a">
     <li>
     De cuantas formas puede un jugador armar su juego.
@@ -591,9 +591,9 @@ $$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{a
     </li>
     </ol>
 
-40. Un banco ha comprobado que uno de cada `$1000$` clientes con fondos
+40. Un banco ha comprobado que uno de cada $1000$ clientes con fondos
     expide un cheque con fecha equivocada. En cambio, todo cliente sin
-    fondos pone una fecha errónea en sus cheques. El `$90\%$` de los
+    fondos pone una fecha errónea en sus cheques. El $90\%$ de los
     clientes del banco tienen fondos. Se recibe hoy en caja un cheque
     con fecha equivocada. ¿Cuál es la probabilidad de que sea de un
     cliente sin fondos?

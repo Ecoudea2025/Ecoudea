@@ -16,9 +16,9 @@ Distribuciones de probabilidad discretas
 Consideremos un experimento con las mismas propiedades de un experimento
 binomial, solo que en este caso, las pruebas se repetirán hasta que
 ocurra un número fijo de éxitos. Por lo tanto en vez de encontrar la
-probabilidad de `$X$` éxitos en `$n$` pruebas, donde `$n$` es fija,
-ahora nos interesa la probabilidad de que ocurra el `$r$`-ésimo éxito en
-la `$X$`-ésima prueba.
+probabilidad de $X$ éxitos en $n$ pruebas, donde $n$ es fija,
+ahora nos interesa la probabilidad de que ocurra el $r$-ésimo éxito en
+la $X$-ésima prueba.
 
 <button id="Show1" class="btn btn-secondary">
 Mostrar Ejemplo
@@ -58,8 +58,8 @@ que nació por fuera de Antioquia.
 
 ### Distribución Geométrica
 
-Sea `$X$` el número de ensayos necesarios para generar un éxito
-(`$r=1$`), entonces se dice que `$X\sim g(p)$` si su función de
+Sea $X$ el número de ensayos necesarios para generar un éxito
+($r=1$), entonces se dice que $X\sim g(p)$ si su función de
 probabilidad es de la forma
 
 $$\begin{align*}p(x) = p(1-p)^{x-1} \quad \quad x = 1,2,\ldots\end{align*}$$
@@ -67,8 +67,8 @@ $$\begin{align*}p(x) = p(1-p)^{x-1} \quad \quad x = 1,2,\ldots\end{align*}$$
 
 #### Media y Varianza Geométrica
 
-Si `$X\sim g(p)$`, entonces se puede probar que la media y varianza de
-la variable aleatoria `$X$` están dadas por
+Si $X\sim g(p)$, entonces se puede probar que la media y varianza de
+la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\frac{1}{p} \quad \quad Var(X)=\frac{1-p}{p^2}\end{align*}$$
 
@@ -198,17 +198,17 @@ primera Visa Americana.
 
 ### Distribución Binomial Negativa
 
-Sea `$X$` el número de ensayos necesarios para generar `$r$` éxitos en
+Sea $X$ el número de ensayos necesarios para generar $r$ éxitos en
 un experimento Binomial Negativo, entonces se dice que
-`$X\sim b^*(r,p)$` si su función de probabilidad es de la forma
+$X\sim b^*(r,p)$ si su función de probabilidad es de la forma
 
 $$\begin{align*}p(x) = \left(\begin{array}{c}x-1\\ r-1\end{array}\right)p^r(1-p)^{x-r} \quad \quad x=r, r+1, \ldots\end{align*}$$
 
 
 #### Media y Varianza Binomial Negativa
 
-Si `$X\sim b^*(r,p)$`, entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim b^*(r,p)$, entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\frac{r}{p} \quad \quad Var(X)=r\frac{(1-p)}{p^2}\end{align*}$$
 
@@ -386,18 +386,18 @@ la carretera en un kilómetro.
 ### Distribución Poisson
 
 El número de sucesos que ocurren en un intervalo de tiempo o región
-específica, es una variable aleatoria `$X$` con distribución de
+específica, es una variable aleatoria $X$ con distribución de
 probabilidad Poisson, tal que
 
 $$\begin{align*}p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \quad \quad x=0,1,\ldots\end{align*}$$
 
-donde `$\lambda$` es el parámetro de la distribución y representa el
+donde $\lambda$ es el parámetro de la distribución y representa el
 número promedio de sucesos por unidad de tiempo o región específica.
 
 #### Media y Varianza Poisson
 
-Si `$X\sim P(\lambda)$` entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim P(\lambda)$ entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=\lambda \quad \quad Var(X)=\lambda\end{align*}$$
 

@@ -23,14 +23,14 @@ más adecuado.
 
 ### Estimador insesgado
 
-Un estimador `$\hat{\theta}$` es un estimador insesgado del parámetro
-`$\theta$` si y solo si se cumple que
+Un estimador $\hat{\theta}$ es un estimador insesgado del parámetro
+$\theta$ si y solo si se cumple que
 
 
 $$\begin{align*}\mathbb{E}(\hat{\theta})=\theta\end{align*}$$
 
 
-En otro caso se dice que el estimador `$\hat{\theta}$` es sesgado y su
+En otro caso se dice que el estimador $\hat{\theta}$ es sesgado y su
 sesgo está dado por
 
 
@@ -106,9 +106,9 @@ $$\begin{align*}
 
 ### Estimador asintóticamente insesgado
 
-Si `$\hat{\theta}$` es un estimador sesgado
-`$\mathbb{E}(\hat{\theta})\neq \theta$`, entonces se dice que el
-estimador `$\hat{\theta}$` es asintóticamente insesgado si y solo si
+Si $\hat{\theta}$ es un estimador sesgado
+$\mathbb{E}(\hat{\theta})\neq \theta$, entonces se dice que el
+estimador $\hat{\theta}$ es asintóticamente insesgado si y solo si
 
 
 $$\begin{align*}\lim_{n\to \infty}\mathbb{B}(\hat{\theta})=0\end{align*}$$
@@ -166,13 +166,13 @@ asintóticamente insesgado.
 
 ### Eficiencia Relativa
 
-Sea `$\hat{\theta}_1$` y `$\hat{\theta}_2$` dos estimadores insesgados
-de unparámetro `$\theta$`, obtenidos de una muestra aleatoria del mismo
+Sea $\hat{\theta}_1$ y $\hat{\theta}_2$ dos estimadores insesgados
+de unparámetro $\theta$, obtenidos de una muestra aleatoria del mismo
 tamaño, entonces
 
--   Se dice que `$\hat{\theta}_1$` es más eficiente que
-    `$\hat{\theta}_2$` si `$Var(\hat{\theta}_1)$` &lt;
-    `$Var(\hat{\theta}_2)$`
+-   Se dice que $\hat{\theta}_1$ es más eficiente que
+    $\hat{\theta}_2$ si $Var(\hat{\theta}_1)$ &lt;
+    $Var(\hat{\theta}_2)$
 -   La eficiencia relativa (EFR) de un estimador respecto a otro puede
     calcularse mediante la ecuación
 
@@ -182,12 +182,12 @@ $$\begin{align*}EFR = \frac{Var(\hat{\theta_1})}{Var(\hat{\theta_2})}\end{align*
 
 y se interpretará de la siguiente manera
 
--   `$EFR < 1$`, entonces el estimador `$\hat{\theta}_1$` será más
-    eficiente que el estimador `$\hat{\theta}_2$`.
--   `$EFR = 1$`, entonces `$\hat{\theta}_1$` y `$\hat{\theta}_2$` son
+-   $EFR < 1$, entonces el estimador $\hat{\theta}_1$ será más
+    eficiente que el estimador $\hat{\theta}_2$.
+-   $EFR = 1$, entonces $\hat{\theta}_1$ y $\hat{\theta}_2$ son
     estimadores igualmente eficientes.
--   `$EFR > 1$`, entonces el estimador `$\hat{\theta}_1$` será menos
-    eficiente que el estimador `$\hat{\theta}_2$`.
+-   $EFR > 1$, entonces el estimador $\hat{\theta}_1$ será menos
+    eficiente que el estimador $\hat{\theta}_2$.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio

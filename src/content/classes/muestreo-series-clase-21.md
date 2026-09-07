@@ -16,24 +16,24 @@ original, puesto que al recombinar los componentes es posible obtener
 una serie de tiempo completamente pronosticable.
 
 Existen diferentes modelos matemáticos para expresar la serie original
-`$Y_t$`, en términos de los componentes de tendencia `$T_t$`,
-estacionalidad `$S_t$`, fluctuaciones cíclicas `$C_t$` y errores
-`$\varepsilon_t$`, en donde, es posible ajustar la serie original a uno
+$Y_t$, en términos de los componentes de tendencia $T_t$,
+estacionalidad $S_t$, fluctuaciones cíclicas $C_t$ y errores
+$\varepsilon_t$, en donde, es posible ajustar la serie original a uno
 solo uno de los cuatro componentes o es una combinación de todos ellos,
 para la posterior realización de pronósticos. Para combinar los
 componentes, se tienen dos clases básicas de modelos matemáticos
 
--   **Modelo aditivo:** `$Y_t = T_t + S_t + C_t + \varepsilon_t$`
--   **Modelo multiplicativo:** `$Y_t = T_t * S_t * C_t * \varepsilon_t$`
+-   **Modelo aditivo:** $Y_t = T_t + S_t + C_t + \varepsilon_t$
+-   **Modelo multiplicativo:** $Y_t = T_t * S_t * C_t * \varepsilon_t$
 
 en donde, como se mencionó en la subsección anterior, las fluctuaciones
-cíclicas `$C_t$` son el componente más difíciles de pronosticar, y por
-tanto, son mezcladas con el componente de error `$\varepsilon_t$` o se
-asume que son parte de la tendencia `$T_t$`. Entonces, el modelo aditivo
+cíclicas $C_t$ son el componente más difíciles de pronosticar, y por
+tanto, son mezcladas con el componente de error $\varepsilon_t$ o se
+asume que son parte de la tendencia $T_t$. Entonces, el modelo aditivo
 y multiplicativo, pueden ser reescritos como
 
--   **Modelo aditivo:** `$Y_t = T_t + S_t + \varepsilon_t$`
--   **Modelo multiplicativo:** `$Y_t = T_t * S_t * \varepsilon_t$`
+-   **Modelo aditivo:** $Y_t = T_t + S_t + \varepsilon_t$
+-   **Modelo multiplicativo:** $Y_t = T_t * S_t * \varepsilon_t$
 
 Es de anotar que en el modelo aditivo se supone que los tres componentes
 de la serie de tiempo son independientes entre sí, y es apropiado
@@ -72,14 +72,14 @@ escala multiplicativa original.
 
 Un aspecto importante, sobre los modelos aditivos y multiplicativos es
 que, en el modelo aditivo siempre se asume que
-`$\varepsilon_t\stackrel{iid}{\sim}N(0,\sigma^2)$`, mientras que para el
+$\varepsilon_t\stackrel{iid}{\sim}N(0,\sigma^2)$, mientras que para el
 modelo multiplicativo, se sume que
-`$\varepsilon_t\stackrel{iid}{\sim}lognormal(\mu=0,\sigma^2)$`, y por
+$\varepsilon_t\stackrel{iid}{\sim}lognormal(\mu=0,\sigma^2)$, y por
 tanto, mediante la transformación logaritmica del modelo multiplicativo
-se tiene que `$log(\varepsilon_t)\stackrel{iid}{\sim}N(0,\sigma^2)$`.
+se tiene que $log(\varepsilon_t)\stackrel{iid}{\sim}N(0,\sigma^2)$.
 
 Una alternativa para evaluar si los componentes de error son o no
-normales, es mediante los gráficos `$QQ$`-plot de la distribución
+normales, es mediante los gráficos $QQ$-plot de la distribución
 Normal, y mediante la prueba Shapiro-Wilk. Éstas pueden realizarse en
 <tt>R</tt> mediante las funciones `qqnorm()` y `shapiro.test()`,
 respectivamente.
@@ -87,8 +87,8 @@ respectivamente.
 Existen algunas variantes para los modelos de descomposición básicos,
 tales como
 
--   **Modelo mixto:** `$Y_t = T_t * S_t + \varepsilon_t$`
--   **Modelo pseudo-aditivo:** `$Y_t = T_t (S_t + \varepsilon_t - 1)$`
+-   **Modelo mixto:** $Y_t = T_t * S_t + \varepsilon_t$
+-   **Modelo pseudo-aditivo:** $Y_t = T_t (S_t + \varepsilon_t - 1)$
 
 los cuales se emplean en situaciones específicas, como por ejemplo,
 cuando la serie original posee fluctuaciones estacionales marcadamente
@@ -137,32 +137,32 @@ varianza muestral de las observaciones como
 $$\begin{align*}Var(Y_t) = \hat{\gamma}(0) = \mathbb E(y_t - \bar{y})^2 = \frac{1}{T-1}\sum_{t=1}^{T}(y_t-\bar{y})^2\end{align*}$$
 
 
-la autocovarianza muestral entre observaciones que se encuentran a `$k$`
+la autocovarianza muestral entre observaciones que se encuentran a $k$
 periodos de tiempo de diferencia, como
 
 $$\begin{align*}Cov(Y_t,Y_{t+k}) = \hat{\gamma}(k) = \mathbb E[(y_{t+k} - \bar{y})(y_{t} - \bar{y})] = \frac{1}{T-1}\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})\end{align*}$$
 
 
 y la autocorrelación muestral entre observaciones que se encuentran a
-`$k$` periodos de tiempo de diferencia, como
+$k$ periodos de tiempo de diferencia, como
 
 $$\begin{align*}Cor(Y_t,Y_{t+k}) = \hat{\rho(k)} = \frac{\hat{\gamma}(k)}{\hat{\gamma}(0)} = \frac{\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})}{\sum_{t=1}^{T}(y_t-\bar{y})^2}\end{align*}$$
 
 
-donde `$k$` es el número de rezagos o autocorrelaciones que se desean
-calcular. Por tanto, no se recomienda emplear valores de `$k$` muy
+donde $k$ es el número de rezagos o autocorrelaciones que se desean
+calcular. Por tanto, no se recomienda emplear valores de $k$ muy
 altos, ya que ésto provocará que se tengan menos términos para el
 cálculo de las autocorrelaciones.
 
 La selección del número de autocorrelaciónes puede llevarse a cabo
 arbitrariamente a partir de los conocimientos del investigador, o
 mediante la regla empírica para el número máximo de rezagos que deben
-seleccionarse `$max(k)=\left\lceil\frac{T}{4}\right\rceil$`.
+seleccionarse $max(k)=\left\lceil\frac{T}{4}\right\rceil$.
 
 Para facilitar la visualización e interpretación de la autocorrelación,
 se emplea un gráfico conocido como correlograma o función de
 autocorrelación **(ACF)**, la cual muestran la correlación que hay entre
-observaciones separadas por `$k$` intervalos de tiempo o “lags”.
+observaciones separadas por $k$ intervalos de tiempo o “lags”.
 
 A continuación se presenta el correlograma del **total mensual de
 pasajeros de líneas aéreas internacionales, para los años 1949 a 1960**

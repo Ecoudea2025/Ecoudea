@@ -12,45 +12,45 @@ bibliography: "../../referencias.bib"
 
 ### Estimador insesgado de varianza mínima (MVUE)
 
-Si entre todos los estimadores insesgados de `$\theta$` podemos
+Si entre todos los estimadores insesgados de $\theta$ podemos
 encontrar uno cuya varianza sea más pequeña que los demás estimadores,
 entonces, usando como criterio el sesgo y la eficiencia, se habrá
-conseguido el estimador óptimo de `$\theta$`.
+conseguido el estimador óptimo de $\theta$.
 
-Diremos que `$\hat{\theta}$` es un estimador insesgado y de varianza
-mínima si `$\mathbb{E}(\hat{\theta})=\theta$` y para cualquier otro
-estimador `$\mathbb{E}(\hat{\Phi})=\theta$` se verifica que
+Diremos que $\hat{\theta}$ es un estimador insesgado y de varianza
+mínima si $\mathbb{E}(\hat{\theta})=\theta$ y para cualquier otro
+estimador $\mathbb{E}(\hat{\Phi})=\theta$ se verifica que
 
 
 $$\begin{align*}Var(\hat{\theta}) \leq Var(\hat{\Phi})\end{align*}$$
 
 
-se dice entonces que `$\hat{\theta}$` es un MVUE de `$\theta$`.
+se dice entonces que $\hat{\theta}$ es un MVUE de $\theta$.
 
 #### Cota de Cramer-Rao
 
-Si `$\hat{\theta}$` es un estimador insesgado del parámetro `$\theta$`,
+Si $\hat{\theta}$ es un estimador insesgado del parámetro $\theta$,
 se verifica en condiciones generales que
 
 
 $$\begin{align*}Var(\hat{\theta}) \geq \frac{1}{I_n(\theta)}\end{align*}$$
 
 
-donde `$I_n(\theta)$` se conoce como la matriz de información de Fisher
-asociada a una muestra aleatoria de tamaño `$n$`, y está dada por
+donde $I_n(\theta)$ se conoce como la matriz de información de Fisher
+asociada a una muestra aleatoria de tamaño $n$, y está dada por
 
 
 $$\begin{align*}I_n(\theta)&=n\mathbb{E}\left[\left(\frac{\partial Ln\left(f(x;\theta)\right)}{\partial \theta}\right)^2\right]\end{align*}$$
 
 
 Una forma alternativa que brinda el mismo resultado y que en ocasiones
-puede ser más sencilla de calcular `$I_n(\theta)$` es mediante
+puede ser más sencilla de calcular $I_n(\theta)$ es mediante
 
 $$\begin{align*}I_n(\theta)&= -n\mathbb{E}\left[\frac{\partial^2 Ln\left(f(x;\theta)\right)}{\partial \theta^2}\right]\end{align*}$$
 
 
-De lo anterior se tendrá que si `$\hat{\theta}$` es un estimador
-insesgado de mínima varianza de `$\theta$`, entonces
+De lo anterior se tendrá que si $\hat{\theta}$ es un estimador
+insesgado de mínima varianza de $\theta$, entonces
 
 $$\begin{align*}CCR(\hat{\theta}) = \frac{1}{I_n(\theta)}\end{align*}$$
 
@@ -143,8 +143,8 @@ parámetro desconocido $\lambda$.
 
 ### Error Cuadrático Medio (ECM)
 
-Sea `$\hat{\theta}$` un estimador de un parámetro `$\theta$`, entonces
-el ECM de `$\theta$` estará dado por
+Sea $\hat{\theta}$ un estimador de un parámetro $\theta$, entonces
+el ECM de $\theta$ estará dado por
 
 
 $$\begin{align*}ECM(\hat{\theta}) &= \mathbb{E}[(\hat{\theta} - \theta)^2]\\                     &= Var(\hat{\theta})  + \mathbb{B}(\hat{\theta})^2\end{align*}$$

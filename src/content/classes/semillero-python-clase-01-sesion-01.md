@@ -562,14 +562,14 @@ cuando se deseen manipular.
 Los tipos de datos más que pueden encontrarse en <tt>Python</tt> son:
 
 -   **<tt>integer</tt>**: Datos enteros, los cuales soportan números que
-    se encuentren en el conjunto de los enteros, `$\mathbb{Z}$`, y en
+    se encuentren en el conjunto de los enteros, $\mathbb{Z}$, y en
     consecuencia, solo soporta números enteros.
 -   **<tt>float</tt>**: Datos númericos, los cuales soportan números que
-    se encuentren en el conjunto de los reales, `$\mathbb{R}$`, y por
+    se encuentren en el conjunto de los reales, $\mathbb{R}$, y por
     tanto soporta tanto números enteros (<tt>integer</tt>) y números de
     doble presición (<tt>double</tt>).
 -   **<tt>complex</tt>**: Datos complejos, los cuales soportan números
-    que se encuentren en el conjunto de los complejos, `$\mathbb{C}$`, y
+    que se encuentren en el conjunto de los complejos, $\mathbb{C}$, y
     por tanto, soporta tanto números reales como imaginarios.
 -   **<tt>string</tt>**: Datos de carácter, los cuales soportan uno o
     más carácteres alfanuméricos, es decir, datos numéricos y
@@ -926,7 +926,7 @@ Adicionalmente, se poseen otras estructuras básicas que pueden ser de
 nuestro interés, las cuales se pueden encontrar en el módulo `numpy`.
 Este paquete posee una gran variedad de funciones matemáticas para
 realizar computación científica, y ofrece gran soporte para un objetos
-de matriciales `$N$`-dimensionales.
+de matriciales $N$-dimensionales.
 
 Para importar el módulo `numpy` puede emplearse cualquiera de las dos
 lineas de código

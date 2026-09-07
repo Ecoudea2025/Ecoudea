@@ -25,7 +25,7 @@ Métodos no-paramétricos
 
 Como su nombre lo índica, los métodos no-paramétricos son aquellos que
 no poseen una estructura paramétrica, si no que sus estimaciones son
-basadas en algoritmos que varían en cada periodo `$t$`, sin asumir una
+basadas en algoritmos que varían en cada periodo $t$, sin asumir una
 forma paramétrica específica, y además, a diferencia de los métodos
 paramétricos, éstos no requieren de supuestos estadísticos para su
 aplicación, ni modelamiento global, lo cual en muchos casos pueden ser
@@ -63,35 +63,35 @@ usarse como estimadores de la tendencia cuando no es posible describirla
 mediante ecuaciones paramétricas simples.
 
 Entonces, un filtro lineal puede definirse como un operador que
-transforma una serie `$Y_t$`, a otra serie `$\bar{Y}_t$`, para
-`$t = 1,2, \ldots, T$` mediante la formula
+transforma una serie $Y_t$, a otra serie $\bar{Y}_t$, para
+$t = 1,2, \ldots, T$ mediante la formula
 
 $$\begin{align*}\bar{Y}_t=\sum_{i=-k}^{k}w_iY_{t-i}\end{align*}$$
 
 
-para `$t=k+1,k+2, \ldots, T-k$`, donde `$i=0,\pm1,\pm2,\ldots, \pm k$`
-es el ancho de la ventana y los coeficientes `$w_i$` son un conjunto de
-pesos o ponderaciones, tal que `$\sum_{i=-k}^{k}|w_i|<\infty$`. Además,
+para $t=k+1,k+2, \ldots, T-k$, donde $i=0,\pm1,\pm2,\ldots, \pm k$
+es el ancho de la ventana y los coeficientes $w_i$ son un conjunto de
+pesos o ponderaciones, tal que $\sum_{i=-k}^{k}|w_i|<\infty$. Además,
 en situaciones en los cuales se desea determinar la tendencia y reducir
-las fluctuaciones locales, se pueden restringir los pesos `$w_i$` de la
-forma `$\sum_{i=-k}^{k}w_i=1$`.
+las fluctuaciones locales, se pueden restringir los pesos $w_i$ de la
+forma $\sum_{i=-k}^{k}w_i=1$.
 
 Series estacionarias en media
 -----------------------------
 
 ### Promedios simples
 
-Los promedios simples se basan en el hecho de que todos los `$w_i$`
-poseen la misma ponderación, la cual es igual a `$w_i=\frac{1}{t}$`, y a
+Los promedios simples se basan en el hecho de que todos los $w_i$
+poseen la misma ponderación, la cual es igual a $w_i=\frac{1}{t}$, y a
 partir de éstas ponderaciones, se obtiene una ecuación de la forma
 
 $$\begin{align*}PS_{t}=\frac{1}{t}\sum_{i=1}^{t}{Y_{i}}\end{align*}$$
 
 
-para `$i=1,2,\ldots,t$`, con `$t=1,2,\ldots,T$` y siendo `$T$` el total
+para $i=1,2,\ldots,t$, con $t=1,2,\ldots,T$ y siendo $T$ el total
 de observaciones históricas de la serie de tiempo. Es de anotar que, los
 promedios simples son de hecho igual a la media de todo el conjunto de
-observaciones hasta `$t$`, y que su valor se actualiza periodicamente a
+observaciones hasta $t$, y que su valor se actualiza periodicamente a
 medida que se van agregando nuevas observaciones al cojunto de datos.
 Dado que esta medida es el promedio de todo el conjunto de datos
 históricos de la serie, esta estimación no tendrá cambios significativos
@@ -114,38 +114,38 @@ mientras que, el ajuste de pronósticos se hace de la forma
 $$\begin{align*}\hat{Y}_{T+h}=PS_{T+h-1}\end{align*}$$
 
 
-siendo `$h$` el número de periodos a pronosticar.
+siendo $h$ el número de periodos a pronosticar.
 
 ### Promedios móviles simples
 
 Es uno de los filtros más sencillos de emplear, y se basa en el cálculo
-del promedio de las últimas `$k$` observaciones (promedios móviles
-unilaterales (PMU)), o las `$k$` observaciones más cercanas al dato de
+del promedio de las últimas $k$ observaciones (promedios móviles
+unilaterales (PMU)), o las $k$ observaciones más cercanas al dato de
 interés (promedios móviles bilaterales (PMB)), y por tanto, el
 suavizamiento del conjunto de observaciones dependerá de la selección
-del **ancho de ventana** de orden `$k$` que se realice, en donde, debe
-tenerse en cuenta que, entre mayor sea el valor de `$k$`, mayor será el
+del **ancho de ventana** de orden $k$ que se realice, en donde, debe
+tenerse en cuenta que, entre mayor sea el valor de $k$, mayor será el
 suavizamiento resultante.
 
-Para un ancho de ventana de orden `$k$`, se tendrá que en el caso de
-promedio móvil unilateral, las ponderaciones `$w_i$` serán de la forma
-`$w_i=\frac{1}{k}$`, y en consecuencia, el estadístico estará dado por
+Para un ancho de ventana de orden $k$, se tendrá que en el caso de
+promedio móvil unilateral, las ponderaciones $w_i$ serán de la forma
+$w_i=\frac{1}{k}$, y en consecuencia, el estadístico estará dado por
 
 $$\begin{align*}PMU_{t}=\frac{1}{k}\sum_{i=0}^{k-1}Y_{t-i}\end{align*}$$
 
 
 <!-- Puede realizarse mediante la librerías TTR con la función SMA -->
 
-para `$t=k,k+1,k+2, \ldots, T$`, con `$i=0,1,\ldots, k-1$` y `$k>0$`.
+para $t=k,k+1,k+2, \ldots, T$, con $i=0,1,\ldots, k-1$ y $k>0$.
 Mientras que, en el caso de media móvil bilateral las ponderaciones
-serán de la forma `$w_i=\frac{1}{2m+1}$`, y por tanto, el estadístico se
+serán de la forma $w_i=\frac{1}{2m+1}$, y por tanto, el estadístico se
 define como
 
 $$\begin{align*}PMB_{t}=\frac{1}{2k+1}\sum_{i=-k}^{k}Y_{t-i}\end{align*}$$
 
 
-para `$t=k+1,k+2, \ldots, T-k$`, con `$i=0,\pm 1,\pm 2,\ldots,\pm k$` y
-`$k>0$`.
+para $t=k+1,k+2, \ldots, T-k$, con $i=0,\pm 1,\pm 2,\ldots,\pm k$ y
+$k>0$.
 
 Hanke and Wichern ([2010](#ref-Hanke2010), pp. 116–117), señalan que,
 los analistas deben usar su criterio en la determinación del orden en el
@@ -173,10 +173,10 @@ mientras que, el ajuste de pronósticos se hace de la forma
 $$\begin{align*}\hat{Y}_{T+h}= \begin{cases} PMU_{T+h-1} & \text{ en el caso de promedios móviles unilaterales} \\ PMB_{T+h-1} & \text{ en el caso de promedios móviles bilaterales} \end{cases}\end{align*}$$
 
 
-siendo `$h$` el número de periodos a pronosticar. Adicionalmente, en el
-caso unilateral, si `$k = 1$` se tendrá una situación conocida como
-*Modelos Informales*, en donde, el pronóstico de una observación `$t+1$`
-depende solamente de la observación `$t$`, la cual es la observación
+siendo $h$ el número de periodos a pronosticar. Adicionalmente, en el
+caso unilateral, si $k = 1$ se tendrá una situación conocida como
+*Modelos Informales*, en donde, el pronóstico de una observación $t+1$
+depende solamente de la observación $t$, la cual es la observación
 inmediatamente anterior.
 
 ### Suavización exponencial simple
@@ -188,13 +188,13 @@ ponderación a todas las observaciones, ésta da pesos exponenciales a
 todos los valores previos observados, siendo las observaciones más
 recientes las que posean la mayor ponderacion.
 
-El parámetro de suavización se denota por `$\alpha$`, y estará dado por
-un valor que se encuentre entre 0 y 1, es decir, `$0<\alpha<1$`.
-Entonces, el objetivo será dar una ponderación de `$\alpha$` a la
-observación más reciente, una ponderación de `$\alpha(1-\alpha)$` a la
+El parámetro de suavización se denota por $\alpha$, y estará dado por
+un valor que se encuentre entre 0 y 1, es decir, $0<\alpha<1$.
+Entonces, el objetivo será dar una ponderación de $\alpha$ a la
+observación más reciente, una ponderación de $\alpha(1-\alpha)$ a la
 siguiente observación más reciente, una ponderación de
-`$\alpha(1-\alpha)^2$` a la observación de dos rezagos en el pasado,
-`$\alpha(1-\alpha)^3$` a la observación de tres rezagos en el pasado y
+$\alpha(1-\alpha)^2$ a la observación de dos rezagos en el pasado,
+$\alpha(1-\alpha)^3$ a la observación de tres rezagos en el pasado y
 así sucesivamente.
 
 En general la ecuación de suavizamiento exponencial puede ser escrita
@@ -228,14 +228,14 @@ $$\begin{align*}SES_{t+1} = \hat{Y}_{t+1}=\hat{Y}_{t}+\alpha(Y_{t}-\hat{Y}_{t})\
 
 
 Hanke and Wichern ([2010](#ref-Hanke2010), p. 120) señalan que, el valor
-de `$\alpha$` determina el grado de influencia de las observaciones
+de $\alpha$ determina el grado de influencia de las observaciones
 pasadas sobre el sobre el valor pronósticados, y en consecuencia, entre
-más cercano se encuentre el parámetro `$\alpha$` de 1, se tendrá que el
+más cercano se encuentre el parámetro $\alpha$ de 1, se tendrá que el
 valor pronosticado tendrá una mayor similaridad al valor observado más
 reciente, y por tanto, no se recomienda usar este método debido a que la
 serie resultante será similar a la serie original.
 
-Por el contrario, entre más cercano se encuentre el parámetro `$\alpha$`
+Por el contrario, entre más cercano se encuentre el parámetro $\alpha$
 de 0, se tendrá que las observaciones más recientes tendrán menor efecto
 sobre el valor pronosticado, y por tanto, la serie resultante será más
 suave que la serie original.
@@ -247,10 +247,10 @@ Es de anotar que en la suavización exponencial simples, **el ajuste de
 la primera observación** se puede hacer de diferentes formas, entre las
 cuales destaca
 
--   `$\hat{Y}_{k} = Y_{k-1}$`
--   `$\hat{Y}_{k} = \frac{1}{k}\sum_{t=1}^{k}Y_{t}$`
+-   $\hat{Y}_{k} = Y_{k-1}$
+-   $\hat{Y}_{k} = \frac{1}{k}\sum_{t=1}^{k}Y_{t}$
 
-siendo `$k>1$` el orden desde el cuál se desea comenzar la suavización
+siendo $k>1$ el orden desde el cuál se desea comenzar la suavización
 exponencial.
 
 Para ajustar las demás observaciones, se hace de la forma
@@ -263,7 +263,7 @@ mientras que, el ajuste de pronósticos se hace de la forma
 $$\begin{align*}\hat{Y}_{T+h} = \hat{Y}_{T+h-1}+\alpha(Y_{T+h-1}-\hat{Y}_{T+h-1})\end{align*}$$
 
 
-siendo `$h$` el número de periodos a pronosticar.
+siendo $h$ el número de periodos a pronosticar.
 
 Bibliografía
 ------------

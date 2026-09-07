@@ -14,7 +14,7 @@ Lista de ejercicios
 ===================
 
 1.  Los siguientes datos representan los consumos en kWh, medidos en una
-    hora en `$50$` establecimientos nucleados en una zona comercial.
+    hora en $50$ establecimientos nucleados en una zona comercial.
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -201,9 +201,9 @@ Lista de ejercicios
     </ol>
 
 2.  Los siguientes datos representan los costos de mantenimiento (en
-    miles de pesos) de una determinada máquina trabajando en `$15$`
+    miles de pesos) de una determinada máquina trabajando en $15$
     establecimientos productivos distintos, durante el periodo
-    `$2016- 2017$`
+    $2016- 2017$
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -496,8 +496,8 @@ Lista de ejercicios
     durante algún tiempo y que hay muchos precios de cierre desde hace
     varios meses. En lugar de utilizar todos estos precios, el
     comisionista decide simplificar su aritmética y seleccionar una
-    muestra de tamaño `$6$` para la acción `$1$` y `$7$` para la acción
-    `$2$`. Los precios de cierre son:
+    muestra de tamaño $6$ para la acción $1$ y $7$ para la acción
+    $2$. Los precios de cierre son:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <tbody>
     <tr>
@@ -801,7 +801,7 @@ Lista de ejercicios
 8.  Los préstamos bancarios para compra de bienes productivos tienen
     distintas tasas de amortización dependiendo de la ubicación, del
     tipo del bien, de la facturación promedio del comprador y otros
-    factores. Una muestra de tamaño `$25$`, de los registros que se
+    factores. Una muestra de tamaño $25$, de los registros que se
     tienen sobre tasas de amortización para préstamos bancarios se
     presentan a continuación:
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">

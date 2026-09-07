@@ -10,8 +10,8 @@ bibliography: "../../referencias.bib"
 
 ## Probabilidad Condicional
 
-Es la probabilidad de que ocurra un evento `$A$`, cuando se sabe que ya
-ocurrió un evento `$B$`, se denota por `$\mathbb P(A|B)$` y se define
+Es la probabilidad de que ocurra un evento $A$, cuando se sabe que ya
+ocurrió un evento $B$, se denota por $\mathbb P(A|B)$ y se define
 como
 
 $$\begin{align*}\mathbb P(A|B)=\frac{\mathbb P(A\cap B)}{\mathbb P(B)}; \text{ con } \mathbb P(B)>0\end{align*}$$
@@ -555,13 +555,13 @@ otros deportes, es del $42.86\%$.
 
 ## Regla multiplicativa
 
-Si un experimento estadístico pueden ocurrir dos eventos `$A$` y `$B$`,
+Si un experimento estadístico pueden ocurrir dos eventos $A$ y $B$,
 entonces
 
 $$\begin{align*}\mathbb P(A\cap B)=\mathbb P(B)\mathbb P(A|B)=\mathbb P(A)\mathbb P(B|A); \text{ para } \mathbb P(B)>0 \text{ y } \mathbb P(A)>0\end{align*}$$
 
 
-En general, si pueden ocurrir los eventos `$A_1, A_2, \ldots, A_n$`,
+En general, si pueden ocurrir los eventos $A_1, A_2, \ldots, A_n$,
 entonces
 
 $$\begin{align*}\mathbb P\left(\underset{i=1}{\stackrel{n}{\cap}} A_i\right)=\mathbb P(A_1) \mathbb P(A_2|A_1)\mathbb P(A_3|A_1\cap A_2)\ldots \mathbb P\left(A_n \Big|\underset{i=1}{\stackrel{n-1}{\cap}} A_i\right)\end{align*}$$
@@ -674,7 +674,7 @@ $$\begin{align*}
 
 ## Independencia entre eventos
 
-Si un experimento estadístico pueden ocurrir dos eventos `$A$` y `$B$`
+Si un experimento estadístico pueden ocurrir dos eventos $A$ y $B$
 que son independientes entre si, entonces
 
 $$\begin{align*}\mathbb P(A|B)=\mathbb P(A) \quad \text{ o } \quad \mathbb P(B|A)=\mathbb P(B)\end{align*}$$
@@ -685,7 +685,7 @@ lo cual es equivalente a
 $$\begin{align*}\mathbb P(A\cap B)=\mathbb P(A)\mathbb P(B)\end{align*}$$
 
 
-En cualquier otro caso, los eventos `$A$` y `$B$` son dependientes.
+En cualquier otro caso, los eventos $A$ y $B$ son dependientes.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio

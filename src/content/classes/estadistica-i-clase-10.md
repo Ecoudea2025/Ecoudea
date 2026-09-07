@@ -11,15 +11,15 @@ bibliography: "../../referencias.bib"
 Esperanza matemática condicional
 --------------------------------
 
-Sean `$X,Y$` variables aleatorias con función de masa de probabilidad
-conjunta dada por `$p(x,y)$` o función de densidad de probabilidad
-conjunta dada por `$f(x,y)$`, entonces la esperanza condicional de `$Y$`
-dado `$X$` se define como
+Sean $X,Y$ variables aleatorias con función de masa de probabilidad
+conjunta dada por $p(x,y)$ o función de densidad de probabilidad
+conjunta dada por $f(x,y)$, entonces la esperanza condicional de $Y$
+dado $X$ se define como
 
 $$\begin{align*}\mathbb{E}(Y|X)=\begin{cases} \sum_{y}yp(y|x) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty yf(y|x) dy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Analogamente, la esperanza condicional de `$X$` dado `$Y$` se define
+Analogamente, la esperanza condicional de $X$ dado $Y$ se define
 como
 
 $$\begin{align*}\mathbb{E}(X|Y)=\begin{cases} \sum_{x}xp(x|y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty xf(x|y) dx & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
@@ -565,23 +565,23 @@ Varianza
 
 ### Caso univariado
 
-Sea `$X$` una variable aleatoria con función de masa de probabilidad
-`$p(x)$` o función de densidad de probabilidad `$f(x)$`, entonces si
-`$m(X) = (X - \mathbb{E}(X))^2$`, se tendrá que la varianza de `$X$` que
-se denota `$Var(X)$` o `$\sigma^2$` estará dada por
+Sea $X$ una variable aleatoria con función de masa de probabilidad
+$p(x)$ o función de densidad de probabilidad $f(x)$, entonces si
+$m(X) = (X - \mathbb{E}(X))^2$, se tendrá que la varianza de $X$ que
+se denota $Var(X)$ o $\sigma^2$ estará dada por
 
 $$\begin{align*}Var(X) &= \sigma^2 = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right] \\ Var(X) &= \begin{cases}\sum_x(x-\mathbb{E}(X))^2p(x) & \text{ si } X \text{ es discreta}  \\ \int_{-\infty}^\infty(x-\mathbb{E}(X))^2f(x)dx & \text{ si } X \text{ es continua} \end{cases}\end{align*}$$
 
 
 Puede demostrarse a partir de la ecuación anterior, que existe una
-alternativa más simple para el cálculo de la `$Var(X)$`, la cual está
+alternativa más simple para el cálculo de la $Var(X)$, la cual está
 dada por
 
 $$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
 
 
-además, la raíz cuadrada de la varianza de `$X$` se llama desviación
-estándar de `$X$`, se denota por `$Sd(X)$` o `$\sigma$` y se define como
+además, la raíz cuadrada de la varianza de $X$ se llama desviación
+estándar de $X$, se denota por $Sd(X)$ o $\sigma$ y se define como
 
 $$\begin{align*}Sd(X) = \sigma = \sqrt{Var(X)}\end{align*}$$
 
@@ -764,29 +764,29 @@ $11.33893$ minutos.
 
 ### Caso multivariado
 
-Sean `$X,Y$` variables aleatorias con función de masa de probabilidad
+Sean $X,Y$ variables aleatorias con función de masa de probabilidad
 conjunta o función de densidad de probabilidad conjunta, con
-distribuciones marginales `$g(x)$` y `$h(y)$`, entonces si
-`$m(X) = (X - \mathbb{E}(X))^2$` se tendrá que la varianza de `$X$` que
-se denota `$Var(X)$` o `$\sigma_x^2$` estará dada por
+distribuciones marginales $g(x)$ y $h(y)$, entonces si
+$m(X) = (X - \mathbb{E}(X))^2$ se tendrá que la varianza de $X$ que
+se denota $Var(X)$ o $\sigma_x^2$ estará dada por
 
 $$\begin{align*}Var(X) &= \sigma_x^2 = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right] \\ Var(X) &= \begin{cases}\sum_x(x-\mathbb{E}(X))^2g(x) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty(x-\mathbb{E}(X))^2g(x)dx & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-mientras que si `$m(Y) = (Y - \mathbb{E}(Y))^2$` se tendrá que la
-varianza de `$Y$` que se denota `$Var(Y)$` o `$\sigma_y^2$` estará dada
+mientras que si $m(Y) = (Y - \mathbb{E}(Y))^2$ se tendrá que la
+varianza de $Y$ que se denota $Var(Y)$ o $\sigma_y^2$ estará dada
 por
 
 $$\begin{align*}Var(Y) &= \sigma_y^2= \mathbb{E}\left[\left(Y-\mathbb{E}(Y)\right)^2\right] \\ Var(Y) &= \begin{cases}\sum_y(y-\mathbb{E}(Y))^2h(y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty(y-\mathbb{E}(Y))^2h(y)dy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
-Es de anotar que, la varianza de `$X$` también puede ser calculada
+Es de anotar que, la varianza de $X$ también puede ser calculada
 mediante la ecuación
 
 $$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
 
 
-mientras que, la varianza de `$Y$` pueden calcularse mediante la
+mientras que, la varianza de $Y$ pueden calcularse mediante la
 ecuación
 
 $$\begin{align*}Var(Y) = \mathbb{E}(Y^2) - \mathbb{E}(Y)^2\end{align*}$$

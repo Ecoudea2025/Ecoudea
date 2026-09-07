@@ -13,7 +13,7 @@ bibliography: "../../referencias.bib"
 #### Caso de estudio
 
 Suponga que se está interesado en observar la evolución en el desempeño
-que tuvo un grupo de `$10$` estudiantes en el curso de Estadística I.
+que tuvo un grupo de $10$ estudiantes en el curso de Estadística I.
 Para ello se toma de referencia la nota obtenida en el primer y cuarto
 parcial de la materia, obteniendo los siguientes resultados
 
@@ -133,15 +133,15 @@ Parcial 4
 Estas medidas tienen por objetivo dividir un conjunto de datos ordenado
 en partes iguales, entendidas estas como intervalos que contienen la
 misma proporción de observaciones. Si se define
-`$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$`, como un conjunto de `$n$`
+$x_{[1]}, x_{[2]}, \ldots, x_{[n]}$, como un conjunto de $n$
 observaciones ordenadas en forma creciente, entonces
 
 #### Cuartil
 
-Son los **tres valores** `$(j=1,2,3)$`, que dividen a un conjunto de
+Son los **tres valores** $(j=1,2,3)$, que dividen a un conjunto de
 datos ordenados en **cuatro partes** iguales. Para ello, es necesario
-calcular inicialmente una variable `$h_j$` de posicionamiento dado el
-cuartil `$j$` de interés, tal que
+calcular inicialmente una variable $h_j$ de posicionamiento dado el
+cuartil $j$ de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}$$
 
@@ -152,8 +152,8 @@ interés
 $$\begin{align*}C_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}$$
 
 
-siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
-entero de `$h$` aproximando siempre hacia abajo**.
+siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
+entero de $h$ aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Cuartil
@@ -329,10 +329,10 @@ obtenidas en los parciales $1$ y $4$, se emplea la función
 
 #### Quintil
 
-Son los **cuatro valores** `$(j=1,2,3,4)$`, que dividen a un conjunto de
+Son los **cuatro valores** $(j=1,2,3,4)$, que dividen a un conjunto de
 datos ordenados en **cinco partes** iguales. Para ello, es necesario
-calcular inicialmente una variable `$h_j$` de posicionamiento dado el
-quintil `$j$` de interés, tal que
+calcular inicialmente una variable $h_j$ de posicionamiento dado el
+quintil $j$ de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}$$
 
@@ -343,8 +343,8 @@ interés
 $$\begin{align*}Q_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}$$
 
 
-siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
-entero de `$h$` aproximando siempre hacia abajo**.
+siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
+entero de $h$ aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Quintil
@@ -520,10 +520,10 @@ obtenidas en los parciales $1$ y $4$, se emplea la función
 
 #### Decil
 
-Son los **nueve valores** `$(j=1,2,\ldots,9)$`, que dividen a un
+Son los **nueve valores** $(j=1,2,\ldots,9)$, que dividen a un
 conjunto de datos ordenados en **diez partes** iguales. Para ello, es
-necesario calcular inicialmente una variable `$h_j$` de posicionamiento
-dado el decil `$j$` de interés, tal que
+necesario calcular inicialmente una variable $h_j$ de posicionamiento
+dado el decil $j$ de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}$$
 
@@ -534,8 +534,8 @@ interés
 $$\begin{align*}D_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}$$
 
 
-siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
-entero de `$h$` aproximando siempre hacia abajo**.
+siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
+entero de $h$ aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Decil
@@ -707,10 +707,10 @@ obtenidas en los parciales $1$ y $4$, se emplea la función
 
 #### Percentil
 
-Son los **noventa y nueve valores** `$(j=1,2,\ldots,99)$`, que dividen a
+Son los **noventa y nueve valores** $(j=1,2,\ldots,99)$, que dividen a
 un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
-necesario calcular inicialmente una variable `$h_j$` de posicionamiento
-dado el percentil `$j$` de interés, tal que
+necesario calcular inicialmente una variable $h_j$ de posicionamiento
+dado el percentil $j$ de interés, tal que
 
 $$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
 
@@ -721,8 +721,8 @@ interés
 $$\begin{align*}P_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
 
 
-siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
-entero de `$h$` aproximando siempre hacia abajo**.
+siendo $\lfloor h_j\rfloor$ el valor piso de $h_j$, **es decir, el
+entero de $h$ aproximando siempre hacia abajo**.
 
 <h4 align="center">
 Representación Percentil
@@ -931,7 +931,7 @@ obtenidas en los parciales $1$ y $4$, se emplea la función
 Estas medidas tienen por objetivo determinar la dispersión o
 variabilidad que posee un conjunto de observaciones, en donde, entre
 mayor sean estas medidas, mayor será el grado de dispersión de los
-datos. Si se define `$x_1, x_2, \ldots, x_n$` como un conjunto de `$n$`
+datos. Si se define $x_1, x_2, \ldots, x_n$ como un conjunto de $n$
 observaciones, entonces
 
 #### Varianza
@@ -1143,7 +1143,7 @@ $$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
 que calcule el coeficiente de variación de un conjunto de observaciones,
 pero éste es fácil de calcular mediante el cociente entre la desviación
-estándar `$S$` y el valor absoluto de la media `$\bar{X}$`, o creando
+estándar $S$ y el valor absoluto de la media $\bar{X}$, o creando
 una función que realice el cálculo, de la forma
 
 ``` r
@@ -1459,8 +1459,8 @@ emplea la función <code>Rango()</code> planteada anteriormente, tal que
 
 #### Rango intercuartílico
 
-Es la distancia o amplitud que hay entre el tercer cuartil `$C_3$` y el
-primer cuartil `$C_1$`, de un conjunto de datos. Éste muestra la
+Es la distancia o amplitud que hay entre el tercer cuartil $C_3$ y el
+primer cuartil $C_1$, de un conjunto de datos. Éste muestra la
 amplitud del 50% de los datos centrales de un conjunto de observaciones.
 Esta medida puede ser tomada como una medida de variabilidad para la
 mediana. 
@@ -1581,11 +1581,11 @@ a su mediana
 $$\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}$$
 
 
-donde `$b$` es una constante definida como `$b=1/C_{3}$`, con `$C_{3}$`
+donde $b$ es una constante definida como $b=1/C_{3}$, con $C_{3}$
 el valor del tercer cuartil de la distribución de interés (no el
-obtenido de los datos) y con `$Me(|X_i-\tilde{X}|)$` la mediana del
-valor absoluto de la diferencia `$X_i-\tilde{X}$`. Además, si la
-distribución es normal, entonces `$b\approx1.4826$`.
+obtenido de los datos) y con $Me(|X_i-\tilde{X}|)$ la mediana del
+valor absoluto de la diferencia $X_i-\tilde{X}$. Además, si la
+distribución es normal, entonces $b\approx1.4826$.
 
 En <tt>R</tt> puede calcularse la desviación absoluta mediana de un
 conjunto de observaciones, asumiendo que la distribución es normal,

@@ -26,34 +26,34 @@ a una estructura estacionaria, para así poder modelarla.
 Operador de diferencias
 -----------------------
 
-El operador de diferencias denotado por el simbolo `$\Delta$`, es aquel
+El operador de diferencias denotado por el simbolo $\Delta$, es aquel
 que calcula la diferencia entre la serie original y la serie rezagada un
 periodo, tal que si se requiere calcula la primera diferencia del
-`$Y_t$`, entonces se simbolizamos esta como `$\Delta Y_t$`,y la
-calculamos como la diferencia entre `$Y_t$` con `$Y_{t-1}$` para
-`$t=2,\ldots,T$`.
+$Y_t$, entonces se simbolizamos esta como $\Delta Y_t$,y la
+calculamos como la diferencia entre $Y_t$ con $Y_{t-1}$ para
+$t=2,\ldots,T$.
 
-Por su parte, la segunda diferencia de `$Y_t$`, se simboliza por
-`$\Delta^2 Y_t$` y estará dado por la diferencia entre `$\Delta Y_t$` y
-`$\Delta Y_{t-1}$` para `$t=3,\ldots,T$`. en donde se puede observar que
+Por su parte, la segunda diferencia de $Y_t$, se simboliza por
+$\Delta^2 Y_t$ y estará dado por la diferencia entre $\Delta Y_t$ y
+$\Delta Y_{t-1}$ para $t=3,\ldots,T$. en donde se puede observar que
 
 $$\begin{align*}\Delta^2 Y_t & = \Delta(\Delta Y_t) \\              & = \Delta Y_t - \Delta Y_{t-1} \\              & = Y_t- 2(Y_{t-1})+Y_{t-2} \\              & = (1-L)^2 Y_t\end{align*}$$
 
 
-siendo `$L$` el operador de rezagos explicado en la clase <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_08.html" target="_blank" rel="noopener noreferrer">Clase
+siendo $L$ el operador de rezagos explicado en la clase <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_08.html" target="_blank" rel="noopener noreferrer">Clase
 08</a>.
-En general, se tendrá que un proceso diferenciado de orden `$d$` se
-simbolizará por `$\Delta^d Y_t = $` y estará dado por
+En general, se tendrá que un proceso diferenciado de orden $d$ se
+simbolizará por $\Delta^d Y_t = $ y estará dado por
 
 $$\begin{align*}\Delta^d Y_t = (1-L)^d Y_t\end{align*}$$
 
 
-Además, si al diferenciar una serie temporal `$d$` veces, con
-`$d \in \mathbb{Z}^+$`, y se obtiene un serie estacionaria como
+Además, si al diferenciar una serie temporal $d$ veces, con
+$d \in \mathbb{Z}^+$, y se obtiene un serie estacionaria como
 resultado, entonces se podrá decir que el proceso original es homogéneo
-de orden `$d$`.
+de orden $d$.
 
-<!-- Por ejemplo, el proceso $Y_t = \beta_0 + \beta_1t + \varepsilon_t$, siendo $\varepsilon_t$ estacionario, entonces se tendrá que `$Y_t$` es un proceso homogéneo de orden 1, ya que al diferenciarlo se tendrá que 
+<!-- Por ejemplo, el proceso $Y_t = \beta_0 + \beta_1t + \varepsilon_t$, siendo $\varepsilon_t$ estacionario, entonces se tendrá que $Y_t$ es un proceso homogéneo de orden 1, ya que al diferenciarlo se tendrá que 
 
 $$\begin{align*}\Delta Y_t & = \Delta Y_t - \Delta Y_{t-1} \\
 & = \beta_0 + \beta_1t + \varepsilon_t - [\beta_0 + \beta_1(t-1) + \varepsilon_{t-1}]
@@ -87,40 +87,40 @@ Procesos integrados
 -------------------
 
 Diebold ([2007](#ref-Diebold2007), p. 289) define a los procesos
-integrados como aquellas series `$Y_t$` que no poseen una estructura
+integrados como aquellas series $Y_t$ que no poseen una estructura
 estacionaria, pero que al ser diferenciadas, obtienen dicha estructura.
 
 Dado lo anterior, se tendrá que si una serie temporal requiere una (1)
 diferencia para obtener una estructura estacionaria, entonces la serie
-se denomina como integrada de orden `$1$` y se denotará por `$I(1)$`. En
-general, si la serie temporal requiere ser diferenciada `$d$` veces para
-obtener una estructura estacionaria, con `$d\in \mathbb{Z}^+$`, entonces
-se dirá que la serie se denomina como integrada de orden `$d$` y es
-denotada como `$I(d)$`.
+se denomina como integrada de orden $1$ y se denotará por $I(1)$. En
+general, si la serie temporal requiere ser diferenciada $d$ veces para
+obtener una estructura estacionaria, con $d\in \mathbb{Z}^+$, entonces
+se dirá que la serie se denomina como integrada de orden $d$ y es
+denotada como $I(d)$.
 
 Modelos autorregresivos integrados de media móvil (ARIMA)
 ---------------------------------------------------------
 
-Se dice que una serie de tiempo `$\widetilde{Y}_t=Y_t-\mu$` posee una
-estructura ARIMA(p,d,q) si se tiene que al realizar la `$d$`-ésima
-diferencia, se obtiene que `$\Delta^d Y_t$`posee la estructura de un
+Se dice que una serie de tiempo $\widetilde{Y}_t=Y_t-\mu$ posee una
+estructura ARIMA(p,d,q) si se tiene que al realizar la $d$-ésima
+diferencia, se obtiene que $\Delta^d Y_t$posee la estructura de un
 proceso ARMA estacionario, tal que
 
 $$\begin{align*}\Phi_p (L) \Delta^d \widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
 
-donde `$\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j$` y
-`$\Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j$` son los polinomios de
+donde $\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j$ y
+$\Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j$ son los polinomios de
 rezagos autorregresivo y de medias móviles, respectivamente, **cada uno
-con módulo mayor a 1**, `$\Delta^d=(1-L)^d$` es el operador de
-diferencias, con `$L$` el operador de rezagos y
-`$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$`.
+con módulo mayor a 1**, $\Delta^d=(1-L)^d$ es el operador de
+diferencias, con $L$ el operador de rezagos y
+$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$.
 
 De acuerdo a lo anterior, se podrán derivar dos casos particulares de
 los modelos ARIMA(p,d,q). El primero será un proceso en el cual se tiene
-un orden autorregresivo `$p = 0$`, en este caso se tendrá lo que se
+un orden autorregresivo $p = 0$, en este caso se tendrá lo que se
 conoce como un proceso integrado de media móvil ARIMA(0,d,q) = IMA(d,q),
 mientras el segundo será un proceso en el cual se tiene un orden de
-media móvil `$q = 0$`, obteniendo lo que se conoce como un proceso
+media móvil $q = 0$, obteniendo lo que se conoce como un proceso
 autorregresivo integrado ARIMA(p,d,0)=ARI(p,d).
 
 ### Raices unitarias
@@ -130,29 +130,29 @@ Suponga un modelo ARMA(p,q) tal que
 $$\begin{align*}\Phi_p (L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
 
 
-con `$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$`, entonces, si
-una de las `$p$` raices de la ecuación
-`$\Phi_p(z) = 1 - \sum_{j=1}^p=\phi_j z^j = 0$` es `$z = 1$` entonces se
-tendrá que `$Y_t$` tiene una raíz unitaria.
+con $\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$, entonces, si
+una de las $p$ raices de la ecuación
+$\Phi_p(z) = 1 - \sum_{j=1}^p=\phi_j z^j = 0$ es $z = 1$ entonces se
+tendrá que $Y_t$ tiene una raíz unitaria.
 
-En dicho caso, podremos factorizar el polinomio `$\Phi_p(z)$` como
-`$\Phi_p(z) = (1-z)\Phi_{p-1}(z)$`, un polinomio de grado `$p-1$`,
+En dicho caso, podremos factorizar el polinomio $\Phi_p(z)$ como
+$\Phi_p(z) = (1-z)\Phi_{p-1}(z)$, un polinomio de grado $p-1$,
 obteniendo con ello
 
 $$\begin{align*}\Phi_{p-1}(L)(1-L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
 
 
-Entonces, si `$Y_t\sim ARMA(p,q)$` con una raíz unitaria, entonces se
-tendrá que `$\Delta Y_t\sim ARMA(p-1,q)$` o equivalentemente
-`$Y_t\sim ARIMA(p,1,q)$`, siendo `$d=1$`.
+Entonces, si $Y_t\sim ARMA(p,q)$ con una raíz unitaria, entonces se
+tendrá que $\Delta Y_t\sim ARMA(p-1,q)$ o equivalentemente
+$Y_t\sim ARIMA(p,1,q)$, siendo $d=1$.
 
 <!-- Ver Econometría Financiera Norman página 282 para ejemplo. -->
 
 ### Prueba Dickey-Fuller aumentada
 
-**Con el fin de identificar si una serie temporal `$Y_t$` posee raices
+**Con el fin de identificar si una serie temporal $Y_t$ posee raices
 unitarias**, se introduce la prueba Dickey-Fuller Aumentada, la cual
-asume que es posible aproximar a `$Y_t\sim AR(p)$` asumiendo tres casos,
+asume que es posible aproximar a $Y_t\sim AR(p)$ asumiendo tres casos,
 media cero, media diferente de cero y tendencia lineal.
 
 el primer tipo, es un modelo lineal con media cero y sin tendencia
@@ -161,8 +161,8 @@ lineal con respecto al tiempo.
 $$\begin{align*}\Delta Y_t = \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}$$
 
 
-con `$\gamma = \phi_1 - 1$`. Entonces is hay raices unitarias se
-cumplirá que `$\phi_1 = 1$` o equivalentemente `$\gamma=0$`.
+con $\gamma = \phi_1 - 1$. Entonces is hay raices unitarias se
+cumplirá que $\phi_1 = 1$ o equivalentemente $\gamma=0$.
 
 El segundo tipo, es un modelo lineal con media diferente de cero y sin
 tendencia lineal respecto al tiempo.
@@ -191,7 +191,7 @@ El estadístico de prueba, se define entonces como
 $$\begin{align*}\tau = \frac{\hat{\gamma}}{se(\hat{\gamma})}\end{align*}$$
 
 
-siendo `$\hat{\gamma}$` el coeficiente estimado, y `$se(\hat{\gamma})$`
+siendo $\hat{\gamma}$ el coeficiente estimado, y $se(\hat{\gamma})$
 el error estándar del coeficiente estimado. Además, el P-valor de la
 prueba se define como
 
@@ -233,7 +233,7 @@ Ajuste de modelo ARIMA
 ----------------------
 
 Una vez identificado el orden apropiado de diferenciación, d, asociado a
-la serie de tiempo `$Y_t$`, se realiza el mismo procedimiento explicado
+la serie de tiempo $Y_t$, se realiza el mismo procedimiento explicado
 en la <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_09.html" target="_blank" rel="noopener noreferrer">Clase
 09</a>
 para identificar el orden p y q que posee la serie de diferencias.

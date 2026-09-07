@@ -13,16 +13,16 @@ Distribución de probabilidad conjunta
 
 ### Covarianza
 
-Sean `$X,Y$` variables aleatorias con función de masa de probabilidad
-conjunta dada por `$p(x,y)$` o función de densidad de probabilidad
-conjunta dada por `$f(x,y)$`, entonces la covarianza de `$X$` y `$Y$`,
-denotada por `$Cov(X,Y)$` o `$\sigma_{xy}$` está dada por
+Sean $X,Y$ variables aleatorias con función de masa de probabilidad
+conjunta dada por $p(x,y)$ o función de densidad de probabilidad
+conjunta dada por $f(x,y)$, entonces la covarianza de $X$ y $Y$,
+denotada por $Cov(X,Y)$ o $\sigma_{xy}$ está dada por
 
 $$\begin{align*}Cov(X,Y) &= \sigma_{xy} = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)\left(Y-\mathbb{E}(Y)\right)\right] \\ Cov(X,Y) &=  \begin{cases}\sum_x\sum_y(x-\mathbb{E}(X))(y-\mathbb{E}(Y))p(x,y) & \text{ si } X,Y \text{ son discretas}  \\ \int_{-\infty}^\infty \int_{-\infty}^\infty (x-\mathbb{E}(X))(y-\mathbb{E}(Y))f(x,y)dxdy & \text{ si } X,Y \text{ son continuas} \end{cases}\end{align*}$$
 
 
 Puede demostrarse a partir de la ecuación anterior, que existe una
-alternativa más simple para el cálculo de la `$Cov(X,Y)$`, la cual está
+alternativa más simple para el cálculo de la $Cov(X,Y)$, la cual está
 dada por
 
 $$\begin{align*}Cov(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\end{align*}$$
@@ -30,18 +30,18 @@ $$\begin{align*}Cov(X,Y) = \mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y)\end{align
 
 #### Nota
 
-La covarianza entre dos variables aleatorias `$X,Y$` es una medida de
+La covarianza entre dos variables aleatorias $X,Y$ es una medida de
 asociación entre ambas, que describe la relación lineal entre las dos
-variables aleatorias. El signo de la `$Cov(X,Y)$` indicará el tipo de
+variables aleatorias. El signo de la $Cov(X,Y)$ indicará el tipo de
 dependencia lineal que hay entre las variables.
 
--   `$Cov(X,Y) > 0$` indica que hay dependencia lineal positiva entre
+-   $Cov(X,Y) > 0$ indica que hay dependencia lineal positiva entre
     las variables, es decir, cuando aumenta una variable, la otra
     también aumenta.
--   `$Cov(X,Y) < 0$` indica que hay dependencia lineal negativa entre
+-   $Cov(X,Y) < 0$ indica que hay dependencia lineal negativa entre
     las variables, es decir, cuando aumenta una variable, la otra
     disminuye.
--   `$Cov(X,Y) \approx 0$` indica que no existencia dependencia lineal
+-   $Cov(X,Y) \approx 0$ indica que no existencia dependencia lineal
     entre las dos variables.
 
 <button id="Show1" class="btn btn-secondary">
@@ -502,48 +502,48 @@ de los estudiantes del curso de Estadística I.
 
 ### Correlación
 
-Sean `$X,Y$` variables aleatorias con covarianza `$Cov(X,Y)$`, y
-desviaciones estándar `$Sd(X)$` y `$Sd(Y)$`, entonces la correlación de
-`$X$` y `$Y$`, denotada por `$Cor(X,Y)$` o `$\rho_{xy}$` está dada por
+Sean $X,Y$ variables aleatorias con covarianza $Cov(X,Y)$, y
+desviaciones estándar $Sd(X)$ y $Sd(Y)$, entonces la correlación de
+$X$ y $Y$, denotada por $Cor(X,Y)$ o $\rho_{xy}$ está dada por
 
 $$\begin{align*}Cor(X,Y) = \rho_{xy} = \frac{Cov(X,Y)}{Sd(X)Sd(Y)}\end{align*}$$
 
 
 #### Nota
 
-La correlación entre dos variables aleatorias `$X,Y$` es una medida de
+La correlación entre dos variables aleatorias $X,Y$ es una medida de
 asociación entre ambas, que describe la fuerza de la relación lineal
-entre las dos variables aleatorias. El valor de `$\rho_{xy}$` indica el
+entre las dos variables aleatorias. El valor de $\rho_{xy}$ indica el
 tipo y fuerza de la dependencia lineal que hay entre las variables
 
--   `$\rho_{xy} = 1$` indica que existe dependencia lineal positiva
+-   $\rho_{xy} = 1$ indica que existe dependencia lineal positiva
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra aumenta proporcionalmente en la misma cantidad. Este aumento
-    es de la forma `$Y = a + bX$`, siendo `$a$` y `$b$` dos constantes,
-    con `$b>0$`.
--   `$\rho_{xy} = -1$` indica que existe dependencia lineal negativa
+    es de la forma $Y = a + bX$, siendo $a$ y $b$ dos constantes,
+    con $b>0$.
+-   $\rho_{xy} = -1$ indica que existe dependencia lineal negativa
     exacta entre las variables, es decir, cuando aumenta una variable,
     la otra disminuye proporcionalmente en la misma cantidad. Este
-    aumento es de la forma `$Y = a + bX$` con `$a$` y `$b$` dos
-    constantes, y `$b<0$`.
--   `$\rho_{xy} = 0$` No existe dependencia lineal entre las variables.
+    aumento es de la forma $Y = a + bX$ con $a$ y $b$ dos
+    constantes, y $b<0$.
+-   $\rho_{xy} = 0$ No existe dependencia lineal entre las variables.
 
 Además, se tendrá que si
 
--   `$0.5 < \rho_{xy} \leq 1$` fuerte correlación positiva entre `$X$` y
-    `$Y$`.
--   `$0.3 < \rho_{xy} \leq 0.5$` moderada correlación positiva entre
-    `$X$` y `$Y$`.
--   `$0.1 < \rho_{xy} \leq 0.3$` débil correlación positiva entre `$X$`
-    y `$Y$`.
--   `$-0.1 \leq \rho_{xy} \leq 0.1$` débil o ninguna correlación entre
-    `$X$` y `$Y$`.
--   `$-0.3 \leq \rho_{xy} < -0.1$` débil correlación negativa entre
-    `$X$` y `$Y$`.
--   `$-0.5 \leq \rho_{xy} < -0.3$` moderada correlación negativa entre
-    `$X$` y `$Y$`.
--   `$-1 \leq \rho_{xy} < -0.5$` fuerte correlación negativa entre `$X$`
-    y `$Y$`.
+-   $0.5 < \rho_{xy} \leq 1$ fuerte correlación positiva entre $X$ y
+    $Y$.
+-   $0.3 < \rho_{xy} \leq 0.5$ moderada correlación positiva entre
+    $X$ y $Y$.
+-   $0.1 < \rho_{xy} \leq 0.3$ débil correlación positiva entre $X$
+    y $Y$.
+-   $-0.1 \leq \rho_{xy} \leq 0.1$ débil o ninguna correlación entre
+    $X$ y $Y$.
+-   $-0.3 \leq \rho_{xy} < -0.1$ débil correlación negativa entre
+    $X$ y $Y$.
+-   $-0.5 \leq \rho_{xy} < -0.3$ moderada correlación negativa entre
+    $X$ y $Y$.
+-   $-1 \leq \rho_{xy} < -0.5$ fuerte correlación negativa entre $X$
+    y $Y$.
 
 <button id="Show3" class="btn btn-secondary">
 Mostrar Ejercicio Caso Discreto
@@ -1004,7 +1004,7 @@ estudiantes del curso de Estadística I.
 
 ### Independencia
 
-Si las variables aleatorias `$X, Y$` son independientes, entonces se
+Si las variables aleatorias $X, Y$ son independientes, entonces se
 debe cumplir que
 
 $$\begin{align*}\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)\end{align*}$$
@@ -1472,31 +1472,31 @@ que tienen los estudiantes del curso de Estadística I.
 
 ### Propiedades de la varianza, covarianza y correlación
 
-Sea `$a$` y `$b$` números reales (constantes) y `$X$` y `$Y$` dos
+Sea $a$ y $b$ números reales (constantes) y $X$ y $Y$ dos
 variables aleatorias discretas o continuas, entonces
 
-1.  `$Var(a)=0$`
+1.  $Var(a)=0$
 
-2.  `$Var(aX)=a^2Var(X)$`
+2.  $Var(aX)=a^2Var(X)$
 
-3.  `$Var(a+bX) = b^2Var(X)$`
+3.  $Var(a+bX) = b^2Var(X)$
 
-4.  `$Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$`
+4.  $Var(X+Y) = Var(X) + Var(Y) + 2 Cov(X,Y)$
 
-5.  `$Var(X-Y) = Var(X) + Var(Y) - 2 Cov(X,Y)$`
+5.  $Var(X-Y) = Var(X) + Var(Y) - 2 Cov(X,Y)$
 
-6.  Si `$X, Y$` son independientes entonces
-    `$Var(X+Y) = Var(X) + Var(Y)$`
+6.  Si $X, Y$ son independientes entonces
+    $Var(X+Y) = Var(X) + Var(Y)$
 
-7.  Si `$X, Y$` son independientes entonces
-    `$Var(X-Y) = Var(X) + Var(Y)$`
+7.  Si $X, Y$ son independientes entonces
+    $Var(X-Y) = Var(X) + Var(Y)$
 
-8.  `$Cov(aX,bY) = abCov(X,Y)$`
+8.  $Cov(aX,bY) = abCov(X,Y)$
 
-9.  Si `$X, Y$` son linealmente independientes entonces
-    `$Cov(aX,bY) = 0$`
+9.  Si $X, Y$ son linealmente independientes entonces
+    $Cov(aX,bY) = 0$
 
-10. `$Cor(aX,bY) = Cor(X,Y)$`
+10. $Cor(aX,bY) = Cor(X,Y)$
 
-11. Si `$X, Y$` son linealmente independientes entonces
-    `$Cor(aX,bY) = 0$`
+11. Si $X, Y$ son linealmente independientes entonces
+    $Cor(aX,bY) = 0$

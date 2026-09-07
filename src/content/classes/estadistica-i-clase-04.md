@@ -13,8 +13,8 @@ Distribuciones de probabilidad continuas
 
 ### Distribución Uniforme Continua
 
-Se dice que la variable aleatoria `$X$` tiene una distribución uniforme
-continua, definida en el intervalo `$(a,b)$`, si su función de
+Se dice que la variable aleatoria $X$ tiene una distribución uniforme
+continua, definida en el intervalo $(a,b)$, si su función de
 probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{b-a} \quad \quad & a\leq x\leq b \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
@@ -22,16 +22,16 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{b-a} \quad \quad & a\leq x\leq b \
 
 #### Media y varianza Uniforme Continua
 
-Si `$X\sim Unif(a,b)$`, entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim Unif(a,b)$, entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \frac{b+a}{2} \quad \quad Var(X)=\frac{(b-a)^2}{12}\end{align*}$$
 
 
 #### Distribución Acumulada Uniforme Continua
 
-Si `$X\sim Unif(a,b)$`, entonces se puede probar que la función de
-distribución acumulada de la variable aleatoria `$X$` es de la forma
+Si $X\sim Unif(a,b)$, entonces se puede probar que la función de
+distribución acumulada de la variable aleatoria $X$ es de la forma
 
 $$\begin{align*}F(x) = \frac{x-a}{b-a} \quad \quad & a\leq x\leq b\end{align*}$$
 
@@ -318,8 +318,8 @@ y en consecuencia se deberá obtener el mismo valor.
 
 ### Distribución Gamma
 
-Se dice que la variable aleatoria `$X$` tiene una distribución Gamma con
-parámetro de forma `$\alpha$` y de escala `$\beta$`, si su función de
+Se dice que la variable aleatoria $X$ tiene una distribución Gamma con
+parámetro de forma $\alpha$ y de escala $\beta$, si su función de
 densidad de probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\alpha-1}e^{-{\frac{x}{\beta}}} \quad \quad & x>0; \alpha>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
@@ -327,8 +327,8 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{\Gamma(\alpha)\beta^\alpha} x^{\al
 
 #### Media y Varianza Gamma
 
-Si `$X\sim Gamma(\alpha,\beta)$`, entonces se puede probar que la media
-y varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Gamma(\alpha,\beta)$, entonces se puede probar que la media
+y varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \alpha\beta \quad \quad Var(X)=\alpha\beta^2\end{align*}$$
 
@@ -488,27 +488,27 @@ el tiempo de transferencia será como máximo de $70_{ms}$.
 
 ### Distribución Exponencial
 
-Se dice que la variable aleatoria `$X$` tiene una distribución
-Exponencial con parámetro de escala `$\beta$`, si su función de densidad
+Se dice que la variable aleatoria $X$ tiene una distribución
+Exponencial con parámetro de escala $\beta$, si su función de densidad
 de probabilidad está dada por
 
 $$\begin{align*}f(x) = \begin{cases} \frac{1}{\beta} e^{-{\frac{x}{\beta}}} \quad \quad & x>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
 
 en donde se observa que ésta distribución es un caso particular de la
-distribución Gamma cuando `$\alpha=1$`.
+distribución Gamma cuando $\alpha=1$.
 
 #### Media y Varianza Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la media y
-varianza de la variable aleatoria `$X$` están dadas por
+Si $X\sim Exp(\beta)$, entonces se puede probar que la media y
+varianza de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X) = \beta \quad \quad Var(X)=\beta^2\end{align*}$$
 
 
 #### Distribución Acumulada Exponencial
 
-Si `$X\sim Exp(\beta)$`, entonces se puede probar que la función de
-distribución acumulada de la variable aleatoria `$X$` es de la forma
+Si $X\sim Exp(\beta)$, entonces se puede probar que la función de
+distribución acumulada de la variable aleatoria $X$ es de la forma
 
 $$\begin{align*}F(x) =  1 - e^{-{\frac{x}{\beta}}} \quad \quad & x>0; \beta>0\end{align*}$$
 
@@ -600,13 +600,13 @@ persona.
 
 #### Propiedad de carencia de memoria
 
-Suponga que `$X$` es una variable aleatoria tal que
-`$X\sim Exp(\beta)$`, entonces sean dos reales positivos `$a$` y `$b$`,
+Suponga que $X$ es una variable aleatoria tal que
+$X\sim Exp(\beta)$, entonces sean dos reales positivos $a$ y $b$,
 entonces se puede probar que
 
-1.  `$\mathbb{P}(X\geq a+b | x \geq b) = \mathbb{P}(X\geq a)$`
+1.  $\mathbb{P}(X\geq a+b | x \geq b) = \mathbb{P}(X\geq a)$
 
-2.  `$\mathbb{P}(X\leq a+b | x \geq b) = \mathbb{P}(X\leq a)$`
+2.  $\mathbb{P}(X\leq a+b | x \geq b) = \mathbb{P}(X\leq a)$
 
 <button id="Show5" class="btn btn-secondary">
 Mostrar Ejercicio
@@ -718,11 +718,11 @@ persona.
 #### Relación entre la distribución Exponencial y el proceso Poisson
 
 Suponga que el número de eventos que ocurren en un intervalo de tiempo
-`$t$`, tiene una distribución Poisson con parámetro `$\lambda$` y que el
+$t$, tiene una distribución Poisson con parámetro $\lambda$ y que el
 número ocurrencias en intervalos de tiempo distintos son independientes
 entre si. Entonces se tendrá que la distribución del tiempo transcurrido
 entre dos eventos de Poisson sucesivos es Exponencial con parámetro
-`$\beta = \frac{t}{\lambda}$`.
+$\beta = \frac{t}{\lambda}$.
 
 <button id="Show6" class="btn btn-secondary">
 Mostrar Ejercicio 1

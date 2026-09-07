@@ -27,44 +27,44 @@ aggregate loss as
 
 $$\begin{align*}\label{ALD}     S= \sum_{i=1}^N X_i \tag{1}\end{align*}$$
 
-where, `$X_1,X_2,\ldots,X_N$` is a sequence of random variables *iid*
-`$X_i\geq 0$`, with cumulative distribution
-`$F_X(x)=\mathbb{P}(X\le x)$` with support `$[0,\infty)$`, such that
-`$F_{X}(x)<1$`, `$\forall x>0$`, `$F_{X}(0_+)=0$`, and with
-`$\mathbb{E}(X_{i})<\infty$`. `$N$` and `$X_{i}$` are asumed mutually
-independent random variables `$\forall i=1,2,\ldots$`. (Bowers, Gerber,
+where, $X_1,X_2,\ldots,X_N$ is a sequence of random variables *iid*
+$X_i\geq 0$, with cumulative distribution
+$F_X(x)=\mathbb{P}(X\le x)$ with support $[0,\infty)$, such that
+$F_{X}(x)<1$, $\forall x>0$, $F_{X}(0_+)=0$, and with
+$\mathbb{E}(X_{i})<\infty$. $N$ and $X_{i}$ are asumed mutually
+independent random variables $\forall i=1,2,\ldots$. (Bowers, Gerber,
 Hickman, Jones, & Nesbitt, 1997, p. 367).
 
-The variable `$N$` represents the number of surgery claims in one year
-of *HCI*, with a mass function `$p_{n}(x) = \mathbb{P}(N=x)$`. We employ
+The variable $N$ represents the number of surgery claims in one year
+of *HCI*, with a mass function $p_{n}(x) = \mathbb{P}(N=x)$. We employ
 several models included in <tt>R</tt> library <tt>gamlss</tt> from
 Rigby, Stasinopoulos, Heller, & Voudouris (2014), which **include
 several Mixed Poisson distributions**.
 
-The variable `$X$` represent the severities of individual surgeries in
+The variable $X$ represent the severities of individual surgeries in
 *HCI*. Their distribution is model by mixtures of light and heavy-tailed
 distributions, **also called spliced distribution**, defined as
 
 $$\begin{align*}F_X(x)=F_L(x)1_{\{x\leq u\}}+ F_H(x)1_{\{x>u\}} \tag{2}\end{align*}$$
 
 
-where `$1_{x\leq u}$` and `$1_{x>u}$` are indicator variables, `$u$` is
-a threshold, `$F_L$` and `$F_H$` are light and heavy-tailed
-distributions, respectively. A requisite is that `$1-F_H$` is a regular
-varying function with index `$-\alpha$`, i.e,
-`$1-F_H\in \mathcal{R}_{-\alpha}$`.
+where $1_{x\leq u}$ and $1_{x>u}$ are indicator variables, $u$ is
+a threshold, $F_L$ and $F_H$ are light and heavy-tailed
+distributions, respectively. A requisite is that $1-F_H$ is a regular
+varying function with index $-\alpha$, i.e,
+$1-F_H\in \mathcal{R}_{-\alpha}$.
 
-The aggregate loss distributions `$F_{S}(x)$` is defined as
+The aggregate loss distributions $F_{S}(x)$ is defined as
 
 $$\begin{align*}F_{S}(x) & =\sum_{n=0}^{\infty}p_{n}F_{X}^{*n}(x) \tag{3}\end{align*}$$
 
 
-where `$p_{n}=\mathbb{P}(N=n)$` is the probability distribution of `$N$`
-evaluated in `$n$` and
-`$F_{X}^{*n}(x)=\mathbb{P}(X_{1}+X_{2}+\ldots+X_{n}\le x)$` is the
-`$n$`-th convolution of `$F_X$` with itself.
+where $p_{n}=\mathbb{P}(N=n)$ is the probability distribution of $N$
+evaluated in $n$ and
+$F_{X}^{*n}(x)=\mathbb{P}(X_{1}+X_{2}+\ldots+X_{n}\le x)$ is the
+$n$-th convolution of $F_X$ with itself.
 
-**The calculation of the distribution and the quantil for `$S$` is known
+**The calculation of the distribution and the quantil for $S$ is known
 a difficult task**. Some authors have proposed algorithms and methods
 for their approximation. Some are described in Kaas, Goovaerts, Dhaene,
 & Denuit (2008, ch. 2-3), and Albrecher et al. (2017, ch. 6).
@@ -75,7 +75,7 @@ two alternatives proposed in the literature:
 
 -   The methodology **Single Loss Approximation** (*SLA* onwards).
 -   The assumption of the **Black-Scholes methodology** on which
-    `$S\sim LogNormal(\mu,\sigma^2)$`
+    $S\sim LogNormal(\mu,\sigma^2)$
 
 Frequency Model
 ---------------
@@ -83,10 +83,10 @@ Frequency Model
 ### Mixed Poisson Law
 
 The Mixed Poisson Law is applied when **the variance of the random
-variable `$N$` is significantly greater than its expected value**. We
-assume that the mass function of `$N$`, follows a Poisson Law with
-random parameter `$\lambda$` (replaced by `$\theta$`), and *mixing
-distribution function* `$U$` (also called *risk structure function*),
+variable $N$ is significantly greater than its expected value**. We
+assume that the mass function of $N$, follows a Poisson Law with
+random parameter $\lambda$ (replaced by $\theta$), and *mixing
+distribution function* $U$ (also called *risk structure function*),
 such that
 
 $$\begin{align*}\mathbb{P}(N=x) = \int_{0}^{\infty} \frac{e^{-\theta t}(\theta t)^x}{x!}dU(\theta) \tag{4}\end{align*}$$
@@ -208,11 +208,11 @@ distribution* with a probability density function as
 $$\begin{align*}\begin{split}         f_{X}(x) = \begin{cases} \pi_{1} \frac{f_{1}(x)}{F_{1}(c_{1})-F_{1}(c_{0})} & c_{0} < x \leq c_{1} \\         \pi_{2} \frac{f_{2}(x)}{F_{2}(c_{2})-F_{2}(c_{1})} & c_{1} < x \leq c_{2} \\         \quad \quad \quad \vdots & \quad \quad \ \vdots \\         \pi_{m} \frac{f_{m}(x)}{F_{m}(c_{m})-F_{m}(c_{{m-1}})}& c_{{m-1}} < x \leq c_{m}         \end{cases}         \end{split} \tag{5}\end{align*}$$
 
 
-where `$f_{i}(x)$` and `$F_{i}(x)$` are the *pdf* and *cdf* of the
-`$i$`-th interval of a random variable `$X$`, respectively.
-`$\pi_{i}>0$` are the weights of each of the categories, with
-`$\sum_{i=1}^m \pi_{i} = 1$`. `$c_{k_i}$` are the intervals for which
-the random variable `$X$` is defined in each category or also called
+where $f_{i}(x)$ and $F_{i}(x)$ are the *pdf* and *cdf* of the
+$i$-th interval of a random variable $X$, respectively.
+$\pi_{i}>0$ are the weights of each of the categories, with
+$\sum_{i=1}^m \pi_{i} = 1$. $c_{k_i}$ are the intervals for which
+the random variable $X$ is defined in each category or also called
 union points.
 
 <pre class="plotlyCuadrito">
@@ -371,16 +371,16 @@ Single Loss Approximation
 
 For the implementation of this approach, we start with the **Böcker &
 Klüppelberg (2005)** result, where the authors point out that, if
-`$F_{X_k}$` could be classified within Subexponential class
+$F_{X_k}$ could be classified within Subexponential class
 distributions, such that
 
 $$\begin{align*}\lim_{x\to\infty}\frac{1-F_{X}^{*n}(x)}{1-F_{X}(x)}=\lim_{x\to\infty}\frac{\bar{F}_{X}^{*n}(x)}{\bar{F}_{X}(x)}=n \tag{6}\end{align*}$$
 
-and assuming that `$p_{n}$` satisfies
+and assuming that $p_{n}$ satisfies
 
 $$\begin{align*}\sum_{n=0}^\infty (1+\varepsilon)^np_{n}<\infty \text{ for some } \varepsilon>0 \tag{7}\end{align*}$$
 
-then, it is said that `$F_{S}$` is classify within the Subexponential
+then, it is said that $F_{S}$ is classify within the Subexponential
 class, when its tail behavior is given by
 
 $$\begin{align*}\label{BK}         \bar{F}_{S}(x) \sim \mathbb{E}(N)\bar{F}_{X}(x); \quad \quad x\to\infty \tag{8}\end{align*}$$
@@ -393,7 +393,7 @@ Risk Measures
 
 From the equation (\\ref{BK}) **Böcker & Klüppelberg (2005, p. 91)**,
 present the first approximation of the *VaR* by *SLA* method, for a
-level `$\kappa$`, with `$0<\kappa<1$` and defined as
+level $\kappa$, with $0<\kappa<1$ and defined as
 
 $$\begin{align*}\label{VaR1}             VaR_{S}(\kappa) = F_{X}^{-1}\left(1 - \frac{1-\kappa}{\mathbb{E}(N)})\right); \quad \quad \kappa\to1 \tag{9}\end{align*}$$
 
@@ -402,8 +402,8 @@ Although the equation (\\ref{VaR1}) has a very attractive structure, in
 **Böcker & Sprittulla (2006, p. 96)**, the authors point out that this
 equation must be used carefully **because this approximation
 underestimate the *VaR*,** since the aproximation does not take into
-account all loss events `$X_i$` which contribute to the aggregate loss
-`$S$`.
+account all loss events $X_i$ which contribute to the aggregate loss
+$S$.
 
 In order to overcome such an inconvenience and give analytical support
 to the *SLA* method, from **Albrecher et al. (2017, p. 199)** we can
@@ -431,35 +431,35 @@ $$\begin{align*}\label{VaR4}             \pi(\kappa)=(1-\kappa) \left[ES_{S}(\ka
 Reinsurance
 -----------
 
-If we define the aggregate costs `$S$` as the equation (\\ref{ALD}), for
+If we define the aggregate costs $S$ as the equation (\\ref{ALD}), for
 the validity period of a policy (usually one year). Then a **reinsurance
 contract for a *HCI* **can be defined as
 
 $$\begin{align*}\label{RE1}         S= & D + R  \tag{13}\end{align*}$$
 
 
-where `$D$` represents the amount deductible or retained by the insurer
-and `$R$` represents the amount paid by the reinsurer.
+where $D$ represents the amount deductible or retained by the insurer
+and $R$ represents the amount paid by the reinsurer.
 
-In order to define the reinsurance premium `$\delta(\kappa)$`, we assume
+In order to define the reinsurance premium $\delta(\kappa)$, we assume
 the **expected value principle**, defined as
 
 $$\begin{align*}\label{RE2}         \delta(M^*)=(1+\rho)\pi(M^*) \tag{14}\end{align*}$$
 
 
-where `$M^*=VaR_S(\rho*)$` is the optimal retention point,
-`$\rho^*=\frac{1}{1+\rho}$` is the optimal condition for the retention,
-`$\rho>0$` is defined as the **reinsurer’s relative safety load
-factor**, which can be interpreted as a risk premium rateand `$\pi(.)$`
+where $M^*=VaR_S(\rho*)$ is the optimal retention point,
+$\rho^*=\frac{1}{1+\rho}$ is the optimal condition for the retention,
+$\rho>0$ is defined as the **reinsurer’s relative safety load
+factor**, which can be interpreted as a risk premium rateand $\pi(.)$
 is the Stop-Loss premium.
 
 Optimum Retention Point Estimation
 ----------------------------------
 
 From the equations (\\ref{VaR2}), (\\ref{VaR3}), (\\ref{VaR4}),
-(\\ref{RE1}), (\\ref{RE2}) and the adjusted distribution *DEL* for `$N$`
-and *W-GP* for `$X$`, we calculate **optimal retention points** and
-**optimal premiums** for different levels of `$\rho$`.
+(\\ref{RE1}), (\\ref{RE2}) and the adjusted distribution *DEL* for $N$
+and *W-GP* for $X$, we calculate **optimal retention points** and
+**optimal premiums** for different levels of $\rho$.
 
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -584,15 +584,15 @@ Discussion of the validity of the LogNormal assumption for the aggregated costs
 -------------------------------------------------------------------------------
 
 -   To justify the LogNormal assumption for the aggregated cost
-    `$S= \sum_{i=1}^N X_i$` requires that a least the first two moments
-    of `$S$` exists, in order to specify a LogNormal distribution. And
-    then calculate `$VaR_S(\kappa)$`, `$ES_S(\kappa)$`, and
-    `$\pi(\kappa)$`.
+    $S= \sum_{i=1}^N X_i$ requires that a least the first two moments
+    of $S$ exists, in order to specify a LogNormal distribution. And
+    then calculate $VaR_S(\kappa)$, $ES_S(\kappa)$, and
+    $\pi(\kappa)$.
 -   As LogNormal distribution is belongs to the Subexponential class of
-    heavy-tailed distributions. The problem is, to guarantee that `$S$`
+    heavy-tailed distributions. The problem is, to guarantee that $S$
     is LogNormal without any other kind of information. We do not know
-    of any kind of conditions on severities `$X_i$` which guarantee that
-    `$S$` is LogNormal.
+    of any kind of conditions on severities $X_i$ which guarantee that
+    $S$ is LogNormal.
 -   Based on this considerations and the results exposed, we consider
     that **the assumption of LogNormal for the aggegated costs is not
     justified**. As a conclusion several studies which expose valuation
@@ -612,7 +612,7 @@ Conclusions
     recommended to accompany these measures with a support graphic.
 -   For the calculation of the reinsurance premium, we assume the
     expected value principle, which depends on the reinsurer’s relative
-    safety load factor `$\rho$`, but different principles can be used to
+    safety load factor $\rho$, but different principles can be used to
     calculate the optimal retention point.
 -   It is **not correct to make assumptions of distributions**, if you
     do not have a strict justification for making such assumptions.

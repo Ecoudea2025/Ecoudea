@@ -13,22 +13,22 @@ Variables aleatorias discretas
 
 ### Varianza caso discreto
 
-Sea `$X$` una variable aleatoria con *fmp* `$p(x)$`, entonces si
-`$m(X) = (X - \mathbb{E}(X))^2$`, se tendrá que la varianza de `$X$` que
-se denota `$Var(X)$` o `$\sigma^2$` estará dada por
+Sea $X$ una variable aleatoria con *fmp* $p(x)$, entonces si
+$m(X) = (X - \mathbb{E}(X))^2$, se tendrá que la varianza de $X$ que
+se denota $Var(X)$ o $\sigma^2$ estará dada por
 
 $$\begin{align*}Var(X) = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right]=\sum_x(x-\mathbb{E}(X))^2p(x)\end{align*}$$
 
 
 Puede demostrarse a partir de la ecuación anterior, que una alternativa
-para el cálculo de la `$Var(X)$` es de la forma
+para el cálculo de la $Var(X)$ es de la forma
 
 
 $$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
 
 
-además, la raíz cuadrada de la varianza de `$X$` se llama desviación
-estándar de `$X$`, se denota por `$Sd(X)$` o `$\sigma$` y se define como
+además, la raíz cuadrada de la varianza de $X$ se llama desviación
+estándar de $X$, se denota por $Sd(X)$ o $\sigma$ y se define como
 
 $$\begin{align*}Sd(X) = \sqrt{Var(X)}\end{align*}$$
 
@@ -153,8 +153,8 @@ Un proceso Bernoulli es aquel que cumple
 2.  Cada ensayo produce un resultado que se puede clasificar como éxito
     o fracaso.
 
-3.  La probabilidad de éxito se denota por `$p$`, mientras que la
-    probabilidad de fracaso se denota por `$q=1-p$`, y estas
+3.  La probabilidad de éxito se denota por $p$, mientras que la
+    probabilidad de fracaso se denota por $q=1-p$, y estas
     probabilidades permanecen constante de un ensayo a otro.
 
 4.  Los ensayos repetidos son independientes.
@@ -194,9 +194,9 @@ o no en Antioquia.
 
 ### Ensayo de Bernoulli
 
-Si la probabilidad de éxito de un experimento es `$p$`, entonces se
-tendrá que la probabilidad de fallo será `$1-p$`, y por tanto, la
-función de probabilidad de la variable aleatoria `$X\sim Be(p)$` de un
+Si la probabilidad de éxito de un experimento es $p$, entonces se
+tendrá que la probabilidad de fallo será $1-p$, y por tanto, la
+función de probabilidad de la variable aleatoria $X\sim Be(p)$ de un
 ensayo Bernoulli es
 
 $$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
@@ -204,8 +204,8 @@ $$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
 
 #### Media y Varianza Bernoulli
 
-Si `$X\sim Be(p)$`, entonces se puede probar que la media y la varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim Be(p)$, entonces se puede probar que la media y la varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}$$
 
@@ -284,21 +284,21 @@ una desviación estándar de $0.489$.
 
 ### Distribución Binomial
 
-Si `$X$` es la variable aleatoria del número de éxitos de `$n$` ensayos
-de Bernoulli, con probabilidad de éxito `$p$`, entonces se dice que
-`$X\sim b(n,p)$` tal que
+Si $X$ es la variable aleatoria del número de éxitos de $n$ ensayos
+de Bernoulli, con probabilidad de éxito $p$, entonces se dice que
+$X\sim b(n,p)$ tal que
 
 $$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}$$
 
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo **con
 reemplazo** o en poblaciones infinitas en donde es posible **suponer que
-la probabilidad de éxito `$p$` es la misma** en cada ensayo Bernoulli.
+la probabilidad de éxito $p$ es la misma** en cada ensayo Bernoulli.
 
 #### Media y Varianza Binomial
 
-Si `$X\sim b(n,p)$`, entonces se puede probar que la media y varianza de
-la variable aleatoria `$X$` están dadas por
+Si $X\sim b(n,p)$, entonces se puede probar que la media y varianza de
+la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}$$
 
@@ -415,25 +415,25 @@ estudiantes.
 
 ### Distribución Hipergeométrica
 
-Si `$X$` es el número de éxitos de una muestra completamente aleatoria
-de tamaño `$n$` extraída de una población `$N$` compuesta por `$M$`
-éxitos y `$(N-M)$` fracasos, entonces la distribución de
-`$X\sim h(N,M,n)$`, con función de masa de probabilidad
+Si $X$ es el número de éxitos de una muestra completamente aleatoria
+de tamaño $n$ extraída de una población $N$ compuesta por $M$
+éxitos y $(N-M)$ fracasos, entonces la distribución de
+$X\sim h(N,M,n)$, con función de masa de probabilidad
 
 $$\begin{align*}p(x)=\frac{\left(\begin{array}{c}M\\ x\end{array}\right) \left(\begin{array}{c}N-M\\ n-x\end{array}\right)}{\left(\begin{array}{c}N\\ n\end{array}\right)}\end{align*}$$
 
 
-con `$x$` un entero que satisface la condición
-`$\max\{0, M-(N-n)\} \leq x \leq \min\{M,n\}$`.
+con $x$ un entero que satisface la condición
+$\max\{0, M-(N-n)\} \leq x \leq \min\{M,n\}$.
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo **sin
-reemplazo**, en poblaciones finitas donde hay `$M$` éxitos de un total
-de `$N$` objetos, de los cuales se seleccionan `$n$` objetos a la vez.
+reemplazo**, en poblaciones finitas donde hay $M$ éxitos de un total
+de $N$ objetos, de los cuales se seleccionan $n$ objetos a la vez.
 
 #### Media y Varianza Hipergeométrica
 
-Si `$X\sim h(N,M,n)$`, entonces se puede probar que la media y varianza
-de la variable aleatoria `$X$` están dadas por
+Si $X\sim h(N,M,n)$, entonces se puede probar que la media y varianza
+de la variable aleatoria $X$ están dadas por
 
 $$\begin{align*}\mathbb{E}(X)=n\frac{M}{N} \quad \quad Var(X)=n\left(\frac{M}{N}\right)\left(1-\frac{M}{N}\right)\left(\frac{N-n}{N-1}\right)\end{align*}$$
 

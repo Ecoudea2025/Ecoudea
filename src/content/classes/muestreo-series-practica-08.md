@@ -50,7 +50,7 @@ Lista de ejercicios
 2.  A partir de las ecuaciones presentados a continuación, identifique
     el modelo y pruebe si los modelos propuestos son invertibles y/o
     estacionarios. Para todos los casos se asume que
-    `$\varepsilon \sim RB(0,\sigma)$`
+    $\varepsilon \sim RB(0,\sigma)$
     <ol type="a">
     <li>
     $Y_t = \varepsilon_t - 0.3\varepsilon_{t-1}$
@@ -162,7 +162,7 @@ Lista de ejercicios
     10 x x x o o x o o o o o 
 
 1.  A partir de los resultados obtenidos mediante la función
-    `$armasubsets()$` de la librería `TSA` del <tt>R</tt>, trate de
+    $armasubsets()$ de la librería `TSA` del <tt>R</tt>, trate de
     identificar el modelo más plausibles para cada caso.
 
 <!-- -->

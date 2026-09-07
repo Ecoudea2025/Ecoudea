@@ -20,12 +20,12 @@ tanto **puede ser considerada como la técnica estadística más usada en
 la práctica**.
 
 Para entender este tipo de relación, se suponen inicialmente dos
-variables, la primera variable será la variable `$Y$` la cual es
+variables, la primera variable será la variable $Y$ la cual es
 variable dependiente o variable respuesta, mientras que la segunda
-variable será la variable `$X$` la cual es la variable independiente o
+variable será la variable $X$ la cual es la variable independiente o
 variable explicativa.
 
-El objetivo será estudiar la relación asociada entre `$Y$` y `$X$` (la
+El objetivo será estudiar la relación asociada entre $Y$ y $X$ (la
 cual no es necesariamente de causa-efecto), y para ello miraremos los
 siguientes casos de estudio.
 
@@ -432,7 +432,7 @@ entre el costo y el predial.
 
 ### Regresión Lineal Simple
 
-Si se supone que la relación entre `$Y$` y `$X$` es lineal, un modelo
+Si se supone que la relación entre $Y$ y $X$ es lineal, un modelo
 adecuado estaría dado por
 
 $$\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}$$
@@ -440,35 +440,35 @@ $$\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}$$
 
 donde
 
-- `$\beta_0$` y `$\beta_1$`: son dos constantes desconocidas denominadas
+- $\beta_0$ y $\beta_1$: son dos constantes desconocidas denominadas
   parámetros del modelo, estimados a partir de los datos.
-- `$\beta_0$` representa el intercepto.
-- `$\beta_1$` representa la pendiente.
-- `$\varepsilon$` representa al componente de error aleatorio denominado
+- $\beta_0$ representa el intercepto.
+- $\beta_1$ representa la pendiente.
+- $\varepsilon$ representa al componente de error aleatorio denominado
   error estadístico, el cual explica por qué el modelo de regresión
   lineal simple no ajusta exactamente los datos.
 
-**Nota:** Es de anotar que el término de error `$\varepsilon$` contiene
+**Nota:** Es de anotar que el término de error $\varepsilon$ contiene
 todos los efectos de otras variables que no fueron consideradas en el
 modelo, errores de medición u otras consideraciones no tenidas en cuenta
 por el investigador.
 
 #### Supuestos del modelo de regresión lineal simple
 
-1.  Se tiene una muestra aleatoria de `$n$` parejas
-    `$(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$`, en donde el objetivo
+1.  Se tiene una muestra aleatoria de $n$ parejas
+    $(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$, en donde el objetivo
     principal del análisis de regresión es encontrar la recta que mejor
     ajuste a los pares de observaciones, y por tanto se supone que las
-    parejas satisfacen el modelo `$(I)$`, tal que
+    parejas satisfacen el modelo $(I)$, tal que
     
 $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}$$
 
-    donde `$y_i$` es la i-ésima observación de la variable `$Y$`, dado
-    que `$X$` es igual a `$x_i$`.
+    donde $y_i$ es la i-ésima observación de la variable $Y$, dado
+    que $X$ es igual a $x_i$.
 
-2.  Del modelo `$(II)$` suponga que las `$\varepsilon_i$` son variables
-    aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
-    y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
+2.  Del modelo $(II)$ suponga que las $\varepsilon_i$ son variables
+    aleatorias independientes con media $\mathbb{E}(\varepsilon_i)=0$
+    y varianza $Var(\varepsilon_i)=\sigma^2$, de tal forma que
     
 $$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}$$
 
@@ -477,7 +477,7 @@ $$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i)
 $$\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}$$
 
     en donde, si además se cumple que
-    `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
+    $\varepsilon_i\sim N(0,\sigma^2)$, entonces se tendrá que
     
 $$\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}$$
 
@@ -485,17 +485,17 @@ $$\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}$$
 ### Estimación de parámetros
 
 El objetivo de un modelo de regresión será entonces estimar los
-parámetros `$\beta_0, \beta_1, \sigma^2$` del modelo lineal, y para ello
+parámetros $\beta_0, \beta_1, \sigma^2$ del modelo lineal, y para ello
 puede recurrirse a diferentes métodos, entre los cuales destaca el
 método de Máxima Verosimilitud y el método de mínimos cuadrados.
 
 #### Método de Máxima Verosimiliud
 
 Bajo el supuesto de que
-`$\varepsilon \stackrel{iid}{\sim} N(0,\sigma^2)$`, entonces
-`$y_i|x_i \stackrel{iid}{\sim} N(\beta_0 + \beta_1 x_i, \sigma^2)$`,
-luego la función de verosimilitud asociada a los pares `$(y_1, x_1)$`,
-`$(y_2, x_2)$`, `$\ldots$`, `$ (y_n,x_n)$` está dada por
+$\varepsilon \stackrel{iid}{\sim} N(0,\sigma^2)$, entonces
+$y_i|x_i \stackrel{iid}{\sim} N(\beta_0 + \beta_1 x_i, \sigma^2)$,
+luego la función de verosimilitud asociada a los pares $(y_1, x_1)$,
+$(y_2, x_2)$, $\ldots$, $ (y_n,x_n)$ está dada por
 
 $$\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i; \beta_0, \beta_1, \sigma^2)\\   &= \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\end{align*}$$
 
@@ -503,8 +503,8 @@ $$\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i
 Entonces, al maximizar la función de probabilidad tal como se enseño en
 la
 <a href="https://jiperezga.github.io/EstadisticaII/EstIIClase08.html#método-de-máxima-verosimilitud" target="\_blank">Clase
-08</a> se encontrará que los estimadores de `$\beta_0$`, `$\beta_1$` y
-`$\sigma^2$` que maximizan `$L(\cdot)$` están dados por
+08</a> se encontrará que los estimadores de $\beta_0$, $\beta_1$ y
+$\sigma^2$ que maximizan $L(\cdot)$ están dados por
 
 
 $$\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&=\frac{S_{xy}}{S_{xx}}= \frac{\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y})}{\sum_{i=1}^{n}(x_i - \bar{X})^2} = \frac{\sum_{i=1}^{n}(x_i-\bar{X}) y_i}{\sum_{i=1}^{n} (x_i - \bar{X})^2}\\    \hat{\sigma}^2&= \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}\end{align*}$$
@@ -610,40 +610,40 @@ $$\begin{align*}
 
 #### Método de Mínimos Cuadrados
 
-Sea una muestra aleatoria `$(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$`
+Sea una muestra aleatoria $(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$
 a partir de la cual se desea ajustar el siguiente modelo
 
 $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i\end{align*}$$
 
 
-donde `$\varepsilon_i$` es una variable aleatoria desconocida con
+donde $\varepsilon_i$ es una variable aleatoria desconocida con
 distribución de probabilidad independiente e idénticamente distribuida
-con media `$\mathbb{E}(\varepsilon_i)=0$` y varianza
-`$Var(\varepsilon_i)=\sigma^2$`.
+con media $\mathbb{E}(\varepsilon_i)=0$ y varianza
+$Var(\varepsilon_i)=\sigma^2$.
 
-Entonces si denotamos a `$\hat{\beta}_0, \hat{\beta}_1$`, los
-estimadores de los parámetros `$\beta_0, \beta_1$`, entonces la recta de
+Entonces si denotamos a $\hat{\beta}_0, \hat{\beta}_1$, los
+estimadores de los parámetros $\beta_0, \beta_1$, entonces la recta de
 regresión estimada será
 
 $$\begin{align*}\hat{y_i}=\hat{\beta}_0 + \hat{\beta}_1 x_i\end{align*}$$
 
 
-donde `$\hat{y}_i$` es el estimador de `$\mathbb{E}(y_i|x=x_i)$`.
-Entonces la diferencia entre `$y_i$` y `$\hat{y_i}$` se conoce como
-error de estimación del ajuste `$e_i$` y está dado por
+donde $\hat{y}_i$ es el estimador de $\mathbb{E}(y_i|x=x_i)$.
+Entonces la diferencia entre $y_i$ y $\hat{y_i}$ se conoce como
+error de estimación del ajuste $e_i$ y está dado por
 
 $$\begin{align*}e_i = y_i - \hat{y}_i = y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i\end{align*}$$
 
 
 **Supuestos**
 
-- `$e_i\sim N(0,\sigma^2_e)$`, varianza constante (homocedasticidad)
-- `$cov(e_i. e_j)=0$` para todo `$i \neq j$`.
+- $e_i\sim N(0,\sigma^2_e)$, varianza constante (homocedasticidad)
+- $cov(e_i. e_j)=0$ para todo $i \neq j$.
 
 **Cálculo estimadores**
 
 A partir de la ecuación anterior será posible encontrar los estimadores
-`$\hat{\beta}_0$` y `$\hat{\beta}_1$` mediante la minimización de la
+$\hat{\beta}_0$ y $\hat{\beta}_1$ mediante la minimización de la
 suma de los cuadrados de los errores.
 
 
@@ -721,16 +721,16 @@ $$\begin{align*}
 </p>
 </main>
 
-**Nota sobre estimador** `$\sigma^2$`
+**Nota sobre estimador** $\sigma^2$
 
 Dado que el método de mínimos cuadrados no posee un estimador para la
-varianza `$\sigma^2$`, se emplea entonces un estimador insesgado el cual
+varianza $\sigma^2$, se emplea entonces un estimador insesgado el cual
 estará dado por
 
 $$\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \frac{1}{n-2}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\              &= \frac{S_{yy} - \hat{\beta}_1 S_{xy}}{n-2}\end{align*}$$
 
 
-### Propiedades de `$\hat{\beta}_0, \hat{\beta}_1$`
+### Propiedades de $\hat{\beta}_0, \hat{\beta}_1$
 
 <ul>
 <li>
