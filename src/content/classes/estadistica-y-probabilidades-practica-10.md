@@ -123,9 +123,9 @@ Lista de ejercicios
     gráfico de distribución acumulada de la cual se obtiene la siguiente
     tabla.
     
-$$
-\begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\leq x<1 \\           0.0420 & 1\leq x<2 \\           0.0992 & 2\leq x<3 \\           0.1909 & 3\leq x<4 \\           0.3130 & 4\leq x<5 \\           0.4526 & 5\leq x<6 \\           0.5922 & 6\leq x<7 \\           0.7162 & 7\leq x<9 \\           0.8155 & 9\leq x<11 \\           0.9377 & 11\leq x<15 \\           1 & x\geq 15         \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}F(x) = \begin{cases}           0  & x<0 \\           0.0134 & 0\leq x<1 \\           0.0420 & 1\leq x<2 \\           0.0992 & 2\leq x<3 \\           0.1909 & 3\leq x<4 \\           0.3130 & 4\leq x<5 \\           0.4526 & 5\leq x<6 \\           0.5922 & 6\leq x<7 \\           0.7162 & 7\leq x<9 \\           0.8155 & 9\leq x<11 \\           0.9377 & 11\leq x<15 \\           1 & x\geq 15         \end{cases}\end{align*}
+    $$
 
     A partir de esta función de probabilidad
     <ol type="a">
@@ -195,21 +195,21 @@ $$
     </table>
     Encuentre el coeficiente de asimetría, el cuál está dado por
     
-$$
-\begin{align*}\gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{\left[\mathbb{E}(X^2)- \mathbb{E}(X)^2)\right]^{3/2}}\end{align*}
-$$
+    $$
+    \begin{align*}\gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{\left[\mathbb{E}(X^2)- \mathbb{E}(X)^2)\right]^{3/2}}\end{align*}
+    $$
 
 6.  Suponga la siguiente función de masa de probabilidad
     
-$$
-\begin{align*}p(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
+    $$
 
     Calcule el coeficiente de exceso de curtosis, el cual está dado por
     
-$$
-\begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{\left[\mathbb{E}(X^2) - \mathbb{E}(X)^2\right]^2} -3\end{align*}
-$$
+    $$
+    \begin{align*}\gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{\left[\mathbb{E}(X^2) - \mathbb{E}(X)^2\right]^2} -3\end{align*}
+    $$
 
 7.  Un granjero cultiva peras en su finca para posteriormente venderlas
     en la minorista. Dado que los pedidos realizados en la minorista son
@@ -291,9 +291,9 @@ $$
     una maquina en un día antes de apagarse, es una variable aleatoria
     discreta `$X$` con función de densidad de probabilidad dada por
     
-$$
-\begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}
+    $$
 
     <ol type="a">
     <li>

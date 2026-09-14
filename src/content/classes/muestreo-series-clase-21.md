@@ -224,9 +224,9 @@ la interpretación del correlograma están dados por
     mediante la formula:
 
 
-$$
-\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T} = \pm 1.96/\sqrt{T}\end{align*}
-$$
+    $$
+    \begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T} = \pm 1.96/\sqrt{T}\end{align*}
+    $$
 
 
 -   Si las autocorrelaciones decrecen lentamente a cero, o muestra un

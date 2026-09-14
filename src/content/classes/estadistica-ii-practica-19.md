@@ -14,9 +14,9 @@ bibliography: "../../referencias.bib"
     proporción de personas que responden una encuesta por correo
     electrónico, con función de probabilidad dada por
     
-$$
-\begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}
-$$
+    $$
+    \begin{align*}f(x) = \frac{2(x+2)}{5} \text{ para } 0\leq x\leq1\end{align*}
+    $$
 
     Encuentre la función de densidad de probabilidad del estadístico de
     orden más pequeño.
@@ -1193,9 +1193,9 @@ $$
     distribución del tamaño (en micras) de las partículas se caracteriza
     por
     
-$$
-\begin{align*}f(x) = 3x^{-4} \text{ para } x\geq1\end{align*}
-$$
+    $$
+    \begin{align*}f(x) = 3x^{-4} \text{ para } x\geq1\end{align*}
+    $$
 
     Encuentre la función de densidad de probabilidad del `$k$`-ésimo
     estadístico de orden.
@@ -1207,9 +1207,9 @@ $$
     galones. Si `$Y$` denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
-$$
-\begin{align*}f(x)=\begin{cases}x & 0\leq x\leq 1 \\1 & 1<x\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\begin{cases}x & 0\leq x\leq 1 \\1 & 1<x\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     Si se toma una muestra aleatoria de tamaño `$60$` de la demanda
     semanal en cientos de galones del proveedor de queroseno, cuál es la

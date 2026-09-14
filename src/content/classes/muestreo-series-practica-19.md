@@ -285,9 +285,9 @@ Lista de ejercicios
 4.  Suponga el siguiente modelo de regresión lineal simple ajustado a un
     conjunto de 100 observaciones
     
-$$
-\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}
-$$
+    $$
+    \begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}
+    $$
  A partir
     de este modelo calcule
     <ol type="a">
@@ -425,9 +425,9 @@ $$
 5.  Suponga el siguiente modelo de regresión lineal simple ajustado a un
     conjunto de 1000 observaciones
     
-$$
-\begin{align*}\hat{Y}_t = 1316.28 + 22.48 X\end{align*}
-$$
+    $$
+    \begin{align*}\hat{Y}_t = 1316.28 + 22.48 X\end{align*}
+    $$
 
 
 A partir de este modelo calcule

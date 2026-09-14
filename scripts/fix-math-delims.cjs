@@ -43,7 +43,7 @@ for (const file of files) {
     }
 
     if (line.trim() === '$$') {
-      out.push('$$');
+      out.push(line);
       continue;
     }
 

@@ -99,9 +99,9 @@ Lista de ejercicios
 2.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
     probabilidad dada por:
     
-$$
-\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2,3\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2,3\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -116,9 +116,9 @@ $$
 3.  Suponga una función de densidad de probabilidad conjunta de las
     variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
     
-$$
-\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     A partir de esta ecuación, calcule
     <ol type="a">
@@ -217,9 +217,9 @@ $$
 5.  Si `$X$` y `$Y$` son variables aleatorias con función de
     probabilidad conjunta dada por
     
-$$
-\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -269,9 +269,9 @@ $$
     si fuera necesario. Se sabe que la distribución conjunta de `$X$` y
     `$Y$` es
     
-$$
-\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -289,9 +289,9 @@ $$
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
     componentes está dada por
     
-$$
-\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -324,16 +324,16 @@ $$
 10. Calcule la covarianza de las variables aleatorias `$X$` y `$Y$` que
     tienen la siguiente función de densidad de probabilidad conjunta
     
-$$
-\begin{align*}f(x,y)=\begin{cases}x+y & 0<x<1,\quad 0<y<1,\\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}x+y & 0<x<1,\quad 0<y<1,\\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
 11. Si la distribución de probabilidad conjunta de `$X$` y `$Y$` está
     dada por
     
-$$
-\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
   
     Calcule
     <ol type="a">
@@ -354,9 +354,9 @@ $$
 12. La función de densidad de probabilidad conjunta de las variables
     aleatorias `$X$`, `$Y$` y `$Z$` está dada por
     
-$$
-\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     Calcule
     <ol type="a">
@@ -374,9 +374,9 @@ $$
 13. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
-$$
-\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -399,9 +399,9 @@ $$
 14. Sean `$X$` y `$Y$` son variables aleatorias que poseen la siguiente
     función de densidad de probabilidad conjunta
     
-$$
-\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
+    $$
 
     Entonces, a partir de ésta, calcule la covarianza de `$6X^2$` y
     `$3Y^3$`.
@@ -433,9 +433,9 @@ $$
     `$Y$`, respectivamente, si se supone que la función de densidad
     conjunta de estas variables es
     
-$$
-\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -454,9 +454,9 @@ $$
     `$Y$`, respectivamente, y suponga que la función de densidad
     conjunta de estas variables es
     
-$$
-\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -476,9 +476,9 @@ $$
 18. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
-$$
-\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -493,9 +493,9 @@ $$
 19. Sean `$X$` y `$Y$` dos variables aleatorias con función de
     probabilidad dada por
     
-$$
-\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -525,9 +525,9 @@ $$
 20. Suponga que la función de probabilidad conjunta de un sistema
     químico puede ser representado como
     
-$$
-\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -642,9 +642,9 @@ $$
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
     componentes está dada por
     
-$$
-\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -762,15 +762,15 @@ $$
     para los tiempos de espera `$X$` (en minutos) y ejecución `$Y$` (en
     segundos) se determina por
     
-$$
-\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     con función de distribución acumulada conjunta dada por
     
-$$
-\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-10y}\right]  & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-10y}\right]  & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -792,9 +792,9 @@ $$
 26. Sean `$X$` y `$Y$` variables aleatorias continuas distribuidas
     conjuntamente con
     
-$$
-\begin{align*}f(x,y)=kxy \quad \text{ para } 0<x<5; \quad 1<y<x\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=kxy \quad \text{ para } 0<x<5; \quad 1<y<x\end{align*}
+    $$
 
     El valor de `$k$` que hace que `$f(x,y)$` sea una función de
     densidad de probabilidad conjunta es?

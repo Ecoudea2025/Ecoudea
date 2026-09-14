@@ -124,9 +124,9 @@ bibliography: "../../referencias.bib"
     específica durante un periodo de `$20$` segundos, se determina
     mediante la siguiente función de probabilidad discreta
     
-$$
-\begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\dots\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\frac{e^{-\lambda} \lambda^x}{x!} \text{  para  } x=0,1,2,\dots\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -156,9 +156,9 @@ $$
 5.  Sea `$X$` una variable aleatoria con función de masa de probabilidad
     geométrica dada por
     
-$$
-\begin{align*}p(x)=p(1-p)^{x-1} \text{  para  }  x=1,2,3,\ldots\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=p(1-p)^{x-1} \text{  para  }  x=1,2,3,\ldots\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -175,9 +175,9 @@ $$
     las caras para el lanzamiento de dos dados, con función de masa de
     probabilidad dada por
     
-$$
-\begin{align*}p(x)=\frac{6-|7-x|}{36} \text{  para  } x = 2,3,\ldots,12\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\frac{6-|7-x|}{36} \text{  para  } x = 2,3,\ldots,12\end{align*}
+    $$
 
     Calcule el segundo momento central.
 
@@ -202,9 +202,9 @@ $$
 8.  Demuestre que el `$r$`-ésimo momento alrededor del origen de la
     distribución gamma es
     
-$$
-\begin{align*}\mu'_r=\mathbb{E}(X^r)=\frac{\beta^r\Gamma(\alpha + r)}{\Gamma(\alpha)}\end{align*}
-$$
+    $$
+    \begin{align*}\mu'_r=\mathbb{E}(X^r)=\frac{\beta^r\Gamma(\alpha + r)}{\Gamma(\alpha)}\end{align*}
+    $$
 
     y calcule la media, varianza, asimetría y exceso de curtosis de la
     distribución Gamma.
@@ -219,9 +219,9 @@ $$
 10. Suponga una variable aleatoria `$X$` la cual posee una función de
     masa de probabilidad uniforme discreta, de la forma
     
-$$
-\begin{align*}p(x) = \frac{1}{k} \text{  para  } x = 1,2, \ldots, k\end{align*}
-$$
+    $$
+    \begin{align*}p(x) = \frac{1}{k} \text{  para  } x = 1,2, \ldots, k\end{align*}
+    $$
 
     Encuentre su función generadora de momentos de la variable aleatoria
     `$X$`.
@@ -238,9 +238,9 @@ $$
 12. La función generadora de momentos de cierta variable aleatoria de
     Poisson `$X$` es dada por
     
-$$
-\begin{align*}M_x(t) = e^{4(e^t-1)}\end{align*}
-$$
+    $$
+    \begin{align*}M_x(t) = e^{4(e^t-1)}\end{align*}
+    $$
  Calcule de
     forma exacta y mediante aproximación a una distribución normal la
     `$\mathbb{P}(\mu - 1.3\sigma<X< \mu + 2.3\sigma)$`.
@@ -264,9 +264,9 @@ $$
 14. Sea `$X$` una variable aleatoria con función de densidad de
     probabilidad chi-cuadrado dada por
     
-$$
-\begin{align*}f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)}x^{\frac{\nu}{2}-1}e^{-\frac{x}{2}} \text{  para  } x>0\end{align*}
-$$
+    $$
+    \begin{align*}f(x) = \frac{1}{2^{\nu/2}\Gamma(\nu/2)}x^{\frac{\nu}{2}-1}e^{-\frac{x}{2}} \text{  para  } x>0\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -289,9 +289,9 @@ $$
 16. Sea `$X$` una variable aleatoria con función de masa de probabilidad
     binomial dada por
     
-$$
-\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n-x} \text{  para  } x=0,1,2,\ldots,n\end{align*}
-$$
+    $$
+    \begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right) p^x(1-p)^{n-x} \text{  para  } x=0,1,2,\ldots,n\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -323,9 +323,9 @@ $$
 18. Suponga una variable aleatoria `$X$` con función de distribución de
     probabilidad exponencial dada por
     
-$$
-\begin{align*}f(x) = \lambda e^{-\lambda x} \text{  para  } x>0, \lambda>0\end{align*}
-$$
+    $$
+    \begin{align*}f(x) = \lambda e^{-\lambda x} \text{  para  } x>0, \lambda>0\end{align*}
+    $$
 
     Basado en lo anterior, calcule el segundo momento central de la
     variable aleatoria.

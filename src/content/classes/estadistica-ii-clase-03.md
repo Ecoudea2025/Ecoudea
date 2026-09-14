@@ -76,9 +76,9 @@ tomando `$X_1 = X$` y `$X_2=X^2$`.
     con `$n > k+1$`, las cuales se supone que satisfacen el modelo
     `$(I)$`, tal que
     
-$$
-\begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik} + \varepsilon_i \quad \text{ para } i =1,2, \ldots, n \quad \quad (II)\end{align*}
-$$
+    $$
+    \begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik} + \varepsilon_i \quad \text{ para } i =1,2, \ldots, n \quad \quad (II)\end{align*}
+    $$
 
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, y
     `$x_{ij}$` es la i-ésima observación de la j-ésima variable
@@ -88,22 +88,22 @@ $$
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
-$$
-\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik}\end{align*}
-$$
+    $$
+    \begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik}\end{align*}
+    $$
 
     y
     
-$$
-\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
-$$
+    $$
+    \begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
+    $$
 
     en donde, si además se cumple que
     `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
-$$
-\begin{align*}y_i\sim N(\beta_0 + \beta_1 x_{i1} + \cdots + \beta_k x_{ik}, \; \sigma^2)\end{align*}
-$$
+    $$
+    \begin{align*}y_i\sim N(\beta_0 + \beta_1 x_{i1} + \cdots + \beta_k x_{ik}, \; \sigma^2)\end{align*}
+    $$
 
 3.  Las variables explicativas `$X_1, X_2, \ldots, X_k$` no presentan
     una relación lineal exacta entre ellas (ausencia de

@@ -50,8 +50,9 @@ recuadro gris ni parpadeo). Pipeline en `astro.config.mjs`:
   que las fuentes se empaquetan con Vite (no hay rutas `/assets/...` rotas).
 
 Al agregar o editar contenido con LaTeX, ejecuta `npm run content:fix`
-(normaliza delimitadores `$$`, listas `1.` pegadas a HTML crudo y `$` dentro de
-`<pre>`, y arregla referencias `\label`).
+(normaliza delimitadores `$$`, re-indenta los bloques `$$` de los ítems de lista,
+arregla listas `1.` pegadas a HTML crudo y `$` dentro de `<pre>`, y limpia
+referencias `\label`).
 
 **En `.astro`:** escapa las llaves de `\begin{...}` como `&#123;` / `&#125;`
 (Astro interpreta `{...}` como expresión). Ejemplo: `\begin&#123;pmatrix&#125;`.

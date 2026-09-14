@@ -143,9 +143,9 @@ Lista de ejercicios
 6.  Si `$X$` y `$Y$` son variables aleatorias discretas con función de
     probabilidad dada por:
     
-$$
-\begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2,3\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=k\left(\frac{x+y}{xy}\right) \quad \quad x = 1,2,3; y = 2,3\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -205,9 +205,9 @@ $$
     </table>
     Encuentre el coeficiente de asimetría, el cuál está dado por
     
-$$
-\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{3}\right]={\frac{\mu_{3}}{\sigma^{3}}}={\frac{\mathbb{E}\left[(X-\mu)^{3}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{3/2}}}\\ \gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{\left[\mathbb{E}(X^2)- \mathbb{E}(X)^2)\right]^{3/2}}\end{align*}
-$$
+    $$
+    \begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{3}\right]={\frac{\mu_{3}}{\sigma^{3}}}={\frac{\mathbb{E}\left[(X-\mu)^{3}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{3/2}}}\\ \gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{\left[\mathbb{E}(X^2)- \mathbb{E}(X)^2)\right]^{3/2}}\end{align*}
+    $$
 
 8.  Un granjero cultiva peras en su finca para posteriormente venderlas
     en la minorista. Dado que los pedidos realizados en la minorista son
@@ -246,15 +246,15 @@ $$
 
 10. A partir de la siguiente función de masa de probabilidad
     
-$$
-\begin{align*}f(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
+    $$
 
     Calcule el coeficiente de exceso de curtosis, el cual está dado por
     
-$$
-\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{4}\right] -3={\frac{\mu_{4}}{\sigma^{4}}} -3 ={\frac{\mathbb{E}\left[(X-\mu)^{4}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{4/2}}} -3\\ \gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{\left[\mathbb{E}(X^2) - \mathbb{E}(X)^2\right]^2} -3\end{align*}
-$$
+    $$
+    \begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{4}\right] -3={\frac{\mu_{4}}{\sigma^{4}}} -3 ={\frac{\mathbb{E}\left[(X-\mu)^{4}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{4/2}}} -3\\ \gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{\left[\mathbb{E}(X^2) - \mathbb{E}(X)^2\right]^2} -3\end{align*}
+    $$
 
 11. Dado que ya hemos lanzado al aire una moneda balanceada diez veces y
     no obtuvimos caras, ¿cuál es la probabilidad de que debamos lanzar
@@ -355,9 +355,9 @@ $$
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
     componentes está dada por
     
-$$
-\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -383,9 +383,9 @@ $$
 
 16. Considere la siguiente función de densidad de probabilidad
     
-$$
-\begin{align*}f(x) =\begin{cases}\frac{3}{2}\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x) =\begin{cases}\frac{3}{2}\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -406,9 +406,9 @@ $$
 18. Calcule la covarianza de las variables aleatorias `$X$` y `$Y$` que
     tienen la siguiente función de densidad de probabilidad conjunta
     
-$$
-\begin{align*}f(x,y)=\begin{cases}x+y & 0<x<1,\quad 0<y<1,\\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}x+y & 0<x<1,\quad 0<y<1,\\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
 19. Una venta particular comprende cuatro artículos seleccionados al
     azar de un lote voluminoso que se sabe contiene `$10\%$` de
@@ -421,9 +421,9 @@ $$
 20. La función de densidad de probabilidad conjunta de las variables
     aleatorias `$X$`, `$Y$` y `$Z$` está dada por
     
-$$
-\begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y,z)=\begin{cases}4xyz^2; &0< x,y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     Calcule
     <ol type="a">
@@ -442,9 +442,9 @@ $$
     una licuadora en un hogar durante un año es una variable aleatoria
     continua `$X$` con función de densidad de probabilidad dada por:
     
-$$
-\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso} \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso} \end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -470,9 +470,9 @@ $$
     una maquina en un día antes de apagarse, es una variable aleatoria
     discreta `$X$` con función de masa de probabilidad dada por
     
-$$
-\begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\frac{(x^2+4)}{30} \quad \quad x=0,1,2,3\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -525,9 +525,9 @@ $$
 26. Sea `$X$` una variable aleatoria continua con distribución de
     probabilidades `$f(x)$` dada por
     
-$$
-\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -548,9 +548,9 @@ $$
     probabilidad se encuentre a dos desviaciones estándar de la media y
     compare con el resultado dado por el teorema de Chebyshev.
     
-$$
-\begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}
+    $$
 
 28. Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
@@ -558,9 +558,9 @@ $$
     densidad de probabilidad que caracteriza la proporción `$Y$` que
     obtiene utilidades está dada por
     
-$$
-\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -591,9 +591,9 @@ $$
 30. Sean `$X$` y `$Y$` son variables aleatorias que poseen la siguiente
     función de densidad de probabilidad conjunta
     
-$$
-\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
+    $$
 
     Entonces, a partir de ésta, calcule la covarianza de `$6X^2$` y
     `$3Y^3$`.
@@ -615,9 +615,9 @@ $$
     `$Y$`, respectivamente, si se supone que la función de densidad
     conjunta de estas variables es
     
-$$
-\begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y)=\begin{cases}24xy & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -647,9 +647,9 @@ $$
 34. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
-$$
-\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;\quad 0<y<1;\quad 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -703,9 +703,9 @@ $$
     galones. Si `$Y$` denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
-$$
-\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -726,9 +726,9 @@ $$
     una centro comercial en un periodo de una hora. Si la distribución
     acumulada de `$X$` es:
     
-$$
-\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>

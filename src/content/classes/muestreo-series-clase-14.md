@@ -166,18 +166,18 @@ $$
 3.  La autocovarianza sólo depende de la distancia $k$ de las
     observaciones en el tiempo de las variables del proceso
     
-$$
-\begin{align*}Cov(Y_t, Y_{t+k})=\gamma(k)= Cov(Y_{t-k}, Y_{t})=\gamma(-k)\end{align*}
-$$
+    $$
+    \begin{align*}Cov(Y_t, Y_{t+k})=\gamma(k)= Cov(Y_{t-k}, Y_{t})=\gamma(-k)\end{align*}
+    $$
 
     donde, la función es simétrica alrededor de cero, con
     `$\gamma(0)=Var(Y_t)$`. En consecuencia de la tercer condición, se
     tendrá que la autocorrelación también sea una función simétrica
     alrededor de cero.
     
-$$
-\begin{align*}Cor(Y_t, Y_{t+k})=\rho(k)= Cor(Y_{t-k}, Y_{t})=\rho(-k)\end{align*}
-$$
+    $$
+    \begin{align*}Cor(Y_t, Y_{t+k})=\rho(k)= Cor(Y_{t-k}, Y_{t})=\rho(-k)\end{align*}
+    $$
 
 
 Otra propiedad importante que pueden cumplir los procesos estacionarios
@@ -242,9 +242,9 @@ $$
 3.  La autocovarianza es cero, y en consecuencia también la
     autocorrelación es cero:
     
-$$
-\begin{align*}Cov(\varepsilon_t, \varepsilon_{t+k}) &=\gamma(k) = 0 \\  Cor(\varepsilon_t, \varepsilon_{t+k}) &=\rho(k) = 0\end{align*}
-$$
+    $$
+    \begin{align*}Cov(\varepsilon_t, \varepsilon_{t+k}) &=\gamma(k) = 0 \\  Cor(\varepsilon_t, \varepsilon_{t+k}) &=\rho(k) = 0\end{align*}
+    $$
 
     para todo `$k\neq 0.$`
 

@@ -110,9 +110,9 @@ bibliography: "../../referencias.bib"
     un centro comercial en un periodo de una hora. Si la distribución
     acumulada de `$X$` es:
     
-$$
-\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -136,9 +136,9 @@ $$
 
 3.  Considere la función de densidad
     
-$$
-\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro caso} \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro caso} \end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -160,9 +160,9 @@ $$
     variable aleatoria continua `$X$` con función de densidad de
     probabilidad dada por:
     
-$$
-\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{En otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{En otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -188,9 +188,9 @@ $$
     una variable aleatoria continua con una función de distribución
     acumulativa
     
-$$
-\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}
+    $$
 
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
@@ -208,9 +208,9 @@ $$
     en minutos, que tarda un hamster en superar un laberinto, tal que,
     la función de densidad de probabilidad `$f(x)$` está dada por:
     
-$$
-\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -237,9 +237,9 @@ $$
     las caras para el lanzamiento de dos dados, con función de masa de
     probabilidad dada por
     
-$$
-\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -271,9 +271,9 @@ $$
     gráfico de distribución acumulada de la cual se obtiene la siguiente
     tabla.
     
-$$
-\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x<3 \\      0.0420 & 3\leq x<4 \\      0.0992 & 4\leq x<5 \\      0.1909 & 5\leq x<6 \\      0.3130 & 6\leq x<7 \\      0.4526 & 7\leq x<9 \\      0.5922 & 9\leq x<11 \\      0.7162 & 11\leq x<12 \\      0.8155 & 12\leq x<14 \\      0.9377 & 14\leq x<15 \\      1 & x\geq 15 \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x<3 \\      0.0420 & 3\leq x<4 \\      0.0992 & 4\leq x<5 \\      0.1909 & 5\leq x<6 \\      0.3130 & 6\leq x<7 \\      0.4526 & 7\leq x<9 \\      0.5922 & 9\leq x<11 \\      0.7162 & 11\leq x<12 \\      0.8155 & 12\leq x<14 \\      0.9377 & 14\leq x<15 \\      1 & x\geq 15 \end{cases}\end{align*}
+    $$
 
     A partir de esta función de probabilidad
     <ol type="a">
@@ -304,11 +304,11 @@ $$
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
     momento en que han entrado $3$ llamadas al conmutador?
     
-$$
-\begin{align*}
+    $$
+    \begin{align*}
     f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}} \quad x>0,\; \alpha>0, \;\beta>0
     \end{align*}
-$$
+    $$
     </li>
     </ol>
 
@@ -467,27 +467,27 @@ $$
     </table>
     Encuentre el coeficiente de asimetría, el cuál está dado por
     
-$$
-\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{3}\right]={\frac{\mu_{3}}{\sigma^{3}}}={\frac{\mathbb{E}\left[(X-\mu)^{3}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{3/2}}}\\ \gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{[\mathbb{E}(X^2)- \mathbb{E}(X)^2)]^{3/2}}\end{align*}
-$$
+    $$
+    \begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{3}\right]={\frac{\mu_{3}}{\sigma^{3}}}={\frac{\mathbb{E}\left[(X-\mu)^{3}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{3/2}}}\\ \gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{[\mathbb{E}(X^2)- \mathbb{E}(X)^2)]^{3/2}}\end{align*}
+    $$
 
 22. A partir de la siguiente función de masa de probabilidad
     
-$$
-\begin{align*}p(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
+    $$
 
     Calcule el coeficiente de exceso de curtosis, el cual está dado por
     
-$$
-\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{4}\right] -3={\frac{\mu_{4}}{\sigma^{4}}} -3 ={\frac{\mathbb{E}\left[(X-\mu)^{4}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{4/2}}} -3\\ \gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{[\mathbb{E}(X^2) - \mathbb{E}(X)^2]^2} -3\end{align*}
-$$
+    $$
+    \begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{4}\right] -3={\frac{\mu_{4}}{\sigma^{4}}} -3 ={\frac{\mathbb{E}\left[(X-\mu)^{4}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{4/2}}} -3\\ \gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{[\mathbb{E}(X^2) - \mathbb{E}(X)^2]^2} -3\end{align*}
+    $$
 
 23. Considere la siguiente función de densidad de probabilidad
     
-$$
-\begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -504,9 +504,9 @@ $$
     densidad de probabilidad que caracteriza la proporción `$Y$` que
     obtiene utilidades está dada por
     
-$$
-\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -542,9 +542,9 @@ $$
     galones. Si `$Y$` denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
-$$
-\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -628,9 +628,9 @@ $$
     del puente de la madre Laura, posee una función de densidad de
     probabilidad dada por
     
-$$
-\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 & \text{en otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 & \text{en otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -701,9 +701,9 @@ $$
     encontrar un yacimiento, tal que, su función de masa de probabilidad
     está dada por
     
-$$
-\begin{align*}p(x)=p(1-p)^x \quad \quad \text{para } x=0,1,2,\ldots\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=p(1-p)^x \quad \quad \text{para } x=0,1,2,\ldots\end{align*}
+    $$
 
     Si la probabilidad `$p$` de encontrar un yacimiento en una
     perforación es del `$18\%$`, cuál es la probabilidad de que se
@@ -713,9 +713,9 @@ $$
     un Call Center en una, es una variable aleatoria `$X$` con función
     de densidad de probabilidad dada por
     
-$$
-\begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -736,9 +736,9 @@ $$
 37. El tiempo de vida útil, en años, de una computadora Hewlett-Packard,
     es una variable aleatoria con función de densidad dada por
     
-$$
-\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -778,9 +778,9 @@ $$
     pueblo durante un periodo de `$5$` minutos, es una variable
     aleatoria discreta con función de masa de probabilidad dada por
     
-$$
-\begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & \text{En otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & \text{En otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>
@@ -797,9 +797,9 @@ $$
     día es una función de distribución de densidad de probabilidad dada
     por
     
-$$
-\begin{align*}f(x)=\begin{cases}x^3 & 2\leq x < 4 \\ (x - 2)^2 & 4 \leq x < 8\\0 & \text{En otro caso}\end{cases}\end{align*}
-$$
+    $$
+    \begin{align*}f(x)=\begin{cases}x^3 & 2\leq x < 4 \\ (x - 2)^2 & 4 \leq x < 8\\0 & \text{En otro caso}\end{cases}\end{align*}
+    $$
 
     <ol type="a">
     <li>

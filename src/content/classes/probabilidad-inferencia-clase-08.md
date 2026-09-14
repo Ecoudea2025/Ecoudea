@@ -857,9 +857,9 @@ distribución `$N(\mu,\sigma^2)$` de tamaño `$n$`, y se tiene que
 2.  la esperanza y la varianza de la variable aleatoria `$S^2$` estarán
     dadas por
     
-$$
-\begin{align*}\mathbb{E}(S^2)= \sigma^2 \quad \text{ y } \quad Var(S^2) = \frac{2(\sigma^2)^2}{n-1}\end{align*}
-$$
+    $$
+    \begin{align*}\mathbb{E}(S^2)= \sigma^2 \quad \text{ y } \quad Var(S^2) = \frac{2(\sigma^2)^2}{n-1}\end{align*}
+    $$
 
 
 <button id="Show13" class="btn btn-secondary">

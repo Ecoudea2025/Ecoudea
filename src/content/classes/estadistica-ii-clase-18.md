@@ -198,9 +198,9 @@ tamaño, entonces
     calcularse mediante la ecuación
 
 
-$$
-\begin{align*}EFR = \frac{Var(\hat{\theta_1})}{Var(\hat{\theta_2})}\end{align*}
-$$
+    $$
+    \begin{align*}EFR = \frac{Var(\hat{\theta_1})}{Var(\hat{\theta_2})}\end{align*}
+    $$
 
 
 y se interpretará de la siguiente manera

@@ -463,9 +463,9 @@ por el investigador.
     ajuste a los pares de observaciones, y por tanto se supone que las
     parejas satisfacen el modelo `$(I)$`, tal que
     
-$$
-\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}
-$$
+    $$
+    \begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}
+    $$
 
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, dado
     que `$X$` es igual a `$x_i$`.
@@ -474,22 +474,22 @@ $$
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
-$$
-\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}
-$$
+    $$
+    \begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}
+    $$
 
     y
     
-$$
-\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
-$$
+    $$
+    \begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
+    $$
 
     en donde, si además se cumple que
     `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
-$$
-\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}
-$$
+    $$
+    \begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}
+    $$
 
 
 ### Estimación de parámetros

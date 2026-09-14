@@ -21,17 +21,17 @@ Si `$\hat{\theta}$` es un estimador del parámetro `$\theta$`, tal que
 1.  `$\hat{\theta}$` es un estimador insesgado o asintóticamente
     insesgado tal que
     
-$$
-\begin{align*}\lim_{n\to \infty}\mathbb{E}(\hat{\theta}) = \theta \quad \text{ ó }\quad \lim_{n\to \infty}\mathbb{B}(\hat{\theta}) = 0\end{align*}
-$$
+    $$
+    \begin{align*}\lim_{n\to \infty}\mathbb{E}(\hat{\theta}) = \theta \quad \text{ ó }\quad \lim_{n\to \infty}\mathbb{B}(\hat{\theta}) = 0\end{align*}
+    $$
 
 2.  A medida que aumenta el tamaño de muestra, las estimaciones de
     `$\hat{\theta}$` se aproximan cada vez más al parámetro `$\theta$`,
     tal que
     
-$$
-\begin{align*}\lim_{n\to \infty}Var(\hat{\theta}) = 0\end{align*}
-$$
+    $$
+    \begin{align*}\lim_{n\to \infty}Var(\hat{\theta}) = 0\end{align*}
+    $$
 
 
 entonces de cumplirse estas dos condiciones se dice que el estimador

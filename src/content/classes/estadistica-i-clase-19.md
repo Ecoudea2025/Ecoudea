@@ -629,9 +629,9 @@ entonces se deben cumplir los siguientes tres axiomas
 -   **Axioma 3-** Si `$A_1, A_2, \ldots$` son eventos **mutuamente
     excluyentes**, entonces
     
-$$
-\begin{align*}\mathbb P(A_1\cup A_2\cup A_3\cup\ldots)=\sum_{i=1}^\infty \mathbb P(A_i)\end{align*}
-$$
+    $$
+    \begin{align*}\mathbb P(A_1\cup A_2\cup A_3\cup\ldots)=\sum_{i=1}^\infty \mathbb P(A_i)\end{align*}
+    $$
 
 
 ### Propiedades de probabilidad
