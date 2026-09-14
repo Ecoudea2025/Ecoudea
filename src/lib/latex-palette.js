@@ -85,3 +85,15 @@ export const defaultTex = String.raw`\begin{align}
 \mathbb{E}(X) &= \sum_{i=1}^{n} x_i \, p(x_i) \\
 \operatorname{Var}(X) &= \mathbb{E}(X^2) - \left[\mathbb{E}(X)\right]^2
 \end{align}`;
+
+export const templates = [
+  { label: 'Integral', tex: '\\int_{a}^{b} f(x)\\,dx = F(b) - F(a)' },
+  { label: 'Sumatoria', tex: '\\sum_{i=1}^{n} x_i = x_1 + x_2 + \\cdots + x_n' },
+  { label: 'Matriz', tex: '\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}' },
+  { label: 'Sistema', tex: '\\begin{cases} 2x + y = 5 \\\\ x - y = 1 \\end{cases}' },
+  { label: 'Derivada', tex: '\\frac{d}{dx}\\left( x^{2} \\right) = 2x' },
+  { label: 'Límite', tex: '\\lim_{x \\to \\infty} \\left( 1 + \\frac{1}{x} \\right)^{x} = e' },
+  { label: 'Probabilidad', tex: '\\mathbb{P}(A \\mid B) = \\frac{\\mathbb{P}(A \\cap B)}{\\mathbb{P}(B)}' },
+  { label: 'Distribución', tex: '\\begin{align}\nf(x) &= \\frac{1}{\\sigma\\sqrt{2\\pi}}\\, e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n\\end{align}' },
+];
+

@@ -7,33 +7,45 @@ import 'katex/dist/katex.min.css';
 const base = import.meta.env.BASE_URL;
 const btn =
   'inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border-subtle text-sm text-text bg-transparent hover:border-accent/50 hover:text-accent transition-all cursor-pointer';
+const chip =
+  'px-2.5 py-1 rounded-lg text-xs font-medium border border-border-subtle text-text-muted hover:text-accent hover:border-accent/40 hover:bg-accent-soft transition-all cursor-pointer';
+const iconBtn =
+  'flex items-center justify-center w-9 h-9 rounded-lg border border-border-subtle text-text-muted hover:text-accent hover:border-accent/50 transition-all cursor-pointer bg-transparent';
 ---
 
 <BaseLayout
   title="Tablero LaTeX - Ecoudea"
-  description="Editor LaTeX en línea con previsualización en vivo (KaTeX) y paleta de símbolos matemáticos."
+  description="Editor LaTeX a pantalla completa con previsualización en vivo (KaTeX), paleta de símbolos y plantillas."
 >
   <Fragment slot="header"><Navbar currentPath={`${base}/tablero-latex`} /></Fragment>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-    <nav class="flex items-center gap-2 text-sm text-text-muted mb-6">
+  <div class="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <nav class="flex items-center gap-2 text-sm text-text-muted mb-4">
       <a href={`${base}/`} class="hover:text-accent transition-colors no-underline">Inicio</a>
       <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
       <span class="text-text">Tablero LaTeX</span>
     </nav>
 
-    <div class="mb-6">
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-text mb-2">Tablero LaTeX</h1>
-      <p class="text-text-muted max-w-2xl">
-        Escribe LaTeX, previsualiza el resultado en vivo e inserta símbolos desde la paleta.
-        La vista previa se renderiza con <strong class="text-accent">KaTeX</strong>.
-      </p>
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-4">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-text mb-1">Tablero LaTeX</h1>
+        <p class="text-text-muted max-w-2xl text-sm sm:text-base">
+          Editor a pantalla grande con previsualización en vivo (KaTeX). Inserta símbolos, usa plantillas
+          y ajusta el tablero a tu gusto.
+        </p>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="hidden md:flex items-center gap-1.5 mr-1" id="templates"></div>
+        <button id="fullscreen-btn" type="button" class={iconBtn} title="Pantalla completa" aria-label="Pantalla completa">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
+        </button>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div id="board" class="relative lg:flex lg:items-stretch rounded-2xl border border-border-subtle overflow-hidden bg-elevated/30">
       <!-- Editor -->
-      <section class="rounded-2xl border border-border-subtle bg-elevated/40 overflow-hidden flex flex-col">
-        <div class="flex items-center justify-between gap-2 px-4 py-3 border-b border-border-subtle bg-surface/40">
+      <section id="editor-pane" class="flex flex-col w-full lg:w-[42%] min-w-[280px] h-[72vh] min-h-[560px]">
+        <div class="flex items-center justify-between gap-2 px-4 py-2.5 border-b border-border-subtle bg-surface/50 shrink-0">
           <h2 class="text-sm font-semibold text-text flex items-center gap-2">
             <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
             Código LaTeX
@@ -48,15 +60,15 @@ const btn =
           id="latex-input"
           spellcheck="false"
           aria-label="Código LaTeX de entrada"
-          class="w-full flex-1 min-h-[320px] resize-y bg-transparent p-4 font-mono text-sm leading-relaxed text-text placeholder:text-text-muted/40 focus:outline-none"
+          class="w-full flex-1 resize-none bg-transparent p-4 font-mono text-[15px] leading-relaxed text-text placeholder:text-text-muted/40 focus:outline-none"
         ></textarea>
 
-        <div class="px-4 py-3 border-t border-border-subtle bg-surface/40">
-          <div id="palette-tabs" class="flex flex-wrap gap-1.5 mb-3"></div>
-          <div id="palette" class="flex flex-wrap gap-1.5"></div>
+        <div class="border-t border-border-subtle bg-surface/50 shrink-0">
+          <div id="palette-tabs" class="flex flex-wrap gap-1.5 px-4 pt-3"></div>
+          <div id="palette" class="flex flex-wrap gap-1.5 px-4 py-3 max-h-32 overflow-y-auto"></div>
         </div>
 
-        <div class="flex flex-wrap items-center gap-2 px-4 py-3 border-t border-border-subtle bg-surface/40">
+        <div class="flex flex-wrap items-center gap-2 px-4 py-2.5 border-t border-border-subtle bg-surface/50 shrink-0">
           <button id="copy-btn" class={btn}>Copiar</button>
           <button id="download-btn" class={btn}>Descargar .tex</button>
           <button id="clear-btn" class={btn}>Limpiar</button>
@@ -64,27 +76,38 @@ const btn =
         </div>
       </section>
 
+      <!-- Divisor -->
+      <div id="resizer" class="hidden lg:flex w-2.5 shrink-0 cursor-col-resize items-center justify-center bg-surface/40 hover:bg-accent/20 transition-colors" role="separator" aria-orientation="vertical" title="Arrastra para redimensionar">
+        <svg class="w-3 h-6 text-text-muted/60 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h.01M8 10h.01M8 14h.01M8 18h.01M16 6h.01M16 10h.01M16 14h.01M16 18h.01" /></svg>
+      </div>
+
       <!-- Preview -->
-      <section class="rounded-2xl border border-border-subtle bg-elevated/40 overflow-hidden flex flex-col">
-        <div class="flex items-center gap-2 px-4 py-3 border-b border-border-subtle bg-surface/40">
+      <section id="preview-pane" class="flex flex-1 flex-col min-w-0 h-[72vh] min-h-[560px] border-t lg:border-t-0 lg:border-l border-border-subtle">
+        <div class="flex items-center justify-between gap-2 px-4 py-2.5 border-b border-border-subtle bg-surface/50 shrink-0">
           <h2 class="text-sm font-semibold text-text flex items-center gap-2">
             <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
             Vista previa
           </h2>
+          <div class="flex items-center gap-1.5">
+            <span class="text-[11px] text-text-muted mr-1">Zoom</span>
+            <button id="zoom-out" type="button" class="w-7 h-7 rounded-md border border-border-subtle text-text-muted hover:text-accent hover:border-accent/50 cursor-pointer bg-transparent leading-none">−</button>
+            <span id="zoom-label" class="text-xs text-text-muted tabular-nums w-10 text-center">100%</span>
+            <button id="zoom-in" type="button" class="w-7 h-7 rounded-md border border-border-subtle text-text-muted hover:text-accent hover:border-accent/50 cursor-pointer bg-transparent leading-none">+</button>
+          </div>
         </div>
-        <div class="flex-1 p-4 overflow-x-auto min-h-[320px]">
-          <div id="preview" class="prose-class"></div>
-          <pre id="preview-error" class="hidden mt-4 text-xs text-rose-400 whitespace-pre-wrap font-mono"></pre>
+        <div id="preview-scroll" class="flex-1 overflow-auto p-6 sm:p-8 flex items-center justify-center">
+          <div id="preview" class="prose-class w-full"></div>
+          <pre id="preview-error" class="hidden"></pre>
         </div>
       </section>
     </div>
 
-    <div class="mt-6 rounded-2xl border border-border-subtle bg-elevated/30 p-4 sm:p-5">
+    <div class="mt-5 rounded-2xl border border-border-subtle bg-elevated/20 p-4 sm:p-5">
       <h3 class="text-sm font-semibold text-text mb-2">Consejos</h3>
       <ul class="text-sm text-text-muted space-y-1 list-disc pl-5">
+        <li>Arrastra el divisor central para redimensionar el editor y la vista previa; el botón de pantalla completa agranda todo el tablero.</li>
         <li>Usa <code class="text-accent">\left( … \right)</code> para paréntesis que se ajustan al contenido.</li>
         <li>Para matrices y sistemas usa <code class="text-accent">\begin&#123;pmatrix&#125;…\end&#123;pmatrix&#125;</code> y <code class="text-accent">\begin&#123;cases&#125;…\end&#123;cases&#125;</code>.</li>
-        <li>Si hay un error, el mensaje aparece bajo la vista previa para que puedas corregirlo.</li>
       </ul>
     </div>
   </div>
@@ -92,9 +115,34 @@ const btn =
   <Fragment slot="footer"><Footer /></Fragment>
 </BaseLayout>
 
+<style>
+  #board.is-fullscreen {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    border-radius: 0;
+    border: 0;
+    background: var(--color-surface);
+  }
+  #board.is-fullscreen #editor-pane,
+  #board.is-fullscreen #preview-pane {
+    height: 100vh;
+    min-height: 0;
+  }
+  #preview-error {
+    color: #fb7185;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    max-width: 100%;
+    padding: 1rem;
+    text-align: left;
+  }
+</style>
+
 <script>
   import katex from 'katex';
-  import { groups, defaultTex } from '../lib/latex-palette.js';
+  import { groups, defaultTex, templates } from '../lib/latex-palette.js';
 
   const input = document.getElementById('latex-input');
   const preview = document.getElementById('preview');
@@ -103,8 +151,18 @@ const btn =
   const tabsEl = document.getElementById('palette-tabs');
   const paletteEl = document.getElementById('palette');
   const copyMsg = document.getElementById('copy-msg');
+  const board = document.getElementById('board');
+  const editorPane = document.getElementById('editor-pane');
+  const resizer = document.getElementById('resizer');
+  const templatesEl = document.getElementById('templates');
+  const zoomLabel = document.getElementById('zoom-label');
 
-  input.value = defaultTex;
+  let zoom = 1;
+
+  function applyZoom() {
+    preview.style.fontSize = (zoom * 1.35).toFixed(2) + 'rem';
+    zoomLabel.textContent = Math.round(zoom * 100) + '%';
+  }
 
   function render() {
     const tex = input.value;
@@ -116,6 +174,7 @@ const btn =
         strict: false
       });
       errorEl.classList.add('hidden');
+      errorEl.textContent = '';
     } catch (err) {
       errorEl.textContent = String(err && err.message ? err.message : err);
       errorEl.classList.remove('hidden');
@@ -128,6 +187,50 @@ const btn =
     timer = setTimeout(render, 120);
   });
   displayToggle.addEventListener('change', render);
+
+  document.getElementById('zoom-in').addEventListener('click', () => {
+    zoom = Math.min(3, zoom + 0.15);
+    applyZoom();
+  });
+  document.getElementById('zoom-out').addEventListener('click', () => {
+    zoom = Math.max(0.6, zoom - 0.15);
+    applyZoom();
+  });
+
+  // ── Pantalla completa ───────────────────────────────────────────
+  document.getElementById('fullscreen-btn').addEventListener('click', () => {
+    board.classList.toggle('is-fullscreen');
+    document.body.style.overflow = board.classList.contains('is-fullscreen') ? 'hidden' : '';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && board.classList.contains('is-fullscreen')) {
+      board.classList.remove('is-fullscreen');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // ── Redimensionar paneles ───────────────────────────────────────
+  let dragging = false;
+  resizer.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    resizer.setPointerCapture(e.pointerId);
+    document.body.style.userSelect = 'none';
+  });
+  resizer.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const rect = board.getBoundingClientRect();
+    const pct = ((e.clientX - rect.left) / rect.width) * 100;
+    const clamped = Math.max(25, Math.min(72, pct));
+    editorPane.style.width = clamped + '%';
+  });
+  const endDrag = (e) => {
+    if (!dragging) return;
+    dragging = false;
+    document.body.style.userSelect = '';
+    try { resizer.releasePointerCapture(e.pointerId); } catch {}
+  };
+  resizer.addEventListener('pointerup', endDrag);
+  resizer.addEventListener('pointercancel', endDrag);
 
   // ── Paleta de símbolos ──────────────────────────────────────────
   let activeGroup = groups[0];
@@ -186,6 +289,22 @@ const btn =
     });
   }
 
+  // ── Plantillas ──────────────────────────────────────────────────
+  function buildTemplates() {
+    templates.forEach((t) => {
+      const el = document.createElement('button');
+      el.type = 'button';
+      el.textContent = t.label;
+      el.className = 'px-2.5 py-1 rounded-lg text-xs font-medium border border-border-subtle text-text-muted hover:text-accent hover:border-accent/40 hover:bg-accent-soft transition-all cursor-pointer';
+      el.addEventListener('click', () => {
+        input.value = t.tex;
+        input.focus();
+        render();
+      });
+      templatesEl.appendChild(el);
+    });
+  }
+
   // ── Acciones ────────────────────────────────────────────────────
   document.getElementById('copy-btn').addEventListener('click', async () => {
     try {
@@ -214,7 +333,10 @@ const btn =
     render();
   });
 
+  input.value = defaultTex;
   buildTabs();
   buildPalette();
+  buildTemplates();
+  applyZoom();
   render();
 </script>
