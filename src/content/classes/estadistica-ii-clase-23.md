@@ -72,7 +72,9 @@ Sea `$X_1, X_2, \ldots, Xn$` una muestra aleatoria *iid* de tamaño
 Es el promedio aritmético del total de las `$n$` observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
-$$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
+$$
+\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor de la media muestral de una
@@ -95,11 +97,14 @@ ingeniería industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados e la información anterior, calcule el salario promedio muestral
 egresados del programa de ingeniería industrial.
@@ -113,13 +118,20 @@ muestral de los del programa de ingeniería industrial, y para ello no
 están dando la información individual obtenida para cada uno de los
 $15$ egresados. <br> <br> Entonces para realizar el cálculo empleamos
 la ecuación para el cálculo de la media muestral, tal que
-$$\begin{align*}
+$$
+\begin{align*}
   \bar{X}=\sum_{i=1}^n\frac{x_i}{n}
-\end{align*}$$ En donde, si llamamos cada una de las observaciones como
-$X_1, X_2, \ldots, X_{15}$, tendremos que $$\begin{align*}
+\end{align*}
+$$
+ En donde, si llamamos cada una de las observaciones como
+$X_1, X_2, \ldots, X_{15}$, tendremos que 
+$$
+\begin{align*}
   \bar{X} &= \frac{1.79 + 2.93 + 1.22 + \ldots + 3.24}{15}\\
           &= 1.659333
-\end{align*}$$ Por tanto, se tendrá que el promedio muestral obtenido
+\end{align*}
+$$
+ Por tanto, se tendrá que el promedio muestral obtenido
 para el salario de los egresados del programa de ingeniería industrial
 es de $1.659$ millones de pesos.
 </p>
@@ -130,7 +142,9 @@ es de $1.659$ millones de pesos.
 Es la distancia media **al cuadrado** del conjunto de observaciones
 pertenecientes a una muestra aleatoria, respecto a la media muestra.
 
-$$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
+$$
+\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}
+$$
 
 
 siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
@@ -157,11 +171,14 @@ ingeniería industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados e la información anterior, calcule la varianza muestral del
 salario de los $15$ egresados del programa de ingeniería industrial.
@@ -175,15 +192,23 @@ los egresados del programa de ingeniería industrial, y para realizar el
 cálculo nos dan el salario individual de cada uno de los $15$
 egresados. <br> <br> Para realizar el cálculo de la varianza de los
 salarios de los egresados, empleamos la ecuación de la varianza
-muestral, tal que $$\begin{align*}
+muestral, tal que 
+$$
+\begin{align*}
   S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}
-\end{align*}$$ En donde, si cada una de las observaciones hace
+\end{align*}
+$$
+ En donde, si cada una de las observaciones hace
 referencia los valores $X_1, X_2, \ldots, X_{15}$, y el valor de la
-media es igual a $\bar{X}=1.659333$ tendremos que $$\begin{align*}
+media es igual a $\bar{X}=1.659333$ tendremos que 
+$$
+\begin{align*}
   S^2 &= \frac{(1.78 - 1.659333)^2 + (2.93 - 1.659333)^2+\ldots+(3.24 - 1.659333)^2}{15-1} \\
       &= \frac{0.01456052 + 1.614595 + \ldots + 2.498508}{14}\\
       &= 0.4501638
-\end{align*}$$ Por tanto, se tendrá que la varianza muestral del salario
+\end{align*}
+$$
+ Por tanto, se tendrá que la varianza muestral del salario
 de los egresados del programa de ingeniería industrial es de
 $0.4501638$.
 </p>
@@ -196,7 +221,9 @@ de observaciones pertenecientes a una muestra aleatoria, respeto a la
 media, es decir, indica qué tan dispersos se encuentra el conjunto de
 observaciones de una muestra aleatoria respecto a su valor promedio.
 
-$$\begin{align*}S=\sqrt{S^2}\end{align*}$$
+$$
+\begin{align*}S=\sqrt{S^2}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse la desviación estándar de una muestra
@@ -219,11 +246,14 @@ ingeniería industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados e la información anterior, calcule el salario promedio de los
 $15$ egresados del programa de ingeniería industrial.
@@ -236,16 +266,22 @@ Solución
 Para calcular la desviación estandar muestral del salario de los
 egresados del programa de ingeniería industrial, podemos emplear la
 varianza muestral ya calculada en el ejercicio anterior, la cual dio
-como resultado $$\begin{align*}
+como resultado 
+$$
+\begin{align*}
   S^2 &= 0.4501638
-\end{align*}$$
+\end{align*}
+$$
 
 así que, al aplicar la ecuación de la desviación estandar muestral
-tendremos que $$\begin{align*}
+tendremos que 
+$$
+\begin{align*}
   S &= \sqrt{S^2} \\
     &= \sqrt{0.4501638} \\
     &= 0.6709425
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se tendrá que el promedio muestral obtenido para el salario
 de los egresados del programa de ingeniería industrial es de $1.659$
@@ -267,7 +303,9 @@ Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de tamaño `$n$` de
 una distribución normal con media `$\mu$` y varianza `$\sigma^2$`,
 entonces se puede mostrar que
 
-$$\begin{align*}\bar{X}=\frac{1}{n}\sum_{i=1}^n x_i \sim N(\mu, \sigma^2/n)\end{align*}$$
+$$
+\begin{align*}\bar{X}=\frac{1}{n}\sum_{i=1}^n x_i \sim N(\mu, \sigma^2/n)\end{align*}
+$$
 
 se distribuye normalmente con media `$\mu$` y varianza `$\sigma^2/n$`.
 
@@ -278,7 +316,9 @@ estandarización que se emplea a la distribución normal para llevar ésta,
 a una distribución normal estándar. Dicha estandarización sería de la
 forma
 
-$$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}
+$$
 
 y se tendrá que `$Z$` se distribuirá como una normal estándar de forma
 exacta.
@@ -353,7 +393,9 @@ siguiente imagen
 
 Donde se aprecia que
 
-$$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}
+$$
 
 </li>
 <li>
@@ -364,9 +406,12 @@ establecida por la tabla $\mathbb{P}(Z\leq z)$, y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}
+$$
+ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -378,17 +423,21 @@ valores, se encontrará el valor de la probabilidad asociada a $2.13$.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z\leq 2.13)=0.9834
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z> 2.13)&= 1 - \mathbb{P}(Z\leq 2.13)\\
                    &= 1 - 0.9834 \\
                    &= 0.0166
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
@@ -402,9 +451,12 @@ acumulada para el caso continuo, ya presentadas en la
 08</a> de Estadística I, podemos llevar la probabilidad de interés a la
 forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -414,36 +466,44 @@ de forma similar a los dos puntos anteriores.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z \leq -2.42)=0.0078 \quad \text{ y } \quad \mathbb{P}(Z \leq 0.24)=0.5948
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) &= \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)\\
                                &= 0.5948 - 0.0078  \\
                                &= 0.587
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, no están dando el
 valor de la probabilidad y nos piden encontrar el valor crítico $z$.
 Es decir debemos calcular el valor crítico asociado a la probabilidad
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z>z) = 0.0129
-\end{align*}$$
+\end{align*}
+$$
 
 Y para ello, debemos llevar inicialmente la estructura de la
 probabilidad, a la estructura manejada por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z>z) &= 0.0129 \\
 1 - \mathbb{P}(Z\leq z) &= 0.0129 \\
 1- 0.0129 &= \mathbb{P}(Z\leq z) \\
 0.9871 &= \mathbb{P}(Z\leq z)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que la probabilidad $\mathbb{P}(Z\leq z)$ ya posee
 la estructura de la tabla, y en consecuencia, podemos proceder a
@@ -456,15 +516,19 @@ valor crítico $z$ asociado a dicha probabilidad.
 En la tabla se aprecia, que al buscar la probabilidad $0.9871$
 encontramos que el valor crítico $z$ asociado es de $2.24$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z\leq 2.24) &= 0.9871
-\end{align*}$$
+\end{align*}
+$$
 
 o equivalentemente
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z > 2.24) &= 0.0129
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 </ol>
@@ -486,11 +550,14 @@ ingeniería industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados e la información anterior, calcule la probabilidad de que el
 salario promedio de todos los egresados del programa de ingeniería
@@ -505,9 +572,13 @@ Solución
 
 En este caso, estamos interesados en calcular la probabilidad de que la
 media poblacional del salario de los egresados, sea como máximo de $2$
-millones de pesos, esto es $$\begin{align*}
+millones de pesos, esto es 
+$$
+\begin{align*}
 \mathbb{P}(\mu\leq 2)
-\end{align*}$$ Ahora, dado que para encontrar la probabilidad asociada a
+\end{align*}
+$$
+ Ahora, dado que para encontrar la probabilidad asociada a
 la media poblacional, requeriríamos conocer la distribución de
 probabilidad de $\mu$, y ésta, no es una distribución conocida,
 entonces podemos emplear la distribución muestral de los salarios, la
@@ -516,21 +587,26 @@ operaciones matemáticas, de tal forma que la probabilidad planteada
 tenga la estructura de una distribución de probabilidad conocida, tal
 como lo es la distribución normal estándar, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 Con esta estructura en mente, y con el valor de la desviación estándar
 poblacional conocida e igual a $\sigma=0.5$ y habiendo calculado
 previamente la media de de la muestra de las $n=15$ observaciones, la
 cual dió un resultado igual a $\bar{X} = 1.659333$, realizamos las
 siguientes operaciones matemáticas para llevar la probabilidad original,
-a una forma conocida, tal que $$\begin{align*}
+a una forma conocida, tal que 
+$$
+\begin{align*}
 \mathbb{P}(\mu\leq 2) &= \mathbb{P}(-\mu\geq -2) \\
                       &= \mathbb{P}(\bar{X}-\mu\geq 1.659333-2) \\
                       &= \mathbb{P}\left(\frac{\bar{X} - \mu}{\sigma/ \ \sqrt{n}} \geq \frac{1.659333-2}{0.5/\sqrt{15}}\right) \\
                       &= \mathbb{P}\left(Z \geq -2.638793\right) \\
-\end{align*}$$
+\end{align*}
+$$
 
 Y como $Z \sim N(0,1)$, entonces podemos encontrar la probabilidad de
 interés, empleando la
@@ -539,14 +615,18 @@ de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
 Excel, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}\left(Z \geq -2.638793\right) = 0.9958399
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual, dada la equivalencia de la igualdad anterior, significará que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\mu\leq 2) = 0.9958399
-\end{align*}$$
+\end{align*}
+$$
 
 es decir que la probabilidad de que el salario promedio de todos los
 egresados del programa de ingeniería industrial sea como máximo de $2$

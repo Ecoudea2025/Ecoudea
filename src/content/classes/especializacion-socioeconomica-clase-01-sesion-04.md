@@ -45,7 +45,9 @@ Sea `$X_1, X_2, \ldots, Xn$` una muestra aleatoria *iid* de tamaño
 Es el promedio aritmético del total de las `$n$` observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
-$$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
+$$
+\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}
+$$
 
 
 En Excel, puede calcularse el valor promedio de un conjunto de
@@ -56,7 +58,9 @@ observaciones mediante la función `PROMEDIO()`.
 Es la distancia media **al cuadrado** del conjunto de observaciones
 pertenecientes a una muestra aleatoria, respecto a la media muestra.
 
-$$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
+$$
+\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}
+$$
 
 
 siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
@@ -73,7 +77,9 @@ de observaciones pertenecientes a una muestra aleatoria, respeto a la
 media, es decir, indica qué tan dispersos se encuentra el conjunto de
 observaciones de una muestra aleatoria respecto a su valor promedio.
 
-$$\begin{align*}S=\sqrt{S^2}\end{align*}$$
+$$
+\begin{align*}S=\sqrt{S^2}\end{align*}
+$$
 
 
 En Excel puede calcularse la desviación estándar de un conjunto de
@@ -86,7 +92,9 @@ característica dentro de una muestra aleatoria, indica qué porcentaje de
 la muestra pertenece a la categoría de interés, y por tanto, puede ser
 calculada mediante la definición de frecuencia relativa, tal que
 
-$$\begin{align*}\hat{p}=\frac{x}{n}\end{align*}$$
+$$
+\begin{align*}\hat{p}=\frac{x}{n}\end{align*}
+$$
  siendo `$x$` el
 número de éxitos en la muestra, y `$n$` el total de observaciones de la
 muestra aleatoria.
@@ -144,18 +152,24 @@ La región crítica o región de rechazo representa los valores del
 estadístico de prueba que conduce a rechazar la hipótesis nula, es
 decir,
 
-$$\begin{align*}RC:\{\text{valores del estadístico de prueba que conducen a rechazar }H_0\}\end{align*}$$
+$$
+\begin{align*}RC:\{\text{valores del estadístico de prueba que conducen a rechazar }H_0\}\end{align*}
+$$
 
 
 Por ejemplo, si se emplea la afirmación del médico sobre el peso
 promedio de los estudiantes, se tendrá el siguiente juego de hipótesis
 
-$$\begin{align*}H_0: \mu = 73 kg \\ H_1: \mu \neq 73 kg\end{align*}$$
+$$
+\begin{align*}H_0: \mu = 73 kg \\ H_1: \mu \neq 73 kg\end{align*}
+$$
 
 
 Supongamos una región crítica arbitraria, tal que
 
-$$\begin{align*}RC:\{\bar{X}|\bar{X}<71 \text{ o } \bar{X}>75\}\end{align*}$$
+$$
+\begin{align*}RC:\{\bar{X}|\bar{X}<71 \text{ o } \bar{X}>75\}\end{align*}
+$$
 
 
 ![](/assets/images/Hipotesis1.jpg)
@@ -172,7 +186,9 @@ Dado que el P-valor puede interpretarse como el tamaño de la región
 crítica `$RC$` que se obtiene a partir de los datos, entonces para un
 nivel de significancia preestablecido, el criterio de decisión debe ser
 
-$$\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}$$
+$$
+\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}
+$$
 
 
 ### Prueba de bondad de ajuste
@@ -189,7 +205,9 @@ esperados de la distribución de interés.
 
 La hipótesis a probar de interés estará dada por
 
-$$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
+$$
+\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}
+$$
 
 
 Siendo `$F_0(x)$` la distribución de probabilidad hipotética que se
@@ -219,12 +237,16 @@ probar si los datos se distribuyen o no de forma aproximadamente normal,
 tal que el juego de hipótesis a probar será
 
 
-$$\begin{align*}H_0&: \text{El conjunto de datos tiene una distribución aproximadamente normal} \\ H_1&: \text{El conjunto de datos NO tiene una distribución aproximadamente normal}\end{align*}$$
+$$
+\begin{align*}H_0&: \text{El conjunto de datos tiene una distribución aproximadamente normal} \\ H_1&: \text{El conjunto de datos NO tiene una distribución aproximadamente normal}\end{align*}
+$$
 
 
 en donde el estadístico de prueba estará dado por
 
-$$\begin{align*}JB = \frac{n}{6} \left[\gamma_1^2 + \left(\frac{\gamma_2^2}{4}\right)\right] \sim \chi^2_2\end{align*}$$
+$$
+\begin{align*}JB = \frac{n}{6} \left[\gamma_1^2 + \left(\frac{\gamma_2^2}{4}\right)\right] \sim \chi^2_2\end{align*}
+$$
 
 
 donde `$n$`: representa el número total de datos, `$\gamma_1$`:
@@ -236,7 +258,9 @@ normalidad de los datos se puede emplear como criterio de decisión el
 P-valor, mediante una distribución Chi-Cuadrado con dos grados de
 libertad, tal que
 
-$$\begin{align*}\text{P-Valor} = \mathbb{P}(\chi^2_2 > JB)\end{align*}$$
+$$
+\begin{align*}\text{P-Valor} = \mathbb{P}(\chi^2_2 > JB)\end{align*}
+$$
 
 
 Una alternativa final para observar si los datos se distribuyen como una
@@ -351,10 +375,12 @@ Solución
 En este caso estamos interesados en probar si el costo promedio de
 construir un nuevo parque sea máximo de $2000$ millones de pesos, y
 por tanto se tendrá que el juego de hipótesis estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   H_0: \mu \leq 2000 \\
   H_1: \mu > 2000 
-\end{align*}$$
+\end{align*}
+$$
 
 para decidir el estadístico de prueba que debemos emplear, se debe
 revisar la información que poseemos, en donde tenemos que la varianza
@@ -366,30 +392,42 @@ datos, las características del ejercicio están dados por
 <img src="/assets/images/Hipotesis3a.jpg" alt="" style="max-width: 100%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   t_c = \frac{\bar{X} - \mu_0}{S/\sqrt{n}} \sim t_{n-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos del valor de la media muestral
 $\bar{X}=1613.8$, el valor asociado a la hipótesis nula
 $\mu_0=2000$, la desviación estándar muestral $S=480.1471$ y el
 tamaño de muestra $n=20$. Al reemplazar en el estadístico de prueba se
-tendrá que $$\begin{align*}
+tendrá que 
+$$
+\begin{align*}
   t_c &= \frac{1613.8 - 2000}{480.1471/\sqrt{20}}\\
       &= -3.597104
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para saber si se rechaza o no la hipótesis nula, se realiza el
-cálculo de la región crítica, obteniendo que $$\begin{align*}
+cálculo de la región crítica, obteniendo que 
+$$
+\begin{align*}
   RC:\{t|t>t_{\alpha, n-1}\}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde, al usar el valor $\alpha=0.02$ y $n=20$, se tendrá que la
 región crítica al emplear la función de <tt>Excel</tt>
-<code>INV.T(1-$\alpha$, n-1)</code> será igual a $$\begin{align*}
+<code>INV.T(1-$\alpha$, n-1)</code> será igual a 
+$$
+\begin{align*}
   RC&:\{t|t>t_{\alpha=0.02, n-1=19}\}\\
   RC&:\{t|t>2.204701\}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el valor crítico no cae dentro de la región crítica, no se
 rechaza la hipótesis nula, y por tanto se concluye con un nivel de
@@ -429,10 +467,13 @@ Solución
 En este caso estamos interesados en probar la hipótesis de que la
 cantidad servida por la nueva máquina no es menor a $330_{ml}$ por
 vaso, empleando un nivel de significancia del $5\%$, y por tanto,
-tendremos que el juego de hipótesis estará dado por $$\begin{align*}
+tendremos que el juego de hipótesis estará dado por 
+$$
+\begin{align*}
   H_0:\mu \leq 330\\
   H_1:\mu < 330
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces dado que estamos en una situación en la cual sabemos que la
 población no es normal, debido a que se menciona que es Weibull, con
@@ -442,27 +483,36 @@ siguiente situación
 <img src="/assets/images/Hipotesis3b.jpg" alt="" style="max-width: 100%;">
 
 de lo anterior encontramos que el estadístico de prueba de interés es de
-la forma $$\begin{align*}
+la forma 
+$$
+\begin{align*}
   Z_c = \frac{\bar{X}-\mu_0}{\sigma/\sqrt{n}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos la media muestral $\bar{X}=327$, la
 desviación estándar poblacional $\sigma=75.52134$, el tamaño de
 muestra $n=5000$, el nivel de significancia $\alpha=0.05$ y el valor
 crítico $-Z_{\alpha=0.05}=-1.644854$ calculado mediante la función
 <code>INV.NORM.ESTAND(1-$\alpha$)</code>. Al reemplazar en el
-estadístico de prueba tenemos que $$\begin{align*}
+estadístico de prueba tenemos que 
+$$
+\begin{align*}
   Z_c &= \frac{327-330}{75.52134/\sqrt{5000}} \\
       &= -2.808902
-\end{align*}$$
+\end{align*}
+$$
 
 En esta ocasión se decide calcular el P-valor para tomar la decisión, el
 cual al emplear la función <code>DISTR.NORM.ESTAND.N(-2.808902;
-VERDADERO)</code> se tendrá que $$\begin{align*}
+VERDADERO)</code> se tendrá que 
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z<Z_c)\\
           &= \mathbb{P}(Z<-2.808902)\\
           &= 0.002485539
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, como el P-valor es menor al nivel de significancia
 $\alpha=0.05$, se tendrá evidencia suficiente para rechazar la
@@ -504,10 +554,13 @@ Solución
 En este ejercicio se está interesado en probar la hipótesis sobre que el
 flujo de caja promedio mensual es igual a $25$ mil millones de pesos,
 lo cual significa que al posee la igualdad la afirmación, tendremos el
-siguiente juego de hipótesis $$\begin{align*}
+siguiente juego de hipótesis 
+$$
+\begin{align*}
   H_0:\mu = 25\\
   H_1:\mu \neq 25 
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces para saber cual es el estadístico de prueba que debemos
 aplicar, debemos inicialmente verificar qué información poseemos. De la
@@ -518,29 +571,40 @@ estaremos ante la siguiente situación
 <img src="/assets/images/Hipotesis3c.jpg" alt="" style="max-width: 100%;">
 
 lo cual quiere decir que el estadístico de prueba estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{\bar{X}-\mu_0}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que necesitamos la media muestral
 $\bar{X}=21.389$, la desviación estándar muestral $S=3.213$, el
 tamaño de muestra $n=48$ y el nivel de significancia $\alpha=0.10$.
-Al reemplazar estos valores tendremos que $$\begin{align*}
+Al reemplazar estos valores tendremos que 
+$$
+\begin{align*}
   Z_c &= \frac{21.389-25}{3.213/\sqrt{48}}\\
       &= -7.786412
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces si empleamos la región crítica para la toma de decisión,
-tendremos que $$\begin{align*}
+tendremos que 
+$$
+\begin{align*}
   RC:\{Z|Z<-Z_{\frac{\alpha}{2}} \text{ ó } Z>Z_{\frac{\alpha}{2}}\}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde al emplear la función de <tt>Excel</tt>
 <code>INV.NORM.ESTAND(1-$\alpha$)</code> encontraríamos que el valor
 crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$ y por tanto la región
-crítica será $$\begin{align*}
+crítica será 
+$$
+\begin{align*}
   RC:\{Z|Z<-1.644854 \text{ ó } Z>1.644854\}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde al comparar el estadístico de prueba con la región crítica,
 encontramos que el estadístico de prueba cae dentro de la región
@@ -602,10 +666,13 @@ En este ejercicio estamos interesados en emplear un nivel de
 significancia del $5\%$ para probar la hipótesis de que las ventas de
 las personas que tomaron los cursos de capacitación son superiores a las
 ventas de quienes no tomaron los cursos de capacitación, la cual es de
-la forma $$\begin{align*}
+la forma 
+$$
+\begin{align*}
   H_0:\mu_C \leq \mu_S => \mu_C - \mu_S \leq 0\\
   H_1:\mu_C > \mu_S => \mu_C - \mu_S > 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 donde el subíndice $C$ representa “con capacitación” y el subíndice
 $S$ representa “sin capacitación.” Ahora, para decidir si cual es el
@@ -618,33 +685,43 @@ siguiente situación
 <img src="/assets/images/Hipotesis4a.jpg" alt="" style="max-width: 80%;">
 
 encontrando que el estadístico de prueba de interés es de la forma
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\bar{X}_C-\bar{X}_S) - d_0}{\sqrt{\frac{\sigma^2_C}{n_C}+\frac{\sigma^2_S}{n_S}}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, para realizar el cálculo requerimos de las media muestrales
 fueron $\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas
 poblacionales $\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de
 muestrales $n_C=12$ y $n_S=15$. Al reemplazar en la ecuación del
-estadístico de prueba tendremos que $$\begin{align*}
+estadístico de prueba tendremos que 
+$$
+\begin{align*}
   Z_c &= \frac{(43.5-40.8) - 0}{\sqrt{\frac{5.6}{12}+\frac{4.3}{15}}}\\
       &= 3.110786
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para tomar una decisión suponga que se decide emplear el P-valor,
 el cual al ser una hipótesis bilateral, tendremos que está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z > Z_c) \\
           &= \mathbb{P}(Z > 3.110786) \\
           &= \mathbb{P}(Z > 3.110786)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces al emplear la función de <tt>Excel</tt> <code>1 -
 DISTR.NORM.ESTAND.N(3.110786; VERDADERO)</code> tendremos que el P-valor
-es igual a $$\begin{align*}
+es igual a 
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z > 3.110786) \\
           &= 0.000932951 \\
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el P-valor es menor al nivel de significancia del $5\%$
 se rechazará la hipótesis nula, y por tanto se tendrá evidencia
@@ -688,10 +765,13 @@ Solución
 En este punto estamos interesados en una hipótesis unilateral, debido a
 que queremos probar si el número de vehículos que transitan por día por
 la ubicación $A$ es menor que la ubicación $B$, lo cual puede
-traducirse bajo el juego de hipótesis $$\begin{align*}
+traducirse bajo el juego de hipótesis 
+$$
+\begin{align*}
   H_0:\mu_A \geq \mu_B => \mu_A - \mu_B \geq 0\\
   H_1:\mu_A < \mu_B => \mu_A - \mu_B < 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 En donde al revisar la información suministrada se encontró que el
 número de vehículos en las dos zonas se distribuyen aproximadamente
@@ -701,43 +781,59 @@ pequeñas, por lo cual nos encontraremos en la siguiente situación
 <img src="/assets/images/Hipotesis4b.jpg" alt="" style="max-width: 80%;">
 
 en donde se aprecia que el estadístico de prueba estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   t_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{S_p\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}} \sim t_{n_A + n_B - 2}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo requerimos de los
 tamaños muestrales $n_A=22$ y $n_B=28$, las medias muestrales
 $\bar{X}_A=2359$ y $\bar{X}_B=2147$, y una desviación estándar
 conjunta $S_p$, la cual no poseemos, y que debemos calcular, pero que
-podemos obtener mediante la ecuación $$\begin{align*}
+podemos obtener mediante la ecuación 
+$$
+\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}
+$$
+ y por tanto 
+$$
+\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez conocidos los valores necesarios para calcular el estadístico de
-prueba, tendremos que $$\begin{align*}
+prueba, tendremos que 
+$$
+\begin{align*}
   t_c &= \frac{(2359-2147) - 0}{244.7642\sqrt{\frac{1}{22}+\frac{1}{28}}} \\
       &= 21.49702
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, si empleamos P-valor para tomar una decisión, tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(t_{n_A+n_B-2}<t_c) \\
           &= \mathbb{P}(t_{22+28-2}<21.49702) \\
           &= \mathbb{P}(t_{48}<21.49702)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde al realizar el cálculo en <tt>Excel</tt> mediante la función
 <code>DISTR.T.N(21.49702;48;VERDADERO)</code>, tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(t_{48}<21.49702) \\
           &= 1
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, como el P-valor es superior al nivel de significancia del
 $10\%$, no se rechaza al hipótesis nula y se tendrá que hay evidencia
@@ -779,10 +875,12 @@ Solución
 En este enunciado estamos interesados en probar con un nivel de
 significancia del $15\%$ si el salario de los hombres es mayor al de
 las mujeres, lo cual se traduce en el siguiente juego de hipótesis
-$$\begin{align*}
+$$
+\begin{align*}
   H_0:\mu_H \leq \mu_M => \mu_H - \mu_M \leq 0\\
   H_1:\mu_H > \mu_M => \mu_H - \mu_M > 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 entonces para probar si la hipótesis es o no apoyada por la información
 muestral, es necesario realizar el cálculo de una estadístico de prueba,
@@ -794,26 +892,33 @@ obteniendo la siguiente situación
 <img src="/assets/images/Hipotesis4c.jpg" alt="" style="max-width: 100%;">
 
 En donde se observa que el estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\bar{X}_H-\bar{X}_M) - d_0}{\sqrt{\frac{S^2_H}{n_H}+\frac{S^2_M}{n_M}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que para realizar el cálculo se requiere de los
 tamaños muestrales $n_M = 250$ y $n_H = 270$, las medias muestrales
 $\bar{X}_M=2.3$ y $\bar{X}_H=2.6$, con desviaciones estándar
 muestrales iguales a $S_M=0.7$ y $S_H=1.2$. Por tanto al reemplazar
-los valores en el estadístico de prueba se tendrá que $$\begin{align*}
+los valores en el estadístico de prueba se tendrá que 
+$$
+\begin{align*}
   Z_c &= \frac{(2.6-2.3) - 0}{\sqrt{\frac{1.2}{270}+\frac{0.7}{250}}} \\ 
       &= 3.524672
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, si empleamos la región crítica para observar si se rechaza o no
 la hipótesis, tendremos que al emplear la función de <tt>Excel</tt>
 <code>INV.NORM.ESTAND(1-$\alpha$)</code>, se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
   RC&:\{Z|Z>Z_\alpha\}\\
   RC&:\{Z|Z>1.03643\}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el estadístico de prueba cae dentro de la región crítica,
 se tendrá evidencia suficiente para rechazar la hipótesis nula, lo cual
@@ -854,10 +959,13 @@ Solución
 En este caso estamos interesados en calcular con un nivel de
 significancia del $12\%$ si la diferencia entre los rendimientos
 promedios de combustible son o no iguales, es decir, se quiere probar el
-juego de hipótesis $$\begin{align*}
+juego de hipótesis 
+$$
+\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces dado que los rendimientos de combustible para los dos motores
 se distribuye normalmente con varianzas conocidas, estaremos en la
@@ -866,27 +974,34 @@ siguiente situación
 <img src="/assets/images/Hipotesis4d.jpg" alt="" style="max-width: 100%;">
 
 En donde se aprecia que el estadístico de prueba está dada por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{\sqrt{\frac{\sigma^2_A}{n_A}+\frac{\sigma^2_B}{n_B}}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 observando que se requiere de los rendimientos promedio muestrales de
 los dos motores $\bar{X}_A=44$ y $\bar{X}_B=48$, las varianzas
 poblacionales $\sigma^2_A=38.44$ y $\sigma^2_B=57.76$ y los tamaños
 muestrales $n_A=47$ y $n_B=56$. Al reemplazar estos valores en el
-estadístico de prueba se tendrá que $$\begin{align*}
+estadístico de prueba se tendrá que 
+$$
+\begin{align*}
   Z_c &= \frac{(44-48) - 0}{\sqrt{\frac{38.44}{47}+\frac{57.76}{56}}} \\
       &= -2.941414
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, si realizamos el cálculo de la región crítica para observar si se
 rechaza o no la hipótesis establecida, tendremos que al emplear la
 función de <tt>Excel</tt>
 <code>INV.NORM.ESTAND(1-($\alpha$/2))</code>, se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
   RC&:\{Z|z < -Z_{\alpha/2} \text{ ó } Z>Z_{\alpha/2}\}\\
   RC&:\{Z|Z<-1.5548 \text{ ó } Z>1.55478\}
-\end{align*}$$
+\end{align*}
+$$
 
 apreciando que el estadístico de prueba cae dentro de la región crítica
 lo cual significa que con un nivel de significancia del $12\%$ se
@@ -928,10 +1043,14 @@ Solución
 </h3>
 <p>
 
-El juego de hipótesis en esta dado por $$\begin{align*}
+El juego de hipótesis en esta dado por 
+$$
+\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$ debido a que se quiere probar si hay o no diferencias
+\end{align*}
+$$
+ debido a que se quiere probar si hay o no diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera. Adicionalmente, debido a que estamos en una situación en la
 cual sabemos que las tensiones de corte se distribuyen normalmente con
@@ -940,9 +1059,12 @@ situación dada por
 
 <img src="/assets/images/Hipotesis4e.jpg" alt="" style="max-width: 100%;">
 
-situación que posee el siguiente estadístico de prueba $$\begin{align*}
+situación que posee el siguiente estadístico de prueba 
+$$
+\begin{align*}
   t_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{\sqrt{\frac{S^2_A}{n_A}+\frac{S^2_B}{n_B}}} \sim t_v
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que requerimos de los tamaños muestrales $n_A=18$
 y $n_B=12$, de las medias muestrales de $\bar{X}_A=1130_{psi}$ y
@@ -950,37 +1072,50 @@ $\bar{X}_B=1010_{psi}$ junto a unas desviaciones estándar de
 $S_A=420_{psi}$ y $S_B=380_{psi}$. Adicionalmente se requiere el
 valor de los grados de libertad $\nu$, los cuales están dados por
 
-$$\begin{align*}
+$$
+\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
     &= \frac{\left(\frac{420^2}{12} + \frac{380^2}{18}\right)^2}{\frac{(480^2/12)^2}{12-1} + \frac{(380^2/18)^2}{18-1}} \\
     &= \frac{476694444}{18813149} \\
     &= 25.33837
-\end{align*}$$
+\end{align*}
+$$
 
-Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que 
+$$
+\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, al reemplazar todos los valores necesarios para realizar el
-estadístico de prueba se tendrá que $$\begin{align*}
+estadístico de prueba se tendrá que 
+$$
+\begin{align*}
   t_c &= \frac{(1130-1010) - 0}{\sqrt{\frac{420^2}{18}+\frac{380^2}{12}}} \\
       &= 0.8121219
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para llevar a cabo la decisión, se decide emplear el P-valor, el
-cual es igual a $$\begin{align*}
+cual es igual a 
+$$
+\begin{align*}
   P-valor  &= 2\mathbb{P}(t_nu > |t_c|)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, al aplicar la función de <tt>Excel</tt> <code>1 -
 DISTR.T.N(ABS(0.8121219); 26; VERDADERO)</code>, se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
   P-valor  &= 2\mathbb{P}(t_nu > |t_c|) \\
            &= 2(0.212047625) \\
            &= 0.4240952
-\end{align*}$$
+\end{align*}
+$$
 
 Encontrando que el P-valor es superior al nivel de significancia del
 $8\%$, lo cual significa que no hay evidencia suficiente para rechazar
@@ -1099,10 +1234,13 @@ Solución
 En este caso estamos interesados en probar si la verdadera proporción de
 proyectos que poseen costos superiores a $1900$ millones de pesos es
 de más del $40\%$, y por tanto se tendrá que el juego de hipótesis
-está dado por $$\begin{align*}
+está dado por 
+$$
+\begin{align*}
   H_0:p \leq 0.40\\
   H_1:p > 0.40
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como estamos interesados en hacer inferencia sobre una
 proporción, y nos encontramos frente a una hipótesis unilateral,
@@ -1111,9 +1249,11 @@ tendremos que estamos ante la siguiente situación
 <img src="/assets/images/Hipotesis5a.jpg" alt="" style="max-width: 100%;">
 
 En donde se observa que el estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se evidencia que necesitamos para el cálculo de la proporción
 muestral de proyectos que poseen costos superiores a $1900$ millones
@@ -1123,37 +1263,48 @@ proporción muestral se trata de localizar aquellos costos que posean un
 valor superior a $1900$ millones de pesos, denotando como $1$
 aquellas observaciones que sean superiores a $1900$ millones de pesos,
 y $0$ aquellas observaciones que no cumplan la condición, tal que
-$$\begin{align*}
+$$
+\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
-\end{align*}$$
+\end{align*}
+$$
 
 Al contar el número de éxitos, observamos que tenemos un total de
 $x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
 muestral de egresados que poseen salarios superiores a $1900$
-millones, tal que $$\begin{align*}
+millones, tal que 
+$$
+\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al emplear este valor a los ya mencionados para el cálculo del
-estadístico de prueba, se tendrá que éste es igual a $$\begin{align*}
+estadístico de prueba, se tendrá que éste es igual a 
+$$
+\begin{align*}
   Z_c &= \frac{0.25 - 0.4}{\sqrt{\frac{0.4(1-0.4)}{20}}} \\
       &= -1.369306   
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, se decide emplear el P-valor para observar si hay o no
 evidencia a favor de la hipótesis nula, y para ello se emplea la función
 de <tt>Excel</tt> <code>1 - DISTR.NORM.ESTAND.N(-1.369306;
-VERDADERO)</code> obteniendo que $$\begin{align*}
+VERDADERO)</code> obteniendo que 
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z>Z_c) \\
           &= \mathbb{P}(Z>-1.369306)\\
           &= 1 - \mathbb{P}(Z\leq -1.369306)\\
           &= 0.9145482
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se evidencia que el P-valor asociado al estadístico de prueba
 posee un valor del $91.45\%$ el cual es mayor al nivel de
@@ -1214,10 +1365,13 @@ Solución
 Como estamos interesado en comparar la proporción de rendimiento
 superior al promedio entre los nuevos equipos y los actuales, para saber
 si los nuevos equipo son iguales o superiores a los actuales, tendremos
-que la hipótesis de interés está dada por $$\begin{align*}
+que la hipótesis de interés está dada por 
+$$
+\begin{align*}
   H_0:p_N - p_A \geq 0\\
   H_1:p_N - p_A < 0
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como estamos interesados en hacer inferencia sobre una
 diferencia de proporciones, y nos encontramos frente a una hipótesis
@@ -1226,56 +1380,74 @@ unilateral, tendremos que estamos ante la siguiente situación
 <img src="/assets/images/Hipotesis6a.jpg" alt="" style="max-width: 100%;">
 
 En donde se observa que el estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\hat{p}_N - \hat{p}_A) - d_0}{\sqrt{\frac{p^*(1-p^*)}{n_N} + \frac{p^*(1-p^*)}{n_A}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior se observa que para el cálculo se requiere de las
 proporciones muestrales $\hat{p}_{N}$ y $\hat{p}_{A}$, y
 proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
-que $$\begin{align*}
+que 
+$$
+\begin{align*}
 \hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que para los equipos que se construyen con el procedimiento
 actual, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$
+\end{align*}
+$$
 
-Ahora, la proporción conjunta es igual a $$\begin{align*}
+Ahora, la proporción conjunta es igual a 
+$$
+\begin{align*}
 p^* &= \frac{x_N + x_A}{n_N + n_A} \\
     &= \frac{220 + 120}{700 + 500} \\
     &= 0.2833333
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculados todos los valores asociados al estadístico de prueba,
-se procede a su cálculo, el cual está dado por $$\begin{align*}
+se procede a su cálculo, el cual está dado por 
+$$
+\begin{align*}
   Z_c &= \frac{(0.3142857 - 0.24) - d_0}{\sqrt{\frac{0.2833333(1-0.2833333)}{700} + \frac{0.2833333(1-0.2833333)}{500}}} \\
       &= 2.815407
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, con el fin de decidir si el estadístico de prueba apoya o no la
 hipótesis establecida, se emplea en esta ocasión la región crítica la
-cual estará dada por $$\begin{align*}
+cual estará dada por 
+$$
+\begin{align*}
   RC:\{Z|Z<-Z_{\alpha}\}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde al emplear la función de <tt>Excel</tt>
 <code>INV.NORM.ESTAND(1-$\alpha$)</code> encontraríamos que el valor
 crítico $Z_{\alpha=0.02}=2.053749$ y por tanto la región crítica será
-$$\begin{align*}
+$$
+\begin{align*}
   RC:\{Z|Z<-2.053749\}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el estadístico de prueba no cae dentro de la región
 crítica, no hay evidencia significativa en contra de la hipótesis nula,
@@ -1394,36 +1566,49 @@ Solución
 Como estamos interesados en este punto de observar si la variabilidad de
 los costos de cualquier construcción es de al menos $300000$ millones
 de pesos$^2$ y por tanto la hipótesis de interés está dada por
-$$\begin{align*}
+$$
+\begin{align*}
   H_0:\sigma^2 \geq 300000\\
   H_1:\sigma^2 < 300000
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, se evidencia que en este caso estaremos bajo la siguiente
 situación
 <img src="/assets/images/Hipotesis7a.jpg" alt="" style="max-width: 80%;">
 
 la cual muestra que el estadístico de prueba en esta ocasión está dada
-por $$\begin{align*}
+por 
+$$
+\begin{align*}
    \chi^2_c = \frac{(n-1)S^2}{\sigma^2_0} \sim \chi^2_{n-1}
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se observa que para el cálculo del estadístico de
 prueba, se requiere de la varianza muestral $S^2 = 230541.2$, el
 tamaño de muestra $n=20$ y el valor de la hipótesis nula, en donde, al
 reemplazar dichos valores en el estadístico de prueba se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
    \chi^2_c &= \frac{(20-1)230541.2}{300000} \\
             &= 14.60094
-\end{align*}$$
+\end{align*}
+$$
 
 en donde, al estar frente a una situación unilateral izquierda, se
-tendrá que el P-valor para este caso está dado por $$\begin{align*}
+tendrá que el P-valor para este caso está dado por 
+$$
+\begin{align*}
   P-valor = \mathbb{P}(\chi^2_{n-1}<\chi^2_c)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, al emplear la función de <tt>Excel</tt>
-<code>DISTR.CHICUAD(14.60094; 20-1; VERDADERO)</code> se tiene que $$$$
+<code>DISTR.CHICUAD(14.60094; 20-1; VERDADERO)</code> se tiene que 
+$$
+
+$$
 
 Entonces, como el P-valor obtenido es superior al nivel de significancia
 preestablecido del $5\%$, se concluye que no hay evidencia suficiente
@@ -1563,9 +1748,12 @@ siguiente intervalo
 <img src="/assets/images/Intervalos6a.jpg" alt="" style="max-width: 80%;">
 
 en donde se aprecia que el intervalo bilateral para la razón de
-varianzas posee la estructura $$\begin{align*}
+varianzas posee la estructura 
+$$
+\begin{align*}
    \frac{S^2_C}{S^2_S}\frac{1}{f_{\alpha/2, n_C-1, n_S-1}} < \frac{\sigma^2_C}{\sigma^2_S} < \frac{S^2_C}{S^2_S}f_{\alpha/2, n_S-1, n_C-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
@@ -1575,24 +1763,31 @@ $f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
-$$\begin{align*}
+$$
+\begin{align*}
 S^2_C = 1.378146 \quad \text{ y } \quad S^2_S = 3.231254
-\end{align*}$$
+\end{align*}
+$$
 
 Por su parte, al buscar los valores críticos para un nivel de
 significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
 $n_S=10$ tenemos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} = 3.292746\\ 
 f_{\alpha/2 = 0.05, n_S-1 = 9, n_C-1 = 7} = 3.676675
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculados los valores necesarios para calcular el intervalo de
-confianza, se procede a su cálculo, tal que $$\begin{align*}
+confianza, se procede a su cálculo, tal que 
+$$
+\begin{align*}
    \frac{1.378146}{3.231254}\frac{1}{3.292746} &< \frac{\sigma^2_C}{\sigma^2_S} < \frac{1.378146}{3.231254}3.676675 \\
    0.1295287 &< \frac{\sigma^2_C}{\sigma^2_S} < 1.56812
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
@@ -1608,9 +1803,12 @@ $\sigma^2_C/\sigma^2_S$.
 
 En donde se observa que el intervalo calculado contiene el valor de
 $1$, el cual representa la igualdad entre la varianza de los dos tipos
-de cable, tal que $$\begin{align*}
+de cable, tal que 
+$$
+\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que la variabilidad de la resistencia a la tracción de los
@@ -1634,7 +1832,9 @@ en la información de una muestra aleatoria de dicha población, el
 objetivo será encontrar dos variables aleatorias `$\hat{\Theta}_I$` y
 `$\hat{\Theta}_S$` tal que
 
-$$\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}
+$$
 
 donde `$(1-\alpha)$` se conoce como nivel de confianza y
 `$\hat{\Theta}_I$` y `$\hat{\Theta}_S$` se denominan como límites de
@@ -1792,20 +1992,26 @@ imagen
 <img src="/assets/images/Intervalos1a.jpg" alt="" style="max-width: 80%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   \mu < \bar{X}+t_{\alpha, n-1}\frac{S}{\sqrt{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos de $5$ variables, la media muestral
 $\bar{X}=1613.8$, la desviación estándar muestral $S=480.1471$, el
 tamaño de muestra $n=20$, el nivel de confianza $1-\alpha=0.98$ y el
 valor crítico $t_{\alpha=0.02, n-1=19}=2.204701$ calculado a partir
 del nivel de confianza y el tamaño de la muestra. Al reemplazar en el
-intervalo tenemos que $$\begin{align*}
+intervalo tenemos que 
+$$
+\begin{align*}
   \mu &< 1613.8+2.204701\frac{480.1471}{\sqrt{20}}\\
   \mu &< 1613.8+236.7059\\
   \mu &< 1850.506
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $98\%$, que el
 costo máximo promedio que puede constar un construir cualquier parque es
@@ -1852,19 +2058,25 @@ poseemos tenemos las siguientes características
 <img src="/assets/images/Intervalos1b.jpg" alt="" style="max-width: 80%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   \bar{X}-Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X}+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos la media muestral $\bar{X}=345$, la
 desviación estándar poblacional $\sigma=75.52134$, el tamaño de
 muestra $n=8000$, el nivel de confianza $1-\alpha=0.90$ y el valor
 crítico $Z_{\alpha/2=0.05}=1.644854$ calculado a partir del nivel de
-confianza. Al reemplazar en el intervalo tenemos que $$\begin{align*}
+confianza. Al reemplazar en el intervalo tenemos que 
+$$
+\begin{align*}
   &345\pm 1.644854 \frac{75.52134}{\sqrt{8000}} \\
   &345\pm 1.388839 \\
   &343.6112 < \mu < 346.3888
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $90\%$, que la
 cantidad promedio de refresco servida de forma automática por la nueva
@@ -1917,20 +2129,25 @@ en consecuencia nos encontramos en la siguiente situación
 <img src="/assets/images/Intervalos1c.jpg" alt="" style="max-width: 80%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   \bar{X}-Z_{\alpha}\frac{S}{\sqrt{n}} < \mu
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que necesitamos la media muestral
 $\bar{X}=21.389$, la desviación estándar muestral $S=3.213$, el
 tamaño de muestra $n=48$, el nivel de confianza $1-\alpha=0.95$ y el
 valor crítico $Z_{\alpha=0.05}=1.644854$ calculado a partir del nivel
 de confianza. Al reemplazar en el intervalo de interés tenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   21.389 &\pm 1.644854 \frac{3.213}{\sqrt{48}}\\
   21.389 &\pm 0.763 \\
   20.626 &< \mu < 22.152
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual significa que, con un nivel de confianza del $95\%$ podemos
 afirmar que la afirmación del presidente no es acertada, debido a que el
@@ -2003,9 +2220,12 @@ tanto estamos en la situación
 <img src="/assets/images/Intervalos2a.jpg" alt="" style="max-width: 80%;">
 
 y por tanto como el intervalo es bilateral, el calculo que debemos hacer
-tendrá la forma $$\begin{align*}
+tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_C-\bar{X}_S) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\sigma^2_C}{n_C}+\frac{\sigma^2_S}{n_S}}
-\end{align*}$$
+\end{align*}
+$$
 
 Para realizar el cálculo requerimos de las media muestrales
 $\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas poblacionales
@@ -2013,12 +2233,14 @@ $\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de muestrales
 $n_C=12$ y $n_S=15$, el nivel de confianza $1-\alpha=0.90$ y el
 valor crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$ calculado a partir
 del nivel de confianza. Al reemplazar en el intervalo tenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   &(43.5-40.8) \pm 1.644854\sqrt{\frac{5.6}{12}+\frac{4.3}{15}} \\
   &2.7 \pm 1.644854(0.8679478) \\
   &2.7 \pm 1.427647 \\
   &1.272353 < \mu_C - \mu_S < 4.127647
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $90\%$, de que
 la diferencia entre el promedio de ventas de las personas que asisten a
@@ -2092,22 +2314,31 @@ situación
 <img src="/assets/images/Intervalos2c.jpg" alt="" style="max-width: 80%;">
 
 y por tanto como el intervalo es bilateral, el calculo que debemos hacer
-tendrá la forma $$\begin{align*}
+tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_A-\bar{X}_B) \pm t_{\frac{\alpha}{2}, n_A+n_B-2}S_p\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que entre otros valores, requerimos calcular el
 valor de la desviación estándar conjunta $Sp$, la cual está dada por
 
-$$\begin{align*}
+$$
+\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}
+$$
+ y por tanto 
+$$
+\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, los valores adicionales que se requieren para realizar el cálculo
 del intervalo de confianza serán, las medias muestrales
@@ -2115,12 +2346,14 @@ $\bar{X}_A=2359$ y $\bar{X}_B=2147$, y los tamaños muestrales
 $n_A=22$ y $n_B=28$, el nivel de confianza $1-\alpha=0.90$ y el
 valor crítico $t_{\frac{\alpha}{2}=0.05, n_A+n_B-2 = 48}=1.677224$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   &(2359-2147) \pm 1.677224(244.7642)\sqrt{\frac{1}{22}+\frac{1}{28}} \\
   &212 \pm 1.677224(244.7642)(0.2849014)\\
   &212 \pm 116.959 \\
   &95.041 < \mu_A - \mu_B < 328.959
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, con un nivel de confianza del $90\%$ se tendrá que la
 diferencia promedio del número de vehículo que transita por cada
@@ -2135,9 +2368,12 @@ diferencia entre $\mu_A - \mu_B$.
 En donde se observa que el intervalo encontrado se encuentra por encima
 de $0$, el cual simboliza que el número promedio de vehículos que
 transitan por la ubicación $A$ es superior que el número promedio de
-vehículos que transitan por la ubicación $B$, tal que $$\begin{align*}
+vehículos que transitan por la ubicación $B$, tal que 
+$$
+\begin{align*}
   \mu_A > \mu_B \quad =>\quad \mu_A - \mu_B > 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $90\%$ es posible afirmar
 que existen diferencias significativas entre el número de vehículos que
@@ -2196,9 +2432,12 @@ los tamaños muestrales son mayores a $30$.
 <img src="/assets/images/Intervalos2e.jpg" alt="" style="max-width: 80%;">
 
 y por tanto al ser un intervalo unilateral derecho (límite superior), el
-calculo que debemos hacer tendrá la forma $$\begin{align*}
+calculo que debemos hacer tendrá la forma 
+$$
+\begin{align*}
   \mu_H - \mu_M < (\bar{X}_H-\bar{X}_M) + Z_{\alpha}\sqrt{\frac{S^2_H}{n_H}+\frac{S^2_M}{n_M}}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde se observa que al ser unilateral derecho, el intervalo solo
 cuenta con la suma de la resta de medias muestrales y el término de
@@ -2208,12 +2447,15 @@ bilaterales. <br> <br> Ahora, al reemplazar los valores encontrados por
 el grupo de investigación $n_H=270$, $\bar{X}_H=2.6$, $S_H=1.2$
 para los hombres, $n_M=250$, $\bar{X}_M=2.3$, $S_M=0.7$ para las
 mujeres, el nivel de confianza $1-\alpha = 0.80$ y el valor crítico
-$Z_{\alpha=0.2}=0.8416212$, tendremos que $$\begin{align*}
+$Z_{\alpha=0.2}=0.8416212$, tendremos que 
+$$
+\begin{align*}
   &\mu_H - \mu_M < (2.6-2.3) + 0.8416212\sqrt{\frac{1.2^2}{270}+\frac{0.7^2}{250}} \\
   &\mu_H - \mu_M < 0.3 + 0.8416212(0.08540101)\\
   &\mu_H - \mu_M < 0.3 + 0.0718753 \\
   &\mu_H - \mu_M < 0.3718753
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se tendrá que el valor máximo que se espera tener parar la
 diferencia entre los salarios promedio de hombres y mujeres es de
@@ -2266,9 +2508,12 @@ tendremos que el intervalo de interés será el siguiente
 <img src="/assets/images/Intervalos2f.jpg" alt="" style="max-width: 80%;">
 
 y como estamos interesados en el límite inferior, el calculo que debemos
-hacer tendrá la forma $$\begin{align*}
+hacer tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_B-\bar{X}_A) - Z_{\alpha}\sqrt{\frac{\sigma^2_B}{n_B}+\frac{\sigma^2_A}{n_A}}
-\end{align*}$$
+\end{align*}
+$$
 
 Para realizar el cálculo del intervalo, se aprecia que requerimos de los
 tamaños muestrales $n_A=47$ y $n_B=56$, las medias muestrales
@@ -2276,12 +2521,14 @@ $\bar{X}_A=44$, y $\bar{X}_B=48$, las varianzas poblacionales
 $\sigma^2_A=38.44$ y $\sigma^2_B=57.56$, el nivel de confianza
 $1-\alpha=0.88$ y el valor crítico $Z_{\alpha=0.12}=1.174987$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   & (48-44) - 1.174987\sqrt{\frac{57.56}{56}+\frac{38.44}{47}} \\
   & 4 - 1.174987(1.358576)\\
   & 4 - 1.596309 \\
   & 2.403691 < \mu_B - \mu_A 
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá un con un nivel de confianza del $88\%$, que el
 límite inferior para la diferencia promedio entre los rendimiento de
@@ -2341,25 +2588,33 @@ tendrá el siguiente caso
 <img src="/assets/images/Intervalos2g.jpg" alt="" style="max-width: 80%;">
 
 y por tanto como el intervalo es bilateral, el calculo que debemos hacer
-tendrá la forma $$\begin{align*}
+tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_A-\bar{X}_B) \pm t_{\frac{\alpha}{2}, \nu}\sqrt{\frac{S^2_A}{n_A}+\frac{S^2_B}{n_B}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que entre otros valores, requerimos calcular el
 valor de los grados de libertad $\nu$, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
     &= \frac{\left(\frac{420^2}{12} + \frac{380^2}{18}\right)^2}{\frac{(480^2/12)^2}{12-1} + \frac{(380^2/18)^2}{18-1}} \\
     &= \frac{476694444}{18813149} \\
     &= 25.33837
-\end{align*}$$
+\end{align*}
+$$
 
-Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que 
+$$
+\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto. se tendrá que los grados de libertad asociados a la
 distribución $t$ serán iguales a $\nu= 26$. Ahora, los valores
@@ -2369,12 +2624,15 @@ muestrales $\bar{X}_A=1130$, y $\bar{X}_B=1010$, las desviaciones
 estándar muestrales $S_A=420$ y $S_B=380$, el nivel de confianza
 $1-\alpha=0.92$ y el valor crítico
 $t_{\frac{\alpha}{2}=0.04, \nu = 26}=1.821863$. Al reemplazar estos
-valores en el intervalo de interés obtenemos que $$\begin{align*}
+valores en el intervalo de interés obtenemos que 
+$$
+\begin{align*}
   & (1130-1010) \pm 1.821863\sqrt{\frac{420^2}{12}+\frac{380^2}{18}} \\
   & 120 \pm 1.821863(150.7389)\\
   & 120 \pm 274.6256 \\
   & -154.6256 < \mu_A - \mu_B < 394.6256
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se concluye que con una confianza del $92\%$, la
 diferencia promedio entre la tensión promedio de corte entre las maderas
@@ -2389,9 +2647,12 @@ para la diferencia entre $\mu_A - \mu_B$.
 
 En donde se observa que el intervalo calculado contiene el valor de
 $0$, el cual representa la igualdad entre la tensión promedio de corte
-de dos tipos de madera, tal que $$\begin{align*}
+de dos tipos de madera, tal que 
+$$
+\begin{align*}
   \mu_A = \mu_B \quad =>\quad \mu_A - \mu_B = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $92\%$ no será posible
 afirmar que existen diferencias significativas entre la tensión promedio
@@ -2512,9 +2773,12 @@ proporción tiene la estructura
 <img src="/assets/images/Intervalos3a.jpg" alt="" style="max-width: 80%;">
 
 mostrando que el intervalo bilateral para el caso de una proporción está
-dado por $$\begin{align*}
+dado por 
+$$
+\begin{align*}
   \hat{p} \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que requerimos de la proporción muestral para
 realizar el cálculo, y por tanto se deberá proceder a realizar su
@@ -2523,29 +2787,38 @@ el cual está dado por aquellos costos que posean un valor superior a
 $1900$ millones de pesos, y para ello, denotaremos como $1$ aquellas
 observaciones que sean superiores a $1900$ millones de pesos, y $0$
 aquellas observaciones que no cumplan la condición, tal que
-$$\begin{align*}
+$$
+\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
-\end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
+\end{align*}
+$$
+ Al contar el número de éxitos, observamos que tenemos un
 total de $x=5$ éxitos en un total de $n=20$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a
-$1900$ millones, tal que $$\begin{align*}
+$1900$ millones, tal que 
+$$
+\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al emplear este valor junto con el nivel de confianza
 $1-\alpha=0.97$ y el valor crítico
 $Z_{\frac{\alpha}{2}=0.015}=2.17009$, para calcular el intervalo de
-confianza de interés obtendremos que $$\begin{align*}
+confianza de interés obtendremos que 
+$$
+\begin{align*}
   & 0.25 \pm 2.17009\sqrt{\frac{0.25(1-0.25)}{20}} \\
   & 0.25 \pm 2.17009(0.09682458)\\
   & 0.25 \pm 0.2101181 \\
   & 0.0398819 < p < 0.4601181
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, con una confianza del $97\%$ se concluye que la verdadera
 proporción de proyectos que poseen costos por encima de $1900$
@@ -2620,18 +2893,26 @@ dichos valores para los equipos fabricados con el proceso nuevo y actual
 $x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
-con el nuevo procedimiento tenemos que $$\begin{align*}
+con el nuevo procedimiento tenemos que 
+$$
+\begin{align*}
 \hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$ mientras que, para los equipos que fueron construidos con
-el procedimiento actual tenemos que $$\begin{align*}
+\end{align*}
+$$
+ mientras que, para los equipos que fueron construidos con
+el procedimiento actual tenemos que 
+$$
+\begin{align*}
 \hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$ Ahora, dado que el intervalo que nos piden es bilateral,
+\end{align*}
+$$
+ Ahora, dado que el intervalo que nos piden es bilateral,
 y tenemos que los tamaños muestrales para cada población son
 suficientemente grandes, tendremos que el intervalo de interés es de la
 forma
@@ -2639,20 +2920,25 @@ forma
 <img src="/assets/images/Intervalos4a.jpg" alt="" style="max-width: 80%;">
 
 y por tanto como el intervalo de interés es de la forma, el calculo que
-debemos hacer tendrá la forma $$\begin{align*}
+debemos hacer tendrá la forma 
+$$
+\begin{align*}
   (\hat{p}_N-\hat{p}_A) \pm Z_{\alpha}\sqrt{\frac{\hat{p}_N(1-\hat{p}_N)}{n_N}+\frac{\hat{p}_A(1-\hat{p}_A)}{n_A}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que entre los valores ya calculados para las
 proporciones muestrales, se requiere del nivel de confianza
 $1-\alpha=0.99$ y el valor crítico $Z_{\alpha=0.01}=2.326348$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   & (0.3142857-0.24) \pm 2.326348\sqrt{\frac{0.3142857(1-0.3142857)}{700}+\frac{0.24(1-0.24)}{500}} \\
   &0.0742857 \pm 2.326348 (0.02593592) \\
   &0.0742857 \pm 0.06033598 \\
   &0.01394972 < p_N - p_A < 0.1346217
-\end{align*}$$
+\end{align*}
+$$
 
 Dado el resultado anterior, se concluye con una confianza del del
 $99\%$ que la diferencia entre la proporción de equipos que son
@@ -2669,9 +2955,12 @@ el intervalo de confianza para la diferencia entre $p_N - p_A$.
 
 En donde se observa que el intervalo calculado se encuentra sobre el
 valor de $0$, el cual representa la igualdad entre las dos
-proporciones, tal que $$\begin{align*}
+proporciones, tal que 
+$$
+\begin{align*}
   p_N = p_A \quad =>\quad p_N - p_A = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, podremos afirmar con un nivel de confianza del $99\%$ que
 la proporción de equipos que ofrece un rendimiento superior al promedio
@@ -2794,9 +3083,12 @@ tal que
 <img src="/assets/images/Intervalos5a.jpg" alt="" style="max-width: 80%;">
 
 en donde se aprecia que el intervalo bilateral para una varianza posee
-la estructura $$\begin{align*}
+la estructura 
+$$
+\begin{align*}
    \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}}< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de la varianza muestral $S^2 = 230541.2$, el nivel de
@@ -2804,18 +3096,23 @@ confianza $1-\alpha=0.95$, los valores críticos
 $\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233$ y
 $\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516$ y el tamaño
 muestral $n=20$. <br> <br> Al reemplazar dichos valores en el
-intervalo de confianza, se tendrá que $$\begin{align*}
+intervalo de confianza, se tendrá que 
+$$
+\begin{align*}
     \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}} &< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}} \\
     \frac{(20-1)230541.2}{32.85233}&< \sigma^2 <\frac{(20-1)230541.2}{8.906516} \\
   133332.5 &< \sigma^2 < 491806.5
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual significa que la desviación estándar estará entre
-$$\begin{align*}
+$$
+\begin{align*}
   133332.5 &< \sigma^2 < 491806.5\\
   \sqrt{133332.5} &< \sqrt{\sigma^2} < \sqrt{491806.5}\\
   365.1472 &< \sigma <  701.2892\\
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir con un nivel de confianza del $95\%$
 que el verdadero valor para la desviación estándar de los costos de
@@ -2953,9 +3250,12 @@ siguiente intervalo
 <img src="/assets/images/Intervalos6a.jpg" alt="" style="max-width: 80%;">
 
 en donde se aprecia que el intervalo bilateral para la razón de
-varianzas posee la estructura $$\begin{align*}
+varianzas posee la estructura 
+$$
+\begin{align*}
    \frac{S^2_C}{S^2_S}\frac{1}{f_{\alpha/2, n_C-1, n_S-1}} < \frac{\sigma^2_C}{\sigma^2_S} < \frac{S^2_C}{S^2_S}f_{\alpha/2, n_S-1, n_C-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
@@ -2965,24 +3265,31 @@ $f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
-$$\begin{align*}
+$$
+\begin{align*}
 S^2_C = 1.378146 \quad \text{ y } \quad S^2_S = 3.231254
-\end{align*}$$
+\end{align*}
+$$
 
 Por su parte, al buscar los valores críticos para un nivel de
 significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
 $n_S=10$ tenemos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} = 3.292746\\ 
 f_{\alpha/2 = 0.05, n_S-1 = 9, n_C-1 = 7} = 3.676675
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculados los valores necesarios para calcular el intervalo de
-confianza, se procede a su cálculo, tal que $$\begin{align*}
+confianza, se procede a su cálculo, tal que 
+$$
+\begin{align*}
    \frac{1.378146}{3.231254}\frac{1}{3.292746} &< \frac{\sigma^2_C}{\sigma^2_S} < \frac{1.378146}{3.231254}3.676675 \\
    0.1295287 &< \frac{\sigma^2_C}{\sigma^2_S} < 1.56812
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
@@ -2998,9 +3305,12 @@ $\sigma^2_C/\sigma^2_S$.
 
 En donde se observa que el intervalo calculado contiene el valor de
 $1$, el cual representa la igualdad entre la varianza de los dos tipos
-de cable, tal que $$\begin{align*}
+de cable, tal que 
+$$
+\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que la variabilidad de la resistencia a la tracción de los
@@ -3436,7 +3746,9 @@ entre el costo y el predial.
 Si se supone que la relación entre `$Y$` y `$X$` es lineal, un modelo
 adecuado estaría dado por
 
-$$\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}$$
+$$
+\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}
+$$
 
 
 donde
@@ -3462,7 +3774,9 @@ por el investigador.
     ajuste a los pares de observaciones, y por tanto se supone que las
     parejas satisfacen el modelo `$(I)$`, tal que
     
-$$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}$$
+$$
+\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}
+$$
 
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, dado
     que `$X$` es igual a `$x_i$`.
@@ -3471,16 +3785,22 @@ $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
-$$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}
+$$
 
     y
     
-$$\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}$$
+$$
+\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
+$$
 
     en donde, si además se cumple que
     `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
-$$\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}$$
+$$
+\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}
+$$
 
 
 ### Estimación de parámetros
@@ -3498,7 +3818,9 @@ Bajo el supuesto de que
 luego la función de verosimilitud asociada a los pares `$(y_1, x_1)$`,
 `$(y_2, x_2)$`, `$\ldots$`, `$ (y_n,x_n)$` está dada por
 
-$$\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i; \beta_0, \beta_1, \sigma^2)\\   &= \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\end{align*}$$
+$$
+\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i; \beta_0, \beta_1, \sigma^2)\\   &= \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\end{align*}
+$$
 
 
 Entonces, al maximizar la función de probabilidad tal como se enseño en
@@ -3508,7 +3830,9 @@ la
 `$\sigma^2$` que maximizan `$L(\cdot)$` están dados por
 
 
-$$\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&=\frac{S_{xy}}{S_{xx}}= \frac{\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y})}{\sum_{i=1}^{n}(x_i - \bar{X})^2} = \frac{\sum_{i=1}^{n}(x_i-\bar{X}) y_i}{\sum_{i=1}^{n} (x_i - \bar{X})^2}\\    \hat{\sigma}^2&= \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&=\frac{S_{xy}}{S_{xx}}= \frac{\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y})}{\sum_{i=1}^{n}(x_i - \bar{X})^2} = \frac{\sum_{i=1}^{n}(x_i-\bar{X}) y_i}{\sum_{i=1}^{n} (x_i - \bar{X})^2}\\    \hat{\sigma}^2&= \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}\end{align*}
+$$
 
 
 #### Método de Mínimos Cuadrados
@@ -3516,7 +3840,9 @@ $$\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&
 Sea una muestra aleatoria `$(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$`
 a partir de la cual se desea ajustar el siguiente modelo
 
-$$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i\end{align*}$$
+$$
+\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i\end{align*}
+$$
 
 
 donde `$\varepsilon_i$` es una variable aleatoria desconocida con
@@ -3528,14 +3854,18 @@ Entonces si denotamos a `$\hat{\beta}_0, \hat{\beta}_1$`, los
 estimadores de los parámetros `$\beta_0, \beta_1$`, entonces la recta de
 regresión estimada será
 
-$$\begin{align*}\hat{y_i}=\hat{\beta}_0 + \hat{\beta}_1 x_i\end{align*}$$
+$$
+\begin{align*}\hat{y_i}=\hat{\beta}_0 + \hat{\beta}_1 x_i\end{align*}
+$$
 
 
 donde `$\hat{y}_i$` es el estimador de `$\mathbb{E}(y_i|x=x_i)$`.
 Entonces la diferencia entre `$y_i$` y `$\hat{y_i}$` se conoce como
 error de estimación del ajuste `$e_i$` y está dado por
 
-$$\begin{align*}e_i = y_i - \hat{y}_i = y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i\end{align*}$$
+$$
+\begin{align*}e_i = y_i - \hat{y}_i = y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i\end{align*}
+$$
 
 
 **Supuestos**
@@ -3548,19 +3878,25 @@ A partir de la ecuación anterior será posible encontrar los estimadores
 suma de los cuadrados de los errores.
 
 
-$$\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (y_i - \hat{y}_i)^2 =   \sum_{i=1}^n (y_i -\hat{\beta}_0 - \hat{\beta}_1 x_i)^2\end{align*}$$
+$$
+\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (y_i - \hat{y}_i)^2 =   \sum_{i=1}^n (y_i -\hat{\beta}_0 - \hat{\beta}_1 x_i)^2\end{align*}
+$$
 
 
 de la forma
 
 
-$$\begin{align*}\frac{\partial SCE}{\partial \hat{\beta}_i} = 0\end{align*}$$
+$$
+\begin{align*}\frac{\partial SCE}{\partial \hat{\beta}_i} = 0\end{align*}
+$$
 
 
 Al resolver el sistema de ecuaciones se obtendrá que
 
 
-$$\begin{align*}\hat{\beta}_1 &= \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{\sum_{i=1}^n (x_i-\bar{X})^2} = \frac{S_{xy}}{S_{xx}}\\ \hat{\beta}_0 &= \bar{Y} - \hat{\beta}_1\bar{X}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1 &= \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{\sum_{i=1}^n (x_i-\bar{X})^2} = \frac{S_{xy}}{S_{xx}}\\ \hat{\beta}_0 &= \bar{Y} - \hat{\beta}_1\bar{X}\end{align*}
+$$
 
 
 **Note que**
@@ -3571,7 +3907,9 @@ $$\begin{align*}\hat{\beta}_1 &= \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{
     reescritos como
 
 
-$$\begin{align*}\hat{\beta}_1 &= \sum_{i=1}^{n} y_ic_i \qquad \text{ donde } c_i=\frac{(x_i-\bar{X})}{\sum_{i=1}^{n}(x_i - \bar{X})^2}\\   \hat{\beta}_0 &= \sum_{i=1}^{n} y_i di \qquad \text{ donde } d_i=\left(\frac{1}{n} - c_i\bar{X}\right)\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1 &= \sum_{i=1}^{n} y_ic_i \qquad \text{ donde } c_i=\frac{(x_i-\bar{X})}{\sum_{i=1}^{n}(x_i - \bar{X})^2}\\   \hat{\beta}_0 &= \sum_{i=1}^{n} y_i di \qquad \text{ donde } d_i=\left(\frac{1}{n} - c_i\bar{X}\right)\end{align*}
+$$
 
 
 Además, se puede probar que
@@ -3600,7 +3938,9 @@ Dado que el método de mínimos cuadrados no posee un estimador para la
 varianza `$\sigma^2$`, se emplea entonces un estimador insesgado el cual
 estará dado por
 
-$$\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \frac{1}{n-2}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\              &= \frac{S_{yy} - \hat{\beta}_1 S_{xy}}{n-2}\end{align*}$$
+$$
+\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \frac{1}{n-2}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\              &= \frac{S_{yy} - \hat{\beta}_1 S_{xy}}{n-2}\end{align*}
+$$
 
 
 ### Prueba de hipótesis
@@ -3609,29 +3949,39 @@ Note que `$\hat{\beta}_0$` y `$\hat{\beta}_1$` son combinaciones
 lineales de `$y_i$`, que son normales e independientes, entonces por
 propiedades de la distribución normal se obtiene que
 
-$$\begin{align*}\hat{\beta}_0 &\sim N\left(\beta_0, \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e\right)  \\  \hat{\beta}_1 &\sim N\left(\beta_1, \frac{\sigma^2_e}{S_{xx}}\right)\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_0 &\sim N\left(\beta_0, \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e\right)  \\  \hat{\beta}_1 &\sim N\left(\beta_1, \frac{\sigma^2_e}{S_{xx}}\right)\end{align*}
+$$
 
 
 Entonces, para realizar el contraste de hipótesis `$\beta_0$` y
 `$\beta_1$` de la forma
 
-$$\begin{align*}H_0: \beta_0 = \beta_{00} \quad & \quad H_0: \beta_1 = \beta_{10}\\  H_1: \beta_0 \neq \beta_{00} \quad & \quad H_1: \beta_1 \neq \beta_{10}\\\end{align*}$$
+$$
+\begin{align*}H_0: \beta_0 = \beta_{00} \quad & \quad H_0: \beta_1 = \beta_{10}\\  H_1: \beta_0 \neq \beta_{00} \quad & \quad H_1: \beta_1 \neq \beta_{10}\\\end{align*}
+$$
 
 
 se tendrá que los estadísticos de prueba serían de la forma
 
-$$\begin{align*}t_{\hat{\beta}_{0}}= \frac{\hat{\beta}_0 - \beta_{00}}{\sqrt{\left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e}} \quad & \quad t_{\hat{\beta}_{1}}= \frac{\hat{\beta}_1 - \beta_{10}}{\sqrt{\frac{\sigma^2_e}{S_{xx}}}}\end{align*}$$
+$$
+\begin{align*}t_{\hat{\beta}_{0}}= \frac{\hat{\beta}_0 - \beta_{00}}{\sqrt{\left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e}} \quad & \quad t_{\hat{\beta}_{1}}= \frac{\hat{\beta}_1 - \beta_{10}}{\sqrt{\frac{\sigma^2_e}{S_{xx}}}}\end{align*}
+$$
 
 
 y para tomar la decisión si se rechaza o no la hipótesis se emplean la
 región crítica la cual está dada por
 
-$$\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-2} \quad ó \quad t > t_{\frac{\alpha}{2}, n-2}\}\end{align*}$$
+$$
+\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-2} \quad ó \quad t > t_{\frac{\alpha}{2}, n-2}\}\end{align*}
+$$
 
 en donde si `$t_{\hat{\beta}_{i}} \in RC$` para `$i=0,1$`, se rechaza
 `$H_0$`. Mientras que el P-valor está dada por
 
-$$\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-2}\geq |t_{\hat{\beta}_i}|) \quad \text{ para } i = 0,1\end{align*}$$
+$$
+\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-2}\geq |t_{\hat{\beta}_i}|) \quad \text{ para } i = 0,1\end{align*}
+$$
 
 
 en donde si P-valor es menor al nivel de significancia `$\alpha$`,
@@ -3652,12 +4002,16 @@ entonces se rechaza `$H_0$`.
 
 El intervalo de confianza par `$\beta_0$` está dado por
 
-$$\begin{align*}\hat{\beta}_0 - t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}} < \beta_0 < \hat{\beta}_0 + t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_0 - t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}} < \beta_0 < \hat{\beta}_0 + t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}}\end{align*}
+$$
 
 
 para el caso de `$\beta_1$`, el intervalo de confianza está dado por
 
-$$\begin{align*}\hat{\beta}_1 - t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}} < \beta_1 < \hat{\beta}_1 + t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1 - t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}} < \beta_1 < \hat{\beta}_1 + t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}}\end{align*}
+$$
 
 
 **Nota**
@@ -3684,12 +4038,16 @@ Observe que las diferencias de las `$y_i$` con a su media `$\bar{Y}$`
 pueden escribirse como
 
 
-$$\begin{align*}(y_i - \bar{Y}) = (\hat{y}_i - \bar{Y}) + (\underbrace{y_i - \hat{y_i}}_{e_i})\end{align*}$$
+$$
+\begin{align*}(y_i - \bar{Y}) = (\hat{y}_i - \bar{Y}) + (\underbrace{y_i - \hat{y_i}}_{e_i})\end{align*}
+$$
 
 
 lo cual puede reescribirse como
 
-$$\begin{align*}SCT = SCR + SCE\end{align*}$$
+$$
+\begin{align*}SCT = SCR + SCE\end{align*}
+$$
 
 
 al aplicar la función de sumatoria a ambos lados de la función.
@@ -3698,19 +4056,25 @@ al aplicar la función de sumatoria a ambos lados de la función.
 
 a)Para llegar a la ecuación anterior se puede verificar que
 
-$$\begin{align*}\sum_{i=1}^{n}(\hat{y}_i - \bar{Y})e_i = \sum_{i=1}^{n}(\hat{y}_i - \bar{Y}) (y_i - \hat{y_i})\end{align*}$$
+$$
+\begin{align*}\sum_{i=1}^{n}(\hat{y}_i - \bar{Y})e_i = \sum_{i=1}^{n}(\hat{y}_i - \bar{Y}) (y_i - \hat{y_i})\end{align*}
+$$
 
 
 b)La expresiones de `$SCT$`, `$SCR$` y `$SCE$` pueden ser reescritas
 como
 
-$$\begin{align*}&SST = \sum_{i=1}^{n}y_i^2 - n\bar{Y}\\  &SSR = \hat{\beta}_1S_{xy} = \hat{\beta}_1^2 S_{xx}\\  &\text{y luego se podrá calcular }SCE \text{ como}\\  &SCE = SST - SSR\end{align*}$$
+$$
+\begin{align*}&SST = \sum_{i=1}^{n}y_i^2 - n\bar{Y}\\  &SSR = \hat{\beta}_1S_{xy} = \hat{\beta}_1^2 S_{xx}\\  &\text{y luego se podrá calcular }SCE \text{ como}\\  &SCE = SST - SSR\end{align*}
+$$
 
 
 c)Cada suma de cuadrados tiene asociado un número de grados de libertad
 diferentes, tal que
 
-$$\begin{align*}\underbrace{SCT}_{n-1} = \underbrace{SCR}_{1} + \underbrace{SCE}_{n-2}\end{align*}$$
+$$
+\begin{align*}\underbrace{SCT}_{n-1} = \underbrace{SCR}_{1} + \underbrace{SCE}_{n-2}\end{align*}
+$$
 
 
 con base en lo anterior es posible construir estimadores independientes
@@ -3718,24 +4082,32 @@ de `$\sigma^2$`, usando la respectiva suma de cuadrados dividido sus
 grados de libertad, tal que
 
 
-$$\begin{align*}MSR = \frac{SCR}{1} \quad \quad MSE = \frac{SCE}{n-2}\end{align*}$$
+$$
+\begin{align*}MSR = \frac{SCR}{1} \quad \quad MSE = \frac{SCE}{n-2}\end{align*}
+$$
 
 
 finalmente se establece el estadítico de prueba bajo el supuesto de
 normalidad
 
-$$\begin{align*}F_c= \frac{SCR / 1}{SCE / n-2} \sim F_{1, n-2}\end{align*}$$
+$$
+\begin{align*}F_c= \frac{SCR / 1}{SCE / n-2} \sim F_{1, n-2}\end{align*}
+$$
 
 
 En donde el criterio de decisión estará dado, la región crítica, la cual
 estará dada por
 
-$$\begin{align*}RC:\{F|F>F_{\alpha, 1, n-2}\}\end{align*}$$
+$$
+\begin{align*}RC:\{F|F>F_{\alpha, 1, n-2}\}\end{align*}
+$$
 
 
 o el P-valor, el cual estará dado por
 
-$$\begin{align*}\text{P-valor} =  \mathbb{P}(F_{1,n-2} > F_c)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} =  \mathbb{P}(F_{1,n-2} > F_c)\end{align*}
+$$
 
 
 donde si P-valor es menor al nivel de significancia `$\alpha$` se
@@ -3747,7 +4119,9 @@ es significativo para explicar el comportamiento `$Y$`.
 Una forma de medir la bondad del ajuste del modelo de regresión es
 mediante el coeficiente de determinación `$R^2$`, el cual se define como
 
-$$\begin{align*}R^2=\frac{SCR}{SCT} = 1 - \frac{SCE}{SCT}\end{align*}$$
+$$
+\begin{align*}R^2=\frac{SCR}{SCT} = 1 - \frac{SCE}{SCT}\end{align*}
+$$
 
 
 y representa la proporción de variación total de `$Y$`, explicada por su
@@ -3781,19 +4155,25 @@ se usaron para ajustar el modelo**.
 Entonces el estimador puntual de la respuesta media de `$Y$` dado
 `$x_0$`
 
-$$\begin{align*}\hat{y_0}= \hat{\mathbb{E}}(Y|x_0)= \hat{\beta}_0 + \hat{\beta}_1 x_0\end{align*}$$
+$$
+\begin{align*}\hat{y_0}= \hat{\mathbb{E}}(Y|x_0)= \hat{\beta}_0 + \hat{\beta}_1 x_0\end{align*}
+$$
 
 
 donde se puede probar que
 
-$$\begin{align*}\mathbb{E}(\hat{y_0}) &= \beta_0 + \beta_1 x_0 \\  Var(\hat{y_0}) &= \hat{\sigma}^2_e\left[\frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(\hat{y_0}) &= \beta_0 + \beta_1 x_0 \\  Var(\hat{y_0}) &= \hat{\sigma}^2_e\left[\frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\end{align*}
+$$
 
 
 Además, para un nivel de confianza del `$100(1-\alpha)\%$` un intervalo
 de confianza para la respuesta media será de la forma
 
 
-$$\begin{align*}\hat{y}_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\left[\frac{1}{n}+ \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]}\end{align*}$$
+$$
+\begin{align*}\hat{y}_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\left[\frac{1}{n}+ \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]}\end{align*}
+$$
 
 
 Es de anotar que si se decide construir un intervalo de confianza para
@@ -3807,24 +4187,32 @@ para obtener un valor único `$y_0$`, podremos utilizar la fórmula de la
 recta de regresión tal que, al igual que en el caso de la respuesta
 media la estimación puntual media de `$Y$` dado `$x_0$`
 
-$$\begin{align*}\hat{y_0}= \hat{\mathbb{E}}(Y|x_0)= \hat{\beta}_0 + \hat{\beta}_1 x_0\end{align*}$$
+$$
+\begin{align*}\hat{y_0}= \hat{\mathbb{E}}(Y|x_0)= \hat{\beta}_0 + \hat{\beta}_1 x_0\end{align*}
+$$
 
 
 Pero en este al ser un valor predicho tendremos que estimar la varianza
 de la diferencia `$\hat{y}_0 - y_0$`, la cual tiene una media
 
-$$\begin{align*}\mathbb{E}(\hat{y_0} - y_0) &=\mathbb{E}[\hat{\beta}_0+\hat{\beta}_1x_0] - (\beta_0 + \beta_1 x_0 +\varepsilon)] = 0\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(\hat{y_0} - y_0) &=\mathbb{E}[\hat{\beta}_0+\hat{\beta}_1x_0] - (\beta_0 + \beta_1 x_0 +\varepsilon)] = 0\end{align*}
+$$
 
 y varianza \\
 
-$$\begin{align*}Var(\hat{y_0} - y_0) &= \sigma^2\left[\frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right] + \sigma^2\\   &=\sigma^2\left[1 + \frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\\   &=\hat{\sigma}^2_e\left[1 + \frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\\\end{align*}$$
+$$
+\begin{align*}Var(\hat{y_0} - y_0) &= \sigma^2\left[\frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right] + \sigma^2\\   &=\sigma^2\left[1 + \frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\\   &=\hat{\sigma}^2_e\left[1 + \frac{1}{n} + \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]\\\end{align*}
+$$
 
 
 Entonces, un intervalo de confianza del `$100(1-\alpha)\%$` para un
 valor predicho `$y_0$`, se puede construir de la forma
 
 
-$$\begin{align*}y_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\left[1+\frac{1}{n}+ \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]}\end{align*}$$
+$$
+\begin{align*}y_0 \pm t_{\frac{\alpha}{2}, n-2} \sqrt{\hat{\sigma}^2_e\left[1+\frac{1}{n}+ \frac{(x_0 - \bar{X})^2}{S_{xx}}\right]}\end{align*}
+$$
 
 
 Es de anotar que si se decide construir un intervalo de confianza para

@@ -34,7 +34,9 @@ en la información de una muestra aleatoria de dicha población, el
 objetivo será encontrar dos variables aleatorias `$\hat{\Theta}_I$` y
 `$\hat{\Theta}_S$` tal que
 
-$$\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}
+$$
 
 donde `$(1-\alpha)$` se conoce como nivel de confianza y
 `$\hat{\Theta}_I$` y `$\hat{\Theta}_S$` se denominan como límites de
@@ -100,11 +102,14 @@ Ingeniería Industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Si es posible supone que los salarios de los egresados se distribuyen
 aproximadamente normal, calcule el límite superior del salario promedio
@@ -128,20 +133,26 @@ estas características se ilustra en la siguiente imagen<br><br>
 
 <img src="/assets/images/Intervalos1a.jpg" alt="" style="max-width: 80%;">
 <br> de lo anterior encontramos que el intervalo de confianza de interés
-es de la forma $$\begin{align*}
+es de la forma 
+$$
+\begin{align*}
   \mu < \bar{X}+t_{\alpha, n-1}\frac{S}{\sqrt{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos de $5$ variables, la media muestral
 $\bar{X}=1.659333$, la desviación estándar muestral $S=0.6709425$,
 el tamaño de muestra $n=15$, el nivel de confianza $1-\alpha=0.98$ y
 el valor crítico $t_{\alpha=0.02, n-1=14}=2.263781$ calculado a partir
 del nivel de confianza y el tamaño de la muestra. Al reemplazar en el
-intervalo tenemos que $$\begin{align*}
+intervalo tenemos que 
+$$
+\begin{align*}
   \mu &< 1.659333+2.263781\frac{0.6709425}{\sqrt{15}}\\
   \mu &< 1.659333+0.3921697\\
   \mu &< 2.051503
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $98\%$, que el
 salario máximo promedio que ganan los egresados del Departamento de
@@ -188,19 +199,25 @@ información que poseemos tenemos las siguientes<br><br> características
 
 <img src="/assets/images/Intervalos1b.jpg" alt="" style="max-width: 80%;">
 <br> de lo anterior encontramos que el intervalo de confianza de interés
-es de la forma $$\begin{align*}
+es de la forma 
+$$
+\begin{align*}
   \bar{X}-Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X}+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos la media muestral $\bar{X}=345$, la
 desviación estándar poblacional $\sigma=5703.473$, el tamaño de
 muestra $n=8000$, el nivel de confianza $1-\alpha=0.90$ y el valor
 crítico $Z_{\alpha/2=0.05}=1.644854$ calculado a partir del nivel de
-confianza. Al reemplazar en el intervalo tenemos que $$\begin{align*}
+confianza. Al reemplazar en el intervalo tenemos que 
+$$
+\begin{align*}
   &345\pm 1.644854 \frac{5703.473}{\sqrt{8000}} \\
   &345\pm 104.8870143 \\
   &240.1129856 < \mu < 449.8870144
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $90\%$, que la
 cantidad promedio de refresco servida de forma automática por la nueva
@@ -251,19 +268,25 @@ encontramos en la siguiente situación<br><br>
 
 <img src="/assets/images/Intervalos1c.jpg" alt="" style="max-width: 80%;">
 <br> de lo anterior encontramos que el intervalo de confianza de interés
-es de la forma $$\begin{align*}
+es de la forma 
+$$
+\begin{align*}
   \bar{X}-Z_{\alpha}\frac{S}{\sqrt{n}} < \mu
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que necesitamos la media muestral $\bar{X}=1.02$,
 la desviación estándar muestral $S=0.23$, el tamaño de muestra
 $n=145$, el nivel de confianza $1-\alpha=0.85$ y el valor crítico
 $Z_{\alpha=0.15}=1.036433$ calculado a partir del nivel de confianza.
-Al reemplazar en el intervalo de interés tenemos que $$\begin{align*}
+Al reemplazar en el intervalo de interés tenemos que 
+$$
+\begin{align*}
   1.02-1.036433\frac{0.23}{\sqrt{145}} &< \mu \\
   1.02-0.01979635 &< \mu \\
   1.000204 &< \mu
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual significa que, con un nivel de confianza del $85\%$ podemos
 afirmar que la cantidad mínima promedio de nicotina que poseen los
@@ -330,9 +353,12 @@ estamos en la situación <br><br>
 
 <img src="/assets/images/Intervalos2a.jpg" alt="" style="max-width: 80%;">
 <br> y por tanto como el intervalo es bilateral, el calculo que debemos
-hacer tendrá la forma $$\begin{align*}
+hacer tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_C-\bar{X}_S) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\sigma^2_C}{n_C}+\frac{\sigma^2_S}{n_S}}
-\end{align*}$$
+\end{align*}
+$$
 
 Para realizar el cálculo requerimos de las media muestrales
 $\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas poblacionales
@@ -340,12 +366,14 @@ $\sigma^2_C=5.6$ y $\sigma^2_S=4.3$, los tamaños de muestrales
 $n_C=12$ y $n_S=15$, el nivel de confianza $1-\alpha=0.90$ y el
 valor crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$ calculado a partir
 del nivel de confianza. Al reemplazar en el intervalo tenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   &(43.5-40.8) \pm 1.644854\sqrt{\frac{5.6}{12}+\frac{4.3}{15}} \\
   &2.7 \pm 1.644854(0.8679478) \\
   &2.7 \pm 1.427647 \\
   &1.272353 < \mu_C - \mu_S < 4.127647
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $90\%$, de que
 la diferencia entre el promedio de ventas de las personas que asisten a
@@ -414,34 +442,46 @@ situación<br><br>
 
 <img src="/assets/images/Intervalos2c.jpg" alt="" style="max-width: 80%;">
 <br> y por tanto como el intervalo es bilateral, el calculo que debemos
-hacer tendrá la forma $$\begin{align*}
+hacer tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_H-\bar{X}_M) \pm t_{\frac{\alpha}{2}, n_H+n_M-2}S_p\sqrt{\frac{1}{n_H}+\frac{1}{n_M}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que entre otros valores, requerimos calcular el
 valor de la desviación estándar conjunta $Sp$, la cual está dada por
 
-$$\begin{align*}
+$$
+\begin{align*}
 Sp^2 &= \frac{(n_H-1)S^2_H + (n_M-1)S^2_M}{n_H+n_M-2} \\
      &= \frac{(22-1)8^2 + (28-1)6.2^2}{22 + 28 - 2} \\
      &= 49.6225
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}
+$$
+ y por tanto 
+$$
+\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{49.6225} \\
    &= 7.044324
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, los valores adicionales que se requieren para realizar el cálculo
 del intervalo de confianza serán, las medias muestrales
 $\bar{X}_H=52$, y $\bar{X}_M=46$, los tamaños muestrales $n_H=22$
 y $n_M=28$, el nivel de confianza $1-\alpha=0.90$ y el valor crítico
 $t_{\frac{\alpha}{2}=0.05, n_H+n_M-2 = 28}=1.701131$. Al reemplazar
-estos valores en el intervalo de interés obtenemos que $$\begin{align*}
+estos valores en el intervalo de interés obtenemos que 
+$$
+\begin{align*}
   &(52-46) \pm 1.701131(7.044324)\sqrt{\frac{1}{22}+\frac{1}{28}} \\
   &6 \pm 1.701131(7.044324)(0.2849014)\\
   &2.7 \pm 3.414064 \\
   &-0.714064 < \mu_H - \mu_M < 6.114064
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, con un nivel de confianza del $90\%$ se tendrá que la
 diferencia entre el peso promedio de los niños y el peso promedio de las
@@ -454,9 +494,12 @@ $\mu_H - \mu_M$.<br><br>
 <img src="/assets/images/Intervalos2d.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo encontrado contiene el valor
 $0$, el cual simboliza la igualdad entre los pesos promedio de niños y
-niñas, tal que $$\begin{align*}
+niñas, tal que 
+$$
+\begin{align*}
   \mu_H = \mu_M \quad =>\quad \mu_H - \mu_M = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que existen diferencias significativas entre los pesos promedio
@@ -511,9 +554,12 @@ los tamaños muestrales son mayores a $30$.<br><br>
 
 <img src="/assets/images/Intervalos2e.jpg" alt="" style="max-width: 80%;">
 <br> y por tanto al ser un intervalo unilateral derecho (límite
-superior), el calculo que debemos hacer tendrá la forma $$\begin{align*}
+superior), el calculo que debemos hacer tendrá la forma 
+$$
+\begin{align*}
   \mu_H - \mu_M < (\bar{X}_H-\bar{X}_M) + Z_{\alpha}\sqrt{\frac{S^2_H}{n_H}+\frac{S^2_M}{n_M}}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde se observa que al ser unilateral derecho, el intervalo solo
 cuenta con la suma de la resta de medias muestrales y el término de
@@ -523,12 +569,15 @@ bilaterales. <br> <br> Ahora, al reemplazar los valores encontrados por
 el grupo de investigación $n_H=270$, $\bar{X}_H=2.6$, $S_H=1.2$
 para los hombres, $n_M=250$, $\bar{X}_M=2.3$, $S_M=0.7$ para las
 mujeres, el nivel de confianza $1-\alpha = 0.80$ y el valor crítico
-$Z_{\alpha=0.2}=0.8416212$, tendremos que $$\begin{align*}
+$Z_{\alpha=0.2}=0.8416212$, tendremos que 
+$$
+\begin{align*}
   &\mu_H - \mu_M < (2.6-2.3) + 0.8416212\sqrt{\frac{1.2^2}{270}+\frac{0.7^2}{250}} \\
   &\mu_H - \mu_M < 0.3 + 0.8416212(0.08540101)\\
   &\mu_H - \mu_M < 0.3 + 0.0718753 \\
   &\mu_H - \mu_M < 0.3718753
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se tendrá que el valor máximo que se espera tener parar la
 diferencia entre los salarios promedio de hombres y mujeres es de
@@ -580,9 +629,12 @@ tendremos que el intervalo de interés será el siguiente<br><br>
 
 <img src="/assets/images/Intervalos2f.jpg" alt="" style="max-width: 80%;">
 <br> y como estamos interesados en el límite inferior, el calculo que
-debemos hacer tendrá la forma $$\begin{align*}
+debemos hacer tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_B-\bar{X}_A) - Z_{\alpha}\sqrt{\frac{\sigma^2_B}{n_B}+\frac{\sigma^2_A}{n_A}}
-\end{align*}$$
+\end{align*}
+$$
 
 Para realizar el cálculo del intervalo, se aprecia que requerimos de los
 tamaños muestrales $n_A=47$ y $n_B=56$, las medias muestrales
@@ -590,12 +642,14 @@ $\bar{X}_A=44$, y $\bar{X}_B=48$, las varianzas poblacionales
 $\sigma^2_A=38.44$ y $\sigma^2_B=57.56$, el nivel de confianza
 $1-\alpha=0.88$ y el valor crítico $Z_{\alpha=0.12}=1.174987$. Al
 reemplazar estos valores en el intervalo de interés obtenemos que
-$$\begin{align*}
+$$
+\begin{align*}
   & (48-44) - 1.174987\sqrt{\frac{57.56}{56}+\frac{38.44}{47}} \\
   & 4 - 1.174987(1.358576)\\
   & 4 - 1.596309 \\
   & 2.403691 < \mu_B - \mu_A 
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá un con un nivel de confianza del $88\%$, que el
 límite inferior para la diferencia promedio entre los rendimiento de
@@ -654,25 +708,33 @@ tendrá el siguiente caso<br><br>
 
 <img src="/assets/images/Intervalos2g.jpg" alt="" style="max-width: 80%;">
 <br> y por tanto como el intervalo es bilateral, el calculo que debemos
-hacer tendrá la forma $$\begin{align*}
+hacer tendrá la forma 
+$$
+\begin{align*}
   (\bar{X}_A-\bar{X}_B) \pm t_{\frac{\alpha}{2}, \nu}\sqrt{\frac{S^2_A}{n_A}+\frac{S^2_B}{n_B}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que entre otros valores, requerimos calcular el
 valor de los grados de libertad $\nu$, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
     &= \frac{\left(\frac{420^2}{12} + \frac{380^2}{18}\right)^2}{\frac{(480^2/12)^2}{12-1} + \frac{(380^2/18)^2}{18-1}} \\
     &= \frac{476694444}{18813149} \\
     &= 25.33837
-\end{align*}$$
+\end{align*}
+$$
 
-Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que 
+$$
+\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto. se tendrá que los grados de libertad asociados a la
 distribución $t$ serán iguales a $\nu= 26$. Ahora, los valores
@@ -682,12 +744,15 @@ muestrales $\bar{X}_A=1130$, y $\bar{X}_B=1010$, las desviaciones
 estándar muestrales $S_A=420$ y $S_B=380$, el nivel de confianza
 $1-\alpha=0.92$ y el valor crítico
 $t_{\frac{\alpha}{2}=0.04, \nu = 26}=1.821863$. Al reemplazar estos
-valores en el intervalo de interés obtenemos que $$\begin{align*}
+valores en el intervalo de interés obtenemos que 
+$$
+\begin{align*}
   & (1130-1010) \pm 1.821863\sqrt{\frac{420^2}{18}+\frac{380^2}{12}} \\
   & 120 \pm 1.821863(147.7611)\\
   & 120 \pm 269.2004 \\
   & -149.2004 < \mu_A - \mu_B < 389.2004
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se concluye que con una confianza del $92\%$, la
 diferencia promedio entre la tensión promedio de corte entre las maderas
@@ -701,9 +766,12 @@ para la diferencia entre $\mu_A - \mu_B$.<br><br>
 <img src="/assets/images/Intervalos2h.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado contiene el valor de
 $0$, el cual representa la igualdad entre la tensión promedio de corte
-de dos tipos de madera, tal que $$\begin{align*}
+de dos tipos de madera, tal que 
+$$
+\begin{align*}
   \mu_A = \mu_B \quad =>\quad \mu_A - \mu_B = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $92\%$ no será posible
 afirmar que existen diferencias significativas entre la tensión promedio
@@ -737,11 +805,14 @@ ingeniería industrial una vez finalizan su pregrado y se insertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados en la información anterior, construya un intervalo de confianza
 del $97\%$ para la verdadera proporción de egresados que tienen un
@@ -761,9 +832,12 @@ proporción tiene la estructura<br><br>
 
 <img src="/assets/images/Intervalos3a.jpg" alt="" style="max-width: 80%;">
 <br> mostrando que el intervalo bilateral para el caso de una proporción
-está dado por $$\begin{align*}
+está dado por 
+$$
+\begin{align*}
   \hat{p} \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que requerimos de la proporción muestral para
 realizar el cálculo, y por tanto se deberá proceder a realizar su
@@ -772,30 +846,39 @@ el cual está dado por aquellos salarios que posean un valor superior a
 $2$ millones de pesos, y para ello, denotaremos como $1$ aquellas
 observaciones que sean superiores a $2$ millones de pesos, y $0$
 aquellas observaciones que no cumplan la condición, tal que
-$$\begin{align*}
+$$
+\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
-\end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
+\end{align*}
+$$
+ Al contar el número de éxitos, observamos que tenemos un
 total de $x=4$ éxitos en un total de $n=15$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a $2$
-millones, tal que $$\begin{align*}
+millones, tal que 
+$$
+\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al emplear este valor junto con el nivel de confianza
 $1-\alpha=0.97$ y el valor crítico
 $Z_{\frac{\alpha}{2}=0.015}=2.17009$, para calcular el intervalo de
-confianza de interés obtendremos que $$\begin{align*}
+confianza de interés obtendremos que 
+$$
+\begin{align*}
   & 0.2666667 \pm 2.17009\sqrt{\frac{0.2666667(1-0.2666667)}{15}} \\
   & 0.2666667 \pm 2.17009(0.1141798)\\
   & 0.2666667 \pm 0.2477804 \\
   & 0.0188863 < p < 0.5144471
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, con una confianza del $97\%$ se concluye que la verdadera
 proporción de egresados que poseen un salario superior a $2$ millones
@@ -870,38 +953,52 @@ dichos valores para los equipos fabricados con el proceso nuevo y actual
 $x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
-con el nuevo procedimiento tenemos que $$\begin{align*}
+con el nuevo procedimiento tenemos que 
+$$
+\begin{align*}
 \hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$ mientras que, para los equipos que fueron construidos con
-el procedimiento actual tenemos que $$\begin{align*}
+\end{align*}
+$$
+ mientras que, para los equipos que fueron construidos con
+el procedimiento actual tenemos que 
+$$
+\begin{align*}
 \hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$ Ahora, dado que el intervalo que nos piden es bilateral,
+\end{align*}
+$$
+ Ahora, dado que el intervalo que nos piden es bilateral,
 y tenemos que los tamaños muestrales para cada población son
 suficientemente grandes, tenfremos que el intervalo de interés es de la
 forma<br><br>
 
 <img src="/assets/images/Intervalos4a.jpg" alt="" style="max-width: 80%;">
 <br> y por tanto como el intervalo de interés es de la forma, el calculo
-que debemos hacer tendrá la forma $$\begin{align*}
+que debemos hacer tendrá la forma 
+$$
+\begin{align*}
   (\hat{p}_N-\hat{p}_A) \pm Z_{\alpha}\sqrt{\frac{\hat{p}_N(1-\hat{p}_N)}{n_N}+\frac{\hat{p}_A(1-\hat{p}_A)}{n_A}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que entre los valores ya calculados para las
 proporciones muestrales, se requiere del nivel de confianza
 $1-\alpha=0.98$ y el valor crítico
 $Z_{\frac{\alpha}{2}}=Z_{0.01}=2.326348$. Al reemplazar estos valores
-en el intervalo de interés obtenemos que $$\begin{align*}
+en el intervalo de interés obtenemos que 
+$$
+\begin{align*}
   & (0.3142857-0.24) \pm 2.326348\sqrt{\frac{0.3142857(1-0.3142857)}{700}+\frac{0.24(1-0.24)}{500}} \\
   &0.0742857 \pm 2.326348 (0.02593592) \\
   &0.0742857 \pm 0.06033598 \\
   &0.01394972 < p_N - p_A < 0.1346217
-\end{align*}$$
+\end{align*}
+$$
 
 Dado el resultado anterior, se concluye con una confianza del del
 $98\%$ que la diferencia entre la proporción de equipos que son
@@ -918,9 +1015,12 @@ $p_N - p_A$.<br><br>
 <img src="/assets/images/Intervalos4b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado se encuentra sobre
 el valor de $0$, el cual representa la igualdad entre las dos
-proporciones, tal que $$\begin{align*}
+proporciones, tal que 
+$$
+\begin{align*}
   p_N = p_A \quad =>\quad p_N - p_A = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, podremos afirmar con un nivel de confianza del $99\%$ que
 la proporción de equipos que ofrece un redimiento superior al promedio y
@@ -1042,9 +1142,12 @@ tal que<br><br>
 
 <img src="/assets/images/Intervalos5a.jpg" alt="" style="max-width: 80%;">
 <br> en donde se aprecia que el intervalo bilateral para una varianza
-posee la estructura $$\begin{align*}
+posee la estructura 
+$$
+\begin{align*}
    \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}}< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de la varianza muestral $S^2 = 230541.2$, el nivel de
@@ -1052,18 +1155,23 @@ confianza $1-\alpha=0.95$, los valores críticos
 $\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233$ y
 $\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516$ y el tamaño
 muestral $n=20$. <br> <br> Al reemplazar dichos valores en el
-intervalo de confianza, se tendrá que $$\begin{align*}
+intervalo de confianza, se tendrá que 
+$$
+\begin{align*}
     \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}} &< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}} \\
     \frac{(20-1)230541.2}{32.85233}&< \sigma^2 <\frac{(20-1)230541.2}{8.906516} \\
   133332.5 &< \sigma^2 < 491806.5
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual significa que la desviación estándar estará entre
-$$\begin{align*}
+$$
+\begin{align*}
   133332.5 &< \sigma^2 < 491806.5\\
   \sqrt{133332.5} &< \sqrt{\sigma^2} < \sqrt{491806.5}\\
   365.1472 &< \sigma <  701.2892\\
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir con un nivel de confianza del $95\%$
 que el verdadero valor para la desviación estándar de los costos de
@@ -1200,9 +1308,12 @@ siguiente intervalo<br><br>
 
 <img src="/assets/images/Intervalos6a.jpg" alt="" style="max-width: 80%;">
 <br> en donde se aprecia que el intervalo bilateral para la razón de
-varianzas posee la estructura $$\begin{align*}
+varianzas posee la estructura 
+$$
+\begin{align*}
    \frac{S^2_C}{S^2_S}\frac{1}{f_{\alpha/2, n_C-1, n_S-1}} < \frac{\sigma^2_C}{\sigma^2_S} < \frac{S^2_C}{S^2_S}f_{\alpha/2, n_S-1, n_C-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
@@ -1212,25 +1323,32 @@ $f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
-$$\begin{align*}
+$$
+\begin{align*}
 S^2_C &= 1.899286 \\
 S^2_S &= 10.441
-\end{align*}$$
+\end{align*}
+$$
 
 Por su parte, al buscar los valores críticos para un nivel de
 significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
 $n_S=10$ tenemos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} = 3.292746\\ 
 f_{\alpha/2 = 0.05, n_S-1 = 9, n_C-1 = 7} = 3.676675
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculados los valores necesarios para calcular el intervalo de
-confianza, se procede a su cálculo, tal que $$\begin{align*}
+confianza, se procede a su cálculo, tal que 
+$$
+\begin{align*}
    \frac{1.899286}{10.441}\frac{1}{3.292746} &< \frac{\sigma^2_C}{\sigma^2_S} < \frac{1.899286}{10.441}3.676675 \\
    0.05524463 &< \frac{\sigma^2_C}{\sigma^2_S} < 0.6688112
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
@@ -1245,9 +1363,12 @@ $\sigma^2_C/\sigma^2_S$. <br><br>
 <img src="/assets/images/Intervalos6b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado contiene el valor de
 $1$, el cual representa la igualdad entre la varianza de los dos tipos
-de cable, tal que $$\begin{align*}
+de cable, tal que 
+$$
+\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $90\%$ no será posible
 afirmar que la variabilidad de la resistencia a la tracción de los

@@ -22,7 +22,9 @@ El procedimiento para el cálculo de los promedios móviles dobles es el
 siguiente. Primero se estima del promedio móvil unilateral con ancho de
 ventana `$k$` de la forma
 
-$$\begin{align*}PMU_{t}=\frac{1}{k}\sum_{i=0}^{k-1}Y_{t-i}\end{align*}$$
+$$
+\begin{align*}PMU_{t}=\frac{1}{k}\sum_{i=0}^{k-1}Y_{t-i}\end{align*}
+$$
 
 
 para `$t=k,k+1,k+2, \ldots, T$`, con `$i=0,1,\ldots, k-1$` y `$k>0$`.
@@ -30,14 +32,18 @@ Posteriormente, se realiza el cálculo del segundo promedio móvil,
 empleando como insumo el promedio móvil unilateral calculado
 previamente, tal que
 
-$$\begin{align*}PMD_{t}=\frac{1}{k}\sum_{i=0}^{k-1}PMU_{t-i}\end{align*}$$
+$$
+\begin{align*}PMD_{t}=\frac{1}{k}\sum_{i=0}^{k-1}PMU_{t-i}\end{align*}
+$$
 
 
 para `$t=2k-1, 2k, \ldots, T$`, con `$i=0,1,\ldots, k-1$` y `$k>0$`. Una
 vez obtenido el cálculos los dos promedios móviles, el método de
 promedios móviles dobles supone tendencia lineal local, tal que
 
-$$\begin{align*}\hat{Y}_{t+p}=a_t + b_t p\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+p}=a_t + b_t p\end{align*}
+$$
 
 
 donde, `$a_t$` es el intercepto u ordenada de la linea, `$b_t$` es la
@@ -47,26 +53,34 @@ es el número de periodos que se desean estimar o pronosticar.
 Para la estimación del intercepto (`$a_t$`) se emplea la siguiente
 ecuación
 
-$$\begin{align*}a_{t}= PMU_t + (PMU_t - PMD_t) = 2PMU_t - PMD_t\end{align*}$$
+$$
+\begin{align*}a_{t}= PMU_t + (PMU_t - PMD_t) = 2PMU_t - PMD_t\end{align*}
+$$
 
 
 mientras que, para la estimación de la pendiente (`$b_t$`) se emplea la
 siguiente ecuación
 
-$$\begin{align*}b_{t}= \frac{2}{k-1}(PMU_t - PMD_t)\end{align*}$$
+$$
+\begin{align*}b_{t}= \frac{2}{k-1}(PMU_t - PMD_t)\end{align*}
+$$
 
 
 Es de anotar que en los promedios móviles dobles, el ajuste de las
 observaciones se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{t+1}=a_t + b_t\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}=a_t + b_t\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{T+h}=a_T + b_T h\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}=a_T + b_T h\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.
@@ -83,21 +97,27 @@ El objetivo será inicialmente, calcular a partir de la serie original
 una nueva serie a partir del método de suavizamiento exponencial, de la
 forma
 
-$$\begin{align*}SES_{t} = \alpha Y_{t} + (1-\alpha)SES_{t-1}\end{align*}$$
+$$
+\begin{align*}SES_{t} = \alpha Y_{t} + (1-\alpha)SES_{t-1}\end{align*}
+$$
 
 
 a partir de la de esta nueva serie de observaciones, se realiza
 nuevamente un suavizamiento exponencial de la forma
 
 
-$$\begin{align*}SED_{t} = \alpha SES_{t} + (1-\alpha)SED_{t-1}\end{align*}$$
+$$
+\begin{align*}SED_{t} = \alpha SES_{t} + (1-\alpha)SED_{t-1}\end{align*}
+$$
 
 
 donde `$\alpha$` es el parámetro de suavización tal que `$0<\alpha<1$`.
 Una vez obtenido el cálculos las dos suavizamientos exponenciales, el
 método de suavizamiento exponencial de Brown supone tendencia lineal
 local, tal que 
-$$\begin{align*}\hat{Y}_{t+p}=a_t + b_t p\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+p}=a_t + b_t p\end{align*}
+$$
 
 
 donde, `$a_t$` es el intercepto u ordenada de la linea, `$b_t$` es la
@@ -107,13 +127,17 @@ es el número de periodos que se desean estimar o pronosticar.
 Para la estimación del intercepto (`$a_t$`) se emplea la siguiente
 ecuación
 
-$$\begin{align*}a_{t}= SES_t + (SES_t - SED_t) = 2SES_t - SED_t\end{align*}$$
+$$
+\begin{align*}a_{t}= SES_t + (SES_t - SED_t) = 2SES_t - SED_t\end{align*}
+$$
 
 
 mientras que, para la estimación de la pendiente (`$b_t$`) se emplea la
 siguiente ecuación
 
-$$\begin{align*}b_{t}= \frac{\alpha}{1-\alpha}(SES_t - SED_t)\end{align*}$$
+$$
+\begin{align*}b_{t}= \frac{\alpha}{1-\alpha}(SES_t - SED_t)\end{align*}
+$$
 
 
 donde, similar al caso de suavización exponencial simple, la constante
@@ -125,20 +149,26 @@ presentadas en la <a href="../../MuestreoySeriesdeTiempo/MySTClase_03.html" targ
 Para la selección de la primera observación asociada a `$SES_1$` y
 `$SED_1$`, usualmente se selecciona la primera obseración real, es decir
 
-$$\begin{align*}SES_1 = SED_1 = Y_{1}\end{align*}$$
+$$
+\begin{align*}SES_1 = SED_1 = Y_{1}\end{align*}
+$$
 
 
 Adicionalmente, similar al caso de promedios móviles dobles, el ajuste
 de las observaciones para la suavización de Brown se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{t+1}=a_t + b_t\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}=a_t + b_t\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{T+h}=a_T + b_T h\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}=a_T + b_T h\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.
@@ -168,19 +198,25 @@ siguientes tres ecuaciones
 -   La serie suavizada exponencialmente o nivel actual estimado
 
 
-$$\begin{align*}a_t=\alpha Y_t + (1 - \alpha) (a_{t-1} + b_{t-1})\end{align*}$$
+$$
+\begin{align*}a_t=\alpha Y_t + (1 - \alpha) (a_{t-1} + b_{t-1})\end{align*}
+$$
 
 
 -   La estimación de la tendencia
 
 
-$$\begin{align*}b_t=\beta (a_t-a_{t-1}) + (1 - \beta) b_{t-1}\end{align*}$$
+$$
+\begin{align*}b_t=\beta (a_t-a_{t-1}) + (1 - \beta) b_{t-1}\end{align*}
+$$
 
 
 -   El modelo a estimar
 
 
-$$\begin{align*}\hat{Y}_{t+p}=a_t + b_t p\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+p}=a_t + b_t p\end{align*}
+$$
 
 
 donde `$a_t$` es la estimación del intercepto o del nuevo nivel del
@@ -211,13 +247,17 @@ Al igual que para los dos métodos anteriores, el ajuste de las
 observaciones para la suavización de Holt se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{t+1}=a_t + b_t\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}=a_t + b_t\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{T+h}=a_T + b_T h\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}=a_T + b_T h\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.

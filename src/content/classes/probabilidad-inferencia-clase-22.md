@@ -386,7 +386,9 @@ observaciones, entonces
 
 Es el promedio numérico de las `$n$` observaciones.
 
-$$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
+$$
+\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor promedio de un conjunto de
@@ -416,10 +418,12 @@ La nota promedio obtenida por los estudiantes durante el primer y cuarto
 parcial del curso de Probabilidad e Inferencia Estadística estará dada
 por
 
-$$\begin{align*}
+$$
+\begin{align*}
   \bar{X}_{P_1}=\frac{2.7 + 4.0 + \ldots + 2.1}{10} = 2.75 \\
   \bar{X}_{P_4}=\frac{1.8 + 4.7 + \ldots + 2.0}{10} = 3.14 
-\end{align*}$$
+\end{align*}
+$$
 
 Lo anterior significa que, el valor promedio obtenido por los
 estudiantes en el parcial $1$ del curso de Probabilidad e Inferencia
@@ -492,7 +496,9 @@ que contienen el 50% de las observaciones. Para realizar el cálculo de
 la mediana es necesario ordenar inicialmente el conjunto de
 observaciones de forma ascendente.
 
-$$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
+$$
+\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}
+$$
 
 donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
 ordenada. En <tt>R</tt> puede calcularse la mediana de un conjunto de
@@ -522,11 +528,13 @@ Inicialmente, se observa que el total de estudiantes es $10$, por lo
 cual, se tiene que $n$ es un número par, haciendo que la ecuación
 empleada sea
 
-$$\begin{align*}
+$$
+\begin{align*}
   \tilde{X} &= \frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) \\
             &= \frac{1}{2}\left(x_{\left[\frac{10}{2}\right]}+x_{\left[\frac{10}{2}+1\right]}\right) \\
             &= \frac{1}{2}\left(x_{\left[5\right]}+x_{\left[6\right]}\right)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que debe localizarse la observación que ocupa la
 posición número $5$ y $6$ en las notas obtenidas <strong>luego de
@@ -626,10 +634,12 @@ respectivamente.
 Con dichos valores se realiza entonces, el cálculo de la mediana para
 los parciales $1$ y $4$,tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \tilde{X}_{P_1} =\frac{1}{2}(2.7+2.8)=2.75 \\
   \tilde{X}_{P_4} =\frac{1}{2}(3.4+3.4)=3.4
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior se aprecia que para el parcial $1$, la mitad de los
 estudiantes del curso de Probabilidad e Inferencia Estadística
@@ -943,7 +953,9 @@ recortan un número `$r$` observaciones superiores e inferiores, tal que
 `$r=n\times trim$`, `$trim$` un valor porcentual entre 0 y 0.5
 
 
-$$\begin{align*}\bar{X}_{trim}=\frac{1}{n-2r}\sum_{i={r+1}}^{n-r}x_i\end{align*}$$
+$$
+\begin{align*}\bar{X}_{trim}=\frac{1}{n-2r}\sum_{i={r+1}}^{n-r}x_i\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor de la media recortada de un
@@ -1143,10 +1155,12 @@ Parcial 4
 Al realizar el cálculo de la media recortada al $10\%$ para cada
 parcial se encuentran los siguientes resultados
 
-$$\begin{align*}
+$$
+\begin{align*}
   \bar{X}_{0.1_{P_1}}=\frac{2.1 + 2.6 + \ldots + 3.3}{8} = 2.775 \\
   \bar{X}_{0.1_{P_4}}=\frac{1.8 + 2.0 + \ldots + 4.5}{8} = 3.25 
-\end{align*}$$
+\end{align*}
+$$
 
 De los resultados anteriores, se observa que para ambos casos, la
 eliminación del $10\%$ de las notas más altas y más bajas, se obtiene

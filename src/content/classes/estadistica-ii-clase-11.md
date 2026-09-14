@@ -34,11 +34,14 @@ ingeniería industrial una vez finalizan su pregrado y se insertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados en la información anterior, construya un intervalo de confianza
 del $97\%$ para la verdadera proporción de egresados que tienen un
@@ -59,9 +62,12 @@ proporción tiene la estructura
 <img src="/assets/images/Intervalos3a.jpg" alt="" style="max-width: 80%;">
 
 mostrando que el intervalo bilateral para el caso de una proporción está
-dado por $$\begin{align*}
+dado por 
+$$
+\begin{align*}
   \hat{p} \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que requerimos de la proporción muestral para
 realizar el cálculo, y por tanto se deberá proceder a realizar su
@@ -70,30 +76,39 @@ el cual está dado por aquellos salarios que posean un valor superior a
 $2$ millones de pesos, y para ello, denotaremos como $1$ aquellas
 observaciones que sean superiores a $2$ millones de pesos, y $0$
 aquellas observaciones que no cumplan la condición, tal que
-$$\begin{align*}
+$$
+\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
-\end{align*}$$ Al contar el número de éxitos, observamos que tenemos un
+\end{align*}
+$$
+ Al contar el número de éxitos, observamos que tenemos un
 total de $x=4$ éxitos en un total de $n=15$ muestras, y por tanto,
 podemos aplicar la fórmula de frecuencia relativa para calcular la
 proporción muestral de egresados que poseen salarios superiores a $2$
-millones, tal que $$\begin{align*}
+millones, tal que 
+$$
+\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al emplear este valor junto con el nivel de confianza
 $1-\alpha=0.97$ y el valor crítico
 $Z_{\frac{\alpha}{2}=0.015}=2.17009$, para calcular el intervalo de
-confianza de interés obtendremos que $$\begin{align*}
+confianza de interés obtendremos que 
+$$
+\begin{align*}
   & 0.2666667 \pm 2.17009\sqrt{\frac{0.2666667(1-0.2666667)}{15}} \\
   & 0.2666667 \pm 2.17009(0.1141798)\\
   & 0.2666667 \pm 0.2477804 \\
   & 0.0188863 < p < 0.5144471
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, con una confianza del $97\%$ se concluye que la verdadera
 proporción de egresados que poseen un salario superior a $2$ millones
@@ -168,18 +183,26 @@ dichos valores para los equipos fabricados con el proceso nuevo y actual
 $x_N=120$ y $x_A=220$, respectivamente. Con estos valores es posible
 realizar el cálculo de las proporciones muestrales para las dos
 poblaciones, tal que para el caso de los equipos que fueron construidos
-con el nuevo procedimiento tenemos que $$\begin{align*}
+con el nuevo procedimiento tenemos que 
+$$
+\begin{align*}
 \hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$ mientras que, para los equipos que fueron construidos con
-el procedimiento actual tenemos que $$\begin{align*}
+\end{align*}
+$$
+ mientras que, para los equipos que fueron construidos con
+el procedimiento actual tenemos que 
+$$
+\begin{align*}
 \hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$ Ahora, dado que el intervalo que nos piden es bilateral,
+\end{align*}
+$$
+ Ahora, dado que el intervalo que nos piden es bilateral,
 y tenemos que los tamaños muestrales para cada población son
 suficientemente grandes, tenfremos que el intervalo de interés es de la
 forma
@@ -187,20 +210,26 @@ forma
 <img src="/assets/images/Intervalos4a.jpg" alt="" style="max-width: 80%;">
 
 y por tanto como el intervalo de interés es de la forma, el calculo que
-debemos hacer tendrá la forma $$\begin{align*}
+debemos hacer tendrá la forma 
+$$
+\begin{align*}
   (\hat{p}_N-\hat{p}_A) \pm Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_N(1-\hat{p}_N)}{n_N}+\frac{\hat{p}_A(1-\hat{p}_A)}{n_A}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que entre los valores ya calculados para las
 proporciones muestrales, se requiere del nivel de confianza
 $1-\alpha=0.98$ y el valor crítico
 $Z_{\frac{\alpha}{2}}=Z_{0.01}=2.326348$. Al reemplazar estos valores
-en el intervalo de interés obtenemos que $$\begin{align*}
+en el intervalo de interés obtenemos que 
+$$
+\begin{align*}
   & (0.3142857-0.24) \pm 2.326348\sqrt{\frac{0.3142857(1-0.3142857)}{700}+\frac{0.24(1-0.24)}{500}} \\
   &0.0742857 \pm 2.326348 (0.02593592) \\
   &0.0742857 \pm 0.06033598 \\
   &0.01394972 < p_N - p_A < 0.1346217
-\end{align*}$$
+\end{align*}
+$$
 
 Dado el resultado anterior, se concluye con una confianza del del
 $98\%$ que la diferencia entre la proporción de equipos que son
@@ -217,9 +246,12 @@ el intervalo de confianza para la diferencia entre $p_N - p_A$.
 
 En donde se observa que el intervalo calculado se encuentra sobre el
 valor de $0$, el cual representa la igualdad entre las dos
-proporciones, tal que $$\begin{align*}
+proporciones, tal que 
+$$
+\begin{align*}
   p_N = p_A \quad =>\quad p_N - p_A = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, podremos afirmar con un nivel de confianza del $99\%$ que
 la proporción de equipos que ofrece un redimiento superior al promedio y
@@ -342,9 +374,12 @@ tal que
 <img src="/assets/images/Intervalos5a.jpg" alt="" style="max-width: 80%;">
 
 en donde se aprecia que el intervalo bilateral para una varianza posee
-la estructura $$\begin{align*}
+la estructura 
+$$
+\begin{align*}
    \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}}< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de la varianza muestral $S^2 = 230541.2$, el nivel de
@@ -352,18 +387,23 @@ confianza $1-\alpha=0.95$, los valores críticos
 $\chi^2_{\frac{\alpha}{2}=0.025, n-1=19}=32.85233$ y
 $\chi^2_{1-\frac{\alpha}{2}=0.975, n-1=19}=8.906516$ y el tamaño
 muestral $n=20$. <br> <br> Al reemplazar dichos valores en el
-intervalo de confianza, se tendrá que $$\begin{align*}
+intervalo de confianza, se tendrá que 
+$$
+\begin{align*}
     \frac{(n-1)S^2}{\chi^2_{\frac{\alpha}{2}, n-1}} &< \sigma^2 <\frac{(n-1)S^2}{\chi^2_{1 -\frac{\alpha}{2}, n-1}} \\
     \frac{(20-1)230541.2}{32.85233}&< \sigma^2 <\frac{(20-1)230541.2}{8.906516} \\
   133332.5 &< \sigma^2 < 491806.5
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual significa que la desviación estándar estará entre
-$$\begin{align*}
+$$
+\begin{align*}
   133332.5 &< \sigma^2 < 491806.5\\
   \sqrt{133332.5} &< \sqrt{\sigma^2} < \sqrt{491806.5}\\
   365.1472 &< \sigma <  701.2892\\
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir con un nivel de confianza del $95\%$
 que el verdadero valor para la desviación estándar de los costos de

@@ -73,7 +73,9 @@ próximo al verdadero proceso dentro de todos los modelos bajo estudio.**
 A saber, para el cálculo del AIC, BIC y AICC se tienen las siguientes
 ecuaciones
 
-$$\begin{align*}AIC & = 2k - 2\text{ ln}(\hat{L}) \\ BIC & = ln(n)k-2ln(\hat{L})\\ AICC & = 2k - 2\text{ ln}(\hat{L}) + \frac{2k^2 + 2k}{n-k-1}\end{align*}$$
+$$
+\begin{align*}AIC & = 2k - 2\text{ ln}(\hat{L}) \\ BIC & = ln(n)k-2ln(\hat{L})\\ AICC & = 2k - 2\text{ ln}(\hat{L}) + \frac{2k^2 + 2k}{n-k-1}\end{align*}
+$$
 
 
 donde, `$\hat{L}$` es el valor que maximiza la función de verosimilitud
@@ -107,7 +109,9 @@ mínimos cuadrados ordinarios de `$\widetilde{Y}_t$` contra sus primeros
 p rezagos,
 `$\widetilde{Y}{t-1}, \widetilde{Y}{t-2}, \ldots, \widetilde{Y}{t-p}$`.
 
-$$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(0)}\widetilde{Y}{t-i} +\varepsilon_t^{(0)}, \quad \quad t = p + 1, \ldots, T\end{align*}$$
+$$
+\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(0)}\widetilde{Y}{t-i} +\varepsilon_t^{(0)}, \quad \quad t = p + 1, \ldots, T\end{align*}
+$$
 
 Una vez realizada la estimación, **se realiza la evaluación de los
 residuales `$\hat{\varepsilon}_t^{(0)}$`para observar si éstos son ruido
@@ -119,7 +123,9 @@ rezagos,
 el rezago de orden uno de los residuales del primer modelo
 `$\hat{e}_{t-1}^{(0)}$`.
 
-$$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(1)}\widetilde{Y}{t-i} + \theta_1^{(1)} \hat{\varepsilon}_{t-1}^{(0)}+\varepsilon_t^{(1)}, \quad \quad t = p + 2, \ldots, T\end{align*}$$
+$$
+\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(1)}\widetilde{Y}{t-i} + \theta_1^{(1)} \hat{\varepsilon}_{t-1}^{(0)}+\varepsilon_t^{(1)}, \quad \quad t = p + 2, \ldots, T\end{align*}
+$$
 
 Una vez realizada la estimación, **se realiza nuevamente la evaluación
 de los residuales `$\hat{\varepsilon}_t^{(1)}$`para observar si éstos
@@ -132,14 +138,18 @@ el rezago de orden uno de los residuales
 `$\hat{\varepsilon}_{t-1}^{(1)}$` y los rezagos de orden dos de los
 residuales `$\hat{e}_{t-2}^{(0)}$`.
 
-$$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(2)}\widetilde{Y}{t-i} + \theta_1^{(2)} \hat{\varepsilon}_{t-1}^{(1)} + \theta_2^{(2)} \hat{\varepsilon}_{t-2}^{(0)} + \varepsilon_t^{(2)} \quad \quad t = p + 3, \ldots, T\end{align*}$$
+$$
+\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(2)}\widetilde{Y}{t-i} + \theta_1^{(2)} \hat{\varepsilon}_{t-1}^{(1)} + \theta_2^{(2)} \hat{\varepsilon}_{t-2}^{(0)} + \varepsilon_t^{(2)} \quad \quad t = p + 3, \ldots, T\end{align*}
+$$
 
 Este procedimiento se repite indefinidamente hasta que no se halle más
 información en los residuales de los modelos en la regresión. Si el
 modelo ARMA es de orden (p,q), entonces serán necesarias q regresiones,
 de la forma
 
-$$\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(q)}\widetilde{Y}{t-i} + \sum_{i=1}^q \theta_1^{(q)} \hat{\varepsilon}_{t-i}^{(q-i)} + \varepsilon_t^{(q)} \quad \quad t = p + q + 1, \ldots, T\end{align*}$$
+$$
+\begin{align*}\widetilde{Y}{t} = \sum_{i=1}^p \phi_i^{(q)}\widetilde{Y}{t-i} + \sum_{i=1}^q \theta_1^{(q)} \hat{\varepsilon}_{t-i}^{(q-i)} + \varepsilon_t^{(q)} \quad \quad t = p + q + 1, \ldots, T\end{align*}
+$$
 
 
 Wei ([2006](#ref-Wei2006), p. 130) señala que en la práctica el
@@ -155,7 +165,9 @@ estimados para la `$j$`-ésima regresión AR(m) del proceso ARMA
 el rezago `$j$`, `$\hat{rho}^{(m)}$`, de `$\widetilde{Y}{t}$` como la
 función de autocorrelación muestral para la serie transformada
 
-$$\begin{align*}W_{t}^{(j)} = (1 - \hat{\phi}_1^{(j)}L-\ldots- \hat{\phi}_m^{(j)}L^m)\widetilde{Y}_{t}\end{align*}$$
+$$
+\begin{align*}W_{t}^{(j)} = (1 - \hat{\phi}_1^{(j)}L-\ldots- \hat{\phi}_m^{(j)}L^m)\widetilde{Y}_{t}\end{align*}
+$$
 
 
 Con el fin de resumir las autocorrelaciones obtenidas mediante

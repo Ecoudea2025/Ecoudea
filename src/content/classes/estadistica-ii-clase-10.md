@@ -136,9 +136,12 @@ siguiente intervalo <br><br>
 
 <img src="/assets/images/Intervalos6a.jpg" alt="" style="max-width: 80%;">
 <br> en donde se aprecia que el intervalo bilateral para la razón de
-varianzas posee la estructura $$\begin{align*}
+varianzas posee la estructura 
+$$
+\begin{align*}
    \frac{S^2_C}{S^2_S}\frac{1}{f_{\alpha/2, n_C-1, n_S-1}} < \frac{\sigma^2_C}{\sigma^2_S} < \frac{S^2_C}{S^2_S}f_{\alpha/2, n_S-1, n_C-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo del intervalo, se
 requiere de los varianzas muestrales $S^2_S$ y $S^2_C$, el nivel de
@@ -148,25 +151,32 @@ $f_{\alpha/2, n_C-1, n_S-1}$ y $f_{\alpha/2, n_S-1, n_C-1}$. <br>
 los datos muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$,
 tal que al realizar el cálculo obtenemos
 
-$$\begin{align*}
+$$
+\begin{align*}
 S^2_C &= 1.899286 \\
 S^2_S &= 10.441
-\end{align*}$$
+\end{align*}
+$$
 
 Por su parte, al buscar los valores críticos para un nivel de
 significancia $1-\alpha=0.90$ y tamaños muestrales $n_C=8$ y
 $n_S=10$ tenemos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 f_{\alpha/2 = 0.05, n_C-1 = 7, n_S-1 = 9} &= 3.292746\\ 
 f_{\alpha/2 = 0.05, n_S-1 = 9, n_C-1 = 7} &= 3.676675
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculados los valores necesarios para calcular el intervalo de
-confianza, se procede a su cálculo, tal que $$\begin{align*}
+confianza, se procede a su cálculo, tal que 
+$$
+\begin{align*}
    \frac{1.899286}{10.441}\frac{1}{3.292746} &< \frac{\sigma^2_C}{\sigma^2_S} < \frac{1.899286}{10.441}3.676675 \\
    0.05524463 &< \frac{\sigma^2_C}{\sigma^2_S} < 0.6688112
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se podrá concluir con un nivel de confianza del $90\%$ que
 el verdadero valor para el cociente de varianzas entre la variabilidad
@@ -181,9 +191,12 @@ $\sigma^2_C/\sigma^2_S$. <br><br>
 <img src="/assets/images/Intervalos6b.jpg" alt="" style="max-width: 80%;">
 <br> En donde se observa que el intervalo calculado no contiene el valor
 de $1$, el cual representa la igualdad entre la varianza de los dos
-tipos de cable, tal que $$\begin{align*}
+tipos de cable, tal que 
+$$
+\begin{align*}
   \sigma^2_C = \sigma^2_S \quad =>\quad \frac{\sigma^2_C}{\sigma^2_S} = 1
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, con un nivel de confianza del $90\%$ será posible afirmar
 que la variabilidad de la resistencia a la tracción de los cables

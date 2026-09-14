@@ -202,6 +202,7 @@ bibliography: "../../referencias.bib"
     $\mu=9.8cm$.
     </li>
     </ol>
+
 4.  Suponga que el contenido de ácido sulfúrico, en litros, de una
     muestra aleatoria de `$7$` contenedores similares es de
     <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -338,6 +339,7 @@ bibliography: "../../referencias.bib"
     unidades es mayor al $80\%$.
     </li>
     </ol>
+
 9.  ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a `$800$` adultos
     seleccionados de forma aleatoria, se encontró que `$45\%$` de los
@@ -511,6 +513,7 @@ bibliography: "../../referencias.bib"
     envergadura de los insectos es $12.3_{mm}$?
     </li>
     </ol>
+
 16. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
     examen, ahora han empezado a subir. Originalmente, una calificación
@@ -576,6 +579,7 @@ bibliography: "../../referencias.bib"
     estudiantes en el SAT verbal y el SAT de matemáticas es la misma.
     </li>
     </ol>
+
 17. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
     experiencia, se sabe que la probabilidad de que el sistema existente
@@ -642,6 +646,7 @@ bibliography: "../../referencias.bib"
     es superior al $20\%$.
     </li>
     </ol>
+
 19. Para comparar dos clases de protectores de defensas, se muestrearon
     `$6$` de cada clase en cierta marca de auto compacto. Entonces cada
     auto se hizo chocar contra una pared de concreto a `$5$` millas por

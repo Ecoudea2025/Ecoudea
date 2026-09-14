@@ -28,7 +28,9 @@ observaciones, entonces
 
 Es el promedio numérico de las `$n$` observaciones.
 
-$$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
+$$
+\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor promedio de un conjunto de
@@ -57,7 +59,7 @@ metros cuadrados, se emplea la función <code>mean()</code> tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">mean</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">mean</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -81,7 +83,9 @@ que contienen el 50% de las observaciones. Para realizar el cálculo de
 la mediana es necesario ordenar inicialmente el conjunto de
 observaciones de forma ascendente.
 
-$$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
+$$
+\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}
+$$
 
 donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
 ordenada. En <tt>R</tt> puede calcularse la mediana de un conjunto de
@@ -111,7 +115,7 @@ emplea la función <code>median()</code> tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">median</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">median</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -180,7 +184,7 @@ emplea la función <code>Moda()</code> que se creó previamente, tal que
     </span><span class="n">keys</span><span class="p">[</span><span class="n">which.max</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">match</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">keys</span><span class="p">)))]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span><span class="c1">### Se realiza el cálculo de la moda</span><span class="w">
-</span><span class="nf">Moda</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+</span><span class="nf">Moda</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -204,7 +208,9 @@ recortan un número `$r$` observaciones superiores e inferiores, tal que
 `$r=n\times trim$`, `$trim$` un valor porcentual entre 0 y 0.5
 
 
-$$\begin{align*}\bar{X}_{trim}=\frac{1}{n-2r}\sum_{i={r+1}}^{n-r}x_i\end{align*}$$
+$$
+\begin{align*}\bar{X}_{trim}=\frac{1}{n-2r}\sum_{i={r+1}}^{n-r}x_i\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor de la media recortada de un
@@ -236,7 +242,7 @@ que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">mean</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">mean</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -269,13 +275,17 @@ datos ordenados en **cuatro partes** iguales. Para ello, es necesario
 calcular inicialmente una variable `$h_j$` de posicionamiento dado el
 cuartil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del cuartil de
 interés
 
-$$\begin{align*}C_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}$$
+$$
+\begin{align*}C_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -316,7 +326,7 @@ al precio de venta en metros cuadrados, se emplea la función
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.25</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.75</span><span class="p">))</span><span class="w">
+<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.25</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.75</span><span class="p">))</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -341,13 +351,17 @@ datos ordenados en **cinco partes** iguales. Para ello, es necesario
 calcular inicialmente una variable `$h_j$` de posicionamiento dado el
 quintil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del quintil de
 interés
 
-$$\begin{align*}Q_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}$$
+$$
+\begin{align*}Q_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -388,7 +402,7 @@ al precio de venta en metros cuadrados, se emplea la función
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span><span class="w"> </span><span class="m">0.4</span><span class="p">,</span><span class="w"> </span><span class="m">0.6</span><span class="p">,</span><span class="w"> </span><span class="m">0.8</span><span class="p">))</span><span class="w">
+<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.2</span><span class="p">,</span><span class="w"> </span><span class="m">0.4</span><span class="p">,</span><span class="w"> </span><span class="m">0.6</span><span class="p">,</span><span class="w"> </span><span class="m">0.8</span><span class="p">))</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -413,13 +427,17 @@ conjunto de datos ordenados en **diez partes** iguales. Para ello, es
 necesario calcular inicialmente una variable `$h_j$` de posicionamiento
 dado el decil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del decil de
 interés
 
-$$\begin{align*}D_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}$$
+$$
+\begin{align*}D_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -460,7 +478,7 @@ precio de venta en metros cuadrados, se emplea la función
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.9</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">))</span><span class="w">
+<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="m">0.9</span><span class="p">,</span><span class="w"> </span><span class="m">0.1</span><span class="p">))</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -485,13 +503,17 @@ un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
 necesario calcular inicialmente una variable `$h_j$` de posicionamiento
 dado el percentil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del percentil de
 interés
 
-$$\begin{align*}P_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
+$$
+\begin{align*}P_j=x_{\lfloor h_j\rfloor]} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -532,7 +554,7 @@ seq(0.01, 0.99, 0.01)</code> tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">0.01</span><span class="p">,</span><span class="w"> </span><span class="m">0.99</span><span class="p">,</span><span class="w"> </span><span class="m">0.01</span><span class="p">))</span><span class="w">
+<pre class="highlight"><code><span class="nf">quantile</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">probs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">0.01</span><span class="p">,</span><span class="w"> </span><span class="m">0.99</span><span class="p">,</span><span class="w"> </span><span class="m">0.01</span><span class="p">))</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -578,7 +600,9 @@ observaciones, entonces
 Mide la distancia media **al cuadrado** del conjunto de datos respecto a
 la media
 
-$$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
+$$
+\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}
+$$
 
 <!--el n-1 se conoce como corrección de Bessel, y se realiza para corregir el sesgo del estimador-->
 
@@ -609,7 +633,7 @@ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">var</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">var</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -632,7 +656,9 @@ Es la raíz cuadrada de la distancia media del conjunto de datos respeto
 a la media, es decir, indica qué tan dispersos se encuentra el conjunto
 de observaciones de su valor promedio.
 
-$$\begin{align*}S=\sqrt{S^2}\end{align*}$$
+$$
+\begin{align*}S=\sqrt{S^2}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse la desviación estándar de un conjunto de
@@ -662,7 +688,7 @@ asociada al precio de venta en metros cuadrados, se emplea la función
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">sd</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">sd</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -685,7 +711,9 @@ Es la desviación estándar como un porcentaje de la media aritmética de
 un conjunto de datos. Sirve para observar el grado de variabilidad que
 tiene un conjunto de observaciones respecto a su promedio
 
-$$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
+$$
+\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}
+$$
 
 
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
@@ -730,7 +758,7 @@ previamente, tal que
 <pre class="highlight"><code><span class="c1">### Se crea la función</span><span class="w">
 </span><span class="n">CV</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">sd</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="nf">abs</span><span class="p">(</span><span class="n">mean</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">100</span><span class="w">
 </span><span class="c1">### Se realiza el cálculo del coeficiente de variación</span><span class="w">
-</span><span class="nf">CV</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+</span><span class="nf">CV</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -751,7 +779,9 @@ $72.99%$.
 
 Es la distancia o amplitud que hay entre el valor máximo y mínimo en un
 conjunto de datos 
-$$\begin{align*}R = x_{max}-x_{min}\end{align*}$$
+$$
+\begin{align*}R = x_{max}-x_{min}\end{align*}
+$$
 
 
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
@@ -798,7 +828,7 @@ emplea la función <code>Rango()</code> que se creó previamente, tal que
 <pre class="highlight"><code><span class="c1">### Se crea la función</span><span class="w">
 </span><span class="n">Rango</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="nf">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nf">min</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
 </span><span class="c1">### Se realiza el cálculo del Rango</span><span class="w">
-</span><span class="n">Rango</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+</span><span class="n">Rango</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -822,7 +852,9 @@ primer cuartil `$C_1$`, de un conjunto de datos. Éste muestra la
 amplitud del 50% de los datos centrales de un conjunto de observaciones.
 Esta medida puede ser tomada como una medida de variabilidad para la
 mediana. 
-$$\begin{align*}IQR = C_3 - C_1\end{align*}$$
+$$
+\begin{align*}IQR = C_3 - C_1\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse el rango intercuartílico de un conjunto
@@ -852,7 +884,7 @@ garaje del bien, se emplea la función <code>IQR()</code>, tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">IQR</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">IQR</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -875,7 +907,9 @@ Es una medida de la dispersión de un conjunto de observaciones respecto
 a su mediana
 
 
-$$\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}$$
+$$
+\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}
+$$
 
 
 donde `$b$` es una constante definida como `$b=1/C_{3}$`, con `$C_{3}$`
@@ -914,7 +948,7 @@ el garaje del bien, se emplea la función <code>mad()</code>, tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">mad</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">mad</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -942,7 +976,9 @@ concentración.
 Este valor permite identificar si el conjunto de datos se distribuye
 uniformemente alrededor de las medidas de tendencia central.
 
-$$\begin{align*}\gamma_1 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
+$$
+\begin{align*}\gamma_1 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}
+$$
 
 El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
@@ -995,7 +1031,7 @@ librería <tt>e1071</tt>, tal que
 <pre class="highlight"><code><span class="c1"># Se carga la librería</span><span class="w">
 </span><span class="nf">library</span><span class="p">(</span><span class="n">e1071</span><span class="p">)</span><span class="w">
 </span><span class="c1"># Se realiza el cálculo del coeficiente de asimetría</span><span class="w">
-</span><span class="nf">skewness</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+</span><span class="nf">skewness</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1019,7 +1055,9 @@ precios bajos, y que los precios altos son menos probables.
 Este valor permite observar el grado de concentración del conjunto de
 datos
 
-$$\begin{align*}\gamma_2 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-3 \quad \quad -2<\gamma_2<\infty\end{align*}$$
+$$
+\begin{align*}\gamma_2 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-3 \quad \quad -2<\gamma_2<\infty\end{align*}
+$$
 
 
 El signo de `$\gamma_2$` indica el nivel de concentración.
@@ -1070,7 +1108,7 @@ de la librería <tt>e1071</tt>, tal que
 <pre class="highlight"><code><span class="c1"># Se carga la librería</span><span class="w">
 </span><span class="nf">library</span><span class="p">(</span><span class="n">e</span><span class="m">1071</span><span class="p">)</span><span class="w">
 </span><span class="c1"># Se realiza el cálculo del coeficiente de exceso de curtosis</span><span class="w">
-</span><span class="nf">kurtosis</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
+</span><span class="nf">kurtosis</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1103,7 +1141,9 @@ de `$n$` observaciones, entonces
 Mide si existe o no dependencia lineal entre las variables, e indica el
 grado de variación conjunta de dos variables respecto a sus medias
 
-$$\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}$$
+$$
+\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}
+$$
 
 
 El signo de `$S_{xy}$` indica el tipo de dependencia lineal que hay
@@ -1145,7 +1185,7 @@ emplea la función <code>cov()</code>, tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">cov</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">areaunitga</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">cov</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">areaunitga</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1169,7 +1209,9 @@ lineal positiva entre estas dos variables.
 Mide la fuerza de la dependencia lineal que hay entre variables, esta va
 entre -1 y 1
 
-$$\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}$$
+$$
+\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}
+$$
 
 
 El valor de `$\rho_{xy}$` indica el tipo y fuerza de la dependencia
@@ -1232,7 +1274,7 @@ función <code>cor()</code>, tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">cor</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">areaunitga</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">cor</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">areaunitga</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>

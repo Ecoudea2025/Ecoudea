@@ -90,7 +90,9 @@ Lista de ejercicios
     `$12$` estudiantes que usan vapeador y `$15$` estudiantes que no
     usan vapeador. Se obtienen los siguientes datos:
     
-$$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347.6 }\\                              & \text{353.2  348.1  352.7  334.4 }\\                              & \text{360.2  343.8  323.2  313.8 }\\      \text{Usan vapeador: }  & \text{328.6  235.1  326.4  334.9 }\\                              & \text{329.8  328.4  338.5  330.2 }\\                              & \text{330.6  331.8  341.6  321.1 } \\                              & \text{336.0  337.9  313.9}\end{align*}$$
+$$
+\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347.6 }\\                              & \text{353.2  348.1  352.7  334.4 }\\                              & \text{360.2  343.8  323.2  313.8 }\\      \text{Usan vapeador: }  & \text{328.6  235.1  326.4  334.9 }\\                              & \text{329.8  328.4  338.5  330.2 }\\                              & \text{330.6  331.8  341.6  321.1 } \\                              & \text{336.0  337.9  313.9}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -539,7 +541,9 @@ $$\begin{align*}\text{No usan vapeador: }       & \text{369.3  356.0  322.1  347
     idealmente el diámetro debería ser de `$570$` mm. Suponga que el
     fabricante tiene los siguientes datos:
     
-$$\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{align*}$$
+$$
+\begin{align*}572, 573, 572, 568, 569, 575, 565, 570, 571, 562, 565, 572\end{align*}
+$$
 
     <ol type="a">
     <li>

@@ -2,6 +2,12 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import rehypeRaw from 'rehype-raw';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import {
+  remarkNormalizeMath,
+  rehypeMathNormalize,
+} from './src/lib/markdown-math.mjs';
 
 const base = '/Ecoudea';
 
@@ -10,21 +16,6 @@ function remarkBaseImages() {
     const visit = (node) => {
       if (node.type === 'image' && node.url && node.url.startsWith('/assets/')) {
         node.url = base + node.url;
-      }
-      if (node.children) node.children.forEach(visit);
-    };
-    visit(tree);
-  };
-}
-
-function remarkEscapeMath() {
-  return function (tree) {
-    const visit = (node) => {
-      if ((node.type === 'inlineMath' || node.type === 'math') && typeof node.value === 'string') {
-        node.value = node.value.replaceAll('<', '\\lt ').replaceAll('>', '\\gt ');
-      }
-      if (node.type === 'text' && typeof node.value === 'string' && node.value.includes('\\(')) {
-        node.value = node.value.replace(/\\\(.*?\\\)/g, (m) => m.replaceAll('<', '\\lt ').replaceAll('>', '\\gt '));
       }
       if (node.children) node.children.forEach(visit);
     };
@@ -63,8 +54,8 @@ export default defineConfig({
       theme: 'one-dark-pro',
       wrap: false,
     },
-    remarkPlugins: [remarkEscapeMath, remarkBaseImages],
-    rehypePlugins: [rehypeRaw, rehypeBaseImages],
+    remarkPlugins: [remarkMath, remarkNormalizeMath, remarkBaseImages],
+    rehypePlugins: [rehypeRaw, rehypeMathNormalize, rehypeBaseImages, [rehypeKatex, { trust: true, strict: false }]],
   },
   vite: {
     plugins: [tailwindcss()],

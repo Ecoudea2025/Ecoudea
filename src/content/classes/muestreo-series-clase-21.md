@@ -57,13 +57,17 @@ naturales, en donde, es posible convertir el modelo multiplicativo en un
 modelo aditivo, ya que si
 
 
-$$\begin{align*}Y_t = T_t * S_t * \varepsilon_t\end{align*}$$
+$$
+\begin{align*}Y_t = T_t * S_t * \varepsilon_t\end{align*}
+$$
 
 
 entonces
 
 
-$$\begin{align*}log(Y_t) = log(T_t) + log(S_t) + log(\varepsilon_t)\end{align*}$$
+$$
+\begin{align*}log(Y_t) = log(T_t) + log(S_t) + log(\varepsilon_t)\end{align*}
+$$
 
 
 y por tanto, es posible realizar los pronosticos necesarios mediante una
@@ -134,19 +138,25 @@ demás observaciones.
 Con tal proposito en mente, en una serie de tiempo, se define la
 varianza muestral de las observaciones como
 
-$$\begin{align*}Var(Y_t) = \hat{\gamma}(0) = \mathbb E(y_t - \bar{y})^2 = \frac{1}{T-1}\sum_{t=1}^{T}(y_t-\bar{y})^2\end{align*}$$
+$$
+\begin{align*}Var(Y_t) = \hat{\gamma}(0) = \mathbb E(y_t - \bar{y})^2 = \frac{1}{T-1}\sum_{t=1}^{T}(y_t-\bar{y})^2\end{align*}
+$$
 
 
 la autocovarianza muestral entre observaciones que se encuentran a `$k$`
 periodos de tiempo de diferencia, como
 
-$$\begin{align*}Cov(Y_t,Y_{t+k}) = \hat{\gamma}(k) = \mathbb E[(y_{t+k} - \bar{y})(y_{t} - \bar{y})] = \frac{1}{T-1}\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})\end{align*}$$
+$$
+\begin{align*}Cov(Y_t,Y_{t+k}) = \hat{\gamma}(k) = \mathbb E[(y_{t+k} - \bar{y})(y_{t} - \bar{y})] = \frac{1}{T-1}\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})\end{align*}
+$$
 
 
 y la autocorrelación muestral entre observaciones que se encuentran a
 `$k$` periodos de tiempo de diferencia, como
 
-$$\begin{align*}Cor(Y_t,Y_{t+k}) = \hat{\rho(k)} = \frac{\hat{\gamma}(k)}{\hat{\gamma}(0)} = \frac{\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})}{\sum_{t=1}^{T}(y_t-\bar{y})^2}\end{align*}$$
+$$
+\begin{align*}Cor(Y_t,Y_{t+k}) = \hat{\rho(k)} = \frac{\hat{\gamma}(k)}{\hat{\gamma}(0)} = \frac{\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})}{\sum_{t=1}^{T}(y_t-\bar{y})^2}\end{align*}
+$$
 
 
 donde `$k$` es el número de rezagos o autocorrelaciones que se desean
@@ -214,7 +224,9 @@ la interpretación del correlograma están dados por
     mediante la formula:
 
 
-$$\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T} = \pm 1.96/\sqrt{T}\end{align*}$$
+$$
+\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T} = \pm 1.96/\sqrt{T}\end{align*}
+$$
 
 
 -   Si las autocorrelaciones decrecen lentamente a cero, o muestra un

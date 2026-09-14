@@ -42,7 +42,9 @@ serie temporal con respecto a la serie rezagada `$s$` periodos en el
 tiempo**. Éste procedimiento es conocido como **diferencia estacional**
 y se define como
 
-$$\begin{align*}\Delta_s Y_t = Y_t - Y_{t-s}\end{align*}$$
+$$
+\begin{align*}\Delta_s Y_t = Y_t - Y_{t-s}\end{align*}
+$$
 
 
 siendo `$\Delta_s = (1-L^s)$`. **Note que `$\Delta_s \neq \Delta^s$`,
@@ -51,14 +53,18 @@ presentado en la** <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/
 11</a>.
 En general, el operador de diferencias estacionales de periodo `$s$` se
 define como 
-$$\begin{align*}\Delta_s^D = (1-L^s)^D\end{align*}$$
+$$
+\begin{align*}\Delta_s^D = (1-L^s)^D\end{align*}
+$$
 
 
 Siendo `$D$` el parámetro que indica el número de diferencias
 estacionales. Ahora, al aplicar dicho operador a la serie temporal
 `$Y_t$` se tiene que
 
-$$\begin{align*}\Delta_s^D Y_t = (1-L^s)^D Y_t = \sum_{j=0}^D\binom{D}{j}(-1)^jY_{t-js}\end{align*}$$
+$$
+\begin{align*}\Delta_s^D Y_t = (1-L^s)^D Y_t = \sum_{j=0}^D\binom{D}{j}(-1)^jY_{t-js}\end{align*}
+$$
 
 
 Modelos autorregresivos integrados de media móvil estacionales (SARIMA)
@@ -67,12 +73,16 @@ Modelos autorregresivos integrados de media móvil estacionales (SARIMA)
 Se dice que una serie de tiempo `$\widetilde{Y}_t=Y_t-\mu$` posee una
 estructura SARIMA(p,d,q)(P,D,Q)\[s\] si se cumple que
 
-$$\begin{align*}\Phi_{P} (L^s) \Phi_p (L) \Delta^D_s \Delta^d \widetilde{Y}_t = \Theta_{Q} (L^s) \Theta_q (L)\varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_{P} (L^s) \Phi_p (L) \Delta^D_s \Delta^d \widetilde{Y}_t = \Theta_{Q} (L^s) \Theta_q (L)\varepsilon_t\end{align*}
+$$
 
 
 con `$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$` y donde
 
-$$\begin{align*}\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j \\ \Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j\end{align*}$$
+$$
+\begin{align*}\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j \\ \Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j\end{align*}
+$$
 
 
 son los polinomios de rezagos autorregresivos y de medias móviles,
@@ -80,7 +90,9 @@ regulares, respectivamente, **sin raíces comúnes y cada uno con módulo
 mayor a 1**, y `$\Delta^d=(1-L)^d$` es el operador de diferencias, con
 `$L$` el operador de rezagos. Además,
 
-$$\begin{align*}\Phi_{P}(z^s) = 1 - \sum_{j=1}^{P}\phi_{s,j} z^{js} \\ \Theta_{Q}(z^s) = 1 + \sum_{j=1}^{Q}\theta_{s,j} z^{js}\end{align*}$$
+$$
+\begin{align*}\Phi_{P}(z^s) = 1 - \sum_{j=1}^{P}\phi_{s,j} z^{js} \\ \Theta_{Q}(z^s) = 1 + \sum_{j=1}^{Q}\theta_{s,j} z^{js}\end{align*}
+$$
 
 
 ambos polinomios de rezagos autorregresivos y de medias móviles,
@@ -93,12 +105,16 @@ SARIMA(p,d,q)(P,D,Q)\[s\]. Uno de ellos es el modelo ARIMA puramente
 estacional, los cuales corresponden a los casos
 SARIMA(0,0,0)(P,D,Q)\[s\] = SARIMA(P,D,Q)\[s\], con ecuación
 
-$$\begin{align*}\Phi_{P} (L^s) \Delta^D_s \widetilde{Y}_t = \Theta_{Q}(L^s) \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_{P} (L^s) \Delta^D_s \widetilde{Y}_t = \Theta_{Q}(L^s) \varepsilon_t\end{align*}
+$$
 
 
 si `$D=0, Q=0$` se tendrá un modelo AR(P)\[s\], donde
 
-$$\begin{align*}\Phi_{P}(L^s) \widetilde{Y}_t & = \varepsilon_t \\ \left(1 - \sum_{j=1}^{P}\phi_{s,j} L^{js}\right) \widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t & = \sum_{j=1}^{P}\phi_{s,j} L^{js} \widetilde{Y}_t + \varepsilon_t \\                                  & = \phi_{1,s}\widetilde{Y}_{t-s} + \phi_{2,s}\widetilde{Y}_{t-2s} + \ldots + \phi_{P,s}\widetilde{Y}_{t-Ps} + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_{P}(L^s) \widetilde{Y}_t & = \varepsilon_t \\ \left(1 - \sum_{j=1}^{P}\phi_{s,j} L^{js}\right) \widetilde{Y}_t & = \varepsilon_t \\ \widetilde{Y}_t & = \sum_{j=1}^{P}\phi_{s,j} L^{js} \widetilde{Y}_t + \varepsilon_t \\                                  & = \phi_{1,s}\widetilde{Y}_{t-s} + \phi_{2,s}\widetilde{Y}_{t-2s} + \ldots + \phi_{P,s}\widetilde{Y}_{t-Ps} + \varepsilon_t\end{align*}
+$$
 
 
 en este caso se tendrá un modelo autorregresivo estacional de orden
@@ -109,7 +125,9 @@ exponencialmente en sus rezagos estacionales**.
 
 si `$P=0, D=0$` se tendrá un modelo MA(Q)\[s\], donde
 
-$$\begin{align*}\widetilde{Y}_t & = \Theta_{Q}(L^s) \varepsilon_t \\ \widetilde{Y}_t & = \sum_{j=1}^{Q}\theta_{s,j} L^{js} \varepsilon_t \\                                  & = \varepsilon_t - \theta_{1,s} \varepsilon_{t-s} - \theta_{2,s} \varepsilon_{t-2s} - \ldots - \theta_{Q,s} \varepsilon_{t-Qs}\end{align*}$$
+$$
+\begin{align*}\widetilde{Y}_t & = \Theta_{Q}(L^s) \varepsilon_t \\ \widetilde{Y}_t & = \sum_{j=1}^{Q}\theta_{s,j} L^{js} \varepsilon_t \\                                  & = \varepsilon_t - \theta_{1,s} \varepsilon_{t-s} - \theta_{2,s} \varepsilon_{t-2s} - \ldots - \theta_{Q,s} \varepsilon_{t-Qs}\end{align*}
+$$
 
 
 en este caso se tendrá un modelo de media móvil estacional de orden
@@ -122,7 +140,9 @@ Otro de los modelos son aquellos donde `$d=D=0$`, lo cual genera un
 modelo ARIMA(p,0,q)(P,0,Q)\[s\] = ARMA(p,q)(P,Q)\[s\] el cual está dado
 por
 
-$$\begin{align*}\Phi_{P} (L^s) \Phi_p (L) \widetilde{Y}_t = \Theta_{Q}(L^s) \Theta_q (L)\varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_{P} (L^s) \Phi_p (L) \widetilde{Y}_t = \Theta_{Q}(L^s) \Theta_q (L)\varepsilon_t\end{align*}
+$$
 
 con `$\Phi_{P} (z^s)$` y `$\Phi_p (z)$` los polinomios de rezago
 autorregresivo regular y estacional, cada uno **sin raíces unitarias en
@@ -184,7 +204,9 @@ unitaria estacional. Así la hipótesis nula de este test establece la
 estabilidad estructural de la componente estacional. El procedimiento
 considera el siguiente modelo de regresión
 
-$$\begin{align*}Y_t = \beta_0 + \beta_1 t + \sum_{j=1}^k \left[\alpha_j sin\left(\frac{2\pi jt}{s}\right) + \gamma_j cos\left(\frac{2\pi jt }{s}\right)\right] + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}Y_t = \beta_0 + \beta_1 t + \sum_{j=1}^k \left[\alpha_j sin\left(\frac{2\pi jt}{s}\right) + \gamma_j cos\left(\frac{2\pi jt }{s}\right)\right] + \varepsilon_t\end{align*}
+$$
 
 
 con `$k = s/2$` con `$s$` par, donde el `$j$`−ésimo par
@@ -209,7 +231,9 @@ autocovarianzas de `$\mathbf{u}_t$` y `$\mathbf{v}_t$`, respectivamente
 es cero mientras que bajo la hipótesis alterna, en cada caso, es mayor
 que cero, o equivalentemente
 
-$$\begin{align*}H_0: \boldsymbol{\alpha}_t = \boldsymbol{\alpha} \quad \text{vs} \quad  H_1: \boldsymbol{\alpha}_t = \boldsymbol{\alpha}_{t-1} + \mathbf{u}_t\\ H_0: \boldsymbol{\gamma}_t = \boldsymbol{\gamma} \quad \text{vs} \quad  H_1: \boldsymbol{\gamma}_t = \boldsymbol{\gamma}_{t-1} + \mathbf{v}_t\end{align*}$$
+$$
+\begin{align*}H_0: \boldsymbol{\alpha}_t = \boldsymbol{\alpha} \quad \text{vs} \quad  H_1: \boldsymbol{\alpha}_t = \boldsymbol{\alpha}_{t-1} + \mathbf{u}_t\\ H_0: \boldsymbol{\gamma}_t = \boldsymbol{\gamma} \quad \text{vs} \quad  H_1: \boldsymbol{\gamma}_t = \boldsymbol{\gamma}_{t-1} + \mathbf{v}_t\end{align*}
+$$
 
 
 El estadístico de la prueba denominado `$L$` sugerido por Canova y
@@ -237,27 +261,37 @@ En Giraldo ([2018](#ref-Giraldo2018), pp. 304–305) se presenta la prueba
 de raíces unitarias estacionales de prueba Osborn,Chui, Smith, y
 Birchenhall, la cual se basa en una prueba de regresión dada por
 
-$$\begin{align*}\Delta\Delta_sY_t = \beta_1\Delta_sY_{t-1} + \beta_2 Y_{t-s} + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Delta\Delta_sY_t = \beta_1\Delta_sY_{t-1} + \beta_2 Y_{t-s} + \varepsilon_t\end{align*}
+$$
 
 utilizando la identidad
 
-$$\begin{align*}I-L^s = (I-L)(I+L+\ldots+L^{s-1})\end{align*}$$
+$$
+\begin{align*}I-L^s = (I-L)(I+L+\ldots+L^{s-1})\end{align*}
+$$
  se tiene
 que
 
-$$\begin{align*}\Delta_sY_{t-1} = (I+L+\ldots+L^{s-1})\Delta Y_{t-1}\end{align*}$$
+$$
+\begin{align*}\Delta_sY_{t-1} = (I+L+\ldots+L^{s-1})\Delta Y_{t-1}\end{align*}
+$$
 
 
 entonces, al reemplazar en la primera ecuación se tiene que la regresión
 de interés estará dada por
 
-$$\begin{align*}\Delta\Delta_sY_t = \beta_1 (I+L+\ldots+L^{s-1})\Delta Y_{t-1} + \beta_2\Delta Y_{t-s} + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Delta\Delta_sY_t = \beta_1 (I+L+\ldots+L^{s-1})\Delta Y_{t-1} + \beta_2\Delta Y_{t-s} + \varepsilon_t\end{align*}
+$$
 
 
 A partir de esta regresión se trata de probar el siguiente juego de
 hipótesis
 
-$$\begin{align*}H_0: Y_t \sim I(1,1) \quad \text{vs} \quad H_1: Y_t \sim I(0,0) \vee I(0,1) \vee I(1,0)\end{align*}$$
+$$
+\begin{align*}H_0: Y_t \sim I(1,1) \quad \text{vs} \quad H_1: Y_t \sim I(0,0) \vee I(0,1) \vee I(1,0)\end{align*}
+$$
 
 
 El estadístico de la prueba se define similar al de la prueba
@@ -267,7 +301,9 @@ prueba, y por tanto, para la prueba OCSB se requieren valores críticos
 sean calculados mediante simulación. La hipótesis equivale en este caso
 a la prueba de cola izquierda será de la forma
 
-$$\begin{align*}H_0: \beta_2 = 0 \quad \text{vs} \quad H_1: \beta_2 < 0\end{align*}$$
+$$
+\begin{align*}H_0: \beta_2 = 0 \quad \text{vs} \quad H_1: \beta_2 < 0\end{align*}
+$$
 
 
 La prueba OCSB puede realizarse en <tt>R</tt>, mediante la función

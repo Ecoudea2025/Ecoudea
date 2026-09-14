@@ -36,6 +36,26 @@ Guidelines:
 - **Frontmatter of classes:** `title`, `course` (course id), `order` (sequential), `classType` (`clase`|`practica`|`presentacion`|`guia`), optional `description`, `tags`, `math` (`true` if LaTeX — controls KaTeX loading).
 - **New course:** add `src/content/courses/<id>.md` + classes referencing `course: <id>`.
 
+## Math (KaTeX SSR)
+
+Las fórmulas se renderizan **en el build** con KaTeX (sin JS en el cliente, sin
+recuadro gris ni parpadeo). Pipeline en `astro.config.mjs`:
+
+- `remark-math` + `remarkNormalizeMath` (`src/lib/markdown-math.mjs`): protege
+  `_`/`\\` y convierte code-spans, `$...$` y entornos display.
+- `rehypeMathNormalize`: normaliza `<script type="math/tex">`, HTML crudo y
+  desenvuelve `<code>` que envuelve math.
+- `rehype-katex`: renderiza a HTML + MathML.
+- El CSS se importa desde el paquete `katex` en las páginas con fórmulas, así
+  que las fuentes se empaquetan con Vite (no hay rutas `/assets/...` rotas).
+
+Al agregar o editar contenido con LaTeX, ejecuta `npm run content:fix`
+(normaliza delimitadores `$$`, listas `1.` pegadas a HTML crudo y `$` dentro de
+`<pre>`, y arregla referencias `\label`).
+
+**En `.astro`:** escapa las llaves de `\begin{...}` como `&#123;` / `&#125;`
+(Astro interpreta `{...}` como expresión). Ejemplo: `\begin&#123;pmatrix&#125;`.
+
 ## Commit Convention
 
 Conventional Commits, one logical change per commit:

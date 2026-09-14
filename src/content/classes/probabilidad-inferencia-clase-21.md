@@ -143,13 +143,17 @@ datos ordenados en **cuatro partes** iguales. Para ello, es necesario
 calcular inicialmente una variable `$h_j$` de posicionamiento dado el
 cuartil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del cuartil de
 interés
 
-$$\begin{align*}C_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}$$
+$$
+\begin{align*}C_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -239,30 +243,36 @@ Parcial 1
 Ahora, dado que se tienen $10$ observaciones, el variable de
 posicionamiento $h_j$ para el primer cuartil $(j=1)$ estará dado por
 
-$$\begin{align*}
+$$
+\begin{align*}
   h_1 &= \frac{1(10-1)}{4} + 1 \\
       &= 3.25
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, al reemplazar este valor en la formula de cuartiles, con
 $j=1$, obtendremos
 
-$$\begin{align*}
+$$
+\begin{align*}
   C_1 &= x_{\lfloor h_1\rfloor} + \left((h_1 - \lfloor h_1\rfloor) \times  (x_{[\lfloor h_1\rfloor + 1]} - x_{\lfloor h_1\rfloor}) \right) \\ 
       &= x_{\lfloor 3.25\rfloor} + \left((3.25 - \lfloor 3.25\rfloor) \times  (x_{[\lfloor 3.25\rfloor + 1]} - x_{\lfloor 3.25\rfloor}) \right) \\ 
       & = x_{[3]} + \left((3.25 - 3) \times  (x_{[3+1]}-x_{[3]})\right) \\ 
       &= x_{[3]} + \left(0.25 \times  (x_{[4]}-x_{[3]})\right)
-\end{align*}$$
+\end{align*}
+$$
 
 Al reemplazar $x_{[3]}$ y $x_{[4]}$ por las notas del parcial $1$,
 que ocupan la posición $3$ y $4$ en el conjunto de observaciones
 ordenadas, es decir, $x_{[3]}=2.6$ y $x_{[4]}=2.7$, darán como
 resultado que el primer cuartil será igual a
 
-$$\begin{align*}
+$$
+\begin{align*}
   C_1 &= 2.6 + \left(0.25 \times  (2.7-2.6)\right)\\ 
       &= 2.625
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, se concluye que para las notas obtenidas en el parcial $1$,
 el $25\%$ inferior de los estudiantes obtuvo una nota menor o igual a
@@ -334,13 +344,17 @@ datos ordenados en **cinco partes** iguales. Para ello, es necesario
 calcular inicialmente una variable `$h_j$` de posicionamiento dado el
 quintil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del quintil de
 interés
 
-$$\begin{align*}Q_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}$$
+$$
+\begin{align*}Q_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -430,30 +444,36 @@ Parcial 4
 Ahora, dado que se tienen $10$ observaciones, el variable de
 posicionamiento $h_j$ para el cuarto quintil $(j=4)$ estará dado por
 
-$$\begin{align*}
+$$
+\begin{align*}
   h_4 &= \frac{4(10-1)}{5} + 1 \\
       &= 8.2
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, al reemplazar este valor en la formula de quintiles, con
 $j=4$, obtendremos
 
-$$\begin{align*}
+$$
+\begin{align*}
   Q_4 &= x_{\lfloor h_4\rfloor} + \left((h_4 - \lfloor h_1\rfloor) \times  (x_{[\lfloor h_4\rfloor + 1]} - x_{\lfloor h_4\rfloor}) \right) \\ 
       &= x_{\lfloor 8.2\rfloor} + \left((8.2 - \lfloor 8.2\rfloor) \times  (x_{[\lfloor 8.2\rfloor + 1]} - x_{\lfloor 8.2\rfloor}) \right) \\ 
       & = x_{[8]} + \left((8.2 - 8) \times  (x_{[8+1]}-x_{[8]})\right) \\ 
       &= x_{[8]} + \left(0.2 \times  (x_{[9]}-x_{[8]})\right)
-\end{align*}$$
+\end{align*}
+$$
 
 Al reemplazar $x_{[8]}$ y $x_{[9]}$ por las notas del parcial $4$,
 que ocupan la posición $8$ y $9$ en el conjunto de observaciones
 ordenadas, es decir, $x_{[8]}=4.1$ y $x_{[9]}=4.5$, darán como
 resultado que el cuarto quintil será igual a
 
-$$\begin{align*}
+$$
+\begin{align*}
   Q_4 &= 4.1 + \left(0.2 \times  (4.5-4.1)\right)\\ 
       &= 4.18
-\end{align*}$$
+\end{align*}
+$$
 
 En consecuencia, se concluye que para el parcial $4$, el $80\%$
 inferior de los estudiantes logró obtener una nota máxima de $4.18$,
@@ -525,13 +545,17 @@ conjunto de datos ordenados en **diez partes** iguales. Para ello, es
 necesario calcular inicialmente una variable `$h_j$` de posicionamiento
 dado el decil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del decil de
 interés
 
-$$\begin{align*}D_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}$$
+$$
+\begin{align*}D_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -618,29 +642,35 @@ Parcial 1
 
 Donde al tener $10$ observaciones, se tendrá que la variable de
 posicionamiento $h_j$ para el sexto decil $(j=6)$ estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   h_6 &= \frac{6(10-1)}{10} + 1 \\
       &= 6.4
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto, al reemplazar este valor en la formula de deciles, siendo
 $j=6$ se tendrá
 
-$$\begin{align*}
+$$
+\begin{align*}
   D_6 &= x_{\lfloor h_6\rfloor} + \left((h_6 - \lfloor h_6\rfloor) \times  (x_{[\lfloor h_6\rfloor + 1]} - x_{\lfloor h_6\rfloor}) \right) \\ 
       &= x_{\lfloor 6.4\rfloor} + \left((6.4 - \lfloor 6.4\rfloor) \times  (x_{[\lfloor 6.4\rfloor + 1]} - x_{\lfloor 6.4\rfloor}) \right) \\ 
       &= x_{[6]} + \left((6.4 - 6) \times  (x_{[6+1]}-x_{[6]})\right) \\ 
       &= x_{[6]} + \left(0.4 \times  (x_{[7]}-x_{[6]})\right)
-\end{align*}$$
+\end{align*}
+$$
 
 Reemplazando $x_{[6]}$ por $2.8$ y $x_{[7]}$ por $2.9$, es
 decir, la sexta y séptima nota más alta obtenida en el primer parcial,
 se tendrá que el sexto Decil estará dado por
 
-$$\begin{align*}
+$$
+\begin{align*}
 D_6 &= 2.8 + \left(0.4 \times  (2.9-2.8)\right)\\ 
     &= 2.84
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se puede concluir que para el parcial $1$, se tendrá
 que el $60\%$ inferior de los estudiantes obtuvo una nota máxima de
@@ -712,13 +742,17 @@ un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
 necesario calcular inicialmente una variable `$h_j$` de posicionamiento
 dado el percentil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del percentil de
 interés
 
-$$\begin{align*}P_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
+$$
+\begin{align*}P_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -805,30 +839,37 @@ Parcial 4
 
 Con las notas ordenadas, se realiza el cálculo para la variable de
 posicionamiento $h_j$, con $j=33$, dado que se posee un total de
-$10$ observaciones, tal que $$\begin{align*}
+$10$ observaciones, tal que 
+$$
+\begin{align*}
 h_{33} &= \frac{33(10-1)}{100} + 1 \\
        &= 3.97
-\end{align*}$$
+\end{align*}
+$$
 
 Al reemplazar el valor obtenido en la variable de posicionamiento, en la
 formula de percentiles, con $j=33$, obtendremos
 
-$$\begin{align*}
+$$
+\begin{align*}
   P_{33} &= x_{\lfloor h_{33}\rfloor} + \left((h_{33} - \lfloor h_{33}\rfloor) \times  (x_{[\lfloor h_{33}\rfloor + 1]} - x_{\lfloor h_{33}\rfloor}) \right) \\ 
          &= x_{\lfloor 3.97\rfloor} + \left((3.97 - \lfloor 3.97\rfloor) \times  (x_{[\lfloor 3.97\rfloor + 1]} - x_{\lfloor 3.97\rfloor}) \right) \\ 
          & = x_{[3]} + \left((3.97 - 3) \times  (x_{[3+1]}-x_{[3]})\right) \\ 
          &= x_{[3]} + \left(0.97 \times (x_{[4]}-x_{[3]})\right)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, $x_{[3]}=2.0$ y $x_{[4]}=3.2$, son las notas que ocupan la
 posición $3$ y $4$ en el conjunto de notas ordenadas en el parcial
 $4$. Finalmente, al reemplazar dichos valores en la ecuación de
 percentiles se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
   P_{33} &= 2.0 + \left(0.97 \times  (3.2-2.0)\right)\\ 
          &= 3.164
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir que el $33\%$ inferior de los
 estudiantes logró obtener una nota menor o igual a $3.164$ en el
@@ -939,7 +980,9 @@ observaciones, entonces
 Mide la distancia media **al cuadrado** del conjunto de datos respecto a
 la media
 
-$$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
+$$
+\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}
+$$
 
 <!--el n-1 se conoce como corrección de Bessel, y se realiza para corregir el sesgo del estimador-->
 
@@ -968,12 +1011,14 @@ Solución Manual
 La varianza de las notas obtenidas en los parciales $1$ y $4$ por
 los estudiantes que cursaron Estadística I estará dada por
 
-$$\begin{align*}
+$$
+\begin{align*}
   S^2_{P1} &= \frac{1}{10-1}\left[(2.7 - 2.75)^2 + (4.0 - 2.75)^2 + \ldots + (2.1 - 2.75) ^2\right] \\
            &= 0.5072222 \\
   S^2_{P4} &=\frac{1}{10-1}\left[(1.8 - 3.14)^2 + (4.7 - 3.14)^2 + \ldots + (2.0 - 3.14) ^2\right] \\
            &= 1.622667
-\end{align*}$$
+\end{align*}
+$$
 
 Es de anotar, que la interpretación de la varianza no tiene mucho
 sentido, debido a que la unidad de medición estará elevada al cuadrado,
@@ -1038,7 +1083,9 @@ Es la raíz cuadrada de la distancia media del conjunto de datos respeto
 a la media, es decir, indica qué tan dispersos se encuentra el conjunto
 de observaciones de su valor promedio.
 
-$$\begin{align*}S=\sqrt{S^2}\end{align*}$$
+$$
+\begin{align*}S=\sqrt{S^2}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse la desviación estándar de un conjunto de
@@ -1066,10 +1113,12 @@ $4$ por los estudiantes que cursaron Estadística I, es simplemente la
 raíz cuadrada de la varianza que se calculó anteriormente, y por tanto
 se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
   S_{P1} &= \sqrt{0.5072222} = 0.7121953 \\ 
   S_{P4} &= \sqrt{1.622667} = 1.273839
-\end{align*}$$
+\end{align*}
+$$
 
 De los resultados obtenidos se tiene que, la dispersión que poseen los
 datos respecto a su valor promedio es de $0.7121953$ para las notas
@@ -1137,7 +1186,9 @@ Es la desviación estándar como un porcentaje de la media aritmética de
 un conjunto de datos. Sirve para observar el grado de variabilidad que
 tiene un conjunto de observaciones respecto a su promedio
 
-$$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
+$$
+\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}
+$$
 
 
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
@@ -1180,10 +1231,12 @@ aplicar la ecuación del coeficiente de variación a las notas obtenidas
 en los parciales $1$ y $4$ por los estudiantes que cursaron
 Estadística I, se tiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
   CV_{P1} &= \frac{0.7121953}{|2.75|} \times 100\% = 25.89801 \% \\
   CV_{P4} &= \frac{1.273839}{|3.14|} \times 100\% = 40.56812 \%
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se aprecia que tal como se esperaba, la variación
 porcentual de los datos respecto a su media para el caso del parcial
@@ -1253,7 +1306,9 @@ planteada anteriormente. tal que
 
 Es la distancia o amplitud que hay entre el valor máximo y mínimo en un
 conjunto de datos 
-$$\begin{align*}R = x_{max}-x_{min}\end{align*}$$
+$$
+\begin{align*}R = x_{max}-x_{min}\end{align*}
+$$
 
 
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
@@ -1389,10 +1444,13 @@ style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; backgroun
 Una vez ordenados los valores, se localiza el valor máximo y mínimo de
 cada parcial, y se realiza entonces el cálculo del rango para cada caso
 
-$$\begin{align*}
+$$
+\begin{align*}
   R_{P1} &= 4.0 - 1.3 = 2.7 \\ 
   R_{P4} &= 4.7 - 0.7 = 4.0
-\end{align*}$$ Se evidencia entonces que la amplitud de las notas del
+\end{align*}
+$$
+ Se evidencia entonces que la amplitud de las notas del
 parcial $4$ es mucho mayor a la amplitud del parcial $1$, puesto que
 se observa que el rango obtenido por las notas del parcial $4$ es de
 $4.0$ puntos, mientras que el rango obtenido por las notas del parcial
@@ -1463,7 +1521,9 @@ primer cuartil `$C_1$`, de un conjunto de datos. Éste muestra la
 amplitud del 50% de los datos centrales de un conjunto de observaciones.
 Esta medida puede ser tomada como una medida de variabilidad para la
 mediana. 
-$$\begin{align*}IQR = C_3 - C_1\end{align*}$$
+$$
+\begin{align*}IQR = C_3 - C_1\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse el rango intercuartílico de un conjunto
@@ -1499,17 +1559,21 @@ Entonces, basados en los cálculos de los cuartiles obtenidos en la
 para el parcial $1$ son $C_{1}= 2.625$ y $C_{3}= 3.050$,
 respectivamente, obteniendo un rango intercuartílico de
 
-$$\begin{align*}
+$$
+\begin{align*}
   IQR_{P1} = 3.050 - 2.625 = 0.425
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que, el primer y tercer cuartil para el parcial $4$ son
 $C_{1}= 2.3$ y $C_{3}= 3.975$, respectivamente, y en consecuencia,
 el rango intercuartílico asociado al parcial $4$ será
 
-$$\begin{align*}
+$$
+\begin{align*}
   IQR_{P4}= 3.975 - 2.3 = 1.675
-\end{align*}$$
+\end{align*}
+$$
 
 Mostrando que, al eliminar el $50\%$ de los datos más extremos, se
 obtiene un rango de $0.425$ para el caso del parcial $1$, y de
@@ -1577,7 +1641,9 @@ Es una medida de la dispersión de un conjunto de observaciones respecto
 a su mediana
 
 
-$$\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}$$
+$$
+\begin{align*}MAD=b\times Me(|X_i-\tilde{X}|)\end{align*}
+$$
 
 
 donde `$b$` es una constante definida como `$b=1/C_{3}$`, con `$C_{3}$`
@@ -1737,25 +1803,32 @@ observaciones, entonces $Me(|X_i-\tilde{X}|)$ para el parcial $1$
 será (recuerde que para encontrar la mediana es necesario ordenar las
 observaciones de forma ascendente)
 
-$$\begin{align*}
+$$
+\begin{align*}
   Me(|X_i-\tilde{X}|) = \frac{1}{2}(0.15 + 0.35)= 0.25
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que, el valor $Me(|X_i-\tilde{X}|)$ para el parcial $4$
 será
 
-$$\begin{align*}
+$$
+\begin{align*}
   Me(|X_i-\tilde{X}|) = \frac{1}{2}(0.7 + 1.1)= 0.9
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al emplear estos dos valores, y asumiento que $b=1.4826$, se
 tendrá que la desviación absoluta mediana para los parciales $1$ y
 $4$ son de
 
-$$\begin{align*}
+$$
+\begin{align*}
   MAD_{P1} &= 1.4826 \times 0.25 = 0.37065 \\
   MAD_{P4} &= 1.4826 \times 0.9 = 1.33434
-\end{align*}$$ Se tiene entonces que la desviación abosulta mediana o
+\end{align*}
+$$
+ Se tiene entonces que la desviación abosulta mediana o
 dispersión respecto a la mediana que poseen las notas de los estudiantes
 de Estadística I, en el primer parcial es de $0.37$, mientras para el
 cuarto parcial es de $1.33434$, lo cual indica que la dispersión de

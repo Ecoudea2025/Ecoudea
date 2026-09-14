@@ -105,11 +105,14 @@ bibliography: "../../referencias.bib"
     patente sea a lo más $9$ años.
     </li>
     </ol>
+
 2.  Sea `$X$` la variable aleatoria del número de clientes que llegan a
     un centro comercial en un periodo de una hora. Si la distribución
     acumulada de `$X$` es:
     
-$$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}$$
+$$
+\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -130,9 +133,12 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
     llegan a un centro comercial en una hora.
     </li>
     </ol>
+
 3.  Considere la función de densidad
     
-$$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -148,12 +154,15 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{En otro ca
     aleatoria $X$.
     </li>
     </ol>
+
 4.  Suponga que el tiempo medido en unidades de `$100$` horas, en las
     cuales, se usa una licuadora en un hogar durante un año, es una
     variable aleatoria continua `$X$` con función de densidad de
     probabilidad dada por:
     
-$$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -173,12 +182,15 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     medido en unidades de $100$ horas.
     </li>
     </ol>
+
 5.  El tiempo que pasa, en minutos, para que un radar detecte entre
     conductores sucesivos a los que exceden los límites de velocidad es
     una variable aleatoria continua con una función de distribución
     acumulativa
     
-$$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}$$
+$$
+\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}
+$$
 
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
@@ -191,11 +203,14 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     Utilizando la función de densidad de probabilidad de $X$.
     </li>
     </ol>
+
 6.  Sea `$X$` una variable aleatoria continua que representa el tiempo,
     en minutos, que tarda un hamster en superar un laberinto, tal que,
     la función de densidad de probabilidad `$f(x)$` está dada por:
     
-$$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -217,11 +232,14 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     $R(x) = \mathbb{P}(X \gt  x)$?.
     </li>
     </ol>
+
 7.  Considere a `$X$` la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con función de masa de
     probabilidad dada por
     
-$$\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -241,6 +259,7 @@ $$\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En ot
     $7$ o a lo más $4$.
     </li>
     </ol>
+
 8.  El `$20\%$` de las inversiones realizadas por un experto en finanzas
     terminan en pérdida. Si se seleccionan aleatoriamente `$5$`
     inversiones realizadas por el experto, ¿Cuál es la probabilidad de
@@ -252,7 +271,9 @@ $$\begin{align*}p(x)=\begin{cases}6-|7-x| & x = 2,3,\ldots,12 ,\\0 & \text{En ot
     gráfico de distribución acumulada de la cual se obtiene la siguiente
     tabla.
     
-$$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x<3 \\      0.0420 & 3\leq x<4 \\      0.0992 & 4\leq x<5 \\      0.1909 & 5\leq x<6 \\      0.3130 & 6\leq x<7 \\      0.4526 & 7\leq x<9 \\      0.5922 & 9\leq x<11 \\      0.7162 & 11\leq x<12 \\      0.8155 & 12\leq x<14 \\      0.9377 & 14\leq x<15 \\      1 & x\geq 15 \end{cases}\end{align*}$$
+$$
+\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x<3 \\      0.0420 & 3\leq x<4 \\      0.0992 & 4\leq x<5 \\      0.1909 & 5\leq x<6 \\      0.3130 & 6\leq x<7 \\      0.4526 & 7\leq x<9 \\      0.5922 & 9\leq x<11 \\      0.7162 & 11\leq x<12 \\      0.8155 & 12\leq x<14 \\      0.9377 & 14\leq x<15 \\      1 & x\geq 15 \end{cases}\end{align*}
+$$
 
     A partir de esta función de probabilidad
     <ol type="a">
@@ -266,6 +287,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     que el número de fotomultas que tenga sea más de 3, pero a lo más 8.
     </li>
     </ol>
+
 10. Según una página de estadísticas deportivas, el número promedio de
     goles que anota el Barcelona por partido es de `$2.61$`. ¿Cuál es la
     probabilidad de que en un determinado partido anote más de `$2$`
@@ -281,12 +303,15 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     <li>
     ¿Cuál es la probabilidad de que transcurra hasta un minuto en el
     momento en que han entrado $3$ llamadas al conmutador?
-    $$\begin{align*}
+    
+$$
+\begin{align*}
     f(x)=\frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}} \quad x>0,\; \alpha>0, \;\beta>0
     \end{align*}
-    $$
+$$
     </li>
     </ol>
+
 12. En el artículo de W. Pang, et. al (2001) “*Parameter Estimation with
     Only One Complete Failure Observation, International Journal of
     Reliability, Quality, and Safety Engineering, 2001:109-122*”, se
@@ -309,6 +334,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     ¿Cuál es el riesgo en $t = 2000$ horas?.
     </li>
     </ol>
+
 13. El periodo de vida de una broca en una operación mecánica, en horas,
     tiene una distribución de Weibull con `$\alpha = 1/2$` y
     `$\beta = 35$`. Calcule la probabilidad de que la broca falle antes
@@ -331,6 +357,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     hasta que aparece un automóvil en la intersección.
     </li>
     </ol>
+
 15. Suponga que se realiza un estudio estadístico y se encuentra que
     número de clientes que llega donde Pastora en media hora, es una
     variable aleatoria Poisson con media de `$4$`.
@@ -345,6 +372,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     $10$ minutos?.
     </li>
     </ol>
+
 16. Cada semestre se presentan miles de personas para ganar uno de los
     `$260$` cupos que se abren para el programa de ingeniería
     industrial. Si el puntaje obtenido por los estudiantes se distribuye
@@ -362,6 +390,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     puntos?.
     </li>
     </ol>
+
 17. Se sabe que los resultados en cierto examen de estadística, tienen
     una distribución normal, con media `$3.1$` y desviación estándar
     `$0.35$`. ¿Cuál es la probabilidad de que un estudiante obtenga una
@@ -378,6 +407,7 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     Caiga entre 2.0 y 3.0 en la escala de Richter.
     </li>
     </ol>
+
 19. El tiempo `$Y$` necesario para completar una operación clave en la
     construcción de casas tiene una distribución exponencial con media
     de `$10$` horas. La fórmula `$C = 100 + 40Y + 3Y^2$` relaciona el
@@ -437,19 +467,27 @@ $$\begin{align*}F(x) = \begin{cases}      0.0026  & x<2 \\      0.0134 & 2\leq x
     </table>
     Encuentre el coeficiente de asimetría, el cuál está dado por
     
-$$\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{3}\right]={\frac{\mu_{3}}{\sigma^{3}}}={\frac{\mathbb{E}\left[(X-\mu)^{3}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{3/2}}}\\ \gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{[\mathbb{E}(X^2)- \mathbb{E}(X)^2)]^{3/2}}\end{align*}$$
+$$
+\begin{align*}\gamma_{1}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{3}\right]={\frac{\mu_{3}}{\sigma^{3}}}={\frac{\mathbb{E}\left[(X-\mu)^{3}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{3/2}}}\\ \gamma_{1}&=\frac{\mathbb{E}(X^3)-3\mathbb{E}(X^2)\mathbb{E}(X)+2\mathbb{E}(X)^3}{[\mathbb{E}(X^2)- \mathbb{E}(X)^2)]^{3/2}}\end{align*}
+$$
 
 22. A partir de la siguiente función de masa de probabilidad
     
-$$\begin{align*}p(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}$$
+$$
+\begin{align*}p(x)=\frac{\binom{2}{x}\binom{3}{3-x}}{\binom{5}{3}} \quad \quad \text{ para }x=0,1,2\end{align*}
+$$
 
     Calcule el coeficiente de exceso de curtosis, el cual está dado por
     
-$$\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{4}\right] -3={\frac{\mu_{4}}{\sigma^{4}}} -3 ={\frac{\mathbb{E}\left[(X-\mu)^{4}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{4/2}}} -3\\ \gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{[\mathbb{E}(X^2) - \mathbb{E}(X)^2]^2} -3\end{align*}$$
+$$
+\begin{align*}\gamma_{2}&= \mathbb{E}\left[\left({\frac{X-\mu}{\sigma}}\right)^{4}\right] -3={\frac{\mu_{4}}{\sigma^{4}}} -3 ={\frac{\mathbb{E}\left[(X-\mu)^{4}\right]}{(\mathbb{E}\left[(X-\mu)^{2}\right])^{4/2}}} -3\\ \gamma_2&=\frac{\mathbb{E}(X^4)-4\mathbb{E}(X^3)\mathbb{E}(X)+6\mathbb{E}(X^2)\mathbb{E}(X)^2 -3\mathbb{E}(X)^4}{[\mathbb{E}(X^2) - \mathbb{E}(X)^2]^2} -3\end{align*}
+$$
 
 23. Considere la siguiente función de densidad de probabilidad
     
-$$\begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -459,13 +497,16 @@ $$\begin{align*}f(x) =\begin{cases}kx^{3/2}, & 0< x < 1\\ 0, & \text{en otro cas
     Calcule la esperanza de $2/X^2$
     </li>
     </ol>
+
 24. Suponga que cierto tipo de pequeñas empresas de procesamiento de
     datos están tan especializadas que algunas tienen dificultades para
     obtener utilidades durante su primer año de operación. La función de
     densidad de probabilidad que caracteriza la proporción `$Y$` que
     obtiene utilidades está dada por
     
-$$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -476,6 +517,7 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
     Calcule la varianza de la variable aleatoria $Z=3Y-4$.
     </li>
     </ol>
+
 25. El tiempo que trabaja en horas un profesor normalmente, posee una
     distribución exponencial con parámetro de escala `$6$`.
     <ol type="a">
@@ -492,6 +534,7 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
     probabilidad de que trabaje menos de $3$ horas más?.
     </li>
     </ol>
+
 26. Un proveedor de queroseno tiene un tanque de `$150$` galones que se
     llena al empezar cada semana. Su demanda semanal muestra un
     comportamiento de frecuencia relativo que aumenta de manera continua
@@ -499,7 +542,9 @@ $$\begin{align*}f(y)=\begin{cases}ky^4(1-y)^3 & 0\leq y \leq 1\\0 & \text{en otr
     galones. Si `$Y$` denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
-$$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -515,6 +560,7 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     Calcule la curtosis de la variable aleatoria $Y$.
     </li>
     </ol>
+
 27. Unas partículas están suspendidas en un medio líquido con
     concentración de seis partículas por `$mL$`. Se agita por completo
     un volumen grande de la suspensión, y después se extrae `$3_{mL}$`.
@@ -531,6 +577,7 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     se retirarían, si se extrae un total de $4_{mL}$?.
     </li>
     </ol>
+
 28. Suponga que se tiene cierto tipo de tablero de circuitos que
     contiene un total de `$250$` diodos. Si se sabe por experiencia que
     la probabilidad de que falle cualquier diodo es de `$0.002$`.
@@ -556,6 +603,7 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     que cuatro o más de ellos funcione?
     </li>
     </ol>
+
 29. Un fabricante de alimentos usa una máquina de moldeo por inyección
     (que produce galletas del tamaño de un bocado y botanas) que
     proporciona un ingreso para la empresa a razón de `$200$` por hora
@@ -575,11 +623,14 @@ $$\begin{align*}p(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \tex
     Cómo es el comportamiento de su función de falla?
     </li>
     </ol>
+
 31. Suponga el tiempo, en minutos, que tarda un camión en cruzar debajo
     del puente de la madre Laura, posee una función de densidad de
     probabilidad dada por
     
-$$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -598,6 +649,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     cruce un camión.
     </li>
     </ol>
+
 32. En una empresa de call center, se encontró que el `$38\%$` de los
     trabajadores son mujeres cabeza de familia. Si se elige
     aleatoriamente `$30$` trabajadores de la empresa,
@@ -617,6 +669,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     deberse tal comportamiento.
     </li>
     </ol>
+
 33. Suponga que el tiempo que tarda la revisión de una moto en un
     taller, se distribuye exponencialmente con una media de `$23$`
     minutos.
@@ -636,6 +689,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     las motocicletas.
     </li>
     </ol>
+
 34. Un jugador de baloncesto del equipo de la Universidad, es el mejor
     de su equipo, tanto así que es capaz de encestar desde cualquier
     punto `$8$` de cada `$9$` tiros que realiza. Si durante un partido,
@@ -647,7 +701,9 @@ $$\begin{align*}f(x)=\begin{cases}\frac{e^{-(x-1)}}{\sqrt{21\pi}} & x \geq 0\\0 
     encontrar un yacimiento, tal que, su función de masa de probabilidad
     está dada por
     
-$$\begin{align*}p(x)=p(1-p)^x \quad \quad \text{para } x=0,1,2,\ldots\end{align*}$$
+$$
+\begin{align*}p(x)=p(1-p)^x \quad \quad \text{para } x=0,1,2,\ldots\end{align*}
+$$
 
     Si la probabilidad `$p$` de encontrar un yacimiento en una
     perforación es del `$18\%$`, cuál es la probabilidad de que se
@@ -657,7 +713,9 @@ $$\begin{align*}p(x)=p(1-p)^x \quad \quad \text{para } x=0,1,2,\ldots\end{align*
     un Call Center en una, es una variable aleatoria `$X$` con función
     de densidad de probabilidad dada por
     
-$$\begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{align*}$$
+$$
+\begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -674,10 +732,13 @@ $$\begin{align*}f(x)=\frac{1}{8} \quad \quad \text{para } 2\leq x\leq 10\end{ali
     llamada en el siguiente minuto.
     </li>
     </ol>
+
 37. El tiempo de vida útil, en años, de una computadora Hewlett-Packard,
     es una variable aleatoria con función de densidad dada por
     
-$$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -693,6 +754,7 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 
     su comportamiento a medida que pasa el tiempo.
     </li>
     </ol>
+
 38. El grupo ALIADO del Departamento de Ingeniería Industrial, realiza
     un estudio experimental sobre el tiempo que pasan los estudiantes en
     una computadora durante el día. En dicho estudio el grupo ALIADO
@@ -711,11 +773,14 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{9}e^{-x^2/18} & x > 0;\quad \theta > 
     frente a ella?.
     </li>
     </ol>
+
 39. Suponga que el número de vehículos que llegan a una esquina de un
     pueblo durante un periodo de `$5$` minutos, es una variable
     aleatoria discreta con función de masa de probabilidad dada por
     
-$$\begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -727,11 +792,14 @@ $$\begin{align*}p(x)=\begin{cases}\frac{9x}{4^{x+1}} & x= 1, 2, 3, \ldots \\0 & 
     la esquina no sea superior a $4$ vehículos.
     </li>
     </ol>
+
 40. Suponga que la distancia, en kilómetros, que recorre un atleta al
     día es una función de distribución de densidad de probabilidad dada
     por
     
-$$\begin{align*}f(x)=\begin{cases}x^3 & 2\leq x < 4 \\ (x - 2)^2 & 4 \leq x < 8\\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}x^3 & 2\leq x < 4 \\ (x - 2)^2 & 4 \leq x < 8\\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>

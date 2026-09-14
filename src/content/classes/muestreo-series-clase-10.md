@@ -37,7 +37,9 @@ Por su parte, la segunda diferencia de `$Y_t$`, se simboliza por
 `$\Delta^2 Y_t$` y estará dado por la diferencia entre `$\Delta Y_t$` y
 `$\Delta Y_{t-1}$` para `$t=3,\ldots,T$`. en donde se puede observar que
 
-$$\begin{align*}\Delta^2 Y_t & = \Delta(\Delta Y_t) \\              & = \Delta Y_t - \Delta Y_{t-1} \\              & = Y_t- 2(Y_{t-1})+Y_{t-2} \\              & = (1-L)^2 Y_t\end{align*}$$
+$$
+\begin{align*}\Delta^2 Y_t & = \Delta(\Delta Y_t) \\              & = \Delta Y_t - \Delta Y_{t-1} \\              & = Y_t- 2(Y_{t-1})+Y_{t-2} \\              & = (1-L)^2 Y_t\end{align*}
+$$
 
 
 siendo `$L$` el operador de rezagos explicado en la clase <a href="https://jiperezga.github.io/MuestreoySeriesdeTiempo/MySTClase_08.html" target="_blank" rel="noopener noreferrer">Clase
@@ -45,7 +47,9 @@ siendo `$L$` el operador de rezagos explicado en la clase <a href="https://jiper
 En general, se tendrá que un proceso diferenciado de orden `$d$` se
 simbolizará por `$\Delta^d Y_t = $` y estará dado por
 
-$$\begin{align*}\Delta^d Y_t = (1-L)^d Y_t\end{align*}$$
+$$
+\begin{align*}\Delta^d Y_t = (1-L)^d Y_t\end{align*}
+$$
 
 
 Además, si al diferenciar una serie temporal `$d$` veces, con
@@ -55,29 +59,37 @@ de orden `$d$`.
 
 <!-- Por ejemplo, el proceso $Y_t = \beta_0 + \beta_1t + \varepsilon_t$, siendo $\varepsilon_t$ estacionario, entonces se tendrá que `$Y_t$` es un proceso homogéneo de orden 1, ya que al diferenciarlo se tendrá que 
 
-$$\begin{align*}\Delta Y_t & = \Delta Y_t - \Delta Y_{t-1} \\
+$$
+\begin{align*}\Delta Y_t & = \Delta Y_t - \Delta Y_{t-1} \\
 & = \beta_0 + \beta_1t + \varepsilon_t - [\beta_0 + \beta_1(t-1) + \varepsilon_{t-1}]
 & = \beta_1 + \varepsilon_{t} - \varepsilon_{t-1}
-& = \beta_1 + U_t\end{align*}$$
+& = \beta_1 + U_t\end{align*}
+$$
 
 donde $U_t = \varepsilon_{t} - \varepsilon_{t-1}$ es estacionario. Además, si $\varepsilon_t$ es ruido blanco entones $\Delta Y_t$ es un proceso MA(1) de media $\beta_1$ y con parámetro $\theta = -1$. En general, procesos generados como una tendencia polinómica de orden $d$ más un proceso estacionario cualquiera $\varepsilon_t$, será homogéneo de orden d:
 
-$$\begin{align*}Y_t = \beta_0 + \beta_1t + beta_2t^2 + \ldots + beta_dt^d + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}Y_t = \beta_0 + \beta_1t + beta_2t^2 + \ldots + beta_dt^d + \varepsilon_t\end{align*}
+$$
 
 con \varepsilon_t un proceso estacionario.
 
 En el caso de un proceso $Y_t = \beta_0 + \beta_1t + \beta_2t^2 + \varepsilon_t$ con $\varepsilon_t$ estacionario y de media cero, entonces 
 
-$$\begin{align*}\Delta Y_t & = \beta_0 + \beta_1t + \beta_2t^2 + \varepsilon_t - [\beta_0 + \beta_1(t-1) + \beta_2(t-1)^2  + \varepsilon_{t-1}]
+$$
+\begin{align*}\Delta Y_t & = \beta_0 + \beta_1t + \beta_2t^2 + \varepsilon_t - [\beta_0 + \beta_1(t-1) + \beta_2(t-1)^2  + \varepsilon_{t-1}]
 & = (\beta_1 - \beta_2) + 2\beta_2t + \varepsilon_{t} - \varepsilon_{t-1}
-& = (\beta_1 - \beta_2) + 2\beta_2t + U_t\end{align*}$$
+& = (\beta_1 - \beta_2) + 2\beta_2t + U_t\end{align*}
+$$
 
 
 En donde se observa que \Delta Y_t no es un proceso estacionario. Ahora si calculamos la segunda diferencia
 
-$$\begin{align*}\Delta^2 Y_t & = (\beta_1 - \beta_2) + 2\beta_2t + U_t - [(\beta_1 - \beta_2) + 2\beta_2(t-1) + U_{t-1}]
+$$
+\begin{align*}\Delta^2 Y_t & = (\beta_1 - \beta_2) + 2\beta_2t + U_t - [(\beta_1 - \beta_2) + 2\beta_2(t-1) + U_{t-1}]
 & = 2\beta_2 + U_{t} - U_{t-1}
-& = 2\beta_2 + W_{t}\end{align*}$$
+& = 2\beta_2 + W_{t}\end{align*}
+$$
 
 
 siendo, $\Delta^2 Y_t$ es un proceso estacionario, y $W_{t} = \varepsilon_t - 2\varepsilon_{t-1} + \varepsilon_{t-2}$ . Además, si $\varepsilon_t$ es ruido blanco, se tendrá que  $\Delta^2 Y_t$ es un proceso MA(2) de media dada y parámetros $\theta_1 = -2$ y $\theta_2 = 1$.
@@ -106,7 +118,9 @@ estructura ARIMA(p,d,q) si se tiene que al realizar la `$d$`-ésima
 diferencia, se obtiene que `$\Delta^d Y_t$`posee la estructura de un
 proceso ARMA estacionario, tal que
 
-$$\begin{align*}\Phi_p (L) \Delta^d \widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_p (L) \Delta^d \widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}
+$$
 
 donde `$\Phi_p(z) = 1 - \sum_{j=1}^p\phi_j z^j$` y
 `$\Theta_q(z) = 1 + \sum_{j=1}^q\theta_j z^j$` son los polinomios de
@@ -127,7 +141,9 @@ autorregresivo integrado ARIMA(p,d,0)=ARI(p,d).
 
 Suponga un modelo ARMA(p,q) tal que
 
-$$\begin{align*}\Phi_p (L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_p (L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}
+$$
 
 
 con `$\varepsilon_t \sim RB(0, \sigma_{\varepsilon}^2)$`, entonces, si
@@ -139,7 +155,9 @@ En dicho caso, podremos factorizar el polinomio `$\Phi_p(z)$` como
 `$\Phi_p(z) = (1-z)\Phi_{p-1}(z)$`, un polinomio de grado `$p-1$`,
 obteniendo con ello
 
-$$\begin{align*}\Phi_{p-1}(L)(1-L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Phi_{p-1}(L)(1-L)\widetilde{Y}_t = \Theta_q (L)\varepsilon_t\end{align*}
+$$
 
 
 Entonces, si `$Y_t\sim ARMA(p,q)$` con una raíz unitaria, entonces se
@@ -158,7 +176,9 @@ media cero, media diferente de cero y tendencia lineal.
 el primer tipo, es un modelo lineal con media cero y sin tendencia
 lineal con respecto al tiempo.
 
-$$\begin{align*}\Delta Y_t = \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Delta Y_t = \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}
+$$
 
 
 con `$\gamma = \phi_1 - 1$`. Entonces is hay raices unitarias se
@@ -167,28 +187,38 @@ cumplirá que `$\phi_1 = 1$` o equivalentemente `$\gamma=0$`.
 El segundo tipo, es un modelo lineal con media diferente de cero y sin
 tendencia lineal respecto al tiempo.
 
-$$\begin{align*}\Delta Y_t = \mu + \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Delta Y_t = \mu + \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}
+$$
 
 
 y el tercer tipo, es un modelo lineal con media diferente de cero y con
 tendencia lineal respecto al tiempo.
 
-$$\begin{align*}\Delta Y_t = \mu + \beta t +  \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}$$
+$$
+\begin{align*}\Delta Y_t = \mu + \beta t +  \gamma Y_{t-1} + \sum_{j=2}^p \phi_j \Delta Y_{T-j+1} + \varepsilon_t\end{align*}
+$$
 
 
 En general se buscará probar el siguiente juego de hipótesis
 
-$$\begin{align*}H_0: Y_t \text{ posee raices unitarias (no es estacionaria)} \\ H_1: Y_t \text{ no posee raices unitarias (es estacionaria)}\end{align*}$$
+$$
+\begin{align*}H_0: Y_t \text{ posee raices unitarias (no es estacionaria)} \\ H_1: Y_t \text{ no posee raices unitarias (es estacionaria)}\end{align*}
+$$
 
 
 la cual, como se señaló es equivalente a probar
 
-$$\begin{align*}H_0: \gamma = 0 \\ H_1: \gamma < 0\end{align*}$$
+$$
+\begin{align*}H_0: \gamma = 0 \\ H_1: \gamma < 0\end{align*}
+$$
 
 
 El estadístico de prueba, se define entonces como
 
-$$\begin{align*}\tau = \frac{\hat{\gamma}}{se(\hat{\gamma})}\end{align*}$$
+$$
+\begin{align*}\tau = \frac{\hat{\gamma}}{se(\hat{\gamma})}\end{align*}
+$$
 
 
 siendo `$\hat{\gamma}$` el coeficiente estimado, y `$se(\hat{\gamma})$`
@@ -197,7 +227,9 @@ prueba se define como
 
 con un P-valor dado por
 
-$$\begin{align*}\text{P-valor} = \mathbb{P}(\tau<\tau_\alpha)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = \mathbb{P}(\tau<\tau_\alpha)\end{align*}
+$$
 
 
 La prueba Dickey-Fuller puede realizarse en <tt>R</tt>, mediante la

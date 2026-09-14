@@ -15,7 +15,9 @@ Lista de ejercicios
     Servientrega en un día de trabajo posee una función de densidad de
     probabilidad dada por
     
-$$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -61,7 +63,9 @@ $$\begin{align*}f(x)=\begin{cases}k(x^2+4) & 0<x<1 \\ 0 & \text{en otro caso}\en
     modelándolos. Suponga que el error de medición `$X$` de cierta
     cantidad física es determinado por la siguiente función de densidad:
     
-$$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -109,7 +113,9 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
     utilidades que obtiene una pequeña empresa durante su primer año
     está dada por
     
-$$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -152,7 +158,9 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
 7.  Sea `$X$` una variable aleatoria con distribución de probabilidades
     dada por
     
-$$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -178,7 +186,9 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 9.  Sea `$X$` una variable aleatoria continua con función de
     probabilidad acumulada igual a
     
-$$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
+$$
+\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -208,7 +218,9 @@ $$\begin{align*}F(x)=\frac{1}{1+e^{-x}} \quad \text{ para } x>0\end{align*}$$
     representa la proporción de personas que están a favor de una
     reforma legislativa
     
-$$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -239,7 +251,9 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
     una variable aleatoria continua con una función de distribución
     acumulativa
     
-$$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}$$
+$$
+\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}
+$$
   
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
@@ -271,7 +285,9 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
     usa una licuadora en un hogar durante un año es una v.a continua
     `$X$` con función de densidad de probabilidad dada por:
     
-$$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -307,7 +323,9 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     aleatoria que representa el diámetro de las pelotas locas, y la
     empresa sabe que la función de probabilidad de `$X$` es de la forma
     
-$$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -344,7 +362,9 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
     en minutos, que tarda un hamster en superar un laberinto, tal que,
     la función de densidad de probabilidad `$f(x)$` está dada por:
     
-$$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -381,7 +401,9 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
 21. Sea `$X$` una variable aleatoria continua con distribución de
     probabilidades `$f(x)$` dada por
     
-$$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -417,7 +439,9 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 23. Calcule la probabilidad de que la siguiente función de densidad de
     probabilidad se encuentre a dos desviaciones estándar de la media.
     
-$$\begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}$$
+$$
+\begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}
+$$
 
 24. El sistema de puntuación Elo es un método matemático empleado para
     calcular la habilidad relativa de los jugadores en algunos deportes
@@ -435,7 +459,9 @@ $$\begin{align*}f(x)=6x(1-x), \quad 0<x<1\end{align*}$$
     galones. Si `$Y$` denota la demanda semanal en cientos de galones,
     la frecuencia relativa de demanda puede ser modelada por
     
-$$\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(y)=\begin{cases}y & 0\leq y\leq 1 \\1 & 1<y\leq 1.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>

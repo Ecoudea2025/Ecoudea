@@ -17,7 +17,9 @@ Ejercicios
     misma.
 -   Calcule dos matrices
     
-$$\begin{align*}A = \begin{bmatrix} 2 & 0 & 5 \\ 1 & 3 & -2 \end{bmatrix} \quad \quad B = \begin{bmatrix} 5 & 2 \\ 4 & -1 \\ 8 & 9 \end{bmatrix}\end{align*}$$
+$$
+\begin{align*}A = \begin{bmatrix} 2 & 0 & 5 \\ 1 & 3 & -2 \end{bmatrix} \quad \quad B = \begin{bmatrix} 5 & 2 \\ 4 & -1 \\ 8 & 9 \end{bmatrix}\end{align*}
+$$
 
     y con éstas, calcula mediante multiplicación matricial, una matriz
     `$3\times 3$` y una matriz `$2\times 2$`.
@@ -95,7 +97,9 @@ $$\begin{align*}A = \begin{bmatrix} 2 & 0 & 5 \\ 1 & 3 & -2 \end{bmatrix} \quad 
         de masa corporal de todas las personas, la cual se calcula
         mediante la formula
         
-$$\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}$$
+$$
+\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}
+$$
 
     -   Emplee la columna de <tt>IMC</tt> creada en el punto anterior, y
         con ésta, cree una nueva variable con los niveles,
@@ -148,7 +152,9 @@ $$\begin{align*}IMC = \frac{\text{Peso}(Kg)}{\text{Altura}(m)^2}\end{align*}$$
 -   Escriba un ciclo que imprima el número de términos necesarios para
     alcanzar un producto de la forma
     
-$$\begin{align*}1\times 2 \times 3 \times 4 \times \ldots\end{align*}$$
+$$
+\begin{align*}1\times 2 \times 3 \times 4 \times \ldots\end{align*}
+$$
 
     hasta alcanzar un número mayor a `$10$` millones
 -   Escriba un ciclo que simule un stock de precios que comience en

@@ -139,7 +139,9 @@ concentración.
 Este valor permite identificar si el conjunto de datos se distribuye
 uniformemente alrededor de las medidas de tendencia central.
 
-$$\begin{align*}\gamma_1 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
+$$
+\begin{align*}\gamma_1 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}
+$$
 
 El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
@@ -194,12 +196,15 @@ emplear los valores ya calculados en
 05</a> (ver Solucion manual o en R), se tendrá que el coeficiente de
 asimetría para los dos parciales estará dado por
 
-$$\begin{align*}
+$$
+\begin{align*}
   \gamma_{1,P_1} &= \frac{1}{10}\left[\frac{(2.7 - 2.75)^3 + (4.0 - 2.75)^3 + \ldots + (2.1 - 2.75)^3}{0.7121954^3}\right] \\
                  &= -0.3213918 \\
   \gamma_{1,P_4} &= \frac{1}{10}\left[\frac{(1.8 - 3.14)^3 + (4.7 - 3.14)^3 + \ldots + (2.0 - 3.14)^3}{1.273839^3}\right] \\
                  &= -0.536286
-\end{align*}$$ De lo anterior se observa que en ambos casos el
+\end{align*}
+$$
+ De lo anterior se observa que en ambos casos el
 coeficiente de asimetría es menor que $0$, lo cual significa que las
 notas obtenidas en los dos parciales posee una asimetría negativa, es
 decir, las notas obtenidas por los estudiantes se encuentran agrupadas
@@ -277,7 +282,9 @@ y $4$, se emplea la función <code>skewness()</code> de la librería
 Este valor permite observar el grado de concentración del conjunto de
 datos
 
-$$\begin{align*}\gamma_2 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-3 \quad \quad -2<\gamma_2<\infty\end{align*}$$
+$$
+\begin{align*}\gamma_2 = \frac{1}{n}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-3 \quad \quad -2<\gamma_2<\infty\end{align*}
+$$
 
 
 El signo de `$\gamma_2$` indica el nivel de concentración.
@@ -330,12 +337,14 @@ tanto al emplear los valores ya calculados en
 05</a> (ver Solucion manual o en R), se tendrá que el coeficiente de
 exceso de curtosis para los dos parciales estará dado por
 
-$$\begin{align*}
+$$
+\begin{align*}
   \gamma_{2,P_1} &= \frac{1}{10}\left[\frac{(2.7 - 2.75)^4 + (4.0 - 2.75)^4 + \ldots + (2.1 - 2.75)^4}{0.7121954^4}\right] - 3 \\
                  &= -0.2216579 \\
   \gamma_{2,P_4} &= \frac{1}{10}\left[\frac{(1.8 - 3.14)^4 + (4.7 - 3.14)^4 + \ldots + (2.0 - 3.14)^4}{1.273839^4}\right] - 3 \\
                  &= -1.078075
-\end{align*}$$
+\end{align*}
+$$
 
 A partir de los valores calculados, se observa que en ambos casos, los
 coeficientes de exceso de curtoris es menor que $0$, y por tanto, se
@@ -411,7 +420,9 @@ de `$n$` observaciones, entonces
 Mide si existe o no dependencia lineal entre las variables, e indica el
 grado de variación conjunta de dos variables respecto a sus medias
 
-$$\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}$$
+$$
+\begin{align*}S_{xy} = \frac{1}{n}\sum_{i=1}^n{(x_i-\bar{X})(y_i-\bar{Y})}\end{align*}
+$$
 
 
 El signo de `$S_{xy}$` indica el tipo de dependencia lineal que hay
@@ -457,10 +468,12 @@ $\bar{X}_{P1}$ y $\bar{X}_{P4}$ obtenido en la clase
 relación entre las notas obtenidas en el parcial $1$ y el parcial
 $4$, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   S_{P_1P_4} &= \frac{1}{10}\left[(2.7-2.75)(1.8-3.14) + \ldots + (2.1 - 2.75)(2.0 - 3.14)\right] \\ 
   S_{P_1P_4} &= 0.2655556
-\end{align*}$$
+\end{align*}
+$$
 
 Dado que del coeficiente de covarianza, solo es posible interpretar el
 signo o cuando el valor está muy cercano a $0$, se concluye entonces
@@ -511,7 +524,9 @@ Estadística I en los los parciales $1$ y $4$, se emplea la función
 Mide la fuerza de la dependencia lineal que hay entre variables, esta va
 entre -1 y 1
 
-$$\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}$$
+$$
+\begin{align*}\rho_{xy} = \frac{S_{xy}}{S_{x}S_{y}} \quad \quad -1<\rho_{xy}<1\end{align*}
+$$
 
 
 El valor de `$\rho_{xy}$` indica el tipo y fuerza de la dependencia
@@ -577,9 +592,12 @@ de la correlación entre los parciales $1$ y $4$, se emplea el
 coeficiente de covarianza y las desviaciones estándar calculadas
 anteriormente en esta misma clase, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \rho_{xy} = \frac{0.2655556}{(0.7121954)(1.273839)} = 0.2927127
-\end{align*}$$ Del resultado anterior se concluye, que hay existe una
+\end{align*}
+$$
+ Del resultado anterior se concluye, que hay existe una
 correlación débil entre las notas obtenidas por los estudiantes en el
 parcial $1$ y el parcial $4$, del curso de Estadística 1.
 </p>

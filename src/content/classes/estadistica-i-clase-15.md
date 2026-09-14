@@ -63,39 +63,54 @@ Si llamamos a $F$ al evento de obtener un número diferente a $4$ y a
 $E$ al evento de obtener un $4$, entonces observamos que al lanzar
 el dado, el número $4$ puede caer en el primer lanzamiento, o en el
 segundo, o en el tercero, etc, etc, y por tanto el espacio muestral
-estará dado por $$\begin{align*}
+estará dado por 
+$$
+\begin{align*}
 S:\{E, FE, FFE, FFFE, \ldots\}
-\end{align*}$$ y en consecuencia, podemos definir la <strong>variable
+\end{align*}
+$$
+ y en consecuencia, podemos definir la <strong>variable
 aleatoria discreta $X$ </strong> con los números $1$, $2$, $3$,
 $\ldots$, para el número de lanzamientos necesarios hasta obtener un
 $4$. Es decir, la variable aleatoria tendrá dominio en
-$$\begin{align*}
+$$
+\begin{align*}
 X=1, 2, 3, \ldots
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que es una proporción, entonces el espacio muestral puede ser
 cualquier valor que se encuentre entre $0$ y $1$, entonces tendremos
 a <strong>$Y$, una variable aleatoria continua </strong> con dominio
-definido en $$\begin{align*}
+definido en 
+$$
+\begin{align*}
 0\leq Y\leq 1
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 El ejercicio consta en elegir un artículo de una banda de ensamble y
 comprobar si tiene o no defectos. En consecuencia, se tendrá un espacio
 muestral con dos puntos situaciones, $D$ si el artículo está
 defectuoso, y $N$ si el artículo no está defectuoso, tal que
-$$\begin{align*}
+$$
+\begin{align*}
 S:\{D,N\}
-\end{align*}$$ Entonces, como solo pueden haber dos posibilidades,
+\end{align*}
+$$
+ Entonces, como solo pueden haber dos posibilidades,
 defectuoso y no defectuoso, podemos definir una variable aleatoria
-Bernoulli $Z$, la cual se definirá como $$\begin{align*}
+Bernoulli $Z$, la cual se definirá como 
+$$
+\begin{align*}
 Z = \begin{cases}
 0 & \text{ Si el artículo está defectuoso } \\
 1 & \text{ Si el artículo no está defectuoso }
 \end{cases}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -155,17 +170,24 @@ Solución
 <li>
 Sea $H$ la letra que representa que el miembro de la familia es niño y
 $M$ para denotar que el miembro de la familia es niña, entonces, se
-tendrá que el espacio muestral se define como $$\begin{align*}
+tendrá que el espacio muestral se define como 
+$$
+\begin{align*}
 S = \{HHH,\;HHM,\;HMH,\;MHH,\;HMM,\;MHM,\;MMH,\;MMM\}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Como el interés de la variable aleatoria $X$ radica en el número de
 niñas que hay en la familia, se tendrá entonces que a partir del espacio
 muestral $S$ se puede contar el número de éxitos que hay en cada
-situación $$\begin{align*}
+situación 
+$$
+\begin{align*}
 S = \{\underset{0}{HHH},\;\underset{1}{HHM},\;\underset{1}{HMH},\;\underset{1}{MHH},\;\underset{2}{HMM},\;\underset{2}{MHM},\;\underset{2}{MMH},\;\underset{3}{MMM}\}
-\end{align*}$$ Evidenciando, que podemos asignar los valores $0,$
+\end{align*}
+$$
+ Evidenciando, que podemos asignar los valores $0,$
 $1,$ $2$ y $3$ a la variable aleatoria $X$.
 </li>
 <li>
@@ -184,9 +206,12 @@ situación en donde no hay ninguna mujer, y en consecuencia, al aplicar
 la definición de
 <a href="../../EstadisticaI/EstIClase05.html#probabilidad" target="\_blank">frecuencia
 relativa</a>, se tendrá que la probabilidad de que $X=0$, es
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X=0) = \frac{1}{8}
-\end{align*}$$ Procedimiento similar se aplica para $X=1$, $X=2$ y
+\end{align*}
+$$
+ Procedimiento similar se aplica para $X=1$, $X=2$ y
 $X=3$, obteniendo como resultado la siguiente tabla de probabilidades
 <div style="font-size:120%!important">
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -280,9 +305,11 @@ se encuentra que dicha suma es igual a $1$.
 Dado que solo nos interesa la situación en la cual hay $2$ o más
 niñas, se tendrá que nos están preguntando por la probabilidad de que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X\geq2) = \sum_{x=2}^3p(x) = p(2) + p(3) = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
-\end{align*}$$
+\end{align*}
+$$
 
 y en consecuencia, se tendrá que la probabilidad de que en una familia
 de $3$ hijos, se tenga $2$ o más niñas, es del $50\%$.
@@ -297,7 +324,9 @@ La función de distribución acumulada `$(fda)$` denotada por `$F(x)$`,
 para una variable aleatoria discreta `$X$` con distribución de
 probabilidad `$p(x)$` es de la forma
 
-$$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
+$$
+\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}
+$$
 
 
 Para cualquier `$x$` dentro del dominio de `$X$`, `$F(x)$` será la suma
@@ -397,25 +426,30 @@ siguientes probabilidades $F(0) = \mathbb{P}(X\leq 0)$,
 $F(1) = \mathbb{P}(X\leq1)$, $F(2) = \mathbb{P}(X\leq2)$ y
 $F(3) = \mathbb{P}(X\leq3)$
 
-$$\begin{align*}
+$$
+\begin{align*}
 F(0) & = \mathbb{P}(X\leq0) = p(0) = \frac{1}{8} \\
 F(1) & = \mathbb{P}(X\leq1) = p(0) + p(1) = \frac{1}{8} + \frac{3}{8} =  \frac{4}{8}\\
 F(2) & = \mathbb{P}(X\leq2) = \sum_{x=0}^{2} p(x) = \frac{1}{8} + \frac{3}{8} + \frac{3}{8} =  \frac{7}{8} \\
 F(3) & = \mathbb{P}(X\leq3) = \sum_{x=0}^{3} p(x) = \frac{1}{8} + \frac{3}{8} + \frac{3}{8} + \frac{1}{8} = \frac{8}{8}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, mediante el empleo de estas probabilidades, podemos construir
 la función de distribución acumulada para la variable aleatoria $X$,
 tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 F(x) = \begin{cases} 0 & x<0 \\
                      \frac{1}{8}  & 0\leq x<1 \\
                      \frac{4}{8}  & 1\leq x<2 \\
                      \frac{7}{8}  & 2\leq x<3 \\
                      \frac{8}{8}  & x\geq 3
        \end{cases}
-\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
+\end{align*}
+$$
+ En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
 $0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
 valores mayores o iguales a $1$ pero menores que $2$ está definido
@@ -427,19 +461,24 @@ o iguales a $3$ está definido $F(3)=p(0)+p(1)+p(2)+p(3)$.
 
 Dado que el interés es calcular la probabilidad de que el número de
 niñas sea mayor a $1$ pero no más de $2$, entonces se tendrá que la
-probabilidad de interés es la siguiente $$\begin{align*}
+probabilidad de interés es la siguiente 
+$$
+\begin{align*}
 \mathbb{P}(1 < X \leq 2)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, siguiendo las reglas anteriormente expuestas, dicha
 probabilidad puede calcularse mediante
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \geq 2) & = 1 - F(2-1) \\
                      & = 1 - F(1) \\
                      & = 1 - \frac{4}{8}
                      & = \frac{4}{8}
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que la probabilidad de que en una familia de
 $3$ hijos, tengan $2$ o más niñas es de $50\%$.
@@ -474,9 +513,13 @@ Ejercicio
 <p>
 Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
-probabilidad dada por $$\begin{align*}
+probabilidad dada por 
+$$
+\begin{align*}
 f(x)=x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}
+$$
+ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -501,18 +544,23 @@ Para verificar si la función está bien definida, es necesario en primer
 lugar observar si para todo $X$ en el dominio definido, la función de
 probabilidad de densidad de probabilidad es mayor o igual a $0$. Para
 ello supongamos $3$ números diferentes, $0.1$ $0.4$ y $0.7$, los
-cuales vamos a evaluar en la función de densidad. $$\begin{align*}
+cuales vamos a evaluar en la función de densidad. 
+$$
+\begin{align*}
 f(0.1)=(0.1)^2(1-0.1)^2=0.0081 \\
 f(0.4)=(0.4)^2(1-0.4)^2=0.0576 \\
 f(0.7)=(0.7)^2(1-0.7)^2=0.0441
-\end{align*}$$ La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
+\end{align*}
+$$
+ La idea entonces, es apreciar que para todo $0\lt x\lt 1$,
 $f(x)\geq0$.<br>
 
 En segundo lugar, para observar si la función de densidad de
 probabilidad está bien definida, es necesario observar si al integrar
 dicha función su resultado es igual a $1$, es decir,
 
-$$\begin{align*}
+$$
+\begin{align*}
 \int_{-\infty}^\infty f(x)dx & = \int_{-\infty}^0 0\; dx + \int_{0}^1 x^2(1-x)^2\; dx + \int_{1}^\infty 0\; dx \\
  & = \int_{0}^1 x^2(1-x)^2\; dx \\
  & = \int_{0}^1 x^2(1^2-2x+x^2)\; dx \\
@@ -520,42 +568,60 @@ $$\begin{align*}
  & = \left(\frac{x^3}{3} - \frac{2x^4}{4} + \frac{x^5}{5} \right)\Bigg|^1_0 \\
  & = \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) - \left(\frac{0^3}{3} - \frac{0^4}{2} + \frac{0^5}{5} \right) \\
  & = \frac{1}{30}
-\end{align*}$$ Entonces, como la integral no da exactamente $1$, se
+\end{align*}
+$$
+ Entonces, como la integral no da exactamente $1$, se
 tendrá que multiplicar dicha función de densidad por una constante $k$
 que haga que su resultado sea $1$, es decir, si multiplicamos la
 función por $k=30$, se tendrá como resultado que la integral será
-igual a $1$, ya que, $$\begin{align*}
+igual a $1$, ya que, 
+$$
+\begin{align*}
 30\int_{-\infty}^\infty f(x)dx & = 30 \int_{0}^1 x^2(1-x)^2\; dx \\
  & = 30 \left(\frac{1^3}{3} - \frac{1^4}{2} + \frac{1^5}{5} \right) \\
  & = \frac{30}{30} \\
  & = 1
-\end{align*}$$ Y en consecuencia, se tendrá que la nueva función de
-densidad de probabilidad está bien definida. $$\begin{align*}
+\end{align*}
+$$
+ Y en consecuencia, se tendrá que la nueva función de
+densidad de probabilidad está bien definida. 
+$$
+\begin{align*}
 f(x) = 30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
 
 Dado que la función de densidad está en horas, será necesario pasar los
 minutos a horas, en donde, al aplicar una regla de tres para cada límite
-de la integral que nos piden se tendrá que $$\begin{align*}
+de la integral que nos piden se tendrá que 
+$$
+\begin{align*}
 60_\text{min}  &- 1_\text{hora} & \quad \quad & 60_\text{min} - 1_\text{hora}\\30_\text{min} &- a & \quad \quad & 50_\text{min} - b
-\end{align*}$$ Entonces, al realizar la operación encontramos que los
+\end{align*}
+$$
+ Entonces, al realizar la operación encontramos que los
 límites de la integral serán
-$$\begin{align*}a&=\frac{30_\text{min}\times1_{\text{hora}}}{60
+$$
+\begin{align*}a&=\frac{30_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.5_\text{horas} \\
 b&=\frac{50_\text{min}\times1_{\text{hora}}}{60
 _\text{min}}=0.8333_\text{horas}
-\end{align*}$$ Ahora, al realizar la integral tendremos que
+\end{align*}
+$$
+ Ahora, al realizar la integral tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333) & = \int_{0.5}^{0.8333} 30 x^2(1-x)^2\; dx \\
  & = 30\int_{0.5}^{0.8333} x^2-2x^3+x^4\; dx \\
  & = 30\left(\frac{x^3}{3} - \frac{2x^4}{4} + \frac{x^5}{5} \right)\Bigg|^{0.8333}_{0.5} \\
  & = 30 \left[\left(\frac{0.8333^3}{3} - \frac{0.8333^4}{2} + \frac{0.8333^5}{5} \right) - \left(\frac{0.5^3}{3} - \frac{0.5^4}{2} + \frac{0.5^5}{5} \right)\right] \\
  & = 0.4645
-\end{align*}$$
+\end{align*}
+$$
 
 En consecuencia, se tendrá una probabilidad del $46.45\%$ de que el
 tiempo que tarda la serie financiera en cumplir un ciclo estará entre
@@ -571,7 +637,9 @@ La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
 una variable aleatoria continua `$X$` con distribución de densidad de
 probabilidad `$f(x)$` es de la forma
 
-$$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\int_{-\infty}^x f(t)dt \quad \quad -\infty<x<\infty\end{align*}$$
+$$
+\begin{align*}F(x)=\mathbb{P}(X\leq x)=\int_{-\infty}^x f(t)dt \quad \quad -\infty<x<\infty\end{align*}
+$$
 
 para cualquier `$x$`, `$F(x)$` es el área bajo la curva de densidad a la
 izquierda de valor que tome `$x$`.
@@ -602,9 +670,13 @@ Ejercicio
 <p>
 Suponga que el tiempo que tarda una serie financiera en cumplir un
 ciclo, es una variable aleatoria continua con función de densidad de
-probabilidad dada por $$\begin{align*}
+probabilidad dada por 
+$$
+\begin{align*}
 f(x)=30x^2(1-x)^2 \quad \quad 0<x<1
-\end{align*}$$ siendo $X$ una variable aleatoria que representa el
+\end{align*}
+$$
+ siendo $X$ una variable aleatoria que representa el
 tiempo en horas que tarda la serie financiera en cumplir un ciclo. A
 partir de dicha función
 </p>
@@ -625,32 +697,40 @@ Solución
 <li>
 Para encontrar la función de distribución acumulada a partir de una
 función de densidad de probabilidad, es necesario realizar la integral
-de la función de densidad, de la forma $$\begin{align*}
+de la función de densidad, de la forma 
+$$
+\begin{align*}
 F(x)& = \int_{-\infty}^x f(t)dt \\
     & = \int_{-\infty}^0 0dt + \int_{0}^x 30t^2(1-t)^2 dt \\
     & = 30\int_{0}^{x} t^2-2t^3+t^4\; dt \\
     & = 30\left(\frac{t^3}{3} - \frac{2t^4}{4} + \frac{t^5}{5} \right)\Bigg|^{x}_{0} \\
     & = 30\left[\left(\frac{x^3}{3} - \frac{x^4}{2} + \frac{x^5}{5} \right) - \left(\frac{0^3}{3} - \frac{0^4}{2} + \frac{0^5}{5} \right)\right]  \\
 F(x)& = 30\left(\frac{x^3}{3} - \frac{x^4}{2} + \frac{x^5}{5} \right)
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 Dado que el interés es calcular la probabilidad de que el tiempo que
 tarda la serie financiera en cumplir un ciclo, se encuentre entre $30$
 minutos y $50$ minutos, entonces se tendrá que la probabilidad de
-interés, en horas, es la siguiente $$\begin{align*}
+interés, en horas, es la siguiente 
+$$
+\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, siguiendo las reglas anteriormente expuestas, dicha
 probabilidad puede calcularse mediante
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(0.5 < X < 0.8333) & = F(0.8333) - F(0.5) \\
                          & = 30\left(\frac{0.8333^3}{3} - \frac{0.8333^4}{2} + \frac{0.8333^5}{5} \right) - 30\left(\frac{0.5^3}{3} - \frac{0.5^4}{2} + \frac{0.5^5}{5} \right) \\
                          & = 0.4645
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que la probabilidad de que el tiempo que tarde la
 serie financiera en cumplir un ciclo estará entre $30$ minutos y

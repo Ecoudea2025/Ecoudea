@@ -14,7 +14,9 @@ bibliography: "../../referencias.bib"
     proceso Bernoulli con parámetro desconocido `$p$` y función de
     distribución dada por
     
-$$\begin{align*}f(x) = p^x(1-p)^{1-x} \text{ para } x=0,1; \quad 0\leq p \leq 1\end{align*}$$
+$$
+\begin{align*}f(x) = p^x(1-p)^{1-x} \text{ para } x=0,1; \quad 0\leq p \leq 1\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -49,7 +51,9 @@ $$\begin{align*}f(x) = p^x(1-p)^{1-x} \text{ para } x=0,1; \quad 0\leq p \leq 1\
     distribución Binomial con parámetros desconocido `$p$` y parámetro
     `$k$` conocido o desconocido, con función de distribución dada por
     
-$$\begin{align*}f(x) = \left(\begin{array}{c}k\\ x\end{array}\right)p^x(1-p)^{k-x} \text{ para } x=0,1,\ldots, k; \quad 0\leq p \leq 1\end{align*}$$
+$$
+\begin{align*}f(x) = \left(\begin{array}{c}k\\ x\end{array}\right)p^x(1-p)^{k-x} \text{ para } x=0,1,\ldots, k; \quad 0\leq p \leq 1\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -92,7 +96,9 @@ $$\begin{align*}f(x) = \left(\begin{array}{c}k\\ x\end{array}\right)p^x(1-p)^{k-
     distribución Geométrica con parámetro desconocido `$p$` y función de
     distribución dada por
     
-$$\begin{align*}f(x) = p(1-p)^{x-1} \text{ para } x=1,2,3,\ldots; \quad 0\leq p \leq 1\end{align*}$$
+$$
+\begin{align*}f(x) = p(1-p)^{x-1} \text{ para } x=1,2,3,\ldots; \quad 0\leq p \leq 1\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -127,7 +133,9 @@ $$\begin{align*}f(x) = p(1-p)^{x-1} \text{ para } x=1,2,3,\ldots; \quad 0\leq p 
     distribución Poisson con parámetro desconocido `$\lambda$` y función
     de distribución dada por
     
-$$\begin{align*}f(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ para } x=0,1,2,\ldots; \quad \lambda > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ para } x=0,1,2,\ldots; \quad \lambda > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -162,7 +170,9 @@ $$\begin{align*}f(x) = \frac{e^{-\lambda}\lambda^x}{x!} \text{ para } x=0,1,2,\l
     distribución Exponencial con parámetro desconocido `$\beta$` y
     función de distribución dada por
     
-$$\begin{align*}f(x) = \frac{1}{\beta}e^{-\frac{x}{\beta}} \text{ para } x>0; \quad \beta > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{1}{\beta}e^{-\frac{x}{\beta}} \text{ para } x>0; \quad \beta > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -197,7 +207,9 @@ $$\begin{align*}f(x) = \frac{1}{\beta}e^{-\frac{x}{\beta}} \text{ para } x>0; \q
     distribución Normal con parámetros conocidos o desconocidos `$\mu$`
     y `$\sigma^2$`, con función de distribución dada por
     
-$$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} \text{ para } -\infty<\mu<\infty; \quad -\infty<x<\infty; \quad \sigma^2 > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} \text{ para } -\infty<\mu<\infty; \quad -\infty<x<\infty; \quad \sigma^2 > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -242,7 +254,9 @@ $$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sig
     distribución Lognormal con parámetros conocidos o desconocidos
     `$\mu$` y `$\sigma^2$`, con función de distribución dada por
     
-$$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2} x}e^{-\frac{(\ln(x) - \mu)^2}{2\sigma^2}} \text{ para } x>0; \quad -\infty<\mu<\infty; \quad \sigma^2 > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2} x}e^{-\frac{(\ln(x) - \mu)^2}{2\sigma^2}} \text{ para } x>0; \quad -\infty<\mu<\infty; \quad \sigma^2 > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -278,7 +292,9 @@ $$\begin{align*}f(x) = \frac{1}{\sqrt{2\pi\sigma^2} x}e^{-\frac{(\ln(x) - \mu)^2
     distribución Gamma con parámetros conocidos o desconocidos
     `$\alpha$` y `$\beta$`, con función de distribución dada por
     
-$$\begin{align*}f(x) = \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}} \text{ para } x>0; \quad \alpha > 0; \quad \beta > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac{x}{\beta}} \text{ para } x>0; \quad \alpha > 0; \quad \beta > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -321,7 +337,9 @@ $$\begin{align*}f(x) = \frac{1}{\Gamma(\alpha)\beta^\alpha}x^{\alpha-1}e^{-\frac
     distribución Rayleigh con parámetro desconocido `$\theta$` y función
     de distribución dada por
     
-$$\begin{align*}f(x) = \frac{x}{\theta^2}e^{-\frac{x^2}{2\theta^2}} \text{ para } x>0; \quad \theta > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{x}{\theta^2}e^{-\frac{x^2}{2\theta^2}} \text{ para } x>0; \quad \theta > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -367,7 +385,9 @@ $$\begin{align*}f(x) = \frac{x}{\theta^2}e^{-\frac{x^2}{2\theta^2}} \text{ para 
     `$\alpha$`, parámetro desconocido `$\theta$` y función de
     distribución dada por
     
-$$\begin{align*}f(x) = \frac{1}{\theta}\alpha x^{\alpha-1}e^{-\frac{x^\alpha}{\theta}} \text{ para } x>0; \quad \theta > 0\end{align*}$$
+$$
+\begin{align*}f(x) = \frac{1}{\theta}\alpha x^{\alpha-1}e^{-\frac{x^\alpha}{\theta}} \text{ para } x>0; \quad \theta > 0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -401,7 +421,9 @@ $$\begin{align*}f(x) = \frac{1}{\theta}\alpha x^{\alpha-1}e^{-\frac{x^\alpha}{\t
     variable aleatoria continua Exponencial tal que `$X\sim Exp(\beta)$`
     y suponga los siguientes estimadores.
     
-$$\begin{align*}\hat{\beta}_1&=X_1 \\     \hat{\beta}_2&=\frac{X_1+X_2+X_5}{3} \\     \hat{\beta}_3&=\frac{X_1+2X_2-3X_4+4X_7}{4} \\      \hat{\beta}_4&=\bar{X}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1&=X_1 \\     \hat{\beta}_2&=\frac{X_1+X_2+X_5}{3} \\     \hat{\beta}_3&=\frac{X_1+2X_2-3X_4+4X_7}{4} \\      \hat{\beta}_4&=\bar{X}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -420,7 +442,9 @@ $$\begin{align*}\hat{\beta}_1&=X_1 \\     \hat{\beta}_2&=\frac{X_1+X_2+X_5}{3} \
     `$X\sim Unif(\theta, \theta + 1)$` y suponga los siguientes
     estimadores
     
-$$\begin{align*}\hat{\theta}_1&=\bar{X}-\frac{1}{2} \\     \hat{\theta}_2&=X_{(n)}-\frac{n}{n+1}\end{align*}$$
+$$
+\begin{align*}\hat{\theta}_1&=\bar{X}-\frac{1}{2} \\     \hat{\theta}_2&=X_{(n)}-\frac{n}{n+1}\end{align*}
+$$
   
     <ol type="a">
     <li>
@@ -437,7 +461,9 @@ $$\begin{align*}\hat{\theta}_1&=\bar{X}-\frac{1}{2} \\     \hat{\theta}_2&=X_{(n
     una variable aleatoria discreta Poisson tal que
     `$X\sim Pois(\lambda)$` y suponga los siguientes estimadores
     
-$$\begin{align*}\hat{\lambda}_1&=\bar{X} \\     \hat{\lambda}_2&=\frac{X_1+X_5+2X_7+X_9}{3} \\     \hat{\lambda}_3&=\frac{1}{n} \sum_{i=1}^{n-3}X_i\\     \hat{\lambda}_4&= 2X_{21} - X_{13}\end{align*}$$
+$$
+\begin{align*}\hat{\lambda}_1&=\bar{X} \\     \hat{\lambda}_2&=\frac{X_1+X_5+2X_7+X_9}{3} \\     \hat{\lambda}_3&=\frac{1}{n} \sum_{i=1}^{n-3}X_i\\     \hat{\lambda}_4&= 2X_{21} - X_{13}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -454,7 +480,9 @@ $$\begin{align*}\hat{\lambda}_1&=\bar{X} \\     \hat{\lambda}_2&=\frac{X_1+X_5+2
     una variable aleatoria continua Normal tal que
     `$X\sim N(\mu, \sigma^2)$`, muestre si  
     
-$$\begin{align*}S^2_n=\frac{1}{n}\sum_{i=1}^{n}(X_i-\mu)^2\end{align*}$$
+$$
+\begin{align*}S^2_n=\frac{1}{n}\sum_{i=1}^{n}(X_i-\mu)^2\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -472,7 +500,9 @@ $$\begin{align*}S^2_n=\frac{1}{n}\sum_{i=1}^{n}(X_i-\mu)^2\end{align*}$$
     una variable aleatoria continua Normal tal que
     `$X\sim N(0, \sigma^2)$`, muestre si
     
-$$\begin{align*}\hat{\sigma}^2 = \sum_{i=1}^{n}\frac{X^2_i}{n}\end{align*}$$
+$$
+\begin{align*}\hat{\sigma}^2 = \sum_{i=1}^{n}\frac{X^2_i}{n}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -490,7 +520,9 @@ $$\begin{align*}\hat{\sigma}^2 = \sum_{i=1}^{n}\frac{X^2_i}{n}\end{align*}$$
     una variable aleatoria continua Normal tal que
     `$X\sim N(\mu, \sigma^2)$`, muestre si  
     
-$$\begin{align*}S^2_{n-2}=\frac{1}{n-2}\sum_{i=1}^{n}(X_i-\bar{X})^2\end{align*}$$
+$$
+\begin{align*}S^2_{n-2}=\frac{1}{n-2}\sum_{i=1}^{n}(X_i-\bar{X})^2\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -522,7 +554,9 @@ $$\begin{align*}S^2_{n-2}=\frac{1}{n-2}\sum_{i=1}^{n}(X_i-\bar{X})^2\end{align*}
     variable aleatoria discreta Binomial tal que `$X\sim Bin(n,p)$` y
     suponga los estimadores
     
-$$\begin{align*}\hat{p}_1&=\frac{X}{n}; \\       \hat{p}_2&=\frac{X+\sqrt{n/2}}{n+\sqrt{n}}; \\   \hat{p}_3&=\frac{X+1}{n+2}\end{align*}$$
+$$
+\begin{align*}\hat{p}_1&=\frac{X}{n}; \\       \hat{p}_2&=\frac{X+\sqrt{n/2}}{n+\sqrt{n}}; \\   \hat{p}_3&=\frac{X+1}{n+2}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -542,7 +576,9 @@ $$\begin{align*}\hat{p}_1&=\frac{X}{n}; \\       \hat{p}_2&=\frac{X+\sqrt{n/2}}{
     una población Normal con media `$\mu$` y varianza `$\sigma^2$`.
     Considere los siguientes tres estimadores puntuales de `$\mu$`:
     
-$$\begin{align*}\bar{X}^{(1)}&=\frac{1}{3}X_1+\frac{1}{3}X_2 \\     \bar{X}^{(2)}&=\frac{1}{4}X_1+\frac{1}{4}X_2 \\     \bar{X}^{(3)}&=\frac{1}{2}X_1+\frac{1}{2}X_2\end{align*}$$
+$$
+\begin{align*}\bar{X}^{(1)}&=\frac{1}{3}X_1+\frac{1}{3}X_2 \\     \bar{X}^{(2)}&=\frac{1}{4}X_1+\frac{1}{4}X_2 \\     \bar{X}^{(3)}&=\frac{1}{2}X_1+\frac{1}{2}X_2\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -559,7 +595,9 @@ $$\begin{align*}\bar{X}^{(1)}&=\frac{1}{3}X_1+\frac{1}{3}X_2 \\     \bar{X}^{(2)
     `$\sigma^2$`. Considere los siguientes dos estimadores puntuales de
     `$\mu$`:
     
-$$\begin{align*}\vec{X}^{(1)}&=\frac{X_1+2X_2+3X_3}{6}\\     \vec{X}^{(2)}&=\frac{X_1+4X_2+X_3}{6}\end{align*}$$
+$$
+\begin{align*}\vec{X}^{(1)}&=\frac{X_1+2X_2+3X_3}{6}\\     \vec{X}^{(2)}&=\frac{X_1+4X_2+X_3}{6}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -580,19 +618,25 @@ $$\begin{align*}\vec{X}^{(1)}&=\frac{X_1+2X_2+3X_3}{6}\\     \vec{X}^{(2)}&=\fra
     desconocido. Demuestre si los siguientes estimadores son o no
     consistentes para la proporción poblacional `$p$`
     
-$$\begin{align*}\breve{p}_{1}&=\frac{2X_1-X_2}{n+2}\\     \breve{p}_{2}&=\frac{4X_1-3X_2+2X_3}{n}\\     \breve{p}_{3}&=\frac{X_1-2X_2+5X_3}{n^2+5}\\     \breve{p}_{4}&=\frac{X_1-2X_2+5X_3+3X_4}{n^3-2n^2+5} \\\end{align*}$$
+$$
+\begin{align*}\breve{p}_{1}&=\frac{2X_1-X_2}{n+2}\\     \breve{p}_{2}&=\frac{4X_1-3X_2+2X_3}{n}\\     \breve{p}_{3}&=\frac{X_1-2X_2+5X_3}{n^2+5}\\     \breve{p}_{4}&=\frac{X_1-2X_2+5X_3+3X_4}{n^3-2n^2+5} \\\end{align*}
+$$
 
 22. Sea `$X_1, X_2, X_3$` y `$X_4$` una muestra aleatoria de cuatro
     observaciones de una población `$N(\mu, \sigma^2)$`. Demuestre si
     los siguientes estimadores son o no consistentes para el parámetro
     `$\mu$`.
     
-$$\begin{align*}\breve{\mu}_{1}&=2x_1+3x_2-6x_3 \\     \breve{\mu}_{2}&=\frac{4x_1-3x_2+2x_3}{n} \\     \breve{\mu}_{3}&=\frac{x_1-2x_2+5x_3}{n+5}\end{align*}$$
+$$
+\begin{align*}\breve{\mu}_{1}&=2x_1+3x_2-6x_3 \\     \breve{\mu}_{2}&=\frac{4x_1-3x_2+2x_3}{n} \\     \breve{\mu}_{3}&=\frac{x_1-2x_2+5x_3}{n+5}\end{align*}
+$$
 
 23. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de un
     distribución con función de densidad de probabilidad dada por
     
-$$\begin{align*}f(x,\theta)=\frac{3\theta^3}{x^4} \quad para \quad \theta<x<\infty; \quad \theta>0\end{align*}$$
+$$
+\begin{align*}f(x,\theta)=\frac{3\theta^3}{x^4} \quad para \quad \theta<x<\infty; \quad \theta>0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -614,7 +658,9 @@ $$\begin{align*}f(x,\theta)=\frac{3\theta^3}{x^4} \quad para \quad \theta<x<\inf
 24. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de un
     distribución con función de distribución acumulada dada por
     
-$$\begin{align*}F(x,\theta)=-e^{-\frac{x}{4\theta}} \quad para \quad x>0\end{align*}$$
+$$
+\begin{align*}F(x,\theta)=-e^{-\frac{x}{4\theta}} \quad para \quad x>0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -636,7 +682,9 @@ $$\begin{align*}F(x,\theta)=-e^{-\frac{x}{4\theta}} \quad para \quad x>0\end{ali
 25. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de un
     distribución Uniforme con función de distribución acumulada dada por
     
-$$\begin{align*}F(x,\theta)=\frac{x}{\theta} \quad para \quad 0<x<\theta; \quad \theta>0\end{align*}$$
+$$
+\begin{align*}F(x,\theta)=\frac{x}{\theta} \quad para \quad 0<x<\theta; \quad \theta>0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -659,7 +707,9 @@ $$\begin{align*}F(x,\theta)=\frac{x}{\theta} \quad para \quad 0<x<\theta; \quad 
     distribución Pareto tal que `$X \sim Pareto(\alpha, \beta)$`, con
     función de densidad de probabilidad dada por
     
-$$\begin{align*}f(x)=\alpha\beta^{\alpha}x^{-(\alpha+1)} \quad para \quad x>\beta; \quad \alpha>0; \quad \beta>0\end{align*}$$
+$$
+\begin{align*}f(x)=\alpha\beta^{\alpha}x^{-(\alpha+1)} \quad para \quad x>\beta; \quad \alpha>0; \quad \beta>0\end{align*}
+$$
 
     Demuestre que si `$\beta$` es conocida, entonces se tendrá que
     `$\prod_{i=1}^{n} X_i$` es un estadístico suficiente para
@@ -668,7 +718,9 @@ $$\begin{align*}f(x)=\alpha\beta^{\alpha}x^{-(\alpha+1)} \quad para \quad x>\bet
 27. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de una función de
     densidad de probabilidad dada por
     
-$$\begin{align*}f(x;\theta)= e^{-(x-\theta)}; \quad x>\theta\end{align*}$$
+$$
+\begin{align*}f(x;\theta)= e^{-(x-\theta)}; \quad x>\theta\end{align*}
+$$
 
     Demuestre que `$X_{(1)} = min(X_1, X_2, \ldots, X_n)$` es un
     estadístico suficiente para `$\theta$`.
@@ -676,7 +728,9 @@ $$\begin{align*}f(x;\theta)= e^{-(x-\theta)}; \quad x>\theta\end{align*}$$
 28. Sea `$X_1, X_2, \dots, X_n$` una muestra aleatoria de una función de
     densidad de probabilidad dada por
     
-$$\begin{align*}f(x;\theta)= \frac{3x^2}{\theta^3}; \quad 0\leq x\leq \theta;\quad \theta>0\end{align*}$$
+$$
+\begin{align*}f(x;\theta)= \frac{3x^2}{\theta^3}; \quad 0\leq x\leq \theta;\quad \theta>0\end{align*}
+$$
 
     Demuestre que `$X_{(n)} = max(X_1, X_2, \ldots, X_n)$` es un
     estadístico suficiente para `$\theta$`.
@@ -686,7 +740,9 @@ $$\begin{align*}f(x;\theta)= \frac{3x^2}{\theta^3}; \quad 0\leq x\leq \theta;\qu
     `$X\sim Wei(\alpha, \beta)$`, con función de densidad de
     probabilidad dada por
     
-$$\begin{align*}f(x)= \frac{1}{\alpha}\beta x^{\beta-1}e^{-\frac{x^\beta}{\alpha}}; \quad x\geq 0;\quad \alpha>0; \quad \beta>0\end{align*}$$
+$$
+\begin{align*}f(x)= \frac{1}{\alpha}\beta x^{\beta-1}e^{-\frac{x^\beta}{\alpha}}; \quad x\geq 0;\quad \alpha>0; \quad \beta>0\end{align*}
+$$
 
     Demuestre que, para un valor `$\beta$` conocido,
     `$\sum_{i=1}^{n}X_i^\beta$` es suficiente para `$\alpha$`.
@@ -696,7 +752,9 @@ $$\begin{align*}f(x)= \frac{1}{\alpha}\beta x^{\beta-1}e^{-\frac{x^\beta}{\alpha
     parámetros `$\alpha$` y `$\theta$`, con función de densidad de
     probabilidad dada por
     
-$$\begin{align*}f(x)= \frac{\alpha x^{\alpha-1}}{\theta^\alpha}; \quad 0\leq x\leq\theta; \quad \alpha >0; \quad \theta>0\end{align*}$$
+$$
+\begin{align*}f(x)= \frac{\alpha x^{\alpha-1}}{\theta^\alpha}; \quad 0\leq x\leq\theta; \quad \alpha >0; \quad \theta>0\end{align*}
+$$
 
     Si `$\theta=3$` demuestre que
     `$\mathbb{E}(X)=\theta\alpha/(\alpha+1)$` y encuentre el estimador

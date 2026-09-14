@@ -14,7 +14,9 @@ Es la probabilidad de que ocurra un evento `$A$`, cuando se sabe que ya
 ocurrió un evento `$B$`, se denota por `$\mathbb P(A|B)$` y se define
 como
 
-$$\begin{align*}\mathbb P(A|B)=\frac{\mathbb P(A\cap B)}{\mathbb P(B)}; \text{ con } \mathbb P(B)>0\end{align*}$$
+$$
+\begin{align*}\mathbb P(A|B)=\frac{\mathbb P(A\cap B)}{\mathbb P(B)}; \text{ con } \mathbb P(B)>0\end{align*}
+$$
 
 
 <button id="Show1" class="btn btn-secondary">
@@ -306,9 +308,12 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </tr>
 </tbody>
 </table>
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(F)=0.120+0.085+0.165=0.37
-\end{align*}$$ Por tanto, se tendrá un $37\%$ de probabilidad de que
+\end{align*}
+$$
+ Por tanto, se tendrá un $37\%$ de probabilidad de que
 el estudiante seleccionado prefiera el Fútbol sobre los demás deportes.
 </li>
 <li>
@@ -398,9 +403,12 @@ Economía
 </tbody>
 </table>
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(C)=0.085+0.1025+0.0625+0.0250=0.275
-\end{align*}$$ Por tanto, se tendrá un $27.5\%$ de probabilidad de que
+\end{align*}
+$$
+ Por tanto, se tendrá un $27.5\%$ de probabilidad de que
 el estudiante seleccionado sea de Contaduría.
 
 </li>
@@ -486,9 +494,13 @@ style="border-radius: 4px; padding-right: 4px; padding-left: 4px; background-col
 </tbody>
 </table>
 
-De donde obtendremos que $$\begin{align*}
+De donde obtendremos que 
+$$
+\begin{align*}
 \mathbb{P}(E \cap V)=0.10
-\end{align*}$$ lo cual indica que la probabilidad de que un estudiante
+\end{align*}
+$$
+ lo cual indica que la probabilidad de que un estudiante
 sea de Economía y prefiera el Tenis sobre los otros deportes es del
 $10\%$.
 
@@ -500,9 +512,12 @@ estudios en Contaduría, lo cual es un condicional a la hora de realizar
 el cálculo de la probabilidad de interés. Entonces, como nos piden
 encontrar la probabilidad de que prefiera Voleibol, <strong>dado
 que</strong> se sabe que estudia Contaduría, entonces tendremos que
-realizar el cálculo de $$\begin{align*}
+realizar el cálculo de 
+$$
+\begin{align*}
 \mathbb{P}(V|C) = \frac{\mathbb{P}(V \cap C)}{\mathbb{P}(C)}
-\end{align*}$$
+\end{align*}
+$$
 
 Tendremos entonces que la $\mathbb{P}(C) = 0.275$ obtenida a partir de
 la suma de las probabilidades individuales en la fila de Contaduría,
@@ -512,9 +527,11 @@ Contaduría. <br><br>
 
 Y por tanto se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(V|C) = \frac{0.0625}{0.275} = 0.2273
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual indica que la probabilidad de que se seleccione un estudiante
 que prefiera Voleibol, dado que se sabe que estudia Contaduría, es del
@@ -528,9 +545,12 @@ probabilidad de que un estudiante seleccionado estudie Economía,
 <strong>dado que</strong> se sabe que prefiere el Baloncesto sobre los
 otros deportes, es decir,
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(E|B) = \frac{\mathbb{P}(E \cap B)}{\mathbb{P}(B)}
-\end{align*}$$ De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
+\end{align*}
+$$
+ De esto tendremos que $\mathbb{P}(B) = 0.2975$ obtenida
 a partir de la suma de las probabilidades individuales en la columna de
 Baloncesto, mientras que la $\mathbb{P}(E \cap B) = 0.1275$, obtenida
 a partir de la casilla en donde se intersectan la fila de Economía y la
@@ -538,9 +558,11 @@ columna de Baloncesto. <br><br>
 
 Lo cual dará como resultado que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(E|B) = \frac{0.1275}{0.2975} = 0.4286
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual indica que la probabilidad de que se seleccione un estudiante
 que curse Economía, dado que se sabe que prefiere el Baloncesto sobre
@@ -554,13 +576,17 @@ otros deportes, es del $42.86\%$.
 Si un experimento estadístico pueden ocurrir dos eventos `$A$` y `$B$`,
 entonces
 
-$$\begin{align*}\mathbb P(A\cap B)=\mathbb P(B)\mathbb P(A|B)=\mathbb P(A)\mathbb P(B|A); \text{ para } \mathbb P(B)>0 \text{ y } \mathbb P(A)>0\end{align*}$$
+$$
+\begin{align*}\mathbb P(A\cap B)=\mathbb P(B)\mathbb P(A|B)=\mathbb P(A)\mathbb P(B|A); \text{ para } \mathbb P(B)>0 \text{ y } \mathbb P(A)>0\end{align*}
+$$
 
 
 En general, si pueden ocurrir los eventos `$A_1, A_2, \ldots, A_n$`,
 entonces
 
-$$\begin{align*}\mathbb P\left(\underset{i=1}{\stackrel{n}{\cap}} A_i\right)=\mathbb P(A_1) \mathbb P(A_2|A_1)\mathbb P(A_3|A_1\cap A_2)\ldots \mathbb P\left(A_n \Big|\underset{i=1}{\stackrel{n-1}{\cap}} A_i\right)\end{align*}$$
+$$
+\begin{align*}\mathbb P\left(\underset{i=1}{\stackrel{n}{\cap}} A_i\right)=\mathbb P(A_1) \mathbb P(A_2|A_1)\mathbb P(A_3|A_1\cap A_2)\ldots \mathbb P\left(A_n \Big|\underset{i=1}{\stackrel{n-1}{\cap}} A_i\right)\end{align*}
+$$
 
 
 <button id="Show2" class="btn btn-secondary">
@@ -612,23 +638,30 @@ Entonces, si observamos el diagrama de árbol, podemos apreciar que la
 probabilidad de que se saque una bola roja de la primera bolsa (primer
 paso) es de
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(R_1) = \frac{6}{10}
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que la probabilidad de sacar una bola roja de la segunda bolsa
 (segundo paso) es de
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(R_2|R_1) = \frac{8}{10}
-\end{align*}$$ Y por tanto, al aplicar la regla multiplicativa, tenemos
+\end{align*}
+$$
+ Y por tanto, al aplicar la regla multiplicativa, tenemos
 que la probabilidad de sacar una bola roja de la primera bolsa,
 introducirla en la segunda bolsa, y posteriormente sacar una bola roja
 de la segunda bolsa, es de
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(R_1 \cap R_2) =\mathbb{P}(R_1) \mathbb{P}(R_2|R_1) = \frac{6}{10} \times \frac{8}{10} = \frac{48}{100}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -643,25 +676,31 @@ cumplir dos posibles situaciones. La primera situación, sería cuando se
 saca una bola roja de la primera bolsa (primer paso) y luego una bola
 roja de la segunda bolsa (segundo paso), lo cual daría como resultado
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(R_1 \cap R_2) =\mathbb{P}(R_1) \mathbb{P}(R_2|R_1) = \frac{6}{10} \times \frac{8}{10} = \frac{48}{100}
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que la segunda situación, sería cuando se saca una bola azul de
 la primera bolsa (primer paso) y luego una bola azul de la segunda bolsa
 (segundo paso), lo cual daría como resultado
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(A_1 \cap A_2) =\mathbb{P}(A_1) \mathbb{P}(A_2|A_1) = \frac{4}{10} \times \frac{3}{10} = \frac{12}{100}
-\end{align*}$$
+\end{align*}
+$$
 
 Y por tanto, la probabilidad de que el números de pelotas rojas y azules
 que hay en la primera bolsa sean idénticos a los iniciales, estará dado
 por
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(R_1 \cap R_2) + \mathbb{P}(A_1 \cap A_2) = \frac{48}{100} + \frac{12}{100} = \frac{60}{100}
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 </ol>
@@ -672,12 +711,16 @@ $$\begin{align*}
 Si un experimento estadístico pueden ocurrir dos eventos `$A$` y `$B$`
 que son independientes entre si, entonces
 
-$$\begin{align*}\mathbb P(A|B)=\mathbb P(A) \quad \text{ o } \quad \mathbb P(B|A)=\mathbb P(B)\end{align*}$$
+$$
+\begin{align*}\mathbb P(A|B)=\mathbb P(A) \quad \text{ o } \quad \mathbb P(B|A)=\mathbb P(B)\end{align*}
+$$
 
 
 lo cual es equivalente a
 
-$$\begin{align*}\mathbb P(A\cap B)=\mathbb P(A)\mathbb P(B)\end{align*}$$
+$$
+\begin{align*}\mathbb P(A\cap B)=\mathbb P(A)\mathbb P(B)\end{align*}
+$$
 
 
 En cualquier otro caso, los eventos `$A$` y `$B$` son dependientes.
@@ -734,12 +777,14 @@ Para realizar el cálculo de la probabilidad de sacar una bola negra en
 el primer paso y una bola azul en el segundo paso, con reemplazo, se
 tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(N_1 \cap A_2) & = \mathbb{P}(N_1) \mathbb{P}(A_2 | N_1) \\
 & = \frac{35}{100} \times \frac{40}{100} \\ 
 &= \frac{1400}{10000} \\
 &= 0.14
-\end{align*}$$
+\end{align*}
+$$
 
 Encontrando entonces que la probabilidad de sacar una bola Negra en el
 primer paso y una bola azul en el segundo paso es del $14\%$. <br>
@@ -750,12 +795,15 @@ probabilidad de sacar una bola negra es de
 $\mathbb{P}(N_1)= \frac{35}{100}$, mientras que la probabilidad de
 sacar una bola azul es de $\mathbb{P}(A_1)=\frac{40}{100}$, y en
 consecuencia, al verificar la formula asociada a independencia entre
-eventos, tendremos que $$\begin{align*}
+eventos, tendremos que 
+$$
+\begin{align*}
 \mathbb{P}(N_1 \cap A_2) & = \mathbb{P}(N_1) \mathbb{P}(A_1) \\
 \frac{1400}{10000} & = \frac{35}{100} \times \frac{40}{100} \\
 \frac{1400}{10000} & = \frac{1400}{10000} \\
 0.14 &= 0.14
-\end{align*}$$
+\end{align*}
+$$
 
 Y por tanto, al verificar que la igualdad se cumple, se concluye que los
 eventos son independientes.
@@ -776,12 +824,14 @@ Al realizar el cálculo necesario para calcular la probabilidad de sacar
 una bola azul en el primer paso, una bola negra en el segundo paso y una
 bola roja en el tercero paso, tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(A_1 \cap N_2 \cap R_3) & = \mathbb{P}(A_1) \mathbb{P}(N_2 | A_1) \mathbb{P}(R_3 | A_1 \cap N_2) \\ 
 &= \frac{40}{100} \times \frac{35}{100} \times \frac{25}{99} \\ 
 &= \frac{35000}{990000} \\
 &= 0.03535354
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para saber si los eventos planteados son o no independientes,
 podemos centrarnos en la primera linea, en donde tenemos que la
@@ -791,12 +841,15 @@ $\mathbb{P}(A_1)=\frac{40}{100}$, y sacar una bola roja es de
 $\mathbb{P}(R_1)= \frac{25}{100}$, y en consecuencia, al verificar la
 formula asociada a independencia entre eventos, tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(A_1 \cap N_2 \cap R_3) & = \mathbb{P}(A_1) \mathbb{P}(N_1) \mathbb{P}(R_1) \\
 \frac{35000}{990000} & = \frac{35}{100} \times \frac{40}{100} \times \frac{25}{100} \\
 \frac{35000}{990000} & = \frac{35000}{1000000} \\
 0.03535354 &\neq 0.035
-\end{align*}$$ Y por tanto, al verificar que la igualdad NO se cumple,
+\end{align*}
+$$
+ Y por tanto, al verificar que la igualdad NO se cumple,
 se concluye que los eventos NO son independientes.
 
 </li>

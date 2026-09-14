@@ -38,7 +38,9 @@ Una vez identificado y realizado el ajuste del modelo de interés, es
 necesario observar la significancia de los parámetros ajustados. Para
 ello se emplea los siguientes juegos de hipótesis.
 
-$$\begin{align*}H_0: \theta_i = 0 & & \text{vs} & & H_1: \theta_i \neq 0 \\ H_0: \phi_j = 0 & & \text{vs} & & H_1: \phi_j \neq 0\end{align*}$$
+$$
+\begin{align*}H_0: \theta_i = 0 & & \text{vs} & & H_1: \theta_i \neq 0 \\ H_0: \phi_j = 0 & & \text{vs} & & H_1: \phi_j \neq 0\end{align*}
+$$
 
 
 donde `$\theta_i$` son los parámetros de la parte autorregresiva, con
@@ -49,12 +51,16 @@ El estadístico de prueba empleado para tomar la decisión entre `$H_0$` y
 `$H_1$` estará dado por una distribución t-student, el cual tiene la
 forma
 
-$$\begin{align*}t_c = \frac{\hat{\theta}_i}{se(\hat{\theta}_i)}\end{align*}$$
+$$
+\begin{align*}t_c = \frac{\hat{\theta}_i}{se(\hat{\theta}_i)}\end{align*}
+$$
 
 
 Para el caso de los parámetros de la parte autorregresiva (AR), y
 
-$$\begin{align*}t_c = \frac{\hat{\phi}_j}{se(\hat{\phi}_j)}\end{align*}$$
+$$
+\begin{align*}t_c = \frac{\hat{\phi}_j}{se(\hat{\phi}_j)}\end{align*}
+$$
 
 
 Para el caso de los parámetros de la parte de media móvil (MA).
@@ -62,7 +68,9 @@ Para el caso de los parámetros de la parte de media móvil (MA).
 Además, la región crítica o región de rechazo que llevan al rechazo del
 estadístico de prueba está dado por
 
-$$\begin{align*}RC:\{T|T<-t_{\frac{\alpha}{2}, n-k} \text{ o } T>t_{\frac{\alpha}{2}, n-k}\}\end{align*}$$
+$$
+\begin{align*}RC:\{T|T<-t_{\frac{\alpha}{2}, n-k} \text{ o } T>t_{\frac{\alpha}{2}, n-k}\}\end{align*}
+$$
 
 
 con `$k$` el número de parámetros en el modelo, y `$n-k$` el número de
@@ -71,7 +79,9 @@ grados de libertad del modelo.
 Y finalmente, el P-valor asociado a cada uno de los estadísticos de
 prueba estará dado por
 
-$$\begin{align*}\text{P-valor} = 2\mathbb{P}(t_{n-k}>|t_c|)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = 2\mathbb{P}(t_{n-k}>|t_c|)\end{align*}
+$$
 
 
 Validación de supuestos del modelo
@@ -167,7 +177,9 @@ Pruebas estadísticas
 Para probar si los residuales del modelo ajustado cumplen el supuesto de
 incorrelación, se debe probar el siguiente juego de hipótesis
 
-$$\begin{align*}\begin{split} H_0: \rho(k) = 0 \\ H_1: \rho(k) \neq 0  \end{split} \quad \quad \text{ para todo } k=1,2,\ldots, h\end{align*}$$
+$$
+\begin{align*}\begin{split} H_0: \rho(k) = 0 \\ H_1: \rho(k) \neq 0  \end{split} \quad \quad \text{ para todo } k=1,2,\ldots, h\end{align*}
+$$
 
 
 **en donde, si no se rechaza `$H_0$` para todo
@@ -182,18 +194,24 @@ propuesto por Box and Pierce ([1970](#ref-Box1970)), el cual se conoce
 como prueba de independencia de Box-Pierce. Para realizar la prueba de
 hipótesis, se tendrá que el estadístico de prueba será de la forma
 
-$$\begin{align*}Q_{BP}=n\sum_{k=1}^h \hat{\rho}^2_k\end{align*}$$
+$$
+\begin{align*}Q_{BP}=n\sum_{k=1}^h \hat{\rho}^2_k\end{align*}
+$$
 
 
 junto con una región crítica dada por
 
-$$\begin{align*}RC:\{\chi^2| Q_{BP}>\chi_{1-\alpha,h} \}\end{align*}$$
+$$
+\begin{align*}RC:\{\chi^2| Q_{BP}>\chi_{1-\alpha,h} \}\end{align*}
+$$
 
 
 y un P-valor de la forma
 
 
-$$\begin{align*}\text{P-valor} = \mathbb{P}(\chi^2_{h}>Q_{BP})\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = \mathbb{P}(\chi^2_{h}>Q_{BP})\end{align*}
+$$
 
 
 La prueba de incorrelación de Box-Pierce puede realizarse en <tt>R</tt>,
@@ -210,17 +228,23 @@ Box-Pierce.
 
 Esta prueba posee un estadístico de prueba dado por
 
-$$\begin{align*}Q_{LB}=n(n+2)\sum_{k=1}^h \frac{\hat{\rho}^2_k}{n-k}\end{align*}$$
+$$
+\begin{align*}Q_{LB}=n(n+2)\sum_{k=1}^h \frac{\hat{\rho}^2_k}{n-k}\end{align*}
+$$
 
 
 con una región crítica
 
-$$\begin{align*}RC:\{\chi^2| Q_{LB}>\chi_{1-\alpha,h} \}\end{align*}$$
+$$
+\begin{align*}RC:\{\chi^2| Q_{LB}>\chi_{1-\alpha,h} \}\end{align*}
+$$
 
 
 y un P-valor
 
-$$\begin{align*}\text{P-valor} = \mathbb{P}(\chi^2_{h}>Q_{LB})\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = \mathbb{P}(\chi^2_{h}>Q_{LB})\end{align*}
+$$
 
 
 En <tt>R</tt>, pueden realizarse la prueba de incorrelación Ljung-Box
@@ -233,7 +257,9 @@ Con el fin de probar si los residuales del modelo ajustado cumplen el
 supuesto de normalidad, es necesario probar el siguiente juego de
 hipótesis
 
-$$\begin{align*}H_0: \varepsilon_t \sim Normal \\ H_1: \varepsilon_t \not\sim Normal\end{align*}$$
+$$
+\begin{align*}H_0: \varepsilon_t \sim Normal \\ H_1: \varepsilon_t \not\sim Normal\end{align*}
+$$
 
 
 **en donde, si no se rechaza `$H_0$` se tendrá evidencia para concluir
@@ -245,7 +271,9 @@ La prueba Kolmogorov-Smirnov es una de las pruebas de bondad de ajuste
 más empleadas en la práctica, aunque ésta no sea la que ofrezca los
 mejores resultados. Esta prueba posee un estadístico de prueba dado por
 
-$$\begin{align*}KS = \sup|\hat{F}_n(x_i) - F_0(x_i)|\end{align*}$$
+$$
+\begin{align*}KS = \sup|\hat{F}_n(x_i) - F_0(x_i)|\end{align*}
+$$
 
 
 donde `$x_i$` es el `$i$`-ésimo valor observado en la muestra, cuyos
@@ -256,24 +284,32 @@ cierta, evaluada en `$x_i$`.
 
 Además, se tendrá que si `$K$` es una variable aleatoria tal que
 
-$$\begin{align*}K = \sup_{t\in[0,1]}|B(t)|\end{align*}$$
+$$
+\begin{align*}K = \sup_{t\in[0,1]}|B(t)|\end{align*}
+$$
 
 
 siendo `$B(t)$` conocido como un puente browniando, con función de
 distribución acumulada dada por
 
-$$\begin{align*}P(K\leq x) = \frac{\sqrt{2\pi}}{x} \sum_{k=1}^\infty e^{-\frac{(2k-1)^2\pi^2}{8x^2}}\end{align*}$$
+$$
+\begin{align*}P(K\leq x) = \frac{\sqrt{2\pi}}{x} \sum_{k=1}^\infty e^{-\frac{(2k-1)^2\pi^2}{8x^2}}\end{align*}
+$$
 
 
 entonces, se tendrá que la región crítica del estadístico de prueba
 estará dada por
 
-$$\begin{align*}RC:\{K| KS>\frac{K_\alpha}{\sqrt{T}} \}\end{align*}$$
+$$
+\begin{align*}RC:\{K| KS>\frac{K_\alpha}{\sqrt{T}} \}\end{align*}
+$$
 
 
 con un P-valor dado por
 
-$$\begin{align*}\text{P-valor} = \mathbb{P}(K>KS)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = \mathbb{P}(K>KS)\end{align*}
+$$
 
 
 La prueba Kolmogorov-Smirnov puede realizarse en <tt>R</tt>, mediante la
@@ -291,12 +327,16 @@ distribución.
 
 El estadístico de prueba del test Shapiro-Wilk está dado por
 
-$$\begin{align*}W = \frac{(\sum_i=1^T a_ix_{(i)})^2}{\sum_i=1^T (x_{i} - \bar{x})^2}\end{align*}$$
+$$
+\begin{align*}W = \frac{(\sum_i=1^T a_ix_{(i)})^2}{\sum_i=1^T (x_{i} - \bar{x})^2}\end{align*}
+$$
 
 
 con un P-valor dado por
 
-$$\begin{align*}\text{P-valor} = \mathbb{P}(W<W_\alpha)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = \mathbb{P}(W<W_\alpha)\end{align*}
+$$
 
 
 La prueba Shapiro-Wilk puede realizarse en <tt>R</tt>, mediante la
@@ -308,7 +348,9 @@ función `shapiro.test()` de la librería `stats` de la base del
 Para probar si los residuales del modelo ajustado cumplen el supuesto de
 homocedasticidad, es necesario probar el siguiente juego de hipótesis
 
-$$\begin{align*}\begin{split} H_0: Var(\varepsilon_t) = \sigma^2 \\ H_1: Var(\varepsilon_t) \neq \sigma^2 \end{split}  \quad \quad \text{ para todo } t\end{align*}$$
+$$
+\begin{align*}\begin{split} H_0: Var(\varepsilon_t) = \sigma^2 \\ H_1: Var(\varepsilon_t) \neq \sigma^2 \end{split}  \quad \quad \text{ para todo } t\end{align*}
+$$
 
 
 **en donde, si no se rechaza `$H_0$` se tendrá evidencia para concluir
@@ -325,7 +367,9 @@ Para realizar la prueba, se emplea el valor obtenido por el coeficiente
 de determinación `$R^2$` de una regresión auxiliar el cual tiene la
 forma
 
-$$\begin{align*}e_i^2 = \gamma_1 + \gamma_2z_{2i} + \ldots + \gamma_jz_{ji} + \eta_i\end{align*}$$
+$$
+\begin{align*}e_i^2 = \gamma_1 + \gamma_2z_{2i} + \ldots + \gamma_jz_{ji} + \eta_i\end{align*}
+$$
 
 
 donde `$Z_t$` son algunas (o todas) las variables explicativas del
@@ -335,13 +379,17 @@ de variables explicativas (incluyendo la constante) en el modelo de
 regresión lineal auxiliar. Una vez calculado el coeficiente de
 terminación, es posible calcular el estadístico de prueba de la forma
 
-$$\begin{align*}BP = TR^2\sim\chi^2_{j-1}\end{align*}$$
+$$
+\begin{align*}BP = TR^2\sim\chi^2_{j-1}\end{align*}
+$$
 
 
 siendo `$T$` el total de observaciones que se poseen. Además, el P-valor
 asociado será de la forma
 
-$$\begin{align*}\text{P-valor} = \mathbb{P}(BP<BP_\alpha)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = \mathbb{P}(BP<BP_\alpha)\end{align*}
+$$
 
 
 La prueba Breusch-Pagan puede realizarse en <tt>R</tt>, mediante la
@@ -363,19 +411,25 @@ y cada uno de ellos calcular la suma de los cuadrados de los errores
 `$SCE$`, para luego calcular un estadístico de prueba `$F$` que tiene la
 forma
 
-$$\begin{align*}F_c = \frac{SCE_1/df_1}{SCE_2/df_2} \sim F_{df_1,df_2}\end{align*}$$
+$$
+\begin{align*}F_c = \frac{SCE_1/df_1}{SCE_2/df_2} \sim F_{df_1,df_2}\end{align*}
+$$
 
 
 donde `$df$` representa los grados de libertad del grupo 1 y 2,
 respectivamente. Además, se tendrá que la región crítica asociada al
 estadístico de prueba será de la forma
 
-$$\begin{align*}RC:\{F| F<F_{1- (\alpha/2), df_1, df_2} o F>F_{\alpha/2, df_1, df_2}\}\end{align*}$$
+$$
+\begin{align*}RC:\{F| F<F_{1- (\alpha/2), df_1, df_2} o F>F_{\alpha/2, df_1, df_2}\}\end{align*}
+$$
 
 
 y un P-valor
 
-$$\begin{align*}\text{P-valor} = (2\mathbb{P}(F_{df_1,df_2}>F_c) \wedge 2\mathbb{P}(F_{df_1,df_2}<F_c)\end{align*}$$
+$$
+\begin{align*}\text{P-valor} = (2\mathbb{P}(F_{df_1,df_2}>F_c) \wedge 2\mathbb{P}(F_{df_1,df_2}<F_c)\end{align*}
+$$
 
 
 donde `$(a\wedge b) = min(a,b)$`. La prueba Goldfeld-Quandt puede

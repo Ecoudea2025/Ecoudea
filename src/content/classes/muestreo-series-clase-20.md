@@ -34,7 +34,9 @@ los pronósticos
 puede definirse el error de estimación `$e_t=\hat{varepsilon}_t$`, entre
 las observación real `$t$` y el valor pronosticado `$t$`, de la forma
 
-$$\begin{align*}e_t= Y_t - \hat{Y}_t\end{align*}$$
+$$
+\begin{align*}e_t= Y_t - \hat{Y}_t\end{align*}
+$$
 
 
 con `$t={T-m+1}, {T-m+2}, \ldots, {T}$`. A partir de los errores de
@@ -49,7 +51,9 @@ ellos, basados en Adhikari and Agrawal ([2013](#ref-Adhikari2013), p.
 
 Esta medida está definida como
 
-$$\begin{align*}ME=\frac{1}{m}\sum_{t=T-m+1}^T e_t\end{align*}$$
+$$
+\begin{align*}ME=\frac{1}{m}\sum_{t=T-m+1}^T e_t\end{align*}
+$$
 
 
 -   Es una medida de la desviación promedio de los valores pronosticados
@@ -81,7 +85,9 @@ ME <- function(real, pred) {
 
 Esta medida está definida como
 
-$$\begin{align*}MPE=\frac{1}{m}\sum_{t=T-m+1}^T \frac{e_t}{y_t} \times 100\end{align*}$$
+$$
+\begin{align*}MPE=\frac{1}{m}\sum_{t=T-m+1}^T \frac{e_t}{y_t} \times 100\end{align*}
+$$
 
 
 -   Mode el porcentaje de error promedio ocurrido de los pronósticos.
@@ -112,7 +118,9 @@ MPE <- function(real, pred) {
 
 Esta medida está definida como
 
-$$\begin{align*}MAE=\frac{1}{m}\sum_{t=T-m+1}^T |e_t|\end{align*}$$
+$$
+\begin{align*}MAE=\frac{1}{m}\sum_{t=T-m+1}^T |e_t|\end{align*}
+$$
 
 
 -   Mide la desviación absoluta promedio de los valores pronosticados
@@ -143,7 +151,9 @@ MAE <- function(real, pred) {
 
 Esta medida está definida como
 
-$$\begin{align*}MAPE=\frac{1}{m}\sum_{t=T-m+1}^T \left|\frac{e_t}{y_t}\right|\times 100\end{align*}$$
+$$
+\begin{align*}MAPE=\frac{1}{m}\sum_{t=T-m+1}^T \left|\frac{e_t}{y_t}\right|\times 100\end{align*}
+$$
 
 
 -   Mide el porcentaje de error absoluto promedio ocurrido de los
@@ -169,7 +179,9 @@ MAPE <- function(real, pred) {
 
 Esta medida está definida como
 
-$$\begin{align*}MSE=\frac{1}{m}\sum_{t=T-m+1}^T (e_t)^2\end{align*}$$
+$$
+\begin{align*}MSE=\frac{1}{m}\sum_{t=T-m+1}^T (e_t)^2\end{align*}
+$$
 
 
 -   Mide la desviación al cuadrado promedio de los valores pronosticados
@@ -202,7 +214,9 @@ MSE <- function(real, pred) {
 
 Esta medida está definida como
 
-$$\begin{align*}SSE=\sum_{t=T-m+1}^T (e_t)^2\end{align*}$$
+$$
+\begin{align*}SSE=\sum_{t=T-m+1}^T (e_t)^2\end{align*}
+$$
 
 
 -   Posee las mismas propiedades del MSE.
@@ -219,7 +233,9 @@ SSE <- function(real, pred) {
 
 Esta medida está definida como
 
-$$\begin{align*}RMSE=\sqrt{\frac{1}{m}\sum_{t=T-m+1}^T (e_t)^2}\end{align*}$$
+$$
+\begin{align*}RMSE=\sqrt{\frac{1}{m}\sum_{t=T-m+1}^T (e_t)^2}\end{align*}
+$$
 
 
 -   La RMSE no es más que la raíz cuadrada de la MSE calculada.

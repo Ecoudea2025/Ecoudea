@@ -23,7 +23,9 @@ en la información de una muestra aleatoria de dicha población, el
 objetivo será encontrar dos variables aleatorias `$\hat{\Theta}_I$` y
 `$\hat{\Theta}_S$` tal que
 
-$$\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(\hat{\Theta}_I<\Theta<\hat{\Theta}_S) = 1-\alpha \quad \quad 0<\alpha<1\end{align*}
+$$
 
 donde `$(1-\alpha)$` se conoce como nivel de confianza y
 `$\hat{\Theta}_I$` y `$\hat{\Theta}_S$` se denominan como límites de
@@ -89,11 +91,14 @@ Ingeniería Industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Si es posible supone que los salarios de los egresados se distribuyen
 aproximadamente normal, calcule el límite superior del salario promedio
@@ -118,20 +123,26 @@ estas características se ilustra en la siguiente imagen
 <img src="/assets/images/Intervalos1a.jpg" alt="" style="max-width: 80%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   \mu < \bar{X}+t_{\alpha, n-1}\frac{S}{\sqrt{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos de $5$ variables, la media muestral
 $\bar{X}=1.659333$, la desviación estándar muestral $S=0.6709425$,
 el tamaño de muestra $n=15$, el nivel de confianza $1-\alpha=0.98$ y
 el valor crítico $t_{\alpha=0.02, n-1=14}=2.263781$ calculado a partir
 del nivel de confianza y el tamaño de la muestra. Al reemplazar en el
-intervalo tenemos que $$\begin{align*}
+intervalo tenemos que 
+$$
+\begin{align*}
   \mu &< 1.659333+2.263781\frac{0.6709425}{\sqrt{15}}\\
   \mu &< 1.659333+0.3921697\\
   \mu &< 2.051503
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $98\%$, que el
 salario máximo promedio que ganan los egresados del Departamento de
@@ -179,19 +190,25 @@ información que poseemos tenemos las siguientes características
 <img src="/assets/images/Intervalos1b.jpg" alt="" style="max-width: 80%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   \bar{X}-Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}} < \mu < \bar{X}+Z_{\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos la media muestral $\bar{X}=345$, la
 desviación estándar poblacional $\sigma=5703.473$, el tamaño de
 muestra $n=8000$, el nivel de confianza $1-\alpha=0.90$ y el valor
 crítico $Z_{\alpha/2=0.05}=1.644854$ calculado a partir del nivel de
-confianza. Al reemplazar en el intervalo tenemos que $$\begin{align*}
+confianza. Al reemplazar en el intervalo tenemos que 
+$$
+\begin{align*}
   &345\pm 1.644854 \frac{5703.473}{\sqrt{8000}} \\
   &345\pm 104.8870143 \\
   &240.1129856 < \mu < 449.8870144
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces podremos afirmar con un nivel de confianza del $90\%$, que la
 cantidad promedio de refresco servida de forma automática por la nueva
@@ -243,19 +260,25 @@ encontramos en la siguiente situación
 <img src="/assets/images/Intervalos1c.jpg" alt="" style="max-width: 80%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   \bar{X}-Z_{\alpha}\frac{S}{\sqrt{n}} < \mu
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que necesitamos la media muestral $\bar{X}=1.02$,
 la desviación estándar muestral $S=0.23$, el tamaño de muestra
 $n=145$, el nivel de confianza $1-\alpha=0.85$ y el valor crítico
 $Z_{\alpha=0.15}=1.036433$ calculado a partir del nivel de confianza.
-Al reemplazar en el intervalo de interés tenemos que $$\begin{align*}
+Al reemplazar en el intervalo de interés tenemos que 
+$$
+\begin{align*}
   1.02-1.036433\frac{0.23}{\sqrt{145}} &< \mu \\
   1.02-0.01979635 &< \mu \\
   1.000204 &< \mu
-\end{align*}$$
+\end{align*}
+$$
 
 Lo cual significa que, con un nivel de confianza del $85\%$ podemos
 afirmar que la cantidad mínima promedio de nicotina que poseen los

@@ -15,7 +15,9 @@ Note que `$\hat{\beta}_0$` y `$\hat{\beta}_1$` son combinaciones
 lineales de `$y_i$`, que son normales e independientes, entonces por
 propiedades de la distribución normal se obtiene que
 
-$$\begin{align*}\hat{\beta}_0 &\sim N\left(\beta_0, \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2\right)  \\  \hat{\beta}_1 &\sim N\left(\beta_1, \frac{\sigma^2}{S_{xx}}\right)\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_0 &\sim N\left(\beta_0, \left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2\right)  \\  \hat{\beta}_1 &\sim N\left(\beta_1, \frac{\sigma^2}{S_{xx}}\right)\end{align*}
+$$
 
 
 en donde, dado que la varianza `$\sigma^2$` es desconocida, se reemplaza
@@ -26,23 +28,31 @@ distribución t-student con `$n-2$` grados de libertad.
 Entonces, para realizar el contraste de hipótesis `$\beta_0$` y
 `$\beta_1$` de la forma
 
-$$\begin{align*}H_0: \beta_0 = \beta_{00} \quad & \quad H_0: \beta_1 = \beta_{10}\\  H_1: \beta_0 \neq \beta_{00} \quad & \quad H_1: \beta_1 \neq \beta_{10}\\\end{align*}$$
+$$
+\begin{align*}H_0: \beta_0 = \beta_{00} \quad & \quad H_0: \beta_1 = \beta_{10}\\  H_1: \beta_0 \neq \beta_{00} \quad & \quad H_1: \beta_1 \neq \beta_{10}\\\end{align*}
+$$
 
 
 se tendrá que los estadísticos de prueba serían de la forma
 
-$$\begin{align*}t_{\hat{\beta}_{0}}= \frac{\hat{\beta}_0 - \beta_{00}}{\sqrt{\left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e}} \quad & \quad t_{\hat{\beta}_{1}}= \frac{\hat{\beta}_1 - \beta_{10}}{\sqrt{\frac{\sigma^2_e}{S_{xx}}}}\end{align*}$$
+$$
+\begin{align*}t_{\hat{\beta}_{0}}= \frac{\hat{\beta}_0 - \beta_{00}}{\sqrt{\left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]\sigma^2_e}} \quad & \quad t_{\hat{\beta}_{1}}= \frac{\hat{\beta}_1 - \beta_{10}}{\sqrt{\frac{\sigma^2_e}{S_{xx}}}}\end{align*}
+$$
 
 
 y para tomar la decisión si se rechaza o no la hipótesis se emplea la
 región crítica la cual está dada por
 
-$$\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-2} \quad ó \quad t > t_{\frac{\alpha}{2}, n-2}\}\end{align*}$$
+$$
+\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-2} \quad ó \quad t > t_{\frac{\alpha}{2}, n-2}\}\end{align*}
+$$
 
 en donde si `$t_{\hat{\beta}_{i}} \in RC$` para `$i=0,1$`, se rechaza
 `$H_0$`. Mientras que el P-valor está dado por
 
-$$\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-2}\geq |t_{\hat{\beta}_i}|) \quad \text{ para } i = 0,1\end{align*}$$
+$$
+\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-2}\geq |t_{\hat{\beta}_i}|) \quad \text{ para } i = 0,1\end{align*}
+$$
 
 
 en donde si P-valor es menor al nivel de significancia `$\alpha$`,
@@ -67,12 +77,16 @@ entonces se rechaza `$H_0$`.
 
 El intervalo de confianza para `$\beta_0$` está dado por
 
-$$\begin{align*}\hat{\beta}_0 - t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}} < \beta_0 < \hat{\beta}_0 + t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_0 - t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}} < \beta_0 < \hat{\beta}_0 + t_{\frac{\alpha}{2}, n-2} \sqrt{\left(\frac{1}{n}+\frac{\bar{X}^2}{S_{xx}}\right)\sigma^2_{e}}\end{align*}
+$$
 
 
 para el caso de `$\beta_1$`, el intervalo de confianza está dado por
 
-$$\begin{align*}\hat{\beta}_1 - t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}} < \beta_1 < \hat{\beta}_1 + t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1 - t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}} < \beta_1 < \hat{\beta}_1 + t_{\frac{\alpha}{2}, n-2} \sqrt{\frac{\sigma^2_{e}}{S_{xx}}}\end{align*}
+$$
 
 
 **Nota**
@@ -110,7 +124,9 @@ entonces
 se tendrá que cada coeficiente estimado de forma individual se
 distribuye
 
-$$\begin{align*}\hat{\beta}_j \sim N\left(\beta_j, \sigma^2 C_{jj}\right) \quad \text{ para } j = 0,1,\ldots,k\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_j \sim N\left(\beta_j, \sigma^2 C_{jj}\right) \quad \text{ para } j = 0,1,\ldots,k\end{align*}
+$$
 
 
 donde `$C_{jj}$` es el j-ésimo elemento de la diagonal de la matriz
@@ -123,24 +139,32 @@ libertad.
 Entonces, para realizar el contraste de hipótesis sobre el coeficiente
 `$\beta_j$` de la forma
 
-$$\begin{align*}H_0&: \beta_j = \beta_{j0}\\  H_1&: \beta_j \neq \beta_{j0}\end{align*}$$
+$$
+\begin{align*}H_0&: \beta_j = \beta_{j0}\\  H_1&: \beta_j \neq \beta_{j0}\end{align*}
+$$
 
 
 se tendrá que el estadístico de prueba será de la forma
 
-$$\begin{align*}t_{\hat{\beta}_{j}}= \frac{\hat{\beta}_j - \beta_{j0}}{\sqrt{\hat{\sigma}^2_e C_{jj}}}\end{align*}$$
+$$
+\begin{align*}t_{\hat{\beta}_{j}}= \frac{\hat{\beta}_j - \beta_{j0}}{\sqrt{\hat{\sigma}^2_e C_{jj}}}\end{align*}
+$$
 
 
 y para tomar la decisión si se rechaza o no la hipótesis se emplea la
 región crítica la cual está dada por
 
-$$\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-k-1} \quad ó \quad t > t_{\frac{\alpha}{2}, n-k-1}\}\end{align*}$$
+$$
+\begin{align*}RC:\{t|t < -t_{\frac{\alpha}{2}, n-k-1} \quad ó \quad t > t_{\frac{\alpha}{2}, n-k-1}\}\end{align*}
+$$
 
 
 en donde si `$t_{\hat{\beta}_{j}} \in RC$`, se rechaza `$H_0$`. Mientras
 que el P-valor está dado por
 
-$$\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-k-1}\geq |t_{\hat{\beta}_j}|)\end{align*}$$
+$$
+\begin{align*}\text{P-valor}= 2\mathbb{P}(t_{n-k-1}\geq |t_{\hat{\beta}_j}|)\end{align*}
+$$
 
 
 en donde si P-valor es menor al nivel de significancia `$\alpha$`,
@@ -172,7 +196,9 @@ distribución t-student con `$n-k-1$` grados de libertad, el intervalo de
 confianza del `$(1-\alpha)100\%$` para el coeficiente `$\beta_j$` está
 dado por
 
-$$\begin{align*}\hat{\beta}_j - t_{\frac{\alpha}{2}, n-k-1} \sqrt{\hat{\sigma}^2_{e} C_{jj}} < \beta_j < \hat{\beta}_j + t_{\frac{\alpha}{2}, n-k-1} \sqrt{\hat{\sigma}^2_{e} C_{jj}} \quad \text{ para } j = 0,1,\ldots,k\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_j - t_{\frac{\alpha}{2}, n-k-1} \sqrt{\hat{\sigma}^2_{e} C_{jj}} < \beta_j < \hat{\beta}_j + t_{\frac{\alpha}{2}, n-k-1} \sqrt{\hat{\sigma}^2_{e} C_{jj}} \quad \text{ para } j = 0,1,\ldots,k\end{align*}
+$$
 
 
 donde `$C_{jj}$` es el j-ésimo elemento de la diagonal de la matriz
@@ -235,7 +261,9 @@ interacciones entre las variables.
 El juego de hipótesis de la prueba RESET de Ramsey está dada por
 
 
-$$\begin{align*}&H_0: \text{El modelo lineal está bien especificado}\\  &H_1: \text{El modelo lineal está mal especificado}\end{align*}$$
+$$
+\begin{align*}&H_0: \text{El modelo lineal está bien especificado}\\  &H_1: \text{El modelo lineal está mal especificado}\end{align*}
+$$
 
 
 Esta prueba puede realizarse en <tt>R</tt> mediante la función
@@ -256,7 +284,9 @@ tales como la Shapiro-Wilk, Anderson Darling, Cramer-Von Mises
 Clase 16</a>), donde el juego de hipótesis a probar está dada por
 
 
-$$\begin{align*}&H_0: \text{Los errores de estimación de la regresión se distribuyen normalmente}\\  &H_1: \text{Los errores de estimación de la regresión NO se distribuyen normalmente}\end{align*}$$
+$$
+\begin{align*}&H_0: \text{Los errores de estimación de la regresión se distribuyen normalmente}\\  &H_1: \text{Los errores de estimación de la regresión NO se distribuyen normalmente}\end{align*}
+$$
 
 
 Una alternativa, es hacer una validación de forma gráfica mediante la
@@ -282,7 +312,9 @@ heterocedásticos.
 El juego de hipótesis de la prueba Breusch-Pagan está dada por
 
 
-$$\begin{align*}&H_0: \text{La varianza de los errores es constante para todas las observaciones (Existe homocedasticidad)}\\  &H_1: \text{La varianza de los errores no es constante y depende de una o más variables independientes (Existe heterocedasticidad)}\end{align*}$$
+$$
+\begin{align*}&H_0: \text{La varianza de los errores es constante para todas las observaciones (Existe homocedasticidad)}\\  &H_1: \text{La varianza de los errores no es constante y depende de una o más variables independientes (Existe heterocedasticidad)}\end{align*}
+$$
 
 
 Esta prueba puede realizarse en <tt>R</tt> con la función
@@ -309,7 +341,9 @@ error contra la alternativa de que hay dependencia.
 El juego de hipótesis de la prueba Durbin-Watson está dada por
 
 
-$$\begin{align*}&H_0: \text{Los errores de estimación de la regresión son independientes}\\  &H_1: \text{Los errores de estimación de la regresión NO son independientes}\end{align*}$$
+$$
+\begin{align*}&H_0: \text{Los errores de estimación de la regresión son independientes}\\  &H_1: \text{Los errores de estimación de la regresión NO son independientes}\end{align*}
+$$
 
 
 Para realizar esta prueba en <tt>R</tt> se puede utilizar la prueba
@@ -333,7 +367,9 @@ Para detectar la multicolinealidad se emplea el **factor de inflación de
 la varianza** (VIF por sus siglas en inglés), el cual se calcula para
 cada variable explicativa como
 
-$$\begin{align*}VIF_j = \frac{1}{1-R^2_j} \quad \text{ para } j = 1,2,\ldots,k\end{align*}$$
+$$
+\begin{align*}VIF_j = \frac{1}{1-R^2_j} \quad \text{ para } j = 1,2,\ldots,k\end{align*}
+$$
 
 
 donde `$R^2_j$` es el coeficiente de determinación obtenido al ajustar

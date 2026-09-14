@@ -58,10 +58,13 @@ Solución
 Como estamos interesado en comparar la proporción de rendimiento
 superior al promedio entre los nuevos equipos y los actuales, para saber
 si los nuevos equipo son iguales o superiores a los actuales, tendremos
-que la hipótesis de interés está dada por $$\begin{align*}
+que la hipótesis de interés está dada por 
+$$
+\begin{align*}
   H_0:p_N - p_A \geq 0\\
   H_1:p_N - p_A < 0
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como estamos interesados en hacer inferencia sobre una
 diferencia de proporciones, y nos encontramos frente a una hipótesis
@@ -70,54 +73,73 @@ unilateral, tendremos que estamos ante la siguiente situación
 <img src="/assets/images/Hipotesis6a.jpg" alt="" style="max-width: 100%;">
 
 En donde se observa que el estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\hat{p}_N - \hat{p}_A) - d_0}{\sqrt{\frac{p^*(1-p^*)}{n_N} + \frac{p^*(1-p^*)}{n_A}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior se observa que para el cálculo se requiere de las
 proporciones muestrales $\hat{p}_{N}$ y $\hat{p}_{A}$, y
 proporciones conjuntas $p^*$, las cuales se pueden obtener a partir
 del tamaño de muestra y del número de éxitos obtenidos, tal que para el
 caso de los equipos construidos con el nuevos procedimiento se tendrá
-que $$\begin{align*}
+que 
+$$
+\begin{align*}
 \hat{p}_N &= \frac{\text{# de equipos nuevos con rendimiento superior}}{\text{Total equipos nuevos evaluados}} \\
           &= \frac{x_N}{n_N} \\
           &= \frac{220}{700} \\
           &= 0.3142857
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que para los equipos que se construyen con el procedimiento
 actual, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \hat{p}_A &= \frac{\text{# de equipos actuales con rendimiento superior}}{\text{Total equipos actuales evaluados}} \\
           &= \frac{x_A}{n_A} \\
           &= \frac{120}{500} \\
           &= 0.24
-\end{align*}$$
+\end{align*}
+$$
 
-Ahora, la proporción conjunta es igual a $$\begin{align*}
+Ahora, la proporción conjunta es igual a 
+$$
+\begin{align*}
 p^* &= \frac{x_N + x_A}{n_N + n_A} \\
     &= \frac{220 + 120}{700 + 500} \\
     &= 0.2833333
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculados todos los valores asociados al estadístico de prueba,
-se procede a su cálculo, el cual está dado por $$\begin{align*}
+se procede a su cálculo, el cual está dado por 
+$$
+\begin{align*}
   Z_c &= \frac{(0.3142857 - 0.24) - d_0}{\sqrt{\frac{0.2833333(1-0.2833333)}{700} + \frac{0.2833333(1-0.2833333)}{500}}} \\
       &= 2.815407
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, con el fin de decidir si el estadístico de prueba apoya o no la
 hipótesis establecida, se emplea en esta ocasión la región crítica la
-cual estará dada por $$\begin{align*}
+cual estará dada por 
+$$
+\begin{align*}
   RC:\{Z|Z<-Z_{\alpha}\}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde el valor crítico $Z_{\alpha=0.02}=2.053749$ y por tanto la
-región crítica será $$\begin{align*}
+región crítica será 
+$$
+\begin{align*}
   RC:\{Z|Z<-2.053749\}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el estadístico de prueba no cae dentro de la región
 crítica, no hay evidencia significativa en contra de la hipótesis nula,
@@ -236,34 +258,44 @@ Solución
 Como estamos interesados en este punto de observar si la variabilidad de
 los costos de cualquier construcción es de al menos $300000$ millones
 de pesos$^2$ y por tanto la hipótesis de interés está dada por
-$$\begin{align*}
+$$
+\begin{align*}
   H_0:\sigma^2 \geq 300000\\
   H_1:\sigma^2 < 300000
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, se evidencia que en este caso estaremos bajo la siguiente
 situación
 <img src="/assets/images/Hipotesis7a.jpg" alt="" style="max-width: 100%;">
 
 la cual muestra que el estadístico de prueba en esta ocasión está dada
-por $$\begin{align*}
+por 
+$$
+\begin{align*}
    \chi^2_c = \frac{(n-1)S^2}{\sigma^2_0} \sim \chi^2_{n-1}
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se observa que para el cálculo del estadístico de
 prueba, se requiere de la varianza muestral $S^2 = 230541.2$, el
 tamaño de muestra $n=20$ y el valor de la hipótesis nula, en donde, al
 reemplazar dichos valores en el estadístico de prueba se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
    \chi^2_c &= \frac{(20-1)230541.2}{300000} \\
             &= 14.60094
-\end{align*}$$
+\end{align*}
+$$
 
 en donde, al estar frente a una situación unilateral izquierda, se
-tendrá que el P-valor para este caso está dado por $$\begin{align*}
+tendrá que el P-valor para este caso está dado por 
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(\chi^2_{n-1}<\chi^2_c) \\
           &= 0.216856934
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, como el P-valor obtenido es superior al nivel de significancia
 preestablecido del $5\%$, se concluye que no hay evidencia suficiente
@@ -394,10 +426,13 @@ Solución
 En este punto estamos interesados en probar si la variabilidad que
 tienen los cables sin encapsulado es menor a la variabilidad de los
 cables con encapsulado, y por tanto, tendremos que probar la siguiente
-hipótesis $$\begin{align*}
+hipótesis 
+$$
+\begin{align*}
   H_0:\sigma^2_{S} \geq \sigma^2_{C} &=> H_0:\frac{\sigma^2_{S}}{\sigma^2_{C}} \geq 1\\
   H_1:\sigma^2_{S} < \sigma^2_{C} &=> H_1:\frac{\sigma^2_{S}}{\sigma^2_{C}} < 1
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el interés es probar que una de las varianzas sea mayor a
 la otra, significa que estaremos bajo la siguientes situación
@@ -405,55 +440,72 @@ la otra, significa que estaremos bajo la siguientes situación
 <img src="/assets/images/Hipotesis8a.jpg" alt="" style="max-width: 100%;">
 
 en donde se aprecia que el estadístico de prueba para esta ocasión
-estará dado por $$\begin{align*}
+estará dado por 
+$$
+\begin{align*}
    F_c=\frac{S^2_{S}}{S^2_{C}}\sim F_{n_S-1, n_C-1}
-\end{align*}$$ En donde se observa que para realizar el cálculo del
+\end{align*}
+$$
+ En donde se observa que para realizar el cálculo del
 estadístico, se requiere de las varianzas muestrales $S^2_S$ y
 $S^2_C$, las cuales son iguales a
 
-$$\begin{align*}
+$$
+\begin{align*}
 S^2_S &= 3.231254\\
 S^2_C &= 1.378146
-\end{align*}$$
+\end{align*}
+$$
 
 encontrando entonces que el valor del estadístico de prueba es igual a
 
-$$\begin{align*}
+$$
+\begin{align*}
    F_c &= \frac{3.231254}{1.378146}\\
        &= 2.344638
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para poder decidir si la hipótesis de interés se encuentra o no
 apoyada por la información muestral, se realiza el cálculo de la región
 crítica, la cual está dada por
 
-$$\begin{align*}
+$$
+\begin{align*}
   RC:\left\{F\Bigg|F< \frac{1}{F_{\alpha, n_C -1, n_S - 1}}\right\}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se tiene que al reemplazar el valor $\alpha = 0.10$,
 $n_C=8$ y $n_S=10$ en el valor crítico de interés, se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
   F_{\alpha, n_C -1, n_S - 1} &= F_{0.10, 8 - 1, 10 - 1}\\
   F_{\alpha, n_C -1, n_S - 1} &= F_{0.10, 7, 9}\\
   F_{\alpha, n_C -1, n_S - 1} &= 2.5053132
-\end{align*}$$
+\end{align*}
+$$
 
 En donde si se reemplaza dicho valor en el área de la región crítica, se
-tendrá que $$\begin{align*}
+tendrá que 
+$$
+\begin{align*}
   RC&:\left\{F\Bigg|F< \frac{1}{F_{\alpha, n_C -1, n_S - 1}}\right\}\\
   RC&:\left\{F\Bigg|F< \frac{1}{F_{0.10, 7, 9}}\right\}\\
   RC&:\left\{F\Bigg|F< \frac{1}{2.5053132}\right\}\\
   RC&:\left\{F\Bigg|F< 0.3992\right\}
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que el P-valor asociado al estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   \text{P-valor}&= \mathbb{P}(F_{n_S-1, n_C-1} < F_c)\\
   \text{P-valor}&= \mathbb{P}(F_{10-1, 8-1} < 2.344638)\\
   \text{P-valor}&= \mathbb{P}(F_{9, 7} < 2.344638)\\
   \text{P-valor}&= 0.8629449
-\end{align*}$$
+\end{align*}
+$$
 
 Encontrando con ello que al caer el estadístico de prueba por fuera de
 la región crítica, y al ser el P-valor mayor al nivel de significancia

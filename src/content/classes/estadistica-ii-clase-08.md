@@ -115,10 +115,12 @@ Solución
 En este caso estamos interesados en probar si el costo promedio de
 construir un nuevo parque sea máximo de $2000$ millones de pesos, y
 por tanto se tendrá que el juego de hipótesis estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   H_0: \mu \leq 2000 \\
   H_1: \mu > 2000 
-\end{align*}$$
+\end{align*}
+$$
 
 para decidir el estadístico de prueba que debemos emplear, se debe
 revisar la información que poseemos, en donde tenemos que la varianza
@@ -130,29 +132,41 @@ datos, las características del ejercicio están dados por
 <img src="/assets/images/Hipotesis3a.jpg" alt="" style="max-width: 100%;">
 
 de lo anterior encontramos que el intervalo de confianza de interés es
-de la forma $$\begin{align*}
+de la forma 
+$$
+\begin{align*}
   t_c = \frac{\bar{X} - \mu_0}{S/\sqrt{n}} \sim t_{n-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos del valor de la media muestral
 $\bar{X}=1613.8$, el valor asociado a la hipótesis nula
 $\mu_0=2000$, la desviación estándar muestral $S=480.1471$ y el
 tamaño de muestra $n=20$. Al reemplazar en el estadístico de prueba se
-tendrá que $$\begin{align*}
+tendrá que 
+$$
+\begin{align*}
   t_c &= \frac{1613.8 - 2000}{480.1471/\sqrt{20}}\\
       &= -3.597104
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para saber si se rechaza o no la hipótesis nula, se realiza el
-cálculo de la región crítica, obteniendo que $$\begin{align*}
+cálculo de la región crítica, obteniendo que 
+$$
+\begin{align*}
   RC:\{t|t>t_{\alpha, n-1}\}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde, al usar el valor $\alpha=0.02$ y $n=20$, se tendrá que la
-región crítica, será igual a $$\begin{align*}
+región crítica, será igual a 
+$$
+\begin{align*}
   RC&:\{t|t>t_{\alpha=0.02, n-1=19}\}\\
   RC&:\{t|t>2.204701\}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el valor crítico no cae dentro de la región crítica, no se
 rechaza la hipótesis nula, y por tanto se concluye con un nivel de
@@ -192,10 +206,13 @@ Solución
 En este caso estamos interesados en probar la hipótesis de que la
 cantidad servida por la nueva máquina no es menor a $330_{ml}$ por
 vaso, empleando un nivel de significancia del $5\%$, y por tanto,
-tendremos que el juego de hipótesis estará dado por $$\begin{align*}
+tendremos que el juego de hipótesis estará dado por 
+$$
+\begin{align*}
   H_0:\mu \geq 330\\
   H_1:\mu < 330
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces dado que estamos en una situación en la cual sabemos que la
 población no es normal, debido a que se menciona que es Weibull, con
@@ -205,25 +222,34 @@ siguiente situación
 <img src="/assets/images/Hipotesis3b.jpg" alt="" style="max-width: 100%;">
 
 de lo anterior encontramos que el estadístico de prueba de interés es de
-la forma $$\begin{align*}
+la forma 
+$$
+\begin{align*}
   Z_c = \frac{\bar{X}-\mu_0}{\sigma/\sqrt{n}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que requerimos la media muestral $\bar{X}=327$, la
 desviación estándar poblacional $\sigma=75.52134$, el tamaño de
 muestra $n=5000$, el nivel de significancia $\alpha=0.05$ y el valor
 crítico $-Z_{\alpha=0.05}=-1.644854$. Al reemplazar en el estadístico
-de prueba tenemos que $$\begin{align*}
+de prueba tenemos que 
+$$
+\begin{align*}
   Z_c &= \frac{327-330}{75.52134/\sqrt{5000}} \\
       &= -2.808902
-\end{align*}$$
+\end{align*}
+$$
 
 En esta ocasión se decide calcular el P-valor para tomar la decisión, se
-tendrá que $$\begin{align*}
+tendrá que 
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z<Z_c)\\
           &= \mathbb{P}(Z<-2.808902)\\
           &= 0.002485539
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, como el P-valor es menor al nivel de significancia
 $\alpha=0.05$, se tendrá evidencia suficiente para rechazar la
@@ -265,10 +291,13 @@ Solución
 En este ejercicio se está interesado en probar la hipótesis sobre que el
 flujo de caja promedio mensual es igual a $25$ mil millones de pesos,
 lo cual significa que al posee la igualdad la afirmación, tendremos el
-siguiente juego de hipótesis $$\begin{align*}
+siguiente juego de hipótesis 
+$$
+\begin{align*}
   H_0:\mu = 25\\
   H_1:\mu \neq 25 
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces para saber cual es el estadístico de prueba que debemos
 aplicar, debemos inicialmente verificar qué información poseemos. De la
@@ -279,27 +308,38 @@ estaremos ante la siguiente situación
 <img src="/assets/images/Hipotesis3c.jpg" alt="" style="max-width: 100%;">
 
 lo cual quiere decir que el estadístico de prueba estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{\bar{X}-\mu_0}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que necesitamos la media muestral
 $\bar{X}=21.389$, la desviación estándar muestral $S=3.213$, el
 tamaño de muestra $n=48$ y el nivel de significancia $\alpha=0.10$.
-Al reemplazar estos valores tendremos que $$\begin{align*}
+Al reemplazar estos valores tendremos que 
+$$
+\begin{align*}
   Z_c &= \frac{21.389-25}{3.213/\sqrt{48}}\\
       &= -7.786412
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces si empleamos la región crítica para la toma de decisión,
-tendremos que $$\begin{align*}
+tendremos que 
+$$
+\begin{align*}
   RC:\{Z|Z<-Z_{\frac{\alpha}{2}} \text{ ó } Z>Z_{\frac{\alpha}{2}}\}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde al ser el valor crítico $Z_{\frac{\alpha}{2}=0.05}=1.644854$,
-se tendrá que la región crítica está dada por $$\begin{align*}
+se tendrá que la región crítica está dada por 
+$$
+\begin{align*}
   RC:\{Z|Z<-1.644854 \text{ ó } Z>1.644854\}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde al comparar el estadístico de prueba con la región crítica,
 encontramos que el estadístico de prueba cae dentro de la región
@@ -361,10 +401,13 @@ En este ejercicio estamos interesados en emplear un nivel de
 significancia del $5\%$ para probar la hipótesis de que las ventas de
 las personas que tomaron los cursos de capacitación son superiores a las
 ventas de quienes no tomaron los cursos de capacitación, la cual es de
-la forma $$\begin{align*}
+la forma 
+$$
+\begin{align*}
   H_0:\mu_C \leq \mu_S => \mu_C - \mu_S \leq 0\\
   H_1:\mu_C > \mu_S => \mu_C - \mu_S > 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 donde el subíndice $C$ representa “con capacitación” y el subíndice
 $S$ representa “sin capacitación”. Ahora, para decidir si cual es el
@@ -377,27 +420,34 @@ siguiente situación
 <img src="/assets/images/Hipotesis4a.jpg" alt="" style="max-width: 80%;">
 
 encontrando que el estadístico de prueba de interés es de la forma
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\bar{X}_C-\bar{X}_S) - d_0}{\sqrt{\frac{\sigma^2_C}{n_C}+\frac{\sigma^2_S}{n_S}}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, para realizar el cálculo requerimos de las media muestrales
 fueron $\bar{X}_C=43.5$ y $\bar{X}_S=40.8$, las varianzas
 poblacionales $\sigma^2_C=28$ y $\sigma^2_S=20$, los tamaños de
 muestrales $n_C=12$ y $n_S=15$. Al reemplazar en la ecuación del
-estadístico de prueba tendremos que $$\begin{align*}
+estadístico de prueba tendremos que 
+$$
+\begin{align*}
   Z_c &= \frac{(43.5-40.8) - 0}{\sqrt{\frac{28}{12}+\frac{20}{15}}}\\
       &= 1.410029
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para tomar una decisión suponga que se decide emplear el P-valor,
 el cual al ser una hipótesis bilateral, tendremos que está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z > Z_c) \\
           &= \mathbb{P}(Z > 1.410029) \\
           &= \mathbb{P}(Z > 1.410029) \\
           &= 0.07926556 \\
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el P-valor es mayor al nivel de significancia del $5\%$
 NO se rechazará la hipótesis nula, y por tanto se tendrá evidencia
@@ -441,10 +491,13 @@ Solución
 En este punto estamos interesados en una hipótesis unilateral, debido a
 que queremos probar si el número de vehículos que transitan por día por
 la ubicación $A$ es menor que la ubicación $B$, lo cual puede
-traducirse bajo el juego de hipótesis $$\begin{align*}
+traducirse bajo el juego de hipótesis 
+$$
+\begin{align*}
   H_0:\mu_A \geq \mu_B => \mu_A - \mu_B \geq 0\\
   H_1:\mu_A < \mu_B => \mu_A - \mu_B < 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 En donde al revisar la información suministrada se encontró que el
 número de vehículos en las dos zonas se distribuyen aproximadamente
@@ -454,38 +507,52 @@ pequeñas, por lo cual nos encontraremos en la siguiente situación
 <img src="/assets/images/Hipotesis4b.jpg" alt="" style="max-width: 80%;">
 
 en donde se aprecia que el estadístico de prueba estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
   t_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{S_p\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}} \sim t_{n_A + n_B - 2}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que para realizar el cálculo requerimos de los
 tamaños muestrales $n_A=22$ y $n_B=28$, las medias muestrales
 $\bar{X}_A=2359$ y $\bar{X}_B=2147$, y una desviación estándar
 conjunta $S_p$, la cual no poseemos, y que debemos calcular, pero que
-podemos obtener mediante la ecuación $$\begin{align*}
+podemos obtener mediante la ecuación 
+$$
+\begin{align*}
 Sp^2 &= \frac{(n_A-1)S^2_A + (n_B-1)S^2_B}{n_A+n_B-2} \\
      &= \frac{(22-1)143^2 + (28-1)301^2}{22 + 28 - 2} \\
      &= 59909.5
-\end{align*}$$ y por tanto $$\begin{align*}
+\end{align*}
+$$
+ y por tanto 
+$$
+\begin{align*}
 Sp &= \sqrt{Sp^2} \\
    &= \sqrt{59909.5} \\
    &= 244.7642
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez conocidos los valores necesarios para calcular el estadístico de
-prueba, tendremos que $$\begin{align*}
+prueba, tendremos que 
+$$
+\begin{align*}
   t_c &= \frac{(2359-2147) - 0}{244.7642\sqrt{\frac{1}{22}+\frac{1}{28}}} \\
       &= 3.040138
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, si empleamos P-valor para tomar una decisión, tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(t_{n_A+n_B-2}<t_c) \\
           &= \mathbb{P}(t_{22+28-2}<3.040138) \\
           &= \mathbb{P}(t_{48}<3.040138) \\
           &= \mathbb{P}(t_{48}<3.040138) \\
           &= 0.9980887
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, como el P-valor es superior al nivel de significancia del
 $10\%$, no se rechaza al hipótesis nula y se tendrá que hay evidencia
@@ -527,10 +594,12 @@ Solución
 En este enunciado estamos interesados en probar con un nivel de
 significancia del $15\%$ si el salario de los hombres es mayor al de
 las mujeres, lo cual se traduce en el siguiente juego de hipótesis
-$$\begin{align*}
+$$
+\begin{align*}
   H_0:\mu_H \leq \mu_M => \mu_H - \mu_M \leq 0\\
   H_1:\mu_H > \mu_M => \mu_H - \mu_M > 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 entonces para probar si la hipótesis es o no apoyada por la información
 muestral, es necesario realizar el cálculo de una estadístico de prueba,
@@ -542,24 +611,32 @@ obteniendo la siguiente situación
 <img src="/assets/images/Hipotesis4c.jpg" alt="" style="max-width: 100%;">
 
 En donde se observa que el estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\bar{X}_H-\bar{X}_M) - d_0}{\sqrt{\frac{S^2_H}{n_H}+\frac{S^2_M}{n_M}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que para realizar el cálculo se requiere de los
 tamaños muestrales $n_M = 250$ y $n_H = 270$, las medias muestrales
 $\bar{X}_M=2.3$ y $\bar{X}_H=2.6$, con desviaciones estándar
 muestrales iguales a $S_M=0.7$ y $S_H=1.2$. Por tanto al reemplazar
-los valores en el estadístico de prueba se tendrá que $$\begin{align*}
+los valores en el estadístico de prueba se tendrá que 
+$$
+\begin{align*}
   Z_c &= \frac{(2.6-2.3) - 0}{\sqrt{\frac{1.2^2}{270}+\frac{0.7^2}{250}}} \\ 
       &= 3.512838818
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, si empleamos la región crítica para observar si se rechaza o no
-la hipótesis, tendremos que $$\begin{align*}
+la hipótesis, tendremos que 
+$$
+\begin{align*}
   RC&:\{Z|Z>Z_\alpha\}\\
   RC&:\{Z|Z>1.03643\}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como el estadístico de prueba cae dentro de la región crítica,
 se tendrá evidencia suficiente para rechazar la hipótesis nula, lo cual
@@ -600,10 +677,13 @@ Solución
 En este caso estamos interesados en calcular con un nivel de
 significancia del $12\%$ si la diferencia entre los rendimientos
 promedios de combustible son o no iguales, es decir, se quiere probar el
-juego de hipótesis $$\begin{align*}
+juego de hipótesis 
+$$
+\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces dado que los rendimientos de combustible para los dos motores
 se distribuye normalmente con varianzas conocidas, estaremos en la
@@ -612,24 +692,32 @@ siguiente situación
 <img src="/assets/images/Hipotesis4d.jpg" alt="" style="max-width: 100%;">
 
 En donde se aprecia que el estadístico de prueba está dada por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{\sqrt{\frac{\sigma^2_A}{n_A}+\frac{\sigma^2_B}{n_B}}} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 observando que se requiere de los rendimientos promedio muestrales de
 los dos motores $\bar{X}_A=44$ y $\bar{X}_B=48$, las varianzas
 poblacionales $\sigma^2_A=38.44$ y $\sigma^2_B=57.76$ y los tamaños
 muestrales $n_A=47$ y $n_B=56$. Al reemplazar estos valores en el
-estadístico de prueba se tendrá que $$\begin{align*}
+estadístico de prueba se tendrá que 
+$$
+\begin{align*}
   Z_c &= \frac{(44-48) - 0}{\sqrt{\frac{38.44}{47}+\frac{57.76}{56}}} \\
       &= -2.941414
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, si realizamos el cálculo de la región crítica para observar si se
-rechaza o no la hipótesis establecida, tendremos que $$\begin{align*}
+rechaza o no la hipótesis establecida, tendremos que 
+$$
+\begin{align*}
   RC&:\{Z|z < -Z_{\alpha/2} \text{ ó } Z>Z_{\alpha/2}\}\\
   RC&:\{Z|Z<-1.5548 \text{ ó } Z>1.55478\}
-\end{align*}$$
+\end{align*}
+$$
 
 apreciando que el estadístico de prueba cae dentro de la región crítica
 lo cual significa que con un nivel de significancia del $12\%$ se
@@ -671,10 +759,14 @@ Solución
 </h3>
 <p>
 
-El juego de hipótesis en esta dado por $$\begin{align*}
+El juego de hipótesis en esta dado por 
+$$
+\begin{align*}
   H_0:\mu_A - \mu_B = 0\\
   H_1:\mu_A - \mu_B \neq 0\\
-\end{align*}$$ debido a que se quiere probar si hay o no diferencias
+\end{align*}
+$$
+ debido a que se quiere probar si hay o no diferencias
 significativas entre las tensiones promedio de corte de las dos marcas
 de madera. Adicionalmente, debido a que estamos en una situación en la
 cual sabemos que las tensiones de corte se distribuyen normalmente con
@@ -683,9 +775,12 @@ situación dada por
 
 <img src="/assets/images/Hipotesis4e.jpg" alt="" style="max-width: 100%;">
 
-situación que posee el siguiente estadístico de prueba $$\begin{align*}
+situación que posee el siguiente estadístico de prueba 
+$$
+\begin{align*}
   t_c = \frac{(\bar{X}_A-\bar{X}_B) - d_0}{\sqrt{\frac{S^2_A}{n_A}+\frac{S^2_B}{n_B}}} \sim t_v
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que requerimos de los tamaños muestrales $n_A=18$
 y $n_B=12$, de las medias muestrales de $\bar{X}_A=1130_{psi}$ y
@@ -693,31 +788,42 @@ $\bar{X}_B=1010_{psi}$ junto a unas desviaciones estándar de
 $S_A=420_{psi}$ y $S_B=380_{psi}$. Adicionalmente se requiere el
 valor de los grados de libertad $\nu$, los cuales están dados por
 
-$$\begin{align*}
+$$
+\begin{align*}
 \nu &= \frac{\left(\frac{S^2_A}{n_A} + \frac{S^2_B}{n_B}\right)^2}{\frac{(S^2_A/n_A)^2}{n_A-1} + \frac{(S^2_B/n_B)^2}{n_B-1}} \\
     &= \frac{\left(\frac{420^2}{12} + \frac{380^2}{18}\right)^2}{\frac{(480^2/12)^2}{12-1} + \frac{(380^2/18)^2}{18-1}} \\
     &= \frac{476694444}{18813149} \\
     &= 25.33837
-\end{align*}$$
+\end{align*}
+$$
 
-Al calcular el valor techo de $\nu$ tendremos que $$\begin{align*}
+Al calcular el valor techo de $\nu$ tendremos que 
+$$
+\begin{align*}
 \nu               &= 25.33837 \\
 \lceil \nu \rceil &= \lceil25.33837\rceil \\
 \lceil \nu \rceil &= 26
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, al reemplazar todos los valores necesarios para realizar el
-estadístico de prueba se tendrá que $$\begin{align*}
+estadístico de prueba se tendrá que 
+$$
+\begin{align*}
   t_c &= \frac{(1130-1010) - 0}{\sqrt{\frac{420^2}{18}+\frac{380^2}{12}}} \\
       &= 0.8121219
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para llevar a cabo la decisión, se decide emplear el P-valor, el
-cual es igual a $$\begin{align*}
+cual es igual a 
+$$
+\begin{align*}
   P-valor  &= 2\mathbb{P}(t_nu > |t_c|) \\
            &= 2(0.212047625) \\
            &= 0.4240952
-\end{align*}$$
+\end{align*}
+$$
 
 Encontrando que el P-valor es superior al nivel de significancia del
 $8\%$, lo cual significa que no hay evidencia suficiente para rechazar
@@ -836,10 +942,13 @@ Solución
 En este caso estamos interesados en probar si la verdadera proporción de
 proyectos que poseen costos superiores a $1900$ millones de pesos es
 de más del $40\%$, y por tanto se tendrá que el juego de hipótesis
-está dado por $$\begin{align*}
+está dado por 
+$$
+\begin{align*}
   H_0:p \leq 0.40\\
   H_1:p > 0.40
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces como estamos interesados en hacer inferencia sobre una
 proporción, y nos encontramos frente a una hipótesis unilateral,
@@ -848,9 +957,11 @@ tendremos que estamos ante la siguiente situación
 <img src="/assets/images/Hipotesis5a.jpg" alt="" style="max-width: 100%;">
 
 En donde se observa que el estadístico de prueba está dado por
-$$\begin{align*}
+$$
+\begin{align*}
   Z_c = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se evidencia que necesitamos para el cálculo de la proporción
 muestral de proyectos que poseen costos superiores a $1900$ millones
@@ -860,35 +971,46 @@ proporción muestral se trata de localizar aquellos costos que posean un
 valor superior a $1900$ millones de pesos, denotando como $1$
 aquellas observaciones que sean superiores a $1900$ millones de pesos,
 y $0$ aquellas observaciones que no cumplan la condición, tal que
-$$\begin{align*}
+$$
+\begin{align*}
  \underset{0}{1780} \quad \underset{1}{2933} \quad \underset{0}{1220} \quad \underset{0}{1278} \quad \underset{0}{1170} \quad \underset{0}{1032} \quad \underset{0}{1245} \quad \underset{1}{2070} \quad \underset{1}{2040} \quad \underset{0}{1289} \\
 \underset{0}{1531} \quad \underset{0}{980} \quad \underset{0}{1730} \quad \underset{0}{1380} \quad \underset{1}{2243} \quad \underset{0}{1687} \quad \underset{0}{1422} \quad \underset{0}{1731} \quad \underset{0}{1435} \quad \underset{1}{2080}
-\end{align*}$$
+\end{align*}
+$$
 
 Al contar el número de éxitos, observamos que tenemos un total de
 $x=5$ éxitos en un total de $n=20$ muestras, y por tanto, podemos
 aplicar la fórmula de frecuencia relativa para calcular la proporción
 muestral de egresados que poseen salarios superiores a $1900$
-millones, tal que $$\begin{align*}
+millones, tal que 
+$$
+\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{5}{20} \\
           &= 0.25
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al emplear este valor a los ya mencionados para el cálculo del
-estadístico de prueba, se tendrá que éste es igual a $$\begin{align*}
+estadístico de prueba, se tendrá que éste es igual a 
+$$
+\begin{align*}
   Z_c &= \frac{0.25 - 0.4}{\sqrt{\frac{0.4(1-0.4)}{20}}} \\
       &= -1.369306   
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, se decide emplear el P-valor para observar si hay o no
-evidencia a favor de la hipótesis nula obteniendo que $$\begin{align*}
+evidencia a favor de la hipótesis nula obteniendo que 
+$$
+\begin{align*}
   P-valor &= \mathbb{P}(Z>Z_c) \\
           &= \mathbb{P}(Z>-1.369306)\\
           &= 1 - \mathbb{P}(Z\leq -1.369306)\\
           &= 0.9145482
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se evidencia que el P-valor asociado al estadístico de prueba
 posee un valor del $91.45\%$ el cual es mayor al nivel de

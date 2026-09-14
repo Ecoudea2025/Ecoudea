@@ -17,7 +17,9 @@ Se dice que la variable aleatoria `$X$` tiene una distribución
 Chi-Cuadrado con `$\nu$` grados de libertad si su función de densidad de
 probabilidad está dada por
 
-$$\begin{align*}f(x) = \begin{cases} \frac{1}{2^{\frac{\nu}{2}}\Gamma(\frac{\nu}{2})} x^{\frac{\nu}{2}-1}e^{-{\frac{x}{2}}} \quad \quad & x>0; \nu>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) = \begin{cases} \frac{1}{2^{\frac{\nu}{2}}\Gamma(\frac{\nu}{2})} x^{\frac{\nu}{2}-1}e^{-{\frac{x}{2}}} \quad \quad & x>0; \nu>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}
+$$
 
 
 en donde se observa que ésta distribución es un caso particular de la
@@ -29,7 +31,9 @@ distribución Gamma cuando el parámetro de forma
 Si `$X\sim \chi^2_\nu$`, entonces se puede probar que la media y
 varianza de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X) = \nu \quad \quad Var(X)=2\nu\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X) = \nu \quad \quad Var(X)=2\nu\end{align*}
+$$
 
 
 <button id="Show1" class="btn btn-secondary">
@@ -104,7 +108,9 @@ imagen
 
 Donde se aprecia que
 
-$$\begin{align*}\mathbb{P}(\chi^2_5 > 3)=0.70\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(\chi^2_5 > 3)=0.70\end{align*}
+$$
 
 </li>
 <li>
@@ -116,9 +122,12 @@ $\mathbb{P}(\chi_\nu^2\geq x)$, y por tanto, será necesario emplear el
 complemento de la probabilidad propuesta para obtener una estructura
 similar a la propuesta por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}
+$$
+ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
 $\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
@@ -132,17 +141,21 @@ de interés asociada al valor crítico y grados de libertad.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{20} > 37.566) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) &= 1 - \mathbb{P}(\chi^2_{20} > 37.566)\\
                                     &= 1 - 0.01 \\
                                     &= 0.99
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
@@ -157,11 +170,14 @@ para el caso continuo, ya presentadas en la
 08</a>, y posteriormente calculamos el complemento de las
 probabilidades, podemos llevar la probabilidad de interés a la forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} \leq 15.812) - \mathbb{P}(\chi^2_{12} \leq 9.034) \\
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
 $\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
@@ -172,36 +188,45 @@ tabla de forma similar a los dos puntos anteriores.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{12} > 9.034)=0.70 \quad \text{ y } \quad \mathbb{P}(\chi^2_{12} > 15.812)=0.20
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)\\
                                &= 0.70 - 0.20 \\
                                &= 0.50
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, nos dan el valor
 de la probabilidad y nos piden encontrar el valor crítico $x$, dado
 unos grados de libertad. Es decir debemos calcular el valor crítico
-asociado a la probabilidad $$\begin{align*}
+asociado a la probabilidad 
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} < x) = 0.10
-\end{align*}$$
+\end{align*}
+$$
 
 Y para ello, debemos llevar inicialmente la estructura de la
 probabilidad, a la estructura manejada por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} < x) = 0.10 \\
 1 - \mathbb{P}(\chi^2_{8} \leq x) = 0.10 \\
 1- 0.10 &= \mathbb{P}(\chi^2_{8} \leq x) \\
 0.90 &= \mathbb{P}(\chi^2_{8} \leq x)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que la probabilidad
 $\mathbb{P}(\chi^2_{8} \leq x)$ ya posee la estructura de la tabla, y
@@ -217,15 +242,19 @@ En la tabla se aprecia, que al buscar el cruce entre la probabilidad
 $0.90$ y los $8$ grados de libertad, encontramos que el valor
 crítico $x$ asociado es de $3.490$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} \leq 3.490) &= 0.90
-\end{align*}$$
+\end{align*}
+$$
 
 o equivalentemente
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} < 3.490) &= 0.10
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 </ol>
@@ -257,27 +286,35 @@ Solución
 
 En este caso estamos interesados en calcular la probabilidad de que
 durante un estudiante tarde entre $10$ y $15$ minutos en resolver un
-parcial, es decir $$\begin{align*}
+parcial, es decir 
+$$
+\begin{align*}
   \mathbb{P}(10 < X < 15)
-\end{align*}$$
+\end{align*}
+$$
 
 Para poder calcular la probabilidad e interés, debemos calcular primero
 los grados de libertad $\nu$, asociados a la distribución, y para ello
 debemos despejar el valor del parámetro de interés de la fórmula de la
-varianza, tal que $$\begin{align*}
+varianza, tal que 
+$$
+\begin{align*}
   Var(X) &= 2\nu \\
   40 &= 2\nu \\
   \frac{40}{2} &= \nu \\
   \nu &= 20
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculado el parámetro de la distribución se procede a realizar
 el cálculo de la probabilidad, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbb{P}(10 < X < 15) &= \int_{10}^{15} \frac{1}{2^{\frac{20}{2}}\Gamma(\frac{20}{2})} x^{\frac{20}{2}-1}e^{-{\frac{x}{2}}} dx \\
                           &= \frac{1}{2^{10}\Gamma(10)} \int_{10}^{15} x^{10-1}e^{-{\frac{x}{2}}} dx \\
-\end{align*}$$
+\end{align*}
+$$
 
 en donde se observa que al ser el exponente de la $X$ un $10-1$,
 significa que debe integrar por partes un total de $10$ veces para
@@ -288,24 +325,37 @@ chi-cuadrada o un software para encontrar la probabilidad de interés.
 encontrar la probabilidad de interés mediante el empleo de un software
 estadístico, será cuestión reescribir la probabilidad bilateral de
 interés, en dos probabilidades unilaterales empleando los conceptos de
-probabilidad acumulada, tal que $$\begin{align*}
+probabilidad acumulada, tal que 
+$$
+\begin{align*}
   \mathbb{P}(10 < X < 15) &= \mathbb{P}(X < 15) - \mathbb{P}(X \geq 10)
-\end{align*}$$
+\end{align*}
+$$
 
 y finalmente buscando cada una de las probabilidades individuales en el
 software, en donde la probabilidad exacta de $\mathbb{P}(X \lt  15)$ es
-igual a $$\begin{align*}
+igual a 
+$$
+\begin{align*}
   \mathbb{P}(X < 15) = 0.2235924
-\end{align*}$$ mientras que la probabilidad exacta de
-$\mathbb{P}(X \geq 10)$ es igual a $$\begin{align*}
+\end{align*}
+$$
+ mientras que la probabilidad exacta de
+$\mathbb{P}(X \geq 10)$ es igual a 
+$$
+\begin{align*}
   \mathbb{P}(X < 10) = 0.03182806
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, la probabilidad de que un estudiante tarde entre $10$ y
-$15$ minutos resolviendo un punto del parcial es del $$\begin{align*}
+$15$ minutos resolviendo un punto del parcial es del 
+$$
+\begin{align*}
   \mathbb{P}(10 < X < 15) &= 0.2235924 - 0.03182806 \\
                           &= 0.1917643
-\end{align*}$$
+\end{align*}
+$$
 
 es decir, que habrá una probabilidad del $19.17\%$, de que un
 estudiante tarde entre $10$ y $15$ minutos resolviendo un punto del
@@ -315,9 +365,12 @@ parcial. <br> <br>
 encontrar la probabilidad de interés mediante el empleo de la tabla de
 la chi-cuadrado, debemos reescribir la probabilidad a de tal forma que
 su estructura sea la misma que maneja la tabla de la distribución
-chi-cuadrado, tal que $$\begin{align*}
+chi-cuadrado, tal que 
+$$
+\begin{align*}
   \mathbb{P}(10 < X < 15) &= \mathbb{P}(X > 10) - \mathbb{P}(X \geq 15)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces si buscamos en la tabla un valor aproximado para
 $\mathbb{P}(X \gt  10)$ encontramos que
@@ -326,10 +379,13 @@ $\mathbb{P}(X \gt  10)$ encontramos que
 
 En donde se observa que el valor de $10$, se encuentra entre las
 probabilidades $0.975$ y $0.95$ y por tanto podemos usar un promedio
-para aproximar la probabilidad de interés, tal que $$\begin{align*}
+para aproximar la probabilidad de interés, tal que 
+$$
+\begin{align*}
   \mathbb{P}(X > 10) &\approx \frac{0.975 + 0.95}{2} \\
                      &\approx 0.9625
-\end{align*}$$
+\end{align*}
+$$
 
 similarmente se encuentra la probabilidad aproximada para
 $\mathbb{P}(X \geq 15)$ tal que
@@ -338,16 +394,22 @@ $\mathbb{P}(X \geq 15)$ tal que
 
 En donde, como ocurre una situación similar a la probabilidad de $10$,
 empleamos un promedio entre las probabilidades $0.80$ y $0.75$ para
-encontrar la probabilidad aproximada de $15$ $$\begin{align*}
+encontrar la probabilidad aproximada de $15$ 
+$$
+\begin{align*}
   \mathbb{P}(X > 15) &\approx \frac{0.80 + 0.75}{2} \\
                      &\approx 0.775
-\end{align*}$$
+\end{align*}
+$$
 
 y finalmente, realizamos la resta correspondiente para encontrar la
-probabilidad aproximada de interés, tal que $$\begin{align*}
+probabilidad aproximada de interés, tal que 
+$$
+\begin{align*}
   \mathbb{P}(10 < X < 15) &\approx 0.9625 - 0.775 \\
                           &\approx 0.1875
-\end{align*}$$
+\end{align*}
+$$
 
 obteniendo así que la probabilidad de un estudiante tarde entre $10$ y
 $15$ minutos resolviendo un punto del parcial es aproximadamente de
@@ -366,7 +428,9 @@ Se dice que la variable aleatoria `$X$` tiene una distribución beta con
 parámetros de forma `$\alpha$` y `$\beta$` si su función de densidad de
 probabilidad está dada por
 
-$$\begin{align*}f(x) = \begin{cases} \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1} (1 - x)^{\beta - 1} \quad \quad & 0<x<1; \alpha>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) = \begin{cases} \frac{\Gamma(\alpha + \beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha-1} (1 - x)^{\beta - 1} \quad \quad & 0<x<1; \alpha>0; \beta>0 \\ 0 \quad \quad & \text{en otro caso}\end{cases}\end{align*}
+$$
 
 
 en donde se observa que ésta distribución es un caso particular de la
@@ -378,7 +442,9 @@ de forma `$\alpha = 1$` y `$\beta = 1$`.
 Si `$X\sim Beta(\alpha, \beta)$`, entonces se puede probar que la media
 y varianza de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X) = \frac{\alpha}{\alpha + \beta} \quad \quad Var(X)=\frac{\alpha\beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X) = \frac{\alpha}{\alpha + \beta} \quad \quad Var(X)=\frac{\alpha\beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}\end{align*}
+$$
 
 
 <button id="Show3" class="btn btn-secondary">
@@ -415,13 +481,17 @@ Solución
 
 En este caso estamos interesados en calcular la probabilidad de que
 durante una semana se venda a lo más el $70\%$ del tanque, y por tanto
-la probabilidad de interés será de la forma $$\begin{align*}
+la probabilidad de interés será de la forma 
+$$
+\begin{align*}
   \mathbb{P}(X \geq 0.7)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces al emplear la función de probabilidad tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbb{P}(X \geq 0.7) &= \int_{0}^{0.7} \frac{\Gamma(4 + 2)}{\Gamma(4)\Gamma(2)} x^{4-1} (1 - x)^{2 - 1} dx \\
                          &= \frac{\Gamma(6)}{\Gamma(4)\Gamma(2)} \int_{0}^{0.7}  x^{3} (1 - x) dx \\
                          &= \frac{5!}{(3!)(1!)} \int_{0}^{0.7}  x^{3} - x^4 dx \\
@@ -429,7 +499,8 @@ $$\begin{align*}
                          &= 20 \left(\frac{x^4}{4} - \frac{x^5}{5} \right)\Bigg|_{0}^{0.7} \\
                          &= 20 \left(\frac{0.7^4 - 0^4}{4} - \frac{0.7^5 - 0^5}{5} \right) \\
                          &= 0.52822 \\
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto se tendrá una probabilidad del $52.82\%$ de que en una
 semana cualquiera, la gasolinera venda como máximo el $70\%$ del
@@ -440,27 +511,33 @@ tanque.
 Ahora, el interés está dado por calcular el número promedio y desviación
 estándar de la proporción del tanque que se vende en una semana, y por
 tanto, al emplear la formula de la esperanza matemática tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(X) &= \frac{\alpha}{\alpha + \beta }\\
               &= \frac{4}{4 + 2} \\
               &= \frac{4}{6} \\
               &= 0.66667
-\end{align*}$$
+\end{align*}
+$$
 
 mientras, al emplear la formula de la varianza tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
 Var(X) &= \frac{\alpha\beta}{(\alpha + \beta)^2(\alpha + \beta + 1)} \\
        &= \frac{(4)(2)}{(4 + 2)^2(4 + 2 + 1)} \\
        &= \frac{8}{(6)^2(7)} \\
        &= 0.03174
-\end{align*}$$
+\end{align*}
+$$
 
 y ahora, al sacarle raíz cuadrada a la varianza tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.03174} \\
       &= 0.1781572
-\end{align*}$$
+\end{align*}
+$$
 
 Y por tanto se tendrá que en una semana la gasolinera vende en promedio
 un $66.66\%$ del tanque con una desviación estándar de $17.82\%$.
@@ -474,7 +551,9 @@ Se dice que la variable aleatoria `$X$` tiene una distribución Normal
 con parámetros `$\mu$` y `$\sigma^2)$`, si su función de densidad de
 probabilidad es de la forma
 
-$$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}
+$$
 
 
 #### Media y Varianza Normal
@@ -482,7 +561,9 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x -
 Si `$X\sim N(\mu, \sigma^2)$`, entonces se puede probar que la media y
 la varianza de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}
+$$
 
 
 ### Distribución Normal estándar
@@ -494,7 +575,9 @@ estándar, cuya variable aleatoria se simboliza con `$Z$`, tal que
 dada por
 
 
-$$\begin{align*}f(z) = \begin{cases} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} & -\infty<z<\infty \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(z) = \begin{cases} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} & -\infty<z<\infty \\ 0 & \text{en otro caso} \end{cases}\end{align*}
+$$
 
 
 #### Teorema de Estandarización
@@ -602,7 +685,9 @@ siguiente imagen
 
 Donde se aprecia que
 
-$$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}
+$$
 
 </li>
 <li>
@@ -613,9 +698,12 @@ establecida por la tabla $\mathbb{P}(Z\leq z)$, y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}
+$$
+ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -627,17 +715,21 @@ valores, se encontrará el valor de la probabilidad asociada a $2.13$.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z\leq 2.13)=0.9834
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z> 2.13)&= 1 - \mathbb{P}(Z\leq 2.13)\\
                    &= 1 - 0.9834 \\
                    &= 0.0166
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
@@ -650,9 +742,12 @@ acumulada para el caso continuo, ya presentadas en la
 <a href="https://jiperezga.github.io/EstadisticaI/EstIClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
 08</a>, podemos llevar la probabilidad de interés a la forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -662,36 +757,44 @@ de forma similar a los dos puntos anteriores.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z \leq -2.42)=0.0078 \quad \text{ y } \quad \mathbb{P}(Z \leq 0.24)=0.5948
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) &= \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)\\
                                &= 0.5948 - 0.0078  \\
                                &= 0.587
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, no están dando el
 valor de la probabilidad y nos piden encontrar el valor crítico $z$.
 Es decir debemos calcular el valor crítico asociado a la probabilidad
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z>z) = 0.0129
-\end{align*}$$
+\end{align*}
+$$
 
 Y para ello, debemos llevar inicialmente la estructura de la
 probabilidad, a la estructura manejada por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z>z) &= 0.0129 \\
 1 - \mathbb{P}(Z\leq z) &= 0.0129 \\
 1- 0.0129 &= \mathbb{P}(Z\leq z) \\
 0.9871 &= \mathbb{P}(Z\leq z)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que la probabilidad $\mathbb{P}(Z\leq z)$ ya posee
 la estructura de la tabla, y en consecuencia, podemos proceder a
@@ -704,15 +807,19 @@ valor crítico $z$ asociado a dicha probabilidad.
 En la tabla se aprecia, que al buscar la probabilidad $0.9871$
 encontramos que el valor crítico $z$ asociado es de $2.24$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z\leq 2.24) &= 0.9871
-\end{align*}$$
+\end{align*}
+$$
 
 o equivalentemente
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z > 2.24) &= 0.0129
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 </ol>
@@ -741,22 +848,34 @@ Solución
 
 En este caso estamos interesados en que la batería de una celular dure
 al menos $4$ años, es decir, queremos calcular la siguiente
-probabilidad. $$\begin{align*}
+probabilidad. 
+$$
+\begin{align*}
 \mathbb{P}(X \geq 4)
-\end{align*}$$ Pero en este caso tenemos que la distribución de los
+\end{align*}
+$$
+ Pero en este caso tenemos que la distribución de los
 datos no se distribuye $N(0,1)$, si no que se distribuye
 $N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
 con el fin de llevar la distribución $N(5, 1.2)$ a una normal
-estándar, tal que $$\begin{align*}
+estándar, tal que 
+$$
+\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+\end{align*}
+$$
+ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
 la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
-probabilidad, tal que $$\begin{align*}
+probabilidad, tal que 
+$$
+\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
-\end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
+\end{align*}
+$$
+ y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}(Z \lt  -0.83)$ en la tabla de la distribución normal
 estándar, de la siguiente manera
 
@@ -764,24 +883,30 @@ estándar, de la siguiente manera
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z < -0.83)=0.2033
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
                         &= 1 - 0.2033 \\
                         &= 0.7967
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual es equivalente a
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \geq 4)&= \mathbb{P}(Z \geq -0.83) \\
                     &= 0.7967
-\end{align*}$$
+\end{align*}
+$$
 
 En consecuencia, se tendrá que la probabilidad de que una batería de
 celular dure al menos $4$ años, es del $76.67\%$.
@@ -795,7 +920,9 @@ lognormal, si la variable aleatoria `$Y=ln(X)$` posee una distribución
 normal con parámetros `$\mu$` y `$\sigma^2$`, tal que la función de
 densidad de probabilidad de `$X$` será igual a
 
-$$\begin{align*}f(x) = \begin{cases} \frac{1}{x \sqrt{2\pi\sigma^2}}e^{-\frac{(ln(x) - \mu)^2}{2\sigma^2}} & x>0, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) = \begin{cases} \frac{1}{x \sqrt{2\pi\sigma^2}}e^{-\frac{(ln(x) - \mu)^2}{2\sigma^2}} & x>0, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}
+$$
 
 
 #### Media y Varianza Lognormal
@@ -803,7 +930,9 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{x \sqrt{2\pi\sigma^2}}e^{-\frac{(l
 Si `$X\sim LogN(\mu, \sigma)$`, entonces se puede probar que la media y
 la varianza de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=e^{\mu+\frac{\sigma^2}{2}} \quad \quad Var(X)=e^{2\mu+\sigma^2} (e^{\sigma^2}  - 1)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=e^{\mu+\frac{\sigma^2}{2}} \quad \quad Var(X)=e^{2\mu+\sigma^2} (e^{\sigma^2}  - 1)\end{align*}
+$$
 
 
 <button id="Show6" class="btn btn-secondary">
@@ -844,20 +973,25 @@ Solución
 En este caso estamos interesados encontrar la probabilidad de que mínimo
 $12$ partes por millón, sea la concentración de contaminación que se
 encuentra en una medición realizada, es decir que si $X$ es la
-concentración de contaminación, se tendrá que $$\begin{align*}
+concentración de contaminación, se tendrá que 
+$$
+\begin{align*}
 \mathbb{P}(X \geq 12)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, si empleamos para realizar el cálculo la relación entre la
 distribución normal y la distribución lognormal, y el concepto de
 estandarización de la distribución normal, tendremos que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \geq 12) &= 1 - \mathbb{P}(X < 12) \\
                       &= 1 - \mathbb{P}(ln(X) < ln(12)) \\
                       &= 1 - \mathbb{P}(ln(X) - \mu < ln(12) - 5) \\
                       &= 1 - \mathbb{P}\left(\frac{ln(X) - \mu}{\sigma} < \frac{ln(12) - 5}{2.8}\right) \\
                       &= 1 - \mathbb{P}\left(Z < -0.8982476\right) \\
-\end{align*}$$
+\end{align*}
+$$
 
 y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}\left(Z \lt  -0.8982476\right) \approx \mathbb{P}(Z \lt  -0.90)$
@@ -867,17 +1001,21 @@ en la tabla de la distribución normal estándar, de la siguiente manera
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z < -0.8982476)\approx 0.1841
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \geq 12) &= 1 - \mathbb{P}\left(Z < -0.8982476\right) \\
                       &\approx 1 - 0.1841 \\
                       &\approx 0.8159
-\end{align*}$$
+\end{align*}
+$$
 
 es decir, que la probabilidad de que la concentración de contaminación
 encontrada en una medición en el río en el trayecto Poblado-Industriales
@@ -890,22 +1028,32 @@ En este caso estamos interesados en calcular el promedio y desviación
 estándar de la concentración de contaminación que se encuentra en el
 trayecto Poblado-Industriales del río Medellín, en donde, al aplicar las
 ecuaciones de esperanza matemática y varianza, se tendrá que el promedio
-de concentración de contaminación es de $$\begin{align*}
+de concentración de contaminación es de 
+$$
+\begin{align*}
 \mathbb{E}(X) &= e^{\mu+\frac{\sigma^2}{2}} \\
               &= e^{5+\frac{2.8^2}{2}} \\
               &= 7480.089
-\end{align*}$$ la varianza será igual a $$\begin{align*}
+\end{align*}
+$$
+ la varianza será igual a 
+$$
+\begin{align*}
 Var(X) &= e^{2\mu+\sigma^2} (e^{\sigma^2}  - 1) \\
        &= e^{2(5)+2.8^2} (e^{2.8^2}  - 1) \\
        &= 55951735 (2540.205  - 1) \\
        &= 142072925271
-\end{align*}$$
+\end{align*}
+$$
 
-y por tanto la desviación estándar será de $$\begin{align*}
+y por tanto la desviación estándar será de 
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var} \\
       &= \sqrt{142072925271} \\
       &= 376925.6
-\end{align*}$$
+\end{align*}
+$$
 
 Es decir que en promedio la medición de la concentración de
 contaminación en el río Medellín arrojará un valor de $7480.089$

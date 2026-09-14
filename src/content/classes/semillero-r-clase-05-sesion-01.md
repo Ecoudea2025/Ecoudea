@@ -1069,7 +1069,7 @@ una lista de datos en <tt>R</tt>
 </section>
 <section class="highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code>$DataFrame
+<pre class="highlight"><code>&#36;DataFrame
   Numeric Character Factor Logic
 1  1.0+0i         a      a FALSE
 2  4.0+0i         c      c  TRUE
@@ -1078,15 +1078,15 @@ una lista de datos en <tt>R</tt>
 5 -3.0-2i         c      c  TRUE
 6  8.0+0i         a      a FALSE
 
-$Matriz
+&#36;Matriz
      [,1] [,2] [,3]
 [1,] "a"  "a"  "c" 
 [2,] "c"  "b"  "a" 
 
-$Función
+&#36;Función
 expression(beta)
 
-$Arreglo
+&#36;Arreglo
 , , 1
 
       [,1]  [,2]

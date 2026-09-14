@@ -137,7 +137,9 @@ que representa la variable aleatoria conjunta,
 que representa la esperanza de la variable aleatoria conjunta, y
 
 
-$$\begin{align*}\boldsymbol{\Sigma} =\begin{bmatrix}\sigma_{11} & \sigma_{12}  & \cdots  & \sigma_{1T} \\ \sigma_{21}  & \sigma_{22}  & \cdots  & \sigma_{2T} \\ \vdots  & \vdots  & \ddots  & \vdots \\ \sigma_{T1}  & \sigma_{T2} & \cdots  & \sigma_{TT} \end{bmatrix}\end{align*}$$
+$$
+\begin{align*}\boldsymbol{\Sigma} =\begin{bmatrix}\sigma_{11} & \sigma_{12}  & \cdots  & \sigma_{1T} \\ \sigma_{21}  & \sigma_{22}  & \cdots  & \sigma_{2T} \\ \vdots  & \vdots  & \ddots  & \vdots \\ \sigma_{T1}  & \sigma_{T2} & \cdots  & \sigma_{TT} \end{bmatrix}\end{align*}
+$$
 
 
 la matriz de covarianzas de la variable aleatoria conjunta.
@@ -151,23 +153,31 @@ cada una de las siguientes tres condiciones:
 
 1.  El proceso es estacionario en media
     
-$$\begin{align*}\mathbb{E}(Y_t)=\mu_t = \mu \text{ para todo } t=1,2,\ldots T\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(Y_t)=\mu_t = \mu \text{ para todo } t=1,2,\ldots T\end{align*}
+$$
 
 2.  El proceso es estacionario en varianza
     
-$$\begin{align*}Var(Y_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,\ldots T\end{align*}$$
+$$
+\begin{align*}Var(Y_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,\ldots T\end{align*}
+$$
 
 3.  La autocovarianza sólo depende de la distancia $k$ de las
     observaciones en el tiempo de las variables del proceso
     
-$$\begin{align*}Cov(Y_t, Y_{t+k})=\gamma(k)= Cov(Y_{t-k}, Y_{t})=\gamma(-k)\end{align*}$$
+$$
+\begin{align*}Cov(Y_t, Y_{t+k})=\gamma(k)= Cov(Y_{t-k}, Y_{t})=\gamma(-k)\end{align*}
+$$
 
     donde, la función es simétrica alrededor de cero, con
     `$\gamma(0)=Var(Y_t)$`. En consecuencia de la tercer condición, se
     tendrá que la autocorrelación también sea una función simétrica
     alrededor de cero.
     
-$$\begin{align*}Cor(Y_t, Y_{t+k})=\rho(k)= Cor(Y_{t-k}, Y_{t})=\rho(-k)\end{align*}$$
+$$
+\begin{align*}Cor(Y_t, Y_{t+k})=\rho(k)= Cor(Y_{t-k}, Y_{t})=\rho(-k)\end{align*}
+$$
 
 
 Otra propiedad importante que pueden cumplir los procesos estacionarios
@@ -194,7 +204,9 @@ $\hat{\gamma}(k) = \frac{1}{T-1}\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar
 
 Además, para que la condición de ergodicidad se cumpla, basta con que
 
-$$\begin{align*}\lim_{k\to\infty} \rho(k) = 0\end{align*}$$
+$$
+\begin{align*}\lim_{k\to\infty} \rho(k) = 0\end{align*}
+$$
  con una
 **velocidad rápida**, en donde, a medida que aumenta la distancia en el
 tiempo entre las observaciones de la serie, disminuye la
@@ -217,16 +229,22 @@ características:
 
 1.  La media es constante e igual a cero
     
-$$\begin{align*}\mathbb{E}(\varepsilon_t)=\mu_t = 0 \text{ para todo } t=1,2,\ldots T\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(\varepsilon_t)=\mu_t = 0 \text{ para todo } t=1,2,\ldots T\end{align*}
+$$
 
 2.  La varianza es constante
     
-$$\begin{align*}Var(\varepsilon_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,\ldots T\end{align*}$$
+$$
+\begin{align*}Var(\varepsilon_t)=\sigma_t^2=\sigma^2 \text{ para todo } t=1,2,\ldots T\end{align*}
+$$
 
 3.  La autocovarianza es cero, y en consecuencia también la
     autocorrelación es cero:
     
-$$\begin{align*}Cov(\varepsilon_t, \varepsilon_{t+k}) &=\gamma(k) = 0 \\  Cor(\varepsilon_t, \varepsilon_{t+k}) &=\rho(k) = 0\end{align*}$$
+$$
+\begin{align*}Cov(\varepsilon_t, \varepsilon_{t+k}) &=\gamma(k) = 0 \\  Cor(\varepsilon_t, \varepsilon_{t+k}) &=\rho(k) = 0\end{align*}
+$$
 
     para todo `$k\neq 0.$`
 
@@ -239,7 +257,9 @@ la ACF de una serie de valores `$Y_1,Y_2,\ldots, Y_T$`, puede definirse
 como
 
 
-$$\begin{align*}Cor(Y_t,Y_{t+k}) = \hat{\rho(k)} = \frac{\hat{\gamma}(k)}{\hat{\gamma}(0)} = \frac{\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})}{\sum_{t=1}^{T}(y_t-\bar{y})^2}\end{align*}$$
+$$
+\begin{align*}Cor(Y_t,Y_{t+k}) = \hat{\rho(k)} = \frac{\hat{\gamma}(k)}{\hat{\gamma}(0)} = \frac{\sum_{t=1}^{T-k}(y_{t+k} - \bar{y})(y_{t} - \bar{y})}{\sum_{t=1}^{T}(y_t-\bar{y})^2}\end{align*}
+$$
 
 
 donde, `$\gamma(0)$` representa la varianza de la variable `$Y_t$`,
@@ -260,7 +280,9 @@ permite determinar si la serie de tiempo de interés, es o no un proceso
 estacionario en covarianza, y por tanto, se emplea la siguiente prueba
 de hipótesis para probar cuales autocorrelaciones son significativas
 
-$$\begin{align*}H_0: \rho(k)=0 \\  H_1: \rho(k)\neq 0\end{align*}$$
+$$
+\begin{align*}H_0: \rho(k)=0 \\  H_1: \rho(k)\neq 0\end{align*}
+$$
 
 
 con `$k = 1,2,\ldots, m$`. En donde, la autocorrelación `$k$` es
@@ -268,7 +290,9 @@ significativa si ésta se encuentra dentro de la región crítica, la cual
 se construye con un nivel de significancia `$\alpha$` y asumiendo
 normalidad, mediante la formula:
 
-$$\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T}\end{align*}$$
+$$
+\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T}\end{align*}
+$$
 
 
 en donde, valores `$|\hat{\rho}(k)|> Z_{\frac{\alpha}{2}}/\sqrt{T}$`
@@ -297,12 +321,16 @@ matricialmente se tiene que
 equivalente a
 `$\boldsymbol{\phi} = \boldsymbol{R}^{-1}\boldsymbol{\rho}$`, donde
 
-$$\begin{align*}\boldsymbol{\rho} = \begin{bmatrix}\rho(1) \\ \rho(2) \\ \rho(3) \\ \vdots \\ \rho(k)  \end{bmatrix}_{k\times1} \boldsymbol{R} = \begin{bmatrix}1 & \rho(1) & \rho(2) & \cdots & \rho(k-1) \\ \rho(1) & 1 & \rho(1) & \cdots & \rho(k-2) \\ \rho(2) & \rho(1) & 1 & \cdots & \rho(k-3)\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \rho(k-1) & \rho(k-2) & \rho(k-3) & \cdots & 1 \end{bmatrix}_{k\times k}\phi= \begin{bmatrix}\phi_{k1} \\ \phi_{k2} \\ \phi_{k3} \\ \vdots \\ \phi_{kk}  \end{bmatrix}_{k\times1}\end{align*}$$
+$$
+\begin{align*}\boldsymbol{\rho} = \begin{bmatrix}\rho(1) \\ \rho(2) \\ \rho(3) \\ \vdots \\ \rho(k)  \end{bmatrix}_{k\times1} \boldsymbol{R} = \begin{bmatrix}1 & \rho(1) & \rho(2) & \cdots & \rho(k-1) \\ \rho(1) & 1 & \rho(1) & \cdots & \rho(k-2) \\ \rho(2) & \rho(1) & 1 & \cdots & \rho(k-3)\\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \rho(k-1) & \rho(k-2) & \rho(k-3) & \cdots & 1 \end{bmatrix}_{k\times k}\phi= \begin{bmatrix}\phi_{k1} \\ \phi_{k2} \\ \phi_{k3} \\ \vdots \\ \phi_{kk}  \end{bmatrix}_{k\times1}\end{align*}
+$$
 
 
 Además, la matriz `$\boldsymbol{R}^{-1}$` puede ser calculada la formula
 
-$$\begin{align*}\boldsymbol{R}^{-1}=\frac{\text{adj}(\boldsymbol{R})}{\text{det}(\boldsymbol{R})}\end{align*}$$
+$$
+\begin{align*}\boldsymbol{R}^{-1}=\frac{\text{adj}(\boldsymbol{R})}{\text{det}(\boldsymbol{R})}\end{align*}
+$$
 
 
 siempre y cuando `$\boldsymbol{R}$` sea invertible, donde
@@ -320,14 +348,18 @@ máximo de rezagos que deben seleccionarse
 Para establecer si una autocorrelación parcial es o no significativa, es
 necesario establecer la siguiente prueba de hipótesis
 
-$$\begin{align*}H_0: \phi_{kk}=0 \\  H_1: \phi_{kk}\neq 0\end{align*}$$
+$$
+\begin{align*}H_0: \phi_{kk}=0 \\  H_1: \phi_{kk}\neq 0\end{align*}
+$$
 
 
 para cada `$k = 1,2,\ldots, m$`. En donde, en donde, al igual que la
 ACF, la región de rechazo de la hipótesis puede ser establecida a un
 nivel de significancia `$\alpha$` y asumiendo normalidad, mediante la
 formula: 
-$$\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T}\end{align*}$$
+$$
+\begin{align*}\pm Z_{\frac{\alpha}{2}}/\sqrt{T}\end{align*}
+$$
 
 
 en donde, el criterio de rechazo de `$H_0$` estará dado por la región

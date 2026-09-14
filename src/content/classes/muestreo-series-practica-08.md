@@ -47,6 +47,7 @@ Lista de ejercicios
     inciso f. 
     </li>
     </ol>
+
 2.  A partir de las ecuaciones presentados a continuación, identifique
     el modelo y pruebe si los modelos propuestos son invertibles y/o
     estacionarios. Para todos los casos se asume que
@@ -83,6 +84,7 @@ Lista de ejercicios
     </li>
     </li>
     </ol>
+
 3.  Realice los gráficos teóricos ACF y PACF que deberían tener un
     proceso
     <ol type="a">
@@ -108,6 +110,7 @@ Lista de ejercicios
     $ARMA(3,1)$
     </li>
     </ol>
+
 4.  A partir de las siguientes EACF, indique qué modelos creería usted
     que son plausibles para cada caso.
 

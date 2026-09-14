@@ -88,9 +88,13 @@ Ocultar Ejemplo en <tt>R</tt>
 Función <tt>apply</tt>
 </h3>
 <p>
-Construya una matríz de la forma $$\begin{align*}
+Construya una matríz de la forma 
+$$
+\begin{align*}
 M = \begin{bmatrix}5 & 12 & 14 \\13 & 6 & 3 \\8 & 9 & 12 \\15 & 12 & 11 \end{bmatrix}
-\end{align*}$$ Y con ésta, encuentre el número máximo y número mínimo
+\end{align*}
+$$
+ Y con ésta, encuentre el número máximo y número mínimo
 por cada fila y por cada columna.
 </p>
 <section class="language-r highlighter-rouge">
@@ -240,9 +244,9 @@ los valores calculados en forma de una lista.
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>'data.frame':   31 obs. of  3 variables:
- $ Girth : num  8.3 8.6 8.8 10.5 10.7 10.8 11 11 11.1 11.2 ...
- $ Height: num  70 65 63 72 81 83 66 75 80 75 ...
- $ Volume: num  10.3 10.3 10.2 16.4 18.8 19.7 15.6 18.2 22.6 19.9 ...
+ &#36; Girth : num  8.3 8.6 8.8 10.5 10.7 10.8 11 11 11.1 11.2 ...
+ &#36; Height: num  70 65 63 72 81 83 66 75 80 75 ...
+ &#36; Volume: num  10.3 10.3 10.2 16.4 18.8 19.7 15.6 18.2 22.6 19.9 ...
 </code></pre>
 </section>
 </section>
@@ -255,15 +259,15 @@ los valores calculados en forma de una lista.
 </section>
 <section class="highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code>$Girth
+<pre class="highlight"><code>&#36;Girth
    0%   25%   50%   75%  100% 
  8.30 11.05 12.90 15.25 20.60 
 
-$Height
+&#36;Height
   0%  25%  50%  75% 100% 
   63   72   76   80   87 
 
-$Volume
+&#36;Volume
   0%  25%  50%  75% 100% 
 10.2 19.4 24.2 37.3 77.0
 </code></pre>
@@ -320,9 +324,9 @@ los valores calculados de forma simplificada.
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>'data.frame':   31 obs. of  3 variables:
- $ Girth : num  8.3 8.6 8.8 10.5 10.7 10.8 11 11 11.1 11.2 ...
- $ Height: num  70 65 63 72 81 83 66 75 80 75 ...
- $ Volume: num  10.3 10.3 10.2 16.4 18.8 19.7 15.6 18.2 22.6 19.9 ...
+ &#36; Girth : num  8.3 8.6 8.8 10.5 10.7 10.8 11 11 11.1 11.2 ...
+ &#36; Height: num  70 65 63 72 81 83 66 75 80 75 ...
+ &#36; Volume: num  10.3 10.3 10.2 16.4 18.8 19.7 15.6 18.2 22.6 19.9 ...
 </code></pre>
 </section>
 </section>
@@ -398,9 +402,9 @@ verificador de resultados que cada valor sea de tipo numérico.
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>'data.frame':   31 obs. of  3 variables:
- $ Girth : num  8.3 8.6 8.8 10.5 10.7 10.8 11 11 11.1 11.2 ...
- $ Height: num  70 65 63 72 81 83 66 75 80 75 ...
- $ Volume: num  10.3 10.3 10.2 16.4 18.8 19.7 15.6 18.2 22.6 19.9 ...
+ &#36; Girth : num  8.3 8.6 8.8 10.5 10.7 10.8 11 11 11.1 11.2 ...
+ &#36; Height: num  70 65 63 72 81 83 66 75 80 75 ...
+ &#36; Volume: num  10.3 10.3 10.2 16.4 18.8 19.7 15.6 18.2 22.6 19.9 ...
 </code></pre>
 </section>
 </section>
@@ -475,8 +479,8 @@ Retorne los valores calculados de forma simplificada.
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>'data.frame':   50 obs. of  2 variables:
- $ speed: num  4 4 7 7 8 9 10 10 10 11 ...
- $ dist : num  2 10 4 22 16 10 18 26 34 17 ...
+ &#36; speed: num  4 4 7 7 8 9 10 10 10 11 ...
+ &#36; dist : num  2 10 4 22 16 10 18 26 34 17 ...
 </code></pre>
 </section>
 </section>
@@ -484,7 +488,7 @@ Retorne los valores calculados de forma simplificada.
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Se calcula la función
 (speed^2 * dist) / (speed + dist) </span><span class="w">
-</span><span class="kc">mapply</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="m">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">),</span><span class="w"> </span><span class="n">cars</span><span class="o">$</span><span class="n">speed</span><span class="p">,</span><span class="w"> </span><span class="n">cars</span><span class="o">$</span><span class="n">dist</span><span class="p">,</span><span class="w"> </span><span class="n">SIMPLIFY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">
+</span><span class="kc">mapply</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="m">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">),</span><span class="w"> </span><span class="n">cars</span><span class="o">&#36;</span><span class="n">speed</span><span class="p">,</span><span class="w"> </span><span class="n">cars</span><span class="o">&#36;</span><span class="n">dist</span><span class="p">,</span><span class="w"> </span><span class="n">SIMPLIFY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -554,8 +558,8 @@ simplificada.
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>'data.frame':   50 obs. of  2 variables:
- $ speed: num  4 4 7 7 8 9 10 10 10 11 ...
- $ dist : num  2 10 4 22 16 10 18 26 34 17 ...
+ &#36; speed: num  4 4 7 7 8 9 10 10 10 11 ...
+ &#36; dist : num  2 10 4 22 16 10 18 26 34 17 ...
 </code></pre>
 </section>
 </section>
@@ -563,7 +567,7 @@ simplificada.
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># La media de la distancia, basada
 en los niveles de velocidad</span><span class="w">
-</span><span class="kc">tapply</span><span class="p">(</span><span class="n">cars</span><span class="o">$</span><span class="n">dist</span><span class="p">,</span><span class="w"> </span><span class="n">cars</span><span class="o">$</span><span class="n">speed</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">,</span><span class="w"> </span><span class="n">simplify</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">
+</span><span class="kc">tapply</span><span class="p">(</span><span class="n">cars</span><span class="o">&#36;</span><span class="n">dist</span><span class="p">,</span><span class="w"> </span><span class="n">cars</span><span class="o">&#36;</span><span class="n">speed</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">,</span><span class="w"> </span><span class="n">simplify</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>

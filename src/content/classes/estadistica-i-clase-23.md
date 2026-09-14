@@ -1467,14 +1467,14 @@ Estructura de los datos
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>Classes 'tbl_df', 'tbl' and 'data.frame':   20 obs. of  8 variables:
- $ Municipio    : chr  "Caldas" "Bello" "Medellín" "Caldas" ...
- $ Estrato      : num  5 4 1 4 3 3 1 3 2 4 ...
- $ Edad         : num  17 27 18 22 20 22 20 27 20 39 ...
- $ Altura       : num  1.77 1.65 1.57 1.84 1.86 1.74 1.91 1.77 1.58 1.81 ...
- $ Peso         : num  66 90 66 87 89 90 79 88 61 70 ...
- $ Salario      : num  1635100 1752500 1858400 2131400 1874800 ...
- $ SatisTrabajo : chr  "Muy satisfecho" "Insatisfecho" "Satisfecho" "Muy satisfecho" ...
- $ DeporFavorito: chr  "Fútbol" "Fútbol" "Baloncesto" "Fútbol" ...
+ &#36; Municipio    : chr  "Caldas" "Bello" "Medellín" "Caldas" ...
+ &#36; Estrato      : num  5 4 1 4 3 3 1 3 2 4 ...
+ &#36; Edad         : num  17 27 18 22 20 22 20 27 20 39 ...
+ &#36; Altura       : num  1.77 1.65 1.57 1.84 1.86 1.74 1.91 1.77 1.58 1.81 ...
+ &#36; Peso         : num  66 90 66 87 89 90 79 88 61 70 ...
+ &#36; Salario      : num  1635100 1752500 1858400 2131400 1874800 ...
+ &#36; SatisTrabajo : chr  "Muy satisfecho" "Insatisfecho" "Satisfecho" "Muy satisfecho" ...
+ &#36; DeporFavorito: chr  "Fútbol" "Fútbol" "Baloncesto" "Fútbol" ...
 </code></pre>
 </section>
 </section>
@@ -1515,15 +1515,15 @@ Corrección de estructura de los datos
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1">## Transformar variables a factor</span><span class="w">
-</span><span class="n">datos</span><span class="o">$</span><span class="n">Municipio</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.factor</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Municipio</span><span class="p">)</span><span class="w">
-</span><span class="n">datos</span><span class="o">$</span><span class="n">DeporFavorito</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.factor</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">DeporFavorito</span><span class="p">)</span><span class="w">
+</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Municipio</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.factor</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Municipio</span><span class="p">)</span><span class="w">
+</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">DeporFavorito</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.factor</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">DeporFavorito</span><span class="p">)</span><span class="w">
 
 </span><span class="c1">## Trasforma variable a factor ordinal</span><span class="w">
-</span><span class="n">datos</span><span class="o">$</span><span class="n">Estrato</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.ordered</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Estrato</span><span class="p">)</span><span class="w">
-</span><span class="n">datos</span><span class="o">$</span><span class="n">SatisTrabajo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.ordered</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">SatisTrabajo</span><span class="p">)</span><span class="w">
+</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Estrato</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.ordered</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Estrato</span><span class="p">)</span><span class="w">
+</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">SatisTrabajo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">as.ordered</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">SatisTrabajo</span><span class="p">)</span><span class="w">
 
 </span><span class="c1"># En caso de que el orden automático no sea el adecuado</span><span class="w">
-</span><span class="n">datos</span><span class="o">$</span><span class="n">SatisTrabajo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">ordered</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">SatisTrabajo</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Muy insatisfecho"</span><span class="p">,</span><span class="w"> 
+</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">SatisTrabajo</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">ordered</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">SatisTrabajo</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Muy insatisfecho"</span><span class="p">,</span><span class="w"> 
     </span><span class="s2">"Insatisfecho"</span><span class="p">,</span><span class="w"></span><span class="s2">"Indiferente"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Satisfecho"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Muy satisfecho"</span><span class="p">))</span><span class="w">
 </span><span class="c1"># Muestra la estructura de la base de datos</span><span class="w"> 
 </span><span class="kc">str</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span><span class="w">
@@ -1533,14 +1533,14 @@ Corrección de estructura de los datos
 <section class="highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code>Classes 'tbl_df', 'tbl' and 'data.frame':   20 obs. of  8 variables:
- $ Municipio    : Factor w/ 5 levels "Bello","Caldas",..: 2 1 5 2 4 2 3 4 3 1 ...
- $ Estrato      : Ord.factor w/ 6 levels "1"<"2"<"3"<"4"<..: 5 4 1 4 3 3 1 3 2 4 ...
- $ Edad         : num  17 27 18 22 20 22 20 27 20 39 ...
- $ Altura       : num  1.77 1.65 1.57 1.84 1.86 1.74 1.91 1.77 1.58 1.81 ...
- $ Peso         : num  66 90 66 87 89 90 79 88 61 70 ...
- $ Salario      : num  1635100 1752500 1858400 2131400 1874800 ...
- $ SatisTrabajo : Ord.factor w/ 5 levels "Muy insatisfecho"<..: 5 2 4 5 4 5 1 3 5 4 ...
- $ DeporFavorito: Factor w/ 4 levels "Baloncesto","Fútbol",..: 2 2 1 2 3 2 2 1 1 3 ...
+ &#36; Municipio    : Factor w/ 5 levels "Bello","Caldas",..: 2 1 5 2 4 2 3 4 3 1 ...
+ &#36; Estrato      : Ord.factor w/ 6 levels "1"<"2"<"3"<"4"<..: 5 4 1 4 3 3 1 3 2 4 ...
+ &#36; Edad         : num  17 27 18 22 20 22 20 27 20 39 ...
+ &#36; Altura       : num  1.77 1.65 1.57 1.84 1.86 1.74 1.91 1.77 1.58 1.81 ...
+ &#36; Peso         : num  66 90 66 87 89 90 79 88 61 70 ...
+ &#36; Salario      : num  1635100 1752500 1858400 2131400 1874800 ...
+ &#36; SatisTrabajo : Ord.factor w/ 5 levels "Muy insatisfecho"<..: 5 2 4 5 4 5 1 3 5 4 ...
+ &#36; DeporFavorito: Factor w/ 4 levels "Baloncesto","Fútbol",..: 2 2 1 2 3 2 2 1 1 3 ...
 </code></pre>
 </section>
 </section>
@@ -1585,7 +1585,7 @@ Resumen numérico con librería <tt>RcmdrMisc</tt>
 </span><span class="kc">library</span><span class="p">(</span><span class="n">RcmdrMisc</span><span class="p">)</span><span class="w">  </span><span class="c1"># Carga librería RcmdrMisc</span><span class="w">
 
 </span><span class="c1"># Forma básica numSummary</span><span class="w">
-</span><span class="kc">numSummary</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Altura</span><span class="p">)</span><span class="w">
+</span><span class="kc">numSummary</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Altura</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1599,7 +1599,7 @@ Resumen numérico con librería <tt>RcmdrMisc</tt>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Forma avanzada numSummary</span><span class="w">
-</span><span class="kc">numSummary</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Altura</span><span class="p">,</span><span class="w"> </span><span class="n">statistics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">,</span><span class="w"> </span><span class="s2">"sd"</span><span class="p">,</span><span class="w"> </span><span class="s2">"se"</span><span class="p">,</span><span class="w"> </span><span class="s2">"IQR"</span><span class="p">,</span><span class="w"> </span><span class="s2">"quantiles"</span><span class="p">,</span><span class="w"> 
+</span><span class="kc">numSummary</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Altura</span><span class="p">,</span><span class="w"> </span><span class="n">statistics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">,</span><span class="w"> </span><span class="s2">"sd"</span><span class="p">,</span><span class="w"> </span><span class="s2">"se"</span><span class="p">,</span><span class="w"> </span><span class="s2">"IQR"</span><span class="p">,</span><span class="w"> </span><span class="s2">"quantiles"</span><span class="p">,</span><span class="w"> 
     </span><span class="s2">"cv"</span><span class="p">,</span><span class="w"> </span><span class="s2">"skewness"</span><span class="p">,</span><span class="w"> </span><span class="s2">"kurtosis"</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w"> </span><span class="n">quantiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0.25</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.75</span><span class="p">,</span><span class="w"> 
     </span><span class="m">1</span><span class="p">))</span><span class="w">
 </span></code></pre>
@@ -1659,7 +1659,7 @@ Resumen numérico con librería <tt>psych</tt>
 </span><span class="kc">library</span><span class="p">(</span><span class="n">psych</span><span class="p">)</span><span class="w">  </span><span class="c1"># Carga librería pysch</span><span class="w">
 
 </span><span class="c1"># Forma básica pysch</span><span class="w">
-</span><span class="kc">describe</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Altura</span><span class="p">)</span><span class="w">
+</span><span class="kc">describe</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Altura</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1675,7 +1675,7 @@ X1 0.03
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Forma avanzada psych</span><span class="w">
-</span><span class="kc">describe</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Altura</span><span class="p">,</span><span class="w"> </span><span class="n">ranges</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">quant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.25</span><span class="p">,</span><span class="w"> 
+</span><span class="kc">describe</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Altura</span><span class="p">,</span><span class="w"> </span><span class="n">ranges</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.1</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">quant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.25</span><span class="p">,</span><span class="w"> 
     </span><span class="m">0.75</span><span class="p">),</span><span class="w"> </span><span class="n">IQR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -1745,7 +1745,7 @@ Resumen numérico por grupos con librería <tt>RcmdrMisc</tt>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Forma avanzada numSummary por grupos</span><span class="w">
-</span><span class="kc">numSummary</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">Peso</span><span class="p">,</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">DeporFavorito</span><span class="p">,</span><span class="w"> </span><span class="n">statistics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">,</span><span class="w"> 
+</span><span class="kc">numSummary</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Peso</span><span class="p">,</span><span class="w"> </span><span class="n">groups</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">DeporFavorito</span><span class="p">,</span><span class="w"> </span><span class="n">statistics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">,</span><span class="w"> 
     </span><span class="s2">"sd"</span><span class="p">,</span><span class="w"> </span><span class="s2">"se"</span><span class="p">,</span><span class="w"> </span><span class="s2">"IQR"</span><span class="p">,</span><span class="w"> </span><span class="s2">"quantiles"</span><span class="p">,</span><span class="w"> </span><span class="s2">"cv"</span><span class="p">,</span><span class="w"> </span><span class="s2">"skewness"</span><span class="p">,</span><span class="w"> </span><span class="s2">"kurtosis"</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"3"</span><span class="p">,</span><span class="w"> 
     </span><span class="n">quantiles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">0.25</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.75</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">))</span><span class="w">
 </span></code></pre>
@@ -1802,7 +1802,7 @@ Resumen numérico por grupos con librería <tt>psych</tt>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Forma avanzada pysch por grupos</span><span class="w">
-</span><span class="kc">describeBy</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">Peso</span><span class="p">,</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">DeporFavorito</span><span class="p">,</span><span class="w"> </span><span class="n">ranges</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.2</span><span class="p">,</span><span class="w"> 
+</span><span class="kc">describeBy</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Peso</span><span class="p">,</span><span class="w"> </span><span class="n">group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">DeporFavorito</span><span class="p">,</span><span class="w"> </span><span class="n">ranges</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">trim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.2</span><span class="p">,</span><span class="w"> 
     </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="n">quant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">0.25</span><span class="p">,</span><span class="w"> </span><span class="m">0.75</span><span class="p">),</span><span class="w"> </span><span class="n">IQR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -1900,7 +1900,7 @@ Tabla de frecuencias absoluta una vía
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Creación de tabla de frecuencias absolutas en una vía</span><span class="w">
-</span><span class="n">tabla1via</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Municipio</span><span class="p">)</span><span class="w">
+</span><span class="n">tabla1via</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Municipio</span><span class="p">)</span><span class="w">
 </span><span class="n">tabla1via</span><span class="w">
 </span></code></pre>
 </section>
@@ -1955,7 +1955,7 @@ Tabla de frecuencias absoluta dos vías
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Creación de tabla de frecuencias absolutas en dos vía</span><span class="w">
-</span><span class="n">tabla2vias</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">Municipio</span><span class="p">,</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">DeporFavorito</span><span class="p">)</span><span class="w">
+</span><span class="n">tabla2vias</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">Municipio</span><span class="p">,</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">DeporFavorito</span><span class="p">)</span><span class="w">
 </span><span class="n">tabla2vias</span><span class="w">
 </span></code></pre>
 </section>

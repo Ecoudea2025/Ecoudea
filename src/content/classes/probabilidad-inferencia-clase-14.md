@@ -61,7 +61,9 @@ Si la probabilidad de éxito de un experimento es `$p$`, entonces la
 probabilidad de fallo debe ser `$1-p$` y la función de probabilidad de
 la variable aleatoria `$X\sim Be(p)$` para un ensayo Bernoulli será
 
-$$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
+$$
+\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}
+$$
 
 
 #### Teorema
@@ -69,7 +71,9 @@ $$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
 Si `$X\sim Be(p)$`, entonces se puede probar que la media y la varianza
 de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}
+$$
 
 
 <button id="Show2" class="btn btn-secondary">
@@ -100,42 +104,58 @@ entonces se tendrá que $3$ de cada $5$ si desean tomar clases
 virtuales. Por tanto al aplicar la definición de frecuencia relativa se
 tiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}}\\
   &= \frac{3}{5} \\
   &= 0.6
-\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
+\end{align*}
+$$
+ siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 
 Ahora, la probabilidad de que se seleccione un estudiante al azar, y
-éste desee tomar clases virtuales será $$\begin{align*}
+éste desee tomar clases virtuales será 
+$$
+\begin{align*}
 \mathbb{P}(X = 1) &= p(1-p)^{1-x} \\
                   &= 0.6(0.4)^{1-1} \\
                   &= 0.6(0.4)^0 \\
                   &= 0.6
-\end{align*}$$
+\end{align*}
+$$
 
 es decir, que la probabilidad de que el estudiante seleccionado desee
 tomar clases virtuales será del $60\%$.
 
 Ahora, para calcular la desviación estándar se requiere calcular
 inicialmente la varianza de la variable aleatoria, la cual está dada por
-$$\begin{align*}
+$$
+\begin{align*}
 Var(X) &= p(1-p) \\
        &= 0.6(0.4) \\
        &= 0.24
-\end{align*}$$
+\end{align*}
+$$
 
 y a partir de éste valor, se tendrá que la desviación estándar es igual
-a $$\begin{align*}
+a 
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.24} \\
       &= 0.4898979
-\end{align*}$$ Entonces, como el valor esperado de un proceso Bernoulli
-es igual a $p$, esto es $$\begin{align*}
+\end{align*}
+$$
+ Entonces, como el valor esperado de un proceso Bernoulli
+es igual a $p$, esto es 
+$$
+\begin{align*}
 \mathbb{E}(X) &= p \\
               &= 0.6
-\end{align*}$$ Por tanto, al seleccionar un solo estudiante, se espera
+\end{align*}
+$$
+ Por tanto, al seleccionar un solo estudiante, se espera
 que $0.6$ estudiantes respondan que desean tomar clases virtuales, con
 una desviación estándar de $0.489$.
 </p>
@@ -147,7 +167,9 @@ Si `$X$` es la variable aleatoria del número de éxitos de `$n$` ensayos
 de Bernoulli, con probabilidad de éxito `$p$`, entonces se dice que
 `$X\sim b(n,p)$` tal que
 
-$$\begin{align*}p(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}$$
+$$
+\begin{align*}p(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}
+$$
 
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo con
@@ -159,7 +181,9 @@ la probabilidad de éxito `$p$` es la misma** en cada ensayo Bernoulli.
 Si `$X\sim b(n,p)$`, entonces se puede probar que la media y varianza de
 la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}
+$$
 
 
 <button id="Show3" class="btn btn-secondary">
@@ -203,23 +227,30 @@ entonces se tendrá que $3$ de cada $5$ si desean tomar clases
 virtuales. Por tanto al aplicar la definición de frecuencia relativa se
 tiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5} \\
   &= 0.6
-\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
+\end{align*}
+$$
+ siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 </p>
 <ol>
 <li>
 En este caso, estamos interesados en calcular la probabilidad de que no
 más de $3$ estudiantes deseen tomar clases virtuales, lo cual puede
-representarse mediante la siguiente probabilidad $$\begin{align*}
+representarse mediante la siguiente probabilidad 
+$$
+\begin{align*}
 P(X\leq 3) &= \sum_{x=0}^3 \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 0\end{array}\right)0.6^0(0.4)^{20-0} + \ldots + \left(\begin{array}{c}20\\ 3\end{array}\right)0.6^3(0.4)^{20-3} \\
            &= 0.00000001099512 + 0.0000003298535 + 0.000004700412 + 0.00004230371 \\
            &= 0.00004734497
-\end{align*}$$ Es decir, la probabilidad de que como máximo $3$
+\end{align*}
+$$
+ Es decir, la probabilidad de que como máximo $3$
 estudiantes de los $20$ seleccionados, deseen tomar clases virtuales,
 es del $0.0047\%$.
 </li>
@@ -227,11 +258,14 @@ es del $0.0047\%$.
 Ahora, se tiene interés en conocer la probabilidad de que no menos de
 $6$ pero menos de $12$ deseen tomar clases virtuales. En este caso,
 la probabilidad asociada puede calcularse de la siguiente manera.
-$$\begin{align*}
+$$
+\begin{align*}
 P(6 \leq x < 12) &= \sum_{x=6}^{11} \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 6\end{array}\right)0.6^6(0.4)^{20-6} + \ldots + \left(\begin{array}{c}20\\ 11\end{array}\right)0.6^{11}(0.4)^{20-11} \\
            &= 0.4027898
-\end{align*}$$ Es decir que, la probabilidad de que como mínimo $6$
+\end{align*}
+$$
+ Es decir que, la probabilidad de que como mínimo $6$
 pero menos de $12$ estudiantes deseen tomar clases virtuales de los
 $20$ seleccionados, es del $40.28\%$.
 </li>
@@ -242,24 +276,35 @@ desviación estándar, de estudiantes que desean tomar clases virtuales,
 cuando se realiza la selección aleatoria de $20$. Al aplicar la
 formular de esperanza matemática para la distribución binomial, se tiene
 que el valor esperado de estudiantes que desean tomar clases virtuales
-es de $$\begin{align*}
+es de 
+$$
+\begin{align*}
 \mathbb{E}(X) & = np \\
               & = 20(0.6)\\
 \mathbb{E}(X) & = 12
-\end{align*}$$
+\end{align*}
+$$
 
 Se procede a realizar el cálculo de la varianza para poder calcular la
 desviación estándar, del número de estudiantes que desean tomar clases
-virtuales, tal que $$\begin{align*}
+virtuales, tal que 
+$$
+\begin{align*}
 Var(X) &= np(1-p) \\
        &= 20(0.6)(1-0.6)\\
 Var(X) & = 4.8
-\end{align*}$$ y con este valor, se procede a calcular la desviación
-estándar $$\begin{align*}
+\end{align*}
+$$
+ y con este valor, se procede a calcular la desviación
+estándar 
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(4.8)} \\
 Sd(X) & = 2.19089
-\end{align*}$$ De lo anterior se tiene que, al realizar la selección
+\end{align*}
+$$
+ De lo anterior se tiene que, al realizar la selección
 aleatoria de $20$ estudiantes, es espera que $12$ estudiantes desean
 tomar clases virtuales, con una desviación estándar de $2.19$
 estudiantes.
@@ -319,7 +364,9 @@ El número de sucesos que ocurren en un intervalo de tiempo o región
 específica, es una variable aleatoria `$X$` con distribución de
 probabilidad Poisson, tal que
 
-$$\begin{align*}p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \quad \quad x=0,1,\ldots\end{align*}$$
+$$
+\begin{align*}p(x) = \frac{e^{-\lambda}\lambda^x}{x!} \quad \quad x=0,1,\ldots\end{align*}
+$$
 
 donde `$\lambda$` es el parámetro de la distribución y representa el
 número promedio de sucesos por unidad de tiempo o región específica.
@@ -329,7 +376,9 @@ número promedio de sucesos por unidad de tiempo o región específica.
 Si `$X\sim P(\lambda)$` entonces se puede probar que la media y varianza
 de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=\lambda \quad \quad Var(X)=\lambda\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=\lambda \quad \quad Var(X)=\lambda\end{align*}
+$$
 
 
 <button id="Show5" class="btn btn-secondary">
@@ -377,12 +426,16 @@ Basados en lo anterior, nos preguntan por la probabilidad de que no
 aparezca más de un hueco en la carretera en un tramo de dos kilómetros.
 Es decir, nos preguntan por la probabilidad de que aparezca como máximo
 $1$ hueco en la carretera en un tramo de dos kilómetros. En este caso
-se tendrá la siguiente probabilidad $$\begin{align*}
+se tendrá la siguiente probabilidad 
+$$
+\begin{align*}
 P(X\leq 1) &= \sum_{x=0}^1 \frac{e^{-1.5}1.5^x}{x!} \\
            &= \frac{e^{-1.5}1.5^0}{0!} + \frac{e^{-1.5}1.5^1}{1!} \\\\
            &= 0.2231302 + 0.3346952 \\
            &= 0.5578254
-\end{align*}$$ Es decir, la probabilidad de que no aparezca más de un
+\end{align*}
+$$
+ Es decir, la probabilidad de que no aparezca más de un
 hueco en la carretera en el tramo de dos kilómetros es del $55.78\%$.
 </li>
 <li>
@@ -392,27 +445,40 @@ de un hueco en un tramo de un kilómetro. En este caso debe notarse que
 se cambió la unidad de medida, en donde en lugar de dos kilómetros se
 habla de un kilómetro.<br> <br> Debido a ésto, será necesario actualizar
 nuestro parámetro $\lambda$ mediante el empleo de una regla de $3$,
-de la siguiente manera. $$\begin{align*}
+de la siguiente manera. 
+$$
+\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  1_{\text{km}} &- \lambda
-\end{align*}$$ esto es, $$\begin{align*}
+\end{align*}
+$$
+ esto es, 
+$$
+\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 1_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 0.75_{\text{huecos}}
-\end{align*}$$ Es decir, que en un tramo de un kilómetro ocurren
+\end{align*}
+$$
+ Es decir, que en un tramo de un kilómetro ocurren
 $0.75$ huecos en promedio. Conocido el valor del parámetro $\lambda$
 para el tramo de un kilómetro, se procede a calcular la probabilidad de
 que aparezca más de un hueco en el tramo de un kilómetro, tal que
-$$\begin{align*}
+$$
+\begin{align*}
  \mathbb{P}(X>1) = \sum_{x=2}^\infty \frac{e^{-0.75}0.75^x}{x!} \\
-\end{align*}$$ En donde se aprecia que es una suma infinita, y en
+\end{align*}
+$$
+ En donde se aprecia que es una suma infinita, y en
 consecuencia se procede a trabajar tal probabilidad por su complemento.
-$$\begin{align*}
+$$
+\begin{align*}
  \mathbb{P}(X>1) &= 1 - \mathbb{P}(X\leq1)  \\
                  &= 1 - \sum_{x=0}^1 \frac{e^{-0.75}0.75^x}{x!} \\
                  &= 1 - \frac{e^{-0.75}0.75^0}{0!} - \frac{e^{-0.75}0.75^1}{1!} \\
                  &= 1 - 0.4723666 - 0.3542749 \\
                  &= 0.1733585
-\end{align*}$$
+\end{align*}
+$$
 
 Es decir que, la probabilidad de que se encuentre más de $1$ hueco en
 un tramo de $1$ kilómetro cuando se viaja por carretera, es del
@@ -426,32 +492,49 @@ carretera en el tramo de $5$ kilómetro. En este caso, como se cambia
 la unidad de medida de $2$ kilómetros a $5$ kilómetros, será
 necesario recalcular el valor de $\lambda$, ta que
 
-$$\begin{align*}
+$$
+\begin{align*}
  2_{\text{km}} &- 1.5_{\text{huecos}} \\
  5_{\text{km}} &- \lambda
-\end{align*}$$ esto es, $$\begin{align*}
+\end{align*}
+$$
+ esto es, 
+$$
+\begin{align*}
  \lambda &= \frac{1.5_{\text{huecos}} \times 5_{\text{km}}}{2_{\text{km}}} \\
  \lambda &= 3.75_{\text{huecos}}
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, al aplicar la formular de esperanza matemática para la
 distribución Poisson, se tiene que el número esperado de huecos en $5$
-kilómetros es de $$\begin{align*}
+kilómetros es de 
+$$
+\begin{align*}
 \mathbb{E}(X) & = \lambda \\
               & = 3.75\\
-\end{align*}$$
+\end{align*}
+$$
 
 Similarmente, se procede a realizar el cálculo de la varianza para poder
 calcular la desviación estándar, del número de huecos que hay en un
-tramo de $5$ kilómetros $$\begin{align*}
+tramo de $5$ kilómetros 
+$$
+\begin{align*}
 Var(X) &= \lambda \\
        &= 3.75\\
-\end{align*}$$ y con este valor, se procede a calcular la desviación
-estándar $$\begin{align*}
+\end{align*}
+$$
+ y con este valor, se procede a calcular la desviación
+estándar 
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(3.75)} \\
 Sd(X) & = 1.936492
-\end{align*}$$ De lo anterior se tiene que, en el tramo de $5$
+\end{align*}
+$$
+ De lo anterior se tiene que, en el tramo de $5$
 kilómetros de carretera, se espera encontrar $3.75$ huecos, con una
 desviación estándar de $1.93$ huecos.
 </li>

@@ -74,7 +74,7 @@ de confianza para una media en <tt>R</tt> mediante la función
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula intervalo de confianza para una media R</span><span class="w">
-</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">nro_pisos</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">)</span><span class="w">
+</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">nro_pisos</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -82,7 +82,7 @@ de confianza para una media en <tt>R</tt> mediante la función
 <section class="highlight">
 <pre class="highlight"><code>    One Sample t-test
 
-data:  datos$nro_pisos
+data:  datos&#36;nro_pisos
 t = 267.18, df = 86146, p-value &lt; 2.2e-16
 alternative hypothesis: true mean is not equal to 0
 90 percent confidence interval:
@@ -138,7 +138,7 @@ la forma.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula intervalo de confianza para diferencia de medias R</span><span class="w">
-</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> 
+</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> 
     </span><span class="m">4</span><span class="p">],</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">,</span><span class="w"> </span><span class="n">var.equal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">F</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -147,7 +147,7 @@ la forma.
 <section class="highlight">
 <pre class="highlight"><code>    Welch Two Sample t-test
 
-data:  datos$preciovtax[datos$estrato == 2] and datos$preciovtax[datos$estrato == 4]
+data:  datos&#36;preciovtax[datos&#36;estrato == 2] and datos&#36;preciovtax[datos&#36;estrato == 4]
 t = -131.04, df = 14252, p-value &lt; 2.2e-16
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
@@ -199,8 +199,8 @@ de confianza para una proporción en <tt>R</tt> mediante la función
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula intervalo de confianza para una proporción R</span><span class="w">
-</span><span class="n">exitos</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">ob_formal</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="w">
-</span><span class="n">total</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">ob_formal</span><span class="p">))</span><span class="w">
+</span><span class="n">exitos</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ob_formal</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="n">total</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ob_formal</span><span class="p">))</span><span class="w">
 </span><span class="nf">prop.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exitos</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -269,10 +269,10 @@ mediante la función <tt>prop.test()</tt> de la forma.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula intervalo de confianza para diferencia de proporciones R</span><span class="w">
-</span><span class="n">exitos1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Bogotá"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
-</span><span class="n">total1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Bogotá"</span><span class="p">]))</span><span class="w">
-</span><span class="n">exitos2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Antioquia"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
-</span><span class="n">total2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Antioquia"</span><span class="p">]))</span><span class="w">
+</span><span class="n">exitos1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Bogotá"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="n">total1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Bogotá"</span><span class="p">]))</span><span class="w">
+</span><span class="n">exitos2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Antioquia"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="n">total2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ob_formal</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Antioquia"</span><span class="p">]))</span><span class="w">
 </span><span class="nf">prop.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">exitos1</span><span class="p">,</span><span class="w"> </span><span class="n">exitos2</span><span class="p">),</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">total1</span><span class="p">,</span><span class="w"> </span><span class="n">total2</span><span class="p">),</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -339,7 +339,7 @@ de la librería <tt>EnvStats</tt>, mediante la estructura.
 <section class="highlight">
 <pre class="highlight"><code><span class="nf">library</span><span class="p">(</span><span class="n">EnvStats</span><span class="p">)</span><span class="w">
 </span><span class="c1"># Calcula intervalo de confianza para una de varianza</span><span class="w">
-</span><span class="nf">varTest</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"two.sided"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
+</span><span class="nf">varTest</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"two.sided"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -347,7 +347,7 @@ de la librería <tt>EnvStats</tt>, mediante la estructura.
 <section class="highlight">
 <pre class="highlight"><code>    Chi-Squared Test on Variance
 
-data:  datos$preciovtax
+data:  datos&#36;preciovtax
 Chi-Squared = 106655714921, df = 86147, p-value &lt; 2.2e-16
 alternative hypothesis: true variance is not equal to 1
 95 percent confidence interval:
@@ -392,7 +392,7 @@ cociente de varianzas en <tt>R</tt> mediante la función
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula intervalo de confianza para cociente de varianzas R</span><span class="w">
-</span><span class="nf">var.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> 
+</span><span class="nf">var.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">estrato</span><span class="w"> </span><span class="o">==</span><span class="w"> 
     </span><span class="m">5</span><span class="p">],</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -401,7 +401,7 @@ cociente de varianzas en <tt>R</tt> mediante la función
 <section class="highlight">
 <pre class="highlight"><code>    F test to compare two variances
 
-data:  datos$preciovtax[datos$estrato == 1] and datos$preciovtax[datos$estrato == 5]
+data:  datos&#36;preciovtax[datos&#36;estrato == 1] and datos&#36;preciovtax[datos&#36;estrato == 5]
 F = 0.034198, num df = 11170, denom df = 5010, p-value &lt; 2.2e-16
 alternative hypothesis: true ratio of variances is not equal to 1
 95 percent confidence interval:

@@ -699,7 +699,9 @@ tamaño `$n$`, entonces se tendrán los siguientes estadísticos muestrales
 Es el promedio aritmético del total de las `$n$` observaciones
 pertenecientes a una muestra aleatoria. Éste estadístico se define como
 
-$$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
+$$
+\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor de la media muestral de una
@@ -710,7 +712,9 @@ muestra aleatoria mediante la función `mean(datos)`.
 Es la distancia media **al cuadrado** del conjunto de observaciones
 pertenecientes a una muestra aleatoria, respecto a la media muestra.
 
-$$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
+$$
+\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}
+$$
 
 
 siendo el valor `$n-1$` conocido como la corrección de Bessel, el cuál
@@ -727,7 +731,9 @@ de observaciones pertenecientes a una muestra aleatoria, respeto a la
 media, es decir, indica qué tan dispersos se encuentra el conjunto de
 observaciones de una muestra aleatoria respecto a su valor promedio.
 
-$$\begin{align*}S=\sqrt{S^2}\end{align*}$$
+$$
+\begin{align*}S=\sqrt{S^2}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse la desviación estándar de una muestra
@@ -741,7 +747,9 @@ observaciones dentro de la muestra, e indica el porcentaje de individuos
 que cumplen una característica dentro de un conjunto de observaciones.
 
 
-$$\begin{align*}\hat{p}= \frac{x}{n} = \frac{\text{Número de éxitos}}{\text{Total de observaciones}}\end{align*}$$
+$$
+\begin{align*}\hat{p}= \frac{x}{n} = \frac{\text{Número de éxitos}}{\text{Total de observaciones}}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse la proporción de observaciones que cumple
@@ -762,7 +770,9 @@ normales con varianzas conocidas**. Para el caso de una población, sea
 distribución normal con media `$\mu$` y varianza `$\sigma^2$` conocida,
 entonces se tendrá que
 
-$$\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}$$
+$$
+\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1)\end{align*}
+$$
 
 
 se distribuirá como una normal estándar de forma exacta.
@@ -775,7 +785,9 @@ medias `$\mu_1$` y `$\mu_2$`, y varianzas `$\sigma_1^2$` y
 entonces se tendrá que
 
 
-$$\begin{align*}Z_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}} \sim N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}} \sim N(0,1)\end{align*}
+$$
 
 
 se distribuirá como una normal estándar de forma exacta.
@@ -788,7 +800,9 @@ sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria de una población
 normal con media `$\mu$` y varianza `$\sigma^2$` desconocida, se tendrá
 
 
-$$\begin{align*}t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}\end{align*}$$
+$$
+\begin{align*}t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}\end{align*}
+$$
 
 
 tiene una distribución `$t$` con `$(n-1)$` grados de libertad.
@@ -802,21 +816,29 @@ medias `$\mu_1$` y `$\mu_2$`, y varianzas `$\sigma_1^2$` y
 `$\sigma_1^2=\sigma_2^2$`, se tendrá que
 
 
-$$\begin{align*}t_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{S_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \sim t_{n_1+n_2-2}\end{align*}$$
+$$
+\begin{align*}t_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{S_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \sim t_{n_1+n_2-2}\end{align*}
+$$
 
 donde
 
-$$\begin{align*}S_p^2 = \frac{(n_1-1)S^2_1+(n_2-1)S^2_2}{n_1+n_2-2}\end{align*}$$
+$$
+\begin{align*}S_p^2 = \frac{(n_1-1)S^2_1+(n_2-1)S^2_2}{n_1+n_2-2}\end{align*}
+$$
 
 
 o si se cumple que `$\sigma_1^2\neq\sigma_2^2$`, se tendrá que
 
 
-$$\begin{align*}t_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{S^2_1}{n_1} + \frac{S^2_2}{n_2}}} \sim t_\nu\end{align*}$$
+$$
+\begin{align*}t_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{S^2_1}{n_1} + \frac{S^2_2}{n_2}}} \sim t_\nu\end{align*}
+$$
 
 donde
 
-$$\begin{align*}\lceil\nu\rceil = \frac{\left(\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}\right)^2}{\left[\frac{(S_1^2/n_1)^2}{n_1-1}\right] + \left[\frac{(S_2^2/n_2)^2}{n_2-1}\right]}\end{align*}$$
+$$
+\begin{align*}\lceil\nu\rceil = \frac{\left(\frac{S_1^2}{n_1} + \frac{S_2^2}{n_2}\right)^2}{\left[\frac{(S_1^2/n_1)^2}{n_1-1}\right] + \left[\frac{(S_2^2/n_2)^2}{n_2-1}\right]}\end{align*}
+$$
 
 
 En estos dos casos, `$t_c$` se distribuirá como una `$t$` con
@@ -831,7 +853,9 @@ una población, sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid*
 con media `$\mu$` y varianza `$\sigma^2$` entonces, cuando
 `$n\to \infty$`, se tendrá que
 
-$$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)\end{align*}
+$$
 
 tendrá una distribución aproximadamente normal estándar, cuando
 `$n\sim \infty$`.
@@ -844,7 +868,9 @@ medias `$\mu_1$` y `$\mu_2$`, y varianzas `$\sigma_1^2$` y
 entonces se tendrá que
 
 
-$$\begin{align*}Z_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c=\frac{(\bar{X}_1 - \bar{X}_2) - (\mu_1 - \mu_2)}{\sqrt{\frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}}} \stackrel{a}{\sim} N(0,1)\end{align*}
+$$
 
 
 tendrá una distribución aproximadamente normal estándar, cuando
@@ -860,7 +886,9 @@ una muestra aleatoria de una población normal con media `$\mu$` y
 varianza `$\sigma^2$` desconocida, se tendrá
 
 
-$$\begin{align*}\chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\end{align*}$$
+$$
+\begin{align*}\chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\end{align*}
+$$
 
 tiene una distribución chi-cuadrado con `$n-1$` grados de libertad.
 
@@ -873,7 +901,9 @@ independientes de poblaciones normales con medias `$\mu_1, \mu_2$` y
 varianzas `$\sigma^2_1, \sigma^2,2$`, respectivamente, entonces
 
 
-$$\begin{align*}F_c = \frac{S^2_1\sigma^2_2}{S^2_2\sigma^2_1} \sim F_{n_1-1, n_2-1}\end{align*}$$
+$$
+\begin{align*}F_c = \frac{S^2_1\sigma^2_2}{S^2_2\sigma^2_1} \sim F_{n_1-1, n_2-1}\end{align*}
+$$
 
 
 tienen una distribución `$F$` con `$n_1-1$` grados de libertad en el
@@ -888,11 +918,15 @@ suficientemente grande, y la proporción `$p$` no está muy cercana a
 `$0$` o a `$1$`, tal que `$np$` y `$n(1-p)>5$`, entonces se puede probar
 que
 
-$$\begin{align*}\hat{p}  = \frac{x}{n} \stackrel{a}{\sim} N\left(p, \frac{p(1-p)}{n}\right)\end{align*}$$
+$$
+\begin{align*}\hat{p}  = \frac{x}{n} \stackrel{a}{\sim} N\left(p, \frac{p(1-p)}{n}\right)\end{align*}
+$$
 
 donde por teorema de estandarización se obtendrá que
 
-$$\begin{align*}Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\sim} N(0,1)\end{align*}
+$$
 
 
 Mientras que, para el caso de dos poblaciones, sea tendrá que si
@@ -904,11 +938,15 @@ suficientemente grandes, y las proporción `$p_1$`, `$p_2$` no está muy
 cercana a `$0$` o a `$1$`, tal que `$n_ip_i$` y `$n_i(1-p_i)>5$`,
 entonces se puede probar que
 
-$$\begin{align*}\hat{p_1}  = \frac{x_1}{n_1} \stackrel{a}{\sim} N\left(p_1, \frac{p_1(1-p_1)}{n_1}\right) \quad \quad \text{ y } \quad \quad \hat{p_2}  = \frac{x_2}{n_2} \stackrel{a}{\sim} N\left(p_2, \frac{p_2(1-p_2)}{n_2}\right)\end{align*}$$
+$$
+\begin{align*}\hat{p_1}  = \frac{x_1}{n_1} \stackrel{a}{\sim} N\left(p_1, \frac{p_1(1-p_1)}{n_1}\right) \quad \quad \text{ y } \quad \quad \hat{p_2}  = \frac{x_2}{n_2} \stackrel{a}{\sim} N\left(p_2, \frac{p_2(1-p_2)}{n_2}\right)\end{align*}
+$$
 
 Y por teorema de estandarización se obtendrá que
 
-$$\begin{align*}Z_c = \frac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c = \frac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\frac{p_1(1-p_1)}{n_1} + \frac{p_2(1-p_2)}{n_2}}} \stackrel{a}{\sim} N(0,1)\end{align*}
+$$
 
 
 ## Prueba de hipótesis
@@ -964,7 +1002,9 @@ rechazado.
 En general, como criterio de decisión para el P-valor, dado un nivel de
 significancia preestablecido, es de la forma
 
-$$\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}$$
+$$
+\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}
+$$
 
 
 ### Prueba de bondad de ajuste
@@ -981,7 +1021,9 @@ esperados de la distribución de interés.
 
 La hipótesis a probar de interés estará dada por
 
-$$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
+$$
+\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}
+$$
 
 
 Siendo `$F_0(x)$` la distribución de probabilidad hipótetica que se
@@ -1092,12 +1134,12 @@ para saber si se rechaza o no la hipótesis de interés.
 <section class="highlight">
 <pre class="highlight"><code><span class="nf">library</span><span class="p">(</span><span class="n">MASS</span><span class="p">)</span><span class="w">
 </span><span class="c1">## Se hace el ajuste para encontrar el valor de los parámetros</span><span class="w">
-</span><span class="n">parametros</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">fitdistr</span><span class="p">(</span><span class="nf">na.omit</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">area_lote</span><span class="p">),</span><span class="w"> </span><span class="n">densfun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"weibull"</span><span class="p">)</span><span class="w">
+</span><span class="n">parametros</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">fitdistr</span><span class="p">(</span><span class="nf">na.omit</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">area_lote</span><span class="p">),</span><span class="w"> </span><span class="n">densfun</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"weibull"</span><span class="p">)</span><span class="w">
 
 </span><span class="nf">library</span><span class="p">(</span><span class="n">truncgof</span><span class="p">)</span><span class="w">
 </span><span class="c1">## Se hace la prueba de bondad de ajuste</span><span class="w">
-</span><span class="nf">v.test</span><span class="p">(</span><span class="nf">na.omit</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">area_lote</span><span class="p">),</span><span class="w"> </span><span class="n">distn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"pweibull"</span><span class="p">,</span><span class="w"> </span><span class="n">fit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> 
-    </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">]))</span><span class="w">
+</span><span class="nf">v.test</span><span class="p">(</span><span class="nf">na.omit</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">area_lote</span><span class="p">),</span><span class="w"> </span><span class="n">distn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"pweibull"</span><span class="p">,</span><span class="w"> </span><span class="n">fit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> 
+    </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">]))</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1105,7 +1147,7 @@ para saber si se rechaza o no la hipótesis de interés.
 <section class="highlight">
 <pre class="highlight"><code>    Kuiper Test
 
-data:  na.omit(datos$area_lote)
+data:  na.omit(datos&#36;area_lote)
 V = 138.16, p-value &lt; 2.2e-16
 alternative hypothesis: NA
 
@@ -1117,8 +1159,8 @@ treshold = -Inf, simulations: 100
 <section class="highlight">
 <pre class="highlight"><code><span class="nf">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span><span class="w">
 </span><span class="c1">## Se hace el QQplot</span><span class="w">
-</span><span class="nf">qqPlot</span><span class="p">(</span><span class="nf">na.omit</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">area_lote</span><span class="p">),</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"weibull"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> 
-    </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+</span><span class="nf">qqPlot</span><span class="p">(</span><span class="nf">na.omit</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">area_lote</span><span class="p">),</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"weibull"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> 
+    </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1242,7 +1284,7 @@ tan grande de datos).
 <section class="highlight">
 <pre class="highlight"><code><span class="nf">library</span><span class="p">(</span><span class="n">nortest</span><span class="p">)</span><span class="w">
 </span><span class="c1">## Se hace la prueba de bondad de ajuste de normalidad</span><span class="w">
-</span><span class="nf">lillie.test</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">areavenuni</span><span class="p">)</span><span class="w">
+</span><span class="nf">lillie.test</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">areavenuni</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1250,7 +1292,7 @@ tan grande de datos).
 <section class="highlight">
 <pre class="highlight"><code>    Lilliefors (Kolmogorov-Smirnov) normality test
 
-data:  datos$areavenuni
+data:  datos&#36;areavenuni
 D = 0.17805, p-value &lt; 2.2e-16
 </code></pre>
 </section>
@@ -1263,7 +1305,7 @@ gráfico QQ, de la forma
 <section class="highlight">
 <pre class="highlight"><code><span class="nf">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span><span class="w">
 </span><span class="c1">## Se hace la prueba de bondad de ajuste de normalidad</span><span class="w">
-</span><span class="nf">qqPlot</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">areavenuni</span><span class="p">)</span><span class="w">
+</span><span class="nf">qqPlot</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">areavenuni</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1309,7 +1351,7 @@ de la forma.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula pueba de hipótesis para una media</span><span class="w">
-</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">areatotzc</span><span class="p">,</span><span class="w"> </span><span class="n">mu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">154</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
+</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">areatotzc</span><span class="p">,</span><span class="w"> </span><span class="n">mu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">154</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1317,7 +1359,7 @@ de la forma.
 <section class="highlight">
 <pre class="highlight"><code>    One Sample t-test
 
-data:  datos$areatotzc
+data:  datos&#36;areatotzc
 t = 0.39854, df = 86143, p-value = 0.3451
 alternative hypothesis: true mean is greater than 154
 95 percent confidence interval:
@@ -1365,7 +1407,7 @@ interés. Tal como se muestra a continuación.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula pueba de hipótesis para una media</span><span class="w">
-</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Antioquia"</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> 
+</span><span class="nf">t.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Antioquia"</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">region</span><span class="w"> </span><span class="o">==</span><span class="w"> 
     </span><span class="s2">"Valle"</span><span class="p">],</span><span class="w"> </span><span class="n">mu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"less"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.99</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -1374,7 +1416,7 @@ interés. Tal como se muestra a continuación.
 <section class="highlight">
 <pre class="highlight"><code>    Welch Two Sample t-test
 
-data:  datos$preciovtax[datos$region == "Antioquia"] and datos$preciovtax[datos$region == "Valle"]
+data:  datos&#36;preciovtax[datos&#36;region == "Antioquia"] and datos&#36;preciovtax[datos&#36;region == "Valle"]
 t = 66.884, df = 16153, p-value = 1
 alternative hypothesis: true difference in means is less than 0
 99 percent confidence interval:
@@ -1421,8 +1463,8 @@ muestra a continuación.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula prueba de hipótesis para una proporcion</span><span class="w">
-</span><span class="n">exitos3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="w">
-</span><span class="n">total3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="p">))</span><span class="w">
+</span><span class="n">exitos3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="n">total3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="p">))</span><span class="w">
 </span><span class="nf">prop.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">exitos3</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">total3</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.9</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.43</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -1478,10 +1520,10 @@ de <tt>R</tt>, mediante la estructura.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula intervalo de confianza para diferencia de proporciones R</span><span class="w">
-</span><span class="n">exitos4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2016"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
-</span><span class="n">total4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2016"</span><span class="p">]))</span><span class="w">
-</span><span class="n">exitos5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2018"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
-</span><span class="n">total5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2018"</span><span class="p">]))</span><span class="w">
+</span><span class="n">exitos4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2016"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="n">total4</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2016"</span><span class="p">]))</span><span class="w">
+</span><span class="n">exitos5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2018"</span><span class="p">])[</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span><span class="n">total5</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">table</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">ano_censo</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"2018"</span><span class="p">]))</span><span class="w">
 </span><span class="nf">prop.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">exitos4</span><span class="p">,</span><span class="w"> </span><span class="n">exitos5</span><span class="p">),</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">total4</span><span class="p">,</span><span class="w"> </span><span class="n">total5</span><span class="p">),</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.88</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"less"</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -1535,7 +1577,7 @@ mediante la estructura.
 <section class="highlight">
 <pre class="highlight"><code><span class="nf">library</span><span class="p">(</span><span class="n">EnvStats</span><span class="p">)</span><span class="w">
 </span><span class="c1"># Calcula prueba de hipótesis para una de varianza</span><span class="w">
-</span><span class="nf">varTest</span><span class="p">(</span><span class="n">datos</span><span class="o">$</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">,</span><span class="w"> </span><span class="n">sigma.squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1250000</span><span class="p">)</span><span class="w">
+</span><span class="nf">varTest</span><span class="p">(</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">preciovtax</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"greater"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">,</span><span class="w"> </span><span class="n">sigma.squared</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1250000</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -1543,7 +1585,7 @@ mediante la estructura.
 <section class="highlight">
 <pre class="highlight"><code>    Chi-Squared Test on Variance
 
-data:  datos$preciovtax
+data:  datos&#36;preciovtax
 Chi-Squared = 85325, df = 86147, p-value = 0.9765
 alternative hypothesis: true variance is greater than 1250000
 95 percent confidence interval:
@@ -1591,7 +1633,7 @@ posible usar la función <tt>var.test()</tt> de <tt>R</tt> de la forma.
 <section class="language-r highlighter-rouge">
 <section class="highlight">
 <pre class="highlight"><code><span class="c1"># Calcula prueba de hipótesis para cociente de varianzas</span><span class="w">
-</span><span class="nf">var.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">area_lote</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Social"</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">$</span><span class="n">area_lote</span><span class="p">[</span><span class="n">datos</span><span class="o">$</span><span class="n">tipovivi</span><span class="w"> </span><span class="o">==</span><span class="w"> 
+</span><span class="nf">var.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">area_lote</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">"Social"</span><span class="p">],</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="o">&#36;</span><span class="n">area_lote</span><span class="p">[</span><span class="n">datos</span><span class="o">&#36;</span><span class="n">tipovivi</span><span class="w"> </span><span class="o">==</span><span class="w"> 
     </span><span class="s2">"No Social"</span><span class="p">],</span><span class="w"> </span><span class="n">ratio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">alternative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"two.sided"</span><span class="p">,</span><span class="w"> </span><span class="n">conf.level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -1600,7 +1642,7 @@ posible usar la función <tt>var.test()</tt> de <tt>R</tt> de la forma.
 <section class="highlight">
 <pre class="highlight"><code>    F test to compare two variances
 
-data:  datos$area_lote[datos$tipovivi == "Social"] and datos$area_lote[datos$tipovivi == "No Social"]
+data:  datos&#36;area_lote[datos&#36;tipovivi == "Social"] and datos&#36;area_lote[datos&#36;tipovivi == "No Social"]
 F = 2.0344, num df = 34718, denom df = 51428, p-value &lt; 2.2e-16
 alternative hypothesis: true ratio of variances is not equal to 1
 95 percent confidence interval:

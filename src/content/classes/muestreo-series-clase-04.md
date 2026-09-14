@@ -52,7 +52,9 @@ mediante la media muestral `$\bar{Y}$`, el cual se calcula a partir de
 una muestra `$Y_1, Y_2, \ldots, Y_n$`, la cual representa los valores
 observados de una variable de interés, tal que
 
-$$\begin{align*}\bar{Y} = \frac{1}{n} \sum_{i=1}^n y_i\end{align*}$$
+$$
+\begin{align*}\bar{Y} = \frac{1}{n} \sum_{i=1}^n y_i\end{align*}
+$$
 
 
 Además, como se mencionó también en dichos cursos, el estimador
@@ -72,12 +74,16 @@ estimador `$\bar{Y}$`.
 Note que a partir del estimador de `$\bar{Y}$` es posible demostrar que
 éste es un estimador insesgado tal que
 
-$$\begin{align*}\mathbb{E}(\bar{Y}) = \mu\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(\bar{Y}) = \mu\end{align*}
+$$
  De forma
 similar, es posible encontrar la varianza del estimador, el cual se
 define como
 
-$$\begin{align*}Var(\bar{Y}) = \frac{\sigma^2}{n}\left(\frac{N-n}{N-1}\right)\end{align*}$$
+$$
+\begin{align*}Var(\bar{Y}) = \frac{\sigma^2}{n}\left(\frac{N-n}{N-1}\right)\end{align*}
+$$
 
 siendo el término `$\frac{N-n}{N-1}$` conocido como factor de corrección
 para poblaciones finitas cuando la varianza `$\sigma^2$` es conocida.
@@ -89,27 +95,37 @@ generalmente, se hace necesario definir un estimador insesgado
 `$Var(\bar{Y})$`. Para encontrar el estimador `$\hat{\sigma}^2$`, se
 emplea el hecho de que
 
-$$\begin{align*}\mathbb{E}(S^2) = \frac{N}{N-1}\sigma^2\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(S^2) = \frac{N}{N-1}\sigma^2\end{align*}
+$$
 
 siendo `$S^2$` definido como
 
-$$\begin{align*}S^2 = \frac{1}{N-1}\sum_{i=1}^N(y_i - \mu)^2\end{align*}$$
+$$
+\begin{align*}S^2 = \frac{1}{N-1}\sum_{i=1}^N(y_i - \mu)^2\end{align*}
+$$
 
 lo cual da como resultado que un estimador insesgado para `$\sigma^2$`,
 definido como `$\hat{\sigma}^2$`, esté dado por
 
-$$\begin{align*}\hat{\sigma}^2 = \frac{N-1}{N}S^2\end{align*}$$
+$$
+\begin{align*}\hat{\sigma}^2 = \frac{N-1}{N}S^2\end{align*}
+$$
 
 
 Del resultado anterior, es posible observar que la varianza de
 `$\hat{Y}$` se podrá reescribir como
 
-$$\begin{align*}Var(\bar{Y}) = \frac{\hat{\sigma}^2}{n}\left(\frac{N-n}{N-1}\right) = \frac{N-1}{N}\frac{S^2}{n}\left(\frac{N-n}{N-1}\right)\end{align*}$$
+$$
+\begin{align*}Var(\bar{Y}) = \frac{\hat{\sigma}^2}{n}\left(\frac{N-n}{N-1}\right) = \frac{N-1}{N}\frac{S^2}{n}\left(\frac{N-n}{N-1}\right)\end{align*}
+$$
 
 lo cual, luego de cancelar términos, genera la ecuación final para el
 cálculo de la varianza de `$\bar{Y}$`, tal que
 
-$$\begin{align*}Var(\bar{Y}) = \frac{S^2}{n}\left(\frac{N-n}{N}\right)\end{align*}$$
+$$
+\begin{align*}Var(\bar{Y}) = \frac{S^2}{n}\left(\frac{N-n}{N}\right)\end{align*}
+$$
 
 
 donde `$\frac{N-n}{N}$` se conoce como el factor de corrección para
@@ -119,7 +135,9 @@ de anotar, que si el tamaño poblacional tiende a infinito, es decir, si
 tamaño de la muestra, es decir, `$N>>n$` entonces se tendrá que el
 factor de corrección para poblaciones finitas será
 
-$$\begin{align*}\lim_{N\to\infty}\frac{N-n}{N}\to 1\end{align*}$$
+$$
+\begin{align*}\lim_{N\to\infty}\frac{N-n}{N}\to 1\end{align*}
+$$
  y por
 consigiuente, este factor podrá omitirse.
 
@@ -129,19 +147,27 @@ Ahora bien, una vez calculada la media y varianza muestral, será posible
 estimar los límites del error de estimación para `$\mu$`. En donde, si
 `$n>30$` el límite del error de estimación estará dado por
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\bar{Y})} \\    & = Z_{\alpha/2}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\bar{Y})} \\    & = Z_{\alpha/2}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 junto a su intervalos de confianza del `$(1-\alpha)\times100\%$`
 
-$$\begin{align*}\bar{Y} \pm  Z_{\alpha/2}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}\bar{Y} \pm  Z_{\alpha/2}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 y si `$n\leq 30$` el límite del error de estimación estará dado por
 
-$$\begin{align*}B & = t_{\alpha/2, n-1}\sqrt{Var(\bar{Y})} \\    & = t_{\alpha/2, n-1}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}B & = t_{\alpha/2, n-1}\sqrt{Var(\bar{Y})} \\    & = t_{\alpha/2, n-1}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 y su intervalos de confianza del `$(1-\alpha)\times100\%$` será
 
-$$\begin{align*}\bar{Y} \pm  t_{\alpha/2, n-1}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}\bar{Y} \pm  t_{\alpha/2, n-1}\sqrt{\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 
 ### Selección del tamaño de muestra para la media poblacional `$\mu$`
@@ -153,18 +179,24 @@ la población `$N$`, para garantizar que el límite del error de
 estimación no exceda a una cantidad específica `$B$`. Para ello, es
 posible despejar de la expresión
 
-$$\begin{align*}B = Z_{\alpha/2}\sqrt{Var(\bar{Y})} = Z_{\alpha/2}\sqrt{\frac{\sigma^2}{n}\frac{N-n}{N-1}}\end{align*}$$
+$$
+\begin{align*}B = Z_{\alpha/2}\sqrt{Var(\bar{Y})} = Z_{\alpha/2}\sqrt{\frac{\sigma^2}{n}\frac{N-n}{N-1}}\end{align*}
+$$
 
 el valor `$n$` con el cual se garantiza con un nivel de confianza
 `$1-\alpha$` que el límite del error de estimación no excederá `$B$`,
 tal que
 
-$$\begin{align*}\lceil n\rceil = \frac{\sigma^2N}{\frac{B^2}{Z_{\frac{\alpha}{2}}^2}(N-1)+\sigma^2}\end{align*}$$
+$$
+\begin{align*}\lceil n\rceil = \frac{\sigma^2N}{\frac{B^2}{Z_{\frac{\alpha}{2}}^2}(N-1)+\sigma^2}\end{align*}
+$$
 
 
 dicha expresión puede ser reescrita como
 
-$$\begin{align*}\lceil n\rceil = \frac{1}{\frac{1}{N}+\frac{N-1}{N}\frac{1}{n_0}} \quad \text{ con }\quad n_0 = \frac{Z_{\frac{\alpha}{2}}^2\sigma^2}{B^2}\end{align*}$$
+$$
+\begin{align*}\lceil n\rceil = \frac{1}{\frac{1}{N}+\frac{N-1}{N}\frac{1}{n_0}} \quad \text{ con }\quad n_0 = \frac{Z_{\frac{\alpha}{2}}^2\sigma^2}{B^2}\end{align*}
+$$
 
 
 donde: <br> `$N$` es el número de individuos en la población <br>
@@ -182,21 +214,29 @@ reemplazada por su estimador `$\hat{\sigma}^2=\frac{N-1}{N}S^2$`.
 Por su parte, para el cálculo de un estimador para el valor total de la
 población, el cuál está relacionado con `$\mu$`, se tendrá que
 
-$$\begin{align*}\tau = N\mu\end{align*}$$
+$$
+\begin{align*}\tau = N\mu\end{align*}
+$$
  en donde, dado que `$\mu$` no
 es conocido, entonces, un estimador para `$\tau$`, a partir del
 estimador de `$\hat{\mu}$`, será de la forma
 
-$$\begin{align*}\hat{\tau} = N\hat{\mu} = N\bar{Y}\end{align*}$$
+$$
+\begin{align*}\hat{\tau} = N\hat{\mu} = N\bar{Y}\end{align*}
+$$
  con una
 varianza asociada de la forma
 
-$$\begin{align*}Var(\hat{\tau}) = N^2Var(\hat{\mu}) =N^2Var(\bar{Y})\end{align*}$$
+$$
+\begin{align*}Var(\hat{\tau}) = N^2Var(\hat{\mu}) =N^2Var(\bar{Y})\end{align*}
+$$
 
 la cual, al reemplazar `$Var(\bar{Y})$` por la forma previamente
 presentada, se tendrá que
 
-$$\begin{align*}Var(\hat{\tau}) = N^2\frac{S^2}{n}\frac{N-n}{N}\end{align*}$$
+$$
+\begin{align*}Var(\hat{\tau}) = N^2\frac{S^2}{n}\frac{N-n}{N}\end{align*}
+$$
 
 
 #### Intervalos de confianza para el total poblacional
@@ -204,21 +244,29 @@ $$\begin{align*}Var(\hat{\tau}) = N^2\frac{S^2}{n}\frac{N-n}{N}\end{align*}$$
 A partir de éstos valores, es posible estimar los límites para los
 errores de estimación, los cuales estarán dados para `$n>30$` por
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} \\   & = Z_{\alpha/2}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} \\   & = Z_{\alpha/2}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 en donde, el intervalos de confianza del `$(1-\alpha)\times100\%$` se
 definirá como
 
-$$\begin{align*}\hat{\tau} \pm  Z_{\alpha/2}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}\hat{\tau} \pm  Z_{\alpha/2}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 Similarmente para el caso de `$n\leq30$`, el error de estimación es dado
 por
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} \\    & = t_{\alpha/2,n-1}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} \\    & = t_{\alpha/2,n-1}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 junto a su intervalo de confianza del `$(1-\alpha)\times100\%$`
 
-$$\begin{align*}\hat{\tau} \pm  t_{\alpha/2,n-1}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}\hat{\tau} \pm  t_{\alpha/2,n-1}\sqrt{N^2\frac{S^2}{n}\frac{N-n}{N}}\end{align*}
+$$
 
 
 ### Selección del tamaño de muestra para el total poblacional `$\tau$`
@@ -230,18 +278,24 @@ poblacional `$\mu$`, en donde, el investigador debe definir el límite
 del error de estimación `$B$` y el nivel de confianza `$1-\alpha$`, y a
 partir de la ecuación de `$B$` para `$\tau$`,
 
-$$\begin{align*}B = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} = Z_{\alpha/2}\sqrt{N^2\frac{\sigma^2}{n}\frac{N-n}{N-1}}\end{align*}$$
+$$
+\begin{align*}B = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} = Z_{\alpha/2}\sqrt{N^2\frac{\sigma^2}{n}\frac{N-n}{N-1}}\end{align*}
+$$
 
 es posible despejar la ecuación para `$n$`, con la cual se puede
 garantizar que el límite del error de estimación no exceda a una
 cantidad específica `$B$`, tal que
 
-$$\begin{align*}\lceil n\rceil = \frac{\sigma^2N}{\frac{B^2}{Z_{\frac{\alpha}{2}}^2N^2}(N-1)+\sigma^2}\end{align*}$$
+$$
+\begin{align*}\lceil n\rceil = \frac{\sigma^2N}{\frac{B^2}{Z_{\frac{\alpha}{2}}^2N^2}(N-1)+\sigma^2}\end{align*}
+$$
 
 
 dicha expresión puede ser reescrita como
 
-$$\begin{align*}\lceil n\rceil = \frac{1}{\frac{1}{N}+\frac{N-1}{N^3}\frac{1}{n_0}} \quad \quad n_0 = \frac{Z_{\frac{\alpha}{2}^2}\sigma^2}{B^2}\end{align*}$$
+$$
+\begin{align*}\lceil n\rceil = \frac{1}{\frac{1}{N}+\frac{N-1}{N^3}\frac{1}{n_0}} \quad \quad n_0 = \frac{Z_{\frac{\alpha}{2}^2}\sigma^2}{B^2}\end{align*}
+$$
 
 
 donde: <br> `$N$` es el número de individuos en la población. <br>
@@ -259,7 +313,9 @@ reemplazada por su estimador `$\hat{\sigma}^2=\frac{N-1}{N}S^2$`.
 Para el caso de la proporción poblacional, considere que `$Y_i$` es una
 variable dicotómica, tal que
 
-$$\begin{align*}Y_i = \begin{cases} 1, \quad \text{ si la unidad } i \text{ cumple con el atributo de interés} \\ 0, \quad \text{ si la unidad } i \text{ no cumple con el atributo de interés} \end{cases}\end{align*}$$
+$$
+\begin{align*}Y_i = \begin{cases} 1, \quad \text{ si la unidad } i \text{ cumple con el atributo de interés} \\ 0, \quad \text{ si la unidad } i \text{ no cumple con el atributo de interés} \end{cases}\end{align*}
+$$
 
 
 En tal caso, la proporción poblacional `$p$`, representará a la
@@ -268,12 +324,16 @@ bien, sea `$Y_1, Y_2, \ldots, Y_n$` los valores obtenidos a partir de
 una muestra aleatoria de tamaño `$n$`, entonces se tendrá que un
 estimador insesgado para la proporción poblacional `$p$` estará dado por
 
-$$\begin{align*}\hat{p} = \frac{\sum_{i=1}^ny_i}{n} = \frac{\text{Número de individuos que poseen el atributo}}{\text{Número de unidades en la muestra}}\end{align*}$$
+$$
+\begin{align*}\hat{p} = \frac{\sum_{i=1}^ny_i}{n} = \frac{\text{Número de individuos que poseen el atributo}}{\text{Número de unidades en la muestra}}\end{align*}
+$$
 
 
 y su varianza se definirá como
 
-$$\begin{align*}Var(\hat{p}) = \frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}\end{align*}$$
+$$
+\begin{align*}Var(\hat{p}) = \frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}\end{align*}
+$$
 
 
 #### Intervalos de confianza para la proporción poblacional
@@ -283,24 +343,32 @@ intervalos de confianza para el caso de la proporción poblacional, en
 donde, se tendrá que si `$n>30$`, el límite del error de estimación
 estará dado por
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{p})} \\   & = Z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{p})} \\   & = Z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}
+$$
 
 
 siendo el intervalo de confianza del `$100(1-\alpha)\%$` de confianza
 dado por
 
-$$\begin{align*}\hat{p} \pm  Z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}\hat{p} \pm  Z_{\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}
+$$
 
 
 y si `$n\leq30$`, el límite del error de estimación se define como
 
-$$\begin{align*}B & = t_{\alpha/2,n-1}\sqrt{Var(\hat{p})} \\   & = t_{\alpha/2,n-1}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}B & = t_{\alpha/2,n-1}\sqrt{Var(\hat{p})} \\   & = t_{\alpha/2,n-1}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}
+$$
 
 
 junto a su correspondiente intervalo de confianza del
 `$100(1-\alpha)\%$` de confianza
 
-$$\begin{align*}\hat{p} \pm  t_{\alpha/2,n-1}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}$$
+$$
+\begin{align*}\hat{p} \pm  t_{\alpha/2,n-1}\sqrt{\frac{\hat{p}(1-\hat{p})}{n-1}\frac{N-n}{N}}\end{align*}
+$$
 
 
 ### Selección del tamaño de muestra para la proporción poblacional `$p$`
@@ -315,7 +383,9 @@ De lo anterior se obtiene entonces que el tamaño de mustra `$n$` que
 permite garantizar que el limite del error de estimación no exceda a una
 cantidad específica `$B$`, estará dada por
 
-$$\begin{align*}\lceil n\rceil = \frac{p(1-p)N}{\frac{B^2}{Z_{\frac{\alpha}{2}}^2}(N-1)+p(1-p)}\end{align*}$$
+$$
+\begin{align*}\lceil n\rceil = \frac{p(1-p)N}{\frac{B^2}{Z_{\frac{\alpha}{2}}^2}(N-1)+p(1-p)}\end{align*}
+$$
 
 
 donde: <br> `$N$` es el número de individuos en la población. <br> `$p$`

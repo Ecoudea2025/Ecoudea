@@ -435,7 +435,9 @@ entre el costo y el predial.
 Si se supone que la relación entre `$Y$` y `$X$` es lineal, un modelo
 adecuado estaría dado por
 
-$$\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}$$
+$$
+\begin{align*}Y=\beta_0 + \beta_1 X+ \varepsilon \quad \quad (I)\end{align*}
+$$
 
 
 donde
@@ -461,7 +463,9 @@ por el investigador.
     ajuste a los pares de observaciones, y por tanto se supone que las
     parejas satisfacen el modelo `$(I)$`, tal que
     
-$$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}$$
+$$
+\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =0,1,2, \ldots, n \quad \quad (II)\end{align*}
+$$
 
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, dado
     que `$X$` es igual a `$x_i$`.
@@ -470,16 +474,22 @@ $$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i \quad \text{ para } i =
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
-$$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_i+ \mathbb{E}(\varepsilon_i) = \beta_0 + \beta_1 x_i\end{align*}
+$$
 
     y
     
-$$\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}$$
+$$
+\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
+$$
 
     en donde, si además se cumple que
     `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
-$$\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}$$
+$$
+\begin{align*}y_i\sim N(\beta_0+\beta_1x_i, \sigma^2)\end{align*}
+$$
 
 
 ### Estimación de parámetros
@@ -497,7 +507,9 @@ Bajo el supuesto de que
 luego la función de verosimilitud asociada a los pares `$(y_1, x_1)$`,
 `$(y_2, x_2)$`, `$\ldots$`, `$ (y_n,x_n)$` está dada por
 
-$$\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i; \beta_0, \beta_1, \sigma^2)\\   &= \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\end{align*}$$
+$$
+\begin{align*}L(\beta_0, \beta_1, \sigma^2; (y_i, x_i)) &= \prod_{i=1}^n f(y_i; \beta_0, \beta_1, \sigma^2)\\   &= \prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\end{align*}
+$$
 
 
 Entonces, al maximizar la función de probabilidad tal como se enseño en
@@ -507,7 +519,9 @@ la
 `$\sigma^2$` que maximizan `$L(\cdot)$` están dados por
 
 
-$$\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&=\frac{S_{xy}}{S_{xx}}= \frac{\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y})}{\sum_{i=1}^{n}(x_i - \bar{X})^2} = \frac{\sum_{i=1}^{n}(x_i-\bar{X}) y_i}{\sum_{i=1}^{n} (x_i - \bar{X})^2}\\    \hat{\sigma}^2&= \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_0&=\bar{Y} - \hat{\beta}_1\bar{X}\\   \hat{\beta}_1&=\frac{S_{xy}}{S_{xx}}= \frac{\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y})}{\sum_{i=1}^{n}(x_i - \bar{X})^2} = \frac{\sum_{i=1}^{n}(x_i-\bar{X}) y_i}{\sum_{i=1}^{n} (x_i - \bar{X})^2}\\    \hat{\sigma}^2&= \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}\end{align*}
+$$
 
 
 <button id="Show1" class="btn btn-secondary">
@@ -528,53 +542,67 @@ ambas funciones alcanzan su máximo en el mismo punto por ser el
 logaritmo una función monótona creciente, se procede a calcular la
 función de log-verosimilitud, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \ell(\beta_0, \beta_1, \sigma^2) &= \ln L(\beta_0, \beta_1, \sigma^2; (y_i, x_i))\\
   &= \ln \left[\prod_{i=1}^n \frac{1}{\sqrt{2\pi}\sqrt{\sigma^2}}e^{-\frac{1}{2}\frac{(y_i - \beta_0 - \beta_1 x_i)^2}{\sigma^2}}\right]\\
   &= -\frac{n}{2}\ln(2\pi) - \frac{n}{2}\ln(\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para encontrar los estimadores que maximizan la función
 $\ell(\cdot)$, se deriva parcialmente la función de log-verosimilitud
 respecto a cada uno de los parámetros y se iguala a cero. Derivando
 inicialmente respecto a $\beta_0$ se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial \ell}{\partial \beta_0} = \frac{1}{\sigma^2}\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i) = 0
-\end{align*}$$
+\end{align*}
+$$
 
 de donde se obtiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \sum_{i=1}^n y_i - n\hat{\beta}_0 - \hat{\beta}_1\sum_{i=1}^n x_i &= 0\\
   n\bar{Y} - n\hat{\beta}_0 - n\hat{\beta}_1\bar{X} &= 0
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
-\end{align*}$$
+\end{align*}
+$$
 
 Derivando ahora respecto a $\beta_1$ se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial \ell}{\partial \beta_1} = \frac{1}{\sigma^2}\sum_{i=1}^n x_i(y_i - \beta_0 - \beta_1 x_i) = 0
-\end{align*}$$
+\end{align*}
+$$
 
 de donde se obtiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \sum_{i=1}^n x_iy_i - \hat{\beta}_0\sum_{i=1}^n x_i - \hat{\beta}_1\sum_{i=1}^n x_i^2 = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y al reemplazar $\hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}$ en la
 expresión anterior
 
-$$\begin{align*}
+$$
+\begin{align*}
   \sum_{i=1}^n x_iy_i - (\bar{Y} - \hat{\beta}_1\bar{X})n\bar{X} - \hat{\beta}_1\sum_{i=1}^n x_i^2 &= 0\\
   \sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y} - \hat{\beta}_1\left(\sum_{i=1}^n x_i^2 - n\bar{X}^2\right) &= 0
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, recordando que
 $S_{xy}=\sum_{i=1}^n (x_i - \bar{X})(y_i - \bar{Y}) = \sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y}$
@@ -582,29 +610,37 @@ y que
 $S_{xx}=\sum_{i=1}^{n}(x_i - \bar{X})^2 = \sum_{i=1}^n x_i^2 - n\bar{X}^2$,
 se concluye que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\beta}_1 = \frac{\sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y}}{\sum_{i=1}^n x_i^2 - n\bar{X}^2} = \frac{S_{xy}}{S_{xx}}
-\end{align*}$$
+\end{align*}
+$$
 
 Finalmente, derivando la función de log-verosimilitud respecto a
 $\sigma^2$ se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial \ell}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2\sigma^4}\sum_{i=1}^n (y_i - \beta_0 - \beta_1 x_i)^2 = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y al multiplicar ambos lados de la igualdad por $2\hat{\sigma}^4$ y
 evaluar en $\hat{\beta}_0$ y $\hat{\beta}_1$ se obtiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   -n\hat{\sigma}^2 + \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2 = 0
-\end{align*}$$
+\end{align*}
+$$
 
 concluyendo entonces que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\sigma}^2 = \frac{\sum_{i=1}^{n} (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i)^2}{n}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -613,7 +649,9 @@ $$\begin{align*}
 Sea una muestra aleatoria `$(y_1, x_1), (y_2, x_2), \ldots, (y_n, x_n)$`
 a partir de la cual se desea ajustar el siguiente modelo
 
-$$\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i\end{align*}$$
+$$
+\begin{align*}y_i=\beta_0 + \beta_1 x_i+ \varepsilon_i\end{align*}
+$$
 
 
 donde `$\varepsilon_i$` es una variable aleatoria desconocida con
@@ -625,14 +663,18 @@ Entonces si denotamos a `$\hat{\beta}_0, \hat{\beta}_1$`, los
 estimadores de los parámetros `$\beta_0, \beta_1$`, entonces la recta de
 regresión estimada será
 
-$$\begin{align*}\hat{y_i}=\hat{\beta}_0 + \hat{\beta}_1 x_i\end{align*}$$
+$$
+\begin{align*}\hat{y_i}=\hat{\beta}_0 + \hat{\beta}_1 x_i\end{align*}
+$$
 
 
 donde `$\hat{y}_i$` es el estimador de `$\mathbb{E}(y_i|x=x_i)$`.
 Entonces la diferencia entre `$y_i$` y `$\hat{y_i}$` se conoce como
 error de estimación del ajuste `$e_i$` y está dado por
 
-$$\begin{align*}e_i = y_i - \hat{y}_i = y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i\end{align*}$$
+$$
+\begin{align*}e_i = y_i - \hat{y}_i = y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i\end{align*}
+$$
 
 
 **Supuestos**
@@ -647,19 +689,25 @@ A partir de la ecuación anterior será posible encontrar los estimadores
 suma de los cuadrados de los errores.
 
 
-$$\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (y_i - \hat{y}_i)^2 =   \sum_{i=1}^n (y_i -\hat{\beta}_0 - \hat{\beta}_1 x_i)^2\end{align*}$$
+$$
+\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (y_i - \hat{y}_i)^2 =   \sum_{i=1}^n (y_i -\hat{\beta}_0 - \hat{\beta}_1 x_i)^2\end{align*}
+$$
 
 
 de la forma
 
 
-$$\begin{align*}\frac{\partial SCE}{\partial \hat{\beta}_i} = 0\end{align*}$$
+$$
+\begin{align*}\frac{\partial SCE}{\partial \hat{\beta}_i} = 0\end{align*}
+$$
 
 
 Al resolver el sistema de ecuaciones se obtendrá que
 
 
-$$\begin{align*}\hat{\beta}_1 &= \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{\sum_{i=1}^n (x_i-\bar{X})^2} = \frac{S_{xy}}{S_{xx}}\\ \hat{\beta}_0 &= \bar{Y} - \hat{\beta}_1\bar{X}\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1 &= \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{\sum_{i=1}^n (x_i-\bar{X})^2} = \frac{S_{xy}}{S_{xx}}\\ \hat{\beta}_0 &= \bar{Y} - \hat{\beta}_1\bar{X}\end{align*}
+$$
 
 
 <button id="Show2" class="btn btn-secondary">
@@ -680,43 +728,55 @@ parcialmente la función $SCE$ respecto a cada uno de los estimadores y
 se iguala a cero. Derivando inicialmente respecto a $\hat{\beta}_0$ se
 tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial SCE}{\partial \hat{\beta}_0} = -2\sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i) = 0
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que al derivar respecto a $\hat{\beta}_1$ se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial SCE}{\partial \hat{\beta}_1} = -2\sum_{i=1}^n x_i(y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i) = 0
-\end{align*}$$
+\end{align*}
+$$
 
 Al simplificar ambas expresiones se obtiene el sistema de ecuaciones
 conocido como <strong>ecuaciones normales</strong>, dado por
 
-$$\begin{align*}
+$$
+\begin{align*}
   n\hat{\beta}_0 + \hat{\beta}_1\sum_{i=1}^n x_i &= \sum_{i=1}^n y_i\\
   \hat{\beta}_0\sum_{i=1}^n x_i + \hat{\beta}_1\sum_{i=1}^n x_i^2 &= \sum_{i=1}^n x_iy_i
-\end{align*}$$
+\end{align*}
+$$
 
 De la primera ecuación normal, al dividir ambos lados por $n$, se
 obtiene directamente que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\beta}_0 = \bar{Y} - \hat{\beta}_1\bar{X}
-\end{align*}$$
+\end{align*}
+$$
 
 y al sustituir este resultado en la segunda ecuación normal se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   (\bar{Y} - \hat{\beta}_1\bar{X})n\bar{X} + \hat{\beta}_1\sum_{i=1}^n x_i^2 &= \sum_{i=1}^n x_iy_i\\
   \hat{\beta}_1\left(\sum_{i=1}^n x_i^2 - n\bar{X}^2\right) &= \sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y}
-\end{align*}$$
+\end{align*}
+$$
 
 de donde se concluye que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\beta}_1 = \frac{\sum_{i=1}^n x_iy_i - n\bar{X}\bar{Y}}{\sum_{i=1}^n x_i^2 - n\bar{X}^2} = \frac{\sum_{i=1}^n (x_i-\bar{X})(y_i-\bar{Y})}{\sum_{i=1}^n (x_i-\bar{X})^2} = \frac{S_{xy}}{S_{xx}}
-\end{align*}$$
+\end{align*}
+$$
 
 </p>
 </main>
@@ -727,7 +787,9 @@ Dado que el método de mínimos cuadrados no posee un estimador para la
 varianza `$\sigma^2$`, se emplea entonces un estimador insesgado el cual
 estará dado por
 
-$$\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \frac{1}{n-2}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\              &= \frac{S_{yy} - \hat{\beta}_1 S_{xy}}{n-2}\end{align*}$$
+$$
+\begin{align*}\sigma^2_e &=\frac{1}{n-2}\sum_{i=1}^n e^2_i \\             &= \frac{1}{n-2}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\              &= \frac{S_{yy} - \hat{\beta}_1 S_{xy}}{n-2}\end{align*}
+$$
 
 
 ### Propiedades de `$\hat{\beta}_0, \hat{\beta}_1$`
@@ -744,7 +806,9 @@ ser reescritos como
 </ul>
 
 
-$$\begin{align*}\hat{\beta}_1 &= \sum_{i=1}^{n} y_ic_i \qquad \text{ donde } c_i=\frac{(x_i-\bar{X})}{\sum_{i=1}^{n}(x_i - \bar{X})^2}\\   \hat{\beta}_0 &= \sum_{i=1}^{n} y_i di \qquad \text{ donde } d_i=\left(\frac{1}{n} - c_i\bar{X}\right)\end{align*}$$
+$$
+\begin{align*}\hat{\beta}_1 &= \sum_{i=1}^{n} y_ic_i \qquad \text{ donde } c_i=\frac{(x_i-\bar{X})}{\sum_{i=1}^{n}(x_i - \bar{X})^2}\\   \hat{\beta}_0 &= \sum_{i=1}^{n} y_i di \qquad \text{ donde } d_i=\left(\frac{1}{n} - c_i\bar{X}\right)\end{align*}
+$$
 
 
 <ul>
@@ -820,12 +884,14 @@ Dado que los $c_i$ son constantes (ya que dependen únicamente de los
 valores $x_i$), al aplicar el operador esperanza sobre
 $\hat{\beta}_1$ se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbb{E}(\hat{\beta}_1) &= \mathbb{E}\left(\sum_{i=1}^{n} c_iy_i\right) = \sum_{i=1}^{n} c_i\mathbb{E}(y_i) = \sum_{i=1}^{n} c_i(\beta_0 + \beta_1x_i)\\
   &= \beta_0\sum_{i=1}^{n} c_i + \beta_1\sum_{i=1}^{n} c_ix_i\\
   &= \beta_0(0) + \beta_1(1)\\
   &= \beta_1
-\end{align*}$$
+\end{align*}
+$$
 </p>
 <h4 data-toc-skip>
 Demostración Esperanza de $\hat{\beta}_0$
@@ -837,11 +903,13 @@ junto con el resultado anterior, y notando que
 $\mathbb{E}(\bar{Y}) = \frac{1}{n}\sum_{i=1}^{n}\mathbb{E}(y_i) = \frac{1}{n}\sum_{i=1}^{n}(\beta_0 + \beta_1x_i) = \beta_0 + \beta_1\bar{X}$,
 se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbb{E}(\hat{\beta}_0) &= \mathbb{E}(\bar{Y} - \hat{\beta}_1\bar{X}) = \mathbb{E}(\bar{Y}) - \bar{X}\mathbb{E}(\hat{\beta}_1)\\
   &= \beta_0 + \beta_1\bar{X} - \bar{X}\beta_1\\
   &= \beta_0
-\end{align*}$$
+\end{align*}
+$$
 </p>
 <h4 data-toc-skip>
 Demostración Varianza de $\hat{\beta}_1$
@@ -851,13 +919,15 @@ Demostración Varianza de $\hat{\beta}_1$
 Dado que las observaciones $y_i$ son independientes, la varianza de la
 suma es la suma de las varianzas, y por tanto
 
-$$\begin{align*}
+$$
+\begin{align*}
   Var(\hat{\beta}_1) &= Var\left(\sum_{i=1}^{n} c_iy_i\right) \\
   &= \sum_{i=1}^{n} c_i^2Var(y_i) \\
   &= \sigma^2\sum_{i=1}^{n} c_i^2\\
   &= \sigma^2 \frac{1}{S_{xx}}\\
   &= \frac{\sigma^2}{S_{xx}}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 <h4 data-toc-skip>
 Demostración Varianza de $\hat{\beta}_0$
@@ -868,24 +938,30 @@ De forma análoga al caso anterior, empleando la forma lineal
 $\hat{\beta}_0 = \sum_{i=1}^{n} d_iy_i$ y la independencia de las
 observaciones, se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   Var(\hat{\beta}_0) &= Var\left(\sum_{i=1}^{n} d_iy_i\right) = \sum_{i=1}^{n} d_i^2Var(y_i) = \sigma^2\sum_{i=1}^{n} d_i^2
-\end{align*}$$
+\end{align*}
+$$
 
 donde, al desarrollar la suma $\sum_{i=1}^{n} d_i^2$ empleando la
 definición $d_i = \frac{1}{n} - c_i\bar{X}$, se obtiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \sum_{i=1}^{n} d_i^2 &= \sum_{i=1}^{n} \left(\frac{1}{n} - c_i\bar{X}\right)^2 = \sum_{i=1}^{n} \left(\frac{1}{n^2} - \frac{2c_i\bar{X}}{n} + c_i^2\bar{X}^2\right)\\
   &= \frac{n}{n^2} - \frac{2\bar{X}}{n}\sum_{i=1}^{n}c_i + \bar{X}^2\sum_{i=1}^{n}c_i^2\\
   &= \frac{1}{n} - \frac{2\bar{X}}{n}(0) + \bar{X}^2\frac{1}{S_{xx}}\\
   &= \frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto se concluye que
 
-$$\begin{align*}
+$$
+\begin{align*}
   Var(\hat{\beta}_0) = \sigma^2\left[\frac{1}{n} + \frac{\bar{X}^2}{S_{xx}}\right]
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>

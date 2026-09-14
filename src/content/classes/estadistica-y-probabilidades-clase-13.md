@@ -63,39 +63,54 @@ Si llamamos a $F$ al evento de obtener un número diferente a $4$ y a
 $E$ al evento de obtener un $4$, entonces observamos que al lanzar
 el dado, el número $4$ puede caer en el primer lanzamiento, o en el
 segundo, o en el tercero, etc, etc, y por tanto el espacio muestral
-estará dado por $$\begin{align*}
+estará dado por 
+$$
+\begin{align*}
 S:\{E, FE, FFE, FFFE, \ldots\}
-\end{align*}$$ y en consecuencia, podemos definir la <strong>variable
+\end{align*}
+$$
+ y en consecuencia, podemos definir la <strong>variable
 aleatoria discreta $X$ </strong> con los números $1$, $2$, $3$,
 $\ldots$, para el número de lanzamientos necesarios hasta obtener un
 $4$. Es decir, la variable aleatoria tendrá dominio en
-$$\begin{align*}
+$$
+\begin{align*}
 X=1, 2, 3, \ldots
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que es una proporción, entonces el espacio muestral puede ser
 cualquier valor que se encuentre entre $0$ y $1$, entonces tendremos
 a <strong>$Y$, una variable aleatoria continua </strong> con dominio
-definido en $$\begin{align*}
+definido en 
+$$
+\begin{align*}
 0\leq Y\leq 1
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 El ejercicio consta en elegir un artículo de una banda de ensamble y
 comprobar si tiene o no defectos. En consecuencia, se tendrá un espacio
 muestral con dos puntos situaciones, $D$ si el artículo está
 defectuoso, y $N$ si el artículo no está defectuoso, tal que
-$$\begin{align*}
+$$
+\begin{align*}
 S:\{D,N\}
-\end{align*}$$ Entonces, como solo pueden haber dos posibilidades,
+\end{align*}
+$$
+ Entonces, como solo pueden haber dos posibilidades,
 defectuoso y no defectuoso, podemos definir una variable aleatoria
-Bernoulli $Z$, la cual se definirá como $$\begin{align*}
+Bernoulli $Z$, la cual se definirá como 
+$$
+\begin{align*}
 Z = \begin{cases}
 0 & \text{ Si el artículo está defectuoso } \\
 1 & \text{ Si el artículo no está defectuoso }
 \end{cases}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -157,17 +172,24 @@ Solución
 <li>
 Sea $H$ la letra que representa que el miembro de la familia es niño y
 $M$ para denotar que el miembro de la familia es niña, entonces, se
-tendrá que el espacio muestral se define como $$\begin{align*}
+tendrá que el espacio muestral se define como 
+$$
+\begin{align*}
 S = \{HHH,\;HHM,\;HMH,\;MHH,\;HMM,\;MHM,\;MMH,\;MMM\}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Como el interés de la variable aleatoria $X$ radica en el número de
 niñas que hay en la familia, se tendrá entonces que a partir del espacio
 muestral $S$ se puede contar el número de éxitos que hay en cada
-situación $$\begin{align*}
+situación 
+$$
+\begin{align*}
 S = \{\underset{0}{HHH},\;\underset{1}{HHM},\;\underset{1}{HMH},\;\underset{1}{MHH},\;\underset{2}{HMM},\;\underset{2}{MHM},\;\underset{2}{MMH},\;\underset{3}{MMM}\}
-\end{align*}$$ Evidenciando, que podemos asignar los valores $0,$
+\end{align*}
+$$
+ Evidenciando, que podemos asignar los valores $0,$
 $1,$ $2$ y $3$ a la variable aleatoria $X$.
 </li>
 <li>
@@ -186,9 +208,12 @@ situación en donde no hay ninguna mujer, y en consecuencia, al aplicar
 la definición de
 <a href="../../EstadisticaI/EstIClase04.html#probabilidad" target="\_blank">frecuencia
 relativa</a>, se tendrá que la probabilidad de que $X=0$, es
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X=0) = \frac{1}{8}
-\end{align*}$$ Procedimiento similar se aplica para $X=1$, $X=2$ y
+\end{align*}
+$$
+ Procedimiento similar se aplica para $X=1$, $X=2$ y
 $X=3$, obteniendo como resultado la siguiente tabla de probabilidades
 <div style="font-size:120%!important">
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
@@ -282,9 +307,11 @@ se encuentra que dicha suma es igual a $1$.
 Dado que solo nos interesa la situación en la cual hay $2$ o más
 niñas, se tendrá que nos están preguntando por la probabilidad de que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X\geq2) = \sum_{x=2}^3p(x) = p(2) + p(3) = \frac{3}{8} + \frac{1}{8} = \frac{1}{2}
-\end{align*}$$
+\end{align*}
+$$
 
 y en consecuencia, se tendrá que la probabilidad de que en una familia
 de $3$ hijos, se tenga $2$ o más niñas, es del $50\%$.
@@ -298,7 +325,9 @@ La función de distribución acumulada (*fda*) denotada por `$F(x)$`, para
 una variable aleatoria discreta `$X$` con distribución de probabilidad
 `$p(x)$` es de la forma
 
-$$\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}$$
+$$
+\begin{align*}F(x)=\mathbb{P}(X\leq x)=\sum_{t\leq x}p(t) \quad \quad -\infty<x<\infty\end{align*}
+$$
 
 para cualquier `$x$` dentro del rango de `$X$`, `$F(x)$` será la suma
 acumulada de todos los valores de rango de `$X$` menores a `$x$`.
@@ -397,25 +426,30 @@ siguientes probabilidades $F(0) = \mathbb{P}(X\leq 0)$,
 $F(1) = \mathbb{P}(X\leq1)$, $F(2) = \mathbb{P}(X\leq2)$ y
 $F(3) = \mathbb{P}(X\leq3)$
 
-$$\begin{align*}
+$$
+\begin{align*}
 F(0) & = \mathbb{P}(X\leq0) = p(0) = \frac{1}{8} \\
 F(1) & = \mathbb{P}(X\leq1) = p(0) + p(1) = \frac{1}{8} + \frac{3}{8} =  \frac{4}{8}\\
 F(2) & = \mathbb{P}(X\leq2) = \sum_{x=0}^{2} p(x) = \frac{1}{8} + \frac{3}{8} + \frac{3}{8} =  \frac{7}{8} \\
 F(3) & = \mathbb{P}(X\leq3) = \sum_{x=0}^{3} p(x) = \frac{1}{8} + \frac{3}{8} + \frac{3}{8} + \frac{1}{8} = \frac{8}{8}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, mediante el empleo de estas probabilidades, podemos construir
 la función de distribución acumulada para la variable aleatoria $X$,
 tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 F(x) = \begin{cases} 0 & x<0 \\
                      \frac{1}{8}  & 0\leq x<1 \\
                      \frac{4}{8}  & 1\leq x<2 \\
                      \frac{7}{8}  & 2\leq x<3 \\
                      \frac{8}{8}  & x\geq 3
        \end{cases}
-\end{align*}$$ En donde se aprecia, que para valores menores a $0$, no
+\end{align*}
+$$
+ En donde se aprecia, que para valores menores a $0$, no
 hay ninguna probabilidad definida, para valores mayores o iguales a
 $0$ pero menores que $1$ solo está definido $F(0)=p(0)$, para
 valores mayores o iguales a $1$ pero menores que $2$ está definido
@@ -427,19 +461,24 @@ o iguales a $3$ está definido $F(3)=p(0)+p(1)+p(2)+p(3)$.
 
 Dado que el interés es calcular la probabilidad de que el número de
 niñas sea mayor a $1$ pero no más de $2$, entonces se tendrá que la
-probabilidad de interés es la siguiente $$\begin{align*}
+probabilidad de interés es la siguiente 
+$$
+\begin{align*}
 \mathbb{P}(1 < X \leq 2)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, siguiendo las reglas anteriormente expuestas, dicha
 probabilidad puede calcularse mediante
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \geq 2) & = 1 - F(2-1) \\
                      & = 1 - F(1) \\
                      & = 1 - \frac{4}{8}
                      & = \frac{4}{8}
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que la probabilidad de que en una familia de
 $3$ hijos, tengan $2$ o más niñas es de $50\%$.
@@ -453,7 +492,9 @@ Si `$X$` es una variable aleatoria con función de masa de probabilidad
 `$p(x)$`, entonces la media o valor esperado de la variable aleatoria se
 denota por `$\mathbb{E}(X)$` o `$\mu$` está dada por
 
-$$\begin{align*}\mathbb{E}(X)=\sum_{x}xp(x)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=\sum_{x}xp(x)\end{align*}
+$$
 
 <button id="Show4" class="btn btn-secondary">Mostrar Ejercicio </button>
 <button id="Hide4" class="btn btn-info">Ocultar Ejercicio </button>
@@ -523,14 +564,16 @@ $\frac{1}{8}$
 A partir de ésta tabla se realiza el cálculo de la esperanza matemática
 de la variable aleatoria mediante la ecuación
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(X)&=\sum_{x=0}^3x\,p(x) \\
              &=0\,p(0)+1\,p(1)+2\,p(2)+3\,p(3) \\
              &=0\left(\frac{1}{8}\right)+1\left(\frac{3}{8}\right)+2\left(\frac{3}{8}\right)+3\left(\frac{1}{8}\right) \\
              &=0+\frac{3}{8}+\frac{6}{8}+\frac{3}{8} \\
              &=\frac{12}{8} \\
              &=1.5
-\end{align*}$$
+\end{align*}
+$$
 
 se tendrá que el número promedio de niñas que se espera encontrar en una
 familia que posee $3$ hijos es de $1.5$ niñas.
@@ -548,7 +591,9 @@ aleatoria, entonces se tiene que
 -   si `$m(X)$` es una función de `$X$`, entonces
 
 
-$$\begin{align*}\mathbb{E}(m(X))=\sum_xm(x)p(x)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(m(X))=\sum_xm(x)p(x)\end{align*}
+$$
 
 
 <button id="Show5" class="btn btn-secondary">
@@ -631,24 +676,28 @@ $\frac{1}{8}$
 A partir de la tabla anterior, se procede a realizar el cálculo de
 $\mathbb{E}(X+2)$, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(X+2)&=\sum_{x=0}^3(x+2)\,p(x) \\
              &=(0+2)\,p(0)+(1+2)\,p(1)+(2+2)\,p(2)+(3+2)\,p(3) \\
              &=2\left(\frac{1}{8}\right)+3\left(\frac{3}{8}\right)+4\left(\frac{3}{8}\right)+5\left(\frac{1}{8}\right) \\
              &=\frac{2}{8}+\frac{9}{8}+\frac{12}{8}+\frac{5}{8} \\
              &=\frac{28}{8} \\
              &=3.5
-\end{align*}$$
+\end{align*}
+$$
 
 Resultado similar, puede obtenerse mediante la propiedad
 $\mathbb{E}(X+b)=\mathbb{E}(X)+b$, en donde ya sabemos que
 $\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(X+2)&=\mathbb{E}(X) + 2 \\
              &=1.5 + 2 \\
              &=3.5
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -656,22 +705,27 @@ Similar al caso anterio, se tiene que para realizar el cálculo de
 $\mathbb{E}(3X)$, es posible emplear la definición de esperanza
 matemática, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(3X)&=\sum_{x=0}^33x\,p(x) \\
              &=(3)(0)\,p(0)+(3)(1)\,p(1)+(3)(2)\,p(2)+(3)(3)\,p(3) \\
              &=0\left(\frac{1}{8}\right)+3\left(\frac{3}{8}\right)+6\left(\frac{3}{8}\right)+9\left(\frac{1}{8}\right) \\
              &=\frac{9}{8}+\frac{18}{8}+\frac{9}{8} \\
              &=\frac{36}{8} \\
              &=4.5
-\end{align*}$$ Resultado similar, puede obtenerse mediante la propiedad
+\end{align*}
+$$
+ Resultado similar, puede obtenerse mediante la propiedad
 $\mathbb{E}(aX)=a\mathbb{E}(X)$, en donde ya sabemos que
 $\mathbb{E}(X)=1.5$, y en consecuencia se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(aX)&=3\mathbb{E}(X) \\
              &=(3)(1.5) \\
              &=4.5
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -679,14 +733,16 @@ Finalmente, para encontrar la $\mathbb{E}(X^2)$ se tendrá que en este
 caso $m(X) = X^2$, y por tanto, al aplicar la propiedad
 $\mathbb{E}(m(X))= \sum_{x}m(x)p(x)$ tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{E}(X^2)&=\sum_{x=0}^3x^2\,p(x) \\
              &=0^2\,p(0)+1^2\,p(1)+2^2\,p(2)+3^2\,p(3) \\
              &=0\left(\frac{1}{8}\right)+1\left(\frac{3}{8}\right)+4\left(\frac{3}{8}\right)+9\left(\frac{1}{8}\right) \\
              &=0+\frac{3}{8}+\frac{12}{8}+\frac{9}{8} \\
              &=\frac{24}{8} \\
              &=3
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>

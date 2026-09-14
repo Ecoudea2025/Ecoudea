@@ -149,6 +149,7 @@ Lista de ejercicios
     explique por qué sí o por qué no?
     </li>
     </ol>
+
 3.  Suponga una serie de tiempo asociada al valor total de las ventas de
     camperos de producción nacional que contiene un total de 119
     observaciones trimestrales registradas desde el primer trimestre
@@ -280,10 +281,13 @@ Lista de ejercicios
     media?. explique por qué sí o por qué no?
     </li>
     </ol>
+
 4.  Suponga el siguiente modelo de regresión lineal simple ajustado a un
     conjunto de 100 observaciones
     
-$$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
+$$
+\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}
+$$
  A partir
     de este modelo calcule
     <ol type="a">
@@ -417,10 +421,13 @@ $$\begin{align*}\hat{Y}_t = 15.310 + 2.389 X\end{align*}$$
     resultados obtenidos.
     </li>
     </ol>
+
 5.  Suponga el siguiente modelo de regresión lineal simple ajustado a un
     conjunto de 1000 observaciones
     
-$$\begin{align*}\hat{Y}_t = 1316.28 + 22.48 X\end{align*}$$
+$$
+\begin{align*}\hat{Y}_t = 1316.28 + 22.48 X\end{align*}
+$$
 
 
 A partir de este modelo calcule

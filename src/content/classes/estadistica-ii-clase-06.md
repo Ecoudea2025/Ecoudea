@@ -22,7 +22,9 @@ esperados de la distribución de interés.
 
 La hipótesis a probar de interés estará dada por
 
-$$\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}$$
+$$
+\begin{align*}H_0: X \sim F_0(x) \quad \text{vs} \quad H_1: X \nsim F_0(x)\end{align*}
+$$
 
 
 Siendo `$F_0(x)$` la distribución de probabilidad hipótetica que se
@@ -354,10 +356,12 @@ apoya o no la hipótesis sobre que los contagios que se han presentado
 durante las últimas semanas por el COVID-19 poseen una distribución
 Weibull, esto es
 
-$$\begin{align*}
+$$
+\begin{align*}
   H_0:X \sim Wei(\alpha,\beta)\\
   H_1:X \not\sim Wei(\alpha,\beta)
-\end{align*}$$
+\end{align*}
+$$
 
 y para ello debemos inicialmente ajustar los parámetros de una
 distribución Weibull que mejor ajustan los datos, mediante la función
@@ -401,8 +405,8 @@ mediante la función <tt>cvm.test</tt> de la librería <tt>goftest</tt>
 <section class="highlight">
 <pre class="highlight"><code><span class="c1">## Se hace el ajuste de los datos a la distribución Weibull</span><span class="w">
 </span><span class="nf">library</span><span class="p">(</span><span class="n">goftest</span><span class="p">)</span><span class="w">
-</span><span class="nf">cvm.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="p">,</span><span class="w"> </span><span class="n">null</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"pweibull"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w">
-    </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+</span><span class="nf">cvm.test</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">datos</span><span class="p">,</span><span class="w"> </span><span class="n">null</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"pweibull"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w">
+    </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -434,7 +438,7 @@ tal que
 <section class="highlight">
 <pre class="highlight"><code><span class="c1">## Se muestra el ajuste de la distribución Weibull de forma gráfica</span><span class="w">
 </span><span class="nf">library</span><span class="p">(</span><span class="n">car</span><span class="p">)</span><span class="w">
-</span><span class="nf">qqPlot</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"weibull"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">$</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">],</span><span class="w">
+</span><span class="nf">qqPlot</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span><span class="w"> </span><span class="n">dist</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"weibull"</span><span class="p">,</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parametros</span><span class="o">&#36;</span><span class="n">estimate</span><span class="p">[</span><span class="m">2</span><span class="p">],</span><span class="w">
     </span><span class="n">envelope</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.95</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
@@ -461,7 +465,9 @@ no normalmente, en donde el juego de hipótesis de interés estará dado
 por
 
 
-$$\begin{align*}H_0: X \sim N(\mu,\sigma^2) \quad \text{vs} \quad H_1: X \nsim N(\mu,\sigma^2)\end{align*}$$
+$$
+\begin{align*}H_0: X \sim N(\mu,\sigma^2) \quad \text{vs} \quad H_1: X \nsim N(\mu,\sigma^2)\end{align*}
+$$
 
 
 A saber, las funciones más usadas de bondad de ajuste para probar
@@ -861,7 +867,9 @@ de una población son o no independientes. Para ello se plantea el
 siguiente juego de hipótesis
 
 
-$$\begin{align*}H_0&: \text{Los atributos de la población son independientes}\\ H_1&: \text{Los atributos de la población son dependientes}\end{align*}$$
+$$
+\begin{align*}H_0&: \text{Los atributos de la población son independientes}\\ H_1&: \text{Los atributos de la población son dependientes}\end{align*}
+$$
 
 
 Suponga que en una población se clasifica según los atributos `$A$` y
@@ -1010,24 +1018,32 @@ categoría de `$A$` y la j-ésima categoría de `$B$`, `$R_{i}$`: es la
 suma de las observaciones por fila, y `$C_{j}$`: es la suma de las
 observaciones por columnas, tal que
 
-$$\begin{align*}R_{i}=\sum_{j=1}^{c}O_{ij} \qquad \qquad C_{j}=\sum_{i=1}^{r}O_{ij}\end{align*}$$
+$$
+\begin{align*}R_{i}=\sum_{j=1}^{c}O_{ij} \qquad \qquad C_{j}=\sum_{i=1}^{r}O_{ij}\end{align*}
+$$
 
 
 Ahora, con el fin de probar si hay o no independencia entre las
 categorías, es necesario calcular `$E_{ij}$` el número de observaciones
 esperadas en la casilla `$ij$`, tal que
 
-$$\begin{align*}E_{ij}=np_{ij}\end{align*}$$
+$$
+\begin{align*}E_{ij}=np_{ij}\end{align*}
+$$
 
 
 donde `$pij$` es la probabilidad conjunta bajo el supuesto de
 independiencia, entonces
 
-$$\begin{align*}p_{ij} = \frac{R_{i}}{n}\times \frac{C_{j}}{n} =\frac{R_{i}C_{j}}{n^2}\end{align*}$$
+$$
+\begin{align*}p_{ij} = \frac{R_{i}}{n}\times \frac{C_{j}}{n} =\frac{R_{i}C_{j}}{n^2}\end{align*}
+$$
 
 
 y por tanto 
-$$\begin{align*}E_{ij} = \frac{R_{i}C_{j}}{n}\end{align*}$$
+$$
+\begin{align*}E_{ij} = \frac{R_{i}C_{j}}{n}\end{align*}
+$$
 
 
 Una vez calculados cada uno de los `$E_{ij}$`, es posible reescribir
@@ -1138,17 +1154,23 @@ Finalmente, al comparar las frecuencias observadas `$O_{ij}$` con las
 frecuencias esperadas `$E_{ij}$`, se tendrá que el estadístico de prueba
 para probar la independencia, será de la forma
 
-$$\begin{align*}\chi^2_{c}=\sum_{i=1}^{r}\sum_{j=1}^{c} \frac{(O_{ij}- E_{ij})^2}{E_{ij}} \sim \chi^2_{(r-1)(c-1)}\end{align*}$$
+$$
+\begin{align*}\chi^2_{c}=\sum_{i=1}^{r}\sum_{j=1}^{c} \frac{(O_{ij}- E_{ij})^2}{E_{ij}} \sim \chi^2_{(r-1)(c-1)}\end{align*}
+$$
 
 
 la región crítica
 
-$$\begin{align*}RC:\{\chi^2|\chi^2>\chi^2_{\alpha,(r-1)(c-1)}\}\end{align*}$$
+$$
+\begin{align*}RC:\{\chi^2|\chi^2>\chi^2_{\alpha,(r-1)(c-1)}\}\end{align*}
+$$
 
 
 y el P-valor
 
-$$\begin{align*}\text{P-valor}=\mathbb{P}(\chi^2_{(r-1)(c-1)}>\chi^2_c)\end{align*}$$
+$$
+\begin{align*}\text{P-valor}=\mathbb{P}(\chi^2_{(r-1)(c-1)}>\chi^2_c)\end{align*}
+$$
 
 
 <button id="Show3" class="btn btn-secondary">
@@ -1384,9 +1406,11 @@ filas y columnas de la varible observada, tal que
 Una vez calculadas las sumas marginales por fila y por columna, se
 procede a calcular las frecuencias esperadas, mediante la ecuación
 
-$$\begin{align*}
+$$
+\begin{align*}
   E_{ij} = \frac{R_{i}C_{j}}{n}
-\end{align*}$$
+\end{align*}
+$$
 
 para obtener la siguiente tabla de frecuencias esperadas, de la forma
 </p>
@@ -1478,29 +1502,36 @@ para obtener la siguiente tabla de frecuencias esperadas, de la forma
 Y ahora, al emplear los valores observados con los esperados, se realiza
 el cálculo del estadístico de prueba, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \chi^2_{c}&=\sum_{i=1}^{r}\sum_{j=1}^{c} \frac{(O_{ij}- E_{ij})^2}{E_{ij}} \sim \chi^2_{(r-1)(c-1)}\\
   &=\frac{(16 - 26.71429)^2}{26.71429} + \frac{(27 - 24.51429)^2}{24.51429} + \ldots + \frac{(23 - 17.45714)^2}{17.45714}\\
   &=22.98415
-\end{align*}$$
+\end{align*}
+$$
 
 Finalmente se plantea el criterio de decisión, en donde la región
 crítica asociada para un nivel de significancia del $5\%$ está dada
-por $$\begin{align*}
+por 
+$$
+\begin{align*}
   RC&:\{\chi^2|\chi^2>\chi^2_{\alpha,(r-1)(c-1)}\}\\
   RC&:\{\chi^2|\chi^2>\chi^2_{0.05,(3-1)(4-1)}\}\\
   RC&:\{\chi^2|\chi^2>\chi^2_{0.05,6}\}\\
   RC&:\{\chi^2|\chi^2>12.5915872\}\\
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que el P-valor asociado al estadístico de prueba es igual a
 
-$$\begin{align*}
+$$
+\begin{align*}
   \text{P-valor}&=\mathbb{P}(\chi^2_{(r-1)(c-1)} > \chi^2_c)\\
                 &=\mathbb{P}(\chi^2_{(3-1)(4-1)} > 22.98415)\\
                 &=\mathbb{P}(\chi^2_{6} > 22.98415)\\
                 &=0.0008018046
-\end{align*}$$
+\end{align*}
+$$
 
 Encontrando con un nivel de significancia del $5\%$ que se rechaza la
 hipótesis nula de que el tipo de defecto y el turno sean categorías

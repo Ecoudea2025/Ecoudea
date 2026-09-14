@@ -63,9 +63,13 @@ Supongamos un vector $x$ dado por los números
 $3.1, 7.8, 8.9, 10.5, 2.7, 5.7$, entonces si se desea seleccionar los
 valores $8.9$ y $2.7$ del vector, notamos que estos números se
 encuentran en la posición $3$ y $5$, respectivamente, y por tanto,
-podemos emplear la notación $$\begin{align*}
+podemos emplear la notación 
+$$
+\begin{align*}
 x[c(3,5)]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -104,9 +108,13 @@ También es posible seleccionar dos veces un mismo valor con el fin de
 duplicarlo, por ejemplo, deseamos seleccionar el valor $3.1$ y
 duplicar el valor $10.5$, entonces como el valor $3.1$ está en la
 posición $1$ y el valor $10.5$ está en la posición $4$, podemos
-emplear la notación $$\begin{align*}
+emplear la notación 
+$$
+\begin{align*}
 x[c(1, 4, 4)]
-\end{align*}$$ en donde se nota que escribimos dos veces el valor $4$,
+\end{align*}
+$$
+ en donde se nota que escribimos dos veces el valor $4$,
 tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -147,9 +155,12 @@ interés. Suponga que del vector $x$ queremos reemplazar el valor
 $5.7$, por un $1000$, entonces, como el valor $5.7$ se encuentra
 en la sexta posición, podemos llamar dicha posición mediante el operador
 de subconjuntos y el operador de asignación, mediante la notación
-$$\begin{align*}
+$$
+\begin{align*}
 x[c(6)] <- 1000
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -188,9 +199,13 @@ Supongamos un vector $y$ dado por los números
 $3.1, NA, 8.9, 10.5, 2.7, 5.7$, entonces si se desea eliminar el valor
 <tt style="color: #ff628c!important">NA</tt> del vector, notamos que
 este valor se encuentran en la posición $2$, y por tanto, podemos
-emplear la notación $$\begin{align*}
+emplear la notación 
+$$
+\begin{align*}
 y[-c(2)]
-\end{align*}$$ dentro del operador de subconjuntos para eliminar dicho
+\end{align*}
+$$
+ dentro del operador de subconjuntos para eliminar dicho
 valor, tal que
 </p>
 <section class="language-r highlighter-rouge">
@@ -233,9 +248,13 @@ $3.1, 7.8, 8.9, 10.5, 2.7, 5.7$, entonces podemos usar un vector de
 <tt style="color: #ff628c!important">FALSE</tt> para seleccionar los
 valores de interés. Supongamos que deseamos seleccionar solo los dos
 primeros valores del vector $x$, entonces podemos emplear un vector de
-la forma $$\begin{align*}
+la forma 
+$$
+\begin{align*}
 x[c(T,T,F,F,F,F)]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -257,9 +276,13 @@ Filtrar con un condicional
 <p>
 También podemos emplear condicionales para filtrar valores, suponga que
 se quiere filtrar aquellos valores que sean menores a $4$ del vector
-$x$, entonces podemos usar el condicional $$\begin{align*}
+$x$, entonces podemos usar el condicional 
+$$
+\begin{align*}
 x[x < 4]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -284,9 +307,13 @@ podemos emplear el operador de conjunción <code>|</code> o disyunción
 <code>&</code>, para agregar varios condicionales. Suponga que queremos
 filtrar del vector <tt>y</tt>, los valores que sean mayores o igual a
 <tt>5</tt> o sean <tt style="color: #ff628c!important">NA</tt>. Para
-ello empleamos la notación $$\begin{align*}
+ello empleamos la notación 
+$$
+\begin{align*}
 y[y >= 5 | is.na(y)]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -325,9 +352,13 @@ Vector de caracteres
 Supongamos un vector $w$ dado por los caracteres <tt>“Daniel”,
 “Carlos”, “Paola”, “Daniel”, “Juan”, “Ana”</tt>, entonces si estamos
 interesados en aquellos valores que contienen la cadena de caracteres
-<tt>“uno”</tt>, entonces podemos emplear la notación $$\begin{align*}
+<tt>“uno”</tt>, entonces podemos emplear la notación 
+$$
+\begin{align*}
 x[x == “Daniel”]
-\end{align*}$$ para filtrar dichos valores de interés, tal que
+\end{align*}
+$$
+ para filtrar dichos valores de interés, tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -354,11 +385,19 @@ Similarmente, supongamos un vector numérico $z$, que posee caracteres
 asociados a los números, tal que <tt>“Daniel” = 4, “Carlos” = 8, “Paola”
 = 12.4, “Ana” = 2.4, “Juan”= 8, “Ana” = 1</tt>. Entonces, si queremos
 filtrar por <tt>“Ana”</tt> empleando el operador de subconjuntos,
-podemos emplear la notación $$\begin{align*}
+podemos emplear la notación 
+$$
+\begin{align*}
 z[\text{names}(z) == “Ana”]
-\end{align*}$$ o la notación numérica $$\begin{align*}
+\end{align*}
+$$
+ o la notación numérica 
+$$
+\begin{align*}
 z[z == 2.4 | z == 1.0]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -422,15 +461,21 @@ Matrices por entrada
 <p>
 Supongamos una matriz <tt>M</tt> de dimensión $2\times3$ dada por
 </p>
-$$\begin{align*}
+$$
+\begin{align*}
 M = \begin{bmatrix}6 & 2 & 3 \\12 & 7 & 9 \end{bmatrix}_{2\times3}
-\end{align*}$$
+\end{align*}
+$$
 <p>
 Entonces, si deseamos filtrar el valor $9$ que se encuentra en la
 posición $2,3$ (fila $2$, columna $3$), podemos emplear el
-operador de subconjuntos con la notación $$\begin{align*}
+operador de subconjuntos con la notación 
+$$
+\begin{align*}
 M[2,3]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -458,9 +503,12 @@ emplear el operador de asignación, dejando vacío el valor antes de la
 coma, si deseamos filtrar por columna, o dejar vacío el valor después de
 la coma, si deseamos filtrar por fila. Por ejemplo, si queremos filtrar
 por la columna $1$ de la matriz <tt>M</tt>, empleando la notación
-$$\begin{align*}
+$$
+\begin{align*}
 M[\;,1]
-\end{align*}$$ en donde se puede notar que no hay ningún valor asignado
+\end{align*}
+$$
+ en donde se puede notar que no hay ningún valor asignado
 antes de la coma.
 </p>
 <section class="language-r highlighter-rouge">
@@ -486,14 +534,22 @@ tener dimensiones extra. Por ello, es cuestión de agregar las nuevas
 dimensiones dentro del operador de subconjuntos, separando cada
 dimensión mediante comas. Por ejemplo se tiene un arreglo
 $2\times2\times3$, formado por las tres matrices $A_1, A_2, A_3$,
-$2\times2$ siguientes $$\begin{align*}
+$2\times2$ siguientes 
+$$
+\begin{align*}
 A_1 = \begin{bmatrix}6 & 2 \\7 & 9 \end{bmatrix}_{2\times2} \qquad A_2 = \begin{bmatrix}3 & 7 \\12 & 8 \end{bmatrix}_{2\times2} \qquad A_3 = \begin{bmatrix}13 & 2 \\3 & 11 \end{bmatrix}_{2\times2}
-\end{align*}$$ Entonces, si deseamos filtrar el valor $3$ que se
+\end{align*}
+$$
+ Entonces, si deseamos filtrar el valor $3$ que se
 encuentra en la posición $2,1$ (fila $2$, columna $1$) de la
 tercera matriz, podemos emplear el operador de subconjuntos con la
-notación $$\begin{align*}
+notación 
+$$
+\begin{align*}
 A[2,1,3]
-\end{align*}$$ tal que
+\end{align*}
+$$
+ tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
@@ -528,9 +584,13 @@ la dimensión del arreglo), si deseamos filtrar por columna, o dejar
 vacío los valores después la primera, segunda, tercera…. coma
 (dependiendo de la dimensión del arreglo), si deseamos filtrar por fila.
 Por ejemplo, si queremos filtrar por la fila $2$ del arreglo
-<tt>A</tt>, podemos emplear la notación $$\begin{align*}
+<tt>A</tt>, podemos emplear la notación 
+$$
+\begin{align*}
 A[2,\; ,\; ]
-\end{align*}$$ en donde, solo se usan dos comas debido a que la
+\end{align*}
+$$
+ en donde, solo se usan dos comas debido a que la
 dimensión del arreglo es de $3d$.
 </p>
 <section class="language-r highlighter-rouge">
@@ -559,9 +619,13 @@ dimensión luego de la coma, asociada a la dimensión en la que se está
 interesado. Por ejemplo, $A$ es un arreglo de $2\times2\times3$, así
 que si estoy interesado solo en la segunda matriz, entonces puedo
 escribir un $2$ luego de la segunda coma, ya que estoy interesado en
-la tercera dimensión del arreglo. Dicha notación sería $$\begin{align*}
+la tercera dimensión del arreglo. Dicha notación sería 
+$$
+\begin{align*}
 A[\;, \; ,2]
-\end{align*}$$ en donde, se observa, que los valores asociados a las
+\end{align*}
+$$
+ en donde, se observa, que los valores asociados a las
 filas y las columnas se encuentra vacíos.
 </p>
 <section class="language-r highlighter-rouge">
@@ -643,9 +707,11 @@ la forma usada en vectores con nombres, podemos usar el operador de
 subconjuntos, para localizar la columna de interés, mediante la notación
 </p>
 
-$$\begin{align*}
+$$
+\begin{align*}
 DatF[``Car"]
-\end{align*}$$
+\end{align*}
+$$
 
 <p>
 tal que
@@ -680,15 +746,17 @@ luego del nombre del marco de datos, seguido del nombre de la variable
 de interés, en donde la notación usada sería de la forma
 </p>
 
-$$\begin{align*}
+$$
+\begin{align*}
 DatF\$Car
-\end{align*}$$
+\end{align*}
+$$
 
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="c1"># Empleamos operador de subconjuntos $, para seleccionar la columna con</span><span class="w">
+<pre class="highlight"><code><span class="c1"># Empleamos operador de subconjuntos &#36;, para seleccionar la columna con</span><span class="w">
 </span><span class="c1"># nombre 'Car'</span><span class="w">
-</span><span class="n">DatF</span><span class="o">$</span><span class="n">Car</span><span class="w">
+</span><span class="n">DatF</span><span class="o">&#36;</span><span class="n">Car</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -720,7 +788,7 @@ clase interna de la columna, que en este caso es tipo <tt>factor</tt>.
 </section>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="nf">class</span><span class="p">(</span><span class="n">DatF</span><span class="o">$</span><span class="n">Car</span><span class="p">)</span><span class="w">
+<pre class="highlight"><code><span class="nf">class</span><span class="p">(</span><span class="n">DatF</span><span class="o">&#36;</span><span class="n">Car</span><span class="p">)</span><span class="w">
 </span></code></pre>
 </section>
 </section>
@@ -738,9 +806,11 @@ Si queremos mediante el operador de asignación empleado para matrices,
 <code>\[ , \]</code>, entonces para filtrar por la columna
 <tt>“Car”</tt>, podemos emplear la siguiente notación
 </p>
-$$\begin{align*}
+$$
+\begin{align*}
 DatF[\;,2] \quad \text{ ó } \quad DatF[\;,``Car"]
-\end{align*}$$
+\end{align*}
+$$
 <p>
 en donde, se emplea la segunda columna, ya que la variable
 <tt>“Car”</tt>, es la segunda columna del marco de datos.
@@ -814,16 +884,16 @@ nombres, una matriz, un arreglo, un marco de datos y una función.
 </section>
 <section class="highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code>$VC
+<pre class="highlight"><code>&#36;VC
 Daniel Carlos  Paola    Ana   Juan    Ana 
    4.0    8.0   12.4    2.4    8.0    1.0 
 
-$MT
+&#36;MT
      [,1] [,2] [,3]
 [1,]    6    2    3
 [2,]   12    7    9
 
-$AR
+&#36;AR
 , , 1
 
      [,1] [,2]
@@ -843,7 +913,7 @@ $AR
 [2,]    3   11
 
 
-$DF
+&#36;DF
    Num Car   Log
 1    1   a  TRUE
 2    2   b  TRUE
@@ -856,7 +926,7 @@ $DF
 9    9   i  TRUE
 10  10   j  TRUE
 
-$FU
+&#36;FU
 function(x) class(x)
 &lt;environment: 0x000000001d9d5fb0&gt;
 </code></pre>
@@ -871,9 +941,11 @@ a que es el segundo objeto de la lista, usar el nombre que posee dentro
 de la lista, o usar el operador <code>$</code> seguido del nombre dentro
 de la lista
 
-$$\begin{align*}
+$$
+\begin{align*}
 Lista[[2]] \quad \text{ ó } \quad Lista[[``MT"]] \quad \text{ ó } \quad Lista\$MT
-\end{align*}$$
+\end{align*}
+$$
 
 Estas tres formas funcionan exactamente igual, puesto que permiten
 extraen totalmente de la lista, el objeto de interés.
@@ -922,7 +994,7 @@ tendiendo la característica de lista.
 </section>
 <section class="highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code>$MT
+<pre class="highlight"><code>&#36;MT
      [,1] [,2] [,3]
 [1,]    6    2    3
 [2,]   12    7    9
@@ -949,17 +1021,19 @@ emplearse las operaciones descritas previamente para vectores, matrices,
 etc, etc. Por ejemplo, tenemos la lista, deseamos extraer la segunda
 matriz del objeto <tt>AR</tt>, entonces podemos emplear la notación
 
-$$\begin{align*}
+$$
+\begin{align*}
 Lista$AR[\;, \;, 2]
-\end{align*}$$
+\end{align*}
+$$
 
 tal que
 </p>
 <section class="language-r highlighter-rouge">
 <section class="highlight">
-<pre class="highlight"><code><span class="c1"># Empleamos operador de subconjuntos $, para extraer el arreglo AR guardado</span><span class="w">
+<pre class="highlight"><code><span class="c1"># Empleamos operador de subconjuntos &#36;, para extraer el arreglo AR guardado</span><span class="w">
 </span><span class="c1"># en la lista, y simultáneamente se extrae la segunda matriz del arreglo</span><span class="w">
-</span><span class="n">Lista</span><span class="o">$</span><span class="n">AR</span><span class="p">[ ,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">]</span><span class="w">
+</span><span class="n">Lista</span><span class="o">&#36;</span><span class="n">AR</span><span class="p">[ ,</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">]</span><span class="w">
 </span></code></pre>
 </section>
 </section>

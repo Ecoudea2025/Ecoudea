@@ -45,14 +45,18 @@ Sea `$\tau_i$` el total asociado al i-ésimo estrato, con
 `$i = 1,2,\ldots, L$`, con `$L$` el número de estratos. Entonces, se
 tendrá que el total poblacional `$\tau$` estará dado por
 
-$$\begin{align*}\tau = \sum_{i=1}^L \tau_i\end{align*}$$
+$$
+\begin{align*}\tau = \sum_{i=1}^L \tau_i\end{align*}
+$$
 
 
 Tanto `$\tau$` como `$\tau_i$` son valores generalmente desconocidos, lo
 cual hace que se requieran estimadores para cada uno de ellos. El
 estimador para el total del i-ésimo estrato `$\tau_i$` estará dado por
 la expresión 
-$$\begin{align*}\hat{\tau_i} = N_i \bar{Y}_i\end{align*}$$
+$$
+\begin{align*}\hat{\tau_i} = N_i \bar{Y}_i\end{align*}
+$$
 
 
 para `$i = 1,2, \ldots, L$`. Como se observa, este estimador está dado
@@ -63,21 +67,27 @@ el estimador `$\bar{Y}_i$` del promedio poblacional del i-ésimo estrato
 Dado lo anterior, se tendrá que un estimador puntual para el parámetro
 del total de toda la población bajo estudio `$\tau$` será
 
-$$\begin{align*}\hat{\tau}_{t} = \sum_{i=1}^L \hat{\tau}_i = \sum_{i=1}^L N_i \bar{Y}_i\end{align*}$$
+$$
+\begin{align*}\hat{\tau}_{t} = \sum_{i=1}^L \hat{\tau}_i = \sum_{i=1}^L N_i \bar{Y}_i\end{align*}
+$$
 
 
 Ahora, dado que el MAE requiere que haya independencia entre los MAS de
 los estratos, se tendrá que la varianza del estimador `$\hat{\tau}$`
 será de la forma
 
-$$\begin{align*}Var(\hat{\tau}) & = Var\left(\sum_{i=1}^L \hat{\tau}_i \right) \\                 & = \sum_{i=1}^L Var(N_i \bar{Y}_i) \\                 & = \sum_{i=1}^L N_i^2Var(\bar{Y}_i) \\                 & = \sum_{i=1}^L N_i^2 \frac{\sigma^2_i}{n_i} \frac{N_i-n_i}{N_i-1}\end{align*}$$
+$$
+\begin{align*}Var(\hat{\tau}) & = Var\left(\sum_{i=1}^L \hat{\tau}_i \right) \\                 & = \sum_{i=1}^L Var(N_i \bar{Y}_i) \\                 & = \sum_{i=1}^L N_i^2Var(\bar{Y}_i) \\                 & = \sum_{i=1}^L N_i^2 \frac{\sigma^2_i}{n_i} \frac{N_i-n_i}{N_i-1}\end{align*}
+$$
 
 
 Dado que `$\sigma^2_i$` es usualmente desconocido, se emplea el
 estimador `$\hat{\sigma}^2_i = \frac{N_i-1}{N_i}S_i^2$`, dando como
 resultado el estimador insesgado para `$Var(\hat{\tau})$`, tal que
 
-$$\begin{align*}Var(\hat{\tau}) & = \sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}\end{align*}$$
+$$
+\begin{align*}Var(\hat{\tau}) & = \sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}\end{align*}
+$$
 
 
 #### Intervalos de confianza para el total de la población
@@ -87,21 +97,29 @@ la varianza del estimador `$Var(\hat{\tau})$`, es posible encontrar el
 límite de los errores de estimación `$B$`, en donde, para el caso en que
 `$n>30$`, el límite de los errores de estimación se define como
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} \\    & = Z_{\alpha/2}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{\tau})} \\    & = Z_{\alpha/2}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 en donde, el intervalos de confianza del `$(1-\alpha)100\%$` se definirá
 como
 
-$$\begin{align*}\hat{\tau} \pm  Z_{\alpha/2}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}\hat{\tau} \pm  Z_{\alpha/2}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 Mientras que, para el caso de `$n\leq30$`, el límite de los errores de
 estimación se define como
 
-$$\begin{align*}B & = t_{\alpha/2,n-1}\sqrt{Var(\hat{\tau})} \\    & = t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}B & = t_{\alpha/2,n-1}\sqrt{Var(\hat{\tau})} \\    & = t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 junto a su intervalo de confianza del `$(1-\alpha)\times100\%$`
 
-$$\begin{align*}\hat{\tau} \pm  t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}\hat{\tau} \pm  t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L N_i^2 \frac{S^2_i}{n_i}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 
 #### Estimación de la media poblacional `$\mu$`
@@ -109,20 +127,26 @@ $$\begin{align*}\hat{\tau} \pm  t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L N_i^2 \frac{S
 Basados en la definición del parámetro `$\tau$`, es posible obtener una
 definición para la obtención del parámetro `$\mu$`, ya que `$\tau$`
 puede definirse como 
-$$\begin{align*}\tau = N\mu\end{align*}$$
+$$
+\begin{align*}\tau = N\mu\end{align*}
+$$
  y por
 tanto = Dado ésto, y el estimador del total de las poblaciones
 `$\hat{\tau}$`, podremos obtener un estimador para la media poblacional,
 tal que
 
-$$\begin{align*}\hat{\mu} = \bar{Y}_t & = \frac{\hat{\tau}}{N} \\                       & = \frac{1}{N}\sum_{i=1}^L N_i\bar{Y}_i\end{align*}$$
+$$
+\begin{align*}\hat{\mu} = \bar{Y}_t & = \frac{\hat{\tau}}{N} \\                       & = \frac{1}{N}\sum_{i=1}^L N_i\bar{Y}_i\end{align*}
+$$
 
 
 Entonces, como `$\bar{Y}_t$` depende de `$\hat{\tau}$` se puede calcular
 una expresión para la varianza de la media poblacional `$Var(\bar{Y})$`,
 tal que
 
-$$\begin{align*}Var(\hat{\mu}) = Var(\bar{Y}_t) & = \frac{1}{N^2}Var(\hat{\tau}) \\                                 & = \sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S_i^2}{n_i} \frac{N_i-n_i}{N_i}\end{align*}$$
+$$
+\begin{align*}Var(\hat{\mu}) = Var(\bar{Y}_t) & = \frac{1}{N^2}Var(\hat{\tau}) \\                                 & = \sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S_i^2}{n_i} \frac{N_i-n_i}{N_i}\end{align*}
+$$
 
 
 #### Intervalos de confianza para la media poblacional
@@ -132,19 +156,27 @@ varianza de la media estimada, es posible presentar una expresión para
 el límites del error de estimación `$B$`. Si `$n>30$` el límite del
 error de estimación se define como
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\bar{Y})} \\   & = Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\bar{Y})} \\   & = Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 junto a su intervalos de confianza del `$(1-\alpha)\times100\%$`
 
-$$\begin{align*}\bar{Y} \pm  Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}\bar{Y} \pm  Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 y si `$n\leq 30$` el límite del error de estimación se define como
 
-$$\begin{align*}B & = t_{\alpha/2, n-1}\sqrt{Var(\bar{Y})} \\    & = t_{\alpha/2, n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}B & = t_{\alpha/2, n-1}\sqrt{Var(\bar{Y})} \\    & = t_{\alpha/2, n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 y su intervalos de confianza del `$(1-\alpha)\times100\%$` será
 
-$$\begin{align*}\bar{Y} \pm  t_{\alpha/2, n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}\bar{Y} \pm  t_{\alpha/2, n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{S^2_i}{n_i} \frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 
 #### Estimación de la proporción poblacional `$p$`
@@ -155,48 +187,64 @@ la población y a `$A_i$`: el total de individuos que cumplen con el
 atributo en el i-ésimo estrato, para `$i=1,2, \ldots, L$`, entonces se
 tendrá que `$A$` puede expresarse como
 
-$$\begin{align*}A = \sum_{i=1}^L A_i\end{align*}$$
+$$
+\begin{align*}A = \sum_{i=1}^L A_i\end{align*}
+$$
  El cual, al igual que
 los otros parámetros de la población no es generalmente conocido, y por
 tanto, un estimador insesgado para éste puede definirse como
 
-$$\begin{align*}\hat{A} = \sum_{i=1}^L \hat{A_i} = \sum_{i=1}^L N_i\hat{p}_i\end{align*}$$
+$$
+\begin{align*}\hat{A} = \sum_{i=1}^L \hat{A_i} = \sum_{i=1}^L N_i\hat{p}_i\end{align*}
+$$
 
 siendo `$\hat{p}_i$` la proporción estimada de los individuos en la
 muestra del i-ésimo estrato que cumple con el atributo de interés. En
 consecuencia, el estimador `$\hat{p}_i$` puede calcularse como
 
-$$\begin{align*}\hat{p}_i = \frac{a_i}{n_i} = \frac{\text{Número de individuos que poseen el atributo en el i-ésimo estrato}}{\text{Número de unidades en la muestra pertenecientes al i-ésimo estrato}}\end{align*}$$
+$$
+\begin{align*}\hat{p}_i = \frac{a_i}{n_i} = \frac{\text{Número de individuos que poseen el atributo en el i-ésimo estrato}}{\text{Número de unidades en la muestra pertenecientes al i-ésimo estrato}}\end{align*}
+$$
 
 
 A partir de este estimador, y de forma similar al método de muestreo
 aleatorio simple, es posible definir la varianza para la proporción
 estimada `$Var(p)$`, tal que
 
-$$\begin{align*}Var(\hat{A}) & = Var\left(\sum_{i=1}^L \hat{A_i} \right) = Var\left(\sum_{i=1}^L N_i\hat{p}_i \right) \\              & = \sum_{i=1}^L Var\left(N_i\hat{p}_i \right) \\              & = \sum_{i=1}^L N_i^2Var\left(\hat{p}_i \right) \\              & = \sum_{i=1}^L N_i^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}\end{align*}$$
+$$
+\begin{align*}Var(\hat{A}) & = Var\left(\sum_{i=1}^L \hat{A_i} \right) = Var\left(\sum_{i=1}^L N_i\hat{p}_i \right) \\              & = \sum_{i=1}^L Var\left(N_i\hat{p}_i \right) \\              & = \sum_{i=1}^L N_i^2Var\left(\hat{p}_i \right) \\              & = \sum_{i=1}^L N_i^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}\end{align*}
+$$
 
 
 Ahora, basados en la definición del parámetro `$A$`, es posible obtener
 una definición para la obtención del parámetro `$p$`, ya que `$A$` puede
 definirse como 
-$$\begin{align*}A = Np\end{align*}$$
+$$
+\begin{align*}A = Np\end{align*}
+$$
  y por tanto `$p$`
 puede reescribirse como 
-$$\begin{align*}p = \frac{A}{N}\end{align*}$$
+$$
+\begin{align*}p = \frac{A}{N}\end{align*}
+$$
 
 
 Dado ésto, y que el estimador del total de individuos que cumplen con el
 atributo en la población `$\hat{A}$`, podremos obtener un estimador para
 la proporción poblacional, tal que
 
-$$\begin{align*}\hat{p}_t & = \frac{\hat{A}}{N} \\           & = \frac{1}{N}\sum_{i=1}^L N_i\hat{p}_i\end{align*}$$
+$$
+\begin{align*}\hat{p}_t & = \frac{\hat{A}}{N} \\           & = \frac{1}{N}\sum_{i=1}^L N_i\hat{p}_i\end{align*}
+$$
 
 
 Entonces, como `$\hat{p}_t$` depende de `$\hat{A}$` se puede calcular
 una expresión para la varianza de la proporción poblacional
 `$Var(\hat{p})$`, tal que
 
-$$\begin{align*}Var(\hat{p}_t) & = \frac{1}{N^2}Var(\hat{A}) \\                & = \sum_{i=1}^L\frac{N_i^2}{N^2} \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i} \\                & = \sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}\end{align*}$$
+$$
+\begin{align*}Var(\hat{p}_t) & = \frac{1}{N^2}Var(\hat{A}) \\                & = \sum_{i=1}^L\frac{N_i^2}{N^2} \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i} \\                & = \sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}\end{align*}
+$$
 
 
 #### Intervalos de confianza para la proporción poblacional
@@ -206,24 +254,32 @@ de confianza para el caso de la proporción poblacional `$p$`, en donde,
 se tendrá que si `$n>30$`, el límite del error de estimación estará dado
 por
 
-$$\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{p})} \\    & = Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}B & = Z_{\alpha/2}\sqrt{Var(\hat{p})} \\    & = Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 
 siendo el intervalo de confianza del `$100(1-\alpha)\%$` de confianza
 dado por
 
-$$\begin{align*}\hat{p} \pm  Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}\hat{p} \pm  Z_{\alpha/2}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 
 y si `$n\leq30$`, el límite del error de estimación se define como
 
-$$\begin{align*}B & = t_{\alpha/2,n-1}\sqrt{Var(\hat{p})} \\    & = t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}B & = t_{\alpha/2,n-1}\sqrt{Var(\hat{p})} \\    & = t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 
 junto a su correspondiente intervalo de confianza del
 `$100(1-\alpha)\%$` de confianza
 
-$$\begin{align*}\hat{p} \pm  t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}$$
+$$
+\begin{align*}\hat{p} \pm  t_{\alpha/2,n-1}\sqrt{\sum_{i=1}^L\left(\frac{N_i}{N}\right)^2 \frac{p_i(1-p_i)}{n_i-1}\frac{N_i-n_i}{N_i}}\end{align*}
+$$
 
 
 ### Selección del tamaño de muestra para los parámetros `$\mu$`, `$\tau$` y `$p$`
@@ -237,15 +293,21 @@ Suponga que para la estimación de `$\bar{Y}_t$` se decide que el límite
 del error de estimación estará dentro de `$B$` unidades de la media
 poblacional, con un nivel de confianza del `$100(1-\alpha)\%$`, es decir
 
-$$\begin{align*}\mathbb{P}(|\mu-\bar{Y}_t|\leq B)\approx 1-\alpha\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(|\mu-\bar{Y}_t|\leq B)\approx 1-\alpha\end{align*}
+$$
 
 de donde se tiene que
 
-$$\begin{align*}B=Z_{\frac{\alpha}{2}}\sqrt{Var(\bar{Y}_t)}\end{align*}$$
+$$
+\begin{align*}B=Z_{\frac{\alpha}{2}}\sqrt{Var(\bar{Y}_t)}\end{align*}
+$$
 
 lo cual, al despejar `$Var\bar{Y}_t$` da como resultado
 
-$$\begin{align*}Var(\bar{Y}_t)=\frac{B^2}{Z_{\frac{\alpha}{2}}}\end{align*}$$
+$$
+\begin{align*}Var(\bar{Y}_t)=\frac{B^2}{Z_{\frac{\alpha}{2}}}\end{align*}
+$$
 
 de la expresión anterior, se puede observar que `$Var(\bar{Y}_t)$`
 depende de la varianza de cada uno de los estratos
@@ -258,31 +320,41 @@ posible asumir que `$n_i= w_i n$`, para `$i=1,2,\ldots,L$`, en donde
 `$w_i$` hace referencia al ponderador del estrato `$i$`. Así se tendrá
 entonces que
 
-$$\begin{align*}\frac{B^2}{Z_{\frac{\alpha}{2}}} & = Var(\bar{Y}_t)=\sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{n_i}\frac{N_i-n_i}{N_i-1} \\ \frac{B^2}{Z_{\frac{\alpha}{2}}} & = \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_in}\frac{N_i-w_in}{N_i-1} \\ n\frac{B^2}{Z_{\frac{\alpha}{2}}} & = \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_i}\frac{N_i}{N_i-1} - \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2 \frac{\sigma^2_in}{N_i-1} \\ n\frac{B^2}{Z_{\frac{\alpha}{2}}} + \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2 \frac{\sigma^2_in}{N_i-1} & = \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_i}\frac{N_i}{N_i-1} \\ n & = \frac{\sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_i}\frac{N_i}{N_i-1}}{\frac{B^2}{Z_{\frac{\alpha}{2}}} + \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2 \frac{\sigma^2_i}{N_i-1}} \\ n & = \frac{\sum_{i=1}^L N_i^2\frac{\sigma^2_i}{w_i}N_i}{\frac{B^2}{Z_{\frac{\alpha}{2}}}N^2(N_i-1) + \sum_{i=1}^L N_i^2 \sigma^2_i}\end{align*}$$
+$$
+\begin{align*}\frac{B^2}{Z_{\frac{\alpha}{2}}} & = Var(\bar{Y}_t)=\sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{n_i}\frac{N_i-n_i}{N_i-1} \\ \frac{B^2}{Z_{\frac{\alpha}{2}}} & = \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_in}\frac{N_i-w_in}{N_i-1} \\ n\frac{B^2}{Z_{\frac{\alpha}{2}}} & = \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_i}\frac{N_i}{N_i-1} - \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2 \frac{\sigma^2_in}{N_i-1} \\ n\frac{B^2}{Z_{\frac{\alpha}{2}}} + \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2 \frac{\sigma^2_in}{N_i-1} & = \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_i}\frac{N_i}{N_i-1} \\ n & = \frac{\sum_{i=1}^L \left(\frac{N_i}{N}\right)^2\frac{\sigma^2_i}{w_i}\frac{N_i}{N_i-1}}{\frac{B^2}{Z_{\frac{\alpha}{2}}} + \sum_{i=1}^L \left(\frac{N_i}{N}\right)^2 \frac{\sigma^2_i}{N_i-1}} \\ n & = \frac{\sum_{i=1}^L N_i^2\frac{\sigma^2_i}{w_i}N_i}{\frac{B^2}{Z_{\frac{\alpha}{2}}}N^2(N_i-1) + \sum_{i=1}^L N_i^2 \sigma^2_i}\end{align*}
+$$
 
 Entonces si definimos `$D=\frac{B^2}{Z_{\frac{\alpha}{2}}}$` se tendrá
 que el tamaño de muestra `$n$` estará dado por
 
-$$\begin{align*}n & =\frac{\sum_{i=1}^L N_i^2\frac{\sigma^2_i}{w_i}N_i}{DN^2(N_i-1) + \sum_{i=1}^L N_i^2 \sigma^2_i}\end{align*}$$
+$$
+\begin{align*}n & =\frac{\sum_{i=1}^L N_i^2\frac{\sigma^2_i}{w_i}N_i}{DN^2(N_i-1) + \sum_{i=1}^L N_i^2 \sigma^2_i}\end{align*}
+$$
 
 
 Finalmente, partiendo de esta ecuación, se tendrá que si se desea
 realizar el cálculo del tamaño de la muestra para el parámetro
 poblacional `$\tau$`, es cuestión de hacer a `$D$` igual a
 
-$$\begin{align*}D=\frac{B^2}{Z_{\frac{\alpha}{2}}N^2}\end{align*}$$
+$$
+\begin{align*}D=\frac{B^2}{Z_{\frac{\alpha}{2}}N^2}\end{align*}
+$$
 
 
 Si se desea realizar el cálculo del tamaño de la muestra para el caso
 del parámetro poblacional `$\mu$` se tendrá de `$D$` será de la forma
 
-$$\begin{align*}D=\frac{B^2}{Z_{\frac{\alpha}{2}}}\end{align*}$$
+$$
+\begin{align*}D=\frac{B^2}{Z_{\frac{\alpha}{2}}}\end{align*}
+$$
 
 
 y si se desea realizar el cálculo del tamaño de la muestra cuando el
 parámetro de interés es `$p$`, se tendrá que `$D$` será de la forma
 
-$$\begin{align*}D=\frac{B^2}{Z_{\frac{\alpha}{2}}}\end{align*}$$
+$$
+\begin{align*}D=\frac{B^2}{Z_{\frac{\alpha}{2}}}\end{align*}
+$$
  en
 donde, para este caso, el parámetro `$\sigma^2_i = p_i(1-p_i)$`.
 
@@ -294,11 +366,15 @@ estudio, pero se conocer la amplitud de las observaciones dentro de cada
 estrato, es posible usar la siguiente aproximación para la desviación
 estándar de cada estrato
 
-$$\begin{align*}\sigma_i = \frac{R_i}{6}\end{align*}$$
+$$
+\begin{align*}\sigma_i = \frac{R_i}{6}\end{align*}
+$$
  donde `$R_i$`
 representa el rango de las observaciones y se calcula como
 
-$$\begin{align*}R_i = Y_{i_max} - Y_{i_min}\end{align*}$$
+$$
+\begin{align*}R_i = Y_{i_max} - Y_{i_min}\end{align*}
+$$
  **Nota 3:**
 Existen diferentes formas de determinar los ponderadores `$w_i$`, los
 cuales se conocen como afijaciones o asignaciones de la muestra, y para
@@ -336,11 +412,15 @@ El objetivo es minimizar el costo para un valor fijo de
 `$Var(\bar{Y}_t)$` o minimizar `$Var(\bar{Y}_t)$` para un costo fijo. El
 valor de `$n_i$` que se obtiene está dado por:
 
-$$\begin{align*}n_i = n\left[\frac{\frac{N_i\sigma_i}{\sqrt{c_i}}}{\frac{\sum_{k=1}^LN_k\sigma^2_k}{\sqrt{c_k}}}\right]\end{align*}$$
+$$
+\begin{align*}n_i = n\left[\frac{\frac{N_i\sigma_i}{\sqrt{c_i}}}{\frac{\sum_{k=1}^LN_k\sigma^2_k}{\sqrt{c_k}}}\right]\end{align*}
+$$
 
 entonces, dado que `$n_i= nwi$` se tendrá que `$w_i$` es igual a
 
-$$\begin{align*}w_i = \left[\frac{\frac{N_i\sigma_i}{\sqrt{c_i}}}{\frac{\sum_{k=1}^LN_k\sigma^2_k}{\sqrt{c_k}}}\right]\end{align*}$$
+$$
+\begin{align*}w_i = \left[\frac{\frac{N_i\sigma_i}{\sqrt{c_i}}}{\frac{\sum_{k=1}^LN_k\sigma^2_k}{\sqrt{c_k}}}\right]\end{align*}
+$$
 
 
 #### 2. Asignación óptima de Neyman
@@ -350,11 +430,15 @@ desconocida pero se pueden suponer iguales, es decir,
 `$c_1 = c_2 = \ldots = c_L = c$`, se tendrá que la ecuación para el
 valor de `$n_i$` será de la forma
 
-$$\begin{align*}n_i = n\left[\frac{N_i\sigma_i}{\sum_{k=1}^LN_k\sigma^2_k}\right]\end{align*}$$
+$$
+\begin{align*}n_i = n\left[\frac{N_i\sigma_i}{\sum_{k=1}^LN_k\sigma^2_k}\right]\end{align*}
+$$
 
 por tanto, se tendrá que `$n_i= nwi$`, y en consecuencia `$w_i$` será
 
-$$\begin{align*}w_i = \left[\frac{N_i\sigma_i}{\sum_{k=1}^LN_k\sigma^2_k}\right]\end{align*}$$
+$$
+\begin{align*}w_i = \left[\frac{N_i\sigma_i}{\sum_{k=1}^LN_k\sigma^2_k}\right]\end{align*}
+$$
 
 
 #### 3. Asignación Proporcional
@@ -365,10 +449,14 @@ costos y las varianza son iguales de estrato a estrato, es decir,
 \``$\sigma^2_1 = \sigma^2_2 = \ldots = \sigma^2_L = \sigma^2$`, lo cual
 hará que el valor de `$n_i$` sea de la forma
 
-$$\begin{align*}n_i = n\left[\frac{N_i}{\sum_{k=1}^LN_k}\right]\end{align*}$$
+$$
+\begin{align*}n_i = n\left[\frac{N_i}{\sum_{k=1}^LN_k}\right]\end{align*}
+$$
 
 dando por tanto que el valor `$w_i$` sea de la forma
 
-$$\begin{align*}w_i = \left[\frac{N_i}{\sum_{k=1}^LN_k}\right]\end{align*}$$
+$$
+\begin{align*}w_i = \left[\frac{N_i}{\sum_{k=1}^LN_k}\right]\end{align*}
+$$
 
 dada la realación `$n_i = nw_i$`

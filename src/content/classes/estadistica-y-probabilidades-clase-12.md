@@ -17,20 +17,26 @@ Sea `$X$` una variable aleatoria con *fmp* `$p(x)$`, entonces si
 `$m(X) = (X - \mathbb{E}(X))^2$`, se tendrá que la varianza de `$X$` que
 se denota `$Var(X)$` o `$\sigma^2$` estará dada por
 
-$$\begin{align*}Var(X) = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right]=\sum_x(x-\mathbb{E}(X))^2p(x)\end{align*}$$
+$$
+\begin{align*}Var(X) = \mathbb{E}\left[\left(X-\mathbb{E}(X)\right)^2\right]=\sum_x(x-\mathbb{E}(X))^2p(x)\end{align*}
+$$
 
 
 Puede demostrarse a partir de la ecuación anterior, que una alternativa
 para el cálculo de la `$Var(X)$` es de la forma
 
 
-$$\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}$$
+$$
+\begin{align*}Var(X) = \mathbb{E}(X^2) - \mathbb{E}(X)^2\end{align*}
+$$
 
 
 además, la raíz cuadrada de la varianza de `$X$` se llama desviación
 estándar de `$X$`, se denota por `$Sd(X)$` o `$\sigma$` y se define como
 
-$$\begin{align*}Sd(X) = \sqrt{Var(X)}\end{align*}$$
+$$
+\begin{align*}Sd(X) = \sqrt{Var(X)}\end{align*}
+$$
 
 
 <button id="Show6" class="btn btn-secondary">
@@ -112,12 +118,14 @@ A partir de la tabla anterior, se procede a realizar el cálculo de
 $Var(X)$, a partir de los valores ya calculado de
 $\mathbb{E}(X^2)=3$ y $\mathbb{E}(X)=1.5$, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 Var(X)&=\mathbb{E}(X^2) - \mathbb{E}(X)^2 \\
         &=3 - (1.5)^2 \\
         &=3 - 2.25 \\
         &=0.75
-\end{align*}$$
+\end{align*}
+$$
 
 Y en consecuencia, se tendrá que la varianza del número de niña que hay
 en una familia que posee $3$ hijos es de $0.75$ hijos$^2$.
@@ -128,11 +136,13 @@ Basado en el valor de la varianza $Var(X)=0.75$, se procede a realizar
 el cálculo de la desviación estándar de la variable aleatoria $X$,
 $Sd(X)$, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.75} \\
       &= 0.8660
-\end{align*}$$
+\end{align*}
+$$
 
 Es decir, se tendrá que el número promedio de niñas que tiene una
 familia que posee $3$ hijos es de $1.5$ niñas, con una desviación
@@ -199,7 +209,9 @@ tendrá que la probabilidad de fallo será `$1-p$`, y por tanto, la
 función de probabilidad de la variable aleatoria `$X\sim Be(p)$` de un
 ensayo Bernoulli es
 
-$$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
+$$
+\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}
+$$
 
 
 #### Media y Varianza Bernoulli
@@ -207,7 +219,9 @@ $$\begin{align*}p(x) = p^x(1-p)^{1-x} \quad \quad x=0,1\end{align*}$$
 Si `$X\sim Be(p)$`, entonces se puede probar que la media y la varianza
 de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=p \quad \quad Var(X)=p(1-p)\end{align*}
+$$
 
 
 <button id="Show2" class="btn btn-secondary">
@@ -238,42 +252,58 @@ entonces se tendrá que $3$ de cada $5$ si desean tomar clases
 virtuales. Por tanto al aplicar la definición de frecuencia relativa se
 tiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5} \\
   &= 0.6
-\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
+\end{align*}
+$$
+ siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 
 Ahora, la probabilidad de que se seleccione un estudiante al azar, y
-éste desee tomar clases virtuales será $$\begin{align*}
+éste desee tomar clases virtuales será 
+$$
+\begin{align*}
 \mathbb{P}(X = 1) &= p(1-p)^{1-x} \\
                   &= 0.6(0.4)^{1-1} \\
                   &= 0.6(0.4)^0 \\
                   &= 0.6
-\end{align*}$$
+\end{align*}
+$$
 
 es decir, que la probabilidad de que el estudiante seleccionado desee
 tomar clases virtuales será del $60\%$.
 
 Ahora, para calcular la desviación estándar se requiere calcular
 inicialmente la varianza de la variable aleatoria, la cual está dada por
-$$\begin{align*}
+$$
+\begin{align*}
 Var(X) &= p(1-p) \\
        &= 0.6(0.4) \\
        &= 0.24
-\end{align*}$$
+\end{align*}
+$$
 
 y a partir de éste valor, se tendrá que la desviación estándar es igual
-a $$\begin{align*}
+a 
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.24} \\
       &= 0.4898979
-\end{align*}$$ Entonces, como el valor esperado de un proceso Bernoulli
-es igual a $p$, esto es $$\begin{align*}
+\end{align*}
+$$
+ Entonces, como el valor esperado de un proceso Bernoulli
+es igual a $p$, esto es 
+$$
+\begin{align*}
 \mathbb{E}(X) &= p \\
               &= 0.6
-\end{align*}$$ Por tanto, al seleccionar un solo estudiante, se espera
+\end{align*}
+$$
+ Por tanto, al seleccionar un solo estudiante, se espera
 que $0.6$ estudiantes respondan que desean tomar clases virtuales, con
 una desviación estándar de $0.489$.
 </p>
@@ -285,7 +315,9 @@ Si `$X$` es la variable aleatoria del número de éxitos de `$n$` ensayos
 de Bernoulli, con probabilidad de éxito `$p$`, entonces se dice que
 `$X\sim b(n,p)$` tal que
 
-$$\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}$$
+$$
+\begin{align*}f(x) = \left(\begin{array}{c}n\\ x\end{array}\right)p^x(1-p)^{n-x} \quad \quad x=0,1,\ldots,n\end{align*}
+$$
 
 
 **Nota:** Esta distribución es usada cuando se realiza muestreo **con
@@ -297,7 +329,9 @@ la probabilidad de éxito `$p$` es la misma** en cada ensayo Bernoulli.
 Si `$X\sim b(n,p)$`, entonces se puede probar que la media y varianza de
 la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=np \quad \quad Var(X)=np(1-p)\end{align*}
+$$
 
 
 <button id="Show3" class="btn btn-secondary">
@@ -341,23 +375,30 @@ entonces se tendrá que $3$ de cada $5$ si desean tomar clases
 virtuales. Por tanto al aplicar la definición de frecuencia relativa se
 tiene que
 
-$$\begin{align*}
+$$
+\begin{align*}
 p &= \frac{\text{Número de éxitos}}{\text{Número de muestras}} \\
   &= \frac{3}{5}\\ 
   &= 0.6
-\end{align*}$$ siendo $p$ la probabilidad de que un estudiante desee
+\end{align*}
+$$
+ siendo $p$ la probabilidad de que un estudiante desee
 tomar clases virtuales.
 </p>
 <ol>
 <li>
 En este caso, estamos interesados en calcular la probabilidad de que no
 más de $3$ estudiantes deseen tomar clases virtuales, lo cual puede
-representarse mediante la siguiente probabilidad $$\begin{align*}
+representarse mediante la siguiente probabilidad 
+$$
+\begin{align*}
 P(X\leq 3) &= \sum_{x=0}^3 \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 0\end{array}\right)0.6^0(0.4)^{20-0} + \ldots + \left(\begin{array}{c}20\\ 3\end{array}\right)0.6^3(0.4)^{20-3} \\
            &= 0.00000001099512 + 0.0000003298535 + 0.000004700412 + 0.00004230371 \\
            &= 0.00004734497
-\end{align*}$$ Es decir, la probabilidad de que como máximo $3$
+\end{align*}
+$$
+ Es decir, la probabilidad de que como máximo $3$
 estudiantes de los $20$ seleccionados, deseen tomar clases virtuales,
 es del $0.0047\%$.
 </li>
@@ -365,11 +406,14 @@ es del $0.0047\%$.
 Ahora, se tiene interés en conocer la probabilidad de que no menos de
 $6$ pero menos de $12$ deseen tomar clases virtuales. En este caso,
 la probabilidad asociada puede calcularse de la siguiente manera.
-$$\begin{align*}
+$$
+\begin{align*}
 P(6 \leq x < 12) &= \sum_{x=6}^{11} \left(\begin{array}{c}20\\ x\end{array}\right)0.6^x(1-0.6)^{20-x} \\
            &= \left(\begin{array}{c}20\\ 6\end{array}\right)0.6^6(0.4)^{20-6} + \ldots + \left(\begin{array}{c}20\\ 11\end{array}\right)0.6^{11}(0.4)^{20-11} \\
            &= 0.4027898
-\end{align*}$$ Es decir que, la probabilidad de que como mínimo $6$
+\end{align*}
+$$
+ Es decir que, la probabilidad de que como mínimo $6$
 pero menos de $12$ estudiantes deseen tomar clases virtuales de los
 $20$ seleccionados, es del $40.28\%$.
 </li>
@@ -380,24 +424,35 @@ desviación estándar, de estudiantes que desean tomar clases virtuales,
 cuando se realiza la selección aleatoria de $20$. Al aplicar la
 formular de esperanza matemática para la distribución binomial, se tiene
 que el valor esperado de estudiantes que desean tomar clases virtuales
-es de $$\begin{align*}
+es de 
+$$
+\begin{align*}
 \mathbb{E}(X) & = np \\
               & = 20(0.6)\\
               & = 12
-\end{align*}$$
+\end{align*}
+$$
 
 Se procede a realizar el cálculo de la varianza para poder calcular la
 desviación estándar, del número de estudiantes que desean tomar clases
-virtuales, tal que $$\begin{align*}
+virtuales, tal que 
+$$
+\begin{align*}
 Var(X) &= np(1-p) \\
        &= 20(0.6)(1-0.6)\\
        & = 4.8
-\end{align*}$$ y con este valor, se procede a calcular la desviación
-estándar $$\begin{align*}
+\end{align*}
+$$
+ y con este valor, se procede a calcular la desviación
+estándar 
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{Var(4.8)} \\
       & = 2.19089
-\end{align*}$$ De lo anterior se tiene que, al realizar la selección
+\end{align*}
+$$
+ De lo anterior se tiene que, al realizar la selección
 aleatoria de $20$ estudiantes, es espera que $12$ estudiantes desean
 tomar clases virtuales, con una desviación estándar de $2.19$
 estudiantes.
@@ -412,7 +467,9 @@ de tamaño `$n$` extraída de una población `$N$` compuesta por `$M$`
 éxitos y `$(N-M)$` fracasos, entonces la distribución de
 `$X\sim h(N,M,n)$`, con función de masa de probabilidad
 
-$$\begin{align*}p(x)=\frac{\left(\begin{array}{c}M\\ x\end{array}\right) \left(\begin{array}{c}N-M\\ n-x\end{array}\right)}{\left(\begin{array}{c}N\\ n\end{array}\right)}\end{align*}$$
+$$
+\begin{align*}p(x)=\frac{\left(\begin{array}{c}M\\ x\end{array}\right) \left(\begin{array}{c}N-M\\ n-x\end{array}\right)}{\left(\begin{array}{c}N\\ n\end{array}\right)}\end{align*}
+$$
 
 
 con `$x$` un entero que satisface la condición
@@ -427,7 +484,9 @@ de `$N$` objetos, de los cuales se seleccionan `$n$` objetos a la vez.
 Si `$X\sim h(N,M,n)$`, entonces se puede probar que la media y varianza
 de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=n\frac{M}{N} \quad \quad Var(X)=n\left(\frac{M}{N}\right)\left(1-\frac{M}{N}\right)\left(\frac{N-n}{N-1}\right)\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=n\frac{M}{N} \quad \quad Var(X)=n\left(\frac{M}{N}\right)\left(1-\frac{M}{N}\right)\left(\frac{N-n}{N-1}\right)\end{align*}
+$$
 
 
 <button id="Show4" class="btn btn-secondary">
@@ -469,9 +528,12 @@ Solución
 En este primer punto estamos interesados en conocer la probabilidad de
 que el comprador no devuelva el container, y para ello se requerirá que
 en la muestra de $10$ repuestos que el comprador revisa, encuentren
-menos de $3$ repuestos defectuosos, estos es $$\begin{align*}
+menos de $3$ repuestos defectuosos, estos es 
+$$
+\begin{align*}
 \mathbb{P}(X<3)
-\end{align*}$$
+\end{align*}
+$$
 
 Donde $X$: representa el número de repuestos defectuosos. Además, de
 la información suministrada tenemos que el total de artículos
@@ -481,28 +543,36 @@ repuestos, $n=10$: el total de repuestos que revisa el comprador y
 $M=7$: el número de repuestos defectuosos que hay en el container, se
 tendrá la siguiente distribución de probabilidad
 
-$$\begin{align*}
+$$
+\begin{align*}
 p(x)=\frac{\left(\begin{array}{c}7\\ x\end{array}\right) \left(\begin{array}{c}33\\ 10-x\end{array}\right)}{\left(\begin{array}{c}40\\ 10\end{array}\right)}
-\end{align*}$$
+\end{align*}
+$$
 
-la cual está definida para $$\begin{align*}
+la cual está definida para 
+$$
+\begin{align*}
 \max\{0, M-(N-n)\} &\leq x \leq \min\{M,n\} \\
 \max\{0, 7-(40-10)\} &\leq x \leq \min\{7,10\} \\
 \max\{0, 7-(30)\} &\leq x \leq \min\{7,10\} \\ 
 \max\{0, -23\} &\leq x \leq \min\{7,10\} \\
 0 &\leq x \leq 7 \\
-\end{align*}$$ en donde, al ser la distribución hipergeométrica una
+\end{align*}
+$$
+ en donde, al ser la distribución hipergeométrica una
 distribución discreta, tendremos que el número de repuestos defectuosos
 encontrados en la muestra puede ser de $x=0, 1, 2, \ldots 7$. <br>
 <br> Ahora, al emplear esta función de distribución para calcular la
 probabilidad de interés tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X<3) &= \sum_{x=0}^2 \frac{\left(\begin{array}{c}7\\ x\end{array}\right) \left(\begin{array}{c}33\\ 10-x\end{array}\right)}{\left(\begin{array}{c}40\\ 10\end{array}\right)} \\
                 &= \frac{\left(\begin{array}{c}7\\ 0\end{array}\right) \left(\begin{array}{c}33\\ 10\end{array}\right)}{\left(\begin{array}{c}40\\ 10\end{array}\right)} + \frac{\left(\begin{array}{c}7\\ 1\end{array}\right) \left(\begin{array}{c}33\\ 9\end{array}\right)}{\left(\begin{array}{c}40\\ 10\end{array}\right)} + \frac{\left(\begin{array}{c}7\\ 2\end{array}\right) \left(\begin{array}{c}33\\ 8\end{array}\right)}{\left(\begin{array}{c}40\\ 10\end{array}\right)} \\
                 &= 0.1091959 + 0.318488 + 0.343967 \\
                 &= 0.7716509
-\end{align*}$$
+\end{align*}
+$$
 
 En consecuencia, se tendrá un $77.16\%$ de probabilidad, de que el
 comprador no rechace el container de repuestos para computadora.
@@ -515,29 +585,36 @@ encontrar cuando se revisa un total de $n=10$ repuestos de un
 container que contiene $N=40$ repuestos para computadora, y en el cual
 se sabe que hay $M=7$ repuestos defectuosos. Y para ello usamos la
 formula de la media y la varianza asociadas a la distribución
-hipergeométrica, tal que $$\begin{align*}
+hipergeométrica, tal que 
+$$
+\begin{align*}
 \mathbb{E}(X) &=n\frac{M}{N} \\
               &= 10 \left(\frac{7}{40}\right) \\
               &= 1.75
-\end{align*}$$
+\end{align*}
+$$
 
 Procedimiento similar se emplea para el cálculo de la desviación
 estándar, en donde calculamos inicialmente la varianza del número de
 repuestos defectuosos encontrados por el comprador, mediante la ecuación
-$$\begin{align*}
+$$
+\begin{align*}
 Var(X)&=\left(\frac{N-n}{N-1}\right)\left(\frac{M}{N}\right)\left(1-\frac{M}{N}\right) \\
       &=\left(\frac{40-10}{40-1}\right)\left(\frac{7}{40}\right)\left(1-\frac{7}{40}\right) \\
       &= 0.1110577
-\end{align*}$$
+\end{align*}
+$$
 
 Y con este valor, procedemos al cálculo de la desviación estándar,
 mediante la ecuación
 
-$$\begin{align*}
+$$
+\begin{align*}
 Sd(X) &= \sqrt{Var(X)} \\
       &= \sqrt{0.1110577} \\
       &= 0.3332532
-\end{align*}$$
+\end{align*}
+$$
 
 Por tanto se tendrá que el comprador encontrará en sus revisiones un
 promedio de $1.75$ repuestos defectuosos, en un container de $40$

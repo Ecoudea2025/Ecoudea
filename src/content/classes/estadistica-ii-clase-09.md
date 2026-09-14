@@ -60,18 +60,24 @@ La región crítica o región de rechazo representa los valores del
 estadístico de prueba que conduce a rechazar la hipótesis nula, es
 decir,
 
-$$\begin{align*}RC:\{\text{valores del estadístico de prueba que conducen a rechazar }H_0\}\end{align*}$$
+$$
+\begin{align*}RC:\{\text{valores del estadístico de prueba que conducen a rechazar }H_0\}\end{align*}
+$$
 
 
 Por ejemplo, si se emplea la afirmación del médico sobre el peso
 promedio de los estudiantes, se tendrá el siguiente juego de hipótesis
 
-$$\begin{align*}H_0: \mu = 73 kg \\ H_1: \mu \neq 73 kg\end{align*}$$
+$$
+\begin{align*}H_0: \mu = 73 kg \\ H_1: \mu \neq 73 kg\end{align*}
+$$
 
 
 Supongamos una región crítica arbitraria, tal que
 
-$$\begin{align*}RC:\{\bar{X}|\bar{X}<71 \text{ o } \bar{X}>75\}\end{align*}$$
+$$
+\begin{align*}RC:\{\bar{X}|\bar{X}<71 \text{ o } \bar{X}>75\}\end{align*}
+$$
 
 
 ![](/assets/images/Hipotesis1.jpg)
@@ -88,7 +94,9 @@ Dado que el P-valor puede interpretarse como el tamaño de la región
 crítica `$RC$` que se obtiene a partir de los datos, entonces para un
 nivel de significancia preestablecido, el criterio de decisión debe ser
 
-$$\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}$$
+$$
+\begin{align*}\text{P-valor }<\alpha \Rightarrow \text{ Rechazar } H_0\end{align*}
+$$
 
 
 ## Errores tipo I, II y potencia de la prueba
@@ -100,18 +108,24 @@ Dado un juego de hipótesis, se tendrán cuatro posibles escenarios
 siendo `$\alpha$`: la probabilidad de cometer un error tipo I. Este se
 define como
 
-$$\begin{align*}\alpha = \mathbb{P}(\text{Rechazar }H_0|H_0 \text{ es verdadera})\end{align*}$$
+$$
+\begin{align*}\alpha = \mathbb{P}(\text{Rechazar }H_0|H_0 \text{ es verdadera})\end{align*}
+$$
 
 usualmente se emplean valores de `$\alpha$` de `$0.1, 0.05, 0.01$`. <br>
 `$\beta$`: la probabilidad de cometer un error tipo II. Este se define
 como
 
-$$\begin{align*}\beta = \mathbb{P}(\text{No rechazar }H_0|H_0 \text{ es falsa})\end{align*}$$
+$$
+\begin{align*}\beta = \mathbb{P}(\text{No rechazar }H_0|H_0 \text{ es falsa})\end{align*}
+$$
 
 Este valor es imposible de calcular a menos de que se tenga una
 hipótesis alternativa específica, tal que
 
-$$\begin{align*}H_1:\theta = \theta_1\end{align*}$$
+$$
+\begin{align*}H_1:\theta = \theta_1\end{align*}
+$$
  con `$\theta_1$` un
 valor específico a probar.
 

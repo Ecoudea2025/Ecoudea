@@ -17,7 +17,9 @@ entonces, si se define a `$\bar{X}$` la media muestral con media
 `$Var(\bar{X}) = \frac{\sigma^2}{n}$`, se tendrá que la variable
 aleatoria normalizada
 
-$$\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)\end{align*}
+$$
 
 convergerá en distribución a una variable aleatoria normal estándar
 cuando `$n\to \infty$` (usualmente, se usa como valor de referencia a
@@ -53,22 +55,31 @@ máquina no se distribuye normalmente, si no que tiene una distribución
 Weibull, con parámetros $\alpha = 1/5$ y $\beta = 3$.
 Adicionalmente, nos piden calcular la probabilidad de que una muestra de
 $40$ vasos de gaseosa se obtenga como máximo un promedio muestral de
-$340_{ml}$, es decir $$\begin{align*}
+$340_{ml}$, es decir 
+$$
+\begin{align*}
 \mathbb{P}(\bar{X} \leq 340)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, dado que los datos no se distribuyen normalmente, pero el
 tamaño de la muestra $n\geq30$, podemos aplicar el teorema del límite
 central el cual nos dice que, mediante la aplicación de la
-estandarización $$\begin{align*}
+estandarización 
+$$
+\begin{align*}
 Z_c = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$ podemos obtener una distribución aproximadamente normal,
+\end{align*}
+$$
+ podemos obtener una distribución aproximadamente normal,
 lo cual nos permitirá realizar el cálculo de la probabilidad de
 interés.<br> <br> Ahora, para poder aplicar la estandarización, debemos
 calcular primero el valor de la media y desviación estandar
 poblacionales, y para ello empleamos podemos emplear la definición de
 esperanza matemática y varianza de la distribución Weibull, tal que la
-media poblacional será igual a $$\begin{align*}
+media poblacional será igual a 
+$$
+\begin{align*}
 \mathbb{E}(X) = \mu = &= \beta\;\Gamma\left(1 + \frac{1}{\alpha}\right)\\
                       &= 3 \Gamma\left(1 + \frac{1}{(1/5)}\right) \\
                       &= 3 \Gamma\left(1 + 5\right) \\
@@ -76,8 +87,11 @@ media poblacional será igual a $$\begin{align*}
                       &= 3 (6-1)!\\
                       &= 3 (120) \\
                       &= 360
-\end{align*}$$ mientras que, la varianza poblacional será igual a
-$$\begin{align*}
+\end{align*}
+$$
+ mientras que, la varianza poblacional será igual a
+$$
+\begin{align*}
 Var(X) = \sigma^2 &= \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gamma\left(1 + \frac{1}{\alpha}\right)^2\right] \\
                   &= 3^2\left[\Gamma\left(1 + \frac{2}{(1/5)}\right) - \Gamma\left(1 + \frac{1}{(1/5)}\right)^2\right] \\
                   &= 9\left[\Gamma\left(1 + 10\right) - \Gamma\left(1 + 5\right)^2\right] \\
@@ -88,34 +102,47 @@ Var(X) = \sigma^2 &= \beta^2\left[\Gamma\left(1 + \frac{2}{\alpha}\right) - \Gam
                   &= 9\left[3628800 - 14400\right] \\
                   &= 9\left[3614400\right] \\
                   &= 32529600
-\end{align*}$$ es decir que, la desviación estándar poblacional será
-igual a $$\begin{align*}
+\end{align*}
+$$
+ es decir que, la desviación estándar poblacional será
+igual a 
+$$
+\begin{align*}
 Sd(X) = \sigma &= \sqrt{Var(X)} \\
                &= \sqrt{32529600} \\
                &= 5703.473
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, con los valores ya calculados para $\mu=360$ y
 $\sigma=5703.473$, se realiza la estandarización de la probabilidad,
-para poder realizar su cálculo, tal que $$\begin{align*}
+para poder realizar su cálculo, tal que 
+$$
+\begin{align*}
 \mathbb{P}(\bar{X} \leq 340) &= \mathbb{P}(\bar{X} - \mu \leq 340 - 360)\\
                              &= \mathbb{P}\left(\frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \leq \frac{340 - 360}{5703.473/\sqrt{40}}\right)\\
                              &= \mathbb{P}\left(Z \leq -0.02217791\right)\\
-\end{align*}$$
+\end{align*}
+$$
 
 Y como $Z \stackrel{a}{\sim} N(0,1)$, podemos encontrar la
 probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistNormEst.pdf">Tabla
 de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
-Excel, tal que $$\begin{align*}
+Excel, tal que 
+$$
+\begin{align*}
 \mathbb{P}\left(Z \leq -0.02217791\right) = 0.491153
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual, dada la equivalencia de la igualdad anterior, significará que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\bar{X} \leq 340) = 0.491153
-\end{align*}$$
+\end{align*}
+$$
 
 es decir que la probabilidad de que la cantidad promedio de bebida
 obtenida en la muestra de $40$ vasos sea como máximo de $340_{ml}$
@@ -146,22 +173,34 @@ Teorema 1
 
 Sean $X_1$ y $X_2$ dos variables aleatorias normalmente distribuidas
 con media $\mu$ y varianza $\sigma^2$. Y si $Y$ es una combinación
-lineal de $X_1$ y $X_2$, tal que $$\begin{align*}
+lineal de $X_1$ y $X_2$, tal que 
+$$
+\begin{align*}
 Y = X_1 + X_2
-\end{align*}$$ entonces, la media de $Y$ estará dada por
-$$\begin{align*}
+\end{align*}
+$$
+ entonces, la media de $Y$ estará dada por
+$$
+\begin{align*}
 \mathbb{E}(Y) = \mu_1 + \mu_2
-\end{align*}$$
+\end{align*}
+$$
 
-y la varianza de $Y$ estará dada por $$\begin{align*}
+y la varianza de $Y$ estará dada por 
+$$
+\begin{align*}
 Var(Y) = \sigma_{x_1}^2 + \sigma_{x_2}^2 + 2 \sigma_{x_1x_2}
-\end{align*}$$
+\end{align*}
+$$
 
 o en caso de que $X_1$ y $X_2$ sean variables aleatorias
 independientes, entonces se tendrá que la varianza de $Y$ estará dada
-por $$\begin{align*}
+por 
+$$
+\begin{align*}
 Var(Y) = \sigma_{x_1}^2 + \sigma_{x_2}^2
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 <button id="Show2" class="btn btn-secondary">
@@ -179,17 +218,26 @@ Teorema 2
 Sea $X_1, X_2, \ldots, X_n$ variables aleatorias independientes,
 distribuidas normalmente con medias $\mu_1, \mu_2, \ldots, \mu_n$ y
 varianzas $\sigma_1^2, \sigma_2^2, \ldots, \sigma_n^2$, entonces la
-variable aleatorias $$\begin{align*}
+variable aleatorias 
+$$
+\begin{align*}
 Y = a_1 X_1 + a_2 X_2 + \ldots + a_n X_n
-\end{align*}$$
+\end{align*}
+$$
 
-tendrá una distribución Normal, con media $$\begin{align*}
+tendrá una distribución Normal, con media 
+$$
+\begin{align*}
 \mu_Y = a_1 \mu_1 + a_2 \mu_2 + \ldots + a_n \mu_n
-\end{align*}$$
+\end{align*}
+$$
 
-y varianza $$\begin{align*}
+y varianza 
+$$
+\begin{align*}
 \sigma^2_Y = a_1 \sigma^2_1 + a_2 \sigma^2_2 + \ldots + a_n \sigma^2_n
-\end{align*}$$
+\end{align*}
+$$
 
 es decir, $Y\sim N(\mu_Y, \sigma^2_Y)$.
 </p>
@@ -209,9 +257,12 @@ Teorema 3
 Sea $X_1, X_2, \ldots, X_n$ variables aleatorias mutuamente
 independientes, que tienen una distribución chi-cuadrado con
 $\nu_1, \nu_2, \ldots, \nu_n$ grados de libertad, entonces la variable
-aleatoria $$\begin{align*}
+aleatoria 
+$$
+\begin{align*}
 Y = X_1 + X_2 + \ldots + X_n
-\end{align*}$$
+\end{align*}
+$$
 
 tiene una distribución chi-cuadrado con
 $\nu = \nu_1 + \nu_2 + \ldots + \nu_n$ grados de libertad, es decir,
@@ -222,9 +273,12 @@ Teorema 3.1
 </h3>
 <p>
 Si $Y\sim \chi^2_\nu$ entonces se puede probar que la media y varianza
-de la variable aleatoria $X$ están dadas por $$\begin{align*}
+de la variable aleatoria $X$ están dadas por 
+$$
+\begin{align*}
 \mathbb{E}(X)=\nu \quad \quad Var(X)=2\nu
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 <button id="Show4" class="btn btn-secondary">
@@ -241,20 +295,29 @@ Teorema 4
 
 Sea $X_1, X_2, \ldots, X_n$ una muestra aleatoria *iid* de tamaño
 $n$, que poseen una distribución $N(\mu,\sigma^2)$, entonces
-$$\begin{align*}
+$$
+\begin{align*}
 Z_i = \frac{X_i - \mu}{\sigma} \sim N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 para $i =1,2,\ldots,n$ serán variables aleatorias independientes con
-distribuciones normales estándar. Además, se tendrá que $$\begin{align*}
+distribuciones normales estándar. Además, se tendrá que 
+$$
+\begin{align*}
 Z_i^2 = \frac{(X_i - \mu)^2}{\sigma^2} \sim \chi^2_{1}
-\end{align*}$$
+\end{align*}
+$$
 
 serán variables aleatorias independientes con distribuciones
 chi-cuadrado con $1$ grado de libertad. Entonces, basados en el
-Teorema 3 se obtiene que $$\begin{align*}
+Teorema 3 se obtiene que 
+$$
+\begin{align*}
 Y = \sum_{i=1}^n Z_i^2 = \sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n
-\end{align*}$$ tendrá una distribución chi-cuadrado con $n$ grados de
+\end{align*}
+$$
+ tendrá una distribución chi-cuadrado con $n$ grados de
 libertad.
 </p>
 </main>
@@ -266,13 +329,17 @@ distribución `$N(\mu,\sigma^2)$` de tamaño `$n$`, entonces partiendo del
 <a href="../../EstadisticaII/EstIIClase02.html#distribución-para-combinaciones-lineales">Teorema
 4</a> se tendrá que
 
-$$\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n\end{align*}$$
+$$
+\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} \sim \chi^2_n\end{align*}
+$$
 
 
 En donde, al sumar y restar `$\bar{X}$` dentro de `$(X_i-\mu)^2$`
 tendremos que
 
-$$\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} &= \sum_{i=1}^n\frac{(X_i - \bar{X} + \bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{[(X_i - \bar{X}) + (\bar{X} - \mu)]^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2 + 2(X_i - \bar{X})(\bar{X} - \mu) + (\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2 + 2(X_i - \bar{X})(\bar{X} - \mu) + (\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2}{\sigma^2} + \sum_{i=1}^n\frac{2(X_i - \bar{X})(\bar{X} - \mu)}{\sigma^2} + \sum_{i=1}^n\frac{(\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \frac{1}{\sigma^2}\sum_{i=1}^n(X_i - \bar{X})^2 + \frac{2(\bar{X} - \mu)}{\sigma^2}\sum_{i=1}^n(X_i - \bar{X}) + \frac{1}{\sigma^2}\sum_{i=1}^n(\bar{X} - \mu)^2\end{align*}$$
+$$
+\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} &= \sum_{i=1}^n\frac{(X_i - \bar{X} + \bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{[(X_i - \bar{X}) + (\bar{X} - \mu)]^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2 + 2(X_i - \bar{X})(\bar{X} - \mu) + (\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2 + 2(X_i - \bar{X})(\bar{X} - \mu) + (\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \sum_{i=1}^n\frac{(X_i - \bar{X})^2}{\sigma^2} + \sum_{i=1}^n\frac{2(X_i - \bar{X})(\bar{X} - \mu)}{\sigma^2} + \sum_{i=1}^n\frac{(\bar{X} - \mu)^2}{\sigma^2} \\                                          &= \frac{1}{\sigma^2}\sum_{i=1}^n(X_i - \bar{X})^2 + \frac{2(\bar{X} - \mu)}{\sigma^2}\sum_{i=1}^n(X_i - \bar{X}) + \frac{1}{\sigma^2}\sum_{i=1}^n(\bar{X} - \mu)^2\end{align*}
+$$
 
 
 De lo anterior se puede demostrar que
@@ -282,14 +349,18 @@ De lo anterior se puede demostrar que
 reemplazar estos valores en la ecuación anterior, se obtendrá que
 
 
-$$\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} &= \frac{(n-1)S^2}{\sigma^2} + \frac{n(\bar{X} - \mu)^2}{\sigma^2}\end{align*}$$
+$$
+\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2} &= \frac{(n-1)S^2}{\sigma^2} + \frac{n(\bar{X} - \mu)^2}{\sigma^2}\end{align*}
+$$
 
 
 Entonces, del
 <a href="../../EstadisticaII/EstIIClase02.html#distribución-para-combinaciones-lineales">Teorema
 4</a> se tiene que
 
-$$\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2}\sim \chi^2_n \quad \quad \text{ y } \quad \quad \frac{(\bar{X} - \mu)^2}{\sigma^2}\sim \chi^2_1\end{align*}$$
+$$
+\begin{align*}\sum_{i=1}^n\frac{(X_i-\mu)^2}{\sigma^2}\sim \chi^2_n \quad \quad \text{ y } \quad \quad \frac{(\bar{X} - \mu)^2}{\sigma^2}\sim \chi^2_1\end{align*}
+$$
 
 
 Por tanto basados en el
@@ -297,7 +368,9 @@ Por tanto basados en el
 3</a> se tendrá que
 
 
-$$\begin{align*}\chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\end{align*}$$
+$$
+\begin{align*}\chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}\end{align*}
+$$
 
 tiene una distribución chi-cuadrado con `$n-1$` grados de libertad.
 
@@ -312,7 +385,9 @@ distribución `$N(\mu,\sigma^2)$` de tamaño `$n$`, y se tiene que
 2.  la esperanza y la varianza de la variable aleatoria `$S^2$` estarán
     dadas por
     
-$$\begin{align*}\mathbb{E}(S^2)= \sigma^2 \quad \text{ y } \quad Var(S^2) = \frac{2(\sigma^2)^2}{n-1}\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(S^2)= \sigma^2 \quad \text{ y } \quad Var(S^2) = \frac{2(\sigma^2)^2}{n-1}\end{align*}
+$$
 
 
 <button id="Show5" class="btn btn-secondary">
@@ -387,7 +462,9 @@ imagen
 
 Donde se aprecia que
 
-$$\begin{align*}\mathbb{P}(\chi^2_5 > 3)=0.70\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(\chi^2_5 > 3)=0.70\end{align*}
+$$
 
 </li>
 <li>
@@ -399,9 +476,12 @@ $\mathbb{P}(\chi_\nu^2\geq x)$, y por tanto, será necesario emplear el
 complemento de la probabilidad propuesta para obtener una estructura
 similar a la propuesta por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) = 1 - \mathbb{P}(\chi^2_{20} > 37.566)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}
+$$
+ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(\chi^2_{20} \leq 37.566)$, mediante el empleo de la
 $\mathbb{P}(\chi^2_{20} \gt  37.566)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(\chi^2_{20} \gt  37.566)$, se
@@ -415,17 +495,21 @@ de interés asociada al valor crítico y grados de libertad.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{20} > 37.566) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{20} \leq 37.566) &= 1 - \mathbb{P}(\chi^2_{20} > 37.566)\\
                                     &= 1 - 0.01 \\
                                     &= 0.99
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
@@ -440,11 +524,14 @@ para el caso continuo, ya presentadas en la
 08</a>, y posteriormente calculamos el complemento de las
 probabilidades, podemos llevar la probabilidad de interés a la forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} \leq 15.812) - \mathbb{P}(\chi^2_{12} \leq 9.034) \\
                                             &= [1 - \mathbb{P}(\chi^2_{12} > 15.812)] - [1- \mathbb{P}(\chi^2_{12} > 9.034)] \\
                                             &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(9.034 \lt  \chi^2_{12} \leq 15.812)$, puede calcularse
 mediante el empleo de las probabilidades
 $\mathbb{P}(\chi^2_{12} \gt  9.034)$ y
@@ -455,36 +542,45 @@ tabla de forma similar a los dos puntos anteriores.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{12} > 9.034)=0.70 \quad \text{ y } \quad \mathbb{P}(\chi^2_{12} > 15.812)=0.20
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(9.034 < \chi^2_{12} \leq 15.812) &= \mathbb{P}(\chi^2_{12} > 9.034) - \mathbb{P}(\chi^2_{12} > 15.812)\\
                                &= 0.70 - 0.20 \\
                                &= 0.50
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, nos dan el valor
 de la probabilidad y nos piden encontrar el valor crítico $x$, dado
 unos grados de libertad. Es decir debemos calcular el valor crítico
-asociado a la probabilidad $$\begin{align*}
+asociado a la probabilidad 
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} < x) = 0.10
-\end{align*}$$
+\end{align*}
+$$
 
 Y para ello, debemos llevar inicialmente la estructura de la
 probabilidad, a la estructura manejada por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} < x) = 0.10 \\
 1 - \mathbb{P}(\chi^2_{8} \leq x) = 0.10 \\
 1- 0.10 &= \mathbb{P}(\chi^2_{8} \leq x) \\
 0.90 &= \mathbb{P}(\chi^2_{8} \leq x)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que la probabilidad
 $\mathbb{P}(\chi^2_{8} \leq x)$ ya posee la estructura de la tabla, y
@@ -500,15 +596,19 @@ En la tabla se aprecia, que al buscar el cruce entre la probabilidad
 $0.90$ y los $8$ grados de libertad, encontramos que el valor
 crítico $x$ asociado es de $3.490$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} \leq 3.490) &= 0.90
-\end{align*}$$
+\end{align*}
+$$
 
 o equivalentemente
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{8} < 3.490) &= 0.10
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 </ol>
@@ -543,27 +643,34 @@ En este punto estamos interesados en calcular la probabilidad de que la
 desviación estándar de la calificación obtenida por una muestra de
 $26$ estudiantes de primero y segundo semestre de la facultad de
 ingeniería, en el exámen, sea superior a $2.828427$ puntos, esto es
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(S > 2.828427)
-\end{align*}$$
+\end{align*}
+$$
 
 Pero al no conocer la distribución de probabilidad de la desviación
 estándar, debemos realizar operaciones matemáticas de tal forma que
 llevemos la probabilidad planteada, a una estructura en la cual tengamos
 conocimiento de cuál es la distribución de probabilidad asociada, para
 el cálculo de la probabilidad, la cual en este caso, sería una
-distribución chi-cuadrado, tal que $$\begin{align*}
+distribución chi-cuadrado, tal que 
+$$
+\begin{align*}
 \chi^2_c = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2_{n-1}
-\end{align*}$$
+\end{align*}
+$$
 
 Con esto en mente, desarrollamos las siguienteso operaciones matemáticas
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(S > 2.828427) &= \mathbb{P}(S^2 > 2.828427^2)\\
                          &= \mathbb{P}((n-1) S^2 > (26-1)2.828427^2)\\
                          &= \mathbb{P}\left(\frac{(n-1) S^2}{\sigma^2} > \frac{(25)2.828427^2}{5}\right) \\
                          &= \mathbb{P}(\chi^2_{25} > 40) \\
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, como la distribución asociada es una chi cuadrado con $25$
 grados de libertad, $\chi^2_{25}$, entonces podemos encontrar la
@@ -573,12 +680,19 @@ de la Distribución Chi-Cuadrado</a>, la función <tt>pchisq()</tt> del
 software <tt>R</tt> o las funciones <tt>DISTR.CHICUAD()</tt> o
 <tt>DISTR.CHICUAD.CD()</tt> de Excel, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\chi^2_{25} > 40) = 0.0291644
-\end{align*}$$ lo cual, dada la equivalencia de la igualdad anterior,
-significará que $$\begin{align*}
+\end{align*}
+$$
+ lo cual, dada la equivalencia de la igualdad anterior,
+significará que 
+$$
+\begin{align*}
 \mathbb{P}(S > 2.828427) = 0.0291644
-\end{align*}$$ es decir, se tendrá un $2.92\%$ de probabilidad de que
+\end{align*}
+$$
+ es decir, se tendrá un $2.92\%$ de probabilidad de que
 la desviación estándar de la calificación obtenida por una muestra de
 $26$ estudiantes de primero y segundo semestre de la facultad de
 ingeniería, en el exámen, sea superior a $2.828427$ puntos.
@@ -591,23 +705,31 @@ Sea `$Z$` una variable aleatoria distribuida `$N(0,1)$` y `$W$` una
 variable aleatoria distribuida `$\chi^2_v$`, entonces si `$Z$` y
 `$W$`son independientes, se tendrá que
 
-$$\begin{align*}t = \frac{Z}{\sqrt{W/v}} \sim t_v\end{align*}$$
+$$
+\begin{align*}t = \frac{Z}{\sqrt{W/v}} \sim t_v\end{align*}
+$$
  tiene
 una distribución `$t$` con `$v$` grados de libertad.
 
 Ahora, si `$X_1, X_2, \ldots, X_n$` es una muestra aleatoria de una
 población normal con media `$\mu$` y varianza `$\sigma^2$`, se tendrá
 
-$$\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1) \quad \text{ y } \quad W =\frac{(n-1)S^2}{\sigma^2}\sim \chi^2_{n-1}\end{align*}$$
+$$
+\begin{align*}Z = \frac{\bar{X}-\mu}{\sigma/\sqrt{n}} \sim N(0,1) \quad \text{ y } \quad W =\frac{(n-1)S^2}{\sigma^2}\sim \chi^2_{n-1}\end{align*}
+$$
 
 serán variables aleatorias independientes puesto que `$\bar{X}$` y
 `$S^2$` son independientes, entonces
 
-$$\begin{align*}t = \frac{\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}}{\sqrt{\left(\frac{(n-1)S^2}{\sigma^2}\right)/(n-1)}}\end{align*}$$
+$$
+\begin{align*}t = \frac{\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}}{\sqrt{\left(\frac{(n-1)S^2}{\sigma^2}\right)/(n-1)}}\end{align*}
+$$
 
 obteniendo como resultado luego de simplificar
 
-$$\begin{align*}t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}\end{align*}$$
+$$
+\begin{align*}t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}\end{align*}
+$$
 
 
 tiene una distribución `$t$` con `$(n-1)$` grados de libertad.
@@ -683,7 +805,9 @@ procedimiento se ilustra a continuación
 
 Donde se aprecia que
 
-$$\begin{align*}\mathbb{P}(t_{14} > 1.076)=0.15\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(t_{14} > 1.076)=0.15\end{align*}
+$$
 
 </li>
 <li>
@@ -695,9 +819,11 @@ $\mathbb{P}(t_\nu\geq t)$, por lo cual, será necesario emplear el
 complemento de la probabilidad propuesta, para obtener una estructura
 similar a la que maneja la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(t_{7} \leq 3.53) = 1 - \mathbb{P}(t_{7} > 3.5)
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez empleado el complemento, podemos emplear la probabilidad
 $\mathbb{P}(t_{7} \gt  3.5)$ para calcular la probabilidad de interés,
@@ -713,17 +839,21 @@ valor crítico de interés y los grados de libertad.
 Donde se aprecia que, a pesar de no ser exacto, es el valor más
 aproximado
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(t_{7} > 3.53) \approx 0.005
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(t_{7} \leq 3.53) &\approx 1 - \mathbb{P}(t_{7} > 3.5)\\
                             &\approx 1 - 0.005 \\
                             &\approx 0.995
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
@@ -738,11 +868,14 @@ continuo, ya presentadas en la
 08</a>, y posteriormente calculamos el complemento de las
 probabilidades, podemos llevar la probabilidad de interés a la forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(0.862 < t_{18} \leq 2.214) &= \mathbb{P}(t_{18} \leq 2.214) - \mathbb{P}(t_{18} \leq 0.862) \\
                                       &= [1 - \mathbb{P}(t_{18} > 2.214)] - [1- \mathbb{P}(t_{18} > 0.862)] \\
                                       &= \mathbb{P}(t_{18} > 0.862) - \mathbb{P}(t_{18} > 2.214)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(0.862 \lt  t_{18} \leq 2.214)$, puede ser calculada mediante
 el empleo de las probabilidades $\mathbb{P}(t_{18} \gt  0.862)$ y
 $\mathbb{P}(t_{18} \gt  2.214)$, las cuales se calculan en la tabla de
@@ -752,26 +885,32 @@ forma similar a los dos puntos anteriores.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(t_{18} > 0.862)=0.20 \quad \text{ y } \quad \mathbb{P}(t_{18} > 2.214)=0.02
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(0.862 < t_{18} \leq 2.214) &= \mathbb{P}(t_{18} > 0.862) - \mathbb{P}(t_{18} > 2.214)\\
                                &= 0.20 - 0.02 \\
                                &= 0.18
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, nos están dando el
 valor de la probabilidad, junto a los grados de libertad y nos piden
 encontrar el valor crítico $t$ asociado a dichos valores, tal que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(t_{10} \geq t) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 
 Como observamos que la probabilidad de interés ya posee la estructura de
 la tabla $\mathbb{P}(t_\nu\geq t)$, entonces podemos encontrar el
@@ -787,9 +926,11 @@ En donde se evidencia, que el valor crítico $t$ asociado a una
 probabilidad de $0.01$ y a $10$ grados de libertad, es igual a
 $2.764$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(t_{10} \geq 2.764) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -824,18 +965,24 @@ Solución
 En este punto, nos preguntan sobre la probabilidad de que el promedio
 muestral $\bar{X}$ sea como máximo el encontrado por el grupo de
 investigación, es decir que se desea calcular la siguiente probabilidad
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\bar{X} \leq 1.02)
-\end{align*}$$ En donde sabemos que la distribución de probabilidad de
+\end{align*}
+$$
+ En donde sabemos que la distribución de probabilidad de
 la media muestral $\bar{X} \sim N(\mu, \sigma^2/n)$, por lo cual
 podríamos calcular directamente la probabilidad de interés, en caso de
 que conocieramos la varianza poblacional, pero al no ser nuestro caso,
 debemos realizar operaciones matemáticas con el fin de llevar la
 probabilidad de interés, a una forma conocida, tal como lo es la
 estructura de una distribución $t$ con $n-1$ grados de libertad, tal
-que $$\begin{align*}
+que 
+$$
+\begin{align*}
 t_c = \frac{\bar{X}-\mu}{S/\sqrt{n}} \sim t_{n-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde tenemos que la distribución de la nicotina de los cigarrillos
 se distribuye normalmente con una media poblacional $\mu = 1.1$, la
@@ -844,11 +991,14 @@ encontramos que la desviación estándar muestral para las $n=25$
 cigarrillos muestreados es igual a $S=0.23$ miligramos de nicotina.
 Basados en estas variables realizamos las siguientes operaciones
 matemáticas para llevar la probabilidad original, a la estructura
-planteada, tal que $$\begin{align*}
+planteada, tal que 
+$$
+\begin{align*}
 \mathbb{P}(\bar{X} \leq 1.02) &= \mathbb{P}(\bar{X} - \mu \leq 0.82 - 1.1) \\
                               &= \mathbb{P}\left(\frac{\bar{X} - \mu}{S/\sqrt{n}} \leq \frac{1.02 - 1.1}{0.23/\sqrt{25}}\right) \\
                               &= \mathbb{P}\left(t_{25-1} \leq -1.73913\right)
-\end{align*}$$
+\end{align*}
+$$
 
 entonces podemos encontrar la probabilidad de interés, empleando la
 <a href="https://github.com/jiperezga/jiperezga.github.io/raw/master/Dataset/Documentos/DistTStudent.pdf">Tabla
@@ -856,14 +1006,18 @@ de la Distribución t de Student</a>, la función <tt>pt()</tt> del
 software <tt>R</tt> o las funciones <tt>DISTR.T.N()</tt> o
 <tt>DISTR.T.CD()</tt> de Excel, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}\left(t_{25-1} \leq -1.73913\right) = 0.04741239
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual, dada la equivalencia de la igualdad anterior, significará que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\bar{X} \leq 1.02) = 0.04741239
-\end{align*}$$
+\end{align*}
+$$
 
 es decir que la probabilidad de obtener una media muestral inferior a
 $1.02$ miligramos de nicotína en una muestra de $25$, es de
@@ -880,7 +1034,9 @@ Sea `$W_1$` una variable aleatoria `$\chi^2_{v_1}$` y `$W_2$` una
 variable aleatoria `$\chi^2_{v_2}$`, entonces si `$W_1$` y `$W_2$` son
 independientes.
 
-$$\begin{align*}F = \frac{W_1/v_1}{W_2/v_2}\sim F_{v_1, v_2}\end{align*}$$
+$$
+\begin{align*}F = \frac{W_1/v_1}{W_2/v_2}\sim F_{v_1, v_2}\end{align*}
+$$
 
 tiene una distribución `$F$` con `$v_1$` grados de libertad en el
 númerador y `$v_2$` grados de libertad en el denominador. Ahora si
@@ -889,17 +1045,23 @@ númerador y `$v_2$` grados de libertad en el denominador. Ahora si
 independientes de poblaciones normales con medias `$\mu_1, \mu_2$` y
 varianzas `$\sigma^2_1, \sigma^2,2$`, respectivamente, entonces
 
-$$\begin{align*}W_1 = \frac{(n_1-1)S_1^2}{\sigma^2_1} \sim N(0,1) \quad \text{ y } \quad W_2 =\frac{(n_1-1)S_1^2}{\sigma^2_1}\sim \chi^2_{n_2-1}\end{align*}$$
+$$
+\begin{align*}W_1 = \frac{(n_1-1)S_1^2}{\sigma^2_1} \sim N(0,1) \quad \text{ y } \quad W_2 =\frac{(n_1-1)S_1^2}{\sigma^2_1}\sim \chi^2_{n_2-1}\end{align*}
+$$
 
 tienen distribuciones chi-cuadrado independientes con `$v_1=(n_1-1)$` y
 `$v_2 = (n_2-1)$` grados de libertad, respectivamente. Y por tanto
 
-$$\begin{align*}F = \frac{\left(\frac{(n_1-1)S_1^2}{\sigma^2_1}\right)/(n_1-1)}{\left(\frac{(n_1-1)S_1^2}{\sigma^2_1}\right)/(n_2-1)} = \frac{S_1^2/\sigma^2_1}{S_2^2/\sigma^2_2}\end{align*}$$
+$$
+\begin{align*}F = \frac{\left(\frac{(n_1-1)S_1^2}{\sigma^2_1}\right)/(n_1-1)}{\left(\frac{(n_1-1)S_1^2}{\sigma^2_1}\right)/(n_2-1)} = \frac{S_1^2/\sigma^2_1}{S_2^2/\sigma^2_2}\end{align*}
+$$
 
 
 En donde, al reordenar términos se tendrá que
 
-$$\begin{align*}F_c  = \frac{S^2_1\sigma^2_2}{S^2_2\sigma^2_1} \sim F_{n_1-1, n_2-1}\end{align*}$$
+$$
+\begin{align*}F_c  = \frac{S^2_1\sigma^2_2}{S^2_2\sigma^2_1} \sim F_{n_1-1, n_2-1}\end{align*}
+$$
 
 
 tienen una distribución `$F$` con `$n_1-1$` grados de libertad en el
@@ -910,7 +1072,9 @@ numerador y `$n_2-1$` grados de libertad en el denominador.
 Para encontrar la probabilidad de la cola izquierda para `$\alpha$` de
 la distribución F, usamos la siguiente formula
 
-$$\begin{align*}F_{1-\alpha,v_1,v_2} = \frac{1}{F_{\alpha, v_2, v_1}}\end{align*}$$
+$$
+\begin{align*}F_{1-\alpha,v_1,v_2} = \frac{1}{F_{\alpha, v_2, v_1}}\end{align*}
+$$
 
 
 <button id="Show9" class="btn btn-secondary">
@@ -997,23 +1161,32 @@ parte derecha el valor crítico de la tabla para $F_{0.01}$.
 
 <img src="/assets/images/TablaFSnedecor2.jpg" alt="" style="max-width: 100%;">
 
-En donde se evidencia que $$\begin{align*}
+En donde se evidencia que 
+$$
+\begin{align*}
 F_{0.05, 8, 14} = 2.70 \quad => \quad \mathbb{P}(F_{8, 14} \geq 2.70) = 0.05\\
 F_{0.01, 8, 14} = 4.14 \quad => \quad \mathbb{P}(F_{8, 14} \geq 4.14) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez localizados los valores críticos de las dos tablas, se procede a
 comparar dichos valores con la probabilidad de interés, la cual está
-dada por $$\begin{align*}
+dada por 
+$$
+\begin{align*}
 \mathbb{P}(F_{8, 12} \geq 3)
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, como el valor crítico de interés se encuentra entre los
 valores $F_{0.05, 8, 14} = 2.70$ y $F_{0.01, 8, 14} = 4.14$, se
 tendrá que la probabilidad de interés estará entre el $5\%$ y el
-$1\%$, tal que $$\begin{align*}
+$1\%$, tal que 
+$$
+\begin{align*}
 0.01 < \mathbb{P}(F_{8, 12} \geq 3) < 0.05
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -1023,9 +1196,11 @@ $\mathbb{P}(F_{10, 6} \leq 0.18)$, posee una estructura diferente a la
 establecida por la tabla $\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, por lo
 cual, será necesario emplear el complemento de la probabilidad propuesta
 para obtener una estructura similar a la que maneja la tabla, tal que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(F_{10, 6} \leq 0.18) = 1 - \mathbb{P}(F_{10, 6} > 0.18)
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez empleado el complemento, podemos usar la probabilidad
 $\mathbb{P}(F_{10, 6} \gt  0.18)$ para calcular la probabilidad de
@@ -1039,17 +1214,22 @@ interés, tal como se ilustra acontinuación
 
 <img src="/assets/images/TablaFSnedecor3.jpg" alt="" style="max-width: 100%;">
 
-En donde se evidencia que $$\begin{align*}
+En donde se evidencia que 
+$$
+\begin{align*}
 F_{0.05, 10, 6} = 4.06 \quad => \quad \mathbb{P}(F_{10, 6} \geq 4.06) = 0.05\\
 F_{0.01, 10, 6} = 7.87 \quad => \quad \mathbb{P}(F_{10, 6} \geq 7.87) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, como el valor crítico de interés se encuentra a la izquierda
 de los valores $F_{0.05, 10, 6} = 4.06$ y $F_{0.01, 10, 6} = 7.87$,
 se tendrá que la probabilidad de interés será mayor al $5\%$ , tal que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(F_{10, 6} > 0.18) > 0.05
-\end{align*}$$
+\end{align*}
+$$
 
 y en consecuencia, se hace necesario realizar un paso adicional debido a
 que el valor crítico se encuentra cercano a $0$, el cuál consta en
@@ -1057,16 +1237,20 @@ aplicar el teorema de la cola izquierda para la distribución $F$, con
 el fin de calcular los valores críticos asociados a una $F_{0.95}$ y
 una $F_{0.99}$, mediante la ecuación
 
-$$\begin{align*}
+$$
+\begin{align*}
 F_{1-\alpha,v_1,v_2} = \frac{1}{F_{\alpha, v_2, v_1}}
-\end{align*}$$
+\end{align*}
+$$
 
 tal que, para calcular los valores críticos asociados a
 $F_{0.95, 10, 6}$ y $F_{0.99, 10, 6}$, tendremos que
 
-$$\begin{align*}
+$$
+\begin{align*}
 F_{0.95, 10, 6} = \frac{1}{F_{0.05, 6, 10}} \quad \quad \text{ y } \quad \quad F_{0.99, 10, 6} = \frac{1}{F_{0.01, 6, 10}} 
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, podremos calcular los valores críticos anteriores, mediante
 el empleo de los valores críticos asociados a $F_{0.05, 6, 10}$ y
@@ -1075,42 +1259,54 @@ distribución $F$ tal como se muestra acontinuación
 
 <img src="/assets/images/TablaFSnedecor4.jpg" alt="" style="max-width: 100%;">
 
-En donde se evidencia que $$\begin{align*}
+En donde se evidencia que 
+$$
+\begin{align*}
 F_{0.05, 6, 10} = 3.22 \quad => \quad \mathbb{P}(F_{6, 10} \geq 3.22) = 0.05\\
 F_{0.01, 6, 10} = 5.39 \quad => \quad \mathbb{P}(F_{6, 10} \geq 5.39) = 0.01
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que los valores para $F_{0.95, 10, 6}$ y
 $F_{0.99, 10, 6}$ será respectivamente
 
-$$\begin{align*}
+$$
+\begin{align*}
 F_{0.95, 10, 6} = \frac{1}{3.22} = 0.3105590 \quad => \quad \mathbb{P}(F_{10, 6} \geq 0.3105590) = 0.95\\
 F_{0.99, 10, 6} = \frac{1}{5.39} = 0.1855288 \quad => \quad \mathbb{P}(F_{10, 6} \geq 0.1855288) = 0.99
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, basados en los $4$ valores $F$ calculados para $10$ grados
 de libertad para el numerador y $6$ grados de libertad para el
 denominador
 
-$$\begin{align*}
+$$
+\begin{align*}
 F_{0.01, 10, 6} &= 7.87 \\
 F_{0.05, 10, 6} &= 4.06 \\
 F_{0.95, 10, 6} &= 0.3105590 \\
 F_{0.99, 10, 6} &= 0.1855288
-\end{align*}$$
+\end{align*}
+$$
 
 tendremos que la probabilidad $\mathbb{P}(F_{10, 6} \gt  0.18)$ es
 aproximadamente de $0.99$, es decir que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(F_{10, 6} > 0.18) \approx 0.99
-\end{align*}$$
+\end{align*}
+$$
 
-y por tanto, se tendrá que $$\begin{align*}
+y por tanto, se tendrá que 
+$$
+\begin{align*}
 \mathbb{P}(F_{10, 6} \leq 0.18) &= 1 - \mathbb{P}(F_{10, 6} > 0.18) \\
                                 &\approx 1 - 0.99 \\
                                 &\approx 0.01
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -1124,11 +1320,14 @@ el caso continuo, ya presentadas en la
 08</a>, y posteriormente calculamos el complemento de las
 probabilidades, podemos llevar la probabilidad de interés a la forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(0.31 < F_{15, 5} \leq 9.6) &= \mathbb{P}(F_{15, 5} \leq 9.6) - \mathbb{P}(F_{15, 5} \leq 0.31) \\
                                        &= [1 - \mathbb{P}(F_{15, 5} > 9.6)] - [1- \mathbb{P}(F_{15, 5} > 0.31)] \\
                                        &= \mathbb{P}(F_{15, 5} > 0.31) - \mathbb{P}(F_{15, 5} > 9.6)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(0.31 \lt  F_{15, 5} \leq 9.6)$, puede ser calculada mediante
 el empleo de las probabilidades $\mathbb{P}(F_{15, 5} \gt  0.31)$ y
 $\mathbb{P}(F_{15, 5} \gt  9.6)$. Para calcular esta probabilidad debemos
@@ -1140,47 +1339,65 @@ A continuación se ilusta la localización de los $4$ valores de interés
 <img src="/assets/images/TablaFSnedecor5.jpg" alt="" style="max-width: 100%;">
 <img src="/assets/images/TablaFSnedecor6.jpg" alt="" style="max-width: 100%;">
 
-Donde se aprecia que $$\begin{align*}
+Donde se aprecia que 
+$$
+\begin{align*}
 F_{0.01, 15, 5} &= 9.72 \\
 F_{0.05, 15, 5} &= 4.62 \\
 F_{0.95, 15, 5} &= \frac{1}{F_{0.05, 5, 15}} = \frac{1}{2.90} = 0.3448276 \\
 F_{0.99, 15, 5} &= \frac{1}{F_{0.01, 5, 15}} = \frac{1}{4.56} = 0.2192982 
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez localizados los $4$ valores críticos, se procede a comparar
 dichos valores con las probabilidad de interés, las cuales están dadas
-por $$\begin{align*}
+por 
+$$
+\begin{align*}
 \mathbb{P}(F_{15, 5} > 0.31) \quad \text{ y } \quad \mathbb{P}(F_{15, 5} > 9.6)
-\end{align*}$$
+\end{align*}
+$$
 
 En el caso del valor crítico $0.31$, se observa que éste se encuentra
 entre los valores $F_{0.99, 15, 5} = 0.2192982$ y
 $F_{0.95, 15, 5} = 0.3448276$, siendo el valor más cercano
-$F_{0.95, 15, 5}$, y en consecuencia diremos que $$\begin{align*}
+$F_{0.95, 15, 5}$, y en consecuencia diremos que 
+$$
+\begin{align*}
 \mathbb{P}(F_{15, 5} > 0.31) \approx 0.95
-\end{align*}$$
+\end{align*}
+$$
 
 mientras que, para el caso del valor crítico $9.6$, se observa que se
 encuentra entre $F_{0.05, 15, 5} = 4.62$ y $F_{0.01, 15, 5} = 9.72$,
 siendo el valor más cercano $F_{0.01, 15, 5} = 9.72$, y en
-consecuencia diremos $$\begin{align*}
+consecuencia diremos 
+$$
+\begin{align*}
 \mathbb{P}(F_{15, 5} > 9.6) \approx 0.01
-\end{align*}$$
+\end{align*}
+$$
 
-Y por tanto se tendrá que $$\begin{align*}
+Y por tanto se tendrá que 
+$$
+\begin{align*}
 \mathbb{P}(0.31 < F_{15, 5} \leq 9.6) &= \mathbb{P}(F_{15, 5} > 0.31) - \mathbb{P}(F_{15, 5} > 9.6)\\
                                       &\approx 0.95 - 0.01\\
                                       &\approx 0.94
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, nos están dando el
 valor de la probabilidad, junto a los grados de libertad del numerador y
 el denominador, y nos piden encontrar el valor crítico $f$ asociado a
-dichos valores, tal que $$\begin{align*}
+dichos valores, tal que 
+$$
+\begin{align*}
 \mathbb{P}(F_{12, 12} \geq f) = 0.05
-\end{align*}$$
+\end{align*}
+$$
 
 Donde evidenciamos que la probabilidad de interés ya posee la estructura
 de la tabla $\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, y por tanto, podemos
@@ -1197,9 +1414,11 @@ probabilidad de $0.05$ y a $12$ grados de libertad en el numerador
 junto a $12$ grados de libertad en el denominador, es igual a
 $2.69$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(F_{12, 12} \geq 2.69) = 0.05
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -1308,35 +1527,45 @@ Solución
 
 En este punto, nos preguntan sobre la probabilidad de que la varianza de
 los cables sin encapsulado, $\sigma^2_S$, sea mayor a la varianza de
-los cables con encapsulado, $\sigma^2_C$, esto es $$\begin{align*}
+los cables con encapsulado, $\sigma^2_C$, esto es 
+$$
+\begin{align*}
 \mathbb{P}(\sigma^2_S > \sigma^2_C) = \mathbb{P}\left(\frac{\sigma^2_S}{\sigma^2_C} > 1\right)
-\end{align*}$$
+\end{align*}
+$$
 
 Es de anotar que, al no conocer la distribución de probabilidad del
 cocience de las varianzas, debemos realizar operaciones matemáticas para
 llevar la probabilidad planteada a una forma conocida, tal como lo es la
 estructura de una distribución $F$ con $n_C-1$ grados de libertad en
 el numerador y $n_S-1$ grados de libertad en el denominador, tal que
-$$\begin{align*}
+$$
+\begin{align*}
 F_c  = \frac{S^2_C\sigma^2_S}{S^2_S\sigma^2_C} \sim F_{n_C-1, n_S-1}
-\end{align*}$$
+\end{align*}
+$$
 
 En donde apreciamos que requerimos de las varianzas muestrales $S^2_C$
 y $S^2_S$, los cuales podemos calcular a partir de los datos
 muestrales y los tamaños de muestra $n_C=8$ y $n_S=10$, tal que al
 realizar el cálculo obtenemos
 
-$$\begin{align*}
+$$
+\begin{align*}
 S^2_C = 1.899286 \quad \text{ y } \quad S^2_S = 10.441
-\end{align*}$$
+\end{align*}
+$$
 
 y con estos valores podemos hacer las operaciones matemáticas
 correspondientes para llevar la probabilidad de interés a la estructura
-deseada, tal que $$\begin{align*}
+deseada, tal que 
+$$
+\begin{align*}
 \mathbb{P}(\sigma^2_S > \sigma^2_C) &= \mathbb{P}\left(\frac{\sigma^2_S}{\sigma^2_C} > 1\right) \\
                                        &= \mathbb{P}\left(\frac{S^2_C\sigma^2_S}{S^2_S\sigma^2_C} > \frac{1.899286}{10.441}(1)\right) \\
                                        &= \mathbb{P}\left(F_{8-1, 10-1} > 0.1819065\right)
-\end{align*}$$
+\end{align*}
+$$
 
 entonces podemos encontrar la probabilidad de interés de forma
 aproximada, empleando la
@@ -1345,14 +1574,18 @@ de la Distribución F de Fisher-Snedecor</a>, o la probabilidad exacta
 empleando la función <tt>pf()</tt> del software <tt>R</tt> o las
 funciones <tt>DISTR.F.N()</tt> o <tt>DISTR.F.CD()</tt> de Excel, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}\left(F_{7, 9} > 0.1819065\right) = 0.9824406
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual, dada la equivalencia de la igualdad anterior, significará que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(\sigma^2_S > \sigma^2_C) = 0.9824406
-\end{align*}$$
+\end{align*}
+$$
 
 por tanto, se tiene una probabilidad del $98.24\%$ de que la
 variabilidad de los cables sin encapsulado sea mayor a la variabilidad
@@ -1368,11 +1601,15 @@ Sea `$X_1, X_2, \ldots, X_n$` una muestra aleatoria *iid* de tamaño
 grande, y la proporción `$p$` no está muy cercana a `$0$` o a `$1$`, tal
 que `$np$` y `$n(1-p)>5$`, entonces se puede probar que
 
-$$\begin{align*}\hat{p}  = \frac{x}{n} \stackrel{a}{\sim} N\left(p, \frac{p(1-p)}{n}\right)\end{align*}$$
+$$
+\begin{align*}\hat{p}  = \frac{x}{n} \stackrel{a}{\sim} N\left(p, \frac{p(1-p)}{n}\right)\end{align*}
+$$
 
 donde por teorema de estandarización se obtendrá que
 
-$$\begin{align*}Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\sim} N(0,1)\end{align*}$$
+$$
+\begin{align*}Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\sim} N(0,1)\end{align*}
+$$
 
 
 <button id="Show11" class="btn btn-secondary">
@@ -1392,11 +1629,14 @@ ingeniería industrial una vez finalizan su pregrado y se incertan en el
 mercado laboral. Para ello, se le pregunta a $15$ egresados
 seleccionados de forma aleatoria y se les pregunta cuál es el salario
 que devengan actualmente, obteniendo los siguientes resultados en
-millones de pesos $$\begin{align*}
+millones de pesos 
+$$
+\begin{align*}
 1.78 \quad 2.93 \quad 1.22 \quad 1.27 \quad 1.17 \\
 1.03 \quad 1.24 \quad 2.07 \quad 2.04 \quad 1.28 \\
 1.53 \quad 0.98 \quad 1.73 \quad 1.38 \quad 3.24
-\end{align*}$$
+\end{align*}
+$$
 
 Basados en la información anterior, calcule la probabilidad de que la
 proporción de egresados que tienen un salario superior a $2$ millones
@@ -1409,9 +1649,12 @@ Solución
 
 En este punto, nos preguntan por la proporción de egresados que tienen
 un salario superior a $2$ millones de pesos sea mayor al $40\%$, es
-decir $$\begin{align*}
+decir 
+$$
+\begin{align*}
   \mathbb{P}(p > 0.4)
-\end{align*}$$
+\end{align*}
+$$
 
 Pero al observar la información recolectada por los $15$ egresados,
 apreciamos que que nos dan el salario que devengan, y no la proporción
@@ -1419,22 +1662,27 @@ muestral, de quienes tienen un salario superior a $2$ millones de
 pesos, por lo cual, será necesario calcular la proporción muestral, y
 para ello, denotaremos como $1$ aquellas observaciones que sean
 superiores a $2$ millones de pesos, y $0$ aquellas observaciones que
-no cumplan la condición, tal que $$\begin{align*}
+no cumplan la condición, tal que 
+$$
+\begin{align*}
  \underset{0}{1.78} \quad \underset{1}{2.93} \quad \underset{0}{1.22} \quad \underset{0}{1.27} \quad \underset{0}{1.17} \\
 \underset{0}{1.03} \quad \underset{0}{1.24} \quad \underset{1}{2.07} \quad \underset{1}{2.04} \quad \underset{0}{1.28} \\
 \underset{0}{1.53} \quad \underset{0}{0.98} \quad \underset{0}{1.73} \quad \underset{0}{1.38} \quad \underset{1}{3.24}
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, si los $1$ representa los éxitos, tendremos un total de
 $x=4$ éxitos en las $n=15$ muestras, entonces podemos aplicar la
 fórmula de frecuencia relativa para calcular la proporción muestral de
 egresados que poseen salarios superiores a $2$ millones.
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{p} &= \frac{\text{# éxitos}}{\text{Total ensayos}} \\
           &= \frac{x}{n} \\
           &= \frac{4}{15} \\
           &= 0.2666667
-\end{align*}$$
+\end{align*}
+$$
 
 Una vez calculada la proporción muestral, podemos emplear ésta para
 calcular la probabilidad de interés, mediante el empleo de operaciones
@@ -1442,18 +1690,23 @@ matemáticas, de tal forma que la probabilidad planteada tenga la
 estructura de una distribución de probabilidad conocida, lo cual, en
 este caso, será una distribución aproximadamente normal, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 Z_c = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} \stackrel{a}{\sim} N(0,1)
-\end{align*}$$
+\end{align*}
+$$
 
 Con esta estructura en mente, se procede a realizar la operaciones
 correspondientes para llevar la probabilidad original, a la forma
-conocida, tal que $$\begin{align*}
+conocida, tal que 
+$$
+\begin{align*}
   \mathbb{P}(p > 0.4) &= \mathbb{P}(- p < - 0.4) \\
                       &= \mathbb{P}(\hat{p}- p < 0.2666667 - 0.4) \\
                       &= \mathbb{P}\left(\frac{\hat{p}- p}{\sqrt{\frac{p(1-p)}{n}}} < \frac{0.2666667 - 0.4}{\sqrt{\frac{0.4(1-0.4)}{15}}}\right) \\
                       &= \mathbb{P}\left(Z < -1.054092\right)
-\end{align*}$$
+\end{align*}
+$$
 
 Y como $Z \sim N(0,1)$, entonces podemos encontrar la probabilidad de
 interés, empleando la
@@ -1462,14 +1715,18 @@ de la Distribución Normal Estándar</a>, la función <tt>pnorm()</tt> del
 software <tt>R</tt> o la función <tt>DISTR.NORM.ESTAND.N()</tt> de
 Excel, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z < -1.054092) = 0.1459204
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual, dada la equivalencia de la igualdad anterior, significará que
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(p > 0.4) = 0.1459204
-\end{align*}$$
+\end{align*}
+$$
 
 Y por tanto, se tendrá un $14.59\%$ de probabilidad de que la
 proporción de egresados que tienen un salario superior a $2$ millones

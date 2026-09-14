@@ -7,8 +7,8 @@ export interface Props {
   description?: string;
   image?: string;
   showTools?: boolean;
-  /** Carga KaTeX (CSS+JS+enhance) — solo necesario en páginas con fórmulas */
-  math?: boolean;
+  /** Carga enhance.js (TOC, botones Show/Hide, imágenes) — páginas de contenido */
+  enhance?: boolean;
   /** Schema JSON-LD adicional (p. ej. Course) */
   jsonLd?: string;
   /** Carga el helper de desbloqueo progresivo (páginas de curso/clase) */
@@ -22,7 +22,7 @@ const {
   description = 'Cursos y herramientas de estadística',
   image,
   showTools = false,
-  math = false,
+  enhance = false,
   jsonLd,
   unlock = false,
   noindex = false,
@@ -54,7 +54,6 @@ const canonical = Astro.url;
     <meta name="astro-base" content={base} />
     <title>{title}</title>
     <script>document.documentElement.classList.add('js')</script>
-    {math && <link rel="stylesheet" href={`${base}/assets/css/katex.min.css`} />}
     {jsonLd && <script type="application/ld+json" set:html={jsonLd}></script>}
   </head>
   <body class="flex flex-col min-h-screen">
@@ -70,8 +69,6 @@ const canonical = Astro.url;
 
     <script defer src={`${base}/assets/js/animations.js`}></script>
     {unlock && <script defer src={`${base}/assets/js/unlock.js`}></script>}
-    {math && <script defer src={`${base}/assets/js/katex.min.js`}></script>}
-    {math && <script defer src={`${base}/assets/js/auto-render.min.js`}></script>}
-    {math && <script defer src={`${base}/assets/js/enhance.js`}></script>}
+    {enhance && <script defer src={`${base}/assets/js/enhance.js`}></script>}
   </body>
 </html>

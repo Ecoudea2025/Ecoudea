@@ -25,6 +25,7 @@ bibliography: "../../referencias.bib"
     media de zinc en el río?
     </li>
     </ol>
+
 2.  ¿Qué tan grande debe ser el tamaño muestral del punto anterior si
     queremos tener `$95\%$` de confianza en que nuestra estimación de la
     media poblacional diferirá por menos de `$0.05$`?
@@ -89,6 +90,7 @@ bibliography: "../../referencias.bib"
     reacción de todos los individuos.
     </li>
     </ol>
+
 6.  Un investigador de la <tt>ucla</tt> afirma que la esperanza de vida
     de los ratones se puede extender hasta en `$25\%$` cuando se reduce
     aproximadamente `$40\%$` de las calorías de su dieta desde el
@@ -124,6 +126,7 @@ bibliography: "../../referencias.bib"
     centímetros.
     </li>
     </ol>
+
 8.  Dos marcas de refrigeradores, denotadas por `$A$` y `$B$` poseen
     garantías de `$1$` año. Suponga que en una muestra aleatoria de
     `$50$` refrigeradores de la marca `$A$`, se observó que `$12$` de
@@ -145,6 +148,7 @@ bibliography: "../../referencias.bib"
     refrigeradores, dentro del período de garantía? ¿Por qué?
     </li>
     </ol>
+
 9.  ¿Está menguando el romance de los estadounidenses con el cine?, En
     una encuesta realizada por la empresa Gallup a `$800$` adultos
     seleccionados de forma aleatoria, se encontró que `$45\%$` de los
@@ -161,6 +165,7 @@ bibliography: "../../referencias.bib"
     mayoría de los adultos piensa que el cine está mejorando?
     </li>
     </ol>
+
 10. Los administradores de un hospital deseaban estimar el número
     promedio de días necesarios para el tratamiento de enfermos
     internados entre las edades de `$25$` y `$34$` años. Una muestra
@@ -180,6 +185,7 @@ bibliography: "../../referencias.bib"
     de la cual se extrajo la muestra.  
     </li>
     </ol>
+
 11. A la mayoría de estadounidenses les gusta participar en eventos
     deportivos o al menos verlos. Algunos sienten que los deportes
     tienen más que sólo valor de entretenimiento, tanto así, que en una
@@ -198,6 +204,7 @@ bibliography: "../../referencias.bib"
     valor de $p$ produce el margen de error dado por la encuesta?
     </li>
     </ol>
+
 12. Para una comparación de los porcentajes de piezas defectuosas
     producidas por dos líneas de montaje, de cada línea se seleccionaron
     muestras aleatorias independientes de `$100$` piezas. La línea `$A$`
@@ -214,6 +221,7 @@ bibliography: "../../referencias.bib"
     más alta de piezas defectuosas que la otra?
     </li>
     </ol>
+
 13. Es frecuente que encuestadores por teléfono entrevisten entre
     `$1000$` y `$1500$` personas sobre sus opiniones en asuntos varios.
     En este caso tienen interés en ¿El rendimiento de los equipos de
@@ -239,6 +247,7 @@ bibliography: "../../referencias.bib"
     cada población si suponemos que las muestras son iguales?
     </li>
     </ol>
+
 14. Las calificaciones del Examen de Evaluación Escolar (SAT por sus
     siglas en inglés), que han bajado lentamente desde el inicio del
     examen, ahora han empezado a subir. Originalmente, una calificación
@@ -304,6 +313,7 @@ bibliography: "../../referencias.bib"
     media real de matemáticas para $2005$? ¿Qué puede concluir?
     </li>
     </ol>
+
 15. Se está considerando un nuevo sistema de lanzamiento de cohetes para
     el despliegue de cohetes pequeños, de corto alcance. Suponga que por
     experiencia, se sabe que la probabilidad de que el sistema existente
@@ -319,6 +329,7 @@ bibliography: "../../referencias.bib"
     mejor?
     </li>
     </ol>
+
 16. Es frecuente que los químicos orgánicos purifiquen compuestos
     orgánicos por medio de un método conocido como cristalización
     fraccional. Un experimentador desea preparar y purificar `$4.85$`
@@ -378,6 +389,7 @@ bibliography: "../../referencias.bib"
     $3.82$ gramos, al emplear $4.85$ gramos de anilina.
     </li>
     </ol>
+
 17. Dos nuevos medicamentos se dieron a pacientes con hipertensión. El
     primero de ellos bajó la presión sanguínea de `$16$` pacientes en un
     promedio de `$11$` puntos, con una desviación estándar de `$6$`
@@ -397,6 +409,7 @@ bibliography: "../../referencias.bib"
     mediciones están distribuidas normalmente.
     </li>
     </ol>
+
 18. ¿El precio pagado por el atún depende del método de empaque?
     *Consumer Reports* da el precio promedio estimado para una lata de
     `$6$` onzas o una bolsa de `$7.06$` onzas de atún, con base en
@@ -612,6 +625,7 @@ bibliography: "../../referencias.bib"
     en aceite.
     </li>
     </ol>
+
 19. Un experimentador desea comprobar la variabilidad de mediciones
     obtenidas al usar equipo diseñado para medir el volumen de una
     fuente de audio. Tres mediciones independientes registradas por este
@@ -665,6 +679,7 @@ bibliography: "../../referencias.bib"
     muestral sea como máximo de $0.4_{dB}$.
     </li>
     </ol>
+
 21. En el trabajo de laboratorio es deseable realizar cuidadosas
     verificaciones de la variabilidad de lecturas producidas en muestras
     estándar. En un estudio de la cantidad de calcio en agua potable
@@ -748,6 +763,7 @@ bibliography: "../../referencias.bib"
     precisión.
     </li>
     </ol>
+
 23. El Departamento de zoología de Virginia Tech llevó a cabo un estudio
     para estimar la diferencia en la cantidad de ortofósforo químico
     medido en dos estaciones diferentes del río James. El ortofósforo se
@@ -1080,6 +1096,7 @@ bibliography: "../../referencias.bib"
     o no válida.
     </li>
     </ol>
+
 31. Dos marcas de refrigeradores, denotadas por `$A$` y `$B$` poseen
     garantías de `$3$` año. Suponga que en una muestra aleatoria de
     `$50$` refrigeradores de la marca `$A$`, se encontró que el tiempo

@@ -333,7 +333,9 @@ observaciones, entonces
 
 Es el promedio numérico de las `$n$` observaciones.
 
-$$\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}$$
+$$
+\begin{align*}\bar{X}=\sum_{i=1}^n\frac{x_i}{n}=\frac{x_1+x_2+\ldots+x_n}{n}\end{align*}
+$$
 
 
 En <tt>R</tt>, puede calcularse el valor promedio de un conjunto de
@@ -362,11 +364,14 @@ Solución
 <p>
 
 A partir de los datos se tiene entonces que el número promedio de
-automóviles que transitan por la avenida Guayabal es de $$\begin{align*}
+automóviles que transitan por la avenida Guayabal es de 
+$$
+\begin{align*}
   \bar{X} &= \sum_{i=1}^n\frac{x_i}{n}\\
           &= \frac{1142 + 1430 + 1005 + \ldots + 1588}{28} \\
           &= 1359.5
-\end{align*}$$
+\end{align*}
+$$
 
 Lo anterior significa que, el número promedio de datos transitan por la
 avenida Guayabal en un día es igual a $1359.5$ automóviles.
@@ -381,7 +386,9 @@ que contienen el 50% de las observaciones. Para realizar el cálculo de
 la mediana es necesario ordenar inicialmente el conjunto de
 observaciones de forma ascendente.
 
-$$\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}$$
+$$
+\begin{align*}\tilde{X}=\begin{cases}x_{\left[\frac{(n+1)}{2}\right]} & \text{si } n \text{ es impar}\\\frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) & \text{si } n \text{ es par}\end{cases}\end{align*}
+$$
 
 donde `$x_{\left[j\right]}$` representa la `$j$`-ésima observación
 ordenada.
@@ -415,11 +422,13 @@ Inicialmente, se observa que el número de días registrados fue de
 $28$, por lo cual, se tiene que $n$ es un número par, haciendo que
 la ecuación empleada sea
 
-$$\begin{align*}
+$$
+\begin{align*}
   \tilde{X} &= \frac{1}{2}\left(x_{\left[\frac{n}{2}\right]}+x_{\left[\frac{n}{2}+1\right]}\right) \\
             &= \frac{1}{2}\left(x_{\left[\frac{28}{2}\right]}+x_{\left[\frac{28}{2}+1\right]}\right) \\
             &= \frac{1}{2}\left(x_{\left[14\right]}+x_{\left[15\right]}\right)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se observa que debe localizarse la observación que ocupa la
 posición número $14$ y $15$ en los registros del número de vehículos
@@ -535,10 +544,12 @@ vehículos que transitan sur-norte por la avenida Guayabal es
 $x_{[14]}=1365$ y $x_{[15]}=1365$, respectivamente.<br> <br> Con
 dichos valores se realiza entonces, el cálculo de la mediana, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \tilde{X} &= \frac{1}{2}(1365+ 1365) \\
             &=1365
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior se obtiene que el $50\%$ inferior de los días transitan
 por la avenida Guayabal sur-norte a lo más $1365$ vehículos, mientras
@@ -728,13 +739,17 @@ datos ordenados en **cuatro partes** iguales. Para ello, es necesario
 calcular inicialmente una variable `$h_j$` de posicionamiento dado el
 cuartil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{4} + 1 \quad \quad j=1,2,3\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del cuartil de
 interés
 
-$$\begin{align*}C_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}$$
+$$
+\begin{align*}C_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right)  \quad \quad j=1,2,3\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -878,11 +893,16 @@ por día, tal que
 
 Con los datos ordenados, se realiza el cálculo para la variable de
 posicionamiento $h_j$, con $j=2$, dado que se posee un total de
-$28$ observaciones, tal que $$h_{2} = \frac{2(28-1)}{4} + 1 = 14.5$$
+$28$ observaciones, tal que 
+$$
+h_{2} = \frac{2(28-1)}{4} + 1 = 14.5
+$$
 Al reemplazar el valor obtenido en la variable de posicionamiento, en la
 formula de cuartiles, con $j=2$, obtenemos que
 
-$$\begin{align*}C_{2} &=x_{\lfloor h_{2}\rfloor} + \left((h_{2} - \lfloor h_{2}\rfloor) \times  (x_{[\lfloor h_{2}\rfloor + 1]} - x_{\lfloor h_{2}\rfloor}) \right) \\ &= x_{\lfloor 14.5\rfloor} + \left((14.5 - \lfloor 14.5\rfloor) \times  (x_{[\lfloor 14.5\rfloor + 1]} - x_{\lfloor 14.5\rfloor}) \right) \\ & = x_{[14]} + \left((14.5 - 14) \times  (x_{[14+1]}-x_{[14]})\right) \\ &= x_{[14]} + \left(0.5 \times  (x_{[15]}-x_{[14]})\right)\end{align*}$$
+$$
+\begin{align*}C_{2} &=x_{\lfloor h_{2}\rfloor} + \left((h_{2} - \lfloor h_{2}\rfloor) \times  (x_{[\lfloor h_{2}\rfloor + 1]} - x_{\lfloor h_{2}\rfloor}) \right) \\ &= x_{\lfloor 14.5\rfloor} + \left((14.5 - \lfloor 14.5\rfloor) \times  (x_{[\lfloor 14.5\rfloor + 1]} - x_{\lfloor 14.5\rfloor}) \right) \\ & = x_{[14]} + \left((14.5 - 14) \times  (x_{[14+1]}-x_{[14]})\right) \\ &= x_{[14]} + \left(0.5 \times  (x_{[15]}-x_{[14]})\right)\end{align*}
+$$
 
 En donde, $x_{[14]}=1365$ y $x_{[15]}=1365$, son las datos que
 ocupan la posición $14$ y $15$ en el conjunto de datos ordenados
@@ -890,10 +910,12 @@ para el número de automóviles que transitan por la avenida Guayabal en
 un día. Finalmente, al reemplazar dichos valores en la ecuación de
 cuartiles se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
   C_{2} &= 1365 + \left(0.5 \times  (1365-1365)\right)\\
         &= 1365
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir que el $50\%$ inferior de los días
 transita una cantidad de automóviles menor o igual a $1365$, mientras
@@ -909,13 +931,17 @@ datos ordenados en **cinco partes** iguales. Para ello, es necesario
 calcular inicialmente una variable `$h_j$` de posicionamiento dado el
 quintil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{5} + 1 \quad \quad j=1,2,3,4\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del quintil de
 interés
 
-$$\begin{align*}Q_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}$$
+$$
+\begin{align*}Q_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,3,4\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -1059,11 +1085,16 @@ por día, tal que
 
 Con los datos ordenados, se realiza el cálculo para la variable de
 posicionamiento $h_j$, con $j=4$, dado que se posee un total de
-$28$ observaciones, tal que $$h_{4} = \frac{4(28-1)}{5} + 1 = 22.6$$
+$28$ observaciones, tal que 
+$$
+h_{4} = \frac{4(28-1)}{5} + 1 = 22.6
+$$
 Al reemplazar el valor obtenido en la variable de posicionamiento, en la
 formula de quintiles, con $j=4$, obtenemos que
 
-$$\begin{align*}Q_{4} &=x_{\lfloor h_{4}\rfloor} + \left((h_{4} - \lfloor h_{4}\rfloor) \times  (x_{[\lfloor h_{4}\rfloor + 1]} - x_{\lfloor h_{4}\rfloor}) \right) \\ &= x_{\lfloor 22.6\rfloor} + \left((22.6 - \lfloor 22.6\rfloor) \times  (x_{[\lfloor 22.6\rfloor + 1]} - x_{\lfloor 22.6\rfloor}) \right) \\ & = x_{[22]} + \left((22.6 - 22) \times  (x_{[22+1]}-x_{[22]})\right) \\ &= x_{[22]} + \left(0.6 \times  (x_{[23]}-x_{[22]})\right)\end{align*}$$
+$$
+\begin{align*}Q_{4} &=x_{\lfloor h_{4}\rfloor} + \left((h_{4} - \lfloor h_{4}\rfloor) \times  (x_{[\lfloor h_{4}\rfloor + 1]} - x_{\lfloor h_{4}\rfloor}) \right) \\ &= x_{\lfloor 22.6\rfloor} + \left((22.6 - \lfloor 22.6\rfloor) \times  (x_{[\lfloor 22.6\rfloor + 1]} - x_{\lfloor 22.6\rfloor}) \right) \\ & = x_{[22]} + \left((22.6 - 22) \times  (x_{[22+1]}-x_{[22]})\right) \\ &= x_{[22]} + \left(0.6 \times  (x_{[23]}-x_{[22]})\right)\end{align*}
+$$
 
 En donde, $x_{[22]}=1538$ y $x_{[23]}=1542$, son las datos que
 ocupan la posición $22$ y $23$ en el conjunto de datos ordenados
@@ -1071,10 +1102,12 @@ para el número de automóviles que transitan por la avenida Guayabal en
 un día. Finalmente, al reemplazar dichos valores en la ecuación de
 quintiles se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
   Q_{4} &= 1538 + \left(0.6 \times  (1542-1538)\right)\\
         &= 1540.4
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir que el $80\%$ inferior de los días
 transita una cantidad de automóviles menor o igual a $1540.4$,
@@ -1090,13 +1123,17 @@ conjunto de datos ordenados en **diez partes** iguales. Para ello, es
 necesario calcular inicialmente una variable `$h_j$` de posicionamiento
 dado el decil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{10} + 1 \quad \quad j=1,2,\dots,9\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del decil de
 interés
 
-$$\begin{align*}D_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}$$
+$$
+\begin{align*}D_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,9\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -1240,11 +1277,16 @@ tal que
 
 Con los datos ordenados, se realiza el cálculo para la variable de
 posicionamiento $h_j$, con $j=7$, dado que se posee un total de
-$28$ observaciones, tal que $$h_{7} = \frac{7(28-1)}{10} + 1 = 19.9$$
+$28$ observaciones, tal que 
+$$
+h_{7} = \frac{7(28-1)}{10} + 1 = 19.9
+$$
 Al reemplazar el valor obtenido en la variable de posicionamiento, en la
 formula de decil, con $j=7$, obtenemos que
 
-$$\begin{align*}D_{7} &=x_{\lfloor h_{7}\rfloor} + \left((h_{7} - \lfloor h_{7}\rfloor) \times  (x_{[\lfloor h_{7}\rfloor + 1]} - x_{\lfloor h_{7}\rfloor}) \right) \\ &= x_{\lfloor 19.9\rfloor} + \left((19.9 - \lfloor 19.9\rfloor) \times  (x_{[\lfloor 19.9\rfloor + 1]} - x_{\lfloor 19.9\rfloor}) \right) \\ & = x_{[19]} + \left((19.9 - 19) \times  (x_{[19+1]}-x_{[19]})\right) \\ &= x_{[19]} + \left(0.9 \times  (x_{[20]}-x_{[19]})\right)\end{align*}$$
+$$
+\begin{align*}D_{7} &=x_{\lfloor h_{7}\rfloor} + \left((h_{7} - \lfloor h_{7}\rfloor) \times  (x_{[\lfloor h_{7}\rfloor + 1]} - x_{\lfloor h_{7}\rfloor}) \right) \\ &= x_{\lfloor 19.9\rfloor} + \left((19.9 - \lfloor 19.9\rfloor) \times  (x_{[\lfloor 19.9\rfloor + 1]} - x_{\lfloor 19.9\rfloor}) \right) \\ & = x_{[19]} + \left((19.9 - 19) \times  (x_{[19+1]}-x_{[19]})\right) \\ &= x_{[19]} + \left(0.9 \times  (x_{[20]}-x_{[19]})\right)\end{align*}
+$$
 
 En donde, $x_{[19]}=1510$ y $x_{[20]}=1522$, son las datos que
 ocupan la posición $19$ y $20$ en el conjunto de datos ordenados
@@ -1252,10 +1294,12 @@ para el número de automóviles que transitan por la avenida Guayabal en
 un día. Finalmente, al reemplazar dichos valores en la ecuación de decil
 se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
   D_{7} &= 1510 + \left(0.9 \times  (1522-1510)\right)\\
         &= 1520.8
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir que el $70\%$ inferior de los días
 transita una cantidad de automóviles menor o igual a $1520.8$,
@@ -1271,13 +1315,17 @@ un conjunto de datos ordenados en **cien partes** iguales. Para ello, es
 necesario calcular inicialmente una variable `$h_j$` de posicionamiento
 dado el percentil `$j$` de interés, tal que
 
-$$\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}$$
+$$
+\begin{align*}h_j = \frac{j(n-1)}{100} + 1 \quad \quad j=1,2,\dots,99\end{align*}
+$$
 
 
 y posteriormente, con éste valor se realiza el cálculo del percentil de
 interés
 
-$$\begin{align*}P_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}$$
+$$
+\begin{align*}P_j=x_{[\lfloor h_j\rfloor} + \left((h_j - \lfloor h_j\rfloor) \times  (x_{[\lfloor h_j\rfloor + 1]} - x_{\lfloor h_j\rfloor}) \right) \quad \quad j=1,2,\dots,99\end{align*}
+$$
 
 
 siendo `$\lfloor h_j\rfloor$` el valor piso de `$h_j$`, **es decir, el
@@ -1422,11 +1470,16 @@ por día, tal que
 Con los datos ordenados, se realiza el cálculo para la variable de
 posicionamiento $h_j$, con $j=95$, dado que se posee un total de
 $28$ observaciones, tal que
-$$h_{95} = \frac{95(28-1)}{100} + 1 = 26.65$$ Al reemplazar el valor
+$$
+h_{95} = \frac{95(28-1)}{100} + 1 = 26.65
+$$
+ Al reemplazar el valor
 obtenido en la variable de posicionamiento, en la formula de
 percentiles, con $j=95$, obtenemos que
 
-$$\begin{align*}P_{95} &=x_{\lfloor h_{95}\rfloor} + \left((h_{95} - \lfloor h_{95}\rfloor) \times  (x_{[\lfloor h_{95}\rfloor + 1]} - x_{\lfloor h_{33}\rfloor}) \right) \\ &= x_{\lfloor 26.65\rfloor} + \left((26.65 - \lfloor 26.65\rfloor) \times  (x_{[\lfloor 26.65\rfloor + 1]} - x_{\lfloor 26.65\rfloor}) \right) \\ & = x_{[26]} + \left((26.65 - 26) \times  (x_{[26+1]}-x_{[26]})\right) \\ &= x_{[26]} + \left(0.65 \times  (x_{[27]}-x_{[26]})\right)\end{align*}$$
+$$
+\begin{align*}P_{95} &=x_{\lfloor h_{95}\rfloor} + \left((h_{95} - \lfloor h_{95}\rfloor) \times  (x_{[\lfloor h_{95}\rfloor + 1]} - x_{\lfloor h_{33}\rfloor}) \right) \\ &= x_{\lfloor 26.65\rfloor} + \left((26.65 - \lfloor 26.65\rfloor) \times  (x_{[\lfloor 26.65\rfloor + 1]} - x_{\lfloor 26.65\rfloor}) \right) \\ & = x_{[26]} + \left((26.65 - 26) \times  (x_{[26+1]}-x_{[26]})\right) \\ &= x_{[26]} + \left(0.65 \times  (x_{[27]}-x_{[26]})\right)\end{align*}
+$$
 
 En donde, $x_{[26]}=1596$ y $x_{[27]}=1609$, son las notas que
 ocupan la posición $26$ y $27$ en el conjunto de datos ordenados
@@ -1434,10 +1487,12 @@ para el número de automóviles que transitan por la avenida Guayabal en
 un día. Finalmente, al reemplazar dichos valores en la ecuación de
 percentiles se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
   P_{95} &= 1596 + \left(0.65 \times  (1609-1596)\right)\\
   P_{95} &= 1604.45
-\end{align*}$$
+\end{align*}
+$$
 
 De lo anterior, se podrá concluir que el $95\%$ inferior de los días
 transita una cantidad de automóviles menor o igual a $1604.45$,
@@ -1459,7 +1514,9 @@ observaciones, entonces
 Mide la distancia media **al cuadrado** del conjunto de datos respecto a
 la media
 
-$$\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}$$
+$$
+\begin{align*}S^2=\frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2}\end{align*}
+$$
 
 <!--el n-1 se conoce como corrección de Bessel, y se realiza para corregir el sesgo del estimador-->
 
@@ -1491,11 +1548,15 @@ Para realizar el cálculo de la varianza del número de automóviles que
 transitan por la avenida Guayabal por día, se emplea la fórmula de la
 varianza en donde se observa que se requiere el número promedio de
 automóviles, en donde se emplea el valor de la media $\bar{X}=1359.5$,
-tal que $$\begin{align*}
+tal que 
+$$
+\begin{align*}
   S^2 &= \frac{1}{n-1}\sum_{i=1}^n{(x_i-\bar{X})^2} \\
       &= \frac{1}{28-1}\left[(1142 - 1359.5)^2 + \ldots + (1220 - 1359.5) ^2\right] \\
       &= 39226.6296296
-\end{align*}$$ Es de anotar, que la interpretación de la varianza no
+\end{align*}
+$$
+ Es de anotar, que la interpretación de la varianza no
 tiene mucho sentido, debido a que la unidad de medición estará elevada
 al cuadrado, así que en general, los valores calculados se usan para
 realizar el cálculo de la desviación estándar.
@@ -1508,7 +1569,9 @@ Es la raíz cuadrada de la distancia media del conjunto de datos respeto
 a la media, es decir, indica qué tan dispersos se encuentra el conjunto
 de observaciones de su valor promedio.
 
-$$\begin{align*}S=\sqrt{S^2}\end{align*}$$
+$$
+\begin{align*}S=\sqrt{S^2}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse la desviación estándar de un conjunto de
@@ -1539,11 +1602,14 @@ Solución
 La desviación estándar para el número de automóviles que transitan por
 la avenida guayaban en un día, puede ser calculada de forma simple
 mediante la raíz cuadrada de la varianza, que se calculó anteriormente,
-obteniendo que $$\begin{align*}
+obteniendo que 
+$$
+\begin{align*}
   S &= \sqrt{S^2} \\
     &= \sqrt{39226.6296296} \\
     &= 198.0571373
-\end{align*}$$
+\end{align*}
+$$
 
 En donde, de los resultados obtenidos se tiene que, la dispersión que
 poseen los datos respecto a su valor promedio es de $198.0571373$ para
@@ -1560,7 +1626,9 @@ Es la desviación estándar como un porcentaje de la media aritmética de
 un conjunto de datos. Sirve para observar el grado de variabilidad que
 tiene un conjunto de observaciones respecto a su promedio
 
-$$\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}$$
+$$
+\begin{align*}CV = \frac{S}{|\bar{X}|} \times 100\%\end{align*}
+$$
 
 
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
@@ -1606,11 +1674,15 @@ El coeficiente de variación refleja la variación porcentual que tiene un
 conjunto de observaciones respecto a su valor promedio, por tanto, al
 aplicar la ecuación del coeficiente de variación al número de
 automóviles que transitan por la avenida Guayabal en un día, se tiene
-que $$\begin{align*}
+que 
+$$
+\begin{align*}
   CV &= \frac{S}{|\bar{X}|} \\
      &= \frac{198.0571373}{|1359.5|} \times 100\% \\
      &= 14.5683808 \% 
-\end{align*}$$ De lo anterior, se aprecia que la variación porcentual
+\end{align*}
+$$
+ De lo anterior, se aprecia que la variación porcentual
 del número de automóviles en un día no es muy alto respecto a su media
 ya que el porcentaje de variación asciende solo hasta el
 $14.5683808 \%$ y por tanto se tendrá que los datos no se encuentran
@@ -1622,7 +1694,9 @@ muy dispersos respecto a su media.
 
 Es la distancia o amplitud que hay entre el valor máximo y mínimo en un
 conjunto de datos 
-$$\begin{align*}R = x_{max}-x_{min}\end{align*}$$
+$$
+\begin{align*}R = x_{max}-x_{min}\end{align*}
+$$
 
 
 Entre las funciones base del programa <tt>R</tt> no hay ninguna función
@@ -1675,11 +1749,13 @@ En donde se observa que el valor máximo del número de automóviles que
 transitan por la avenida Guayaban sur-norte en un día es
 $x_{max}=1737$, mientras que el mínimo es $x_{min}=1005$, y por
 tanto, al reemplazar en la formula del rango se tendrá que
-$$\begin{align*}
+$$
+\begin{align*}
   Rango &= x_{max} - x_{min} \\
         &= 1737 - 1005 \\
         &= 732 
-\end{align*}$$
+\end{align*}
+$$
 
 Mostrando que, la distancia que hay entre el número máximo y mínimo de
 automóviles que transitan por la avenida Guayabal en un día es de
@@ -1694,7 +1770,9 @@ Es la distancia o amplitud que hay entre el percentil `$25$` y percentil
 de los datos centrales de un conjunto de observaciones. Esta medida
 puede ser tomada como una medida de variabilidad para la mediana.
 
-$$\begin{align*}IQR = P_{75} - P_{25}\end{align*}$$
+$$
+\begin{align*}IQR = P_{75} - P_{25}\end{align*}
+$$
 
 
 En <tt>R</tt> puede calcularse el rango intercuartílico de un conjunto
@@ -1732,11 +1810,14 @@ realizar el cálculo de dichos valores. <br>
 Entonces, al realizar el cálculo de los dos percentiles con la formula
 anteriormente presentada se encontrará que $P_{75}=1537.25$, mientras
 que, $P_{25}=1187.75$, y por tanto, al reemplazar en la formula del
-rango intercuartílico se tendrá que $$\begin{align*}
+rango intercuartílico se tendrá que 
+$$
+\begin{align*}
   IQR &= P_{75} - P_{25} \\
       &= 1537.25 - 1187.75 \\
       &= 349.5 
-\end{align*}$$
+\end{align*}
+$$
 
 Mostrando que, al eliminar el $50\%$ de los datos más extremos, se
 obtiene un rango intercuartil de $349.5$ para el número de vehículos
@@ -1755,7 +1836,9 @@ concentración.
 Este valor permite identificar si el conjunto de datos se distribuye
 uniformemente alrededor de las medidas de tendencia central.
 
-$$\begin{align*}\gamma_1 = \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}$$
+$$
+\begin{align*}\gamma_1 = \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3} \quad \quad -\infty<\gamma_1<\infty\end{align*}
+$$
 
 El signo de `$\gamma_1$` indica la dirección de la asimetría.
 
@@ -1805,11 +1888,15 @@ El coeficiente de asimetría asociado al número de automóviles que
 transitan por la avenida Guayabal en un día depende del valor promedio
 $\bar{X}= 1359.5$ y la desviación estándar $S=198.0571373$. Por
 tanto al emplear los valores ya calculados previamente, se tendrá que el
-coeficiente de asimetría estará dado por $$\begin{align*}
+coeficiente de asimetría estará dado por 
+$$
+\begin{align*}
   \gamma_{1} &= \frac{n}{(n-1)(n-2)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^3}}{S^3}\\
              &= \frac{28}{(27)(26)}\left[\frac{(1142 - 1359.5)^3 + \ldots + (1588 - 1359.5)^3}{198.0571373^3}\right] \\
              &= -0.0106128
-\end{align*}$$ De lo anterior se observa que el coeficiente de asimetría
+\end{align*}
+$$
+ De lo anterior se observa que el coeficiente de asimetría
 es negativa pero cercana a $0$, lo cual significa que el número de
 vehículos que transita por la avenida Guayabal en un día es
 aproximadamente simétrica con un leve sesgo hacia la izquierda, es
@@ -1823,7 +1910,9 @@ media a que ocurran valores mayores.
 Este valor permite observar el grado de concentración del conjunto de
 datos
 
-$$\begin{align*}\gamma_2 = \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)} \quad -2<\gamma_2<\infty\end{align*}$$
+$$
+\begin{align*}\gamma_2 = \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)} \quad -2<\gamma_2<\infty\end{align*}
+$$
 
 
 El signo de `$\gamma_2$` indica el nivel de concentración.
@@ -1870,11 +1959,15 @@ Solución
 Similar al coeficiente de asimetría, el coeficiente de exceso de
 curtosis depende del valor promedio $\bar{X}= 1359.5$ y la desviación
 estándar $S=198.0571373$, del número de automóviles que transitan por
-la avenida Guayabal en un día, dando como resultado $$\begin{align*}
+la avenida Guayabal en un día, dando como resultado 
+$$
+\begin{align*}
   \gamma_{2} &= \frac{n(n+1)}{(n-1)(n-2)(n-3)}\frac{\sum_{i=1}^n{(x_i-\bar{X})^4}}{S^4}-\frac{3(n-1)^2}{(n-2)(n-3)}\\
              &= \frac{28(29)}{27}(26)(25)\left[\frac{(1142 - 1359.5)^4 + \ldots + (1142 - 1359.5)^4}{198.0571373^4}\right] - \frac{3(27)^2}{(26)(25)} \\
              &= -1.1414707
-\end{align*}$$ A partir del valor calculado, se observa que el
+\end{align*}
+$$
+ A partir del valor calculado, se observa que el
 coeficiente de exceso de curtosis es menor que $0$, y por tanto, se
 puede concluir que el número de automóviles que transitan por la avenida
 Guayabal en un día posee un comportamiento platicúrtico, es decir que el

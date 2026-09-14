@@ -15,13 +15,17 @@ Sean `$A_1, A_2, \ldots, A_k$` eventos **mutuamente excluyentes**
 `$\left(\underset{i=1}{\stackrel{k}{\cup}} A_i = S\right)$`, entonces
 para cualquier otro evento `$B$`
 
-$$\begin{align*}\mathbb{P}(B) &= \mathbb P(B\cap A_1)+\mathbb P(B\cap A_2)+\ldots+\mathbb P(B\cap A_k)\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(B) &= \mathbb P(B\cap A_1)+\mathbb P(B\cap A_2)+\ldots+\mathbb P(B\cap A_k)\end{align*}
+$$
 
 o alternativamente, al aplicar la formula de la
 <a href="../../ProbabilidadeInferencia/PeIEClase02.html#regla-multiplicativa" target="\_blank">Regla
 multiplicativa</a>, tenemos que
 
-$$\begin{align*}\mathbb{P}(B) &= \mathbb P(A_1)\mathbb P(B|A_1)+\mathbb P(A_2)\mathbb P(B|A_2)+\ldots+\mathbb P(A_k)\mathbb P(B|A_k)\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(B) &= \mathbb P(A_1)\mathbb P(B|A_1)+\mathbb P(A_2)\mathbb P(B|A_2)+\ldots+\mathbb P(A_k)\mathbb P(B|A_k)\end{align*}
+$$
 
 
 <button id="Show4" class="btn btn-secondary">
@@ -71,21 +75,25 @@ y que nos están dando las probabilidades de los eventos $B|A_1$,
 $B|A_2$ y $B|A_3$. <br><br>
 
 Partiendo de esto tenemos las siguientes probabilidades:<br>
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(A_1) & = 0.30 \\
 \mathbb{P}(A_2) & = 0.45 \\
 \mathbb{P}(A_3) & = 0.25 \\
 \mathbb{P}(B | A_1) & = 0.04 \\
 \mathbb{P}(B | A_2) & = 0.05 \\
 \mathbb{P}(B | A_3) & = 0.02 \\
-\end{align*}$$
+\end{align*}
+$$
 
 Entonces, al aplicar el teorema de probabilidad total, tendremos que<br>
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(B) & = \mathbb{P}(A_1)\mathbb{P}(B | A_1) + \mathbb{P}(A_2)\mathbb{P}(B | A_2) + \mathbb{P}(A_3)\mathbb{P}(B | A_3) \\
  & = 0.30 \times 0.04 + 0.45 \times 0.05 + 0.25 \times 0.02\\
  & = 0.0395
-\end{align*}$$
+\end{align*}
+$$
 
 Obteniendo por tanto, que la probabilidad de que un artículo producido
 en la empresa sea defectuoso es del $3.95\%$
@@ -100,7 +108,9 @@ Sea `$A_1, A_2, \ldots, A_k$` eventos **mutuamente excluyentes** y
 `$\mathbb P(B)>0$`, la probabilidad posterior `$A_j$` dado que `$B$` ha
 ocurrido, está dada por
 
-$$\begin{align*}\mathbb P(A_j|B) &= \frac{\mathbb P(A_j\cap B)}{\mathbb P(B)}\end{align*}$$
+$$
+\begin{align*}\mathbb P(A_j|B) &= \frac{\mathbb P(A_j\cap B)}{\mathbb P(B)}\end{align*}
+$$
 
 En donde, al aplicar la formula de la
 <a href="../../ProbabilidadeInferencia/PeIEClase02.html#regla-multiplicativa" target="\_blank">Regla
@@ -109,7 +119,9 @@ multiplicativa</a> en el numerador, y la formula de la
 total</a> en el denominador, tenemos que
 
 
-$$\begin{align*}\mathbb P(A_j|B) &= \frac{\mathbb P(A_j)\mathbb P(B|A_j)}{\sum_{i=1}^k \mathbb P(A_i)\mathbb P(B|A_i)}\end{align*}$$
+$$
+\begin{align*}\mathbb P(A_j|B) &= \frac{\mathbb P(A_j)\mathbb P(B|A_j)}{\sum_{i=1}^k \mathbb P(A_i)\mathbb P(B|A_i)}\end{align*}
+$$
 
 
 <button id="Show5" class="btn btn-secondary">
@@ -151,9 +163,12 @@ defectuoso, $B$, se tendrá que se desea calcular la
 $\mathbb{P}{(A_3|B)}$. <br><br>
 
 De lo anterior apreciamos que nos están preguntando una probabilidad
-condicional la cual se puede expresar de la forma $$\begin{align*}
+condicional la cual se puede expresar de la forma 
+$$
+\begin{align*}
 \mathbb{P}{(A_3|B)} & = \frac{\mathbb{P}(A_3 \cap B)}{\mathbb{P}(B)}
-\end{align*}$$
+\end{align*}
+$$
 
 El problema, es que al observar las probabilidades necesarias para
 realizar el cálculo de la formula anterior vemos que no poseemos ninguna
@@ -169,12 +184,14 @@ total</a>, y la probabilidad $\mathbb{P}(A_3 \cap B)$ mediante el
 teorema de la
 <a href="../../ProbabilidadeInferencia/PeIEClase02.html#regla-multiplicativa" target="\_blank">Regla
 multiplicativa</a>. Lo cual nos lleva a la siguiente expresión.
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}{(A_3|B)} & = \frac{\mathbb{P}(A_3)\mathbb{P}(B|A_3)}{\mathbb{P}(A_1)\mathbb{P}(B|A_1)+\mathbb{P}(A_2)\mathbb{P}(B|A_2)+\mathbb{P}(A_3)\mathbb{P}(B|A_3)} \\
 & = \frac{0.25\times 0.02}{0.30\times 0.04 + 0.45\times 0.05 + 0.25\times 0.02} \\
 & = \frac{0.005}{0.0395} \\
 & = 0.1265823
-\end{align*}$$
+\end{align*}
+$$
 
 Es decir, se tiene que la probabilidad de que un artículo que se sabe
 está defectuoso, haya sido ensamblado por la máquina $3$, es del

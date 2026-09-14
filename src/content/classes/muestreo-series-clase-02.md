@@ -274,20 +274,26 @@ A partir de este resultado, será posible calcular un estimador insesgado
 para la media poblacional obtenida mediante el muestreo doble, de tal
 forma que
 
-$$\begin{align*}\bar{y}_d = \frac{n_1'}{n'} \bar{y}_1 + \frac{n_2}{n'} \bar{y}_2\end{align*}$$
+$$
+\begin{align*}\bar{y}_d = \frac{n_1'}{n'} \bar{y}_1 + \frac{n_2}{n'} \bar{y}_2\end{align*}
+$$
 
 
 Además, una expresión para la varianza será obtenida mediante la
 expresión
 
-$$\begin{align*}Var(\bar{y}_d)=\frac{N-n'}{N}\frac{\sigma^2}{n'}+\mathbb{E}\left[\sum_{h=1}^L \left(\frac{n_h'}{n'}\right)^2\left(\frac{n_h'-n_h}{n_h'}\right)\frac{\sigma_{h(s_1)}^2}{n_h}\right]\end{align*}$$
+$$
+\begin{align*}Var(\bar{y}_d)=\frac{N-n'}{N}\frac{\sigma^2}{n'}+\mathbb{E}\left[\sum_{h=1}^L \left(\frac{n_h'}{n'}\right)^2\left(\frac{n_h'-n_h}{n_h'}\right)\frac{\sigma_{h(s_1)}^2}{n_h}\right]\end{align*}
+$$
 
 
 donde `$L$` el total de estratos, `$\sigma$` es la varianza del total de
 la población y `$\sigma^2_{h(s_1)}$` es la varianza dentro del estrato
 `$h$` para la primera fase de muestreo `$s_1$` tal que
 
-$$\begin{align*}\sigma_{h(s_1)}^2 = \frac{\sum_{i\in s_1h}(y_i-\bar{y}_h')^2}{n_h'-1}\end{align*}$$
+$$
+\begin{align*}\sigma_{h(s_1)}^2 = \frac{\sum_{i\in s_1h}(y_i-\bar{y}_h')^2}{n_h'-1}\end{align*}
+$$
 
 
 Dado que no es posible conocer la varianza poblacional de cada estrato,
@@ -295,7 +301,9 @@ se presenta un estimador insesgado para la varianza de `$\bar{y}_d$`,
 mediante el empleo de la varianza muestral de cada estrato, `$s_h^2$`,
 tal que
 
-$$\begin{align*}\hat{Var}(\bar{y}_d)=\frac{N-1}{N}\sum_{h=1}^L\left(\frac{n_h'-1}{n'-1}-\frac{n_h-1}{N-1}\right)\frac{n_h'}{n'}\frac{s_h^2}{n_h} + \frac{N-n'}{N(n'-1)}\sum_{h=1}^L\frac{n_h'}{n'}(\bar{y}_h - \bar{y}_d)^2\end{align*}$$
+$$
+\begin{align*}\hat{Var}(\bar{y}_d)=\frac{N-1}{N}\sum_{h=1}^L\left(\frac{n_h'-1}{n'-1}-\frac{n_h-1}{N-1}\right)\frac{n_h'}{n'}\frac{s_h^2}{n_h} + \frac{N-n'}{N(n'-1)}\sum_{h=1}^L\frac{n_h'}{n'}(\bar{y}_h - \bar{y}_d)^2\end{align*}
+$$
 
 
 <!-- Agregar el próximo semestre @Thompson2012, Response Modeling and Nonresponse Adjustments pagina 193 -->

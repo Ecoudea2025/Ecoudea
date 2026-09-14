@@ -38,6 +38,7 @@ bibliography: "../../referencias.bib"
     La familia no llegará a un lugar para acampar lleno.
     </li>
     </ol>
+
 2.  Un moneda esta cargada de tal forma que la probabilidad de que
     aparezca cara es tres veces mayor a que aparezca sello. Si se decide
     lanzar la moneda tres veces, cuál es la probabilidad de sacar al
@@ -76,6 +77,7 @@ bibliography: "../../referencias.bib"
     $Z' \cup Y$
     </li>
     </ol>
+
 5.  Para un examen de probabilidad e inferencia estadística a las
     `$6$`AM, un estudiante programa un despertador, el cual sabe que
     consigue despertarlo el `$80\%$` de las veces. Además, sabe que si
@@ -92,6 +94,7 @@ bibliography: "../../referencias.bib"
     probabilidad de que no haya escuchado el despertador?
     </li>
     </ol>
+
 6.  Suponga que se descubre que, en un grupo de `$500$` estudiantes
     universitarios de último año, `$210$` fuman, `$258$` consumen
     bebidas alcohólicas, `$216$` comen entre comidas, `$122$` fuman y
@@ -114,6 +117,7 @@ bibliography: "../../referencias.bib"
     Coma entre comidas o consuma bebidas alcohólicas, pero no fume.
     </li>
     </ol>
+
 7.  Encuentre los errores en cada una de las siguientes aseveraciones:
     <ol type="a">
     <li>
@@ -137,6 +141,7 @@ bibliography: "../../referencias.bib"
     carta de corazones y negra es $1/4$.
     </li>
     </ol>
+
 8.  Se sacan tres cartas seguidas, sin reemplazo, de una baraja
     ordinaria. Encuentre la probabilidad de la primera carta sea una
     `$A$` roja, la segunda carta sea una `$J$` una `$Q$` o una `$K$` y
@@ -173,6 +178,7 @@ bibliography: "../../referencias.bib"
     necesarias para que el circuito funcione
     </li>
     </ol>
+
 11. En un centro escolar los alumnos pueden optar por cursar como lengua
     extranjera ingles o francés. En un determinado curso, el `$90\%$` de
     los alumnos estudia ingles y el resto francés. El `$30\%$` de los
@@ -286,6 +292,7 @@ bibliography: "../../referencias.bib"
     productos alimenticios?
     </li>
     </ol>
+
 16. Las enfermedades `$A$` y `$B$` son comunes entre las personas que
     habitan una determinada isla. Si se supone que el `$50\%$` de la
     población contrae la enfermedad `$A$` alguna vez durante su vida,
@@ -314,6 +321,7 @@ bibliography: "../../referencias.bib"
     seguido de al menos un sello en la moneda.
     </li>
     </ol>
+
 19. Si `$S = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$`,
     `$A = \{0, 2, 4, 6, 8\}$`, `$B = \{1, 3, 5, 7, 9\}$`,
     `$C = \{2, 3, 4, 5\}$` y `$D = \{1, 6, 7\}$`, liste los elementos de
@@ -340,6 +348,7 @@ bibliography: "../../referencias.bib"
     $A \cap C \cap D'$
     </li>
     </ol>
+
 20. Suponga que usted le pide el favor a un compañero de curso que lo
     inscriba en cierta materia. Si su compañero olvida hacer la
     inscripción a tiempo, la probabilidad de que usted consiga cupo para
@@ -371,6 +380,7 @@ bibliography: "../../referencias.bib"
     en ninguno de esos dos instrumentos.
     </li>
     </ol>
+
 23. Un banco ha comprobado que uno de cada `$1000$` clientes con fondos
     expide un cheque con fecha equivocada. En cambio, todo cliente sin
     fondos pone una fecha errónea en sus cheques. El `$90\%$` de los
@@ -403,6 +413,7 @@ bibliography: "../../referencias.bib"
     años o más?
     </li>
     </ol>
+
 26. Existen dos métodos `$A$` y `$B$` para enseñar a los trabajadores
     cierta habilidad industrial. El porcentaje de fracasos es `$20\%$`
     para `$A$` y `$10\%$` para `$B$`. Sin embargo, `$B$` cuesta más y
@@ -420,6 +431,7 @@ bibliography: "../../referencias.bib"
     método $B$?
     </li>
     </ol>
+
 27. Suponga que la probabilidad de sobrevivir a una cierta operación de
     trasplante es de `$0.55$`. Si un paciente sobrevive la operación, la
     probabilidad que su cuerpo rechace el trasplante en menos de un mes
@@ -445,6 +457,7 @@ bibliography: "../../referencias.bib"
     ¿No pague en efectivo ni en cheque?
     </li>
     </ol>
+
 29. Se sabe que `$2/3$` de los reclusos en cierta prisión federal son
     menores de `$25$` años de edad. También se sabe que `$3/5$` de los
     reos son hombres, y que `$5/8$` son mujeres de `$25$` años de edad o
@@ -467,6 +480,7 @@ bibliography: "../../referencias.bib"
     historia y matemáticas.
     </li>
     </ol>
+
 31. Un experimento incluye lanzar un par de dados y observar los números
     de sus caras superiores.
     <ol type="a">
@@ -479,6 +493,7 @@ bibliography: "../../referencias.bib"
     sea igual?
     </li>
     </ol>
+
 32. Una pequeña ciudad dispone de un carro de bomberos y una ambulancia
     para emergencias. La probabilidad de que el carro de bomberos esté
     disponible cuando se necesite es `$0.98$` y la probabilidad de que
@@ -555,6 +570,7 @@ bibliography: "../../referencias.bib"
     probabilidad de que sea desempleado?
     </li>
     </ol>
+
 38. En una prueba de tipo falso o verdadero, una persona no tiene ni la
     menor idea de las respuestas correspondientes a `$3$` preguntas, así
     que decide adivinarlas. ¿Cual es la probabilidad de que responda más
@@ -579,6 +595,7 @@ bibliography: "../../referencias.bib"
     probabilidad de que la autopista hasta sido aprobada?
     </li>
     </ol>
+
 40. De `$10$` cartas numeradas del `$1$` al `$10$`, se seleccionan
     aleatoriamente y en forma sucesiva `$2$` de ellas. Hallar la
     probabilidad de que la suma sea impar.

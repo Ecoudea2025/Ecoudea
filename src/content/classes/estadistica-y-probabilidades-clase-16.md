@@ -57,9 +57,12 @@ Solución
 <li>
 Como hay un total de $n_1=10$ foras de seleccionar un hombre y
 $n_2=7$ formas de seleccionar una mujer, entonces el número de formas
-de seleccionar un hombre y luego una mujer es de $$\begin{align*}
+de seleccionar un hombre y luego una mujer es de 
+$$
+\begin{align*}
 n_1\times n_2 = (10)(7) = 70 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -74,9 +77,12 @@ entonces el número de posibilidades para las decenas será de $n_2=7$
 posibilidades. <br>
 
 Entonces el número de posibilidades de armar números pares con el
-conjunto de números $1,3,4,2,6,0,9,8$ es de $$\begin{align*}
+conjunto de números $1,3,4,2,6,0,9,8$ es de 
+$$
+\begin{align*}
 n_1\times n_2 = (3)(7) = 21 \text{ posibilidades}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -87,7 +93,9 @@ Para cualquier número entero no negativo `$n$`, se tiene que el número
 de permutaciones o arreglos **ordenados** de `$n$` objetos diferentes es
 `$n!$`
 
-$$\begin{align*}n! &= n(n-1)! \\ n! &= n(n-1)(n-2)! \\ n! &= n(n-1)(n-2)\ldots(3)(2)(1) \\\end{align*}$$
+$$
+\begin{align*}n! &= n(n-1)! \\ n! &= n(n-1)(n-2)! \\ n! &= n(n-1)(n-2)\ldots(3)(2)(1) \\\end{align*}
+$$
 
 donde el caso especial de `$0!=1$`
 
@@ -114,9 +122,12 @@ Como hay un total de $8$ estudiantes, entonces el total de formas en
 que el profesor puede ordenar el total de estudiantes en una fila es,
 $8$ posibles estudiantes en el primer puesto, $7$ posibles
 estudiantes en el segundo puesto, $\ldots$, y $1$ posible estudiante
-en el último puesto. Esto es, $$\begin{align*}
+en el último puesto. Esto es, 
+$$
+\begin{align*}
 8! = 8\times7\times6\times5\times4\times3\times2\times1=40320 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -125,11 +136,15 @@ en el último puesto. Esto es, $$\begin{align*}
 Similarmente, el número de formas de ordenar `$n$` objetos diferentes
 tomados de `$r$` objetos a la vez estará dado por
 
-$$\begin{align*}_nP_r= n(n-1)(n-2)\ldots(n-r+1)=\frac{n!}{(n-r)!}\\\end{align*}$$
+$$
+\begin{align*}_nP_r= n(n-1)(n-2)\ldots(n-r+1)=\frac{n!}{(n-r)!}\\\end{align*}
+$$
 
 donde en el caso especial de `$n=r$`, se tendrá la formula
 
-$$\begin{align*}_nP_n= \frac{n!}{(n-n)!}=\frac{n!}{0!}=n!\\\end{align*}$$
+$$
+\begin{align*}_nP_n= \frac{n!}{(n-n)!}=\frac{n!}{0!}=n!\\\end{align*}
+$$
 
 
 <button id="Show3" class="btn btn-secondary">
@@ -162,16 +177,22 @@ $23$ posibilidades para ocupar el puesto de Jefe del departamento de
 Economía dado que ya se ocuparon los dos primeros puestos, y $22$
 posibilidades para ocupar el puesto de Jefe del departamento de
 Administración de Empresas dado que ya se ocuparon los tres primeros
-puestos. Esto es $$\begin{align*}
+puestos. Esto es 
+$$
+\begin{align*}
 25\times24\times23\times22=303600 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 
 Lo anterior es equivalente al obtenido usando el teorema de permutación
 de $n$ objetos tomados de a $r$, en donde, se tiene un total de
 $n=25$ aspirantes, para los cuales se les asignará un total de $r=4$
-puestos, dando como resultado $$\begin{align*}
+puestos, dando como resultado 
+$$
+\begin{align*}
 _{25}P_4 = \frac{25!}{(25-4)!} = 303600 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -215,9 +236,12 @@ Solución
 <li>
 Cuando no hay restricción, se tendrá entonces que dejando uno de los
 estudiantes en un punto fijo, el profesor podrá sentar a los estudiantes
-en una mesa redonda de $$\begin{align*}
+en una mesa redonda de 
+$$
+\begin{align*}
 (6-1)! = 120 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -234,14 +258,21 @@ Luisa, y los otros individuales) sin restricción para sentar en la mesa
 redonda. <br>
 
 Dejando a uno de los grupos en un punto fijo, el profesor tendrá un
-total de $$\begin{align*}
+total de 
+$$
+\begin{align*}
 (5-1)! = 24 \text{ formas}
-\end{align*}$$ de sentar en un mesa redonda a los $5$ grupos. Ahora,
+\end{align*}
+$$
+ de sentar en un mesa redonda a los $5$ grupos. Ahora,
 si tenemos en cuenta la restricción anteriormente calculada, entonces se
 tendrá que el profesor podrá sentar a los $6$ estudiantes en una mesa
-redonda, con Luisa y Camila juntas de $$\begin{align*}
+redonda, con Luisa y Camila juntas de 
+$$
+\begin{align*}
 2 * 24 = 48 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Similar al punto anterior, solo que en este caso la idea es encontrar el
@@ -249,9 +280,12 @@ número de formas en donde Luisa y Camila no se sienten juntas. Si
 seguimos el proceso del inciso anterior, tendremos que en $24$ formas
 de las $120$ totales, Luisa y Camila estarán sentadas juntas, eso
 quiere decir que el profesor podrá sentar a los $6$ estudiantes en una
-mesa redonda, con Luisa y Camila separadas de $$\begin{align*}
+mesa redonda, con Luisa y Camila separadas de 
+$$
+\begin{align*}
 120 - 24 = 96 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -262,7 +296,9 @@ El número de permutaciones distintas en `$n$` objetos, en los que
 `$n_1$` objetos son de una clase, `$n_2$` objetos de una segunda clase,
 `$\ldots$`, y `$n_k$` objetos de una `$k$`-ésima clase es
 
-$$\begin{align*}\frac{n!}{n_1! n_2! \ldots n_k!}\end{align*}$$
+$$
+\begin{align*}\frac{n!}{n_1! n_2! \ldots n_k!}\end{align*}
+$$
  donde
 `$n=n_1+n_2+\ldots+n_k$`
 
@@ -299,9 +335,11 @@ estudiantes, la tercera posee $2$ estudiantes, la cuarta posee $1$
 estudiante, la quinta posee $2$ estudiantes, la sexta posee $1$
 estudiante y la séptima posee $1$ estudiante. Por tanto, para entregar
 las medallas, el número de arreglos diferentes que pueden formarse son
-$$\begin{align*}
+$$
+\begin{align*}
 \frac{15!}{3!\;5!\;2!\;1!\;2!\;1!\;1!} = \frac{1307674368000}{2880} = 454053600 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -313,11 +351,15 @@ a partir de los `$n$` objetos en los cuales **el orden no importa**.
 Entonces, el número de subconjuntos **desordenados** de tamaño `$r$`
 escogidos **sin reemplazo**, de un total de `$n$` objetos disponibles es
 
-$$\begin{align*}_nC_r=\left(\begin{array}{c}n\\ r\end{array}\right) = \frac{n!}{r! (n-r)!}\end{align*}$$
+$$
+\begin{align*}_nC_r=\left(\begin{array}{c}n\\ r\end{array}\right) = \frac{n!}{r! (n-r)!}\end{align*}
+$$
 
 en donde puede observarse que
 
-$$\begin{align*}_nC_r=\frac{_nP_r}{r!}\end{align*}$$
+$$
+\begin{align*}_nC_r=\frac{_nP_r}{r!}\end{align*}
+$$
  y en consecuencia
 `$_nC_r <\; _nP_r$`
 
@@ -346,9 +388,11 @@ tener que presentar el quiz y un estudiante no puede ser seleccionado
 más de una vez, se tiene que el total de estudiantes $n=27$, mientras
 que el total de estudiantes que tomará son $r=4$, entonces se tendrá
 que el número de formas en que el profesor puede hacer la selección es
-$$\begin{align*}
+$$
+\begin{align*}
 _{27}C_{4}= \frac{27!}{4! (27-4)!} = 17550 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -359,7 +403,9 @@ puede dividir o partir en `$k$` subconjuntos de `$n_1$` objetos el
 primer subconjunto, `$n_2$` objetos el segundo subconjunto, `$\ldots$`,
 y `$n_k$` objetos el `$k$`-ésimo subconjunto es
 
-$$\begin{align*}\left(\begin{array}{c}n\\ n_1, n_2, \ldots, n_k\end{array}\right) = \frac{n!}{n_1!\;n_2!\;\ldots\;n_k!}\end{align*}$$
+$$
+\begin{align*}\left(\begin{array}{c}n\\ n_1, n_2, \ldots, n_k\end{array}\right) = \frac{n!}{n_1!\;n_2!\;\ldots\;n_k!}\end{align*}
+$$
 
 
 siendo `$\sum_{i=1}^kn_i=n$`.
@@ -387,9 +433,12 @@ Solución
 El número de formas posibles en que pueden repartirse los $10$
 estudiantes, siendo $n_1=3$ y $n_2=3$ las dos habitaciones triples,
 $n_3=2$ la habitaciones doble y $n_4=1$ y $n_5=1$ las dos
-habitaciones privadas, entonces $$\begin{align*}
+habitaciones privadas, entonces 
+$$
+\begin{align*}
 \left(\begin{array}{c}10\\ 3, 3, 2, 1, 1\end{array}\right) = \frac{10!}{3!\;3!\;2!\;1!\;1!} = 50400 \text{ formas}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -486,33 +535,42 @@ Solución
 <li>
 Dado que <strong>influye el orden</strong> de los números y <strong>no
 se puede seleccionar un número dos veces</strong>, se tiene que el total
-números de $4$ dígitos que se pueden formar son $$\begin{align*}
+números de $4$ dígitos que se pueden formar son 
+$$
+\begin{align*}
 _{10}P_4= \frac{10!}{(10-4)!} = 5040 \text{ números}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que <strong>influye el orden</strong> de los números y <strong>se
 posible seleccionar un número más de una vez</strong>, se tiene que el
 total de números de $4$ dígitos que se pueden formar son
-$$\begin{align*}
+$$
+\begin{align*}
 10^4 = 10000 \text{ números}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que <strong>no influye el orden</strong> de los números y
 <strong>no se puede seleccionar un número dos veces</strong>, se tiene
 que el total números de $4$ dígitos que se pueden formar son
-$$\begin{align*}
+$$
+\begin{align*}
 _{10}C_4= \frac{10!}{4!\;(10-4)!} = 210 \text{ números}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que <strong>no influye el orden</strong> de los números y
 <strong>se posible seleccionar un número más de una vez</strong>, se
 tiene que el total de números de $4$ dígitos que se pueden formar son
-$$\begin{align*}
+$$
+\begin{align*}
 _{10+4-1}C_4 = \frac{(10+4-1)!}{4!\;(10-1)!} = 715 \text{ números}
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>

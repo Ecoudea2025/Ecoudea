@@ -15,7 +15,9 @@ Lista de ejercicios
     Servientrega en `$1$` hora posee una función de masa de probabilidad
     de la forma
     
-$$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -194,7 +196,9 @@ $$\begin{align*}p(x)=\begin{cases}k(x^2+4) & x=0,1,2,3 \\ 0 & \text{en otro caso
     automóviles blancos que vende un concesionario en un día está dada
     por
     
-$$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\end{align*}$$
+$$
+\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\end{align*}
+$$
 
     Encuentre el valor `$k$` que hace que la función de probabilidad
     esté bien definida y con esta función
@@ -217,7 +221,9 @@ $$\begin{align*}p(x) = k\binom{2}{x}\binom{3}{3-x} \quad \text{ para } x=0,1,2\e
     modelándolos. Suponga que el error de medición `$X$` de cierta
     cantidad física es determinado por la siguiente función de densidad:
     
-$$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -241,7 +247,9 @@ $$\begin{align*}f(x) =\begin{cases}k(3-x^2), & -1\leq x \leq 1\\ 0, & \text{en o
 7.  Suponga una función de densidad de probabilidad conjunta de las
     variables aleatorias `$X$`, `$Y$` y `$Z$`, la cual se define como
     
-$$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     A partir de esta ecuación, calcule
     <ol type="a">
@@ -265,7 +273,9 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxyz^2 & 0< x < 1; 0< y <1; 0< z<3 \\0 & \
 
 8.  Suponga la siguiente función de distribución acumulada
     
-$$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x< 3 \\ 0.48 & 3\leq x< 5\\ 0.74 & 5\leq x< 8 \\ 1 & x\geq 8\end{cases}\end{align*}$$
+$$
+\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x< 3 \\ 0.48 & 3\leq x< 5\\ 0.74 & 5\leq x< 8 \\ 1 & x\geq 8\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -288,7 +298,9 @@ $$\begin{align*}F(x)=\begin{cases}0 & x<0 \\ 0.12 & 0\leq x<2 \\ 0.28 & 2\leq x<
     utilidades que obtiene una pequeña empresa durante su primer año
     está dada por
     
-$$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -313,7 +325,9 @@ $$\begin{align*}f(x)=\begin{cases}kx^4(1-x)^3 & 0\leq x \leq 1,\\0 & \text{en ot
     cual puede ser determinada mediante la siguiente función de
     probabilidad discreta
     
-$$\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{align*}$$
+$$
+\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -329,7 +343,9 @@ $$\begin{align*}f(x)=\frac{e^{-6} 6^x}{x!} \text{  para  } x=0,1,2,\dots\end{ali
     que llega a una centro comercial en un periodo de una hora. Si la
     distribución acumulada de `$X$` está dada por:
     
-$$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}$$
+$$
+\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq x < 2 \\ 0.21 & 2\leq x < 3\\ 0.33 & 3\leq x < 4\\ 0.52 & 4\leq x < 5\\ 0.74 & 5\leq x < 6 \\ 0.89 & 6\leq x < 7 \\ 0.96 & 7\leq x < 8 \\ 1.00 & 8\geq x\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -462,7 +478,9 @@ $$\begin{align*}F(x) =\begin{cases}0 & x < 0\\0.03 & 0\leq x < 1 \\ 0.12 & 1\leq
 13. Sea `$X$` una variable aleatoria con distribución de probabilidades
     dada por
     
-$$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -481,7 +499,9 @@ $$\begin{align*}f(x)=\begin{cases}kx^2 & -5 \leq x \leq 3, \\0 & \text{en otro c
 14. Si `$X$` y `$Y$` son variables aleatorias con función de
     probabilidad conjunta dada por
     
-$$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
+$$
+\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -515,7 +535,9 @@ $$\begin{align*}f(x,y)=xye^{-x-y},\quad x>0,y>0\end{align*}$$
     si fuera necesario. Se sabe que la distribución conjunta de `$X$` y
     `$Y$` es
     
-$$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ldots;\quad y=0,1,2,\ldots \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -549,7 +571,9 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{9}{16}\frac{1}{4^{x+y}}  & x=0,1,2,\ld
 18. Considere a `$X$` la variable aleatoria que representa la suma de
     las caras para el lanzamiento de dos dados, con f.m.p dada por
     
-$$\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -570,7 +594,9 @@ $$\begin{align*}f(x)=\begin{cases}\frac{6-|7-x|}{36} & x = 2,3,\ldots,12 ,\\0 & 
     representa la proporción de personas que están a favor de una
     reforma legislativa
     
-$$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -605,7 +631,9 @@ $$\begin{align*}f(x) =\begin{cases}k\sqrt{x}, & 0< x < 1\\ 0, & \text{en otro ca
 21. Si la distribución de probabilidad conjunta de `$X$` y `$Y$` está
     dada por
     
-$$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
   
     Calcule
     <ol type="a">
@@ -650,7 +678,9 @@ $$\begin{align*}f(x,y)=\begin{cases}\frac{x+y}{30}  & x=0,1,2,3; y=0,1,2 \\0 & \
     una variable aleatoria continua con una función de distribución
     acumulativa
     
-$$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}$$
+$$
+\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{cases}\end{align*}
+$$
   
     Calcule la probabilidad de que el tiempo que pase para que el radar
     detecte entre conductores sucesivos a los que exceden los límites de
@@ -689,7 +719,9 @@ $$\begin{align*}F(x) =\begin{cases}0, & 0< x\\ 1-e^{-x/10}, & x \geq 0 \end{case
 25. Si `$X$`, `$Y$` y `$Z$` tienen la siguiente función de densidad de
     probabilidad conjunta:
     
-$$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -713,7 +745,9 @@ $$\begin{align*}f(x,y,z)=\begin{cases}kxy^2z& 0<x<1;0<y<1; 0<z<2 \\0 & \text{en 
     usa una licuadora en un hogar durante un año es una v.a continua
     `$X$` con función de densidad de probabilidad dada por:
     
-$$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -757,7 +791,9 @@ $$\begin{align*}f(x) =\begin{cases}x & 0< x < 1 \\ 2-x & 1\leq x < 2 \\ 0 & \tex
     `$Y$`, respectivamente, y suponga que la función de densidad
     conjunta de estas variables es
     
-$$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -777,7 +813,9 @@ $$\begin{align*}f(x,y)=\begin{cases}24xy; & 0\leq x\leq1;0\leq y\leq1; x+y\leq1 
 29. Sean `$X$` y `$Y$` dos variables aleatorias con función de
     probabilidad dada por
     
-$$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; x < y + 0.5 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -809,7 +847,9 @@ $$\begin{align*}f(x,y)=\begin{cases}k(3x-y) & 1 \leq x \leq 2, 1 \leq y \leq 3; 
     aleatoria que representa el diámetro de las pelotas locas, y la
     empresa sabe que la función de probabilidad de `$X$` es de la forma
     
-$$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{en otro caso} \end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -824,7 +864,9 @@ $$\begin{align*}f(x) =\begin{cases}\frac{x}{24}, & 4\leq x \leq 8\\ 0, & \text{e
 31. Suponga que la función de probabilidad conjunta de un sistema
     químico puede ser representado como
     
-$$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -848,7 +890,9 @@ $$\begin{align*}f(x,y)=\begin{cases}kx^2  & 0<x<y<1 \\0 & \text{en otro caso}\en
 
 33. Suponga una función de masa de probabilidad dada por
     
-$$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4,5\end{align*}$$
+$$
+\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4,5\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -871,7 +915,9 @@ $$\begin{align*}p(x)=k\binom{10}{x}\binom{15}{5-x} \text{  para  } x = 0,1,2,3,4
     en minutos, que tarda un hamster en superar un laberinto, tal que,
     la función de densidad de probabilidad `$f(x)$` está dada por:
     
-$$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0;\quad \theta > 0,\\0 & \text{En otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -982,7 +1028,9 @@ $$\begin{align*}f(x)=\begin{cases}\frac{x}{\theta^2}e^{-x^2/(2\theta^2)} & x > 0
     conjunta que describe las proporciones `$X$` y `$Y$` de estos dos
     componentes está dada por
     
-$$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>
@@ -1100,11 +1148,15 @@ $$\begin{align*}f(x,y)=\begin{cases}2  & 0<x<y<1 \\0 & \text{en otro caso}\end{c
     para los tiempos de espera `$X$` (en minutos) y ejecución `$Y$` (en
     segundos) se determina por
     
-$$\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}f(x,y)=\begin{cases}2e^{-\left(\frac{x}{5}+10y\right)} & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     con función de distribución acumulada conjunta dada por
     
-$$\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-10y}\right]  & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}$$
+$$
+\begin{align*}F(x,y)=\begin{cases}\left[1-e^{-\frac{x}{5}}\right] \left[1-e^{-10y}\right]  & x,y > 0 \\0 & \text{en otro caso}\end{cases}\end{align*}
+$$
 
     <ol type="a">
     <li>

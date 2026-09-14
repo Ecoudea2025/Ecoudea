@@ -71,9 +71,12 @@ Solución
 <p>
 Dado que el dado es un dado convencional de $6$ caras, se tendrá que
 al lanzarlo, solo será posible obtener un $1, 2, 3, 4, 5$ o $6$, y
-por tanto se tendrá que $$\begin{align*}
+por tanto se tendrá que 
+$$
+\begin{align*}
 S =\{1, 2, 3, 4, 5, 6\}
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -105,9 +108,12 @@ Solución
 Dado que el tiempo que puede tardar el decano en salir de la oficina
 para comprar un tinto puede ser, $0$ minutos, $1.2$ minutos, $3$
 horas, $20$ días, etc, etc, se tendrá que el espacio muestral será de
-la forma. $$\begin{align*}
+la forma. 
+$$
+\begin{align*}
 S =\{\mathbb{t \in R^+ | t \geq 0}\}
-\end{align*}$$
+\end{align*}
+$$
 
 siendo $t$ el <strong>tiempo en minutos</strong> que tarda el decano
 en salir de la oficina para comprar un tinto en la burbuja.
@@ -185,23 +191,32 @@ por tanto…
 <li>
 Dado que los números primos entre el $1$ y el $6$ están dados por
 $2, 3, 5$, entones se tendrá que el evento $A_1$ es un
-<strong>evento compuesto</strong> y estará dado por $$\begin{align*}
+<strong>evento compuesto</strong> y estará dado por 
+$$
+\begin{align*}
             A_1 = \{2, 3, 5\}
-        \end{align*}$$
+        \end{align*}
+$$
 </li>
 <li>
 Dado que solo nos piden un evento que contenga el número $3$, se
 tendrá que el evento $A_2$ es un <strong>evento simple</strong> y
-estará dado por $$\begin{align*}
+estará dado por 
+$$
+\begin{align*}
             A_2 = \{3\}
-        \end{align*}$$
+        \end{align*}
+$$
 </li>
 <li>
 Dado que no es posible obtener un $8$ en un dado convencional de $6$
 caras, entonces se tendrá que el evento $A_3$ es un <strong>evento
-imposible</strong> y estará dado por $$\begin{align*}
+imposible</strong> y estará dado por 
+$$
+\begin{align*}
             A_3 = \{\phi\}
-        \end{align*}$$
+        \end{align*}
+$$
 </li>
 </ul>
 </li>
@@ -214,9 +229,13 @@ tanto…
 <li>
 Dado que nos están restringiendo el tiempo en el cual puede salir el
 decano de la oficina a menos de $1$ hora, entonces se tendrá que el
-evento $B_1$ estará dado por $$\begin{align*}
+evento $B_1$ estará dado por 
+$$
+\begin{align*}
               B_1 =\{\mathbb{t \in R^+ | 0 \leq t < 60}\}
-        \end{align*}$$ siendo $t$ el <strong>tiempo en
+        \end{align*}
+$$
+ siendo $t$ el <strong>tiempo en
 minutos</strong> que tarda el decano en salir de la oficina para comprar
 un tinto en la burbuja.
 </li>
@@ -224,9 +243,13 @@ un tinto en la burbuja.
 Similar al punto anterior, dado que nos están restringiendo el tiempo en
 el cual puede salir el decano de la oficina a un lapso entre $20$
 minutos y $70$ minutos, entonces se tendrá que el evento $B_2$
-estará dado por $$\begin{align*}
+estará dado por 
+$$
+\begin{align*}
               B_2 =\{\mathbb{t \in R^+ | 20 < t < 70}\}
-        \end{align*}$$ siendo $t$ el <strong>tiempo en
+        \end{align*}
+$$
+ siendo $t$ el <strong>tiempo en
 minutos</strong> que tarda el decano en salir de la oficina para comprar
 un tinto en la burbuja.
 </li>
@@ -290,34 +313,45 @@ Solución
 <li>
 
 Como el evento $A_1$ está dado por $A_1 = \{2, 3, 5\}$, entonces su
-<strong>complemento</strong> $A_1'$ estará dado por $$\begin{align*}
+<strong>complemento</strong> $A_1'$ estará dado por 
+$$
+\begin{align*}
       A_1' = \{1, 4, 6\}
-  \end{align*}$$
+  \end{align*}
+$$
 
 </li>
 <li>
 Como el evento $B_1$ está dado por
 $B_1 =\{\mathbb{t \in R^+ | 0 \leq t \lt  60}\}$, y el evento $B_2$
 está dado por $B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}$, entonces la
-<strong>unión</strong> $B_1\cup B_2$ estará dado por $$\begin{align*}
+<strong>unión</strong> $B_1\cup B_2$ estará dado por 
+$$
+\begin{align*}
       B_1\cup B_2 = \{\mathbb{t \in R^+ | 0 \leq t < 70}\}
-  \end{align*}$$
+  \end{align*}
+$$
 </li>
 <li>
 Como el evento $A_1$ está dado por $A_1 = \{2, 3, 5\}$, y el evento
 $A_2$ está dado por $A_2 = \{3\}$, entonces se tendrá que la
 <strong>intersección</strong> $A_1\cap A_2$ estará dado por
-$$\begin{align*}
+$$
+\begin{align*}
       A_1\cap A_2 = \{3\} = A_2
-  \end{align*}$$
+  \end{align*}
+$$
 </li>
 <li>
 Como el evento $B_2$ está dado por
 $B_2 =\{\mathbb{t \in R^+ | 20 \lt  t \lt  70}\}$ entonces un evento
 <strong>mutuamente excluyente</strong> podría ser de la forma
-$$\begin{align*}
+$$
+\begin{align*}
       B_3 = \{\mathbb{t \in R^+ | 80 < t < 120}\}
-  \end{align*}$$ tal que $B_2\cap B_3 = \phi$.
+  \end{align*}
+$$
+ tal que $B_2\cap B_3 = \phi$.
 </li>
 </ol>
 </main>
@@ -424,7 +458,9 @@ La probabilidad es una medida asociada a la posibilidad de que ocurra un
 determinado evento, en donde, la forma forma tradicional de estimar la
 probabilidad es mediante el concepto de frecuencia relativa.
 
-$$\begin{align*}\text{Frecuencia relativa} = \frac{\text{Número de puntos muestrales del evento de interés}}{\text{Total puntos en el espacio muestral}}\end{align*}$$
+$$
+\begin{align*}\text{Frecuencia relativa} = \frac{\text{Número de puntos muestrales del evento de interés}}{\text{Total puntos en el espacio muestral}}\end{align*}
+$$
 
 
 <button id="Show5" class="btn btn-secondary">
@@ -470,63 +506,78 @@ Solución
 Dado que el número de bolas negras (éxitos) en la bolsa es $3$ y el
 total de bolas en la bolsa es $10$, se tendrá que la frecuencia
 relativa o probabilidad de sacar una bola negra de la bolsa es
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(N) & = \frac{\text{Número de bolas negras en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{3}{10} \\ 
 & = 0.3
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que el número de bolas azules (éxitos) en la bolsa es $5$ y el
 total de bolas en la bolsa es $10$, se tendrá que la frecuencia
 relativa o probabilidad de sacar una bola azul de la bolsa es
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(A) & = \frac{\text{Número de bolas azules en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{5}{10} \\ 
 & = 0.5
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que no hay ninguna bola roja (éxitos) en la bolsa, entonces, la
 frecuencia relativa o probabilidad de sacar una bola roja de la bolsa en
-la que hay de $10$ bolas es $$\begin{align*}
+la que hay de $10$ bolas es 
+$$
+\begin{align*}
 \mathbb{P}(R) & = \frac{\text{Número de bolas rojas en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{0}{10} \\ 
 & = 0.0
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 Dado que el número de bolas verdes (éxitos) en la bolsa es $2$ y el
 total de bolas en la bolsa es $10$, se tendrá que la frecuencia
 relativa o probabilidad de sacar una bola verde de la bolsa es
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(V) & = \frac{\text{Número de bolas verdes en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{2}{10} \\ 
 & = 0.2
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 Dado que la suma del número de bolas negras y bolas azules (éxitos) en
 la bolsa es $8$ y el total de bolas en la bolsa es $10$, se tendrá
 que la frecuencia relativa o probabilidad de sacar una bola negra o una
-bola azul de la bolsa es $$\begin{align*}
+bola azul de la bolsa es 
+$$
+\begin{align*}
 \mathbb{P}(N \text{ ó } A) & = \frac{\text{Número de bolas negras o azules en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{8}{10} \\ 
 & = 0.8
-\end{align*}$$
+\end{align*}
+$$
 
 Similarmente, puede llegarse al mismo resultado mediante el empleo de
 teoría de conjuntos, en donde
 $\mathbb{P}(N \text{ ó } A) = \mathbb{P}(N \cup A)$, y como los
 eventos $N$ y $A$ son <strong>mutuamente excluyentes</strong>, es
 decir, $N\cap A = \phi$, entonces la probabilidad de sacar una bola
-negra o una bola azul será igual a $$\begin{align*}
+negra o una bola azul será igual a 
+$$
+\begin{align*}
 \mathbb{P}(N \cup A) & = \mathbb{P}(N) + \mathbb{P}(A) \\
 & = \frac{3}{10} + \frac{5}{10} \\
 & = \frac{8}{10} \\ 
 & = 0.8
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
@@ -534,24 +585,30 @@ Dado que la suma del número de bolas negras y bolas rojas es de $3$,
 entonces el número de bolas en la bolsa que NO SON negras y NO SON rojas
 es de $7$, y por tanto, se tendrá que la frecuencia relativa o
 probabilidad de NO SACAR una bola negra y NO SACAR una bola bola roja de
-la bolsa es $$\begin{align*}
+la bolsa es 
+$$
+\begin{align*}
 \mathbb{P}(N' \text{ y } R') & = \frac{\text{Número de bolas que NO SON negras} \\ \text{ y NO SON rojas en la bolsa}}{\text{Total de bolas en la bolsa}} \\ 
 & = \frac{7}{10} \\
 & = 0.7
-\end{align*}$$
+\end{align*}
+$$
 
 Mediante teoría de conjuntos, $\mathbb{P}(N' \text{ y } R') =$
 $\mathbb{P}(N' \cap R') =$ $1 - \mathbb{P}(N \cup R)$, y como los
 eventos $N$ y $R$ son <strong>mutuamente excluyentes</strong>, es
 decir, $N\cap R = \phi$, entonces la probabilidad de NO SACAR una bola
-negra y NO SACAR una bola roja será igual a $$\begin{align*}
+negra y NO SACAR una bola roja será igual a 
+$$
+\begin{align*}
 \mathbb{P}(N' \cap R') & = 1 - \mathbb{P}(N \cup R) \\ 
 & = 1 - (\mathbb{P}(N) + \mathbb{P}(R)) \\ 
 & = 1 - \left(\frac{3}{10} + \frac{0}{10}\right) \\
 & = 1 - \frac{3}{10} \\
 & = \frac{7}{10} \\ 
 & = 0.7
-\end{align*}$$
+\end{align*}
+$$
 </li>
 </ol>
 </main>
@@ -566,7 +623,9 @@ entonces se deben cumplir los siguientes tres axiomas
 -   **Axioma 3-** Si `$A_1, A_2, \ldots$` son eventos **mutuamente
     excluyentes**, entonces
     
-$$\begin{align*}\mathbb P(A_1\cup A_2\cup A_3\cup\ldots)=\sum_{i=1}^\infty \mathbb P(A_i)\end{align*}$$
+$$
+\begin{align*}\mathbb P(A_1\cup A_2\cup A_3\cup\ldots)=\sum_{i=1}^\infty \mathbb P(A_i)\end{align*}
+$$
 
 
 ### Propiedades de probabilidad

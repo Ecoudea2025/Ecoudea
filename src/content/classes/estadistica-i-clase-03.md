@@ -16,7 +16,9 @@ Se dice que la variable aleatoria `$X$` tiene una distribución Normal
 con parámetros `$\mu$` y `$\sigma^2)$`, si su función de densidad de
 probabilidad es de la forma
 
-$$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x - \mu)^2}{2\sigma^2}} & -\infty<x<\infty, -\infty<\mu<\infty, \sigma^2>0 \\ 0 & \text{en otro caso} \end{cases}\end{align*}
+$$
 
 
 #### Teorema
@@ -24,7 +26,9 @@ $$\begin{align*}f(x) = \begin{cases} \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x -
 Si `$X\sim N(\mu, \sigma^2)$`, entonces se puede probar que la media y
 la varianza de la variable aleatoria `$X$` están dadas por
 
-$$\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(X)=\mu \quad \quad Var(X)=\sigma^2\end{align*}
+$$
 
 
 ### Distribución Normal estándar
@@ -36,7 +40,9 @@ estándar, cuya variable aleatoria se simboliza con `$Z$`, tal que
 dada por
 
 
-$$\begin{align*}f(z) = \begin{cases} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} & -\infty<z<\infty \\ 0 & \text{en otro caso} \end{cases}\end{align*}$$
+$$
+\begin{align*}f(z) = \begin{cases} \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}} & -\infty<z<\infty \\ 0 & \text{en otro caso} \end{cases}\end{align*}
+$$
 
 
 ### Teorema de Estandarización
@@ -144,7 +150,9 @@ siguiente imagen
 
 Donde se aprecia que
 
-$$\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}$$
+$$
+\begin{align*}\mathbb{P}(Z\leq 1.96)=0.9750\end{align*}
+$$
 
 </li>
 <li>
@@ -155,9 +163,12 @@ establecida por la tabla $\mathbb{P}(Z\leq z)$, y por tanto, será
 necesario emplear el complemento de la probabilidad propuesta para
 obtener una estructura similar a la propuesta por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z> 2.13)= 1 - \mathbb{P}(Z\leq 2.13)
-\end{align*}$$ En donde, se aprecia que ahora podemos calcular la
+\end{align*}
+$$
+ En donde, se aprecia que ahora podemos calcular la
 $\mathbb{P}(Z\gt  2.13)$, mediante el empleo de la
 $\mathbb{P}(Z\leq 2.13)$, la cual podemos buscar en la tabla
 directamente. Para localizar $\mathbb{P}(Z\leq 2.13)$, se busca el
@@ -169,17 +180,21 @@ valores, se encontrará el valor de la probabilidad asociada a $2.13$.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z\leq 2.13)=0.9834
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z> 2.13)&= 1 - \mathbb{P}(Z\leq 2.13)\\
                    &= 1 - 0.9834 \\
                    &= 0.0166
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 <li>
@@ -192,9 +207,12 @@ acumulada para el caso continuo, ya presentadas en la
 <a href="https://jiperezga.github.io/EstadisticaI/EstIClase08.html#función-de-distribución-acumulada-caso-continuo">Clase
 08</a>, podemos llevar la probabilidad de interés a la forma
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) = \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)
-\end{align*}$$ obteniendo que la probabilidad
+\end{align*}
+$$
+ obteniendo que la probabilidad
 $\mathbb{P}(-2.42 \lt Z \leq 0.24)$, puede calcularse mediante el empleo
 de las probabilidades acumuladas $\mathbb{P}(Z \leq 0.24)$ y
 $\mathbb{P}(Z \leq -2.42)$, las cuales pueden calcularse en la tabla
@@ -204,36 +222,44 @@ de forma similar a los dos puntos anteriores.
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z \leq -2.42)=0.0078 \quad \text{ y } \quad \mathbb{P}(Z \leq 0.24)=0.5948
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(-2.42 <Z \leq 0.24) &= \mathbb{P}(Z \leq 0.24) - \mathbb{P}(Z \leq -2.42)\\
                                &= 0.5948 - 0.0078  \\
                                &= 0.587
-\end{align*}$$
+\end{align*}
+$$
 </li>
 <li>
 
 En este punto, a diferencia de los puntos anteriores, no están dando el
 valor de la probabilidad y nos piden encontrar el valor crítico $z$.
 Es decir debemos calcular el valor crítico asociado a la probabilidad
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z>z) = 0.0129
-\end{align*}$$
+\end{align*}
+$$
 
 Y para ello, debemos llevar inicialmente la estructura de la
 probabilidad, a la estructura manejada por la tabla, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z>z) &= 0.0129 \\
 1 - \mathbb{P}(Z\leq z) &= 0.0129 \\
 1- 0.0129 &= \mathbb{P}(Z\leq z) \\
 0.9871 &= \mathbb{P}(Z\leq z)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde observamos que la probabilidad $\mathbb{P}(Z\leq z)$ ya posee
 la estructura de la tabla, y en consecuencia, podemos proceder a
@@ -246,15 +272,19 @@ valor crítico $z$ asociado a dicha probabilidad.
 En la tabla se aprecia, que al buscar la probabilidad $0.9871$
 encontramos que el valor crítico $z$ asociado es de $2.24$, es decir
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z\leq 2.24) &= 0.9871
-\end{align*}$$
+\end{align*}
+$$
 
 o equivalentemente
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z > 2.24) &= 0.0129
-\end{align*}$$
+\end{align*}
+$$
 
 </li>
 </ol>
@@ -283,22 +313,34 @@ Solución
 
 En este caso estamos interesados en que la batería de una celular dure
 al menos $4$ años, es decir, queremos calcular la siguiente
-probabilidad. $$\begin{align*}
+probabilidad. 
+$$
+\begin{align*}
 \mathbb{P}(X \geq 4)
-\end{align*}$$ Pero en este caso tenemos que la distribución de los
+\end{align*}
+$$
+ Pero en este caso tenemos que la distribución de los
 datos no se distribuye $N(0,1)$, si no que se distribuye
 $N(5, 1.2)$, y por ello debemos aplicar el teorema de estandarización,
 con el fin de llevar la distribución $N(5, 1.2)$ a una normal
-estándar, tal que $$\begin{align*}
+estándar, tal que 
+$$
+\begin{align*}
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}\left(\frac{X-\mu}{\sigma}\geq \frac{4-5}{1.2}\right)\\
 \mathbb{P}(X \geq 4)&=\mathbb{P}(Z \geq -0.83)
-\end{align*}$$ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
+\end{align*}
+$$
+ En donde $Z\sim N(0,1)$. Ahora, como la estructura de
 la probabilidad de $Z$ no posee la estructura de la probabilidad de se
 maneja en la tabla, entonces procedemos a calcular el complemento de la
-probabilidad, tal que $$\begin{align*}
+probabilidad, tal que 
+$$
+\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
-\end{align*}$$ y en consecuencia podemos ahora buscar la probabilidad
+\end{align*}
+$$
+ y en consecuencia podemos ahora buscar la probabilidad
 $\mathbb{P}(Z \lt  -0.83)$ en la tabla de la distribución normal
 estándar, de la siguiente manera
 
@@ -306,24 +348,30 @@ estándar, de la siguiente manera
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z < -0.83)=0.2033
-\end{align*}$$
+\end{align*}
+$$
 
 y por tanto, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z \geq -0.83)&= 1 - \mathbb{P}(Z < -0.83) \\
                         &= 1 - 0.2033 \\
                         &= 0.7967
-\end{align*}$$
+\end{align*}
+$$
 
 lo cual es equivalente a
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \geq 4)&= \mathbb{P}(Z \geq -0.83) \\
                     &= 0.7967
-\end{align*}$$
+\end{align*}
+$$
 
 En consecuencia, se tendrá que la probabilidad de que una batería de
 celular dure al menos $4$ años, es del $76.67\%$.
@@ -341,7 +389,9 @@ Si `$X\sim b(n,p)$` con `$n$` grande `$(n\geq 30)$` y `$p$` cercano a
 
 Además, se tendrá que `$Z\stackrel{a}{\sim}N(0,1)$`, tal que
 
-$$\begin{align*}Z=\frac{x-np}{\sqrt{np(1-p)}}\stackrel{a}{\sim}N(0,1)\end{align*}$$
+$$
+\begin{align*}Z=\frac{x-np}{\sqrt{np(1-p)}}\stackrel{a}{\sim}N(0,1)\end{align*}
+$$
 
 
 La aproximación será buena si `$np$` y `$n(1-p)>5$`.
@@ -349,7 +399,9 @@ La aproximación será buena si `$np$` y `$n(1-p)>5$`.
 **Nota:** Para realizar la aproximación de binomial a normal, se debe
 usar un factor de corrección de continuidad de 0.5, así
 
-$$\begin{align*}\text{Binomial} & & & & \text{Normal} \quad \quad \quad \quad \quad \\ \mathbb{P}(X\leq a) & & & & \mathbb{P}(X\leq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X<a) & & & & \mathbb{P}(X\leq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X\geq a) & & & & \mathbb{P}(X\geq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X>a) & & & & \mathbb{P}(X\geq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X=a) & & & & \mathbb{P}(a - 0.5 \leq X\leq a + 0.5)\end{align*}$$
+$$
+\begin{align*}\text{Binomial} & & & & \text{Normal} \quad \quad \quad \quad \quad \\ \mathbb{P}(X\leq a) & & & & \mathbb{P}(X\leq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X<a) & & & & \mathbb{P}(X\leq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X\geq a) & & & & \mathbb{P}(X\geq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X>a) & & & & \mathbb{P}(X\geq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X=a) & & & & \mathbb{P}(a - 0.5 \leq X\leq a + 0.5)\end{align*}
+$$
 
 
 <button id="Show4" class="btn btn-secondary">
@@ -380,10 +432,13 @@ que menos de $220$ personas mueran antes de los $62$ años, y se toma
 como grupo de estudio un total de $1500$ personas, sabiendo que la
 probabilidad de que mueran antes de los $62$ es del $15\%$, es
 decir, tenemos que $X\sim b(n=1500, p=0.15)$, y deseamos calcular
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X<220)&= \sum_{x=0}^{219} \left(\begin{array}{c}1500\\ x\end{array}\right) (0.15)^x(0.85)^{1500-x} \\
                  &= 0.3480602
-\end{align*}$$ Es de anotar que el valor de la probabilidad presentada
+\end{align*}
+$$
+ Es de anotar que el valor de la probabilidad presentada
 no es posible calcularla en una calculadora, debido a que las
 limitaciones que posee ésta, no permiten calcular una combinatoria de
 tal magnitud, y en consecuencia, resulta el intento de calcular dicha
@@ -397,37 +452,47 @@ calculadora, se procede a la aplicación del teorema de aproximación a la
 distribución normal, si $X\sim b(n=1500, p=0.15)$ entonces se tendrá
 que la media será igual a
 $X\stackrel{a}{\sim}N(\mu=np,\sigma^2=np(1-p))$, en donde
-$$\begin{align*}
+$$
+\begin{align*}
 \mu &= np \\
     &= 1500(0.15) \\
     &= 225
-\end{align*}$$
+\end{align*}
+$$
 
 y la varianza igual a
 
-$$\begin{align*}
+$$
+\begin{align*}
 \sigma^2 &= np(1-p) \\
          &= 1500(0.15)(0.85) \\
          &= 191.25
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, conocidos los parámetros $\mu=225$ y
 $\sigma=\sqrt{191.25}=13.82932$, se procede al cálculo de la
 probabilidad de interés, en donde, al aplicar el factor corrector de
-continuidad a la probabilidad se tendrá que $$\begin{align*}
+continuidad a la probabilidad se tendrá que 
+$$
+\begin{align*}
 \text{Binomial} & & & & \text{Normal} \quad \quad \quad \quad \quad \\
 \mathbb{P}(X< 220) & & & & \mathbb{P}(X\leq 220 - 0.5) \quad \quad \quad \quad \; \\
-\end{align*}$$ es decir que, si $X\sim b(n=1500, p=0.15)$ estamos
+\end{align*}
+$$
+ es decir que, si $X\sim b(n=1500, p=0.15)$ estamos
 interesados en calcular $\mathbb{P}(X\lt  220)$, mientras que si
 $X\stackrel{a}{\sim}N(\mu=225,\sigma^2=191.25)$ estaríamos interesados
 en calcular $\mathbb{P}(X\leq 219.5)$. Por tanto, al aplicar el
 teorema de estandarización para transformar dicha probabilidad una
 distribución normal estándar, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \leq 219.5) &= \mathbb{P}\left(\frac{X-\mu}{\sigma}\leq \frac{219.5 - 225}{13.82932}\right)\\
                      &= \mathbb{P}(Z \leq -0.40)
-\end{align*}$$
+\end{align*}
+$$
 
 En donde se aprecia que la $\mathbb{P}(Z \leq -0.40)$ tiene la misma
 estructura establecida por la tabla de distribución normal estándar
@@ -439,14 +504,20 @@ dicho valor, tal que
 
 Donde se aprecia que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(Z \leq -0.40)=0.3446
-\end{align*}$$ o equivalentemente, se tendrá que
+\end{align*}
+$$
+ o equivalentemente, se tendrá que
 
-$$\begin{align*}
+$$
+\begin{align*}
 \mathbb{P}(X \leq 219.5) &= \mathbb{P}(Z \leq -0.40) \\
                          &= 0.3446
-\end{align*}$$ Es decir que la probabilidad aproximada de que menos de
+\end{align*}
+$$
+ Es decir que la probabilidad aproximada de que menos de
 $220$ personas mueran de los $1500$ antes de llegar a los $62$
 años, es del $34.46\%$. <br> <br>
 
@@ -466,10 +537,14 @@ entonces se dice que `$X\stackrel{a}{\sim}N(\mu,\sigma^2)$` donde
 
 Además, se tendrá que `$Z\stackrel{a}{\sim}N(0,1)$`, tal que
 
-$$\begin{align*}Z=\frac{x-\lambda}{\sqrt{\lambda}}\stackrel{a}{\sim}N(0,1)\end{align*}$$
+$$
+\begin{align*}Z=\frac{x-\lambda}{\sqrt{\lambda}}\stackrel{a}{\sim}N(0,1)\end{align*}
+$$
 
 
 **Nota:** Para realizar la aproximación de Poisson a Normal, se debe
 usar el mismo factor de corrección de continuaidad de 0.5, así
 
-$$\begin{align*}\text{Poisson} & & & & \text{Normal} \quad \quad \quad \quad \quad \\ \mathbb{P}(X\leq a) & & & & \mathbb{P}(X\leq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X<a) & & & & \mathbb{P}(X\leq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X\geq a) & & & & \mathbb{P}(X\geq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X>a) & & & & \mathbb{P}(X\geq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X=a) & & & & \mathbb{P}(a - 0.5 \leq X\leq a + 0.5)\end{align*}$$
+$$
+\begin{align*}\text{Poisson} & & & & \text{Normal} \quad \quad \quad \quad \quad \\ \mathbb{P}(X\leq a) & & & & \mathbb{P}(X\leq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X<a) & & & & \mathbb{P}(X\leq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X\geq a) & & & & \mathbb{P}(X\geq a - 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X>a) & & & & \mathbb{P}(X\geq a + 0.5) \quad \quad \quad \quad \; \\ \mathbb{P}(X=a) & & & & \mathbb{P}(a - 0.5 \leq X\leq a + 0.5)\end{align*}
+$$

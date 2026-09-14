@@ -66,7 +66,9 @@ Entonces, un filtro lineal puede definirse como un operador que
 transforma una serie `$Y_t$`, a otra serie `$\bar{Y}_t$`, para
 `$t = 1,2, \ldots, T$` mediante la formula
 
-$$\begin{align*}\bar{Y}_t=\sum_{i=-k}^{k}w_iY_{t-i}\end{align*}$$
+$$
+\begin{align*}\bar{Y}_t=\sum_{i=-k}^{k}w_iY_{t-i}\end{align*}
+$$
 
 
 para `$t=k+1,k+2, \ldots, T-k$`, donde `$i=0,\pm1,\pm2,\ldots, \pm k$`
@@ -85,7 +87,9 @@ Los promedios simples se basan en el hecho de que todos los `$w_i$`
 poseen la misma ponderación, la cual es igual a `$w_i=\frac{1}{t}$`, y a
 partir de éstas ponderaciones, se obtiene una ecuación de la forma
 
-$$\begin{align*}PS_{t}=\frac{1}{t}\sum_{i=1}^{t}{Y_{i}}\end{align*}$$
+$$
+\begin{align*}PS_{t}=\frac{1}{t}\sum_{i=1}^{t}{Y_{i}}\end{align*}
+$$
 
 
 para `$i=1,2,\ldots,t$`, con `$t=1,2,\ldots,T$` y siendo `$T$` el total
@@ -106,12 +110,16 @@ media, con variabilidad pequeña y sin ningún tipo de tendencia.
 
 Adicionalmente, en los promedios simples, el ajuste de las observaciones
 se hace de la forma 
-$$\begin{align*}\hat{Y}_{t+1}=PS_t\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}=PS_t\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
-$$\begin{align*}\hat{Y}_{T+h}=PS_{T+h-1}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}=PS_{T+h-1}\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.
@@ -131,7 +139,9 @@ Para un ancho de ventana de orden `$k$`, se tendrá que en el caso de
 promedio móvil unilateral, las ponderaciones `$w_i$` serán de la forma
 `$w_i=\frac{1}{k}$`, y en consecuencia, el estadístico estará dado por
 
-$$\begin{align*}PMU_{t}=\frac{1}{k}\sum_{i=0}^{k-1}Y_{t-i}\end{align*}$$
+$$
+\begin{align*}PMU_{t}=\frac{1}{k}\sum_{i=0}^{k-1}Y_{t-i}\end{align*}
+$$
 
 
 <!-- Puede realizarse mediante la librerías TTR con la función SMA -->
@@ -141,7 +151,9 @@ Mientras que, en el caso de media móvil bilateral las ponderaciones
 serán de la forma `$w_i=\frac{1}{2m+1}$`, y por tanto, el estadístico se
 define como
 
-$$\begin{align*}PMB_{t}=\frac{1}{2k+1}\sum_{i=-k}^{k}Y_{t-i}\end{align*}$$
+$$
+\begin{align*}PMB_{t}=\frac{1}{2k+1}\sum_{i=-k}^{k}Y_{t-i}\end{align*}
+$$
 
 
 para `$t=k+1,k+2, \ldots, T-k$`, con `$i=0,\pm 1,\pm 2,\ldots,\pm k$` y
@@ -164,13 +176,17 @@ frecuentes en las series.
 Es de anotar que en los promedios móviles simples, el ajuste de las
 observaciones se hace de la forma
 
-$$\begin{align*}\hat{Y}_{t+1}= \begin{cases} PMU_t & \text{ en el caso de promedios móviles unilaterales} \\ PMB_t & \text{ en el caso de promedios móviles bilaterales} \end{cases}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}= \begin{cases} PMU_t & \text{ en el caso de promedios móviles unilaterales} \\ PMB_t & \text{ en el caso de promedios móviles bilaterales} \end{cases}\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{T+h}= \begin{cases} PMU_{T+h-1} & \text{ en el caso de promedios móviles unilaterales} \\ PMB_{T+h-1} & \text{ en el caso de promedios móviles bilaterales} \end{cases}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}= \begin{cases} PMU_{T+h-1} & \text{ en el caso de promedios móviles unilaterales} \\ PMB_{T+h-1} & \text{ en el caso de promedios móviles bilaterales} \end{cases}\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar. Adicionalmente, en el
@@ -200,17 +216,23 @@ así sucesivamente.
 En general la ecuación de suavizamiento exponencial puede ser escrita
 como
 
-$$\begin{align}\label{eq:1} \hat{Y}_{t+1}=\alpha Y_{t} + \alpha(1-\alpha) Y_{t-1} + \alpha(1-\alpha)^2 Y_{t-2} + \alpha(1-\alpha)^3 Y_{t-3} + \ldots\end{align}$$
+$$
+\begin{align}\label{eq:1} \hat{Y}_{t+1}=\alpha Y_{t} + \alpha(1-\alpha) Y_{t-1} + \alpha(1-\alpha)^2 Y_{t-2} + \alpha(1-\alpha)^3 Y_{t-3} + \ldots\end{align}
+$$
 
 
 Con el fin de simplificar la formula anterior, observemos que
 
-$$\begin{align*}\hat{Y}_{t}=\alpha Y_{t-1} + \alpha(1-\alpha) Y_{t-2} + \alpha(1-\alpha)^2 Y_{t-3} + \alpha(1-\alpha)^3 Y_{t-4} + \ldots\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t}=\alpha Y_{t-1} + \alpha(1-\alpha) Y_{t-2} + \alpha(1-\alpha)^2 Y_{t-3} + \alpha(1-\alpha)^3 Y_{t-4} + \ldots\end{align*}
+$$
 
 
 lo cual es equivalente a
 
-$$\begin{align}\label{eq:2} (1-\alpha)\hat{Y}_{t}=\alpha(1-\alpha) Y_{t-1} + \alpha(1-\alpha)^2 Y_{t-2} + \alpha(1-\alpha)^3 Y_{t-3} + \alpha(1-\alpha)^4 Y_{t-4} + \ldots\end{align}$$
+$$
+\begin{align}\label{eq:2} (1-\alpha)\hat{Y}_{t}=\alpha(1-\alpha) Y_{t-1} + \alpha(1-\alpha)^2 Y_{t-2} + \alpha(1-\alpha)^3 Y_{t-3} + \alpha(1-\alpha)^4 Y_{t-4} + \ldots\end{align}
+$$
 
 
 <!-- Corregir la estimación!!! a partir de lo visto en la clase 05 de suavización doble de brown -->
@@ -219,12 +241,16 @@ y por tanto, al reemplazar (\\ref{eq:2}) en (\\ref{eq:1}), se obtiene
 una expresión más sencilla para el cálculo del método de suavizamiento,
 la cual está dada por
 
-$$\begin{align*}SES_{t+1} = \hat{Y}_{t+1}=\alpha Y_{t} + (1-\alpha)\hat{Y}_{t}\end{align*}$$
+$$
+\begin{align*}SES_{t+1} = \hat{Y}_{t+1}=\alpha Y_{t} + (1-\alpha)\hat{Y}_{t}\end{align*}
+$$
 
 
 o equivalentemente
 
-$$\begin{align*}SES_{t+1} = \hat{Y}_{t+1}=\hat{Y}_{t}+\alpha(Y_{t}-\hat{Y}_{t})\end{align*}$$
+$$
+\begin{align*}SES_{t+1} = \hat{Y}_{t+1}=\hat{Y}_{t}+\alpha(Y_{t}-\hat{Y}_{t})\end{align*}
+$$
 
 
 Hanke and Wichern ([2010](#ref-Hanke2010), p. 120) señalan que, el valor
@@ -255,12 +281,16 @@ exponencial.
 
 Para ajustar las demás observaciones, se hace de la forma
 
-$$\begin{align*}\hat{Y}_{t+1} = \hat{Y}_{t}+\alpha(Y_{t}-\hat{Y}_{t})\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1} = \hat{Y}_{t}+\alpha(Y_{t}-\hat{Y}_{t})\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
-$$\begin{align*}\hat{Y}_{T+h} = \hat{Y}_{T+h-1}+\alpha(Y_{T+h-1}-\hat{Y}_{T+h-1})\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h} = \hat{Y}_{T+h-1}+\alpha(Y_{T+h-1}-\hat{Y}_{T+h-1})\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.

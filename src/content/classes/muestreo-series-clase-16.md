@@ -39,25 +39,33 @@ estimar las siguientes cuatro ecuaciones
 -   La serie suavizada exponencialmente o nivel actual estimado
 
 
-$$\begin{align*}a_t=\alpha (Y_t-S_{t-s}) + (1 - \alpha) (a_{t-1} + b_{t-1})\end{align*}$$
+$$
+\begin{align*}a_t=\alpha (Y_t-S_{t-s}) + (1 - \alpha) (a_{t-1} + b_{t-1})\end{align*}
+$$
 
 
 -   La estimación de la tendencia
 
 
-$$\begin{align*}b_t=\beta (a_t-a_{t-1}) + (1 - \beta) b_{t-1}\end{align*}$$
+$$
+\begin{align*}b_t=\beta (a_t-a_{t-1}) + (1 - \beta) b_{t-1}\end{align*}
+$$
 
 
 -   la estimado de estacionalidad
 
 
-$$\begin{align*}S_t=\gamma (Y_t-a_t) + (1 - \gamma) S_{t-s}\end{align*}$$
+$$
+\begin{align*}S_t=\gamma (Y_t-a_t) + (1 - \gamma) S_{t-s}\end{align*}
+$$
 
 
 -   El modelo a estimar
 
 
-$$\begin{align*}\hat{Y}_{t+p}=a_t + b_t p + S_{t-s+p}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+p}=a_t + b_t p + S_{t-s+p}\end{align*}
+$$
 
 
 donde `$a_t$` es la estimación del intercepto o del nuevo nivel del
@@ -97,13 +105,17 @@ realizarse el ajuste de las observaciones para la suavización de
 Holt-winters aditivo de la forma
 
 
-$$\begin{align*}\hat{Y}_{t+1}=a_t + b_t + S_{t-s+1}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}=a_t + b_t + S_{t-s+1}\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{T+h}=a_T + b_T h + S_{T-s+h}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}=a_T + b_T h + S_{T-s+h}\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.
@@ -117,25 +129,33 @@ las siguientes cuatro ecuaciones
 -   La serie suavizada exponencialmente o nivel actual estimado
 
 
-$$\begin{align*}a_t=\alpha \left(\frac{Y_t}{S_{t-s}}\right) + (1 - \alpha) (a_{t-1} + b_{t-1})\end{align*}$$
+$$
+\begin{align*}a_t=\alpha \left(\frac{Y_t}{S_{t-s}}\right) + (1 - \alpha) (a_{t-1} + b_{t-1})\end{align*}
+$$
 
 
 -   La estimación de la tendencia
 
 
-$$\begin{align*}b_t=\beta (a_t-a_{t-1}) + (1 - \beta) b_{t-1}\end{align*}$$
+$$
+\begin{align*}b_t=\beta (a_t-a_{t-1}) + (1 - \beta) b_{t-1}\end{align*}
+$$
 
 
 -   la estimado de estacionalidad
 
 
-$$\begin{align*}S_t=\gamma \left(\frac{Y_t}{a_t}\right) + (1 - \gamma) S_{t-s}\end{align*}$$
+$$
+\begin{align*}S_t=\gamma \left(\frac{Y_t}{a_t}\right) + (1 - \gamma) S_{t-s}\end{align*}
+$$
 
 
 -   El modelo a estimar
 
 
-$$\begin{align*}\hat{Y}_{t+p}=(a_t + b_t p)S_{t-s+p}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+p}=(a_t + b_t p)S_{t-s+p}\end{align*}
+$$
 
 
 donde `$a_t$` es la estimación del intercepto o del nuevo nivel del
@@ -177,13 +197,17 @@ realizarse el ajuste de las observaciones para la suavización de
 Holt-winters aditivo de la forma
 
 
-$$\begin{align*}\hat{Y}_{t+1}=(a_t + b_t) S_{t-s+1}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{t+1}=(a_t + b_t) S_{t-s+1}\end{align*}
+$$
 
 
 mientras que, el ajuste de pronósticos se hace de la forma
 
 
-$$\begin{align*}\hat{Y}_{T+h}=(a_T + b_T h) S_{Y-s+h}\end{align*}$$
+$$
+\begin{align*}\hat{Y}_{T+h}=(a_T + b_T h) S_{Y-s+h}\end{align*}
+$$
 
 
 siendo `$h$` el número de periodos a pronosticar.

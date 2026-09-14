@@ -35,7 +35,9 @@ Suponga que se tiene una variable respuesta `$Y$` y un conjunto de `$k$`
 variables explicativas `$X_1, X_2, \ldots, X_k$`. El modelo de regresión
 lineal múltiple está dado por
 
-$$\begin{align*}Y=\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon \quad \quad (I)\end{align*}$$
+$$
+\begin{align*}Y=\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon \quad \quad (I)\end{align*}
+$$
 
 
 donde
@@ -60,7 +62,9 @@ donde
 necesariamente en las variables explicativas. Por ejemplo, el modelo
 polinomial
 
-$$\begin{align*}Y=\beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon\end{align*}$$
+$$
+\begin{align*}Y=\beta_0 + \beta_1 X + \beta_2 X^2 + \varepsilon\end{align*}
+$$
 
 es un modelo de regresión lineal múltiple, ya que puede reescribirse
 tomando `$X_1 = X$` y `$X_2=X^2$`.
@@ -72,7 +76,9 @@ tomando `$X_1 = X$` y `$X_2=X^2$`.
     con `$n > k+1$`, las cuales se supone que satisfacen el modelo
     `$(I)$`, tal que
     
-$$\begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik} + \varepsilon_i \quad \text{ para } i =1,2, \ldots, n \quad \quad (II)\end{align*}$$
+$$
+\begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik} + \varepsilon_i \quad \text{ para } i =1,2, \ldots, n \quad \quad (II)\end{align*}
+$$
 
     donde `$y_i$` es la i-ésima observación de la variable `$Y$`, y
     `$x_{ij}$` es la i-ésima observación de la j-ésima variable
@@ -82,16 +88,22 @@ $$\begin{align*}y_i=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k
     aleatorias independientes con media `$\mathbb{E}(\varepsilon_i)=0$`
     y varianza `$Var(\varepsilon_i)=\sigma^2$`, de tal forma que
     
-$$\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik}\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(y_i)=\beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \cdots + \beta_k x_{ik}\end{align*}
+$$
 
     y
     
-$$\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}$$
+$$
+\begin{align*}Var(y_i)=Var(\varepsilon_i) = \sigma^2\end{align*}
+$$
 
     en donde, si además se cumple que
     `$\varepsilon_i\sim N(0,\sigma^2)$`, entonces se tendrá que
     
-$$\begin{align*}y_i\sim N(\beta_0 + \beta_1 x_{i1} + \cdots + \beta_k x_{ik}, \; \sigma^2)\end{align*}$$
+$$
+\begin{align*}y_i\sim N(\beta_0 + \beta_1 x_{i1} + \cdots + \beta_k x_{ik}, \; \sigma^2)\end{align*}
+$$
 
 3.  Las variables explicativas `$X_1, X_2, \ldots, X_k$` no presentan
     una relación lineal exacta entre ellas (ausencia de
@@ -104,13 +116,17 @@ ecuaciones (una por cada observación), resulta mucho más conveniente
 expresar el modelo empleando notación matricial. Así, el conjunto de
 ecuaciones dado en `$(II)$` puede reescribirse como
 
-$$\begin{align*}\mathbf{Y}=\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}\end{align*}$$
+$$
+\begin{align*}\mathbf{Y}=\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}\end{align*}
+$$
 
 
 donde
 
 
-$$\begin{align*}\mathbf{Y}=\begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}, \qquad \mathbf{X}=\begin{bmatrix}  1 & x_{11} & x_{12} & \cdots & x_{1k}\\  1 & x_{21} & x_{22} & \cdots & x_{2k}\\  \vdots & \vdots & \vdots & \ddots & \vdots\\  1 & x_{n1} & x_{n2} & \cdots & x_{nk} \end{bmatrix}, \qquad \boldsymbol{\beta}=\begin{bmatrix} \beta_0 \\ \beta_1 \\ \vdots \\ \beta_k \end{bmatrix}, \qquad \boldsymbol{\varepsilon}=\begin{bmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{bmatrix}\end{align*}$$
+$$
+\begin{align*}\mathbf{Y}=\begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmatrix}, \qquad \mathbf{X}=\begin{bmatrix}  1 & x_{11} & x_{12} & \cdots & x_{1k}\\  1 & x_{21} & x_{22} & \cdots & x_{2k}\\  \vdots & \vdots & \vdots & \ddots & \vdots\\  1 & x_{n1} & x_{n2} & \cdots & x_{nk} \end{bmatrix}, \qquad \boldsymbol{\beta}=\begin{bmatrix} \beta_0 \\ \beta_1 \\ \vdots \\ \beta_k \end{bmatrix}, \qquad \boldsymbol{\varepsilon}=\begin{bmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{bmatrix}\end{align*}
+$$
 
 
 - `$\mathbf{Y}$` es el vector de observaciones de dimensión
@@ -127,7 +143,9 @@ $$\begin{align*}\mathbf{Y}=\begin{bmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{bmat
 
 De esta forma, los supuestos del modelo pueden resumirse como
 
-$$\begin{align*}\mathbb{E}(\mathbf{Y})=\mathbf{X}\boldsymbol{\beta} \qquad \text{y} \qquad Var(\mathbf{Y})=\sigma^2\mathbf{I}_n\end{align*}$$
+$$
+\begin{align*}\mathbb{E}(\mathbf{Y})=\mathbf{X}\boldsymbol{\beta} \qquad \text{y} \qquad Var(\mathbf{Y})=\sigma^2\mathbf{I}_n\end{align*}
+$$
 
 
 ### Estimación de parámetros
@@ -145,14 +163,18 @@ entonces
 `$\mathbf{Y} \sim N_n(\mathbf{X}\boldsymbol{\beta}, \sigma^2\mathbf{I}_n)$`,
 luego la función de verosimilitud está dada por
 
-$$\begin{align*}L(\boldsymbol{\beta}, \sigma^2; \mathbf{Y}) = \frac{1}{(2\pi\sigma^2)^{n/2}}e^{-\frac{1}{2\sigma^2}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})}\end{align*}$$
+$$
+\begin{align*}L(\boldsymbol{\beta}, \sigma^2; \mathbf{Y}) = \frac{1}{(2\pi\sigma^2)^{n/2}}e^{-\frac{1}{2\sigma^2}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})}\end{align*}
+$$
 
 
 Al maximizar la función de verosimilitud respecto a
 `$\boldsymbol{\beta}$` y `$\sigma^2$`, se encuentra que los estimadores
 de máxima verosimilitud están dados por
 
-$$\begin{align*}\hat{\boldsymbol{\beta}} &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\\ \hat{\sigma}^2 &= \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n}\end{align*}$$
+$$
+\begin{align*}\hat{\boldsymbol{\beta}} &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\\ \hat{\sigma}^2 &= \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n}\end{align*}
+$$
 
 
 observando nuevamente que el EMV para `$\boldsymbol{\beta}$` coincide
@@ -176,18 +198,22 @@ ambas funciones alcanzan su máximo en el mismo punto por ser el
 logaritmo una función monótona creciente, se procede a calcular la
 función de log-verosimilitud, tal que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \ell(\boldsymbol{\beta}, \sigma^2) &= \ln L(\boldsymbol{\beta}, \sigma^2; \mathbf{Y})\\
   &= -\frac{n}{2}\ln(2\pi) - \frac{n}{2}\ln(\sigma^2) - \frac{1}{2\sigma^2}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})
-\end{align*}$$
+\end{align*}
+$$
 
 Ahora, para derivar respecto al vector $\boldsymbol{\beta}$, se
 expande inicialmente la forma cuadrática
 
-$$\begin{align*}
+$$
+\begin{align*}
   (\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta}) &= \mathbf{Y}^\top\mathbf{Y} - \mathbf{Y}^\top\mathbf{X}\boldsymbol{\beta} - \boldsymbol{\beta}^\top\mathbf{X}^\top\mathbf{Y} + \boldsymbol{\beta}^\top\mathbf{X}^\top\mathbf{X}\boldsymbol{\beta}\\
   &= \mathbf{Y}^\top\mathbf{Y} - 2\boldsymbol{\beta}^\top\mathbf{X}^\top\mathbf{Y} + \boldsymbol{\beta}^\top\mathbf{X}^\top\mathbf{X}\boldsymbol{\beta}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde el segundo y tercer término se agrupan ya que
 $\mathbf{Y}^\top\mathbf{X}\boldsymbol{\beta}$ es un escalar, y por
@@ -199,42 +225,54 @@ y
 $\frac{\partial (\mathbf{b}^\top\mathbf{A}\mathbf{b})}{\partial \mathbf{b}} = 2\mathbf{A}\mathbf{b}$
 para $\mathbf{A}$ simétrica, se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial \ell}{\partial \boldsymbol{\beta}} = -\frac{1}{2\sigma^2}\left(- 2\mathbf{X}^\top\mathbf{Y} + 2\mathbf{X}^\top\mathbf{X}\boldsymbol{\beta}\right) = \frac{1}{\sigma^2}\left(\mathbf{X}^\top\mathbf{Y} - \mathbf{X}^\top\mathbf{X}\boldsymbol{\beta}\right)
-\end{align*}$$
+\end{align*}
+$$
 
 e igualando a cero se obtiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{X}^\top\mathbf{Y}
-\end{align*}$$
+\end{align*}
+$$
 
 y dado que la matriz $\mathbf{X}^\top\mathbf{X}$ es invertible por el
 supuesto de ausencia de multicolinealidad perfecta, se concluye que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\boldsymbol{\beta}} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}
-\end{align*}$$
+\end{align*}
+$$
 
 Derivando ahora la función de log-verosimilitud respecto a $\sigma^2$
 se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial \ell}{\partial \sigma^2} = -\frac{n}{2\sigma^2} + \frac{1}{2\sigma^4}(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta})^\top(\mathbf{Y} - \mathbf{X}\boldsymbol{\beta}) = 0
-\end{align*}$$
+\end{align*}
+$$
 
 y al multiplicar ambos lados de la igualdad por $2\hat{\sigma}^4$ y
 evaluar en $\hat{\boldsymbol{\beta}}$ se obtiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   -n\hat{\sigma}^2 + (\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}}) = 0
-\end{align*}$$
+\end{align*}
+$$
 
 concluyendo entonces que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\sigma}^2 = \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n} 
-\end{align*}$$
+\end{align*}
+$$
 </p>
 </main>
 
@@ -245,37 +283,49 @@ Si denotamos por
 al estimador del vector de parámetros `$\boldsymbol{\beta}$`, entonces
 el vector de valores ajustados estará dado por
 
-$$\begin{align*}\hat{\mathbf{Y}}=\mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}$$
+$$
+\begin{align*}\hat{\mathbf{Y}}=\mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}
+$$
 
 
 y el vector de errores de estimación del ajuste será
 
-$$\begin{align*}\mathbf{e} = \mathbf{Y} - \hat{\mathbf{Y}} = \mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}$$
+$$
+\begin{align*}\mathbf{e} = \mathbf{Y} - \hat{\mathbf{Y}} = \mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}
+$$
 
 
 El método de mínimos cuadrados consiste en encontrar el vector
 `$\hat{\boldsymbol{\beta}}$` que minimiza la suma de los cuadrados de
 los errores, la cual en notación matricial está dada por
 
-$$\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \mathbf{e}^\top\mathbf{e} &= (\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})\\ &= \mathbf{Y}^\top\mathbf{Y} - 2\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y} + \hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}$$
+$$
+\begin{align*}SCE=\sum_{i=1}^n e_i^2 = \mathbf{e}^\top\mathbf{e} &= (\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})\\ &= \mathbf{Y}^\top\mathbf{Y} - 2\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y} + \hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}}\end{align*}
+$$
 
 
 Derivando la expresión anterior respecto a `$\hat{\boldsymbol{\beta}}$`
 e igualando a cero
 
-$$\begin{align*}\frac{\partial SCE}{\partial \hat{\boldsymbol{\beta}}} = -2\mathbf{X}^\top\mathbf{Y} + 2\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{0}\end{align*}$$
+$$
+\begin{align*}\frac{\partial SCE}{\partial \hat{\boldsymbol{\beta}}} = -2\mathbf{X}^\top\mathbf{Y} + 2\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{0}\end{align*}
+$$
 
 
 se obtiene el sistema de **ecuaciones normales**
 
-$$\begin{align*}\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{X}^\top\mathbf{Y}\end{align*}$$
+$$
+\begin{align*}\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{X}^\top\mathbf{Y}\end{align*}
+$$
 
 
 y dado que por el supuesto de ausencia de multicolinealidad perfecta la
 matriz `$\mathbf{X}^\top\mathbf{X}$` es invertible, el estimador de
 mínimos cuadrados de `$\boldsymbol{\beta}$` estará dado por
 
-$$\begin{align*}\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\end{align*}$$
+$$
+\begin{align*}\hat{\boldsymbol{\beta}} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\end{align*}
+$$
 
 
 <button id="Show2" class="btn btn-secondary">
@@ -294,11 +344,13 @@ Se presenta con mayor detalle el desarrollo de la minimización de la
 suma de los cuadrados de los errores. Partiendo de la forma cuadrática,
 se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   SCE &= (\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})\\
   &= \mathbf{Y}^\top\mathbf{Y} - \mathbf{Y}^\top\mathbf{X}\hat{\boldsymbol{\beta}} - \hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y} + \hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}}\\
   &= \mathbf{Y}^\top\mathbf{Y} - 2\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y} + \hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}}
-\end{align*}$$
+\end{align*}
+$$
 
 en donde el segundo y tercer término se agrupan ya que
 $\mathbf{Y}^\top\mathbf{X}\hat{\boldsymbol{\beta}}$ es un escalar de
@@ -306,24 +358,30 @@ dimensión $1\times 1$, y por tanto es igual a su transpuesta
 $\hat{\boldsymbol{\beta}}^\top\mathbf{X}^\top\mathbf{Y}$.<br> <br>
 Ahora, empleando las reglas de derivación matricial
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial (\mathbf{a}^\top\mathbf{b})}{\partial \mathbf{b}} = \mathbf{a} \qquad \text{y} \qquad \frac{\partial (\mathbf{b}^\top\mathbf{A}\mathbf{b})}{\partial \mathbf{b}} = 2\mathbf{A}\mathbf{b} \quad \text{ para } \mathbf{A} \text{ simétrica}
-\end{align*}$$
+\end{align*}
+$$
 
 y notando que la matriz $\mathbf{X}^\top\mathbf{X}$ es simétrica, ya
 que $(\mathbf{X}^\top\mathbf{X})^\top = \mathbf{X}^\top\mathbf{X}$, se
 deriva la $SCE$ respecto al vector $\hat{\boldsymbol{\beta}}$, tal
 que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial SCE}{\partial \hat{\boldsymbol{\beta}}} = -2\mathbf{X}^\top\mathbf{Y} + 2\mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}}
-\end{align*}$$
+\end{align*}
+$$
 
 e igualando a cero se obtiene el sistema de ecuaciones normales
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbf{X}^\top\mathbf{X}\hat{\boldsymbol{\beta}} = \mathbf{X}^\top\mathbf{Y}
-\end{align*}$$
+\end{align*}
+$$
 
 Dado que por el supuesto de ausencia de multicolinealidad perfecta la
 matriz $\mathbf{X}$ tiene rango columna completo, la matriz
@@ -331,25 +389,31 @@ $\mathbf{X}^\top\mathbf{X}$ es invertible, y al premultiplicar ambos
 lados del sistema por $(\mathbf{X}^\top\mathbf{X})^{-1}$ se concluye
 que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\boldsymbol{\beta}} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}
-\end{align*}$$
+\end{align*}
+$$
 
 Finalmente, note que la solución encontrada corresponde en efecto a un
 mínimo de la función $SCE$, ya que la matriz de segundas derivadas
 (matriz Hessiana) está dada por
 
-$$\begin{align*}
+$$
+\begin{align*}
   \frac{\partial^2 SCE}{\partial \hat{\boldsymbol{\beta}} \, \partial \hat{\boldsymbol{\beta}}^\top} = 2\mathbf{X}^\top\mathbf{X}
-\end{align*}$$
+\end{align*}
+$$
 
 la cual es definida positiva, dado que para cualquier vector
 $\mathbf{v}\neq\mathbf{0}$ de dimensión $(k+1)\times 1$ se cumple
 que
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbf{v}^\top(2\mathbf{X}^\top\mathbf{X})\mathbf{v} = 2(\mathbf{X}\mathbf{v})^\top(\mathbf{X}\mathbf{v}) = 2\|\mathbf{X}\mathbf{v}\|^2 > 0
-\end{align*}$$
+\end{align*}
+$$
 
 en donde la desigualdad es estricta ya que, al tener $\mathbf{X}$
 rango columna completo, $\mathbf{X}\mathbf{v}=\mathbf{0}$ si y solo si
@@ -363,7 +427,9 @@ Dado que el estimador de máxima verosimilitud de la varianza
 `$\sigma^2$` es sesgado, se emplea entonces un estimador insesgado el
 cual estará dado por
 
-$$\begin{align*}\hat{\sigma}^2_e &=\frac{SCE}{n-(k+1)} = \frac{\sum_{i=1}^n e^2_i}{n-k-1} \\             &= \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n-k-1}\end{align*}$$
+$$
+\begin{align*}\hat{\sigma}^2_e &=\frac{SCE}{n-(k+1)} = \frac{\sum_{i=1}^n e^2_i}{n-k-1} \\             &= \frac{(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})^\top(\mathbf{Y} - \mathbf{X}\hat{\boldsymbol{\beta}})}{n-k-1}\end{align*}
+$$
 
 
 conocido como el **cuadrado medio del error** (`$CME$`), en donde
@@ -406,12 +472,14 @@ errores $\boldsymbol{\varepsilon}$, tal que al reemplazar el modelo
 $\mathbf{Y}=\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon}$
 en el estimador se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \hat{\boldsymbol{\beta}} &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\\
   &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top(\mathbf{X}\boldsymbol{\beta} + \boldsymbol{\varepsilon})\\
   &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{X}\boldsymbol{\beta} + (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\boldsymbol{\varepsilon}\\
   &= \boldsymbol{\beta} + (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\boldsymbol{\varepsilon} \quad \quad (III)
-\end{align*}$$
+\end{align*}
+$$
 </p>
 <h4 data-toc-skip>
 Demostración Esperanza de $\hat{\boldsymbol{\beta}}$
@@ -422,12 +490,14 @@ Dado que la matriz $\mathbf{X}$ es fija (no aleatoria), al aplicar el
 operador esperanza sobre la expresión $(III)$ y emplear el supuesto
 $\mathbb{E}(\boldsymbol{\varepsilon})=\mathbf{0}$, se tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbb{E}(\hat{\boldsymbol{\beta}}) &= \mathbb{E}\left[\boldsymbol{\beta} + (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\boldsymbol{\varepsilon}\right]\\
   &= \boldsymbol{\beta} + (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbb{E}(\boldsymbol{\varepsilon})\\
   &= \boldsymbol{\beta} + (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{0}\\
   &= \boldsymbol{\beta} 
-\end{align*}$$
+\end{align*}
+$$
 </p>
 <h4 data-toc-skip>
 Demostración Varianza de $\hat{\boldsymbol{\beta}}$
@@ -441,13 +511,15 @@ para $\mathbf{A}$ una matriz de constantes, y tomando
 $\mathbf{A} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top$, se
 tiene
 
-$$\begin{align*}
+$$
+\begin{align*}
   Var(\hat{\boldsymbol{\beta}}) &= Var\left[(\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{Y}\right]\\
   &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top \, Var(\mathbf{Y}) \, \mathbf{X}(\mathbf{X}^\top\mathbf{X})^{-1}\\
   &= (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top \, \sigma^2\mathbf{I}_n \, \mathbf{X}(\mathbf{X}^\top\mathbf{X})^{-1}\\
   &= \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{X}(\mathbf{X}^\top\mathbf{X})^{-1}\\
   &= \sigma^2(\mathbf{X}^\top\mathbf{X})^{-1} 
-\end{align*}$$
+\end{align*}
+$$
 
 en donde se emplea el hecho de que la matriz
 $(\mathbf{X}^\top\mathbf{X})^{-1}$ es simétrica, por ser la inversa de
