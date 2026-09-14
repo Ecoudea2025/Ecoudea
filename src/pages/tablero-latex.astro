@@ -1,0 +1,220 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import 'katex/dist/katex.min.css';
+
+const base = import.meta.env.BASE_URL;
+const btn =
+  'inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border-subtle text-sm text-text bg-transparent hover:border-accent/50 hover:text-accent transition-all cursor-pointer';
+---
+
+<BaseLayout
+  title="Tablero LaTeX - Ecoudea"
+  description="Editor LaTeX en línea con previsualización en vivo (KaTeX) y paleta de símbolos matemáticos."
+>
+  <Fragment slot="header"><Navbar currentPath={`${base}/tablero-latex`} /></Fragment>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+    <nav class="flex items-center gap-2 text-sm text-text-muted mb-6">
+      <a href={`${base}/`} class="hover:text-accent transition-colors no-underline">Inicio</a>
+      <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      <span class="text-text">Tablero LaTeX</span>
+    </nav>
+
+    <div class="mb-6">
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-text mb-2">Tablero LaTeX</h1>
+      <p class="text-text-muted max-w-2xl">
+        Escribe LaTeX, previsualiza el resultado en vivo e inserta símbolos desde la paleta.
+        La vista previa se renderiza con <strong class="text-accent">KaTeX</strong>.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <!-- Editor -->
+      <section class="rounded-2xl border border-border-subtle bg-elevated/40 overflow-hidden flex flex-col">
+        <div class="flex items-center justify-between gap-2 px-4 py-3 border-b border-border-subtle bg-surface/40">
+          <h2 class="text-sm font-semibold text-text flex items-center gap-2">
+            <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+            Código LaTeX
+          </h2>
+          <label class="flex items-center gap-2 text-xs text-text-muted cursor-pointer select-none">
+            <input id="display-toggle" type="checkbox" checked class="accent-accent" />
+            Display
+          </label>
+        </div>
+
+        <textarea
+          id="latex-input"
+          spellcheck="false"
+          aria-label="Código LaTeX de entrada"
+          class="w-full flex-1 min-h-[320px] resize-y bg-transparent p-4 font-mono text-sm leading-relaxed text-text placeholder:text-text-muted/40 focus:outline-none"
+        ></textarea>
+
+        <div class="px-4 py-3 border-t border-border-subtle bg-surface/40">
+          <div id="palette-tabs" class="flex flex-wrap gap-1.5 mb-3"></div>
+          <div id="palette" class="flex flex-wrap gap-1.5"></div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2 px-4 py-3 border-t border-border-subtle bg-surface/40">
+          <button id="copy-btn" class={btn}>Copiar</button>
+          <button id="download-btn" class={btn}>Descargar .tex</button>
+          <button id="clear-btn" class={btn}>Limpiar</button>
+          <span id="copy-msg" class="text-xs text-success opacity-0 transition-opacity">Copiado ✓</span>
+        </div>
+      </section>
+
+      <!-- Preview -->
+      <section class="rounded-2xl border border-border-subtle bg-elevated/40 overflow-hidden flex flex-col">
+        <div class="flex items-center gap-2 px-4 py-3 border-b border-border-subtle bg-surface/40">
+          <h2 class="text-sm font-semibold text-text flex items-center gap-2">
+            <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+            Vista previa
+          </h2>
+        </div>
+        <div class="flex-1 p-4 overflow-x-auto min-h-[320px]">
+          <div id="preview" class="prose-class"></div>
+          <pre id="preview-error" class="hidden mt-4 text-xs text-rose-400 whitespace-pre-wrap font-mono"></pre>
+        </div>
+      </section>
+    </div>
+
+    <div class="mt-6 rounded-2xl border border-border-subtle bg-elevated/30 p-4 sm:p-5">
+      <h3 class="text-sm font-semibold text-text mb-2">Consejos</h3>
+      <ul class="text-sm text-text-muted space-y-1 list-disc pl-5">
+        <li>Usa <code class="text-accent">\left( … \right)</code> para paréntesis que se ajustan al contenido.</li>
+        <li>Para matrices y sistemas usa <code class="text-accent">\begin&#123;pmatrix&#125;…\end&#123;pmatrix&#125;</code> y <code class="text-accent">\begin&#123;cases&#125;…\end&#123;cases&#125;</code>.</li>
+        <li>Si hay un error, el mensaje aparece bajo la vista previa para que puedas corregirlo.</li>
+      </ul>
+    </div>
+  </div>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+</BaseLayout>
+
+<script>
+  import katex from 'katex';
+  import { groups, defaultTex } from '../lib/latex-palette.js';
+
+  const input = document.getElementById('latex-input');
+  const preview = document.getElementById('preview');
+  const errorEl = document.getElementById('preview-error');
+  const displayToggle = document.getElementById('display-toggle');
+  const tabsEl = document.getElementById('palette-tabs');
+  const paletteEl = document.getElementById('palette');
+  const copyMsg = document.getElementById('copy-msg');
+
+  input.value = defaultTex;
+
+  function render() {
+    const tex = input.value;
+    try {
+      katex.render(tex, preview, {
+        displayMode: displayToggle.checked,
+        throwOnError: true,
+        trust: true,
+        strict: false
+      });
+      errorEl.classList.add('hidden');
+    } catch (err) {
+      errorEl.textContent = String(err && err.message ? err.message : err);
+      errorEl.classList.remove('hidden');
+    }
+  }
+
+  let timer = null;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    timer = setTimeout(render, 120);
+  });
+  displayToggle.addEventListener('change', render);
+
+  // ── Paleta de símbolos ──────────────────────────────────────────
+  let activeGroup = groups[0];
+
+  function buildTabs() {
+    tabsEl.innerHTML = '';
+    groups.forEach((g) => {
+      const el = document.createElement('button');
+      el.type = 'button';
+      el.textContent = g.label;
+      el.className = 'px-2.5 py-1 rounded-lg text-xs font-medium border transition-all cursor-pointer ' +
+        (g.id === activeGroup.id
+          ? 'text-accent bg-accent-soft border-accent/40'
+          : 'border-border-subtle text-text-muted hover:text-text');
+      el.addEventListener('click', () => {
+        activeGroup = g;
+        buildTabs();
+        buildPalette();
+      });
+      tabsEl.appendChild(el);
+    });
+  }
+
+  function insert(tex) {
+    const start = input.selectionStart;
+    const end = input.selectionEnd;
+    const selected = input.value.slice(start, end);
+    let snippet = tex;
+    let cursor = null;
+
+    if (selected) {
+      snippet = snippet.includes('$0') ? snippet.replace('$0', selected) : snippet + selected;
+    }
+    if (snippet.includes('$0')) {
+      cursor = start + snippet.indexOf('$0');
+      snippet = snippet.replace('$0', '');
+    }
+
+    input.value = input.value.slice(0, start) + snippet + input.value.slice(end);
+    const pos = cursor == null ? start + snippet.length : cursor;
+    input.focus();
+    input.setSelectionRange(pos, pos);
+    render();
+  }
+
+  function buildPalette() {
+    paletteEl.innerHTML = '';
+    activeGroup.items.forEach(([label, tex]) => {
+      const el = document.createElement('button');
+      el.type = 'button';
+      el.title = tex;
+      el.textContent = label;
+      el.className = 'px-2.5 py-1 rounded-lg text-sm border border-border-subtle text-text hover:border-accent/50 hover:text-accent hover:bg-accent-soft transition-all cursor-pointer font-mono';
+      el.addEventListener('click', () => insert(tex));
+      paletteEl.appendChild(el);
+    });
+  }
+
+  // ── Acciones ────────────────────────────────────────────────────
+  document.getElementById('copy-btn').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(input.value);
+    } catch {
+      input.select();
+      document.execCommand('copy');
+    }
+    copyMsg.style.opacity = '1';
+    setTimeout(() => { copyMsg.style.opacity = '0'; }, 1500);
+  });
+
+  document.getElementById('download-btn').addEventListener('click', () => {
+    const blob = new Blob([input.value], { type: 'text/x-tex;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'formula.tex';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    input.value = '';
+    input.focus();
+    render();
+  });
+
+  buildTabs();
+  buildPalette();
+  render();
+</script>
