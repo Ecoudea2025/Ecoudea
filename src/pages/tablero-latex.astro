@@ -87,6 +87,7 @@ const iconBtn =
           <h2 class="text-sm font-semibold text-text flex items-center gap-2">
             <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
             Vista previa
+            <span id="preview-status" class="hidden text-[11px] font-normal text-accent/80 border border-accent/30 bg-accent-soft rounded-full px-2 py-0.5"></span>
           </h2>
           <div class="flex items-center gap-1.5">
             <span class="text-[11px] text-text-muted mr-1">Zoom</span>
@@ -95,7 +96,7 @@ const iconBtn =
             <button id="zoom-in" type="button" class="w-7 h-7 rounded-md border border-border-subtle text-text-muted hover:text-accent hover:border-accent/50 cursor-pointer bg-transparent leading-none">+</button>
           </div>
         </div>
-        <div id="preview-scroll" class="flex-1 overflow-auto p-6 sm:p-8 flex items-center justify-center">
+        <div id="preview-scroll" class="flex-1 overflow-auto p-6 sm:p-8 flex items-start justify-center">
           <div id="preview" class="prose-class w-full"></div>
           <pre id="preview-error" class="hidden"></pre>
         </div>
@@ -106,8 +107,8 @@ const iconBtn =
       <h3 class="text-sm font-semibold text-text mb-2">Consejos</h3>
       <ul class="text-sm text-text-muted space-y-1 list-disc pl-5">
         <li>Arrastra el divisor central para redimensionar el editor y la vista previa; el botón de pantalla completa agranda todo el tablero.</li>
-        <li>Usa <code class="text-accent">\left( … \right)</code> para paréntesis que se ajustan al contenido.</li>
-        <li>Para matrices y sistemas usa <code class="text-accent">\begin&#123;pmatrix&#125;…\end&#123;pmatrix&#125;</code> y <code class="text-accent">\begin&#123;cases&#125;…\end&#123;cases&#125;</code>.</li>
+        <li>Pega fragmentos con <code class="text-accent">&amp;</code> y <code class="text-accent">\\</code> sin <code class="text-accent">\begin</code>: el tablero los envuelve automáticamente en <code class="text-accent">aligned</code> y escapa los <code class="text-accent">%</code> (verás la etiqueta «auto» en la vista previa).</li>
+        <li>Usa <code class="text-accent">\left( … \right)</code> para paréntesis que se ajustan al contenido y <code class="text-accent">\text&#123;…&#125;</code> para texto en las fórmulas.</li>
       </ul>
     </div>
   </div>
@@ -158,14 +159,45 @@ const iconBtn =
   const zoomLabel = document.getElementById('zoom-label');
 
   let zoom = 1;
+  const statusEl = document.getElementById('preview-status');
+  const STORAGE_KEY = 'ecoudea-latex-board';
 
   function applyZoom() {
     preview.style.fontSize = (zoom * 1.35).toFixed(2) + 'rem';
     zoomLabel.textContent = Math.round(zoom * 100) + '%';
   }
 
+  /** Prepara el TeX pegado: quita delimitadores, escapa % y envuelve en entorno. */
+  function prepare(value) {
+    let t = (value || '').trim();
+    const notes = [];
+
+    const outer = [
+      [/^\$\$([\s\S]*)\$\$$/, 2],
+      [/^\\\[([\s\S]*)\\\]$/, 2],
+      [/^\$([\s\S]*)\$$/, 1],
+      [/^\\\(([\s\S]*)\\\)$/, 2]
+    ];
+    for (const [re, cut] of outer) {
+      const m = re.exec(t);
+      if (m) { t = m[1]; notes.push('delimitadores quitados'); break; }
+    }
+
+    const beforePct = t;
+    t = t.replace(/(?<!\\)%/g, '\\%');
+    if (t !== beforePct) notes.push('% escapado');
+
+    const startsWithEnv = /^\s*\\begin\s*\{[a-zA-Z*]+\}/.test(t);
+    const hasAlign = /(^|[^\\])&/.test(t) || /\\\\/.test(t);
+    if (!startsWithEnv && hasAlign) {
+      t = '\\begin{aligned}\n' + t + '\n\\end{aligned}';
+      notes.push('envuelto en aligned');
+    }
+    return { tex: t, notes };
+  }
+
   function render() {
-    const tex = input.value;
+    const { tex, notes } = prepare(input.value);
     try {
       katex.render(tex, preview, {
         displayMode: displayToggle.checked,
@@ -175,26 +207,45 @@ const iconBtn =
       });
       errorEl.classList.add('hidden');
       errorEl.textContent = '';
+      if (notes.length) {
+        statusEl.textContent = notes.join(' · ');
+        statusEl.classList.remove('hidden');
+      } else {
+        statusEl.classList.add('hidden');
+      }
     } catch (err) {
       errorEl.textContent = String(err && err.message ? err.message : err);
       errorEl.classList.remove('hidden');
+      statusEl.classList.add('hidden');
     }
+  }
+
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        tex: input.value,
+        display: displayToggle.checked,
+        zoom
+      }));
+    } catch {}
   }
 
   let timer = null;
   input.addEventListener('input', () => {
     clearTimeout(timer);
-    timer = setTimeout(render, 120);
+    timer = setTimeout(() => { render(); saveState(); }, 120);
   });
-  displayToggle.addEventListener('change', render);
+  displayToggle.addEventListener('change', () => { render(); saveState(); });
 
   document.getElementById('zoom-in').addEventListener('click', () => {
     zoom = Math.min(3, zoom + 0.15);
     applyZoom();
+    saveState();
   });
   document.getElementById('zoom-out').addEventListener('click', () => {
     zoom = Math.max(0.6, zoom - 0.15);
     applyZoom();
+    saveState();
   });
 
   // ── Pantalla completa ───────────────────────────────────────────
@@ -331,9 +382,18 @@ const iconBtn =
     input.value = '';
     input.focus();
     render();
+    saveState();
   });
 
-  input.value = defaultTex;
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); } catch {}
+  if (saved && typeof saved.tex === 'string') {
+    input.value = saved.tex;
+    displayToggle.checked = saved.display !== false;
+    zoom = typeof saved.zoom === 'number' ? saved.zoom : 1;
+  } else {
+    input.value = defaultTex;
+  }
   buildTabs();
   buildPalette();
   buildTemplates();
