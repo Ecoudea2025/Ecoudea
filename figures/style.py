@@ -14,7 +14,7 @@ PALETTE = {
     "micro": "#d97706",
     "macro": "#0284c7",
     "econometria": "#7c3aed",
-    "estadistica": "#6c9a06",
+    "estadistica": "#65a30d",
     "matematicas": "#e11d48",
     "historia": "#0e7774",
     "ink_light": "#1d241a",

@@ -10,7 +10,7 @@
   --color-card: oklch(from #1a2332 l c h / 0.7);
   --color-card-hover: oklch(from #1a2332 l c h / 0.9);
   --color-border-subtle: oklch(from #2a3a2a l c h / 0.5);
-  --color-primary: #33691e;
+  --color-primary: #3f6212;
   --color-accent: #6c9a06;
   --color-accent-hover: #8bc34a;
   --color-accent-soft: oklch(from #6c9a06 l c h / 0.15);
@@ -69,19 +69,19 @@
     border-color: oklch(from var(--color-accent) l c h / 0.3);
   }
   .gradient-text {
-    background: linear-gradient(135deg, #6c9a06, #069a7e);
+    background: linear-gradient(135deg, var(--color-accent), var(--color-secondary-hover));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .gradient-text-alt {
-    background: linear-gradient(135deg, #8bc34a, #0e7774);
+    background: linear-gradient(135deg, var(--color-accent-hover), var(--color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .gradient-bg {
-    background: linear-gradient(135deg, oklch(from #33691e l c h / 0.15), oklch(from #0e7774 l c h / 0.1));
+    background: linear-gradient(135deg, var(--color-accent-soft), var(--color-secondary-soft));
   }
   .card-hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -106,97 +106,9 @@
   .glow-pulse {
     animation: glow-pulse 3s ease-in-out infinite;
   }
-  /* ── Logo stage (inspirado en GSAPify: Orbital System + glow) ────── */
-  .logo-stage {
-    animation: logo-enter 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.15s both;
-  }
-  .logo-ring {
-    position: absolute;
-    inset: var(--ring-inset, -16px);
-    border-radius: 9999px;
-    pointer-events: none;
-    background: conic-gradient(
-      from 0deg,
-      transparent 0deg, transparent 45deg,
-      oklch(from #6c9a06 l c h / 0.85) 80deg,
-      transparent 115deg, transparent 190deg,
-      oklch(from #0e7774 l c h / 0.75) 225deg,
-      transparent 260deg, transparent 360deg
-    );
-    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
-    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
-    animation: logo-spin var(--ring-speed, 5s) linear infinite;
-  }
-  .logo-orbit {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    pointer-events: none;
-    animation: logo-spin var(--orbit-duration, 6s) linear infinite;
-  }
-  .logo-orbit-dot {
-    position: absolute;
-    top: calc(var(--orbit-radius, 52px) * -1);
-    left: -4px;
-    width: 8px;
-    height: 8px;
-    border-radius: 9999px;
-    background: var(--dot-color, #8bc34a);
-    box-shadow: 0 0 10px 2px oklch(from #8bc34a l c h / 0.55);
-  }
-  .logo-core-glow {
-    animation: logo-glow var(--glow-speed, 3s) ease-in-out infinite;
-  }
-  .logo-stage:hover .logo-ring { animation-duration: 2.2s; }
-  .logo-stage:hover .logo-orbit { animation-duration: 2.5s; }
-  .logo-stage:hover .logo-core-glow { animation-duration: 1.8s; }
-  @keyframes logo-spin {
-    to { transform: rotate(360deg); }
-  }
-  @keyframes logo-enter {
-    from { opacity: 0; transform: scale(0.7) rotate(-8deg); }
-    to { opacity: 1; transform: scale(1) rotate(0); }
-  }
-  @keyframes logo-glow {
-    0%, 100% {
-      box-shadow: 0 0 12px oklch(from #6c9a06 l c h / 0.25), 0 0 40px oklch(from #6c9a06 l c h / 0.1);
-    }
-    50% {
-      box-shadow: 0 0 22px oklch(from #6c9a06 l c h / 0.5), 0 0 64px oklch(from #0e7774 l c h / 0.28);
-    }
-  }
-  @media (min-width: 640px) {
-    .logo-orbit-dot {
-      top: calc(var(--orbit-radius, 58px) * -1);
-    }
-  }
-  /* ── Mini logo (navbar): versión compacta del orbital system ─────── */
-  .logo-mini {
-    animation: logo-enter 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
-  }
-  .logo-mini .logo-ring {
-    inset: -8px;
-    animation-duration: 4s;
-  }
-  .logo-mini .logo-orbit {
-    animation-duration: 6s;
-  }
-  .logo-mini .logo-orbit-dot {
-    width: 5px;
-    height: 5px;
-    left: -2.5px;
-    box-shadow: 0 0 6px 1px oklch(from #8bc34a l c h / 0.6);
-  }
-  .logo-mini .logo-core-glow {
-    animation-duration: 3.5s;
-  }
-  .logo-mini:hover .logo-ring { animation-duration: 1.8s; }
-  .logo-mini:hover .logo-orbit { animation-duration: 2s; }
-  /* ── Marca con brillo barrido (shine) estilo GSAPify ─────────────── */
+  /* ── Marca con brillo barrido (sutil; se apaga con reduced-motion) ─── */
   .brand-shine {
-    background: linear-gradient(110deg, #6c9a06 20%, #a8d44f 40%, #069a7e 60%, #6c9a06 80%);
+    background: linear-gradient(110deg, var(--color-accent) 20%, var(--color-accent-hover) 40%, var(--color-secondary-hover) 60%, var(--color-accent) 80%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -206,9 +118,6 @@
   }
   @keyframes brand-shine {
     to { background-position: 200% center; }
-  }
-  .logo-mini:hover .brand-shine {
-    animation-duration: 1.5s;
   }
   .stagger-1 { animation-delay: 0.05s; }
   .stagger-2 { animation-delay: 0.1s; }
@@ -228,14 +137,14 @@
     border-radius: 9999px;
     font-weight: 600;
     font-size: 0.95rem;
-    background: linear-gradient(135deg, #33691e, #0e7774);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: #fff;
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-    box-shadow: 0 4px 16px oklch(from #6c9a06 l c h / 0.25);
+    box-shadow: 0 4px 16px oklch(from var(--color-accent) l c h / 0.25);
   }
   .btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 8px 24px oklch(from #6c9a06 l c h / 0.35);
+    box-shadow: 0 8px 24px oklch(from var(--color-accent) l c h / 0.35);
     filter: brightness(1.1);
   }
   .btn-ghost {

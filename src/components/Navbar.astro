@@ -25,15 +25,9 @@ const categories = [
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-14 sm:h-16">
       <a href={`${base}/`} class="flex items-center gap-3 font-bold text-lg sm:text-xl text-text no-underline group" aria-current={currentPath === `${base}/` ? 'page' : undefined}>
-        <div class="logo-mini relative w-9 h-9 sm:w-10 sm:h-10" data-logo-mini>
-          <div class="logo-ring" aria-hidden="true"></div>
-          <div class="logo-orbit" style="--orbit-duration: 6s; --orbit-radius: 22px" aria-hidden="true"><span class="logo-orbit-dot"></span></div>
-          <div class="logo-orbit" style="--orbit-duration: 9s; --orbit-radius: 29px; --dot-color: #069a7e; animation-direction: reverse" aria-hidden="true"><span class="logo-orbit-dot"></span></div>
-          <div class="relative w-full h-full rounded-xl overflow-hidden border border-accent/30 logo-core-glow">
-            <img src={`${base}/assets/images/logo-ecoudea.png`} alt="Ecoudea" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </div>
-        </div>
+        <span class="block w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden border border-accent/30 shadow-lg shadow-accent/10 shrink-0">
+          <img src={`${base}/assets/images/logo-ecoudea.svg`} alt="Ecoudea" class="w-full h-full" />
+        </span>
         <span class="brand-shine hidden sm:inline">Ecoudea</span>
       </a>
 

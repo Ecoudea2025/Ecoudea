@@ -56,6 +56,14 @@ const totalClasses = allClasses.length;
 const totalPractices = allClasses.filter((c) => c.data.classType === 'practica').length;
 const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length;
 
+// Stats del hero: solo valores > 0 (cero guías rotas, cero ruido).
+const heroStats = [
+  { value: courses.length, singular: 'curso', plural: 'cursos' },
+  { value: totalClasses, singular: 'clase', plural: 'clases' },
+  { value: totalPractices, singular: 'práctica', plural: 'prácticas' },
+  { value: totalGuides, singular: 'guía', plural: 'guías' },
+].filter((s) => s.value > 0);
+
 // Índice para "Continúa donde lo dejaste" (progreso en localStorage).
 const courseTitles = Object.fromEntries(sortedCourses.map((c) => [c.id, c.data.title]));
 const classIndex = allClasses.map((c) => ({
@@ -67,7 +75,7 @@ const classIndex = allClasses.map((c) => ({
 }));
 ---
 
-<BaseLayout title="Ecoudea - Cursos de Estadística" description="Cursos de estadística, probabilidad y programación con R y Python">
+<BaseLayout title="Ecoudea - Cursos de Economía" description="Cursos de economía, estadística, probabilidad y programación con R y Python">
   <Fragment slot="header">
     <Navbar currentPath="/" />
   </Fragment>
@@ -82,14 +90,14 @@ const classIndex = allClasses.map((c) => ({
       <div class="lg:col-span-7">
         <p class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-soft border border-accent/20 text-accent text-xs sm:text-sm font-medium mb-6 reveal is-visible">
           <span class="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
-          {totalClasses} clases abiertas · sin registro
+          {totalClasses} clases abiertas · economía y datos
         </p>
         <h1 class="font-extrabold tracking-tight mb-5 max-w-xl reveal is-visible" style="font-size: var(--text-hero); line-height: 1.05;">
-          La estadística, explicada <span class="gradient-text">como debe ser</span>
+          La economía, explicada <span class="gradient-text">como debe ser</span>
         </h1>
         <p class="text-lg sm:text-xl text-text-muted max-w-xl leading-relaxed mb-8 reveal is-visible">
-          Cursos y recursos de estadística, probabilidad y programación con R y Python:
-          teoría rigurosa, fórmulas legibles y prácticas con datos reales.
+          Cursos de economía, estadística y programación con R y Python:
+          intuición primero, matemáticas claras y práctica con datos reales.
         </p>
         <div class="flex items-center gap-4 flex-wrap mb-10 reveal is-visible">
           <a href="#directorio" class="btn no-underline">
@@ -106,29 +114,16 @@ const classIndex = allClasses.map((c) => ({
           </a>
         </div>
         <dl class="flex items-stretch gap-5 sm:gap-7 reveal is-visible">
-          <div>
-            <dt class="sr-only">cursos</dt>
-            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>{courses.length}</dd>
-            <dd class="text-xs text-text-muted mt-0.5">cursos</dd>
-          </div>
-          <div class="w-px bg-border-subtle" aria-hidden="true" />
-          <div>
-            <dt class="sr-only">clases</dt>
-            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={totalClasses}>{totalClasses}</dd>
-            <dd class="text-xs text-text-muted mt-0.5">clases</dd>
-          </div>
-          <div class="w-px bg-border-subtle" aria-hidden="true" />
-          <div>
-            <dt class="sr-only">prácticas</dt>
-            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={totalPractices}>{totalPractices}</dd>
-            <dd class="text-xs text-text-muted mt-0.5">prácticas</dd>
-          </div>
-          <div class="w-px bg-border-subtle hidden sm:block" aria-hidden="true" />
-          <div class="hidden sm:block">
-            <dt class="sr-only">guías</dt>
-            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={totalGuides}>{totalGuides}</dd>
-            <dd class="text-xs text-text-muted mt-0.5">guías</dd>
-          </div>
+          {heroStats.map((s, i) => (
+            <>
+              {i > 0 && <div class="w-px bg-border-subtle" aria-hidden="true" />}
+              <div class={i === heroStats.length - 1 ? 'hidden sm:block' : ''}>
+                <dt class="sr-only">{s.plural}</dt>
+                <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={s.value}>{s.value}</dd>
+                <dd class="text-xs text-text-muted mt-0.5">{s.value === 1 ? s.singular : s.plural}</dd>
+              </div>
+            </>
+          ))}
         </dl>
       </div>
 

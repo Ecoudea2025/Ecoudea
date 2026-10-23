@@ -13,7 +13,7 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
 const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
 ---
 
-<BaseLayout title="Acerca de - Ecoudea" description="Acerca de Ecoudea: cursos abiertos de estadística, probabilidad y programación con R y Python">
+<BaseLayout title="Acerca de - Ecoudea" description="Acerca de Ecoudea: cursos abiertos de economía, estadística y programación con R y Python">
   <Fragment slot="header">
     <Navbar currentPath={`${base}/acercade`} />
   </Fragment>
@@ -21,7 +21,7 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
     <h1 class="text-3xl sm:text-4xl font-bold text-text mb-3 reveal">Acerca de Ecoudea</h1>
     <p class="text-text-muted mb-10 reveal" data-reveal-group>
-      Plataforma abierta de cursos de estadística, probabilidad y programación con R y Python.
+      Plataforma abierta de cursos de economía, estadística y programación con R y Python.
     </p>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
@@ -40,13 +40,13 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
 
     <div class="prose-class">
       <p>
-        Ecoudea es una plataforma de cursos y recursos académicos enfocados en estadística,
-        probabilidad y programación. El objetivo es proporcionar materiales de alta calidad,
+        Ecoudea es una plataforma de cursos y recursos académicos enfocados en economía,
+        estadística y programación. El objetivo es proporcionar materiales de alta calidad,
         organizados y de acceso abierto para estudiantes y profesionales.
       </p>
       <p>
-        Los cursos cubren desde fundamentos de probabilidad hasta técnicas avanzadas de
-        estadística inferencial, series de tiempo y muestreo, con aplicaciones prácticas en
+        Los cursos cubren desde fundamentos de economía y probabilidad hasta técnicas
+        avanzadas de inferencia, series de tiempo y muestreo, con aplicaciones prácticas en
         <strong> R </strong> y <strong> Python </strong>.
       </p>
       <h2>Tecnología</h2>

@@ -23,9 +23,9 @@
   --niebla-muted: #94a3a8;
   --linea-dark: #2a3a2a;
 
-  --oliva: #6c9a06;
-  --oliva-brillo: #8bc34a;
-  --oliva-tinta: #4e7304; /* oliva oscurecido para texto sobre papel (AA) */
+  --oliva: #65a30d;
+  --oliva-brillo: #84cc16;
+  --oliva-tinta: #3f6212; /* verde hoja oscuro para texto sobre papel (AA) */
   --teal: #0e7774;
   --teal-brillo: #069a7e;
   --teal-tinta: #0a5f5c;
@@ -73,7 +73,7 @@
   --color-elevated: var(--tinta-elev);
   --color-card: var(--tinta-card);
   --color-border-subtle: var(--linea-dark);
-  --color-primary: #33691e;
+  --color-primary: #3f6212;
   --color-accent: var(--oliva);
   --color-accent-hover: var(--oliva-brillo);
   --color-accent-ink: var(--oliva-brillo); /* texto acento sobre fondo oscuro */
@@ -142,9 +142,6 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .logo-ring,
-  .logo-orbit,
-  .logo-core-glow,
   .brand-shine,
   .glow-pulse {
     animation: none !important;
