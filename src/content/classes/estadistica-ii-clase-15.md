@@ -5,7 +5,6 @@ order: 10
 classType: "clase"
 description: "Método de estimación puntual - Método de momentos - Método de máxima verosimilitud"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Métodos de Estimación Puntual

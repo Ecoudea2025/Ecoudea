@@ -5,7 +5,6 @@ order: 1
 classType: "clase"
 description: "Introducción Estadística descriptiva Medidas estadísticas - Medidas de tendencia central - Medidas de localización - Medidas de dispersión - Medidas de forma - Medidas de asociación"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## La estadística en la evaluación socioeconómica de proyectos

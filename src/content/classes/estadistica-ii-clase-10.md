@@ -5,7 +5,6 @@ order: 15
 classType: "clase"
 description: "Estimación por intervalos. - Intervalos de confianza para razón de varianzas."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Intervalos de confianza para razón de varianzas `$\sigma^2_1/\sigma^2_2$`

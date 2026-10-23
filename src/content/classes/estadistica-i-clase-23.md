@@ -5,7 +5,6 @@ order: 5
 classType: "clase"
 description: "Introducción al lenguaje estadístico R. Datos y su estructura. Resúmenes numéricos. Resúmenes tabulares."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Introducción a R

@@ -5,7 +5,6 @@ order: 6
 classType: "clase"
 description: "Introducción a la estadística descriptiva. Tipos de datos. Escala de medición. Medidas estadísticas: - Medidas de tendencia central"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Introducción

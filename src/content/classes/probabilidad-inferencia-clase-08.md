@@ -5,7 +5,6 @@ order: 20
 classType: "clase"
 description: "Introducción a la inferencia estadística. Estadísticos. Distribuciones muestrales: - Distribución muestral para la media muestral. - Distribución muestral para la proporción muestral. - Teorema del Límite Central. - Distribución muestral chi-cuadrado. - Distribución muestral t de Student. - Distribución muestral F de Fisher."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Inferencia estadística

@@ -5,7 +5,6 @@ order: 4
 classType: "clase"
 description: "Introducción a la Inferencia Estadística Levantamiento de información Métodos de muestreo Estadísticos muestrales Distribuciones muestrales Prueba de hipótesis"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Introducción Inferencia estadística

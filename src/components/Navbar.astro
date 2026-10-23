@@ -63,7 +63,7 @@ const categories = [
                 </svg>
               </a>
               {categories.map((cat) => (
-                <a href={`${base}/#directorio?cat=${encodeURIComponent(cat.filter)}`} class="block px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline">
+                <a href={`${base}/?cat=${encodeURIComponent(cat.filter)}#directorio`} class="block px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline">
                   {cat.label}
                 </a>
               ))}

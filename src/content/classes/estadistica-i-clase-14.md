@@ -5,7 +5,6 @@ order: 14
 classType: "clase"
 description: "Distribuciones de probabilidad conjuntas - Distribución de probabilidad conjunta discreta - Distribución de probabilidad conjunta continua"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribución de probabilidad conjunta

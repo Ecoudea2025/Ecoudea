@@ -4,7 +4,6 @@ course: "semillero-r"
 order: 1
 classType: "presentacion"
 description: "Qué es R? Entorno de desarrollo integrado - IDE's para R Nivel de habilidades Alcance del Semillero"
-bibliography: "../../referencias.bib"
 ---
 
 Qué es R?

@@ -4,7 +4,6 @@ course: "estadistica-i"
 order: 25
 classType: "clase"
 description: "Momentos. Función generadora de momentos."
-bibliography: "../../referencias.bib"
 ---
 
 Momentos

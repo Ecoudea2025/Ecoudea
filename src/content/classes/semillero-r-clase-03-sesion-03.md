@@ -5,7 +5,6 @@ order: 4
 classType: "clase"
 description: "Estructuras de control - Condicionales - Ciclos - Funciones"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Funciones que se introducen en esta sesión

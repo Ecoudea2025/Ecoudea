@@ -5,7 +5,6 @@ order: 13
 classType: "clase"
 description: "Identificación y ajuste de modelos ARMA: - Métodos en minimización de criterios de información - Método de identificación basado en la función de autocorrelación extendida."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Identificación y ajuste de modelos ARMA

@@ -5,7 +5,6 @@ order: 15
 classType: "practica"
 description: "Ejercicios sobre: - Distribuciones Discretas - Distribuciones Continuas - Distribuciones Conjuntas - Distribuciones Marginales - Distribuciones Condicionales - Independencia Estadística"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

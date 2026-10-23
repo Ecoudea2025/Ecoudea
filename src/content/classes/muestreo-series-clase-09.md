@@ -5,7 +5,6 @@ order: 16
 classType: "clase"
 description: "Introducción a modelos SARIMA. Operador de diferencias estacionales. Raices unitarias estacionales."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Introducción a modelos SARIMA

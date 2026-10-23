@@ -5,7 +5,6 @@ order: 17
 classType: "practica"
 description: "Ejercicios sobre identificación de procesos: - AR - MA - ARMA - SAR - SMA - SARMA"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

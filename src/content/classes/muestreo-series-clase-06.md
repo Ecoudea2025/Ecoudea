@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 19
 classType: "clase"
 description: "Definición de encuesta y sus tipos. Por qué hacer encuestas? Etapas en el análisis de encuestas. Diseño de un cuestionario."
-bibliography: "../../referencias.bib"
 ---
 
 ## Qué es una encuesta

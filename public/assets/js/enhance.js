@@ -113,11 +113,15 @@
       }
     });
 
-    // ── Table of Contents (TOC jerárquico + scrollspy) ────────────────
-    var tocNav = document.querySelector('#class-toc nav');
+    // ── Table of Contents (TOC jerárquico + scrollspy, escritorio y móvil) ──
+    var tocNavs = Array.prototype.slice.call(document.querySelectorAll('#class-toc nav, #class-toc-mobile nav'));
     var article = document.querySelector('.prose-class');
-    if (article && tocNav) {
+    if (article && tocNavs.length) {
       var headings = Array.prototype.slice.call(article.querySelectorAll('h2, h3'));
+      if (headings.length === 0) {
+        var mobileToc = document.getElementById('class-toc-mobile');
+        if (mobileToc) mobileToc.classList.add('hidden');
+      }
       if (headings.length > 0) {
         var list = document.createElement('ul');
         list.className = 'space-y-1 toc-root';
@@ -158,7 +162,9 @@
             linkById[h.id] = a;
           }
         });
-        tocNav.appendChild(list);
+        tocNavs.forEach(function (tocNav) {
+          tocNav.appendChild(list.cloneNode(true));
+        });
 
         var OFFSET = 140;
         var ticking = false;
@@ -172,13 +178,23 @@
           headings.forEach(function (h) {
             if (headingTop(h) <= y) activeId = h.id;
           });
-          Object.keys(linkById).forEach(function (id) {
-            linkById[id].classList.toggle('toc-active', id === activeId);
-          });
-          groups.forEach(function (g) {
-            var open = activeId && g.ids.indexOf(activeId) !== -1;
-            g.sub.classList.toggle('open', !!open);
-            g.h2.classList.toggle('toc-parent-active', !!open && activeId !== g.ids[0]);
+          // Aplica a todos los navs (escritorio + móvil); los grupos se
+          // resuelven por estructura DOM, no por referencias únicas.
+          tocNavs.forEach(function (tocNav) {
+            tocNav.querySelectorAll('a[data-toc-id]').forEach(function (a) {
+              a.classList.toggle('toc-active', a.getAttribute('data-toc-id') === activeId);
+            });
+            tocNav.querySelectorAll('.toc-group').forEach(function (li) {
+              var ids = Array.prototype.map.call(
+                li.querySelectorAll('a[data-toc-id]'),
+                function (a) { return a.getAttribute('data-toc-id'); }
+              );
+              var sub = li.querySelector('.toc-sub');
+              var h2 = li.querySelector('.toc-h2');
+              var open = !!activeId && ids.indexOf(activeId) !== -1;
+              if (sub) sub.classList.toggle('open', open);
+              if (h2) h2.classList.toggle('toc-parent-active', open && ids[0] !== activeId);
+            });
           });
           ticking = false;
         }

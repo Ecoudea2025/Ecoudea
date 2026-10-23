@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 20
 classType: "clase"
 description: "Métodos de muestreo no probabilísticos: - Muestreo por cuotas - Muestreo de opinión - Muestreo casual - Muestreo bola de nieve - Muestreo discrecional"
-bibliography: "../../referencias.bib"
 ---
 
 Métodos de muestreo

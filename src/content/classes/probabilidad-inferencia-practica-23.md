@@ -5,7 +5,6 @@ order: 5
 classType: "practica"
 description: "Ejercicios sobre: - Teoría de conjuntos. - Probabilidad."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Lista de ejercicios

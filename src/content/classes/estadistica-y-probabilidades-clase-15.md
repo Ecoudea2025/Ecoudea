@@ -5,7 +5,6 @@ order: 6
 classType: "clase"
 description: "Probabilidad condicional. Regla multiplicativa. Independencia entre eventos. Probabilidad total. Teorema de Bayes."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Probabilidad Condicional

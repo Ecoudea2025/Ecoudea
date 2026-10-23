@@ -5,7 +5,6 @@ order: 17
 classType: "clase"
 description: "Prueba de hipótesis. - Prueba de hipótesis para una media - Prueba de hipótesis para diferencia de medias - Prueba de hipótesis para una proporción"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Prueba de hipótesis para la media `$\mu$`

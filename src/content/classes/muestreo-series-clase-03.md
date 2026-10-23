@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 22
 classType: "clase"
 description: "Métodos de muestreo probabilístico: - Muestreo aleatorio estratificado - Estimación de parámetros de la población - Estimación de la media poblacional - Intervalos de confianza para la media poblacional - Intervalos de confianza para el total poblacional - Intervalos de confianza para la proporción poblacional - Selección del tamaño de muestra"
-bibliography: "../../referencias.bib"
 ---
 
 Métodos de muestreo

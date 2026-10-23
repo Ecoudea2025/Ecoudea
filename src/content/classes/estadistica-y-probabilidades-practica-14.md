@@ -5,7 +5,6 @@ order: 7
 classType: "practica"
 description: "Ejercicios sobre: - Probabilidad. - Técnicas de conteo."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

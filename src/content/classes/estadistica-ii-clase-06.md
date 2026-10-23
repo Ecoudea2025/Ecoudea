@@ -5,7 +5,6 @@ order: 19
 classType: "clase"
 description: "Prueba de hipótesis. - Prueba de bondad de ajuste - Tablas de contingencia"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Prueba de bondad de ajuste

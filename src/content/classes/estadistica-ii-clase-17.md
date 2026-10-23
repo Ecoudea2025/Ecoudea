@@ -5,7 +5,6 @@ order: 8
 classType: "clase"
 description: "Eficiencia - Estimador insesgado de varianza mínima - Error cuadrático medio"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Eficiencia

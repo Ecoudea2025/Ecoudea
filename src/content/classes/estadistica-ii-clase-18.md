@@ -5,7 +5,6 @@ order: 7
 classType: "clase"
 description: "Estimación puntual Insesgadez - Estimador insesgado - Estimador asintóticamente insesgado Eficiencia - Eficiencia relativa"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Estimación puntual

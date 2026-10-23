@@ -5,7 +5,6 @@ order: 16
 classType: "clase"
 description: "Esperanza matemática - Caso discreto - Caso continuo - Caso multivariado Propiedades de la esperanza matemática"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Esperanza matemática

@@ -4,7 +4,6 @@ course: "probabilidad-inferencia"
 order: 12
 classType: "practica"
 description: "Ejercicio sobre estadística descriptiva."
-bibliography: "../../referencias.bib"
 ---
 
 ## Enunciado encuesta

@@ -5,7 +5,6 @@ order: 21
 classType: "clase"
 description: "Transformación para el cálculo de probabilidades basadas en datos muestrales: - Transformaciones para una media. - Transformación para una varianza - Transformación para una proporción - Transformaciones para diferencia de medias - Transformación para diferencia de proporciones - Transformación para razón de varianzas"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Transformación para el cálculo de probabilidades basadas en datos muestrales

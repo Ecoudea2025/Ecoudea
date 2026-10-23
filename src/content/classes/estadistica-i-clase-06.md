@@ -5,7 +5,6 @@ order: 21
 classType: "clase"
 description: "Distribuciones de probabilidad discreta: - Distribución Uniforme discreta Teoremas de Aproximación: - Aproximación Hipergeométrica a Binomial - Aproximación Binomial a Poisson"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribuciones de probabilidad discretas

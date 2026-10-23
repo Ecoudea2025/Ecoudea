@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 4
 classType: "clase"
 description: "Modelo de descomposición. Función de autocorrelación."
-bibliography: "../../referencias.bib"
 ---
 
 Modelo de descomposición

@@ -5,7 +5,6 @@ order: 23
 classType: "practica"
 description: "Ejercicio sobre: - Distribuciones muestrales. - Intervalos de confianza."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Lista de ejercicios

@@ -5,7 +5,6 @@ order: 2
 classType: "clase"
 description: "Introducción a la probabilidad. Fundamentos de probabilidad. Teoría de conjuntos."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Fundamentos de probabilidad

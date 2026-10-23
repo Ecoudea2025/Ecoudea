@@ -1,46 +1,43 @@
 # Estado del proyecto
-Fase actual: 0 (en curso) · Última actualización: 2026-10-23
+Fase actual: 4-7 (ejecutadas) · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
-- 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · el contenido `src/`+`public/` era byte-idéntico al clon · cómo revertir: `git checkout v1-legacy`
-- 2026-10-23 · Tag `v1-legacy` + rama `legacy` como red de seguridad · revertir: `git tag -d v1-legacy`
-- 2026-10-23 · **Cambio de alcance**: se conservan los 10 cursos + se rescatan las 20 clases huérfanas (nuevo curso `estadistica-y-probabilidades`) en lugar de archivar a solo Estadística II · motivo: el pedido es una página final "igual de funcional que la original pero mucho mejor" · revertir: archivar según ORQUESTADOR Fase 2
-- 2026-10-23 · `BASE_PATH`/`SITE_URL` por entorno + helper `src/lib/url.ts` · default `/Ecoudea` · revertir: hardcode en `astro.config.mjs`
-- 2026-10-23 · `/admin` se conserva (es funcionalidad existente) pero se documenta su debilidad (hash client-side, password por defecto) · revertir: eliminar según plan original
+- 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
+- 2026-10-23 · Tag `v1-legacy` + rama `legacy` como red de seguridad
+- 2026-10-23 · **Se conservan los 11 cursos** (incl. `estadistica-y-probabilidades` rescatado con su archivo de curso; no era duplicado: trae "Presentación del curso de Estadística y Probabilidades") en lugar de archivar · motivo: página final igual de funcional que la original · revertir: archivar según ORQUESTADOR Fase 2
+- 2026-10-23 · `BASE_PATH`/`SITE_URL` por entorno + helper `src/lib/url.ts` (default `/Ecoudea`)
+- 2026-10-23 · `/admin` se conserva (funcionalidad existente); su auth client-side se documenta como no-seguridad
+- 2026-10-23 · **View Transitions diferidas**: con ClientRouter los scripts `animations/enhance/unlock` se re-ejecutarían por navegación (barras de progreso y listeners duplicados). Requiere refactor del ciclo de vida (`astro:page-load`). Backlog.
+- 2026-10-23 · `bibliography` eliminado de las 147 clases + schema (apuntaba a `referencias.bib` inexistente)
+- 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
-- Fase 0 (parcial): ✅ git restaurado, ✅ `v1-legacy`, ✅ `url()` + env, ✅ AGENTS.md/CLAUDE.md corregidos · pendiente: baseline Lighthouse, inventario formal, commit
+- Fase 0: ✅ git + `v1-legacy` ✅ baseline en `docs/baseline/` ✅ CLAUDE/AGENTS ✅ `url()` ✅ ESTADO/ORQUESTADOR ✅ inventario
+- Fase 1: ✅ `tokens.css` (3 capas) ✅ claro/oscuro/sistema sin FOUC + `ThemeToggle` ✅ `prefers-reduced-motion` global (CSS + JS) ✅ `aria-current` ✅ flotantes 44px + `Esc` ✅ 8 primitivos `ui/` ✅ `/styleguide` (noindex) ✅ Space Grotesk fuera
+- Fase 2: ✅ huérfanas rescatadas ✅ `new:course`/`new:lesson` ✅ `bibliography` fuera ✅ `docs/AUTORIA.md`
+- Fase 3: ✅ macros KaTeX compartidas (build + tablero) ✅ display accesible (`tabindex/role`) ✅ copiar-TeX ✅ tablero usa mismas macros
+- Fase 4: ✅ bug filtro navbar (`?cat=` antes del `#`) ✅ menú móvil con `aria-expanded` + `Esc` ✅ TOC móvil (`<details>` + scrollspy doble) ✅ `.nav-shell` por tema ✅ admin con `nav-shell`
+- Fase 6: ✅ `Breadcrumbs` con JSON-LD (listo para usar en curso/clase)
+- Fase 7: ✅ pipeline `figures/` + `style.py` + `manifest.json` + `npm run figures` ✅ `<Figure>` (alt obligatorio, light/dark) ✅ `<Video>` con fachada ✅ ejemplo real en `/styleguide`
+- Commit `fadb2ae` (fases 0-1). Pendiente commit fases 2-4+7.
 
 ## Deuda pendiente
-- 52 usos literales de `${base}` → migrar a `url()` (cierre Fase 8 con grep)
-- `bibliography: referencias.bib` inexistente en 147 clases (decidir: eliminar campo en Fase 2)
-- `pagefind` y `space-grotesk` instalados sin uso (Fase 5 / Fase 1)
-- `Accordion`, `BackToTop` sin importar; `VideoPlayer` sin contenido que lo use
-- Filtro de categoría del navbar roto (query tras el `#`) → Fase 4
-- `setInterval` 3 s en `[course].astro` → Fase 6
-- Listado de curso con doble render → Fase 6
-- Sin `prefers-reduced-motion`, sin tema claro, sin `aria-current` → Fase 1/4
-
-## Inventario de código muerto (Fase 0)
-| Ítem | Evidencia | Decisión | Fase |
-|---|---|---|---|
-| `tags` + `/tags/[tag]` | 0 clases con `tags` | Mantener ruta, alimentar con `conceptos` o eliminar | 2 |
-| `video*` + `VideoPlayer` | 0 clases con `video` | Reemplazar por `<Video>` con fachada (Fase 7) | 7 |
-| `unlockMode: sequential` + `unlock.js` | 0 cursos lo usan | Eliminar bloqueo, conservar progreso como "completado" | 6 |
-| `bibliography` | `referencias.bib` no existe, ningún `.astro` lo lee | Eliminar campo + sección `lecturas` en frontmatter nuevo | 2 |
-| `Accordion` | sin imports | Reusar como base de `<details>` en unidades | 6 |
-| `BackToTop` | sin imports (duplica FloatingButtons) | Fusionar en controles flotantes ≥44px | 4 |
-| `Space Grotesk` | 0 usos | Retirar de deps | 1 |
-| `pagefind` | 0 usos | Activar búsqueda real | 5 |
-| campo `color` de curso | sin uso | Reemplazar por `area` + color por área | 1-2 |
-| `/admin` | auth client-side débil | Conservar UI, documentar; gestión real por git+PR | 2 |
+- 52 usos `${base}` → `url()` (grep de cierre Fase 8)
+- View Transitions (ver decisión arriba)
+- Pagefind real (dep instalada; indexar `dist` + UI con `Ctrl+K`)
+- `tags`/`video*`/`unlockMode`/`Accordion`/`BackToTop`: decidir eliminar o alimentar (inventario en ORQUESTADOR)
+- `setInterval` 3 s en `[course].astro` (inocuo hoy: todos los cursos son `open`)
+- Doble render lista/grid en `[course].astro` (funciona; unificar en Fase 6)
+- 5 páginas >900 KB + 349 imgs sin optimizar + logo 1,1 MB (Fase 8)
+- Lighthouse móvil/escritorio (Fase 8, CI)
 
 ## Métricas
 | Página | Perf | A11y | LCP | CLS | JS (KB) |
 |---|---|---|---|---|---|
-| home (baseline) | — | — | — | — | — |
-| curso (baseline) | — | — | — | — | — |
-| clase (baseline) | — | — | — | — | — |
+| home baseline (v1-legacy) | — | — | — | — | page 2,4 KB / tablero 261 KB |
+| home rework | — | — | — | — | (medir Fase 8) |
 
 ## Siguiente paso
-- Terminar `npm install`, correr `npm run build`, guardar baseline (peso, requests, páginas), commit Fase 0
+- Rebuild + verificación Playwright (clase, styleguide/figura, móvil, light) → commit → push a `master` (deploy)
+
+

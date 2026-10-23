@@ -5,7 +5,6 @@ order: 20
 classType: "clase"
 description: "Distribuciones de probabilidad discreta: - Distribución Geométrica - Distribución Binomial Negativa - Distribución Poisson"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribuciones de probabilidad discretas

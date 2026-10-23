@@ -4,7 +4,6 @@ course: "probabilidad-inferencia"
 order: 1
 classType: "presentacion"
 description: "Presentación del curso de Probabilidad e inferencia estadística. Generalidades a tener en cuenta."
-bibliography: "../../referencias.bib"
 ---
 
 ## Descripción general del curso

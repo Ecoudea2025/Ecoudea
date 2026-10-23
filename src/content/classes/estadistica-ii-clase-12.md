@@ -5,7 +5,6 @@ order: 13
 classType: "clase"
 description: "Estimación por intervalos. - Intervalos de confianza para diferencia de medias."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Intervalos de confianza para diferencia de medias `$\mu_1 - \mu_2$`

@@ -5,7 +5,6 @@ order: 14
 classType: "clase"
 description: "Estimación por intervalos. - Intervalos de confianza para una proporción. - Intervalos de confianza para diferencia de proporciones - Intervalos de confianza para una varianza"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Intervalos de confianza para una proporción `$p$`

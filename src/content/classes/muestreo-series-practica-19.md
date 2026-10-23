@@ -5,7 +5,6 @@ order: 6
 classType: "practica"
 description: "Ejercicios sobre: - Identificación de componentes de una serie de tiempo. - Función de autocorrelación. - Funciones de pérdida. - Modelo de regresión lineal simple."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

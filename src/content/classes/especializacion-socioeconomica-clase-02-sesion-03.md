@@ -5,7 +5,6 @@ order: 3
 classType: "clase"
 description: "Introducción a variables aleatorias Distribuciones de probabilidad discretas Función de distribución acumulada discreta Distribuciones de probabilidad continua Función de distribución acumulada continua"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Variables aleatorias

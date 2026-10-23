@@ -4,7 +4,6 @@ course: "estadistica-y-probabilidades"
 order: 1
 classType: "presentacion"
 description: "Presentación del curso de Estadística y Probabilidades."
-bibliography: "../../referencias.bib"
 ---
 
 Descripción general del curso

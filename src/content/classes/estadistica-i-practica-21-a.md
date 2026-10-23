@@ -4,7 +4,6 @@ course: "estadistica-i"
 order: 7
 classType: "practica"
 description: "Ejercicio sobre estadística descriptiva."
-bibliography: "../../referencias.bib"
 ---
 
 Enunciado encuesta

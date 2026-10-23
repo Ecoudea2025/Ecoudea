@@ -15,7 +15,7 @@ const isDefaultPassword = !import.meta.env.ADMIN_PASSWORD;
 
 <BaseLayout title="Admin - Ecoudea" description="Panel de administración de Ecoudea" noindex={true}>
   <Fragment slot="header">
-    <nav class="sticky top-0 z-50 border-b border-border-subtle" style="background: oklch(from #0b1120 l c h / 0.85); backdrop-filter: blur(16px) saturate(180%);">
+    <nav class="sticky top-0 z-50 border-b border-border-subtle nav-shell" aria-label="Administración">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-14 sm:h-16">
           <a href={`${base}/`} class="flex items-center gap-3 font-bold text-lg sm:text-xl text-text no-underline">

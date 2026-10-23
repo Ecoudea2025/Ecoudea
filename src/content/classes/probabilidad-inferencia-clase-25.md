@@ -5,7 +5,6 @@ order: 3
 classType: "clase"
 description: "Probabilidad condicional. Regla multiplicativa. Independencia entre eventos."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Probabilidad Condicional

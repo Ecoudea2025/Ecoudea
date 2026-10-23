@@ -5,7 +5,6 @@ order: 11
 classType: "clase"
 description: "Introducción a la metodología Box-Jenkins Conceptos básicos de procesos estocásticos. Procesos estocásticos estacionarios. Proceso de ruido blanco gaussiano. Funciones de autocorrelación y autocorrelación parcial."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Introducción a la metodología Box-Jenkins

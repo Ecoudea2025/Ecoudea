@@ -5,7 +5,6 @@ order: 24
 classType: "clase"
 description: "Análisis de Regresión Lineal Simple - Análisis de varianza - Coeficiente de determinación Análisis de Regresión Lineal Múltiple - Análisis de varianza - Coeficiente de determinación Respuesta media y predicción de nuevas observaciones - Respuesta media en regresión lineal simple - Predicción de nuevas observaciones en regresión lineal simple - Respuesta media en regresión lineal múltiple - Predicción de nuevas observaciones en regresión lineal múltiple"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Análisis de Regresión Lineal Simple

@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 15
 classType: "clase"
 description: "Introducción a modelos ARIMA. Operador de diferencias. Procesos integrados. Raíces unitarias."
-bibliography: "../../referencias.bib"
 ---
 
 Introducción a modelos ARIMA

@@ -5,7 +5,6 @@ order: 4
 classType: "clase"
 description: "Fundamentos de probabilidad. - Noción de aleatoriedad. - Experimento aleatorio. - Espacio muestral. - Evento de un espacio muestral. Teoría de conjuntos. - Propiedades de teoría de conjuntos Introducción a la probabilidad. - Axiomas de probabilidad. - Propiedades de Probabilidad."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Fundamentos de probabilidad

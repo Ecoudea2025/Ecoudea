@@ -5,7 +5,6 @@ order: 22
 classType: "practica"
 description: "Ejercicios sobre: - Esperanza matemática - Esperanza condicional - Varianza - Teorema de Chebyshev - Distribuciones de Probabilidad Discretas - Teoremas de Aproximación"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

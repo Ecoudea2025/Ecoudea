@@ -5,7 +5,6 @@ order: 2
 classType: "clase"
 description: "Análisis gráfico - Una variable cuantitativa - Dos variables cuatitativas - Una variable cualitativa - Dos variables cualitativas - Una variable cuantitativa y una cualitativa"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Análisis gráfico

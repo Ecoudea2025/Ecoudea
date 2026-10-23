@@ -5,7 +5,6 @@ order: 11
 classType: "practica"
 description: "Ejercicio sobre: - Estimadores puntuales. - Métodos de estimación puntual."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Lista de ejercicios

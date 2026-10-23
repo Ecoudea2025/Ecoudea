@@ -5,7 +5,6 @@ order: 4
 classType: "clase"
 description: "Medidas estadísticas: - Medidas de forma - Medidas de asociación"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Medidas estadísticas

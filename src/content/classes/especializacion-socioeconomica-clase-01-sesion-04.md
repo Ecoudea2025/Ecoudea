@@ -5,7 +5,6 @@ order: 4
 classType: "clase"
 description: "Inferencia Estadística. Prueba de hipótesis. - Pruebas de bondad de ajuste - Prueba de hipótesis para una media - Prueba de hipótesis para diferencia de medias - Prueba de hipótesis para una proporción - Prueba de hipótesis para diferencia de proporciones - Prueba de hipótesis para una varianza. - Prueba de hipótesis para razón de varianzas. Estimación por intervalos. - Intervalos de confianza para una media. - Intervalos de confianza para diferencia de medias. - Intervalos de confianza para una proporción. - Intervalos de confianza para diferencia de proporciones - Intervalos de confianza para una varianza. - Intervalos de confianza para razón de varianzas. Análisis de regresión - Regresión lineal simple"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Inferencia estadística

@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 14
 classType: "clase"
 description: "Ajuste de modelos AR, MA y ARMA. Pruebas de significancia. Validación de supuestos de los modelos."
-bibliography: "../../referencias.bib"
 ---
 
 <!-- Hay que mejorar esta clase, mirar el programa del curso para agregar los estadísticos allí planteados -->

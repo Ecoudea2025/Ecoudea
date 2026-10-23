@@ -5,7 +5,6 @@ order: 3
 classType: "practica"
 description: "Ejercicios sobre: - Estadística descriptiva."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 <!-- Eliminar o modificar ejercicio del sombrero!!!-->

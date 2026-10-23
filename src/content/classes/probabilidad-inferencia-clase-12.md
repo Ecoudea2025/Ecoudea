@@ -5,7 +5,6 @@ order: 16
 classType: "clase"
 description: "Distribuciones de probabilidad continua: - Distribución Exponencial: &nbsp * Relación con la distribución Poisson. &nbsp * Propiedad de Carencia de Memoria."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Distribuciones de probabilidad continua

@@ -4,7 +4,6 @@ course: "probabilidad-inferencia"
 order: 24
 classType: "clase"
 description: "Prueba de hipótesis. - Componentes de una prueba de hipótesis. - Errores tipo I, II y potencia de la prueba."
-bibliography: "../../referencias.bib"
 ---
 
 ## Prueba de hipótesis

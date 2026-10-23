@@ -5,7 +5,6 @@ order: 5
 classType: "clase"
 description: "Tecnicas de conteo. - Regla multiplicativa - Permutación de n objetos - Permutación de n objetos tomados de a r - Permutación en circulo - Permutación por clases - Combinatoria - Combinatoria por subconjuntos - Permutaciones o Combinatorias?"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Técnicas de conteo

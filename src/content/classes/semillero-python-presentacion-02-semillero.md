@@ -4,7 +4,6 @@ course: "semillero-python"
 order: 1
 classType: "presentacion"
 description: "Qué es Python? Entorno de desarrollo integrado - IDE's para Python Nivel de habilidades Alcance del Semillero"
-bibliography: "../../referencias.bib"
 ---
 
 Qué es Python?

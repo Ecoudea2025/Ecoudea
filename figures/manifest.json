@@ -1,0 +1,11 @@
+{
+  "figures": [
+    {
+      "id": "microeconomia/oferta-demanda",
+      "script": "figures/oferta_demanda.py",
+      "title": "Equilibrio de mercado y excedentes",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-23"
+    }
+  ]
+}

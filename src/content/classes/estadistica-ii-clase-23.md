@@ -5,7 +5,6 @@ order: 2
 classType: "clase"
 description: "Introducción a la inferencia estadística. Estadísticos. Distribuciones muestrales: - Distribución muestral para la media muestral."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Introducción

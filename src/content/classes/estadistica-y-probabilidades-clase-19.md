@@ -5,7 +5,6 @@ order: 2
 classType: "clase"
 description: "Introducción a la estadística descriptiva. Tipos de datos. Escala de medición. Medidas estadísticas: - Medidas de tendencia central - Medidas de localización - Medidas de dispersión - Medidas de forma"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Introducción

@@ -5,7 +5,6 @@ order: 6
 classType: "clase"
 description: "La familia apply - Función apply() - Función sapply() - Función lapply() - Función vapply() - Función mapply() - Función tapply()"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Funciones que se introducen en esta sesión

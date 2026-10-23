@@ -5,7 +5,6 @@ order: 4
 classType: "clase"
 description: "Probabilidad total. Teorema de Bayes."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Probabilidad total

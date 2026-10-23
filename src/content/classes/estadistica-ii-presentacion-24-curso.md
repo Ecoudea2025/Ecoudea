@@ -4,7 +4,6 @@ course: "estadistica-ii"
 order: 1
 classType: "presentacion"
 description: "Presentación del curso de Estadística II y generalidades a tener en cuenta."
-bibliography: "../../referencias.bib"
 ---
 
 Descripción general del curso

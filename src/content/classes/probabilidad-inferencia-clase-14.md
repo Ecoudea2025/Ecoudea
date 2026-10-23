@@ -5,7 +5,6 @@ order: 14
 classType: "clase"
 description: "Distribuciones de probabilidad discreta: - Ensayos Bernoulli. - Distribución binomial. - Distribución Poisson."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Distribuciones de probabilidad discreta

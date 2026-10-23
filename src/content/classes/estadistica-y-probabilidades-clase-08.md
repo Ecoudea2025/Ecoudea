@@ -5,7 +5,6 @@ order: 13
 classType: "clase"
 description: "Distribuciones de probabilidad continuas: - Distribución Uniforme Continua - Distribución Gamma - Distribución Exponencial &nbsp * Propiedad de carencia de memoria."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribuciones de probabilidad continuas

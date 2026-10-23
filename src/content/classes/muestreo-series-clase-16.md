@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 9
 classType: "clase"
 description: "Modelo no-paramétricos de series de tiempo. Series estacionales: - Suavizamiento exponencial de Holt-Winters aditivo. - Suavizamiento exponencial de Holt-Winters multiplicativo."
-bibliography: "../../referencias.bib"
 ---
 
 Series estacionales

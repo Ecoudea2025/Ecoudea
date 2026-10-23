@@ -4,7 +4,6 @@ course: "presentaciones-poster"
 order: 1
 classType: "clase"
 math: true
-bibliography: "../referencias.bib"
 ---
 
 <br>

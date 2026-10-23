@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 5
 classType: "clase"
 description: "Medidas de error o evaluación de los pronósticos."
-bibliography: "../../referencias.bib"
 ---
 
 Evaluación de los pronósticos

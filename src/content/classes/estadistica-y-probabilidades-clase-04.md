@@ -5,7 +5,6 @@ order: 17
 classType: "clase"
 description: "Distribuciones de probabilidad conjuntas - Distribuciones marginales - Distribuciones condicionales - Independencia estadística"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribución de probabilidad conjunta

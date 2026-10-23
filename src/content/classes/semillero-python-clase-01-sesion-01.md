@@ -5,7 +5,6 @@ order: 2
 classType: "clase"
 description: "Palabras reservadas Estructura de asignación Ayuda sobre funciones Operadores ariméticos y precedencias Funciones matemáticas Operadores lógicos Tipos de datos Estructura de datos Operadores matriciales básicas Coerción de datos"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Identificar código y salidas

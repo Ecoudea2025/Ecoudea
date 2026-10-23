@@ -4,7 +4,6 @@ course: "guias"
 order: 1
 classType: "guia"
 description: "Guía detallada para la instalación de los programas R-project y Rstudio en Ubuntu."
-bibliography: "../../referencias.bib"
 ---
 
 Instalación del programa R

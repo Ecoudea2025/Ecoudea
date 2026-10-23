@@ -5,7 +5,6 @@ order: 17
 classType: "clase"
 description: "Distribuciones de probabilidad continua: - Distribución Weibull. - Tasa de falla. - Función de confiabilidad."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Distribuciones de probabilidad continuas

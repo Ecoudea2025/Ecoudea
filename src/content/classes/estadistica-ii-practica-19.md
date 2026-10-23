@@ -5,7 +5,6 @@ order: 6
 classType: "practica"
 description: "Ejercicio sobre: - Distribuciones muestrales."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Lista de ejercicios

@@ -5,7 +5,6 @@ order: 10
 classType: "practica"
 description: "Ejercicios sobre modelos no paramétricos - Series estacionarias en media. - Series con tendencia. - Series estacionales."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

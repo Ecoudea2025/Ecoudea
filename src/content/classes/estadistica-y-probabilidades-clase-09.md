@@ -5,7 +5,6 @@ order: 12
 classType: "clase"
 description: "Variables aleatorias continuas - Funciones de probabilidad - Función de distribución acumulada - Esperanza matemática - Propiedades de esperanza matemática - Varianza"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Variables aleatorias continuas

@@ -4,7 +4,6 @@ course: "semillero-r"
 order: 5
 classType: "practica"
 description: "Ejercicio sobre estructura de datos, ciclos, condicionales y funciones."
-bibliography: "../../referencias.bib"
 ---
 
 Ejercicios

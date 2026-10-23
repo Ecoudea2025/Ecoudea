@@ -5,7 +5,6 @@ order: 26
 classType: "practica"
 description: "Ejercicios sobre: - Distribución Uniforme Continua - Distribución Gamma - Distribución Exponencial - Distribución Normal - Teoremas de Aproximación - Momentos - Función generadora de momentos"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Lista de ejercicios

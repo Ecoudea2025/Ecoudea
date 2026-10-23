@@ -5,7 +5,6 @@ order: 19
 classType: "clase"
 description: "Distribuciones de probabilidad conjuntas - Covarianza - Correlación - Independencia"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribución de probabilidad conjunta

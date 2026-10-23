@@ -5,7 +5,6 @@ order: 15
 classType: "practica"
 description: "Ejercicios sobre: - Variables aleatorias continuas - Esperanza matemática - Varianza - Distribuciones de probabilidad continuas"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

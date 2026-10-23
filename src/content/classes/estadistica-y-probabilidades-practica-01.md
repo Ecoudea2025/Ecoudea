@@ -5,7 +5,6 @@ order: 20
 classType: "practica"
 description: "Ejercicios sobre: - Variables aleatorias conjuntas - Esperanza matemática - Esperanza matemática condicional - Varianza"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

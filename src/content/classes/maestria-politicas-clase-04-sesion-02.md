@@ -5,7 +5,6 @@ order: 2
 classType: "clase"
 description: "Medidas estadísticas - Medidas de tendencias central - Medidas de localización - Medidas de dispersión - Medidas de forma - Medidas de asociación"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Medidas estadísticas

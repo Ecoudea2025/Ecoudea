@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 7
 classType: "clase"
 description: "Modelo no-paramétricos de series de tiempo. Series estacionarias en media: - Promedios simples. - Promedios móviles unilaterales y bilaterales. - Suavizamiento exponencial simple."
-bibliography: "../../referencias.bib"
 ---
 
 Introducción al modelamiento de series de tiempo

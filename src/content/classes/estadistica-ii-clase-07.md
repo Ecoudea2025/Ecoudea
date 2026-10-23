@@ -5,7 +5,6 @@ order: 18
 classType: "clase"
 description: "Prueba de hipótesis. - Prueba de hipótesis para diferencia de proporciones - Prueba de hipótesis para una varianza. - Prueba de hipótesis para razón de varianzas."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Prueba de hipótesis para diferencia de proporciones `$p_1 - p_2$`

@@ -4,7 +4,6 @@ course: "guias"
 order: 6
 classType: "guia"
 description: "Guía detallada para la instalación de los programas R-project y Rstudio en Windows."
-bibliography: "../../referencias.bib"
 ---
 
 ## Instalación de R-Project

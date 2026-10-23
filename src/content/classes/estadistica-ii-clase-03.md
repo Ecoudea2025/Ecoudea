@@ -5,7 +5,6 @@ order: 22
 classType: "clase"
 description: "Análisis de Regresión - Regresión lineal múltiple - Notación matricial - Estimación de parámetros"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Introducción

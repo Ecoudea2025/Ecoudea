@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 24
 classType: "practica"
 description: "Indicaciones trabajo muestreo"
-bibliography: "../../referencias.bib"
 ---
 
 Indicaciones trabajo muestreo

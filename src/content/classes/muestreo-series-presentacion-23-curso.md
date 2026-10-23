@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 2
 classType: "presentacion"
 description: "Presentación del curso de Series de tiempo y muestreo. Exposición de la metodología. Explicación de la evaluación del curso. Generalidades a tener en cuenta."
-bibliography: "../../referencias.bib"
 ---
 
 Descripción general del curso

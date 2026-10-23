@@ -5,7 +5,6 @@ order: 27
 classType: "practica"
 description: "Ejercicio sobre: - Errores tipo I y tipo II - Pruebas de hipótesis - Pruebas de bondad de ajuste"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Lista de ejercicios

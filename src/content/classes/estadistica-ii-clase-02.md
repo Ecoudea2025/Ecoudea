@@ -4,7 +4,6 @@ course: "estadistica-ii"
 order: 23
 classType: "clase"
 description: "Análisis de Regresión Lineal Simple - Prueba de hipótesis - Intervalos de confianza Análisis de Regresión Lineal Múltiple - Prueba de hipótesis - Intervalos de confianza Revisión de supuestos del modelo - Linealidad - Normalidad - Homocedasticidad - Independencia - Multicolinealidad"
-bibliography: "../../referencias.bib"
 ---
 
 ## Análisis de Regresión Lineal Simple

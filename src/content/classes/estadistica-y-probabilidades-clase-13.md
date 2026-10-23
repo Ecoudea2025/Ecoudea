@@ -5,7 +5,6 @@ order: 8
 classType: "clase"
 description: "Introducción a variables aleatorias Variables aleatorias discretas - Funciones de probabilidad - Función de distribución acumulada - Esperanza matemática - Propiedades de esperanza matemática"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Variables aleatorias

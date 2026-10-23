@@ -5,7 +5,6 @@ order: 9
 classType: "clase"
 description: "Variables aleatorias discretas - Varianza Distribuciones de probabilidad discretas: - Ensayo Bernoulli - Distribución Binomial - Distribución Hipergeométrica"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Variables aleatorias discretas

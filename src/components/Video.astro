@@ -1,0 +1,50 @@
+---
+/** Video (Manim → YouTube) con fachada: no carga nada de YouTube hasta el clic.
+ *  Todo video lleva transcripción: la clase debe entenderse sin verlo. */
+export interface Props {
+  youtubeId: string;
+  title: string;
+  poster?: string;
+  transcriptHref?: string;
+}
+const { youtubeId, title, poster, transcriptHref } = Astro.props;
+const base = import.meta.env.BASE_URL;
+if (!/^[A-Za-z0-9_-]{11}$/.test(youtubeId)) {
+  throw new Error(`<Video> youtubeId inválido: "${youtubeId}" (se esperan 11 caracteres).`);
+}
+---
+<div class="eco-video relative w-full rounded-2xl overflow-hidden border border-border-subtle bg-black aspect-video my-8" data-eco-video={youtubeId}>
+  {poster && <img src={poster.startsWith('/') ? `${base}${poster}` : poster} alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" decoding="async" />}
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40"></div>
+  <button
+    type="button"
+    class="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-4 cursor-pointer border-0 bg-transparent group"
+    data-eco-video-btn
+    aria-label={`Reproducir video: ${title}`}
+  >
+    <span class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-accent/90 group-hover:bg-accent flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-xl shadow-accent/30">
+      <svg class="w-7 h-7 sm:w-8 sm:h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+    </span>
+    <span class="text-sm font-medium text-white/90">{title}</span>
+  </button>
+  {transcriptHref && (
+    <a href={transcriptHref} class="absolute bottom-3 right-3 z-10 text-[11px] px-2 py-1 rounded-md bg-black/60 text-white/90 hover:text-white no-underline">Transcripción</a>
+  )}
+</div>
+
+<script>
+  document.querySelectorAll('[data-eco-video]').forEach((wrap) => {
+    const btn = wrap.querySelector('[data-eco-video-btn]');
+    btn?.addEventListener('click', () => {
+      const id = wrap.getAttribute('data-eco-video');
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1`;
+      iframe.title = btn.getAttribute('aria-label') || 'Video';
+      iframe.className = 'absolute inset-0 w-full h-full';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+      wrap.replaceChildren(iframe);
+    }, { once: true });
+  });
+</script>

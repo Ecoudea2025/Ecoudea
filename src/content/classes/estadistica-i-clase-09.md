@@ -5,7 +5,6 @@ order: 18
 classType: "clase"
 description: "Covarianza. Correlación. Independencia. Propiedades de la varianza y la covarianza. Teorema de Chebyshev"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Covarianza

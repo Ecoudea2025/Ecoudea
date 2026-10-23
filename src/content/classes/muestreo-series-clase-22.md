@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 3
 classType: "clase"
 description: "Tipos de métodos de pronóstico. Factores a tener en cuenta en la selección de métodos de pronósticos. Componentes de una serie de tiempo."
-bibliography: "../../referencias.bib"
 ---
 
 Introducción

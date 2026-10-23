@@ -85,6 +85,14 @@ const tl = typeLabels[classEntry.data.classType] || 'Clase';
       </div>
     </div>
 
+    <details id="class-toc-mobile" class="lg:hidden rounded-xl border border-border-subtle bg-elevated/40 mb-6">
+      <summary class="px-4 py-3 text-sm font-semibold text-text cursor-pointer list-none flex items-center justify-between gap-2 [&::-webkit-details-marker]:hidden">
+        <span>Contenido de la clase</span>
+        <svg class="w-4 h-4 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+      </summary>
+      <nav class="px-4 pb-4" aria-label="Contenido de la clase"></nav>
+    </details>
+
     <div class="lg:flex lg:gap-8" data-class-content data-course-id={courseId} data-class-id={classId} data-prev-id={prevClass ? prevClass.id : ''} data-unlock={course.data.unlockMode || 'open'}>
       <div class="flex-1 min-w-0">
         {(classEntry.data.video || classEntry.data.videoFallback) && (

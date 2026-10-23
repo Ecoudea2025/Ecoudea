@@ -5,7 +5,6 @@ order: 1
 classType: "clase"
 description: "Introducción a R Estadística Descriptiva"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Introducción a R

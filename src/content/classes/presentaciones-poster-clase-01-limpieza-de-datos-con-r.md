@@ -4,7 +4,6 @@ course: "presentaciones-poster"
 order: 2
 classType: "clase"
 math: true
-bibliography: "../referencias.bib"
 ---
 
 Qué es limpieza de datos?

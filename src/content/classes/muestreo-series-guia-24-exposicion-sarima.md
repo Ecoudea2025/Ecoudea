@@ -5,7 +5,6 @@ order: 1
 classType: "guia"
 description: "Aplicación de modelo SARIMA: - Identificación de componentes - Raíces unitarias - Identifcación del modelo - Estimación del modelo - Validación de supuestos - Pronóstico del modelo"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ``` python

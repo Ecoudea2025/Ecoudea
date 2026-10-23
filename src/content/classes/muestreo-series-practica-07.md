@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 18
 classType: "practica"
 description: "Ejercicios sobre modelos paramétricos: - Identificación. - Selección de modelos. - Ajuste de modelos. - Validación de supuestos. - Pronóstico de modelos."
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

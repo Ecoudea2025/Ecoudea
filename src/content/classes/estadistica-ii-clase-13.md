@@ -5,7 +5,6 @@ order: 12
 classType: "clase"
 description: "Estimación por intervalos. - Intervalos de confianza para una media."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Estimación por intervalos

@@ -5,7 +5,6 @@ order: 3
 classType: "clase"
 description: "Teorema del límite central Distribuciones muestrales: - Distribución para combinaciones lineales - Distribución muestral chi-cuadrado. - Distribución muestral t de Student. - Distribución muestral F de Fisher. - Distribución muestral para una proporción."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Teorema del límite central

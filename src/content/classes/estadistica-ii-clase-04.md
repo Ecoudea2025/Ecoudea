@@ -5,7 +5,6 @@ order: 21
 classType: "clase"
 description: "Análisis de Regresión - Regresión lineal simple - Estimación de parámetros"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Análisis de Regresión

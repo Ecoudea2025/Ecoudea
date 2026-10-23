@@ -5,7 +5,6 @@ order: 5
 classType: "clase"
 description: "Intervalos de confianza"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Intervalos de confianza

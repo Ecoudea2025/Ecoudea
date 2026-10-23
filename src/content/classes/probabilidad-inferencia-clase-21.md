@@ -5,7 +5,6 @@ order: 7
 classType: "clase"
 description: "Medidas estadísticas: - Medidas de localización - Medidas de dispersión"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Medidas estadísticas

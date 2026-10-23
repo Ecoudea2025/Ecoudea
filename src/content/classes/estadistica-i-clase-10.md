@@ -5,7 +5,6 @@ order: 17
 classType: "clase"
 description: "Esperanza condicional Varianza. - Caso univariado - Caso multivariado"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Esperanza matemática condicional

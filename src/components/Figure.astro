@@ -1,0 +1,49 @@
+---
+/** Figura económica generada por el pipeline Matplotlib→SVG.
+ *  `id` corresponde a `src/assets/figures/<id>-{light,dark}.svg`.
+ *  El `alt` es OBLIGATORIO: el build falla sin él (accesibilidad). */
+export interface Props {
+  id: string;
+  caption: string;
+  alt: string;
+  fuente?: string;
+  details?: string;
+}
+const { id, caption, alt, fuente, details } = Astro.props;
+if (!alt || !alt.trim()) {
+  throw new Error(`<Figure id="${id}"> requiere alt con descripción de la figura (accesibilidad).`);
+}
+const svgs = import.meta.glob('../assets/figures/**/*.svg', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+const light = svgs[`../assets/figures/${id}-light.svg`];
+const dark = svgs[`../assets/figures/${id}-dark.svg`];
+if (!light || !dark) {
+  throw new Error(`<Figure id="${id}">: faltan src/assets/figures/${id}-{light,dark}.svg. Genera con: npm run figures -- ${id}`);
+}
+---
+<figure class="eco-figure my-8">
+  <img src={light} alt={alt} class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src={dark} alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption class="mt-3 text-sm text-text-muted text-center">
+    {caption}
+    {fuente && <span class="block text-xs mt-1">Fuente: {fuente}</span>}
+    <a href={light} download class="inline-block text-xs mt-1 text-accent hover:underline no-underline">Descargar SVG</a>
+  </figcaption>
+  {details && (
+    <details class="mt-2 text-sm text-text-muted">
+      <summary class="cursor-pointer text-xs text-accent">Descripción detallada de la figura</summary>
+      <p class="mt-1">{details}</p>
+    </details>
+  )}
+</figure>
+
+<style>
+  .eco-figure .fig-dark { display: none; }
+  :root[data-theme="dark"] .eco-figure .fig-light { display: none; }
+  :root[data-theme="dark"] .eco-figure .fig-dark { display: block; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .eco-figure .fig-light { display: none; }
+    :root:not([data-theme]) .eco-figure .fig-dark { display: block; }
+  }
+  :root[data-theme="light"] .eco-figure .fig-light { display: block; }
+  :root[data-theme="light"] .eco-figure .fig-dark { display: none; }
+</style>

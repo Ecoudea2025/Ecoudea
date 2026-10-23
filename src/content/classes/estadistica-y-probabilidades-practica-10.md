@@ -5,7 +5,6 @@ order: 11
 classType: "practica"
 description: "Ejercicios sobre: - Variables aleatorias discretas - Esperanza matemática - Varianza - Distribuciones de probabilidad discretas"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Lista de ejercicios

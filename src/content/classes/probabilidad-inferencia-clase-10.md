@@ -5,7 +5,6 @@ order: 18
 classType: "clase"
 description: "Distribuciones de probabilidad continua: - Distribución Normal - Distribución Normal Estándar Teoremas de Aproximación: - Binomial a Poisson - Binomial a Normal"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Distribuciones de probabilidad continuas

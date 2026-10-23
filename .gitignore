@@ -24,3 +24,10 @@ pnpm-debug.log*
 .idea/
 
 preview.log
+
+# verification artifacts
+.playwright-mcp/
+
+# python
+__pycache__/
+.venv/

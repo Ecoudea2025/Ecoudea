@@ -5,7 +5,6 @@ order: 5
 classType: "clase"
 description: "Estadísticos de orden Convergencia de variables aleatorias: - Convergencia en probabilidad - Convergencia en distribución - Convergencia en media - Convergencia casi segura"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Estadísticos de orden

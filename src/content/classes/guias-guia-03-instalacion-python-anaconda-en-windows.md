@@ -4,7 +4,6 @@ course: "guias"
 order: 3
 classType: "guia"
 description: "Guía detallada para la instalación del programa Python - Anaconda en Windows."
-bibliography: "../../referencias.bib"
 ---
 
 Instalación de Python - Anaconda

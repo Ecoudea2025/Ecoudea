@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 8
 classType: "clase"
 description: "Modelo no-paramétricos de series de tiempo. Series con tendencia: - Promedios móviles dobles. - Suavizamiento exponencial de Brown. - Suavizamiento exponencial de Holt."
-bibliography: "../../referencias.bib"
 ---
 
 Series con tendencia

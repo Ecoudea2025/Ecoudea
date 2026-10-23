@@ -5,7 +5,6 @@ order: 22
 classType: "clase"
 description: "Estimación puntual. Estimación por intervalos. - Intervalos de confianza para una media. - Intervalos de confianza para diferencia de medias. - Intervalos de confianza para una proporción. - Intervalos de confianza para diferencia de proporciones - Intervalos de confianza para una varianza - Intervalos de confianza para razón de varianzas."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Estimación puntual

@@ -5,7 +5,6 @@ order: 14
 classType: "clase"
 description: "Distribuciones de probabilidad continuas: - Distribución Chi-Cuadrado - Distribución Beta - Distribución Normal - Distribución Normal Estándar - Distribución Lognormal"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribuciones de probabilidad continuas

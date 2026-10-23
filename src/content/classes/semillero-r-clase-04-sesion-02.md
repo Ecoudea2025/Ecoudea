@@ -5,7 +5,6 @@ order: 3
 classType: "clase"
 description: "Operadores de subconjuntos"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Operadores de subconjuntos

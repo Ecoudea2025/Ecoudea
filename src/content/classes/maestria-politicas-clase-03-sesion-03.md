@@ -5,7 +5,6 @@ order: 3
 classType: "clase"
 description: "Resumenes numéricos Resumenes tabulares Análisis gráfico"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Resúmenes de información

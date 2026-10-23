@@ -5,7 +5,6 @@ order: 18
 classType: "clase"
 description: "Distribuciones de probabilidad conjuntas - Esperanza Matemática - Esperanza matemática condicional - Varianza"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribución de probabilidad conjunta

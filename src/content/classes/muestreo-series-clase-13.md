@@ -5,7 +5,6 @@ order: 12
 classType: "clase"
 description: "Operador de rezagos Representación de un proceso lineal AR, MA y ARMA. Condiciones de Estacionariedad e invertibilidad."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 <!-- AGREGAR FORMULAS PARA PRONÓSTICO ROMARIO SECCIÓN 6!!! -->

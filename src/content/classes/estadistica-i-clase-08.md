@@ -5,7 +5,6 @@ order: 19
 classType: "clase"
 description: "Distribuciones de probabilidad discreta: - Ensayo Bernoulli - Distribución Binomial - Distribución Hipergeométrica"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 Distribuciones de probabilidad discretas

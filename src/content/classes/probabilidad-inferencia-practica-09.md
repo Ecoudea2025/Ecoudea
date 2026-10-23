@@ -5,7 +5,6 @@ order: 19
 classType: "practica"
 description: "Ejercicio sobre: - Variables aleatorias. - Distribuciones de probabilidad."
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 # Lista de ejercicios

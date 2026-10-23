@@ -4,7 +4,6 @@ course: "guias"
 order: 4
 classType: "guia"
 description: "Guía detallada para la instalación del programa Python - Anaconda en Ubuntu."
-bibliography: "../../referencias.bib"
 ---
 
 Instalación de Python - Anaconda

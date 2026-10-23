@@ -5,7 +5,6 @@ order: 9
 classType: "clase"
 description: "Consistencia Suficiencia"
 math: true
-bibliography: "../../referencias.bib"
 ---
 
 ## Consistencia

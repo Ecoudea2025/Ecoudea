@@ -4,7 +4,6 @@ course: "guias"
 order: 2
 classType: "guia"
 description: "Guía detallada para la instalación de los programas R-project y Rstudio en Mac OS X."
-bibliography: "../../referencias.bib"
 ---
 
 Instalación de R-Project

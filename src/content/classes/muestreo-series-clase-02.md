@@ -4,7 +4,6 @@ course: "muestreo-series"
 order: 23
 classType: "clase"
 description: "Métodos de muestreo probabilístico: - Métodos de muestreo por conglomerados - Métodos de muestreo polietápico El problema de la no respuesta - Muestreo doble para el ajuste de la no respuesta"
-bibliography: "../../referencias.bib"
 ---
 
 Métodos de muestreo
