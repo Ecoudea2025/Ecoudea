@@ -7,7 +7,7 @@ import { getCollection } from 'astro:content';
 const base = import.meta.env.BASE_URL;
 
 export async function getStaticPaths() {
-  const classes = await getCollection('classes');
+  const classes = (await getCollection('classes')).filter((c) => !c.data.draft);
   const tagSet = new Set<string>();
   for (const cls of classes) {
     for (const tag of cls.data.tags || []) {
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 }
 
 const { tag } = Astro.props;
-const allClasses = await getCollection('classes');
+const allClasses = (await getCollection('classes')).filter((c) => !c.data.draft);
 const courses = await getCollection('courses');
 
 const filtered = allClasses.filter((c) => c.data.tags?.includes(tag));

@@ -6,7 +6,7 @@ import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
 const courses = await getCollection('courses');
-const allClasses = await getCollection('classes');
+const allClasses = (await getCollection('classes')).filter((c) => !c.data.draft);
 const totalClasses = allClasses.length;
 const totalPractices = allClasses.filter((c) => c.data.classType === 'practica').length;
 const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length;

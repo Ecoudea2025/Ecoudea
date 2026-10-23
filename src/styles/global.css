@@ -284,6 +284,37 @@
     }
   }
 
+  /* ── Bloques teóricos (plugin remark-blocks) ──────────────────── */
+  .eco-block {
+    --eco: var(--color-accent);
+    border: 1px solid var(--color-border-subtle);
+    border-left: 4px solid var(--eco);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    background: oklch(from var(--eco) l c h / 0.07);
+  }
+  .eco-block-title {
+    font-size: 0.8rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--eco) !important;
+    margin: 0 0 0.5rem 0 !important;
+    text-align: left !important;
+  }
+  .eco-block > :last-child { margin-bottom: 0 !important; }
+  .eco-definicion { --eco: var(--color-accent); }
+  .eco-teorema { --eco: #8b5cf6; }
+  .eco-lema, .eco-proposicion { --eco: #0284c7; }
+  .eco-demostracion { --eco: var(--color-text-muted); }
+  .eco-ejemplo { --eco: var(--color-secondary); }
+  .eco-ejercicio { --eco: #d97706; }
+  .eco-ideaclave { --eco: #d97706; background: oklch(from #d97706 l c h / 0.12); }
+  .eco-nota { --eco: #64748b; }
+  .eco-advertencia { --eco: #e11d48; }
+  .eco-intuicion { --eco: var(--color-secondary-hover); }
+
   /* ── Barra de progreso de scroll (estilo GSAP ScrollTrigger) ── */
   .scroll-progress {
     position: fixed;

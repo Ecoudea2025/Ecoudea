@@ -26,6 +26,8 @@ const classes = defineCollection({
     description: z.string().optional(),
     tags: z.array(z.string()).optional(),
     math: z.boolean().default(false),
+    /** Borrador: no se publica (ni página, ni listados, ni sitemap, ni búsqueda) */
+    draft: z.boolean().default(false),
     video: z.string().optional(),
     videoPoster: z.string().optional(),
     videoFallback: z.string().optional(),

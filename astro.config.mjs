@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import { unified } from '@astrojs/markdown-remark';
 import rehypeRaw from 'rehype-raw';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -9,6 +10,7 @@ import {
   rehypeMathNormalize,
 } from './src/lib/markdown-math.mjs';
 import { katexMacros } from './src/lib/katex-macros.mjs';
+import { remarkBlocks } from './src/lib/remark-blocks.mjs';
 import archiveManifest from './archive/manifest.json' with { type: 'json' };
 
 const archivedPaths = new Set([
@@ -71,8 +73,12 @@ export default defineConfig({
       theme: 'one-dark-pro',
       wrap: false,
     },
-    remarkPlugins: [remarkMath, remarkNormalizeMath, remarkBaseImages],
-    rehypePlugins: [rehypeRaw, rehypeMathNormalize, rehypeBaseImages, [rehypeKatex, { trust: true, strict: false, macros: katexMacros }]],
+    // Astro 7: el contenido usa `processor` (unified); las claves sueltas
+    // remarkPlugins/rehypePlugins no llegan al renderer. No volver atrás.
+    processor: unified({
+      remarkPlugins: [remarkMath, remarkNormalizeMath, remarkBlocks, remarkBaseImages],
+      rehypePlugins: [rehypeRaw, rehypeMathNormalize, rehypeBaseImages, [rehypeKatex, { trust: true, strict: false, macros: katexMacros }]],
+    }),
   },
   vite: {
     plugins: [tailwindcss()],

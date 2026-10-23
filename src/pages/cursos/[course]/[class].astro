@@ -10,7 +10,7 @@ import manifest from '../../../../archive/manifest.json';
 const base = import.meta.env.BASE_URL;
 
 export async function getStaticPaths() {
-  const classes = await getCollection('classes');
+  const classes = (await getCollection('classes')).filter((c) => !c.data.draft);
   const active = classes.map((cls) => ({
     params: { course: cls.data.course, class: cls.id },
     props: { courseId: cls.data.course, classId: cls.id, archivedCourse: null },
@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 
 const { courseId, classId, archivedCourse } = Astro.props;
 
-const allClasses = await getCollection('classes');
+const allClasses = (await getCollection('classes')).filter((c) => !c.data.draft);
 const courses = await getCollection('courses');
 const course = courses.find((c) => c.id === courseId);
 const classEntry = allClasses.find((c) => c.id === classId);

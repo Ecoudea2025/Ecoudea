@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 const { courseId, archived } = Astro.props;
-const allClasses = await getCollection('classes');
+const allClasses = (await getCollection('classes')).filter((c) => !c.data.draft);
 const courses = await getCollection('courses');
 const course = courses.find((c) => c.id === courseId);
 
