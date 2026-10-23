@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/gzip.mjs",
+    "build": "astro build && pagefind --site dist --output-subdir pagefind && node scripts/gzip.mjs",
     "preview": "astro preview",
     "content:fix": "node scripts/fix-math-delims.cjs && node scripts/fix-list-math-indent.cjs && node scripts/fix-lists.cjs && node scripts/fix-code-dollars.cjs",
     "new:course": "node scripts/new-course.cjs",

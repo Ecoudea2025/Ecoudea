@@ -1,0 +1,153 @@
+---
+/** Búsqueda real con Pagefind: modal con atajo `/` / `Ctrl+K`, resultados con
+ *  extracto y URLs con BASE_PATH. El índice se carga solo al abrir (lazy). */
+import manifest from '../../archive/manifest.json';
+
+export interface Props {
+  base: string;
+  /** Sufijo para IDs cuando hay dos instancias (desktop + móvil). */
+  uid?: string;
+}
+const { base, uid = '' } = Astro.props;
+const archivedIds: string[] = manifest.courses.map((c) => c.id);
+const id = (n) => `${n}${uid}`;
+---
+
+<button
+  id={id('search-open')}
+  type="button"
+  class="flex items-center justify-center w-11 h-11 rounded-lg text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline border-0 bg-transparent cursor-pointer"
+  aria-label="Buscar en Ecoudea"
+  title="Buscar (pulsa /)"
+>
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+  </svg>
+</button>
+
+<div id={id('search-modal')} class="fixed inset-0 z-[90] hidden" role="dialog" aria-modal="true" aria-label="Buscar en Ecoudea">
+  <div id={id('search-backdrop')} class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+  <div class="absolute inset-x-0 top-0 sm:top-[10vh] sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-xl sm:rounded-2xl bg-elevated border border-border-subtle shadow-2xl overflow-hidden flex flex-col max-h-[100dvh] sm:max-h-[70dvh]">
+    <div class="flex items-center gap-2 px-4 border-b border-border-subtle">
+      <svg class="w-4 h-4 text-text-muted shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <input
+        id={id('search-input')}
+        type="search"
+        placeholder="Buscar en clases… (términos, conceptos, fórmulas)"
+        aria-label="Buscar en clases"
+        autocomplete="off"
+        class="flex-1 bg-transparent py-4 text-sm text-text placeholder:text-text-muted/60 focus:outline-none"
+      />
+      <kbd class="hidden sm:inline text-[10px] px-1.5 py-0.5 rounded border border-border-subtle text-text-muted" aria-hidden="true">esc</kbd>
+    </div>
+    <p id={id('search-status')} class="px-4 pt-3 text-xs text-text-muted" role="status"></p>
+    <ul id={id('search-results')} class="overflow-y-auto p-2 space-y-1 list-none m-0"></ul>
+  </div>
+</div>
+
+<script is:inline define:vars={{ base, archivedIds, uid }}>
+  (() => {
+    const $ = (n) => document.getElementById(n + uid);
+    const openBtn = $('search-open');
+    const modal = $('search-modal');
+    const backdrop = $('search-backdrop');
+    const input = $('search-input');
+    const resultsEl = $('search-results');
+    const statusEl = $('search-status');
+    if (!openBtn || !modal || modal.dataset.ready) return;
+    modal.dataset.ready = '1';
+
+    let pf = null;
+    let lastInvoker = null;
+
+    async function engine() {
+      if (pf) return pf;
+      statusEl.textContent = 'Cargando índice…';
+      pf = await import(/* @vite-ignore */ base + '/pagefind/pagefind.js');
+      await pf.options({ baseUrl: base + '/' });
+      return pf;
+    }
+
+    function open(invoker) {
+      lastInvoker = invoker || document.activeElement;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      input.value = '';
+      resultsEl.innerHTML = '';
+      statusEl.textContent = 'Escribe al menos 2 caracteres.';
+      setTimeout(() => input.focus(), 30);
+    }
+    function close() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+      if (lastInvoker && lastInvoker.focus) lastInvoker.focus();
+    }
+
+    openBtn.addEventListener('click', () => open(openBtn));
+    backdrop.addEventListener('click', close);
+    document.addEventListener('keydown', (e) => {
+      const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || '');
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        modal.classList.contains('hidden') ? open() : close();
+      } else if (e.key === '/' && !typing && modal.classList.contains('hidden')) {
+        e.preventDefault();
+        open();
+      } else if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        close();
+      }
+    });
+
+    let timer = null;
+    let seq = 0;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      const q = input.value.trim();
+      if (q.length < 2) {
+        resultsEl.innerHTML = '';
+        statusEl.textContent = 'Escribe al menos 2 caracteres.';
+        return;
+      }
+      statusEl.textContent = 'Buscando…';
+      timer = setTimeout(async () => {
+        const mine = ++seq;
+        try {
+          const api = await engine();
+          const res = await api.search(q);
+          if (mine !== seq) return;
+          const items = await Promise.all(res.results.slice(0, 8).map((r) => r.data()));
+          // Fuera avisos de archivados: comparar por segmento completo
+          // ('estadistica-i' no debe comerse a 'estadistica-ii').
+          const live = items.filter((d) => !archivedIds.some((id) => (d.url || '').includes('/cursos/' + id + '/')));
+          if (!live.length) {
+            resultsEl.innerHTML = '';
+            statusEl.textContent = `Sin resultados para "${q}".`;
+            return;
+          }
+          statusEl.textContent = `${live.length} resultado${live.length === 1 ? '' : 's'} (de ${res.results.length} en el índice)`;
+          resultsEl.innerHTML = live.map((d) => `
+            <li>
+              <a href="${d.url}" class="flex flex-col gap-1 px-3 py-2.5 rounded-xl no-underline hover:bg-accent-soft focus:bg-accent-soft focus:outline-none">
+                <span class="text-sm font-semibold text-text">${d.meta?.title || d.url}</span>
+                <span class="text-xs text-text-muted leading-relaxed line-clamp-2">${d.excerpt || ''}</span>
+              </a>
+            </li>`).join('');
+        } catch (err) {
+          if (mine !== seq) return;
+          statusEl.textContent = 'No se pudo cargar el índice de búsqueda.';
+        }
+      }, 220);
+    });
+  })();
+</script>
+
+<style>
+  #search-results mark {
+    background: var(--color-accent-soft);
+    color: var(--color-accent-hover);
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+</style>

@@ -56,7 +56,7 @@ const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} 
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}/${classId}`} /></Fragment>
 
   {archivedCourse ? (
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center" data-pagefind-ignore>
       <p class="text-xs font-bold uppercase tracking-[0.14em] text-amber-400 mb-3">Clase archivada</p>
       <h1 class="text-2xl sm:text-3xl font-bold text-text mb-3">Este material se archivó</h1>
       <p class="text-text-muted leading-relaxed mb-8">

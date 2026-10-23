@@ -65,7 +65,7 @@ const pageDesc = course ? course.data.description : 'Este curso fue archivado. E
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}`} /></Fragment>
 
   {archived ? (
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center" data-pagefind-ignore>
       <p class="text-xs font-bold uppercase tracking-[0.14em] text-amber-400 mb-3">Curso archivado</p>
       <h1 class="text-2xl sm:text-3xl font-bold text-text mb-3">{archived.title}</h1>
       <p class="text-text-muted leading-relaxed mb-8">
