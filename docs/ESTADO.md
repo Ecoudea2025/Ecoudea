@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: entregado a `master` (deploy automático en curso) · Última actualización: 2026-10-23
+Fase actual: 5.a cerrada → siguiente 5.b (Pagefind) · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
@@ -12,6 +12,7 @@ Fase actual: entregado a `master` (deploy automático en curso) · Última actua
 - 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
+- Fase 5.a (rediseño home): ✅ commit + tag `fase-5a-cerrada`. Hero asimétrico con SVG oferta/demanda (draw-on-load, estático con reduced-motion), sin typewriter, stats SSR, rutas editoriales 01/02/03 con filtro sin recarga, "Continúa donde lo dejaste" (localStorage + índice embebido), CTA en banda horizontal, pills con `role=group`, contadores con `<dl>`.
 - Fase 0: ✅ git + `v1-legacy` ✅ baseline en `docs/baseline/` ✅ CLAUDE/AGENTS ✅ `url()` ✅ ESTADO/ORQUESTADOR ✅ inventario
 - Fase 1: ✅ `tokens.css` (3 capas) ✅ claro/oscuro/sistema sin FOUC + `ThemeToggle` ✅ `prefers-reduced-motion` global (CSS + JS) ✅ `aria-current` ✅ flotantes 44px + `Esc` ✅ 8 primitivos `ui/` ✅ `/styleguide` (noindex) ✅ Space Grotesk fuera
 - Fase 2: ✅ huérfanas rescatadas ✅ `new:course`/`new:lesson` ✅ `bibliography` fuera ✅ `docs/AUTORIA.md`
@@ -21,7 +22,9 @@ Fase actual: entregado a `master` (deploy automático en curso) · Última actua
 - Fase 7: ✅ pipeline `figures/` + `style.py` + `manifest.json` + `npm run figures` ✅ `<Figure>` (alt obligatorio, light/dark) ✅ `<Video>` con fachada ✅ ejemplo real en `/styleguide`
 - Commit `fadb2ae` (fases 0-1). Pendiente commit fases 2-4+7.
 
-## Deuda pendiente
+## Deuda pendiente (Fase 5.b: Pagefind real + Lighthouse)
+- Pagefind: indexar `dist`, UI con `Ctrl+K`/`/`, verificado con BASE_PATH
+- Lighthouse móvil/escritorio home (LCP ≤2,5s, CLS <0,05) → con CI de Fase 8
 - 52 usos `${base}` → `url()` (grep de cierre Fase 8)
 - View Transitions (ver decisión arriba)
 - Pagefind real (dep instalada; indexar `dist` + UI con `Ctrl+K`)

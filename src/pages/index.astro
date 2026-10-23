@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import CourseCard from '../components/CourseCard.astro';
+import Icon from '../components/ui/Icon.astro';
 import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
@@ -20,19 +21,50 @@ for (const cls of allClasses) {
   }
 }
 
-const categories = ['Cursos', 'Guías y Semilleros', 'Sesiones Especiales'];
-const categoryCounts = categories.map((cat) => ({
-  category: cat,
-  count: sortedCourses.filter((c) => c.data.category === cat).length,
+const routes = [
+  {
+    filter: 'Cursos',
+    n: '01',
+    icon: 'book',
+    tone: 'text-accent border-accent/30 bg-accent-soft',
+    title: 'Cursos',
+    desc: 'Del fundamento a la inferencia: probabilidad, estadística, muestreo y series de tiempo, paso a paso y con matemáticas claras.',
+  },
+  {
+    filter: 'Guías y Semilleros',
+    n: '02',
+    icon: 'code',
+    tone: 'text-amber-400 border-amber-500/30 bg-amber-500/10',
+    title: 'Guías y Semilleros',
+    desc: 'Instala R, Python y sus ecosistemas sin pelear con el sistema operativo. Guías por plataforma y semilleros para practicar.',
+  },
+  {
+    filter: 'Sesiones Especiales',
+    n: '03',
+    icon: 'bulb',
+    tone: 'text-rose-400 border-rose-500/30 bg-rose-500/10',
+    title: 'Sesiones Especiales',
+    desc: 'Seminarios, nivelatorios y presentaciones: material de posgrado y sesiones temáticas con enfoque aplicado.',
+  },
+];
+const categoryCounts = routes.map((r) => ({
+  category: r.filter,
+  count: sortedCourses.filter((c) => c.data.category === r.filter).length,
 }));
-const grouped = categories.map((cat) => ({
-  category: cat,
-  courses: sortedCourses.filter((c) => c.data.category === cat),
-})).filter((g) => g.courses.length > 0);
 
 const totalClasses = allClasses.length;
 const totalPractices = allClasses.filter((c) => c.data.classType === 'practica').length;
 const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length;
+
+// Índice para "Continúa donde lo dejaste" (progreso en localStorage).
+const courseTitles = Object.fromEntries(sortedCourses.map((c) => [c.id, c.data.title]));
+const classIndex = allClasses.map((c) => ({
+  id: c.id,
+  c: c.data.course,
+  t: c.data.title,
+  o: c.data.order,
+  ct: courseTitles[c.data.course] || c.data.course,
+}));
 ---
 
 <BaseLayout title="Ecoudea - Cursos de Estadística" description="Cursos de estadística, probabilidad y programación con R y Python">
@@ -40,145 +72,187 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
     <Navbar currentPath="/" />
   </Fragment>
 
+  <!-- ═══ HERO ASIMÉTRICO ═══ -->
   <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 via-secondary/5 to-transparent pointer-events-none" />
-    <div class="absolute top-20 left-10 w-72 h-72 rounded-full bg-accent/5 blur-3xl pointer-events-none" data-parallax="0.15" />
-    <div class="absolute bottom-10 right-20 w-96 h-96 rounded-full bg-secondary/5 blur-3xl pointer-events-none" data-parallax="0.08" />
+    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 via-secondary/5 to-transparent pointer-events-none" aria-hidden="true" />
+    <div class="absolute top-24 -left-24 w-96 h-96 rounded-full bg-accent/5 blur-3xl pointer-events-none" data-parallax="0.1" aria-hidden="true" />
 
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center relative">
-      <div class="flex justify-center mb-6 reveal is-visible">
-        <div class="logo-stage relative w-20 h-20 sm:w-24 sm:h-24" data-logo-stage>
-          <div class="logo-ring" aria-hidden="true"></div>
-          <div class="logo-orbit" style="--orbit-duration: 5s; --orbit-radius: 52px" aria-hidden="true"><span class="logo-orbit-dot"></span></div>
-          <div class="logo-orbit" style="--orbit-duration: 8s; --orbit-radius: 66px; --dot-color: #069a7e; animation-direction: reverse" aria-hidden="true"><span class="logo-orbit-dot"></span></div>
-          <div class="relative w-full h-full rounded-2xl overflow-hidden border-2 border-accent/30 shadow-xl shadow-accent/20 logo-core-glow">
-            <img src={`${base}/assets/images/logo-ecoudea.png`} alt="Ecoudea" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14 sm:pt-20 sm:pb-20 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center relative">
+      <!-- Columna de texto -->
+      <div class="lg:col-span-7">
+        <p class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-soft border border-accent/20 text-accent text-xs sm:text-sm font-medium mb-6 reveal is-visible">
+          <span class="w-2 h-2 rounded-full bg-accent animate-pulse" aria-hidden="true" />
+          {totalClasses} clases abiertas · sin registro
+        </p>
+        <h1 class="font-extrabold tracking-tight mb-5 max-w-xl reveal is-visible" style="font-size: var(--text-hero); line-height: 1.05;">
+          La estadística, explicada <span class="gradient-text">como debe ser</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-text-muted max-w-xl leading-relaxed mb-8 reveal is-visible">
+          Cursos y recursos de estadística, probabilidad y programación con R y Python:
+          teoría rigurosa, fórmulas legibles y prácticas con datos reales.
+        </p>
+        <div class="flex items-center gap-4 flex-wrap mb-10 reveal is-visible">
+          <a href="#directorio" class="btn no-underline">
+            Explorar catálogo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+          <a href={`${base}/acercade`} class="btn-ghost no-underline">
+            Conocer el proyecto
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </div>
+        <dl class="flex items-stretch gap-5 sm:gap-7 reveal is-visible">
+          <div>
+            <dt class="sr-only">cursos</dt>
+            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>{courses.length}</dd>
+            <dd class="text-xs text-text-muted mt-0.5">cursos</dd>
           </div>
-        </div>
+          <div class="w-px bg-border-subtle" aria-hidden="true" />
+          <div>
+            <dt class="sr-only">clases</dt>
+            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={totalClasses}>{totalClasses}</dd>
+            <dd class="text-xs text-text-muted mt-0.5">clases</dd>
+          </div>
+          <div class="w-px bg-border-subtle" aria-hidden="true" />
+          <div>
+            <dt class="sr-only">prácticas</dt>
+            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={totalPractices}>{totalPractices}</dd>
+            <dd class="text-xs text-text-muted mt-0.5">prácticas</dd>
+          </div>
+          <div class="w-px bg-border-subtle hidden sm:block" aria-hidden="true" />
+          <div class="hidden sm:block">
+            <dt class="sr-only">guías</dt>
+            <dd class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={totalGuides}>{totalGuides}</dd>
+            <dd class="text-xs text-text-muted mt-0.5">guías</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-soft border border-accent/20 text-accent text-xs sm:text-sm font-medium mb-6 reveal is-visible">
-        <span class="w-2 h-2 rounded-full bg-accent animate-pulse" />
-        {totalClasses} clases disponibles
-      </div>
-
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 reveal is-visible" style="font-weight: 650;">
-        Construye tu dominio de la <span class="gradient-text">estadística</span>
-      </h1>
-      <p data-typewriter class="text-lg sm:text-xl text-text-muted max-w-2xl mx-auto leading-relaxed">
-        Cursos y recursos de estadística, probabilidad y programación con R y Python, explicados con claridad.
-      </p>
-
-      <div class="flex items-center justify-center gap-4 mt-8 flex-wrap reveal is-visible">
-        <a href="#directorio" class="btn no-underline">
-          Explorar catálogo
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      <!-- Pieza visual: oferta y demanda -->
+      <div class="lg:col-span-5 reveal is-visible">
+        <div class="relative rounded-3xl border border-border-subtle bg-elevated/50 p-5 sm:p-7 shadow-xl overflow-hidden">
+          <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-secondary/10 blur-3xl pointer-events-none" aria-hidden="true" />
+          <svg viewBox="0 0 400 300" class="w-full h-auto" role="img" aria-label="Curvas de oferta y demanda cruzándose en el punto de equilibrio">
+            <g stroke="currentColor" class="text-border-subtle" stroke-width="1" aria-hidden="true">
+              <line x1="40" y1="20" x2="40" y2="270" />
+              <line x1="40" y1="270" x2="380" y2="270" />
+              {Array.from({ length: 6 }).map((_, i) => (
+                <line x1={70 + i * 55} y1="20" x2={70 + i * 55} y2="270" stroke-dasharray="3 6" opacity="0.6" />
+              ))}
+              {Array.from({ length: 5 }).map((_, i) => (
+                <line x1="40" y1={50 + i * 48} x2="380" y2={50 + i * 48} stroke-dasharray="3 6" opacity="0.6" />
+              ))}
+            </g>
+            <text x="30" y="40" text-anchor="end" font-size="13" class="fill-text-muted">P</text>
+            <text x="365" y="292" text-anchor="middle" font-size="13" class="fill-text-muted">Q</text>
+            <path d="M55 60 C 150 90, 230 170, 340 240" fill="none" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" class="eco-draw" />
+            <path d="M55 240 C 160 210, 250 140, 340 60" fill="none" stroke="#d97706" stroke-width="3.5" stroke-linecap="round" class="eco-draw eco-draw-2" />
+            <line x1="198" y1="152" x2="198" y2="270" stroke="#6c9a06" stroke-width="1.5" stroke-dasharray="5 5" />
+            <line x1="40" y1="152" x2="198" y2="152" stroke="#6c9a06" stroke-width="1.5" stroke-dasharray="5 5" />
+            <circle cx="198" cy="152" r="7" fill="#6c9a06" stroke="#fff" stroke-width="2.5" />
+            <text x="212" y="146" font-size="15" font-weight="700" class="fill-text">E</text>
+            <text x="330" y="80" font-size="15" font-weight="700" fill="#0284c7">D</text>
+            <text x="330" y="228" font-size="15" font-weight="700" fill="#d97706">O</text>
           </svg>
-        </a>
-        <a href={`${base}/acercade`} class="btn-ghost no-underline">
-          Conocer el proyecto
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
-      </div>
-
-      <div class="flex items-center justify-center gap-6 sm:gap-8 mt-10 text-sm text-text-muted reveal is-visible">
-        <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>{courses.length}</span>
-          <span class="text-xs">cursos</span>
-        </div>
-        <div class="w-px h-10 bg-border-subtle" />
-        <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalClasses}>{totalClasses}</span>
-          <span class="text-xs">clases</span>
-        </div>
-        <div class="w-px h-10 bg-border-subtle" />
-        <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalPractices}>{totalPractices}</span>
-          <span class="text-xs">prácticas</span>
-        </div>
-        <div class="w-px h-10 bg-border-subtle" />
-        <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalGuides}>{totalGuides}</span>
-          <span class="text-xs">guías</span>
+          <div class="flex items-center justify-between gap-3 mt-4 flex-wrap">
+            <p class="text-xs text-text-muted">Cada concepto, con su figura y su intuición.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-accent">
+              <Icon name="chart" class="w-4 h-4" /> R · Python · LaTeX
+            </span>
+          </div>
+          <div class="absolute top-4 right-4 hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card text-[11px] font-semibold text-text float-soft" aria-hidden="true">
+            <span class="w-1.5 h-1.5 rounded-full bg-accent" /> Equilibrio E
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="border-y border-border-subtle bg-elevated/30">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-      <h2 class="text-2xl sm:text-3xl font-bold text-text text-center mb-2 reveal">¿Qué es Ecoudea?</h2>
-      <p class="text-text-muted text-center max-w-2xl mx-auto mb-12 reveal" data-reveal-group>
-        Una colección curada de cursos y materiales académicos para aprender estadística de forma seria, sin fricción.
-      </p>
+  <style>
+    .eco-draw {
+      stroke-dasharray: 700;
+      stroke-dashoffset: 700;
+      animation: eco-draw 1.6s var(--ease-out-expo, cubic-bezier(0.16,1,0.3,1)) 0.3s forwards;
+    }
+    .eco-draw-2 { animation-delay: 0.7s; }
+    @keyframes eco-draw { to { stroke-dashoffset: 0; } }
+    .float-soft { animation: float-soft 5s ease-in-out infinite; }
+    @keyframes float-soft { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  </style>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
-        <div class="rounded-2xl border border-border-subtle bg-surface/60 p-6 sm:p-8 card-hover reveal d-1">
-          <div class="w-11 h-11 rounded-xl bg-accent-soft border border-accent/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold text-text mb-2">Riguroso</h3>
-          <p class="text-sm text-text-muted leading-relaxed">
-            Teoría explicada paso a paso con fundamentos sólidos, fórmulas claras y matemáticas
-            renderizadas con KaTeX para que cada concepto se entienda en profundidad.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-border-subtle bg-surface/60 p-6 sm:p-8 card-hover reveal d-2">
-          <div class="w-11 h-11 rounded-xl bg-secondary-soft border border-secondary/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold text-text mb-2">Práctico</h3>
-          <p class="text-sm text-text-muted leading-relaxed">
-            {totalPractices} prácticas guiadas con datos reales en R y Python, listas para
-            aplicar cada técnica desde la primera sesión.
-          </p>
-        </div>
-        <div class="rounded-2xl border border-border-subtle bg-surface/60 p-6 sm:p-8 card-hover reveal d-3">
-          <div class="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-            </svg>
-          </div>
-          <h3 class="text-lg font-bold text-text mb-2">Accesible</h3>
-          <p class="text-sm text-text-muted leading-relaxed">
-            Todo el material es de acceso abierto y funciona en cualquier dispositivo: solo
-            necesitas un navegador para estudiar desde donde estés.
+  <!-- ═══ RUTAS DE APRENDIZAJE (editorial, no tarjetas clonadas) ═══ -->
+  <section class="border-y border-border-subtle bg-elevated/30" aria-labelledby="rutas-title">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <div class="lg:sticky lg:top-24">
+          <p class="text-xs font-bold uppercase tracking-[0.14em] text-accent mb-3 reveal">Por dónde empiezo</p>
+          <h2 id="rutas-title" class="text-2xl sm:text-3xl font-bold text-text text-balance reveal">Tres rutas,<br />un mismo rigor</h2>
+          <p class="text-text-muted mt-3 leading-relaxed reveal" data-reveal-group>
+            Elige tu camino y filtra el catálogo con un clic. Todo es abierto, sin prerrequisitos ocultos.
           </p>
         </div>
       </div>
+      <ol class="lg:col-span-8 divide-y divide-border-subtle border-y border-border-subtle list-none m-0 p-0">
+        {routes.map((r) => {
+          const n = categoryCounts.find((c) => c.category === r.filter)?.count ?? 0;
+          return (
+            <li>
+              <a
+                href="#directorio"
+                data-route-filter={r.filter}
+                class="group flex items-center gap-4 sm:gap-6 py-5 sm:py-6 no-underline reveal"
+              >
+                <span class="text-sm font-bold text-text-muted tabular-nums w-8 shrink-0" aria-hidden="true">{r.n}</span>
+                <span class={`hidden sm:flex w-12 h-12 rounded-2xl border items-center justify-center shrink-0 ${r.tone}`} aria-hidden="true">
+                  <Icon name={r.icon} class="w-6 h-6" />
+                </span>
+                <span class="flex-1 min-w-0">
+                  <span class="flex items-baseline gap-2 flex-wrap">
+                    <span class="text-lg font-bold text-text group-hover:text-accent transition-colors">{r.title}</span>
+                    <span class="text-xs text-text-muted">{n} {n === 1 ? 'curso' : 'cursos'}</span>
+                  </span>
+                  <span class="block text-sm text-text-muted leading-relaxed mt-1">{r.desc}</span>
+                </span>
+                <span class="shrink-0 w-10 h-10 rounded-full border border-border-subtle flex items-center justify-center text-text-muted group-hover:text-accent group-hover:border-accent/50 group-hover:translate-x-1 transition-all" aria-hidden="true">
+                  <Icon name="arrow-right" class="w-4 h-4" />
+                </span>
+              </a>
+            </li>
+          );
+        })}
+      </ol>
     </div>
   </section>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 sm:pb-28" id="directorio">
+  <!-- ═══ DIRECTORIO ═══ -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20" id="directorio">
     <div class="flex items-end justify-between gap-4 flex-wrap mb-6 reveal" data-reveal-group>
       <div>
+        <p class="text-xs font-bold uppercase tracking-[0.14em] text-accent mb-2">Catálogo</p>
         <h2 class="text-2xl sm:text-3xl font-bold text-text">Encuentra tu próximo curso</h2>
         <p class="text-sm text-text-muted mt-1">Busca por título, descripción o tema.</p>
       </div>
-      <span class="text-sm text-text-muted shrink-0" id="results-count"></span>
+      <span class="text-sm text-text-muted shrink-0" id="results-count" role="status"></span>
     </div>
 
     <div class="flex flex-col sm:flex-row gap-3 mb-8 reveal" data-reveal-group>
       <div class="relative flex-1 max-w-md">
-        <svg class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-text-muted pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
         <input
           id="course-search"
           type="search"
           placeholder="Buscar un curso…"
+          aria-label="Buscar un curso"
           class="w-full bg-elevated/60 border border-border-subtle rounded-lg pl-11 pr-4 py-2.5 text-sm text-text placeholder:text-text-muted/50 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all"
         />
       </div>
-      <div class="flex flex-wrap items-center gap-2" id="category-pills">
+      <div class="flex flex-wrap items-center gap-2" id="category-pills" role="group" aria-label="Filtrar por categoría">
         <button class="pill pill-active" data-filter="todos">
           Todos <span class="pill-count">{courses.length}</span>
         </button>
@@ -205,33 +279,46 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
     </div>
 
     <div id="empty-state" class="hidden text-center py-16">
-      <div class="text-4xl mb-3">🛰</div>
+      <div class="text-4xl mb-3" aria-hidden="true">🛰</div>
       <p class="text-text-muted font-medium">No hay nada por este rincón.</p>
       <p class="text-sm text-text-muted/60 mt-1">Prueba otra búsqueda o explora todas las categorías.</p>
       <button id="clear-filters" class="btn-ghost mt-6 text-sm no-underline cursor-pointer">Limpiar filtros</button>
     </div>
   </div>
 
-  <section class="relative overflow-hidden border-t border-border-subtle">
-    <div class="absolute inset-0 bg-gradient-to-br from-accent/10 via-secondary/5 to-transparent pointer-events-none" />
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center relative">
-      <h2 class="text-2xl sm:text-4xl font-bold text-text mb-4 reveal">Empieza a aprender hoy</h2>
-      <p class="text-text-muted max-w-xl mx-auto mb-8 reveal" data-reveal-group>
-        {courses.length} cursos, {totalClasses} clases y {totalPractices} prácticas listas para explorar.
-        Sin registros, sin costos, sin fricción.
-      </p>
-      <div class="flex items-center justify-center gap-4 flex-wrap reveal" data-reveal-group>
+  <!-- ═══ CONTINÚA DONDE LO DEJASTE ═══ -->
+  <section id="continua" class="hidden border-t border-border-subtle" aria-labelledby="continua-title">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-10 h-10 rounded-xl bg-secondary/10 border border-secondary/30 text-secondary flex items-center justify-center" aria-hidden="true">
+          <Icon name="clock" class="w-5 h-5" />
+        </span>
+        <div>
+          <h2 id="continua-title" class="text-xl sm:text-2xl font-bold text-text">Continúa donde lo dejaste</h2>
+          <p class="text-sm text-text-muted">Tu progreso vive en este navegador.</p>
+        </div>
+      </div>
+      <ul id="continua-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 list-none m-0 p-0"></ul>
+    </div>
+  </section>
+
+  <!-- ═══ CIERRE: banda horizontal (no un clon del hero) ═══ -->
+  <section class="border-t border-border-subtle bg-gradient-to-r from-accent/10 via-elevated/40 to-secondary/10" aria-labelledby="cta-title">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 flex flex-col md:flex-row md:items-center gap-8">
+      <div class="flex-1">
+        <h2 id="cta-title" class="text-2xl sm:text-3xl font-bold text-text reveal">Elige tu ruta y empieza hoy</h2>
+        <p class="text-text-muted mt-2 max-w-xl reveal" data-reveal-group>
+          {courses.length} cursos, {totalClasses} clases y {totalPractices} prácticas.
+          Sin registros, sin costos, sin fricción.
+        </p>
+      </div>
+      <div class="flex items-center gap-3 flex-wrap shrink-0 reveal" data-reveal-group>
         <a href="#directorio" class="btn no-underline">
-          Explorar el catálogo
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+          Ver el catálogo
+          <Icon name="arrow-right" class="w-4 h-4" />
         </a>
-        <a href={`${base}/acercade`} class="btn-ghost no-underline">
-          Conocer el proyecto
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
+        <a href={`${base}/tablero-latex`} class="btn-ghost no-underline">
+          Probar el tablero LaTeX
         </a>
       </div>
     </div>
@@ -242,7 +329,7 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
   </Fragment>
 </BaseLayout>
 
-<script>
+<script define:vars={{ base, classIndex }}>
   const searchInput = document.getElementById('course-search');
   const pills = document.querySelectorAll('#category-pills .pill');
   const cards = document.querySelectorAll('[data-course-card]');
@@ -253,6 +340,12 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
   const urlPill = [...pills].find((p) => p.dataset.filter === activeFilter);
   if (urlPill) {
     pills.forEach((p) => p.classList.toggle('pill-active', p === urlPill));
+  }
+
+  function setFilter(f) {
+    activeFilter = f;
+    pills.forEach((p) => p.classList.toggle('pill-active', p.dataset.filter === f));
+    applyFilters();
   }
 
   function applyFilters() {
@@ -270,21 +363,56 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
   }
 
   pills.forEach((pill) => {
-    pill.addEventListener('click', () => {
-      activeFilter = pill.dataset.filter;
-      pills.forEach((p) => p.classList.toggle('pill-active', p === pill));
-      applyFilters();
-    });
+    pill.addEventListener('click', () => setFilter(pill.dataset.filter));
+  });
+
+  // Las rutas de aprendizaje filtran el catálogo sin recargar.
+  document.querySelectorAll('[data-route-filter]').forEach((a) => {
+    a.addEventListener('click', () => setFilter(a.dataset.routeFilter));
   });
 
   searchInput?.addEventListener('input', applyFilters);
 
   document.getElementById('clear-filters')?.addEventListener('click', () => {
-    activeFilter = 'todos';
-    pills.forEach((p) => p.classList.toggle('pill-active', p.dataset.filter === 'todos'));
     if (searchInput) searchInput.value = '';
-    applyFilters();
+    setFilter('todos');
   });
 
   applyFilters();
+
+  // ── Continúa donde lo dejaste ──────────────────────────────────────
+  try {
+    const items = [];
+    for (let i = 0; i < localStorage.length && items.length < 3; i++) {
+      const key = localStorage.key(i);
+      if (!key || !key.startsWith('ecoudea-progress-')) continue;
+      const courseId = key.replace('ecoudea-progress-', '');
+      const done = JSON.parse(localStorage.getItem(key) || '[]');
+      if (!done.length) continue;
+      const mine = classIndex.filter((c) => c.c === courseId).sort((a, b) => a.o - b.o);
+      if (!mine.length) continue;
+      const doneOrders = new Set(mine.filter((c) => done.includes(c.id)).map((c) => c.o));
+      const next = mine.find((c) => !doneOrders.has(c.o)) || mine[mine.length - 1];
+      const pct = Math.round((doneOrders.size / mine.length) * 100);
+      items.push({ courseId, next, pct, total: mine.length, done: doneOrders.size });
+    }
+    if (items.length) {
+      const sec = document.getElementById('continua');
+      const list = document.getElementById('continua-list');
+      sec.classList.remove('hidden');
+      list.innerHTML = items.map(({ courseId, next, pct, total, done }) => `
+        <li>
+          <a href="${base}/cursos/${courseId}/${next.id}" class="flex flex-col gap-2 p-4 rounded-xl border border-border-subtle no-underline card-hover h-full">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-secondary">${next.ct}</span>
+            <span class="text-sm font-bold text-text leading-snug">Siguiente: ${next.t}</span>
+            <span class="mt-auto flex items-center gap-2 text-xs text-text-muted">
+              <span class="flex-1 h-1.5 rounded-full bg-white/10 overflow-hidden"><span class="block h-full rounded-full bg-gradient-to-r from-accent to-secondary" style="width:${pct}%"></span></span>
+              <span class="tabular-nums">${done}/${total}</span>
+            </span>
+          </a>
+        </li>`).join('');
+    }
+  } catch (e) {}
 </script>
+
+<script type="application/json" id="class-index" set:html={JSON.stringify(classIndex)} />
