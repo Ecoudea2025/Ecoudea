@@ -256,7 +256,7 @@ const classIndex = allClasses.map((c) => ({
         <button class="pill pill-active" data-filter="todos">
           Todos <span class="pill-count">{courses.length}</span>
         </button>
-        {categoryCounts.map(({ category, count }) => (
+        {categoryCounts.filter(({ count }) => count > 0).map(({ category, count }) => (
           <button class="pill" data-filter={category}>
             {category} <span class="pill-count">{count}</span>
           </button>

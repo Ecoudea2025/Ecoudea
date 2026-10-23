@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: 5.a cerrada → siguiente 5.b (Pagefind) · Última actualización: 2026-10-23
+Fase actual: 2.a cerrada → siguiente 2.b (modelo MDX/unidades) o 5.b · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
@@ -12,6 +12,7 @@ Fase actual: 5.a cerrada → siguiente 5.b (Pagefind) · Última actualización:
 - 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
+- Fase 2.a (archivado): ✅ commit + tag `fase-2a-cerrada`. 123 clases + 10 cursos a `archive/` con `git mv` (historial intacto) + `manifest.json`; activas: estadistica-ii (24) + microeconomia-i de ejemplo vía scaffold; `/admin` eliminado; stubs "archivado" (noindex) en las 133 URLs viejas; sitemap limpio (25+2+home+acerca+tablero); atribución `author` visible; píldoras en 0 ocultas.
 - Fase 5.a (rediseño home): ✅ commit + tag `fase-5a-cerrada`. Hero asimétrico con SVG oferta/demanda (draw-on-load, estático con reduced-motion), sin typewriter, stats SSR, rutas editoriales 01/02/03 con filtro sin recarga, "Continúa donde lo dejaste" (localStorage + índice embebido), CTA en banda horizontal, pills con `role=group`, contadores con `<dl>`.
 - Fase 0: ✅ git + `v1-legacy` ✅ baseline en `docs/baseline/` ✅ CLAUDE/AGENTS ✅ `url()` ✅ ESTADO/ORQUESTADOR ✅ inventario
 - Fase 1: ✅ `tokens.css` (3 capas) ✅ claro/oscuro/sistema sin FOUC + `ThemeToggle` ✅ `prefers-reduced-motion` global (CSS + JS) ✅ `aria-current` ✅ flotantes 44px + `Esc` ✅ 8 primitivos `ui/` ✅ `/styleguide` (noindex) ✅ Space Grotesk fuera

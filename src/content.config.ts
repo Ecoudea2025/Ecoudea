@@ -11,6 +11,8 @@ const courses = defineCollection({
     color: z.string().optional(),
     order: z.number().default(0),
     unlockMode: z.enum(['open', 'sequential']).default('open'),
+    /** Crédito visible del material heredado (autor, institución) */
+    author: z.string().optional(),
   }),
 });
 

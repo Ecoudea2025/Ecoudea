@@ -3,25 +3,33 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import manifest from '../../../archive/manifest.json';
 
 const base = import.meta.env.BASE_URL;
+const archivedIds = new Set(manifest.courses.map((c) => c.id));
 
 export async function getStaticPaths() {
   const courses = await getCollection('courses');
-  return courses.map((c) => ({
+  const active = courses.map((c) => ({
     params: { course: c.id },
-    props: { courseId: c.id },
+    props: { courseId: c.id, archived: null },
   }));
+  // Stubs para URLs viejas: mismo path, aviso de archivado (no indexado).
+  const stubs = manifest.courses.map((c) => ({
+    params: { course: c.id },
+    props: { courseId: c.id, archived: c },
+  }));
+  return [...active, ...stubs];
 }
 
-const { courseId } = Astro.props;
+const { courseId, archived } = Astro.props;
 const allClasses = await getCollection('classes');
 const courses = await getCollection('courses');
 const course = courses.find((c) => c.id === courseId);
 
-if (!course) { return Astro.redirect('/404'); }
+if (!course && !archived) { return Astro.redirect('/404'); }
 
-const sortedClasses = allClasses.filter((c) => c.data.course === courseId).sort((a, b) => a.data.order - b.data.order);
+const sortedClasses = course ? allClasses.filter((c) => c.data.course === courseId).sort((a, b) => a.data.order - b.data.order) : [];
 const typeColors = {
   clase: 'border-accent text-accent bg-accent-soft',
   practica: 'border-rose-500 text-rose-400 bg-rose-500/10',
@@ -40,7 +48,7 @@ const classCount = sortedClasses.length;
 const practicaCount = sortedClasses.filter(c => c.data.classType === 'practica').length;
 const presentacionCount = sortedClasses.filter(c => c.data.classType === 'presentacion').length;
 
-const jsonLd = JSON.stringify({
+const jsonLd = course ? JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Course',
   name: course.data.title,
@@ -48,12 +56,28 @@ const jsonLd = JSON.stringify({
   provider: { '@type': 'Organization', name: 'Ecoudea' },
   numberOfCredits: classCount,
   inLanguage: 'es-CO',
-});
+}) : '';
+const pageTitle = course ? `${course.data.title} - Ecoudea` : `Curso archivado: ${archived?.title || courseId} - Ecoudea`;
+const pageDesc = course ? course.data.description : 'Este curso fue archivado. Explora el catálogo actual de Ecoudea.';
 ---
 
-<BaseLayout title={`${course.data.title} - Ecoudea`} description={course.data.description} jsonLd={jsonLd} unlock={true}>
+<BaseLayout title={pageTitle} description={pageDesc} jsonLd={course ? jsonLd : undefined} unlock={!!course} noindex={archived ? true : undefined}>
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}`} /></Fragment>
 
+  {archived ? (
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.14em] text-amber-400 mb-3">Curso archivado</p>
+      <h1 class="text-2xl sm:text-3xl font-bold text-text mb-3">{archived.title}</h1>
+      <p class="text-text-muted leading-relaxed mb-8">
+        Este curso se archivó durante la reestructuración de la plataforma.
+        Su material se conserva en el repositorio. Mientras tanto, el catálogo actual sigue creciendo.
+      </p>
+      <div class="flex items-center justify-center gap-3 flex-wrap">
+        <a href={`${base}/#directorio`} class="btn no-underline">Ver catálogo actual</a>
+        <a href="https://github.com/Ecoudea2025/Ecoudea" target="_blank" rel="noopener noreferrer" class="btn-ghost no-underline">Ver material archivado</a>
+      </div>
+    </div>
+  ) : (
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
     <!-- Header del curso -->
     <div class="relative overflow-hidden rounded-2xl gradient-bg border border-border-subtle p-6 sm:p-8 mb-8">
@@ -78,6 +102,9 @@ const jsonLd = JSON.stringify({
           </span>
           <h1 class="text-2xl sm:text-3xl font-bold text-text mb-2 gradient-text">{course.data.title}</h1>
           <p class="text-text-muted text-sm sm:text-base leading-relaxed">{course.data.description}</p>
+          {course.data.author && (
+            <p class="text-xs text-text-muted mt-2">Material de {course.data.author} · conservado con crédito del autor</p>
+          )}
           <div class="flex flex-wrap items-center gap-4 mt-4 text-sm text-text-muted">
             <span class="flex items-center gap-1.5">
               <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
@@ -193,6 +220,7 @@ const jsonLd = JSON.stringify({
       })}
     </div>
   </div>
+  )}
 
   <Fragment slot="footer"><Footer /></Fragment>
 </BaseLayout>
@@ -203,6 +231,9 @@ const jsonLd = JSON.stringify({
     var gridBtn = document.getElementById('view-grid');
     var listContainer = document.getElementById('view-list-container');
     var gridContainer = document.getElementById('view-grid-container');
+
+    // Stubs de cursos archivados no tienen listado: no hay nada que inicializar.
+    if (!listBtn || !gridBtn || !listContainer || !gridContainer) return;
 
     function setView(view) {
       if (view === 'list') {

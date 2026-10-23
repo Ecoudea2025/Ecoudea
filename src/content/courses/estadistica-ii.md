@@ -4,5 +4,6 @@ description: "Inferencia estadística, estimación, pruebas de hipótesis y mode
 image: "/assets/images/EstadisticaII.jpg"
 category: "Cursos"
 color: "blue"
-order: 2
+order: 1
+author: "Prof. Jorge Iván Pérez (UdeA)"
 ---

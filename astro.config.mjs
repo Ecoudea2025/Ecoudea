@@ -9,6 +9,12 @@ import {
   rehypeMathNormalize,
 } from './src/lib/markdown-math.mjs';
 import { katexMacros } from './src/lib/katex-macros.mjs';
+import archiveManifest from './archive/manifest.json' with { type: 'json' };
+
+const archivedPaths = new Set([
+  ...archiveManifest.courses.map((c) => `/cursos/${c.id}`),
+  ...archiveManifest.classes.map((c) => `/cursos/${c.course}/${c.id}`),
+]);
 
 const base = process.env.BASE_PATH || '/Ecoudea';
 const site = process.env.SITE_URL || 'https://ecoudea2025.github.io';
@@ -47,7 +53,16 @@ export default defineConfig({
   prefetch: true,
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/admin'),
+      filter: (page) => {
+        if (page.includes('/admin')) return false;
+        if (page.includes('/styleguide')) return false;
+        try {
+          const u = new URL(page);
+          const rel = u.pathname.replace(new RegExp(`^${base}`), '').replace(/\/$/, '') || '/';
+          if (archivedPaths.has(rel)) return false;
+        } catch {}
+        return true;
+      },
     }),
   ],
   markdown: {

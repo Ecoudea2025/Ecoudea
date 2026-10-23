@@ -1,0 +1,552 @@
+{
+  "archivedAt": "2026-10-23",
+  "keep": [
+    "estadistica-ii"
+  ],
+  "courses": [
+    {
+      "id": "especializacion-socioeconomica",
+      "title": "Nivelatorio en Estadística (Especialización Socioeconómica de Proyectos)",
+      "category": "Sesiones Especiales"
+    },
+    {
+      "id": "estadistica-i",
+      "title": "Estadística I (UdeA)",
+      "category": "Cursos"
+    },
+    {
+      "id": "estadistica-y-probabilidades",
+      "title": "Estadística y Probabilidades",
+      "category": "Cursos"
+    },
+    {
+      "id": "guias",
+      "title": "Guías de Instalación",
+      "category": "Guías y Semilleros"
+    },
+    {
+      "id": "maestria-politicas",
+      "title": "Seminario de Profundización II (Maestría en Políticas Públicas)",
+      "category": "Sesiones Especiales"
+    },
+    {
+      "id": "muestreo-series",
+      "title": "Muestreo y Series de Tiempo (UdeA)",
+      "category": "Cursos"
+    },
+    {
+      "id": "presentaciones-poster",
+      "title": "Presentaciones y Póster",
+      "category": "Sesiones Especiales"
+    },
+    {
+      "id": "probabilidad-inferencia",
+      "title": "Probabilidad e Inferencia Estadística (UdeA)",
+      "category": "Cursos"
+    },
+    {
+      "id": "semillero-python",
+      "title": "Semillero de Python",
+      "category": "Guías y Semilleros"
+    },
+    {
+      "id": "semillero-r",
+      "title": "Semillero de R",
+      "category": "Guías y Semilleros"
+    }
+  ],
+  "classes": [
+    {
+      "id": "especializacion-socioeconomica-clase-01-sesion-04",
+      "course": "especializacion-socioeconomica"
+    },
+    {
+      "id": "especializacion-socioeconomica-clase-02-sesion-03",
+      "course": "especializacion-socioeconomica"
+    },
+    {
+      "id": "especializacion-socioeconomica-clase-03-sesion-02",
+      "course": "especializacion-socioeconomica"
+    },
+    {
+      "id": "especializacion-socioeconomica-clase-04-sesion-01",
+      "course": "especializacion-socioeconomica"
+    },
+    {
+      "id": "estadistica-i-clase-02",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-03",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-04",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-06",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-07",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-08",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-09",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-10",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-11",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-13",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-14",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-15",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-17",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-18",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-19",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-22",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-23",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-24",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-25",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-clase-26",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-practica-01",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-practica-05",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-practica-12",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-practica-16",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-practica-20-b",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-practica-21-a",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-i-presentacion-27-curso",
+      "course": "estadistica-i"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-02",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-03",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-04",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-05",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-07",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-08",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-09",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-11",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-12",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-13",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-15",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-16",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-17",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-clase-19",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-practica-01",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-practica-06",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-practica-10",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-practica-14",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-practica-18",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "estadistica-y-probabilidades-presentacion-20-curso",
+      "course": "estadistica-y-probabilidades"
+    },
+    {
+      "id": "guias-guia-01-instalacion-python-anaconda-en-mac-os-x",
+      "course": "guias"
+    },
+    {
+      "id": "guias-guia-02-instalacion-python-anaconda-en-ubuntu",
+      "course": "guias"
+    },
+    {
+      "id": "guias-guia-03-instalacion-python-anaconda-en-windows",
+      "course": "guias"
+    },
+    {
+      "id": "guias-guia-04-instalacion-r-y-rstudio-en-mac-os-x",
+      "course": "guias"
+    },
+    {
+      "id": "guias-guia-05-instalacion-r-y-rstudio-en-ubuntu",
+      "course": "guias"
+    },
+    {
+      "id": "guias-guia-06-instalacion-r-y-rstudio-en-windows",
+      "course": "guias"
+    },
+    {
+      "id": "maestria-politicas-clase-01-sesion-05",
+      "course": "maestria-politicas"
+    },
+    {
+      "id": "maestria-politicas-clase-02-sesion-04",
+      "course": "maestria-politicas"
+    },
+    {
+      "id": "maestria-politicas-clase-03-sesion-03",
+      "course": "maestria-politicas"
+    },
+    {
+      "id": "maestria-politicas-clase-04-sesion-02",
+      "course": "maestria-politicas"
+    },
+    {
+      "id": "maestria-politicas-clase-05-sesion-01",
+      "course": "maestria-politicas"
+    },
+    {
+      "id": "muestreo-series-clase-02",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-03",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-04",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-05",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-06",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-09",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-10",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-11",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-12",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-13",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-14",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-16",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-17",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-18",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-20",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-21",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-clase-22",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-guia-24-exposicion-sarima",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-practica-01-trabajo",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-practica-07",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-practica-08",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-practica-15",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-practica-19",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "muestreo-series-presentacion-23-curso",
+      "course": "muestreo-series"
+    },
+    {
+      "id": "presentaciones-poster-clase-01-limpieza-de-datos-con-r",
+      "course": "presentaciones-poster"
+    },
+    {
+      "id": "presentaciones-poster-clase-02-stop-loss-estimation-via-single-loss-approximation-poster",
+      "course": "presentaciones-poster"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-02",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-03",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-04",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-06",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-07",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-08",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-10",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-11",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-12",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-13",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-14",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-15",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-18",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-19",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-20",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-21",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-22",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-24",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-25",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-clase-26",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-practica-01",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-practica-05",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-practica-09",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-practica-16-b",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-practica-17-a",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-practica-23",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "probabilidad-inferencia-presentacion-27-curso",
+      "course": "probabilidad-inferencia"
+    },
+    {
+      "id": "semillero-python-clase-01-sesion-01",
+      "course": "semillero-python"
+    },
+    {
+      "id": "semillero-python-presentacion-02-semillero",
+      "course": "semillero-python"
+    },
+    {
+      "id": "semillero-r-clase-01-sesion-04",
+      "course": "semillero-r"
+    },
+    {
+      "id": "semillero-r-clase-03-sesion-03",
+      "course": "semillero-r"
+    },
+    {
+      "id": "semillero-r-clase-04-sesion-02",
+      "course": "semillero-r"
+    },
+    {
+      "id": "semillero-r-clase-05-sesion-01",
+      "course": "semillero-r"
+    },
+    {
+      "id": "semillero-r-practica-02",
+      "course": "semillero-r"
+    },
+    {
+      "id": "semillero-r-presentacion-06-semillero",
+      "course": "semillero-r"
+    }
+  ]
+}

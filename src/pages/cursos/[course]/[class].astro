@@ -5,31 +5,38 @@ import Footer from '../../../components/Footer.astro';
 import VideoPlayer from '../../../components/VideoPlayer.astro';
 import 'katex/dist/katex.min.css';
 import { getCollection, render } from 'astro:content';
+import manifest from '../../../../archive/manifest.json';
 
 const base = import.meta.env.BASE_URL;
 
 export async function getStaticPaths() {
   const classes = await getCollection('classes');
-  return classes.map((cls) => ({
+  const active = classes.map((cls) => ({
     params: { course: cls.data.course, class: cls.id },
-    props: { courseId: cls.data.course, classId: cls.id },
+    props: { courseId: cls.data.course, classId: cls.id, archivedCourse: null },
   }));
+  // Stubs para URLs viejas de clases archivadas (mismo path, aviso, noindex).
+  const stubs = manifest.classes.map((c) => ({
+    params: { course: c.course, class: c.id },
+    props: { courseId: c.course, classId: c.id, archivedCourse: c.course },
+  }));
+  return [...active, ...stubs];
 }
 
-const { courseId, classId } = Astro.props;
+const { courseId, classId, archivedCourse } = Astro.props;
 
 const allClasses = await getCollection('classes');
 const courses = await getCollection('courses');
 const course = courses.find((c) => c.id === courseId);
 const classEntry = allClasses.find((c) => c.id === classId);
 
-if (!course || !classEntry) { return Astro.redirect('/404'); }
+if ((!course || !classEntry) && !archivedCourse) { return Astro.redirect('/404'); }
 
-const { Content } = await render(classEntry);
-const sorted = allClasses.filter((c) => c.data.course === courseId).sort((a, b) => a.data.order - b.data.order);
-const idx = sorted.findIndex((c) => c.id === classId);
+const { Content } = classEntry ? await render(classEntry) : { Content: null };
+const sorted = classEntry ? allClasses.filter((c) => c.data.course === courseId).sort((a, b) => a.data.order - b.data.order) : [];
+const idx = classEntry ? sorted.findIndex((c) => c.id === classId) : -1;
 const prevClass = idx > 0 ? sorted[idx - 1] : null;
-const nextClass = idx < sorted.length - 1 ? sorted[idx + 1] : null;
+const nextClass = idx >= 0 && idx < sorted.length - 1 ? sorted[idx + 1] : null;
 const classNum = idx + 1;
 const totalInCourse = sorted.length;
 
@@ -40,13 +47,28 @@ const typeColors = {
   guia: 'border-amber-500 text-amber-400 bg-amber-500/10',
 };
 const typeLabels = { clase: 'Clase', practica: 'Práctica', presentacion: 'Presentación', guia: 'Guía' };
-const tc = typeColors[classEntry.data.classType] || typeColors.clase;
-const tl = typeLabels[classEntry.data.classType] || 'Clase';
+const tc = classEntry ? (typeColors[classEntry.data.classType] || typeColors.clase) : typeColors.clase;
+const tl = classEntry ? (typeLabels[classEntry.data.classType] || 'Clase') : 'Clase';
+const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} - Ecoudea` : `Clase archivada - Ecoudea`;
 ---
 
-<BaseLayout title={`${classEntry.data.title} - ${course.data.title} - Ecoudea`} description={classEntry.data.description} showTools={true} enhance={true} unlock={true}>
+<BaseLayout title={pageTitle} description={classEntry?.data.description} showTools={!!classEntry} enhance={!!classEntry} unlock={!!classEntry} noindex={archivedCourse ? true : undefined}>
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}/${classId}`} /></Fragment>
 
+  {archivedCourse ? (
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+      <p class="text-xs font-bold uppercase tracking-[0.14em] text-amber-400 mb-3">Clase archivada</p>
+      <h1 class="text-2xl sm:text-3xl font-bold text-text mb-3">Este material se archivó</h1>
+      <p class="text-text-muted leading-relaxed mb-8">
+        Esta clase pertenecía a un curso archivado durante la reestructuración.
+        Su contenido se conserva en el repositorio.
+      </p>
+      <div class="flex items-center justify-center gap-3 flex-wrap">
+        <a href={`${base}/cursos/${archivedCourse}`} class="btn no-underline">Ver aviso del curso</a>
+        <a href={`${base}/#directorio`} class="btn-ghost no-underline">Ver catálogo actual</a>
+      </div>
+    </div>
+  ) : (
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
     <nav class="flex items-center gap-2 text-sm text-text-muted mb-6 flex-wrap">
       <a href={`${base}/`} class="hover:text-accent transition-colors no-underline">Inicio</a>
@@ -159,6 +181,7 @@ const tl = typeLabels[classEntry.data.classType] || 'Clase';
       ) : <div />}
     </div>
   </div>
+  )}
 
   <Fragment slot="footer"><Footer /></Fragment>
 </BaseLayout>
