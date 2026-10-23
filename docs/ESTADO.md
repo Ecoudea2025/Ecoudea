@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: 4-7 (ejecutadas) · Última actualización: 2026-10-23
+Fase actual: entregado a `master` (deploy automático en curso) · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
