@@ -62,6 +62,14 @@ Commit scoped to content: `git add src/content/classes/estadistica-i-clase-05.md
 .\tools\optimize-images.ps1 -Source "D:\Ecoudea.github.io\public\assets\images" -Out "D:\imgs-web" -MaxWidth 1200
 ```
 
+## Ground truth (verificado 2026-10-23)
+
+- Raíz canónica: `D:\Ecoudea-master` (`master` → `origin/master`, tag `v1-legacy`).
+- 147 clases en 11 ids de curso, 10 archivos de curso (`estadistica-y-probabilidades`, 20 clases, sin archivo de curso).
+- `bibliography` apunta a `referencias.bib` inexistente; `tags`/`video*`/`unlockMode: sequential` sin uso.
+- `BASE_PATH`/`SITE_URL` por entorno (default `/Ecoudea`); helper `src/lib/url.ts`.
+- Ver `docs/ESTADO.md` (estado por fase) y `docs/ORQUESTADOR.md` (plan completo).
+
 ## Code Intelligence (MCP)
 
 This project is indexed with **codebase-memory-mcp** (DeusData). The knowledge graph is served via MCP and available as the `codebase-memory` server in OpenCode.

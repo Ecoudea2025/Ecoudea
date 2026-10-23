@@ -80,8 +80,16 @@ Commit scoped to content: `git add src/content/classes/estadistica-i-clase-05.md
 `tools/optimize-images.ps1` — safe ffmpeg-based optimizer (WebP/AVIF, resizes, never touches originals):
 
 ```
-.\tools\optimize-images.ps1 -Source "D:\Ecoudea.github.io\public\assets\images" -Out "D:\imgs-web" -MaxWidth 1200
+.\tools\optimize-images.ps1 -Source "D:\Ecoudea-master\public\assets\images" -Out "D:\imgs-web" -MaxWidth 1200
 ```
+
+## Ground truth (verificado 2026-10-23)
+
+- Raíz canónica: `D:\Ecoudea-master` (rama `master` → `origin/master`, tag `v1-legacy` = estado original).
+- Contenido: 147 clases en 11 ids de curso, 10 archivos de curso. `estadistica-y-probabilidades` (20 clases) no tiene archivo de curso → huérfanas (ver `docs/ESTADO.md`).
+- Metadatos muertos: `bibliography` apunta a `referencias.bib` inexistente (147 clases); `tags` 0 usos; `video*` 0 usos; `unlockMode: sequential` 0 cursos.
+- Base path: `BASE_PATH` / `SITE_URL` por entorno (default `/Ecoudea`); helper `src/lib/url.ts`. 52 usos literales de `${base}` pendientes de migrar (grep de cierre en Fase 8).
+- Componentes sin importar: `Accordion.astro`, `BackToTop.astro`. Deps sin usar: `pagefind`, `@fontsource-variable/space-grotesk`.
 
 ## Code Intelligence (MCP)
 
@@ -95,12 +103,12 @@ This project is indexed with **codebase-memory-mcp** (DeusData). The knowledge g
 - `get_code_snippet` — fetch exact code by node ID
 - `query_graph` — Cypher-style multi-hop queries
 
-The indexed project name is `D-Ecoudea.github.io` (root: `D:/Ecoudea.github.io`). The index is stored locally and auto-syncs on file changes.
+The indexed project name is `D-Ecoudea-master` (root: `D:/Ecoudea-master`). The index is stored locally and auto-syncs on file changes.
 
 To re-index after major changes (or on a new machine), run:
 
 ```
-codebase-memory-mcp cli index_repository --repo-path "D:\Ecoudea.github.io" --mode moderate
+codebase-memory-mcp cli index_repository --repo-path "D:\Ecoudea-master" --mode deep
 ```
 
 (Binary is the npm global install; UI option `--ui=true` serves a 3D graph at `http://localhost:9749`.)

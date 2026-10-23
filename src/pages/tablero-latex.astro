@@ -144,6 +144,7 @@ const iconBtn =
 <script>
   import katex from 'katex';
   import { groups, defaultTex, templates } from '../lib/latex-palette.js';
+  import { katexMacros } from '../lib/katex-macros.mjs';
 
   const input = document.getElementById('latex-input');
   const preview = document.getElementById('preview');
@@ -203,7 +204,8 @@ const iconBtn =
         displayMode: displayToggle.checked,
         throwOnError: true,
         trust: true,
-        strict: false
+        strict: false,
+        macros: katexMacros
       });
       errorEl.classList.add('hidden');
       errorEl.textContent = '';

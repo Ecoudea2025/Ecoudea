@@ -1,0 +1,25 @@
+---
+/** Badge con tono semántico. Los tonos `area-*` identifican áreas de economía
+ *  y SIEMPRE acompañan a una etiqueta de texto (nunca solo color). */
+export interface Props {
+  tone?: 'accent' | 'secondary' | 'amber' | 'rose' | 'gray' | 'area-micro' | 'area-macro' | 'area-econometria' | 'area-estadistica' | 'area-matematicas' | 'area-historia';
+  class?: string;
+}
+const { tone = 'accent', class: cls = '' } = Astro.props;
+const tones: Record<string, string> = {
+  accent: 'bg-accent-soft text-accent border-accent/30',
+  secondary: 'bg-secondary/10 text-secondary border-secondary/30',
+  amber: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
+  rose: 'bg-rose-500/10 text-rose-400 border-rose-500/30',
+  gray: 'bg-white/5 text-text-muted border-border-subtle',
+  'area-micro': 'border-amber-500/40 text-amber-400 bg-amber-500/10',
+  'area-macro': 'border-sky-500/40 text-sky-400 bg-sky-500/10',
+  'area-econometria': 'border-violet-500/40 text-violet-400 bg-violet-500/10',
+  'area-estadistica': 'bg-accent-soft text-accent border-accent/30',
+  'area-matematicas': 'border-rose-500/40 text-rose-400 bg-rose-500/10',
+  'area-historia': 'border-teal-500/40 text-teal-400 bg-teal-500/10',
+};
+---
+<span class={`inline-block px-2.5 py-1 rounded-full text-xs font-semibold border ${tones[tone]} ${cls}`}>
+  <slot />
+</span>

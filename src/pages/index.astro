@@ -87,22 +87,22 @@ const totalGuides = allClasses.filter((c) => c.data.classType === 'guia').length
 
       <div class="flex items-center justify-center gap-6 sm:gap-8 mt-10 text-sm text-text-muted reveal is-visible">
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>0</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={courses.length}>{courses.length}</span>
           <span class="text-xs">cursos</span>
         </div>
         <div class="w-px h-10 bg-border-subtle" />
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalClasses}>0</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalClasses}>{totalClasses}</span>
           <span class="text-xs">clases</span>
         </div>
         <div class="w-px h-10 bg-border-subtle" />
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalPractices}>0</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalPractices}>{totalPractices}</span>
           <span class="text-xs">prácticas</span>
         </div>
         <div class="w-px h-10 bg-border-subtle" />
         <div class="text-center">
-          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalGuides}>0</span>
+          <span class="block text-2xl font-bold gradient-text-alt tabular-nums" data-count={totalGuides}>{totalGuides}</span>
           <span class="text-xs">guías</span>
         </div>
       </div>

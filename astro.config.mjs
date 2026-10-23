@@ -8,8 +8,10 @@ import {
   remarkNormalizeMath,
   rehypeMathNormalize,
 } from './src/lib/markdown-math.mjs';
+import { katexMacros } from './src/lib/katex-macros.mjs';
 
-const base = '/Ecoudea';
+const base = process.env.BASE_PATH || '/Ecoudea';
+const site = process.env.SITE_URL || 'https://ecoudea2025.github.io';
 
 function remarkBaseImages() {
   return function (tree) {
@@ -39,7 +41,7 @@ function rehypeBaseImages() {
 }
 
 export default defineConfig({
-  site: 'https://ecoudea2025.github.io',
+  site,
   base,
   trailingSlash: 'ignore',
   prefetch: true,
@@ -55,7 +57,7 @@ export default defineConfig({
       wrap: false,
     },
     remarkPlugins: [remarkMath, remarkNormalizeMath, remarkBaseImages],
-    rehypePlugins: [rehypeRaw, rehypeMathNormalize, rehypeBaseImages, [rehypeKatex, { trust: true, strict: false }]],
+    rehypePlugins: [rehypeRaw, rehypeMathNormalize, rehypeBaseImages, [rehypeKatex, { trust: true, strict: false, macros: katexMacros }]],
   },
   vite: {
     plugins: [tailwindcss()],

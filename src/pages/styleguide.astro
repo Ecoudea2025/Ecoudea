@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Section from '../components/ui/Section.astro';
+import SectionHeader from '../components/ui/SectionHeader.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import Stat from '../components/ui/Stat.astro';
+import Button from '../components/ui/Button.astro';
+import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
+import Icon from '../components/ui/Icon.astro';
+
+const base = import.meta.env.BASE_URL;
+const areas = ['area-micro', 'area-macro', 'area-econometria', 'area-estadistica', 'area-matematicas', 'area-historia'] as const;
+---
+
+<BaseLayout title="Guía de estilo - Ecoudea" description="Sistema de diseño de Ecoudea" noindex={true}>
+  <Fragment slot="header"><Navbar currentPath={`${base}/styleguide`} /></Fragment>
+
+  <Section width="wide">
+    <SectionHeader
+      eyebrow="Sistema de diseño"
+      title="Guía de estilo"
+      lead="Tokens, primitivos y tonos por área. Cambia el tema desde la barra para verificar ambos. Esta página no se indexa."
+    />
+
+    <h3 class="text-lg font-bold text-text mb-4">Botones</h3>
+    <div class="flex flex-wrap gap-3 mb-10">
+      <Button href="#botones">Explorar</Button>
+      <Button variant="ghost" href="#botones">Conocer el proyecto</Button>
+    </div>
+
+    <h3 class="text-lg font-bold text-text mb-4">Badges por área de economía</h3>
+    <div class="flex flex-wrap gap-2 mb-10">
+      {areas.map((a) => <Badge tone={a}>{a.replace('area-', '')}</Badge>)}
+      <Badge tone="accent">Cursos</Badge>
+      <Badge tone="amber">Guías</Badge>
+      <Badge tone="rose">Práctica</Badge>
+      <Badge tone="gray">Neutro</Badge>
+    </div>
+
+    <h3 class="text-lg font-bold text-text mb-4">Tarjetas</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+      <Card><p class="font-bold text-text">Default</p><p class="text-sm text-text-muted">Superficie elevada con hover.</p></Card>
+      <Card variant="outline"><p class="font-bold text-text">Outline</p><p class="text-sm text-text-muted">Transparente con borde.</p></Card>
+      <Card variant="ghost" href={`${base}/acercade`}><p class="font-bold text-text">Ghost + enlace</p><p class="text-sm text-text-muted">Toda la tarjeta es un enlace.</p></Card>
+    </div>
+
+    <h3 class="text-lg font-bold text-text mb-4">Stats (SSR + animación)</h3>
+    <div class="flex gap-8 mb-10">
+      <Stat value={147} label="clases" />
+      <Stat value={11} label="cursos" />
+      <Stat value="4.5 MB" label="contenido" animate={false} />
+    </div>
+
+    <h3 class="text-lg font-bold text-text mb-4">Migas de pan</h3>
+    <Breadcrumbs items={[{ label: 'Inicio', href: `${base}/` }, { label: 'Guía de estilo' }]} />
+
+    <h3 class="text-lg font-bold text-text mb-4 mt-10">Iconos</h3>
+    <div class="flex flex-wrap gap-3 text-accent">
+      <Icon name="book" /> <Icon name="chart" /> <Icon name="scale" /> <Icon name="globe" />
+      <Icon name="sigma" /> <Icon name="bulb" /> <Icon name="code" /> <Icon name="clock" />
+    </div>
+  </Section>
+</BaseLayout>

@@ -53,6 +53,14 @@ const canonical = Astro.url;
     <meta name="theme-color" content="#0a0f1a" />
     <meta name="astro-base" content={base} />
     <title>{title}</title>
+    <script is:inline>
+      // Tema antes del primer paint (anti-FOUC). Ausencia de data-theme = sistema.
+      try {
+        const t = localStorage.getItem('ecoudea-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        else document.documentElement.removeAttribute('data-theme');
+      } catch (e) {}
+    </script>
     <script>document.documentElement.classList.add('js')</script>
     {jsonLd && <script type="application/ld+json" set:html={jsonLd}></script>}
   </head>

@@ -1,0 +1,16 @@
+---
+export interface Props {
+  /** Valor final (también se renderiza en SSR para lectura sin JS) */
+  value: number | string;
+  label: string;
+  animate?: boolean;
+}
+const { value, label, animate = true } = Astro.props;
+---
+<div class="text-center">
+  <span
+    class="block text-2xl font-bold gradient-text-alt tabular-nums"
+    {...(animate && typeof value === 'number' ? { 'data-count': value } : {})}
+  >{value}</span>
+  <span class="text-xs text-text-muted">{label}</span>
+</div>

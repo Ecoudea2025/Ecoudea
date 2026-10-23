@@ -25,6 +25,44 @@
   function enhanceContent(scope) {
     fixImagePaths(scope);
     optimizeImages(scope);
+    accessibleMath(scope);
+    copyableMath(scope);
+  }
+
+  // ── FÓRMULAS DISPLAY ACCESIBLES CON TECLADO ─────────────────────
+  // El scroll horizontal funciona sin JS; esto añade rol + etiqueta.
+  function accessibleMath(scope) {
+    var displays = (scope || document).querySelectorAll('.katex-display:not([data-a11y])');
+    displays.forEach(function (d) {
+      d.setAttribute('data-a11y', '1');
+      d.setAttribute('tabindex', '0');
+      d.setAttribute('role', 'region');
+      d.setAttribute('aria-label', 'Fórmula matemática (desplaza horizontalmente si se desborda)');
+    });
+  }
+
+  // ── BOTÓN "COPIAR TEX" EN FÓRMULAS DISPLAY ───────────────────────
+  // Lee el <annotation encoding="application/x-tex"> que emite KaTeX.
+  function copyableMath(scope) {
+    var displays = (scope || document).querySelectorAll('.katex-display:not([data-copy])');
+    displays.forEach(function (d) {
+      d.setAttribute('data-copy', '1');
+      var ann = d.querySelector('annotation[encoding="application/x-tex"]');
+      if (!ann || !navigator.clipboard) return;
+      var tex = ann.textContent;
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = 'Copiar TeX';
+      btn.className = 'copy-tex-btn';
+      btn.style.cssText = 'display:block;margin:0.25rem auto 0;font-size:11px;padding:0.2rem 0.7rem;border-radius:9999px;border:1px solid var(--color-border-subtle);background:transparent;color:var(--color-text-muted);cursor:pointer;';
+      btn.addEventListener('click', function () {
+        navigator.clipboard.writeText(tex).then(function () {
+          btn.textContent = 'Copiado ✓';
+          setTimeout(function () { btn.textContent = 'Copiar TeX'; }, 1500);
+        }).catch(function () {});
+      });
+      d.appendChild(btn);
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function () {

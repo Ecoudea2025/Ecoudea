@@ -1,0 +1,17 @@
+---
+export interface Props {
+  variant?: 'solid' | 'ghost';
+  href?: string;
+  type?: 'button' | 'submit';
+  class?: string;
+}
+const { variant = 'solid', href, type = 'button', class: cls = '' } = Astro.props;
+const Tag = href ? 'a' : 'button';
+---
+<Tag
+  href={href}
+  type={href ? undefined : type}
+  class={`${variant === 'solid' ? 'btn' : 'btn-ghost'} no-underline ${cls}`}
+>
+  <slot />
+</Tag>

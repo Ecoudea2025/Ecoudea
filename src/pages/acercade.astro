@@ -32,7 +32,7 @@ const sortedCourses = courses.sort((a, b) => a.data.order - b.data.order);
         { value: totalGuides, label: 'guías' },
       ].map((s) => (
         <div class="rounded-xl border border-border-subtle bg-elevated/50 p-4 text-center reveal">
-          <span class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={s.value}>0</span>
+          <span class="block text-2xl sm:text-3xl font-bold gradient-text-alt tabular-nums" data-count={s.value}>{s.value}</span>
           <span class="text-xs text-text-muted">{s.label}</span>
         </div>
       ))}

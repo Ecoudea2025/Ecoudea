@@ -3,6 +3,11 @@
 (function () {
   'use strict';
 
+  // Movimiento responsable: si el usuario pide reducir movimiento,
+  // se muestra el contenido final sin animar (contadores, typewriter,
+  // tilt y parallax quedan desactivados; el reveal muestra todo).
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // ── 1. Barra de progreso de scroll (ScrollTrigger) ────────────────
   function initScrollProgress() {
     var bar = document.createElement('div');
@@ -24,7 +29,7 @@
   // ── 2. Scroll reveal + stagger (ScrollTrigger + stagger) ───────────
   function initReveals() {
     var items = document.querySelectorAll('.reveal');
-    if (!items.length || !('IntersectionObserver' in window)) {
+    if (!items.length || !('IntersectionObserver' in window) || reduceMotion) {
       items.forEach(function (el) { el.classList.add('is-visible'); });
       return;
     }
@@ -57,7 +62,7 @@
   function initCounters() {
     var counters = document.querySelectorAll('[data-count]');
     if (!counters.length) return;
-    if (!('IntersectionObserver' in window)) {
+    if (!('IntersectionObserver' in window) || reduceMotion) {
       counters.forEach(function (el) { el.textContent = el.dataset.count; });
       return;
     }
@@ -73,8 +78,9 @@
   }
 
   // ── 4. Typewriter en el hero (SplitText/TextPlugin simplificado) ───
+  // Con reduced-motion (o sin el atributo) el texto queda intacto en el HTML.
   function initTypewriter(el) {
-    if (!el) return;
+    if (!el || reduceMotion) return;
     var text = el.textContent;
     el.textContent = '';
     el.classList.add('typewriter');
@@ -101,6 +107,7 @@
 
   // ── 5. 3D Tilt en tarjetas (hover, estilo GSAP) ────────────────────
   function initTilt() {
+    if (reduceMotion) return;
     var cards = document.querySelectorAll('.tilt-card');
     cards.forEach(function (card) {
       var inner = card.querySelector('.tilt-inner') || card;
@@ -126,6 +133,7 @@
 
   // ── 6. Parallax sutil en elementos decorativos del hero ────────────
   function initParallax() {
+    if (reduceMotion) return;
     var els = document.querySelectorAll('[data-parallax]');
     if (!els.length) return;
     var ticking = false;

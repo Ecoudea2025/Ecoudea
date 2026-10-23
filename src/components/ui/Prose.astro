@@ -1,0 +1,10 @@
+---
+/** Envoltorio de prosa para contenido Markdown/MDX con estilos de lectura. */
+export interface Props {
+  class?: string;
+}
+const { class: cls = '' } = Astro.props;
+---
+<article class={`prose-class ${cls}`}>
+  <slot />
+</article>
