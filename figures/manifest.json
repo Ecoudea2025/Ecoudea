@@ -125,6 +125,34 @@
       "title": "Factor real y aproximación de Fisher",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/demanda-inversion",
+      "script": "figures/macro_demanda_inversion.py",
+      "title": "Demanda de inversión y sus desplazamientos",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/q-tobin",
+      "script": "figures/macro_q_tobin.py",
+      "title": "q de Tobin e inversión",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/superavits",
+      "script": "figures/macro_superavits.py",
+      "title": "Déficit hoy y senda de superávits futuros",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/deuda-dinamica",
+      "script": "figures/macro_deuda_dinamica.py",
+      "title": "Dinámica de la deuda según rho",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
     }
   ]
 }

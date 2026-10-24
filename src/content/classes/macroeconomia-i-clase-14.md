@@ -194,5 +194,8 @@ Como `$q_t = 1 + C'(I_t)$` y `$C'(0) = 0$` con `$C'' > 0$`:
 * **Si `$q_t = 1 \implies C'(I_t) = 0 \implies I_t = 0$`:** El stock de capital ha alcanzado su estado estacionario (`$PMgK = r + \delta$`).
 * **Si `$q_t < 1 \implies C'(I_t) < 0 \implies I_t < 0$`:** El valor económico del capital es menor que su costo de reposición; la firma desinvierte.
 
-> **Espacio para gráfica 1:** *Relación entre la `$q$` de Tobin y la inversión `$I_t$`.*
-> En el plano `$(I_t, q_t)$`, se traza la curva creciente `$q_t = 1 + C'(I_t)$` que cruza el eje vertical en `$q_t = 1$` cuando `$I_t = 0$`, mostrando la zona de inversión positiva (`$q_t > 1$`) y la zona de desinversión (`$q_t < 1$`).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/q-tobin-light.svg" alt="Curva creciente de q con zonas de inversión sobre uno y desinversión bajo uno." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/q-tobin-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: si el mercado valora el capital por encima de reponerlo, se invierte; si no, se desinvierte.</figcaption>
+</figure>

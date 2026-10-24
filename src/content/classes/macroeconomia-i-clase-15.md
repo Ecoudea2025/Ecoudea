@@ -190,5 +190,8 @@ $$
 * **Efecto licuación de la inflación:** Un aumento sorpresivo en la inflación `$\pi$` reduce el peso real del déficit primario corriente (`$\frac{g_t - t_t}{1 + \pi}$`) y, para una tasa nominal `$i$` contratada previamente en moneda local, reduce la tasa de interés real ex-post `$r$`, amortizando parte del valor real de la deuda.
 * En la próxima clase introduciremos el segundo gran determinante de la sostenibilidad fiscal: **el crecimiento económico del PIB real (`$\gamma$` o `$\nu$`)**, analizando la evolución de la razón Deuda/PIB (`$\frac{B_t}{Y_t}$`).
 
-> **Espacio para gráfica 1:** *Senda de superávits primarios requeridos para estabilizar la deuda.*
-> Diagrama temporal que muestra cómo un incremento transitorio del déficit primario hoy (`$G_t > T_t$`) eleva el stock de deuda `$B_{t+1}$` y exige necesariamente una senda futura de superávits primarios (`$T_{t+j} > G_{t+j}$`) cuya área descontada iguale el nuevo servicio de deuda.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/superavits-light.svg" alt="Barra de déficit hoy seguida de barras decrecientes de superávits futuros." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/superavits-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: el déficit de hoy se paga con una senda de superávits futuros que cubre la deuda.</figcaption>
+</figure>

@@ -149,5 +149,8 @@ Resumen de Estática Comparativa de la Inversión
 | **Precio relativo (`$P_t / P_K$`)** | `$\frac{\partial I_t}{\partial (P_t / P_K)}$` | **`$> 0$`** | Desplazamiento hacia la derecha |
 | **Capital inicial (`$K_t$`)** | `$\frac{\partial I_t}{\partial K_t}$` | **`$< 0$`** | Desplazamiento hacia la izquierda |
 
-> **Espacio para gráfica 1:** *Curva de demanda de inversión `$I(r)$` y sus desplazamientos.*
-> En el plano `$(I, r)$`, se traza la curva de inversión con pendiente negativa respecto a la tasa de interés real `$r$`, mostrando cómo aumentos en `$A$`, `$N$` o `$\frac{P_t}{P_K}$` desplazan la curva hacia la derecha, mientras que aumentos en `$\delta$` o `$K_t$` la desplazan hacia la izquierda.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/demanda-inversion-light.svg" alt="Curva de inversión con pendiente negativa y flechas de desplazamiento por tecnología y depreciación." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/demanda-inversion-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la inversión cae si sube la tasa; mejor tecnología la empuja a la derecha, más depreciación a la izquierda.</figcaption>
+</figure>

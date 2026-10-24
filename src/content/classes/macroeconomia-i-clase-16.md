@@ -207,5 +207,8 @@ $$
 | **Caso frontera** | `$\gamma_y = r$` | `$\rho = 1$` | Crecimiento lineal `$N\varphi + b_t$` | Exige equilibrio primario (`$g_t = t_t$`) |
 | **Interés alto** | `$r > \gamma_y$` | `$\rho > 1$` | **Explosiva** (`$\rho^N \to \infty$`) | Exige **superávit primario** `$t_t - g_t = (r - \gamma_y)\bar{b}$` |
 
-> **Espacio para gráfica 1:** *Trayectorias dinámicas de la relación Deuda/PIB (`$b_t$`) según `$\rho \gtreqless 1$`.*
-> En el plano `$(t, b_t)$`, se traza la línea horizontal de estado estacionario `$\bar{b}_0$`, mostrando la curva convergente cuando `$\frac{1+r}{1+\gamma_y} < 1$` (`$\gamma_y > r$`) y la curva divergente/explosiva hacia arriba cuando `$\frac{1+r}{1+\gamma_y} > 1$` (`$r > \gamma_y$`).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/deuda-dinamica-light.svg" alt="Tres trayectorias de deuda desde el mismo punto: convergente, lineal y explosiva." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/deuda-dinamica-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: si el interés supera al crecimiento la deuda explota; solo el superávit la estabiliza.</figcaption>
+</figure>
