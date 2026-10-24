@@ -19,7 +19,7 @@ for (const badUrl of ['/admin', '/styleguide']) {
 for (const c of manifest.courses) {
   if (xml.includes(`/cursos/${c.id}/`) || xml.includes(`/cursos/${c.id}<`)) fail(`sitemap contiene curso archivado ${c.id}`);
 }
-for (const must of ['/cursos/estadistica-ii/', '/cursos/microeconomia-i/', '/glosario/', '/tablero-latex/']) {
+for (const must of ['/cursos/estadistica-ii/', '/cursos/macroeconomia-i/', '/glosario/', '/tablero-latex/']) {
   if (!xml.includes(must)) fail(`sitemap no contiene ${must}`);
 }
 const robots = path.join(DIST, 'robots.txt');

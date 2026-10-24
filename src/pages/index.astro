@@ -133,26 +133,38 @@ const classIndex = allClasses.map((c) => ({
         <div class="relative rounded-3xl border border-border-subtle bg-elevated/50 p-5 sm:p-7 shadow-xl overflow-hidden">
           <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-secondary/10 blur-3xl pointer-events-none" aria-hidden="true" />
           <svg viewBox="0 0 400 300" class="w-full h-auto" role="img" aria-label="Curvas de oferta y demanda cruzándose en el punto de equilibrio">
+            <defs>
+              <marker id="eco-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+                <path d="M0 0L10 5L0 10z" fill="#94a3a8" />
+              </marker>
+            </defs>
             <g stroke="currentColor" class="text-border-subtle" stroke-width="1" aria-hidden="true">
-              <line x1="40" y1="20" x2="40" y2="270" />
-              <line x1="40" y1="270" x2="380" y2="270" />
-              {Array.from({ length: 6 }).map((_, i) => (
-                <line x1={70 + i * 55} y1="20" x2={70 + i * 55} y2="270" stroke-dasharray="3 6" opacity="0.6" />
-              ))}
-              {Array.from({ length: 5 }).map((_, i) => (
-                <line x1="40" y1={50 + i * 48} x2="380" y2={50 + i * 48} stroke-dasharray="3 6" opacity="0.6" />
-              ))}
+              <line x1="110" y1="20" x2="110" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="170" y1="20" x2="170" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="230" y1="20" x2="230" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="290" y1="20" x2="290" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="50" y1="60" x2="370" y2="60" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="50" y1="110" x2="370" y2="110" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="50" y1="160" x2="370" y2="160" stroke-dasharray="3 6" opacity="0.55" />
+              <line x1="50" y1="210" x2="370" y2="210" stroke-dasharray="3 6" opacity="0.55" />
             </g>
-            <text x="30" y="40" text-anchor="end" font-size="13" class="fill-text-muted">P</text>
-            <text x="365" y="292" text-anchor="middle" font-size="13" class="fill-text-muted">Q</text>
-            <path d="M55 60 C 150 90, 230 170, 340 240" fill="none" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" class="eco-draw" />
-            <path d="M55 240 C 160 210, 250 140, 340 60" fill="none" stroke="#d97706" stroke-width="3.5" stroke-linecap="round" class="eco-draw eco-draw-2" />
-            <line x1="198" y1="152" x2="198" y2="270" stroke="#6c9a06" stroke-width="1.5" stroke-dasharray="5 5" />
-            <line x1="40" y1="152" x2="198" y2="152" stroke="#6c9a06" stroke-width="1.5" stroke-dasharray="5 5" />
-            <circle cx="198" cy="152" r="7" fill="#6c9a06" stroke="#fff" stroke-width="2.5" />
-            <text x="212" y="146" font-size="15" font-weight="700" class="fill-text">E</text>
-            <text x="330" y="80" font-size="15" font-weight="700" fill="#0284c7">D</text>
-            <text x="330" y="228" font-size="15" font-weight="700" fill="#d97706">O</text>
+            <line x1="50" y1="250" x2="372" y2="250" stroke="currentColor" class="text-text-muted" stroke-width="1.5" marker-end="url(#eco-arrow)" />
+            <line x1="50" y1="250" x2="50" y2="18" stroke="currentColor" class="text-text-muted" stroke-width="1.5" marker-end="url(#eco-arrow)" />
+            <text x="50" y="12" text-anchor="middle" font-size="14" font-weight="700" class="fill-text-muted">P</text>
+            <text x="382" y="254" text-anchor="middle" font-size="14" font-weight="700" class="fill-text-muted">Q</text>
+            <polygon points="60,52 210,140 60,140" fill="#0284c7" opacity="0.16" aria-hidden="true" />
+            <polygon points="60,222 210,140 60,140" fill="#d97706" opacity="0.20" aria-hidden="true" />
+            <line x1="210" y1="140" x2="210" y2="250" stroke="#65a30d" stroke-width="1.5" stroke-dasharray="5 5" />
+            <line x1="50" y1="140" x2="210" y2="140" stroke="#65a30d" stroke-width="1.5" stroke-dasharray="5 5" />
+            <path d="M60 52 L350 222" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round" pathLength="1" class="eco-draw" />
+            <path d="M60 222 L350 63" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round" pathLength="1" class="eco-draw eco-draw-2" />
+            <circle cx="210" cy="140" r="13" fill="#65a30d" opacity="0.25" aria-hidden="true" />
+            <circle cx="210" cy="140" r="7.5" fill="#65a30d" stroke="#ffffff" stroke-width="3" />
+            <text x="226" y="132" font-size="16" font-weight="800" class="fill-text">E</text>
+            <text x="340" y="52" font-size="16" font-weight="800" fill="#0284c7">D</text>
+            <text x="340" y="242" font-size="16" font-weight="800" fill="#d97706">O</text>
+            <text x="36" y="144" text-anchor="end" font-size="13" font-weight="600" class="fill-text-muted">PE</text>
+            <text x="210" y="270" text-anchor="middle" font-size="13" font-weight="600" class="fill-text-muted">QE</text>
           </svg>
           <div class="flex items-center justify-between gap-3 mt-4 flex-wrap">
             <p class="text-xs text-text-muted">Cada concepto, con su figura y su intuición.</p>
@@ -170,9 +182,9 @@ const classIndex = allClasses.map((c) => ({
 
   <style>
     .eco-draw {
-      stroke-dasharray: 700;
-      stroke-dashoffset: 700;
-      animation: eco-draw 1.6s var(--ease-out-expo, cubic-bezier(0.16,1,0.3,1)) 0.3s forwards;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      animation: eco-draw 1.4s var(--ease-out-expo, cubic-bezier(0.16,1,0.3,1)) 0.3s forwards;
     }
     .eco-draw-2 { animation-delay: 0.7s; }
     @keyframes eco-draw { to { stroke-dashoffset: 0; } }

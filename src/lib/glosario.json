@@ -1,31 +1,31 @@
 {
-  "curvas-de-indiferencia": {
-    "label": "curvas de indiferencia",
+  "demanda-agregada": {
+    "label": "demanda agregada",
     "refs": [
       {
-        "course": "microeconomia-i",
-        "class": "microeconomia-i-unidad-1-preferencias",
-        "classTitle": "Preferencias y utilidad"
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-el-pib",
+        "classTitle": "El PIB y la demanda agregada"
       }
     ]
   },
-  "relacion-de-preferencias": {
-    "label": "relación de preferencias",
+  "identidad-del-gasto": {
+    "label": "Identidad del gasto",
     "refs": [
       {
-        "course": "microeconomia-i",
-        "class": "microeconomia-i-unidad-1-preferencias",
-        "classTitle": "Preferencias y utilidad"
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-el-pib",
+        "classTitle": "El PIB y la demanda agregada"
       }
     ]
   },
-  "utilidad": {
-    "label": "utilidad",
+  "pib": {
+    "label": "PIB",
     "refs": [
       {
-        "course": "microeconomia-i",
-        "class": "microeconomia-i-unidad-1-preferencias",
-        "classTitle": "Preferencias y utilidad"
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-el-pib",
+        "classTitle": "El PIB y la demanda agregada"
       }
     ]
   }

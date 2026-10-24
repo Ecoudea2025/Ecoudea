@@ -1,6 +1,6 @@
 ---
 title: "Prueba de tortura LaTeX"
-course: "microeconomia-i"
+course: "macroeconomia-i"
 order: 999
 classType: "clase"
 description: "Página interna de pruebas extremas (borrador, no se publica)."

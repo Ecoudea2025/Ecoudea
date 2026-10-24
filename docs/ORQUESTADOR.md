@@ -12,7 +12,7 @@ Cómo usar este archivo:
 |---|---|
 | Raíz canónica del repo | `D:\Ecoudea-master` (git restaurado de `origin/master`, tag `v1-legacy`) |
 | Alcance de contenido | **Se conservan todos los cursos** (decisión 2026-10-23: página final igual de funcional que la original). Las 20 clases huérfanas de `estadistica-y-probabilidades` se rescatan con su propio archivo de curso |
-| Curso nuevo piloto | Microeconomía I – Unidad 1 (placeholder real, 4-5 clases, Fase 9) |
+| Curso nuevo piloto | Macroeconomía I – Unidad 1 (placeholder real, 4-5 clases, Fase 9) |
 | Formato de contenido | MDX en Astro Content Collections con schema Zod estricto (Fase 2) |
 | Matemáticas | `remark-math` + `rehype-katex` en build (cero JS de KaTeX en cliente) |
 | Gráficos estáticos | Matplotlib → SVG, scripts en `/figures` |
@@ -149,7 +149,7 @@ Aceptación: métricas en 3 páginas; LCP/CLS/INP; CI falla con caso malo (demos
 
 ## FASE 9 — Piloto y autoría
 
-Tareas: Microeconomía I U1 (4-5 clases, todo el sistema); `docs/AUTORIA.md` (curso/unidad/clase, LaTeX+macros, figura, animación, publicar, checklist); checklist por clase; backlog (i18n, comentarios, PWA, PDF, quizzes).
+Tareas: Macroeconomía I U1 (4-5 clases, todo el sistema); `docs/AUTORIA.md` (curso/unidad/clase, LaTeX+macros, figura, animación, publicar, checklist); checklist por clase; backlog (i18n, comentarios, PWA, PDF, quizzes).
 Aceptación: piloto pasa CI; un tercero crea una clase solo con la guía; móvil real ×2 temas; ESTADO cerrado.
 
 ## Anexo A — rescate y revisión

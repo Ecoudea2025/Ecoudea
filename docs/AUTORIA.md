@@ -5,13 +5,13 @@
 ## 1. Crear un curso
 
 ```bash
-npm run new:course -- microeconomia-i --title "Microeconomía I" --description "Preferencias, utilidad y demanda" --category "Cursos"
+npm run new:course -- macroeconomia-i --title "Macroeconomía I" --description "PIB, demanda y oferta agregadas" --category "Cursos"
 ```
 
-Esto crea `src/content/courses/microeconomia-i.md`. Edita el frontmatter:
+Esto crea `src/content/courses/macroeconomia-i.md`. Edita el frontmatter:
 
 ```yaml
-title: "Microeconomía I"
+title: "Macroeconomía I"
 description: "…"
 category: "Cursos"            # Cursos | Guías y Semilleros | Sesiones Especiales
 order: 12                     # posición en el directorio
@@ -21,14 +21,14 @@ image: "/assets/images/mi-portada.jpg"   # opcional
 ## 2. Crear clases
 
 ```bash
-npm run new:lesson -- microeconomia-i unidad-1-preferencias --title "Preferencias y utilidad" --type clase
+npm run new:lesson -- macroeconomia-i unidad-1-preferencias --title "Preferencias y utilidad" --type clase
 ```
 
-Crea `src/content/classes/microeconomia-i-unidad-1-preferencias.md` con plantilla comentada. Frontmatter:
+Crea `src/content/classes/macroeconomia-i-unidad-1-preferencias.md` con plantilla comentada. Frontmatter:
 
 ```yaml
 title: "Preferencias y utilidad"
-course: "microeconomia-i"     # = nombre del archivo del curso
+course: "macroeconomia-i"     # = nombre del archivo del curso
 order: 1                      # orden dentro del curso
 classType: "clase"            # clase | practica | guia | resumen
 description: "Resumen (aparece en listados y SEO)"
