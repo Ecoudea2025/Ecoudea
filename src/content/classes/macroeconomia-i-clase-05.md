@@ -39,8 +39,11 @@ $$
 \begin{align*}u(\bar{C}) > \lambda u(C_1) + (1 - \lambda) u(C_2) \equiv \bar{u}(C_t)\end{align*}
 $$
 
-> **Espacio para gráfica 1:** *Desigualdad de Jensen y concavidad de la función de utilidad `$u(C_t)$`.*
-> En el eje horizontal se ubican `$C_1$`, `$\bar{C} = \lambda C_1 + (1-\lambda)C_2$` y `$C_2$`. Se traza la curva roja cóncava `$u(C_t)$` y la cuerda verde lineal que une `$(C_1, u(C_1))$` con `$(C_2, u(C_2))$`. En la vertical sobre `$\bar{C}$`, se señala cómo la altura hasta la curva roja `$u(\bar{C})$` supera estrictamente a la altura hasta la cuerda verde `$\lambda u(C_1) + (1-\lambda)u(C_2)$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/jensen-lambda-light.svg" alt="Función cóncava con cuerda por debajo y brecha entre la utilidad del promedio y el promedio de utilidades." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/jensen-lambda-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: con ponderación lambda, la utilidad del consumo promedio supera el promedio ponderado de las utilidades.</figcaption>
+</figure>
 
 ### ¿Riesgo de qué? Actitudes frente al Riesgo y Suavizamiento
 

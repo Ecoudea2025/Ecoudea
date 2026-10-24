@@ -155,5 +155,8 @@ $$
 | **`$q \in (0, 1)$`** (Intermedio) | Incertidumbre mixta | `$\alpha_1(q + (1 - q)\phi)$` | Ponderada por credibilidad |
 | **`$q \to 0$`** (Muy pequeño) | Choque puramente permanente | `$\alpha_1 \phi$` | Máxima (fuerte expansión de `$C_1^*$`) |
 
-> **Espacio para gráfica 1:** *Respuesta marginal esperada del consumo en función de la probabilidad de transitoriedad `$q$`.*
-> En el plano `$(q, \mathbb{E}[\text{d}C_1^*/\text{d}Y])$` con `$q \in [0, 1]$`, se traza una línea recta con pendiente negativa que parte del valor máximo `$\alpha_1 \phi$` cuando `$q = 0$` (choque permanente) y desciende hasta el valor mínimo `$\alpha_1$` cuando `$q = 1$` (choque transitorio).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/respuesta-q-light.svg" alt="Línea descendente de la respuesta esperada del consumo desde choque permanente hasta transitorio." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/respuesta-q-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: si el choque se percibe permanente el consumo responde fuerte; si se ve transitorio, casi todo se ahorra.</figcaption>
+</figure>

@@ -181,5 +181,8 @@ En el esquema del Ciclo de Vida de Modigliani (De Gregorio, Sección 3.4), la tr
 | **Propensión Marginal ($PMgC$)** | `$\frac{1}{N} \ll 1$` | `$1$` |
 | **Impacto en Ahorro ($\Delta S$)** | Aumenta fuertemente (`$\frac{N-1}{N} \Delta Y > 0$`) | No se altera (`$\Delta S = 0$`) |
 
-> **Espacio para gráfica 1:** *Teoría del Ciclo de Vida de Modigliani: Ingreso, Consumo y Activos Netos.*
-> Gráfica en función de la edad `$t$` hasta la muerte `$N$`. Muestra la línea horizontal de consumo constante `$\bar{C}$` y la curva acampanada de ingreso laboral `$Y_\ell - T$`. Se identifican tres áreas: Área A (juventud, endeudamiento), Área B (madurez, ahorro neto positivo donde `$B = A + C$`) y Área C (vejez/retiro, desahorro de los activos acumulados), junto con el perfil inferior de evolución de los activos netos `$A_t$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/ciclo-vida-light.svg" alt="Ingreso acampanado, consumo constante y activos netos con etapas de deuda, ahorro y desahorro." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/ciclo-vida-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: en la juventud se gasta más de lo que se gana, en la madurez se ahorra y en la vejez se vive de lo acumulado.</figcaption>
+</figure>

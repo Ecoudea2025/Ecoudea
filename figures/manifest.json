@@ -56,5 +56,47 @@
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-24"
     }
+    {
+      "id": "macroeconomia/jensen-lambda",
+      "script": "figures/macro_jensen_lambda.py",
+      "title": "Desigualdad de Jensen con ponderación lambda",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/tasa-riesgo",
+      "script": "figures/macro_tasa_riesgo.py",
+      "title": "Tasa efectiva según riesgo de impago y exclusión",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/restriccion-cuantitativa",
+      "script": "figures/macro_restriccion_cuantitativa.py",
+      "title": "Restricción cuantitativa y solución de esquina",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/restriccion-precios",
+      "script": "figures/macro_restriccion_precios.py",
+      "title": "Restricción vía precios: First Best vs Second Best",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/ciclo-vida",
+      "script": "figures/macro_ciclo_vida.py",
+      "title": "Ciclo de vida: ingreso, consumo y activos netos",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/respuesta-q",
+      "script": "figures/macro_respuesta_q.py",
+      "title": "Respuesta marginal esperada según transitoriedad",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    }
   ]
 }

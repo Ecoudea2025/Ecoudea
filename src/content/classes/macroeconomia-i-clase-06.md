@@ -163,8 +163,11 @@ $$
 
 A medida que la probabilidad de impago se acerca a `$1$`, la tasa de interés exigida tiende a infinito. Si en la economía existe una tasa máxima legal o de mercado `$\bar{r}$`, todo individuo cuya probabilidad de impago supere el umbral crítico queda racionado cuantitativamente fuera del mercado crediticio.
 
-> **Espacio para gráfica 2:** *Tasa de interés efectiva `$r$` en función de la probabilidad de no pago `$p$`.*
-> En el plano `$(p, r)$` con `$p \in [0, 1]$`, la curva `$r = \frac{r^*}{1-p}$` nace en el intercepto vertical `$r^*$` cuando `$p=0$` y crece de forma estrictamente convexa y asintótica hacia una recta vertical en `$p=1$`. Se traza una cota horizontal `$\bar{r}$` y se sombrea en azul la región superior donde `$\frac{r^*}{1-p} > \bar{r}$` (exclusión crediticia).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/tasa-riesgo-light.svg" alt="Curva convexa de la tasa efectiva según el riesgo de impago, con cota máxima y región de exclusión." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/tasa-riesgo-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la tasa efectiva crece convexa con el riesgo de impago; sobre la cota máxima el deudor queda excluido.</figcaption>
+</figure>
 
 ### Impacto Gráfico sobre el Bienestar del Consumidor
 
@@ -172,8 +175,14 @@ A medida que la probabilidad de impago se acerca a `$1$`, la tasa de interés ex
 
 2. **Bajo Restricción de Precio (Prima de Riesgo):** Para niveles de consumo `$C_1 < Y_1$` (cuando ahorra), el individuo enfrenta la pendiente suave `$-(1 + r^*)$`. Pero a la derecha del punto de dotación `$(Y_1, Y_2)$` (cuando pide prestado, `$C_1 > Y_1$`), enfrenta una tasa mayor `$r = \frac{r^*}{1-p} > r^*$`, haciendo que la recta presupuestaria rote en sentido horario y se vuelva más empinada. El nuevo punto de tangencia (*Second Best*) implica menor consumo presente (`$C_1^{**} < C_1^*$`) y menor utilidad que el *First Best*.
 
-> **Espacio para gráfica 3:** *Restricción cuantitativa de liquidez y solución de esquina en el plano `$(C_1, C_2)$`.*
-> Recta presupuestaria quebrada verticalmente en `$Y_1$` (trazo verde), mostrando cómo el consumidor no puede alcanzar la tangencia óptima `$C_1^*$` en `$I_1$` y queda atrapado en la dotación `$(Y_1, Y_2)$` sobre una curva de indiferencia inferior.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/restriccion-cuantitativa-light.svg" alt="Recta presupuestaria quebrada en la dotación con óptimo inalcanzable y solución de esquina." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/restriccion-cuantitativa-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: con racionamiento cuantitativo el agente no alcanza E estrella y queda en la dotación sobre una indiferencia inferior.</figcaption>
+</figure>
 
-> **Espacio para gráfica 4:** *Restricción vía precios (diferencial de tasas por riesgo de impago).*
-> En el plano `$(C_1, C_2)$`, recta presupuestaria azul con pendiente `$-(1+r^*)$` (*First Best*) y recta verde quebrada en `$(Y_1, Y_2)$` con pendiente más empinada `$-(1+r)$` para `$C_1 > Y_1$`, ilustrando la contracción del consumo presente y el paso a una curva de indiferencia más baja (*Second Best*).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/restriccion-precios-light.svg" alt="Recta quebrada en la dotación con tramo empinado al endeudarse y óptimo de Second Best." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/restriccion-precios-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la prima de riesgo empina la recta al endeudarse y el óptimo retrocede del First Best al Second Best.</figcaption>
+</figure>
