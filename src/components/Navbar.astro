@@ -5,15 +5,16 @@ export interface Props {
 
 import ThemeToggle from './ThemeToggle.astro';
 import SearchModal from './SearchModal.astro';
+import { url } from '../lib/url';
 
 const { currentPath = '' } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const github = 'https://github.com/Ecoudea2025/Ecoudea';
 const navLinks = [
-  { href: `${base}/`, label: 'Inicio', icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6' },
-  { href: `${base}/#directorio`, label: 'Cursos', icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253' },
-  { href: `${base}/tablero-latex`, label: 'LaTeX', icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
-  { href: `${base}/acercade`, label: 'Acerca de', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z' },
+  { href: url('/'), label: 'Inicio', icon: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6' },
+  { href: url('/#directorio'), label: 'Cursos', icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253' },
+  { href: url('/tablero-latex'), label: 'LaTeX', icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4' },
+  { href: url('/acercade'), label: 'Acerca de', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z' },
 ];
 const categories = [
   { label: 'Cursos', filter: 'Cursos' },
@@ -25,9 +26,9 @@ const categories = [
 <nav class="sticky top-0 z-50 border-b border-border-subtle nav-shell" aria-label="Navegación principal">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-14 sm:h-16">
-      <a href={`${base}/`} class="flex items-center gap-3 font-bold text-lg sm:text-xl text-text no-underline group" aria-current={currentPath === `${base}/` ? 'page' : undefined}>
+      <a href={url(`/`)} class="flex items-center gap-3 font-bold text-lg sm:text-xl text-text no-underline group" aria-current={currentPath === url('/') ? 'page' : undefined}>
         <span class="block w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden border border-accent/30 shadow-lg shadow-accent/10 shrink-0">
-          <img src={`${base}/assets/images/logo-ecoudea.svg`} alt="Ecoudea" class="w-full h-full" />
+          <img src={url(`/assets/images/logo-ecoudea.svg`)} alt="Ecoudea" class="w-full h-full" />
         </span>
         <span class="brand-shine hidden sm:inline">Ecoudea</span>
       </a>
@@ -35,10 +36,10 @@ const categories = [
       <div class="hidden sm:flex items-center gap-1">
         <div class="relative nav-dropdown">
           <a
-            href={`${base}/#directorio`}
+            href={url(`/#directorio`)}
             class:list={[
               'flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 no-underline',
-              currentPath.startsWith(`${base}/cursos`) ? 'text-accent bg-accent-soft' : 'text-text-muted hover:text-text hover:bg-white/5',
+              currentPath.startsWith(url(`/cursos`)) ? 'text-accent bg-accent-soft' : 'text-text-muted hover:text-text hover:bg-white/5',
             ]}
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,14 +52,14 @@ const categories = [
           </a>
           <div class="nav-menu absolute left-0 top-full pt-2 hidden">
             <div class="w-56 rounded-xl glass-card border border-border-subtle shadow-2xl p-2 space-y-0.5">
-              <a href={`${base}/#directorio`} class="flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline">
+              <a href={url(`/#directorio`)} class="flex items-center justify-between px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline">
                 Todos los cursos
                 <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
               {categories.map((cat) => (
-                <a href={`${base}/?cat=${encodeURIComponent(cat.filter)}#directorio`} class="block px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline">
+                <a href={url(`/?cat=${encodeURIComponent(cat.filter)}#directorio`)} class="block px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-text hover:bg-white/5 transition-all no-underline">
                   {cat.label}
                 </a>
               ))}

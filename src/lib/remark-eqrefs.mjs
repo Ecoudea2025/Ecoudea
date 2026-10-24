@@ -4,7 +4,7 @@
 // Un \ref a una etiqueta inexistente ROMPE el build con el archivo culpable.
 import index from './ecuaciones.json' with { type: 'json' };
 
-const base = process.env.BASE_PATH || '/Ecoudea';
+const siteBase = process.env.BASE_PATH || '/Ecoudea';
 const REF = /^\\ref\{([A-Za-z0-9:_-]+)\}$/;
 const TAG = /\\tag\{([A-Za-z0-9:_-]+)\}/;
 
@@ -25,7 +25,7 @@ export function remarkEqrefs() {
             );
           }
           node.type = 'html';
-          node.value = `<a class="eq-ref" href="${base}/cursos/${hit.course}/${hit.class}#eq-${label}">(${label})</a>`;
+          node.value = `<a class="eq-ref" href="${siteBase}/cursos/${hit.course}/${hit.class}#eq-${label}">(${label})</a>`;
           delete node.data;
           return;
         }

@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import CourseCard from '../components/CourseCard.astro';
 import Icon from '../components/ui/Icon.astro';
 import { getCollection } from 'astro:content';
+import { url } from '../lib/url';
 
 const base = import.meta.env.BASE_URL;
 
@@ -106,7 +107,7 @@ const classIndex = allClasses.map((c) => ({
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </a>
-          <a href={`${base}/acercade`} class="btn-ghost no-underline">
+          <a href={url(`/acercade`)} class="btn-ghost no-underline">
             Conocer el proyecto
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -312,7 +313,7 @@ const classIndex = allClasses.map((c) => ({
           Ver el catálogo
           <Icon name="arrow-right" class="w-4 h-4" />
         </a>
-        <a href={`${base}/tablero-latex`} class="btn-ghost no-underline">
+        <a href={url(`/tablero-latex`)} class="btn-ghost no-underline">
           Probar el tablero LaTeX
         </a>
       </div>
@@ -324,7 +325,7 @@ const classIndex = allClasses.map((c) => ({
   </Fragment>
 </BaseLayout>
 
-<script define:vars={{ base, classIndex }}>
+<script define:vars={{ basePath: base, classIndex }}>
   const searchInput = document.getElementById('course-search');
   const pills = document.querySelectorAll('#category-pills .pill');
   const cards = document.querySelectorAll('[data-course-card]');
@@ -397,7 +398,7 @@ const classIndex = allClasses.map((c) => ({
       sec.classList.remove('hidden');
       list.innerHTML = items.map(({ courseId, next, pct, total, done }) => `
         <li>
-          <a href="${base}/cursos/${courseId}/${next.id}" class="flex flex-col gap-2 p-4 rounded-xl border border-border-subtle no-underline card-hover h-full">
+          <a href="${basePath}/cursos/${courseId}/${next.id}" class="flex flex-col gap-2 p-4 rounded-xl border border-border-subtle no-underline card-hover h-full">
             <span class="text-[11px] font-bold uppercase tracking-wider text-secondary">${next.ct}</span>
             <span class="text-sm font-bold text-text leading-snug">Siguiente: ${next.t}</span>
             <span class="mt-auto flex items-center gap-2 text-xs text-text-muted">

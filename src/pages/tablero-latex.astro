@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import 'katex/dist/katex.min.css';
+import { url } from '../lib/url';
 
-const base = import.meta.env.BASE_URL;
 const btn =
   'inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border-subtle text-sm text-text bg-transparent hover:border-accent/50 hover:text-accent transition-all cursor-pointer';
 const chip =
@@ -17,11 +17,11 @@ const iconBtn =
   title="Tablero LaTeX - Ecoudea"
   description="Editor LaTeX a pantalla completa con previsualización en vivo (KaTeX), paleta de símbolos y plantillas."
 >
-  <Fragment slot="header"><Navbar currentPath={`${base}/tablero-latex`} /></Fragment>
+  <Fragment slot="header"><Navbar currentPath={url(`/tablero-latex`)} /></Fragment>
 
   <div class="w-full max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <nav class="flex items-center gap-2 text-sm text-text-muted mb-4">
-      <a href={`${base}/`} class="hover:text-accent transition-colors no-underline">Inicio</a>
+      <a href={url(`/`)} class="hover:text-accent transition-colors no-underline">Inicio</a>
       <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
       <span class="text-text">Tablero LaTeX</span>
     </nav>

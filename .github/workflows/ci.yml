@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Setup Python (figuras)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Figures
+        run: |
+          pip install matplotlib numpy
+          npm run figures
+
+      - name: Build (prebuild + astro + pagefind + gzip)
+        run: npm run build
+
+      - name: Cero base path hardcodeado
+        run: |
+          n=$(grep -r -F '${base}' src --include='*.astro' --include='*.mjs' --include='*.ts' --include='*.js' | grep -v 'ui/Card.astro' | wc -l)
+          echo "usos de \${base}: $n"
+          [ "$n" -eq 0 ]
+
+      - name: Enlaces internos
+        run: npm run check:links
+
+      - name: SEO técnico (sitemap + robots)
+        run: npm run check:seo
+
+      - name: Presupuesto JS inicial
+        run: |
+          node -e "
+          const fs = require('fs');
+          const home = fs.readFileSync('dist/index.html', 'utf8');
+          const js = [...home.matchAll(/<script[^>]*src=\"([^\"]+)\"/g)].map(m => m[1]);
+          console.log('scripts en home:', js.join(', ') || '(ninguno externo)');
+          "

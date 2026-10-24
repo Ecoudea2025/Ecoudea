@@ -10,13 +10,13 @@ import Button from '../components/ui/Button.astro';
 import Breadcrumbs from '../components/ui/Breadcrumbs.astro';
 import Icon from '../components/ui/Icon.astro';
 import Figure from '../components/Figure.astro';
+import { url } from '../lib/url';
 
-const base = import.meta.env.BASE_URL;
 const areas = ['area-micro', 'area-macro', 'area-econometria', 'area-estadistica', 'area-matematicas', 'area-historia'] as const;
 ---
 
 <BaseLayout title="Guía de estilo - Ecoudea" description="Sistema de diseño de Ecoudea" noindex={true}>
-  <Fragment slot="header"><Navbar currentPath={`${base}/styleguide`} /></Fragment>
+  <Fragment slot="header"><Navbar currentPath={url(`/styleguide`)} /></Fragment>
 
   <Section width="wide">
     <SectionHeader
@@ -44,7 +44,7 @@ const areas = ['area-micro', 'area-macro', 'area-econometria', 'area-estadistica
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
       <Card><p class="font-bold text-text">Default</p><p class="text-sm text-text-muted">Superficie elevada con hover.</p></Card>
       <Card variant="outline"><p class="font-bold text-text">Outline</p><p class="text-sm text-text-muted">Transparente con borde.</p></Card>
-      <Card variant="ghost" href={`${base}/acercade`}><p class="font-bold text-text">Ghost + enlace</p><p class="text-sm text-text-muted">Toda la tarjeta es un enlace.</p></Card>
+      <Card variant="ghost" href={url(`/acercade`)}><p class="font-bold text-text">Ghost + enlace</p><p class="text-sm text-text-muted">Toda la tarjeta es un enlace.</p></Card>
     </div>
 
     <h3 class="text-lg font-bold text-text mb-4">Stats (SSR + animación)</h3>
@@ -55,7 +55,7 @@ const areas = ['area-micro', 'area-macro', 'area-econometria', 'area-estadistica
     </div>
 
     <h3 class="text-lg font-bold text-text mb-4">Migas de pan</h3>
-    <Breadcrumbs items={[{ label: 'Inicio', href: `${base}/` }, { label: 'Guía de estilo' }]} />
+    <Breadcrumbs items={[{ label: 'Inicio', href: url('/') }, { label: 'Guía de estilo' }]} />
 
     <h3 class="text-lg font-bold text-text mb-4 mt-10">Iconos</h3>
     <div class="flex flex-wrap gap-3 text-accent">

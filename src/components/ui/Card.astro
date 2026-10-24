@@ -5,7 +5,7 @@ export interface Props {
   class?: string;
 }
 const { variant = 'default', href, class: cls = '' } = Astro.props;
-const base = 'rounded-2xl border border-border-subtle card-hover';
+const baseCls = 'rounded-2xl border border-border-subtle card-hover';
 const variants = {
   default: 'bg-elevated/60 p-6 sm:p-8',
   outline: 'bg-transparent p-6 sm:p-8',
@@ -13,6 +13,6 @@ const variants = {
 };
 const Tag = href ? 'a' : 'div';
 ---
-<Tag href={href} class={`${base} ${variants[variant]} ${cls} ${href ? 'no-underline block' : ''}`}>
+<Tag href={href} class={`${baseCls} ${variants[variant]} ${cls} ${href ? 'no-underline block' : ''}`}>
   <slot />
 </Tag>

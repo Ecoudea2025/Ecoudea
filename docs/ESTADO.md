@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: 6 cerrada → siguiente 8 (rendimiento/CI) · Última actualización: 2026-10-23
+Fase actual: 8.a cerrada → siguiente 8.b (imágenes + Lighthouse) · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
@@ -12,6 +12,7 @@ Fase actual: 6 cerrada → siguiente 8 (rendimiento/CI) · Última actualizació
 - 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
+- Fase 8.a (base + SEO + CI): ✅ commit + tag `fase-8a-cerrada`. Cero `${base}` literales (helper `url()` en 14 archivos; `Card.baseCls` renombrado para grep limpio), `robots.txt` por endpoint, `check-links` + `check-seo` en verde, workflow `ci.yml` (build + figures + grep + checks). RSS pospuesto con motivo: sin fechas en el contenido.
 - Fase 6 (curso/clase): ✅ commit + tag `fase-6-cerrada`. Listado con render único (vista por CSS `data-view`, sin duplicar markup), unidades por `<details>` con progreso, progreso real X/N hidratado + exportar/importar JSON, `Breadcrumbs` con `BreadcrumbList`, JSON-LD `LearningResource`, chips de conceptos → glosario. Eliminados: `setInterval` 3s, locks/`unlock.js`, `VideoPlayer`, campos `unlockMode`/`video*`, `typeBg` muerto.
 - Fase 3.c (glosario): ✅ commit + tag `fase-3c-cerrada`. Campo `conceptos`, prebuild recolecta `<Term id>` + `conceptos` → `glosario.json` (solo publicado), página `/glosario` alfabética con letras y backlinks (en sitemap), `<Term>` enlazado por `enhance.js` (sin JS se lee igual por CSS), enlace en footer, seed real (3 términos), AUTORIA documentada.
 - Fase 3.b (ecuaciones referenciables): ✅ commit + tag `fase-3b-cerrada`. Prebuild `gen-indices.cjs` (`\tag` → `ecuaciones.json`, falla en duplicados e ignora comentarios/drafts) + plugin `remarkEqrefs` (`$\ref{id}$` → enlace, ancla `eq-*` con `scroll-margin`) + validación de refs en prebuild (`exit 1` legible). Clase de ejemplo con `\tag{utilidad}` + ref reales. Hallazgo: Astro 7 tolera errores de render generando el artículo vacío → la garantía va en prebuild, no en el plugin.

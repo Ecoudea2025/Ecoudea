@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import FloatingButtons from '../components/FloatingButtons.astro';
+import { url } from '../lib/url';
 
 export interface Props {
   title?: string;
@@ -33,7 +34,7 @@ const canonical = Astro.url;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="icon" type="image/svg+xml" href={url(`/favicon.svg`)} />
     <meta name="description" content={description} />
     <meta name="keywords" content="estadística, R, Python, cursos, programación, probabilidad" />
     <link rel="canonical" href={canonical} />
@@ -44,7 +45,7 @@ const canonical = Astro.url;
     <meta property="og:site_name" content="Ecoudea" />
     <meta property="og:locale" content="es_CO" />
     {image && <meta property="og:image" content={image} />}
-    {!image && <meta property="og:image" content={`${base}/assets/images/logo-ecoudea.png`} />}
+    {!image && <meta property="og:image" content={url(`/assets/images/logo-ecoudea.png`)} />}
     <meta name="twitter:card" content="summary" />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#0a0f1a" />
@@ -72,7 +73,7 @@ const canonical = Astro.url;
     <slot name="footer" />
     {showTools && <FloatingButtons />}
 
-    <script defer src={`${base}/assets/js/animations.js`}></script>
-    {enhance && <script defer src={`${base}/assets/js/enhance.js`}></script>}
+    <script defer src={url(`/assets/js/animations.js`)}></script>
+    {enhance && <script defer src={url(`/assets/js/enhance.js`)}></script>}
   </body>
 </html>
