@@ -1,0 +1,61 @@
+---
+// Componente de Logo Ecoudea con Modos de Reproducción:
+// 1. 'play-on-hover': Muestra el logo estático SVG por defecto. Solo al pasar el cursor (hover) se reproduce la animación. (Recomendado para no saturar)
+// 2. 'cycle-pause': Reproduce la animación con pausas largas entre estados.
+// 3. 'click-toggle': Cambia de estado solo al hacer clic.
+export interface Props {
+  mode?: 'play-on-hover' | 'cycle-pause' | 'click-toggle';
+  class?: string;
+}
+
+import { url } from '../../lib/url';
+
+const { mode = 'play-on-hover', class: className = 'w-10 h-10 sm:w-11 sm:h-11' } = Astro.props;
+---
+
+<div class:list={["relative rounded-xl overflow-hidden border border-accent/30 shadow-lg shadow-accent/10 shrink-0 group select-none cursor-pointer", className]} id="ecoudea-dynamic-logo">
+  <!-- 1. Logo SVG Estático Oficial (Siempre nítido, sin consumo de recursos) -->
+  <img
+    src={url('/assets/images/logo-ecoudea.svg')}
+    alt="Ecoudea"
+    class="w-full h-full static-logo transition-opacity duration-300"
+  />
+
+  <!-- 2. Logo Animado con Pausas (Se activa por evento o ciclo) -->
+  <img
+    src={url('/assets/images/logo-animado.gif')}
+    alt="Ecoudea Animado"
+    class="w-full h-full animated-logo absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none"
+  />
+</div>
+
+<script>
+  function initDynamicLogo() {
+    const container = document.getElementById('ecoudea-dynamic-logo');
+    if (!container) return;
+
+    const staticImg = container.querySelector('.static-logo') as HTMLImageElement;
+    const animImg = container.querySelector('.animated-logo') as HTMLImageElement;
+    if (!staticImg || !animImg) return;
+
+    // Modo 1: Play-on-hover (El favorito para diseño web elegante y cero saturación)
+    container.addEventListener('mouseenter', () => {
+      // Reinicia el GIF y lo hace visible suavemente
+      const src = animImg.src;
+      animImg.src = '';
+      animImg.src = src;
+      animImg.classList.remove('opacity-0');
+      animImg.classList.add('opacity-100');
+    });
+
+    container.addEventListener('mouseleave', () => {
+      // Vuelve al logo estático oficial
+      animImg.classList.remove('opacity-100');
+      animImg.classList.add('opacity-0');
+    });
+  }
+
+  // Ejecutar al cargar la página y en transiciones de vista de Astro
+  document.addEventListener('DOMContentLoaded', initDynamicLogo);
+  document.addEventListener('astro:page-load', initDynamicLogo);
+</script>

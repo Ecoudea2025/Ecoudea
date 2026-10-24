@@ -27,8 +27,24 @@ const categories = [
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-14 sm:h-16">
       <a href={url(`/`)} class="flex items-center gap-3 font-bold text-lg sm:text-xl text-text no-underline group" aria-current={currentPath === url('/') ? 'page' : undefined}>
-        <span class="block w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden border border-accent/30 shadow-lg shadow-accent/10 shrink-0">
-          <img src={url(`/assets/images/logo-ecoudea.svg`)} alt="Ecoudea" class="w-full h-full" />
+        <span class="relative block w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden border border-accent/30 shadow-lg shadow-accent/10 shrink-0"
+          onmouseenter="var v=this.querySelector('video');if(v&&!matchMedia('(prefers-reduced-motion: reduce)').matches){v.preload='auto';try{v.currentTime=0;}catch(e){}v.classList.remove('opacity-0');var p=v.play();if(p)p.catch(function(){v.classList.add('opacity-0')});}"
+          onmouseleave="var v=this.querySelector('video');if(v){try{v.pause();}catch(e){}v.classList.add('opacity-0');}"
+        >
+          <img src={url(`/assets/images/logo-ecoudea.svg`)} alt="Ecoudea" class="w-full h-full static-logo transition-opacity duration-300 group-hover:opacity-0" />
+          <video
+            src={url(`/assets/images/logo-animado.mp4`)}
+            muted
+            playsinline
+            preload="none"
+            disablepictureinpicture
+            aria-hidden="true"
+            tabindex="-1"
+            style="background: #040d19;"
+            class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 pointer-events-none"
+            onended="this.classList.add('opacity-0');"
+            onerror="this.classList.add('opacity-0');"
+          ></video>
         </span>
         <span class="brand-shine hidden sm:inline">Ecoudea</span>
       </a>

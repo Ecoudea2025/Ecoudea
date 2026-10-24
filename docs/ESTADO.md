@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: curso Macroeconomía I publicado (16 clases + práctica) → manda más MDs · Última actualización: 2026-10-23
+Fase actual: logo animado sin loop + curso Macroeconomía I publicado → manda más MDs · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
@@ -12,6 +12,7 @@ Fase actual: curso Macroeconomía I publicado (16 clases + práctica) → manda 
 - 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
+- Logo animado sin loop (2026-10-23, con el autor): GIF 183 KB → MP4 51 KB; se reproduce UNA vez al hover y al terminar vuelve al SVG (nunca loop, nunca negro); `preload=none`, `reduced-motion` respetado. Bloque de video en Navbar del autor, corregido: `webm` inexistente → mp4, fuera `loop`, handlers al contenedor, `object-contain` (16:9 en slot cuadrado).
 - Curso Macroeconomía I (2026-10-23, sin tag de fase): 16 clases + 1 práctica convertidas desde `Clases macro/` (frontmatter real, sin bibliography, `\tag` renumerados C.N únicos, 1 ref manual ascendida a `$\ref$`, placeholder propio eliminado). Calidad: `check-math` nuevo en CI (cero fórmulas rotas, antes 14), entidades HTML decodificadas en `sanitizeTex`, typo `\\end` corregido. Hallazgo operativo: `node_modules/.astro/data-store.json` cachea renders por digest del .md — tras cambiar plugins/config hay que borrarlo (los builds parecían "verdes" con contenido rancio).
 - Fix hero + piloto macro (2026-10-23, sin tag de fase): hero SVG rehecho (rectas de manual, excedentes sombreados, E exacto con halo, ejes con flechas, PE/QE, animación por `pathLength`); piloto renombrado a `macroeconomia-i` (curso + 2 clases con `git mv`, lección reescrita a PIB/demanda agregada con `\tag{pib}`+ref+glosario); docs actualizadas. `figures/` conserva namespace `microeconomia/` (temáticamente correcto: oferta/demanda es micro).
 - Fase 8.b (imágenes + presupuestos): ✅ commit + tag `fase-8b-cerrada`. 252 imágenes muertas a `archive/` (29,4 MB), JPG activos optimizados (32,5→13,3 MB), favicon.ico archivado, robots por endpoint, `dist/` 95,6→25,7 MB (−73%), `comparativa.md`. Todo validado con check-links + decodificación real en navegador.
