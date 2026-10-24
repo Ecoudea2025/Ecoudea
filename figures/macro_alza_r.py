@@ -14,16 +14,19 @@ def draw(theme):
     ax.plot(x, 8.8 - 1.1 * x, color=t["muted"], lw=2.0, linestyle=(0, (5, 4)),
             alpha=0.8)
     ax.plot(x, 10.4 - 1.5 * x, color=ROLES["budget"], lw=2.8)
-    ax.text(0.6, 9.6, "r′ > r", fontsize=12, fontweight="bold",
+    ax.text(0.45, 10.0, "r′ > r", fontsize=12, fontweight="bold",
             color=ROLES["budget"])
     # dotación (pivote) y óptimos
     ax.plot(4, 4.4, "o", ms=10, color=ROLES["endow"], zorder=5)
-    ax.text(3.35, 5.0, "W", fontsize=12, fontweight="bold",
-            color=ROLES["endow"])
+    # W FUERA de las rectas: arriba-derecha del pivote con fondo para legibilidad
+    bg = "#faf8f1" if theme == "light" else "#0a0f1a"
+    ax.text(4.32, 4.78, "W", fontsize=12, fontweight="bold",
+            color=ROLES["endow"], ha="left", va="bottom",
+            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.plot(5, 3.3, "o", ms=9, color=t["muted"], zorder=5)
     ax.text(5.5, 2.85, "E₀", fontsize=12, fontweight="bold", color=t["muted"])
     ax.plot(4.6, 3.5, "o", ms=10, color=accent(theme), zorder=5)
-    ax.text(3.85, 3.0, "E₁", fontsize=12, fontweight="bold",
+    ax.text(3.72, 2.92, "E₁", fontsize=12, fontweight="bold",
             color=accent(theme))
     # flecha de rotación
     ax.annotate("", xy=(2.2, 7.05), xytext=(1.35, 7.3),

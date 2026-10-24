@@ -611,8 +611,23 @@
   opacity: 0.35;
   margin: 2rem 0;
 }
-.prose-class .katex { font-size: 1.05em; color: var(--color-text) !important; }
+.prose-class .katex { font-size: 1.05em; color: var(--color-text) !important; white-space: nowrap; }
 .prose-class .katex * { color: inherit !important; }
+/* ── Lectura didáctica: fórmula inline en una sola línea (no partir a mitad) ──
+   Solo aditivo: display (.katex-display) ya tiene nowrap + scroll propio.
+   Inline se vuelve inline-block con scroll horizontal si excede el ancho,
+   así nunca rompe el layout en móvil ni parte la fórmula en dos líneas. */
+.prose-class p .katex, .prose-class li .katex, .prose-class td .katex,
+.prose-class blockquote .katex, .prose-class figcaption .katex {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: -0.15em;
+  padding-bottom: 0.15em;
+  margin-bottom: -0.15em;
+  scrollbar-width: thin;
+}
 .math-display {
   overflow-x: auto;
   overflow-y: hidden;

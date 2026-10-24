@@ -25,12 +25,16 @@ def draw(theme):
     for px, py in [(c1, u(c1)), (c2, u(c2))]:
         ax.plot(px, py, "o", ms=8, color=t["muted"], zorder=5)
     ax.plot(cb, u(cb), "o", ms=10, color=accent(theme), zorder=5)
-    ax.text(cb + 0.25, u(cb) + 0.12, "u(C̄)", fontsize=12, fontweight="bold",
-            color=accent(theme))
+    bg = "#faf8f1" if theme == "light" else "#0a0f1a"
+    ax.text(cb + 0.45, u(cb) + 0.30, "u(C̄)", fontsize=12, fontweight="bold",
+            color=accent(theme), ha="left", va="bottom",
+            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.set_xlim(0, 10.8)
     ax.set_ylim(0, 3.9)
+    # Sin duplicar u(C): va rotulado en el extremo de la curva (arriba),
+    # el eje Y queda sin etiqueta para no repetir
     pure_axes(ax, [c1, cb, c2], ["C₁", "C̄", "C₂"], [], [],
-              xlabel="C", ylabel="u(C)")
+              xlabel="C", ylabel="")
     return fig
 
 
