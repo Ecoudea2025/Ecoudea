@@ -377,7 +377,7 @@ Una empresa de electrodomésticos desea saber si los cursos de
 capacitación sirven para mejorar el nivel de ventas de sus trabajadoras
 y para ello decide enviar a $12$ de sus agentes de ventas a dicho
 curso. Una vez finalizado el curso, la empresa encuentra que estos
-agentes generan unas ventas promedio de de $43.5$ millones de pesos
+agentes generan unas ventas promedio de $43.5$ millones de pesos
 con una desviación estándar de $3.1$ millones de pesos.<br> <br> Con
 el fin de observar si el curso es o no efectivo, la empresa extrae una
 muestra aleatoria independiente de $15$ agentes que no asistieron a la

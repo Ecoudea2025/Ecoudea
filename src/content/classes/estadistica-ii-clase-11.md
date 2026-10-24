@@ -230,7 +230,7 @@ $$
 \end{align*}
 $$
 
-Dado el resultado anterior, se concluye con una confianza del del
+Dado el resultado anterior, se concluye con una confianza del
 $98\%$ que la diferencia entre la proporción de equipos que son
 fabricados mediante un proceso de fabricación nuevo y aquellos que son
 fabricados con un proceso de fabricación actual se encontrará entre

@@ -674,7 +674,7 @@ math: true
     </thead>
     </table>
     Si asumimos que las mediciones se distribuyen normalmente con una
-    media desconocida pero con una varianza de `$3$`,Calcule la
+    media desconocida pero con una varianza de `$3$`, Calcule la
     probabilidad de que el promedio desconocido de las mediciones
     realizadas por el instrumento de precisión se encuentre entre
     `$358$` y `$363$`.

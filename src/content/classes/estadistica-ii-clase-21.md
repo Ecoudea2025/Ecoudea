@@ -92,7 +92,7 @@ $$
 
 Con esta estructura en mente, y con el valor de la desviación estándar
 poblacional conocida e igual a $\sigma=0.5$ y habiendo calculado
-previamente la media de de la muestra de las $n=15$ observaciones, la
+previamente la media de la muestra de las $n=15$ observaciones, la
 cual dió un resultado igual a $\bar{X} = 1.659333$, realizamos las
 siguientes operaciones matemáticas para llevar la probabilidad original,
 a una forma conocida, tal que 
@@ -497,7 +497,7 @@ $$
 $$
 
 Pero al observar la información recolectada por los $15$ egresados,
-apreciamos que que nos dan el salario que devengan, y no la proporción
+apreciamos que nos dan el salario que devengan, y no la proporción
 muestral, de quienes tienen un salario superior a $2$ millones de
 pesos, por lo cual, será necesario calcular la proporción muestral, y
 para ello, denotaremos como $1$ aquellas observaciones que sean

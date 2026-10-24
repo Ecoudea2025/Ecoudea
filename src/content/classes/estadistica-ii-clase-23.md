@@ -594,7 +594,7 @@ $$
 
 Con esta estructura en mente, y con el valor de la desviación estándar
 poblacional conocida e igual a $\sigma=0.5$ y habiendo calculado
-previamente la media de de la muestra de las $n=15$ observaciones, la
+previamente la media de la muestra de las $n=15$ observaciones, la
 cual dió un resultado igual a $\bar{X} = 1.659333$, realizamos las
 siguientes operaciones matemáticas para llevar la probabilidad original,
 a una forma conocida, tal que 

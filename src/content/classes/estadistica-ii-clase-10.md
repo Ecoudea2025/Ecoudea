@@ -118,7 +118,7 @@ Si se supone que las resistencias a la tracción se distribuyen
 normalmente, construya un intervalo del $90\%$ para la razón de
 varianzas entre la variabilidad de los cables sin encapsulado y la
 variabilidad de los cables con encapsulado. Es posible afirmar que la
-variabilidad de de los cables con encapsulado es superior a los cables
+variabilidad de los cables con encapsulado es superior a los cables
 sin encapsulado?
 </p>
 <h3 data-toc-skip>

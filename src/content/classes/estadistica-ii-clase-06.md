@@ -1536,7 +1536,7 @@ Encontrando con un nivel de significancia del $5\%$ que se rechaza la
 hipótesis nula de que el tipo de defecto y el turno sean categorías
 independiente, lo cual quiere decir que el turno laboral si influye en
 el tipo de defecto que tienen los productos producidos por la empresa
-maufacturera, debido a que el estadístico de prueba cae dentro de la
+manufacturera, debido a que el estadístico de prueba cae dentro de la
 región crítica, y el P-valor es menor al nivel de significancia
 $\alpha = 0.05$.
 </p>

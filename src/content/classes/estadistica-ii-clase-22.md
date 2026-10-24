@@ -1148,7 +1148,7 @@ estructura establecida por la tabla
 $\mathbb{P}(F_{\nu_1, \nu_2}\geq f)$, así que será cuestión de buscar
 los valores críticos asociados al cruce entre $\nu_1 = 8$ los grados
 de libertad en el numerador y $\nu_2 = 12$ los grados de libertad en
-el denominador, para para comparar dichos valores con respecto al valor
+el denominador, para comparar dichos valores con respecto al valor
 crítico de interés $3$. <br> <br> Para tanto, se localiza en cada una
 de las tablas en la parte superior los grados de libertad del numerador
 $8$, en la parte izquierda los grados de libertad del denominador
@@ -1656,7 +1656,7 @@ $$
 $$
 
 Pero al observar la información recolectada por los $15$ egresados,
-apreciamos que que nos dan el salario que devengan, y no la proporción
+apreciamos que nos dan el salario que devengan, y no la proporción
 muestral, de quienes tienen un salario superior a $2$ millones de
 pesos, por lo cual, será necesario calcular la proporción muestral, y
 para ello, denotaremos como $1$ aquellas observaciones que sean

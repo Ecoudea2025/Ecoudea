@@ -85,7 +85,7 @@ f_{7}(x_7) &= \frac{8!}{(7-1)!(8-7)!} f(x_7) [F(x_7)]^{7-1}[1-F(x_7)]^{8-7} \\
 $$
 
 Y ya con esta función de probabilidad se procede a realizar el cálculo
-de la la probabilidad del séptimo estadístico de orden sea a lo más de
+de la probabilidad del séptimo estadístico de orden sea a lo más de
 $3.2$, tal que 
 $$
 \begin{align*}
