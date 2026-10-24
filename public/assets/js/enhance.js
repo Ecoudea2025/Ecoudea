@@ -57,25 +57,59 @@
     });
   }
 
-  // ── BOTÓN "COPIAR TEX" EN FÓRMULAS DISPLAY ───────────────────────
+  // ── BOTÓN COPIAR TEX (icono ▢ al final de cada fórmula display) ──
   // Lee el <annotation encoding="application/x-tex"> que emite KaTeX.
+  // Icono discreto arriba-derecha del bloque (CSS: .copy-tex-btn).
+  // Copia robusta: Clipboard API + fallback textarea/execCommand.
+  var COPY_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+  var CHECK_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>';
+  function fallbackCopy(text, done, fail) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, ta.value.length);
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (ok) done(); else if (fail) fail();
+    } catch (e) { if (fail) fail(); }
+  }
+  function copyText(text, done, fail) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text, done, fail); });
+    } else {
+      fallbackCopy(text, done, fail);
+    }
+  }
   function copyableMath(scope) {
     var displays = (scope || document).querySelectorAll('.katex-display:not([data-copy])');
     displays.forEach(function (d) {
       d.setAttribute('data-copy', '1');
-      var ann = d.querySelector('annotation[encoding="application/x-tex"]');
-      if (!ann || !navigator.clipboard) return;
+      var ann = d.querySelector('annotation[encoding="application/x-tex"]') || d.querySelector('annotation');
+      if (!ann || !ann.textContent) return;
       var tex = ann.textContent;
       var btn = document.createElement('button');
       btn.type = 'button';
-      btn.textContent = 'Copiar TeX';
       btn.className = 'copy-tex-btn';
-      btn.style.cssText = 'display:block;margin:0.25rem auto 0;font-size:11px;padding:0.2rem 0.7rem;border-radius:9999px;border:1px solid var(--color-border-subtle);background:transparent;color:var(--color-text-muted);cursor:pointer;';
-      btn.addEventListener('click', function () {
-        navigator.clipboard.writeText(tex).then(function () {
-          btn.textContent = 'Copiado ✓';
-          setTimeout(function () { btn.textContent = 'Copiar TeX'; }, 1500);
-        }).catch(function () {});
+      btn.innerHTML = COPY_SVG;
+      btn.setAttribute('aria-label', 'Copiar TeX de la fórmula');
+      btn.setAttribute('title', 'Copiar TeX');
+      btn.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        copyText(tex, function () {
+          btn.innerHTML = CHECK_SVG;
+          btn.setAttribute('data-ok', '1');
+          btn.setAttribute('aria-label', 'TeX copiado');
+          setTimeout(function () {
+            btn.innerHTML = COPY_SVG;
+            btn.removeAttribute('data-ok');
+            btn.setAttribute('aria-label', 'Copiar TeX de la fórmula');
+          }, 1300);
+        });
       });
       d.appendChild(btn);
     });

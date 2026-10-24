@@ -514,11 +514,28 @@
 .prose-class blockquote p { margin-bottom: 0; }
 .prose-class code {
   font-family: var(--font-mono);
-  font-size: 0.875em;
-  background: var(--color-accent-soft);
-  padding: 0.125rem 0.375rem;
-  border-radius: 0.25rem;
-  color: var(--color-accent-hover);
+  font-size: 0.85em;
+  background: color-mix(in srgb, #1a7f4d 9%, transparent);
+  border: 1px solid color-mix(in srgb, #1a7f4d 16%, transparent);
+  padding: 0.05rem 0.3rem;
+  border-radius: 6px;
+  color: inherit;
+  text-decoration: underline 2px solid #1a7f4d;
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: auto;
+  white-space: nowrap;
+}
+/* LaTeX nunca es código: si KaTeX quedó dentro de <code>, sin píldora */
+.prose-class code:has(.katex),
+.prose-class code.language-math {
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit;
+  white-space: normal;
 }
 .prose-class pre {
   background: #0f172a;
@@ -611,23 +628,21 @@
   opacity: 0.35;
   margin: 2rem 0;
 }
-.prose-class .katex { font-size: 1.05em; color: var(--color-text) !important; white-space: nowrap; }
-.prose-class .katex * { color: inherit !important; }
-/* ── Lectura didáctica: fórmula inline en una sola línea (no partir a mitad) ──
-   Solo aditivo: display (.katex-display) ya tiene nowrap + scroll propio.
-   Inline se vuelve inline-block con scroll horizontal si excede el ancho,
-   así nunca rompe el layout en móvil ni parte la fórmula en dos líneas. */
+.prose-class .katex { font-size: 1.02em; color: var(--color-text) !important; white-space: nowrap; background: transparent !important; }
+.prose-class .katex * { color: inherit !important; background: transparent !important; }
+/* ── Lectura didáctica: fórmula inline fluye con el texto, sin scroll ──
+   El scroll horizontal generaba la "barra/sidebar" gris bajo la fórmula.
+   Inline = inline real (sin contenedor con overflow). Solo display scrollea. */
 .prose-class p .katex, .prose-class li .katex, .prose-class td .katex,
-.prose-class blockquote .katex, .prose-class figcaption .katex {
-  display: inline-block;
-  max-width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  vertical-align: -0.15em;
-  padding-bottom: 0.15em;
-  margin-bottom: -0.15em;
-  scrollbar-width: thin;
+.prose-class th .katex, .prose-class blockquote .katex, .prose-class figcaption .katex {
+  display: inline;
+  max-width: none;
+  overflow: visible;
+  vertical-align: baseline;
+  padding: 0;
+  margin: 0;
 }
+.prose-class td .katex, .prose-class th .katex { background: transparent !important; }
 .math-display {
   overflow-x: auto;
   overflow-y: hidden;
@@ -640,6 +655,108 @@
   margin: 1rem 0;
   padding: 0.25rem 0;
   -webkit-overflow-scrolling: touch;
+}
+/* Botón copiar-TeX: icono ▢ discreto al final (arriba-derecha) del display.
+   Invisible hasta hover/foco del bloque; siempre visible en táctil. */
+.katex-display { position: relative; }
+.copy-tex-btn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-subtle);
+  background: color-mix(in srgb, var(--color-elevated) 88%, transparent);
+  color: var(--color-text-muted);
+  opacity: 0;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1;
+  transition: opacity 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+.katex-display:hover .copy-tex-btn,
+.katex-display:focus-within .copy-tex-btn,
+.copy-tex-btn:focus-visible { opacity: 1; }
+.copy-tex-btn:hover { color: var(--color-text); opacity: 1; }
+.copy-tex-btn[data-ok] { color: var(--color-success); border-color: var(--color-success); opacity: 1; }
+@media (hover: none) { .copy-tex-btn { opacity: 0.8; } }
+
+/* ── Logo vivo (SVG inline en Navbar): la insignia respira ──────────
+   Loop calmado de 12s, casi siempre la marca base: la E gruesa se dibuja
+   (trazo) y se rellena una vez por ciclo, funde a la marca, y un brillo
+   tenue barre la insignia. Sin JS: si no hay animación se ve la marca. */
+[data-logo-anim] .la-draw {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  opacity: 0;
+  animation: laDrawSpine 12s ease-in-out infinite;
+}
+[data-logo-anim] .la-draw.la-arm { animation-name: laDrawArm; }
+@keyframes laDrawSpine {
+  0%, 58% { stroke-dashoffset: 100; opacity: 0; }
+  60% { opacity: 1; }
+  60%, 66% { stroke-dashoffset: 100; }
+  66%, 80% { stroke-dashoffset: 0; opacity: 1; }
+  86%, 100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes laDrawArm {
+  0%, 61% { stroke-dashoffset: 100; opacity: 0; }
+  62% { opacity: 1; }
+  62%, 72% { stroke-dashoffset: 100; }
+  72%, 80% { stroke-dashoffset: 0; opacity: 1; }
+  86%, 100% { stroke-dashoffset: 0; opacity: 0; }
+}
+[data-logo-anim] .la-fill {
+  animation: laFill 12s ease-in-out infinite;
+}
+@keyframes laFill {
+  0%, 72% { opacity: 0; }
+  76%, 80% { opacity: 1; }
+  86%, 100% { opacity: 0; }
+}
+[data-logo-anim] .la-chart {
+  animation: laChart 12s ease-in-out infinite;
+}
+@keyframes laChart {
+  0%, 56% { opacity: 1; }
+  62%, 80% { opacity: 0; }
+  88%, 100% { opacity: 1; }
+}
+[data-logo-anim] .la-dot {
+  animation: laDotPop 12s ease-in-out infinite, laDotPulse 3s ease-in-out infinite;
+}
+@keyframes laDotPop {
+  0%, 56% { r: 4.5; }
+  62%, 80% { r: 0; }
+  88%, 100% { r: 4.5; }
+}
+@keyframes laDotPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+[data-logo-anim] .la-shine {
+  opacity: 0;
+  transform: skewX(-18deg) translateX(0);
+  animation: laShine 12s ease-in-out infinite;
+}
+@keyframes laShine {
+  0%, 88% { opacity: 0; transform: skewX(-18deg) translateX(0); }
+  89% { opacity: 0.7; }
+  94% { opacity: 0.7; transform: skewX(-18deg) translateX(96px); }
+  95%, 100% { opacity: 0; transform: skewX(-18deg) translateX(96px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-logo-anim] .la-draw,
+  [data-logo-anim] .la-fill,
+  [data-logo-anim] .la-chart,
+  [data-logo-anim] .la-dot,
+  [data-logo-anim] .la-shine {
+    animation: none !important;
+  }
 }
 .katex-display > .katex {
   display: inline-block;
