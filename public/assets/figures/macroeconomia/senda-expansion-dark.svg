@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-23T23:36:49.282583</dc:date>
+    <dc:date>2026-10-24T01:06:53.215576</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -404,8 +404,16 @@ z
     </g>
    </g>
    <g id="text_4">
+    <g id="patch_5">
+     <path d="M 130.336452 181.076955 
+L 146.909577 181.076955 
+L 146.909577 166.343205 
+L 130.336452 166.343205 
+z
+" style="fill: #0a0f1a; opacity: 0.9"/>
+    </g>
     <!-- E₁ -->
-    <g style="fill: #84cc16" transform="translate(129.276279 182.985915) scale(0.12 -0.12)">
+    <g style="fill: #84cc16" transform="translate(131.896452 177.02133) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-45" d="M 588 4666 
 L 3834 4666 
@@ -428,15 +436,31 @@ z
     </g>
    </g>
    <g id="text_5">
+    <g id="patch_6">
+     <path d="M 217.675583 123.260955 
+L 234.248708 123.260955 
+L 234.248708 108.527205 
+L 217.675583 108.527205 
+z
+" style="fill: #0a0f1a; opacity: 0.9"/>
+    </g>
     <!-- E₂ -->
-    <g style="fill: #84cc16" transform="translate(216.615409 125.169915) scale(0.12 -0.12)">
+    <g style="fill: #84cc16" transform="translate(219.235583 119.20533) scale(0.12 -0.12)">
      <use xlink:href="#DejaVuSans-Bold-45"/>
      <use xlink:href="#DejaVuSans-Bold-2082" x="68.310547"/>
     </g>
    </g>
    <g id="text_6">
+    <g id="patch_7">
+     <path d="M 305.014713 65.444955 
+L 321.587838 65.444955 
+L 321.587838 50.711205 
+L 305.014713 50.711205 
+z
+" style="fill: #0a0f1a; opacity: 0.9"/>
+    </g>
     <!-- E₃ -->
-    <g style="fill: #84cc16" transform="translate(303.954539 67.353915) scale(0.12 -0.12)">
+    <g style="fill: #84cc16" transform="translate(306.574713 61.38933) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-2083" d="M 1850 1388 
 Q 2138 1332 2297 1160 

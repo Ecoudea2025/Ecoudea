@@ -21,16 +21,16 @@ def draw(theme):
             color=accent(theme), ha="left", va="bottom",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.plot(1, 1, "o", ms=10, color=accent(theme), zorder=5)
-    ax.text(1.0, 0.55, "α₁", fontsize=12, fontweight="bold",
-            color=accent(theme), ha="right", va="top",
+    ax.text(1.02, 1.0, "α₁", fontsize=12, fontweight="bold",
+            color=accent(theme), ha="left", va="center")
+    # Anotaciones de régimen FUERA de la recta (antes la cruzaban)
+    ax.text(0.30, 7.9, "q=0: permanente", fontsize=10, fontstyle="italic",
+            color=t["muted"], ha="left", va="bottom",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
-    ax.text(0.04, 8.55, "q=0: permanente", fontsize=10, fontstyle="italic",
-            color=t["muted"], ha="left", va="top",
+    ax.text(0.99, 0.45, "q=1: transitorio", fontsize=10, fontstyle="italic",
+            color=t["muted"], ha="right", va="top",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
-    ax.text(0.96, 1.75, "q=1: transitorio", fontsize=10, fontstyle="italic",
-            color=t["muted"], ha="right", va="bottom",
-            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
-    ax.set_xlim(0, 1.06)
+    ax.set_xlim(0, 1.14)
     ax.set_ylim(0, 10.6)
     pure_axes(ax, [0, 1], ["0", "1"], [1, phi], ["α₁", "α₁φ"],
               xlabel="q", ylabel="E[dC₁*/dY]")

@@ -8,6 +8,8 @@ from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent, pure_axes, 
 
 def draw(theme, r=0.25, alpha=0.5):
     fig, ax = setup_eco(theme)
+    t = THEMES[theme]
+    bg = "#faf8f1" if theme == "light" else "#0a0f1a"
     m = (1 - alpha) / alpha * (1 + r)  # 1.25
     x = np.linspace(0, 8, 200)
     ax.plot(x, m * x, color=ROLES["budget"], lw=2.6)
@@ -20,8 +22,10 @@ def draw(theme, r=0.25, alpha=0.5):
         ax.plot(xx, (u / xx ** alpha) ** (1 / (1 - alpha)),
                 color=ROLES["c1"], lw=2.2)
         ax.plot(c1, c2, "o", ms=9, color=accent(theme), zorder=5)
-        ax.text(c1 + 0.22, c2 + 0.3, tag, fontsize=12, fontweight="bold",
-                color=accent(theme))
+        # Etiqueta FUERA de la senda verde, con fondo para que siempre lea
+        ax.text(c1 + 0.28, c2 + 0.45, tag, fontsize=12, fontweight="bold",
+                color=accent(theme), ha="left", va="bottom",
+                bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.set_xlim(0, 9.2)
     ax.set_ylim(0, 10)
     pure_axes(ax, [], [], [], [], xlabel="C₁", ylabel="C₂")
