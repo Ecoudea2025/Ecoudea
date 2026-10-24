@@ -1,0 +1,21 @@
+---
+title: "Práctica 02: sistema productivo"
+course: "economia-clasica"
+order: 9
+classType: "practica"
+description: "Ejercicios numéricos con el sistema trigo-hierro: coeficientes, excedente, Leontief y crecimiento."
+math: true
+---
+
+## Lista de ejercicios
+
+1.  Con los métodos del ejemplo 2 (clase 06) y `$\mathbf{s} = [5{,}125\ \ 0]$`, calcula `$S_1$`, `$S_2$` y verifica `$\mathbf{E} = [\text{2.050.000 trigo},\ \text{1.500.000 hierro}]$`. Muestra cada resta.
+2.  Calcula `$a_{11}, a_{12}, a_{21}, a_{22}$` y `$l_1, l_2$` dividiendo entre `$y_1 = \text{10.250.000}$`, `$y_2 = \text{3.000.000}$`. Compara con los valores de la clase 07 (`$0{,}35$; `$0{,}1463$`; `$1{,}2983$`; `$0$`; `$0{,}0097$`; `$0{,}013$`).
+3.  Obtén `$b_{11}, b_{12}, b_{21}, b_{22}$` y verifica `$\mathbf{B} - \mathbf{A} = \mathbf{l}\mathbf{s}$` celda por celda.
+4.  Con `$\mathbf{E} = [175\ \ 0]$` del ejemplo 6 (cantidades 280/12 → 575 y 120/8 → 20), plantea `$\mathbf{y} = \mathbf{E}[\mathbf{I}-\mathbf{B}]^{-1}$` y discute: ¿qué estructura `$y$` sostiene ese excedente? ¿Es única? (apunta a la nota 20 del libro: homotecia + ecuación de trabajo).
+5.  Calcula las tasas físicas `$e_{\text{trigo}}$`, `$e_{\text{hierro}}$` del sistema del ejemplo 2 y determina a qué tasa puede crecer sin reestructurarse. Explica qué habría que cambiar para igualarlas y crecer al máximo.
+6.  Clasifica: ¿el hierro del ejemplo 2 es básico? ¿y un bien de lujo que no entra en ningún método? Justifica con la definición 9 (qué se paraliza si falta).
+
+<IdeaClave>
+Si estos 6 ejercicios salen fluidos, las unidades 3–5 serán lectura, no lucha: ya hablas el idioma `$\mathbf{A}/\mathbf{B}/\mathbf{E}$`.
+</IdeaClave>

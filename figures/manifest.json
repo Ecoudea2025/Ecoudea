@@ -153,6 +153,27 @@
       "title": "Dinámica de la deuda según rho",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-24"
+    },
+    {
+      "id": "clasica/circuito-produccion",
+      "script": "figures/clasica_circuito_produccion.py",
+      "title": "Circuito circular: producción, reposición y excedente",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "clasica/gravitacion",
+      "script": "figures/clasica_gravitacion.py",
+      "title": "Gravitación del precio de mercado en torno al natural",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "clasica/frontera-w-r",
+      "script": "figures/clasica_frontera_w_r.py",
+      "title": "Frontera salario-beneficio en mercancía patrón",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
     }
   ]
 }

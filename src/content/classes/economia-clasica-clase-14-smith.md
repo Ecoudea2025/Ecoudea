@@ -1,0 +1,46 @@
+---
+title: "Clase 14: Smith y los precios naturales"
+course: "economia-clasica"
+order: 14
+classType: "clase"
+description: "Teoría smithiana: componentes del precio, medida invariable en trabajo comandado y determinación de los naturales."
+math: true
+---
+
+## Puente: el fundador y su problema
+
+Smith plantea el problema analítico de todo el curso: **la relación entre los precios y la repartición entre clases**. Su respuesta tiene dos mitades: cuánto vale cada parte (determinación) y en qué medirlo sin que la vara se mueva (medida invariable).
+
+## Variables
+
+* Precio natural = salario + beneficio + renta a sus tasas **naturales** (no las corrientes).
+* **Trabajo comandado**: cantidad de trabajo que una mercancía puede comprar.
+* **Trabajo incorporado**: cantidad empleada en producirla.
+
+<Definicion>
+**Precio natural**: el que basta para pagar cada componente a su tasa natural y reproduce el sistema con `$r$` uniforme. **Trabajo comandado**: poder de compra sobre trabajo; Smith lo propone como medida invariable.
+</Definicion>
+
+## Deducción paso a paso
+
+### Paso 1: Descomponer el precio
+
+Todo precio natural se resuelve en salarios, beneficios y rentas a tasas naturales. En sociedades primitivas (sin capital ni tierra apropiada) coincide con el trabajo incorporado; con capital y tierra aparecen las otras dos partes.
+
+### Paso 2: La medida invariable
+
+El dinero (oro/plata) varía con las minas; el trigo con las cosechas. El trabajo comandado, argumenta Smith, vale siempre lo mismo para el obrero (igual sacrificio), luego mide sin deformar. Dificultad que hereda Ricardo: ¿y si cambia la productividad del trabajo mismo?
+
+### Paso 3: Determinación por componentes
+
+Dados salario, beneficio y renta naturales (determinados fuera: subsistencia, competencia, fertilidad), el precio natural es su suma. Causalidad: **distribución → precios**. Sraffa invertirá parcialmente esta lógica (clase 19).
+
+## Interpretación económica
+
+1. **Naturaleza dual del proyecto smithiano**: medir bien y sumar bien son problemas distintos; confundirlos oscurece a Smith.
+2. **El germen de la gravitación**: el precio de mercado oscila con oferta-demanda en torno al natural (puente a la unidad 6).
+3. **Límite**: sin sistema simultáneo, Smith no demuestra la uniformidad de `$r$`; la postula por competencia.
+
+<Ejercicio>
+Explica en 4 líneas por qué el trabajo comandado sirve como vara aunque los salarios corrientes fluctúen (distingue tasa natural de corriente antes de responder).
+</Ejercicio>
