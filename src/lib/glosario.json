@@ -1,1 +1,382 @@
-{}
+{
+  "analisis-de-varianza": {
+    "label": "Análisis de varianza",
+    "refs": [
+      {
+        "course": "estadistica-ii",
+        "class": "estadistica-ii-clase-01",
+        "classTitle": "Clase 20"
+      }
+    ]
+  },
+  "aversion-al-riesgo": {
+    "label": "Aversión al riesgo",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-05",
+        "classTitle": "Clase 05: Función de Utilidad CRRA, Desigualdad de Jensen y Consumo Óptimo"
+      }
+    ]
+  },
+  "bienes-basicos": {
+    "label": "Bienes básicos",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-19-sraffa-definitivo",
+        "classTitle": "Clase 19: El sistema definitivo de Sraffa"
+      }
+    ]
+  },
+  "coeficiente-de-determinacion": {
+    "label": "Coeficiente de determinación",
+    "refs": [
+      {
+        "course": "estadistica-ii",
+        "class": "estadistica-ii-clase-01",
+        "classTitle": "Clase 20"
+      }
+    ]
+  },
+  "desigualdad-de-jensen": {
+    "label": "Desigualdad de Jensen",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-05",
+        "classTitle": "Clase 05: Función de Utilidad CRRA, Desigualdad de Jensen y Consumo Óptimo"
+      }
+    ]
+  },
+  "distribucion-del-producto": {
+    "label": "Distribución del producto",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-15-trigo-trigo",
+        "classTitle": "Clase 15: Ricardo y el modelo trigo-trigo"
+      }
+    ]
+  },
+  "ecuacion-de-euler": {
+    "label": "Ecuación de Euler",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-03",
+        "classTitle": "Clase 03: Optimización Intertemporal, Ecuación de Euler y Función CRRA"
+      }
+    ]
+  },
+  "elasticidad-de-sustitucion-intertemporal": {
+    "label": "Elasticidad de sustitución intertemporal",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-03",
+        "classTitle": "Clase 03: Optimización Intertemporal, Ecuación de Euler y Función CRRA"
+      }
+    ]
+  },
+  "error-tipo-i": {
+    "label": "Error tipo I",
+    "refs": [
+      {
+        "course": "estadistica-ii",
+        "class": "estadistica-ii-clase-09",
+        "classTitle": "Clase 13"
+      }
+    ]
+  },
+  "error-tipo-ii": {
+    "label": "Error tipo II",
+    "refs": [
+      {
+        "course": "estadistica-ii",
+        "class": "estadistica-ii-clase-09",
+        "classTitle": "Clase 13"
+      }
+    ]
+  },
+  "excedente": {
+    "label": "Excedente",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-06-metodos-excedente",
+        "classTitle": "Clase 06: Métodos, sistema y excedente"
+      },
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-presentacion-01-curso",
+        "classTitle": "Presentación del curso"
+      }
+    ]
+  },
+  "frontera-salario-beneficio": {
+    "label": "Frontera salario-beneficio",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-20-frontera-w-r",
+        "classTitle": "Clase 20: La frontera salario-beneficio"
+      }
+    ]
+  },
+  "funcion-crra": {
+    "label": "Función CRRA",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-05",
+        "classTitle": "Clase 05: Función de Utilidad CRRA, Desigualdad de Jensen y Consumo Óptimo"
+      }
+    ]
+  },
+  "interes-propio": {
+    "label": "Interés propio",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-02-sociedad-mercado",
+        "classTitle": "Clase 02: La sociedad de mercado"
+      }
+    ]
+  },
+  "ley-de-movimiento-de-activos": {
+    "label": "Ley de movimiento de activos",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-01",
+        "classTitle": "Clase 01: La Restricción Presupuestaria Intertemporal"
+      }
+    ]
+  },
+  "medida-invariable-del-valor": {
+    "label": "Medida invariable del valor",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-14-smith",
+        "classTitle": "Clase 14: Smith y los precios naturales"
+      }
+    ]
+  },
+  "mercancia-patron": {
+    "label": "Mercancía patrón",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-20-frontera-w-r",
+        "classTitle": "Clase 20: La frontera salario-beneficio"
+      },
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-presentacion-01-curso",
+        "classTitle": "Presentación del curso"
+      }
+    ]
+  },
+  "metodos-de-produccion": {
+    "label": "Métodos de producción",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-06-metodos-excedente",
+        "classTitle": "Clase 06: Métodos, sistema y excedente"
+      }
+    ]
+  },
+  "modelo-trigo-trigo": {
+    "label": "Modelo trigo-trigo",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-15-trigo-trigo",
+        "classTitle": "Clase 15: Ricardo y el modelo trigo-trigo"
+      }
+    ]
+  },
+  "multiplicadores-de-lagrange": {
+    "label": "Multiplicadores de Lagrange",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-03",
+        "classTitle": "Clase 03: Optimización Intertemporal, Ecuación de Euler y Función CRRA"
+      }
+    ]
+  },
+  "numerario": {
+    "label": "Numerario",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-11-sistema-precios",
+        "classTitle": "Clase 11: El sistema de precios y su equilibrio"
+      }
+    ]
+  },
+  "precio-de-mercado": {
+    "label": "Precio de mercado",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-14-smith",
+        "classTitle": "Clase 14: Smith y los precios naturales"
+      }
+    ]
+  },
+  "precio-natural": {
+    "label": "Precio natural",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-14-smith",
+        "classTitle": "Clase 14: Smith y los precios naturales"
+      }
+    ]
+  },
+  "propiedad-privada": {
+    "label": "Propiedad privada",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-02-sociedad-mercado",
+        "classTitle": "Clase 02: La sociedad de mercado"
+      }
+    ]
+  },
+  "prueba-de-hipotesis": {
+    "label": "Prueba de hipótesis",
+    "refs": [
+      {
+        "course": "estadistica-ii",
+        "class": "estadistica-ii-clase-09",
+        "classTitle": "Clase 13"
+      }
+    ]
+  },
+  "regresion-lineal-simple": {
+    "label": "Regresión lineal simple",
+    "refs": [
+      {
+        "course": "estadistica-ii",
+        "class": "estadistica-ii-clase-01",
+        "classTitle": "Clase 20"
+      }
+    ]
+  },
+  "restriccion-presupuestaria-intertemporal": {
+    "label": "Restricción presupuestaria intertemporal",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-01",
+        "classTitle": "Clase 01: La Restricción Presupuestaria Intertemporal"
+      }
+    ]
+  },
+  "riqueza": {
+    "label": "Riqueza",
+    "refs": [
+      {
+        "course": "macroeconomia-i",
+        "class": "macroeconomia-i-clase-01",
+        "classTitle": "Clase 01: La Restricción Presupuestaria Intertemporal"
+      }
+    ]
+  },
+  "salario-y-beneficio": {
+    "label": "Salario y beneficio",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-19-sraffa-definitivo",
+        "classTitle": "Clase 19: El sistema definitivo de Sraffa"
+      }
+    ]
+  },
+  "sistema-de-precios": {
+    "label": "Sistema de precios",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-11-sistema-precios",
+        "classTitle": "Clase 11: El sistema de precios y su equilibrio"
+      }
+    ]
+  },
+  "sistema-definitivo-de-sraffa": {
+    "label": "Sistema definitivo de Sraffa",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-19-sraffa-definitivo",
+        "classTitle": "Clase 19: El sistema definitivo de Sraffa"
+      }
+    ]
+  },
+  "sociedad-de-mercado": {
+    "label": "Sociedad de mercado",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-02-sociedad-mercado",
+        "classTitle": "Clase 02: La sociedad de mercado"
+      }
+    ]
+  },
+  "subsistencias": {
+    "label": "Subsistencias",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-06-metodos-excedente",
+        "classTitle": "Clase 06: Métodos, sistema y excedente"
+      }
+    ]
+  },
+  "tasa-de-beneficio": {
+    "label": "Tasa de beneficio",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-15-trigo-trigo",
+        "classTitle": "Clase 15: Ricardo y el modelo trigo-trigo"
+      }
+    ]
+  },
+  "tasa-de-ganancia": {
+    "label": "Tasa de ganancia",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-11-sistema-precios",
+        "classTitle": "Clase 11: El sistema de precios y su equilibrio"
+      }
+    ]
+  },
+  "tasa-maxima-de-beneficio": {
+    "label": "Tasa máxima de beneficio",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-clase-20-frontera-w-r",
+        "classTitle": "Clase 20: La frontera salario-beneficio"
+      }
+    ]
+  },
+  "teoria-clasica-de-los-precios": {
+    "label": "Teoría clásica de los precios",
+    "refs": [
+      {
+        "course": "economia-clasica",
+        "class": "economia-clasica-presentacion-01-curso",
+        "classTitle": "Presentación del curso"
+      }
+    ]
+  }
+}

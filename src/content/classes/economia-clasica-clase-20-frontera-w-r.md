@@ -5,6 +5,7 @@ order: 20
 classType: "clase"
 description: "Relación inversa w-r, tasa máxima R y lectura del conflicto distributivo en la frontera."
 math: true
+conceptos: ["Frontera salario-beneficio", "Tasa máxima de beneficio", "Mercancía patrón"]
 ---
 
 ## Puente: el antagonismo hecho curva

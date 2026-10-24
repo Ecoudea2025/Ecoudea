@@ -5,6 +5,7 @@ order: 5
 classType: "clase"
 description: "Análisis geométrico y analítico de la función CRRA, aversión al riesgo mediante la Desigualdad de Jensen, límite de L'Hôpital y deducción de la función de consumo óptimo."
 math: true
+conceptos: ["Aversión al riesgo", "Función CRRA", "Desigualdad de Jensen"]
 ---
 
 

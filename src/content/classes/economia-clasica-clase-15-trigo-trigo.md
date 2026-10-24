@@ -5,6 +5,7 @@ order: 15
 classType: "clase"
 description: "El modelo de un solo bien: la tasa de beneficio como cociente físico y su independencia de los precios."
 math: true
+conceptos: ["Modelo trigo-trigo", "Distribución del producto", "Tasa de beneficio"]
 ---
 
 ## Puente: el atajo de un bien

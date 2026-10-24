@@ -5,6 +5,7 @@ order: 1
 classType: "presentacion"
 description: "Mapa del curso: pregunta guía, unidades, notación y método de trabajo."
 math: true
+conceptos: ["Teoría clásica de los precios", "Excedente", "Mercancía patrón"]
 ---
 
 ## La pregunta que organiza todo el curso

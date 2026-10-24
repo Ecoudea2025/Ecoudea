@@ -5,6 +5,7 @@ order: 11
 classType: "clase"
 description: "Capital, tasa de ganancia y el ejemplo Sraffa 2×2: de precios de desequilibrio al precio de equilibrio con r uniforme."
 math: true
+conceptos: ["Sistema de precios", "Numerario", "Tasa de ganancia"]
 ---
 
 ## Puente: de la vara al sistema

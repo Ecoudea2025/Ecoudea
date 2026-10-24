@@ -5,6 +5,7 @@ order: 3
 classType: "clase"
 description: "Resolución del problema del consumidor en dos períodos por sustitución y Lagrange, deducción de la Ecuación de Euler, análisis gráfico y estudio de la función CRRA."
 math: true
+conceptos: ["Multiplicadores de Lagrange", "Ecuación de Euler", "Elasticidad de sustitución intertemporal"]
 ---
 
 

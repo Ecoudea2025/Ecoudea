@@ -5,6 +5,7 @@ order: 14
 classType: "clase"
 description: "Teoría smithiana: componentes del precio, medida invariable en trabajo comandado y determinación de los naturales."
 math: true
+conceptos: ["Precio natural", "Precio de mercado", "Medida invariable del valor"]
 ---
 
 ## Puente: el fundador y su problema

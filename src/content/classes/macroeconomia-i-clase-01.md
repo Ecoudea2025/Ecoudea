@@ -5,6 +5,7 @@ order: 1
 classType: "clase"
 description: "Deducción paso a paso de la ley de acumulación de activos y la restricción presupuestaria intertemporal en horizonte finito e infinito."
 math: true
+conceptos: ["Restricción presupuestaria intertemporal", "Ley de movimiento de activos", "Riqueza"]
 ---
 
 ## De la Microeconomía Estática a la Macroeconomía Dinámica

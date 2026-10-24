@@ -5,6 +5,7 @@ order: 6
 classType: "clase"
 description: "Método de producción, sistema viable y excedente social con el ejemplo trigo-hierro de 2 sectores."
 math: true
+conceptos: ["Métodos de producción", "Subsistencias", "Excedente"]
 ---
 
 ## Puente: la producción como punto de partida

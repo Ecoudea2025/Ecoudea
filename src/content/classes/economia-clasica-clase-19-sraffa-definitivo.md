@@ -5,6 +5,7 @@ order: 19
 classType: "clase"
 description: "De la teoría provisional a la definitiva: salario fuera del costo, sistema simultáneo y distribución como reparto."
 math: true
+conceptos: ["Bienes básicos", "Sistema definitivo de Sraffa", "Salario y beneficio"]
 ---
 
 ## Puente: sacar el salario del costo

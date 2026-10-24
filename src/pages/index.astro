@@ -31,7 +31,7 @@ const routes = [
     icon: 'book',
     tone: 'text-accent border-accent/30 bg-accent-soft',
     title: 'Cursos',
-    desc: 'Del fundamento a la inferencia: probabilidad, estadística, muestreo y series de tiempo, paso a paso y con matemáticas claras.',
+    desc: 'De Smith a Sraffa pasando por la macro: precios, distribución, crecimiento e inferencia, paso a paso y con matemáticas claras.',
   },
 ];
 const categoryCounts = routes.map((r) => ({
@@ -62,7 +62,7 @@ const classIndex = allClasses.map((c) => ({
 }));
 ---
 
-<BaseLayout title="Ecoudea - Cursos de Economía" description="Cursos de economía, estadística, probabilidad y programación con R y Python">
+<BaseLayout title="Ecoudea - Cursos de Economía" description="Cursos de economía: teoría clásica, macroeconomía, estadística y programación con R y Python">
   <Fragment slot="header">
     <Navbar currentPath="/" />
   </Fragment>
@@ -83,7 +83,7 @@ const classIndex = allClasses.map((c) => ({
           La economía, explicada <span class="gradient-text">como debe ser</span>
         </h1>
         <p class="text-lg sm:text-xl text-text-muted max-w-xl leading-relaxed mb-8 reveal is-visible">
-          Cursos de economía, estadística y programación con R y Python:
+          Cursos de economía, con estadística y programación con R y Python:
           intuición primero, matemáticas claras y práctica con datos reales.
         </p>
         <div class="flex items-center gap-4 flex-wrap mb-10 reveal is-visible">

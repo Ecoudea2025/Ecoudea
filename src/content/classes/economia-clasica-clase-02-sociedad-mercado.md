@@ -5,6 +5,7 @@ order: 2
 classType: "clase"
 description: "Sistema económico, sociedad de mercado y sus cuatro rasgos: intercambio, descentralización, interés propio y propiedad privada."
 math: true
+conceptos: ["Sociedad de mercado", "Interés propio", "Propiedad privada"]
 ---
 
 ## Puente: de la sociedad al mercado

@@ -11,7 +11,7 @@ const entries = Object.entries(glosario);
 const letters = [...new Set(entries.map(([, t]) => (t.label[0] || '#').toUpperCase()))].sort();
 ---
 
-<BaseLayout title="Glosario - Ecoudea" description="Índice de conceptos de economía y estadística explicados en las clases de Ecoudea">
+<BaseLayout title="Glosario - Ecoudea" description="Índice de conceptos de economía explicados en las clases de Ecoudea">
   <Fragment slot="header">
     <Navbar currentPath={url(`/glosario`)} />
   </Fragment>
@@ -20,11 +20,11 @@ const letters = [...new Set(entries.map(([, t]) => (t.label[0] || '#').toUpperCa
     <SectionHeader
       eyebrow="Referencia"
       title="Glosario"
-      lead="Cada término enlaza a las clases donde se explica. El índice se genera solo desde el contenido publicado."
+      lead="Toca un término para ver en qué clases se explica."
     />
 
     {entries.length === 0 ? (
-      <p class="text-text-muted text-center py-10">Aún no hay términos. Marca conceptos con <code class="font-mono text-sm">&lt;Term id="…"&gt;</code> o añade <code class="font-mono text-sm">conceptos:</code> al frontmatter.</p>
+      <p class="text-text-muted text-center py-10 max-w-xl mx-auto leading-relaxed">El glosario se está construyendo clase por clase. Mientras tanto, puedes explorar los <a href={url(`/`)} class="text-accent hover:underline">cursos publicados</a>.</p>
     ) : (
       <>
         <nav aria-label="Por letra inicial" class="flex flex-wrap gap-2 mb-10">
