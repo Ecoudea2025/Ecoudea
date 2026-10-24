@@ -30,6 +30,26 @@ function countPerLevel(questions) {
 }
 
 /**
+ * Distribución de n niveles en 5 dificultades (igual que el motor):
+ * buckets casi iguales; el sobrante (n % 5) va a las primeras dificultades.
+ */
+function levelSizes(total) {
+  const base = Math.floor(total / 5);
+  const rem = total - base * 5;
+  const sizes = [];
+  for (let i = 0; i < 5; i++) sizes.push(i < rem ? base + 1 : base);
+  return sizes;
+}
+
+/** Redondeo "bonito" para la escalera de premios (50/500/5.000/50.000). */
+function niceRound(v) {
+  if (v >= 100000) return Math.round(v / 50000) * 50000;
+  if (v >= 10000) return Math.round(v / 5000) * 5000;
+  if (v >= 1000) return Math.round(v / 500) * 500;
+  return Math.max(50, Math.round(v / 50) * 50);
+}
+
+/**
  * Valida el banco consolidado. Devuelve un array de mensajes de error
  * (vacío si el banco es válido).
  * opcional `knownSources`: Set con los nombres de clase que existen en
@@ -56,24 +76,25 @@ function validate(bank, { knownSources = null } = {}) {
     return errors;
   }
 
-  // --- Config -----------------------------------------------------------
+  // --- Config (parametrizada: la partida dura = a las preguntas del banco) ---
   if (bank.config) {
     const { questionsPerGame, timePerQuestion, prizes, safeHavens } = bank.config;
-    if (!Number.isInteger(questionsPerGame) || questionsPerGame < 1 || questionsPerGame > 50) {
+    if (!Number.isInteger(questionsPerGame) || questionsPerGame < 5 || questionsPerGame > 50) {
       push(`config.questionsPerGame inválido: ${JSON.stringify(questionsPerGame)}`);
     }
     if (!Number.isInteger(timePerQuestion) || timePerQuestion < 5 || timePerQuestion > 300) {
       push(`config.timePerQuestion inválido: ${JSON.stringify(timePerQuestion)}`);
     }
-    if (!Array.isArray(prizes) || prizes.length !== 15) {
-      push(`config.prizes debe ser un array de 15 premios (tiene ${Array.isArray(prizes) ? prizes.length : 'no-array'}).`);
+    if (!Array.isArray(prizes) || prizes.length !== questionsPerGame) {
+      push(`config.prizes debe tener ${questionsPerGame} premios (tiene ${Array.isArray(prizes) ? prizes.length : 'no-array'}).`);
     } else if (prizes.some((p) => !Number.isInteger(p) || p <= 0)) {
       push('config.prizes debe contener enteros positivos.');
     }
+    const n = Number.isInteger(questionsPerGame) ? questionsPerGame : 15;
     if (!Array.isArray(safeHavens) || safeHavens.length !== 2) {
       push('config.safeHavens debe ser un array de 2 niveles (índices 1-based).');
-    } else if (safeHavens.some((s) => !Number.isInteger(s) || s < 1 || s > 15)) {
-      push(`config.safeHavens fuera de rango 1..15: ${JSON.stringify(safeHavens)}`);
+    } else if (safeHavens.some((s) => !Number.isInteger(s) || s < 1 || s > n)) {
+      push(`config.safeHavens fuera de rango 1..${n}: ${JSON.stringify(safeHavens)}`);
     }
   }
 
@@ -90,9 +111,9 @@ function validate(bank, { knownSources = null } = {}) {
       return;
     }
 
-    // id
-    if (typeof q.id !== 'string' || !/^mq-\d{3}$/.test(q.id)) {
-      push(`${label}: id inválido (se espera "mq-NNN"), recibido: ${JSON.stringify(q.id)}`);
+    // id (con prefijo de banco: course-001 o mq-001 del fixture de tests)
+    if (typeof q.id !== 'string' || !/^[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*-\d{3}$/.test(q.id)) {
+      push(`${label}: id inválido (se espera "prefijo-NNN"), recibido: ${JSON.stringify(q.id)}`);
     } else {
       if (seenIds.has(q.id)) push(`${label}: id duplicado ${q.id}.`);
       seenIds.add(q.id);
@@ -167,10 +188,15 @@ function validate(bank, { knownSources = null } = {}) {
     }
   });
 
-  // --- Cobertura por nivel -----------------------------------------------
+  // --- Cobertura por dificultad (parametrizada: bucket sizes por N) --------
+  const total = bank.config && Number.isInteger(bank.config.questionsPerGame)
+    ? bank.config.questionsPerGame
+    : bank.questions.length;
+  const sizes = levelSizes(total);
   for (let level = 1; level <= 5; level++) {
-    if (perLevel[level] < 3) {
-      push(`Dificultad ${level}: solo tiene ${perLevel[level]} pregunta(s); se exigen al menos 3.`);
+    const need = sizes[level - 1];
+    if (perLevel[level] < need) {
+      push(`Dificultad ${level}: tiene ${perLevel[level]} pregunta(s); la partida de ${total} niveles necesita ${need}.`);
     }
   }
 
@@ -197,4 +223,4 @@ function validate(bank, { knownSources = null } = {}) {
   return errors;
 }
 
-module.exports = { validate, latexBalanced, countPerLevel };
+module.exports = { validate, latexBalanced, countPerLevel, levelSizes, niceRound };

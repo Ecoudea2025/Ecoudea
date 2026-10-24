@@ -17,7 +17,7 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
 
 <BaseLayout
   title="¿Quién quiere ser millonario? — Ecoudea"
-  description="Juego de preguntas tipo 'Quién quiere ser millonario' sobre las clases de economía de Ecoudea: 15 preguntas, 3 comodines, escalera de premios y cronómetro."
+  description="Juego de preguntas tipo 'Quién quiere ser millonario' sobre las clases de economía de Ecoudea: elige tu curso, 3 comodines, escalera de premios y cronómetro."
   showTools={true}
 >
   <Fragment slot="header"><Navbar currentPath={url(`/millonario`)} /></Fragment>
@@ -31,8 +31,8 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
 
     <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-text mb-1 mq-title">¿Quién quiere ser <span class="mq-title-amber">millonario</span>?</h1>
     <p class="text-text-muted max-w-2xl text-sm sm:text-base mb-6">
-      Demuestra lo que sabes de las clases de Ecoudea: 15 preguntas, 15 niveles, comodines y un cronómetro.
-      Avanzar sube la dificultad y el premio; fallar te deja en el último <em>refugio seguro</em>.
+      Demuestra lo que sabes de las clases de Ecoudea: elige tu curso, responde contra el cronometro,
+      usa tus comodines y trepa la escalera de premios. Fallar te deja en el último <em>refugio seguro</em>.
     </p>
 
     <div id="mq-app" class="mq-app rounded-2xl border border-border-subtle overflow-hidden" data-screen="intro">
@@ -44,12 +44,19 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
         <div class="mq-intro-hero">
           <p class="mq-kicker">La función de utilidad, el estadístico F y la desigualdad de Jensen te esperan</p>
           <p class=" mq-record-line">Tu récord: <strong id="mq-record">Ecopuntos 0</strong></p>
+
+          <!-- Fase 12+: selector de banco por curso (lo rellena el motor) -->
+          <div class="mq-banks-wrap">
+            <p class="mq-banks-title" id="mq-banks-title">Elige tu curso</p>
+            <div id="mq-banks" class="mq-banks" role="radiogroup" aria-labelledby="mq-banks-title"></div>
+          </div>
+
           <ul class="mq-rules" aria-label="Reglas del juego">
-            <li><strong>15 preguntas</strong> — dificultad y premio crecientes.</li>
+            <li><strong id="mq-rule-total">— preguntas</strong> — dificultad y premio crecientes.</li>
             <li><strong>30 segundos</strong> por pregunta; el tiempo agotado cuenta como fallo.</li>
             <li><strong>3 comodines</strong>: 50:50, Salta la pregunta y Ayuda del público (cada uno una vez).</li>
             <li><strong>Puedes retirarte</strong> entre preguntas y conservar tu premio.</li>
-            <li><strong>Refugios seguros</strong> en los niveles 5 y 10: fallar por debajo de ellos garantiza ese premio.</li>
+            <li><strong>Refugios seguros</strong> en los niveles <strong id="mq-rule-havens">—</strong>: fallar por debajo de ellos garantiza ese premio.</li>
           </ul>
           <div class="mq-intro-actions">
             <button id="mq-btn-start" type="button" class="mq-btn mq-btn-primary">Comenzar partida</button>
@@ -67,7 +74,7 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
           <div class="mq-level-chip" aria-live="polite">
             <span class="mq-chip-label">Pregunta</span>
             <span id="mq-level">1</span>
-            <span class="mq-chip-label">de 15</span>
+            <span class="mq-chip-label">de <span id="mq-level-total">15</span></span>
           </div>
 
           <div id="mq-timer" role="progressbar" aria-label="Tiempo restante" aria-valuemin="0" aria-valuemax="30" aria-valuenow="30" class="mq-timer">
@@ -168,5 +175,4 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
     if (window.MQ && typeof window.MQ.refreshMath === 'function') window.MQ.refreshMath();
   </script>
   <script defer src={url(`/assets/js/millonario.js?v=${mqVersion}`)}></script>
-</BaseLayout>
 </BaseLayout>

@@ -1,0 +1,28 @@
+{
+  "banks": [
+    {
+      "id": "estadistica-ii",
+      "title": "Estadística II",
+      "file": "millonario-estadistica-ii.json",
+      "questionCount": 10,
+      "levels": 10,
+      "safeHavens": [
+        3,
+        6
+      ],
+      "topPrize": 1000000
+    },
+    {
+      "id": "macroeconomia-i",
+      "title": "Macroeconomía I",
+      "file": "millonario-macroeconomia-i.json",
+      "questionCount": 20,
+      "levels": 20,
+      "safeHavens": [
+        6,
+        13
+      ],
+      "topPrize": 1000000
+    }
+  ]
+}

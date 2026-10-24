@@ -21,9 +21,28 @@
      ═══════════════════════════════════════════════════════════════════ */
   var core = {};
 
-  /** Dificultad (1..5) de la pregunta del nivel (1-based): niveles 1-3→1 … 13-15→5. */
-  core.difficultyForLevel = function (level) {
-    return Math.min(5, Math.floor((level - 1) / 3) + 1);
+  /**
+   * Distribución de N niveles en 5 dificultades: buckets casi iguales, los
+   * sobrantes (total % 5) van a las primeras dificultades. N=15→[3,3,3,3,3]
+   * (identico al esquema 1-3/4-6/…/13-15 original). N=12→[3,3,2,2,2].
+   */
+  core.levelSizes = function (total) {
+    var base = Math.floor(total / 5);
+    var rem = total - base * 5;
+    var sizes = [];
+    for (var i = 0; i < 5; i++) sizes.push(i < rem ? base + 1 : base);
+    return sizes;
+  };
+
+  /** Dificultad (1..5) de la pregunta del nivel (1-based) en una partida de `total` niveles. */
+  core.difficultyForLevel = function (level, total) {
+    var sizes = core.levelSizes(total || 15);
+    var acc = 0;
+    for (var d = 0; d < sizes.length; d++) {
+      acc += sizes[d];
+      if (level <= acc) return d + 1;
+    }
+    return 5;
   };
 
   /** Último refugio seguro ya superado con `solved` niveles confirmados; 0 si ninguno. */
@@ -63,7 +82,7 @@
     });
     var picked = [];
     for (var level = 1; level <= total; level++) {
-      var d = core.difficultyForLevel(level);
+      var d = core.difficultyForLevel(level, total);
       if (!byDifficulty[d] || byDifficulty[d].length === 0) return null;
       picked.push(byDifficulty[d].pop());
     }
@@ -130,7 +149,9 @@
   }
 
   var state = initialState();
-  var TIME_MAX = 30;
+  var TIME_MAX = (state.bank && state.bank.config.timePerQuestion) || 30;
+  /** Máximo de segundos: sale del banco (config.timePerQuestion). */
+  function timeMax() { return (state.bank && state.bank.config.timePerQuestion) || 30; }
   var LETTERS = ['A', 'B', 'C', 'D'];
 
   function rnd() { return state.seedRand || Math.random; }
@@ -211,6 +232,19 @@
     tick: function (urgent) {
       beep(urgent ? 880 : 640, 0, 0.05, 'sine', urgent ? 0.5 : 0.3);
     },
+    /** Redoble de suspenso: golpes graves acelerando + shimmer ascendente final. */
+    drum: function () {
+      var t = 0;
+      var iv = 0.24;
+      for (var i = 0; i < 5; i++) {
+        beep(82 + i * 6, t, 0.11, 'sine', 1.0);
+        beep(165, t, 0.07, 'triangle', 0.35);
+        t += iv;
+        iv *= 0.76;
+      }
+      beep(261.63, t, 0.28, 'triangle', 0.4);   // C4 sube
+      beep(392, t + 0.1, 0.34, 'triangle', 0.45); // G4
+    },
     win: function () {
       [523.25, 659.25, 783.99, 1046.5, 1318.5].forEach(function (f, i) {
         beep(f, i * 0.12, 0.4, 'triangle', 0.85);
@@ -242,6 +276,11 @@
       app.dataset.screen = name;
       app.classList.remove('mq-ladder-open'); // la escalera móvil se cierra al cambiar pantalla
     }
+    if (name !== 'playing') {
+      suspense.active = false; // seguridad: ningún subestado sobrevive al cambio
+      suspense.idx = -1;
+      if (app) app.classList.remove('mq-suspending');
+    }
     ['intro', 'playing', 'feedback', 'gameover', 'paused'].forEach(function (s) {
       var el = $('mq-screen-' + s);
       if (el) el.hidden = s !== name;
@@ -269,13 +308,14 @@
   function stopTimer() {
     if (timerId !== null) { window.clearInterval(timerId); timerId = null; }
   }
-  function resetTimer() { timeLeft = TIME_MAX; paintTimer(); }
+  function resetTimer() { timeLeft = timeMax(); paintTimer(); }
   function paintTimer() {
     var fill = $('mq-timer-fill');
     var label = $('mq-timer-label');
     var bar = $('mq-timer');
     if (!fill || !label) return;
-    fill.style.width = Math.max(0, (timeLeft / TIME_MAX) * 100) + '%';
+    var mx = timeMax();
+    fill.style.width = Math.max(0, (timeLeft / mx) * 100) + '%';
     label.textContent = timeLeft + ' s';
     if (bar) {
       bar.classList.toggle('mq-warn', timeLeft <= 10 && timeLeft > 5);
@@ -388,7 +428,7 @@ function refreshMath() {
   /** ¿Quedan preguntas de la dificultad actual sin jugar ni quemar? */
   function skipAvailable() {
     if (!state.bank || !state.question) return false;
-    var d = core.difficultyForLevel(state.level);
+    var d = core.difficultyForLevel(state.level, state.bank.config.questionsPerGame);
     var pool = (state.pools && state.pools[d]) || [];
     return pool.length > 0;
   }
@@ -455,22 +495,25 @@ function refreshMath() {
      ═══════════════════════════════════════════════════════════════════ */
   function safeRecord() {
     var rec = 0;
-    try { rec = Number(window.localStorage.getItem('ecoudea-millonario-record') || 0) || 0; } catch (e) { }
+    try { rec = Number(window.localStorage.getItem(recordKey()) || 0) || 0; } catch (e) { }
     return rec;
   }
 
-  /** Estadísticas de vida (Fase 8): partidas, victorias, mejor nivel/premio,
-   *  precisión acumulada. Nunca lanza (tiers de try/catch). */
+  /** Estadísticas de vida (Fase 8), ahora POR BANCO (Fase 12+); nunca lanza. */
+  function bankId() { return (state.bank && state.bank.meta && state.bank.meta.id) || ''; }
+  function recordKey() { return 'ecoudea-millonario-record' + (bankId() ? '-' + bankId() : ''); }
+  function statsKey() { return 'ecoudea-millonario-stats' + (bankId() ? '-' + bankId() : ''); }
+
   function safeStats() {
     try {
-      return JSON.parse(window.localStorage.getItem('ecoudea-millonario-stats') || '{}') || {};
+      return JSON.parse(window.localStorage.getItem(statsKey()) || '{}') || {};
     } catch (e) {
       return {};
     }
   }
 
   function saveStats(s) {
-    try { window.localStorage.setItem('ecoudea-millonario-stats', JSON.stringify(s)); } catch (e) { }
+    try { window.localStorage.setItem(statsKey(), JSON.stringify(s)); } catch (e) { }
   }
 
   function refreshRecord() {
@@ -513,7 +556,7 @@ function refreshMath() {
 
     var total = state.bank.config.questionsPerGame;
     for (var lv = 1; lv <= total; lv++) {
-      if (state.pools[core.difficultyForLevel(lv)].length === 0) {
+      if (state.pools[core.difficultyForLevel(lv, total)].length === 0) {
         throw new Error('MQ: el banco no alcanza para el nivel ' + lv);
       }
     }
@@ -522,7 +565,9 @@ function refreshMath() {
     state.outcome = null;
     state.stats = { correct: 0, wrong: 0, skipped: 0 };
     state.usedIds = [];
-    mountQuestion(state.pools[core.difficultyForLevel(1)].pop());
+    var lvTotal = $('mq-level-total');
+    if (lvTotal) lvTotal.textContent = String(total);
+    mountQuestion(state.pools[core.difficultyForLevel(1, total)].pop());
     transition('playing');
     return true;
   }
@@ -550,16 +595,78 @@ function refreshMath() {
     });
   }
 
+  /* ═══════════════════════════════════════════════════════════════════
+      SUSPENSO (Fase 12+): al elegir, la opción pulsa en ámbar ~1.9 s
+      (timer congelado) antes de revelar; pausa/retiro abortan limpio.
+      Subestado de 'playing': no rompe el MACHINE.
+      ═══════════════════════════════════════════════════════════════════ */
+  var SUSPENSE_MS = 1900;
+  var REVEAL_MS = 750;   // beat visible en la pantalla de juego antes del panel
+  var suspense = { active: false, idx: -1, token: 0 };
+
+  /** Planificador wire/sandbox: si no hay setTimeout, resuelve en línea. */
+  function schedule(fn, ms) {
+    if (typeof window.setTimeout === 'function') return window.setTimeout(fn, ms);
+    fn();
+    return null;
+  }
+  function reduceMotion() {
+    try {
+      return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    } catch (e) { return false; }
+  }
+
+  function beginSuspense(idx) {
+    stopTimer();
+    suspense.active = true;
+    suspense.idx = idx;
+    suspense.token += 1;
+    var app = $('mq-app');
+    if (app) app.classList.add('mq-suspending');
+    Array.prototype.forEach.call(document.querySelectorAll('#mq-options .mq-opt'), function (btn, i) {
+      btn.disabled = true;
+      btn.setAttribute('aria-checked', i === idx ? 'true' : 'false');
+      if (i === idx) btn.classList.add('mq-suspense');
+    });
+    MQSound.drum();
+    // reveal: sólo si sigue siendo el suspenso vigente (pausa/retiro lo invalidan)
+    var token = suspense.token;
+    schedule(function () {
+      if (suspense.active && suspense.token === token) resolveAnswer(suspense.idx);
+    }, reduceMotion() ? 20 : SUSPENSE_MS);
+  }
+
+  /** Aborta el suspenso y devuelve la pregunta a estado jugable (sin resolver). */
+  function cancelSuspense() {
+    if (!suspense.active) return false;
+    suspense.active = false;
+    suspense.idx = -1;
+    suspense.token += 1;
+    var app = $('mq-app');
+    if (app) app.classList.remove('mq-suspending');
+    Array.prototype.forEach.call(document.querySelectorAll('#mq-options .mq-opt'), function (btn) {
+      btn.disabled = false;
+      btn.classList.remove('mq-suspense');
+      btn.setAttribute('aria-checked', 'false');
+    });
+    return true;
+  }
+
   function select(idx) {
-    if (state.screen !== 'playing') return false;
+    if (state.screen !== 'playing' || suspense.active) return false;
     if (state.hiddenIdx.indexOf(idx) !== -1) return false;
-    resolveAnswer(idx);
+    beginSuspense(idx);
     return true;
   }
 
   function resolveAnswer(idx) {
     if (state.screen !== 'playing') return false;
+    var wasSuspense = suspense.active;
+    suspense.active = false; // cierra el subestado (reveal o timeout del timer)
+    suspense.idx = -1;
     stopTimer();
+    var app = $('mq-app');
+    if (app) app.classList.remove('mq-suspending');
     var correctIdx = -1;
     state.options.forEach(function (o, i) { if (o.isCorrect) correctIdx = i; });
     var ok = idx === correctIdx;
@@ -570,6 +677,9 @@ function refreshMath() {
       if (i === correctIdx) btn.classList.add('mq-correct');
       if (i === idx && !ok) btn.classList.add('mq-wrong');
       if (i === idx && ok) btn.classList.add('mq-selected');
+      // beat de revelación: brillo verde / sacudida roja sobre la opción
+      if (i === correctIdx && wasSuspense && !reduceMotion()) btn.classList.add('mq-reveal-good');
+      if (i === idx && !ok && wasSuspense && !reduceMotion()) btn.classList.add('mq-reveal-bad');
     });
 
     if (ok) {
@@ -583,7 +693,14 @@ function refreshMath() {
       MQSound.wrong();
     }
     showFeedback(ok, idx === -1, correctIdx);
-    transition('feedback');
+    if (idx === -1 || !wasSuspense || reduceMotion()) {
+      transition('feedback'); // timeout: directo; sin suspenso: como antes
+    } else {
+      // beat: el glow/sacudida respira en pantalla antes del panel
+      schedule(function () {
+        if (state.screen === 'playing') transition('feedback');
+      }, REVEAL_MS);
+    }
     return true;
   }
 
@@ -625,8 +742,9 @@ function refreshMath() {
       finishGame(state.outcome);
       return true;
     }
+    var total = state.bank.config.questionsPerGame;
     state.level += 1;
-    var q = state.pools[core.difficultyForLevel(state.level)].pop();
+    var q = state.pools[core.difficultyForLevel(state.level, total)].pop();
     transition('playing');
     mountQuestion(q);
     return true;
@@ -640,7 +758,7 @@ function refreshMath() {
 
     var rec = safeRecord();
     if (amount > rec) {
-      try { window.localStorage.setItem('ecoudea-millonario-record', String(amount)); } catch (e) { }
+      try { window.localStorage.setItem(recordKey(), String(amount)); } catch (e) { }
     }
     if (outcome === 'win') MQSound.win();
     else if (outcome === 'retire') MQSound.retire();
@@ -690,6 +808,7 @@ function refreshMath() {
 
   function retire() {
     if (state.screen !== 'playing') return false;
+    cancelSuspense(); // retiro durante el suspenso: aborta sin resolver
     stopTimer();
     finishGame('retire');
     return true;
@@ -697,6 +816,7 @@ function refreshMath() {
 
   function pauseGame() {
     if (state.screen !== 'playing') return false;
+    cancelSuspense(); // pausa durante el suspenso: aborta sin resolver
     stopTimer();
     transition('paused');
     var res = $('mq-btn-resume');
@@ -706,6 +826,7 @@ function refreshMath() {
   function resumeGame() {
     if (state.screen !== 'paused') return false;
     transition('playing'); // el interval del timer se restaura en showScreen
+    if (state.outcome) transition('feedback'); // se pausó durante el beat: sana el estado
     var p = $('mq-btn-pause');
     if (p) p.focus(); // a11y: el foco vuelve al controlador de pausa
     return true;
@@ -734,12 +855,14 @@ function refreshMath() {
       state.usedLifelines.fifty50 = true;
     } else if (name === 'skip') {
       if (!skipAvailable()) return false;
-      var d = core.difficultyForLevel(state.level);
+      var total = state.bank.config.questionsPerGame;
+      var d = core.difficultyForLevel(state.level, total);
       mountQuestion(state.pools[d].pop());
       state.stats.skipped += 1;
       state.usedLifelines.skip = true;
     } else if (name === 'audience') {
-      renderAudience(core.audiencePoll(core.difficultyForLevel(state.level), rnd()));
+      var totalAud = state.bank.config.questionsPerGame;
+      renderAudience(core.audiencePoll(core.difficultyForLevel(state.level, totalAud), rnd()));
       state.usedLifelines.audience = true;
     } else {
       return false;
@@ -828,25 +951,141 @@ function refreshMath() {
     }
   }
 
-  function init() {
-    if (!$('mq-app')) return; // sin DOM de juego (tests / otras páginas)
-    soundLoad();
-    bind();
-    refreshRecord();
+  /* ═══════════════════════════════════════════════════════════════════
+      BANCOS POR CURSO (Fase 12+): índice + selector en la intro.
+      Cada banco es independiente (sin mezclas); niveles = tamaño del banco;
+      refugios en ⅓ y ⅔; stats/récord por banco (sufijo con meta.id).
+      ═══════════════════════════════════════════════════════════════════ */
+  var BANK_KEY = 'ecoudea-millonario-banco';
+  var banksIndex = [];
+  var currentBankId = '';
+  var bankCache = {};
+
+  function baseHref() {
     var meta = document.querySelector('meta[name="astro-base"]');
-    var base = (meta && meta.content) || '';
-    if (typeof fetch !== 'function') return;
-    // Fase 9: cache-busting — hereda ?v= del tag <script> propio
+    return (meta && meta.content) || '';
+  }
+
+  function cacheBust() {
     var v = '';
     try {
       var self = document.querySelector('script[src*="millonario.js"]');
       var m = self && /(?:\?|&)v=([^&]+)/.exec(self.src);
       if (m) v = '?v=' + m[1];
     } catch (e) { }
-    fetch(base + '/assets/data/millonario.json' + v)
+    return v;
+  }
+
+  /** Tarjeta de banco en la intro. */
+  function renderBankCards() {
+    var box = $('mq-banks');
+    if (!box) return;
+    box.innerHTML = '';
+    banksIndex.forEach(function (b) {
+      var card = document.createElement('button');
+      card.type = 'button';
+      card.className = 'mq-bank-card';
+      card.dataset.bank = b.id;
+      card.setAttribute('role', 'radio');
+      card.setAttribute('aria-checked', b.id === currentBankId ? 'true' : 'false');
+      if (b.id === currentBankId) card.classList.add('mq-bank-active');
+      var title = document.createElement('span');
+      title.className = 'mq-bank-title';
+      title.textContent = b.title;
+      var sub = document.createElement('span');
+      sub.className = 'mq-bank-sub';
+      sub.textContent = b.questionCount + ' preguntas · ' + b.questionCount +
+        ' niveles · refugios ' + b.safeHavens.join(' y ');
+      var rec = document.createElement('span');
+      rec.className = 'mq-bank-record';
+      try {
+        var r = Number(window.localStorage.getItem('ecoudea-millonario-record-' + b.id) || 0) || 0;
+        rec.textContent = r > 0 ? 'Récord: Ecopuntos ' + r.toLocaleString('es-CO') : 'Sin récord aún';
+      } catch (e) { rec.textContent = ''; }
+      if (b.id === currentBankId) rec.classList.add('mq-bank-record-active');
+      card.appendChild(title); card.appendChild(sub); card.appendChild(rec);
+      box.appendChild(card);
+    });
+  }
+
+  /** Rellena las reglas de la intro con los números del banco corriente. */
+  function paintIntroRules() {
+    var bank = state.bank;
+    if (!bank) return;
+    var total = bank.config.questionsPerGame;
+    var havens = bank.config.safeHavens || [];
+    var totalEl = $('mq-rule-total');
+    var count = (bank.meta && bank.meta.questionCount) || total;
+    if (totalEl) totalEl.textContent = count + ' preguntas';
+    var havEl = $('mq-rule-havens');
+    if (havEl) havEl.textContent = havens.join(' y ');
+    var totalEl2 = $('mq-level-total');
+    if (totalEl2) totalEl2.textContent = String(total);
+    var havEl = $('mq-rule-havens');
+    if (havEl) havEl.textContent = havens.join(' y ');
+  }
+
+  function selectBank(id, cb) {
+    var entry = null;
+    for (var i = 0; i < banksIndex.length; i++) if (banksIndex[i].id === id) entry = banksIndex[i];
+    if (!entry) return;
+    currentBankId = id;
+    try { window.localStorage.setItem(BANK_KEY, id); } catch (e) { }
+    if (bankCache[id]) {
+      applyBank(bankCache[id]);
+      if (cb) cb();
+      return;
+    }
+    fetch(baseHref() + '/assets/data/millonario-' + id + '.json' + cacheBust())
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(loadBank)
-      .catch(function (err) { if (window.console) window.console.error('[MQ] banco no disponible:', err); });
+      .then(function (bank) {
+        bankCache[id] = bank;
+        applyBank(bank);
+        if (cb) cb();
+      })
+      .catch(function (err) { if (window.console) window.console.error('[MQ] banco "' + id + '" no disponible:', err); });
+  }
+
+  function applyBank(bank) {
+    loadBank(bank);
+    paintIntroRules();
+    renderBankCards();
+  }
+
+  /** Cards clicables (delegación, las cards se re-renderizan). */
+  function bindBankSelector() {
+    var box = $('mq-banks');
+    if (!box) return;
+    box.addEventListener('click', function (e) {
+      var card = e.target && e.target.closest ? e.target.closest('.mq-bank-card') : null;
+      if (card && card.dataset.bank && card.dataset.bank !== currentBankId) {
+        selectBank(card.dataset.bank, null);
+      }
+    });
+  }
+
+  function loadBankIndex(json) {
+    banksIndex = Array.isArray(json) ? json : (json && json.banks) || [];
+    var saved = '';
+    try { saved = window.localStorage.getItem(BANK_KEY) || ''; } catch (e) { }
+    if (saved && banksIndex.some(function (b) { return b.id === saved; })) currentBankId = saved;
+    else if (banksIndex.length) currentBankId = banksIndex[0].id;
+    bindBankSelector();
+    if (currentBankId) selectBank(currentBankId, null);
+    else renderBankCards();
+  }
+
+  function init() {
+    if (!$('mq-app')) return; // sin DOM de juego (tests / otras páginas)
+    soundLoad();
+    bind();
+    refreshRecord();
+    if (typeof fetch !== 'function') return;
+    // Fase 9: cache-busting — hereda ?v= del tag <script> propio
+    fetch(baseHref() + '/assets/data/millonario-index.json' + cacheBust())
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(loadBankIndex)
+      .catch(function (err) { if (window.console) window.console.error('[MQ] índice de bancos no disponible:', err); });
   }
 
   if (document.readyState === 'loading') {
@@ -862,6 +1101,9 @@ function refreshMath() {
     core: core,
     state: function () { return state; },
     loadBank: loadBank,
+    selectBank: selectBank,
+    banks: function () { return banksIndex; },
+    currentBank: function () { return currentBankId; },
     startGame: startGame,
     select: select,
     advance: advance,
@@ -875,6 +1117,8 @@ function refreshMath() {
     transition: transition,
     refreshMath: refreshMath,
     renderMath: renderMath,
+    suspense: function () { return { active: suspense.active, idx: suspense.idx }; },
+    cancelSuspense: cancelSuspense,
     sound: MQSound
   };
 })();
