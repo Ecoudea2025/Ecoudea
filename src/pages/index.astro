@@ -31,22 +31,6 @@ const routes = [
     title: 'Cursos',
     desc: 'Del fundamento a la inferencia: probabilidad, estadística, muestreo y series de tiempo, paso a paso y con matemáticas claras.',
   },
-  {
-    filter: 'Guías y Semilleros',
-    n: '02',
-    icon: 'code',
-    tone: 'text-amber-400 border-amber-500/30 bg-amber-500/10',
-    title: 'Guías y Semilleros',
-    desc: 'Instala R, Python y sus ecosistemas sin pelear con el sistema operativo. Guías por plataforma y semilleros para practicar.',
-  },
-  {
-    filter: 'Sesiones Especiales',
-    n: '03',
-    icon: 'bulb',
-    tone: 'text-rose-400 border-rose-500/30 bg-rose-500/10',
-    title: 'Sesiones Especiales',
-    desc: 'Seminarios, nivelatorios y presentaciones: material de posgrado y sesiones temáticas con enfoque aplicado.',
-  },
 ];
 const categoryCounts = routes.map((r) => ({
   category: r.filter,
@@ -161,8 +145,8 @@ const classIndex = allClasses.map((c) => ({
             <circle cx="210" cy="140" r="13" fill="#65a30d" opacity="0.25" aria-hidden="true" />
             <circle cx="210" cy="140" r="7.5" fill="#65a30d" stroke="#ffffff" stroke-width="3" />
             <text x="226" y="132" font-size="16" font-weight="800" class="fill-text">E</text>
-            <text x="340" y="52" font-size="16" font-weight="800" fill="#0284c7">D</text>
-            <text x="340" y="242" font-size="16" font-weight="800" fill="#d97706">O</text>
+            <text x="340" y="242" font-size="16" font-weight="800" fill="#0284c7">D</text>
+            <text x="340" y="52" font-size="16" font-weight="800" fill="#d97706">O</text>
             <text x="36" y="144" text-anchor="end" font-size="13" font-weight="600" class="fill-text-muted">PE</text>
             <text x="210" y="270" text-anchor="middle" font-size="13" font-weight="600" class="fill-text-muted">QE</text>
           </svg>
@@ -198,9 +182,9 @@ const classIndex = allClasses.map((c) => ({
       <div class="lg:col-span-4">
         <div class="lg:sticky lg:top-24">
           <p class="text-xs font-bold uppercase tracking-[0.14em] text-accent mb-3 reveal">Por dónde empiezo</p>
-          <h2 id="rutas-title" class="text-2xl sm:text-3xl font-bold text-text text-balance reveal">Tres rutas,<br />un mismo rigor</h2>
+          <h2 id="rutas-title" class="text-2xl sm:text-3xl font-bold text-text text-balance reveal">Un mismo rigor</h2>
           <p class="text-text-muted mt-3 leading-relaxed reveal" data-reveal-group>
-            Elige tu camino y filtra el catálogo con un clic. Todo es abierto, sin prerrequisitos ocultos.
+            Todo es abierto, sin prerrequisitos ocultos.
           </p>
         </div>
       </div>
