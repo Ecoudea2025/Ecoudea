@@ -1,10 +1,43 @@
 """Estilo común de figuras Ecoudea (editorial, coherente con los tokens).
 
 Uso:
-    from style import setup, PALETTE, save
-    fig, ax = setup(theme="light")
+    from style import setup_eco, save, label, shade, span, flow
+    fig, ax = setup_eco(theme="light")
     ... dibujar ...
-    save(fig, "microeconomia/oferta-demanda", theme="light")
+    label(ax, 4.3, 4.8, "W", ROLES["endow"], theme)  # siempre con halo
+    save(fig, "macroeconomia/alza-r", theme="light")
+
+REGLAS ANTI-SOLAPAMIENTO (obligatorias en figuras nuevas):
+  1. Toda etiqueta que quede a <0.4 unidades de una línea/curva usa halo()
+     (fondo del tema): ver label(). Sin excepciones.
+  2. Desplazar etiquetas en PERPENDICULAR a la curva y verificar con la
+     geometría calculada (evaluar la función en el punto), nunca a ojo.
+  3. Prohibido duplicar: si la curva ya lleva su nombre en el extremo
+     (end_label), el eje queda sin esa etiqueta (ylabel="").
+  4. Rellenos SIEMPRE con tintas sólidas premezcladas (TINTS + shade()/span()):
+     el alpha en fills se ve opaco en algunos visores e imprime mal.
+     El alpha solo está permitido en strokes (líneas tenues/punteadas).
+  5. Curvas de la misma familia si no deben cruzarse (cruzar indiferencias
+     es un error teórico, no estético). Para separar dos curvas cercanas,
+     mover el punto de anclaje (p. ej. la dotación a la izquierda del
+     óptimo), no forzar la forma.
+  6. Puntos de tangencia CALCULADOS (intersección + igualdad de pendientes),
+     nunca a ojo. Dejar la cuenta en un comentario.
+  7. xlim/ylim con aire a la derecha/arriba para end labels (nada cortado).
+  8. Cada SVG se inspecciona en AMBOS temas antes de reemplazar el
+     placeholder (ver figuras con viewSVGFile o en página construida).
+
+REGLAS DE FLECHAS:
+  A. Rectas por defecto (flow()): mismo lenguaje en toda la figura; las
+     curvas (connectionstyle arc) solo con propósito narrativo explícito.
+  B. Toda flecha LLEGA a un elemento (punto, curva, eje): prohibido morir
+     en el aire o flotar sin anclaje.
+  C. Si un flujo viaja y DOBLA (carril + conector), el carril va SIN punta
+     y la dirección la da el conector final. Una sola cabeza por historia.
+  D. La etiqueta de una flecha va FUERA del trazo, del lado con más aire,
+     con halo si hay otra línea a <0.4.
+  E. Anotaciones de régimen ("q=0", "ρ>1") junto a SU zona, nunca cruzando
+     la curva que describen.
 """
 import matplotlib
 matplotlib.use("SVG")
@@ -113,3 +146,68 @@ def project(ax, x, y, theme="light", color=None):
     c = color or THEMES[theme]["muted"]
     ax.plot([x, x], [0, y], linestyle=":", linewidth=1.2, color=c, alpha=0.8, zorder=2)
     ax.plot([0, x], [y, y], linestyle=":", linewidth=1.2, color=c, alpha=0.8, zorder=2)
+
+
+# ── Ecoudea: anti-solapamiento + flechas (aditivo, nada existente cambia) ──
+# Fondos opacos por tema: el halo hace legible la etiqueta sobre cualquier
+# línea sin importar el tema activo.
+BG = {"light": "#faf8f1", "dark": "#0a0f1a"}
+
+
+def halo(theme, pad=1.6, alpha=0.9):
+    """Fondo para etiquetas cercanas a líneas (regla 1)."""
+    return dict(facecolor=BG[theme], edgecolor="none", pad=pad, alpha=alpha)
+
+
+def label(ax, x, y, text, color, theme, ha="left", va="center", fontsize=12,
+          bold=True, italic=False, pad=1.6):
+    """Texto SIEMPRE con halo (regla 1). Para end labels sin nada detrás,
+    pasar pad=0... mejor: usar end_label() en extremos libres."""
+    ax.text(x, y, text, fontsize=fontsize,
+            fontweight="bold" if bold else "normal",
+            fontstyle="italic" if italic else "normal",
+            color=color, ha=ha, va=va,
+            bbox=halo(theme, pad=pad))
+
+
+# Tintas sólidas premezcladas con el fondo del tema (regla 4): el alpha en
+# fills se renderiza opaco en algunos visores. Roles: save (ahorro/verde),
+# debt (deuda/ámbar), loss (pérdida/rojo), excl (exclusión/azul).
+TINTS = {
+    "light": {
+        "save": "#E2EACD",
+        "debt": "#F5E3CB",
+        "loss": "#F6D5D6",
+        "excl": "#DCEAEC",
+    },
+    "dark": {
+        "save": "#192718",
+        "debt": "#2B2017",
+        "loss": "#2C1121",
+        "excl": "#091D2F",
+    },
+}
+
+
+def shade(ax, x, y1, y2, theme, role, where=None):
+    """Relleno sólido entre curvas (regla 4). `role` en TINTS."""
+    kw = dict(facecolor=TINTS[theme][role], edgecolor="none", zorder=1)
+    if where is None:
+        ax.fill_between(x, y1, y2, **kw)
+    else:
+        ax.fill_between(x, y1, y2, where=where, **kw)
+
+
+def span(ax, xmin, xmax, theme, role):
+    """Franja vertical sólida (regla 4). `role` en TINTS."""
+    ax.axvspan(xmin, xmax, facecolor=TINTS[theme][role], edgecolor="none",
+               zorder=1)
+
+
+def flow(ax, xy, xytext, color, lw=2.0, dashed=False, head=True):
+    """Flecha RECTA (regla A). `head=False` para carriles que doblan: la
+    dirección la da el conector final (regla C)."""
+    style = dict(arrowstyle="->" if head else "-", color=color, lw=lw)
+    if dashed:
+        style["linestyle"] = (0, (4, 3))
+    ax.annotate("", xy=xy, xytext=xytext, arrowprops=style)

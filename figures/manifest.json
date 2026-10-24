@@ -55,7 +55,7 @@
       "title": "Senda de expansión del consumo",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-24"
-    }
+    },
     {
       "id": "macroeconomia/jensen-lambda",
       "script": "figures/macro_jensen_lambda.py",
