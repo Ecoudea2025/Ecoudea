@@ -138,8 +138,10 @@ function hasLanguageMath(node) {
 const SPLIT_RE = /(\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$[^$\n]+?\$)/g
 
 function splitText(value) {
-  // Fragmentos de HTML crudo o código: nunca contienen math real.
-  if (value.indexOf('<') !== -1 || value.indexOf('>') !== -1) {
+  // Fragmentos con etiquetas HTML reales: no tocar (podría partir un tag).
+  // OJO: `<`/`>` sueltos (p. ej. `&lt;` decodificado por el parser HTML
+  // dentro de `$...$`) NO son tags y no deben bloquear la conversión.
+  if (/<\/?[a-zA-Z!][^<>]*>/.test(value)) {
     return [{ type: 'text', value }]
   }
   if (value.indexOf('$') === -1 && value.indexOf('\\(') === -1 && value.indexOf('\\[') === -1) {

@@ -18,12 +18,21 @@ function files(dir, out = []) {
 
 let bad = 0;
 for (const f of files(DIST)) {
-  const html = fs.readFileSync(f, 'utf8');
+  let html = fs.readFileSync(f, 'utf8');
   const re = /katex-error" title="([^"]{0,140})/g;
   let m;
   while ((m = re.exec(html))) {
     bad++;
     console.error(`[math] ${path.relative(DIST, f)}: ${m[1].slice(0, 120)}`);
+  }
+  // Delimitadores display sin convertir (fuera de <script> y comentarios;
+  // ojo: <!-- --> del autor puede contener $$ de borradores). KaTeX nunca
+  // emite `$$` literales.
+  const noScript = html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<!--[\s\S]*?-->/g, '');
+  const dm = noScript.match(/\$\$/g);
+  if (dm) {
+    bad++;
+    console.error(`[math] ${path.relative(DIST, f)}: ${dm.length / 2} bloque(s) $$ sin convertir.`);
   }
 }
 if (bad > 0) {
