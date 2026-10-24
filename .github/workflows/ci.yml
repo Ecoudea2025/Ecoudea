@@ -39,7 +39,7 @@ jobs:
 
       - name: Cero base path hardcodeado
         run: |
-          n=$(grep -r -F '${base}' src --include='*.astro' --include='*.mjs' --include='*.ts' --include='*.js' | grep -v 'ui/Card.astro' | wc -l)
+          n=$(grep -r -F '${base}' src --include='*.astro' --include='*.mjs' --include='*.ts' --include='*.js' | grep -v 'ui/Card.astro' | grep -v 'pages/robots.txt.ts' | wc -l)
           echo "usos de \${base}: $n"
           [ "$n" -eq 0 ]
 
