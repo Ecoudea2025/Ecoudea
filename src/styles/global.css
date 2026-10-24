@@ -646,7 +646,8 @@
    no pinta barra si cabe (solo aparece al desbordar). */
 @media (max-width: 640px) {
   .prose-class p .katex, .prose-class li .katex, .prose-class td .katex,
-  .prose-class th .katex, .prose-class blockquote .katex, .prose-class figcaption .katex {
+  .prose-class th .katex, .prose-class blockquote .katex, .prose-class figcaption .katex,
+  .prose-class h1 .katex, .prose-class h2 .katex, .prose-class h3 .katex, .prose-class h4 .katex {
     display: inline-block;
     max-width: 100%;
     overflow-x: auto;
@@ -655,7 +656,16 @@
     vertical-align: -0.15em;
     padding-bottom: 0.15em;
     margin-bottom: -0.15em;
-    scrollbar-width: thin;
+    /* Sin barra visible: el voladizo itálico de KaTeX disparaba el scroll
+       (píldora fantasma) aunque la fórmula cupiera. El scroll táctil sigue. */
+    scrollbar-width: none;
+  }
+  .prose-class p .katex::-webkit-scrollbar, .prose-class li .katex::-webkit-scrollbar,
+  .prose-class td .katex::-webkit-scrollbar, .prose-class th .katex::-webkit-scrollbar,
+  .prose-class blockquote .katex::-webkit-scrollbar, .prose-class figcaption .katex::-webkit-scrollbar,
+  .prose-class h1 .katex::-webkit-scrollbar, .prose-class h2 .katex::-webkit-scrollbar,
+  .prose-class h3 .katex::-webkit-scrollbar, .prose-class h4 .katex::-webkit-scrollbar {
+    display: none;
   }
 }
 .prose-class td .katex, .prose-class th .katex { background: transparent !important; }
@@ -672,32 +682,29 @@
   padding: 0.25rem 0;
   -webkit-overflow-scrolling: touch;
 }
-/* Botón copiar-TeX: icono ▢ discreto al final (arriba-derecha) del display.
-   Invisible hasta hover/foco del bloque; siempre visible en táctil. */
-.katex-display { position: relative; }
+/* Botón copiar-TeX: icono discreto DEBAJO del display, alineado a la
+   derecha, en flujo normal. Nunca comparte píxeles con el math: cero
+   solapamiento en PC y móvil, con o sin scroll. Invisible hasta hover
+   del bloque (siempre visible en táctil y tras copiar). */
 .copy-tex-btn {
-  position: absolute;
-  top: 2px;
-  right: 2px;
+  display: block;
   width: 28px;
   height: 28px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  margin: -0.25rem 0 0.75rem auto;
+  padding: 0;
   border-radius: 6px;
   border: 1px solid var(--color-border-subtle);
-  background: color-mix(in srgb, var(--color-elevated) 88%, transparent);
+  background: transparent;
   color: var(--color-text-muted);
   opacity: 0;
   cursor: pointer;
-  padding: 0;
-  z-index: 1;
   transition: opacity 0.18s ease, color 0.18s ease, border-color 0.18s ease;
 }
-.katex-display:hover .copy-tex-btn,
-.katex-display:focus-within .copy-tex-btn,
-.copy-tex-btn:focus-visible { opacity: 1; }
-.copy-tex-btn:hover { color: var(--color-text); opacity: 1; }
+.copy-tex-btn > svg { display: block; margin: auto; }
+.katex-display:hover + .copy-tex-btn,
+.katex-display:focus-within + .copy-tex-btn,
+.copy-tex-btn:hover, .copy-tex-btn:focus-visible { opacity: 1; }
+.copy-tex-btn:hover { color: var(--color-text); }
 .copy-tex-btn[data-ok] { color: var(--color-success); border-color: var(--color-success); opacity: 1; }
 @media (hover: none) { .copy-tex-btn { opacity: 0.8; } }
 

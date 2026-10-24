@@ -187,7 +187,7 @@ asintóticamente insesgado.
 ### Eficiencia Relativa
 
 Sea `$\hat{\theta}_1$` y `$\hat{\theta}_2$` dos estimadores insesgados
-de unparámetro `$\theta$`, obtenidos de una muestra aleatoria del mismo
+de un parámetro `$\theta$`, obtenidos de una muestra aleatoria del mismo
 tamaño, entonces
 
 -   Se dice que `$\hat{\theta}_1$` es más eficiente que

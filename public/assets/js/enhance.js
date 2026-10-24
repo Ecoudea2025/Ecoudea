@@ -111,7 +111,10 @@
           }, 1300);
         });
       });
-      d.appendChild(btn);
+      // Lugar fijo: DEBAJO del bloque, en flujo normal (nunca tapa el math
+      // ni los tags, no depende del scroll). Hermano adyacente para el hover.
+      if (d.parentNode) d.parentNode.insertBefore(btn, d.nextSibling);
+      else d.appendChild(btn);
     });
   }
 

@@ -26,7 +26,7 @@ $$
 Para aislar con precisión quirúrgica la pugna entre el **efecto sustitución** y el **efecto ingreso** del ahorro frente al **efecto riqueza humana** de los ingresos futuros, dividimos el análisis en dos escenarios: primero cuando `$Y_2 = 0$` y luego cuando `$Y_2 > 0$`.
 
 
-Escenario 1: Sin Ingreso Futuro ($Y_2 = 0$)
+Escenario 1: Sin Ingreso Futuro $(Y_2 = 0)$
 -------------------------------------------
 
 Supongamos que el individuo solo recibe ingresos en el primer período (`$Y_1 > 0, Y_2 = 0$`), por lo que necesariamente es un ahorrador para poder financiar su consumo en `$t=2$`. La función de consumo se simplifica a:
