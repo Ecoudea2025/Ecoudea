@@ -35,7 +35,6 @@ title: "${title.replace(/"/g, '\\"')}"
 description: "${description.replace(/"/g, '\\"')}"
 category: "${category}"
 order: ${order}
-unlockMode: "open"
 ---
 
 <!-- Portada opcional: image: "/assets/images/<archivo>.jpg" -->

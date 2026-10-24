@@ -11,8 +11,6 @@ export interface Props {
   enhance?: boolean;
   /** Schema JSON-LD adicional (p. ej. Course) */
   jsonLd?: string;
-  /** Carga el helper de desbloqueo progresivo (páginas de curso/clase) */
-  unlock?: boolean;
   /** Evita que buscadores indexen la página (panel admin) */
   noindex?: boolean;
 }
@@ -24,7 +22,6 @@ const {
   showTools = false,
   enhance = false,
   jsonLd,
-  unlock = false,
   noindex = false,
 } = Astro.props;
 const base = import.meta.env.BASE_URL;
@@ -76,7 +73,6 @@ const canonical = Astro.url;
     {showTools && <FloatingButtons />}
 
     <script defer src={`${base}/assets/js/animations.js`}></script>
-    {unlock && <script defer src={`${base}/assets/js/unlock.js`}></script>}
     {enhance && <script defer src={`${base}/assets/js/enhance.js`}></script>}
   </body>
 </html>

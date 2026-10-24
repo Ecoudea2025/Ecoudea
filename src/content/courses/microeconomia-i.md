@@ -3,7 +3,6 @@ title: "Microeconomía I"
 description: "Preferencias, utilidad y demanda: el curso piloto de la plataforma"
 category: "Cursos"
 order: 2
-unlockMode: "open"
 ---
 
 <!-- Portada opcional: image: "/assets/images/<archivo>.jpg" -->

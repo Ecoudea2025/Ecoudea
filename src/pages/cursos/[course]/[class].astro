@@ -2,7 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Navbar from '../../../components/Navbar.astro';
 import Footer from '../../../components/Footer.astro';
-import VideoPlayer from '../../../components/VideoPlayer.astro';
+import Breadcrumbs from '../../../components/ui/Breadcrumbs.astro';
 import 'katex/dist/katex.min.css';
 import { getCollection, render } from 'astro:content';
 import manifest from '../../../../archive/manifest.json';
@@ -50,9 +50,17 @@ const typeLabels = { clase: 'Clase', practica: 'Práctica', presentacion: 'Prese
 const tc = classEntry ? (typeColors[classEntry.data.classType] || typeColors.clase) : typeColors.clase;
 const tl = classEntry ? (typeLabels[classEntry.data.classType] || 'Clase') : 'Clase';
 const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} - Ecoudea` : `Clase archivada - Ecoudea`;
+const learningJsonLd = classEntry ? JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'LearningResource',
+  name: classEntry.data.title,
+  description: classEntry.data.description,
+  inLanguage: 'es-CO',
+  isPartOf: { '@type': 'Course', name: course.data.title },
+}) : '';
 ---
 
-<BaseLayout title={pageTitle} description={classEntry?.data.description} showTools={!!classEntry} enhance={!!classEntry} unlock={!!classEntry} noindex={archivedCourse ? true : undefined}>
+<BaseLayout title={pageTitle} description={classEntry?.data.description} showTools={!!classEntry} enhance={!!classEntry} jsonLd={classEntry ? learningJsonLd : undefined} noindex={archivedCourse ? true : undefined}>
   <Fragment slot="header"><Navbar currentPath={`${base}/cursos/${courseId}/${classId}`} /></Fragment>
 
   {archivedCourse ? (
@@ -70,13 +78,11 @@ const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} 
     </div>
   ) : (
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-    <nav class="flex items-center gap-2 text-sm text-text-muted mb-6 flex-wrap">
-      <a href={`${base}/`} class="hover:text-accent transition-colors no-underline">Inicio</a>
-      <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-      <a href={`${base}/cursos/${courseId}`} class="hover:text-accent transition-colors no-underline truncate max-w-[180px] sm:max-w-[300px]">{course.data.title}</a>
-      <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-      <span class="text-text truncate max-w-[180px] sm:max-w-[300px]">{classEntry.data.title}</span>
-    </nav>
+    <Breadcrumbs items={[
+      { label: 'Inicio', href: `${base}/` },
+      { label: course.data.title, href: `${base}/cursos/${courseId}` },
+      { label: classEntry.data.title },
+    ]} />
 
     <div class="relative overflow-hidden rounded-2xl gradient-bg border border-accent/20 shadow-xl shadow-accent/5 p-5 sm:p-8 mb-6">
       <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-secondary to-accent" aria-hidden="true" />
@@ -115,20 +121,20 @@ const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} 
       <nav class="px-4 pb-4" aria-label="Contenido de la clase"></nav>
     </details>
 
-    <div class="lg:flex lg:gap-8" data-class-content data-course-id={courseId} data-class-id={classId} data-prev-id={prevClass ? prevClass.id : ''} data-unlock={course.data.unlockMode || 'open'}>
+    <div class="lg:flex lg:gap-8">
       <div class="flex-1 min-w-0">
-        {(classEntry.data.video || classEntry.data.videoFallback) && (
-          <div class="mb-6 reveal is-visible">
-            <VideoPlayer
-              src={classEntry.data.video}
-              poster={classEntry.data.videoPoster}
-              fallback={classEntry.data.videoFallback}
-              captions={classEntry.data.videoCaptions}
-              title={classEntry.data.title}
-            />
+        <article class="prose-class"><Content /></article>
+        {classEntry.data.conceptos && classEntry.data.conceptos.length > 0 && (
+          <div class="mt-8 rounded-xl border border-border-subtle bg-elevated/40 p-4 sm:p-5">
+            <h2 class="text-sm font-bold text-text mb-3">Conceptos de esta clase</h2>
+            <div class="flex flex-wrap gap-2">
+              {classEntry.data.conceptos.map((c) => {
+                const slug = c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                return <a href={`${base}/glosario#term-${slug}`} class="inline-block px-2.5 py-1 rounded-full text-xs font-semibold border bg-accent-soft text-accent border-accent/30 no-underline hover:brightness-110 transition-all">{c}</a>;
+              })}
+            </div>
           </div>
         )}
-        <article class="prose-class"><Content /></article>
       </div>
       <aside id="class-toc" class="hidden lg:block lg:w-56 shrink-0 mt-6 lg:mt-0">
         <div class="sticky top-24">
@@ -136,26 +142,6 @@ const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} 
           <nav class="border-l-2 border-accent/20 pl-3"></nav>
         </div>
       </aside>
-    </div>
-
-    <div id="class-lock" class="hidden relative overflow-hidden rounded-2xl gradient-bg border border-secondary/30 p-8 sm:p-12 my-6 text-center">
-      <div class="absolute top-0 right-0 w-48 h-48 rounded-full bg-secondary/10 blur-3xl pointer-events-none" />
-      <div class="relative z-10">
-        <div class="w-14 h-14 mx-auto rounded-2xl bg-secondary-soft border border-secondary/30 flex items-center justify-center mb-4">
-          <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
-        </div>
-        <h2 class="text-xl sm:text-2xl font-bold text-text mb-2">Clase bloqueada</h2>
-        <p class="text-text-muted text-sm max-w-md mx-auto mb-6">
-          Este contenido se desbloquea al completar la clase anterior del curso.
-          Marca como completada la clase anterior y vuelve aquí.
-        </p>
-        {prevClass && (
-          <a href={`${base}/cursos/${courseId}/${prevClass.id}`} class="btn no-underline">
-            Ir a la clase anterior
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
-          </a>
-        )}
-      </div>
     </div>
 
     <div class="section-divider mt-10 mb-6"></div>
@@ -208,30 +194,5 @@ const pageTitle = classEntry ? `${classEntry.data.title} - ${course.data.title} 
       window.dispatchEvent(new CustomEvent('ecoudea:progress', { detail: { courseId: btn.dataset.course } }));
     });
 
-    // ── Bloqueo progresivo: si la anterior no está completada, ocultar contenido ──
-    const content = document.querySelector('[data-class-content]');
-    const lockBox = document.getElementById('class-lock');
-    if (content && lockBox && window.EcoudeaUnlock) {
-      const courseId = content.dataset.courseId;
-      const unlockMode = content.dataset.unlock;
-      const prevId = content.dataset.prevId;
-      const isLocked = () => {
-        if (unlockMode !== 'sequential' || !prevId) return false;
-        if (EcoudeaUnlock.isAdminUnlocked()) return false;
-        const progress = EcoudeaUnlock.getProgress(courseId);
-        return !progress.has(prevId);
-      };
-      const apply = () => {
-        const locked = isLocked();
-        content.classList.toggle('hidden', locked);
-        lockBox.classList.toggle('hidden', !locked);
-        if (locked) window.scrollTo({ top: 0, behavior: 'smooth' });
-      };
-      window.addEventListener('ecoudea:progress', (e) => {
-        if (e.detail && e.detail.courseId === courseId) apply();
-      });
-      document.addEventListener('DOMContentLoaded', apply);
-      setTimeout(apply, 50); // unlock.js carga con defer; asegurar evaluación
-    }
   })();
 </script>

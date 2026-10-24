@@ -33,6 +33,9 @@ order: 1                      # orden dentro del curso
 classType: "clase"            # clase | practica | guia | resumen
 description: "Resumen (aparece en listados y SEO)"
 math: true                    # true si hay LaTeX
+unit: "Unidad 1"              # opcional: agrupa el listado del curso
+conceptos: ["A", "B"]         # opcional: alimenta el glosario
+draft: true                   # opcional: borrador, no se publica
 ```
 
 ## 3. Escribir contenido
@@ -56,6 +59,12 @@ math: true                    # true si hay LaTeX
 - [ ] Fórmulas revisadas en 360px (sin scroll horizontal de página) y en ambos temas
 - [ ] Imágenes en `public/assets/images/` referenciadas por nombre exacto
 - [ ] Build verde (`npm run build`)
+
+## 4.bis Progreso del estudiante
+
+Cada clase tiene un botón ✓ que guarda el avance en el navegador
+(`localStorage`). En la página del curso se ve el X/N por unidad, y los botones
+**Exportar/Importar** permiten llevar el progreso a otro dispositivo en JSON.
 
 ## 5. Publicar
 

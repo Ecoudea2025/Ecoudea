@@ -10,7 +10,6 @@ const courses = defineCollection({
     category: z.string(),
     color: z.string().optional(),
     order: z.number().default(0),
-    unlockMode: z.enum(['open', 'sequential']).default('open'),
     /** Crédito visible del material heredado (autor, institución) */
     author: z.string().optional(),
   }),
@@ -28,12 +27,10 @@ const classes = defineCollection({
     math: z.boolean().default(false),
     /** Conceptos clave: alimentan el glosario y la búsqueda */
     conceptos: z.array(z.string()).optional(),
+    /** Unidad temática (agrupa el listado del curso; sin unidades, un solo grupo) */
+    unit: z.string().optional(),
     /** Borrador: no se publica (ni página, ni listados, ni sitemap, ni búsqueda) */
     draft: z.boolean().default(false),
-    video: z.string().optional(),
-    videoPoster: z.string().optional(),
-    videoFallback: z.string().optional(),
-    videoCaptions: z.string().optional(),
   }),
 });
 
