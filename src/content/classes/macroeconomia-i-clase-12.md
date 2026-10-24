@@ -71,8 +71,11 @@ $$
 \begin{align*}\boxed{r \approx i - \pi}\end{align*}
 $$
 
-> **Espacio para gráfica 1:** *Poder de compra real vs. inflación y aproximación de Fisher.*
-> Diagrama comparativo que muestra cómo el factor real `$\frac{1+i}{1+\pi}$` decrece de forma convexa a medida que aumenta la inflación `$\pi$` para una tasa nominal `$i$` dada, cruzando el umbral de ganancia nula (`$r = 0$`) exactamente cuando `$\pi = i$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/fisher-light.svg" alt="Factor real decreciente con la inflación cruzando la ganancia nula cuando iguala la nominal." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/fisher-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la inflación se come el rendimiento nominal; cuando la iguala, la ganancia real es cero.</figcaption>
+</figure>
 
 
 El Costo de Uso o Precio de Arriendo del Capital ($R_t$)

@@ -140,8 +140,11 @@ Si comparamos el ingreso marginal del capital (`$P_t PMgK_t$`, curva decreciente
 * **Si `$K_t < K^*$`:** Se cumple que `$P_t PMgK_t > R_t$`. Existen **ganancias potenciales** desaprovechadas, lo que genera la necesidad de **aumentar el capital (`$\Delta K_t > 0$`)**.
 * **Si `$K_t > K^*$`:** Se cumple que `$P_t PMgK_t < R_t$`. La firma incurre en **pérdidas efectivas** sobre las últimas unidades, lo que genera la necesidad de **reducir el capital (`$\nabla K_t < 0$`)**.
 
-> **Espacio para gráfica 1:** *Determinación del capital óptimo `$K^*$` en el plano `$(K, P_t PMgK_t)$`.*
-> Se traza la curva decreciente `$P_t PMgK_t$` y la línea horizontal de costo `$R_t$`, cuya intersección define `$K^*$`. A la izquierda de `$K^*$` se sombrea en verde el triángulo de **ganancias potenciales** (`$K_t < K^* \implies$` incentiva acumular capital); a la derecha de `$K^*$` se sombrea en rojo el área de **pérdidas** (`$K_t > K^* \implies$` incentiva desinvertir).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/capital-optimo-light.svg" alt="Producto marginal decreciente cruzando el costo horizontal con zonas de ganancia y pérdida." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/capital-optimo-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: a la izquierda del óptimo cada máquina extra rinde más de lo que cuesta; a la derecha, al revés.</figcaption>
+</figure>
 
 
 Costos de Ajustar el Capital y la Función de Inversión

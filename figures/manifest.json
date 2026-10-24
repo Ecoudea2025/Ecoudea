@@ -97,6 +97,34 @@
       "title": "Respuesta marginal esperada según transitoriedad",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/convergencia-phi",
+      "script": "figures/macro_convergencia_phi.py",
+      "title": "Convergencia de la serie geométrica del descuento",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/ciclo-etapas",
+      "script": "figures/macro_ciclo_etapas.py",
+      "title": "Ciclo de vida por etapas de edad",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/capital-optimo",
+      "script": "figures/macro_capital_optimo.py",
+      "title": "Determinación del capital óptimo",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/fisher",
+      "script": "figures/macro_fisher.py",
+      "title": "Factor real y aproximación de Fisher",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
     }
   ]
 }

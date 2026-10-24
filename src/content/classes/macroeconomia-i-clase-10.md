@@ -83,8 +83,11 @@ $$
 \begin{align*}\frac{1}{1 - \frac{1}{1 + r}} = \frac{1}{\frac{1 + r - 1}{1 + r}} = \frac{1}{\frac{r}{1 + r}} = \frac{1 + r}{r}\end{align*}
 $$
 
-> **Espacio para gráfica 1:** *Convergencia de la serie geométrica del factor de descuento `$\phi^i$`.*
-> En el plano `$(i, \phi^i)$`, se muestra cómo la envolvente exponencial `$\phi^i = \left(\frac{1}{1+r}\right)^i$` parte de `$1$` en `$i=0$` y decae asintóticamente hacia el eje horizontal a medida que `$i \to \infty$`, garantizando que el área acumulada bajo la curva sea finita e igual a `$\frac{1+r}{r}$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/convergencia-phi-light.svg" alt="Exponencial decreciente del factor de descuento con área acumulada finita sombreada." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/convergencia-phi-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: el factor de descuento decae a cero y el área bajo la curva suma un valor finito.</figcaption>
+</figure>
 
 ### Despeje Final del Consumo Permanente ($\bar{C}$)
 
@@ -118,8 +121,8 @@ $$
 \begin{align*}\bar{C} = r A_t + \frac{r}{1 + r} \left[ \underbrace{\sum_{i=0}^{15} 0}_{\text{Edad no productiva}} + \underbrace{\sum_{i=16}^{60} \frac{Y_{\ell t+i}(1 - \tau)}{(1 + r)^i}}_{\text{Edad productiva}} + \underbrace{\sum_{i=61}^{78} \frac{Y_{t+i}^p}{(1 + r)^i}}_{\text{Jubilación / Retiro}} \right]\end{align*}
 $$
 
-> **Espacio para gráfica 2:** *Perfil del Ciclo de Vida por etapas de edad (`$0$`, `$15$`, `$60$`, `$78$` años).*
-> En el eje horizontal se marca el tiempo `$t$` dividido en tres tramos: **Edad no productiva** (`$0$` a `$15$`), **Edad productiva** (`$15$` a `$60$`) y **Jubilación/retiro** (`$60$` en adelante). Se traza la línea horizontal de consumo estable `$\bar{C}$`:
-> 1. Entre `$0$` y `$15$`, el ingreso está sobre el eje horizontal (`$0$`) y el área bajo `$\bar{C}$` (sombreada en verde) representa el consumo en la niñez/juventud financiado por transferencias familiares o deuda.
-> 2. Entre `$15$` y `$60$`, la curva de ingreso laboral `$Y_{\ell t}$` salta por encima de `$\bar{C}$` y crece con la experiencia laboral; el área entre `$Y_{\ell t}$` y `$\bar{C}$` (sombreada en rojo) representa el **ahorro acumulado** durante la vida activa.
-> 3. A partir de `$60$`, el ingreso laboral cae de nuevo a cero y el consumo `$\bar{C}$` se sostiene gracias a los activos acumulados en la etapa productiva.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/ciclo-etapas-light.svg" alt="Ingreso nulo en la niñez, hump por encima del consumo estable en la vida activa y retiro." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/ciclo-etapas-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: de 0 a 15 se vive de transferencias, de 15 a 60 se ahorra el excedente y desde los 60 se consume lo acumulado.</figcaption>
+</figure>

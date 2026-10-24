@@ -7,11 +7,11 @@ from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent
 
 
 def draw(theme):
-    fig, ax = setup_eco(theme, figsize=(7.2, 3.9))
+    fig, ax = setup_eco(theme, figsize=(7.2, 4.0))
     t = THEMES[theme]
     xs = [0, 1, 2, 3]
     ax.set_xlim(-0.5, 3.5)
-    ax.set_ylim(-2.35, 1.9)
+    ax.set_ylim(-2.5, 1.9)
     for s in ("top", "right", "left", "bottom"):
         ax.spines[s].set_visible(False)
     ax.set_xticks([])
@@ -29,23 +29,24 @@ def draw(theme):
                     arrowprops=dict(arrowstyle="->", color=ROLES["budget"], lw=2.2))
         ax.text(x, 1.18, "Y", ha="center", va="bottom", fontsize=12,
                 fontweight="bold", color=ROLES["budget"])
-        # consumo: sale hacia abajo (solo nodos 0..2 para no saturar)
-        if i < 3:
-            ax.annotate("", xy=(x, -1.08), xytext=(x, -0.55),
-                        arrowprops=dict(arrowstyle="->", color=ROLES["c2"], lw=2.2))
-            ax.text(x, -1.20, "C", ha="center", va="top", fontsize=12,
-                    fontweight="bold", color=ROLES["c2"])
-    # transferencia del ahorro capitalizado (carril propio, lejos de las C)
-    ax.annotate("", xy=(2.78, -1.72), xytext=(0.22, -1.72),
-                arrowprops=dict(arrowstyle="->", color=t["muted"], lw=1.3,
+        # consumo: sale hacia abajo en los cuatro nodos (el último incluye
+        # lo ahorrado: C final se financia con Y más el ahorro capitalizado)
+        ax.annotate("", xy=(x, -1.08), xytext=(x, -0.55),
+                    arrowprops=dict(arrowstyle="->", color=ROLES["c2"], lw=2.2))
+        ax.text(x, -1.20, "C", ha="center", va="top", fontsize=12,
+                fontweight="bold", color=ROLES["c2"])
+    # carril del ahorro capitalizado: viaja por abajo y DOBLA hacia arriba
+    # para sumarse al consumo del último período (nada queda flotando)
+    ax.annotate("", xy=(2.96, -1.80), xytext=(0.15, -1.80),
+                arrowprops=dict(arrowstyle="-", color=t["muted"], lw=1.3,
                                 linestyle=(0, (4, 3))))
-    ax.text(1.5, -1.84, "(1+r)A", ha="center", va="top", fontsize=11,
+    ax.text(1.45, -1.97, "(1+r)A", ha="center", va="top", fontsize=11,
             color=t["muted"])
-    # ahorro del último nodo: flecha RECTA vertical (sin curva rara),
-    # mismo lenguaje que las C pero en muted para distinguir
-    ax.annotate("", xy=(3, -1.08), xytext=(3, -0.55),
-                arrowprops=dict(arrowstyle="->", color=t["muted"], lw=2.2))
-    ax.text(3.22, -0.82, "S", ha="left", va="center", fontsize=12,
+    # conector S: el ahorro acumulado sube y financia el consumo final
+    ax.annotate("", xy=(3.0, -1.45), xytext=(3.0, -1.75),
+                arrowprops=dict(arrowstyle="->", color=t["muted"], lw=2.0,
+                                linestyle=(0, (4, 3))))
+    ax.text(3.22, -1.60, "S", ha="left", va="center", fontsize=12,
             fontweight="bold", color=t["muted"])
     return fig
 
