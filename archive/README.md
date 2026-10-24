@@ -29,3 +29,9 @@ npm run build
 
 Las 349 imágenes siguen en `public/assets/images/` (compartidas entre cursos;
 moverlas rompería referencias). No se tocó ninguna.
+
+> Fase 8.b: 252 imágenes sin uso por el contenido activo se movieron a
+> `archive/assets/images/` (29,4 MB). Las 78 restantes se optimizaron
+> (JPG a max 1400px q82; logo PNG recomprimido). `public/favicon.ico`
+> (1,1 MB, sin referencias) también se archivó. Todo validado con
+> `npm run check:links` tras el build.

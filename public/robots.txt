@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /admin
-
-Sitemap: https://ecoudea2025.github.io/Ecoudea/sitemap-index.xml
