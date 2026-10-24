@@ -10,6 +10,8 @@
     "build": "astro build && pagefind --site dist --output-subdir pagefind && node scripts/gzip.mjs",
     "preview": "astro preview",
     "content:fix": "node scripts/fix-math-delims.cjs && node scripts/fix-list-math-indent.cjs && node scripts/fix-lists.cjs && node scripts/fix-code-dollars.cjs",
+    "prebuild": "node scripts/gen-indices.cjs",
+    "equations": "node scripts/gen-indices.cjs",
     "new:course": "node scripts/new-course.cjs",
     "new:lesson": "node scripts/new-lesson.cjs",
     "figures": "node scripts/figures.cjs",

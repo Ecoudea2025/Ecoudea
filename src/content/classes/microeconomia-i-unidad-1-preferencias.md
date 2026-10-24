@@ -7,22 +7,37 @@ description: "Axiomas de preferencia, función de utilidad y curvas de indiferen
 math: true
 ---
 
-<!-- Guía rápida (borra estos comentarios al publicar):
-  - Títulos: ## Sección, ### Subsección (generan el TOC automáticamente).
-  - Fórmulas: $x^2$ inline, $$...$$ display. Macros globales en src/lib/katex-macros.tex.
-  - Bloques: <Definicion>…</Definicion>, <Teorema>, <Ejemplo>, <Ejercicio>,
-    <IdeaClave>, <Nota>, <Advertencia>. Demostraciones y soluciones con <details>.
-  - Figuras: <Figure id="oferta-demanda" caption="…" alt="Descripción…" /> (alt obligatorio).
-  - Términos: <Term id="elasticidad">elasticidad</Term> (alimenta el glosario).
-  - Al publicar: npm run content:fix && npm run build
--->
+<!-- Guía de autoría: docs/AUTORIA.md. Bloques: :::tipo Título … ::: (ver clase
+     de tortura en draft). Ecuaciones referenciables: \tag{id} + $\ref{id}$. -->
 
-## Introducción
+## Preferencias racionales
 
-Escribe aquí el contenido de la clase.
+:::definicion Relación de preferencias
+Una relación $\succeq$ sobre el conjunto de canastas $X$ es **racional** si es
+completa (siempre puedes comparar) y transitiva (coherente al encadenar).
+:::
 
-<!-- Ejemplo de fórmula display:
+:::ejemplo Comparar canastas
+Con $x = (2, 3)$ e $y = (3, 2)$, un consumidor racional elige $x \succeq y$ o
+$y \succeq x$: no vale "no sé".
+:::
+
+## Función de utilidad
+
+:::teorema Representación
+Si $\succeq$ es racional y continua, existe $u: X \to \R$ tal que
+$x \succeq y \iff u(x) \geq u(y)$.
+:::
+
+La condición que usaremos en todo el curso es la representación de la utilidad:
+
 $$
-E = mc^2
+x \succeq y \iff u(x) \geq u(y) \tag{utilidad}
 $$
--->
+
+A partir de $\ref{utilidad}$, las curvas de indiferencia son los conjuntos de
+nivel $\{x \in X \mid u(x) = k\}$: moverse sobre ellas no cambia tu bienestar.
+
+:::ideaclave
+La utilidad no se mide en nada real: solo importa el orden que induce.
+:::

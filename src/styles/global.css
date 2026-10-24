@@ -315,6 +315,21 @@
   .eco-advertencia { --eco: #e11d48; }
   .eco-intuicion { --eco: var(--color-secondary-hover); }
 
+  /* ── Referencias a ecuaciones (plugin remark-eqrefs) ───────────── */
+  .eq-anchor {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    scroll-margin-top: 6rem;
+  }
+  .eq-ref {
+    color: var(--color-accent-hover) !important;
+    text-decoration: underline dotted !important;
+    text-underline-offset: 3px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
   /* ── Barra de progreso de scroll (estilo GSAP ScrollTrigger) ── */
   .scroll-progress {
     position: fixed;

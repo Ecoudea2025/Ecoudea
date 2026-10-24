@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: 3.a cerrada → siguiente 3.b (refs + glosario) · Última actualización: 2026-10-23
+Fase actual: 3.b cerrada → siguiente 3.c (glosario) · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
@@ -12,6 +12,7 @@ Fase actual: 3.a cerrada → siguiente 3.b (refs + glosario) · Última actualiz
 - 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
+- Fase 3.b (ecuaciones referenciables): ✅ commit + tag `fase-3b-cerrada`. Prebuild `gen-indices.cjs` (`\tag` → `ecuaciones.json`, falla en duplicados e ignora comentarios/drafts) + plugin `remarkEqrefs` (`$\ref{id}$` → enlace, ancla `eq-*` con `scroll-margin`) + validación de refs en prebuild (`exit 1` legible). Clase de ejemplo con `\tag{utilidad}` + ref reales. Hallazgo: Astro 7 tolera errores de render generando el artículo vacío → la garantía va en prebuild, no en el plugin.
 - Fase 3.a (bloques + borradores): ✅ commit + tag `fase-3a-cerrada`. Plugin `remarkBlocks` (`:::tipo` numerado, `role=note`, compacto o con blancos), CSS por tipo en ambos temas, `draft:true` (página+listados+sitemap+búsqueda excluidos), clase de tortura verificada (10 bloques, matrices, `aligned`/`cases`/`tag`, tabla, `<details>`, footnotes; 0 desbordes en 360px) y devuelta a draft. Hallazgo mayor: Astro 7 ignora `markdown.remarkPlugins` legacy en contenido → migrado a `markdown.processor: unified({...})` (adiós warning deprecado).
 - Fase 5.b (Pagefind): ✅ commit + tag `fase-5b-cerrada`. `SearchModal` (atajos `/`/`Ctrl+K`/`Esc`, lazy-load del índice, extractos con highlight, URLs con BASE_PATH, archivados excluidos, `data-pagefind-body` en `<main>`), botón en navbar desktop+móvil (IDs únicos), `pagefind` integrado al `build`. Bug real encontrado por test: filtro `estadistica-i` ⊂ `estadistica-ii` comía resultados → corregido por segmento.
 - Fase 1.b (identidad): ✅ commit + tag `fase-1b-cerrada`. Logo SVG moderno (curvas O/D + punto de equilibrio, sin animación orbital; ~100 líneas CSS eliminadas), favicon a juego, paleta avivada (lima #65a30d/#84cc16 + primario #3f6212, btn/gradientes por vars), copy de economía (hero, título, meta, footer, acercade, defaults), stats en 0 ocultos, figura regenerada con la paleta.
