@@ -628,19 +628,35 @@
   opacity: 0.35;
   margin: 2rem 0;
 }
-.prose-class .katex { font-size: 1.02em; color: var(--color-text) !important; white-space: nowrap; background: transparent !important; }
+.prose-class .katex { font-size: 1.02em; color: var(--color-text) !important; background: transparent !important; }
 .prose-class .katex * { color: inherit !important; background: transparent !important; }
-/* ── Lectura didáctica: fórmula inline fluye con el texto, sin scroll ──
-   El scroll horizontal generaba la "barra/sidebar" gris bajo la fórmula.
-   Inline = inline real (sin contenedor con overflow). Solo display scrollea. */
+/* ── Inline en PC: fluye natural con el texto (hay espacio, nada forzado) ── */
 .prose-class p .katex, .prose-class li .katex, .prose-class td .katex,
 .prose-class th .katex, .prose-class blockquote .katex, .prose-class figcaption .katex {
   display: inline;
   max-width: none;
   overflow: visible;
+  white-space: normal;
   vertical-align: baseline;
   padding: 0;
   margin: 0;
+}
+/* ── Inline en MÓVIL (≤640px): una sola línea + scroll solo si excede ──
+   Lectura didáctica: la fórmula nunca se parte a mitad; overflow-x:auto
+   no pinta barra si cabe (solo aparece al desbordar). */
+@media (max-width: 640px) {
+  .prose-class p .katex, .prose-class li .katex, .prose-class td .katex,
+  .prose-class th .katex, .prose-class blockquote .katex, .prose-class figcaption .katex {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    vertical-align: -0.15em;
+    padding-bottom: 0.15em;
+    margin-bottom: -0.15em;
+    scrollbar-width: thin;
+  }
 }
 .prose-class td .katex, .prose-class th .katex { background: transparent !important; }
 .math-display {
