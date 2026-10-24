@@ -80,18 +80,73 @@ const canonical = Astro.url;
     </script>
     <script is:inline>
       (function () {
+        var REDUCE = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        function scrollToEl(el) {
+          var y = el.getBoundingClientRect().top + window.scrollY - 120;
+          window.scrollTo({ top: Math.max(0, y), behavior: REDUCE ? 'auto' : 'smooth' });
+        }
+        function flash(el) {
+          el.classList.add('flash-target');
+          setTimeout(function () { el.classList.remove('flash-target'); }, 2600);
+        }
+        function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+        // "frontera" también casa "fronterá": cada vocal/ñ expande a su clase con tildes.
+        function accentRe(q) {
+          var map = { a: 'aáàäâ', A: 'AÁÀÄÂ', e: 'eéèëê', E: 'EÉÈËÊ', i: 'iíìïî', I: 'IÍÌÏÎ', o: 'oóòöô', O: 'OÓÒÖÔ', u: 'uúùüû', U: 'UÚÙÜÛ', n: 'nñ', N: 'NÑ', c: 'cç', C: 'CÇ' };
+          var out = '';
+          for (var k = 0; k < q.length; k++) out += map[q[k]] ? '[' + map[q[k]] + ']' : escRe(q[k]);
+          return new RegExp(out, 'i');
+        }
+        var SKIP = 'script,style,noscript,pre,code,textarea,.katex,.katex-display,.copy-tex-btn';
+        function findWord(q) {
+          var re = accentRe(q);
+          var root = document.getElementById('main') || document.body;
+          var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+          var node;
+          while ((node = walker.nextNode())) {
+            var t = node.nodeValue;
+            if (!t || t.length > 2000) continue;
+            var m = re.exec(t);
+            if (!m) continue;
+            var p = node.parentElement;
+            if (p && p.closest && p.closest(SKIP)) continue;
+            return { node: node, index: m.index, len: m[0].length };
+          }
+          return null;
+        }
         function go() {
+          var q = null;
+          try { q = new URLSearchParams(location.search).get('q'); } catch (e) { q = null; }
+          if (q && q.trim()) {
+            var hit = findWord(q.trim().slice(0, 80));
+            if (hit) {
+              requestAnimationFrame(function () {
+                var node = hit.node;
+                var after = node.splitText(hit.index);
+                after.splitText(hit.len);
+                var mark = document.createElement('mark');
+                mark.className = 'search-hit flash-target';
+                mark.textContent = after.nodeValue;
+                after.parentNode.replaceChild(mark, after);
+                scrollToEl(mark);
+                flash(mark);
+                setTimeout(function () {
+                  if (!mark.parentNode) return;
+                  mark.parentNode.replaceChild(document.createTextNode(mark.textContent), mark);
+                }, 2800);
+              });
+              return;
+            }
+            // Palabra no hallada en el texto: degradar al ancla si existe.
+          }
           var h = location.hash;
           if (!h || h.length < 2) return;
           var el = null;
           try { el = document.getElementById(decodeURIComponent(h.slice(1))); } catch (e) { el = document.getElementById(h.slice(1)); }
           if (!el) return;
           requestAnimationFrame(function () {
-            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            var y = el.getBoundingClientRect().top + window.scrollY - 120;
-            window.scrollTo({ top: Math.max(0, y), behavior: reduce ? 'auto' : 'smooth' });
-            el.classList.add('flash-target');
-            setTimeout(function () { el.classList.remove('flash-target'); }, 1600);
+            scrollToEl(el);
+            flash(el);
           });
         }
         if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go);

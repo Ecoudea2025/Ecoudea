@@ -33,10 +33,21 @@
   * { @apply border-border-subtle; }
   html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
   .prose-class h2, .prose-class h3, .prose-class h4 { scroll-margin-top: 120px; }
-  .flash-target { animation: flashTarget 1.6s ease-out; }
-  @keyframes flashTarget {
-    0% { background-color: var(--color-accent-soft, rgba(59,130,246,0.15)); }
-    100% { background-color: transparent; }
+  /* Destino de búsqueda/navegación: subrayado grueso con parpadeo temporal. */
+  .flash-target {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+    animation: hitBlink 2.4s ease-out;
+  }
+  .search-hit { background: transparent; color: inherit; border-radius: 2px; }
+  @keyframes hitBlink {
+    0%, 100% { text-decoration-color: transparent; }
+    20%, 40%, 60%, 80% { text-decoration-color: var(--color-accent); }
+    30%, 50%, 70%, 90% { text-decoration-color: transparent; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flash-target { animation: none; text-decoration-color: var(--color-accent); }
   }
   body {
     @apply bg-surface text-text font-sans antialiased;
