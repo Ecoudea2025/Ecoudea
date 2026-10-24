@@ -26,7 +26,7 @@ for (const f of fs.readdirSync(CLASSES).filter((f) => f.endsWith('.md'))) {
   files++;
   // Ignorar comentarios HTML (suelen documentar la sintaxis con ejemplos).
   const body = raw.replace(/<!--[\s\S]*?-->/g, '');
-  const re = /\\tag\{([A-Za-z0-9:_-]+)\}/g;
+  const re = /\\tag\{([A-Za-z0-9:._-]+)\}/g;
   let m;
   while ((m = re.exec(body))) {
     const label = m[1];
@@ -44,7 +44,7 @@ console.log(`[ecuaciones] ${Object.keys(index).length} etiquetas en ${files} cla
 // ── Validar referencias: `$\ref{id}$` standalone debe existir ─────────
 // (Astro 7 tolera errores de render y genera el artículo vacío, así que la
 //  garantía de fallo va aquí, en Node puro, no en el plugin remark.)
-const REF = /\$\\ref\{([A-Za-z0-9:_-]+)\}\$/g;
+const REF = /\$\\ref\{([A-Za-z0-9:._-]+)\}\$/g;
 let bad = 0;
 for (const f of fs.readdirSync(CLASSES).filter((f) => f.endsWith('.md'))) {
   const { body: raw, draft } = frontmatter(fs.readFileSync(path.join(CLASSES, f), 'utf8'));
@@ -85,7 +85,7 @@ for (const f of fs.readdirSync(CLASSES).filter((f) => f.endsWith('.md'))) {
   const classTitle = titleM ? titleM[1] : classId;
   const clean = body.replace(/<!--[\s\S]*?-->/g, '');
   // 1) <Term id="x">Etiqueta</Term> en el cuerpo
-  const tre = /<Term\s+id="([A-Za-z0-9:_-]+)"\s*>([\s\S]*?)<\/Term\s*>/g;
+  const tre = /<Term\s+id="([A-Za-z0-9:._-]+)"\s*>([\s\S]*?)<\/Term\s*>/g;
   let tm;
   while ((tm = tre.exec(clean))) {
     const label = tm[2].replace(/<[^>]+>/g, '').trim() || tm[1];

@@ -1,5 +1,5 @@
 # Estado del proyecto
-Fase actual: 8.b cerrada + fix hero/macro → listo para tus MDs · Última actualización: 2026-10-23
+Fase actual: curso Macroeconomía I publicado (16 clases + práctica) → manda más MDs · Última actualización: 2026-10-23
 
 ## Decisiones tomadas
 - 2026-10-23 · Raíz canónica `D:\Ecoudea-master` con git restaurado desde `origin/master` (`6c6c598`) · revertir: `git checkout v1-legacy`
@@ -12,6 +12,7 @@ Fase actual: 8.b cerrada + fix hero/macro → listo para tus MDs · Última actu
 - 2026-10-23 · `@fontsource-variable/space-grotesk` retirado (0 usos); `pagefind` se mantiene como dependencia para Fase 5 (búsqueda real, backlog con dep lista)
 
 ## Hecho
+- Curso Macroeconomía I (2026-10-23, sin tag de fase): 16 clases + 1 práctica convertidas desde `Clases macro/` (frontmatter real, sin bibliography, `\tag` renumerados C.N únicos, 1 ref manual ascendida a `$\ref$`, placeholder propio eliminado). Calidad: `check-math` nuevo en CI (cero fórmulas rotas, antes 14), entidades HTML decodificadas en `sanitizeTex`, typo `\\end` corregido. Hallazgo operativo: `node_modules/.astro/data-store.json` cachea renders por digest del .md — tras cambiar plugins/config hay que borrarlo (los builds parecían "verdes" con contenido rancio).
 - Fix hero + piloto macro (2026-10-23, sin tag de fase): hero SVG rehecho (rectas de manual, excedentes sombreados, E exacto con halo, ejes con flechas, PE/QE, animación por `pathLength`); piloto renombrado a `macroeconomia-i` (curso + 2 clases con `git mv`, lección reescrita a PIB/demanda agregada con `\tag{pib}`+ref+glosario); docs actualizadas. `figures/` conserva namespace `microeconomia/` (temáticamente correcto: oferta/demanda es micro).
 - Fase 8.b (imágenes + presupuestos): ✅ commit + tag `fase-8b-cerrada`. 252 imágenes muertas a `archive/` (29,4 MB), JPG activos optimizados (32,5→13,3 MB), favicon.ico archivado, robots por endpoint, `dist/` 95,6→25,7 MB (−73%), `comparativa.md`. Todo validado con check-links + decodificación real en navegador.
 - Fase 8.a (base + SEO + CI): ✅ commit + tag `fase-8a-cerrada`. Cero `${base}` literales (helper `url()` en 14 archivos; `Card.baseCls` renombrado para grep limpio), `robots.txt` por endpoint, `check-links` + `check-seo` en verde, workflow `ci.yml` (build + figures + grep + checks). RSS pospuesto con motivo: sin fechas en el contenido.

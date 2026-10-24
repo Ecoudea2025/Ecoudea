@@ -11,7 +11,6 @@ import {
 } from './src/lib/markdown-math.mjs';
 import { katexMacros } from './src/lib/katex-macros.mjs';
 import { remarkBlocks } from './src/lib/remark-blocks.mjs';
-import { remarkEqrefs } from './src/lib/remark-eqrefs.mjs';
 import archiveManifest from './archive/manifest.json' with { type: 'json' };
 
 const archivedPaths = new Set([
@@ -77,7 +76,7 @@ export default defineConfig({
     // Astro 7: el contenido usa `processor` (unified); las claves sueltas
     // remarkPlugins/rehypePlugins no llegan al renderer. No volver atrás.
     processor: unified({
-      remarkPlugins: [remarkMath, remarkNormalizeMath, remarkBlocks, remarkEqrefs, remarkBaseImages],
+      remarkPlugins: [remarkMath, remarkNormalizeMath, remarkBlocks, remarkBaseImages],
       rehypePlugins: [rehypeRaw, rehypeMathNormalize, rehypeBaseImages, [rehypeKatex, { trust: true, strict: false, macros: katexMacros }]],
     }),
   },

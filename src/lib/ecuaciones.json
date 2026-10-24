@@ -1,6 +1,98 @@
 {
-  "pib": {
+  "3.1": {
     "course": "macroeconomia-i",
-    "class": "macroeconomia-i-el-pib"
+    "class": "macroeconomia-i-clase-03"
+  },
+  "3.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-03"
+  },
+  "3.3": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-03"
+  },
+  "4.1": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-04"
+  },
+  "4.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-04"
+  },
+  "4.3": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-04"
+  },
+  "4.1b": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-04"
+  },
+  "4.4": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-04"
+  },
+  "4.5": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-04"
+  },
+  "9.1": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-09"
+  },
+  "9.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-09"
+  },
+  "9.3": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-09"
+  },
+  "9.4": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-09"
+  },
+  "9.5": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-09"
+  },
+  "9.6": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-09"
+  },
+  "10.1": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-10"
+  },
+  "10.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-10"
+  },
+  "11.1": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-11"
+  },
+  "11.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-11"
+  },
+  "15.1": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-15"
+  },
+  "15.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-15"
+  },
+  "15.3": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-clase-15"
+  },
+  "17.1": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-practica-01"
+  },
+  "17.2": {
+    "course": "macroeconomia-i",
+    "class": "macroeconomia-i-practica-01"
   }
 }

@@ -49,6 +49,9 @@ jobs:
       - name: SEO técnico (sitemap + robots)
         run: npm run check:seo
 
+      - name: Matemáticas sin errores
+        run: npm run check:math
+
       - name: Presupuesto JS inicial
         run: |
           node -e "
