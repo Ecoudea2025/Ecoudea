@@ -58,6 +58,7 @@ export default defineConfig({
       filter: (page) => {
         if (page.includes('/admin')) return false;
         if (page.includes('/styleguide')) return false;
+        if (page.includes('/offline')) return false;
         try {
           const u = new URL(page);
           const rel = u.pathname.replace(new RegExp(`^${base}`), '').replace(/\/$/, '') || '/';

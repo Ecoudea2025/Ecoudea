@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { url } from '../lib/url';
+
+const title = 'Sin conexión - Ecoudea';
+---
+
+<BaseLayout title={title} noindex={true}>
+  <Fragment slot="header">
+    <Navbar />
+  </Fragment>
+
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 text-red-400 text-sm font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-red-400"></span>
+      Sin conexión
+    </span>
+    <h1 class="text-3xl sm:text-4xl font-extrabold mb-4">Estás sin conexión</h1>
+    <p class="text-lg text-text-muted mb-8">
+      No se pudo cargar esta página. Revisa tu conexión a internet e inténtalo de nuevo.
+    </p>
+    <button
+      type="button"
+      onclick="location.reload()"
+      class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-accent text-white font-medium hover:bg-accent-hover transition-colors"
+    >
+      Reintentar
+    </button>
+
+    <p class="text-sm text-text-muted mt-10 leading-relaxed">
+      <strong>Qué funciona offline:</strong> la portada y las páginas que ya visitaste
+      (con sus fórmulas KaTeX y el buscador Pagefind), además del tema elegido, que se mantiene.
+    </p>
+    <p class="text-sm text-text-muted mt-4">
+      <a href={url(`/`)} class="text-accent hover:underline">Volver al inicio</a>
+    </p>
+  </div>
+
+  <Fragment slot="footer">
+    <Footer />
+  </Fragment>
+</BaseLayout>

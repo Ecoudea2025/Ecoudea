@@ -75,5 +75,8 @@ const canonical = Astro.url;
 
     <script defer src={url(`/assets/js/animations.js`)}></script>
     {enhance && <script defer src={url(`/assets/js/enhance.js`)}></script>}
+    <script is:inline>
+      if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost')){const b=document.querySelector('meta[name="astro-base"]')?.content||'';navigator.serviceWorker.register(b+'/sw.js',{scope:b+'/'}).catch(()=>{})}
+    </script>
   </body>
 </html>
