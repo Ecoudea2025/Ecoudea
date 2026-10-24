@@ -100,17 +100,22 @@ const canonical = Astro.url;
         var SKIP = 'script,style,noscript,pre,code,textarea,.katex,.katex-display,.copy-tex-btn';
         function findWord(q) {
           var re = accentRe(q);
-          var root = document.getElementById('main') || document.body;
-          var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-          var node;
-          while ((node = walker.nextNode())) {
-            var t = node.nodeValue;
-            if (!t || t.length > 2000) continue;
-            var m = re.exec(t);
-            if (!m) continue;
-            var p = node.parentElement;
-            if (p && p.closest && p.closest(SKIP)) continue;
-            return { node: node, index: m.index, len: m[0].length };
+          // 1.º dentro del artículo (evita marcar chrome: miga de pan, hero, botones).
+          var scopes = [document.querySelector('article.prose-class'), document.getElementById('main'), document.body];
+          for (var s = 0; s < scopes.length; s++) {
+            var root = scopes[s];
+            if (!root) continue;
+            var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+            var node;
+            while ((node = walker.nextNode())) {
+              var t = node.nodeValue;
+              if (!t || t.length > 2000) continue;
+              var m = re.exec(t);
+              if (!m) continue;
+              var p = node.parentElement;
+              if (p && p.closest && p.closest(SKIP)) continue;
+              return { node: node, index: m.index, len: m[0].length };
+            }
           }
           return null;
         }
@@ -118,6 +123,12 @@ const canonical = Astro.url;
           var q = null;
           try { q = new URLSearchParams(location.search).get('q'); } catch (e) { q = null; }
           if (q && q.trim()) {
+            // Consumir ?q= una sola vez: así los clics posteriores (TOC, hashes)
+            // navegan al ancla sin que la palabra vuelva a secuestrar el scroll.
+            try {
+              var clean = location.pathname + location.hash;
+              history.replaceState(null, '', clean);
+            } catch (e2) {}
             var hit = findWord(q.trim().slice(0, 80));
             if (hit) {
               requestAnimationFrame(function () {
