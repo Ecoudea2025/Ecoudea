@@ -1,0 +1,78 @@
+{
+  "class": "estadistica-ii-clase-01",
+  "category": "estadistica",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "El análisis de varianza de una regresión descompone la variabilidad total de la variable respuesta como...",
+      "options": [
+        "$SCT = SCR + SCE$",
+        "$SCT = SCR - SCE$",
+        "$SCT = SCE - SCR$",
+        "$SCR = SCT + SCE$"
+      ],
+      "correct": 0,
+      "explanation": "La variación total se separa en la explicada por el modelo ($SCR$) y la no explicada ($SCE$): $SCT = SCR + SCE$."
+    },
+    {
+      "difficulty": 2,
+      "question": "En la tabla ANOVA de una regresión lineal simple, los grados de libertad asociados a $SCR$ y a $SCE$ son, respectivamente...",
+      "options": [
+        "$1$ y $n - 2$",
+        "$n - 1$ y $n - 2$",
+        "$n - 2$ y $1$",
+        "$k$ y $n - k - 1$"
+      ],
+      "correct": 0,
+      "explanation": "$\\underbrace{SCT}_{n-1} = \\underbrace{SCR}_{1} + \\underbrace{SCE}_{n-2}$; el caso simple es particular del múltiple con $k = 1$."
+    },
+    {
+      "difficulty": 3,
+      "question": "Si en una regresión $SCT = 100$ y $SCE = 30$, el coeficiente de determinación $R^2$ vale...",
+      "options": [
+        "$0.7$",
+        "$0.3$",
+        "$1.3$",
+        "$\\frac{SCE}{SCR} \\approx 0.43$"
+      ],
+      "correct": 0,
+      "explanation": "$R^2 = SCR/SCT = 1 - SCE/SCT = 1 - 30/100 = 0.7$: el $70\\%$ de la variación de $Y$ queda explicado por la relación lineal con $X$."
+    },
+    {
+      "difficulty": 4,
+      "question": "En regresión lineal múltiple, al agregar al modelo una variable irrelevante (que no aporta a explicar $Y$), el $R^2$ ajustado...",
+      "options": [
+        "Disminuye, porque la pequeña reducción de $SCE$ no compensa la pérdida de un grado de libertad",
+        "Aumenta siempre, igual que el $R^2$ simple",
+        "No se modifica en absoluto",
+        "Puede aumentar pero, por construcción, nunca disminuir"
+      ],
+      "correct": 0,
+      "explanation": "$R^2_{adj} = 1 - \\frac{SCE/(n-k-1)}{SCT/(n-1)}$; la variable irrelevante baja $SCE$ muy poco y sube $k$, con lo que el ajustado cae. Esa es la razón por la que se prefiere el $R^2$ ajustado para comparar modelos."
+    },
+    {
+      "difficulty": 4,
+      "question": "Bajo la hipótesis nula de la prueba de significancia global en regresión múltiple $H_0: \\beta_1 = \\beta_2 = \\cdots = \\beta_k = 0$, el estadístico $F_c$ sigue una distribución...",
+      "options": [
+        "$F_{k,\\; n-k-1}$ con región crítica de una sola cola: $F > F_{\\alpha,k,n-k-1}$",
+        "$F_{1,\\; n-2}$, igual que en el caso simple, sin importar $k$",
+        "$t$ de Student con $n - k - 1$ grados de libertad",
+        "$\\chi^2_k$ de chi-cuadrado con $k$ grados de libertad"
+      ],
+      "correct": 0,
+      "explanation": "$F_c = \\frac{CMR}{CME} = \\frac{SCR/k}{SCE/(n-k-1)} \\sim F_{k,\\, n-k-1}$; valores grandes del estadístico llevan a rechazar $H_0$."
+    },
+    {
+      "difficulty": 5,
+      "question": "Para el mismo punto $x_0$, el intervalo de predicción de una nueva observación $y_0$ es más amplio que el intervalo de confianza para la respuesta media porque...",
+      "options": [
+        "Suma la variabilidad propia del error $\\varepsilon$ de la nueva observación a la incertidumbre del estimador $\\hat{y}_0$",
+        "Usa un nivel de confianza mayor, $100(1-\\alpha)\\%$ con doble $\\alpha$",
+        "Cubre todas las posibles medias de $Y$ en el rango completo de $X$",
+        "Ninguno: ambos intervalos tienen la misma amplitud por construcción"
+      ],
+      "correct": 0,
+      "explanation": "$Var(\\hat{y}_0 - y_0) = \\sigma^2\\left[1 + \\frac{1}{n} + \\frac{(x_0-\\bar{X})^2}{S_{xx}}\\right]$ frente a $Var(\\hat{y}_0) = \\sigma^2\\left[\\frac{1}{n} + \\frac{(x_0-\\bar{X})^2}{S_{xx}}\\right]$: la predicción añade $\\sigma^2$, el error aleatorio de la nueva observación."
+    }
+  ]
+}

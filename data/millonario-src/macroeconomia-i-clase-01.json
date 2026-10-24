@@ -1,0 +1,102 @@
+{
+  "class": "macroeconomia-i-clase-01",
+  "category": "macroeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "En la notación de la restricción presupuestaria intertemporal, ¿qué representa $Y_{\\ell t}$?",
+      "options": [
+        "El ingreso laboral real recibido por el individuo en el período $t$",
+        "El ingreso financiero generado por los activos, $r A_t$",
+        "El ingreso total del período, incluyendo los intereses",
+        "El ahorro disponible para consumir en el futuro"
+      ],
+      "correct": 0,
+      "explanation": "El ingreso total es $Y_t = Y_{\\ell t} + r A_t$; $Y_{\\ell t}$ es solo la retribución al esfuerzo productivo, y $r A_t$ es el ingreso financiero."
+    },
+    {
+      "difficulty": 1,
+      "question": "En el modelo intertemporal, $A_t$ se define como...",
+      "options": [
+        "El stock de activos financieros netos al inicio del período $t$, que puede ser positivo o negativo",
+        "El flujo de ahorro generado durante el período $t$",
+        "La tasa de interés real efectiva del período",
+        "El consumo total acumulado hasta el período $t$"
+      ],
+      "correct": 0,
+      "explanation": "$A_t$ es un stock al inicio del período: positivo si hay posición acreedora neta (depósitos, bonos, acciones) y negativo si hay posición deudora neta."
+    },
+    {
+      "difficulty": 2,
+      "question": "La ley de movimiento de activos (acumulación de activos) establece que...",
+      "options": [
+        "$A_{t+1} = Y_{\\ell t} + (1 + r)\\,A_t - C_t$",
+        "$A_{t+1} = Y_t + r\\,A_t - C_t$",
+        "$A_{t+1} = C_t + (1 + r)\\,A_t - Y_{\\ell t}$",
+        "$A_{t+1} = \\frac{Y_{\\ell t} + C_t}{1 + r} + A_t$"
+      ],
+      "correct": 0,
+      "explanation": "Se deduce de $A_{t+1} = S_t + A_t$ con $S_t = Y_{\\ell t} + r A_t - C_t$: la riqueza entrante es la riqueza previa capitalizada más el saldo neto ingreso laboral menos consumo."
+    },
+    {
+      "difficulty": 2,
+      "question": "Despejando el ahorro de la restricción del período corriente, $S_t$ equivale a...",
+      "options": [
+        "$S_t = Y_{\\ell t} + r A_t - C_t$",
+        "$S_t = Y_{\\ell t} + C_t$",
+        "$S_t = C_t - r A_t$",
+        "$S_t = (1 + r)\\,A_t - C_t$"
+      ],
+      "correct": 0,
+      "explanation": "Los ingresos totales se reparten exactamente entre consumo y ahorro: $Y_{\\ell t} + r A_t = C_t + S_t$."
+    },
+    {
+      "difficulty": 3,
+      "question": "La restricción presupuestaria intertemporal en horizonte finito establece que el valor presente del consumo más el activo terminal descontado equivale a...",
+      "options": [
+        "La riqueza financiera inicial $(1 + r)A_t$ más la riqueza humana (el VP de todos los ingresos laborales)",
+        "Solamente la riqueza humana, pues la riqueza financiera no financia consumo futuro",
+        "Solamente la riqueza financiera inicial, sin descontar los ingresos laborales",
+        "El producto entre la riqueza financiera y la riqueza humana"
+      ],
+      "correct": 0,
+      "explanation": "$\\sum_i \\frac{C_{t+i}}{(1+r)^i} + \\frac{A_{t+N+1}}{(1+r)^N} = (1+r)A_t + \\sum_i \\frac{Y_{\\ell t+i}}{(1+r)^i}$: se suman las dos fuentes de riqueza del horizonte de vida."
+    },
+    {
+      "difficulty": 4,
+      "question": "De la ley de movimiento $A_{t+2} = Y_{\\ell t+1} + (1 + r)A_{t+1} - C_{t+1}$, al despejar $A_{t+1}$ se obtiene...",
+      "options": [
+        "$A_{t+1} = \\frac{A_{t+2} + C_{t+1} - Y_{\\ell t+1}}{1 + r}$",
+        "$A_{t+1} = \\frac{A_{t+2} + Y_{\\ell t+1} - C_{t+1}}{1 + r}$",
+        "$A_{t+1} = \\frac{A_{t+2} - C_{t+1}}{Y_{\\ell t+1} - (1 + r)}$",
+        "$A_{t+1} = (1 + r)\\left(A_{t+2} + C_{t+1} - Y_{\\ell t+1}\\right)$"
+      ],
+      "correct": 0,
+      "explanation": "Es el paso previo a la iteración hacia adelante: despejar el activo en valor presente para sustituirlo sucesivamente en la ley de movimiento."
+    },
+    {
+      "difficulty": 4,
+      "question": "Al iterar la ley de movimiento hacia adelante durante $N$ períodos, los flujos intermedios de activos $A_{t+i}$...",
+      "options": [
+        "Se cancelan telescópicamente entre pasos sucesivos y desaparecen de la igualdad final",
+        "Se acumulan multiplicando el término $(1 + r)^N A_t$",
+        "Se duplican en cada paso de la sustitución",
+        "Solo se cancelan en el caso particular $r = 0$"
+      ],
+      "correct": 0,
+      "explanation": "Cada sustitución introduce el activo siguiente descontado; al generalizar $N$ veces, los acervos intermedios se cancelan entre sí y queda solo el término terminal $A_{t+N+1}/(1+r)^N$."
+    },
+    {
+      "difficulty": 5,
+      "question": "El término $\\frac{A_{t+N+1}}{(1+r)^N}$ de la restricción de horizonte finito (herencia o activo terminal descontado) no es arbitrario, porque su valor óptimo...",
+      "options": [
+        "Lo determina la condición de transversalidad al consolidar la restricción para $N \\to \\infty$, sin esquemas Ponzi",
+        "Lo elige libremente el agente para maximizar la herencia que deja",
+        "Es siempre cero por la definición del stock de activos",
+        "Crece indefinidamente a medida que $N$ aumenta"
+      ],
+      "correct": 0,
+      "explanation": "La clase 01 deja el término como herencia descontada y anuncia que su comportamiento se fija en la condición de transversalidad (clase 02): consolidar la RPI con $N \\to \\infty$ exige que los activos terminales no exploten (condición de no-Ponzi)."
+    }
+  ]
+}

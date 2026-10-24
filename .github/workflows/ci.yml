@@ -52,6 +52,12 @@ jobs:
       - name: Matemáticas sin errores
         run: npm run check:math
 
+      - name: Banco del millonario
+        run: node scripts/check-millonario.cjs
+
+      - name: Motor del millonario (tests)
+        run: node scripts/test-millonario.cjs
+
       - name: Presupuesto JS inicial
         run: |
           node -e "

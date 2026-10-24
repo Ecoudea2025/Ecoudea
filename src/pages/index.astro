@@ -6,6 +6,8 @@ import CourseCard from '../components/CourseCard.astro';
 import Icon from '../components/ui/Icon.astro';
 import { getCollection } from 'astro:content';
 import { url } from '../lib/url';
+/* Fase 10: el total de preguntas sale del banco consolidado (build-time, no hardcode). */
+import millonarioBank from '../../public/assets/data/millonario.json';
 
 const base = import.meta.env.BASE_URL;
 
@@ -311,6 +313,9 @@ const classIndex = allClasses.map((c) => ({
         </a>
         <a href={url(`/tablero-latex`)} class="btn-ghost no-underline">
           Probar el tablero LaTeX
+        </a>
+        <a href={url(`/millonario`)} class="btn-ghost no-underline">
+          Jugar al millonario ({millonarioBank.meta.questionCount} preguntas)
         </a>
       </div>
     </div>

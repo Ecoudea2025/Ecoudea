@@ -693,19 +693,19 @@
   margin: -0.25rem 0 0.75rem auto;
   padding: 0;
   border-radius: 6px;
-  border: 1px solid var(--color-border-subtle);
+  border: none;
   background: transparent;
   color: var(--color-text-muted);
   opacity: 0;
   cursor: pointer;
-  transition: opacity 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  transition: opacity 0.18s ease, color 0.18s ease;
 }
+.copy-tex-btn:hover { color: var(--color-accent); }
 .copy-tex-btn > svg { display: block; margin: auto; }
 .katex-display:hover + .copy-tex-btn,
 .katex-display:focus-within + .copy-tex-btn,
 .copy-tex-btn:hover, .copy-tex-btn:focus-visible { opacity: 1; }
-.copy-tex-btn:hover { color: var(--color-text); }
-.copy-tex-btn[data-ok] { color: var(--color-success); border-color: var(--color-success); opacity: 1; }
+.copy-tex-btn[data-ok] { color: var(--color-success); opacity: 1; }
 @media (hover: none) { .copy-tex-btn { opacity: 0.8; } }
 
 /* ── Logo vivo (SVG inline en Navbar): la insignia respira ──────────
@@ -799,4 +799,441 @@
 }
 @media (min-width: 641px) and (max-width: 1024px) {
   .prose-class { max-width: 700px; margin: 0 auto; }
+}
+
+
+/* ────────────────────────────────────────────────────────────────────
+   MILLONARIO (juego .mq-) — Fase 4
+   Todo el juego vive bajo #mq-app con tokens --game-*: el escenario es
+   SIEMPRE oscuro (azul marino), la página puede estar en claro alrededor.
+   Verde Ecoudea = marca (botones, timer ok, correcto); ámbar = tensión
+   (selección, nivel, refugios, premio); rojo = fallo.
+   ──────────────────────────────────────────────────────────────────── */
+#mq-app {
+  --game-navy-1: #070d24;
+  --game-navy-2: #0b1540;
+  --game-navy-3: #030612;
+  --game-glow: rgba(76, 112, 220, 0.34);
+  --game-panel: rgba(5, 9, 26, 0.88);
+  --game-pill: linear-gradient(180deg, #0a1234 0%, #060b22 100%);
+  --game-border: #2c4182;
+  --game-border-hot: #5e83e0;
+  --game-letter: #f0b429;
+  --game-amber: #d4a017;
+  --game-amber-strong: #eab308;
+  --game-green: var(--oliva-brillo, #84cc16);
+  --game-correct: var(--oliva, #65a30d);
+  --game-danger: #e2483d;
+  --game-white: #eef2ff;
+  --game-muted: rgba(222, 230, 255, 0.7);
+  --game-hex-notch: 22px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--game-white);
+  background:
+    radial-gradient(1100px 460px at 50% 26%, var(--game-glow) 0%, transparent 68%),
+    radial-gradient(160% 120% at 50% 8%, var(--game-navy-1) 0%, var(--game-navy-2) 46%, var(--game-navy-3) 100%);
+  border-radius: var(--radius-card, 1rem);
+}
+#mq-app [hidden] { display: none !important; }
+
+#mq-app .mq-screen { padding: clamp(1rem, 2.5vw, 2rem); }
+
+/* ── Intro ─────────────────────────────────────────────────────────── */
+.mq-screen-intro { text-align: center; }
+.mq-intro-hero {
+  max-width: 660px;
+  margin: clamp(1rem, 6vh, 3.5rem) auto;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+.mq-kicker { color: var(--game-muted); font-size: 0.95rem; letter-spacing: 0.02em; }
+.mq-record-line { color: var(--game-white); font-size: 1.05rem; }
+.mq-record-line strong { color: var(--game-amber-strong); }
+.mq-rules {
+  margin: 0;
+  padding: 1.1rem 1.35rem;
+  text-align: left;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--game-muted);
+  background: var(--game-panel);
+  border: 1px solid var(--game-border);
+  border-radius: 0.9rem;
+}
+.mq-rules strong { color: var(--game-white); }
+.mq-intro-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.9rem; }
+
+/* Botones */
+.mq-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.62rem 1.15rem;
+  min-height: 48px;
+  border-radius: 9999px;
+  border: 1px solid var(--game-border);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--game-white);
+  background: transparent;
+  transition: filter 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  text-decoration: none;
+}
+#mq-app .mq-btn-primary {
+  background: linear-gradient(180deg, var(--oliva-brillo, #84cc16) 0%, var(--oliva, #65a30d) 100%);
+  border-color: transparent;
+  color: #0b1220;
+}
+#mq-app .mq-btn-primary:hover { filter: brightness(1.08); }
+#mq-app .mq-btn-ghost { border-color: var(--game-border); background: var(--game-panel); }
+#mq-app .mq-btn-ghost:hover { border-color: var(--game-border-hot); }
+#mq-app .mq-btn:focus-visible,
+#mq-app .mq-opt:focus-visible,
+#mq-app .mq-lifeline:focus-visible { outline: 2px solid var(--game-amber-strong); outline-offset: 2px; }
+#mq-app .mq-btn:disabled { opacity: 0.45; cursor: not-allowed; filter: none; }
+.mq-sound-toggle { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--game-muted); font-size: 0.9rem; cursor: pointer; }
+.mq-sound-toggle input { accent-color: var(--oliva); width: 1.05rem; height: 1.05rem; cursor: pointer; }
+
+/* ── Header de partida (nivel + timer + pausa) ─────────────────────── */
+.mq-play-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.mq-level-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  border: 1px solid var(--game-amber);
+  color: var(--game-white);
+  background: var(--game-panel);
+}
+.mq-chip-label { font-size: 0.72rem; color: var(--game-muted); }
+#mq-level { color: var(--game-amber-strong); font-weight: 700; font-size: 1.15rem; }
+#mq-btn-pause { padding: 0.35rem 0.9rem; min-height: 44px; }
+
+.mq-timer { display: flex; align-items: center; gap: 0.55rem; min-width: 190px; }
+.mq-timer-bar { flex: 1; height: 9px; border-radius: 9999px; background: rgba(10, 16, 44, 0.9); border: 1px solid var(--game-border); overflow: hidden; }
+.mq-timer-fill { height: 100%; width: 100%; border-radius: 9999px; background: var(--game-green); transition: width 1s linear, background-color 400ms ease; }
+.mq-timer.mq-warn .mq-timer-fill { background: var(--game-amber-strong); }
+.mq-timer.mq-danger .mq-timer-fill { background: var(--game-danger); }
+.mq-timer-label { font-variant-numeric: tabular-nums; font-size: 0.85rem; color: var(--game-muted); min-width: 3.1ch; }
+
+/* ── Cuerpo de partida (2 columnas: tablero + escalera) ────────────── */
+.mq-play-body { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 1.1rem; align-items: start; }
+.mq-play-main { min-width: 0; display: grid; gap: 0.9rem; }
+
+/* Pregunta: píldora hexagonal alargada (2 capas para el borde fino) */
+.mq-question-wrap { position: relative; filter: drop-shadow(0 0 26px var(--game-glow)); }
+.mq-question {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 108px;
+  padding: 1.15rem 2.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.06rem;
+  line-height: 1.45;
+  color: var(--game-white);
+  background: var(--game-border);
+  clip-path: polygon(var(--game-hex-notch) 0, calc(100% - var(--game-hex-notch)) 0, 100% 50%, calc(100% - var(--game-hex-notch)) 100%, var(--game-hex-notch) 100%, 0 50%);
+}
+.mq-question::before {
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  z-index: -1; /* bajo el texto inline, sobre el borde del hexágono */
+  background: var(--game-pill);
+  clip-path: polygon(var(--game-hex-notch) 0, calc(100% - var(--game-hex-notch)) 0, 100% 50%, calc(100% - var(--game-hex-notch)) 100%, var(--game-hex-notch) 100%, 0 50%);
+}
+.mq-question > * { position: relative; z-index: 1; }
+
+/* Opciones: rejilla 2×2 de píldoras hexagonales */
+.mq-options { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+.mq-opt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 78px;
+  padding: 0.45rem var(--game-hex-notch) 0.45rem calc(var(--game-hex-notch) + 0.65rem);
+  text-align: left;
+  font: inherit;
+  color: var(--game-white);
+  cursor: pointer;
+  background: var(--game-border);
+  border: 0;
+  clip-path: polygon(var(--game-hex-notch) 0, calc(100% - var(--game-hex-notch)) 0, 100% 50%, calc(100% - var(--game-hex-notch)) 100%, var(--game-hex-notch) 100%, 0 50%);
+  transition: filter 160ms ease;
+}
+.mq-opt::before {
+  content: '';
+  position: absolute;
+  inset: 1.5px;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--game-pill);
+  clip-path: polygon(var(--game-hex-notch) 0, calc(100% - var(--game-hex-notch)) 0, 100% 50%, calc(100% - var(--game-hex-notch)) 100%, var(--game-hex-notch) 100%, 0 50%);
+}
+.mq-opt-letter {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--game-amber);
+  color: var(--game-letter);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.mq-opt-text { position: relative; z-index: 1; min-width: 0; overflow-wrap: anywhere; font-size: 0.93rem; line-height: 1.35; }
+#mq-app .mq-opt:hover:not(:disabled) { background: var(--game-border-hot); filter: drop-shadow(0 0 10px var(--game-glow)); }
+/* Estados: seleccionada ámbar / correcta verde / incorrecta roja */
+.mq-opt.mq-selected { background: var(--game-amber-strong); filter: drop-shadow(0 0 14px rgba(234, 179, 8, 0.45)); }
+.mq-opt.mq-selected::before { background: linear-gradient(180deg, #3a2a05 0%, #241801 100%); }
+.mq-opt.mq-correct { background: var(--game-correct); }
+.mq-opt.mq-correct::before { background: linear-gradient(180deg, #10230a 0%, #0a1605 100%); }
+.mq-opt.mq-correct .mq-opt-letter { border-color: var(--game-green); color: var(--game-green); }
+.mq-opt.mq-wrong { background: var(--game-danger); }
+.mq-opt.mq-wrong::before { background: linear-gradient(180deg, #2e0b08 0%, #1c0605 100%); }
+.mq-opt.mq-wrong .mq-opt-letter { border-color: var(--game-danger); color: #ff9d94; }
+.mq-opt.mq-dimmed { opacity: 0.22; filter: grayscale(0.9); cursor: not-allowed; }
+.mq-opt:disabled { cursor: default; }
+
+/* Comodines + retirada */
+.mq-play-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.7rem; }
+.mq-lifelines { display: flex; gap: 0.55rem; }
+.mq-lifeline {
+  min-height: 48px;
+  padding: 0.42rem 0.95rem;
+  border-radius: 9999px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--game-white);
+  cursor: pointer;
+  border: 1px solid var(--game-amber);
+  background: var(--game-panel);
+  transition: filter 150ms ease, opacity 150ms ease;
+}
+#mq-app .mq-lifeline:hover:not(:disabled) { filter: brightness(1.2); }
+.mq-lifeline.mq-used { opacity: 0.35; text-decoration: line-through; cursor: not-allowed; }
+.mq-lifeline:disabled:not(.mq-used) { opacity: 0.45; cursor: not-allowed; }
+#mq-btn-retire { font-size: 0.8rem; min-height: 44px; }
+
+/* Ayuda del público */
+.mq-audience {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--game-border);
+  border-radius: 0.9rem;
+  background: var(--game-panel);
+}
+.mq-audience-bars { display: grid; gap: 0.5rem; grid-template-columns: repeat(2, 1fr); }
+.mq-audience-row { display: grid; grid-template-columns: 1.2rem 1fr 3ch; align-items: center; gap: 0.5rem; }
+.mq-audience-letter { font-weight: 700; color: var(--game-letter); font-size: 0.85rem; }
+.mq-audience-track { height: 10px; border-radius: 9999px; background: rgba(9, 15, 40, 0.95); border: 1px solid var(--game-border); overflow: hidden; }
+.mq-audience-fill { display: block; height: 100%; background: linear-gradient(90deg, var(--oliva) 0%, var(--oliva-brillo) 100%); border-radius: 9999px; }
+.mq-audience-pct { font-variant-numeric: tabular-nums; font-size: 0.8rem; color: var(--game-muted); text-align: right; }
+
+/* Escalera de premios */
+.mq-ladder-col { min-width: 0; }
+.mq-ladder {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 2px;
+  font-size: 0.85rem;
+}
+.mq-ladder li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.28rem 0.75rem;
+  border-radius: 8px;
+  color: var(--game-muted);
+  font-variant-numeric: tabular-nums;
+}
+.mq-ladder li.mq-done { color: rgba(222, 230, 255, 0.38); }
+.mq-ladder li.mq-current {
+  background: linear-gradient(90deg, var(--game-amber) 0%, var(--game-amber-strong) 100%);
+  color: #241801;
+  font-weight: 700;
+  box-shadow: 0 0 14px rgba(234, 179, 8, 0.45);
+}
+.mq-ladder li.mq-safe::after {
+  content: 'refugio';
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--game-amber-strong);
+}
+.mq-ladder li.mq-current.mq-safe::after { color: #241801; }
+
+/* ── Feedback (pantalla propia sobre el escenario) ─────────────────── */
+.mq-screen-feedback {
+  min-height: 420px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.mq-audience-feedback { display: grid; gap: 0.9rem; justify-items: center; max-width: 620px; margin: auto; }
+.mq-feedback-title { margin: 0; font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; color: var(--game-white); }
+.mq-feedback-answer { margin: 0; color: var(--game-muted); }
+.mq-feedback-explanation {
+  margin: 0;
+  max-width: 560px;
+  padding: 0.85rem 1.1rem;
+  border-left: 3px solid var(--game-amber);
+  background: var(--game-panel);
+  border-radius: 0.6rem;
+  text-align: left;
+  color: var(--game-white);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.mq-feedback-prize { margin: 0; color: var(--game-amber-strong); font-weight: 700; }
+
+/* ── Gameover: color de título por desenlace ───────────────────────── */
+.mq-screen-gameover {
+  min-height: 460px;
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  text-align: center;
+  gap: 0.55rem;
+}
+.mq-gameover-title { margin: 0; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; }
+#mq-screen-gameover[data-outcome='win'] .mq-gameover-title { color: var(--game-amber-strong); text-shadow: 0 0 24px rgba(234, 179, 8, 0.5); }
+#mq-screen-gameover[data-outcome='lose'] .mq-gameover-title { color: var(--game-danger); }
+#mq-screen-gameover[data-outcome='retire'] .mq-gameover-title { color: var(--game-green); }
+.mq-gameover-sub { margin: 0; color: var(--game-muted); }
+.mq-gameover-prize { margin: 0.4rem 0 0; color: var(--game-muted); display: grid; }
+.mq-gameover-prize strong { font-size: clamp(1.5rem, 3.4vw, 2.2rem); color: var(--game-amber-strong); font-weight: 800; }
+.mq-gameover-stats { margin: 0.8rem auto 0; display: flex; gap: 1.6rem; }
+.mq-gameover-stats dt { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--game-muted); }
+.mq-gameover-stats dd { margin: 0; font-size: 1.3rem; font-weight: 700; color: var(--game-white); }
+.mq-gameover-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin-top: 1.1rem; }
+#mq-gameover-lifetime { margin: 0; font-size: 0.82rem; color: var(--game-muted); }
+
+/* ── Pausa (diálogo) ───────────────────────────────────────────────── */
+.mq-screen-paused {
+  min-height: 380px;
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 2.2rem 1rem;
+}
+.mq-screen-paused h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--game-white);
+}
+.mq-screen-paused p {
+  margin: 0 0 1.1rem;
+  color: var(--game-muted);
+  max-width: 42ch;
+}
+.mq-paused-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+
+/* ── Math (KaTeX client-side, Fase 5) ──────────────────────────────── */
+#mq-app .katex-display { margin: 0.35rem 0; }
+#mq-app .mq-opt-text .katex { font-size: 1em; }
+#mq-app .mq-feedback-explanation .katex-display { margin: 0.3rem 0; }
+
+/* ── Movimiento en vivo (Fase 6) ───────────────────────────────────── */
+@keyframes mq-in {
+  from { opacity: 0; transform: translateY(7px); }
+  to { opacity: 1; transform: none; }
+}
+.mq-anim { animation: mq-in 260ms ease-out both; }
+@keyframes mq-pulse-danger {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.4); }
+}
+.mq-timer.mq-warn .mq-timer-label { color: var(--game-amber-strong); }
+.mq-timer.mq-danger .mq-timer-label { color: var(--game-danger); font-weight: 700; }
+.mq-timer.mq-danger .mq-timer-fill { animation: mq-pulse-danger 1s ease-in-out infinite; }
+@keyframes mq-bar-grow { from { transform: scaleX(0); } }
+.mq-audience-fill { transform-origin: left center; animation: mq-bar-grow 550ms ease-out both; }
+.mq-audience-row:nth-child(2) .mq-audience-fill { animation-delay: 70ms; }
+.mq-audience-row:nth-child(3) .mq-audience-fill { animation-delay: 140ms; }
+.mq-audience-row:nth-child(4) .mq-audience-fill { animation-delay: 210ms; }
+@keyframes mq-ladder-flash {
+  from { box-shadow: 0 0 0 rgba(234, 179, 8, 0); }
+  to { box-shadow: 0 0 14px rgba(234, 179, 8, 0.45); }
+}
+.mq-ladder li.mq-current { animation: mq-ladder-flash 500ms ease-out; }
+/* el dimmed del 50:50 desvanece en vez de cortar */
+.mq-opt { transition: filter 160ms ease, opacity 220ms ease; }
+
+/* Respeto a reduced motion: sin animaciones decorativas */
+@media (prefers-reduced-motion: reduce) {
+  #mq-app .mq-anim,
+  #mq-app .mq-audience-fill,
+  #mq-app .mq-ladder li.mq-current,
+  #mq-app .mq-timer.mq-danger .mq-timer-fill {
+    animation: none;
+  }
+}
+
+/* ── Responsive (Fase 9) ───────────────────────────────────────────── */
+/* móvil: escalera fuera del flujo + botón para abrirla como modal */
+.mq-btn-ladder { display: none; }
+@media (max-width: 900px) {
+  .mq-play-body { grid-template-columns: 1fr; }
+  .mq-ladder-col { display: none; }
+  .mq-btn-ladder { display: inline-flex; }
+  #mq-app .mq-ladder-col {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    background: rgba(2, 4, 12, 0.78);
+  }
+  #mq-app.mq-ladder-open .mq-ladder-col {
+    display: grid;
+    place-items: center;
+    padding: 1.2rem;
+  }
+  #mq-app .mq-ladder-col .mq-ladder {
+    background: var(--game-panel);
+    border: 1px solid var(--game-border);
+    border-radius: 1rem;
+    padding: 1rem 1.25rem;
+    min-width: 230px;
+    max-height: 72vh;
+    overflow-y: auto;
+  }
+  .mq-gameover-stats { flex-wrap: wrap; gap: 1rem; justify-content: center; }
+}
+/* teléfono angosto (<420px): opciones en 1 columna y hexágono más compacto */
+@media (max-width: 420px) {
+  #mq-app { --game-hex-notch: 14px; }
+  .mq-options { grid-template-columns: 1fr; }
+  .mq-opt { min-height: 62px; }
+  .mq-question { padding: 1rem 1.8rem; font-size: 0.98rem; }
+  .mq-timer { min-width: 150px; }
+  .mq-play-header { flex-wrap: wrap; }
+  .mq-audience-bars { grid-template-columns: 1fr; }
 }

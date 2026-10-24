@@ -1,0 +1,506 @@
+{
+  "meta": {
+    "title": "¿Quién quiere ser millonario? — Ecoudea",
+    "language": "es",
+    "version": "1.0.0",
+    "updated": "2026-10-24",
+    "generator": "scripts/build-millonario.cjs",
+    "questionCount": 30,
+    "perLevel": {
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 6
+    },
+    "sources": [
+      "estadistica-ii-clase-01.md",
+      "estadistica-ii-clase-09.md",
+      "macroeconomia-i-clase-01.md",
+      "macroeconomia-i-clase-03.md",
+      "macroeconomia-i-clase-05.md"
+    ]
+  },
+  "config": {
+    "questionsPerGame": 15,
+    "timePerQuestion": 30,
+    "safeHavens": [
+      5,
+      10
+    ],
+    "lifelines": {
+      "fifty50": true,
+      "skip": true,
+      "audience": true
+    },
+    "prizes": [
+      100,
+      200,
+      300,
+      500,
+      1000,
+      2000,
+      4000,
+      8000,
+      16000,
+      32000,
+      64000,
+      125000,
+      250000,
+      500000,
+      1000000
+    ]
+  },
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "El análisis de varianza de una regresión descompone la variabilidad total de la variable respuesta como...",
+      "options": [
+        "$SCT = SCR + SCE$",
+        "$SCT = SCR - SCE$",
+        "$SCT = SCE - SCR$",
+        "$SCR = SCT + SCE$"
+      ],
+      "correct": 0,
+      "explanation": "La variación total se separa en la explicada por el modelo ($SCR$) y la no explicada ($SCE$): $SCT = SCR + SCE$.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-01.md",
+      "id": "mq-001"
+    },
+    {
+      "difficulty": 1,
+      "question": "El P-valor de una prueba de hipótesis se define como...",
+      "options": [
+        "El nivel de significancia más bajo en el que el valor observado del estadístico de prueba resulta significativo",
+        "La probabilidad de que la hipótesis nula sea verdadera",
+        "La probabilidad de cometer un error de tipo II",
+        "El tamaño del efecto detectado en la muestra"
+      ],
+      "correct": 0,
+      "explanation": "Un P-valor pequeño indica que el valor observado del estadístico es poco probable bajo $H_0$, y si es menor que $\\alpha$ se rechaza la hipótesis nula.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-09.md",
+      "id": "mq-002"
+    },
+    {
+      "difficulty": 1,
+      "question": "En la notación de la restricción presupuestaria intertemporal, ¿qué representa $Y_{\\ell t}$?",
+      "options": [
+        "El ingreso laboral real recibido por el individuo en el período $t$",
+        "El ingreso financiero generado por los activos, $r A_t$",
+        "El ingreso total del período, incluyendo los intereses",
+        "El ahorro disponible para consumir en el futuro"
+      ],
+      "correct": 0,
+      "explanation": "El ingreso total es $Y_t = Y_{\\ell t} + r A_t$; $Y_{\\ell t}$ es solo la retribución al esfuerzo productivo, y $r A_t$ es el ingreso financiero.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-003"
+    },
+    {
+      "difficulty": 1,
+      "question": "En el modelo intertemporal, $A_t$ se define como...",
+      "options": [
+        "El stock de activos financieros netos al inicio del período $t$, que puede ser positivo o negativo",
+        "El flujo de ahorro generado durante el período $t$",
+        "La tasa de interés real efectiva del período",
+        "El consumo total acumulado hasta el período $t$"
+      ],
+      "correct": 0,
+      "explanation": "$A_t$ es un stock al inicio del período: positivo si hay posición acreedora neta (depósitos, bonos, acciones) y negativo si hay posición deudora neta.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-004"
+    },
+    {
+      "difficulty": 1,
+      "question": "En la función de utilidad intertemporal $U(C_1, C_2) = u(C_1) + \\beta\\, u(C_2)$, ¿cómo se relaciona $\\beta$ con la tasa subjetiva de descuento $\\rho$?",
+      "options": [
+        "$\\beta = \\frac{1}{1 + \\rho}$",
+        "$\\beta = 1 - \\rho$",
+        "$\\beta = \\frac{1}{1 - \\rho}$",
+        "$\\beta = \\rho$"
+      ],
+      "correct": 0,
+      "explanation": "El factor de descuento subjetivo es $\\beta = 1/(1+\\rho)$: a mayor impaciencia ($\\rho$), menor peso relativo de la utilidad futura.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-03.md",
+      "id": "mq-005"
+    },
+    {
+      "difficulty": 1,
+      "question": "En la función CRRA, el caso $\\sigma \\to 1$ analizado con la Regla de L'Hôpital corresponde a la utilidad...",
+      "options": [
+        "$u(C) = \\ln C$",
+        "$u(C) = C^0$, una constante sin sentido económico",
+        "$u(C) = C - 1$",
+        "$u(C) = e^{C}$"
+      ],
+      "correct": 0,
+      "explanation": "Al aplicar L'Hôpital al límite de $u(C) = \\frac{C^{1-\\sigma}-1}{1-\\sigma}$ con $\\sigma \\to 1$ se recupera la utilidad logaritmica $\\ln C$.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-05.md",
+      "id": "mq-006"
+    },
+    {
+      "difficulty": 2,
+      "question": "En la tabla ANOVA de una regresión lineal simple, los grados de libertad asociados a $SCR$ y a $SCE$ son, respectivamente...",
+      "options": [
+        "$1$ y $n - 2$",
+        "$n - 1$ y $n - 2$",
+        "$n - 2$ y $1$",
+        "$k$ y $n - k - 1$"
+      ],
+      "correct": 0,
+      "explanation": "$\\underbrace{SCT}_{n-1} = \\underbrace{SCR}_{1} + \\underbrace{SCE}_{n-2}$; el caso simple es particular del múltiple con $k = 1$.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-01.md",
+      "id": "mq-007"
+    },
+    {
+      "difficulty": 2,
+      "question": "En una prueba de hipótesis bilateral, la hipótesis alternativa se escribe como...",
+      "options": [
+        "$H_1: \\theta \\neq \\theta_0$",
+        "$H_1: \\theta = \\theta_0$, porque acompaña a la nula",
+        "$H_1: \\theta < \\theta_0$",
+        "$H_1: \\theta > \\theta_0$"
+      ],
+      "correct": 0,
+      "explanation": "La alternativa es el complemento lógico de la nula y no contiene la igualdad; en las pruebas unilaterales es $\\theta < \\theta_0$ (izquierda) o $\\theta > \\theta_0$ (derecha).",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-09.md",
+      "id": "mq-008"
+    },
+    {
+      "difficulty": 2,
+      "question": "La ley de movimiento de activos (acumulación de activos) establece que...",
+      "options": [
+        "$A_{t+1} = Y_{\\ell t} + (1 + r)\\,A_t - C_t$",
+        "$A_{t+1} = Y_t + r\\,A_t - C_t$",
+        "$A_{t+1} = C_t + (1 + r)\\,A_t - Y_{\\ell t}$",
+        "$A_{t+1} = \\frac{Y_{\\ell t} + C_t}{1 + r} + A_t$"
+      ],
+      "correct": 0,
+      "explanation": "Se deduce de $A_{t+1} = S_t + A_t$ con $S_t = Y_{\\ell t} + r A_t - C_t$: la riqueza entrante es la riqueza previa capitalizada más el saldo neto ingreso laboral menos consumo.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-009"
+    },
+    {
+      "difficulty": 2,
+      "question": "Despejando el ahorro de la restricción del período corriente, $S_t$ equivale a...",
+      "options": [
+        "$S_t = Y_{\\ell t} + r A_t - C_t$",
+        "$S_t = Y_{\\ell t} + C_t$",
+        "$S_t = C_t - r A_t$",
+        "$S_t = (1 + r)\\,A_t - C_t$"
+      ],
+      "correct": 0,
+      "explanation": "Los ingresos totales se reparten exactamente entre consumo y ahorro: $Y_{\\ell t} + r A_t = C_t + S_t$.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-010"
+    },
+    {
+      "difficulty": 2,
+      "question": "La Ecuación de Euler del consumo óptimo en dos períodos establece que...",
+      "options": [
+        "$u'(C_1) = \\beta (1 + r)\\, u'(C_2)$",
+        "$u'(C_2) = \\beta (1 + r)\\, u'(C_1)$",
+        "$u'(C_1) = (1 + r)\\, u'(C_2)$, sin factor de descuento",
+        "$u'(C_1) = \\beta\\, u'(C_2)$, sin capitalización"
+      ],
+      "correct": 0,
+      "explanation": "Se obtiene por sustitución o por Lagrange; es la condición de primer orden del problema del consumidor intertemporal y comparte los beneficios marginales descontados y capitalizados.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-03.md",
+      "id": "mq-011"
+    },
+    {
+      "difficulty": 2,
+      "question": "Para una función de utilidad estrictamente cóncava $u$ (agente averso), la Desigualdad de Jensen establece que...",
+      "options": [
+        "$u(\\mathbb{E}[C]) > \\mathbb{E}[u(C)]$",
+        "$u(\\mathbb{E}[C]) < \\mathbb{E}[u(C)]$",
+        "$u(\\mathbb{E}[C]) = \\mathbb{E}[u(C)]$ con independencia del nivel de consumo",
+        "$u(\\mathbb{E}[C]) > \\mathbb{E}[u(C)]$ solo si $C$ es negativo"
+      ],
+      "correct": 0,
+      "explanation": "Al ser $u''(C) < 0$, la curva pasa por encima de la cuerda secante: la utilidad del promedio excede al promedio de las utilidades.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-05.md",
+      "id": "mq-012"
+    },
+    {
+      "difficulty": 3,
+      "question": "Si en una regresión $SCT = 100$ y $SCE = 30$, el coeficiente de determinación $R^2$ vale...",
+      "options": [
+        "$0.7$",
+        "$0.3$",
+        "$1.3$",
+        "$\\frac{SCE}{SCR} \\approx 0.43$"
+      ],
+      "correct": 0,
+      "explanation": "$R^2 = SCR/SCT = 1 - SCE/SCT = 1 - 30/100 = 0.7$: el $70\\%$ de la variación de $Y$ queda explicado por la relación lineal con $X$.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-01.md",
+      "id": "mq-013"
+    },
+    {
+      "difficulty": 3,
+      "question": "Rechazar la hipótesis nula cuando en realidad es verdadera constituye...",
+      "options": [
+        "Un error de tipo I",
+        "Un error de tipo II",
+        "La potencia de la prueba",
+        "Una decisión correcta con evidencia suficiente"
+      ],
+      "correct": 0,
+      "explanation": "Error tipo I = rechazar $H_0$ verdadera (probabilidad $\\alpha$); error tipo II = no rechazar una $H_0$ falsa.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-09.md",
+      "id": "mq-014"
+    },
+    {
+      "difficulty": 3,
+      "question": "La restricción presupuestaria intertemporal en horizonte finito establece que el valor presente del consumo más el activo terminal descontado equivale a...",
+      "options": [
+        "La riqueza financiera inicial $(1 + r)A_t$ más la riqueza humana (el VP de todos los ingresos laborales)",
+        "Solamente la riqueza humana, pues la riqueza financiera no financia consumo futuro",
+        "Solamente la riqueza financiera inicial, sin descontar los ingresos laborales",
+        "El producto entre la riqueza financiera y la riqueza humana"
+      ],
+      "correct": 0,
+      "explanation": "$\\sum_i \\frac{C_{t+i}}{(1+r)^i} + \\frac{A_{t+N+1}}{(1+r)^N} = (1+r)A_t + \\sum_i \\frac{Y_{\\ell t+i}}{(1+r)^i}$: se suman las dos fuentes de riqueza del horizonte de vida.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-015"
+    },
+    {
+      "difficulty": 3,
+      "question": "En la interpretación intertemporal de la tangencia óptima, la Relación Marginal de Sustitución debe igualar...",
+      "options": [
+        "El precio relativo del consumo presente frente al futuro: $P_1/P_2 = 1 + r$",
+        "El precio relativo del consumo futuro frente al presente: $P_2/P_1 = 1 + r$",
+        "La tasa subjetiva de descuento: $RMS = \\rho$",
+        "El cuadrado de la tasa de interés: $RMS = r^2$"
+      ],
+      "correct": 0,
+      "explanation": "El precio del consumo presente es $P_1 = 1$ y el del futuro en valor presente es $P_2 = 1/(1+r)$; por eso $RMS = P_1/P_2 = 1+r$, replicando la regla microeconómica $RMS = $ razón de precios.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-03.md",
+      "id": "mq-016"
+    },
+    {
+      "difficulty": 3,
+      "question": "En el problema intertemporal planteado en la clase, la existencia y unicidad de la solución está garantizada porque...",
+      "options": [
+        "$u(\\cdot)$ es estrictamente cóncava y la restricción presupuestaria es lineal",
+        "$u(\\cdot)$ es convexa y la restricción es no lineal",
+        "$\\beta$ se aproxima a cero en el limite del horizonte",
+        "El activo terminal $A_{t+N+1}$ se fija en cero"
+      ],
+      "correct": 0,
+      "explanation": "La estricta concavidad de $u$ y la linealidad de la restricción hacen del problema un sistema de $N+1$ ecuaciones con $N+1$ incógnitas con solución única garantizada.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-03.md",
+      "id": "mq-017"
+    },
+    {
+      "difficulty": 3,
+      "question": "¿Por qué para un agente averso consumir alternativamente $C_1$ bajo y $C_2$ alto rinde menos utilidad que consumir el promedio $\\mathbb{E}[C]$ de manera constante?",
+      "options": [
+        "Por la concavidad: la curva pasa por encima de la cuerda, de modo que $u(\\mathbb{E}[C]) > \\mathbb{E}[u(C)]$ (Jensen)",
+        "Porque la utilidad cóncava asigna más utilidad a niveles extremos de consumo",
+        "Porque el agente sufre de impaciencia y desprecia el consumo futuro",
+        "Porque con $C_2$ alto la utilidad marginal aumenta y domina la comparación"
+      ],
+      "correct": 0,
+      "explanation": "La combinación $(C_1, C_2)$ es una cuerda bajo la curva; el punto en la curva sobre el promedio está por encima de la cuerda. La brecha Jensen es la prima por suavizar el consumo.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-05.md",
+      "id": "mq-018"
+    },
+    {
+      "difficulty": 4,
+      "question": "En regresión lineal múltiple, al agregar al modelo una variable irrelevante (que no aporta a explicar $Y$), el $R^2$ ajustado...",
+      "options": [
+        "Disminuye, porque la pequeña reducción de $SCE$ no compensa la pérdida de un grado de libertad",
+        "Aumenta siempre, igual que el $R^2$ simple",
+        "No se modifica en absoluto",
+        "Puede aumentar pero, por construcción, nunca disminuir"
+      ],
+      "correct": 0,
+      "explanation": "$R^2_{adj} = 1 - \\frac{SCE/(n-k-1)}{SCT/(n-1)}$; la variable irrelevante baja $SCE$ muy poco y sube $k$, con lo que el ajustado cae. Esa es la razón por la que se prefiere el $R^2$ ajustado para comparar modelos.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-01.md",
+      "id": "mq-019"
+    },
+    {
+      "difficulty": 4,
+      "question": "Bajo la hipótesis nula de la prueba de significancia global en regresión múltiple $H_0: \\beta_1 = \\beta_2 = \\cdots = \\beta_k = 0$, el estadístico $F_c$ sigue una distribución...",
+      "options": [
+        "$F_{k,\\; n-k-1}$ con región crítica de una sola cola: $F > F_{\\alpha,k,n-k-1}$",
+        "$F_{1,\\; n-2}$, igual que en el caso simple, sin importar $k$",
+        "$t$ de Student con $n - k - 1$ grados de libertad",
+        "$\\chi^2_k$ de chi-cuadrado con $k$ grados de libertad"
+      ],
+      "correct": 0,
+      "explanation": "$F_c = \\frac{CMR}{CME} = \\frac{SCR/k}{SCE/(n-k-1)} \\sim F_{k,\\, n-k-1}$; valores grandes del estadístico llevan a rechazar $H_0$.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-01.md",
+      "id": "mq-020"
+    },
+    {
+      "difficulty": 4,
+      "question": "De la ley de movimiento $A_{t+2} = Y_{\\ell t+1} + (1 + r)A_{t+1} - C_{t+1}$, al despejar $A_{t+1}$ se obtiene...",
+      "options": [
+        "$A_{t+1} = \\frac{A_{t+2} + C_{t+1} - Y_{\\ell t+1}}{1 + r}$",
+        "$A_{t+1} = \\frac{A_{t+2} + Y_{\\ell t+1} - C_{t+1}}{1 + r}$",
+        "$A_{t+1} = \\frac{A_{t+2} - C_{t+1}}{Y_{\\ell t+1} - (1 + r)}$",
+        "$A_{t+1} = (1 + r)\\left(A_{t+2} + C_{t+1} - Y_{\\ell t+1}\\right)$"
+      ],
+      "correct": 0,
+      "explanation": "Es el paso previo a la iteración hacia adelante: despejar el activo en valor presente para sustituirlo sucesivamente en la ley de movimiento.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-021"
+    },
+    {
+      "difficulty": 4,
+      "question": "Al iterar la ley de movimiento hacia adelante durante $N$ períodos, los flujos intermedios de activos $A_{t+i}$...",
+      "options": [
+        "Se cancelan telescópicamente entre pasos sucesivos y desaparecen de la igualdad final",
+        "Se acumulan multiplicando el término $(1 + r)^N A_t$",
+        "Se duplican en cada paso de la sustitución",
+        "Solo se cancelan en el caso particular $r = 0$"
+      ],
+      "correct": 0,
+      "explanation": "Cada sustitución introduce el activo siguiente descontado; al generalizar $N$ veces, los acervos intermedios se cancelan entre sí y queda solo el término terminal $A_{t+N+1}/(1+r)^N$.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-022"
+    },
+    {
+      "difficulty": 4,
+      "question": "Si $\\beta(1 + r) = 1$ y $u$ es estrictamente cóncava y creciente, la Ecuación de Euler implica...",
+      "options": [
+        "$u'(C_1) = u'(C_2)$ y, por la concavidad, $C_1 = C_2$: el consumo se suaviza",
+        "Que $C_1 > C_2$ de manera inevitable para cualquier $u$",
+        "Que $C_2 > C_1$ siempre, por aversión al riesgo",
+        "Que no existe restricción alguna entre $C_1$ y $C_2$"
+      ],
+      "correct": 0,
+      "explanation": "Con $\\beta(1+r) = 1$ la Euler queda $u'(C_1) = u'(C_2)$; como $u$ es estrictamente cóncava, $u'$ es estrictamente decreciente, de modo que utilidades marginales iguales exigen $C_1 = C_2$.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-03.md",
+      "id": "mq-023"
+    },
+    {
+      "difficulty": 4,
+      "question": "¿Cómo se relaciona la magnitud de la brecha de Jensen entre $u(\\mathbb{E}[C])$ y $\\mathbb{E}[u(C)]$ con la curvatura de la CRRA, es decir con $\\sigma$?",
+      "options": [
+        "A mayor $\\sigma$, mayor curvatura de $u$ y mayor brecha: más aversión al riesgo implica un suavizado más valioso",
+        "A mayor $\\sigma$ la función se vuelve lineal y la brecha desaparece",
+        "La brecha no depende de $\\sigma$, solo del promedio de consumo",
+        "A mayor $\\sigma$ la brecha cambia de signo y el agente pasa a ser neutral"
+      ],
+      "correct": 0,
+      "explanation": "La brecha Jensen es la distancia vertical entre curva y cuerda; una $u$ más curvada ($\\sigma$ mayor) abre más esa distancia y refleja mayor aversión al riesgo.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-05.md",
+      "id": "mq-024"
+    },
+    {
+      "difficulty": 5,
+      "question": "Para el mismo punto $x_0$, el intervalo de predicción de una nueva observación $y_0$ es más amplio que el intervalo de confianza para la respuesta media porque...",
+      "options": [
+        "Suma la variabilidad propia del error $\\varepsilon$ de la nueva observación a la incertidumbre del estimador $\\hat{y}_0$",
+        "Usa un nivel de confianza mayor, $100(1-\\alpha)\\%$ con doble $\\alpha$",
+        "Cubre todas las posibles medias de $Y$ en el rango completo de $X$",
+        "Ninguno: ambos intervalos tienen la misma amplitud por construcción"
+      ],
+      "correct": 0,
+      "explanation": "$Var(\\hat{y}_0 - y_0) = \\sigma^2\\left[1 + \\frac{1}{n} + \\frac{(x_0-\\bar{X})^2}{S_{xx}}\\right]$ frente a $Var(\\hat{y}_0) = \\sigma^2\\left[\\frac{1}{n} + \\frac{(x_0-\\bar{X})^2}{S_{xx}}\\right]$: la predicción añade $\\sigma^2$, el error aleatorio de la nueva observación.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-01.md",
+      "id": "mq-025"
+    },
+    {
+      "difficulty": 5,
+      "question": "La potencia de una prueba de hipótesis se define como...",
+      "options": [
+        "$P(\\text{rechazar } H_0 \\mid H_1 \\text{ verdadera}) = 1 - P(\\text{error tipo II})$",
+        "$P(\\text{rechazar } H_0 \\mid H_0 \\text{ verdadera}) = \\alpha$",
+        "$1 - \\alpha$, el complemento del nivel de significancia",
+        "La probabilidad de que el P-valor sea menor que $\\alpha$"
+      ],
+      "correct": 0,
+      "explanation": "La potencia es la probabilidad de detectar correctamente que $H_0$ es falsa: rechazar cuando $H_1$ es verdadera, el complemento del error tipo II.",
+      "category": "estadistica",
+      "source": "estadistica-ii-clase-09.md",
+      "id": "mq-026"
+    },
+    {
+      "difficulty": 5,
+      "question": "El término $\\frac{A_{t+N+1}}{(1+r)^N}$ de la restricción de horizonte finito (herencia o activo terminal descontado) no es arbitrario, porque su valor óptimo...",
+      "options": [
+        "Lo determina la condición de transversalidad al consolidar la restricción para $N \\to \\infty$, sin esquemas Ponzi",
+        "Lo elige libremente el agente para maximizar la herencia que deja",
+        "Es siempre cero por la definición del stock de activos",
+        "Crece indefinidamente a medida que $N$ aumenta"
+      ],
+      "correct": 0,
+      "explanation": "La clase 01 deja el término como herencia descontada y anuncia que su comportamiento se fija en la condición de transversalidad (clase 02): consolidar la RPI con $N \\to \\infty$ exige que los activos terminales no exploten (condición de no-Ponzi).",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-01.md",
+      "id": "mq-027"
+    },
+    {
+      "difficulty": 5,
+      "question": "Si la tasa de interés $r$ sube permanentemente, el precio relativo del consumo presente frente al futuro y las decisiones óptimas del consumidor apuntan a que...",
+      "options": [
+        "El consumo presente se encarece en relación con el futuro (su precio, $1$, frente a $1/(1+r)$ para el futuro), de modo que la Euler tiende a desplazar el consumo hacia el futuro",
+        "El consumo futuro se encarece y el individuo consume inmediatamente más",
+        "Nada cambia, porque el precio del consumo presente es siempre 1",
+        "El consumidor siempre consume más hoy, sin ambigüedad, por puro efecto riqueza"
+      ],
+      "correct": 0,
+      "explanation": "El precio del consumo futuro en valor presente es $1/(1+r)$; al subir $r$ cae, y la condición $u'(C_1) = \\beta(1+r)\\,u'(C_2)$ impone mover utilidad marginal (consumo) hacia el período más barato, el futuro.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-03.md",
+      "id": "mq-028"
+    },
+    {
+      "difficulty": 5,
+      "question": "Un agente averso al riesgo debe elegir entre un ingreso que alterna entre 40 y 100 con igual probabilidad, o uno constante de 70 (la misma media). Razonando con la Desigualdad de Jensen, la mejor elección y su justificación son...",
+      "options": [
+        "El ingreso constante de 70, porque $u(70) > 0.5\\,u(40) + 0.5\\,u(100)$: la concavidad premia el consumo suavizado",
+        "El ingreso que alterna, porque $\\mathbb{E}[u(C)]$ siempre supera a $u(\\mathbb{E}[C])$",
+        "Indiferente, porque ambos producen exactamente la misma utilidad esperada",
+        "El ingreso que alterna, porque la utilidad crece con el consumo y 100 domina en la media"
+      ],
+      "correct": 0,
+      "explanation": "Con media $\\mathbb{E}[C] = 70$, Jensen garantiza $u(70) > \\mathbb{E}[u(C)]$ para la $u$ cóncava: prefirió la combinación convexa constante, aunque ambas canastas compartan la misma media.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-05.md",
+      "id": "mq-029"
+    },
+    {
+      "difficulty": 5,
+      "question": "Combinando CRRA y Jensen: si el parámetro $\\sigma$ pasa de muy bajo a muy alto, el comportamiento del consumidor frente a un mismo riesgo de consumo evoluciona de manera que...",
+      "options": [
+        "De una brecha Jensen muy pequeña y comportamiento casi neutral, hacia una aversión intensa: el consumidor está dispuesto a sacrificar consumo esperado para eliminar la variabilidad",
+        "De una aversión extrema a una actitud neutral, pues $\\sigma$ alto achata la función",
+        "De indiferencia a indiferencia: la variabilidad del consumo nunca importa",
+        "De aversión del riesgo a preferencia por el riesgo, pues el signo de la brecha se invierte"
+      ],
+      "correct": 0,
+      "explanation": "$\\sigma$ captura la curvatura de la CRRA; curvatura alta abre la brecha Jensen y obliga a compensar el riesgo con más consumo esperado, hasta el caso lineal ($\\sigma = 0$) donde la brecha se cierra.",
+      "category": "macroeconomia",
+      "source": "macroeconomia-i-clase-05.md",
+      "id": "mq-030"
+    }
+  ]
+}

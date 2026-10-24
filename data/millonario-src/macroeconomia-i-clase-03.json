@@ -1,0 +1,78 @@
+{
+  "class": "macroeconomia-i-clase-03",
+  "category": "macroeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "En la función de utilidad intertemporal $U(C_1, C_2) = u(C_1) + \\beta\\, u(C_2)$, ¿cómo se relaciona $\\beta$ con la tasa subjetiva de descuento $\\rho$?",
+      "options": [
+        "$\\beta = \\frac{1}{1 + \\rho}$",
+        "$\\beta = 1 - \\rho$",
+        "$\\beta = \\frac{1}{1 - \\rho}$",
+        "$\\beta = \\rho$"
+      ],
+      "correct": 0,
+      "explanation": "El factor de descuento subjetivo es $\\beta = 1/(1+\\rho)$: a mayor impaciencia ($\\rho$), menor peso relativo de la utilidad futura."
+    },
+    {
+      "difficulty": 2,
+      "question": "La Ecuación de Euler del consumo óptimo en dos períodos establece que...",
+      "options": [
+        "$u'(C_1) = \\beta (1 + r)\\, u'(C_2)$",
+        "$u'(C_2) = \\beta (1 + r)\\, u'(C_1)$",
+        "$u'(C_1) = (1 + r)\\, u'(C_2)$, sin factor de descuento",
+        "$u'(C_1) = \\beta\\, u'(C_2)$, sin capitalización"
+      ],
+      "correct": 0,
+      "explanation": "Se obtiene por sustitución o por Lagrange; es la condición de primer orden del problema del consumidor intertemporal y comparte los beneficios marginales descontados y capitalizados."
+    },
+    {
+      "difficulty": 3,
+      "question": "En la interpretación intertemporal de la tangencia óptima, la Relación Marginal de Sustitución debe igualar...",
+      "options": [
+        "El precio relativo del consumo presente frente al futuro: $P_1/P_2 = 1 + r$",
+        "El precio relativo del consumo futuro frente al presente: $P_2/P_1 = 1 + r$",
+        "La tasa subjetiva de descuento: $RMS = \\rho$",
+        "El cuadrado de la tasa de interés: $RMS = r^2$"
+      ],
+      "correct": 0,
+      "explanation": "El precio del consumo presente es $P_1 = 1$ y el del futuro en valor presente es $P_2 = 1/(1+r)$; por eso $RMS = P_1/P_2 = 1+r$, replicando la regla microeconómica $RMS = $ razón de precios."
+    },
+    {
+      "difficulty": 3,
+      "question": "En el problema intertemporal planteado en la clase, la existencia y unicidad de la solución está garantizada porque...",
+      "options": [
+        "$u(\\cdot)$ es estrictamente cóncava y la restricción presupuestaria es lineal",
+        "$u(\\cdot)$ es convexa y la restricción es no lineal",
+        "$\\beta$ se aproxima a cero en el limite del horizonte",
+        "El activo terminal $A_{t+N+1}$ se fija en cero"
+      ],
+      "correct": 0,
+      "explanation": "La estricta concavidad de $u$ y la linealidad de la restricción hacen del problema un sistema de $N+1$ ecuaciones con $N+1$ incógnitas con solución única garantizada."
+    },
+    {
+      "difficulty": 4,
+      "question": "Si $\\beta(1 + r) = 1$ y $u$ es estrictamente cóncava y creciente, la Ecuación de Euler implica...",
+      "options": [
+        "$u'(C_1) = u'(C_2)$ y, por la concavidad, $C_1 = C_2$: el consumo se suaviza",
+        "Que $C_1 > C_2$ de manera inevitable para cualquier $u$",
+        "Que $C_2 > C_1$ siempre, por aversión al riesgo",
+        "Que no existe restricción alguna entre $C_1$ y $C_2$"
+      ],
+      "correct": 0,
+      "explanation": "Con $\\beta(1+r) = 1$ la Euler queda $u'(C_1) = u'(C_2)$; como $u$ es estrictamente cóncava, $u'$ es estrictamente decreciente, de modo que utilidades marginales iguales exigen $C_1 = C_2$."
+    },
+    {
+      "difficulty": 5,
+      "question": "Si la tasa de interés $r$ sube permanentemente, el precio relativo del consumo presente frente al futuro y las decisiones óptimas del consumidor apuntan a que...",
+      "options": [
+        "El consumo presente se encarece en relación con el futuro (su precio, $1$, frente a $1/(1+r)$ para el futuro), de modo que la Euler tiende a desplazar el consumo hacia el futuro",
+        "El consumo futuro se encarece y el individuo consume inmediatamente más",
+        "Nada cambia, porque el precio del consumo presente es siempre 1",
+        "El consumidor siempre consume más hoy, sin ambigüedad, por puro efecto riqueza"
+      ],
+      "correct": 0,
+      "explanation": "El precio del consumo futuro en valor presente es $1/(1+r)$; al subir $r$ cae, y la condición $u'(C_1) = \\beta(1+r)\\,u'(C_2)$ impone mover utilidad marginal (consumo) hacia el período más barato, el futuro."
+    }
+  ]
+}

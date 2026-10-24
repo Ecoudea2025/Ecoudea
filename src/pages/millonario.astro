@@ -1,0 +1,172 @@
+---
+/**
+ * ¿Quién quiere ser millonario? — Ecoudea
+ * Juego 100 % estático client-side. FASE 2: estructura HTML/ARIA sin lógica.
+ * El motor (public/assets/js/millonario.js) controla las pantallas vía data-screen.
+ * Todas las clases del juego llevan prefijo `.mq-` para no chocar con el sitio.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import 'katex/dist/katex.min.css';
+import { url } from '../lib/url';
+
+/* Fase 9: cache-busting por build (assets públicos sin hash de nombre). */
+const mqVersion = String(Math.floor(Date.now() / 1000));
+---
+
+<BaseLayout
+  title="¿Quién quiere ser millonario? — Ecoudea"
+  description="Juego de preguntas tipo 'Quién quiere ser millonario' sobre las clases de economía de Ecoudea: 15 preguntas, 3 comodines, escalera de premios y cronómetro."
+  showTools={true}
+>
+  <Fragment slot="header"><Navbar currentPath={url(`/millonario`)} /></Fragment>
+
+  <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <nav class="flex items-center gap-2 text-sm text-text-muted mb-4">
+      <a href={url(`/`)} class="hover:text-accent transition-colors no-underline">Inicio</a>
+      <svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      <span class="text-text">Millonario</span>
+    </nav>
+
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-text mb-1 mq-title">¿Quién quiere ser <span class="mq-title-amber">millonario</span>?</h1>
+    <p class="text-text-muted max-w-2xl text-sm sm:text-base mb-6">
+      Demuestra lo que sabes de las clases de Ecoudea: 15 preguntas, 15 niveles, comodines y un cronómetro.
+      Avanzar sube la dificultad y el premio; fallar te deja en el último <em>refugio seguro</em>.
+    </p>
+
+    <div id="mq-app" class="mq-app rounded-2xl border border-border-subtle overflow-hidden" data-screen="intro">
+
+      <!-- ═══════════ PANTALLA: intro ═══════════ -->
+      <section id="mq-screen-intro" aria-labelledby="mq-intro-heading" class="mq-screen mq-screen-intro">
+        <h2 id="mq-intro-heading" class="sr-only">Portada del juego</h2>
+
+        <div class="mq-intro-hero">
+          <p class="mq-kicker">La función de utilidad, el estadístico F y la desigualdad de Jensen te esperan</p>
+          <p class=" mq-record-line">Tu récord: <strong id="mq-record">Ecopuntos 0</strong></p>
+          <ul class="mq-rules" aria-label="Reglas del juego">
+            <li><strong>15 preguntas</strong> — dificultad y premio crecientes.</li>
+            <li><strong>30 segundos</strong> por pregunta; el tiempo agotado cuenta como fallo.</li>
+            <li><strong>3 comodines</strong>: 50:50, Salta la pregunta y Ayuda del público (cada uno una vez).</li>
+            <li><strong>Puedes retirarte</strong> entre preguntas y conservar tu premio.</li>
+            <li><strong>Refugios seguros</strong> en los niveles 5 y 10: fallar por debajo de ellos garantiza ese premio.</li>
+          </ul>
+          <div class="mq-intro-actions">
+            <button id="mq-btn-start" type="button" class="mq-btn mq-btn-primary">Comenzar partida</button>
+            <label class="mq-sound-toggle">
+              <input id="mq-sound" type="checkbox" />
+              <span>Sonido</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ PANTALLA: playing ═══════════ -->
+      <section id="mq-screen-playing" hidden aria-labelledby="mq-question" class="mq-screen mq-screen-playing">
+        <div class="mq-play-header">
+          <div class="mq-level-chip" aria-live="polite">
+            <span class="mq-chip-label">Pregunta</span>
+            <span id="mq-level">1</span>
+            <span class="mq-chip-label">de 15</span>
+          </div>
+
+          <div id="mq-timer" role="progressbar" aria-label="Tiempo restante" aria-valuemin="0" aria-valuemax="30" aria-valuenow="30" class="mq-timer">
+            <div class="mq-timer-bar"><div id="mq-timer-fill" class="mq-timer-fill"></div></div>
+            <span id="mq-timer-label" class="mq-timer-label">30 s</span>
+          </div>
+
+          <button id="mq-btn-pause" type="button" class="mq-btn mq-btn-ghost" aria-label="Pausar partida">Pausa</button>
+        </div>
+
+        <div class="mq-play-body">
+          <!-- Columna principal -->
+          <div class="mq-play-main">
+            <div id="mq-question-wrap" class="mq-question-wrap" aria-live="polite">
+              <p id="mq-question" class="mq-question"></p>
+            </div>
+
+            <div id="mq-options" role="radiogroup" aria-labelledby="mq-question" class="mq-options">
+              <button type="button" role="radio" aria-checked="false" class="mq-opt" data-idx="0"><span class="mq-opt-letter">A</span><span class="mq-opt-text"></span></button>
+              <button type="button" role="radio" aria-checked="false" class="mq-opt" data-idx="1"><span class="mq-opt-letter">B</span><span class="mq-opt-text"></span></button>
+              <button type="button" role="radio" aria-checked="false" class="mq-opt" data-idx="2"><span class="mq-opt-letter">C</span><span class="mq-opt-text"></span></button>
+              <button type="button" role="radio" aria-checked="false" class="mq-opt" data-idx="3"><span class="mq-opt-letter">D</span><span class="mq-opt-text"></span></button>
+            </div>
+
+            <div class="mq-play-tools">
+              <div class="mq-lifelines" aria-label="Comodines (uno de cada uno)">
+                <button id="mq-lifeline-50" type="button" class="mq-lifeline" data-lifeline="fifty50" aria-label="Comodín 50:50: descarta dos opciones incorrectas">50:50</button>
+                <button id="mq-lifeline-skip" type="button" class="mq-lifeline" data-lifeline="skip" aria-label="Comodín Saltar: cambia la pregunta por otra del mismo nivel">Saltar</button>
+                <button id="mq-lifeline-audience" type="button" class="mq-lifeline" data-lifeline="audience" aria-label="Comodín Ayuda del público: muestra porcentajes de opinión simulados">Público</button>
+                <button id="mq-btn-ladder" type="button" class="mq-btn mq-btn-ghost mq-btn-ladder" aria-label="Ver escalera de premios" aria-expanded="false">Premios</button>
+              </div>
+              <button id="mq-btn-retire" type="button" class="mq-btn mq-btn-ghost">Retirarme y conservar el premio</button>
+            </div>
+
+            <!-- Resultado del público -->
+            <div id="mq-audience" hidden class="mq-audience" aria-label="Ayuda del público">
+              <div class="mq-audience-bars" id="mq-audience-bars"></div>
+            </div>
+          </div>
+
+          <!-- Escalera de premios -->
+          <aside class="mq-ladder-col" aria-label="Escalera de premios">
+            <ol id="mq-ladder" class="mq-ladder"></ol>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ═══════════ PANTALLA: feedback (overlay tras responder) ═══════════ -->
+      <section id="mq-screen-feedback" hidden aria-labelledby="mq-feedback-heading" class="mq-screen mq-screen-feedback">
+        <div id="mq-audience-feedback" aria-live="assertive" aria-atomic="true">
+          <h2 id="mq-feedback-heading" class="mq-feedback-title"></h2>
+          <p id="mq-feedback-answer" class="mq-feedback-answer"></p>
+          <p id="mq-feedback-explanation" class="mq-feedback-explanation"></p>
+          <p id="mq-feedback-prize" class="mq-feedback-prize" hidden></p>
+          <button id="mq-btn-next" type="button" class="mq-btn mq-btn-primary">Continuar</button>
+        </div>
+      </section>
+
+      <!-- ═══════════ PANTALLA: gameover (derrota / retirada / victoria) ═══════════ -->
+      <section id="mq-screen-gameover" hidden aria-labelledby="mq-gameover-heading" class="mq-screen mq-screen-gameover" data-outcome="lose">
+        <h2 id="mq-gameover-heading" class="mq-gameover-title"></h2>
+        <p id="mq-gameover-sub" class="mq-gameover-sub"></p>
+        <p class="mq-gameover-prize">
+          <span>Ganaste</span>
+          <strong id="mq-gameover-amount">Ecopuntos 0</strong>
+        </p>
+        <dl id="mq-gameover-stats" class="mq-gameover-stats">
+          <div><dt>Acertadas</dt><dd id="mq-stat-correct">0</dd></div>
+          <div><dt>Nivel alcanzado</dt><dd id="mq-stat-level">0</dd></div>
+          <div><dt>Récord</dt><dd id="mq-stat-record">0</dd></div>
+        </dl>
+        <p id="mq-gameover-lifetime" class="mq-gameover-lifetime"></p>
+        <div class="mq-gameover-actions">
+          <button id="mq-btn-retry" type="button" class="mq-btn mq-btn-primary">Jugar de nuevo</button>
+          <a id="mq-btn-home" class="mq-btn mq-btn-ghost" href={url(`/`)}>Volver al inicio</a>
+        </div>
+      </section>
+
+      <!-- ═══════════ PANTALLA: paused (diálogo modal) ═══════════ -->
+      <section id="mq-screen-paused" hidden role="dialog" aria-modal="true" aria-labelledby="mq-paused-heading" class="mq-screen mq-screen-paused">
+        <h2 id="mq-paused-heading">Partida en pausa</h2>
+        <p>El cronómetro está congelado. Elige cómo continuar.</p>
+        <div class="mq-paused-actions">
+          <button id="mq-btn-resume" type="button" class="mq-btn mq-btn-primary">Reanudar</button>
+          <button id="mq-btn-quit" type="button" class="mq-btn mq-btn-ghost">Abandonar (conserva el premio)</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <Fragment slot="footer"><Footer /></Fragment>
+  <!-- Fase 5: KaTeX client-side (las fuentes van empaquetadas con el CSS del page) -->
+  <script>
+    import katex from 'katex';
+    import { katexMacros } from '../lib/katex-macros.mjs';
+    window.katex = katex;
+    window.katexMacros = katexMacros;
+    if (window.MQ && typeof window.MQ.refreshMath === 'function') window.MQ.refreshMath();
+  </script>
+  <script defer src={url(`/assets/js/millonario.js?v=${mqVersion}`)}></script>
+</BaseLayout>
+</BaseLayout>

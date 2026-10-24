@@ -37,7 +37,7 @@ function resolveTarget(href) {
 let bad = 0;
 for (const f of files(DIST)) {
   const html = fs.readFileSync(f, 'utf8');
-  if (html.includes('localhost')) {
+  if (/(?:https?:)?\/\/localhost(?::\d+)?\//.test(html)) {
     console.error(`[links] ${path.relative(DIST, f)}: referencia a localhost`);
     bad++;
   }

@@ -1,0 +1,54 @@
+{
+  "class": "estadistica-ii-clase-09",
+  "category": "estadistica",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "El P-valor de una prueba de hipótesis se define como...",
+      "options": [
+        "El nivel de significancia más bajo en el que el valor observado del estadístico de prueba resulta significativo",
+        "La probabilidad de que la hipótesis nula sea verdadera",
+        "La probabilidad de cometer un error de tipo II",
+        "El tamaño del efecto detectado en la muestra"
+      ],
+      "correct": 0,
+      "explanation": "Un P-valor pequeño indica que el valor observado del estadístico es poco probable bajo $H_0$, y si es menor que $\\alpha$ se rechaza la hipótesis nula."
+    },
+    {
+      "difficulty": 2,
+      "question": "En una prueba de hipótesis bilateral, la hipótesis alternativa se escribe como...",
+      "options": [
+        "$H_1: \\theta \\neq \\theta_0$",
+        "$H_1: \\theta = \\theta_0$, porque acompaña a la nula",
+        "$H_1: \\theta < \\theta_0$",
+        "$H_1: \\theta > \\theta_0$"
+      ],
+      "correct": 0,
+      "explanation": "La alternativa es el complemento lógico de la nula y no contiene la igualdad; en las pruebas unilaterales es $\\theta < \\theta_0$ (izquierda) o $\\theta > \\theta_0$ (derecha)."
+    },
+    {
+      "difficulty": 3,
+      "question": "Rechazar la hipótesis nula cuando en realidad es verdadera constituye...",
+      "options": [
+        "Un error de tipo I",
+        "Un error de tipo II",
+        "La potencia de la prueba",
+        "Una decisión correcta con evidencia suficiente"
+      ],
+      "correct": 0,
+      "explanation": "Error tipo I = rechazar $H_0$ verdadera (probabilidad $\\alpha$); error tipo II = no rechazar una $H_0$ falsa."
+    },
+    {
+      "difficulty": 5,
+      "question": "La potencia de una prueba de hipótesis se define como...",
+      "options": [
+        "$P(\\text{rechazar } H_0 \\mid H_1 \\text{ verdadera}) = 1 - P(\\text{error tipo II})$",
+        "$P(\\text{rechazar } H_0 \\mid H_0 \\text{ verdadera}) = \\alpha$",
+        "$1 - \\alpha$, el complemento del nivel de significancia",
+        "La probabilidad de que el P-valor sea menor que $\\alpha$"
+      ],
+      "correct": 0,
+      "explanation": "La potencia es la probabilidad de detectar correctamente que $H_0$ es falsa: rechazar cuando $H_1$ es verdadera, el complemento del error tipo II."
+    }
+  ]
+}
