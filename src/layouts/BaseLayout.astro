@@ -78,5 +78,26 @@ const canonical = Astro.url;
     <script is:inline>
       if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost')){const b=document.querySelector('meta[name="astro-base"]')?.content||'';navigator.serviceWorker.register(b+'/sw.js',{scope:b+'/'}).catch(()=>{})}
     </script>
+    <script is:inline>
+      (function () {
+        function go() {
+          var h = location.hash;
+          if (!h || h.length < 2) return;
+          var el = null;
+          try { el = document.getElementById(decodeURIComponent(h.slice(1))); } catch (e) { el = document.getElementById(h.slice(1)); }
+          if (!el) return;
+          requestAnimationFrame(function () {
+            var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var y = el.getBoundingClientRect().top + window.scrollY - 120;
+            window.scrollTo({ top: Math.max(0, y), behavior: reduce ? 'auto' : 'smooth' });
+            el.classList.add('flash-target');
+            setTimeout(function () { el.classList.remove('flash-target'); }, 1600);
+          });
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go);
+        else setTimeout(go, 0);
+        window.addEventListener('hashchange', go);
+      })();
+    </script>
   </body>
 </html>
