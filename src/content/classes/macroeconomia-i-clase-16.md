@@ -7,8 +7,6 @@ description: "Efecto de la inflación e independencia del Banco Central, deducci
 math: true
 ---
 
----
----
 
 Inflación, Deuda Real e Independencia del Banco Central
 -------------------------------------------------------

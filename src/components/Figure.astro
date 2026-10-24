@@ -35,15 +35,3 @@ if (!light || !dark) {
     </details>
   )}
 </figure>
-
-<style>
-  .eco-figure .fig-dark { display: none; }
-  :root[data-theme="dark"] .eco-figure .fig-light { display: none; }
-  :root[data-theme="dark"] .eco-figure .fig-dark { display: block; }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme]) .eco-figure .fig-light { display: none; }
-    :root:not([data-theme]) .eco-figure .fig-dark { display: block; }
-  }
-  :root[data-theme="light"] .eco-figure .fig-light { display: block; }
-  :root[data-theme="light"] .eco-figure .fig-dark { display: none; }
-</style>

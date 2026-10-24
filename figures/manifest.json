@@ -6,6 +6,55 @@
       "title": "Equilibrio de mercado y excedentes",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-23"
+    },
+    {
+      "id": "macroeconomia/linea-tiempo",
+      "script": "figures/macro_linea_tiempo.py",
+      "title": "Línea de tiempo intertemporal de flujos",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/curvas-indiferencia",
+      "script": "figures/macro_curvas_indiferencia.py",
+      "title": "Mapa de curvas de indiferencia intertemporales",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/factor-descuento",
+      "script": "figures/macro_factor_descuento.py",
+      "title": "Trayectorias del factor subjetivo de descuento",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/equilibrio",
+      "script": "figures/macro_equilibrio.py",
+      "title": "Equilibrio del consumidor intertemporal",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/alza-r",
+      "script": "figures/macro_alza_r.py",
+      "title": "Efecto de un alza en la tasa de interés real",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/jensen",
+      "script": "figures/macro_jensen.py",
+      "title": "Desigualdad de Jensen y concavidad",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
+    },
+    {
+      "id": "macroeconomia/senda-expansion",
+      "script": "figures/macro_senda_expansion.py",
+      "title": "Senda de expansión del consumo",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-24"
     }
   ]
 }

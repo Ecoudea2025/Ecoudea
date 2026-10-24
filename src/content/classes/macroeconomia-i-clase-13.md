@@ -7,8 +7,6 @@ description: "Cálculo paso a paso, verificación de signos, análisis de concav
 math: true
 ---
 
----
----
 
 La Ecuación Estructural de la Inversión
 ---------------------------------------

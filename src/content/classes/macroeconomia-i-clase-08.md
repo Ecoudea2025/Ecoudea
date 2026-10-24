@@ -7,8 +7,6 @@ description: "Comparación analítica de choques futuros de ingreso, diferencial
 math: true
 ---
 
----
----
 
 Sensibilidad del Consumo ante Ingresos Futuros ($r > 0$)
 --------------------------------------------------------

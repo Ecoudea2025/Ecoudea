@@ -7,8 +7,6 @@ description: "Deducción de la relación exacta y aproximada de Fisher entre tas
 math: true
 ---
 
----
----
 
 ¿Qué Determina la Tasa de Arrendamiento del Capital ($R_t$)?
 ------------------------------------------------------------

@@ -7,8 +7,6 @@ description: "Resolución del problema del consumidor en dos períodos por susti
 math: true
 ---
 
----
----
 
 El Problema de Optimización del Consumidor
 ------------------------------------------
@@ -235,11 +233,20 @@ $$
 * **Si `$\sigma > 1 \iff EIS < 1$`:** El individuo tiene una fuerte preferencia por la estabilidad del consumo. Domina el efecto ingreso para un ahorrador.
 * **Si `$\sigma = 1 \iff EIS = 1$` (Caso Logarítmico):** El efecto sustitución y el efecto ingreso se compensan exactamente cuando la dotación futura es cero, haciendo que la tasa de ahorro sea independiente de `$r$`.
 
-> **Espacio para gráfica 4:** *Equilibrio del consumidor intertemporal en el plano `$(C_1, C_2)$`.*
-> Tangencia entre la curva de indiferencia más alta alcanzable y la recta presupuestaria intertemporal con pendiente `$-(1+r)$`, mostrando la posición del punto de dotación `$(Y_1, Y_2)$` y la canasta óptima `$(C_1^*, C_2^*)$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/equilibrio-light.svg" alt="Recta presupuestaria tangente a una curva de indiferencia en el óptimo, con punto de dotación marcado." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/equilibrio-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: tangencia entre la recta presupuestaria y la indiferencia más alta, con dotación W y óptimo E estrella.</figcaption>
+</figure>
 
-> **Espacio para gráfica 5:** *Efecto de un alza en la tasa de interés real.*
-> Rotación de la restricción presupuestaria sobre el punto de dotación y descomposición gráfica en efecto sustitución y efecto ingreso.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/alza-r-light.svg" alt="Dos rectas presupuestarias que rotan sobre la dotación, con óptimo inicial y nuevo óptimo." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/alza-r-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: un alza de la tasa de interés rota la restricción sobre la dotación, del óptimo E0 al E1.</figcaption>
+</figure>
 
-> **Espacio para gráfica 6:** *Concavidad y preferencia por la suavización del consumo.*
-> Ilustración de la desigualdad de Jensen en la función de utilidad `$u(C)$`, mostrando que `$u(\bar{C}) > \lambda u(C_1) + (1-\lambda)u(C_2)$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/jensen-light.svg" alt="Función cóncava con cuerda por debajo y punto medio destacado sobre la curva." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/jensen-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: con utilidad cóncava, el valor en el promedio supera el promedio de los valores.</figcaption>
+</figure>

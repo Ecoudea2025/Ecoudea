@@ -7,8 +7,6 @@ description: "Deducción formal de la hipótesis del ingreso permanente de Fried
 math: true
 ---
 
----
----
 
 Fundamentos de las Teorías Modernas del Consumo
 -----------------------------------------------

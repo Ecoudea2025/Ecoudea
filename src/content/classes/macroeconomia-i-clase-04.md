@@ -7,8 +7,6 @@ description: "Resolución paso a paso del problema intertemporal con función Co
 math: true
 ---
 
----
----
 
 Estructura General del Equilibrio del Consumidor
 ------------------------------------------------
@@ -132,8 +130,11 @@ $$
 \begin{align*}C_2 = \frac{(1 + r)(1 - \alpha)}{\alpha} C_1 \tag{4.5}\end{align*}
 $$
 
-> **Espacio para gráfica 1:** *Mapa de curvas de indiferencia y senda de expansión del consumo.*
-> En el plano `$(C_1, C_2)$`, representación de una familia de curvas de indiferencia convexas junto con la línea recta que parte del origen con pendiente `$\frac{(1+r)(1-\alpha)}{\alpha}$` (ecuación 5), uniendo todos los puntos de tangencia óptima para distintos niveles de riqueza.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/senda-expansion-light.svg" alt="Rayo desde el origen cruzando tres curvas de indiferencia en los óptimos E1, E2 y E3." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/senda-expansion-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la senda de expansión une los óptimos al variar la riqueza.</figcaption>
+</figure>
 
 ### Paso 5: Sustitución en la R.P.I. para Hallar $C_1^*$ y $C_2^*$
 

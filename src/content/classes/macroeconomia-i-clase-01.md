@@ -167,5 +167,8 @@ $$
 
 3. **El término terminal `$\frac{A_{t+N+1}}{(1 + r)^N}$`:** Representa los recursos que quedan al final del horizonte de planificación. En la siguiente clase analizaremos su comportamiento a través de la condición de transversalidad.
 
-> **Espacio para gráfica 1:** *Línea de tiempo intertemporal de flujos de ingresos, consumo y acumulación de activos.*
-> Diagrama horizontal que ilustra la secuencia temporal `$t, t+1, \ldots, t+N$`, señalando en cada nodo la entrada de ingreso laboral `$Y_{\ell t}$`, la salida de consumo `$C_t$`, el flujo de ahorro `$S_t$` y la transferencia del stock capitalizado `$(1+r)A_t$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/linea-tiempo-light.svg" alt="Línea de tiempo con nodos de t a t+3, flechas de ingreso y consumo, y transferencia del ahorro capitalizado." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/linea-tiempo-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: línea de tiempo intertemporal: en cada período entra el ingreso laboral, sale el consumo y el ahorro se transfiere capitalizado.</figcaption>
+</figure>

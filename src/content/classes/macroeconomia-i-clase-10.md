@@ -7,8 +7,6 @@ description: "Deducción algebraica del consumo constante en el modelo del ciclo
 math: true
 ---
 
----
----
 
 El Modelo del Ciclo de Vida
 ---------------------------

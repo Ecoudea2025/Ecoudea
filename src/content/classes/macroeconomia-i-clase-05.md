@@ -7,8 +7,6 @@ description: "Análisis geométrico y analítico de la función CRRA, aversión 
 math: true
 ---
 
----
----
 
 Geometría de la Concavidad y Desigualdad de Jensen
 --------------------------------------------------

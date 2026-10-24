@@ -10,10 +10,10 @@ const CLASSES = path.join(ROOT, 'src', 'content', 'classes');
 const OUT = path.join(ROOT, 'src', 'lib', 'ecuaciones.json');
 
 function frontmatter(text) {
-  const m = text.match(/^---\n([\s\S]*?)\n---\n?/);
+  const m = text.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   const body = m ? text.slice(m[0].length) : text;
   const fm = (m ? m[1] : '');
-  const get = (k) => (fm.match(new RegExp(`^${k}:\\s*\"?([^\"\\n]+)\"?`, 'm')) || [])[1] || '';
+  const get = (k) => (fm.match(new RegExp(`^${k}:\\s*\"?([^\"\\r\\n]+)\"?`, 'm')) || [])[1] || '';
   return { body, course: get('course').trim(), draft: /^\s*draft:\s*true/m.test(fm) };
 }
 

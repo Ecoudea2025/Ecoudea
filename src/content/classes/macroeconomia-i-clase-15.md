@@ -7,8 +7,6 @@ description: "Definición de déficit primario y déficit total, deducción iter
 math: true
 ---
 
----
----
 
 Contabilidad Fiscal: Déficit Primario y Déficit Total
 -----------------------------------------------------

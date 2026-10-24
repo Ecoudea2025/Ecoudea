@@ -7,8 +7,6 @@ description: "Derivación analítica general del impacto de la tasa de interés 
 math: true
 ---
 
----
----
 
 Análisis General de $\frac{\partial C_1^*}{\partial r}$ bajo Preferencias CRRA
 ------------------------------------------------------------------------------

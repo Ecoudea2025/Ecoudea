@@ -7,8 +7,6 @@ description: "Maximización intertemporal del valor presente de la firma con cos
 math: true
 ---
 
----
----
 
 El Problema Intertemporal de la Firma
 -------------------------------------

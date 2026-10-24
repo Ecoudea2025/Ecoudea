@@ -7,8 +7,6 @@ description: "Condición de no-Ponzi, consolidación de la restricción intertem
 math: true
 ---
 
----
----
 
 La Condición de Transversalidad y el Esquema de No-Ponzi
 --------------------------------------------------------
@@ -157,8 +155,14 @@ $$
 
 La trayectoria temporal de `$\beta^i$` muestra una caída mucho más pronunciada para el agente 1 que para el agente 3.
 
-> **Espacio para gráfica 2:** *Curvas de indiferencia intertemporales y mapa de nivel.*
-> Representación en el plano `$(C_1, C_2)$` de curvas de indiferencia estrictamente convexas al origen, mostrando que combinaciones intermedias de consumo son estrictamente preferidas a esquemas de consumo extremos (aversión a las fluctuaciones).
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/curvas-indiferencia-light.svg" alt="Tres curvas de indiferencia convexas con un punto intermedio preferido sobre un punto extremo." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/curvas-indiferencia-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: mapa de indiferencia: un punto intermedio sobre una curva más alta domina un consumo extremo.</figcaption>
+</figure>
 
-> **Espacio para gráfica 3:** *Trayectorias del factor subjetivo de descuento `$\beta^t$`.*
-> Gráfica de `$\beta^t$` en función del tiempo `$t$`, partiendo de 1 en `$t=0$` y decayendo asintóticamente hacia 0, comparando tres curvas para `$\rho_1 > \rho_2 > \rho_3$`.
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/factor-descuento-light.svg" alt="Tres curvas decrecientes del factor de descuento en el tiempo, una por cada grado de impaciencia." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/factor-descuento-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: el factor de descuento decae desde 1; a mayor impaciencia, caída más rápida.</figcaption>
+</figure>

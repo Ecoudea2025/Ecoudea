@@ -7,8 +7,6 @@ description: "Desarrollo directo paso a paso del problema de maximización con u
 math: true
 ---
 
----
----
 
 Planteamiento del Ejercicio
 ---------------------------

@@ -7,8 +7,6 @@ description: "Demanda de factores productivos, propiedades de la función de pro
 math: true
 ---
 
----
----
 
 Demanda de Factores Productivos y el Problema de la Firma
 ---------------------------------------------------------

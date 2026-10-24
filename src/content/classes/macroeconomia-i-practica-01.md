@@ -7,10 +7,6 @@ description: "Ejercicios sobre: - Restricción Presupuestaria Intertemporal y Co
 math: true
 ---
 
----
-math: true
----
-
 ## Lista de ejercicios
 
 1.  Suponga un consumidor que vive dos períodos (`$t = 1, 2$`) y cuyas
@@ -28,28 +24,28 @@ math: true
     \begin{align*}C_1 + \frac{C_2}{1 + r} = Y_1 - T_1 + \frac{Y_2 - T_2}{1 + r}\end{align*}
     $$
 
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Explique el significado económico de cada uno de los tres parámetros
     de la función de utilidad ($\bar{C}$, $\alpha$ y $\rho$).
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Explique por qué en esta formulación no aparece explícitamente el
     parámetro del factor subjetivo de descuento $\beta = \frac{1}{1+\delta}$
     y cuál de los parámetros de la función recoge implícitamente la
     impaciencia del individuo (y bajo qué condición matemática el agente
     prefiere el consumo presente sobre el futuro).
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Plantee el Lagrangiano, encuentre las condiciones de primer orden y
     deduzca paso a paso las demandas óptimas de consumo $C_1^*$ y $C_2^*$.
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Explique detalladamente por qué la función de consumo encontrada
     ofrece una teoría superior a la función de consumo keynesiana
     tradicional ($C_t = \bar{C} + cY_t$).
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 2.  Ahora suponga una economía de tres períodos (`$t = 1, 2, 3$`) donde las
     preferencias del hogar son de tipo Cobb-Douglas:
@@ -66,51 +62,51 @@ math: true
     \begin{align*}(1 + \tau_c)C_1 + \frac{(1 + \tau_c)C_2}{1 + r} + \frac{(1 + \tau_c)C_3}{(1 + r)^2} = (1 - \tau_y)Y_1 + \frac{(1 - \tau_y)Y_2}{1 + r} + \frac{(1 - \tau_y)Y_3}{(1 + r)^2}\end{align*}
     $$
 
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Plantee el Lagrangiano y demuestre paso a paso que la demanda óptima
     de consumo en el primer período viene dada por:
     $$C_1^* = \frac{\alpha}{1 + \tau_c} \left[ Y_1(1 - \tau_y) + \frac{Y_2(1 - \tau_y)}{1 + r} + \frac{Y_3(1 - \tau_y)}{(1 + r)^2} \right]$$
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Indique y justifique formalmente si la ecuación de presupuesto
     intertemporal de este problema cumple con la condición de
     transversalidad (y qué supuestos sobre $A_1$ y $A_4$ están implícitos).
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Calcule analíticamente las derivadas parciales $\frac{\partial C_1^*}{\partial r}$,
     $\frac{\partial C_1^*}{\partial \tau_c}$ y $\frac{\partial C_1^*}{\partial \tau_y}$,
     verifique sus signos e interprete las distorsiones fiscales y el
     balance entre efecto sustitución y efecto riqueza.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 3.  A partir de la función de consumo óptimo `$C_1^*$` obtenida en el
     Ejercicio 2, analice la respuesta del consumidor frente a distintos
     choques en su sendero de ingresos:
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Determine la propensión marginal a consumir hoy ante un choque
     transitorio concentrado en el primer período ($\Delta Y_1 &gt; 0$, con
     $\Delta Y_2 = \Delta Y_3 = 0$) y compárela con un choque transitorio
     anunciado para el tercer período ($\Delta Y_3 &gt; 0$). ¿Qué ocurre con
     el ahorro corriente $S_1^*$ en cada uno de los dos casos?
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Utilizando el diferencial total, calcule la propensión marginal a
     consumir ante una variación permanente del ingreso en todos los
     períodos ($\Delta Y_1 = \Delta Y_2 = \Delta Y_3 = \Delta \bar{Y}$).
     Demuestre matemáticamente por qué $PMC_{\text{permanente}} &gt; PMC_{\text{transitorio}}$.
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;b&gt;Entorno de incertidumbre:&lt;/b&gt; Suponga que el individuo asigna una
+    </li>
+    <li>
+    <b>Entorno de incertidumbre:</b> Suponga que el individuo asigna una
     probabilidad subjetiva $p \in (0, 1)$ a que un aumento del ingreso hoy
     sea exclusivamente transitorio, y una probabilidad $(1 - p)$ a que se
     trate de una mejora permanente. Formule el valor esperado
     $\mathbb{E}[PMC]$ y analice cómo responde el consumo y el ahorro ante
     variaciones en el grado de incertidumbre $p$.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 4.  Considere un consumidor con preferencias aditivas separables y
     función de utilidad instantánea de Aversión Relativa al Riesgo
@@ -120,93 +116,93 @@ math: true
     \begin{align*}u(C_t) = \frac{C_t^{1 - \sigma} - 1}{1 - \sigma}, \quad \sigma > 0\end{align*}
     $$
 
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
-    Explique mediante la &lt;b&gt;Desigualdad de Jensen&lt;/b&gt; por qué la
+    <ol type="a">
+    <li>
+    Explique mediante la <b>Desigualdad de Jensen</b> por qué la
     concavidad estricta de $u(C_t)$ implica aversión a las fluctuaciones
     bruscas del consumo y demuestre paso a paso (usando la Regla de
-    L&#39;Hôpital) que cuando $\sigma \to 1$ se obtiene $u(C_t) = \ln(C_t)$.
-    &lt;/li&gt;
-    &lt;li&gt;
+    L'Hôpital) que cuando $\sigma \to 1$ se obtiene $u(C_t) = \ln(C_t)$.
+    </li>
+    <li>
     A partir de la demanda óptima en dos períodos:
     $$C_1^* = \left[ Y_1 + \frac{Y_2}{1 + r} \right] \left( 1 + (1 + r)^{\frac{1}{\sigma} - 1} \beta^{\frac{1}{\sigma}} \right)^{-1}$$
     asuma inicialmente que $Y_2 = 0$ y demuestre analíticamente cómo el
     signo de $\frac{\partial C_1^*}{\partial r}$ y de $\frac{\partial S_1^*}{\partial r}$
     depende de los tres regímenes del parámetro $\sigma$ ($\sigma = 1$,
     $0 &lt; \sigma &lt; 1$ y $\sigma &gt; 1$).
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Explique cómo se modifica su resultado anterior cuando $Y_2 &gt; 0$,
     particularmente en el caso logarítmico ($\sigma = 1$).
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 5.  En presencia de imperfecciones en el mercado de capitales, los
     hogares enfrentan restricciones de liquidez cuantitativas o vía
     precios por riesgo de impago:
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Si la tasa de interés libre de riesgo es $r^*$ y existe una
     probabilidad $p \in [0, 1)$ de que el deudor incumpla el pago de su
     deuda (recibiendo el banco $0$ en caso de impago), deduzca la tasa de
     interés efectiva $r$ que cobra un intermediario financiero competitivo
     y analice sus límites cuando $p \to 0$ y $p \to 1$.
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Explique y contraste gráficamente en el plano $(C_1, C_2)$ la pérdida
     de bienestar que sufre un consumidor deudor cuando enfrenta una
-    &lt;b&gt;restricción cuantitativa total&lt;/b&gt; ($C_1 \leq Y_1$) frente a cuando
-    enfrenta una &lt;b&gt;prima por riesgo de impago&lt;/b&gt; ($r &gt; r^*$ para $C_1 &gt; Y_1$),
-    distinguiendo entre las asignaciones &lt;i&gt;First Best&lt;/i&gt;, &lt;i&gt;Second Best&lt;/i&gt;
+    <b>restricción cuantitativa total</b> ($C_1 \leq Y_1$) frente a cuando
+    enfrenta una <b>prima por riesgo de impago</b> ($r &gt; r^*$ para $C_1 &gt; Y_1$),
+    distinguiendo entre las asignaciones <i>First Best</i>, <i>Second Best</i>
     y solución de esquina.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 6.  Considere un individuo que planifica su consumo bajo la **Teoría del
     Ciclo de Vida** en un horizonte infinito con tasa de interés real
     constante `$r > 0$`, activos iniciales `$A_t$` e ingresos laborales
     gravados a una tasa proporcional `$\tau$`:
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Si el agente desea mantener un flujo de consumo constante $C_{t+i}^* = \bar{C}$,
     demuestre paso a paso utilizando las propiedades de las series
     geométricas ($\phi \equiv \frac{1}{1+r} &lt; 1$) que el nivel óptimo de
     consumo permanente viene dado por:
     $$\bar{C} = r A_t + \frac{r}{1 + r} \sum_{i=0}^\infty \frac{Y_{\ell t+i}(1 - \tau)}{(1 + r)^i}$$
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Particione la expresión anterior en las tres etapas vitales (edad no
     productiva de $0$ a $15$ años, edad productiva de $16$ a $60$ años, y
     retiro de $61$ a $78$ años) e interprete el comportamiento del ahorro
     en cada etapa.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 7.  Considere el modelo neoclásico de inversión donde una firma
     competitiva opera con tecnología Cobb-Douglas `$Y_t = A_t K_t^\alpha N_t^{1-\alpha}$`
     y enfrenta costos cuadráticos de ajuste del capital:
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Enuncie las cuatro propiedades matemáticas de la función de
     producción neoclásica y deduzca el stock de capital deseado $K_t^*$ a
     partir de la maximización de beneficios $\Pi_t = P_t Y_t - W_t N_t - R_t K_t$.
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Deduzca la expresión del costo de uso del capital
     $$R_t = P_K \left[ r + \delta - \left( \frac{\Delta P_K}{P_K} - \pi \right) \right]$$
     y explique qué implica una alta tasa de inflación general $\pi$ (y la
     falta de indexación tributaria de la depreciación) para la
     acumulación de capital.
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Minimizando la función de costos de ajuste $C(I_t) = \epsilon(K_{t+1} - K^*)^2 + (1 - \epsilon)(K_{t+1} - K_t)^2$,
     deduzca la ecuación de inversión neta:
     $$I_t = \epsilon \left[ \left( \frac{P_t \alpha A_t}{P_K (r + \delta)} \right)^{\frac{1}{1 - \alpha}} N_t - K_t \right]$$
     Explique el significado económico de $\epsilon \in (0, 1)$, por qué es
     costoso operar fuera de $K^*$, y calcule e interprete el signo de
     $\frac{\partial I_t}{\partial r}$, $\frac{\partial I_t}{\partial A_t}$ y $\frac{\partial I_t}{\partial K_t}$.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 8.  Suponga que una firma competitiva maximiza el valor presente de sus
     flujos de beneficios intertemporales sujeta a la ley de acumulación
@@ -218,58 +214,58 @@ math: true
     $$
 
     *(o en su formulación general convexa `$C(I_t)$`)*:
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Explique económicamente esta función de costos de ajuste y resuelva
     el problema de optimización intertemporal de la firma para encontrar
     la condición de primer orden respecto a $K_{t+1}$.
-    &lt;/li&gt;
-    &lt;li&gt;
-    Defina la $q$ marginal de Tobin ($q_t \equiv 1 + C&#39;(I_t)$) y explique
+    </li>
+    <li>
+    Defina la $q$ marginal de Tobin ($q_t \equiv 1 + C'(I_t)$) y explique
     las siguientes dos expresiones fundamentales:
-    $$q_t = \frac{f&#39;(K_{t+1}) - \delta + q_{t+1}}{1 + r} \qquad \text{y} \qquad r = \frac{f&#39;(K_{t+1}) - \delta}{q_t} + \frac{\Delta q_{t+1}}{q_t}$$
-    &lt;/li&gt;
-    &lt;li&gt;
+    $$q_t = \frac{f'(K_{t+1}) - \delta + q_{t+1}}{1 + r} \qquad \text{y} \qquad r = \frac{f'(K_{t+1}) - \delta}{q_t} + \frac{\Delta q_{t+1}}{q_t}$$
+    </li>
+    <li>
     Itere hacia adelante la ecuación de $q_t$, enuncie la condición de
     transversalidad (ausencia de burbujas especulativas) y formule el
     valor esperado $\mathbb{E}_t[q_t]$ cuando la productividad futura
     puede tomar dos estados discretos: un escenario favorable $\bar{A}$
     con probabilidad $\theta$ y un escenario adverso $\underline{A}$ con
     probabilidad $(1 - \theta)$.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 9.  Considere la restricción presupuestaria del gobierno y la dinámica de
     la deuda pública:
-    &lt;ol type=&quot;a&quot;&gt;
-    &lt;li&gt;
+    <ol type="a">
+    <li>
     Partiendo de la identidad del déficit total $\Delta B_{t+1} = B_{t+1} - B_t = G_t - T_t + r B_t$,
     itere hacia adelante para deducir la Restricción Presupuestaria
     Intertemporal del Gobierno:
     $$(1 + r)B_t = \sum_{s=0}^\infty \frac{T_{t+s} - G_{t+s}}{(1 + r)^s}$$
     Explique su significado económico y argumente analíticamente por qué
     es indispensable la condición de no-juego Ponzi.
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Demuestre cómo se transforma la ley de evolución de la deuda al
     expresarla primero en términos reales con inflación $\pi$, y luego
     como proporción del PIB real ($b_t = B_t / Y_t$) cuando la economía
     crece a la tasa $\gamma_y$:
     $$b_{t+1} = \frac{g_t - t_t}{1 + \gamma_y} + \left( \frac{1 + r}{1 + \gamma_y} \right) b_t \iff b_{t+1} - b_t = \frac{g_t - t_t}{1 + \gamma_y} + \left( \frac{r - \gamma_y}{1 + \gamma_y} \right) b_t$$
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Definiendo $\varphi \equiv \frac{g_t - t_t}{1 + \gamma_y}$ y $\rho \equiv \frac{1 + r}{1 + \gamma_y}$,
     itere la ecuación $N$ períodos hacia adelante ($b_{t+N} = \sum_{i=1}^N \varphi \rho^{i-1} + \rho^N b_t$),
     distinga el comportamiento de la deuda cuando $r &gt; \gamma_y$ frente a
     cuando $r &lt; \gamma_y$, y deduzca el nivel de deuda de estado
     estacionario $\bar{b} = \frac{g_t - t_t}{\gamma_y - r}$.
-    &lt;/li&gt;
-    &lt;li&gt;
+    </li>
+    <li>
     Demuestre matemáticamente que si la deuda pública como proporción del
     PIB es sostenible, también se cumple la restricción de presupuesto
     intertemporal del gobierno.
-    &lt;/li&gt;
-    &lt;/ol&gt;
+    </li>
+    </ol>
 
 
 ## Solucionario y Guía Analítica Paso a Paso
