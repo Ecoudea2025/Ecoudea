@@ -27,6 +27,22 @@
     optimizeImages(scope);
     accessibleMath(scope);
     copyableMath(scope);
+    linkTerms(scope);
+  }
+
+  // ── TÉRMINOS DEL GLOSARIO (<Term id> → enlace) ────────────────────
+  // Sin JS el término se lee igual (estilo punteado por CSS); con JS enlaza.
+  function linkTerms(scope) {
+    var base = document.querySelector('meta[name="astro-base"]')?.content || '';
+    var terms = (scope || document).querySelectorAll('term[id]:not([data-linked])');
+    terms.forEach(function (t) {
+      t.setAttribute('data-linked', '1');
+      var a = document.createElement('a');
+      a.href = base + '/glosario#term-' + t.getAttribute('id');
+      a.className = 'term-ref';
+      while (t.firstChild) a.appendChild(t.firstChild);
+      t.appendChild(a);
+    });
   }
 
   // ── FÓRMULAS DISPLAY ACCESIBLES CON TECLADO ─────────────────────

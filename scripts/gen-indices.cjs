@@ -59,3 +59,47 @@ for (const f of fs.readdirSync(CLASSES).filter((f) => f.endsWith('.md'))) {
   }
 }
 if (bad > 0) process.exit(1);
+
+// ── Glosario: `<Term id="x">etiqueta</Term>` + `conceptos:` del frontmatter ─
+// Escribe src/lib/glosario.json { id: { label, refs: [{course, class, classTitle}] } }.
+// Sin definiciones redactadas: es un índice (dónde se explica cada término).
+function slug(s) {
+  return s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+const terms = {};
+function addTerm(id, label, course, classId, classTitle) {
+  if (!id) return;
+  if (!terms[id]) terms[id] = { label, refs: [] };
+  if (!terms[id].refs.some((r) => r.class === classId)) {
+    terms[id].refs.push({ course, class: classId, classTitle });
+  }
+}
+
+for (const f of fs.readdirSync(CLASSES).filter((f) => f.endsWith('.md'))) {
+  const raw = fs.readFileSync(path.join(CLASSES, f), 'utf8');
+  const { body, course, draft } = frontmatter(raw);
+  if (draft) continue;
+  const classId = f.replace(/\.md$/, '');
+  const titleM = raw.match(/^title:\s*"([^"\n]+)"/m);
+  const classTitle = titleM ? titleM[1] : classId;
+  const clean = body.replace(/<!--[\s\S]*?-->/g, '');
+  // 1) <Term id="x">Etiqueta</Term> en el cuerpo
+  const tre = /<Term\s+id="([A-Za-z0-9:_-]+)"\s*>([\s\S]*?)<\/Term\s*>/g;
+  let tm;
+  while ((tm = tre.exec(clean))) {
+    const label = tm[2].replace(/<[^>]+>/g, '').trim() || tm[1];
+    addTerm(tm[1], label, course, classId, classTitle);
+  }
+  // 2) conceptos: ["A", "B"] del frontmatter
+  const cm = raw.match(/^conceptos:\s*\[([^\]\n]*)\]/m);
+  if (cm) {
+    for (const c of cm[1].split(',')) {
+      const label = c.replace(/["']/g, '').trim();
+      if (label) addTerm(slug(label), label, course, classId, classTitle);
+    }
+  }
+}
+const ordered = Object.fromEntries(Object.entries(terms).sort((a, b) => a[1].label.localeCompare(b[1].label, 'es')));
+fs.writeFileSync(path.join(ROOT, 'src', 'lib', 'glosario.json'), JSON.stringify(ordered, null, 2) + '\n');
+console.log(`[glosario] ${Object.keys(ordered).length} términos -> src/lib/glosario.json`);

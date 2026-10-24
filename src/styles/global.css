@@ -315,6 +315,22 @@
   .eco-advertencia { --eco: #e11d48; }
   .eco-intuicion { --eco: var(--color-secondary-hover); }
 
+  /* ── Términos del glosario (<Term>) ───────────────────────────── */
+  .prose-class term[id] {
+    border-bottom: 1px dotted var(--color-accent);
+    cursor: help;
+    font-style: inherit;
+  }
+  .prose-class .term-ref {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: 1px dotted var(--color-accent);
+  }
+  .prose-class .term-ref:hover {
+    color: var(--color-accent-hover) !important;
+    border-bottom-style: solid;
+  }
+
   /* ── Referencias a ecuaciones (plugin remark-eqrefs) ───────────── */
   .eq-anchor {
     display: block;

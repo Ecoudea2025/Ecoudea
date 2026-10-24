@@ -1,0 +1,32 @@
+{
+  "curvas-de-indiferencia": {
+    "label": "curvas de indiferencia",
+    "refs": [
+      {
+        "course": "microeconomia-i",
+        "class": "microeconomia-i-unidad-1-preferencias",
+        "classTitle": "Preferencias y utilidad"
+      }
+    ]
+  },
+  "relacion-de-preferencias": {
+    "label": "relación de preferencias",
+    "refs": [
+      {
+        "course": "microeconomia-i",
+        "class": "microeconomia-i-unidad-1-preferencias",
+        "classTitle": "Preferencias y utilidad"
+      }
+    ]
+  },
+  "utilidad": {
+    "label": "utilidad",
+    "refs": [
+      {
+        "course": "microeconomia-i",
+        "class": "microeconomia-i-unidad-1-preferencias",
+        "classTitle": "Preferencias y utilidad"
+      }
+    ]
+  }
+}

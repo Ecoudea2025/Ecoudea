@@ -39,6 +39,10 @@ math: true                    # true si hay LaTeX
 
 - Títulos `##` / `###` generan el índice (TOC) automáticamente, en escritorio y móvil.
 - Fórmulas: `$x^2$` inline, `$$…$$` display. **Macros globales** (valen en clases y en `/tablero-latex`): `\E \Var \Cov \Corr \Prob \R \N \Z \iid \dd \argmax \argmin \given \xb`. Definidas en `src/lib/katex-macros.mjs`.
+- Bloques didácticos: `:::definicion Título` … `:::` (tipos: definicion, teorema, lema, proposicion, demostracion, ejemplo, ejercicio, ideaclave, nota, advertencia, intuicion). Numerados y accesibles sin JS. Colapsables con `<details>` nativo.
+- Ecuaciones referenciables: `$$ … \tag{id} $$` + `$\ref{id}$` en cualquier clase → enlace automático. Un `\ref` a etiqueta inexistente **rompe el build**.
+- Glosario: `<Term id="elasticidad">elasticidad</Term>` en el texto + `conceptos: ["A", "B"]` en el frontmatter. El prebuild genera `/glosario` solo con contenido publicado.
+- Borradores: `draft: true` excluye la clase de la página, listados, sitemap y búsqueda.
 - Figuras: genera el SVG (`npm run figures -- <id>`) e insértala con `<Figure id="…" caption="…" alt="…" />`. El `alt` es obligatorio (el build falla sin él).
 - Videos: sube el Manim a YouTube y usa `<Video youtubeId="…" title="…" />` (carga al clic, con enlace a transcripción).
 - Antes de publicar: `npm run content:fix && npm run build`.

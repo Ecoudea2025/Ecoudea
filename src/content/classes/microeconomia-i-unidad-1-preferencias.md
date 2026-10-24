@@ -5,6 +5,7 @@ order: 1
 classType: "clase"
 description: "Axiomas de preferencia, función de utilidad y curvas de indiferencia"
 math: true
+conceptos: ["Utilidad", "Curvas de indiferencia", "Relación de preferencias"]
 ---
 
 <!-- Guía de autoría: docs/AUTORIA.md. Bloques: :::tipo Título … ::: (ver clase
@@ -13,7 +14,7 @@ math: true
 ## Preferencias racionales
 
 :::definicion Relación de preferencias
-Una relación $\succeq$ sobre el conjunto de canastas $X$ es **racional** si es
+Una <Term id="relacion-de-preferencias">relación de preferencias</Term> $\succeq$ sobre el conjunto de canastas $X$ es **racional** si es
 completa (siempre puedes comparar) y transitiva (coherente al encadenar).
 :::
 
@@ -35,9 +36,9 @@ $$
 x \succeq y \iff u(x) \geq u(y) \tag{utilidad}
 $$
 
-A partir de $\ref{utilidad}$, las curvas de indiferencia son los conjuntos de
+A partir de $\ref{utilidad}$, las <Term id="curvas-de-indiferencia">curvas de indiferencia</Term> son los conjuntos de
 nivel $\{x \in X \mid u(x) = k\}$: moverse sobre ellas no cambia tu bienestar.
 
 :::ideaclave
-La utilidad no se mide en nada real: solo importa el orden que induce.
+La <Term id="utilidad">utilidad</Term> no se mide en nada real: solo importa el orden que induce.
 :::
