@@ -372,7 +372,9 @@ function renderMath(el, text) {
       out += escHtml(p);
     }
   }
-  el.innerHTML = out;
+  // Un solo hijo: el padre flex (.mq-question) no debe ver N items
+  // (cada segmento inline se volvería un flex-item y se separaría).
+  el.innerHTML = '<span class="mq-math-flow">' + out + '</span>';
 }
 
 /**

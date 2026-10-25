@@ -977,6 +977,8 @@
   clip-path: polygon(var(--game-hex-notch) 0, calc(100% - var(--game-hex-notch)) 0, 100% 50%, calc(100% - var(--game-hex-notch)) 100%, var(--game-hex-notch) 100%, 0 50%);
 }
 .mq-question > * { position: relative; z-index: 1; }
+/* Flujo inline único: evita que el flex de .mq-question separe los segmentos. */
+.mq-math-flow { display: inline; min-width: 0; max-width: 100%; }
 
 /* Opciones: rejilla 2×2 de píldoras hexagonales */
 .mq-options { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
