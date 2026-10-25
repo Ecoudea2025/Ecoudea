@@ -1,0 +1,66 @@
+{
+  "class": "microeconomia-ii-clase-02-fundamentos-intercambio",
+  "category": "microeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "La No Saciabilidad Local (LNS) exige que para toda cesta $x$ y todo $\\varepsilon > 0$ exista una cesta $y$ tal que...",
+      "options": [
+        "La distancia entre $y$ y $x$ sea menor que $\\varepsilon$ y $y$ sea estrictamente mejor que $x$",
+        "Cualquier cesta lejana sea indiferente a $x$",
+        "Todas las cestas vecinas sean peores que $x$",
+        "La cesta $x$ sea el máximo global de la utilidad"
+      ],
+      "correct": 0,
+      "explanation": "LNS: arbitrariamente cerca de cualquier cesta siempre hay una estrictamente mejor; por eso el consumidor gasta todo su presupuesto."
+    },
+    {
+      "difficulty": 2,
+      "question": "Si las preferencias son estrictamente convexas, la cesta que maximiza la utilidad a precios $p \\gg 0$ es...",
+      "options": [
+        "Única, pues la RMS es estrictamente decreciente y no hay tramos planos",
+        "Siempre múltiple, pues hay un segmento entero de óptimos",
+        "Inexistente, pues la mezcla nunca supera a los extremos",
+        "Independiente de los precios por homogeneidad"
+      ],
+      "correct": 0,
+      "explanation": "Sin tramos lineales, la tangencia con la recta presupuestal ocurre en un solo punto: demanda función, no correspondencia."
+    },
+    {
+      "difficulty": 3,
+      "question": "Con sustitutos perfectos $U = a x_1 + b x_2$, el punto medio $m = \\lambda y + (1-\\lambda) z$ entre dos cestas indiferentes cumple...",
+      "options": [
+        "$m \\sim y \\sim z$: el segmento queda sobre la misma indiferencia (tramo lineal)",
+        "$m \\succ y \\sim z$: el promedio es estrictamente mejor",
+        "$m \\prec y \\sim z$: el promedio es estrictamente peor",
+        "Nada en general: depende de los precios vigentes"
+      ],
+      "correct": 0,
+      "explanation": "Las indiferencias lineales son el caso límite de convexidad débil: la mezcla deja indiferente, no mejora."
+    },
+    {
+      "difficulty": 4,
+      "question": "Las preferencias lexicográficas violan el axioma de...",
+      "options": [
+        "Continuidad, pues un salto infinitesimal puede invertir el orden sin punto límite que lo preserve",
+        "Monotonicidad, pues más de un bien siempre es peor",
+        "Completitud, pues hay pares de cestas incomparables",
+        "Transitividad, pues el orden alfabético genera ciclos"
+      ],
+      "correct": 0,
+      "explanation": "El orden lexicográfico prioriza un bien de forma absoluta: una sucesión que converge puede perder la relación, rompiendo conjuntos cerrados."
+    },
+    {
+      "difficulty": 5,
+      "question": "La continuidad de las preferencias es indispensable en la prueba de existencia del equilibrio porque...",
+      "options": [
+        "Hace continua la función de exceso de demanda $Z(p)$, requisito del Teorema del Punto Fijo de Brouwer",
+        "Elimina la necesidad del subastador walrasiano",
+        "Garantiza que la curva de contrato sea la diagonal",
+        "Convierte toda preferencia en representable por una función lineal"
+      ],
+      "correct": 0,
+      "explanation": "Sin $Z(p)$ continua no aplica Brouwer; la continuidad (más convexidad estricta y LNS) sostiene la existencia del $P^*$ de equilibrio."
+    }
+  ]
+}

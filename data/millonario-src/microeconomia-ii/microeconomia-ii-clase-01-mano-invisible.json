@@ -1,0 +1,66 @@
+{
+  "class": "microeconomia-ii-clase-01-mano-invisible",
+  "category": "microeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "La teoría del equilibrio general busca responder cómo millones de agentes autónomos guiados por su propio interés logran...",
+      "options": [
+        "Coordinarse sin caer en el caos y alcanzar una asignación coherente de los recursos",
+        "Eliminar por completo la escasez de recursos naturales",
+        "Obedecer las órdenes de un planificador central omnisciente",
+        "Fijar todos los precios mediante votación mayoritaria"
+      ],
+      "correct": 0,
+      "explanation": "Es la pregunta fundacional del curso: coordinación descentralizada sin caos mediante el sistema de precios."
+    },
+    {
+      "difficulty": 2,
+      "question": "Para Adam Smith, perseguir el interés propio ($self-interest$) equivale a...",
+      "options": [
+        "Nada de lo anterior: no equivale a oportunismo, fraude ni saqueo, y exige el pilar de la justicia",
+        "Oportunismo amoral, pues el mercado premia el fraude",
+        "Sacrificarse siempre por el bien del pueblo",
+        "Obedecer al político que dirige la inversión privada"
+      ],
+      "correct": 0,
+      "explanation": "En la Teoría de los Sentimientos Morales (1759) el mercado se sostiene sobre la justicia: abstenerse de menoscabar vida, libertad y propiedad ajenas."
+    },
+    {
+      "difficulty": 3,
+      "question": "Que cada agente sea precio-aceptante significa que los precios son...",
+      "options": [
+        "Exógenos para los individuos pero endógenos para la sociedad en su conjunto",
+        "Fijados por cada individuo según su propia valoración marginal",
+        "Constantes e inmutables ante cualquier exceso de demanda",
+        "Decididos por votación entre los participantes del mercado"
+      ],
+      "correct": 0,
+      "explanation": "Atomicidad: cada agente es tan pequeño que toma los precios como dados, pero el subastador los ajusta hasta vaciar los mercados."
+    },
+    {
+      "difficulty": 4,
+      "question": "En la definición tetradimensional de Arrow-Debreu, ¿cuál NO es una dimensión del bien?",
+      "options": [
+        "El precio monetario al que se intercambia",
+        "Sus propiedades físico-químicas",
+        "El lugar geográfico donde está disponible",
+        "El estado de la naturaleza bajo el cual se materializa"
+      ],
+      "correct": 0,
+      "explanation": "Las cuatro dimensiones son propiedades físico-químicas, lugar, momento y contingencia; el precio es el mecanismo, no una dimensión del bien."
+    },
+    {
+      "difficulty": 5,
+      "question": "La distinción provisión pública $\\not\\equiv$ empresa pública significa que...",
+      "options": [
+        "El Estado puede financiar y regular el acceso universal sin producirlo mediante un monopolio estatal",
+        "Todo bien meritorio debe producirse en una empresa pública",
+        "La provisión pública exige siempre propiedad estatal de la firma",
+        "Los bienes meritorios no admiten intervención para corregir fallos"
+      ],
+      "correct": 0,
+      "explanation": "Provisión (financiar y garantizar acceso) no equivale a producción estatal: se puede corregir desigualdad y fallos regulando sin monopolio público."
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "id": "microeconomia-ii",
+    "courseTitle": "Microeconomía II (Unidad 1)",
+    "title": "¿Quién quiere ser millonario? — Microeconomía II (Unidad 1)",
+    "language": "es",
+    "version": "2.0.0",
+    "updated": "2026-10-25",
+    "generator": "scripts/build-millonario.cjs",
+    "questionCount": 30,
+    "levels": 30,
+    "perLevel": {
+      "1": 6,
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 6
+    },
+    "sources": [
+      "microeconomia-ii-clase-01-mano-invisible.md",
+      "microeconomia-ii-clase-02-fundamentos-intercambio.md",
+      "microeconomia-ii-clase-03-pareto-edgeworth.md",
+      "microeconomia-ii-clase-04-ley-walras.md",
+      "microeconomia-ii-clase-05-fpp-robinson-venus.md",
+      "microeconomia-ii-clase-06-produccion-comercio.md"
+    ]
+  },
+  "config": {
+    "questionsPerGame": 30,
+    "safeHavens": [
+      10,
+      20
+    ],
+    "lifelines": {
+      "fifty50": true,
+      "skip": true,
+      "audience": true
+    },
+    "prizes": [
+      100,
+      150,
+      150,
+      200,
+      300,
+      350,
+      450,
+      600,
+      750,
+      1000,
+      1500,
+      1500,
+      2000,
+      2500,
+      3000,
+      4000,
+      5000,
+      6500,
+      8000,
+      10000,
+      15000,
+      25000,
+      40000,
+      65000,
+      100000,
+      150000,
+      250000,
+      400000,
+      650000,
+      1000000
+    ]
+  },
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "La teoría del equilibrio general busca responder cómo millones de agentes autónomos guiados por su propio interés logran...",
+      "options": [
+        "Coordinarse sin caer en el caos y alcanzar una asignación coherente de los recursos",
+        "Eliminar por completo la escasez de recursos naturales",
+        "Obedecer las órdenes de un planificador central omnisciente",
+        "Fijar todos los precios mediante votación mayoritaria"
+      ],
+      "correct": 0,
+      "explanation": "Es la pregunta fundacional del curso: coordinación descentralizada sin caos mediante el sistema de precios.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-01-mano-invisible.md",
+      "id": "microeconomia-ii-001"
+    },
+    {
+      "difficulty": 1,
+      "question": "La No Saciabilidad Local (LNS) exige que para toda cesta $x$ y todo $\\varepsilon > 0$ exista una cesta $y$ tal que...",
+      "options": [
+        "La distancia entre $y$ y $x$ sea menor que $\\varepsilon$ y $y$ sea estrictamente mejor que $x$",
+        "Cualquier cesta lejana sea indiferente a $x$",
+        "Todas las cestas vecinas sean peores que $x$",
+        "La cesta $x$ sea el máximo global de la utilidad"
+      ],
+      "correct": 0,
+      "explanation": "LNS: arbitrariamente cerca de cualquier cesta siempre hay una estrictamente mejor; por eso el consumidor gasta todo su presupuesto.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-02-fundamentos-intercambio.md",
+      "id": "microeconomia-ii-002"
+    },
+    {
+      "difficulty": 1,
+      "question": "Una asignación factible es eficiente en el sentido de Pareto si...",
+      "options": [
+        "No existe otra asignación factible que mejore a alguien sin empeorar a nadie",
+        "Todos los agentes reciben exactamente la misma canasta",
+        "Maximiza la suma de utilidades sin importar la distribución",
+        "Los precios de mercado igualan los costos marginales"
+      ],
+      "correct": 0,
+      "explanation": "Pareto-eficiencia es ausencia de mejoras paretianas factibles; no dice nada sobre equidad.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-03-pareto-edgeworth.md",
+      "id": "microeconomia-ii-003"
+    },
+    {
+      "difficulty": 1,
+      "question": "Si el exceso de demanda individual $z_{ij}(P) = X_{ij}(P) - W_{ij}$ es positivo, el agente $i$ es...",
+      "options": [
+        "Comprador neto (demandante neto) del bien $j$",
+        "Vendedor neto (oferente neto) del bien $j$",
+        "Indiferente entre comprar y vender el bien $j$",
+        "Precio-aceptante solo en el mercado del bien $j$"
+      ],
+      "correct": 0,
+      "explanation": "Demanda mayor que dotación: el agente compra la diferencia en el mercado.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-04-ley-walras.md",
+      "id": "microeconomia-ii-004"
+    },
+    {
+      "difficulty": 1,
+      "question": "La FPP de Robinson con 8 horas, 20 cocos/hora y 10 pescados/hora es...",
+      "options": [
+        "$C_R = 160 - 2 P_R$",
+        "$C_R = 80 - 0.5 P_R$",
+        "$C_R = 160 - 0.5 P_R$",
+        "$C_R = 8 - 20 P_R$"
+      ],
+      "correct": 0,
+      "explanation": "De $8 = C_R/20 + P_R/10$, multiplicando por 20: $160 = C_R + 2P_R$.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-05-fpp-robinson-venus.md",
+      "id": "microeconomia-ii-005"
+    },
+    {
+      "difficulty": 1,
+      "question": "En autarquía con FPP $4X^2 + Y^2 = 100$, la economía produce y consume en...",
+      "options": [
+        "El mismo punto $E = (3.53, 7.07)$ sobre la frontera, con $U_E = 5$",
+        "Dos puntos distintos: produce en $E'$ y consume en $E''$",
+        "Cualquier punto interior con $U > 5$",
+        "El punto $(0, 10)$ de especialización total en $Y$"
+      ],
+      "correct": 0,
+      "explanation": "Sin comercio no hay intercambio exterior: producción y consumo coinciden sobre la FPP.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-06-produccion-comercio.md",
+      "id": "microeconomia-ii-006"
+    },
+    {
+      "difficulty": 2,
+      "question": "Para Adam Smith, perseguir el interés propio ($self-interest$) equivale a...",
+      "options": [
+        "Nada de lo anterior: no equivale a oportunismo, fraude ni saqueo, y exige el pilar de la justicia",
+        "Oportunismo amoral, pues el mercado premia el fraude",
+        "Sacrificarse siempre por el bien del pueblo",
+        "Obedecer al político que dirige la inversión privada"
+      ],
+      "correct": 0,
+      "explanation": "En la Teoría de los Sentimientos Morales (1759) el mercado se sostiene sobre la justicia: abstenerse de menoscabar vida, libertad y propiedad ajenas.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-01-mano-invisible.md",
+      "id": "microeconomia-ii-007"
+    },
+    {
+      "difficulty": 2,
+      "question": "Si las preferencias son estrictamente convexas, la cesta que maximiza la utilidad a precios $p \\gg 0$ es...",
+      "options": [
+        "Única, pues la RMS es estrictamente decreciente y no hay tramos planos",
+        "Siempre múltiple, pues hay un segmento entero de óptimos",
+        "Inexistente, pues la mezcla nunca supera a los extremos",
+        "Independiente de los precios por homogeneidad"
+      ],
+      "correct": 0,
+      "explanation": "Sin tramos lineales, la tangencia con la recta presupuestal ocurre en un solo punto: demanda función, no correspondencia.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-02-fundamentos-intercambio.md",
+      "id": "microeconomia-ii-008"
+    },
+    {
+      "difficulty": 2,
+      "question": "Sobre la curva de contrato de la caja de Edgeworth se cumple en todo punto que...",
+      "options": [
+        "Las relaciones marginales de sustitución se igualan: $RMS_1 = RMS_2$",
+        "Ambos agentes consumen cantidades idénticas de cada bien",
+        "Los precios de los bienes son iguales entre sí",
+        "La dotación inicial coincide con la asignación final"
+      ],
+      "correct": 0,
+      "explanation": "La tangencia de indiferencias ($RMS_1 = RMS_2$) caracteriza el contrato; es geometría, sin precios.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-03-pareto-edgeworth.md",
+      "id": "microeconomia-ii-009"
+    },
+    {
+      "difficulty": 2,
+      "question": "La Ley de Walras establece que para cualquier vector de precios $P \\gg 0$...",
+      "options": [
+        "El valor monetario agregado de los excesos de demanda es idénticamente cero: $P \\cdot Z(P) = 0$",
+        "Todos los excesos de demanda individuales son cero",
+        "Solo el mercado del numerario se vacía automáticamente",
+        "Los precios relativos dejan de importar"
+      ],
+      "correct": 0,
+      "explanation": "Vale dentro y fuera del equilibrio: es identidad presupuestal agregada, no condición de equilibrio.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-04-ley-walras.md",
+      "id": "microeconomia-ii-010"
+    },
+    {
+      "difficulty": 2,
+      "question": "El costo de oportunidad de 1 pescado para Venus (10 cocos/hora, 20 pescados/hora) es...",
+      "options": [
+        "$0.5$ cocos: su TMT es $dC_V/dP_V = -1/2$",
+        "$2$ cocos, igual que el de Robinson",
+        "$20$ cocos, su productividad pesquera",
+        "$8$ cocos, su dotación de horas"
+      ],
+      "correct": 0,
+      "explanation": "Cada pescado le toma $1/20$ de hora que rinde $10/20 = 0.5$ cocos.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-05-fpp-robinson-venus.md",
+      "id": "microeconomia-ii-011"
+    },
+    {
+      "difficulty": 2,
+      "question": "Abierta la economía con precios mundiales de pendiente $-1/2$, la producción se ubica donde...",
+      "options": [
+        "La FPP es tangente a la recta de precios mundiales: $E' = (1.21, 9.70)$",
+        "La indiferencia $U = 7.28$ corta a la FPP",
+        "El consumo iguala a la producción en cada bien",
+        "La TMT iguala a la pendiente autárquica $-2$"
+      ],
+      "correct": 0,
+      "explanation": "Producir maximiza el valor a precios mundiales: TMT = precio relativo mundial.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-06-produccion-comercio.md",
+      "id": "microeconomia-ii-012"
+    },
+    {
+      "difficulty": 3,
+      "question": "Que cada agente sea precio-aceptante significa que los precios son...",
+      "options": [
+        "Exógenos para los individuos pero endógenos para la sociedad en su conjunto",
+        "Fijados por cada individuo según su propia valoración marginal",
+        "Constantes e inmutables ante cualquier exceso de demanda",
+        "Decididos por votación entre los participantes del mercado"
+      ],
+      "correct": 0,
+      "explanation": "Atomicidad: cada agente es tan pequeño que toma los precios como dados, pero el subastador los ajusta hasta vaciar los mercados.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-01-mano-invisible.md",
+      "id": "microeconomia-ii-013"
+    },
+    {
+      "difficulty": 3,
+      "question": "Con sustitutos perfectos $U = a x_1 + b x_2$, el punto medio $m = \\lambda y + (1-\\lambda) z$ entre dos cestas indiferentes cumple...",
+      "options": [
+        "$m \\sim y \\sim z$: el segmento queda sobre la misma indiferencia (tramo lineal)",
+        "$m \\succ y \\sim z$: el promedio es estrictamente mejor",
+        "$m \\prec y \\sim z$: el promedio es estrictamente peor",
+        "Nada en general: depende de los precios vigentes"
+      ],
+      "correct": 0,
+      "explanation": "Las indiferencias lineales son el caso límite de convexidad débil: la mezcla deja indiferente, no mejora.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-02-fundamentos-intercambio.md",
+      "id": "microeconomia-ii-014"
+    },
+    {
+      "difficulty": 3,
+      "question": "Si ambos consumidores Cobb-Douglas tienen el mismo parámetro ($\\alpha = \\beta$), la curva de contrato es...",
+      "options": [
+        "La diagonal principal recta que une el origen $O_1$ con el origen $O_2$",
+        "Una curva que se arquea por debajo de la diagonal",
+        "Una curva que se arquea por encima de la diagonal",
+        "Un único punto: la dotación inicial"
+      ],
+      "correct": 0,
+      "explanation": "Con $\\alpha = \\beta$ el término $(\\beta-\\alpha)X_{11}$ del denominador se anula y $X_{12}^*$ es lineal en $X_{11}$.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-03-pareto-edgeworth.md",
+      "id": "microeconomia-ii-015"
+    },
+    {
+      "difficulty": 3,
+      "question": "La homogeneidad de grado cero de las demandas Cobb-Douglas implica que...",
+      "options": [
+        "Solo importan los precios relativos $P_1/P_2$: no hay ilusión monetaria",
+        "Duplicar todos los precios duplica las cantidades demandadas",
+        "La riqueza nominal no afecta la recta presupuestaria",
+        "El numerario debe ser siempre el bien 1"
+      ],
+      "correct": 0,
+      "explanation": "Al escalar $(P_1,P_2)$ por $\\lambda$, las rentas escalan igual y $\\lambda$ se cancela en $\\alpha R_i/P_j$.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-04-ley-walras.md",
+      "id": "microeconomia-ii-016"
+    },
+    {
+      "difficulty": 3,
+      "question": "¿Quién tiene ventaja comparativa en pescado?",
+      "options": [
+        "Venus: su costo (0.5 cocos) es menor que el de Robinson (2 cocos)",
+        "Robinson: produce más pescado por hora en términos absolutos",
+        "Ninguno: ambos tienen el mismo costo de oportunidad",
+        "Venus solo si dedica sus 8 horas al pescado"
+      ],
+      "correct": 0,
+      "explanation": "Comparativa es costo relativo, no absoluto: $0.5 < 2$.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-05-fpp-robinson-venus.md",
+      "id": "microeconomia-ii-017"
+    },
+    {
+      "difficulty": 3,
+      "question": "Con $U = \\sqrt{X Y}$, la utilidad del consumo $E'' = (10.30, 5.15)$ es...",
+      "options": [
+        "$U_{E''} = 7.28$, superior a la autárquica $U_E = 5$",
+        "$U_{E''} = 5$, igual a la autárquica",
+        "$U_{E''} = 3.53$, inferior a la autárquica",
+        "Incalculable sin conocer los precios mundiales"
+      ],
+      "correct": 0,
+      "explanation": "$\\sqrt{10.30 \\times 5.15} = \\sqrt{53.05} \\approx 7.28 > 5$: hay ganancia de bienestar.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-06-produccion-comercio.md",
+      "id": "microeconomia-ii-018"
+    },
+    {
+      "difficulty": 4,
+      "question": "En la definición tetradimensional de Arrow-Debreu, ¿cuál NO es una dimensión del bien?",
+      "options": [
+        "El precio monetario al que se intercambia",
+        "Sus propiedades físico-químicas",
+        "El lugar geográfico donde está disponible",
+        "El estado de la naturaleza bajo el cual se materializa"
+      ],
+      "correct": 0,
+      "explanation": "Las cuatro dimensiones son propiedades físico-químicas, lugar, momento y contingencia; el precio es el mecanismo, no una dimensión del bien.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-01-mano-invisible.md",
+      "id": "microeconomia-ii-019"
+    },
+    {
+      "difficulty": 4,
+      "question": "Las preferencias lexicográficas violan el axioma de...",
+      "options": [
+        "Continuidad, pues un salto infinitesimal puede invertir el orden sin punto límite que lo preserve",
+        "Monotonicidad, pues más de un bien siempre es peor",
+        "Completitud, pues hay pares de cestas incomparables",
+        "Transitividad, pues el orden alfabético genera ciclos"
+      ],
+      "correct": 0,
+      "explanation": "El orden lexicográfico prioriza un bien de forma absoluta: una sucesión que converge puede perder la relación, rompiendo conjuntos cerrados.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-02-fundamentos-intercambio.md",
+      "id": "microeconomia-ii-020"
+    },
+    {
+      "difficulty": 4,
+      "question": "Con un consumidor carnívoro puro ($U_1 = X_1$) y otro vegetariano puro ($U_2 = X_2$), la curva de contrato...",
+      "options": [
+        "Se colapsa a una esquina: toda la carne para el agente 1 y todo el vegetal para el 2",
+        "Sigue siendo la diagonal principal de la caja",
+        "Desaparece: no hay asignación eficiente posible",
+        "Coincide con la curva de indiferencia de ambos"
+      ],
+      "correct": 0,
+      "explanation": "Con preferencias extremas opuestas, la única asignación Pareto-eficiente entrega cada bien a quien lo valora.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-03-pareto-edgeworth.md",
+      "id": "microeconomia-ii-021"
+    },
+    {
+      "difficulty": 4,
+      "question": "Fijando el bien 2 como numerario ($P_2^* = 1$), el precio relativo de equilibrio es...",
+      "options": [
+        "$P_1^* = \\frac{\\alpha W_{12} + \\beta W_{22}}{(1-\\alpha) W_{11} + (1-\\beta) W_{21}}$",
+        "$P_1^* = \\frac{W_{11} + W_{21}}{W_{12} + W_{22}}$",
+        "$P_1^* = \\frac{\\alpha + \\beta}{(1-\\alpha) + (1-\\beta)}$",
+        "$P_1^* = \\alpha W_{11} + \\beta W_{21}$"
+      ],
+      "correct": 0,
+      "explanation": "Sale de vaciar el mercado 1: $W_{11}+W_{21} = X_{11}(P_1^*,1)+X_{21}(P_1^*,1)$, despejando $P_1^*$.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-04-ley-walras.md",
+      "id": "microeconomia-ii-022"
+    },
+    {
+      "difficulty": 4,
+      "question": "El vértice $(160,160)$ de la FPP conjunta corresponde a...",
+      "options": [
+        "Especialización óptima: Venus todo al pescado y Robinson todo al coco",
+        "Reparto igualitario: ambos dividen sus horas mitad y mitad",
+        "Especialización invertida con pérdida de eficiencia",
+        "El punto de autarquía de Robinson en solitario"
+      ],
+      "correct": 0,
+      "explanation": "Cada uno produce donde su costo de oportunidad es menor: el quiebre marca el pleno aprovechamiento.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-05-fpp-robinson-venus.md",
+      "id": "microeconomia-ii-023"
+    },
+    {
+      "difficulty": 4,
+      "question": "Que $E''$ esté fuera de la FPP nacional es posible porque...",
+      "options": [
+        "La economía produce en $E'$ y comercia: exporta $Y$ e importa $X$ a precios mundiales",
+        "La apertura desplaza la FPP hacia afuera permanentemente",
+        "El consumo ya no necesita respetar ninguna restricción",
+        "La TMT se vuelve positiva con el comercio"
+      ],
+      "correct": 0,
+      "explanation": "El comercio separa producir de consumir: se vende caro lo abundante y se compra barato lo escaso.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-06-produccion-comercio.md",
+      "id": "microeconomia-ii-024"
+    },
+    {
+      "difficulty": 5,
+      "question": "La distinción provisión pública $\\not\\equiv$ empresa pública significa que...",
+      "options": [
+        "El Estado puede financiar y regular el acceso universal sin producirlo mediante un monopolio estatal",
+        "Todo bien meritorio debe producirse en una empresa pública",
+        "La provisión pública exige siempre propiedad estatal de la firma",
+        "Los bienes meritorios no admiten intervención para corregir fallos"
+      ],
+      "correct": 0,
+      "explanation": "Provisión (financiar y garantizar acceso) no equivale a producción estatal: se puede corregir desigualdad y fallos regulando sin monopolio público.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-01-mano-invisible.md",
+      "id": "microeconomia-ii-025"
+    },
+    {
+      "difficulty": 5,
+      "question": "La continuidad de las preferencias es indispensable en la prueba de existencia del equilibrio porque...",
+      "options": [
+        "Hace continua la función de exceso de demanda $Z(p)$, requisito del Teorema del Punto Fijo de Brouwer",
+        "Elimina la necesidad del subastador walrasiano",
+        "Garantiza que la curva de contrato sea la diagonal",
+        "Convierte toda preferencia en representable por una función lineal"
+      ],
+      "correct": 0,
+      "explanation": "Sin $Z(p)$ continua no aplica Brouwer; la continuidad (más convexidad estricta y LNS) sostiene la existencia del $P^*$ de equilibrio.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-02-fundamentos-intercambio.md",
+      "id": "microeconomia-ii-026"
+    },
+    {
+      "difficulty": 5,
+      "question": "El Segundo Teorema del Bienestar permite separar eficiencia y equidad porque...",
+      "options": [
+        "Toda asignación eficiente puede sostenerse como equilibrio competitivo tras redistribuir dotaciones con transferencias de suma fija",
+        "Todo equilibrio competitivo es automáticamente el más equitativo",
+        "La redistribución de dotaciones es innecesaria si hay mercados completos",
+        "Solo vale cuando las preferencias no son convexas"
+      ],
+      "correct": 0,
+      "explanation": "Requiere convexidad y continuidad: el Estado redistribuye la base y deja operar los precios, logrando eficiencia con la equidad elegida.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-03-pareto-edgeworth.md",
+      "id": "microeconomia-ii-027"
+    },
+    {
+      "difficulty": 5,
+      "question": "Si los consumidores atesoraran ahorro sin mercado de crédito, la Ley de Walras en bienes...",
+      "options": [
+        "Fallaría: el gasto en bienes sería menor que el valor de las dotaciones y $P\\cdot Z \\neq 0$",
+        "Se mantendría intacta, pues el ahorro no afecta los mercados",
+        "Se reforzaría: el subastador bajaría todos los precios",
+        "Solo fallaría si además hay bienes públicos"
+      ],
+      "correct": 0,
+      "explanation": "Walras exige gastar el 100% del presupuesto (vía LNS); el atesoramiento rompe la identidad en los mercados de bienes.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-04-ley-walras.md",
+      "id": "microeconomia-ii-028"
+    },
+    {
+      "difficulty": 5,
+      "question": "El punto $(80,80)$ con $\\alpha = 0$ y $\\beta = 1$ muestra que...",
+      "options": [
+        "Especializarse al revés (cada uno en su desventaja) deja producción sobre la mesa frente a $(160,160)$",
+        "Cualquier punto interior es Pareto-eficiente si hay comercio",
+        "La FPP conjunta es lineal entre $(0,240)$ y $(240,0)$",
+        "Robinson debe producir pescado y Venus cocos"
+      ],
+      "correct": 0,
+      "explanation": "Invertir la especialización produce $(80,80)$, estrictamente dentro de la frontera: ganancia desperdiciada.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-05-fpp-robinson-venus.md",
+      "id": "microeconomia-ii-029"
+    },
+    {
+      "difficulty": 5,
+      "question": "La conclusión sobre los TLC del modelo es que el libre comercio...",
+      "options": [
+        "Expande el conjunto de consumo más allá de la FPP y alcanza una indiferencia estrictamente superior",
+        "Solo beneficia al sector exportador y perjudica al importador",
+        "Elimina la necesidad de especializarse según ventaja comparativa",
+        "Iguala los precios internos con los mundiales sin cambiar el consumo"
+      ],
+      "correct": 0,
+      "explanation": "Con $\\Delta U = 7.28 - 5 > 0$: el país consume una canasta infactible en autarquía.",
+      "category": "microeconomia",
+      "source": "microeconomia-ii-clase-06-produccion-comercio.md",
+      "id": "microeconomia-ii-030"
+    }
+  ]
+}

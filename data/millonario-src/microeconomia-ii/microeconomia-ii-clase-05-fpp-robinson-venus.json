@@ -1,0 +1,66 @@
+{
+  "class": "microeconomia-ii-clase-05-fpp-robinson-venus",
+  "category": "microeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "La FPP de Robinson con 8 horas, 20 cocos/hora y 10 pescados/hora es...",
+      "options": [
+        "$C_R = 160 - 2 P_R$",
+        "$C_R = 80 - 0.5 P_R$",
+        "$C_R = 160 - 0.5 P_R$",
+        "$C_R = 8 - 20 P_R$"
+      ],
+      "correct": 0,
+      "explanation": "De $8 = C_R/20 + P_R/10$, multiplicando por 20: $160 = C_R + 2P_R$."
+    },
+    {
+      "difficulty": 2,
+      "question": "El costo de oportunidad de 1 pescado para Venus (10 cocos/hora, 20 pescados/hora) es...",
+      "options": [
+        "$0.5$ cocos: su TMT es $dC_V/dP_V = -1/2$",
+        "$2$ cocos, igual que el de Robinson",
+        "$20$ cocos, su productividad pesquera",
+        "$8$ cocos, su dotación de horas"
+      ],
+      "correct": 0,
+      "explanation": "Cada pescado le toma $1/20$ de hora que rinde $10/20 = 0.5$ cocos."
+    },
+    {
+      "difficulty": 3,
+      "question": "¿Quién tiene ventaja comparativa en pescado?",
+      "options": [
+        "Venus: su costo (0.5 cocos) es menor que el de Robinson (2 cocos)",
+        "Robinson: produce más pescado por hora en términos absolutos",
+        "Ninguno: ambos tienen el mismo costo de oportunidad",
+        "Venus solo si dedica sus 8 horas al pescado"
+      ],
+      "correct": 0,
+      "explanation": "Comparativa es costo relativo, no absoluto: $0.5 < 2$."
+    },
+    {
+      "difficulty": 4,
+      "question": "El vértice $(160,160)$ de la FPP conjunta corresponde a...",
+      "options": [
+        "Especialización óptima: Venus todo al pescado y Robinson todo al coco",
+        "Reparto igualitario: ambos dividen sus horas mitad y mitad",
+        "Especialización invertida con pérdida de eficiencia",
+        "El punto de autarquía de Robinson en solitario"
+      ],
+      "correct": 0,
+      "explanation": "Cada uno produce donde su costo de oportunidad es menor: el quiebre marca el pleno aprovechamiento."
+    },
+    {
+      "difficulty": 5,
+      "question": "El punto $(80,80)$ con $\\alpha = 0$ y $\\beta = 1$ muestra que...",
+      "options": [
+        "Especializarse al revés (cada uno en su desventaja) deja producción sobre la mesa frente a $(160,160)$",
+        "Cualquier punto interior es Pareto-eficiente si hay comercio",
+        "La FPP conjunta es lineal entre $(0,240)$ y $(240,0)$",
+        "Robinson debe producir pescado y Venus cocos"
+      ],
+      "correct": 0,
+      "explanation": "Invertir la especialización produce $(80,80)$, estrictamente dentro de la frontera: ganancia desperdiciada."
+    }
+  ]
+}

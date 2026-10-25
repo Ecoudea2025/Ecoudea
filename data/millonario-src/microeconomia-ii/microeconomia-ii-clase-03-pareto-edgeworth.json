@@ -1,0 +1,66 @@
+{
+  "class": "microeconomia-ii-clase-03-pareto-edgeworth",
+  "category": "microeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "Una asignación factible es eficiente en el sentido de Pareto si...",
+      "options": [
+        "No existe otra asignación factible que mejore a alguien sin empeorar a nadie",
+        "Todos los agentes reciben exactamente la misma canasta",
+        "Maximiza la suma de utilidades sin importar la distribución",
+        "Los precios de mercado igualan los costos marginales"
+      ],
+      "correct": 0,
+      "explanation": "Pareto-eficiencia es ausencia de mejoras paretianas factibles; no dice nada sobre equidad."
+    },
+    {
+      "difficulty": 2,
+      "question": "Sobre la curva de contrato de la caja de Edgeworth se cumple en todo punto que...",
+      "options": [
+        "Las relaciones marginales de sustitución se igualan: $RMS_1 = RMS_2$",
+        "Ambos agentes consumen cantidades idénticas de cada bien",
+        "Los precios de los bienes son iguales entre sí",
+        "La dotación inicial coincide con la asignación final"
+      ],
+      "correct": 0,
+      "explanation": "La tangencia de indiferencias ($RMS_1 = RMS_2$) caracteriza el contrato; es geometría, sin precios."
+    },
+    {
+      "difficulty": 3,
+      "question": "Si ambos consumidores Cobb-Douglas tienen el mismo parámetro ($\\alpha = \\beta$), la curva de contrato es...",
+      "options": [
+        "La diagonal principal recta que une el origen $O_1$ con el origen $O_2$",
+        "Una curva que se arquea por debajo de la diagonal",
+        "Una curva que se arquea por encima de la diagonal",
+        "Un único punto: la dotación inicial"
+      ],
+      "correct": 0,
+      "explanation": "Con $\\alpha = \\beta$ el término $(\\beta-\\alpha)X_{11}$ del denominador se anula y $X_{12}^*$ es lineal en $X_{11}$."
+    },
+    {
+      "difficulty": 4,
+      "question": "Con un consumidor carnívoro puro ($U_1 = X_1$) y otro vegetariano puro ($U_2 = X_2$), la curva de contrato...",
+      "options": [
+        "Se colapsa a una esquina: toda la carne para el agente 1 y todo el vegetal para el 2",
+        "Sigue siendo la diagonal principal de la caja",
+        "Desaparece: no hay asignación eficiente posible",
+        "Coincide con la curva de indiferencia de ambos"
+      ],
+      "correct": 0,
+      "explanation": "Con preferencias extremas opuestas, la única asignación Pareto-eficiente entrega cada bien a quien lo valora."
+    },
+    {
+      "difficulty": 5,
+      "question": "El Segundo Teorema del Bienestar permite separar eficiencia y equidad porque...",
+      "options": [
+        "Toda asignación eficiente puede sostenerse como equilibrio competitivo tras redistribuir dotaciones con transferencias de suma fija",
+        "Todo equilibrio competitivo es automáticamente el más equitativo",
+        "La redistribución de dotaciones es innecesaria si hay mercados completos",
+        "Solo vale cuando las preferencias no son convexas"
+      ],
+      "correct": 0,
+      "explanation": "Requiere convexidad y continuidad: el Estado redistribuye la base y deja operar los precios, logrando eficiencia con la equidad elegida."
+    }
+  ]
+}

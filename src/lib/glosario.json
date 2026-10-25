@@ -9,6 +9,26 @@
       }
     ]
   },
+  "apertura-comercial": {
+    "label": "Apertura comercial",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-06-produccion-comercio",
+        "classTitle": "Clase 06: Equilibrio General con Producción y Apertura al Comercio Internacional"
+      }
+    ]
+  },
+  "autarquia": {
+    "label": "Autarquía",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-06-produccion-comercio",
+        "classTitle": "Clase 06: Equilibrio General con Producción y Apertura al Comercio Internacional"
+      }
+    ]
+  },
   "aversion-al-riesgo": {
     "label": "Aversión al riesgo",
     "refs": [
@@ -16,6 +36,16 @@
         "course": "macroeconomia-i",
         "class": "macroeconomia-i-clase-05",
         "classTitle": "Clase 05: Función de Utilidad CRRA, Desigualdad de Jensen y Consumo Óptimo"
+      }
+    ]
+  },
+  "bien-publico": {
+    "label": "Bien público",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-12-bienes-publicos",
+        "classTitle": "Clase 10: Bienes Públicos y Condición de Samuelson"
       }
     ]
   },
@@ -29,6 +59,21 @@
       }
     ]
   },
+  "caja-de-edgeworth": {
+    "label": "Caja de Edgeworth",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-03-pareto-edgeworth",
+        "classTitle": "Clase 03: Eficiencia de Pareto, Solución Planificada y Curva de Contrato en la Caja de Edgeworth"
+      },
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-practica-07-equilibrio-general",
+        "classTitle": "Práctica 01A: Equilibrio General e Intercambio"
+      }
+    ]
+  },
   "coeficiente-de-determinacion": {
     "label": "Coeficiente de determinación",
     "refs": [
@@ -36,6 +81,66 @@
         "course": "estadistica-ii",
         "class": "estadistica-ii-clase-01",
         "classTitle": "Clase 20"
+      }
+    ]
+  },
+  "condicion-de-samuelson": {
+    "label": "Condición de Samuelson",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-12-bienes-publicos",
+        "classTitle": "Clase 10: Bienes Públicos y Condición de Samuelson"
+      }
+    ]
+  },
+  "continuidad": {
+    "label": "Continuidad",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-02-fundamentos-intercambio",
+        "classTitle": "Clase 02: Topología de Preferencias, Deseabilidad, Convexidad y Producción"
+      }
+    ]
+  },
+  "costo-de-oportunidad": {
+    "label": "Costo de oportunidad",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-05-fpp-robinson-venus",
+        "classTitle": "Clase 05: Frontera de Posibilidades de Producción (FPP) y Ventaja Comparativa: Robinson y Venus"
+      }
+    ]
+  },
+  "costos-de-transaccion": {
+    "label": "Costos de transacción",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-01-mano-invisible",
+        "classTitle": "Clase 01: La Mano Invisible, Supuestos del Equilibrio General e Instituciones"
+      }
+    ]
+  },
+  "curva-de-contrato": {
+    "label": "Curva de contrato",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-03-pareto-edgeworth",
+        "classTitle": "Clase 03: Eficiencia de Pareto, Solución Planificada y Curva de Contrato en la Caja de Edgeworth"
+      }
+    ]
+  },
+  "demanda-neta": {
+    "label": "Demanda neta",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-04-ley-walras",
+        "classTitle": "Clase 04: Equilibrio General Walrasiano, Ley de Walras y Teorema de Brouwer"
       }
     ]
   },
@@ -69,6 +174,16 @@
       }
     ]
   },
+  "eficiencia-de-pareto": {
+    "label": "Eficiencia de Pareto",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-03-pareto-edgeworth",
+        "classTitle": "Clase 03: Eficiencia de Pareto, Solución Planificada y Curva de Contrato en la Caja de Edgeworth"
+      }
+    ]
+  },
   "elasticidad-de-sustitucion-intertemporal": {
     "label": "Elasticidad de sustitución intertemporal",
     "refs": [
@@ -76,6 +191,51 @@
         "course": "macroeconomia-i",
         "class": "macroeconomia-i-clase-03",
         "classTitle": "Clase 03: Optimización Intertemporal, Ecuación de Euler y Función CRRA"
+      }
+    ]
+  },
+  "eleccion-social": {
+    "label": "Elección social",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-08-eleccion-social-arrow",
+        "classTitle": "Clase 07: Elección Social, Parejas Estables y Teorema de Arrow"
+      }
+    ]
+  },
+  "equilibrio-de-lindahl": {
+    "label": "Equilibrio de Lindahl",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-12-bienes-publicos",
+        "classTitle": "Clase 10: Bienes Públicos y Condición de Samuelson"
+      }
+    ]
+  },
+  "equilibrio-general": {
+    "label": "Equilibrio general",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-01-mano-invisible",
+        "classTitle": "Clase 01: La Mano Invisible, Supuestos del Equilibrio General e Instituciones"
+      },
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-practica-07-equilibrio-general",
+        "classTitle": "Práctica 01A: Equilibrio General e Intercambio"
+      }
+    ]
+  },
+  "equivalente-cierto": {
+    "label": "Equivalente cierto",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-13-riesgo-informacion",
+        "classTitle": "Clase 11: Riesgo, Seguros e Información Asimétrica"
       }
     ]
   },
@@ -99,6 +259,16 @@
       }
     ]
   },
+  "especializacion": {
+    "label": "Especialización",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-05-fpp-robinson-venus",
+        "classTitle": "Clase 05: Frontera de Posibilidades de Producción (FPP) y Ventaja Comparativa: Robinson y Venus"
+      }
+    ]
+  },
   "excedente": {
     "label": "Excedente",
     "refs": [
@@ -111,6 +281,46 @@
         "course": "economia-clasica",
         "class": "economia-clasica-presentacion-01-curso",
         "classTitle": "Presentación del curso"
+      }
+    ]
+  },
+  "exceso-de-demanda": {
+    "label": "Exceso de demanda",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-04-ley-walras",
+        "classTitle": "Clase 04: Equilibrio General Walrasiano, Ley de Walras y Teorema de Brouwer"
+      }
+    ]
+  },
+  "externalidad": {
+    "label": "Externalidad",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-11-externalidades",
+        "classTitle": "Clase 09: Externalidades, Pigou y Coase"
+      }
+    ]
+  },
+  "frontera-de-posibilidades-de-produccion": {
+    "label": "Frontera de posibilidades de producción",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-05-fpp-robinson-venus",
+        "classTitle": "Clase 05: Frontera de Posibilidades de Producción (FPP) y Ventaja Comparativa: Robinson y Venus"
+      }
+    ]
+  },
+  "frontera-de-posibilidades-de-utilidad": {
+    "label": "Frontera de posibilidades de utilidad",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-09-votante-mediano",
+        "classTitle": "Clase 08: Votante Mediano, Gasto Público y Corrupción"
       }
     ]
   },
@@ -134,6 +344,36 @@
       }
     ]
   },
+  "ganancia-de-bienestar": {
+    "label": "Ganancia de bienestar",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-06-produccion-comercio",
+        "classTitle": "Clase 06: Equilibrio General con Producción y Apertura al Comercio Internacional"
+      }
+    ]
+  },
+  "impuesto-pigouviano": {
+    "label": "Impuesto pigouviano",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-11-externalidades",
+        "classTitle": "Clase 09: Externalidades, Pigou y Coase"
+      }
+    ]
+  },
+  "independencia-de-alternativas-irrelevantes": {
+    "label": "Independencia de alternativas irrelevantes",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-practica-10-eleccion-social",
+        "classTitle": "Práctica 01B: Elección Social y Votación"
+      }
+    ]
+  },
   "interes-propio": {
     "label": "Interés propio",
     "refs": [
@@ -151,6 +391,41 @@
         "course": "macroeconomia-i",
         "class": "macroeconomia-i-clase-01",
         "classTitle": "Clase 01: La Restricción Presupuestaria Intertemporal"
+      }
+    ]
+  },
+  "ley-de-walras": {
+    "label": "Ley de Walras",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-04-ley-walras",
+        "classTitle": "Clase 04: Equilibrio General Walrasiano, Ley de Walras y Teorema de Brouwer"
+      },
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-practica-07-equilibrio-general",
+        "classTitle": "Práctica 01A: Equilibrio General e Intercambio"
+      }
+    ]
+  },
+  "manipulacion-estrategica": {
+    "label": "Manipulación estratégica",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-practica-10-eleccion-social",
+        "classTitle": "Práctica 01B: Elección Social y Votación"
+      }
+    ]
+  },
+  "mano-invisible": {
+    "label": "Mano invisible",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-01-mano-invisible",
+        "classTitle": "Clase 01: La Mano Invisible, Supuestos del Equilibrio General e Instituciones"
       }
     ]
   },
@@ -199,6 +474,16 @@
       }
     ]
   },
+  "monotonicidad": {
+    "label": "Monotonicidad",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-02-fundamentos-intercambio",
+        "classTitle": "Clase 02: Topología de Preferencias, Deseabilidad, Convexidad y Producción"
+      }
+    ]
+  },
   "multiplicadores-de-lagrange": {
     "label": "Multiplicadores de Lagrange",
     "refs": [
@@ -219,6 +504,16 @@
       }
     ]
   },
+  "paradoja-de-condorcet": {
+    "label": "Paradoja de Condorcet",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-08-eleccion-social-arrow",
+        "classTitle": "Clase 07: Elección Social, Parejas Estables y Teorema de Arrow"
+      }
+    ]
+  },
   "precio-de-mercado": {
     "label": "Precio de mercado",
     "refs": [
@@ -236,6 +531,36 @@
         "course": "economia-clasica",
         "class": "economia-clasica-clase-14-smith",
         "classTitle": "Clase 14: Smith y los precios naturales"
+      }
+    ]
+  },
+  "preferencias-convexas": {
+    "label": "Preferencias convexas",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-02-fundamentos-intercambio",
+        "classTitle": "Clase 02: Topología de Preferencias, Deseabilidad, Convexidad y Producción"
+      }
+    ]
+  },
+  "preferencias-unimodales": {
+    "label": "Preferencias unimodales",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-09-votante-mediano",
+        "classTitle": "Clase 08: Votante Mediano, Gasto Público y Corrupción"
+      }
+    ]
+  },
+  "prima-por-riesgo": {
+    "label": "Prima por riesgo",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-13-riesgo-informacion",
+        "classTitle": "Clase 11: Riesgo, Seguros e Información Asimétrica"
       }
     ]
   },
@@ -296,6 +621,16 @@
         "course": "economia-clasica",
         "class": "economia-clasica-clase-19-sraffa-definitivo",
         "classTitle": "Clase 19: El sistema definitivo de Sraffa"
+      }
+    ]
+  },
+  "seleccion-adversa": {
+    "label": "Selección adversa",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-13-riesgo-informacion",
+        "classTitle": "Clase 11: Riesgo, Seguros e Información Asimétrica"
       }
     ]
   },
@@ -369,6 +704,26 @@
       }
     ]
   },
+  "teorema-de-arrow": {
+    "label": "Teorema de Arrow",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-08-eleccion-social-arrow",
+        "classTitle": "Clase 07: Elección Social, Parejas Estables y Teorema de Arrow"
+      }
+    ]
+  },
+  "teorema-de-coase": {
+    "label": "Teorema de Coase",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-11-externalidades",
+        "classTitle": "Clase 09: Externalidades, Pigou y Coase"
+      }
+    ]
+  },
   "teoria-clasica-de-los-precios": {
     "label": "Teoría clásica de los precios",
     "refs": [
@@ -376,6 +731,26 @@
         "course": "economia-clasica",
         "class": "economia-clasica-presentacion-01-curso",
         "classTitle": "Presentación del curso"
+      }
+    ]
+  },
+  "votacion-por-mayoria": {
+    "label": "Votación por mayoría",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-practica-10-eleccion-social",
+        "classTitle": "Práctica 01B: Elección Social y Votación"
+      }
+    ]
+  },
+  "votante-mediano": {
+    "label": "Votante mediano",
+    "refs": [
+      {
+        "course": "microeconomia-ii",
+        "class": "microeconomia-ii-clase-09-votante-mediano",
+        "classTitle": "Clase 08: Votante Mediano, Gasto Público y Corrupción"
       }
     ]
   }

@@ -1,0 +1,66 @@
+{
+  "class": "microeconomia-ii-clase-06-produccion-comercio",
+  "category": "microeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "En autarquía con FPP $4X^2 + Y^2 = 100$, la economía produce y consume en...",
+      "options": [
+        "El mismo punto $E = (3.53, 7.07)$ sobre la frontera, con $U_E = 5$",
+        "Dos puntos distintos: produce en $E'$ y consume en $E''$",
+        "Cualquier punto interior con $U > 5$",
+        "El punto $(0, 10)$ de especialización total en $Y$"
+      ],
+      "correct": 0,
+      "explanation": "Sin comercio no hay intercambio exterior: producción y consumo coinciden sobre la FPP."
+    },
+    {
+      "difficulty": 2,
+      "question": "Abierta la economía con precios mundiales de pendiente $-1/2$, la producción se ubica donde...",
+      "options": [
+        "La FPP es tangente a la recta de precios mundiales: $E' = (1.21, 9.70)$",
+        "La indiferencia $U = 7.28$ corta a la FPP",
+        "El consumo iguala a la producción en cada bien",
+        "La TMT iguala a la pendiente autárquica $-2$"
+      ],
+      "correct": 0,
+      "explanation": "Producir maximiza el valor a precios mundiales: TMT = precio relativo mundial."
+    },
+    {
+      "difficulty": 3,
+      "question": "Con $U = \\sqrt{X Y}$, la utilidad del consumo $E'' = (10.30, 5.15)$ es...",
+      "options": [
+        "$U_{E''} = 7.28$, superior a la autárquica $U_E = 5$",
+        "$U_{E''} = 5$, igual a la autárquica",
+        "$U_{E''} = 3.53$, inferior a la autárquica",
+        "Incalculable sin conocer los precios mundiales"
+      ],
+      "correct": 0,
+      "explanation": "$\\sqrt{10.30 \\times 5.15} = \\sqrt{53.05} \\approx 7.28 > 5$: hay ganancia de bienestar."
+    },
+    {
+      "difficulty": 4,
+      "question": "Que $E''$ esté fuera de la FPP nacional es posible porque...",
+      "options": [
+        "La economía produce en $E'$ y comercia: exporta $Y$ e importa $X$ a precios mundiales",
+        "La apertura desplaza la FPP hacia afuera permanentemente",
+        "El consumo ya no necesita respetar ninguna restricción",
+        "La TMT se vuelve positiva con el comercio"
+      ],
+      "correct": 0,
+      "explanation": "El comercio separa producir de consumir: se vende caro lo abundante y se compra barato lo escaso."
+    },
+    {
+      "difficulty": 5,
+      "question": "La conclusión sobre los TLC del modelo es que el libre comercio...",
+      "options": [
+        "Expande el conjunto de consumo más allá de la FPP y alcanza una indiferencia estrictamente superior",
+        "Solo beneficia al sector exportador y perjudica al importador",
+        "Elimina la necesidad de especializarse según ventaja comparativa",
+        "Iguala los precios internos con los mundiales sin cambiar el consumo"
+      ],
+      "correct": 0,
+      "explanation": "Con $\\Delta U = 7.28 - 5 > 0$: el país consume una canasta infactible en autarquía."
+    }
+  ]
+}

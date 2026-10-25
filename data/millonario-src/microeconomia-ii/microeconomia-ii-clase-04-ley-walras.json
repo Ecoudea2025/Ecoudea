@@ -1,0 +1,66 @@
+{
+  "class": "microeconomia-ii-clase-04-ley-walras",
+  "category": "microeconomia",
+  "questions": [
+    {
+      "difficulty": 1,
+      "question": "Si el exceso de demanda individual $z_{ij}(P) = X_{ij}(P) - W_{ij}$ es positivo, el agente $i$ es...",
+      "options": [
+        "Comprador neto (demandante neto) del bien $j$",
+        "Vendedor neto (oferente neto) del bien $j$",
+        "Indiferente entre comprar y vender el bien $j$",
+        "Precio-aceptante solo en el mercado del bien $j$"
+      ],
+      "correct": 0,
+      "explanation": "Demanda mayor que dotación: el agente compra la diferencia en el mercado."
+    },
+    {
+      "difficulty": 2,
+      "question": "La Ley de Walras establece que para cualquier vector de precios $P \\gg 0$...",
+      "options": [
+        "El valor monetario agregado de los excesos de demanda es idénticamente cero: $P \\cdot Z(P) = 0$",
+        "Todos los excesos de demanda individuales son cero",
+        "Solo el mercado del numerario se vacía automáticamente",
+        "Los precios relativos dejan de importar"
+      ],
+      "correct": 0,
+      "explanation": "Vale dentro y fuera del equilibrio: es identidad presupuestal agregada, no condición de equilibrio."
+    },
+    {
+      "difficulty": 3,
+      "question": "La homogeneidad de grado cero de las demandas Cobb-Douglas implica que...",
+      "options": [
+        "Solo importan los precios relativos $P_1/P_2$: no hay ilusión monetaria",
+        "Duplicar todos los precios duplica las cantidades demandadas",
+        "La riqueza nominal no afecta la recta presupuestaria",
+        "El numerario debe ser siempre el bien 1"
+      ],
+      "correct": 0,
+      "explanation": "Al escalar $(P_1,P_2)$ por $\\lambda$, las rentas escalan igual y $\\lambda$ se cancela en $\\alpha R_i/P_j$."
+    },
+    {
+      "difficulty": 4,
+      "question": "Fijando el bien 2 como numerario ($P_2^* = 1$), el precio relativo de equilibrio es...",
+      "options": [
+        "$P_1^* = \\frac{\\alpha W_{12} + \\beta W_{22}}{(1-\\alpha) W_{11} + (1-\\beta) W_{21}}$",
+        "$P_1^* = \\frac{W_{11} + W_{21}}{W_{12} + W_{22}}$",
+        "$P_1^* = \\frac{\\alpha + \\beta}{(1-\\alpha) + (1-\\beta)}$",
+        "$P_1^* = \\alpha W_{11} + \\beta W_{21}$"
+      ],
+      "correct": 0,
+      "explanation": "Sale de vaciar el mercado 1: $W_{11}+W_{21} = X_{11}(P_1^*,1)+X_{21}(P_1^*,1)$, despejando $P_1^*$."
+    },
+    {
+      "difficulty": 5,
+      "question": "Si los consumidores atesoraran ahorro sin mercado de crédito, la Ley de Walras en bienes...",
+      "options": [
+        "Fallaría: el gasto en bienes sería menor que el valor de las dotaciones y $P\\cdot Z \\neq 0$",
+        "Se mantendría intacta, pues el ahorro no afecta los mercados",
+        "Se reforzaría: el subastador bajaría todos los precios",
+        "Solo fallaría si además hay bienes públicos"
+      ],
+      "correct": 0,
+      "explanation": "Walras exige gastar el 100% del presupuesto (vía LNS); el atesoramiento rompe la identidad en los mercados de bienes."
+    }
+  ]
+}
