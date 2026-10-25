@@ -31,6 +31,12 @@ De ciencias → factualess → sociales → económicas: cada nivel recorta el o
 
 Partir del concreto caótico (el mercado tal como aparece) y quedarse con determinaciones simples: sistema de producción, excedente, clases. Nuestras 10 hipótesis (clase 08) son exactamente este momento fijado por escrito.
 
+| Hipótesis que se levanta | Qué cambia | Ejemplo en el curso |
+| :--- | :--- | :--- |
+| H5 (sin producción conjunta) | Cada proceso da un solo bien | Lana + cordero exigirían repartir costos conjuntos |
+| H6 (sin capital fijo) | Todo se repone cada período | Una máquina que dura 10 años no cabe en `$\mathbf{B}$` anual |
+| H9 (sin tierra) | Sin renta diferencial | La fertilidad desigual crearía precios con renta (fuera del curso) |
+
 ### Paso 3: Concretizar y validar (fases 2–3)
 
 Reintroducir lo abstraído por pasos (renta, fijos, conjunta) y comprobar que las leyes sobreviven o se transforman de forma controlada; luego llevarlas a los hechos. Un modelo que no admite este regreso es escolástica, no ciencia.

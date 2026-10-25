@@ -28,6 +28,12 @@ La clase 19 separó técnica y reparto. Ahora dibujamos el reparto: para cada sa
 
 Con `$w = 0$` el sistema da `$R$` (tasa física del sistema, prima de la homotecia). Con `$r = 0$` da `$\hat{W}$` (todo el neto a salarios). Ambos se calculan desde la técnica sin precios previos.
 
+<Ejemplo>
+
+En el sistema del curso (`$R = 44{,}9\%$`, clase 03): con `$w = 0$`, `$r = 44{,}9\%$`; con `$r = 0$`, `$w = \hat{W}$` (todo el neto a salarios). Un punto intermedio negociado, p. ej. `$w = \hat{W}/2$`, deja `$r \approx 22{,}45\%$` si la frontera fuera recta (en patrón lo es exactamente, clase 21; en trigo se curva por composición).
+
+</Ejemplo>
+
 ### Paso 2: La inversa general
 
 Entre extremos, subir `$w$` exige bajar `$r$`: la tesis de Ricardo demostrada en general. Pero ojo: ante cambios de `$w$`, los precios **también** se mueven (efecto composición, clase 16), así que la frontera puede curvarse; solo con la mercancía patrón (clase 21) es recta.

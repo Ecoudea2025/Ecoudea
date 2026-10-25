@@ -30,6 +30,12 @@ Demanda efectiva vs oferta: si la cantidad llevada al mercado es menor que la de
 
 Ricardo ata la movilidad a la igualación tendencial; Marx añade la acumulación y la composición orgánica: la gravitación opera **a través** de los ciclos de inversión, no instantáneamente. La convergencia exige supuestos sobre velocidades de ajuste.
 
+<Ejemplo>
+
+Vuelve al trío `$10 \to 15 \to 24{,}58$` de la clase 11: a `$p_{21} = 10$` el trigo gana `$43{,}75\%$` y el hierro `$0\%$`; el diferencial de `$43{,}75$` puntos empuja capitales al trigo. Su oferta sube y `$p_{21}$` sube hacia `$15$`, donde el diferencial se anula y la migración cesa. Si el diferencial fuera de apenas `$1$` punto, el movimiento sería imperceptible: la *velocidad* de gravitación depende del tamaño de la brecha, por eso Marx insiste en los ciclos.
+
+</Ejemplo>
+
 ### Paso 3: Competencia real y liberalismos (Smith realista)
 
 Smith también describió la competencia empírica (monopolios, regulaciones, salarios por encima del natural): ahí el Estado aparece —solo se justifica donde el mercado **no** genera precios viables (corolario de la Introducción). Los distintos liberalismos nacen de dónde ponga cada uno ese límite.

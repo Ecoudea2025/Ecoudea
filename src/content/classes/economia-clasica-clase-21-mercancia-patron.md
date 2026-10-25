@@ -37,6 +37,12 @@ $$
 
 donde `$\omega$` es la parte salarial de la renta patrón. Linealidad exacta: cada punto de salario descuenta proporcionalmente la tasa, sin efectos precio que la curven.
 
+<details>
+<summary>¿Por qué la recta y no la curva?</summary>
+
+En numerario-trigo, subir `$w$` mezcla dos efectos: (a) puro reparto (menos para beneficios) y (b) recomposición de precios por `$q_i$` distintos (clase 16), que curva la frontera. La MCP está construida para que (b) sea cero por definición: al medir en la canasta homotética, los cambios de `$w$` solo reparten. Por eso `$r = R(1-\omega)$` es exacta y la de trigo, aproximada y curva.
+</details>
+
 ### Paso 3: Aislar movimientos verdaderos
 
 Un precio relativo que se mueve medido en patrón se mueve por **su** causa (técnica o composición propia), no porque la vara se haya movido con la distribución. Queda resuelto el problema clásico de la medida invariable... al precio de ser una canasta ideal, no observable.

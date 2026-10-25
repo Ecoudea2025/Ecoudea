@@ -27,6 +27,12 @@ Toda la tradición separó referencia (unidades 4–5) y mercado (clase 23). Tor
 
 Con la estructura que iguala todas las `$e_j$` (clase 08, paso 2), todo el excedente se invierte y el sistema crece a la tasa común. Torrens encuentra esa estructura y con ella el crecimiento máximo: el embrión de la homotecia que Sraffa formalizaría.
 
+<Ejemplo>
+
+En el sistema del curso, igualar `$e_{\text{trigo}} = e_{\text{hierro}}$` exige reasignar trabajo hasta que ambas valgan `$R = 44{,}9\%$`: todo el excedente se reinvierte y no hay consumo final de lujo que lo frene. Cualquier otra estructura crece menos (recuerda: con la estructura dada, el mínimo mandaba: `$25\%$`). Torrens descubrió que la *proporción* entre sectores decide la tasa, no solo su tamaño.
+
+</Ejemplo>
+
 ### Paso 2: BBK (la generalización)
 
 Benetti-Bidard-Klimovsky dejan que cada capitalista decida su `$g_i$`: el sistema determina precios **y** tasas de beneficio efectivas compatibles con esas decisiones, en equilibrio o fuera de él. Ricardo, Sraffa y Torrens reaparecen como casos particulares (restricciones sobre las `$g_i$`).

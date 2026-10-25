@@ -38,6 +38,13 @@ $$
 
 `$n$` ecuaciones, `$n+1$` incógnitas (`$n-1$` relativos + `$r$` + `$w$`): se fija **una** variable distributiva fuera (salario por negociación social, o `$r$` por la tasa monetaria) y el resto se determina. La exogeneidad es la novedad: factores sociales, políticos e institucionales entran por la variable elegida.
 
+<details>
+<summary>Contar incógnitas en el 2×2 del curso</summary>
+
+Con `$n = 2$` y numerario `$p_2 = 1$`: 2 ecuaciones, 3 incógnitas (`$p_1$, `$r$`, `$w$`). Fija `$w$` por negociación (digamos `$w = \bar{w}$`) y resuelve `$p_1, r$`; o fija `$r$` por la tasa monetaria y resuelve `$p_1, w$`. Caso límite `$w = 0$`: el sistema vuelve al homogéneo y `$r$` salta a `$R = 44{,}9\%$` sin necesidad de precios previos — la técnica manda cuando nadie reclama salario.
+
+</details>
+
 ### Paso 3: Bienes básicos mandan
 
 Solo los básicos intervienen en la determinación de `$r$`; los no básicos reciben sus precios desde el núcleo sin devolver influencia (sus ecuaciones se resuelven después, en cascada). Dividir el sistema por básicos/no básicos simplifica y aclara.
