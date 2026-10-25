@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-24T21:43:00.138436</dc:date>
+    <dc:date>2026-10-25T13:57:50.660744</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -67,15 +67,15 @@ L 431.28 248.976
    </g>
    <g id="text_1">
     <g id="patch_6">
-     <path d="M 134.835 26.047083 
-L 303.645 26.047083 
-L 303.645 10.739583 
-L 134.835 10.739583 
+     <path d="M 134.835 23.360683 
+L 303.645 23.360683 
+L 303.645 8.053183 
+L 134.835 8.053183 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- Biosfera y entorno físico -->
-    <g style="fill: #65a30d" transform="translate(136.395 21.897708) scale(0.12 -0.12)">
+    <g style="fill: #65a30d" transform="translate(136.395 19.211308) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-42" d="M 2456 2859 
 Q 2741 2859 2887 2984 
@@ -395,15 +395,15 @@ z
    </g>
    <g id="text_2">
     <g id="patch_7">
-     <path d="M 54.484102 36.637406 
-L 383.995898 36.637406 
-L 383.995898 24.774594 
-L 54.484102 24.774594 
+     <path d="M 54.484102 39.995406 
+L 383.995898 39.995406 
+L 383.995898 28.132594 
+L 54.484102 28.132594 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- Energía · Minerales · Aire · Agua · Plantas · Animales · Tierra · Suelo -->
-    <g style="fill: #94a3a8" transform="translate(56.099102 33.188266) scale(0.085 -0.085)">
+    <g style="fill: #94a3a8" transform="translate(56.099102 36.546266) scale(0.085 -0.085)">
      <defs>
       <path id="DejaVuSans-Bold-45" d="M 588 4666 
 L 3834 4666 

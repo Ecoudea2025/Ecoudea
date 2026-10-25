@@ -22,8 +22,8 @@ def draw(theme):
             color=ROLES["c1"], lw=2.0, zorder=4)
     pure_axes(ax, [0, 10], ["t0", "t"], [10, 15, 24.58],
               ["p=10", "p*=15", "p=24.58"])
-    label(ax, 10.15, 15, "precio natural (r = 25%)", accent(theme), theme,
-          fontsize=11)
+    label(ax, 8.2, 16.4, "precio natural (r = 25%)", accent(theme), theme,
+          ha="center", fontsize=11)
     label(ax, 0.3, 25.3, "r2 > r1: migran al hierro", ROLES["c2"], theme,
           fontsize=10, bold=False)
     label(ax, 0.3, 9.6, "r1 > r2: migran al trigo", ROLES["c1"], theme,

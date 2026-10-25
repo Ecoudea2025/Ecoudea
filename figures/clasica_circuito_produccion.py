@@ -46,8 +46,8 @@ def draw(theme):
                                 lw=1.4, linestyle=(0, (4, 3)),
                                 connectionstyle="arc3,rad=0.25"))
     arrow(8.45, 2.4, 8.45, 1.4, t["muted"])        # E -> G/F
-    label(ax, 1.55, 3.35, "medios + trabajo", t["muted"], theme,
-          fontsize=10, bold=False)
+    label(ax, 3.35, 3.95, "medios + trabajo", t["muted"], theme,
+          ha="center", fontsize=10, bold=False)
     label(ax, 7.0, 4.15, "E = PT - CPT", accent(theme), theme, fontsize=11)
     label(ax, 2.0, 1.45, "circula de vuelta", ROLES["budget"], theme,
           fontsize=10, bold=False)

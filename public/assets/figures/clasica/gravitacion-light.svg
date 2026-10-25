@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="635.699837pt" height="264.27775pt" viewBox="0 0 635.699837 264.27775" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="482.628437pt" height="264.27775pt" viewBox="0 0 482.628437 264.27775" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-24T16:58:18.690905</dc:date>
+    <dc:date>2026-10-25T13:58:01.948206</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -22,8 +22,8 @@
  <g id="figure_1">
   <g id="patch_1">
    <path d="M 0 264.27775 
-L 635.699837 264.27775 
-L 635.699837 0 
+L 482.628437 264.27775 
+L 482.628437 0 
 L 0 0 
 L 0 264.27775 
 z
@@ -410,15 +410,15 @@ L 472.560625 153.261474
    </g>
    <g id="text_6">
     <g id="patch_5">
-     <path d="M 476.937025 160.234442 
-L 630.149838 160.234442 
-L 630.149838 146.288505 
-L 476.937025 146.288505 
+     <path d="M 323.637419 143.193937 
+L 476.850231 143.193937 
+L 476.850231 129.248 
+L 323.637419 129.248 
 z
 " style="fill: #faf8f1; opacity: 0.9"/>
     </g>
     <!-- precio natural (r = 25%) -->
-    <g style="fill: #3f6212" transform="translate(478.587025 156.296786) scale(0.11 -0.11)">
+    <g style="fill: #3f6212" transform="translate(325.287419 139.256281) scale(0.11 -0.11)">
      <defs>
       <path id="DejaVuSans-Bold-72" d="M 3138 2547 
 Q 2991 2616 2845 2648 

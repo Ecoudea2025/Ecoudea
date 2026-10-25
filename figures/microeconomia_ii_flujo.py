@@ -16,8 +16,8 @@ def draw(theme):
     # marco biosfera
     ax.add_patch(mp.FancyBboxPatch((0.2, 0.3), 9.6, 9.2, boxstyle="round,pad=0.25",
                  facecolor="none", edgecolor="#65a30d", lw=2.2, zorder=2))
-    label(ax, 5.0, 10.3, "Biosfera y entorno físico", "#65a30d", theme, ha="center", fontsize=12)
-    label(ax, 5.0, 9.75, "Energía · Minerales · Aire · Agua · Plantas · Animales · Tierra · Suelo",
+    label(ax, 5.0, 10.42, "Biosfera y entorno físico", "#65a30d", theme, ha="center", fontsize=12)
+    label(ax, 5.0, 9.6, "Energía · Minerales · Aire · Agua · Plantas · Animales · Tierra · Suelo",
           t["muted"], theme, ha="center", fontsize=8.5)
     # cajas
     boxes = {"Hogares": (1.0, 4.2), "Empresas": (6.4, 4.2), "Gobierno": (3.7, 1.0)}

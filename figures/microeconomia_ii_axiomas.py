@@ -12,8 +12,10 @@ def panel(ax, theme, mode):
     ax.set_ylim(0, 10.5)
     ax.grid(True, linestyle="--", linewidth=0.7)
     x = np.array([4.0, 4.0])
-    ax.plot(x[0], x[1], "o", ms=9, color="#0284c7", zorder=5)
-    label(ax, 3.4, 3.3, "x", "#0284c7", theme, ha="right")
+    if mode != "lns":
+        # punto de referencia x (LNS usa su propio x en (5, 5))
+        ax.plot(x[0], x[1], "o", ms=9, color="#0284c7", zorder=5)
+        label(ax, 3.4, 3.3, "x", "#0284c7", theme, ha="right")
     if mode == "mono":
         # interior del cuadrante NE sombreado
         ax.fill([4, 10, 10, 4], [4, 4, 10, 10], facecolor=TINTS[theme]["excl"],
@@ -36,7 +38,7 @@ def panel(ax, theme, mode):
                           edgecolor=t["muted"], linestyle="--", lw=1.4, zorder=2)
         ax.add_patch(circ)
         ax.plot(5, 5, "o", ms=9, color="#0284c7", zorder=5)
-        label(ax, 4.4, 4.4, "x", "#0284c7", theme, ha="right")
+        label(ax, 3.5, 3.0, "x", "#0284c7", theme, ha="center")
         # punto y a distancia < eps: (5.9, 5.7) -> dist ~1.14 < 2
         ax.plot(5.9, 5.7, "o", ms=9, color="#d97706", zorder=5)
         label(ax, 6.2, 6.1, "y mejor que x", "#d97706", theme, fontsize=10)

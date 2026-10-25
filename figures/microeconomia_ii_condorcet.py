@@ -37,12 +37,12 @@ def draw(theme):
     a2.set_title("La deducción imposible", fontsize=12, fontweight="bold")
     boxes = [("Y ~S Z", "no dictadura", 1.2, 7.0), ("X >S Y", "unanimidad", 1.2, 4.2)]
     for txt, sub, x, y in boxes:
-        a2.add_patch(mp.FancyBboxPatch((x, y - 0.7), 3.6, 1.5,
+        a2.add_patch(mp.FancyBboxPatch((x, y - 0.85), 3.6, 1.7,
                      boxstyle="round,pad=0.1", facecolor=TINTS[theme]["excl"],
                      edgecolor="#0284c7", lw=1.6, zorder=3))
-        a2.text(x + 1.8, y + 0.15, txt, ha="center", va="center", fontsize=12,
+        a2.text(x + 1.8, y + 0.3, txt, ha="center", va="center", fontsize=12,
                 fontweight="bold", color=t["fg"], zorder=4)
-        a2.text(x + 1.8, y - 0.45, sub, ha="center", va="center", fontsize=9,
+        a2.text(x + 1.8, y - 0.55, sub, ha="center", va="center", fontsize=9,
                 color=t["muted"], zorder=4)
     a2.annotate("", xy=(6.3, 5.6), xytext=(5.0, 5.6),
                 arrowprops=dict(arrowstyle="->", color="#d97706", lw=2.2))

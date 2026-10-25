@@ -3,6 +3,7 @@ import sys
 sys.path.insert(0, "figures")
 import numpy as np
 from style import setup_eco, save, OUTDIR_MD, THEMES, halo, label, end_label, TINTS
+from style import gap_caps, smart_label
 
 
 def draw(theme):
@@ -29,14 +30,14 @@ def draw(theme):
         ax.plot([px - dx, px + dx], [py - pmg * dx, py + pmg * dx],
                 color="#d97706", lw=1.4, linestyle="--", zorder=3)
     label(ax, 0.35, 5.35, "A PMg=3", "#d97706", theme, ha="right")
-    label(ax, 9.0, 18.95, "B PMg=1", "#d97706", theme, ha="center")
+    smart_label(ax, 9.0, 18.0, "B PMg=1", "#d97706", theme, r=0.9)
     # cuerda secante A-B y holgura en el insumo promedio
     lam = 0.5
     xm = lam * A[0] + (1 - lam) * B[0]  # 5.0
     y_cuerda = lam * A[1] + (1 - lam) * B[1]  # 12.0
     y_fun = f(xm)  # ~13.42
     ax.plot([A[0], B[0]], [A[1], B[1]], color="#65a30d", lw=1.8, zorder=3)
-    ax.plot([xm, xm], [y_cuerda, y_fun], color="#65a30d", lw=2.2, zorder=5)
+    gap_caps(ax, xm, y_cuerda, y_fun, "#65a30d", cap=0.25)
     ax.plot(xm, y_fun, "o", ms=8, color="#65a30d", zorder=5)
     label(ax, 5.7, 12.35, "holgura", "#65a30d", theme)
     ax.set_xlim(0, 11.5)
