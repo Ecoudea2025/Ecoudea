@@ -164,7 +164,7 @@ Con estos ingredientes, se define la función de ajuste de precios del subastado
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/walras-equilibrio-light.svg" alt="Caja con dotación inicial, recta fuera de equilibrio con excesos señalados y recta de equilibrio tangente sobre el contrato." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/walras-equilibrio-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: fuera del equilibrio sobra de un bien y falta del otro; el precio walrasiano vacía ambos.</figcaption>
+  <figcaption>Figura: fuera del equilibrio sobra de un bien y falta del otro; el precio walrasiano vacía ambos.</figcaption>
 </figure>
 
 

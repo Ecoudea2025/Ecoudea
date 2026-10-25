@@ -170,7 +170,7 @@ Dado que no existe ningún mecanismo perfecto para agregar preferencias individu
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/condorcet-arrow-light.svg" alt="Triángulo dirigido X-Y-Z-X de mayorías por parejas y esquema de la deducción imposible de Arrow." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/condorcet-arrow-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: mayorías por parejas giran en círculo; exigirlo todo a la vez crea un dictador.</figcaption>
+  <figcaption>Figura: mayorías por parejas giran en círculo; exigirlo todo a la vez crea un dictador.</figcaption>
 </figure>
 
 

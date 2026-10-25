@@ -191,7 +191,7 @@ $$
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/comercio-apertura-light.svg" alt="FPP elíptica con tangencia autárquica E, tangencia productiva E' con precios mundiales y consumo E'' sobre indiferencia superior." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/comercio-apertura-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: el comercio separa producir de consumir; se produce con precios mundiales y se consume más allá.</figcaption>
+  <figcaption>Figura: el comercio separa producir de consumir; se produce con precios mundiales y se consume más allá.</figcaption>
 </figure>
 
 

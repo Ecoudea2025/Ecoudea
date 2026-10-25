@@ -141,7 +141,7 @@ $$
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/riesgo-ce-prima-light.svg" alt="Logaritmo cóncavo con valor esperado, equivalente cierto y prima; umbral que separa costos de señalización." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/riesgo-ce-prima-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: la concavidad descuenta el riesgo; el umbral separa a los productivos.</figcaption>
+  <figcaption>Figura: la concavidad descuenta el riesgo; el umbral separa a los productivos.</figcaption>
 </figure>
 
 

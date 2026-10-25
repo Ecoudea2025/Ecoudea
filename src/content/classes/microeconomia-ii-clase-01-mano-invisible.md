@@ -119,7 +119,7 @@ Finalmente, debemos situar el modelo de equilibrio general dentro de dos marcos 
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/flujo-biosfera-light.svg" alt="Hogares, empresas y gobierno intercambiando flujos dentro de la biosfera, con entradas de recursos y salidas de contaminación." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/flujo-biosfera-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: la economía vive dentro de la biosfera; produce con recursos y devuelve contaminación.</figcaption>
+  <figcaption>Figura: la economía vive dentro de la biosfera; produce con recursos y devuelve contaminación.</figcaption>
 </figure>
 
 

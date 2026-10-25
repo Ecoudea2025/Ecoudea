@@ -120,7 +120,7 @@ $$
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/pigou-externalidad-light.svg" alt="Precio horizontal, costo privado y social, cantidades privada y óptima, impuesto como llave y triángulo de pérdida." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/pigou-externalidad-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: el impuesto pigouviano cierra la brecha; el triángulo es el bienestar quemado.</figcaption>
+  <figcaption>Figura: el impuesto pigouviano cierra la brecha; el triángulo es el bienestar quemado.</figcaption>
 </figure>
 
 

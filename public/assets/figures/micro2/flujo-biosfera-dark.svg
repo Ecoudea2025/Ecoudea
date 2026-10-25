@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-24T20:55:25.507736</dc:date>
+    <dc:date>2026-10-24T21:43:00.138436</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -846,15 +846,15 @@ L 113.456005 156.811625
    </g>
    <g id="text_5">
     <g id="patch_16">
-     <path d="M 69.587156 171.001156 
-L 125.442 171.001156 
-L 125.442 159.050844 
-L 69.587156 159.050844 
+     <path d="M 75.948356 181.075156 
+L 131.8032 181.075156 
+L 131.8032 169.124844 
+L 75.948356 169.124844 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- impuestos -->
-    <g style="fill: #94a3a8" transform="translate(71.207156 167.509437) scale(0.09 -0.09)">
+    <g style="fill: #94a3a8" transform="translate(77.568356 177.583438) scale(0.09 -0.09)">
      <defs>
       <path id="DejaVuSans-Bold-70" d="M 1656 506 
 L 1656 -1331 
@@ -914,15 +914,15 @@ L 156.018055 195.988034
    </g>
    <g id="text_6">
     <g id="patch_19">
-     <path d="M 168.8508 188.945646 
-L 255.553144 188.945646 
-L 255.553144 176.925021 
-L 168.8508 176.925021 
+     <path d="M 173.0916 184.468313 
+L 259.793944 184.468313 
+L 259.793944 172.447688 
+L 173.0916 172.447688 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- leyes y servicios -->
-    <g style="fill: #65a30d" transform="translate(170.4708 185.383615) scale(0.09 -0.09)">
+    <g style="fill: #65a30d" transform="translate(174.7116 180.906281) scale(0.09 -0.09)">
      <defs>
       <path id="DejaVuSans-Bold-76" d="M 97 3500 
 L 1216 3500 

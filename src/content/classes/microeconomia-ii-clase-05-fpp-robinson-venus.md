@@ -170,7 +170,7 @@ En consecuencia, la **FPP conjunta es cóncava hacia el origen** `(quebrada haci
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/fpp-conjunta-light.svg" alt="Dos FPP lineales individuales y la conjunta quebrada exterior, con puntos ineficientes en el interior." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/fpp-conjunta-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: especializarse según el costo de oportunidad dibuja la frontera exterior.</figcaption>
+  <figcaption>Figura: especializarse según el costo de oportunidad dibuja la frontera exterior.</figcaption>
 </figure>
 
 

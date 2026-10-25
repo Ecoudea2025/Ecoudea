@@ -28,7 +28,8 @@ def draw(theme):
         dx = 1.1
         ax.plot([px - dx, px + dx], [py - pmg * dx, py + pmg * dx],
                 color="#d97706", lw=1.4, linestyle="--", zorder=3)
-        label(ax, px + 0.25, py + 0.55, f"{nm} PMg={pmg:.0f}", "#d97706", theme)
+    label(ax, 0.35, 5.35, "A PMg=3", "#d97706", theme, ha="right")
+    label(ax, 9.0, 18.95, "B PMg=1", "#d97706", theme, ha="center")
     # cuerda secante A-B y holgura en el insumo promedio
     lam = 0.5
     xm = lam * A[0] + (1 - lam) * B[0]  # 5.0
@@ -37,7 +38,8 @@ def draw(theme):
     ax.plot([A[0], B[0]], [A[1], B[1]], color="#65a30d", lw=1.8, zorder=3)
     ax.plot([xm, xm], [y_cuerda, y_fun], color="#65a30d", lw=2.2, zorder=5)
     ax.plot(xm, y_fun, "o", ms=8, color="#65a30d", zorder=5)
-    label(ax, xm + 0.25, (y_cuerda + y_fun) / 2, "holgura", "#65a30d", theme)
+    label(ax, 5.7, 12.35, "holgura", "#65a30d", theme)
+    ax.set_xlim(0, 11.5)
     ax.set_xticks([1, 5, 9])
     ax.set_xticklabels(["x", "xm", "x'"])
     ax.set_yticks([])

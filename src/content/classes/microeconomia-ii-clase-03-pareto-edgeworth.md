@@ -139,7 +139,7 @@ Cuando `$\alpha = \beta$`, **la curva de contrato es exactamente la diagonal pri
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/edgeworth-contrato-light.svg" alt="Caja de Edgeworth con curva de contrato, tres tangencias entre indiferencias y lente de mejoras desde la dotación." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/edgeworth-contrato-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: la curva de contrato une las tangencias; el lente muestra cuánto queda por ganar.</figcaption>
+  <figcaption>Figura: la curva de contrato une las tangencias; el lente muestra cuánto queda por ganar.</figcaption>
 </figure>
 
 

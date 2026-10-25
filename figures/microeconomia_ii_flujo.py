@@ -33,10 +33,10 @@ def draw(theme):
     flow(ax, (6.4, 4.7), (3.6, 4.7), "#d97706")          # bienes E->H (vuelta)
     label(ax, 5.0, 4.35, "bienes", "#d97706", theme, ha="center", fontsize=9)
     flow(ax, (2.3, 4.2), (3.9, 2.7), t["muted"])        # impuestos H->G
-    label(ax, 2.75, 3.75, "impuestos", t["muted"], theme, ha="right", fontsize=9)
+    label(ax, 2.9, 3.3, "impuestos", t["muted"], theme, ha="right", fontsize=9)
     flow(ax, (7.7, 4.2), (5.6, 2.7), t["muted"])        # impuestos E->G
     flow(ax, (3.7, 2.2), (2.4, 4.2), "#65a30d")         # servicios G->H
-    label(ax, 3.85, 2.95, "leyes y servicios", "#65a30d", theme, fontsize=9)
+    label(ax, 3.95, 3.15, "leyes y servicios", "#65a30d", theme, fontsize=9)
     # entradas verdes (recursos) aterrizan en las cajas desde arriba
     flow(ax, (1.6, 5.95), (1.6, 8.6), "#65a30d")
     label(ax, 1.75, 7.3, "recursos", "#65a30d", theme, fontsize=9)

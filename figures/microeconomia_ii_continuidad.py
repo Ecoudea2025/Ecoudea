@@ -22,13 +22,15 @@ def draw(theme):
     label(ax, 5.6, 5.5, "x", "#0284c7", theme, ha="right")
     # sucesion y^n en U(x) -> y en U(x): puntos (8.5,4.6),(7.8,5.2),(7.2,5.7), limite (6.8,6.0)
     seq = [(8.5, 4.6), (7.8, 5.2), (7.2, 5.7), (6.8, 6.0)]
-    for k, (px, py) in enumerate(seq[:-1]):
+    ax.plot(seq[0][0], seq[0][1], "o", ms=8, color="#d97706", zorder=5)
+    label(ax, 8.8, 4.05, "y1", "#d97706", theme, fontsize=10)
+    for px, py in seq[1:-1]:
         ax.plot(px, py, "o", ms=8, color="#d97706", zorder=5)
-        label(ax, px + 0.25, py + 0.2, f"y{k + 1}", "#d97706", theme, fontsize=10)
+    label(ax, 7.45, 6.0, "y3", "#d97706", theme, fontsize=10)
     ax.plot(seq[-1][0], seq[-1][1], "s", ms=9, color="#65a30d", zorder=5)
-    label(ax, seq[-1][0] + 0.3, seq[-1][1] + 0.25, "y en U(x)", "#65a30d", theme)
-    # flecha punteada de convergencia y^1 -> ... -> y
-    ax.annotate("", xy=(6.95, 5.95), xytext=(8.3, 4.75),
+    label(ax, 6.15, 6.35, "y en U(x)", "#65a30d", theme, ha="right")
+    # flecha de convergencia por debajo de los puntos (no cruza etiquetas)
+    ax.annotate("", xy=(7.0, 5.72), xytext=(8.5, 4.28),
                 arrowprops=dict(arrowstyle="->", color="#d97706", lw=1.4,
                                 linestyle=(0, (3, 2))))
     ax.set_xticks([6])

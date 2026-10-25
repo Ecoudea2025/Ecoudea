@@ -28,7 +28,7 @@ Considere tres personas `$(i, j, k)$` que evalúan tres niveles de gasto públic
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/unimodal-valle-light.svg" alt="Curva en valle frente a tres curvas de un solo pico sobre el eje Bajo-Medio-Alto." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/unimodal-valle-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: con un solo pico el mediano decide; con un valle no hay equilibrio estable.</figcaption>
+  <figcaption>Figura: con un solo pico el mediano decide; con un valle no hay equilibrio estable.</figcaption>
 </figure>
 
 
@@ -182,7 +182,7 @@ El curso cierra conectando la ética social con la **Teoría de Juegos repetidos
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/fpu-optimo-light.svg" alt="Frontera de utilidad cóncava con rayo igualitario, punto utilitarista y tangencia con isobienestar social." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/fpu-optimo-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: la frontera dice qué se puede; la función de bienestar elige el punto.</figcaption>
+  <figcaption>Figura: la frontera dice qué se puede; la función de bienestar elige el punto.</figcaption>
 </figure>
 
 

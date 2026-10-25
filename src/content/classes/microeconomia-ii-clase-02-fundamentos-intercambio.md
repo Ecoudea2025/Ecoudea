@@ -69,7 +69,7 @@ $$
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/axiomas-monotonicidad-light.svg" alt="Tres paneles: cuadrante noreste, borde norte o este, y bola epsilon con un punto mejor." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/axiomas-monotonicidad-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: monotonicidad exige el cuadrante; la estricta admite el borde; LNS solo un punto mejor arbitrariamente cerca.</figcaption>
+  <figcaption>Figura: monotonicidad exige el cuadrante; la estricta admite el borde; LNS solo un punto mejor arbitrariamente cerca.</figcaption>
 </figure>
 
 
@@ -136,7 +136,7 @@ En términos de una curva de indiferencia: si `$y \neq z$` y `$y \sim z$`, su pr
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/convexidad-light.svg" alt="Dos paneles: curva con tramo lineal y punto medio en el borde, frente a curva estricta con la cuerda por encima." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/convexidad-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: convexa admite tramos lineales; estrictamente convexa premia la mezcla.</figcaption>
+  <figcaption>Figura: convexa admite tramos lineales; estrictamente convexa premia la mezcla.</figcaption>
 </figure>
 
 
@@ -162,7 +162,7 @@ $$
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/continuidad-light.svg" alt="Curva de indiferencia separando el conjunto superior sombreado del inferior, con una secuencia de puntos convergiendo dentro del superior." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/continuidad-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: continuidad cierra los conjuntos de contorno; el límite de lo mejor sigue siéndolo.</figcaption>
+  <figcaption>Figura: continuidad cierra los conjuntos de contorno; el límite de lo mejor sigue siéndolo.</figcaption>
 </figure>
 
 
@@ -215,7 +215,7 @@ $$
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/produccion-concava-light.svg" alt="Función de producción cóncava con dos planes eficientes, tangentes de distinta pendiente y brecha de holgura en el insumo promedio." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/produccion-concava-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: rendimientos decrecientes hacen convexo al conjunto; promediar insumos rinde más que promediar productos.</figcaption>
+  <figcaption>Figura: rendimientos decrecientes hacen convexo al conjunto; promediar insumos rinde más que promediar productos.</figcaption>
 </figure>
 
 

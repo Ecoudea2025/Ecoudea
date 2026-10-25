@@ -133,7 +133,7 @@ Como `$v_i' > 0$` y `$v_i'' < 0$`, se cumple estrictamente que **`$G^{\text{Nash
 <figure class="eco-figure">
   <img src="/assets/figures/micro2/samuelson-vertical-light.svg" alt="Dos disposiciones marginales, su suma vertical, costo marginal, Nash frente a Samuelson y precios de Lindahl." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
   <img src="/assets/figures/micro2/samuelson-vertical-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: Figura: el bien público se suma en vertical; el free-rider aporta de menos.</figcaption>
+  <figcaption>Figura: el bien público se suma en vertical; el free-rider aporta de menos.</figcaption>
 </figure>
 
 
