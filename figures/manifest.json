@@ -174,6 +174,111 @@
       "title": "Frontera salario-beneficio en mercancía patrón",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-24"
+    },
+    {
+      "id": "micro2/axiomas-monotonicidad",
+      "script": "figures/microeconomia_ii_axiomas.py",
+      "title": "Axiomas: monotonicidad, estricta y LNS",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/convexidad",
+      "script": "figures/microeconomia_ii_convexidad.py",
+      "title": "Convexas vs estrictamente convexas",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/continuidad",
+      "script": "figures/microeconomia_ii_continuidad.py",
+      "title": "Continuidad y sucesion en U(x)",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/produccion-concava",
+      "script": "figures/microeconomia_ii_produccion.py",
+      "title": "Produccion concava y holgura del promedio",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/flujo-biosfera",
+      "script": "figures/microeconomia_ii_flujo.py",
+      "title": "Flujo circular incrustado en la biosfera",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/edgeworth-contrato",
+      "script": "figures/microeconomia_ii_edgeworth.py",
+      "title": "Caja de Edgeworth y curva de contrato",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/walras-equilibrio",
+      "script": "figures/microeconomia_ii_walras.py",
+      "title": "Equilibrio y desequilibrio walrasiano",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/fpp-conjunta",
+      "script": "figures/microeconomia_ii_fpp.py",
+      "title": "FPP individuales y conjunta quebrada",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/comercio-apertura",
+      "script": "figures/microeconomia_ii_comercio.py",
+      "title": "Autarquia y apertura E, E-prime, E-doble-prima",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/condorcet-arrow",
+      "script": "figures/microeconomia_ii_condorcet.py",
+      "title": "Ciclo de Condorcet y deduccion de Arrow",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/unimodal-valle",
+      "script": "figures/microeconomia_ii_unimodal.py",
+      "title": "Unimodal vs valle del votante k",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/fpu-optimo",
+      "script": "figures/microeconomia_ii_fpu.py",
+      "title": "FPU con igualitario, utilitarista y tangencia",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/pigou-externalidad",
+      "script": "figures/microeconomia_ii_pigou.py",
+      "title": "Pigou: impuesto y triangulo de perdida",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/samuelson-vertical",
+      "script": "figures/microeconomia_ii_samuelson.py",
+      "title": "Suma vertical, Nash y Lindahl",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "micro2/riesgo-ce-prima",
+      "script": "figures/microeconomia_ii_riesgo.py",
+      "title": "Equivalente cierto, prima y Spence",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
     }
   ]
 }
