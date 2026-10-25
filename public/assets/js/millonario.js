@@ -149,9 +149,6 @@
   }
 
   var state = initialState();
-  var TIME_MAX = (state.bank && state.bank.config.timePerQuestion) || 30;
-  /** Máximo de segundos: sale del banco (config.timePerQuestion). */
-  function timeMax() { return (state.bank && state.bank.config.timePerQuestion) || 30; }
   var LETTERS = ['A', 'B', 'C', 'D'];
 
   function rnd() { return state.seedRand || Math.random; }
@@ -229,9 +226,6 @@
       beep(440, 0, 0.08, 'sine', 0.4);
       beep(587.33, 0.06, 0.14, 'sine', 0.5);
     },
-    tick: function (urgent) {
-      beep(urgent ? 880 : 640, 0, 0.05, 'sine', urgent ? 0.5 : 0.3);
-    },
     /** Redoble de suspenso: golpes graves acelerando + shimmer ascendente final. */
     drum: function () {
       var t = 0;
@@ -285,43 +279,6 @@
       var el = $('mq-screen-' + s);
       if (el) el.hidden = s !== name;
     });
-    if (name === 'playing') startTimer();
-    else stopTimer();
-  }
-
-  /* ═══════════════════════════════════════════════════════════════════
-     TIMER (30 s verde → ámbar → rojo; congela en pausa/feedback/gameover)
-     ═══════════════════════════════════════════════════════════════════ */
-  var timerId = null;
-  var timeLeft = TIME_MAX;
-
-  function startTimer() {
-    stopTimer();
-    if (state.screen !== 'playing' || !state.question) return;
-    timerId = window.setInterval(function () {
-      timeLeft -= 1;
-      paintTimer();
-      if (timeLeft > 0 && timeLeft <= 10) MQSound.tick(timeLeft <= 5);
-      if (timeLeft <= 0) { stopTimer(); resolveAnswer(-1); }
-    }, 1000);
-  }
-  function stopTimer() {
-    if (timerId !== null) { window.clearInterval(timerId); timerId = null; }
-  }
-  function resetTimer() { timeLeft = timeMax(); paintTimer(); }
-  function paintTimer() {
-    var fill = $('mq-timer-fill');
-    var label = $('mq-timer-label');
-    var bar = $('mq-timer');
-    if (!fill || !label) return;
-    var mx = timeMax();
-    fill.style.width = Math.max(0, (timeLeft / mx) * 100) + '%';
-    label.textContent = timeLeft + ' s';
-    if (bar) {
-      bar.classList.toggle('mq-warn', timeLeft <= 10 && timeLeft > 5);
-      bar.classList.toggle('mq-danger', timeLeft <= 5);
-      bar.setAttribute('aria-valuenow', String(Math.max(0, timeLeft)));
-    }
   }
 
   /* ═══════════════════════════════════════════════════════════════════
@@ -379,7 +336,7 @@ function renderMath(el, text) {
 
 /**
  * Re-renderiza el math de la pantalla visible (KaTeX cargó tarde).
- * No reinicia el timer ni el estado; en feedback solo la explicación.
+ * No reinicia el estado; en feedback solo la explicación.
  */
 function refreshMath() {
   if (state.screen === 'playing' && state.question) {
@@ -454,7 +411,6 @@ function refreshMath() {
     var ret = $('mq-btn-retire');
     if (ret) ret.disabled = false;
     markLadder();
-    resetTimer();
   }
 
   function renderAudience(poll) {
@@ -600,7 +556,7 @@ function refreshMath() {
 
   /* ═══════════════════════════════════════════════════════════════════
       SUSPENSO (Fase 12+): al elegir, la opción pulsa en ámbar ~1.9 s
-      (timer congelado) antes de revelar; pausa/retiro abortan limpio.
+      antes de revelar; pausa/retiro abortan limpio.
       Subestado de 'playing': no rompe el MACHINE.
       ═══════════════════════════════════════════════════════════════════ */
   var SUSPENSE_MS = 1900;
@@ -620,7 +576,6 @@ function refreshMath() {
   }
 
   function beginSuspense(idx) {
-    stopTimer();
     suspense.active = true;
     suspense.idx = idx;
     suspense.token += 1;
@@ -665,9 +620,8 @@ function refreshMath() {
   function resolveAnswer(idx) {
     if (state.screen !== 'playing') return false;
     var wasSuspense = suspense.active;
-    suspense.active = false; // cierra el subestado (reveal o timeout del timer)
+    suspense.active = false; // cierra el subestado (reveal)
     suspense.idx = -1;
-    stopTimer();
     var app = $('mq-app');
     if (app) app.classList.remove('mq-suspending');
     var correctIdx = -1;
@@ -695,9 +649,9 @@ function refreshMath() {
       state.outcome = 'lose';
       MQSound.wrong();
     }
-    showFeedback(ok, idx === -1, correctIdx);
-    if (idx === -1 || !wasSuspense || reduceMotion()) {
-      transition('feedback'); // timeout: directo; sin suspenso: como antes
+    showFeedback(ok, correctIdx);
+    if (!wasSuspense || reduceMotion()) {
+      transition('feedback'); // sin suspenso: como antes
     } else {
       // beat: el glow/sacudida respira en pantalla antes del panel
       schedule(function () {
@@ -707,7 +661,7 @@ function refreshMath() {
     return true;
   }
 
-  function showFeedback(ok, timedOut, correctIdx) {
+  function showFeedback(ok, correctIdx) {
     var title = $('mq-feedback-heading');
     var answer = $('mq-feedback-answer');
     var expl = $('mq-feedback-explanation');
@@ -726,7 +680,7 @@ function refreshMath() {
       if (next) next.textContent = state.outcome === 'win' ? 'Ver resultado final' : 'Siguiente pregunta';
     } else {
       var keep = core.keptLevel(state.solved, state.bank.config.safeHavens);
-      if (title) title.textContent = timedOut ? 'Se agotó el tiempo' : 'Respuesta incorrecta';
+      if (title) title.textContent = 'Respuesta incorrecta';
       if (answer) answer.textContent = correctIdx >= 0 ? 'La respuesta correcta era la ' + LETTERS[correctIdx] + '.' : '';
       if (prize) {
         prize.hidden = false;
@@ -812,7 +766,6 @@ function refreshMath() {
   function retire() {
     if (state.screen !== 'playing') return false;
     cancelSuspense(); // retiro durante el suspenso: aborta sin resolver
-    stopTimer();
     finishGame('retire');
     return true;
   }
@@ -820,7 +773,6 @@ function refreshMath() {
   function pauseGame() {
     if (state.screen !== 'playing') return false;
     cancelSuspense(); // pausa durante el suspenso: aborta sin resolver
-    stopTimer();
     transition('paused');
     var res = $('mq-btn-resume');
     if (res) res.focus(); // a11y: el foco entra al diálogo
@@ -828,7 +780,7 @@ function refreshMath() {
   }
   function resumeGame() {
     if (state.screen !== 'paused') return false;
-    transition('playing'); // el interval del timer se restaura en showScreen
+    transition('playing');
     if (state.outcome) transition('feedback'); // se pausó durante el beat: sana el estado
     var p = $('mq-btn-pause');
     if (p) p.focus(); // a11y: el foco vuelve al controlador de pausa

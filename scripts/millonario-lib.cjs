@@ -78,12 +78,9 @@ function validate(bank, { knownSources = null } = {}) {
 
   // --- Config (parametrizada: la partida dura = a las preguntas del banco) ---
   if (bank.config) {
-    const { questionsPerGame, timePerQuestion, prizes, safeHavens } = bank.config;
+    const { questionsPerGame, prizes, safeHavens } = bank.config;
     if (!Number.isInteger(questionsPerGame) || questionsPerGame < 5 || questionsPerGame > 50) {
       push(`config.questionsPerGame inválido: ${JSON.stringify(questionsPerGame)}`);
-    }
-    if (!Number.isInteger(timePerQuestion) || timePerQuestion < 5 || timePerQuestion > 300) {
-      push(`config.timePerQuestion inválido: ${JSON.stringify(timePerQuestion)}`);
     }
     if (!Array.isArray(prizes) || prizes.length !== questionsPerGame) {
       push(`config.prizes debe tener ${questionsPerGame} premios (tiene ${Array.isArray(prizes) ? prizes.length : 'no-array'}).`);

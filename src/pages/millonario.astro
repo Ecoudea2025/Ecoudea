@@ -17,7 +17,7 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
 
 <BaseLayout
   title="¿Quién quiere ser millonario? — Ecoudea"
-  description="Juego de preguntas tipo 'Quién quiere ser millonario' sobre las clases de economía de Ecoudea: elige tu curso, 3 comodines, escalera de premios y cronómetro."
+  description="Juego de preguntas tipo '¿Quién quiere ser millonario?' sobre las clases de economía de Ecoudea: elige tu curso, 3 comodines, escalera de premios y suspenso de revelación."
   showTools={true}
 >
   <Fragment slot="header"><Navbar currentPath={url(`/millonario`)} /></Fragment>
@@ -31,7 +31,7 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
 
     <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-text mb-1 mq-title">¿Quién quiere ser <span class="mq-title-amber">millonario</span>?</h1>
     <p class="text-text-muted max-w-2xl text-sm sm:text-base mb-6">
-      Demuestra lo que sabes de las clases de Ecoudea: elige tu curso, responde contra el cronometro,
+      Demuestra lo que sabes de las clases de Ecoudea: elige tu curso, responde con suspenso de revelación,
       usa tus comodines y trepa la escalera de premios. Fallar te deja en el último <em>refugio seguro</em>.
     </p>
 
@@ -53,7 +53,7 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
 
           <ul class="mq-rules" aria-label="Reglas del juego">
             <li><strong id="mq-rule-total">— preguntas</strong> — dificultad y premio crecientes.</li>
-            <li><strong>30 segundos</strong> por pregunta; el tiempo agotado cuenta como fallo.</li>
+            <li><strong>Sin cronómetro</strong>: responde con calma; el suspenso es solo de revelación.</li>
             <li><strong>3 comodines</strong>: 50:50, Salta la pregunta y Ayuda del público (cada uno una vez).</li>
             <li><strong>Puedes retirarte</strong> entre preguntas y conservar tu premio.</li>
             <li><strong>Refugios seguros</strong> en los niveles <strong id="mq-rule-havens">—</strong>: fallar por debajo de ellos garantiza ese premio.</li>
@@ -75,11 +75,6 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
             <span class="mq-chip-label">Pregunta</span>
             <span id="mq-level">1</span>
             <span class="mq-chip-label">de <span id="mq-level-total">15</span></span>
-          </div>
-
-          <div id="mq-timer" role="progressbar" aria-label="Tiempo restante" aria-valuemin="0" aria-valuemax="30" aria-valuenow="30" class="mq-timer">
-            <div class="mq-timer-bar"><div id="mq-timer-fill" class="mq-timer-fill"></div></div>
-            <span id="mq-timer-label" class="mq-timer-label">30 s</span>
           </div>
 
           <button id="mq-btn-pause" type="button" class="mq-btn mq-btn-ghost" aria-label="Pausar partida">Pausa</button>
@@ -156,7 +151,7 @@ const mqVersion = String(Math.floor(Date.now() / 1000));
       <!-- ═══════════ PANTALLA: paused (diálogo modal) ═══════════ -->
       <section id="mq-screen-paused" hidden role="dialog" aria-modal="true" aria-labelledby="mq-paused-heading" class="mq-screen mq-screen-paused">
         <h2 id="mq-paused-heading">Partida en pausa</h2>
-        <p>El cronómetro está congelado. Elige cómo continuar.</p>
+        <p>La partida está pausada. Elige cómo continuar.</p>
         <div class="mq-paused-actions">
           <button id="mq-btn-resume" type="button" class="mq-btn mq-btn-primary">Reanudar</button>
           <button id="mq-btn-quit" type="button" class="mq-btn mq-btn-ghost">Abandonar (conserva el premio)</button>

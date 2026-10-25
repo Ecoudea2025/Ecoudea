@@ -11,6 +11,7 @@
  *   6. SUSPENSO: bloquea segundo clic, aborta en pausa, resuelve limpio
  *   7. cero transiciones ilegales + multi-banco (2º banco consecuente)
  *   8. ayuda del público, sonido seguro
+ *   9. sin rastro del timer (juego sin cronómetro): fuente, página y bancos
  *
  * El sandbox tiene un setTimeout DIFERIDO (cola): select entra en suspenso
  * y flush() drena la cola (reveal → beat de revelación → feedback).
@@ -29,8 +30,6 @@ const ROOT = path.resolve(__dirname, '..');
 function noop() { }
 const win = {
   console: { error: noop, warn: noop, log: noop },
-  setInterval: () => 0,
-  clearInterval: noop,
   localStorage: {
     _m: {},
     getItem(k) { return this._m[k] || null; },
@@ -201,7 +200,7 @@ check('intro → playing (startGame)', MQ.state().screen === 'playing');
 MQ.pauseGame();
 check('playing → paused', MQ.state().screen === 'paused');
 MQ.resumeGame();
-check('paused → playing (timer restaurado vía showScreen)', MQ.state().screen === 'playing');
+check('paused → playing (reanudación)', MQ.state().screen === 'playing');
 MQ.retire();
 check('playing → gameover (retiro directo)', MQ.state().screen === 'gameover');
 MQ.transition('intro');
@@ -281,11 +280,23 @@ check('setEnabled(true) sin AudioContext no lanza (devuelve true y no crashea)',
 check('los sonidos procedurales no lanzan sin audio (incl. drum de suspenso)', (function () {
   try {
     MQ.sound.correct(); MQ.sound.wrong(); MQ.sound.lifeline();
-    MQ.sound.tick(true); MQ.sound.win(); MQ.sound.retire(); MQ.sound.drum();
+    MQ.sound.win(); MQ.sound.retire(); MQ.sound.drum();
     return true;
   } catch (e) { return false; }
 })());
 MQ.sound.setEnabled(false);
+
+/* 9. Sin rastro del timer (regresión juego sin cronómetro) -------------- */
+console.log('9) Juego sin cronómetro');
+const mqSource = fs.readFileSync(path.join(ROOT, 'public', 'assets', 'js', 'millonario.js'), 'utf8');
+const astroSource = fs.readFileSync(path.join(ROOT, 'src', 'pages', 'millonario.astro'), 'utf8');
+const dataA = JSON.parse(fs.readFileSync(path.join(ROOT, 'public', 'assets', 'data', 'millonario-estadistica-ii.json'), 'utf8'));
+check('motor sin setInterval (cronómetro eliminado)', mqSource.indexOf('setInterval') === -1);
+check('motor sin restos del timer (timePerQuestion / mq-timer / agotado)',
+  mqSource.indexOf('mq-timer') === -1 && mqSource.indexOf('timePerQuestion') === -1 && mqSource.indexOf('Se agotó el tiempo') === -1);
+check('página sin bloque de cronómetro', astroSource.indexOf('mq-timer') === -1 && astroSource.indexOf('30 segundos') === -1);
+check('banco sin timePerQuestion', dataA.config.timePerQuestion === undefined);
+check('core.difficultyForLevel sigue intacto tras el desmontaje', MQ.core.difficultyForLevel(15, 15) === 5);
 
 console.log('');
 if (failures > 0) {

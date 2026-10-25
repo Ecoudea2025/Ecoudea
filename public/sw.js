@@ -1,4 +1,5 @@
-const CACHE='ecoudea-v1';
+// v2: invalida caches de imágenes (cache-first servía SVGs viejos tras un redeploy)
+const CACHE='ecoudea-v2';
 
 function base() {
   try { return new URL(self.registration.scope).pathname.replace(/\/$/, ''); }
@@ -23,7 +24,14 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => !k.startsWith('ecoudea-')).map((k) => caches.delete(k)))
+      Promise.all(
+        keys
+          // purga caches de versiones anteriores de este mismo sitio
+          .filter((k) => k !== CACHE && k.startsWith('ecoudea-'))
+          .map((k) => caches.delete(k))
+          // purga caches de terceros u otros orígenes que no debían existir
+          .concat(keys.filter((k) => !k.startsWith('ecoudea-')).map((k) => caches.delete(k)))
+      )
     ).then(() => self.clients.claim())
   );
 });

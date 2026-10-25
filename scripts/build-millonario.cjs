@@ -30,7 +30,8 @@ const DATA_OUT = path.join(ROOT, 'public', 'assets', 'data');
 
 const COURSE_TITLES = {
   'estadistica-ii': 'Estadística II',
-  'macroeconomia-i': 'Macroeconomía I'
+  'macroeconomia-i': 'Macroeconomía I',
+  'microeconomia-ii': 'Microeconomía II (Unidad 1)'
 };
 
 function fail(msg) {
@@ -131,7 +132,6 @@ for (const course of courseDirs) {
   const havens = [Math.floor(n / 3), Math.floor(2 * n / 3)];
   const config = {
     questionsPerGame: n,
-    timePerQuestion: 30,
     safeHavens: havens,
     lifelines: { fifty50: true, skip: true, audience: true },
     prizes: gamePrizes(n)

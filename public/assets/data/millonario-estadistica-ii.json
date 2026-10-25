@@ -5,7 +5,7 @@
     "title": "¿Quién quiere ser millonario? — Estadística II",
     "language": "es",
     "version": "2.0.0",
-    "updated": "2026-10-24",
+    "updated": "2026-10-25",
     "generator": "scripts/build-millonario.cjs",
     "questionCount": 10,
     "levels": 10,
@@ -23,7 +23,6 @@
   },
   "config": {
     "questionsPerGame": 10,
-    "timePerQuestion": 30,
     "safeHavens": [
       3,
       6

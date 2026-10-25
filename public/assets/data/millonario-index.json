@@ -23,6 +23,18 @@
         13
       ],
       "topPrize": 1000000
+    },
+    {
+      "id": "microeconomia-ii",
+      "title": "Microeconomía II (Unidad 1)",
+      "file": "millonario-microeconomia-ii.json",
+      "questionCount": 30,
+      "levels": 30,
+      "safeHavens": [
+        10,
+        20
+      ],
+      "topPrize": 1000000
     }
   ]
 }

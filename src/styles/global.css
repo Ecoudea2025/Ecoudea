@@ -939,13 +939,6 @@
 #mq-level { color: var(--game-amber-strong); font-weight: 700; font-size: 1.15rem; }
 #mq-btn-pause { padding: 0.35rem 0.9rem; min-height: 44px; }
 
-.mq-timer { display: flex; align-items: center; gap: 0.55rem; min-width: 190px; }
-.mq-timer-bar { flex: 1; height: 9px; border-radius: 9999px; background: rgba(10, 16, 44, 0.9); border: 1px solid var(--game-border); overflow: hidden; }
-.mq-timer-fill { height: 100%; width: 100%; border-radius: 9999px; background: var(--game-green); transition: width 1s linear, background-color 400ms ease; }
-.mq-timer.mq-warn .mq-timer-fill { background: var(--game-amber-strong); }
-.mq-timer.mq-danger .mq-timer-fill { background: var(--game-danger); }
-.mq-timer-label { font-variant-numeric: tabular-nums; font-size: 0.85rem; color: var(--game-muted); min-width: 3.1ch; }
-
 /* ── Cuerpo de partida (2 columnas: tablero + escalera) ────────────── */
 .mq-play-body { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 1.1rem; align-items: start; }
 .mq-play-main { min-width: 0; display: grid; gap: 0.9rem; }
@@ -1176,7 +1169,7 @@
 .mq-paused-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
 
 /* ── Math (KaTeX client-side, Fase 5) ──────────────────────────────── */
-#mq-app .katex-display { margin: 0.35rem 0; }
+#mq-app .katex-display { margin: 0.35rem 0; max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 #mq-app .mq-opt-text .katex { font-size: 1em; }
 #mq-app .mq-feedback-explanation .katex-display { margin: 0.3rem 0; }
 
@@ -1186,13 +1179,6 @@
   to { opacity: 1; transform: none; }
 }
 .mq-anim { animation: mq-in 260ms ease-out both; }
-@keyframes mq-pulse-danger {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.4); }
-}
-.mq-timer.mq-warn .mq-timer-label { color: var(--game-amber-strong); }
-.mq-timer.mq-danger .mq-timer-label { color: var(--game-danger); font-weight: 700; }
-.mq-timer.mq-danger .mq-timer-fill { animation: mq-pulse-danger 1s ease-in-out infinite; }
 @keyframes mq-bar-grow { from { transform: scaleX(0); } }
 .mq-audience-fill { transform-origin: left center; animation: mq-bar-grow 550ms ease-out both; }
 .mq-audience-row:nth-child(2) .mq-audience-fill { animation-delay: 70ms; }
@@ -1210,8 +1196,7 @@
 @media (prefers-reduced-motion: reduce) {
   #mq-app .mq-anim,
   #mq-app .mq-audience-fill,
-  #mq-app .mq-ladder li.mq-current,
-  #mq-app .mq-timer.mq-danger .mq-timer-fill {
+  #mq-app .mq-ladder li.mq-current {
     animation: none;
   }
   /* suspenso (Fase 12+): con reduce-motion el reveal es casi inmediato (JS) y sin parpadeos */
@@ -1267,9 +1252,6 @@
 }
 #mq-app .mq-suspending .mq-opt:not(.mq-suspense) {
   opacity: 0.5;
-}
-#mq-app .mq-suspending .mq-timer {
-  filter: saturate(0.4);
 }
 
 /* Entrada plástica del panel de feedback (fundida + rise, sin corte seco) */
@@ -1350,6 +1332,27 @@
 /* ── Responsive (Fase 9) ───────────────────────────────────────────── */
 /* móvil: escalera fuera del flujo + botón para abrirla como modal */
 .mq-btn-ladder { display: none; }
+@media (max-width: 640px) {
+  /* Header apilable (chip de nivel + Pausa) y opciones en 1 columna */
+  .mq-play-header { flex-wrap: wrap; }
+  .mq-options { grid-template-columns: 1fr; }
+  .mq-opt { min-height: 62px; }
+  /* Comodines en rejilla 2×2, herramientas apiladas, retirada a lo ancho */
+  .mq-play-tools { flex-direction: column; align-items: stretch; }
+  .mq-lifelines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #mq-btn-retire { width: 100%; }
+  /* KaTeX largo: scroll horizontal en la pregunta si no cabe */
+  #mq-app .mq-question-wrap { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
+  /* Paneles finales más bajos en pantallas cortas */
+  .mq-screen-feedback { min-height: 330px; }
+  .mq-screen-gameover { min-height: 340px; }
+  .mq-screen-paused { min-height: 280px; }
+  .mq-gameover-stats { gap: 1rem; }
+  .mq-audience-bars { grid-template-columns: 1fr; }
+}
 @media (max-width: 900px) {
   .mq-play-body { grid-template-columns: 1fr; }
   .mq-ladder-col { display: none; }
@@ -1377,13 +1380,9 @@
   }
   .mq-gameover-stats { flex-wrap: wrap; gap: 1rem; justify-content: center; }
 }
-/* teléfono angosto (<420px): opciones en 1 columna y hexágono más compacto */
+/* teléfono angosto (<420px): hexágono más compacto */
 @media (max-width: 420px) {
   #mq-app { --game-hex-notch: 14px; }
-  .mq-options { grid-template-columns: 1fr; }
-  .mq-opt { min-height: 62px; }
   .mq-question { padding: 1rem 1.8rem; font-size: 0.98rem; }
-  .mq-timer { min-width: 150px; }
-  .mq-play-header { flex-wrap: wrap; }
-  .mq-audience-bars { grid-template-columns: 1fr; }
+  .mq-opt { min-height: 58px; }
 }
