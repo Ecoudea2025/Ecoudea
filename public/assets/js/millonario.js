@@ -444,7 +444,8 @@ function refreshMath() {
       if (!state.options || !state.options[i]) { return; }
       btn.disabled = false;
       btn.setAttribute('aria-checked', 'false');
-      btn.classList.remove('mq-correct', 'mq-wrong', 'mq-selected', 'mq-dimmed');
+      btn.classList.remove('mq-correct', 'mq-wrong', 'mq-selected', 'mq-dimmed',
+        'mq-suspense', 'mq-reveal-good', 'mq-reveal-bad');
       renderMath(btn.querySelector('.mq-opt-text'), state.options[i].text);
     });
     var audience = $('mq-audience');
