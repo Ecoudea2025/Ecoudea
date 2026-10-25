@@ -135,10 +135,16 @@ def pure_axes(ax, xticks, xlabels, yticks, ylabels, xlabel="", ylabel=""):
         ax.set_ylabel(ylabel, fontsize=11.5, fontweight="bold", labelpad=14)
 
 
-def end_label(ax, x, y, text, color, ha="left", fontsize=12):
-    """Nombre directo de la curva en su extremo (nada de leyendas flotantes)."""
-    ax.text(x, y, text, fontsize=fontsize, fontweight="bold", color=color,
+def end_label(ax, x, y, text, color, ha=None, fontsize=12):
+    """Nombre directo de la curva en su extremo (nada de leyendas flotantes).
+    Sin ha: elige solo el lado con mas aire dentro del xlim."""
+    if ha is None:
+        lo, hi = ax.get_xlim()
+        ha = "right" if (hi - x) < (x - lo) else "left"
+    t = ax.text(x, y, text, fontsize=fontsize, fontweight="bold", color=color,
             ha=ha, va="center")
+    t.set_gid('end-label')  # el gate de solapamientos no le exige aire al trazo
+    return t
 
 
 def project(ax, x, y, theme="light", color=None):
@@ -168,6 +174,168 @@ def label(ax, x, y, text, color, theme, ha="left", va="center", fontsize=12,
             fontstyle="italic" if italic else "normal",
             color=color, ha=ha, va=va,
             bbox=halo(theme, pad=pad))
+
+
+def _text_hits(ax, tx, renderer, dots, strokes, skip_self=True):
+    """True si el texto toca otro texto, un marcador o un trazo."""
+    import numpy as np
+    PAD = 2.0  # igual que el gate: cajas de glifo +2px
+    bb = tx.get_window_extent(renderer=renderer)
+    x0, y0, x1, y1 = bb.x0 - PAD, bb.y0 - PAD, bb.x1 + PAD, bb.y1 + PAD
+    for o in ax.texts:
+        if o is tx and skip_self:
+            continue
+        if not o.get_visible() or not (o.get_text() or '').strip():
+            continue
+        try:
+            b2 = o.get_window_extent(renderer=renderer)
+        except Exception:
+            continue
+        if b2.width <= 2 and b2.height <= 2:
+            continue
+        if x0 < b2.x1 + PAD and b2.x0 < x1 + PAD and y0 < b2.y1 + PAD and b2.y0 < y1 + PAD:
+            return True
+    for pts, r in dots:
+        dx = np.maximum(x0 - pts[:, 0], pts[:, 0] - x1)
+        dy = np.maximum(y0 - pts[:, 1], pts[:, 1] - y1)
+        if bool(np.any((dx <= r * 0.5) & (dy <= r * 0.5))):
+            return True
+    for verts, lw in strokes:
+        ex0, ey0, ex1, ey1 = x0 - lw, y0 - lw, x1 + lw, y1 + lw
+        for k in range(len(verts) - 1):
+            ax0, ay0 = verts[k]
+            bx0, by0 = verts[k + 1]
+            ok = False
+            for tt in np.linspace(0.0, 1.0, 9):
+                px, py = ax0 + (bx0 - ax0) * tt, ay0 + (by0 - ay0) * tt
+                if ex0 <= px <= ex1 and ey0 <= py <= ey1:
+                    ok = True
+                    break
+            if ok:
+                return True
+    return False
+
+
+def _collect_geometry(ax, fig):
+    """Puntos (coords display, radio) y trazos (vertices, semigrosor) del axes."""
+    import numpy as np
+    from matplotlib.lines import Line2D
+    grids = set(map(id, ax.get_xgridlines() + ax.get_ygridlines()))
+    dots, strokes = [], []
+    for ln in ax.lines:
+        if not ln.get_visible() or id(ln) in grids:
+            continue
+        try:
+            pts = np.asarray(ln.get_transform().transform(ln.get_xydata()))
+        except Exception:
+            continue
+        if len(pts) == 0:
+            continue
+        ls = ln.get_linestyle()
+        if ls in ('None', ' ', ''):
+            r = float(ln.get_markersize()) * fig.dpi / 120.0
+            dots.append((pts.reshape(-1, 2), r))
+        else:
+            lw = float(ln.get_linewidth()) * fig.dpi / 72.0 / 2.0 + 1.0
+            step = max(1, len(pts) // 300)
+            dots_v = pts[::step]
+            strokes.append((dots_v, lw))
+    return dots, strokes
+
+
+def smart_label(ax, x, y, text, color, theme, r=0.35, order=None,
+                fontsize=12, bold=True, va="center", pad=1.6):
+    """Etiqueta que se auto-ubica: prueba posiciones compass alrededor del
+    ancla (radio r en unidades de datos) y usa la primera sin choques
+    (texto/texto, texto/punto, texto/trazo). Si ninguna sirve, usa la
+    primera y avisa en consola (el gate lo reportara como aviso/error)."""
+    import numpy as np
+    if order is None:
+        order = [("right", 1, 0, "left"), ("top", 0, 1, "center"),
+                 ("topleft", -0.7, 0.7, "right"),
+                 ("topright", 0.7, 0.7, "left"),
+                 ("left", -1, 0, "right"),
+                 ("bottomright", 0.7, -0.7, "left"),
+                 ("bottom", 0, -1, "center"),
+                 ("bottomleft", -0.7, -0.7, "right")]
+    fig = ax.figure
+    try:
+        from matplotlib.backends.backend_agg import FigureCanvasAgg
+        fig.set_canvas(FigureCanvasAgg(fig))
+    except Exception:
+        pass
+    dots, strokes = _collect_geometry(ax, fig)
+    best, best_name = None, None
+    for name, dxn, dyn, ha in order:
+        tx = ax.text(x + dxn * r, y + dyn * r, text, fontsize=fontsize,
+                     fontweight="bold" if bold else "normal",
+                     color=color, ha=ha, va=va, bbox=halo(theme, pad=pad))
+        fig.canvas.draw()
+        renderer = fig.canvas.get_renderer()
+        try:
+            hit = _text_hits(ax, tx, renderer, dots, strokes)
+        except Exception:
+            hit = True
+        if not hit:
+            return tx
+        tx.remove()
+        if best is None:
+            best, best_name = (x + dxn * r, y + dyn * r, ha), name
+    # sin posicion limpia: primera opcion + aviso (el gate decide)
+    import sys
+    print(f"[style] smart_label sin hueco limpio para '{text}' "
+          f"(uso {best_name})", file=sys.stderr)
+    tx = ax.text(best[0], best[1], text, fontsize=fontsize,
+                 fontweight="bold" if bold else "normal",
+                 color=color, ha=best[2], va=va, bbox=halo(theme, pad=pad))
+    return tx
+
+
+def fit_margins(ax, pad=0.06):
+    """Expande xlim/ylim para que ninguna etiqueta toque el borde (con pad
+    fraccional del rango). Llamar ANTES de smart_label (mueve los limites y
+    puede invalidar colocaciones ya verificadas); el gate verifica al final.
+    Si los limites ya estan ajustados a mano, no hace falta llamarla."""
+    import numpy as np
+    fig = ax.figure
+    try:
+        from matplotlib.backends.backend_agg import FigureCanvasAgg
+        fig.set_canvas(FigureCanvasAgg(fig))
+        fig.canvas.draw()
+        renderer = fig.canvas.get_renderer()
+    except Exception:
+        return
+    inv = ax.transData.inverted()
+    x0d, x1d = ax.get_xlim()
+    y0d, y1d = ax.get_ylim()
+    xs = [x0d, x1d]
+    ys = [y0d, y1d]
+    for tx in ax.texts:
+        try:
+            bb = tx.get_window_extent(renderer=renderer)
+        except Exception:
+            continue
+        if (bb.width <= 2 and bb.height <= 2) or not (tx.get_text() or '').strip():
+            continue
+        for cx, cy in [(bb.x0, bb.y0), (bb.x1, bb.y1)]:
+            try:
+                dx, dy = inv.transform((cx, cy))
+            except Exception:
+                continue
+            xs.append(dx)
+            ys.append(dy)
+    xr = max(xs) - min(xs) or 1.0
+    yr = max(ys) - min(ys) or 1.0
+    ax.set_xlim(min(xs) - pad * xr, max(xs) + pad * xr)
+    ax.set_ylim(min(ys) - pad * yr, max(ys) + pad * yr)
+
+
+def gap_caps(ax, x, y1, y2, color, theme=None, cap=0.25, lw=2.2, zorder=5):
+    """Segmento vertical de medicion con remates (holguras, impuestos,
+    primas): se lee como medida, no como linea suelta."""
+    ax.plot([x, x], [y1, y2], color=color, lw=lw, zorder=zorder)
+    ax.plot([x - cap, x + cap], [y1, y1], color=color, lw=lw, zorder=zorder)
+    ax.plot([x - cap, x + cap], [y2, y2], color=color, lw=lw, zorder=zorder)
 
 
 # Tintas sólidas premezcladas con el fondo del tema (regla 4): el alpha en

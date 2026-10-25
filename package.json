@@ -16,6 +16,7 @@
     "new:course": "node scripts/new-course.cjs",
     "new:lesson": "node scripts/new-lesson.cjs",
     "figures": "node scripts/figures.cjs",
+    "figures:check": "python figures/check_figures.py",
     "check:links": "node scripts/check-links.cjs",
     "check:seo": "node scripts/check-seo.cjs",
     "check:math": "node scripts/check-math.cjs",
