@@ -22,6 +22,17 @@ Recorriste el arco completo: mercado → producción → relativos → naturales
 
 Smith (1776), Ricardo (1817/1821), Sraffa (1960), Torrens (1821), Marx (*El capital*, caps. valor-precio), Benetti-Bidard-Klimovsky (2006), Pasinetti, Garegnani, Kurz-Salvadori.
 
+## Mapa de repaso por unidades (una línea por unidad)
+
+| Unidad | Pregunta que responde | Herramienta que te llevas |
+| :--- | :--- | :--- |
+| 1. Sociedad de mercado | ¿Qué hay que coordinar? | 4 rasgos + numerario `$n-1$` |
+| 2. Sistema productivo | ¿De dónde sale el excedente? | `$\mathbf{A}, \mathbf{l}, \mathbf{B}, \mathbf{E}$`, inversa de Leontief |
+| 3. Precios relativos | ¿Cómo se mide e intercambia? | Numerario, `$p_{ij}$`, arbitraje |
+| 4. Naturales (Smith-Ricardo) | ¿Qué determina cada parte? | Descomposición, trigo-trigo, `$d_h$` |
+| 5. Sraffa | ¿Cómo se determinan a la vez? | `$(\mathbf{A}\mathbf{p}+\mathbf{l}w)(1+r)=\mathbf{p}$`, frontera, patrón |
+| 6. Mercado y dinámica | ¿Llegan los precios ahí? | Gravitación, Torrens-BBK, método |
+
 <Nota>
 Curso construido sobre *Lecciones de teoría clásica de los precios* (Bolaños, 2012, UdeA). Úsalo como manual de referencia permanente: cada clase cita su sección.
 </Nota>
