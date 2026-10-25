@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/post-eqrefs.cjs && pagefind --site dist --output-subdir pagefind && node scripts/gzip.mjs",
+    "build": "astro build && node scripts/post-eqrefs.cjs && node scripts/cache-bust-figures.cjs && pagefind --site dist --output-subdir pagefind && node scripts/gzip.mjs",
     "preview": "astro preview",
     "content:fix": "node scripts/fix-math-delims.cjs && node scripts/fix-list-math-indent.cjs && node scripts/fix-lists.cjs && node scripts/fix-code-dollars.cjs",
     "prebuild": "node scripts/gen-indices.cjs",
@@ -20,7 +20,8 @@
     "check:links": "node scripts/check-links.cjs",
     "check:seo": "node scripts/check-seo.cjs",
     "check:math": "node scripts/check-math.cjs",
-    "astro": "astro"
+    "astro": "astro",
+    "post:figcache": "node scripts/cache-bust-figures.cjs"
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.2.1",
