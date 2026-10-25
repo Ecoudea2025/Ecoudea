@@ -16,6 +16,11 @@ Clásicos (1750–1870, más Sraffa desde 1960) y neoclásicos (desde 1870) acep
 * **Clásico (reproducción-excedente)**: excedente social `$\mathbf{E}$`, salario natural `$w$`, condiciones técnicas `$(\mathbf{A}, \mathbf{l})$`. Todo de la esfera **productiva**; dados, no explicados.
 * **Neoclásico (oferta-demanda)**: preferencias y dotaciones iniciales; después, técnicas y factores. Todo del **intercambio y el consumo**; la producción entra en segunda instancia.
 
+| Enfoque | Dato 1 | Dato 2 | Dato 3 | Esfera |
+| :--- | :--- | :--- | :--- | :--- |
+| Clásico | Excedente social `$\mathbf{E}$` | Salario natural `$w$` | Técnica `$(\mathbf{A}, \mathbf{l})$` | Producción |
+| Neoclásico | Preferencias | Dotaciones iniciales | Técnicas y factores | Intercambio y consumo |
+
 <Definicion>
 **Problema clásico**: hacer compatibles reproducción, distribución y acumulación por vía mercantil. **Problema neoclásico**: asignar óptimamente recursos escasos entre usos alternativos.
 </Definicion>
@@ -24,6 +29,12 @@ Clásicos (1750–1870, más Sraffa desde 1960) y neoclásicos (desde 1870) acep
 
 * **Clásica**: precios relativos `$\mathbf{p}$` + variables distributivas (`$r$`, y a veces `$w$`, renta). Campo restringido pero flexible: admite instituciones y conflicto de clases como datos.
 * **Neoclásica**: cantidades transadas + precios relativos + ingresos (salario, beneficio, renta obedecen la **misma** ley de oferta y demanda). Pretensión más general pero más rígida.
+
+| Pregunta de asignación | Respuesta clásica | Respuesta neoclásica |
+| :--- | :--- | :--- |
+| ¿Qué producir? | Lo que exige la reproducción (reponer `$\mathbf{B}$`) más lo que decide quien se apropia `$\mathbf{E}$` | Lo que iguala oferta y demanda en cada mercado |
+| ¿Cómo combinar? | Con el método dominante dado `$(\mathbf{A}, \mathbf{l})$` | Minimizando costos dados los precios de los factores |
+| ¿Cómo repartir? | Por la regla mercantil sobre el excedente (conflicto distributivo) | Por productividad marginal de cada factor |
 
 ## Los tres rasgos comunes (enfoque real)
 

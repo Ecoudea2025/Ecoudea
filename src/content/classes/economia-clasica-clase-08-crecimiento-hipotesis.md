@@ -28,6 +28,18 @@ a) que haya excedente; b) que no se consuma todo improductivamente; c) que **tod
 
 Con estructura dada, el sistema crece a `$\min_j e_j$`. Pero puede reestructurarse hasta igualar todas las `$e_j$`: entonces **todo** el excedente se invierte y el crecimiento es máximo e igual a la tasa común (el modelo de Torrens, unidad 6, encuentra esa estructura).
 
+<Ejemplo>
+
+Para el trigo-hierro del curso, el consumo productivo total es `$8{,}200{,}000$` de trigo (insumos `$7{,}482{,}500$` + subsistencias `$717{,}500$`) y `$1{,}500{,}000$` de hierro:
+
+$$
+\begin{align*}e_{\text{trigo}} = \frac{2{,}050{,}000}{8{,}200{,}000} = 0{,}25, \qquad e_{\text{hierro}} = \frac{1{,}500{,}000}{1{,}500{,}000} = 1{,}0\end{align*}
+$$
+
+Con la estructura actual el sistema crece al `$\min(25\%, 100\%) = 25\%$` (manda el trigo, el bien limitante). Reestructurando la producción hasta igualar ambas tasas, el techo es la tasa máxima `$R = 44{,}9\%$` calculada en la clase 03: ningún reacomodo la supera porque es propiedad de `$\mathbf{B}$`, no de la estructura `$y$`.
+
+</Ejemplo>
+
 ## Las 10 hipótesis (memorizar la lógica, no la lista)
 
 1. El sistema y su técnica se conocen (datos). 2. **Nomenclatura**: los bienes nombran sectores y agentes (neutralidad material). 3. **Un método por mercancía** (el dominante). 4. **Coeficientes constantes**: proporciones fijas + rendimientos constantes a escala. 5. Sin producción conjunta. 6. Sin capital fijo (todo se repone cada período). 7. Hay excedente conocido. 8. Período uniforme. 9. Sin recursos naturales (sin renta todavía). 10. Trabajo homogéneo.

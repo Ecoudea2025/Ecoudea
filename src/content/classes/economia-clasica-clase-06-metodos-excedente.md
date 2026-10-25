@@ -34,6 +34,8 @@ $$
 
 Con `$\mathbf{s} = [5{,}125\ \text{trigo},\ 0]$` por unidad de trabajo, las subsistencias (`$512{,}500$` y `$205{,}000$` de trigo) se suman a los insumos. El sistema queda en términos de `$\mathbf{B}$`.
 
+Verificación celda por celda (trigo): insumos directos `$3{,}587{,}500 + 3{,}895{,}000 = 7{,}482{,}500$`, más subsistencias `$5{,}125 \times (100{,}000 + 40{,}000) = 717{,}500$`, total consumo productivo `$8{,}200{,}000$`. Hierro: `$1{,}500{,}000 + 0 = 1{,}500{,}000$` (sin subsistencia en hierro).
+
 ### Paso 3: Calcular el excedente
 
 $$
@@ -41,6 +43,12 @@ $$
 $$
 
 Hay sobreproducto en ambos bienes: el sistema es viable **con** excedente, luego admite varias estructuras productivas (no una única, como en el caso estrictamente viable).
+
+<Ejemplo>
+
+Normaliza por unidad de producto para ver los coeficientes que usará la clase 07: divide la fila del trigo entre `$10{,}250{,}000$` y la del hierro entre `$3{,}000{,}000$`. Obtienes `$a_{11} = 0{,}35$` (trigo por trigo), `$a_{12} = 0{,}1463$` (hierro por trigo), `$a_{21} = 1{,}2983$` (trigo por hierro), `$a_{22} = 0$`, y trabajo por unidad `$l_1 = 0{,}0097$`, `$l_2 = 0{,}0133$`. Con `$s = 5{,}125$`, verifica la primera celda sociotécnica: `$b_{11} = 0{,}35 + 0{,}0097 \times 5{,}125 = 0{,}35 + 0{,}05 = 0{,}40$`.
+
+</Ejemplo>
 
 <figure class="eco-figure">
   <img src="/assets/figures/clasica/circuito-produccion-light.svg" alt="Circuito circular: insumos y trabajo entran a la producción, sale el producto total, se reponen insumos y subsistencias, y queda el excedente." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />

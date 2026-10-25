@@ -45,6 +45,18 @@ cada excedente define una estructura productiva distinta.
 
 La fila `$i$` de `$[\mathbf{I}-\mathbf{B}]^{-1}$` dice los requerimientos **directos e indirectos** para disponer de una unidad de `$i$` en el excedente. Sentido económico exige inversa no negativa (Perron-Frobenius: valor propio dominante de `$\mathbf{B}$` menor que `$1$`).
 
+<Ejemplo>
+
+Para el trigo-hierro, `$\mathbf{I}-\mathbf{B} = \begin{pmatrix}0{,}6 & -0{,}1463 \\ -1{,}3666 & 1\end{pmatrix}$` con determinante `$0{,}6 \times 1 - 0{,}1463 \times 1{,}3666 = 0{,}6 - 0{,}2 = 0{,}4$`. La inversa es:
+
+$$
+\begin{align*}[\mathbf{I}-\mathbf{B}]^{-1} = \frac{1}{0{,}4}\begin{pmatrix}1 & 0{,}1463 \\ 1{,}3666 & 0{,}6\end{pmatrix} = \begin{pmatrix}2{,}5 & 0{,}3658 \\ 3{,}4165 & 1{,}5\end{pmatrix}\end{align*}
+$$
+
+Lee la primera fila: para dejar **1 tonelada de trigo en el excedente** hay que producir en bruto `$2{,}5$` t de trigo y `$0{,}3658$` t de hierro (directos + indirectos). La segunda fila: 1 t de hierro neta exige `$3{,}4165$` t de trigo y `$1{,}5$` t de hierro brutos. Toda entrada es `$\geq 0$`: el sistema tiene sentido económico.
+
+</Ejemplo>
+
 ## Básicos vs no básicos
 
 <Definicion>

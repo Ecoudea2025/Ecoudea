@@ -34,6 +34,12 @@ $$
 
 relaciones de intercambio posibles, aunque bastan `$n-1$` una vez elegido numerario (lo veremos en la clase 10).
 
+<Ejemplo>
+
+Con `$n = 4$` bienes (trigo, hierro, tela, café) hay `$\frac{4 \times 3}{2} = 6$` pares posibles: trigo-hierro, trigo-tela, trigo-café, hierro-tela, hierro-café, tela-café. Eligiendo el trigo como numerario bastan `$3$` precios (hierro, tela y café valuados en trigo); los otros tres tipos se deducen por arbitraje. Con `$n = 100$` bienes serían `$4.950$` relaciones contra solo `$99$` precios: el numerario comprime la complejidad del intercambio en un factor `$n/2$`.
+
+</Ejemplo>
+
 ### Paso 2: Estructura descentralizada
 
 Los individuos son autónomos; sus contratos son voluntarios. La coherencia no la garantiza nadie: es un **proceso impersonal**. De aquí nace el problema de la regulación: ¿cómo se armonizan decisiones tomadas independientemente?
@@ -45,6 +51,19 @@ El móvil es la autorrealización: beneficio, satisfacción máxima. El individu
 ### Paso 4: Propiedad privada
 
 La riqueza creada es propiedad legal de quien la crea. Sin este supuesto no hay intercambio de derechos ni precios con sentido.
+
+| Rasgo | Sin él, ¿qué pasa? (contraejemplo) |
+| :--- | :--- |
+| Intercambio generalizado | Autarquía o trueque ocasional: sin red de intercambios no hay precios, solo valoraciones aisladas. |
+| Descentralización | Planificación central: un plan coordina ex ante y el problema de la regulación desaparece (pero nace el del cálculo). |
+| Interés propio | Motivación por mandato o costumbre: la conducta deja de responder a premios y castigos pecuniarios. |
+| Propiedad privada | Propiedad comunal sin exclusión: nadie puede vender lo que no controla, luego nada tiene precio. |
+
+<details>
+<summary>¿Y una sociedad sin mercado?</summary>
+
+Una economía natural (autoconsumo campesino) o planificada coordina sin precios: por costumbre o por orden. El punto clásico no es que el mercado sea "natural", sino que, *donde* rigen los cuatro rasgos, la coordinación toma necesariamente forma de sistema de precios. Estudiar la sociedad de mercado es estudiar *esa* forma, no todas las formas posibles de organizar la producción.
+</details>
 
 ## Interpretación económica
 
