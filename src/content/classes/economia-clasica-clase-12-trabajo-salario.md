@@ -31,6 +31,12 @@ a) todo trabajo reconocido es asalariado; b) calidades distintas cobran distinto
 
 Con `$W_i = n_i w_i$` y proporciones `$w_i/w_j$` conocidas, todo se convierte a unidades del sector `$j$`. Ejemplo: `$n_1 = 50{.}000$`, `$n_2 = 10{.}000$`, `$w_2/w_1 = 2$` → `$25{.}000 + 10{.}000 = 35{.}000$` metalúrgicos equivalentes.
 
+<details>
+<summary>¿Por qué la homogenización esconde un problema?</summary>
+
+Reducir por salarios supone que las diferencias salariales reflejan diferencias de calificación estables y conocidas **antes** de los precios. Pero si los salarios relativos cambian con la distribución, la "unidad de trabajo" cambia con lo que se quiere medir: circularidad parecida a la del capital (clase 16). El clásico la acepta como aproximación práctica, no como solución teórica cerrada.
+</details>
+
 ### Paso 3: Reducción a trabajo general
 
 Más limpio: definir `$L$` (jornada social) con `$W = Lw$` y repartir por masa salarial:
@@ -40,6 +46,12 @@ $$
 $$
 
 `$L_i$` = fracción de la jornada (o de la masa salarial) empleada en `$i$`. Con `$L = 140{.}000$`: `$L_1 = 100{.}000$`, `$L_2 = 40{.}000$` —el caso del ejemplo 2 del capítulo 2. Los `$l_i$` del sistema son estos `$L_i$` por unidad.
+
+<Ejemplo>
+
+Verifica la consistencia: con `$n_1 = 50{.}000$`, `$n_2 = 10{.}000$`, `$w_2 = 2w_1$, la masa salarial es `$W = 50{.}000\,w_1 + 10{.}000 \times 2w_1 = 70{.}000\,w_1$`. Participaciones: `$W_1/W = 50/70$`, `$W_2/W = 20/70$`. Luego `$L_1 = \frac{5}{7} \times 140{.}000 = 100{.}000$` y `$L_2 = \frac{2}{7} \times 140{.}000 = 40{.}000$`. Exacto: las dos vías (equivalentes metalúrgicos y jornada social) coinciden porque ambas ponderan por salarios.
+
+</Ejemplo>
 
 ## El salario natural (Smith-Ricardo)
 

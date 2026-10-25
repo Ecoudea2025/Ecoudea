@@ -31,6 +31,12 @@ $$
 
 Sin precios por ningún lado: `$r$` es una **tasa de rendimiento físico**, dictada por la técnica.
 
+<Ejemplo>
+
+Cosecha `$1{.}000$` t con adelanto `$800$` t (semilla `$500$` + subsistencias `$300$`): `$r = (1{.}000 - 800)/800 = 25\%$`. Si la técnica mejora y el adelanto cae a `$700$`, `$r = 300/700 \approx 42{,}9\%$`: la tasa se lee directa de las cantidades, sin mercado.
+
+</Ejemplo>
+
 ### Paso 2: Repartir sin valorar
 
 Con `$r$` conocida, el excedente físico se reparte (beneficios aquí; salario ya adelantado como subsistencia). Los precios relativos ni aparecen: con un solo bien no hay proporciones que fijar.

@@ -27,6 +27,12 @@ La unidad 2 detectó el excedente sin precios. Pero en una sociedad de mercado n
 
 Con `$n$` bienes hay `$n(n-1)/2$` relaciones (la de `$i$` en sí misma es `$1$` y fijada una queda fijada la inversa). Ejemplo grano-hierro: si `$1$` arroba de grano = `$1/10$` de tonelada de hierro, entonces `$p_{gh} = 1/10$` y `$p_{hg} = 10$`.
 
+<Ejemplo>
+
+Con los 4 bienes de la clase 02 (trigo numerario), supón precios observados: hierro `$= 5$` (trigo), tela `$= 2$`, café `$= 4$`. Las 3 relaciones bastan; las otras 3 se deducen por arbitraje: `$p_{\text{hierro-tela}} = 5/2 = 2{,}5$`, `$p_{\text{hierro-café}} = 5/4 = 1{,}25$`, `$p_{\text{tela-café}} = 2/4 = 0{,}5$`. Si alguien ofreciera hierro por tela a `$3$`, comprarías hierro con trigo (`$5$`) y lo revenderías por tela hasta cerrar la brecha: el arbitraje impone la consistencia.
+
+</Ejemplo>
+
 ### Paso 2: Elegir numerario
 
 Bastan `$n-1$` relaciones en términos del bien elegido. Si el numerario es además el medio de pago, los relativos son a la vez absolutos y el precio del numerario es `$1$`.

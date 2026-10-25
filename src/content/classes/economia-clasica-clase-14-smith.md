@@ -28,6 +28,12 @@ Smith plantea el problema analítico de todo el curso: **la relación entre los 
 
 Todo precio natural se resuelve en salarios, beneficios y rentas a tasas naturales. En sociedades primitivas (sin capital ni tierra apropiada) coincide con el trabajo incorporado; con capital y tierra aparecen las otras dos partes.
 
+<Ejemplo>
+
+Una mesa con precio natural `$13$`: `$10$` de salarios (100 jornales a `$0{,}1$`, tasa natural de subsistencia), `$2$` de beneficio (10% sobre un capital adelantado de `$20$`) y `$1$` de renta (tierra de calidad media). Si el salario natural sube a `$0{,}12$`, el componente salarial pasa a `$12$` y —con `$r$` y renta fijas— el precio natural sube a `$15$`. Cada parte se determina por fuera y el precio las suma: distribución `$\to$` precios.
+
+</Ejemplo>
+
 ### Paso 2: La medida invariable
 
 El dinero (oro/plata) varía con las minas; el trigo con las cosechas. El trabajo comandado, argumenta Smith, vale siempre lo mismo para el obrero (igual sacrificio), luego mide sin deformar. Dificultad que hereda Ricardo: ¿y si cambia la productividad del trabajo mismo?

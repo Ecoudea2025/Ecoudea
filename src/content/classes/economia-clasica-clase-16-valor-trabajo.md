@@ -31,6 +31,12 @@ Si todos los sectores tienen igual `$q_i$` (misma proporción capital-trabajo) y
 
 Con `$q_i$` distintos, un alza de `$w$` (caída de `$r$`) abarata los bienes de baja composición y encarece los de alta: los precios **se mueven** aunque ningún `$v_i$` cambie. La tesis fuerte es falsa en general; el trabajo incorporado no basta.
 
+<Ejemplo>
+
+Dos sectores con igual trabajo `$L = 10$` pero distinto capital: `$K_A = 100$`, `$K_B = 300$`. Sube el salario en `$1$` por trabajador: el costo sube `$10$` en ambos, pero la tasa cae `$10/100 = 10$` puntos en A y solo `$10/300 \approx 3{,}3$` en B. Para restaurar `$r$` uniforme, `$p_A$` debe subir respecto a `$p_B$`: con igual `$l$` y distinto `$K$`, el alza salarial mueve `$p_A/p_B$` aunque ningún valor-trabajo haya cambiado.
+
+</Ejemplo>
+
 ### Paso 3: La versión modificada
 
 Ricardo rescata lo esencial: los movimientos de precios ante cambios distributivos son de **segundo orden** frente al nivel dictado por el trabajo; y con la medida adecuada (clase 17: dificultad de producción) la determinación vuelve a ser física. El valor-trabajo queda como **aproximación dominante**, no como identidad.

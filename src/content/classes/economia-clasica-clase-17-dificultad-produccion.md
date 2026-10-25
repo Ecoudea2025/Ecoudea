@@ -35,6 +35,12 @@ $$
 
 (p. ej. `$r = [460\ \text{trigo},\ 24\ \text{hierro}] / [115\ \text{trigo},\ 6\ \text{hierro}]$`). Cociente de dos canastas idénticas: número puro, independiente de precios. La tasa vuelve a ser **variable de producción**, como en el trigo-trigo.
 
+<Ejemplo>
+
+Verifica la homotecia: `$460/115 = 4$` y `$24/6 = 4$`. Ambas razones coinciden, luego excedente y capital son la misma canasta en distinta escala y `$r = 4 = 400\%$` sin usar ningún precio. Si las razones difirieran (p. ej. `$460/115 \neq 25/6$`), la canasta no sería homotética y el cociente dependería de cómo se valore cada bien.
+
+</Ejemplo>
+
 ### Paso 3: Determinar los precios
 
 Con `$r$` fijada físicamente (`$\mathbf{B} \to \text{MCP} \to d_h \to r \to \mathbf{p}$`), los precios del sistema original se resuelven subordinados a ella. Teoría general: vale para **cualquier** sistema con excedente.

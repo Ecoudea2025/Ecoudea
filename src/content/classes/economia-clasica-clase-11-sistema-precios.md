@@ -27,10 +27,17 @@ La clase 10 midió un intercambio. Ahora medimos **todos a la vez**: a cada sist
 ### Paso 1: Sistema con ganancias distintas
 
 $$
-\begin{align*}\tfrac{56}{115} + \tfrac{12}{575}p_{21} + m_1 &= 1 \\ \tfrac{6}{2} + \tfrac{2}{5}p_{21} + m_2 &= p_{21}\end{align*}
+\begin{align*}\tfrac{56}{115} + \tfrac{12}{575}p_{21} + m_1 &= 1 \\ 6 + \tfrac{2}{5}p_{21} + m_2 &= p_{21}\end{align*}
 $$
 
 Con `$p_{21} = 10$`: el trigo gana `$r_1 = 43{,}75\%$`, el hierro `$r_2 = 0\%$`. Todo el excedente lo apropia el trigo. Los recursos **migrarán** al trigo, su oferta subirá y `$p_{21}$` subirá.
+
+<details>
+<summary>Verificación de `$r_1 = 43{,}75\%$` paso a paso</summary>
+
+Capital adelantado en trigo: `$K_1 = \frac{56}{115} + \frac{12}{575} \times 10 = 0{,}487 + 0{,}209 = 0{,}696$`. Beneficio: `$m_1 = 1 - 0{,}696 = 0{,}304$`. Tasa: `$r_1 = 0{,}304 / 0{,}696 = 0{,}4375$`. En hierro: `$K_2 = 6 + \frac{2}{5} \times 10 = 10$` que iguala al producto `$p_{21} = 10$`: `$m_2 = 0$`. Todo el excedente va al trigo porque solo él rinde.
+
+</details>
 
 ### Paso 2: El caso espejo
 
