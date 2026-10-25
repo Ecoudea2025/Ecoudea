@@ -6,6 +6,7 @@ sys.path.insert(0, "figures")
 import numpy as np
 import matplotlib.pyplot as plt
 from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent, label, halo
+from style import smart_label
 
 
 def draw(theme):
@@ -49,8 +50,8 @@ def draw(theme):
     label(ax, 3.35, 3.95, "medios + trabajo", t["muted"], theme,
           ha="center", fontsize=10, bold=False)
     label(ax, 7.0, 4.15, "E = PT - CPT", accent(theme), theme, fontsize=11)
-    label(ax, 2.0, 1.45, "circula de vuelta", ROLES["budget"], theme,
-          fontsize=10, bold=False)
+    smart_label(ax, 2.0, 1.45, "circula de vuelta", ROLES["budget"], theme,
+                fontsize=10, bold=False)
     return fig
 
 

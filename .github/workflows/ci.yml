@@ -31,11 +31,11 @@ jobs:
 
       - name: Figures
         run: |
-          pip install matplotlib numpy
+          pip install "matplotlib==3.9.3" "numpy==2.2.6"
           npm run figures
 
       - name: Figuras sin solapamientos
-        run: npm run figures:check
+        run: npm run figures:check  # gate hermético: mismas versiones que en local
 
       - name: Build (prebuild + astro + pagefind + gzip)
         run: npm run build
