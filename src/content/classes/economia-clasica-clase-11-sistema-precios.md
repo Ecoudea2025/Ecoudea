@@ -59,6 +59,12 @@ A `$p_{21} = 15$` ambos reponen capitales y ganan `$25\%$`: nadie migra, la comp
   <figcaption>Figura: los precios de mercado gravitan en torno al natural; la igualación de tasas es el imán.</figcaption>
 </figure>
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/sistema-precios-2x2-light.svg" alt="Curvas de tasa de ganancia de trigo y hierro que se cruzan en p*=15 con r=25%, con los desequilibrios A y B." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/sistema-precios-2x2-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: los precios corrientes dan rentabilidades distintas; solo en p* = 15 ambas coinciden.</figcaption>
+</figure>
+
 ## Formas del sistema (referencia rápida)
 
 * Desequilibrio: `$(\mathbf{I}+\hat{\mathbf{r}})\mathbf{B}\mathbf{p} = \mathbf{p}$` (subdeterminado: `$n$` ecuaciones, `$2n-1$` incógnitas; lo cierra oferta-demanda, unidad 6).

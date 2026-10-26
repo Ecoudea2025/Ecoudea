@@ -34,6 +34,12 @@ Una mesa con precio natural `$13$`: `$10$` de salarios (100 jornales a `$0{,}1$`
 
 </Ejemplo>
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/renta-diferencial-light.svg" alt="Tres tierras con producto 100, 80 y 60 y mismo costo 60: rentas 40, 20 y 0." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/renta-diferencial-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la tierra marginal fija el precio; las mejores pagan renta diferencial.</figcaption>
+</figure>
+
 ### Paso 2: La medida invariable
 
 El dinero (oro/plata) varía con las minas; el trigo con las cosechas. El trabajo comandado, argumenta Smith, vale siempre lo mismo para el obrero (igual sacrificio), luego mide sin deformar. Dificultad que hereda Ricardo: ¿y si cambia la productividad del trabajo mismo?

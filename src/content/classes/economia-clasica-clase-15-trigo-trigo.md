@@ -37,6 +37,12 @@ Cosecha `$1{.}000$` t con adelanto `$800$` t (semilla `$500$` + subsistencias `$
 
 </Ejemplo>
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/trigo-trigo-numerico-light.svg" alt="Rayo cosecha-adelanto con pendiente 1 + r: 25 por ciento con adelanto 800 y 42,9 por ciento con 700 para cosecha 1000." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/trigo-trigo-numerico-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: la pendiente del rayo es 1 + r: la tasa se lee sin precios.</figcaption>
+</figure>
+
 ### Paso 2: Repartir sin valorar
 
 Con `$r$` conocida, el excedente físico se reparte (beneficios aquí; salario ya adelantado como subsistencia). Los precios relativos ni aparecen: con un solo bien no hay proporciones que fijar.

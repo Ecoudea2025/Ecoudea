@@ -33,6 +33,12 @@ En el sistema del curso, igualar `$e_{\text{trigo}} = e_{\text{hierro}}$` exige 
 
 </Ejemplo>
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/torrens-vs-bbk-light.svg" alt="Dos sendas logarítmicas: crecimiento balanceado a g* = R frente a senda sin reestructurar a g = min ej." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/torrens-vs-bbk-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: reestructurar iguala las tasas y maximiza el crecimiento; sin hacerlo manda el sector lento.</figcaption>
+</figure>
+
 ### Paso 2: BBK (la generalización)
 
 Benetti-Bidard-Klimovsky dejan que cada capitalista decida su `$g_i$`: el sistema determina precios **y** tasas de beneficio efectivas compatibles con esas decisiones, en equilibrio o fuera de él. Ricardo, Sraffa y Torrens reaparecen como casos particulares (restricciones sobre las `$g_i$`).

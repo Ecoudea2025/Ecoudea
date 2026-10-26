@@ -48,6 +48,12 @@ Cada punto es una correlación de fuerzas sociales. No hay punto "técnicamente 
   <figcaption>Figura: la frontera w-r es el conflicto distributivo dibujado; la técnica la traza, la sociedad elige el punto.</figcaption>
 </figure>
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/frontera-alternativa-light.svg" alt="Frontera salario-beneficio recta en mercancía patrón frente a la curva arqueada en numerario trigo." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/frontera-alternativa-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: en patrón la frontera es recta; en trigo se comba por los efectos precio.</figcaption>
+</figure>
+
 ## Interpretación económica
 
 1. **Conflicto sin moralina**: no es que unos sean buenos y otros malos; es que el excedente es uno solo y dos clases lo reclaman.

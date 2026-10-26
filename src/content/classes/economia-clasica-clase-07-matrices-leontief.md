@@ -57,6 +57,12 @@ Lee la primera fila: para dejar **1 tonelada de trigo en el excedente** hay que 
 
 </Ejemplo>
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/tablas-io-light.svg" alt="Matrices A y B del sistema trigo-hierro y la inversa de Leontief con los requerimientos directos e indirectos." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/tablas-io-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: A registra la técnica, B suma las subsistencias y la inversa dice cuánto producir en bruto por cada unidad neta.</figcaption>
+</figure>
+
 ## Básicos vs no básicos
 
 <Definicion>

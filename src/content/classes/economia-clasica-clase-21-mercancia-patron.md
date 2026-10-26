@@ -27,6 +27,12 @@ Desde Smith (clase 14) buscamos medir sin deformar: el dinero se mueve con las m
 
 Se reponderan las industrias (vector propio de `$\mathbf{A}$`) hasta que la proporción excedente/medios sea uniforme e igual a `$R$`. Esa canasta es la MCP; existe en todo sistema con excedente.
 
+<figure class="eco-figure">
+  <img src="/assets/figures/clasica/composicion-mcp-light.svg" alt="Canasta patrón: insumos 0,69 y 1,37 frente a producto 1 y 1,98, mismo cociente R = 44,9 por ciento." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/clasica/composicion-mcp-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: insumos y producto guardan la misma proporción: R se lee directo.</figcaption>
+</figure>
+
 ### Paso 2: Medir en patrón
 
 Con `$P_{MCP} = 1$` como numerario, la frontera se vuelve **recta**:
