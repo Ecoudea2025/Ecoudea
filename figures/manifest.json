@@ -279,6 +279,55 @@
       "title": "Equivalente cierto, prima y Spence",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/sistema-precios-2x2",
+      "script": "figures/clasica_sistema_precios.py",
+      "title": "Tasas sectoriales y precio de equilibrio",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/tablas-io",
+      "script": "figures/clasica_tablas_io.py",
+      "title": "Matrices A y B e inversa de Leontief",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/trigo-trigo-numerico",
+      "script": "figures/clasica_trigo_trigo.py",
+      "title": "Tasa como pendiente cosecha-adelanto",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/frontera-alternativa",
+      "script": "figures/clasica_frontera_alt.py",
+      "title": "Frontera recta patron vs curva en trigo",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/renta-diferencial",
+      "script": "figures/clasica_renta.py",
+      "title": "Renta diferencial por fertilidad",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/composicion-mcp",
+      "script": "figures/clasica_mcp.py",
+      "title": "Canasta patron: insumos vs producto",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
+    },
+    {
+      "id": "clasica/torrens-vs-bbk",
+      "script": "figures/clasica_torrens.py",
+      "title": "Crecimiento balanceado vs senda desigual",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-25"
     }
   ]
 }
