@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-24T01:10:18.771322</dc:date>
+    <dc:date>2026-10-31T23:37:40.011955</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -1106,15 +1106,15 @@ z
    </g>
    <g id="text_8">
     <g id="patch_7">
-     <path d="M 87.137841 211.498262 
-L 146.198778 211.498262 
-L 146.198778 198.620137 
-L 87.137841 198.620137 
+     <path d="M 80.593001 204.657309 
+L 136.510891 204.657309 
+L 136.510891 192.613091 
+L 80.593001 192.613091 
 z
 " style="fill: #faf8f1; opacity: 0.9"/>
     </g>
     <!-- desinvierte -->
-    <g style="fill: #5c6656" transform="translate(88.737841 207.818575) scale(0.1 -0.1)">
+    <g style="fill: #5c6656" transform="translate(82.018001 201.256606) scale(0.095 -0.095)">
      <defs>
       <path id="DejaVuSans-Oblique-64" d="M 2675 525 
 Q 2444 222 2128 65 

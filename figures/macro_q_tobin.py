@@ -32,9 +32,9 @@ def draw(theme):
     ax.text(4.2, 1.9, "invierte", fontsize=10, fontstyle="italic",
             color=t["muted"], ha="center", va="center",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
-    ax.text(-1.8, 0.72, "desinvierte", fontsize=10, fontstyle="italic",
+    ax.text(-2.0, 0.82, "desinvierte", fontsize=9.5, fontstyle="italic",
             color=t["muted"], ha="center", va="center",
-            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
+            bbox=dict(facecolor=bg, edgecolor="none", pad=1.4, alpha=0.9))
     ax.set_xlim(-3.5, 6.4)
     ax.set_ylim(0.2, 3.8)
     pure_axes(ax, [0], ["0"], [1], ["1"], xlabel="I", ylabel="q")

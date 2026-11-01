@@ -99,6 +99,13 @@
       "updated": "2026-10-24"
     },
     {
+      "id": "macroeconomia/ces-tres-periodos",
+      "script": "figures/macro_ces_tres_periodos.py",
+      "title": "Perfil temporal del consumo según la elasticidad de sustitución CES",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-10-31"
+    },
+    {
       "id": "macroeconomia/convergencia-phi",
       "script": "figures/macro_convergencia_phi.py",
       "title": "Convergencia de la serie geométrica del descuento",

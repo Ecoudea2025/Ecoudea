@@ -35,10 +35,10 @@ def draw(theme):
     ax.text(4.95, 1.30, "ū", fontsize=12, fontweight="bold",
             color=t["muted"], ha="right", va="top",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
-    # punto sobre la curva (utilidad del promedio) con etiqueta arriba-derecha
+    # punto sobre la curva (utilidad del promedio) con etiqueta arriba desahogada
     ax.plot(cb, u(cb), "o", ms=10, color=accent(theme), zorder=5)
-    ax.text(6.1, 1.95, "u(C̄)", fontsize=12, fontweight="bold",
-            color=accent(theme), ha="left", va="bottom",
+    ax.text(cb, u(cb) + 0.32, "u(C̄)", fontsize=12, fontweight="bold",
+            color=accent(theme), ha="center", va="bottom",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.set_xlim(0, 10.8)
     ax.set_ylim(0, 2.9)

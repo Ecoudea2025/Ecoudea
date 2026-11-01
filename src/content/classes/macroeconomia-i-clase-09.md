@@ -171,6 +171,12 @@ $$
   * Si **`$\rho = 0$`** (caso límite Cobb-Douglas): `$\frac{\partial \Omega}{\partial r} = 0$` y queda únicamente el efecto riqueza negativo sobre los ingresos futuros (`$\frac{\partial C_1^*}{\partial r} < 0$`).
   * Si **`$\rho < 0$`** (baja sustituibilidad, `$EIS < 1$`): `$\frac{\partial \Omega}{\partial r} < 0$`, generándose un efecto ingreso positivo que compite contra la caída del valor presente de `$Y_2$` y `$Y_3$`.
 
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/ces-tres-periodos-light.svg" alt="Trayectorias de consumo en tres períodos para elasticidades de sustitución baja, unitaria y alta." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/ces-tres-periodos-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: perfiles de consumo intertemporal según la elasticidad de sustitución $\sigma = 1/(1-\rho)$ ante una tasa de interés real positiva ($r > 0$).</figcaption>
+</figure>
+
 ### 4. Derivada del Ahorro $S_1^*$ respecto a $r$
 
 El ahorro privado en el primer período es el ingreso neto menos el gasto total en consumo:

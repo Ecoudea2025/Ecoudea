@@ -41,9 +41,9 @@ def draw(theme):
             ha="left", va="bottom",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     # letras de etapa centradas en su región
-    ax.text(23, 42, "A", fontsize=13, fontweight="bold", color=t["muted"],
+    ax.text(22, 46, "A", fontsize=13, fontweight="bold", color=t["muted"],
             ha="center", va="center",
-            bbox=dict(facecolor=bg, edgecolor="none", pad=2.0, alpha=0.9))
+            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.text(46, 78, "B", fontsize=13, fontweight="bold", color=t["muted"],
             ha="center", va="center",
             bbox=dict(facecolor=bg, edgecolor="none", pad=2.0, alpha=0.9))

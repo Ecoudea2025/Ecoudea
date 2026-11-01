@@ -3,7 +3,7 @@ la inflación y cruza la ganancia nula justo en π=i. Clase 12."""
 import sys
 sys.path.insert(0, "figures")
 import numpy as np
-from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent, pure_axes
+from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent, pure_axes, end_label
 
 
 def draw(theme):
@@ -17,9 +17,7 @@ def draw(theme):
             color=ROLES["budget"], ha="left", va="center")
     # umbral de ganancia nula r=0
     ax.axhline(1.0, color=t["muted"], lw=1.6, linestyle=(0, (5, 4)))
-    ax.text(0.305, 1.0, "r=0", fontsize=12, fontweight="bold",
-            color=t["muted"], ha="left", va="bottom",
-            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
+    end_label(ax, 0.305, 1.018, "r=0", t["muted"])
     # cruce exacto en π=i
     ax.plot([inom, inom], [0, 1.0], color=t["muted"], lw=1.2,
             linestyle=(0, (3, 3)), alpha=0.8)

@@ -29,12 +29,12 @@ def draw(theme):
     ax.text(32.4, R, "R", fontsize=12, fontweight="bold",
             color=t["muted"], ha="left", va="center")
     ax.plot(Ks, R, "o", ms=10, color=accent(theme), zorder=5)
-    ax.text(9.5, 5.72, "ganancias", fontsize=10, fontstyle="italic",
+    ax.text(6.0, 5.95, "ganancias", fontsize=9.5, fontstyle="italic",
             color=t["muted"], ha="center", va="center",
-            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
-    ax.text(22.5, 4.55, "pérdidas", fontsize=10, fontstyle="italic",
+            bbox=dict(facecolor=bg, edgecolor="none", pad=1.4, alpha=0.9))
+    ax.text(26.0, 4.52, "pérdidas", fontsize=9.5, fontstyle="italic",
             color=t["muted"], ha="center", va="center",
-            bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
+            bbox=dict(facecolor=bg, edgecolor="none", pad=1.4, alpha=0.9))
     ax.set_xlim(0, 35)
     ax.set_ylim(0, 11)
     pure_axes(ax, [Ks], ["K*"], [R], ["R"], xlabel="K", ylabel="")

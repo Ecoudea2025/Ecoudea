@@ -88,6 +88,12 @@ $$
 
 cuyas curvas de nivel son las conocidas **curvas de indiferencia**.
 
+<figure class="eco-figure">
+  <img src="/assets/figures/macroeconomia/curvas-indiferencia-light.svg" alt="Tres curvas de indiferencia convexas donde el promedio intermedio domina combinaciones extremas." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/curvas-indiferencia-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: mapa de indiferencia intertemporal: la combinación intermedia sobre una curva más alta domina a los consumos extremos (suavización del consumo).</figcaption>
+</figure>
+
 ### De Bienes Físicos a Bienes Fechados
 
 En macroeconomía intertemporal, tratamos el consumo en diferentes momentos del tiempo (`$C_t, C_{t+1}, \ldots$`) como si fueran bienes diferenciados. El agente debe decidir no entre manzanas y peras, sino entre "consumir hoy" versus "consumir mañana".
@@ -156,13 +162,21 @@ $$
 La trayectoria temporal de `$\beta^i$` muestra una caída mucho más pronunciada para el agente 1 que para el agente 3.
 
 <figure class="eco-figure">
-  <img src="/assets/figures/macroeconomia/curvas-indiferencia-light.svg" alt="Tres curvas de indiferencia convexas con un punto intermedio preferido sobre un punto extremo." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <img src="/assets/figures/macroeconomia/curvas-indiferencia-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: mapa de indiferencia: un punto intermedio sobre una curva más alta domina un consumo extremo.</figcaption>
+  <img src="/assets/figures/macroeconomia/factor-descuento-light.svg" alt="Tres trayectorias decrecientes del factor de descuento que parten de uno según el grado de impaciencia." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <img src="/assets/figures/macroeconomia/factor-descuento-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
+  <figcaption>Figura: el factor de descuento decae desde 1; a mayor tasa de impaciencia $\rho$, la caída temporal de $\beta^t$ es más pronunciada.</figcaption>
 </figure>
 
-<figure class="eco-figure">
-  <img src="/assets/figures/macroeconomia/factor-descuento-light.svg" alt="Tres curvas decrecientes del factor de descuento en el tiempo, una por cada grado de impaciencia." class="fig-light w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <img src="/assets/figures/macroeconomia/factor-descuento-dark.svg" alt="" aria-hidden="true" class="fig-dark w-full h-auto rounded-xl border border-border-subtle" loading="lazy" decoding="async" />
-  <figcaption>Figura: el factor de descuento decae desde 1; a mayor impaciencia, caída más rápida.</figcaption>
-</figure>
+### Comparación Numérica de Trayectorias de Descuento
+
+La siguiente tabla resume cómo el factor de descuento `$D_t = \beta^t$` pondera el bienestar futuro para distintos horizontes temporales `$t$`:
+
+| Período ($t$) | Paciente ($\rho = 0.02, \beta = 0.980$) | Moderado ($\rho = 0.10, \beta = 0.909$) | Impaciente ($\rho = 0.20, \beta = 0.833$) |
+| :---: | :---: | :---: | :---: |
+| **$t = 0$** | $1.000$ | $1.000$ | $1.000$ |
+| **$t = 1$** | $0.980$ | $0.909$ | $0.833$ |
+| **$t = 5$** | $0.906$ | $0.621$ | $0.402$ |
+| **$t = 10$** | $0.820$ | $0.386$ | $0.162$ |
+| **$t = 20$** | $0.673$ | $0.149$ | $0.026$ |
+
+Nótese que a los 20 períodos, el individuo impaciente valora un peso futuro a menos del `$3\%$` de su valor presente (`$0.026$`), mientras que el individuo paciente aún retiene más del `$67\%$` de ponderación (`$0.673$`).

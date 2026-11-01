@@ -19,7 +19,7 @@ def draw(theme):
     # recta efectiva: tramo sólido hasta Y₁ + quiebre vertical
     ax.plot([0, Y1], [8.8, Y2], color=ROLES["budget"], lw=2.8)
     ax.plot([Y1, Y1], [0, Y2], color=ROLES["budget"], lw=2.8)
-    ax.text(0.5, 8.0, "−(1+r*)", fontsize=11, fontweight="bold",
+    ax.text(0.5, 8.6, "−(1+r*)", fontsize=11, fontweight="bold",
             color=ROLES["budget"],
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     # I₁ tangente a la extensión en E* (inalcanzable): (C1−1)(C2+0.9)=16.8
@@ -38,8 +38,8 @@ def draw(theme):
     ax.plot(xj, -0.9 + 12.8 / (xj - 1), color=ROLES["alt"], lw=2.2)
     ax.text(8.3, 0.85, "I₂", fontsize=12, fontweight="bold", color=ROLES["alt"])
     ax.plot(Y1, Y2, "o", ms=11, color=ROLES["endow"], zorder=5)
-    ax.text(Y1 + 0.28, Y2 + 0.45, "W", fontsize=12, fontweight="bold",
-            color=ROLES["endow"], ha="left", va="bottom",
+    ax.text(Y1 - 0.55, Y2 - 0.65, "W", fontsize=12, fontweight="bold",
+            color=ROLES["endow"], ha="center", va="center",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.set_xlim(0, 8.8)
     ax.set_ylim(0, 9.5)

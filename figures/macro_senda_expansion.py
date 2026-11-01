@@ -3,7 +3,7 @@ origen con pendiente (1+r)(1-α)/α; tangencias E1 E2 E3. Clase 04."""
 import sys
 sys.path.insert(0, "figures")
 import numpy as np
-from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent, pure_axes, end_label
+from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, accent, pure_axes, end_label, label
 
 
 def draw(theme, r=0.25, alpha=0.5):
@@ -22,10 +22,8 @@ def draw(theme, r=0.25, alpha=0.5):
         ax.plot(xx, (u / xx ** alpha) ** (1 / (1 - alpha)),
                 color=ROLES["c1"], lw=2.2)
         ax.plot(c1, c2, "o", ms=9, color=accent(theme), zorder=5)
-        # Etiqueta FUERA de la senda verde, con fondo para que siempre lea
-        ax.text(c1 + 0.28, c2 + 0.45, tag, fontsize=12, fontweight="bold",
-                color=accent(theme), ha="left", va="bottom",
-                bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
+        # Etiqueta desahogada en la vertical superior del óptimo
+        label(ax, c1 - 0.15, c2 + 0.95, tag, accent(theme), theme, ha="center", pad=1.4)
     ax.set_xlim(0, 9.2)
     ax.set_ylim(0, 10)
     pure_axes(ax, [], [], [], [], xlabel="C₁", ylabel="C₂")

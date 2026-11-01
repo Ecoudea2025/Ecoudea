@@ -27,8 +27,8 @@ def draw(theme):
     # desplazamiento izquierda (más depreciación): flecha a altura r=4
     ax.annotate("", xy=(4.09, 4), xytext=(6.36, 4),
                 arrowprops=dict(arrowstyle="->", color=ROLES["endow"], lw=2.0))
-    ax.text(3.5, 4.45, "δ↑", fontsize=12, fontweight="bold",
-            color=ROLES["endow"], ha="right", va="bottom",
+    ax.text(3.3, 3.25, "δ↑", fontsize=12, fontweight="bold",
+            color=ROLES["endow"], ha="center", va="top",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.set_xlim(0, 9.2)
     ax.set_ylim(0, 14.5)

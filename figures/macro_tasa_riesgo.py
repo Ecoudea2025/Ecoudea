@@ -19,7 +19,7 @@ def draw(theme):
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     # cota máxima y región de exclusión
     ax.axhline(rb, color=t["muted"], lw=1.6, linestyle=(0, (5, 4)))
-    ax.text(1.0, rb + 0.015, "r̄", fontsize=12, fontweight="bold",
+    ax.text(0.95, rb + 0.025, "r̄", fontsize=12, fontweight="bold",
             color=t["muted"], ha="right", va="bottom",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     # exclusión: tinta sólida premezclada (nada de alpha en rellenos: el
