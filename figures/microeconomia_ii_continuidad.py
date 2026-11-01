@@ -23,12 +23,12 @@ def draw(theme):
     # sucesion y^n en U(x) -> y en U(x): puntos (8.5,4.6),(7.8,5.2),(7.2,5.7), limite (6.8,6.0)
     seq = [(8.5, 4.6), (7.8, 5.2), (7.2, 5.7), (6.8, 6.0)]
     ax.plot(seq[0][0], seq[0][1], "o", ms=8, color="#d97706", zorder=5)
-    label(ax, 8.8, 4.05, "y1", "#d97706", theme, fontsize=10)
+    label(ax, 8.85, 4.62, "y1", "#d97706", theme, fontsize=10)
     for px, py in seq[1:-1]:
         ax.plot(px, py, "o", ms=8, color="#d97706", zorder=5)
     label(ax, 7.45, 6.0, "y3", "#d97706", theme, fontsize=10)
     ax.plot(seq[-1][0], seq[-1][1], "s", ms=9, color="#65a30d", zorder=5)
-    label(ax, 6.15, 6.35, "y en U(x)", "#65a30d", theme, ha="right")
+    label(ax, 7.15, 6.88, "y en U(x)", "#65a30d", theme, fontsize=10.5)
     # flecha de convergencia por debajo de los puntos (no cruza etiquetas)
     ax.annotate("", xy=(7.0, 5.72), xytext=(8.5, 4.28),
                 arrowprops=dict(arrowstyle="->", color="#d97706", lw=1.4,

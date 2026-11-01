@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-24T20:52:49.170318</dc:date>
+    <dc:date>2026-10-31T23:37:57.697425</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -524,9 +524,9 @@ L 56.028594 7.2
 L 457.788594 248.976 
 " style="fill: none; stroke: #94a3a8; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="text_7">
+   <g id="end-label">
     <!-- FPU -->
-    <g style="fill: #0284c7" transform="translate(421.99543 241.319411) scale(0.12 -0.12)">
+    <g style="fill: #0284c7" transform="translate(395.25793 241.319411) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-46" d="M 588 4666 
 L 3834 4666 
@@ -568,7 +568,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-55" x="141.601562"/>
     </g>
    </g>
-   <g id="text_8">
+   <g id="text_7">
     <g id="patch_5">
      <path d="M 294.766535 99.791766 
 L 316.88216 99.791766 
@@ -655,7 +655,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-b0" x="139.160156"/>
     </g>
    </g>
-   <g id="text_9">
+   <g id="text_8">
     <g id="patch_6">
      <path d="M 257.353026 117.688212 
 L 270.533808 117.688212 
@@ -687,7 +687,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-41"/>
     </g>
    </g>
-   <g id="text_10">
+   <g id="text_9">
     <g id="patch_7">
      <path d="M 232.132557 77.692745 
 L 245.160994 77.692745 
@@ -818,9 +818,9 @@ L 350.81995 157.215939
 L 352.029759 157.583973 
 " clip-path="url(#p400fd44e9d)" style="fill: none; stroke: #65a30d; stroke-width: 2; stroke-linecap: square"/>
    </g>
-   <g id="text_11">
+   <g id="end-label">
     <!-- W2 -->
-    <g style="fill: #65a30d" transform="translate(357.508304 160.895223) scale(0.12 -0.12)">
+    <g style="fill: #65a30d" transform="translate(335.923304 160.895223) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-57" d="M 191 4666 
 L 1344 4666 
@@ -865,7 +865,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-32" x="110.302734"/>
     </g>
    </g>
-   <g id="text_12">
+   <g id="text_10">
     <g id="patch_8">
      <path d="M 321.091139 152.423509 
 L 333.091764 152.423509 
@@ -896,7 +896,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-45"/>
     </g>
    </g>
-   <g id="text_13">
+   <g id="text_11">
     <g id="patch_9">
      <path d="M 195.90728 202.09886 
 L 208.338999 202.09886 
@@ -935,7 +935,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-44"/>
     </g>
    </g>
-   <g id="text_14">
+   <g id="text_12">
     <g id="patch_10">
      <path d="M 324.548679 213.088678 
 L 335.363054 213.088678 

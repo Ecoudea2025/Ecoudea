@@ -112,9 +112,9 @@ $$
 
    Derivando `$W$` respecto a `$g$` e igualando a cero (Condición de Samuelson):
 
-$$
-\begin{align*}\frac{\text{d}W}{\text{d}g} = -1 + \frac{n}{g} = 0 \implies \boxed{g_{PO}^* = n = 53\,000\,000\text{ USD}} \quad \left(\text{es decir, } \frac{g_{PO}^*}{n} = 1\text{ USD per cápita}\right)\end{align*}
-$$
+   $$
+   \begin{align*}\frac{\text{d}W}{\text{d}g} = -1 + \frac{n}{g} = 0 \implies \boxed{g_{PO}^* = n = 53\,000\,000\text{ USD}} \quad \left(\text{es decir, } \frac{g_{PO}^*}{n} = 1\text{ USD per cápita}\right)\end{align*}
+   $$
 
 > **Interpretación económica profunda:** Como en países desiguales el ingreso mediano es mucho menor que el ingreso promedio `$(Y_M = 600 \ll \bar{Y} = 6\,850)$`, el precio fiscal que paga el votante mediano por cada peso de gasto público `$\left(\frac{Y_M}{n \bar{Y}}\right)$` es muy bajo (los ricos pagan la mayor parte de la factura tributaria). Por eso **el votante mediano demanda un gasto público `$11.42$` veces mayor que el nivel Pareto eficiente `$(g_M^* > g_{PO}^*)$`**, y a medida que aumenta el ingreso del votante mediano `$Y_M$`, su demanda de gasto público `$g_M^*$` **disminuye** `$\left(\frac{\partial g_M^*}{\partial Y_M} < 0\right)$`.
 
@@ -141,9 +141,9 @@ $$
 
    * Respecto a la corrupción `$K$` `(sujeto a `$K \geq 0$`)`:
 
-$$
-\begin{align*}\frac{\partial U_M}{\partial K} = -\frac{Y_M}{n \bar{Y}} - K < 0, \quad \forall K \geq 0 \implies \boxed{K_M^* = 0}\end{align*}
-$$
+   $$
+   \begin{align*}\frac{\partial U_M}{\partial K} = -\frac{Y_M}{n \bar{Y}} - K < 0, \quad \forall K \geq 0 \implies \boxed{K_M^* = 0}\end{align*}
+   $$
 
 2. **Elección del Planificador Social `$(W = \sum_{i=1}^n U_i = n\bar{Y} - (g + K) + 2n\sqrt{g} - n\frac{K^2}{2})$`:**
    * Respecto a `$g$`:

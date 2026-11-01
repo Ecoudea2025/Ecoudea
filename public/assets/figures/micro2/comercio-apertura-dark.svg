@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-24T20:55:27.857593</dc:date>
+    <dc:date>2026-11-01T00:00:03.243030</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -292,7 +292,7 @@ L 56.028594 7.2
 L 457.788594 248.976 
 " style="fill: none; stroke: #94a3a8; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="text_9">
+   <g id="end-label">
     <!-- FPP -->
     <g style="fill: #0284c7" transform="translate(231.405568 239.67285) scale(0.12 -0.12)">
      <defs>
@@ -399,9 +399,17 @@ L 221.588057 151.171639
 L 223.719724 153.73728 
 " clip-path="url(#p7206376d84)" style="fill: none; stroke: #65a30d; stroke-width: 2; stroke-linecap: square"/>
    </g>
-   <g id="text_10">
+   <g id="text_9">
+    <g id="patch_5">
+     <path d="M 226.312002 135.9952 
+L 298.880752 135.9952 
+L 298.880752 122.717075 
+L 226.312002 122.717075 
+z
+" style="fill: #0a0f1a; opacity: 0.9"/>
+    </g>
     <!-- autarquía -2 -->
-    <g style="fill: #65a30d" transform="translate(225.466507 161.952655) scale(0.1 -0.1)">
+    <g style="fill: #65a30d" transform="translate(227.912002 132.315512) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-Bold-61" d="M 2106 1575 
 Q 1756 1575 1579 1456 
@@ -629,9 +637,17 @@ L 440.320768 201.194182
 L 440.320768 201.194182 
 " clip-path="url(#p7206376d84)" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #65a30d; stroke-width: 1.4"/>
    </g>
-   <g id="text_11">
+   <g id="text_10">
+    <g id="patch_6">
+     <path d="M 285.003898 100.88512 
+L 352.089836 100.88512 
+L 352.089836 88.006995 
+L 285.003898 88.006995 
+z
+" style="fill: #0a0f1a; opacity: 0.9"/>
+    </g>
     <!-- mundo -1/2 -->
-    <g style="fill: #d97706" transform="translate(365.954135 138.100655) scale(0.1 -0.1)">
+    <g style="fill: #d97706" transform="translate(286.603898 97.205432) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-Bold-6d" d="M 3781 2919 
 Q 3994 3244 4286 3414 
@@ -790,8 +806,8 @@ L 447.307898 149.393571
 L 447.307898 149.393571 
 " clip-path="url(#p7206376d84)" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #d97706; stroke-width: 1.4"/>
    </g>
-   <g id="text_12">
-    <g id="patch_5">
+   <g id="text_11">
+    <g id="patch_7">
      <path d="M 154.136525 123.955101 
 L 166.13715 123.955101 
 L 166.13715 108.253539 
@@ -821,8 +837,8 @@ z
      <use xlink:href="#DejaVuSans-Bold-45"/>
     </g>
    </g>
-   <g id="text_13">
-    <g id="patch_6">
+   <g id="text_12">
+    <g id="patch_8">
      <path d="M 90.310811 37.125981 
 L 106.290655 37.125981 
 L 106.290655 21.424419 
@@ -845,8 +861,8 @@ z
      <use xlink:href="#DejaVuSans-Bold-27" x="68.310547"/>
     </g>
    </g>
-   <g id="text_14">
-    <g id="patch_7">
+   <g id="text_13">
+    <g id="patch_9">
      <path d="M 405.88628 161.167581 
 L 425.845342 161.167581 
 L 425.845342 145.466019 
@@ -861,8 +877,8 @@ z
      <use xlink:href="#DejaVuSans-Bold-27" x="98.925781"/>
     </g>
    </g>
-   <g id="text_15">
-    <g id="patch_8">
+   <g id="text_14">
+    <g id="patch_10">
      <path d="M 274.523202 74.188183 
 L 318.895077 74.188183 
 L 318.895077 61.310058 
@@ -968,17 +984,17 @@ z
      <use xlink:href="#DejaVuSans-Bold-38" x="342.138672"/>
     </g>
    </g>
-   <g id="text_16">
-    <g id="patch_9">
-     <path d="M 215.132594 141.885462 
-L 241.790406 141.885462 
-L 241.790406 129.007338 
-L 215.132594 129.007338 
+   <g id="text_15">
+    <g id="patch_11">
+     <path d="M 316.445985 187.087062 
+L 343.103798 187.087062 
+L 343.103798 174.208937 
+L 316.445985 174.208937 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- U=5 -->
-    <g style="fill: #65a30d" transform="translate(216.732594 138.205775) scale(0.1 -0.1)">
+    <g style="fill: #65a30d" transform="translate(318.045985 183.407375) scale(0.1 -0.1)">
      <use xlink:href="#DejaVuSans-Bold-55"/>
      <use xlink:href="#DejaVuSans-Bold-3d" x="81.201172"/>
      <use xlink:href="#DejaVuSans-Bold-35" x="164.990234"/>

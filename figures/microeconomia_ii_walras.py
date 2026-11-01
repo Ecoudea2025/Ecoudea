@@ -42,14 +42,14 @@ def draw(theme):
     label(ax, 2.82, 0.35, "O1", t["fg"], theme, fontsize=12)
     W = W1i  # dotacion agregada vista desde O1
     ax.plot(W[0], W[1], "D", ms=9, color="#d97706", zorder=6)
-    label(ax, W[0] + 0.12, W[1] - 0.3, "W", "#d97706", theme)
+    label(ax, W[0] + 0.22, W[1] + 0.34, "W", "#d97706", theme)
     # recta de desequilibrio P0 por W + elecciones
     (a1, a2) = demands(P0)
     xs = np.linspace(0.2, 3.2, 60)
     ax.plot(xs, W[1] + P0 * (W[0] - xs), color=t["muted"], lw=1.6, linestyle="--", zorder=3)
-    end_label(ax, 3.05, W[1] + P0 * (W[0] - 3.05) + 0.15, "P0", t["muted"], ha="right")
-    for pt, nm, col, lx, ly in ((a1, "X1", "#0284c7", 0.12, 0.18),
-                             (a2, "X2", "#d97706", -0.42, -0.4)):
+    label(ax, 0.42, 3.78, "P0", t["muted"], theme, va="bottom")
+    for pt, nm, col, lx, ly in ((a1, "X1", "#0284c7", 0.10, 0.30),
+                             (a2, "X2", "#d97706", -0.45, -0.42)):
         ax.plot(pt[0], pt[1], "o", ms=8, color=col, zorder=5)
         label(ax, pt[0] + lx, pt[1] + ly, nm, col, theme)
     # corchetes de exceso: z11+z21 en X, z12+z22 en Y
@@ -65,7 +65,7 @@ def draw(theme):
     # recta de equilibrio P* por W + tangencia unica sobre el contrato
     (b1, b2) = demands(PSTAR)
     ax.plot(xs, W[1] + PSTAR * (W[0] - xs), color="#65a30d", lw=2.2, zorder=4)
-    end_label(ax, 2.75, W[1] + PSTAR * (W[0] - 2.75) + 0.12, "P*", "#65a30d")
+    label(ax, 0.42, 2.98, "P*", "#65a30d", theme, va="bottom")
     ax.plot(b1[0], b1[1], "o", ms=10, color="#65a30d", zorder=6,
             markeredgecolor=t["fg"], markeredgewidth=1.2)
     # indiferencias tangentes por el equilibrio
@@ -75,7 +75,7 @@ def draw(theme):
     y2 = W2 - (u2v(b1[0], b1[1]) / (W1 - gg) ** B) ** (1 / (1 - B))
     ok = (y2 > 0) & (y2 < W2) & ((W1 - gg) > 0.05)
     ax.plot(gg[ok], y2[ok], color="#d97706", lw=1.6, zorder=3)
-    label(ax, 1.9, 1.35, "Z(P*) = 0", "#65a30d", theme, ha="center")
+    label(ax, 1.62, 1.12, "Z(P*) = 0", "#65a30d", theme, ha="center")
     pure_axes(ax, [0, W1], ["0", "W1"], [0, W2], ["0", "W2"],
               xlabel="bien 1", ylabel="bien 2")
     return fig
