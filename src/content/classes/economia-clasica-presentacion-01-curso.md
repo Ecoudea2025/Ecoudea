@@ -38,7 +38,7 @@ Cada unidad cierra con una **práctica** con ejercicios numéricos sobre sistema
 
 ## Método de trabajo
 
-Cada clase sigue el mismo molde: puente desde lo conocido, definición de variables, deducción paso a paso con `### Paso N`, interpretación económica y cierre. Las demostraciones largas van en `<details>` y los términos de glosario en `<Term>`. Requisito: un primer curso de economía y álgebra lineal básica (sistemas de 2 ecuaciones, vectores y matrices).
+Cada clase sigue el mismo molde: puente desde lo conocido, definición de variables, deducción paso a paso numerada, interpretación económica y cierre. Los desarrollos largos van plegables y los términos de glosario van marcados como tales. Requisito: un primer curso de economía y álgebra lineal básica (sistemas de 2 ecuaciones, vectores y matrices).
 
 <Nota>
 Este curso sigue fielmente *Lecciones de teoría clásica de los precios* (Bolaños, 2012, UdeA). Las citas de página remiten a esa edición.
