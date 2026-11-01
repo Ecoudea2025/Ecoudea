@@ -86,6 +86,11 @@ const canonical = Astro.url;
           window.scrollTo({ top: Math.max(0, y), behavior: REDUCE ? 'auto' : 'smooth' });
         }
         function flash(el) {
+          // Solo destinos puntuales (encabezados, párrafos): si el objetivo es
+          // un contenedor grande (ej. #directorio con todo el catálogo), se hace
+          // scroll pero SIN subrayar: subrayar miles de nodos parece un error.
+          var t = (el.textContent || '');
+          if (t.length > 400) return;
           el.classList.add('flash-target');
           setTimeout(function () { el.classList.remove('flash-target'); }, 2600);
         }
