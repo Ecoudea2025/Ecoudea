@@ -725,76 +725,30 @@
 .copy-tex-btn[data-ok] { color: var(--color-success); opacity: 1; }
 @media (hover: none) { .copy-tex-btn { opacity: 0.8; } }
 
-/* ── Logo vivo (SVG inline en Navbar): la insignia respira ──────────
-   Loop calmado de 12s, casi siempre la marca base: la E gruesa se dibuja
-   (trazo) y se rellena una vez por ciclo, funde a la marca, y un brillo
-   tenue barre la insignia. Sin JS: si no hay animación se ve la marca. */
-[data-logo-anim] .la-draw {
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-  opacity: 0;
-  animation: laDrawSpine 12s ease-in-out infinite;
+/* ── Logo E (SVG inline en Navbar): respiración elástica del brazo medio ──
+   E estética siempre visible; el brazo ámbar respira y el nodo pulsa.
+   Sin JS. Con reduced-motion queda estático. */
+[data-logo-anim] .le-mid {
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: leBreathe 4s ease-in-out infinite;
 }
-[data-logo-anim] .la-draw.la-arm { animation-name: laDrawArm; }
-@keyframes laDrawSpine {
-  0%, 58% { stroke-dashoffset: 100; opacity: 0; }
-  60% { opacity: 1; }
-  60%, 66% { stroke-dashoffset: 100; }
-  66%, 80% { stroke-dashoffset: 0; opacity: 1; }
-  86%, 100% { stroke-dashoffset: 0; opacity: 0; }
+@keyframes leBreathe {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(0.82); }
 }
-@keyframes laDrawArm {
-  0%, 61% { stroke-dashoffset: 100; opacity: 0; }
-  62% { opacity: 1; }
-  62%, 72% { stroke-dashoffset: 100; }
-  72%, 80% { stroke-dashoffset: 0; opacity: 1; }
-  86%, 100% { stroke-dashoffset: 0; opacity: 0; }
+[data-logo-anim] .le-dot {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: leDotPulse 4s ease-in-out infinite;
 }
-[data-logo-anim] .la-fill {
-  animation: laFill 12s ease-in-out infinite;
-}
-@keyframes laFill {
-  0%, 72% { opacity: 0; }
-  76%, 80% { opacity: 1; }
-  86%, 100% { opacity: 0; }
-}
-[data-logo-anim] .la-chart {
-  animation: laChart 12s ease-in-out infinite;
-}
-@keyframes laChart {
-  0%, 56% { opacity: 1; }
-  62%, 80% { opacity: 0; }
-  88%, 100% { opacity: 1; }
-}
-[data-logo-anim] .la-dot {
-  animation: laDotPop 12s ease-in-out infinite, laDotPulse 3s ease-in-out infinite;
-}
-@keyframes laDotPop {
-  0%, 56% { r: 4.5; }
-  62%, 80% { r: 0; }
-  88%, 100% { r: 4.5; }
-}
-@keyframes laDotPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.85; }
-}
-[data-logo-anim] .la-shine {
-  opacity: 0;
-  transform: skewX(-18deg) translateX(0);
-  animation: laShine 12s ease-in-out infinite;
-}
-@keyframes laShine {
-  0%, 88% { opacity: 0; transform: skewX(-18deg) translateX(0); }
-  89% { opacity: 0.7; }
-  94% { opacity: 0.7; transform: skewX(-18deg) translateX(96px); }
-  95%, 100% { opacity: 0; transform: skewX(-18deg) translateX(96px); }
+@keyframes leDotPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(0.85); }
 }
 @media (prefers-reduced-motion: reduce) {
-  [data-logo-anim] .la-draw,
-  [data-logo-anim] .la-fill,
-  [data-logo-anim] .la-chart,
-  [data-logo-anim] .la-dot,
-  [data-logo-anim] .la-shine {
+  [data-logo-anim] .le-mid,
+  [data-logo-anim] .le-dot {
     animation: none !important;
   }
 }

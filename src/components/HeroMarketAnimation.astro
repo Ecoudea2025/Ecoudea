@@ -304,26 +304,30 @@
       demand.setAttribute('stroke-width', lerp(12, 4, t));
       demand.setAttribute('stroke', lerpColor('#ffffff', '#0284c7', t));
 
-      // 4. Oferta con Modulación de Elasticidad
-      const sTargetX1 = lerp(230, 350, Math.min(1.4, eps / 1.3));
-      const sTargetY1 = lerp(35, 145, Math.min(1.2, (eps - 0.25) / 1.7));
-      const sCtrlX = lerp(140, 220, eps / 2);
-      const sCtrlY = lerp(180, 180, eps / 2);
+      // 4. Oferta con Modulación de Elasticidad (pasa EXACTA por el equilibrio)
+      const sTargetX1 = lerp(230, 350, Math.min(1.0, eps / 1.3));
+      const sTargetY1 = lerp(35, 145, Math.min(1.0, (eps - 0.25) / 1.7));
 
       const sX0 = lerp(E_STATE.mid[0], 70, t);
       const sY0 = lerp(E_STATE.mid[1], 220, t);
       const sX1 = lerp(E_STATE.mid[2], sTargetX1, t);
       const sY1 = lerp(E_STATE.mid[3], sTargetY1, t);
 
-      supply.setAttribute('d', `M ${sX0} ${sY0} Q ${lerp((sX0+sX1)/2, sCtrlX, t)} ${lerp((sY0+sY1)/2, sCtrlY, t)} ${sX1} ${sY1}`);
+      // 5. Intersección Matemática Exacta sobre la recta de demanda
+      // Recta de Demanda: Y - 55 = 0.6111 * (X - 70)
+      const eqNormX = lerp(174, 258, (eps - 0.4) / 1.5);
+      const eqNormY = 55 + 0.6111 * (eqNormX - 70);
+
+      // Control cuadrático para que la oferta pase EXACTO por el equilibrio:
+      // en u=0.5, B = (P0 + 2C + P2)/4 = eq  =>  C = 2*eq - (P0+P2)/2
+      const sCtrlX = lerp(E_STATE.mid[0], 2 * eqNormX - (70 + sTargetX1) / 2, t);
+      const sCtrlY = lerp(E_STATE.mid[1], 2 * eqNormY - (220 + sTargetY1) / 2, t);
+
+      supply.setAttribute('d', `M ${sX0} ${sY0} Q ${sCtrlX} ${sCtrlY} ${sX1} ${sY1}`);
       supply.setAttribute('stroke-width', lerp(10, 4, t));
       supply.setAttribute('stroke', lerpColor('#fcd34d', '#d97706', t));
 
-      // 5. Intersección Matemática Exacta sobre la recta de demanda
-      // Recta de Demanda: Y - 55 = 0.6111 * (X - 70)
-      // Con eps inelástica (0.4), cruce x=174, y=118; con eps elástica (1.8), cruce x=258, y=170
-      const eqNormX = lerp(174, 258, (eps - 0.4) / 1.5);
-      const eqNormY = 55 + 0.6111 * (eqNormX - 70);
+      // Con eps inelástica, cruce x=174; con eps elástica, cruce x=250
 
       const curEqX = lerp(E_STATE.mid[2], eqNormX, t);
       const curEqY = lerp(E_STATE.mid[3], eqNormY, t);
