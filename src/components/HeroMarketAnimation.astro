@@ -1,0 +1,393 @@
+---
+// Componente de Animación Vectorial Hero interactiva para Ecoudea
+// Desarrollado con interpolación matemática fluida inspirada en el motor AniCraft
+---
+
+<div class="relative rounded-3xl border border-border-subtle bg-elevated/50 p-5 sm:p-7 shadow-xl overflow-hidden group">
+  <!-- Resplandor dinámico de fondo de Ecoudea -->
+  <div class="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-secondary/10 blur-3xl pointer-events-none" aria-hidden="true" />
+
+  <!-- Badge superior de control interactivo -->
+  <div class="absolute top-4 right-4 z-20 flex items-center gap-2">
+    <button
+      id="heroAnimToggle"
+      type="button"
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-card text-[11px] font-semibold text-text hover:bg-surface/80 border border-border-subtle transition-all cursor-pointer shadow-sm active:scale-95"
+      title="Pausar o reanudar animación"
+      aria-label="Pausar o reanudar animación"
+    >
+      <span id="heroAnimDot" class="w-2 h-2 rounded-full bg-accent animate-pulse" />
+      <span id="heroAnimStatus">Animación activa</span>
+      <span id="heroAnimIcon" class="text-[10px] text-text-muted opacity-80">❚❚</span>
+    </button>
+  </div>
+
+  <!-- SVG Stage Canónico de Ecoudea (viewBox 0 0 400 300) -->
+  <svg id="heroEcoudeaStage" viewBox="0 0 400 300" class="w-full h-auto select-none" role="img" aria-label="Metamorfosis animada: Isotipo Ecoudea hacia modelo de equilibrio de mercado con elasticidad">
+    <defs>
+      <!-- Gradiente oficial de la marca Ecoudea -->
+      <linearGradient id="heroEcoBrandGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#65a30d" />
+        <stop offset="100%" stop-color="#0e7774" />
+      </linearGradient>
+
+      <!-- Flechas en ejes cartesianos -->
+      <marker id="heroEcoArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+        <path d="M0 0L10 5L0 10z" fill="#94a3a8" />
+      </marker>
+
+      <!-- Filtro de resplandor para el nodo de equilibrio -->
+      <filter id="heroNodeGlow" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+      </filter>
+    </defs>
+
+    <!-- Cuadrícula canónica de fondo de Ecoudea -->
+    <g id="heroGridLines" stroke="currentColor" class="text-border-subtle" stroke-width="1" opacity="0.3" aria-hidden="true">
+      <line x1="110" y1="20" x2="110" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="170" y1="20" x2="170" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="230" y1="20" x2="230" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="290" y1="20" x2="290" y2="250" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="50" y1="60" x2="370" y2="60" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="50" y1="110" x2="370" y2="110" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="50" y1="160" x2="370" y2="160" stroke-dasharray="3 6" opacity="0.55" />
+      <line x1="50" y1="210" x2="370" y2="210" stroke-dasharray="3 6" opacity="0.55" />
+    </g>
+
+    <!-- Caja contenedora adaptativa: inicia como insignia compacta y se expande para enmarcar la gráfica -->
+    <rect id="heroBoxContainer" x="120" y="45" width="160" height="210" rx="36" fill="url(#heroEcoBrandGrad)" stroke="#65a30d" stroke-width="2" />
+
+    <!-- Polígonos de Excedente de Mercado -->
+    <polygon id="heroConsumerSurplus" points="60,52 209,140 60,140" fill="#0284c7" opacity="0" aria-hidden="true" />
+    <polygon id="heroProducerSurplus" points="60,222 209,140 60,140" fill="#d97706" opacity="0" aria-hidden="true" />
+
+    <!-- 1. Ejes Cartesianos / Lomo y Base de la E -->
+    <path id="heroAxesPath" d="M 160 80 L 160 220 L 235 220" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+
+    <!-- 2. Demanda / Trazo Superior de la E -->
+    <path id="heroDemandPath" d="M 160 80 L 235 80" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+
+    <!-- 3. Oferta / Trazo Central de la E con elasticidad oscilante -->
+    <path id="heroSupplyPath" d="M 160 150 L 215 150" fill="none" stroke="#fcd34d" stroke-width="10" stroke-linecap="round" />
+
+    <!-- 4. Líneas proyectadas segmentadas de equilibrio hacia PE y QE -->
+    <g id="heroProjGroup" opacity="0">
+      <line id="heroProjP" x1="50" y1="140" x2="209" y2="140" stroke="#65a30d" stroke-width="1.6" stroke-dasharray="5 5" />
+      <line id="heroProjQ" x1="209" y1="250" x2="209" y2="140" stroke="#65a30d" stroke-width="1.6" stroke-dasharray="5 5" />
+    </g>
+
+    <!-- 5. Nodo de Equilibrio con halo suave -->
+    <g id="heroEqGroup" opacity="0" filter="url(#heroNodeGlow)">
+      <circle id="heroEqHalo" cx="209" cy="140" r="13" fill="#65a30d" opacity="0.25" aria-hidden="true" />
+      <circle id="heroEqDot" cx="209" cy="140" r="7.5" fill="#65a30d" stroke="#ffffff" stroke-width="3" />
+    </g>
+
+    <!-- 6. Etiquetas de Ejes y Curvas -->
+    <g id="heroLabelsGroup" opacity="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif">
+      <text id="heroLblP" x="50" y="12" text-anchor="middle" font-size="14" font-weight="700" fill="#94a3a8">P</text>
+      <text id="heroLblQ" x="382" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#94a3a8">Q</text>
+      <text id="heroLblPE" x="36" y="144" text-anchor="end" font-size="13" font-weight="600" fill="#94a3a8">PE</text>
+      <text id="heroLblQE" x="209" y="270" text-anchor="middle" font-size="13" font-weight="600" fill="#94a3a8">QE</text>
+      <text id="heroLblE" x="226" y="132" font-size="16" font-weight="800" fill="#f8fafc">E</text>
+      <text id="heroLblD" x="340" y="242" font-size="16" font-weight="800" fill="#0284c7">D</text>
+      <text id="heroLblO" x="340" y="52" font-size="16" font-weight="800" fill="#d97706">O</text>
+    </g>
+  </svg>
+
+  <div class="flex items-center justify-between gap-3 mt-4 flex-wrap">
+    <p class="text-xs text-text-muted flex items-center gap-1.5">
+      <span class="inline-block w-2 h-2 rounded-full bg-accent"></span>
+      <span id="heroPhaseCaption">Isotipo 'E'</span>
+    </p>
+    <div class="flex items-center gap-3">
+      <span id="heroElasticityBadge" class="hidden sm:inline-block px-2.5 py-0.5 rounded-full text-[11px] font-mono border bg-surface/60 text-accent border-accent/20">
+        ε = 1.00
+      </span>
+      <span class="inline-flex items-center gap-1 text-xs font-semibold text-accent">
+        AniCraft Vector Engine
+      </span>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const stage = document.getElementById('heroEcoudeaStage');
+    if (!stage) return;
+
+    const box = document.getElementById('heroBoxContainer');
+    const axes = document.getElementById('heroAxesPath');
+    const demand = document.getElementById('heroDemandPath');
+    const supply = document.getElementById('heroSupplyPath');
+    const grid = document.getElementById('heroGridLines');
+    const csPoly = document.getElementById('heroConsumerSurplus');
+    const psPoly = document.getElementById('heroProducerSurplus');
+    const projGroup = document.getElementById('heroProjGroup');
+    const projP = document.getElementById('heroProjP');
+    const projQ = document.getElementById('heroProjQ');
+    const eqGroup = document.getElementById('heroEqGroup');
+    const eqHalo = document.getElementById('heroEqHalo');
+    const eqDot = document.getElementById('heroEqDot');
+    const labels = document.getElementById('heroLabelsGroup');
+    const lblPE = document.getElementById('heroLblPE');
+    const lblQE = document.getElementById('heroLblQE');
+    const lblE = document.getElementById('heroLblE');
+    const lblO = document.getElementById('heroLblO');
+    const caption = document.getElementById('heroPhaseCaption');
+    const elBadge = document.getElementById('heroElasticityBadge');
+
+    const toggleBtn = document.getElementById('heroAnimToggle');
+    const dot = document.getElementById('heroAnimDot');
+    const statusText = document.getElementById('heroAnimStatus');
+    const icon = document.getElementById('heroAnimIcon');
+
+    let isPlaying = true;
+    let animTime = 0;
+    let lastTime = performance.now();
+
+    // ── Tiempos bien pausados y controlados (Ciclo total: 13.0 segundos) ──
+    // 0.0s - 3.0s: 'E' estática y elegante
+    // 3.0s - 5.5s: Transición suave de la E hacia Ejes cartesianos y Curvas
+    // 5.5s - 6.5s: Aparición del Equilibrio y Líneas Proyectadas
+    // 6.5s - 10.5s: Modulación armónica de la elasticidad de oferta
+    // 10.5s - 12.5s: Repliegue suave hacia la 'E'
+    // 12.5s - 13.0s: Pausa de cierre
+    const TOTAL_CYCLE = 13.0;
+
+    // Coordenadas Estado A: Isotipo 'E'
+    const E_STATE = {
+      box: { x: 120, y: 45, w: 160, h: 210, r: 36, fill: 'url(#heroEcoBrandGrad)', stroke: '#65a30d', sw: 2 },
+      spine: [160, 80, 160, 220, 235, 220],
+      top: [160, 80, 235, 80],
+      mid: [160, 150, 215, 150]
+    };
+
+    // Coordenadas Estado B: Modelo Gráfico Ampliado
+    const GRAPH_STATE = {
+      box: { x: 40, y: 15, w: 340, h: 260, r: 24, fill: '#0a1622', stroke: '#143836', sw: 1.5 },
+      pAxis: [60, 30, 60, 250],
+      qAxis: [60, 250, 360, 250],
+      demand: [70, 55, 340, 220],
+      supplyNormal: [70, 220, 340, 65]
+    };
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function easeInOutCubic(t) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+
+    function lerpColor(c1, c2, t) {
+      const rgb1 = hexToRgb(c1);
+      const rgb2 = hexToRgb(c2);
+      const r = Math.round(lerp(rgb1.r, rgb2.r, t));
+      const g = Math.round(lerp(rgb1.g, rgb2.g, t));
+      const b = Math.round(lerp(rgb1.b, rgb2.b, t));
+      return `rgb(${r}, ${g}, ${b})`;
+    }
+
+    function hexToRgb(hex) {
+      hex = hex.replace('#', '');
+      if (hex.length === 3) hex = hex.split('').map(c => c + c).join('');
+      const n = parseInt(hex, 16);
+      return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
+    }
+
+    function frame(now) {
+      const dt = Math.min((now - lastTime) / 1000, 0.1);
+      lastTime = now;
+
+      if (isPlaying) {
+        animTime += dt;
+      }
+
+      const tCycle = animTime % TOTAL_CYCLE;
+      let morphT = 0;
+      let elasticity = 1.0;
+      let eqAlpha = 0;
+      let phaseDesc = "Isotipo 'E'";
+
+      if (tCycle < 3.0) {
+        // Pausa en reposo de la 'E'
+        morphT = 0;
+        eqAlpha = 0;
+        phaseDesc = "Isotipo 'E' de Ecoudea";
+      } else if (tCycle < 5.5) {
+        // Morfismo elegante
+        const t = (tCycle - 3.0) / 2.5;
+        morphT = easeInOutCubic(t);
+        eqAlpha = Math.max(0, (t - 0.7) / 0.3);
+        phaseDesc = "Morfismo a Ejes y Curvas";
+      } else if (tCycle < 6.5) {
+        // Revelación del equilibrio de mercado
+        morphT = 1;
+        eqAlpha = 1;
+        phaseDesc = "Equilibrio de Mercado (PE, QE)";
+      } else if (tCycle < 10.5) {
+        // Oscilación de elasticidad pausada y suave (4 segundos)
+        morphT = 1;
+        eqAlpha = 1;
+        const osc = (tCycle - 6.5) / 4.0;
+        // Oscilación armónica suave de 0.40 a 2.10
+        elasticity = 1.0 + Math.sin(osc * Math.PI * 2) * 0.75;
+        phaseDesc = elasticity < 0.85 ? "Oferta Inelástica (Rígida)" : elasticity > 1.15 ? "Oferta Elástica (Sensible)" : "Elasticidad Unitaria";
+      } else if (tCycle < 12.5) {
+        // Repliegue suave hacia la 'E'
+        const t = (tCycle - 10.5) / 2.0;
+        morphT = 1 - easeInOutCubic(t);
+        eqAlpha = Math.max(0, 1 - t * 2.5);
+        phaseDesc = "Repliegue a Isotipo 'E'";
+      } else {
+        morphT = 0;
+        eqAlpha = 0;
+        phaseDesc = "Isotipo 'E' de Ecoudea";
+      }
+
+      update(morphT, elasticity, eqAlpha);
+      if (caption) caption.textContent = phaseDesc;
+      if (elBadge) elBadge.textContent = `ε = ${elasticity.toFixed(2)}`;
+
+      requestAnimationFrame(frame);
+    }
+
+    function update(t, eps, eqA) {
+      // 1. Caja contenedora adaptativa (Morfismo de contenedor)
+      const bX = lerp(E_STATE.box.x, GRAPH_STATE.box.x, t);
+      const bY = lerp(E_STATE.box.y, GRAPH_STATE.box.y, t);
+      const bW = lerp(E_STATE.box.w, GRAPH_STATE.box.w, t);
+      const bH = lerp(E_STATE.box.h, GRAPH_STATE.box.h, t);
+      const bR = lerp(E_STATE.box.r, GRAPH_STATE.box.r, t);
+      const bSW = lerp(E_STATE.box.sw, GRAPH_STATE.box.sw, t);
+
+      box.setAttribute('x', bX);
+      box.setAttribute('y', bY);
+      box.setAttribute('width', bW);
+      box.setAttribute('height', bH);
+      box.setAttribute('rx', bR);
+      box.setAttribute('stroke-width', bSW);
+      box.setAttribute('fill', t < 0.2 ? 'url(#heroEcoBrandGrad)' : lerpColor('#0e7774', '#0a1622', (t - 0.2) / 0.8));
+      box.setAttribute('stroke', lerpColor('#65a30d', '#143836', t));
+
+      if (grid) grid.setAttribute('opacity', t * 0.55);
+
+      // 2. Ejes Cartesianos
+      const axP_x0 = lerp(E_STATE.spine[0], GRAPH_STATE.pAxis[0], t);
+      const axP_y0 = lerp(E_STATE.spine[1], GRAPH_STATE.pAxis[1], t);
+      const axP_x1 = lerp(E_STATE.spine[2], GRAPH_STATE.pAxis[0], t);
+      const axP_y1 = lerp(E_STATE.spine[3], GRAPH_STATE.pAxis[3], t);
+
+      const axQ_x1 = lerp(E_STATE.spine[4], GRAPH_STATE.qAxis[2], t);
+      const axQ_y1 = lerp(E_STATE.spine[5], GRAPH_STATE.qAxis[3], t);
+
+      axes.setAttribute('d', `M ${axP_x0} ${axP_y0} L ${axP_x1} ${axP_y1} L ${axQ_x1} ${axQ_y1}`);
+      axes.setAttribute('stroke-width', lerp(12, 1.8, t));
+      axes.setAttribute('stroke', lerpColor('#ffffff', '#94a3a8', t));
+
+      if (t > 0.85) {
+        axes.setAttribute('marker-start', 'url(#heroEcoArrow)');
+        axes.setAttribute('marker-end', 'url(#heroEcoArrow)');
+      } else {
+        axes.removeAttribute('marker-start');
+        axes.removeAttribute('marker-end');
+      }
+
+      // 3. Demanda
+      const dX0 = lerp(E_STATE.top[0], GRAPH_STATE.demand[0], t);
+      const dY0 = lerp(E_STATE.top[1], GRAPH_STATE.demand[1], t);
+      const dX1 = lerp(E_STATE.top[2], GRAPH_STATE.demand[2], t);
+      const dY1 = lerp(E_STATE.top[3], GRAPH_STATE.demand[3], t);
+
+      demand.setAttribute('d', `M ${dX0} ${dY0} L ${dX1} ${dY1}`);
+      demand.setAttribute('stroke-width', lerp(12, 4, t));
+      demand.setAttribute('stroke', lerpColor('#ffffff', '#0284c7', t));
+
+      // 4. Oferta con Modulación de Elasticidad
+      const sTargetX1 = lerp(230, 350, Math.min(1.4, eps / 1.3));
+      const sTargetY1 = lerp(35, 145, Math.min(1.2, (eps - 0.25) / 1.7));
+      const sCtrlX = lerp(140, 220, eps / 2);
+      const sCtrlY = lerp(180, 180, eps / 2);
+
+      const sX0 = lerp(E_STATE.mid[0], 70, t);
+      const sY0 = lerp(E_STATE.mid[1], 220, t);
+      const sX1 = lerp(E_STATE.mid[2], sTargetX1, t);
+      const sY1 = lerp(E_STATE.mid[3], sTargetY1, t);
+
+      supply.setAttribute('d', `M ${sX0} ${sY0} Q ${lerp((sX0+sX1)/2, sCtrlX, t)} ${lerp((sY0+sY1)/2, sCtrlY, t)} ${sX1} ${sY1}`);
+      supply.setAttribute('stroke-width', lerp(10, 4, t));
+      supply.setAttribute('stroke', lerpColor('#fcd34d', '#d97706', t));
+
+      // 5. Intersección Matemática Exacta sobre la recta de demanda
+      // Recta de Demanda: Y - 55 = 0.6111 * (X - 70)
+      // Con eps inelástica (0.4), cruce x=174, y=118; con eps elástica (1.8), cruce x=258, y=170
+      const eqNormX = lerp(174, 258, (eps - 0.4) / 1.5);
+      const eqNormY = 55 + 0.6111 * (eqNormX - 70);
+
+      const curEqX = lerp(E_STATE.mid[2], eqNormX, t);
+      const curEqY = lerp(E_STATE.mid[3], eqNormY, t);
+
+      // 6. Nodo de Equilibrio y Líneas Proyectadas
+      eqGroup.setAttribute('opacity', eqA);
+      eqHalo.setAttribute('cx', curEqX);
+      eqHalo.setAttribute('cy', curEqY);
+      eqDot.setAttribute('cx', curEqX);
+      eqDot.setAttribute('cy', curEqY);
+
+      projGroup.setAttribute('opacity', eqA);
+      projP.setAttribute('x1', GRAPH_STATE.pAxis[0]);
+      projP.setAttribute('y1', curEqY);
+      projP.setAttribute('x2', curEqX);
+      projP.setAttribute('y2', curEqY);
+
+      projQ.setAttribute('x1', curEqX);
+      projQ.setAttribute('y1', GRAPH_STATE.qAxis[1]);
+      projQ.setAttribute('x2', curEqX);
+      projQ.setAttribute('y2', curEqY);
+
+      // 7. Excedente Económico
+      csPoly.setAttribute('points', `${GRAPH_STATE.demand[0]},${GRAPH_STATE.demand[1]} ${curEqX},${curEqY} ${GRAPH_STATE.demand[0]},${curEqY}`);
+      csPoly.setAttribute('opacity', eqA * 0.16);
+
+      psPoly.setAttribute('points', `70,220 ${curEqX},${curEqY} 70,${curEqY}`);
+      psPoly.setAttribute('opacity', eqA * 0.20);
+
+      // 8. Rótulos
+      labels.setAttribute('opacity', eqA);
+      lblPE.setAttribute('y', curEqY + 4);
+      lblQE.setAttribute('x', curEqX);
+      lblE.setAttribute('x', curEqX + 14);
+      lblE.setAttribute('y', curEqY - 8);
+      lblO.setAttribute('x', sX1 + 10);
+      lblO.setAttribute('y', sY1 + 5);
+    }
+
+    // Control de Pausa / Reanudar
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+          dot.className = "w-2 h-2 rounded-full bg-accent animate-pulse";
+          statusText.textContent = "Animación activa";
+          icon.textContent = "❚❚";
+        } else {
+          dot.className = "w-2 h-2 rounded-full bg-amber-400";
+          statusText.textContent = "Pausado";
+          icon.textContent = "▶";
+        }
+      });
+    }
+
+    // Movimiento reducido: mostrar el equilibrio final sin animar
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      update(1, 1.0, 1);
+      if (caption) caption.textContent = "Equilibrio de Mercado (PE, QE)";
+      if (elBadge) elBadge.textContent = "ε = 1.00";
+      if (toggleBtn) toggleBtn.style.display = "none";
+      return;
+    }
+
+    requestAnimationFrame(frame);
+  })();
+</script>
