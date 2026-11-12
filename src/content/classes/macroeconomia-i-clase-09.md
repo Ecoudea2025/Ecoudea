@@ -18,7 +18,10 @@ $$
 $$
 
 > **Nota de notación:** Para compactar el álgebra intermedia, llamemos `$\alpha_3 \equiv 1 - \alpha_1 - \alpha_2$` al peso del tercer período, y definamos la riqueza fiscalmente ajustada (lado derecho de la restricción) como `$W$`:
-> $$W \equiv (1 + \tau_y)Y_1 + \frac{(1 + \tau_y)Y_2}{1 + r} + \frac{(1 + \tau_y)Y_3}{(1 + r)^2}$$
+> 
+$$
+W \equiv (1 + \tau_y)Y_1 + \frac{(1 + \tau_y)Y_2}{1 + r} + \frac{(1 + \tau_y)Y_3}{(1 + r)^2}
+$$
 > *(Si en una variante del problema el impuesto a la renta resta ingreso disponible, basta cambiar `$(1 + \tau_y)$` por `$(1 - \tau_y)$` sin que cambie ningún paso del despeje).*
 
 
@@ -142,7 +145,10 @@ $$
 $$
 
 * **Interpretación:** Cualquier aumento en el ingreso presente o futuro incrementa el consumo hoy (suavizamiento del consumo). Sin embargo, como `$r > 0$`, se cumple que:
-  $$\frac{\partial C_1^*}{\partial Y_1} > \frac{\partial C_1^*}{\partial Y_2} > \frac{\partial C_1^*}{\partial Y_3} > 0$$
+  
+$$
+\frac{\partial C_1^*}{\partial Y_1} > \frac{\partial C_1^*}{\partial Y_2} > \frac{\partial C_1^*}{\partial Y_3} > 0
+$$
   Los ingresos más lejanos en el tiempo tienen menor impacto sobre el consumo corriente porque sufren un mayor descuento financiero.
 
 ### 3. Derivada de $C_1^*$ respecto a la tasa de interés $r$

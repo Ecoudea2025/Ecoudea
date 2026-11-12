@@ -40,7 +40,10 @@ $$
 $$
 
 > **Intuición económica:** Ambos choques futuros aumentan el consumo hoy porque elevan la riqueza humana del agente. Sin embargo, un ingreso adicional en el período 6 sufre un castigo por descuento financiero mucho mayor (`$5$` períodos de descuento) que un ingreso en el período 3 (`$2$` períodos de descuento). En general, se cumple la jerarquía estricta:
-> $$\alpha_1 > \frac{\alpha_1}{1 + r} > \frac{\alpha_1}{(1 + r)^2} > \ldots > \frac{\alpha_1}{(1 + r)^{N - 1}}$$
+> 
+$$
+\alpha_1 > \frac{\alpha_1}{1 + r} > \frac{\alpha_1}{(1 + r)^2} > \ldots > \frac{\alpha_1}{(1 + r)^{N - 1}}
+$$
 
 ### Impacto sobre el Ahorro Corriente ($S_1$)
 

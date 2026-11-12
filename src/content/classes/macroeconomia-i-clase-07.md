@@ -128,7 +128,10 @@ $$
 $$
 
 > **Conclusión fundamental de Friedman:**
-> $$PMgC_{Y_P} > PMgC_{Y_T} \quad \left( 1 > \frac{1}{N} \right)$$
+> 
+$$
+PMgC_{Y_P} > PMgC_{Y_T} \quad \left( 1 > \frac{1}{N} \right)
+$$
 > Los choques permanentes se traducen íntegramente en mayor consumo sin alterar el ahorro, mientras que los choques transitorios se destinan primordialmente al ahorro.
 
 
