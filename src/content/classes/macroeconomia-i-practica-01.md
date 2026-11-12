@@ -1,7 +1,7 @@
 ---
 title: "Práctica 01: Consumo Intertemporal, Inversión y Política Fiscal"
 course: "macroeconomia-i"
-order: 17
+order: 20
 classType: "practica"
 description: "Ejercicios sobre: - Restricción Presupuestaria Intertemporal y Condición de Transversalidad - Optimización con Preferencias Cobb-Douglas, CES y CRRA - Impuestos Distorsionantes y Estática Comparativa - Teoría del Ingreso Permanente, Ciclo de Vida e Incertidumbre - Restricciones de Liquidez y Riesgo de Impago - Teoría de la Inversión, Costo de Uso, Costos de Ajuste y q de Tobin - Política Fiscal, Inflación y Sostenibilidad de la Deuda Pública"
 math: true
@@ -66,7 +66,10 @@ math: true
     <li>
     Plantee el Lagrangiano y demuestre paso a paso que la demanda óptima
     de consumo en el primer período viene dada por:
-    $$C_1^* = \frac{\alpha}{1 + \tau_c} \left[ Y_1(1 - \tau_y) + \frac{Y_2(1 - \tau_y)}{1 + r} + \frac{Y_3(1 - \tau_y)}{(1 + r)^2} \right]$$
+    
+    $$
+    C_1^* = \frac{\alpha}{1 + \tau_c} \left[ Y_1(1 - \tau_y) + \frac{Y_2(1 - \tau_y)}{1 + r} + \frac{Y_3(1 - \tau_y)}{(1 + r)^2} \right]
+    $$
     </li>
     <li>
     Indique y justifique formalmente si la ecuación de presupuesto
@@ -125,7 +128,10 @@ math: true
     </li>
     <li>
     A partir de la demanda óptima en dos períodos:
-    $$C_1^* = \left[ Y_1 + \frac{Y_2}{1 + r} \right] \left( 1 + (1 + r)^{\frac{1}{\sigma} - 1} \beta^{\frac{1}{\sigma}} \right)^{-1}$$
+    
+    $$
+    C_1^* = \left[ Y_1 + \frac{Y_2}{1 + r} \right] \left( 1 + (1 + r)^{\frac{1}{\sigma} - 1} \beta^{\frac{1}{\sigma}} \right)^{-1}
+    $$
     asuma inicialmente que $Y_2 = 0$ y demuestre analíticamente cómo el
     signo de $\frac{\partial C_1^*}{\partial r}$ y de $\frac{\partial S_1^*}{\partial r}$
     depende de los tres regímenes del parámetro $\sigma$ ($\sigma = 1$,
@@ -168,7 +174,10 @@ math: true
     demuestre paso a paso utilizando las propiedades de las series
     geométricas ($\phi \equiv \frac{1}{1+r} &lt; 1$) que el nivel óptimo de
     consumo permanente viene dado por:
-    $$\bar{C} = r A_t + \frac{r}{1 + r} \sum_{i=0}^\infty \frac{Y_{\ell t+i}(1 - \tau)}{(1 + r)^i}$$
+    
+    $$
+    \bar{C} = r A_t + \frac{r}{1 + r} \sum_{i=0}^\infty \frac{Y_{\ell t+i}(1 - \tau)}{(1 + r)^i}
+    $$
     </li>
     <li>
     Particione la expresión anterior en las tres etapas vitales (edad no
@@ -189,7 +198,10 @@ math: true
     </li>
     <li>
     Deduzca la expresión del costo de uso del capital
-    $$R_t = P_K \left[ r + \delta - \left( \frac{\Delta P_K}{P_K} - \pi \right) \right]$$
+    
+    $$
+    R_t = P_K \left[ r + \delta - \left( \frac{\Delta P_K}{P_K} - \pi \right) \right]
+    $$
     y explique qué implica una alta tasa de inflación general $\pi$ (y la
     falta de indexación tributaria de la depreciación) para la
     acumulación de capital.
@@ -197,7 +209,10 @@ math: true
     <li>
     Minimizando la función de costos de ajuste $C(I_t) = \epsilon(K_{t+1} - K^*)^2 + (1 - \epsilon)(K_{t+1} - K_t)^2$,
     deduzca la ecuación de inversión neta:
-    $$I_t = \epsilon \left[ \left( \frac{P_t \alpha A_t}{P_K (r + \delta)} \right)^{\frac{1}{1 - \alpha}} N_t - K_t \right]$$
+    
+$$
+I_t = \epsilon \left[ \left( \frac{P_t \alpha A_t}{P_K (r + \delta)} \right)^{\frac{1}{1 - \alpha}} N_t - K_t \right]
+$$
     Explique el significado económico de $\epsilon \in (0, 1)$, por qué es
     costoso operar fuera de $K^*$, y calcule e interprete el signo de
     $\frac{\partial I_t}{\partial r}$, $\frac{\partial I_t}{\partial A_t}$ y $\frac{\partial I_t}{\partial K_t}$.
@@ -209,9 +224,9 @@ math: true
     `$K_{t+1} = (1 - \delta)K_t + I_t$` y a una función de costos de
     ajuste del capital de la forma:
 
-    $$
-    \begin{align*}C(I_t) = \bar{C} + \psi (K_{t+1} - K_t)^2, \quad \psi > 0\end{align*}
-    $$
+$$
+\begin{align*}C(I_t) = \bar{C} + \psi (K_{t+1} - K_t)^2, \quad \psi > 0\end{align*}
+$$
 
     *(o en su formulación general convexa `$C(I_t)$`)*:
     <ol type="a">
@@ -223,7 +238,10 @@ math: true
     <li>
     Defina la $q$ marginal de Tobin ($q_t \equiv 1 + C'(I_t)$) y explique
     las siguientes dos expresiones fundamentales:
-    $$q_t = \frac{f'(K_{t+1}) - \delta + q_{t+1}}{1 + r} \qquad \text{y} \qquad r = \frac{f'(K_{t+1}) - \delta}{q_t} + \frac{\Delta q_{t+1}}{q_t}$$
+
+$$
+q_t = \frac{f'(K_{t+1}) - \delta + q_{t+1}}{1 + r} \qquad \text{y} \qquad r = \frac{f'(K_{t+1}) - \delta}{q_t} + \frac{\Delta q_{t+1}}{q_t}
+$$
     </li>
     <li>
     Itere hacia adelante la ecuación de $q_t$, enuncie la condición de
@@ -242,7 +260,10 @@ math: true
     Partiendo de la identidad del déficit total $\Delta B_{t+1} = B_{t+1} - B_t = G_t - T_t + r B_t$,
     itere hacia adelante para deducir la Restricción Presupuestaria
     Intertemporal del Gobierno:
-    $$(1 + r)B_t = \sum_{s=0}^\infty \frac{T_{t+s} - G_{t+s}}{(1 + r)^s}$$
+
+$$
+(1 + r)B_t = \sum_{s=0}^\infty \frac{T_{t+s} - G_{t+s}}{(1 + r)^s}
+$$
     Explique su significado económico y argumente analíticamente por qué
     es indispensable la condición de no-juego Ponzi.
     </li>
@@ -251,7 +272,10 @@ math: true
     expresarla primero en términos reales con inflación $\pi$, y luego
     como proporción del PIB real ($b_t = B_t / Y_t$) cuando la economía
     crece a la tasa $\gamma_y$:
-    $$b_{t+1} = \frac{g_t - t_t}{1 + \gamma_y} + \left( \frac{1 + r}{1 + \gamma_y} \right) b_t \iff b_{t+1} - b_t = \frac{g_t - t_t}{1 + \gamma_y} + \left( \frac{r - \gamma_y}{1 + \gamma_y} \right) b_t$$
+    
+$$
+b_{t+1} = \frac{g_t - t_t}{1 + \gamma_y} + \left( \frac{1 + r}{1 + \gamma_y} \right) b_t \iff b_{t+1} - b_t = \frac{g_t - t_t}{1 + \gamma_y} + \left( \frac{r - \gamma_y}{1 + \gamma_y} \right) b_t
+$$
     </li>
     <li>
     Definiendo $\varphi \equiv \frac{g_t - t_t}{1 + \gamma_y}$ y $\rho \equiv \frac{1 + r}{1 + \gamma_y}$,

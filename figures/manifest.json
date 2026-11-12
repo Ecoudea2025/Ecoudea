@@ -335,6 +335,27 @@
       "title": "Crecimiento balanceado vs senda desigual",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-10-25"
+    },
+    {
+      "id": "macroeconomia/ricardiana",
+      "script": "figures/macro_ricardiana.py",
+      "title": "Ricardianos vs no ricardianos ante rebaja tributaria con deuda",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "macroeconomia/flujo-williamson",
+      "script": "figures/macro_flujo_williamson.py",
+      "title": "Flujo circular del modelo intertemporal real en economia cerrada",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-12"
+    },
+    {
+      "id": "macroeconomia/oferta-trabajo",
+      "script": "figures/macro_oferta_trabajo.py",
+      "title": "Oferta de trabajo y desplazamientos con la tasa de interes real",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-12"
     }
   ]
 }
