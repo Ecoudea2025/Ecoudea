@@ -2,7 +2,7 @@
 import sys
 sys.path.insert(0, "figures")
 from matplotlib.patches import Rectangle, FancyBboxPatch
-from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, label
+from style import setup_eco, save, ROLES, THEMES, OUTDIR_MD, label, smart_label
 
 
 def draw(theme):
@@ -45,27 +45,28 @@ def draw(theme):
     ax.annotate("", xy=(3.2, 4.15), xytext=(6.2, 4.15),
                 arrowprops=dict(arrowstyle="->", color=ink, lw=1.8))
     label(ax, 4.7, 3.88, "w, C", ink, theme, fontsize=10)
-    # Familias -> Mercado
-    ax.annotate("", xy=(4.2, 2.75), xytext=(2.6, 4.0),
+    # Familias -> Mercado (termina en el borde superior del bloque)
+    ax.annotate("", xy=(4.0, 3.2), xytext=(2.6, 4.0),
                 arrowprops=dict(arrowstyle="->", color=muted, lw=1.6))
-    label(ax, 2.75, 3.35, "C, N(s)", muted, theme, fontsize=9)
-    # Firmas -> Mercado
-    ax.annotate("", xy=(5.2, 2.75), xytext=(6.8, 4.0),
+    smart_label(ax, 3.3, 3.6, "C, N(s)", muted, theme, fontsize=9)
+    # Firmas -> Mercado (termina en el borde superior del bloque)
+    ax.annotate("", xy=(5.4, 3.2), xytext=(6.8, 4.0),
                 arrowprops=dict(arrowstyle="->", color=muted, lw=1.6))
-    label(ax, 6.35, 3.35, "Y, I, N(d)", muted, theme, fontsize=9)
+    smart_label(ax, 6.1, 3.6, "Y, I, N(d)", muted, theme, fontsize=9)
     # Familias -> Gobierno (T)
     ax.annotate("", xy=(3.6, 1.15), xytext=(2.1, 4.0),
                 arrowprops=dict(arrowstyle="->", color=muted, lw=1.4,
                                 linestyle=(0, (4, 3))))
-    label(ax, 2.35, 2.4, "T", muted, theme, fontsize=10)
+    smart_label(ax, 2.85, 2.58, "T", muted, theme, fontsize=10)
     # Firmas -> Gobierno (T)
     ax.annotate("", xy=(5.8, 1.15), xytext=(7.3, 4.0),
                 arrowprops=dict(arrowstyle="->", color=muted, lw=1.4,
                                 linestyle=(0, (4, 3))))
+    smart_label(ax, 6.55, 2.58, "T", muted, theme, fontsize=10)
     # Gobierno -> Mercado (G)
     ax.annotate("", xy=(4.7, 2.3), xytext=(4.7, 1.6),
                 arrowprops=dict(arrowstyle="->", color=colors["Gobierno"], lw=2.0))
-    label(ax, 4.95, 1.95, "G", colors["Gobierno"], theme, fontsize=10)
+    smart_label(ax, 4.7, 1.95, "G", colors["Gobierno"], theme, fontsize=10)
     _ = fam_c, fir_c
     return fig
 
