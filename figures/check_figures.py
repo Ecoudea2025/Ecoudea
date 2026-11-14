@@ -36,6 +36,10 @@ def load_draw(script):
 
 
 def main(only):
+    strict = False
+    if only and only[0] == '--strict':
+        strict = True
+        only = only[1:]
     manifest = json.load(open(os.path.join(ROOT, 'figures', 'manifest.json'),
                               encoding='utf-8'))
     figs = manifest['figures'] if isinstance(manifest, dict) else manifest
@@ -54,7 +58,7 @@ def main(only):
         for theme in ('light', 'dark'):
             try:
                 fig = draw(theme)
-                errors, warnings = check_figure(fig)
+                errors, warnings = check_figure(fig, strict=strict)
             except Exception as e:  # noqa: BLE001
                 print(f'[figures] {fid} [{theme}]: ERROR dibujando: {e}')
                 bad += 1

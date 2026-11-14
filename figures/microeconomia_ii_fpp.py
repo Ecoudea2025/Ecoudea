@@ -19,7 +19,7 @@ def draw(theme):
     # conjunta quebrada exterior: (0,240)->(160,160)->(240,0)
     jx = [0, 160, 240]
     jy = [240, 160, 0]
-    ax.plot(jx, jy, color="#65a30d", lw=2.8, zorder=4)
+    ax.plot(jx, jy, color="#65a30d", lw=2.8, zorder=2)
     label(ax, 100, 205, "conjunta", "#65a30d", theme, ha="center")
     # ganancia de especializacion: triangulo (120,120)-(160,120)-(160,160)
     ax.fill([120, 160, 160], [120, 120, 160], facecolor=TINTS[theme]["save"],
@@ -33,7 +33,7 @@ def draw(theme):
     label(ax, 80, 68, "(80,80)", "#b91c1c", theme, ha="center", fontsize=9)
     ax.plot(160, 160, "o", ms=9, color="#65a30d", zorder=5,
             markeredgecolor=t["fg"], markeredgewidth=1.2)
-    label(ax, 163, 168, "(160,160)", "#65a30d", theme, fontsize=9)
+    label(ax, 172, 177, "(160,160)", "#65a30d", theme, fontsize=9)
     ax.plot(0, 240, "o", ms=7, color=t["muted"], zorder=5)
     ax.plot(240, 0, "o", ms=7, color=t["muted"], zorder=5)
     pure_axes(ax, [0, 80, 160, 240], ["0", "80", "160", "240"],

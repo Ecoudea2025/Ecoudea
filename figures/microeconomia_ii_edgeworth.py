@@ -35,7 +35,7 @@ def draw(theme):
     label(ax, 9.65, 0.45, "O1", t["fg"], theme, fontsize=12)
     # curva de contrato analitica
     xs = np.linspace(0.05, 9.95, 300)
-    ax.plot(xs, contract(xs), color="#65a30d", lw=2.6, zorder=4)
+    ax.plot(xs, contract(xs), color="#65a30d", lw=2.6, zorder=2)
     end_label(ax, 9.85, contract(9.9) + 0.2, "contrato", "#65a30d", ha="right")
     # tres tangencias: curvas de indiferencia por los puntos de la curva
     for x11 in (3.0, 5.5, 8.0):
@@ -50,7 +50,7 @@ def draw(theme):
         ax.plot(g2[ok], y2[ok], color="#d97706", lw=1.6, zorder=3)
         ax.plot(x11, x12, "o", ms=8, color=t["fg"], zorder=5,
                 markeredgecolor="#65a30d", markeredgewidth=1.6)
-    label(ax, 6.5, 3.2, "RMS1 = RMS2", "#65a30d", theme, ha="center")
+    label(ax, 5.0, 3.5, "RMS1 = RMS2", "#65a30d", theme, ha="center")
     # dotacion y lente de mejoras: {U1>=U1(w)} cap {U2>=U2(w)}
     ax.plot(OM[0], OM[1], "D", ms=9, color="#d97706", zorder=6)
     label(ax, OM[0] + 0.3, OM[1] - 0.45, "ω", "#d97706", theme, fontsize=13)

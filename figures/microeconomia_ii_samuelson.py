@@ -15,7 +15,7 @@ def draw(theme):
     end_label(ax, 8.6, 8 - 8.6 + 0.5, "RMS1", "#0284c7", fontsize=11)
     ax.plot(G, 10 - 0.8 * G, color="#d97706", lw=2.2, zorder=3)
     end_label(ax, 11.1, 10 - 0.8 * 11.1 + 0.3, "RMS2", "#d97706", fontsize=11)
-    ax.plot(G, 18 - 1.8 * G, color="#65a30d", lw=2.8, zorder=4)
+    ax.plot(G, 18 - 1.8 * G, color="#65a30d", lw=2.8, zorder=2)
     end_label(ax, 2.5, 18 - 1.8 * 2.5 + 0.45, "suma vertical", "#65a30d", fontsize=11)
     ax.plot([0, 11.2], [9, 9], color=t["muted"], lw=1.8, zorder=3)
     end_label(ax, 11.3, 9.0, "c", t["muted"], fontsize=11)

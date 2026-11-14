@@ -15,10 +15,10 @@ def draw(theme):
           fontsize=12)
     # dotaciones: E abajo (humo 0), E' arriba (humo max), linea vertical
     ax.plot(3.0, 0, "s", ms=9, color=ROLES["c2"], zorder=5)
-    label(ax, 3.0, -0.35, "E", ROLES["c2"], theme, ha="center",
+    label(ax, 3.0, -0.62, "E", ROLES["c2"], theme, ha="center",
           fontsize=12)
     ax.plot(3.0, H, "s", ms=9, color=ROLES["c2"], zorder=5)
-    label(ax, 3.0, H + 0.35, "E'", ROLES["c2"], theme, ha="center",
+    label(ax, 3.0, H + 0.62, "E'", ROLES["c2"], theme, ha="center",
           fontsize=12)
     ax.plot([3.0, 3.0], [0, H], linestyle=(0, (5, 4)), color=t["muted"],
             lw=1.4)

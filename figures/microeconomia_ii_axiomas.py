@@ -23,7 +23,8 @@ def panel(ax, theme, mode):
         ax.plot([4, 10], [4, 4], color=t["muted"], lw=1.2)
         ax.plot([4, 4], [4, 10], color=t["muted"], lw=1.2)
         ax.plot(7, 7.5, "o", ms=9, color="#d97706", zorder=5)
-        label(ax, 7.3, 7.5, "y ≫ x", "#d97706", theme)
+        # y en (7,7.5): etiqueta a la derecha con aire >=0.7 en x
+        label(ax, 7.75, 7.5, "y ≫ x", "#d97706", theme)
         ax.set_title("Monotonicidad", fontsize=12, fontweight="bold")
     elif mode == "estricta":
         ax.fill([4, 10, 10, 4], [4, 4, 10, 10], facecolor=TINTS[theme]["excl"],
@@ -41,7 +42,8 @@ def panel(ax, theme, mode):
         label(ax, 3.5, 3.0, "x", "#0284c7", theme, ha="center")
         # punto y a distancia < eps: (5.9, 5.7) -> dist ~1.14 < 2
         ax.plot(5.9, 5.7, "o", ms=9, color="#d97706", zorder=5)
-        label(ax, 6.2, 6.1, "y mejor que x", "#d97706", theme, fontsize=10)
+        # aire real: dx=0.7, dy=0.7 (dist 0.99) respecto al punto (5.9,5.7)
+        label(ax, 6.6, 6.4, "y mejor que x", "#d97706", theme, fontsize=10)
         label(ax, 6.9, 4.6, "radio ε", t["muted"], theme, fontsize=10)
         ax.set_title("No saciabilidad local", fontsize=12, fontweight="bold")
     ax.set_xticks([4])

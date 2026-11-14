@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-31T23:37:59.553205</dc:date>
+    <dc:date>2026-11-14T15:09:08.412736</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -531,11 +531,17 @@ z
     </g>
    </g>
    <g id="line2d_13">
+    <path d="M 67.601202 31.3776 
+L 432.837566 270.73584 
+L 432.837566 270.73584 
+" clip-path="url(#p996959682b)" style="fill: none; stroke: #65a30d; stroke-width: 2.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_14">
     <path d="M 233.617731 248.976 
 L 233.617731 140.1768 
 " clip-path="url(#p996959682b)" style="fill: none; stroke-dasharray: 1.2,1.98; stroke-dashoffset: 0; stroke: #5c6656; stroke-opacity: 0.8; stroke-width: 1.2"/>
    </g>
-   <g id="line2d_14">
+   <g id="line2d_15">
     <path d="M 67.601202 140.1768 
 L 233.617731 140.1768 
 " clip-path="url(#p996959682b)" style="fill: none; stroke-dasharray: 1.2,1.98; stroke-dashoffset: 0; stroke: #5c6656; stroke-opacity: 0.8; stroke-width: 1.2"/>
@@ -550,7 +556,7 @@ L 47.679219 7.2
 L 449.439219 248.976 
 " style="fill: none; stroke: #5c6656; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
-   <g id="line2d_15">
+   <g id="line2d_16">
     <path d="M 67.601202 152.2656 
 L 432.837566 285.2424 
 L 432.837566 285.2424 
@@ -642,7 +648,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-31" x="248.535156"/>
     </g>
    </g>
-   <g id="line2d_16">
+   <g id="line2d_17">
     <path d="M 67.601202 128.088 
 L 432.837566 234.46944 
 L 432.837566 234.46944 
@@ -781,7 +787,7 @@ z
      <use xlink:href="#DejaVuSans-Bold-6c" x="728.369141"/>
     </g>
    </g>
-   <g id="line2d_17">
+   <g id="line2d_18">
     <path d="M 67.601202 140.1768 
 L 439.478227 140.1768 
 " clip-path="url(#p996959682b)" style="fill: none; stroke: #5c6656; stroke-width: 1.8; stroke-linecap: square"/>
@@ -964,12 +970,6 @@ z
      <use xlink:href="#DejaVuSans-Bold-3d" x="181.396484"/>
      <use xlink:href="#DejaVuSans-Bold-36" x="265.185547"/>
     </g>
-   </g>
-   <g id="line2d_18">
-    <path d="M 67.601202 31.3776 
-L 432.837566 270.73584 
-L 432.837566 270.73584 
-" clip-path="url(#p996959682b)" style="fill: none; stroke: #65a30d; stroke-width: 2.8; stroke-linecap: square"/>
    </g>
    <g id="line2d_19">
     <path d="M 233.617731 248.976 

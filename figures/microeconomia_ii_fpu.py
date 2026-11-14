@@ -12,8 +12,8 @@ def draw(theme):
     ax.set_ylim(0, 11.0)
     f = lambda s: 10.0 - s ** 2 / 10.0
     xs = np.linspace(0, 10, 300)
-    ax.plot(xs, f(xs), color="#0284c7", lw=2.6, zorder=4)
-    end_label(ax, 10.02, f(9.9) + 0.3, "FPU", "#0284c7")
+    ax.plot(xs, f(xs), color="#0284c7", lw=2.6, zorder=2)
+    end_label(ax, 10.08, f(9.9) + 0.7, "FPU", "#0284c7", ha="left")
     # A igualitario: US=UJ sobre la frontera: US^2+10US-100=0
     UA = (-10 + np.sqrt(500)) / 2  # 6.18
     ax.plot([0, UA], [0, UA], color=t["muted"], lw=1.2, linestyle="--", zorder=2)
@@ -33,11 +33,11 @@ def draw(theme):
     angs = np.radians(np.linspace(ang0 - 28, ang0 + 28, 80))
     ax.plot(C[0] + 3.0 * np.cos(angs), C[1] + 3.0 * np.sin(angs),
             color="#65a30d", lw=2.0, zorder=3)
-    end_label(ax, C[0] + 3.0 * np.cos(np.radians(ang0 + 28)) + 0.15,
-              C[1] + 3.0 * np.sin(np.radians(ang0 + 28)), "W2", "#65a30d")
+    end_label(ax, C[0] + 3.0 * np.cos(np.radians(ang0 + 28)) + 0.55,
+              C[1] + 3.0 * np.sin(np.radians(ang0 + 28)) - 0.45, "W2", "#65a30d", ha="left")
     ax.plot(E[0], E[1], "o", ms=10, color="#65a30d", zorder=6,
             markeredgecolor=t["fg"], markeredgewidth=1.2)
-    label(ax, E[0] + 0.3, E[1] - 0.35, "E", "#65a30d", theme, fontsize=13)
+    label(ax, E[0] + 0.6, E[1] + 0.6, "E", "#65a30d", theme, fontsize=13)
     # D interior peor que E; F interior peor que E pero mejor que D
     ax.plot(4.0, 3.0, "s", ms=8, color=t["muted"], zorder=5)
     label(ax, 4.0, 2.45, "D", t["muted"], theme, ha="center", fontsize=11)

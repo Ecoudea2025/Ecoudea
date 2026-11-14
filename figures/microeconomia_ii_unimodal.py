@@ -16,7 +16,8 @@ def panel(ax, theme, left):
     xs = np.array([0.0, 1.0, 2.0])
     if left:
         ax.plot(xs, [6, 3, 11], color="#94a3a8", lw=2.4, zorder=4, marker="o", ms=7)
-        label(ax, 1.7, 8.0, "k (valle)", "#94a3a8", theme, ha="center", fontsize=11)
+        # tramo (1,3)->(2,11): y=8x-5; etiqueta a la izquierda (dist perp ~0.97 en datos)
+        label(ax, 0.55, 7.2, "k (valle)", "#94a3a8", theme, ha="center", fontsize=11)
         ax.set_title("No unimodal", fontsize=12, fontweight="bold")
     else:
         ax.plot(xs, [9, 5, 3], color="#0284c7", lw=2.2, zorder=4, marker="o", ms=7)

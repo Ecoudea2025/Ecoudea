@@ -31,17 +31,22 @@ def draw(theme):
     w_abs = np.linspace(0, what, 250)
     rw = trigo_curve(w_abs)
     wn = w_abs / what
-    ax.plot(w, R * (1 - w), color=THEMES[theme]["fg"], lw=2.2, zorder=4)
-    end_label(ax, 1.0, 0.012, "patron: recta", THEMES[theme]["fg"], fontsize=10)
-    ax.plot(wn, rw, color="#0284c7", lw=2.4, zorder=4)
-    label(ax, 0.06, 0.46, "trigo: curva", "#0284c7", theme, fontsize=10)
+    ax.plot(w, R * (1 - w), color=THEMES[theme]["fg"], lw=2.2, zorder=2)
+    # end label en el margen derecho (x>1: sin curvas) para no cruzar la recta
+    end_label(ax, 1.005, 0.03, "patron: recta", THEMES[theme]["fg"],
+              ha="left", fontsize=10)
+    ax.plot(wn, rw, color="#0284c7", lw=2.4, zorder=2)
+    # aire bajo la recta: min patron en [0.06,0.19] = 0.3637 -> y=0.329
+    label(ax, 0.06, 0.329, "trigo: curva", "#0284c7", theme, fontsize=10)
     ax.plot(0.5, R * 0.5, "o", ms=8, color=THEMES[theme]["fg"], zorder=5)
-    label(ax, 0.5, R * 0.5 + 0.035, "E (patron)", THEMES[theme]["fg"], theme,
+    # aire sobre la recta: R*0.5=0.2245 + 0.065 (pendiente*semiancho+caja)
+    label(ax, 0.5, 0.29, "E (patron)", THEMES[theme]["fg"], theme,
           ha="center", fontsize=10)
     ax.plot(0.5, float(np.interp(0.5, wn, rw)), "s", ms=8, color="#0284c7",
             zorder=5)
-    label(ax, 0.53, float(np.interp(0.5, wn, rw)) - 0.04, "E' (trigo)",
-          "#0284c7", theme, fontsize=10)
+    # bajo ambas curvas: trigo(0.62)~0.15, recta(0.62)=0.171 -> y=0.115
+    label(ax, 0.62, 0.115, "E' (trigo)",
+          "#0284c7", theme, ha="right", fontsize=10)
     pure_axes(ax, [0, 0.5, 1.0], ["0", "1/2", "1"],
               [0, round(R / 2, 3), round(R, 3)], ["0", "R/2", "R=44,9%"],
               xlabel="salario relativo (w / w-max)", ylabel="tasa r")

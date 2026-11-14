@@ -206,7 +206,7 @@ def _text_hits(ax, tx, renderer, dots, strokes, skip_self=True):
             ax0, ay0 = verts[k]
             bx0, by0 = verts[k + 1]
             ok = False
-            for tt in np.linspace(0.0, 1.0, 9):
+            for tt in np.linspace(0.0, 1.0, 25):
                 px, py = ax0 + (bx0 - ax0) * tt, ay0 + (by0 - ay0) * tt
                 if ex0 <= px <= ex1 and ey0 <= py <= ey1:
                     ok = True
@@ -233,7 +233,7 @@ def _collect_geometry(ax, fig):
             continue
         ls = ln.get_linestyle()
         if ls in ('None', ' ', ''):
-            r = float(ln.get_markersize()) * fig.dpi / 120.0
+            r = float(ln.get_markersize()) * fig.dpi / 72.0 / 2.0
             dots.append((pts.reshape(-1, 2), r))
         else:
             lw = float(ln.get_linewidth()) * fig.dpi / 72.0 / 2.0 + 1.0

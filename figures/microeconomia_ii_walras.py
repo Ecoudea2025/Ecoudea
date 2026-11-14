@@ -39,7 +39,8 @@ def draw(theme):
     ax.set_ylim(0, 5.9)
     ax.plot([0, W1, W1, 0, 0], [0, 0, W2, W2, 0], color=t["muted"], lw=1.6, zorder=3)
     label(ax, 0.18, 5.55, "O2", t["fg"], theme, fontsize=12)
-    label(ax, 2.82, 0.35, "O1", t["fg"], theme, fontsize=12)
+    # O1 en (3,0): P* en x=2.82 da y~0.60 (a 0.25); se aparta a x=2.50 (P*~1.14, aire 0.79)
+    label(ax, 2.50, 0.35, "O1", t["fg"], theme, fontsize=12)
     W = W1i  # dotacion agregada vista desde O1
     ax.plot(W[0], W[1], "D", ms=9, color="#d97706", zorder=6)
     label(ax, W[0] + 0.22, W[1] + 0.34, "W", "#d97706", theme)

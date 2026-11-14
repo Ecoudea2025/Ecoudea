@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="660.259348pt" height="223.861906pt" viewBox="0 0 660.259348 223.861906" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="666.708144pt" height="223.861906pt" viewBox="0 0 666.708144 223.861906" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-25T13:57:49.033448</dc:date>
+    <dc:date>2026-11-14T15:06:39.887621</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -22,8 +22,8 @@
  <g id="figure_1">
   <g id="patch_1">
    <path d="M 0 223.861906 
-L 660.259348 223.861906 
-L 660.259348 0 
+L 666.708144 223.861906 
+L 666.708144 0 
 L 0 0 
 L 0 223.861906 
 z
@@ -238,15 +238,15 @@ z
    </g>
    <g id="text_5">
     <g id="patch_7">
-     <path d="M 158.969748 75.847286 
-L 198.569748 75.847286 
-L 198.569748 61.113536 
-L 158.969748 61.113536 
+     <path d="M 166.224644 75.847286 
+L 205.824644 75.847286 
+L 205.824644 61.113536 
+L 166.224644 61.113536 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- y ≫ x -->
-    <g style="fill: #d97706" transform="translate(160.529748 71.697911) scale(0.12 -0.12)">
+    <g style="fill: #d97706" transform="translate(167.784644 71.697911) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-79" d="M 78 3500 
 L 1197 3500 
@@ -919,15 +919,15 @@ z
    </g>
    <g id="text_16">
     <g id="patch_19">
-     <path d="M 574.55466 96.500936 
-L 654.659348 96.500936 
-L 654.659348 83.544686 
-L 574.55466 83.544686 
+     <path d="M 581.003456 91.884707 
+L 661.108144 91.884707 
+L 661.108144 78.928457 
+L 581.003456 78.928457 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- y mejor que x -->
-    <g style="fill: #d97706" transform="translate(576.15466 92.743123) scale(0.1 -0.1)">
+    <g style="fill: #d97706" transform="translate(582.603456 88.126895) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-Bold-6d" d="M 3781 2919 
 Q 3994 3244 4286 3414 

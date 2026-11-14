@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T13:57:41.742900</dc:date>
+    <dc:date>2026-11-14T15:09:16.337544</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -248,15 +248,15 @@ z
    </g>
    <g id="text_3">
     <g id="patch_7">
-     <path d="M 146.437961 248.011556 
-L 157.755461 248.011556 
-L 157.755461 233.277806 
-L 146.437961 233.277806 
+     <path d="M 146.437961 255.560066 
+L 157.755461 255.560066 
+L 157.755461 240.826316 
+L 146.437961 240.826316 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- E -->
-    <g style="fill: #d97706" transform="translate(147.997961 243.955931) scale(0.12 -0.12)">
+    <g style="fill: #d97706" transform="translate(147.997961 251.504441) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-45" d="M 588 4666 
 L 3834 4666 
@@ -279,15 +279,15 @@ z
    </g>
    <g id="text_4">
     <g id="patch_8">
-     <path d="M 144.601399 32.739215 
-L 159.592024 32.739215 
-L 159.592024 18.005465 
-L 144.601399 18.005465 
+     <path d="M 144.601399 25.190705 
+L 159.592024 25.190705 
+L 159.592024 10.456955 
+L 144.601399 10.456955 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- E' -->
-    <g style="fill: #d97706" transform="translate(146.161399 28.68359) scale(0.12 -0.12)">
+    <g style="fill: #d97706" transform="translate(146.161399 21.13508) scale(0.12 -0.12)">
      <defs>
       <path id="DejaVuSans-Bold-27" d="M 1350 4666 
 L 1350 2931 

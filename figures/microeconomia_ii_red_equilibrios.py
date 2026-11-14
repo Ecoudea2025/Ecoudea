@@ -19,7 +19,8 @@ def draw(theme):
     n2 = (1000 + np.sqrt(1000 ** 2 - 4 * c)) / 2
     for nx, nm in [(0.0, "n0"), (n1, "n1"), (n2, "n2")]:
         ax.plot(nx, c, "o", ms=10, color=ROLES["budget"], zorder=5)
-        label(ax, nx, c + 13000, nm, ROLES["budget"], theme, ha="center",
+        # aire vertical: 22000 ~= 26px (marcador r~7px + semialtura ~8px + pad)
+        label(ax, nx, c + 22000, nm, ROLES["budget"], theme, ha="center",
               fontsize=11)
     flow(ax, (150, c), (60, c), t["muted"])
     flow(ax, (400, c), (600, c), t["muted"])

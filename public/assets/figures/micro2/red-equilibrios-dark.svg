@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-14T13:53:59.647892</dc:date>
+    <dc:date>2026-11-14T15:09:18.539935</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -427,45 +427,45 @@ z
    </g>
    <g id="text_8">
     <g id="patch_6">
-     <path d="M 38.287109 116.524809 
-L 57.071328 116.524809 
-L 57.071328 102.578871 
-L 38.287109 102.578871 
+     <path d="M 38.287109 109.271529 
+L 57.071328 109.271529 
+L 57.071328 95.325591 
+L 38.287109 95.325591 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- n0 -->
-    <g style="fill: #65a30d" transform="translate(39.937109 112.587152) scale(0.11 -0.11)">
+    <g style="fill: #65a30d" transform="translate(39.937109 105.333873) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-Bold-6e"/>
      <use xlink:href="#DejaVuSans-Bold-30" x="71.191406"/>
     </g>
    </g>
    <g id="text_9">
     <g id="patch_7">
-     <path d="M 114.015681 116.524809 
-L 132.7999 116.524809 
-L 132.7999 102.578871 
-L 114.015681 102.578871 
+     <path d="M 114.015681 109.271529 
+L 132.7999 109.271529 
+L 132.7999 95.325591 
+L 114.015681 95.325591 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- n1 -->
-    <g style="fill: #65a30d" transform="translate(115.665681 112.587152) scale(0.11 -0.11)">
+    <g style="fill: #65a30d" transform="translate(115.665681 105.333873) scale(0.11 -0.11)">
      <use xlink:href="#DejaVuSans-Bold-6e"/>
      <use xlink:href="#DejaVuSans-Bold-31" x="71.191406"/>
     </g>
    </g>
    <g id="text_10">
     <g id="patch_8">
-     <path d="M 341.201395 116.524809 
-L 359.985614 116.524809 
-L 359.985614 102.578871 
-L 341.201395 102.578871 
+     <path d="M 341.201395 109.271529 
+L 359.985614 109.271529 
+L 359.985614 95.325591 
+L 341.201395 95.325591 
 z
 " style="fill: #0a0f1a; opacity: 0.9"/>
     </g>
     <!-- n2 -->
-    <g style="fill: #65a30d" transform="translate(342.851395 112.587152) scale(0.11 -0.11)">
+    <g style="fill: #65a30d" transform="translate(342.851395 105.333873) scale(0.11 -0.11)">
      <defs>
       <path id="DejaVuSans-Bold-32" d="M 1844 884 
 L 3897 884 

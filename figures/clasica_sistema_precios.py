@@ -32,7 +32,9 @@ def draw(theme):
             linestyle="--", zorder=3)
     ax.plot(15, 0.25, "o", ms=9, color=accent(theme), zorder=5,
             markeredgecolor=THEMES[theme]["fg"], markeredgewidth=1.2)
-    label(ax, 15.4, 0.30, "p* = 15, r = 25%", accent(theme), theme, fontsize=11)
+    # aire sobre el cruce: r2(15.3..20)<=0.43, r1 decreciente -> y=0.50
+    # (caja 0.484-0.516: 24px sobre r2, vertical x=15 a 9px)
+    label(ax, 15.3, 0.50, "p* = 15, r = 25%", accent(theme), theme, fontsize=11)
     for px, rr, nm, dx, dy in ((10.0, r1(10.0), "A", 0.0, -0.045),
                               (24.58, r2(24.58), "B", -0.42, -0.04)):
         ax.plot(px, rr, "s", ms=7, color=THEMES[theme]["muted"], zorder=5)

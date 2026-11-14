@@ -13,7 +13,8 @@ def draw(theme):
     bbar, b0 = 2.0, 3.0
     tt = np.linspace(0, 20, 300)
     ax.axhline(bbar, color=t["muted"], lw=1.6, linestyle=(0, (5, 4)))
-    ax.text(0.3, bbar + 0.18, "b̄", fontsize=12, fontweight="bold",
+    # aire a la derecha del marcador b0 (x=0, r~7px): x=0.9 ~= 21px
+    ax.text(0.9, bbar + 0.18, "b̄", fontsize=12, fontweight="bold",
             color=t["muted"], ha="left", va="bottom",
             bbox=dict(facecolor=bg, edgecolor="none", pad=1.6, alpha=0.9))
     ax.plot(tt, bbar + (b0 - bbar) * 0.9 ** tt, color=ROLES["budget"], lw=2.8)

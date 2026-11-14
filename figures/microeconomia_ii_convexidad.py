@@ -22,15 +22,15 @@ def panel(ax, theme, strict):
     if strict:
         k = 2.0 * (7.0 ** 1.4)  # pasa aprox por y,z
         xs = np.linspace(1.6, 7.6, 200)
-        ax.plot(xs, indif(xs, 2.0 * 7.0 ** 1.4, 1.4), color="#0284c7", lw=2.4, zorder=4)
+        ax.plot(xs, indif(xs, 2.0 * 7.0 ** 1.4, 1.4), color="#0284c7", lw=2.4, zorder=2)
     else:
         # tramo lineal entre y,z con quiebres (convexa no estricta)
         xa = np.linspace(1.0, 2.0, 30)
-        ax.plot(xa, 11.0 - 2 * xa, color="#0284c7", lw=2.4, zorder=4)  # por (2,7)
+        ax.plot(xa, 11.0 - 2 * xa, color="#0284c7", lw=2.4, zorder=2)  # por (2,7)
         xb = np.linspace(2.0, 7.0, 50)
-        ax.plot(xb, 9.0 - xb, color="#0284c7", lw=2.4, zorder=4)       # y-z lineal
+        ax.plot(xb, 9.0 - xb, color="#0284c7", lw=2.4, zorder=2)       # y-z lineal
         xc = np.linspace(7.0, 9.0, 30)
-        ax.plot(xc, 2.0 - 0.5 * (xc - 7.0), color="#0284c7", lw=2.4, zorder=4)  # por (7,2)
+        ax.plot(xc, 2.0 - 0.5 * (xc - 7.0), color="#0284c7", lw=2.4, zorder=2)  # por (7,2)
     ax.plot([y[0], z[0]], [y[1], z[1]], color="#d97706", lw=1.6, linestyle="--", zorder=3)
     for p, nm in [(y, "y"), (z, "z")]:
         ax.plot(p[0], p[1], "o", ms=9, color="#d97706", zorder=5)

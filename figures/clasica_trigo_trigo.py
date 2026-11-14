@@ -16,9 +16,11 @@ def draw(theme):
     # tecnica base: cosecha 1000 con adelanto 800 -> r = 25%
     ax.plot([0, 800], [0, 1000], color="#0284c7", lw=2.6, zorder=4)
     ax.plot(800, 1000, "o", ms=9, color="#0284c7", zorder=5)
-    label(ax, 815, 960, "K=800, Y=1000", "#0284c7", theme)
+    # aire a la derecha-abajo del marcador (rayo termina en x=800)
+    label(ax, 835, 905, "K=800, Y=1000", "#0284c7", theme)
     # tecnica mejorada: mismo Y con adelanto 700 -> r = 42,9%
-    ax.plot([0, 700], [0, 1000], color="#d97706", lw=2.2, zorder=4)
+    # z=2: el halo tapa el roce con el propio rayo (rellenos z=1, texto z=3)
+    ax.plot([0, 700], [0, 1000], color="#d97706", lw=2.2, zorder=2)
     ax.plot(700, 1000, "o", ms=9, color="#d97706", zorder=5)
     label(ax, 530, 975, "K=700, Y=1000", "#d97706", theme, ha="center")
     label(ax, 880, 760, "pendiente = 1 + r", t["fg"], theme, ha="center",

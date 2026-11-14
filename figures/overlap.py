@@ -6,15 +6,22 @@ Uso:
 
 Reglas (medidas en pixeles del render final, ambos temas):
   ERROR (falla el gate):
-    - texto <-> texto (cajas de glifo + pad)
-    - texto <-> punto/marcador (radio + pad)
+    - texto <-> texto (cajas de glifo + pad; tick-tick exento: el 0/0 del
+      origen es mobiliario de ejes, no contenido)
+    - texto <-> punto visible (el marcador pinta ENCIMA del texto y el halo
+      queda debajo: radio completo + pad)
+    - texto <-> trazo VISIBLE (la linea pinta encima del texto/halo) o corte
+      profundo en modo strict
     - texto fuera de la figura (recorte)
   AVISO (triage humano):
-    - texto tocando un trazo (el halo lo mitiga; se reporta con coordenadas)
+    - texto tocando un trazo que pinta DEBAJO (el halo lo tapa; se reporta
+      con coordenadas; si lo atraviesa por el nucleo se marca "cruza")
 
-  Los parches decorativos (cajas, sombreados, ejes) NO participan: el texto
-  vive encima de ellos por diseno (fondo del tema + halo). Las rejillas
-  tampoco participan.
+  Fisica del render: el halo solo mitiga si el texto esta encima (zorder
+  texto=3 por defecto vs linea=2). Con curvas z>=4 el halo queda debajo y
+  todo roce es visible -> ERROR. Los parches decorativos (cajas, sombreados,
+  ejes) NO participan: el texto vive encima de ellos por diseno (fondo del
+  tema + halo). Las rejillas tampoco participan.
 """
 import matplotlib
 matplotlib.use("SVG")
@@ -24,6 +31,8 @@ from matplotlib.lines import Line2D
 
 TEXT_PAD = 2.0    # px extra alrededor de cada glifo (texto-texto)
 LINE_TOUCH = 1.0  # px: la caja del glifo toca el trazo (con su grosor)
+DEEP_PAD = 3.0    # px: si el trazo cruza la caja encogida -> ERROR (el halo
+                  # ya no lo salva: la linea atraviesa el texto, no lo roza)
 
 
 def _is_ghost(bb):
@@ -41,6 +50,23 @@ def _draw(fig):
         pass
     fig.canvas.draw()
     return fig.canvas.get_renderer()
+
+
+def _tick_texts(ax):
+    """Rotulos de ticks (NO estan en ax.texts: el gate clasico no los veia
+    y dos etiquetas podian compartir aire sin que nadie lo notara)."""
+    out = []
+    for tx in list(ax.get_xticklabels()) + list(ax.get_yticklabels()):
+        try:
+            if not tx.get_visible():
+                continue
+        except Exception:
+            continue
+        s = tx.get_text() or ''
+        if not s.strip():
+            continue
+        out.append(tx)
+    return out
 
 
 def _texts(ax):
@@ -74,7 +100,8 @@ def _strokes(ax):
 
 
 def _dots(ax):
-    """Vertices de lineas solo-marcador -> (puntos display Nx2, radio px)."""
+    """Vertices de lineas solo-marcador -> (puntos display Nx2, radio px, z).
+    Colecciones (scatter) igual, con su zorder."""
     out = []
     dpi = ax.figure.dpi
     for ln in ax.lines:
@@ -91,7 +118,11 @@ def _dots(ax):
         except Exception:
             continue
         r = float(ln.get_markersize()) * dpi / 72.0 / 2.0
-        out.append((pts.reshape(-1, 2), r))
+        try:
+            pz = float(ln.get_zorder())
+        except Exception:
+            pz = 2.0
+        out.append((pts.reshape(-1, 2), r, pz))
     for col in ax.collections:
         if not col.get_visible():
             continue
@@ -110,7 +141,11 @@ def _dots(ax):
             r = np.sqrt(sz) / 2.0  # sizes estan en puntos^2
         except Exception:
             r = 4.0
-        out.append((pts.reshape(-1, 2), r))
+        try:
+            pz = float(col.get_zorder())
+        except Exception:
+            pz = 1.0
+        out.append((pts.reshape(-1, 2), r, pz))
     return out
 
 
@@ -134,8 +169,12 @@ def _seg_rect_dist(ax_, ay_, bx_, by_, x0, y0, x1, y1, n=24):
     return best
 
 
-def check_figure(fig):
-    """Devuelve (errors, warnings): listas de dicts {kind, text, detail}."""
+def check_figure(fig, strict=False):
+    """Devuelve (errors, warnings): listas de dicts {kind, text, detail}.
+
+    strict=True: todo roce texto-trazo tambien es ERROR (gate cero-avisos
+    para figuras nuevas; las historicas siguen en modo aviso).
+    """
     renderer = _draw(fig)
     errors, warnings = [], []
     fbox = fig.bbox  # figura completa (incluye titulos y xlabels)
@@ -149,7 +188,8 @@ def check_figure(fig):
             s = tx.get_text() or ''
             if not s.strip() or _is_ghost(bb):
                 continue  # vacios y duplicados rancios de ticks
-            raw.append((s, bb.x0, bb.y0, bb.x1, bb.y1, _is_end_label(tx)))
+            raw.append((s, bb.x0, bb.y0, bb.x1, bb.y1, _is_end_label(tx),
+                        False, float(tx.get_zorder())))
             # recorte contra la figura (no contra los ejes: titulos viven fuera)
             if bb.x0 < fbox.x0 - 1 or bb.y0 < fbox.y0 - 1 or \
                bb.x1 > fbox.x1 + 1 or bb.y1 > fbox.y1 + 1:
@@ -158,39 +198,66 @@ def check_figure(fig):
                     'text': s[:40],
                     'detail': 'etiqueta fuera de la figura (xlim/ylim sin aire)',
                 })
-        boxes = [(s, x0 - TEXT_PAD, y0 - TEXT_PAD, x1 + TEXT_PAD, y1 + TEXT_PAD)
-                 for (s, x0, y0, x1, y1, _) in raw]
-        glyphs = [(s, x0, y0, x1, y1)
-                  for (s, x0, y0, x1, y1, _) in raw]
-        no_end = [(s, x0, y0, x1, y1)
-                  for (s, x0, y0, x1, y1, e) in raw if not e]  # sin pad: toque real
-        # texto <-> texto
+        # ticks: participan en texto-texto (antes invisibles al gate),
+        # marcados como tick para eximir tick-tick (el 0/0 del origen).
+        for tx in _tick_texts(ax):
+            try:
+                bb = tx.get_window_extent(renderer=renderer)
+            except Exception:
+                continue
+            s = tx.get_text() or ''
+            if not s.strip() or _is_ghost(bb):
+                continue
+            raw.append((s, bb.x0, bb.y0, bb.x1, bb.y1, False, True,
+                        float(tx.get_zorder())))
+        boxes = [(s, x0 - TEXT_PAD, y0 - TEXT_PAD, x1 + TEXT_PAD, y1 + TEXT_PAD, tick)
+                 for (s, x0, y0, x1, y1, _, tick, _) in raw]
+        glyphs = [(s, x0, y0, x1, y1, z)
+                  for (s, x0, y0, x1, y1, _, _, z) in raw]
+        no_end_all = [(s, x0, y0, x1, y1, z)
+                      for (s, x0, y0, x1, y1, _, _, z) in raw]  # end labels incluidos
+        # texto <-> texto (tick-tick exento: mobiliario de ejes)
         for i in range(len(boxes)):
             for j in range(i + 1, len(boxes)):
                 a, b = boxes[i], boxes[j]
+                if a[5] and b[5]:
+                    continue
                 if a[1] < b[3] and b[1] < a[3] and a[2] < b[4] and b[2] < a[4]:
                     errors.append({
                         'kind': 'texto-texto',
                         'text': (a[0][:30] + ' / ' + b[0][:30]),
                         'detail': 'dos etiquetas se pisan',
                     })
-        # texto <-> punto: ERROR solo si el centro toca de verdad el glifo
-        # (caja del glifo expandida apenas medio radio: la vecindad con halo
-        #  es diseno intencional, no error). Se reporta la distancia minima.
-        for pts, r in _dots(ax):
-            rr = r * 0.5
-            for (s, x0, y0, x1, y1) in glyphs:
+        # texto <-> punto: el punto pinta encima (z>=4 tipico) y el halo queda
+        # debajo -> ERROR con radio completo + pad. Si el punto pintara
+        # debajo del texto, el halo lo tapa -> aviso.
+        for pts, r, pz in _dots(ax):
+            rr = r + TEXT_PAD
+            for (s, x0, y0, x1, y1, tz) in glyphs:
                 dx = np.maximum(x0 - rr - pts[:, 0], pts[:, 0] - x1 - rr)
                 dy = np.maximum(y0 - rr - pts[:, 1], pts[:, 1] - y1 - rr)
                 dist = float(np.min(np.hypot(np.maximum(dx, 0.0),
                                              np.maximum(dy, 0.0))))
                 if dist == 0.0:
-                    errors.append({
-                        'kind': 'texto-punto',
-                        'text': s[:40],
-                        'detail': 'etiqueta pisa un marcador (moverla)',
-                    })
-        # texto tocando trazo -> aviso (el halo lo mitiga; decide el humano)
+                    if pz > tz:
+                        errors.append({
+                            'kind': 'texto-punto',
+                            'text': s[:40],
+                            'detail': 'etiqueta pisa un marcador (moverla)',
+                        })
+                    else:
+                        warnings.append({
+                            'kind': 'texto-punto',
+                            'text': s[:40],
+                            'detail': 'marcador bajo el texto (revisar a ojo)',
+                        })
+        # texto tocando trazo: end labels incluidos (antes exentos: vivian
+        # pegados a su curva y el gate nunca los media). Fisica del render:
+        # si la linea pinta ENCIMA del texto (lz > tz: curvas z>=4), el halo
+        # queda debajo y todo roce es visible -> ERROR. Si pinta debajo, el
+        # halo lo tapa: solo el corte profundo (trazo por el nucleo del
+        # glifo) es ERROR; el roce de borde queda como aviso, salvo
+        # strict=True (cero-avisos para figuras nuevas).
         for ln in _strokes(ax):
             try:
                 verts = ln.get_transform().transform(ln.get_path().vertices)
@@ -198,25 +265,52 @@ def check_figure(fig):
                 continue
             if len(verts) == 0:
                 continue
-            step = max(1, len(verts) // 400)
+            step = max(1, len(verts) // 800)
             vv = verts[::step]
             lw = float(ln.get_linewidth()) * fig.dpi / 72.0 / 2.0 + LINE_TOUCH
-            # distancia segmento a rectangulo por tramos (end labels exentos:
-            # viven pegados al extremo de su curva por diseno)
-            for (s, x0, y0, x1, y1) in no_end:
+            try:
+                lz = float(ln.get_zorder())
+            except Exception:
+                lz = 2.0
+            for (s, x0, y0, x1, y1, tz) in no_end_all:
                 ex0, ey0, ex1, ey1 = x0 - lw, y0 - lw, x1 + lw, y1 + lw
                 hit = False
                 for k in range(len(vv) - 1):
                     d = _seg_rect_dist(vv[k][0], vv[k][1], vv[k + 1][0], vv[k + 1][1],
-                                       ex0, ey0, ex1, ey1)
+                                       ex0, ey0, ex1, ey1, n=64)
                     if d == 0.0:
                         hit = True
                         break
-                if hit:
+                if not hit:
+                    continue
+                # ¿corte profundo? (trazo dentro de la caja encogida)
+                ix0, iy0, ix1, iy1 = (x0 + DEEP_PAD, y0 + DEEP_PAD,
+                                      x1 - DEEP_PAD, y1 - DEEP_PAD)
+                deep = False
+                if ix0 < ix1 and iy0 < iy1:
+                    for k in range(len(vv) - 1):
+                        d = _seg_rect_dist(vv[k][0], vv[k][1],
+                                           vv[k + 1][0], vv[k + 1][1],
+                                           ix0, iy0, ix1, iy1, n=64)
+                        if d == 0.0:
+                            deep = True
+                            break
+                if (lz > tz) or strict:
+                    errors.append({
+                        'kind': 'texto-trazo',
+                        'text': s[:40],
+                        'detail': ('el trazo cruza la etiqueta (moverla)' if deep
+                                   else ('la linea pinta encima del texto (bajar z o moverla)'
+                                         if lz > tz and not strict
+                                         else 'roce con trazo en modo strict (moverla)')),
+                    })
+                else:
                     warnings.append({
                         'kind': 'texto-trazo',
                         'text': s[:40],
-                        'detail': 'la etiqueta pisa un trazo (revisar a ojo)',
+                        'detail': ('el trazo cruza bajo el halo (revisar a ojo)'
+                                   if deep else
+                                   'la etiqueta pisa un trazo (revisar a ojo)'),
                     })
     # de-duplicar avisos repetidos por la misma etiqueta
     seen = set()

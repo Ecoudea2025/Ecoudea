@@ -11,7 +11,7 @@ def draw(theme):
     ax.set_xlim(0, 11.5)
     ax.set_ylim(0, 11.5)
     X = np.linspace(0.05, 5.0, 400)
-    ax.plot(X, np.sqrt(100 - 4 * X ** 2), color="#0284c7", lw=2.6, zorder=4)
+    ax.plot(X, np.sqrt(100 - 4 * X ** 2), color="#0284c7", lw=2.6, zorder=2)
     end_label(ax, 5.02, 0.6, "FPP", "#0284c7")
     E = (3.53, 7.07)
     Ep = (1.21, 9.70)
@@ -37,7 +37,7 @@ def draw(theme):
     label(ax, Ep[0], Ep[1] + 0.75, "E'", "#d97706", theme, ha="center", fontsize=13)
     ax.plot(Epp[0], Epp[1], "o", ms=10, color="#d97706", zorder=6,
             markeredgecolor=t["fg"], markeredgewidth=1.4)
-    label(ax, Epp[0], Epp[1] - 0.6, "E''", "#d97706", theme, ha="center", fontsize=13)
+    label(ax, Epp[0], Epp[1] - 0.9, "E''", "#d97706", theme, ha="center", fontsize=13)
     label(ax, 6.3, 8.62, "U=7.28", "#d97706", theme, fontsize=10)
     label(ax, 7.5, 3.25, "U=5", "#65a30d", theme, ha="left", fontsize=10)
     project(ax, E[0], E[1], theme)

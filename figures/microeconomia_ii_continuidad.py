@@ -13,7 +13,7 @@ def draw(theme):
     # I(x): y = 36/x (pasa por x=(6,6)); U(x) = arriba (sombreado)
     xs = np.linspace(3.2, 10, 200)
     ax.plot(xs, 36.0 / xs, color="#0284c7", lw=2.4, zorder=4)
-    end_label(ax, 10.05, 36.0 / 10, "I(x)", "#0284c7")
+    end_label(ax, 10.05, 36.0 / 10 + 1.0, "I(x)", "#0284c7")
     ax.fill_between(xs, 36.0 / xs, 10.5, facecolor=TINTS[theme]["excl"],
                     edgecolor="none", zorder=1)
     label(ax, 8.2, 8.6, "U(x)", "#0284c7", theme)

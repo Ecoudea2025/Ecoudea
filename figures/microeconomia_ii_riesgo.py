@@ -8,11 +8,11 @@ from style import setup_eco, save, OUTDIR_MD, THEMES, halo, label, end_label, TI
 
 def left(ax, theme):
     t = THEMES[theme]
-    ax.set_xlim(0, 11.5)
+    ax.set_xlim(0, 12.6)
     ax.set_ylim(-0.4, 2.8)
     w = np.linspace(1.0, 11.0, 300)
     ax.plot(w, np.log(w), color="#0284c7", lw=2.6, zorder=4)
-    end_label(ax, 11.1, np.log(11) + 0.08, "u=ln W", "#0284c7")
+    end_label(ax, 11.1, np.log(11) + 0.16, "u=ln W", "#0284c7")
     W1, W2, p = 2.0, 10.0, 0.5
     EW = p * W1 + (1 - p) * W2  # 6
     Eu = p * np.log(W1) + (1 - p) * np.log(W2)
@@ -24,12 +24,17 @@ def left(ax, theme):
         ax.plot([wx, wx], [0, np.log(wx)], color=t["muted"], lw=1.0, linestyle=":",
                 zorder=2)
     ax.plot(EW, np.log(EW), "o", ms=8, color="#d97706", zorder=5)
-    label(ax, EW + 0.15, np.log(EW) + 0.18, "E[W]", "#d97706", theme)
+    # E[W]: bien arriba de la curva (el rotulo es ancho: a la altura
+    # anterior el borde derecho casi tocaba u al haber subido a ~2.07)
+    label(ax, EW + 0.4, np.log(EW) + 0.75, "E[W]", "#d97706", theme)
     ax.plot([EC, EC], [0, Eu], color="#65a30d", lw=1.4, linestyle=":", zorder=2)
     ax.plot(EC, Eu, "s", ms=8, color="#65a30d", zorder=5)
-    label(ax, EC - 0.35, Eu + 0.15, "EC", "#65a30d", theme, ha="right")
+    # EC: arriba-izquierda del cuadrado (lejos de curva y cuerda)
+    label(ax, EC - 0.62, Eu + 0.40, "EC", "#65a30d", theme, ha="right")
     ax.plot([EC, EW], [Eu, Eu], color="#65a30d", lw=2.6, zorder=5)
-    label(ax, (EC + EW) / 2 + 0.15, Eu - 0.32, "prima", "#65a30d", theme, ha="center", fontsize=10)
+    # prima: bajo el segmento verde, con ha=left desde EC+0.38 para no
+    # pisar la vertical punteada de EC (centrada la rozaba por la izquierda)
+    label(ax, EC + 0.38, Eu - 0.48, "prima", "#65a30d", theme, ha="left", fontsize=10)
     ax.set_xticks([W1, EC, EW, W2])
     ax.set_xticklabels(["W1", "EC", "E[W]", "W2"])
     ax.set_yticks([])
@@ -43,12 +48,12 @@ def right(ax, theme):
     ax.set_ylim(0, 7.5)
     e = np.linspace(0, 4, 200)
     ax.plot(e, 0.5 * e, color="#0284c7", lw=2.4, zorder=4)
-    end_label(ax, 4.05, 2.15, "cH suave", "#0284c7", fontsize=11)
+    end_label(ax, 4.05, 2.32, "cH suave", "#0284c7", fontsize=11)
     ax.plot(e, 1.5 * e, color="#d97706", lw=2.4, zorder=4)
-    end_label(ax, 4.05, 6.15, "cL empinado", "#d97706", fontsize=11)
+    end_label(ax, 4.05, 6.45, "cL empinado", "#d97706", fontsize=11)
     # salario escalon: 1 si e<2, 4 si e>=2
     ax.plot([0, 2, 2, 4.2], [1, 1, 4, 4], color="#65a30d", lw=2.2, zorder=4)
-    end_label(ax, 4.25, 4.0, "w(e)", "#65a30d", fontsize=11)
+    end_label(ax, 4.25, 4.34, "w(e)", "#65a30d", fontsize=11)
     ax.plot([2, 2], [0, 4], color=t["muted"], lw=1.2, linestyle=":", zorder=2)
     # el tick ya rotula e*; sin etiqueta extra para no tapar el escalón
     ax.set_xticks([2])

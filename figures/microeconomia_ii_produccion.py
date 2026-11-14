@@ -15,7 +15,7 @@ def draw(theme):
     ax.set_xlim(0, 10.5)
     ax.set_ylim(0, 20)
     xs = np.linspace(0.05, 10, 300)
-    ax.plot(xs, f(xs), color="#0284c7", lw=2.6, zorder=4)
+    ax.plot(xs, f(xs), color="#0284c7", lw=2.6, zorder=2)
     end_label(ax, 10.1, f(10) + 0.4, "q = f(x)", "#0284c7")
     ax.fill_between(xs, 0, f(xs), facecolor=TINTS[theme]["excl"],
                     edgecolor="none", zorder=1)
