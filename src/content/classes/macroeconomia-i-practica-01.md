@@ -209,7 +209,7 @@ math: true
     <li>
     Minimizando la función de costos de ajuste $C(I_t) = \epsilon(K_{t+1} - K^*)^2 + (1 - \epsilon)(K_{t+1} - K_t)^2$,
     deduzca la ecuación de inversión neta:
-    
+
 $$
 I_t = \epsilon \left[ \left( \frac{P_t \alpha A_t}{P_K (r + \delta)} \right)^{\frac{1}{1 - \alpha}} N_t - K_t \right]
 $$

@@ -356,6 +356,97 @@
       "title": "Oferta de trabajo y desplazamientos con la tasa de interes real",
       "seed": "determinista (sin aleatoriedad)",
       "updated": "2026-11-12"
+    },
+    {
+      "id": "micro2/utilidad-esperada",
+      "script": "figures/microeconomia_ii_utilidad_esperada.py",
+      "title": "Utilidad concava, cuerda y brecha de certeza",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/distribuciones-AB",
+      "script": "figures/microeconomia_ii_distribuciones.py",
+      "title": "Distribuciones de rendimiento A y B",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/riesgo-rendimiento",
+      "script": "figures/microeconomia_ii_riesgo_rendimiento.py",
+      "title": "Recta presupuestaria y tangencia en sigma-r",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/dos-activos",
+      "script": "figures/microeconomia_ii_dos_activos.py",
+      "title": "Dominancia entre portafolios x e y",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/sml-capm",
+      "script": "figures/microeconomia_ii_sml_capm.py",
+      "title": "Recta del mercado del CAPM",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/coase-edgeworth",
+      "script": "figures/microeconomia_ii_coase.py",
+      "title": "Caja de Edgeworth de Coase con dinero y humo",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/impuestos-normas-fijo",
+      "script": "figures/microeconomia_ii_normas_fijo.py",
+      "title": "Impuestos vs normas con precio fijo",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/impuestos-normas-dd",
+      "script": "figures/microeconomia_ii_normas_dd.py",
+      "title": "Impuestos vs normas con demanda DD",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/mitigacion-tobon",
+      "script": "figures/microeconomia_ii_mitigacion.py",
+      "title": "Mitigacion con salto de curvas e impuesto",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/red-equilibrios",
+      "script": "figures/microeconomia_ii_red_equilibrios.py",
+      "title": "Externalidad de red y equilibrios multiples",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/red-ajuste",
+      "script": "figures/microeconomia_ii_red_ajuste.py",
+      "title": "Ajuste de costes y trayectoria temporal",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/bilateral",
+      "script": "figures/microeconomia_ii_bilateral.py",
+      "title": "Mercado bilateral y campo de ajuste",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
+    },
+    {
+      "id": "micro2/deposito-reembolsable",
+      "script": "figures/microeconomia_ii_deposito.py",
+      "title": "Deposito reembolsable para residuos",
+      "seed": "determinista (sin aleatoriedad)",
+      "updated": "2026-11-14"
     }
   ]
 }
